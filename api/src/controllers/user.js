@@ -39,7 +39,7 @@ router.post(
 
     res.cookie("jwt", token, { domain: "127.0.0.1", maxAge: JWT_MAX_AGE, httpOnly: false, secure: false });
 
-    return res.status(200).send({ ok: true, data: user });
+    return res.status(200).send({ ok: true, data: user, message: "Succesfully signed up" });
   })
 );
 
@@ -57,7 +57,7 @@ router.post(
     res.cookie("jwt", token, { domain: "127.0.0.1", maxAge: JWT_MAX_AGE, httpOnly: false, secure: false });
 
     console.log(req.cookies, "req.cookies");
-    return res.status(200).send({ ok: true, token: token });
+    return res.status(200).send({ ok: true, token: token, message: "Succesfully logged up" });
   })
 );
 
