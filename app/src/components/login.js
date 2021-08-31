@@ -9,14 +9,9 @@ class Login extends React.Component {
   };
 
   onChangeLogin = (e) => {
-    this.setState(
-      {
-        [e.target.name]: e.target.value,
-      },
-      () => {
-        console.log(this.state);
-      }
-    );
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
   };
 
   loginRequest = async (e) => {
@@ -32,25 +27,24 @@ class Login extends React.Component {
         pseudo: this.state.pseudo,
         password: this.state.password,
       }),
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-      });
+    }).then((res) => {
+      return res.json();
+    });
+    if (response.ok) {
+      this.props.onLogin(response.data);
+    }
   };
 
-  logoutRequest = async () => {
-    const response = await fetch("http://127.0.0.1:8080/user/logout", {
-      method: "GET",
-      credentials: "include",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-  };
+  // logoutRequest = async () => {
+  //   const response = await fetch("http://127.0.0.1:8080/user/logout", {
+  //     method: "GET",
+  //     credentials: "include",
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     });
+  // };
 
   render() {
     return (
@@ -58,21 +52,24 @@ class Login extends React.Component {
         <SignupSubContainer>
           <span>Connexion</span>
           <LoginForm id='sign-in-form' action='' onSubmit={this.loginRequest}>
-            <label>Pseudo</label>
-            <input type='text' name='pseudo' onChange={this.onChangeLogin} />
-            <label>Mot de passe</label>
-            <input type='text' name='password' onChange={this.onChangeLogin} />
-            <button className='' type='submit'>
+            <FormLabel>Pseudo</FormLabel>
+            <FormInput
+              type='text'
+              name='pseudo'
+              placeholder='Votre pseudo'
+              onChange={this.onChangeLogin}
+            />
+            <FormLabel>Mot de passe</FormLabel>
+            <FormInput
+              type='text'
+              name='password'
+              placeholder='Votre mot de passe'
+              onChange={this.onChangeLogin}
+            />
+            <LoginButton className='' type='submit'>
               Se connecter
-            </button>
+            </LoginButton>
           </LoginForm>
-          <LogoutButton
-            onClick={this.logoutRequest}
-            id='logout-button'
-            type='submit'
-          >
-            Se déconnecter
-          </LogoutButton>
         </SignupSubContainer>
       </>
     );
@@ -80,31 +77,44 @@ class Login extends React.Component {
 }
 
 const SignupSubContainer = styled.div`
+  padding: 20px;
+  height: auto;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  height: 300px;
-  width: 350px;
+  background-color: white;
   border: 1px solid black;
+  border-top: none;
 `;
 
 const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
-  > label {
-    margin-top: 10px;
-  }
   > div > input {
     margin-top: 10px;
     margin-left: 10px;
   }
-  > button {
-    margin-top: 25px;
-  }
+`;
+const FormLabel = styled.label`
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
 `;
 
-const LogoutButton = styled.button`
-  margin-top: 25px;
+const FormInput = styled.input`
+  padding: 15px;
+  height: 45px;
+  background-color: rgba(245, 245, 244, 1);
+  border: none;
+`;
+
+const LoginButton = styled.button`
+  margin-top: 30px;
+  height: 35px;
+  font-weight: bold;
+  background-color: #f7df1e;
+  border: none;
 `;
 
 export default Login;

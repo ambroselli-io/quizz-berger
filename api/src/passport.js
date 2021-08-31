@@ -3,7 +3,7 @@ const config = require("./config");
 const JwtStrategy = require("passport-jwt").Strategy;
 
 // load up the user model
-const User = require("./models/user");
+const UserObject = require("./models/user");
 
 const cookieExtractor = function (req) {
   let token = null;
@@ -21,7 +21,7 @@ module.exports = (app) => {
       },
       async function (jwtPayload, done) {
         try {
-          const user = await User.findById(jwtPayload._id);
+          const user = await UserObject.findById(jwtPayload._id);
           if (user) return done(null, user);
         } catch (e) {
           console.log("error passport", e);

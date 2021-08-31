@@ -7,6 +7,7 @@ const { catchErrors } = require("../utils/error");
 const md5 = require("md5");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+const user = require("../models/user");
 
 const JWT_MAX_AGE = 1000 * 60 * 60 * 24 * 30; // 30 days in ms
 
@@ -39,7 +40,7 @@ router.post(
 
     res.cookie("jwt", token, { domain: "127.0.0.1", maxAge: JWT_MAX_AGE, httpOnly: false, secure: false });
 
-    return res.status(200).send({ ok: true, data: user, message: "Succesfully signed up" });
+    return res.status(200).send({ ok: true, data: user });
   })
 );
 
@@ -57,18 +58,47 @@ router.post(
     res.cookie("jwt", token, { domain: "127.0.0.1", maxAge: JWT_MAX_AGE, httpOnly: false, secure: false });
 
     console.log(req.cookies, "req.cookies");
-    return res.status(200).send({ ok: true, token: token, message: "Succesfully logged up" });
+    return res.status(200).send({ ok: true, data: user });
   })
 );
 
 router.get(
   "/logout",
   catchErrors(async (req, res) => {
-    // res.cookie("jwt", "token", { maxAge: JWT_MAX_AGE, httpOnly: false, secure: false });
-
     res.clearCookie("jwt", {});
-
     res.status(200).send({ message: "Successfully logged out" });
+  })
+);
+
+router.put(
+  "/",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    const user = req.user;
+    const userUpdate = {};
+
+    if (req.body.hasOwnProperty("theme")) {
+      userUpdate.theme = req.body.theme;
+    }
+
+    // if (req.body.hasOwnProperty("pseudo")) {
+    //   userUpdate.pseudo = req.body.pseudo;
+    // }
+
+    user.set(userUpdate);
+    await user.save();
+    console.log(userUpdate, "user");
+
+    res.status(200).send({ ok: true, message: "Successfully updated theme" });
+  })
+);
+
+router.get(
+  "/me",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    console.log(req.user.me(), "Identified user");
+    res.status(200).send({ ok: true, data: req.user });
   })
 );
 

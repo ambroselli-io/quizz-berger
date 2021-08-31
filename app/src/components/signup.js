@@ -34,11 +34,11 @@ class Signup extends React.Component {
         candidat: this.state.candidat,
         theme: "",
       }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
+    }).then((res) => res.json());
+
+    if (response.ok) {
+      this.props.onLogin(response.data);
+    }
   };
 
   render() {
@@ -51,25 +51,36 @@ class Signup extends React.Component {
             pseudo={this.state}
             id='sign-up-form'
           >
-            <label>Pseudo</label>
-            <input type='text' name='pseudo' onChange={this.onChangeSignup} />
-            <label>Mot de passe</label>
-            <input type='text' name='password' onChange={this.onChangeSignup} />
-            <label>Confirmation du mot de passe</label>
-            <input
+            <FormLabel>Pseudo</FormLabel>
+            <FormInput
+              type='text'
+              name='pseudo'
+              placeholder='Votre pseudo'
+              onChange={this.onChangeSignup}
+            />
+            <FormLabel>Mot de passe</FormLabel>
+            <FormInput
+              type='text'
+              name='password'
+              placeholder='Votre mot de passe'
+              onChange={this.onChangeSignup}
+            />
+            <FormLabel>Confirmation du mot de passe</FormLabel>
+            <FormInput
               type='text'
               name='passwordConfirm'
+              placeholder='Confirmez votre mot de passe'
               onChange={this.onChangeSignup}
             />
             <div>
-              <label>Candidat</label>
+              <FormLabel>Candidat</FormLabel>
               <input
                 type='checkbox'
                 name='candidat'
                 onChange={this.isCandidat}
               />
             </div>
-            <button type='submit'>S'inscrire !</button>
+            <SignupButton type='submit'>S'inscrire !</SignupButton>
           </SignupForm>
         </SignupSubContainer>
       </>
@@ -78,27 +89,47 @@ class Signup extends React.Component {
 }
 
 const SignupSubContainer = styled.div`
+  padding: 20px;
+  height: auto;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  height: 300px;
-  width: 350px;
+  background-color: white;
   border: 1px solid black;
+  border-top: none;
 `;
 
 const SignupForm = styled.form`
   display: flex;
   flex-direction: column;
-  > label {
-    margin-top: 10px;
-  }
   > div > input {
-    margin-top: 10px;
+    height: 10px;
+    width: 10px;
+    margin-top: 30px;
     margin-left: 10px;
   }
-  > button {
-    margin-top: 10px;
-  }
+`;
+
+const FormLabel = styled.label`
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+`;
+
+const FormInput = styled.input`
+  padding: 15px;
+  height: 45px;
+  background-color: rgba(245, 245, 244, 1);
+  border: none;
+`;
+
+const SignupButton = styled.button`
+  margin-top: 30px;
+  height: 35px;
+  font-weight: bold;
+  background-color: #f7df1e;
+  border: none;
 `;
 
 export default Signup;
