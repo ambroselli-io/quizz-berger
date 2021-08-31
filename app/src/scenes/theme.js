@@ -15,12 +15,12 @@ class Theme extends React.Component {
       credentials: "include",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
-        theme: themeIds,
+        themes: themeIds,
       }),
     }).then((res) => res.json());
 
     if (response.ok) {
-      console.log(this.props.history.push("/question"));
+      this.props.history.push("/question");
     }
   };
 
@@ -46,6 +46,15 @@ const BackgroundContainer = styled.div`
   background-color: #f7df1e;
 `;
 
+const SubContainer = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Title = styled.h1`
   margin-bottom: 20px;
   text-align: center;
@@ -54,15 +63,6 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   margin-bottom: 20px;
   text-align: center;
-`;
-
-const SubContainer = styled.div`
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
 // const SelectThemeButton = styled.button`

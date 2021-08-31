@@ -74,20 +74,18 @@ router.put(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
+    console.log(req.body.themes, "req user -----");
     const user = req.user;
     const userUpdate = {};
+    console.log(user, "userUpdate before -----");
 
-    if (req.body.hasOwnProperty("theme")) {
-      userUpdate.theme = req.body.theme;
+    if (req.body.hasOwnProperty("themes")) {
+      userUpdate.themes = req.body.themes;
+      console.log(userUpdate, "userUpdate after -----");
     }
-
-    // if (req.body.hasOwnProperty("pseudo")) {
-    //   userUpdate.pseudo = req.body.pseudo;
-    // }
 
     user.set(userUpdate);
     await user.save();
-    console.log(userUpdate, "user");
 
     res.status(200).send({ ok: true, message: "Successfully updated theme" });
   })

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Home from "./scenes/home";
 import ThemeSelect from "./scenes/theme";
-import Question from "./scenes/question";
+import Quizz from "./scenes/quizz";
 
 class App extends React.Component {
   state = {
@@ -44,7 +44,7 @@ class App extends React.Component {
             path='/question'
             exact
             user={user}
-            Component={(props) => <Question {...props} />}
+            Component={(props) => <Quizz {...props} />}
           />
           <RestrictedRoute
             path='/'

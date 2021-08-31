@@ -5,14 +5,14 @@ const Schema = new mongoose.Schema({
   pseudo: { type: String, required: true, lowercase: true, trim: true },
   password: { type: String },
   candidat: { type: Boolean },
-  theme: { type: Object },
+  themes: { type: Object },
 });
 
 Schema.methods.me = function () {
   const toReturn = {
     pseudo: this.pseudo,
     candidat: this.candidat,
-    theme: this.theme,
+    themes: this.theme,
   };
   return toReturn;
 };

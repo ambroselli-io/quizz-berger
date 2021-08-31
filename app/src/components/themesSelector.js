@@ -30,6 +30,7 @@ const ThemesSelector = ({ sendSelectedThemes }) => {
 
   const onSelectTheme = (e) => {
     setSelectedThemesIds([...selectedThemesIds, e.target.dataset.theme]);
+    console.log(selectedThemesIds);
   };
 
   let filteredTheme = themes.filter((theme) => {
