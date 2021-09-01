@@ -6,23 +6,41 @@ import Question from "../components/question";
 
 class Quizz extends React.Component {
   state = {
-    currentTheme: this.props.user.themes[0],
+    currentTheme: 0,
     currentQuestion: 0,
   };
 
+  nextQuestion = () => {
+    const themeQuestions =
+      quizz[this.props.user.themes[this.state.currentTheme]];
+    const { currentTheme, currentQuestion } = this.state;
+
+    if (currentQuestion < themeQuestions.length - 1) {
+      this.setState({ currentQuestion: currentQuestion + 1 });
+    } else if (currentTheme < this.props.user.themes.length - 1) {
+      this.setState({
+        currentTheme: currentTheme + 1,
+        currentQuestion: 0,
+      });
+    }
+  };
+
   render() {
-    console.log(quizz, "quizz");
-
-    const themeQuestions = quizz[this.state.currentTheme];
+    const themeQuestions =
+      quizz[this.props.user.themes[this.state.currentTheme]];
     const { question, answers } = themeQuestions[this.state.currentQuestion];
-
-    console.log(question, answers);
 
     return (
       <BackgroundContainer>
         <SubContainer>
           <Title>Répondez aux questions</Title>
-          <Question question={question} answers={answers} />
+          <Question
+            theme={this.state.currentTheme}
+            question={question}
+            answers={answers}
+            user={this.props.user}
+            nextQuestion={this.nextQuestion}
+          />
         </SubContainer>
       </BackgroundContainer>
     );

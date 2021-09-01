@@ -24,18 +24,21 @@ class ThemesModal extends React.Component {
 
 const ThemeModal = styled.div`
   width: 400px;
-  display: flex;
+  display: grid;
+  grid-gap: 1px black;
   flex-direction: column;
-  background-color: transparent;
   align-self: center;
-  border: 2px solid black;
+  border: 2px solid #e3cc1b;
   border-radius: 10px;
+  box-shadow: 0px 7px 17px 0px rgb(0 0 0 / 7%);
 `;
 
 const ThemeSubmenu = styled.button`
-  height: 30px;
+  height: 40px;
   background-color: transparent;
-  border: 1px solid black;
+  border: none;
+  border-bottom: 1px solid #e3cc1b;
+  color: #665c0c;
 `;
 
 export default ThemesModal;

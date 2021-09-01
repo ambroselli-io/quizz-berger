@@ -20,6 +20,7 @@ class Theme extends React.Component {
     }).then((res) => res.json());
 
     if (response.ok) {
+      this.props.setTheme(response.data);
       this.props.history.push("/question");
     }
   };

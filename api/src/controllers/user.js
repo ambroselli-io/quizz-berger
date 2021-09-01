@@ -3,6 +3,7 @@ const router = express.Router();
 const passport = require("passport");
 const config = require("../config");
 const UserObject = require("../models/user");
+const ResultObject = require("../models/result");
 const { catchErrors } = require("../utils/error");
 const md5 = require("md5");
 const jwt = require("jsonwebtoken");
@@ -74,20 +75,17 @@ router.put(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
-    console.log(req.body.themes, "req user -----");
     const user = req.user;
     const userUpdate = {};
-    console.log(user, "userUpdate before -----");
 
     if (req.body.hasOwnProperty("themes")) {
       userUpdate.themes = req.body.themes;
-      console.log(userUpdate, "userUpdate after -----");
     }
 
     user.set(userUpdate);
     await user.save();
 
-    res.status(200).send({ ok: true, message: "Successfully updated theme" });
+    res.status(200).send({ ok: true, data: user });
   })
 );
 
@@ -97,6 +95,21 @@ router.get(
   catchErrors(async (req, res) => {
     console.log(req.user.me(), "Identified user");
     res.status(200).send({ ok: true, data: req.user });
+  })
+);
+
+router.post(
+  "/answer",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    const result = await ResultObject.create({
+      user: req.body.user,
+      theme: req.body.theme,
+      question: req.body.question,
+      answer: req.body.answer,
+    });
+
+    res.status(200).send({ ok: true, data: result });
   })
 );
 

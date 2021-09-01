@@ -5,7 +5,8 @@ const Schema = new mongoose.Schema({
   pseudo: { type: String, required: true, lowercase: true, trim: true },
   password: { type: String },
   candidat: { type: Boolean },
-  themes: { type: Object },
+  themes: { type: [String], default: [] },
+  createdAt: { type: Date, default: Date.now },
 });
 
 Schema.methods.me = function () {

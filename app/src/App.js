@@ -25,6 +25,10 @@ class App extends React.Component {
 
   setUser = (user) => this.setState({ user, needLoading: false });
 
+  setTheme = (user) => {
+    this.setState({ user: user });
+  };
+
   render() {
     const { needLoading, user } = this.state;
     if (needLoading) return <div>Loading...</div>;
@@ -38,7 +42,9 @@ class App extends React.Component {
           <RestrictedRoute
             path='/theme'
             user={user}
-            Component={(props) => <ThemeSelect {...props} />}
+            Component={(props) => (
+              <ThemeSelect {...props} setTheme={this.setTheme} />
+            )}
           />
           <RestrictedRoute
             path='/question'

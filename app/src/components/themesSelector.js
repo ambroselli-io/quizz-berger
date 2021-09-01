@@ -122,9 +122,11 @@ const ModalButton = styled.button`
   width: 400px;
   height: 80px;
   background-color: transparent;
-  border: 2px dashed black;
-  border-radius: 5px;
+  border: 2px dashed #e3cc1b;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0px 7px 17px 0px rgb(0 0 0 / 7%);
+  color: #665c0c;
 `;
 
 const ThemeList = styled.div`
@@ -135,9 +137,11 @@ const ThemeList = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 5px;
+  /* border: 2px solid #e3cc1b; */
+  border-radius: 10px;
   text-align: center;
+  color: #665c0c;
+  box-shadow: 0px 7px 17px 0px rgb(0 0 0 / 7%);
 `;
 
 const DeleteButton = styled.button`
@@ -148,6 +152,7 @@ const DeleteButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: #665c0c;
 `;
 
 export default ThemesSelector;
