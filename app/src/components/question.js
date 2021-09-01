@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Question = ({ question, answers, theme, user, nextQuestion }) => {
+const Question = ({ answers, question, nextQuestion, user, theme }) => {
   const sendAnswer = async (e) => {
     const response = await fetch("http://127.0.0.1:8080/user/answer", {
       method: "POST",
@@ -11,14 +11,13 @@ const Question = ({ question, answers, theme, user, nextQuestion }) => {
       },
       body: JSON.stringify({
         user: user._id,
-        theme: theme,
+        theme: theme._id,
         question: question,
         answer: e.target.innerHTML,
       }),
     }).then((res) => {
       return res.json();
     });
-
     if (response.ok) {
       nextQuestion();
     }
@@ -27,7 +26,7 @@ const Question = ({ question, answers, theme, user, nextQuestion }) => {
   return (
     <Container>
       <LeftContainer>
-        <ThemeTitle>Theme : {theme}</ThemeTitle>
+        <ThemeTitle>{theme.fr}</ThemeTitle>
         <QuestionTitle>{question}</QuestionTitle>
       </LeftContainer>
 
@@ -67,7 +66,7 @@ const AnswerContainer = styled.div`
 
 const AnswerButton = styled.button`
   margin-top: 20px;
-  width: 100px;
+  width: 200px;
 `;
 
 export default Question;

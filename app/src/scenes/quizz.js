@@ -12,7 +12,7 @@ class Quizz extends React.Component {
 
   nextQuestion = () => {
     const themeQuestions =
-      quizz[this.props.user.themes[this.state.currentTheme]];
+      quizz[this.props.user.themes[this.state.currentTheme]].questions;
     const { currentTheme, currentQuestion } = this.state;
 
     if (currentQuestion < themeQuestions.length - 1) {
@@ -27,15 +27,16 @@ class Quizz extends React.Component {
 
   render() {
     const themeQuestions =
-      quizz[this.props.user.themes[this.state.currentTheme]];
+      quizz[this.props.user.themes[this.state.currentTheme]].questions;
     const { question, answers } = themeQuestions[this.state.currentQuestion];
+    const CurrentTheme = quizz[this.props.user.themes[this.state.currentTheme]];
 
     return (
       <BackgroundContainer>
         <SubContainer>
           <Title>Répondez aux questions</Title>
           <Question
-            theme={this.state.currentTheme}
+            theme={CurrentTheme}
             question={question}
             answers={answers}
             user={this.props.user}
