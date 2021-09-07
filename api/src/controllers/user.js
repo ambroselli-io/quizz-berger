@@ -102,14 +102,22 @@ router.post(
   "/answer",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
-    const result = await ResultObject.create({
+    const findAnswer = await ResultObject.findOne({ user: req.body.user, theme: req.body.theme, question: req.body.question });
+    const newAnswer = {
       user: req.body.user,
       theme: req.body.theme,
       question: req.body.question,
       answer: req.body.answer,
-    });
+    };
 
-    res.status(200).send({ ok: true, data: result });
+    if (!findAnswer) {
+      const result = await ResultObject.create(newAnswer);
+    } else {
+      findAnswer.set(newAnswer);
+      await findAnswer.save();
+    }
+
+    res.status(200).send({ ok: true, data: newAnswer });
   })
 );
 

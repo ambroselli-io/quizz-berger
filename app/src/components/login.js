@@ -83,8 +83,8 @@ const SignupSubContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 1px solid black;
   border-top: none;
+  border-radius: 0 10px 10px 10px;
 `;
 
 const LoginForm = styled.form`

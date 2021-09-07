@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/style.css";
 
+import Header from "../components/header";
 import ThemesSelector from "../components/themesSelector";
 
 class Theme extends React.Component {
-  state = {
-    selectedThemes: [],
-  };
+  state = {};
 
-  getSelectedThemes = async (themeIds) => {
+  sendSelectedThemes = async (themeIds) => {
     const response = await fetch("http://127.0.0.1:8080/user", {
       method: "PUT",
       credentials: "include",
@@ -28,11 +27,15 @@ class Theme extends React.Component {
   render() {
     return (
       <>
+        <Header isActive />
         <BackgroundContainer>
           <SubContainer>
             <Title>Selectionnez vos themes</Title>
             <SubTitle>Merci de choisir au moins 3 themes</SubTitle>
-            <ThemesSelector sendSelectedThemes={this.getSelectedThemes} />
+            <ThemesSelector
+              userThemes={this.props.user.themes}
+              sendSelectedThemes={this.sendSelectedThemes}
+            />
           </SubContainer>
         </BackgroundContainer>
       </>
@@ -57,20 +60,17 @@ const SubContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  margin-bottom: 20px;
+  font-family: Nunito SANS;
+  font-size: 36px;
+  font-weight: 800;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 `;
 
 const SubTitle = styled.h2`
   margin-bottom: 20px;
   text-align: center;
 `;
-
-// const SelectThemeButton = styled.button`
-//   align-self: center;
-//   background-color: transparent;
-//   border: 1px solid black;
-//   cursor: pointer;
-// `;
 
 export default Theme;

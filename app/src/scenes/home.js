@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/style.css";
 
+import Header from "../components/header";
 import Signup from "../components/signup";
 import Login from "../components/login";
 
@@ -27,22 +28,23 @@ class Home extends React.Component {
   render() {
     return (
       <>
+        <Header isActive={true} />
         <BackGroundContainer>
           <Title>Connectez-vous</Title>
           <SignupContainer>
             <SignButtonContainer>
-              <SignButton
+              <LoginButton
                 isDisplayed={this.state.showLogin}
                 onClick={this.displayLogin}
               >
-                Connection
-              </SignButton>
-              <SignButton
+                Se connecter
+              </LoginButton>
+              <SignupButton
                 isDisplayed={this.state.showSignup}
                 onClick={this.displaySignup}
               >
                 S'inscrire
-              </SignButton>
+              </SignupButton>
             </SignButtonContainer>
             {this.state.showLogin && <Login onLogin={this.onLogin} />}
             {this.state.showSignup && <Signup onLogin={this.onLogin} />}
@@ -62,7 +64,7 @@ const BackGroundContainer = styled.div`
 
 const Title = styled.h2`
   font-family: Nunito SANS;
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
@@ -76,21 +78,31 @@ const SignupContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: -15px 15px 0px #000000;
+  border-radius: 10px;
 `;
 
 const SignButtonContainer = styled.div`
   display: flex;
 `;
 
-const SignButton = styled.button`
+const LoginButton = styled.button`
   width: 200px;
   height: 30px;
   background-color: ${(props) => (props.isDisplayed ? "white" : "transparent")};
   font-size: 16px;
-  border: 1px solid black;
-  border-bottom: ${(props) => (props.isDisplayed ? "none" : "")};
+  border: none;
   cursor: pointer;
+  border-radius: 10px 10px 0 0;
+`;
+
+const SignupButton = styled.button`
+  width: 200px;
+  height: 30px;
+  background-color: ${(props) => (props.isDisplayed ? "white" : "transparent")};
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
 `;
 
 export default Home;

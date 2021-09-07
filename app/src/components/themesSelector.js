@@ -16,9 +16,9 @@ const themes = [
   { _id: "theme10", fr: "Territoires et colléctivités" },
 ];
 
-const ThemesSelector = ({ sendSelectedThemes }) => {
+const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
   const [show, setShow] = useState(false);
-  const [selectedThemesIds, setSelectedThemesIds] = useState([]);
+  const [selectedThemesIds, setSelectedThemesIds] = useState(userThemes);
 
   const showModal = () => {
     if (show === true) {
@@ -30,10 +30,10 @@ const ThemesSelector = ({ sendSelectedThemes }) => {
 
   const onSelectTheme = (e) => {
     setSelectedThemesIds([...selectedThemesIds, e.target.dataset.theme]);
-    console.log(selectedThemesIds);
+    // console.log(selectedThemesIds);
   };
 
-  let filteredTheme = themes.filter((theme) => {
+  const filteredTheme = themes.filter((theme) => {
     return (
       theme._id !==
       selectedThemesIds.find((id) => {
@@ -99,34 +99,38 @@ const ResetButton = styled.button`
   margin-bottom: 20px;
   width: 190px;
   height: 40px;
-  background-color: red;
-  color: white;
-  border: none;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 700;
 `;
 
 const ValidateButton = styled.button`
   margin-bottom: 20px;
   width: 190px;
   height: 40px;
-  background-color: green;
-  color: white;
-  border: none;
+  background-color: transparent;
+  color: green;
+  border: 2px solid green;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 700;
 `;
 
 const ModalButton = styled.button`
   margin-bottom: 20px;
   width: 400px;
   height: 80px;
-  background-color: transparent;
-  border: 2px dashed #e3cc1b;
+  border: 2px dashed white;
   border-radius: 10px;
+  background-color: white;
   cursor: pointer;
   box-shadow: 0px 7px 17px 0px rgb(0 0 0 / 7%);
-  color: #665c0c;
+  background-color: #f7df1e;
+  color: white;
+  font-size: 18px;
 `;
 
 const ThemeList = styled.div`
@@ -137,11 +141,11 @@ const ThemeList = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid #e3cc1b; */
+  background-color: white;
   border-radius: 10px;
   text-align: center;
-  color: #665c0c;
-  box-shadow: 0px 7px 17px 0px rgb(0 0 0 / 7%);
+  color: black;
+  font-size: 16px;
 `;
 
 const DeleteButton = styled.button`
@@ -152,7 +156,7 @@ const DeleteButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: #665c0c;
+  color: black;
 `;
 
 export default ThemesSelector;

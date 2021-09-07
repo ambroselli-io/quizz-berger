@@ -1,242 +1,242 @@
-{
-    "theme1" : {
+[
+    {
         "_id": "theme1",
         "fr": "Dépenses publiques et dette",
         "questions": [
             {
-                "question":"theme1 question 1",
+                "question":"Theme 1 question 1",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme1 question 2",
+                "question":"Theme 1 question 2",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme1 question 3",
+                "question":"Theme 1 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme2" : {
+    {
         "_id": "theme2",
         "fr": "Entreprises, emploi et économie",
         "questions": [
             {
-                "question":"theme2 question 1",
+                "question":"Êtes-vous pour l'augmentation du SMIC ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme2 question 2",
+                "question":"Êtes-vous pour la mise en place d'activité d'intérêt général hebdomadaires pour les détenteurs du RSA ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme2 question 3",
+                "question":"Pensez-vous qu'il faut endurcir les critères d'accès à l'assurance chômage ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme3" : {
+    {
         "_id": "theme3",
         "fr": "Environnement et Energie",
         "questions": [
             {
-                "question":"theme3 question 1",
+                "question":"Pensez-vous qu'un virage à 180 degres est nécessaire pour lutter contre le réchauffement climatique ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme3 question 2",
+                "question":"Êtes-vous pour une imposition des circuits courts et de stopper les fermes usines ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme3 question 3",
+                "question":"Etes-vous contre le nucléaire ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme4" : {
+    {
         "_id": "theme4",
         "fr": "Fonction publique et effectifs publics",
         "questions": [
             {
-                "question":"theme4 question 1",
+                "question":"Theme 4 question 1",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme4 question 2",
+                "question":"Theme 4 question 2",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme4 question 3",
+                "question":"Theme 4 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme5" : {
+    {
         "_id": "theme5",
         "fr": "Gouvernance et république",
         "questions": [
             {
-                "question":"theme5 question 1",
+                "question":"Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme5 question 2",
+                "question":"Que pensez-vous du recours au référendum par le Président de la République ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme5 question 3",
+                "question":"Que pensez-vous de la représentativité de nos députés et sénateurs ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme6" : {
+    {
         "_id": "theme6",
         "fr": "Défense et justice",
         "questions": [
             {
-                "question":"theme6 question 1",
+                "question":"Theme 6 question 1",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme6 question 2",
+                "question":"Theme 6 question 2",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme6 question 3",
+                "question":"Theme 6 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme7" : {
+    {
         "_id": "theme7",
         "fr": "Politique fiscale",
         "questions": [
             {
-                "question":"theme7 question 1",
+                "question":"Que pensez-vous de la répartition actuelle des tranches d'imposition ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme7 question 2",
+                "question":"Que pensez-vous de l'évasion fiscale des multinationales ?",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme7 question 3",
+                "question":"Theme 7 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme8" : {
+    {
         "_id": "theme8",
         "fr": "Politique publique",
         "questions": [
             {
-                "question":"theme8 question 1",
+                "question":"Theme 8 question 1",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme8 question 2",
+                "question":"Theme 8 question 2",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme8 question 3",
+                "question":"Theme 8 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme9" : {
+    {
         "_id": "theme9",
         "fr": "Social et solidarité",
         "questions": [
             {
-                "question":"theme9 question 1",
+                "question":"Theme 9 question 1",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme9 question 2",
+                "question":"Theme 9 question 2",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme9 question 3",
+                "question":"Theme 9 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     },
-    "theme10" : {
+    {
         "_id": "theme10",
         "fr": "Territoires et colléctivités",
         "questions": [
             {
-                "question":"theme10 question 1",
+                "question":"Theme 10 question 1",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme10 question 2",
+                "question":"Theme 10 question 2",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             },
             {
-                "question":"theme10 question 3",
+                "question":"Theme 10 question 3",
                 "answers": [
-                    "totalement", "moyennement", "pas du tout", "ça ne m'interesse pas"
+                    "Totalement", "Moyennement", "Pas du tout", "Ça ne m'interesse pas"
                 ]
             }
         ]
     }
-}
+]
