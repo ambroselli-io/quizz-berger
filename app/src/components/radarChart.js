@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
-import { getPartysScores } from "../utils/score";
+import quizz from "../quizz.json";
+import { Redirect } from "react-router-dom";
 
 class RadarChart extends React.Component {
   render() {
@@ -38,11 +39,12 @@ class RadarChart extends React.Component {
       },
     ];
 
-    const dataSets = this.props.data.map((partyScores, index) => {
+    const dataSets = this.props.data?.map((partyScores, index) => {
       const scores = partyScores.map((score) => score.score);
+      console.log(partyScores);
 
       return {
-        label: "nom du parti",
+        label: partyScores[0].politicalParty,
         hidden: false,
         backgroundColor: "rgba(255, 99, 132, 0.1)",
         pointBackgroundColor: colors[index].pointBackgroundColor,
@@ -52,43 +54,43 @@ class RadarChart extends React.Component {
       };
     });
 
+    const themes = this.props.data[0]?.map((theme) => {
+      return quizz.find((quizztheme) => quizztheme._id === theme.themeId).fr;
+    });
+
     const data = {
       datasets: dataSets,
-      labels: ["Theme 1", "Theme 2", "Theme 3"],
+      labels: themes,
     };
 
     const options = {
-      responsive: true,
       legend: {
-        position: "top",
+        display: false,
       },
+      borderWidth: 10,
       scale: {
-        title: {
-          //   display: false,
-          padding: 10,
-        },
         r: {
           suggestedMin: 0,
           suggestedMax: 20,
         },
-        reverse: false,
-        gridLines: {
-          color: [
-            "black",
-            "red",
-            "orange",
-            "yellow",
-            "green",
-            "blue",
-            "indigo",
-            "violet",
-          ],
-        },
         ticks: {
-          beginAtZero: true,
+          fontSize: 18,
+          max: 100,
+        },
+        gridLines: {
+          lineWidth: 2,
+          color: "lightgreen",
+        },
+        pointLabels: {
+          fontSize: 18,
+          fontStyle: "bold",
         },
       },
     };
+
+    // new Chart(document.getElementById("radar-chart"), {
+
+    // });
 
     return (
       <>
@@ -101,8 +103,8 @@ class RadarChart extends React.Component {
 }
 
 const Container = styled.div`
-  height: 500px;
-  width: 500px;
+  margin: 0 auto;
+  width: 800px;
 `;
 
 export default RadarChart;

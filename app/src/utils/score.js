@@ -15,12 +15,11 @@ export const getPartysScores = (
     const politicalPartyScores = getScore(userScoreLines, matchedPartyResults);
     const scorePerTheme = getScorePerTheme(politicalPartyScores);
 
-    // console.log(userScoreLines, "user score line");
-    // console.log(orderedPoliticalPartysResults);
-    // console.log(politicalPartyScores, "party score");
-    // console.log(scorePerTheme, party.pseudo);
+    const results = scorePerTheme.map((score) => {
+      return { ...score, politicalParty: party.pseudo };
+    });
 
-    return scorePerTheme;
+    return results;
   });
 };
 
@@ -36,7 +35,7 @@ const getUserResultScoreLines = (userResults) =>
 const getScore = (userScoreLines, matchedPartyResults) => {
   return userScoreLines.map((userAnswer) => {
     const politicalPartyMatchingAnswers = matchedPartyResults.find(
-      (partyAnswer) => partyAnswer.themeId === userAnswer.themeId
+      (partyAnswer) => partyAnswer.question === userAnswer.question
     );
     const politicalPartyMatchingAnswersIndex =
       politicalPartyMatchingAnswers.answerIndex;
