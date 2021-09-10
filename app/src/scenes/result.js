@@ -4,6 +4,7 @@ import { getPartysScores } from "../utils/score";
 
 import Header from "../components/header";
 import RadarChart from "../components/radarChart";
+import PolarChart from "../components/PolarChart";
 
 class Result extends React.Component {
   state = {
@@ -48,6 +49,13 @@ class Result extends React.Component {
               orderedPoliticalPartysResults
             )}
           />
+          <PolarChart
+            data={getPartysScores(
+              userResults,
+              politicalPartys,
+              orderedPoliticalPartysResults
+            )}
+          />
           {/* Tab: un chart par parti */}
         </BackgroundContainer>
       </>
@@ -59,7 +67,7 @@ const BackgroundContainer = styled.div`
   padding: 40px;
   min-height: 100vh;
   width: 100vw;
-  background-color: none;
+  background-color: #f7df1e;
 `;
 
 export default Result;

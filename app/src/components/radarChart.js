@@ -1,24 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
+
 import quizz from "../quizz.json";
-import { Redirect } from "react-router-dom";
 
 class RadarChart extends React.Component {
   render() {
     const colors = [
       {
-        backgroundColor: "rgba(255, 99, 132, 0.1)",
+        backgroundColor: "rgba(0, 0, 0, 0.1)",
         pointBackgroundColor: "black",
         borderColor: "black",
       },
       {
-        backgroundColor: "rgba(255, 99, 132, 0.1)",
+        backgroundColor: "rgba(255, 0, 0, 0.1)",
         pointBackgroundColor: "red",
         borderColor: "red",
       },
       {
-        backgroundColor: "rgba(255, 99, 132, 0.1)",
+        backgroundColor: "rgba(255,165,0, 0.1)",
         pointBackgroundColor: "orange",
         borderColor: "orange",
       },
@@ -41,12 +41,11 @@ class RadarChart extends React.Component {
 
     const dataSets = this.props.data?.map((partyScores, index) => {
       const scores = partyScores.map((score) => score.score);
-      console.log(partyScores);
 
       return {
         label: partyScores[0].politicalParty,
         hidden: false,
-        backgroundColor: "rgba(255, 99, 132, 0.1)",
+        backgroundColor: colors[index].backgroundColor,
         pointBackgroundColor: colors[index].pointBackgroundColor,
         borderColor: colors[index].borderColor,
         borderWidth: 1,
@@ -65,32 +64,22 @@ class RadarChart extends React.Component {
 
     const options = {
       legend: {
-        display: false,
+        display: true,
       },
       borderWidth: 10,
       scale: {
-        r: {
+        r: {},
+        ticks: {
           suggestedMin: 0,
           suggestedMax: 20,
-        },
-        ticks: {
-          fontSize: 18,
-          max: 100,
+          display: false,
         },
         gridLines: {
-          lineWidth: 2,
-          color: "lightgreen",
-        },
-        pointLabels: {
-          fontSize: 18,
-          fontStyle: "bold",
+          circular: true,
+          lineWidth: 1,
         },
       },
     };
-
-    // new Chart(document.getElementById("radar-chart"), {
-
-    // });
 
     return (
       <>
