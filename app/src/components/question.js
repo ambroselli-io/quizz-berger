@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import arrow from "../images/right-arrow.svg";
-
 const Question = ({
   answers,
   question,
+  questionIndex,
+  scores,
   user,
   theme,
   nextQuestion,
@@ -22,9 +22,12 @@ const Question = ({
       },
       body: JSON.stringify({
         user: user._id,
-        theme: theme._id,
+        theme: theme.fr,
+        themeId: theme._id,
         question: question,
+        questionIndex: questionIndex,
         answer: e.target.innerHTML,
+        answerIndex: e.target.dataset.index,
       }),
     }).then((res) => {
       return res.json();
@@ -45,7 +48,7 @@ const Question = ({
       <AnswerContainer>
         {answers.map((answer, index) => {
           return (
-            <AnswerButton onClick={sendAnswer} key={index}>
+            <AnswerButton onClick={sendAnswer} key={index} data-index={index}>
               {answer}
             </AnswerButton>
           );
@@ -109,31 +112,31 @@ const AnswerButton = styled.button`
   font-size: 16px;
 `;
 
-const PreviousNavigationButton = styled.button`
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 20px;
-  & > img {
-    color: black;
-    height: 20px;
-    width: 20px;
-    transform: rotate(180deg);
-  }
-`;
+// const PreviousNavigationButton = styled.button`
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+//   font-size: 20px;
+//   & > img {
+//     color: black;
+//     height: 20px;
+//     width: 20px;
+//     transform: rotate(180deg);
+//   }
+// `;
 
-const NextNavigationButton = styled.button`
-  height: 100%;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 20px;
-  & > img {
-    color: black;
-    height: 20px;
-    width: auto;
-  }
-`;
+// const NextNavigationButton = styled.button`
+//   height: 100%;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+//   font-size: 20px;
+//   & > img {
+//     color: black;
+//     height: 20px;
+//     width: auto;
+//   }
+// `;
 
 const NavigationContainer = styled.div`
   margin-top: 20px;

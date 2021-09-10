@@ -58,10 +58,4 @@ const ThemeSubmenu = styled.button`
   }
 `;
 
-const Filet = styled.span`
-  width: 100%;
-  height: 1px;
-  background-color: #f7df1e;
-`;
-
 export default ThemesModal;

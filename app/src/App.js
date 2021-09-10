@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Home from "./scenes/home";
 import ThemeSelect from "./scenes/theme";
 import Quizz from "./scenes/quizz";
+import Result from "./scenes/result";
 
 class App extends React.Component {
   state = {
@@ -51,6 +52,12 @@ class App extends React.Component {
             exact
             user={user}
             Component={(props) => <Quizz {...props} />}
+          />
+          <RestrictedRoute
+            path='/result'
+            exact
+            user={user}
+            Component={(props) => <Result {...props} />}
           />
           <RestrictedRoute
             path='/'

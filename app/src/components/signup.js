@@ -72,14 +72,6 @@ class Signup extends React.Component {
               placeholder='Confirmez votre mot de passe'
               onChange={this.onChangeSignup}
             />
-            <div>
-              <FormLabel>Candidat</FormLabel>
-              <input
-                type='checkbox'
-                name='candidat'
-                onChange={this.isCandidat}
-              />
-            </div>
             <SignupButton type='submit'>S'inscrire !</SignupButton>
           </SignupForm>
         </SignupSubContainer>

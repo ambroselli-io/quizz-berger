@@ -2,19 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import ThemesModal from "./themesModal";
-
-const themes = [
-  { _id: "theme1", fr: "Dépenses publiques et dette" },
-  { _id: "theme2", fr: "Entreprises, emploi et économie" },
-  { _id: "theme3", fr: "Environnement et Energie" },
-  { _id: "theme4", fr: "Fonction publique et effectifs publics" },
-  { _id: "theme5", fr: "Gouvernance et république" },
-  { _id: "theme6", fr: "Défense et justice" },
-  { _id: "theme7", fr: "Politique fiscale" },
-  { _id: "theme8", fr: "Politique publique" },
-  { _id: "theme9", fr: "Social et solidarité" },
-  { _id: "theme10", fr: "Territoires et colléctivités" },
-];
+import quizz from "../quizz.json";
 
 const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
   const [show, setShow] = useState(false);
@@ -30,10 +18,9 @@ const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
 
   const onSelectTheme = (e) => {
     setSelectedThemesIds([...selectedThemesIds, e.target.dataset.theme]);
-    // console.log(selectedThemesIds);
   };
 
-  const filteredTheme = themes.filter((theme) => {
+  const filteredTheme = quizz.filter((theme) => {
     return (
       theme._id !==
       selectedThemesIds.find((id) => {
@@ -59,7 +46,7 @@ const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
   return (
     <>
       <ButtonsContainer>
-        {filteredTheme.length < themes.length && (
+        {filteredTheme.length < quizz.length && (
           <ResetButton onClick={resetFilteredTheme}>
             Réinitialiser les thèmes
           </ResetButton>
@@ -75,12 +62,12 @@ const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
           <DeleteButton data-theme={selectedThemeId} onClick={deleteTheme}>
             &#10005;
           </DeleteButton>
-          {themes.find((theme) => theme._id === selectedThemeId).fr}
+          {quizz.find((theme) => theme._id === selectedThemeId).fr}
         </ThemeList>
       ))}
       <ModalButton onClick={showModal}>Ajouter un thème</ModalButton>
       <ThemesModal
-        themes={themes}
+        themes={quizz}
         filteredTheme={filteredTheme}
         onSelectTheme={onSelectTheme}
         show={show}

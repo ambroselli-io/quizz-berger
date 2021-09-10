@@ -24,11 +24,17 @@ class Quizz extends React.Component {
     if (currentQuestionId < currentThemeQuestions.length - 1) {
       console.log("next");
       this.setState({ currentQuestionId: currentQuestionId + 1 });
-    } else if (currentThemeId < this.props.user.themes.length - 1) {
+    } else if (currentThemeId < user.themes.length - 1) {
       this.setState({
         currentThemeId: currentThemeId + 1,
         currentQuestionId: 0,
       });
+    } else if (
+      currentQuestionId === currentThemeQuestions.length - 1 &&
+      currentThemeId === user.themes.length - 1
+    ) {
+      this.props.history.push("/result");
+      console.log("finish");
     }
   };
 
@@ -52,8 +58,7 @@ class Quizz extends React.Component {
   };
 
   previousTheme = () => {
-    const { currentThemeId, currentQuestionId } = this.state;
-    const { user } = this.props;
+    const { currentThemeId } = this.state;
 
     if (currentThemeId > 0) {
       console.log("previous");
@@ -65,7 +70,7 @@ class Quizz extends React.Component {
   };
 
   nextTheme = () => {
-    const { currentThemeId, currentQuestionId } = this.state;
+    const { currentThemeId } = this.state;
     const { user } = this.props;
 
     if (currentThemeId < user.themes.length - 1) {
@@ -87,7 +92,7 @@ class Quizz extends React.Component {
 
     const currentThemeQuestions = currentTheme.questions;
 
-    const { question, answers } = currentThemeQuestions[currentQuestionId];
+    const { fr, answers, scores } = currentThemeQuestions[currentQuestionId];
 
     return (
       <>
@@ -96,8 +101,10 @@ class Quizz extends React.Component {
           <SubContainer>
             <Question
               theme={currentTheme}
-              question={question}
+              question={fr}
+              questionIndex={currentQuestionId}
               answers={answers}
+              scores={scores}
               user={user}
               nextQuestion={this.nextQuestion}
               previousQuestion={this.previousQuestion}
@@ -125,15 +132,6 @@ const SubContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-const Title = styled.h1`
-  font-family: Nunito SANS;
-  font-size: 36px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 `;
 
 export default Quizz;

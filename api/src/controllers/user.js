@@ -106,8 +106,11 @@ router.post(
     const newAnswer = {
       user: req.body.user,
       theme: req.body.theme,
+      themeId: req.body.themeId,
       question: req.body.question,
+      questionIndex: req.body.questionIndex,
       answer: req.body.answer,
+      answerIndex: req.body.answerIndex,
     };
 
     if (!findAnswer) {
@@ -118,6 +121,24 @@ router.post(
     }
 
     res.status(200).send({ ok: true, data: newAnswer });
+  })
+);
+
+router.get(
+  "/result",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    const userResults = await ResultObject.find({ user: req.user._id });
+    const politicalPartys = await UserObject.find({ candidat: true });
+    const politicalPartyResults = await ResultObject.find({ user: politicalPartys });
+
+    const orderedPoliticalPartyResults = politicalPartys.map((party) => {
+      return politicalPartyResults.filter((result) => {
+        return party._id.equals(result.user);
+      });
+    });
+
+    res.status(200).send({ ok: true, data: { userResults, politicalPartys, orderedPoliticalPartyResults } });
   })
 );
 
