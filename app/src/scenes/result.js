@@ -59,25 +59,39 @@ class Result extends React.Component {
             </PolarButton>
           </SwitchButtons>
           {/* Tab: un chart avec tous les partis */}
-          {this.state.showRadarChart && (
-            <RadarChart
-              data={getPartysScores(
-                userResults,
-                politicalPartys,
-                orderedPoliticalPartysResults
-              )}
-            />
-          )}
-          {!this.state.showRadarChart && (
-            <PolarChart
-              data={getPartysScores(
-                userResults,
-                politicalPartys,
-                orderedPoliticalPartysResults
-              )}
-            />
-          )}
-
+          <SelectCandidatContainer>
+            <LeftContainer>
+              <Title>Vos résultats</Title>
+              <SubTitle>Selectionnez vos candidats</SubTitle>
+              <p>
+                Selectionnez les candidats que vous souhaitez comparer à vos
+                idées
+              </p>
+              <CandidatButtonContainer>
+                <CandidatButton>Rassemblement National</CandidatButton>
+                <CandidatButton>La France Insoumise</CandidatButton>
+                <CandidatButton>La République en Marche !</CandidatButton>
+              </CandidatButtonContainer>
+            </LeftContainer>
+            {this.state.showRadarChart && (
+              <RadarChart
+                data={getPartysScores(
+                  userResults,
+                  politicalPartys,
+                  orderedPoliticalPartysResults
+                )}
+              />
+            )}
+            {!this.state.showRadarChart && (
+              <PolarChart
+                data={getPartysScores(
+                  userResults,
+                  politicalPartys,
+                  orderedPoliticalPartysResults
+                )}
+              />
+            )}
+          </SelectCandidatContainer>
           {/* Tab: un chart par parti */}
         </BackgroundContainer>
       </>
@@ -120,4 +134,30 @@ const PolarButton = styled.button`
   cursor: pointer;
 `;
 
+const SelectCandidatContainer = styled.div`
+  display: flex;
+`;
+
+const LeftContainer = styled.div``;
+
+const Title = styled.h2`
+  margin-bottom: 40px;
+`;
+
+const SubTitle = styled.h3`
+  margin-bottom: 10px;
+`;
+
+const CandidatButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const CandidatButton = styled.button`
+  padding: 5px 8px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 700;
+`;
 export default Result;

@@ -19,10 +19,6 @@ class PolarChart extends React.Component {
           suggestedMax: 20,
           display: false,
         },
-        gridLines: {
-          circular: true,
-          lineWidth: 1,
-        },
       },
     };
     const PolarCharts = this.props.data?.map((partyScores, index) => {
@@ -63,11 +59,13 @@ class PolarChart extends React.Component {
 }
 
 const Container = styled.div`
-  display: flex;
-  width: 500px;
+  margin: 0 auto;
+  width: auto;
 `;
 
 const ChartContainer = styled.div`
+  margin-bottom: 20px;
+  width: 800px;
   border: 1px solid white;
 `;
 
