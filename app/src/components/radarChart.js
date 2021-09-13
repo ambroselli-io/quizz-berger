@@ -65,6 +65,7 @@ class RadarChart extends React.Component {
     const options = {
       legend: {
         display: true,
+        position: "left",
       },
       borderWidth: 10,
       scale: {
