@@ -5,7 +5,17 @@ const Schema = new mongoose.Schema({
   pseudo: { type: String, required: true, lowercase: true, trim: true },
   password: { type: String },
   candidat: { type: Boolean },
-  theme: { type: String },
+  themes: { type: [String], default: [] },
+  createdAt: { type: Date, default: Date.now },
 });
+
+Schema.methods.me = function () {
+  const toReturn = {
+    pseudo: this.pseudo,
+    candidat: this.candidat,
+    themes: this.theme,
+  };
+  return toReturn;
+};
 
 module.exports = mongoose.model(MODELNAME, Schema);
