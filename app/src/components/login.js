@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import API from "../services/api";
 import "../styles/style.css";
 
 class Login extends React.Component {
@@ -8,7 +9,7 @@ class Login extends React.Component {
     password: "",
   };
 
-  onChangeLogin = (e) => {
+  onChangeInput = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
@@ -17,56 +18,38 @@ class Login extends React.Component {
   loginRequest = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8080/user/login", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        pseudo: this.state.pseudo,
-        password: this.state.password,
-      }),
-    }).then((res) => {
-      return res.json();
-    });
-    if (response.ok) {
-      this.props.onLogin(response.data);
-    }
-  };
+    const { pseudo, password } = this.state;
+    const { onLogin } = this.props;
 
-  // logoutRequest = async () => {
-  //   const response = await fetch("http://127.0.0.1:8080/user/logout", {
-  //     method: "GET",
-  //     credentials: "include",
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     });
-  // };
+    const response = await API.post({
+      path: "/user/login",
+      body: { pseudo, password },
+    });
+    if (!response.ok) return alert(response.error);
+    onLogin(response.data);
+  };
 
   render() {
     return (
       <>
         <SignupSubContainer>
           <span>Connexion</span>
-          <LoginForm id='sign-in-form' action='' onSubmit={this.loginRequest}>
+          <LoginForm id="sign-in-form" action="" onSubmit={this.loginRequest}>
             <FormLabel>Pseudo</FormLabel>
             <FormInput
-              type='text'
-              name='pseudo'
-              placeholder='Votre pseudo'
-              onChange={this.onChangeLogin}
+              type="text"
+              name="pseudo"
+              placeholder="Votre pseudo"
+              onChange={this.onChangeInput}
             />
             <FormLabel>Mot de passe</FormLabel>
             <FormInput
-              type='text'
-              name='password'
-              placeholder='Votre mot de passe'
-              onChange={this.onChangeLogin}
+              type="text"
+              name="password"
+              placeholder="Votre mot de passe"
+              onChange={this.onChangeInput}
             />
-            <LoginButton className='' type='submit'>
+            <LoginButton className="" type="submit">
               Se connecter
             </LoginButton>
           </LoginForm>

@@ -2,30 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/style.css";
 
-import Header from "../components/header";
-import Signup from "../components/signup";
-import Login from "../components/login";
+import Header from "../components/Header";
+import Signup from "../components/Signup";
+import Login from "../components/Login";
 
 class Home extends React.Component {
-  state = {
-    showSignup: false,
-    showLogin: true,
-  };
+  state = { showSignup: false };
 
   onLogin = (user) => {
-    this.props.setUser(user);
-    this.props.history.push("/theme");
+    const { setUser, history } = this.props;
+    setUser(user);
+    history.push("/theme");
   };
 
-  displaySignup = (e) => {
-    this.setState({ showSignup: true, showLogin: false });
-  };
+  displaySignup = () => this.setState({ showSignup: true });
 
-  displayLogin = (e) => {
-    this.setState({ showSignup: false, showLogin: true });
-  };
+  displayLogin = () => this.setState({ showSignup: false });
 
   render() {
+    const { showSignup } = this.state;
     return (
       <>
         <Header isActive={true} />
@@ -33,21 +28,15 @@ class Home extends React.Component {
           <Title>Connectez-vous</Title>
           <SignupContainer>
             <SignButtonContainer>
-              <LoginButton
-                isDisplayed={this.state.showLogin}
-                onClick={this.displayLogin}
-              >
-                Se connecter
-              </LoginButton>
-              <SignupButton
-                isDisplayed={this.state.showSignup}
-                onClick={this.displaySignup}
-              >
+              <SignupButton isDisplayed={showSignup} onClick={this.displaySignup}>
                 S'inscrire
               </SignupButton>
+              <LoginButton isDisplayed={!showSignup} onClick={this.displayLogin}>
+                Se connecter
+              </LoginButton>
             </SignButtonContainer>
-            {this.state.showLogin && <Login onLogin={this.onLogin} />}
-            {this.state.showSignup && <Signup onLogin={this.onLogin} />}
+            {showSignup && <Signup onLogin={this.onLogin} />}
+            {!showSignup && <Login onLogin={this.onLogin} />}
           </SignupContainer>
         </BackGroundContainer>
       </>

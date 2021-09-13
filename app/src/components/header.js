@@ -4,41 +4,41 @@ import { NavLink } from "react-router-dom";
 
 import logo from "../images/logo-esclable.png";
 
-class Class extends React.Component {
+class Header extends React.Component {
   render() {
     return (
-      <Header>
+      <HeaderStyled>
         <HeaderContainer>
           <Logo src={logo} />
           <HeaderMenu>
-            <HeaderMenuTab href='http://127.0.0.1:3000/home'>
-              <NavLink to='login' activeClassName='active'>
+            <HeaderMenuTab href="http://127.0.0.1:3000/home">
+              <NavLink to="login" activeClassName="active">
                 Accueil
               </NavLink>
             </HeaderMenuTab>
             <HeaderMenuTab>
-              <NavLink to='theme' activeClassName='active'>
+              <NavLink to="theme" activeClassName="active">
                 Theme
               </NavLink>
             </HeaderMenuTab>
             <HeaderMenuTab>
-              <NavLink to='./question' activeClassName='active'>
+              <NavLink to="./question" activeClassName="active">
                 Quizz
               </NavLink>
             </HeaderMenuTab>
             <HeaderMenuTab>
-              <NavLink to='./result' activeClassName='active'>
+              <NavLink to="./result" activeClassName="active">
                 Resultat
               </NavLink>
             </HeaderMenuTab>
           </HeaderMenu>
         </HeaderContainer>
-      </Header>
+      </HeaderStyled>
     );
   }
 }
 
-const Header = styled.header`
+const HeaderStyled = styled.header`
   z-index: 99;
   padding: 0 40px;
   height: 80px;
@@ -85,4 +85,4 @@ const HeaderMenuTab = styled.li`
   }
 `;
 
-export default Class;
+export default Header;

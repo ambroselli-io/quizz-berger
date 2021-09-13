@@ -1,60 +1,41 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import ThemesModal from "./themesModal";
+import ThemesModal from "./ThemesModal";
 import quizz from "../quizz.json";
 
-const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
+const ThemesSelector = ({ saveSelectedThemes, user }) => {
   const [show, setShow] = useState(false);
-  const [selectedThemesIds, setSelectedThemesIds] = useState(userThemes);
+  const [selectedThemesIds, setSelectedThemesIds] = useState(user.themes || []);
 
-  const showModal = () => {
-    if (show === true) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-  };
+  const showModal = () => setShow(!show);
 
   const onSelectTheme = (e) => {
     setSelectedThemesIds([...selectedThemesIds, e.target.dataset.theme]);
   };
 
-  const filteredTheme = quizz.filter((theme) => {
-    return (
-      theme._id !==
-      selectedThemesIds.find((id) => {
-        return theme._id === id;
-      })
-    );
-  });
+  const unselectedThemes = quizz.filter((theme) => !selectedThemesIds.includes(theme._id));
 
-  const resetFilteredTheme = () => {
+  const resetSelectedThemes = () => {
     setSelectedThemesIds([]);
   };
 
   const deleteTheme = (e) => {
     const themeIdToDelete = e.target.dataset.theme;
-    const filteredTheme = selectedThemesIds.filter(
-      (id) => id !== themeIdToDelete
-    );
+    const filteredTheme = selectedThemesIds.filter((id) => id !== themeIdToDelete);
     setSelectedThemesIds(filteredTheme);
   };
 
-  const sendThemesToParent = () => sendSelectedThemes(selectedThemesIds);
+  const onValidate = () => saveSelectedThemes(selectedThemesIds);
 
   return (
     <>
       <ButtonsContainer>
-        {filteredTheme.length < quizz.length && (
-          <ResetButton onClick={resetFilteredTheme}>
-            Réinitialiser les thèmes
-          </ResetButton>
+        {unselectedThemes.length < quizz.length && (
+          <ResetButton onClick={resetSelectedThemes}>Réinitialiser les thèmes</ResetButton>
         )}
-        {3 <= selectedThemesIds.length && (
-          <ValidateButton onClick={sendThemesToParent}>
-            Valider mes thèmes
-          </ValidateButton>
+        {selectedThemesIds.length >= 3 && (
+          <ValidateButton onClick={onValidate}>Valider mes thèmes</ValidateButton>
         )}
       </ButtonsContainer>
       {selectedThemesIds.map((selectedThemeId) => (
@@ -66,12 +47,7 @@ const ThemesSelector = ({ sendSelectedThemes, userThemes }) => {
         </ThemeList>
       ))}
       <ModalButton onClick={showModal}>Ajouter un thème</ModalButton>
-      <ThemesModal
-        themes={quizz}
-        filteredTheme={filteredTheme}
-        onSelectTheme={onSelectTheme}
-        show={show}
-      />
+      <ThemesModal unselectedThemes={unselectedThemes} onSelectTheme={onSelectTheme} show={show} />
     </>
   );
 };

@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import API from "../services/api";
 
 const Question = ({
   answers,
   question,
-  questionIndex,
-  scores,
-  user,
+  questionId,
   theme,
   nextQuestion,
   previousQuestion,
@@ -14,27 +13,15 @@ const Question = ({
   previousTheme,
 }) => {
   const sendAnswer = async (e) => {
-    const response = await fetch("http://127.0.0.1:8080/user/answer", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        user: user._id,
-        theme: theme.fr,
+    const response = await API.postWithCreds({
+      path: "/answer",
+      body: {
         themeId: theme._id,
-        question: question,
-        questionIndex: questionIndex,
-        answer: e.target.innerHTML,
+        questionId: questionId,
         answerIndex: e.target.dataset.index,
-      }),
-    }).then((res) => {
-      return res.json();
+      },
     });
-    if (response.ok) {
-      nextQuestion();
-    }
+    if (response.ok) nextQuestion();
   };
 
   return (
@@ -55,17 +42,11 @@ const Question = ({
         })}
       </AnswerContainer>
       <NavigationContainer>
-        <NavigationButton onClick={previousQuestion}>
-          Question précédente
-        </NavigationButton>
-        <NavigationButton onClick={nextQuestion}>
-          Question suivante
-        </NavigationButton>
+        <NavigationButton onClick={previousQuestion}>Question précédente</NavigationButton>
+        <NavigationButton onClick={nextQuestion}>Question suivante</NavigationButton>
       </NavigationContainer>
       <NavigationContainer>
-        <NavigationButton onClick={previousTheme}>
-          Theme précédente
-        </NavigationButton>
+        <NavigationButton onClick={previousTheme}>Theme précédente</NavigationButton>
         <NavigationButton onClick={nextTheme}>Theme suivante</NavigationButton>
       </NavigationContainer>
     </Container>

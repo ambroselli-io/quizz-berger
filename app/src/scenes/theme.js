@@ -1,30 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/style.css";
 
-import Header from "../components/header";
-import ThemesSelector from "../components/themesSelector";
+import Header from "../components/Header";
+import ThemesSelector from "../components/ThemesSelector";
+import API from "../services/api";
 
 class Theme extends React.Component {
-  state = {};
-
-  sendSelectedThemes = async (themeIds) => {
-    const response = await fetch("http://127.0.0.1:8080/user", {
-      method: "PUT",
-      credentials: "include",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        themes: themeIds,
-      }),
-    }).then((res) => res.json());
-
+  saveSelectedThemes = async (themeIds) => {
+    const response = await API.putWithCreds({ path: "/user", body: { themes: themeIds } });
     if (response.ok) {
-      this.props.setTheme(response.data);
-      this.props.history.push("/question");
+      const { setUser, history } = this.props;
+      setUser(response.data);
+      history.push("/question");
     }
   };
 
   render() {
+    const { user } = this.props;
     return (
       <>
         <Header isActive />
@@ -32,10 +24,7 @@ class Theme extends React.Component {
           <SubContainer>
             <Title>Selectionnez vos themes</Title>
             <SubTitle>Merci de choisir au moins 3 themes</SubTitle>
-            <ThemesSelector
-              userThemes={this.props.user.themes}
-              sendSelectedThemes={this.sendSelectedThemes}
-            />
+            <ThemesSelector user={user.themes} saveSelectedThemes={this.saveSelectedThemes} />
           </SubContainer>
         </BackgroundContainer>
       </>
