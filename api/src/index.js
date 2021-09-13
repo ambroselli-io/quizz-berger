@@ -32,6 +32,7 @@ app.use(cookieParser());
 
 // Routes
 app.use("/user", require("./controllers/user"));
+app.use("/answer", require("./controllers/answer"));
 
 const now = new Date().toISOString();
 

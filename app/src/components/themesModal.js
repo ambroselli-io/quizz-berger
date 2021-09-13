@@ -1,29 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-class ThemesModal extends React.Component {
-  render() {
-    if (!this.props.show) return null;
-    return (
-      <>
-        <Triangle />
-        <Modal>
-          {this.props.filteredTheme.map((theme) => {
-            return (
-              <ThemeSubmenu
-                key={theme._id}
-                data-theme={theme._id}
-                onClick={this.props.onSelectTheme}
-              >
-                {theme.fr}
-              </ThemeSubmenu>
-            );
-          })}
-        </Modal>
-      </>
-    );
-  }
-}
+const ThemesModal = ({ show, unselectedThemes, onSelectTheme }) => {
+  if (!show) return null;
+  return (
+    <>
+      <Triangle />
+      <Modal>
+        {unselectedThemes.map((theme) => {
+          return (
+            <ThemeSubmenu key={theme._id} data-theme={theme._id} onClick={onSelectTheme}>
+              {theme.fr}
+            </ThemeSubmenu>
+          );
+        })}
+      </Modal>
+    </>
+  );
+};
 
 const Triangle = styled.span`
   z-index: 99;

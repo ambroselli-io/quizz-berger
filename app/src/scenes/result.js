@@ -1,96 +1,72 @@
 import React from "react";
 import styled from "styled-components";
-import { getPartysScores } from "../utils/score";
+import { getCandidatesScorePerThemes } from "../utils/score";
 
-import Header from "../components/header";
-import RadarChart from "../components/radarChart";
-import PolarChart from "../components/PolarChart";
+import Header from "../components/Header";
+// import RadarChart from "../components/RadarChart";
+// import PolarChart from "../components/PolarChart";
+import API from "../services/api";
 
 class Result extends React.Component {
   state = {
-    userResults: [],
-    politicalPartys: [],
-    orderedPoliticalPartysResults: [],
+    userAnswers: [],
+    candidatesAnswers: [],
     showRadarChart: true,
   };
 
   componentDidMount() {
-    this.getResult();
+    this.getAnswers();
   }
 
-  getResult = async () => {
-    const response = await fetch("http://127.0.0.1:8080/user/result", {
-      method: "GET",
-      credentials: "include",
-    }).then((res) => res.json());
+  getAnswers = async () => {
+    const response = await API.getWithCreds({ path: "/answer" });
+    const candidatesResponse = await API.getWithCreds({ path: "/answer/candidates" });
 
     if (response.ok) {
       this.setState({
-        userResults: response.data.userResults,
-        politicalPartys: response.data.politicalPartys,
-        orderedPoliticalPartysResults:
-          response.data.orderedPoliticalPartyResults,
+        userAnswers: response.data,
+        candidatesAnswers: candidatesResponse.data,
       });
     }
   };
 
-  switchResult = () => {
-    if (this.state.showRadarChart === true) {
-      this.setState({ showRadarChart: false });
-    } else {
-      this.setState({ showRadarChart: true });
-    }
+  switchCharts = () => {
+    this.setState(({ showRadarChart }) => ({ showRadarChart: !showRadarChart }));
   };
 
   render() {
-    const { userResults, politicalPartys, orderedPoliticalPartysResults } =
-      this.state;
+    const { userAnswers, candidatesAnswers, showRadarChart } = this.state;
 
     return (
       <>
         <Header />
         <BackgroundContainer>
-          <SwitchButtons onClick={this.switchResult}>
-            <RadarButton showRadarChart={this.state.showRadarChart}>
-              Radar
-            </RadarButton>
-            <PolarButton showRadarChart={this.state.showRadarChart}>
-              Polar
-            </PolarButton>
+          <SwitchButtons onClick={this.switchCharts}>
+            <RadarButton showRadarChart={showRadarChart}>Radar</RadarButton>
+            <PolarButton showRadarChart={showRadarChart}>Polar</PolarButton>
           </SwitchButtons>
           {/* Tab: un chart avec tous les partis */}
           <SelectCandidatContainer>
             <LeftContainer>
               <Title>Vos résultats</Title>
               <SubTitle>Selectionnez vos candidats</SubTitle>
-              <p>
-                Selectionnez les candidats que vous souhaitez comparer à vos
-                idées
-              </p>
+              <p>Selectionnez les candidats que vous souhaitez comparer à vos idées</p>
               <CandidatButtonContainer>
                 <CandidatButton>Rassemblement National</CandidatButton>
                 <CandidatButton>La France Insoumise</CandidatButton>
                 <CandidatButton>La République en Marche !</CandidatButton>
               </CandidatButtonContainer>
             </LeftContainer>
-            {this.state.showRadarChart && (
+            {/* showRadarChart && (
               <RadarChart
-                data={getPartysScores(
-                  userResults,
-                  politicalPartys,
-                  orderedPoliticalPartysResults
-                )}
+                data={getCandidatesScorePerThemes(userAnswers, candidatesAnswers)}
               />
             )}
-            {!this.state.showRadarChart && (
+            {!showRadarChart && (
               <PolarChart
-                data={getPartysScores(
-                  userResults,
-                  politicalPartys,
-                  orderedPoliticalPartysResults
-                )}
+                data={getCandidatesScorePerThemes(userAnswers, candidatesAnswers)}
               />
-            )}
+            ) */}
           </SelectCandidatContainer>
           {/* Tab: un chart par parti */}
         </BackgroundContainer>

@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import quizz from "../quizz.json";
 
-import Header from "../components/header";
-import Question from "../components/question";
+import Header from "../components/Header";
+import Question from "../components/Question";
 
 class Quizz extends React.Component {
   state = {
@@ -19,11 +19,13 @@ class Quizz extends React.Component {
       return theme._id === user.themes[currentThemeId];
     });
 
+    const questionsIds = currentTheme.questions.map((q) => q.questionId);
+    const currentQuestionIndex = questionsIds.findIndex((q) => q.questionId === currentQuestionId);
+
     const currentThemeQuestions = currentTheme.questions;
 
-    if (currentQuestionId < currentThemeQuestions.length - 1) {
-      console.log("next");
-      this.setState({ currentQuestionId: currentQuestionId + 1 });
+    if (currentQuestionIndex < currentThemeQuestions.length - 1) {
+      this.setState({ currentQuestionId: questionsIds[currentQuestionId + 1] });
     } else if (currentThemeId < user.themes.length - 1) {
       this.setState({
         currentThemeId: currentThemeId + 1,
@@ -47,7 +49,6 @@ class Quizz extends React.Component {
     }).questions;
 
     if (currentQuestionId > 0) {
-      console.log("previous");
       this.setState({ currentQuestionId: currentQuestionId - 1 });
     } else if (currentThemeId > 0) {
       this.setState({
@@ -92,19 +93,18 @@ class Quizz extends React.Component {
 
     const currentThemeQuestions = currentTheme.questions;
 
-    const { fr, answers, scores } = currentThemeQuestions[currentQuestionId];
+    const { fr, answers } = currentThemeQuestions[currentQuestionId];
 
     return (
       <>
-        <Header isActive={true} />
+        <Header />
         <BackgroundContainer>
           <SubContainer>
             <Question
               theme={currentTheme}
               question={fr}
-              questionIndex={currentQuestionId}
+              questionId={currentQuestionId}
               answers={answers}
-              scores={scores}
               user={user}
               nextQuestion={this.nextQuestion}
               previousQuestion={this.previousQuestion}

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import API from "../services/api";
 import "../styles/style.css";
 
 class Signup extends React.Component {
@@ -7,38 +8,27 @@ class Signup extends React.Component {
     pseudo: "",
     password: "",
     passwordConfirm: "",
-    candidat: false,
+    candidate: false,
   };
 
-  onChangeSignup = (e) => {
+  onChangeInput = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
 
-  isCandidat = (e) => {
-    this.setState({ candidat: e.target.checked });
-  };
-
   signupRequest = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8080/user/signup", {
-      method: "POST",
-      credentials: "include",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        pseudo: this.state.pseudo,
-        password: this.state.password,
-        passwordConfirm: this.state.passwordConfirm,
-        candidat: this.state.candidat,
-        theme: "",
-      }),
-    }).then((res) => res.json());
+    const { pseudo, password, passwordConfirm, candidate } = this.state;
+    const { onLogin } = this.props;
 
-    if (response.ok) {
-      this.props.onLogin(response.data);
-    }
+    const response = await API.post({
+      path: "/user/signup",
+      body: { pseudo, password, passwordConfirm, candidate },
+    });
+    if (!response.ok) return alert(response.error);
+    onLogin(response.data);
   };
 
   render() {
@@ -46,33 +36,29 @@ class Signup extends React.Component {
       <>
         <SignupSubContainer>
           <span>Inscription</span>
-          <SignupForm
-            onSubmit={this.signupRequest}
-            pseudo={this.state}
-            id='sign-up-form'
-          >
+          <SignupForm onSubmit={this.signupRequest} pseudo={this.state} id="sign-up-form">
             <FormLabel>Pseudo</FormLabel>
             <FormInput
-              type='text'
-              name='pseudo'
-              placeholder='Votre pseudo'
-              onChange={this.onChangeSignup}
+              type="text"
+              name="pseudo"
+              placeholder="Votre pseudo"
+              onChange={this.onChangeInput}
             />
             <FormLabel>Mot de passe</FormLabel>
             <FormInput
-              type='text'
-              name='password'
-              placeholder='Votre mot de passe'
-              onChange={this.onChangeSignup}
+              type="text"
+              name="password"
+              placeholder="Votre mot de passe"
+              onChange={this.onChangeInput}
             />
             <FormLabel>Confirmation du mot de passe</FormLabel>
             <FormInput
-              type='text'
-              name='passwordConfirm'
-              placeholder='Confirmez votre mot de passe'
-              onChange={this.onChangeSignup}
+              type="text"
+              name="passwordConfirm"
+              placeholder="Confirmez votre mot de passe"
+              onChange={this.onChangeInput}
             />
-            <SignupButton type='submit'>S'inscrire !</SignupButton>
+            <SignupButton type="submit">S'inscrire !</SignupButton>
           </SignupForm>
         </SignupSubContainer>
       </>

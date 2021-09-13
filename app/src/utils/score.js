@@ -1,57 +1,50 @@
 import quizz from "../quizz.json";
-import { styled, createGlobalStyle } from "styled-components";
 
-export const getPartysScores = (
-  userResults,
-  politicalPartys,
-  orderedPoliticalPartysResults
-) => {
-  return politicalPartys.map((party) => {
-    const matchedPartyResults = orderedPoliticalPartysResults.find((result) => {
-      return result[0].user === party._id;
+export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers) => {
+  const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers);
+  return candidatesAnswers.map((candidate) => {
+    const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
+    const scorePerThemes = getScorePerTheme(candidateScores);
+
+    const results = scorePerThemes.map((theme) => {
+      return {
+        themeId: theme.themeId,
+        score: theme.score,
+        pseudo: candidate.pseudo,
+        firstName: candidate.firstName,
+        lastName: candidate.lastName,
+        partyName: candidate.partyName,
+        isCandidate: candidate.isCandidate,
+      };
     });
-
-    const userScoreLines = getUserResultScoreLines(userResults);
-    const politicalPartyScores = getScore(userScoreLines, matchedPartyResults);
-    const scorePerTheme = getScorePerTheme(politicalPartyScores);
-
-    const results = scorePerTheme.map((score) => {
-      return { ...score, politicalParty: party.pseudo };
-    });
-
     return results;
   });
 };
 
-const getUserResultScoreLines = (userResults) =>
-  userResults.map((answer) => {
+const addScoreLinesToAnswers = (userAnswers) =>
+  userAnswers.map((answer) => {
     const theme = quizz.find((theme) => theme._id === answer.themeId);
     const { questions } = theme;
-    const question = questions[answer.questionIndex];
+    const question = questions.find((q) => q.questionId === answer.questionId);
     const scoreLine = question.scores[answer.answerIndex];
     return { ...answer, scoreLine };
   });
 
-const getScore = (userScoreLines, matchedPartyResults) => {
-  return userScoreLines.map((userAnswer) => {
-    const politicalPartyMatchingAnswers = matchedPartyResults.find(
-      (partyAnswer) => partyAnswer.question === userAnswer.question
+const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
+  userAnswersWithScoreLines.map((userAnswer) => {
+    const candidateMatchingAnswer = candidateAnswers.find(
+      (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
     );
-    const politicalPartyMatchingAnswersIndex =
-      politicalPartyMatchingAnswers.answerIndex;
+    const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer.answerIndex;
     return {
-      themeId: userAnswer.themeId,
-      questionIndex: userAnswer.questionIndex,
+      ...userAnswer,
       score: userAnswer.scoreLine[politicalPartyMatchingAnswersIndex],
     };
   });
-};
 
-const getScorePerTheme = (politicalPartyScores) => {
-  return politicalPartyScores.reduce((accumulator, currentValue, index) => {
-    const existingThemeScore = accumulator.find(
-      (child) => child.themeId === currentValue.themeId
-    );
+const getScorePerTheme = (candidateScores) => {
+  return candidateScores.reduce((accumulator, currentValue, index) => {
+    const existingThemeScore = accumulator.find((child) => child.themeId === currentValue.themeId);
 
     if (existingThemeScore) {
       return accumulator.map((themeScore) => {
