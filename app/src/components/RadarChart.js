@@ -84,7 +84,9 @@ class RadarChart extends React.Component {
 
     return (
       <>
-        <Container>{/* <Radar data={data} options={options} /> */}</Container>
+        <Container>
+          <Radar data={data} options={options} />
+        </Container>
       </>
     );
   }
