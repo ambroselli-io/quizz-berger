@@ -2,10 +2,13 @@ import quizz from "../quizz.json";
 
 export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers) => {
   const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers);
-  return candidatesAnswers.map((candidate) => {
-    const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
-    const scorePerThemes = getScorePerTheme(candidateScores);
 
+  return candidatesAnswers.map((candidate) => {
+    const candidateScores = addScoreToCandidateAnswer(
+      userAnswersWithScoreLines,
+      candidate.answers
+    );
+    const scorePerThemes = getScorePerTheme(candidateScores);
     const results = scorePerThemes.map((theme) => {
       return {
         themeId: theme.themeId,
@@ -25,17 +28,24 @@ const addScoreLinesToAnswers = (userAnswers) =>
   userAnswers.map((answer) => {
     const theme = quizz.find((theme) => theme._id === answer.themeId);
     const { questions } = theme;
-    const question = questions.find((q) => q.questionId === answer.questionId);
+    const question = questions.find((q) => {
+      return q._id === answer.questionId;
+    });
+
     const scoreLine = question.scores[answer.answerIndex];
     return { ...answer, scoreLine };
   });
 
-const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
+const addScoreToCandidateAnswer = (
+  userAnswersWithScoreLines,
+  candidateAnswers
+) =>
   userAnswersWithScoreLines.map((userAnswer) => {
     const candidateMatchingAnswer = candidateAnswers.find(
       (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
     );
-    const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer.answerIndex;
+    const politicalPartyMatchingAnswersIndex =
+      candidateMatchingAnswer.answerIndex;
     return {
       ...userAnswer,
       score: userAnswer.scoreLine[politicalPartyMatchingAnswersIndex],
@@ -44,7 +54,9 @@ const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) 
 
 const getScorePerTheme = (candidateScores) => {
   return candidateScores.reduce((accumulator, currentValue, index) => {
-    const existingThemeScore = accumulator.find((child) => child.themeId === currentValue.themeId);
+    const existingThemeScore = accumulator.find(
+      (child) => child.themeId === currentValue.themeId
+    );
 
     if (existingThemeScore) {
       return accumulator.map((themeScore) => {

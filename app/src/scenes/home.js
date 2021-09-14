@@ -28,15 +28,21 @@ class Home extends React.Component {
           <Title>Connectez-vous</Title>
           <SignupContainer>
             <SignButtonContainer>
-              <SignupButton isDisplayed={showSignup} onClick={this.displaySignup}>
-                S'inscrire
-              </SignupButton>
-              <LoginButton isDisplayed={!showSignup} onClick={this.displayLogin}>
+              <LoginButton
+                isDisplayed={!showSignup}
+                onClick={this.displayLogin}
+              >
                 Se connecter
               </LoginButton>
+              <SignupButton
+                isDisplayed={showSignup}
+                onClick={this.displaySignup}
+              >
+                S'inscrire
+              </SignupButton>
             </SignButtonContainer>
-            {showSignup && <Signup onLogin={this.onLogin} />}
             {!showSignup && <Login onLogin={this.onLogin} />}
+            {showSignup && <Signup onLogin={this.onLogin} />}
           </SignupContainer>
         </BackGroundContainer>
       </>

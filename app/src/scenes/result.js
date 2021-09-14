@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
 
 import Header from "../components/Header";
-// import RadarChart from "../components/RadarChart";
-// import PolarChart from "../components/PolarChart";
+import RadarChart from "../components/RadarChart";
+import PolarChart from "../components/PolarChart";
 import API from "../services/api";
 
 class Result extends React.Component {
@@ -20,7 +20,9 @@ class Result extends React.Component {
 
   getAnswers = async () => {
     const response = await API.getWithCreds({ path: "/answer" });
-    const candidatesResponse = await API.getWithCreds({ path: "/answer/candidates" });
+    const candidatesResponse = await API.getWithCreds({
+      path: "/answer/candidates",
+    });
 
     if (response.ok) {
       this.setState({
@@ -31,7 +33,9 @@ class Result extends React.Component {
   };
 
   switchCharts = () => {
-    this.setState(({ showRadarChart }) => ({ showRadarChart: !showRadarChart }));
+    this.setState(({ showRadarChart }) => ({
+      showRadarChart: !showRadarChart,
+    }));
   };
 
   render() {
@@ -50,23 +54,32 @@ class Result extends React.Component {
             <LeftContainer>
               <Title>Vos résultats</Title>
               <SubTitle>Selectionnez vos candidats</SubTitle>
-              <p>Selectionnez les candidats que vous souhaitez comparer à vos idées</p>
+              <p>
+                Selectionnez les candidats que vous souhaitez comparer à vos
+                idées
+              </p>
               <CandidatButtonContainer>
                 <CandidatButton>Rassemblement National</CandidatButton>
                 <CandidatButton>La France Insoumise</CandidatButton>
                 <CandidatButton>La République en Marche !</CandidatButton>
               </CandidatButtonContainer>
             </LeftContainer>
-            {/* showRadarChart && (
+            {/* {showRadarChart && (
               <RadarChart
-                data={getCandidatesScorePerThemes(userAnswers, candidatesAnswers)}
+              data={getCandidatesScorePerThemes(
+                userAnswers,
+                candidatesAnswers
+              )}
               />
-            )}
-            {!showRadarChart && (
+            )} */}
+            {/* {!showRadarChart && (
               <PolarChart
-                data={getCandidatesScorePerThemes(userAnswers, candidatesAnswers)}
+                data={getCandidatesScorePerThemes(
+                  userAnswers,
+                  candidatesAnswers
+                )}
               />
-            ) */}
+            )} */}
           </SelectCandidatContainer>
           {/* Tab: un chart par parti */}
         </BackgroundContainer>

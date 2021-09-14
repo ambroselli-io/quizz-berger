@@ -1,122 +1,122 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory, useParams } from "react-router";
 import quizz from "../quizz.json";
 
 import Header from "../components/Header";
 import Question from "../components/Question";
 
-class Quizz extends React.Component {
-  state = {
-    currentThemeId: 0,
-    currentQuestionId: 0,
-  };
+const Quizz = ({ user }) => {
+  const { themeId, questionId } = useParams();
+  const history = useHistory();
 
-  nextQuestion = () => {
-    const { currentThemeId, currentQuestionId } = this.state;
-    const { user } = this.props;
+  const currentTheme = quizz.find((theme) => {
+    return theme._id === themeId;
+  });
 
-    const currentTheme = quizz.find((theme) => {
-      return theme._id === user.themes[currentThemeId];
-    });
+  const currentThemeQuestions = currentTheme.questions;
 
-    const questionsIds = currentTheme.questions.map((q) => q.questionId);
-    const currentQuestionIndex = questionsIds.findIndex((q) => q.questionId === currentQuestionId);
+  const { fr, answers } = currentThemeQuestions.find(
+    (question) => question._id === questionId
+  );
 
-    const currentThemeQuestions = currentTheme.questions;
-
-    if (currentQuestionIndex < currentThemeQuestions.length - 1) {
-      this.setState({ currentQuestionId: questionsIds[currentQuestionId + 1] });
-    } else if (currentThemeId < user.themes.length - 1) {
-      this.setState({
-        currentThemeId: currentThemeId + 1,
-        currentQuestionId: 0,
-      });
-    } else if (
-      currentQuestionId === currentThemeQuestions.length - 1 &&
-      currentThemeId === user.themes.length - 1
-    ) {
-      this.props.history.push("/result");
-      console.log("finish");
-    }
-  };
-
-  previousQuestion = () => {
-    const { currentThemeId, currentQuestionId } = this.state;
-    const { user } = this.props;
-
-    const currentThemeQuestions = quizz.find((theme) => {
-      return theme._id === user.themes[currentThemeId];
-    }).questions;
-
-    if (currentQuestionId > 0) {
-      this.setState({ currentQuestionId: currentQuestionId - 1 });
-    } else if (currentThemeId > 0) {
-      this.setState({
-        currentThemeId: currentThemeId - 1,
-        currentQuestionId: currentThemeQuestions.length - 1,
-      });
-    }
-  };
-
-  previousTheme = () => {
-    const { currentThemeId } = this.state;
-
-    if (currentThemeId > 0) {
-      console.log("previous");
-      this.setState({
-        currentThemeId: currentThemeId - 1,
-        currentQuestionId: 0,
-      });
-    }
-  };
-
-  nextTheme = () => {
-    const { currentThemeId } = this.state;
-    const { user } = this.props;
-
-    if (currentThemeId < user.themes.length - 1) {
-      console.log("previous");
-      this.setState({
-        currentThemeId: currentThemeId + 1,
-        currentQuestionId: 0,
-      });
-    }
-  };
-
-  render() {
-    const { currentThemeId, currentQuestionId } = this.state;
-    const { user } = this.props;
-
-    const currentTheme = quizz.find((theme) => {
-      return theme._id === user.themes[currentThemeId];
-    });
-
-    const currentThemeQuestions = currentTheme.questions;
-
-    const { fr, answers } = currentThemeQuestions[currentQuestionId];
-
-    return (
-      <>
-        <Header />
-        <BackgroundContainer>
-          <SubContainer>
-            <Question
-              theme={currentTheme}
-              question={fr}
-              questionId={currentQuestionId}
-              answers={answers}
-              user={user}
-              nextQuestion={this.nextQuestion}
-              previousQuestion={this.previousQuestion}
-              nextTheme={this.nextTheme}
-              previousTheme={this.previousTheme}
-            />
-          </SubContainer>
-        </BackgroundContainer>
-      </>
+  const goToNextQuestion = () => {
+    const currentQuestionIndex = currentThemeQuestions.findIndex(
+      (question) => question._id === questionId
     );
-  }
-}
+    let nextThemeId;
+    let nextQuestionId;
+    // middle question of current theme
+    if (currentQuestionIndex < currentThemeQuestions.length - 1) {
+      nextThemeId = themeId;
+      nextQuestionId = currentThemeQuestions[currentQuestionIndex + 1]._id;
+      return history.push(`/question/${nextThemeId}/${nextQuestionId}`);
+    }
+    // last question of current theme
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
+    // last theme
+    if (currentThemeIndex === user.themes.length - 1) {
+      return history.push("/result");
+    }
+    // got to next theme
+    nextThemeId = user.themes[currentThemeIndex + 1];
+    const nextTheme = quizz.find((theme) => theme._id === nextThemeId);
+    nextQuestionId = nextTheme.questions[0]._id;
+    return history.push(`/question/${nextThemeId}/${nextQuestionId}`);
+  };
+
+  const goToPreviousQuestion = () => {
+    const currentQuestionIndex = currentThemeQuestions.findIndex(
+      (question) => question._id === questionId
+    );
+    let previousThemeId;
+    let previousQuestionId;
+    // // middle question of current theme
+    if (currentQuestionIndex > 0) {
+      previousThemeId = themeId;
+      previousQuestionId = currentTheme.questions[currentQuestionIndex - 1]._id;
+      return history.push(`/question/${previousThemeId}/${previousQuestionId}`);
+    }
+    // // last question of current theme
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
+    const firstUserTheme = user.themes[0];
+    const firstUserThemeIndex = quizz.findIndex(
+      (t) => t._id === firstUserTheme
+    );
+    // last theme
+    if (currentThemeIndex < firstUserThemeIndex) {
+      return history.push("/theme");
+    }
+    // got to next themee
+    previousThemeId = user.themes[currentThemeIndex - 1];
+    const previousTheme = quizz.find((theme) => theme._id === previousThemeId);
+    const previousThemeLastQuestionIndex = previousTheme.questions.length - 1;
+    const previousThemeLastQuestionId =
+      previousTheme.questions[previousThemeLastQuestionIndex]._id;
+    return history.push(
+      `/question/${previousThemeId}/${previousThemeLastQuestionId}`
+    );
+  };
+
+  const goToNextTheme = () => {
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
+    let nextThemeId;
+    if (currentThemeIndex < user.themes.length - 1) {
+      nextThemeId = user.themes[currentThemeIndex + 1];
+      return history.push(`/question/${nextThemeId}/1`);
+    }
+  };
+
+  const goToPreviousTheme = () => {
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
+    let previousThemeId;
+    if (currentThemeIndex > 0) {
+      previousThemeId = user.themes[currentThemeIndex - 1];
+      return history.push(`/question/${previousThemeId}/1`);
+    }
+  };
+
+  return (
+    <>
+      <Header />
+      <BackgroundContainer>
+        <SubContainer>
+          <Question
+            theme={currentTheme}
+            question={fr}
+            questionId={questionId}
+            answers={answers}
+            user={user}
+            nextQuestion={goToNextQuestion}
+            previousQuestion={goToPreviousQuestion}
+            nextTheme={goToNextTheme}
+            previousTheme={goToPreviousTheme}
+          />
+        </SubContainer>
+      </BackgroundContainer>
+    </>
+  );
+};
 
 const BackgroundContainer = styled.div`
   padding: 40px;

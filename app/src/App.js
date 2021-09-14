@@ -31,25 +31,35 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/login" render={(props) => <Home {...props} setUser={this.setUser} />} />
-          <RestrictedRoute
-            path="/theme"
-            user={user}
-            Component={(props) => <ThemeSelect {...props} setUser={this.setUser} />}
+          <Route
+            path='/login'
+            render={(props) => <Home {...props} setUser={this.setUser} />}
           />
           <RestrictedRoute
-            path="/question"
+            path='/theme'
+            user={user}
+            Component={(props) => (
+              <ThemeSelect {...props} setUser={this.setUser} />
+            )}
+          />
+          <RestrictedRoute
+            path='/question/:themeId/:questionId'
             exact
             user={user}
             Component={(props) => <Quizz {...props} />}
           />
           <RestrictedRoute
-            path="/result"
+            path='/result'
             exact
             user={user}
             Component={(props) => <Result {...props} />}
           />
-          <RestrictedRoute path="/" exact user={user} Component={() => <Redirect to="/theme" />} />
+          <RestrictedRoute
+            path='/'
+            exact
+            user={user}
+            Component={() => <Redirect to='/theme' />}
+          />
         </Switch>
       </BrowserRouter>
     );
@@ -61,7 +71,11 @@ const RestrictedRoute = ({ Component, user, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        user._id ? <Component {...props} user={user} /> : <Redirect to="/login" />
+        user._id ? (
+          <Component {...props} user={user} />
+        ) : (
+          <Redirect to='/login' />
+        )
       }
     />
   );
