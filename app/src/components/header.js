@@ -11,23 +11,23 @@ class Header extends React.Component {
         <HeaderContainer>
           <Logo src={logo} />
           <HeaderMenu>
-            <HeaderMenuTab href="http://127.0.0.1:3000/home">
-              <NavLink to="login" activeClassName="active">
+            <HeaderMenuTab href='http://127.0.0.1:3000/home'>
+              <NavLink to='login' activeClassName='active'>
                 Accueil
               </NavLink>
             </HeaderMenuTab>
             <HeaderMenuTab>
-              <NavLink to="theme" activeClassName="active">
+              <NavLink to='theme' activeClassName='active'>
                 Theme
               </NavLink>
             </HeaderMenuTab>
             <HeaderMenuTab>
-              <NavLink to="./question" activeClassName="active">
+              <NavLink to='./question' activeClassName='active'>
                 Quizz
               </NavLink>
             </HeaderMenuTab>
             <HeaderMenuTab>
-              <NavLink to="./result" activeClassName="active">
+              <NavLink to='./result' activeClassName='active'>
                 Resultat
               </NavLink>
             </HeaderMenuTab>
@@ -39,7 +39,7 @@ class Header extends React.Component {
 }
 
 const HeaderStyled = styled.header`
-  z-index: 99;
+  z-index: 98;
   padding: 0 40px;
   height: 80px;
   width: 100vw;
