@@ -4,14 +4,21 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import ThemesSelector from "../components/ThemesSelector";
 import API from "../services/api";
+import quizz from "../quizz.json";
 
 class Theme extends React.Component {
   saveSelectedThemes = async (themeIds) => {
-    const response = await API.putWithCreds({ path: "/user", body: { themes: themeIds } });
+    const response = await API.putWithCreds({
+      path: "/user",
+      body: { themes: themeIds },
+    });
     if (response.ok) {
       const { setUser, history } = this.props;
+      const firstQuestionId = quizz.find(
+        (t) => t._id === response.data.themes[0]
+      ).questions[0]._id;
       setUser(response.data);
-      history.push("/question");
+      history.push(`/question/${response.data.themes[0]}/${firstQuestionId}`);
     }
   };
 
@@ -24,7 +31,10 @@ class Theme extends React.Component {
           <SubContainer>
             <Title>Selectionnez vos themes</Title>
             <SubTitle>Merci de choisir au moins 3 themes</SubTitle>
-            <ThemesSelector user={user.themes} saveSelectedThemes={this.saveSelectedThemes} />
+            <ThemesSelector
+              user={user.themes}
+              saveSelectedThemes={this.saveSelectedThemes}
+            />
           </SubContainer>
         </BackgroundContainer>
       </>

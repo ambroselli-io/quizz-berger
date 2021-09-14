@@ -11,16 +11,22 @@ const Question = ({
   previousQuestion,
   nextTheme,
   previousTheme,
+  user,
 }) => {
   const sendAnswer = async (e) => {
     const response = await API.postWithCreds({
       path: "/answer",
       body: {
+        user: user._id,
         themeId: theme._id,
         questionId: questionId,
         answerIndex: e.target.dataset.index,
       },
     });
+    if (!response.ok) {
+      console.log(response.error);
+    }
+
     if (response.ok) nextQuestion();
   };
 
@@ -42,11 +48,17 @@ const Question = ({
         })}
       </AnswerContainer>
       <NavigationContainer>
-        <NavigationButton onClick={previousQuestion}>Question précédente</NavigationButton>
-        <NavigationButton onClick={nextQuestion}>Question suivante</NavigationButton>
+        <NavigationButton onClick={previousQuestion}>
+          Question précédente
+        </NavigationButton>
+        <NavigationButton onClick={nextQuestion}>
+          Question suivante
+        </NavigationButton>
       </NavigationContainer>
       <NavigationContainer>
-        <NavigationButton onClick={previousTheme}>Theme précédente</NavigationButton>
+        <NavigationButton onClick={previousTheme}>
+          Theme précédente
+        </NavigationButton>
         <NavigationButton onClick={nextTheme}>Theme suivante</NavigationButton>
       </NavigationContainer>
     </Container>

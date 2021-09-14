@@ -34,22 +34,22 @@ class Login extends React.Component {
       <>
         <SignupSubContainer>
           <span>Connexion</span>
-          <LoginForm id="sign-in-form" action="" onSubmit={this.loginRequest}>
+          <LoginForm id='sign-in-form' action='' onSubmit={this.loginRequest}>
             <FormLabel>Pseudo</FormLabel>
             <FormInput
-              type="text"
-              name="pseudo"
-              placeholder="Votre pseudo"
+              type='text'
+              name='pseudo'
+              placeholder='Votre pseudo'
               onChange={this.onChangeInput}
             />
             <FormLabel>Mot de passe</FormLabel>
             <FormInput
-              type="text"
-              name="password"
-              placeholder="Votre mot de passe"
+              type='password'
+              name='password'
+              placeholder='Votre mot de passe'
               onChange={this.onChangeInput}
             />
-            <LoginButton className="" type="submit">
+            <LoginButton className='' type='submit'>
               Se connecter
             </LoginButton>
           </LoginForm>

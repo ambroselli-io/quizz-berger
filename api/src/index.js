@@ -17,6 +17,7 @@ const app = express();
 if (process.env.NODE_ENV === "development") {
   app.use(logger("dev"));
   app.use(cors({ origin: ["http://127.0.0.1:8080", "http://127.0.0.1:3000", "http://localhost:3000"], credentials: true }));
+  require("../scripts/migrations");
 }
 if (process.env.NODE_ENV === "production") {
   app.use(cors({ origin: ["https://escalablejs.com", "https://www.escalablejs.com"] }));

@@ -10,9 +10,11 @@ router.post(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
-    if (req.body.themeId) return res.status(409).send({ ok: false, error: "themeId is not provided" });
-    if (req.body.questionId) return res.status(409).send({ ok: false, error: "questionId is not provided" });
-    if (req.body.answerIndex) return res.status(409).send({ ok: false, error: "answerIndex is not provided" });
+    console.log(req.body.answerIndex);
+    if (!req.body.themeId) return res.status(409).send({ ok: false, error: "themeId is not provided" });
+    if (!req.body.hasOwnProperty("questionId")) return res.status(409).send({ ok: false, error: "questionId is not provided" });
+    // if (!req.body.questionId) return res.status(409).send({ ok: false, error: "questionId is not provided" });
+    if (!req.body.answerIndex) return res.status(409).send({ ok: false, error: "answerIndex is not provided" });
 
     const answer = {
       user: req.body.user,
@@ -58,6 +60,29 @@ router.get(
     res.status(200).send({ ok: true, data: populatedCandidatesAnswers });
   })
 );
+
+// router.get(
+//   "/:id",
+//   passport.authenticate("user", { session: false }),
+//   catchErrors(async (req, res) => {
+//     const candidates = await UserObject.findById(req.params.id);
+//     const candidatesAnswers = await AnswerObject.find({ user: candidates });
+
+//     const populatedCandidatesAnswers = candidates.map((candidate) => {
+//       return {
+//         pseudo: candidate.pseudo,
+//         firstName: candidate.firstName,
+//         lastName: candidate.lastName,
+//         partyName: candidate.partyName,
+//         isCandidate: candidate.isCandidate,
+//         themes: candidate.themes,
+//         answers: candidatesAnswers.filter((answers) => candidate._id.equals(answers.user)),
+//       };
+//     });
+
+//     res.status(200).send({ ok: true, data: populatedCandidatesAnswers });
+//   })
+// );
 
 router.get(
   "/",

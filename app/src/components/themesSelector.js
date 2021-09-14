@@ -6,7 +6,7 @@ import quizz from "../quizz.json";
 
 const ThemesSelector = ({ saveSelectedThemes, user }) => {
   const [show, setShow] = useState(false);
-  const [selectedThemesIds, setSelectedThemesIds] = useState(user.themes || []);
+  const [selectedThemesIds, setSelectedThemesIds] = useState(user || []);
 
   const showModal = () => setShow(!show);
 
@@ -14,7 +14,9 @@ const ThemesSelector = ({ saveSelectedThemes, user }) => {
     setSelectedThemesIds([...selectedThemesIds, e.target.dataset.theme]);
   };
 
-  const unselectedThemes = quizz.filter((theme) => !selectedThemesIds.includes(theme._id));
+  const unselectedThemes = quizz.filter(
+    (theme) => !selectedThemesIds.includes(theme._id)
+  );
 
   const resetSelectedThemes = () => {
     setSelectedThemesIds([]);
@@ -22,7 +24,9 @@ const ThemesSelector = ({ saveSelectedThemes, user }) => {
 
   const deleteTheme = (e) => {
     const themeIdToDelete = e.target.dataset.theme;
-    const filteredTheme = selectedThemesIds.filter((id) => id !== themeIdToDelete);
+    const filteredTheme = selectedThemesIds.filter(
+      (id) => id !== themeIdToDelete
+    );
     setSelectedThemesIds(filteredTheme);
   };
 
@@ -32,10 +36,14 @@ const ThemesSelector = ({ saveSelectedThemes, user }) => {
     <>
       <ButtonsContainer>
         {unselectedThemes.length < quizz.length && (
-          <ResetButton onClick={resetSelectedThemes}>Réinitialiser les thèmes</ResetButton>
+          <ResetButton onClick={resetSelectedThemes}>
+            Réinitialiser les thèmes
+          </ResetButton>
         )}
         {selectedThemesIds.length >= 3 && (
-          <ValidateButton onClick={onValidate}>Valider mes thèmes</ValidateButton>
+          <ValidateButton onClick={onValidate}>
+            Valider mes thèmes
+          </ValidateButton>
         )}
       </ButtonsContainer>
       {selectedThemesIds.map((selectedThemeId) => (
@@ -47,7 +55,11 @@ const ThemesSelector = ({ saveSelectedThemes, user }) => {
         </ThemeList>
       ))}
       <ModalButton onClick={showModal}>Ajouter un thème</ModalButton>
-      <ThemesModal unselectedThemes={unselectedThemes} onSelectTheme={onSelectTheme} show={show} />
+      <ThemesModal
+        unselectedThemes={unselectedThemes}
+        onSelectTheme={onSelectTheme}
+        show={show}
+      />
     </>
   );
 };

@@ -36,29 +36,33 @@ class Signup extends React.Component {
       <>
         <SignupSubContainer>
           <span>Inscription</span>
-          <SignupForm onSubmit={this.signupRequest} pseudo={this.state} id="sign-up-form">
+          <SignupForm
+            onSubmit={this.signupRequest}
+            pseudo={this.state}
+            id='sign-up-form'
+          >
             <FormLabel>Pseudo</FormLabel>
             <FormInput
-              type="text"
-              name="pseudo"
-              placeholder="Votre pseudo"
+              type='text'
+              name='pseudo'
+              placeholder='Votre pseudo'
               onChange={this.onChangeInput}
             />
             <FormLabel>Mot de passe</FormLabel>
             <FormInput
-              type="text"
-              name="password"
-              placeholder="Votre mot de passe"
+              type='password'
+              name='password'
+              placeholder='Votre mot de passe'
               onChange={this.onChangeInput}
             />
             <FormLabel>Confirmation du mot de passe</FormLabel>
             <FormInput
-              type="text"
-              name="passwordConfirm"
-              placeholder="Confirmez votre mot de passe"
+              type='password'
+              name='passwordConfirm'
+              placeholder='Confirmez votre mot de passe'
               onChange={this.onChangeInput}
             />
-            <SignupButton type="submit">S'inscrire !</SignupButton>
+            <SignupButton type='submit'>S'inscrire !</SignupButton>
           </SignupForm>
         </SignupSubContainer>
       </>
