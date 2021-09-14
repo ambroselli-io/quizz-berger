@@ -64,14 +64,14 @@ class Result extends React.Component {
                 <CandidatButton>La République en Marche !</CandidatButton>
               </CandidatButtonContainer>
             </LeftContainer>
-            {/* {showRadarChart && (
+            {showRadarChart && (
               <RadarChart
-              data={getCandidatesScorePerThemes(
-                userAnswers,
-                candidatesAnswers
-              )}
+                data={getCandidatesScorePerThemes(
+                  userAnswers,
+                  candidatesAnswers
+                )}
               />
-            )} */}
+            )}
             {/* {!showRadarChart && (
               <PolarChart
                 data={getCandidatesScorePerThemes(
