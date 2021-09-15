@@ -1,103 +1,83 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/style.css";
+import { Link } from "react-router-dom";
 
 import Header from "../components/Header";
-import Signup from "../components/Signup";
-import Login from "../components/Login";
 
-class Home extends React.Component {
-  state = { showSignup: false };
-
-  onLogin = (user) => {
-    const { setUser, history } = this.props;
-    setUser(user);
-    history.push("/theme");
-  };
-
-  displaySignup = () => this.setState({ showSignup: true });
-
-  displayLogin = () => this.setState({ showSignup: false });
-
+class App extends React.Component {
   render() {
-    const { showSignup } = this.state;
     return (
       <>
-        <Header isActive={true} />
-        <BackGroundContainer>
-          <Title>Connectez-vous</Title>
-          <SignupContainer>
-            <SignButtonContainer>
-              <LoginButton
-                isDisplayed={!showSignup}
-                onClick={this.displayLogin}
-              >
-                Se connecter
-              </LoginButton>
-              <SignupButton
-                isDisplayed={showSignup}
-                onClick={this.displaySignup}
-              >
-                S'inscrire
-              </SignupButton>
-            </SignButtonContainer>
-            {!showSignup && <Login onLogin={this.onLogin} />}
-            {showSignup && <Signup onLogin={this.onLogin} />}
-          </SignupContainer>
-        </BackGroundContainer>
+        <Header />
+        <BackgroundContainer>
+          <Container>
+            <Title>Know where you actually take a stand</Title>
+            <SubTitle>
+              Take our Political Compass test to find out which political group
+              your best match is
+            </SubTitle>
+            <QuizzButton>
+              <Link to='/theme'> Take the test now</Link>
+            </QuizzButton>
+          </Container>
+        </BackgroundContainer>
       </>
     );
   }
 }
 
-const BackGroundContainer = styled.div`
-  padding: 40px;
-  width: 100vw;
+const BackgroundContainer = styled.div`
   height: 100vh;
-  background-color: #f7df1e;
+  background-color: #111827;
 `;
 
-const Title = styled.h2`
-  font-family: Nunito SANS;
-  font-size: 36px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-`;
-
-const SignupContainer = styled.div`
+const Container = styled.div`
   margin: 0 auto;
-  width: 400px;
-  height: auto;
+  width: 770px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  justify-content: center;
 `;
 
-const SignButtonContainer = styled.div`
-  display: flex;
+const Title = styled.h2`
+  margin-bottom: 20px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
 `;
 
-const LoginButton = styled.button`
-  width: 200px;
-  height: 30px;
-  background-color: ${(props) => (props.isDisplayed ? "white" : "transparent")};
-  font-size: 16px;
+const SubTitle = styled.h3`
+  margin-bottom: 40px;
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 200%;
+  color: #ffffff;
+  opacity: 0.8;
+`;
+
+const QuizzButton = styled.button`
+  padding: 20px 24px;
+
+  background: #facc15;
+  border-radius: 56px;
   border: none;
-  cursor: pointer;
-  border-radius: 10px 10px 0 0;
-`;
 
-const SignupButton = styled.button`
-  width: 200px;
-  height: 30px;
-  background-color: ${(props) => (props.isDisplayed ? "white" : "transparent")};
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
-  border: none;
+
+  color: #111827;
+
   cursor: pointer;
-  border-radius: 10px 10px 0 0;
 `;
 
-export default Home;
+export default App;

@@ -72,14 +72,14 @@ class Result extends React.Component {
                 )}
               />
             )}
-            {/* {!showRadarChart && (
+            {!showRadarChart && (
               <PolarChart
                 data={getCandidatesScorePerThemes(
                   userAnswers,
                   candidatesAnswers
                 )}
               />
-            )} */}
+            )}
           </SelectCandidatContainer>
           {/* Tab: un chart par parti */}
         </BackgroundContainer>
@@ -91,7 +91,6 @@ class Result extends React.Component {
 const BackgroundContainer = styled.div`
   padding: 40px;
   min-height: 100vh;
-  width: 100vw;
   background-color: #f7df1e;
 `;
 

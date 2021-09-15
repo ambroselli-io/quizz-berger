@@ -121,7 +121,6 @@ const Quizz = ({ user }) => {
 const BackgroundContainer = styled.div`
   padding: 40px;
   min-height: 100vh;
-  width: 100vw;
   background-color: #f7df1e;
 `;
 

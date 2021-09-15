@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import { Polar } from "react-chartjs-2";
+import { Polar } from "react-chartjs-2";
 
 import quizz from "../quizz.json";
 
@@ -48,7 +48,7 @@ class PolarChart extends React.Component {
       return (
         <>
           <ChartContainer>
-            {/* <Polar data={data} options={options} key={index} /> */}
+            <Polar data={data} options={options} key={index} />
           </ChartContainer>
         </>
       );
