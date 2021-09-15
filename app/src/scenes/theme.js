@@ -7,10 +7,39 @@ import API from "../services/api";
 import quizz from "../quizz.json";
 
 class Theme extends React.Component {
+  state = {
+    selectedThemesIds: this.props.user.themes,
+  };
+
+  onSelectTheme = (e) => {
+    const { selectedThemesIds } = this.state;
+    if (!!selectedThemesIds.find((t) => t === e.target.dataset.themeid)) {
+      const test = selectedThemesIds.filter(
+        (id) => id !== e.target.dataset.themeid
+      );
+      this.setState({ selectedThemesIds: test });
+      console.log("deleted");
+      return;
+    }
+    this.setState({
+      selectedThemesIds: [
+        ...this.state.selectedThemesIds,
+        e.target.dataset.themeid,
+      ],
+    });
+    console.log("added");
+  };
+
   saveSelectedThemes = async (themeIds) => {
+    const { selectedThemesIds } = this.state;
+    if (selectedThemesIds.length < 3) {
+      alert("please select atleast 3 themes");
+      return;
+    }
+
     const response = await API.putWithCreds({
       path: "/user",
-      body: { themes: themeIds },
+      body: { themes: selectedThemesIds },
     });
     if (response.ok) {
       const { setUser, history } = this.props;
@@ -23,18 +52,38 @@ class Theme extends React.Component {
   };
 
   render() {
-    const { user } = this.props;
+    const { selectedThemesIds } = this.state;
     return (
       <>
-        <Header isActive />
+        <Header />
         <BackgroundContainer>
           <SubContainer>
-            <Title>Selectionnez vos themes</Title>
-            <SubTitle>Merci de choisir au moins 3 themes</SubTitle>
-            <ThemesSelector
-              user={user.themes}
-              saveSelectedThemes={this.saveSelectedThemes}
-            />
+            <Title>Political Compass Test</Title>
+            <SubTitle>
+              Take our Political Compass test to identify your political group
+              and know which candidates to vote for the upcoming elections.
+              <br /> <br />
+              But first, please choose at least 3 themes
+            </SubTitle>
+            <ThemesContainer>
+              {quizz.map((t) => {
+                return (
+                  <ThemesSelector
+                    theme={t.fr}
+                    themeId={t._id}
+                    selectedThemesIds={selectedThemesIds}
+                    key={t._id}
+                    onSelect={this.onSelectTheme}
+                  />
+                );
+              })}
+            </ThemesContainer>
+            <ValidateButton
+              isDisplayed={selectedThemesIds.length >= 3}
+              onClick={this.saveSelectedThemes}
+            >
+              Valider mes thèmes
+            </ValidateButton>
           </SubContainer>
         </BackgroundContainer>
       </>
@@ -43,14 +92,13 @@ class Theme extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  padding: 40px;
-  min-height: 100vh;
-  width: 100vw;
-  background-color: #f7df1e;
+  padding-top: 80px;
+  height: 100vh;
 `;
 
 const SubContainer = styled.div`
   margin: 0 auto;
+  height: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -58,18 +106,40 @@ const SubContainer = styled.div`
   align-items: center;
 `;
 
-const Title = styled.h1`
-  font-family: Nunito SANS;
-  font-size: 36px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
+const Title = styled.h2`
   margin-bottom: 20px;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #111827;
 `;
 
-const SubTitle = styled.h2`
+const ThemesContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+`;
+
+const SubTitle = styled.h3`
   margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 16px;
   text-align: center;
+  color: #111827;
+`;
+
+const ValidateButton = styled.button`
+  margin-top: 40px;
+  width: 384px;
+  height: 64px;
+  background: ${(props) =>
+    props.isDisplayed ? "#facc15" : "rgba(156, 163, 175, 0.2)"};
+  color: ${(props) => (props.isDisplayed ? "black" : "rgba(17, 24, 39, 0.2)")};
+  border-radius: 56px;
+  border: none;
+  cursor: pointer;
+  cursor: ${(props) => (props.isDisplayed ? "pointer" : "auto")};
 `;
 
 export default Theme;

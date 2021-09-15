@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import GlobalStyles from "./styles/globalStyle";
 
-import Home from "./scenes/home";
-import ThemeSelect from "./scenes/theme";
-import Quizz from "./scenes/quizz";
-import Result from "./scenes/result";
+import Home from "./scenes/Home";
+import LoginPage from "./scenes/LoginPage";
+import ThemeSelect from "./scenes/Theme";
+import Quizz from "./scenes/Quizz";
+import Result from "./scenes/Result";
 import API from "./services/api";
 
 class App extends React.Component {
@@ -30,10 +32,12 @@ class App extends React.Component {
     if (needLoading) return <div>Loading...</div>;
     return (
       <BrowserRouter>
+        <GlobalStyles />
         <Switch>
+          <Route path='/' render={(props) => <Home />} exact />
           <Route
             path='/login'
-            render={(props) => <Home {...props} setUser={this.setUser} />}
+            render={(props) => <LoginPage {...props} setUser={this.setUser} />}
           />
           <RestrictedRoute
             path='/theme'

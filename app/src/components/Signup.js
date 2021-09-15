@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import API from "../services/api";
-import "../styles/style.css";
 
 class Signup extends React.Component {
   state = {
@@ -35,7 +34,6 @@ class Signup extends React.Component {
     return (
       <>
         <SignupSubContainer>
-          <span>Inscription</span>
           <SignupForm
             onSubmit={this.signupRequest}
             pseudo={this.state}
@@ -71,46 +69,44 @@ class Signup extends React.Component {
 }
 
 const SignupSubContainer = styled.div`
-  padding: 20px;
+  padding: 24px;
   height: auto;
   width: 400px;
   display: flex;
   flex-direction: column;
   background-color: white;
   border-top: none;
-  border-radius: 10px 0 10px 10px;
+  border-radius: 0px 0 8px 8px;
 `;
 
 const SignupForm = styled.form`
   display: flex;
   flex-direction: column;
-  > div > input {
-    height: 10px;
-    width: 10px;
-    margin-top: 30px;
-    margin-left: 10px;
-  }
 `;
 
 const FormLabel = styled.label`
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 5px;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
 `;
 
 const FormInput = styled.input`
-  padding: 15px;
-  height: 45px;
-  background-color: rgba(245, 245, 244, 1);
-  border: none;
+  padding: 0 12px;
+  height: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(17, 24, 39, 0.4);
 `;
 
 const SignupButton = styled.button`
   margin-top: 30px;
-  height: 35px;
+  height: 44px;
   font-weight: bold;
-  background-color: #f7df1e;
+  background: #facc15;
+  border-radius: 44px;
   border: none;
 `;
 
