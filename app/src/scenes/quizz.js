@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
 import quizz from "../quizz.json";
+import API from "../services/api";
 
 import Header from "../components/Header";
-import Question from "../components/Question";
+
+import rightArrow from "../images/right-arrow.svg";
+import leftArrow from "../images/left-arrow.svg";
 
 const Quizz = ({ user }) => {
   const { themeId, questionId } = useParams();
@@ -32,9 +35,8 @@ const Quizz = ({ user }) => {
       nextQuestionId = currentThemeQuestions[currentQuestionIndex + 1]._id;
       return history.push(`/question/${nextThemeId}/${nextQuestionId}`);
     }
-    // last question of current theme
-    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     // last theme
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     if (currentThemeIndex === user.themes.length - 1) {
       return history.push("/result");
     }
@@ -78,12 +80,18 @@ const Quizz = ({ user }) => {
     );
   };
 
-  const goToNextTheme = () => {
+  const goToNextTheme = (e) => {
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     let nextThemeId;
     if (currentThemeIndex < user.themes.length - 1) {
       nextThemeId = user.themes[currentThemeIndex + 1];
-      return history.push(`/question/${nextThemeId}/1`);
+      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId)
+        .questions[0]._id;
+      return history.push(
+        `/question/${nextThemeId}/${nextThemeFirstQuestionId}`
+      );
+    } else {
+      return history.push(`/result`);
     }
   };
 
@@ -92,45 +100,178 @@ const Quizz = ({ user }) => {
     let previousThemeId;
     if (currentThemeIndex > 0) {
       previousThemeId = user.themes[currentThemeIndex - 1];
-      return history.push(`/question/${previousThemeId}/1`);
+      const previousThemeFirstQuestionId = quizz.find(
+        (t) => t._id === previousThemeId
+      ).questions[0]._id;
+      return history.push(
+        `/question/${previousThemeId}/${previousThemeFirstQuestionId}`
+      );
+    } else {
+      return history.push(`/theme`);
     }
   };
 
+  const isFirstTheme = () => {
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
+    if (currentThemeIndex === 0) {
+      return true;
+    }
+    return false;
+  };
+
+  const isLastTheme = () => {
+    const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
+    if (currentThemeIndex === user.themes.length - 1) {
+      return true;
+    }
+    return false;
+  };
+
+  // const sendAnswer = async (e) => {
+  //   const response = await API.postWithCreds({
+  //     path: "/answer",
+  //     body: {
+  //       user: user._id,
+  //       themeId: currentTheme._id,
+  //       questionId: questionId,
+  //       answerIndex: e.target.dataset.index,
+  //     },
+  //   });
+  //   if (!response.ok) {
+  //     console.log(response.error);
+  //   }
+
+  //   if (response.ok) goToNextQuestion();
+  // };
+
   return (
     <>
-      <Header />
+      <Header user={user} />
+      <ThemeHeaderContainer>
+        <ThemeNavigationButton onClick={goToPreviousTheme}>
+          {isFirstTheme() ? "‹ Retour aux thèmes" : "‹ Thème précédent"}
+        </ThemeNavigationButton>
+        <ThemeTitle>{currentTheme.fr}</ThemeTitle>
+        <ThemeNavigationButton onClick={goToNextTheme}>
+          {isLastTheme() ? "Voir les résultats ›" : "Thème suivant ›"}
+        </ThemeNavigationButton>
+      </ThemeHeaderContainer>
+
       <BackgroundContainer>
-        <SubContainer>
-          <Question
-            theme={currentTheme}
-            question={fr}
-            questionId={questionId}
-            answers={answers}
-            user={user}
-            nextQuestion={goToNextQuestion}
-            previousQuestion={goToPreviousQuestion}
-            nextTheme={goToNextTheme}
-            previousTheme={goToPreviousTheme}
-          />
-        </SubContainer>
+        <QuestionContainer>
+          <QuestionTitle>{fr}</QuestionTitle>
+          <AnswerContainer>
+            {answers.map((answer, index) => {
+              return (
+                <AnswerButton
+                  // onClick={sendAnswer}
+                  key={index}
+                  data-index={index}
+                >
+                  {answer}
+                </AnswerButton>
+              );
+            })}
+          </AnswerContainer>
+        </QuestionContainer>
+
+        <ProgressBarContainer>
+          <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
+          <ProgressBar />
+          <ProgressBar />
+          <ProgressBar />
+          <NavigationButton onClick={goToNextQuestion} />
+        </ProgressBarContainer>
       </BackgroundContainer>
     </>
   );
 };
 
-const BackgroundContainer = styled.div`
-  padding: 40px;
-  min-height: 100vh;
-  background-color: #f7df1e;
+const ThemeHeaderContainer = styled.div`
+  padding: 80px 150px 0px 150px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7df1e;
 `;
 
-const SubContainer = styled.div`
-  margin: 0 auto;
-  max-width: 1200px;
+const ThemeNavigationButton = styled.button`
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`;
+
+const ThemeTitle = styled.h2`
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 20px;
+`;
+
+const BackgroundContainer = styled.div`
+  padding: 40px;
+  height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+`;
+
+const QuestionContainer = styled.div``;
+
+const QuestionTitle = styled.h2`
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+`;
+
+const AnswerContainer = styled.div`
+  display: flex;
+`;
+
+const AnswerButton = styled.button`
+  margin: 0 10px;
+  height: 120px;
+  width: 240px;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  :active {
+    background: #111827;
+    color: white;
+  }
+`;
+
+const ProgressBarContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const NavigationButton = styled.button`
+  margin: 0 50px;
+  height: 17px;
+  width: 19px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: ${(props) =>
+    props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`};
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+const ProgressBar = styled.div`
+  margin: 0 5px;
+  width: 315px;
+  height: 4px;
+  background: #f3f4f6;
+  border-radius: 8px;
 `;
 
 export default Quizz;

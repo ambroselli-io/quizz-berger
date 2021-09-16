@@ -104,7 +104,8 @@ const FormInput = styled.input`
 const SignupButton = styled.button`
   margin-top: 30px;
   height: 44px;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 14px;
   background: #facc15;
   border-radius: 44px;
   border: none;

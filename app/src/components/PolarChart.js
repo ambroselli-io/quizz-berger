@@ -1,17 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import { Polar } from "react-chartjs-2";
+import { PolarArea } from "react-chartjs-2";
 
 import quizz from "../quizz.json";
 
 class PolarChart extends React.Component {
   render() {
+    const { candidatesScorePerThemes } = this.props;
     const options = {
-      legend: {
-        display: true,
-        position: "bottom",
+      plugins: {
+        legend: {
+          display: true,
+          position: "bottom",
+          onClick: false,
+          labels: {
+            usePointStyle: true,
+            boxHeight: 4,
+            pointStyle: "circle",
+            font: {
+              size: 12,
+            },
+          },
+        },
       },
-      borderWidth: 10,
       scale: {
         r: {},
         ticks: {
@@ -21,9 +32,11 @@ class PolarChart extends React.Component {
         },
       },
     };
-    const PolarCharts = this.props.data?.map((partyScores, index) => {
+
+    const PolarCharts = candidatesScorePerThemes?.map((partyScores, index) => {
+      console.log(partyScores);
       const scores = partyScores.map((score) => score.score);
-      const themes = this.props.data[0]?.map((theme) => {
+      const themes = candidatesScorePerThemes[0]?.map((theme) => {
         return quizz.find((quizztheme) => quizztheme._id === theme.themeId).fr;
       });
 
@@ -47,16 +60,83 @@ class PolarChart extends React.Component {
       };
       return (
         <>
-          <ChartContainer>
-            <Polar data={data} options={options} key={index} />
+          <ChartContainer key={index}>
+            <CandidateTitle>{partyScores[0].pseudo}</CandidateTitle>
+            <PolarArea data={data} options={options} key={index} />
           </ChartContainer>
         </>
       );
     });
 
-    return <Container>{PolarCharts}</Container>;
+    return (
+      <SelectCandidatContainer>
+        <LeftContainer>
+          <Title>Vos résultats</Title>
+          <SubTitle>Selectionnez vos candidats</SubTitle>
+          <p>
+            Selectionnez les candidats que vous souhaitez comparer à vos idées
+          </p>
+          <CandidatButtonContainer>
+            {candidatesScorePerThemes.map((candidate) => (
+              <CandidatButton
+                key={candidate[0].pseudo}
+                data-candidate={candidate[0].pseudo}
+                // onClick={onShowCandidate}
+              >
+                {candidate[0].pseudo}
+              </CandidatButton>
+            ))}
+          </CandidatButtonContainer>
+        </LeftContainer>
+        <Container>{PolarCharts}</Container>
+      </SelectCandidatContainer>
+    );
   }
 }
+
+const SelectCandidatContainer = styled.div`
+  display: flex;
+`;
+
+const LeftContainer = styled.div`
+  > p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #111827;
+  }
+`;
+
+const Title = styled.h2`
+  margin-bottom: 60px;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 30px;
+  color: #082d0f;
+`;
+
+const SubTitle = styled.h3`
+  margin-bottom: 20px;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 20px;
+  color: #111827;
+`;
+
+const CandidatButtonContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px;
+`;
+
+const CandidatButton = styled.button`
+  padding: 0 15px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+`;
 
 const Container = styled.div`
   margin: 0 auto;
@@ -64,9 +144,19 @@ const Container = styled.div`
 `;
 
 const ChartContainer = styled.div`
+  padding: 40px;
   margin-bottom: 20px;
-  width: 800px;
-  border: 1px solid white;
+  width: 400px;
+  border: 1px solid #e5e7eb;
+`;
+
+const CandidateTitle = styled.h3`
+  margin-bottom: 40px;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 20px;
+  color: #111827;
+  text-align: center;
 `;
 
 export default PolarChart;

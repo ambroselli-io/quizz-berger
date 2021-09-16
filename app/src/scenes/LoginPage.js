@@ -22,7 +22,7 @@ class LoginPage extends React.Component {
     const { showSignup } = this.state;
     return (
       <>
-        <Header isActive={true} />
+        <Header user={this.props.user} />
         <BackGroundContainer>
           <Title>Connectez-vous</Title>
           <LogContainer>

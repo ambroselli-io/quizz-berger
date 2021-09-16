@@ -1,44 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-class ThemesSelector extends React.Component {
-  state = {
-    isActive: false,
-  };
-
-  componentDidMount() {
-    this.setUserActiveThemes();
-  }
-
-  setUserActiveThemes = () => {
-    const { selectedThemesIds, themeId } = this.props;
-    if (selectedThemesIds.find((t) => t === themeId)) {
-      console.log("isQctive");
-      this.setState({ isActive: true });
-    } else {
-      return;
-    }
-  };
-
-  setActive = () => {
-    if (this.state.isActive) {
-      this.setState({ isActive: false });
-    } else {
-      this.setState({ isActive: true });
-    }
-  };
+class ThemeButton extends React.Component {
   render() {
-    const { isActive } = this.state;
-    const { theme, themeId, onSelect } = this.props;
-
+    const { theme, themeId, onSelect, isActive } = this.props;
     return (
       <ThemesButtons
         data-themeid={themeId}
         isActive={isActive}
-        onClick={(e) => {
-          onSelect(e);
-          this.setActive();
-        }}
+        onClick={onSelect}
       >
         <CheckBox data-themeid={themeId} isActive={isActive}>
           &#10003;
@@ -78,4 +48,4 @@ const CheckBox = styled.div`
   user-select: none;
 `;
 
-export default ThemesSelector;
+export default ThemeButton;

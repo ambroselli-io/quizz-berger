@@ -34,10 +34,15 @@ class App extends React.Component {
       <BrowserRouter>
         <GlobalStyles />
         <Switch>
-          <Route path='/' render={(props) => <Home />} exact />
+          <Route
+            path='/home'
+            render={(props) => <Home user={user} setUser={this.setUser} />}
+          />
           <Route
             path='/login'
-            render={(props) => <LoginPage {...props} setUser={this.setUser} />}
+            render={(props) => (
+              <LoginPage {...props} user={user} setUser={this.setUser} />
+            )}
           />
           <RestrictedRoute
             path='/theme'

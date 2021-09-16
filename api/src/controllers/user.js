@@ -70,7 +70,7 @@ router.post(
   "/logout",
   catchErrors(async (req, res) => {
     res.clearCookie("jwt", {});
-    res.status(200).send({ message: "Successfully logged out" });
+    res.status(200).send({ ok: true, message: "Successfully logged out" });
   })
 );
 
