@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Header from "../components/Header";
-import ThemesSelector from "../components/ThemesSelector";
+import ThemeButton from "../components/ThemeButton";
 import API from "../services/api";
 import quizz from "../quizz.json";
 
@@ -13,11 +13,12 @@ class Theme extends React.Component {
 
   onSelectTheme = (e) => {
     const { selectedThemesIds } = this.state;
+    // if the theme is already selected, delete it from the state
     if (!!selectedThemesIds.find((t) => t === e.target.dataset.themeid)) {
-      const test = selectedThemesIds.filter(
+      const filteredSelectedTheme = selectedThemesIds.filter(
         (id) => id !== e.target.dataset.themeid
       );
-      this.setState({ selectedThemesIds: test });
+      this.setState({ selectedThemesIds: filteredSelectedTheme });
       console.log("deleted");
       return;
     }
@@ -55,7 +56,7 @@ class Theme extends React.Component {
     const { selectedThemesIds } = this.state;
     return (
       <>
-        <Header />
+        <Header user={this.props.user} />
         <BackgroundContainer>
           <SubContainer>
             <Title>Political Compass Test</Title>
@@ -68,9 +69,10 @@ class Theme extends React.Component {
             <ThemesContainer>
               {quizz.map((t) => {
                 return (
-                  <ThemesSelector
+                  <ThemeButton
                     theme={t.fr}
                     themeId={t._id}
+                    isActive={!!selectedThemesIds.find((id) => id === t._id)}
                     selectedThemesIds={selectedThemesIds}
                     key={t._id}
                     onSelect={this.onSelectTheme}

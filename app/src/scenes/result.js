@@ -43,30 +43,15 @@ class Result extends React.Component {
 
     return (
       <>
-        <Header />
+        <Header user={this.props.user} />
         <BackgroundContainer>
           <SwitchButtons onClick={this.switchCharts}>
-            <RadarButton showRadarChart={showRadarChart}>Radar</RadarButton>
-            <PolarButton showRadarChart={showRadarChart}>Polar</PolarButton>
+            Changer de graphique
           </SwitchButtons>
-          {/* Tab: un chart avec tous les partis */}
           <SelectCandidatContainer>
-            <LeftContainer>
-              <Title>Vos résultats</Title>
-              <SubTitle>Selectionnez vos candidats</SubTitle>
-              <p>
-                Selectionnez les candidats que vous souhaitez comparer à vos
-                idées
-              </p>
-              <CandidatButtonContainer>
-                <CandidatButton>Rassemblement National</CandidatButton>
-                <CandidatButton>La France Insoumise</CandidatButton>
-                <CandidatButton>La République en Marche !</CandidatButton>
-              </CandidatButtonContainer>
-            </LeftContainer>
             {showRadarChart && (
               <RadarChart
-                data={getCandidatesScorePerThemes(
+                candidatesScorePerThemes={getCandidatesScorePerThemes(
                   userAnswers,
                   candidatesAnswers
                 )}
@@ -74,14 +59,13 @@ class Result extends React.Component {
             )}
             {!showRadarChart && (
               <PolarChart
-                data={getCandidatesScorePerThemes(
+                candidatesScorePerThemes={getCandidatesScorePerThemes(
                   userAnswers,
                   candidatesAnswers
                 )}
               />
             )}
           </SelectCandidatContainer>
-          {/* Tab: un chart par parti */}
         </BackgroundContainer>
       </>
     );
@@ -89,63 +73,20 @@ class Result extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  padding: 40px;
-  min-height: 100vh;
-  background-color: #f7df1e;
+  padding: 160px 80px 0 80px;
+  height: 100vh;
 `;
 
 const SwitchButtons = styled.div`
   margin: 0 auto 40px auto;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
+  display: inline-block;
+  width: auto;
   border: 2px solid black;
   border-radius: 5px;
+  font-size: 14px;
 `;
 
-const RadarButton = styled.button`
-  width: 100%;
-  display: block;
-  background-color: ${(props) => (props.showRadarChart ? "#f7df1e" : "black")};
-  color: ${(props) => (props.showRadarChart ? "black" : "white")};
-  border: none;
-  cursor: pointer;
-`;
+const SelectCandidatContainer = styled.div``;
 
-const PolarButton = styled.button`
-  width: 100%;
-  display: block;
-  background-color: ${(props) => (props.showRadarChart ? "black" : "#f7df1e")};
-  color: ${(props) => (props.showRadarChart ? "white" : "black")};
-  border: none;
-  cursor: pointer;
-`;
-
-const SelectCandidatContainer = styled.div`
-  display: flex;
-`;
-
-const LeftContainer = styled.div``;
-
-const Title = styled.h2`
-  margin-bottom: 40px;
-`;
-
-const SubTitle = styled.h3`
-  margin-bottom: 10px;
-`;
-
-const CandidatButtonContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const CandidatButton = styled.button`
-  padding: 5px 8px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  background-color: transparent;
-  font-weight: 700;
-`;
 export default Result;

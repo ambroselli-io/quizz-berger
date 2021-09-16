@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 import Header from "../components/Header";
 
-class App extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Header {...this.props} />
         <BackgroundContainer>
           <Container>
             <Title>Know where you actually take a stand</Title>
@@ -64,20 +64,22 @@ const SubTitle = styled.h3`
 `;
 
 const QuizzButton = styled.button`
-  padding: 20px 24px;
-
+  width: 240px;
+  height: 65px;
   background: #facc15;
   border-radius: 56px;
   border: none;
-
   font-family: Merriweather Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-
   color: #111827;
-
   cursor: pointer;
+  > a {
+    padding: 20px 50px;
+    display: flex;
+    height: 100%;
+  }
 `;
 
-export default App;
+export default Home;

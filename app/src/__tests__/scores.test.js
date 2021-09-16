@@ -1,6 +1,6 @@
 import { getUserResultScoreLines } from "../utils/score";
 
-describe("test scroe calculation", () => {
+describe("test score calculation", () => {
   test("test normal", () => {
     const userResults = [
       {
