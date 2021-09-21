@@ -16,9 +16,11 @@ class Home extends React.Component {
               Take our Political Compass test to find out which political group
               your best match is
             </SubTitle>
-            <QuizzButton>
-              <Link to='/theme'> Take the test now</Link>
-            </QuizzButton>
+            <Link to='/theme'>
+              <QuizzButton>
+                <span>Take the test now</span>
+              </QuizzButton>
+            </Link>
           </Container>
         </BackgroundContainer>
       </>
@@ -27,12 +29,15 @@ class Home extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 80px);
   background-color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Container = styled.div`
-  margin: 0 auto;
+  /* margin-top: 80px; */
   width: 770px;
   height: 100%;
   display: flex;
@@ -67,19 +72,13 @@ const QuizzButton = styled.button`
   width: 240px;
   height: 65px;
   background: #facc15;
-  border-radius: 56px;
+  border-radius: 55px;
   border: none;
   font-family: Merriweather Sans;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   color: #111827;
   cursor: pointer;
-  > a {
-    padding: 20px 50px;
-    display: flex;
-    height: 100%;
-  }
 `;
 
 export default Home;

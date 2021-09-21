@@ -1,9 +1,8 @@
-import { React, useRef } from "react";
+import { React, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
 
 import quizz from "../quizz.json";
-import { Redirect } from "react-router";
 
 const options = {
   maintainAspectRatio: false,
@@ -47,7 +46,7 @@ const options = {
   },
 };
 
-const RadarChart = ({ candidatesScorePerThemes }) => {
+const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
   const chartRef = useRef();
 
   const colors = [
@@ -88,7 +87,7 @@ const RadarChart = ({ candidatesScorePerThemes }) => {
 
     return {
       label: partyScores[0].pseudo,
-      hidden: false,
+      hidden: true,
       backgroundColor: colors[index].backgroundColor,
       pointBackgroundColor: colors[index].pointBackgroundColor,
       borderColor: colors[index].borderColor,
@@ -106,92 +105,22 @@ const RadarChart = ({ candidatesScorePerThemes }) => {
     labels: themes,
   };
 
-  const onShowCandidate = (e) => {
-    const getButtonCandidateName = e.target.dataset.candidate;
-    const getCandidateDataSetIndex = dataSets.findIndex(
-      (data) => data.label === getButtonCandidateName
-    );
-    if (
-      chartRef.current.data.datasets[getCandidateDataSetIndex].hidden === false
-    ) {
-      chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = true;
-      chartRef.current.update();
-    } else {
+  useEffect(() => {
+    selectedCandidates.forEach((c) => {
+      const getCandidateDataSetIndex = dataSets.findIndex(
+        (data) => data.label === c
+      );
       chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
       chartRef.current.update();
-    }
-  };
+    });
+  }, [selectedCandidates]);
 
   return (
-    <SelectCandidatContainer>
-      <LeftContainer>
-        <Title>Vos résultats</Title>
-        <SubTitle>Selectionnez vos candidats</SubTitle>
-        <p>
-          Selectionnez les candidats que vous souhaitez comparer à vos idées
-        </p>
-        <CandidatButtonContainer>
-          {candidatesScorePerThemes.map((candidate) => (
-            <CandidatButton
-              key={candidate[0].pseudo}
-              data-candidate={candidate[0].pseudo}
-              onClick={onShowCandidate}
-            >
-              {candidate[0].pseudo}
-            </CandidatButton>
-          ))}
-        </CandidatButtonContainer>
-      </LeftContainer>
-      <RadarContainer>
-        <Radar ref={chartRef} data={data} options={options} />
-      </RadarContainer>
-    </SelectCandidatContainer>
+    <RadarContainer>
+      <Radar ref={chartRef} data={data} options={options} />
+    </RadarContainer>
   );
 };
-
-const SelectCandidatContainer = styled.div`
-  display: flex;
-`;
-
-const LeftContainer = styled.div`
-  > p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #111827;
-  }
-`;
-
-const Title = styled.h2`
-  margin-bottom: 60px;
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 30px;
-  color: #082d0f;
-`;
-
-const SubTitle = styled.h3`
-  margin-bottom: 20px;
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 20px;
-  color: #111827;
-`;
-
-const CandidatButtonContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 12px;
-`;
-
-const CandidatButton = styled.button`
-  padding: 0 15px;
-  height: 40px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-`;
 
 const RadarContainer = styled.div`
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import API from "../services/api";
 
 import logo from "../images/logo.svg";
@@ -10,16 +10,21 @@ class Header extends React.Component {
     const response = await API.post({
       path: "/user/logout",
     });
-    if (response.ok) this.props.setUser(null);
+    if (response.ok) this.props.setUser();
   };
   render() {
     const { user } = this.props;
     return (
+      <>
       <HeaderStyled>
         <HeaderContainer>
           <LeftContainer>
+            <Link to='/home'>
             <HeaderLogo />
+            </Link>
+            <Link to='/home'>
             <Title>Le Quizz du Berger</Title>
+            </Link>
           </LeftContainer>
           <HeaderMenu>
             <HeaderMenuTab>
@@ -43,22 +48,22 @@ class Header extends React.Component {
                 </NavLink>
               </HeaderMenuTab>
             )}
-            <QuizzButton>
-              <NavLink activeClassName='selected' to='/theme'>
-                Quizz
-              </NavLink>
-            </QuizzButton>
+            <NavLink activeClassName='selected' to='/theme'>
+              <QuizzButton><span>Quizz</span></QuizzButton>
+            </NavLink>
           </HeaderMenu>
         </HeaderContainer>
       </HeaderStyled>
+      <BackContainer/> 
+       </> 
     );
   }
 }
 
 const HeaderStyled = styled.header`
+  position: fixed;
   z-index: 99;
   width: 100vw;
-  position: fixed;
   padding: 0 40px;
   height: 80px;
   background-color: #111827;
@@ -125,11 +130,17 @@ const HeaderMenuTab = styled.li`
 `;
 
 const QuizzButton = styled.button`
-  padding: 10px 25px;
+  height: 40px;
+  width: 80px;
   background-color: #facc15;
   height: 40px;
   border: none;
   border-radius: 44px;
+  cursor: pointer;
 `;
+
+const BackContainer = styled.div`
+height: 80px;
+`
 
 export default Header;
