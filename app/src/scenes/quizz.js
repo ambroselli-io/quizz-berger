@@ -9,7 +9,7 @@ import Header from "../components/Header";
 import rightArrow from "../images/right-arrow.svg";
 import leftArrow from "../images/left-arrow.svg";
 
-const Quizz = ({ user }) => {
+const Quizz = ({ user, setUser }) => {
   const { themeId, questionId } = useParams();
   const history = useHistory();
 
@@ -144,9 +144,13 @@ const Quizz = ({ user }) => {
   //   if (response.ok) goToNextQuestion();
   // };
 
+  // const fillProgressBar = () => {
+  //   if(user.themes.length)
+  // };
+
   return (
     <>
-      <Header user={user} />
+      <Header setUser={setUser} user={user} />
       <ThemeHeaderContainer>
         <ThemeNavigationButton onClick={goToPreviousTheme}>
           {isFirstTheme() ? "‹ Retour aux thèmes" : "‹ Thème précédent"}
@@ -177,9 +181,36 @@ const Quizz = ({ user }) => {
 
         <ProgressBarContainer>
           <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
-          <ProgressBar />
-          <ProgressBar />
-          <ProgressBar />
+          {user.themes.map((t, index) => {
+            const currentThemeIndex = user.themes.findIndex(
+              (t) => t === themeId
+            );
+
+            const currentQuestionIndex = currentThemeQuestions.findIndex(
+              (q) => q._id === questionId
+            );
+
+            const questionsProgress = () => {
+              if (currentThemeIndex > index) {
+                return "100%";
+              }
+              if (currentThemeIndex === index) {
+                const progressWidth = 100 / currentThemeQuestions.length;
+                return `${progressWidth * currentQuestionIndex}%`;
+              }
+              return "0%";
+            };
+
+            return (
+              <ProgressBar key={index}>
+                <Progress
+                  data-index={index}
+                  isThemeComplete={currentThemeIndex > index}
+                  questionsProgress={questionsProgress()}
+                />
+              </ProgressBar>
+            );
+          })}
           <NavigationButton onClick={goToNextQuestion} />
         </ProgressBarContainer>
       </BackgroundContainer>
@@ -188,8 +219,8 @@ const Quizz = ({ user }) => {
 };
 
 const ThemeHeaderContainer = styled.div`
-  padding: 80px 150px 0px 150px;
-  height: 160px;
+  padding: 0 150px 0 150px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -271,6 +302,13 @@ const ProgressBar = styled.div`
   width: 315px;
   height: 4px;
   background: #f3f4f6;
+  border-radius: 8px;
+`;
+
+const Progress = styled.div`
+  width: ${(props) => props.questionsProgress};
+  height: 4px;
+  background: #111827;
   border-radius: 8px;
 `;
 

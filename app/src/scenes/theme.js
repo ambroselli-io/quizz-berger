@@ -56,7 +56,7 @@ class Theme extends React.Component {
     const { selectedThemesIds } = this.state;
     return (
       <>
-        <Header user={this.props.user} />
+        <Header {...this.props} />
         <BackgroundContainer>
           <SubContainer>
             <Title>Political Compass Test</Title>
@@ -94,8 +94,7 @@ class Theme extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  padding-top: 80px;
-  height: 100vh;
+  height: calc(100vh - 80px);
 `;
 
 const SubContainer = styled.div`

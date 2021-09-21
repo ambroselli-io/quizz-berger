@@ -22,7 +22,7 @@ class LoginPage extends React.Component {
     const { showSignup } = this.state;
     return (
       <>
-        <Header user={this.props.user} />
+        <Header {...this.props} />
         <BackGroundContainer>
           <Title>Connectez-vous</Title>
           <LogContainer>
@@ -60,7 +60,7 @@ class LoginPage extends React.Component {
 }
 
 const BackGroundContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 80px);
   background-color: #111827;
   display: flex;
   flex-direction: column;
