@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "../styles/mediaQueries";
 
 import Header from "../components/Header";
 import ThemeButton from "../components/ThemeButton";
@@ -80,12 +81,14 @@ class Theme extends React.Component {
                 );
               })}
             </ThemesContainer>
+            {/* <Footer> */}
             <ValidateButton
               isDisplayed={selectedThemesIds.length >= 3}
               onClick={this.saveSelectedThemes}
             >
               Valider mes thèmes
             </ValidateButton>
+            {/* </Footer> */}
           </SubContainer>
         </BackgroundContainer>
       </>
@@ -94,7 +97,8 @@ class Theme extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
 `;
 
 const SubContainer = styled.div`
@@ -116,18 +120,22 @@ const Title = styled.h2`
   color: #111827;
 `;
 
-const ThemesContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-`;
-
 const SubTitle = styled.h3`
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: normal;
   font-size: 16px;
   text-align: center;
   color: #111827;
+`;
+
+const ThemesContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  ${media.mobile`
+  grid-template-columns: auto;
+  margin-bottom: 50px;
+`}
 `;
 
 const ValidateButton = styled.button`
@@ -141,6 +149,13 @@ const ValidateButton = styled.button`
   border: none;
   cursor: pointer;
   cursor: ${(props) => (props.isDisplayed ? "pointer" : "auto")};
+  ${media.mobile`
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  border-radius: 0;
+`}
 `;
 
 export default Theme;

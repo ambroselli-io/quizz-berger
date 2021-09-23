@@ -110,6 +110,7 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
       const getCandidateDataSetIndex = dataSets.findIndex(
         (data) => data.label === c
       );
+      console.log(chartRef);
       chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
       chartRef.current.update();
     });

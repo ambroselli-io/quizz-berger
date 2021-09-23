@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
+import { slide as Menu } from "react-burger-menu";
 import API from "../services/api";
+import { media } from "../styles/mediaQueries";
 
 import logo from "../images/logo.svg";
+import burgerNav from "../images/burgerNav.svg";
 
 class Header extends React.Component {
   onLogout = async () => {
@@ -12,50 +15,133 @@ class Header extends React.Component {
     });
     if (response.ok) this.props.setUser();
   };
+
+  showSettings(event) {
+    event.preventDefault();
+  }
   render() {
     const { user } = this.props;
+
+    const burgerNavStyles = {
+      bmBurgerButton: {
+        width: "16px",
+        height: "12px",
+        // background: `url(${burgerNav}) no-repeat`,
+        border: "none",
+      },
+      bmCrossButton: {
+        top: "30px",
+        right: "15px",
+        position: "fixed",
+        height: "27px",
+        width: "27px",
+      },
+      bmCross: {
+        background: "white",
+      },
+      bmMenuWrap: {
+        top: "0",
+        position: "fixed",
+        height: "100%",
+        width: "100vw",
+      },
+      bmMenu: {
+        background: "#111827",
+        padding: "23px 0",
+        fontSize: "1.15em",
+      },
+      bmItemList: {
+        color: "white",
+        // padding: "0.8em",
+      },
+      bmItem: {
+        margin: "0 0 30px 0",
+        display: "block",
+      },
+      bmOverlay: {
+        top: "0",
+        left: "0",
+        background: "rgba(0, 0, 0, 0.7)",
+      },
+    };
+
     return (
       <>
-      <HeaderStyled>
-        <HeaderContainer>
-          <LeftContainer>
-            <Link to='/home'>
-            <HeaderLogo />
-            </Link>
-            <Link to='/home'>
-            <Title>Le Quizz du Berger</Title>
-            </Link>
-          </LeftContainer>
-          <HeaderMenu>
-            <HeaderMenuTab>
-              <NavLink activeClassName='selected' to='/home'>
-                Accueil
-              </NavLink>
-            </HeaderMenuTab>
-            <HeaderMenuTab>
-              <NavLink activeClassName='selected' to='/result'>
-                Résultats
-              </NavLink>
-            </HeaderMenuTab>
-            {!!user?.pseudo ? (
-              <HeaderMenuTab onClick={this.onLogout}>
-                Se déconnecter
-              </HeaderMenuTab>
-            ) : (
+        <HeaderStyled>
+          <HeaderContainer>
+            <LeftContainer>
+              <Link to='/home'>
+                <HeaderLogo />
+              </Link>
+              <Link to='/home'>
+                <Title>Le Quizz du Berger</Title>
+              </Link>
+            </LeftContainer>
+            <HeaderMenu>
               <HeaderMenuTab>
-                <NavLink activeClassName='selected' to='/login'>
-                  Se connecter
+                <NavLink activeClassName='selected' to='/home'>
+                  Accueil
                 </NavLink>
               </HeaderMenuTab>
-            )}
-            <NavLink activeClassName='selected' to='/theme'>
-              <QuizzButton><span>Quizz</span></QuizzButton>
-            </NavLink>
-          </HeaderMenu>
-        </HeaderContainer>
-      </HeaderStyled>
-      <BackContainer/> 
-       </> 
+              <HeaderMenuTab>
+                <NavLink activeClassName='selected' to='/result'>
+                  Résultats
+                </NavLink>
+              </HeaderMenuTab>
+              {!!user?.pseudo ? (
+                <HeaderMenuTab onClick={this.onLogout}>
+                  Se déconnecter
+                </HeaderMenuTab>
+              ) : (
+                <HeaderMenuTab>
+                  <NavLink activeClassName='selected' to='/login'>
+                    Se connecter
+                  </NavLink>
+                </HeaderMenuTab>
+              )}
+              <NavLink activeClassName='selected' to='/theme'>
+                <QuizzButton>
+                  <span>Quizz</span>
+                </QuizzButton>
+              </NavLink>
+              {/* <BurgerMenu /> */}
+              <BurgerNavContainer>
+                <Menu
+                  right
+                  styles={burgerNavStyles}
+                  customBurgerIcon={
+                    <img src={burgerNav} alt='mobile navigation menu' />
+                  }
+                >
+                  <BurgerNavHeaderContainer>
+                    <HeaderLogo />
+                    <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
+                  </BurgerNavHeaderContainer>
+                  <Fillet />
+                  <BurgerMenuTab>
+                    <NavLink activeClassName='selected' to='/home'>
+                      Accueil
+                    </NavLink>
+                  </BurgerMenuTab>
+                  <Fillet />
+                  <BurgerMenuTab>
+                    <NavLink activeClassName='selected' to='/result'>
+                      Résultats
+                    </NavLink>
+                  </BurgerMenuTab>
+                  <Fillet />
+                  <BurgerMenuTab>
+                    <NavLink activeClassName='selected' to='/login'>
+                      Se connecter
+                    </NavLink>
+                  </BurgerMenuTab>
+                </Menu>
+              </BurgerNavContainer>
+            </HeaderMenu>
+          </HeaderContainer>
+        </HeaderStyled>
+        <BackContainer />
+      </>
     );
   }
 }
@@ -67,12 +153,15 @@ const HeaderStyled = styled.header`
   padding: 0 40px;
   height: 80px;
   background-color: #111827;
+  ${media.mobile`
+  padding: 0 20px;
+`}
 `;
 
 const HeaderContainer = styled.div`
   margin: 0 auto;
   height: 100%;
-  max-width: auto;
+  /* max-width: 1024px; */
   width: auto;
   display: flex;
   align-items: center;
@@ -99,8 +188,11 @@ const HeaderLogo = styled.div`
 const Title = styled.h1`
   color: white;
   font-family: Merriweather;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
+  ${media.mobile`
+  display: none;
+`}
 `;
 
 const HeaderMenu = styled.ul`
@@ -108,12 +200,16 @@ const HeaderMenu = styled.ul`
   padding: 0;
   display: grid;
   align-items: center;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 40px;
   color: white;
   list-style-type: none;
   font-size: 14px;
   font-weight: 500;
+  ${media.mobile`
+  display: block;
+  height: auto;
+`}
 `;
 
 const HeaderMenuTab = styled.li`
@@ -127,6 +223,9 @@ const HeaderMenuTab = styled.li`
     border-top: 3px solid #facc15;
     color: white;
   }
+  ${media.mobile`
+  display: none;
+  `}
 `;
 
 const QuizzButton = styled.button`
@@ -137,10 +236,44 @@ const QuizzButton = styled.button`
   border: none;
   border-radius: 44px;
   cursor: pointer;
+  ${media.mobile`
+  display: none;
+  `}
+`;
+
+const BurgerNavContainer = styled.div`
+  display: none;
+  ${media.mobile`
+  display: block;
+  `}
+`;
+
+const Fillet = styled.div`
+  height: 1px;
+  background-color: grey;
+  width: 100%;
+`;
+
+const BurgerNavHeaderContainer = styled.div`
+  padding: 0 20px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const BurgerNavTitle = styled.h1`
+  color: white;
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: bold;
+`;
+
+const BurgerMenuTab = styled.div`
+  margin: 30px 10px !important;
 `;
 
 const BackContainer = styled.div`
-height: 80px;
-`
+  height: 80px;
+`;
 
 export default Header;

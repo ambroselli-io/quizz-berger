@@ -71,7 +71,7 @@ class Signup extends React.Component {
 const SignupSubContainer = styled.div`
   padding: 24px;
   height: auto;
-  width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;

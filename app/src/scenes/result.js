@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
+import { media } from "../styles/mediaQueries";
 
 import Header from "../components/Header";
 import RadarChart from "../components/RadarChart";
@@ -133,6 +134,7 @@ class Result extends React.Component {
                   if (isActive) {
                     return (
                       <PolarChart
+                        selectedCandidates={selectedCandidates}
                         partyScores={partyScores}
                         candidatesScorePerThemes={candidatesScorePerThemes}
                         isActive={

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "../styles/mediaQueries";
 
 class ThemeButton extends React.Component {
   render() {
@@ -21,7 +22,7 @@ class ThemeButton extends React.Component {
 
 const ThemesButtons = styled.button`
   padding: 24px;
-  width: 370px;
+  max-width: 370px;
   height: 72px;
   display: flex;
   align-items: center;
@@ -37,6 +38,7 @@ const ThemesButtons = styled.button`
 const CheckBox = styled.div`
   margin-right: 10px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   height: 25px;
