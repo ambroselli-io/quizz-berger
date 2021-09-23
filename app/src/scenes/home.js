@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { media } from "../styles/mediaQueries";
 
 import Header from "../components/Header";
 
@@ -29,7 +30,8 @@ class Home extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  height: calc(100vh - 80px);
+  padding: 40px 20px;
+  min-height: calc(100vh - 80px);
   background-color: #111827;
   display: flex;
   align-items: center;
@@ -37,7 +39,6 @@ const BackgroundContainer = styled.div`
 `;
 
 const Container = styled.div`
-  /* margin-top: 80px; */
   width: 770px;
   height: 100%;
   display: flex;
@@ -55,6 +56,9 @@ const Title = styled.h2`
   line-height: 150%;
   text-align: center;
   color: #ffffff;
+  ${media.mobile`
+  font-size: 44px;
+`}
 `;
 
 const SubTitle = styled.h3`
@@ -64,6 +68,7 @@ const SubTitle = styled.h3`
   font-weight: 300;
   font-size: 20px;
   line-height: 200%;
+  text-align: center;
   color: #ffffff;
   opacity: 0.8;
 `;

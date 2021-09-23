@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
   html, body {
+    overscroll-behavior: none;
     height: 100%;
     font-family: Merriweather Sans !important;
     font-weight: 400 !important;

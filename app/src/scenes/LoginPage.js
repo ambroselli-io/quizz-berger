@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "../styles/mediaQueries";
 
 import Header from "../components/Header";
 import Signup from "../components/Signup";
@@ -60,7 +61,7 @@ class LoginPage extends React.Component {
 }
 
 const BackGroundContainer = styled.div`
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   background-color: #111827;
   display: flex;
   flex-direction: column;
@@ -81,7 +82,7 @@ const Title = styled.h2`
 
 const LogContainer = styled.div`
   margin: 0 auto;
-  width: 400px;
+  max-width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -103,6 +104,9 @@ const LoginButton = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 8px 8px 0 0;
+  ${media.mobile`
+  width: 150px;
+`};
 `;
 
 const SignupButton = styled.button`
@@ -114,6 +118,9 @@ const SignupButton = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 8px 8px 0 0;
+  ${media.mobile`
+  width: 150px;
+`};
 `;
 
 export default LoginPage;

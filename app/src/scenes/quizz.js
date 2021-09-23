@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
 import quizz from "../quizz.json";
 import API from "../services/api";
+import { media } from "../styles/mediaQueries";
 
 import Header from "../components/Header";
 
@@ -127,38 +128,37 @@ const Quizz = ({ user, setUser }) => {
     return false;
   };
 
-  // const sendAnswer = async (e) => {
-  //   const response = await API.postWithCreds({
-  //     path: "/answer",
-  //     body: {
-  //       user: user._id,
-  //       themeId: currentTheme._id,
-  //       questionId: questionId,
-  //       answerIndex: e.target.dataset.index,
-  //     },
-  //   });
-  //   if (!response.ok) {
-  //     console.log(response.error);
-  //   }
+  const sendAnswer = async (e) => {
+    const response = await API.postWithCreds({
+      path: "/answer",
+      body: {
+        user: user._id,
+        themeId: currentTheme._id,
+        questionId: questionId,
+        answerIndex: e.target.dataset.index,
+      },
+    });
+    if (!response.ok) {
+      console.log(response.error);
+    }
 
-  //   if (response.ok) goToNextQuestion();
-  // };
-
-  // const fillProgressBar = () => {
-  //   if(user.themes.length)
-  // };
+    if (response.ok) goToNextQuestion();
+  };
 
   return (
     <>
       <Header setUser={setUser} user={user} />
       <ThemeHeaderContainer>
-        <ThemeNavigationButton onClick={goToPreviousTheme}>
-          {isFirstTheme() ? "‹ Retour aux thèmes" : "‹ Thème précédent"}
-        </ThemeNavigationButton>
-        <ThemeTitle>{currentTheme.fr}</ThemeTitle>
-        <ThemeNavigationButton onClick={goToNextTheme}>
-          {isLastTheme() ? "Voir les résultats ›" : "Thème suivant ›"}
-        </ThemeNavigationButton>
+        <ThemeNavigationContainer>
+          <ThemeNavigationButton onClick={goToPreviousTheme}>
+            {isFirstTheme() ? "‹ Retour aux thèmes" : "‹ Thème précédent"}
+          </ThemeNavigationButton>
+          <ThemeTitle>{currentTheme.fr}</ThemeTitle>
+          <ThemeNavigationButton onClick={goToNextTheme}>
+            {isLastTheme() ? "Voir les résultats ›" : "Thème suivant ›"}
+          </ThemeNavigationButton>
+        </ThemeNavigationContainer>
+        <MobileThemeTitle>{currentTheme.fr}</MobileThemeTitle>
       </ThemeHeaderContainer>
 
       <BackgroundContainer>
@@ -168,7 +168,7 @@ const Quizz = ({ user, setUser }) => {
             {answers.map((answer, index) => {
               return (
                 <AnswerButton
-                  // onClick={sendAnswer}
+                  onClick={sendAnswer}
                   key={index}
                   data-index={index}
                 >
@@ -219,12 +219,26 @@ const Quizz = ({ user, setUser }) => {
 };
 
 const ThemeHeaderContainer = styled.div`
-  padding: 0 150px 0 150px;
+  padding: 0 40px 0 40px;
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: #f7df1e;
+  ${media.mobile`
+  padding: 0 15px 0 15px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 126px;
+`}
+`;
+
+const ThemeNavigationContainer = styled.div`
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const ThemeNavigationButton = styled.button`
@@ -238,6 +252,21 @@ const ThemeTitle = styled.h2`
   font-family: Merriweather;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
+  ${media.mobile`
+  display: none;
+`}
+`;
+
+const MobileThemeTitle = styled.h2`
+  display: none;
+  ${media.mobile`
+  text-align: center;
+  display: block;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 18px;
+`}
 `;
 
 const BackgroundContainer = styled.div`
@@ -247,9 +276,18 @@ const BackgroundContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  ${media.mobile`
+  padding: 40px 10px;
+
+`};
 `;
 
-const QuestionContainer = styled.div``;
+const QuestionContainer = styled.div`
+  width: 100%;
+  ${media.mobile`
+  padding-bottom: 60px;
+`};
+`;
 
 const QuestionTitle = styled.h2`
   margin-bottom: 40px;
@@ -259,13 +297,21 @@ const QuestionTitle = styled.h2`
 `;
 
 const AnswerContainer = styled.div`
+  margin: 0 auto;
+  max-width: 1020px;
   display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  align-items: center;
+  ${media.mobile`
+  flex-direction: column;
+  margin-bottom: 40px;
+`};
 `;
 
 const AnswerButton = styled.button`
-  margin: 0 10px;
   height: 120px;
-  width: 240px;
+  flex: auto;
   font-size: 16px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -275,18 +321,33 @@ const AnswerButton = styled.button`
     background: #111827;
     color: white;
   }
+  ${media.mobile`
+  width: 300px;
+  height: 80px;
+`};
 `;
 
 const ProgressBarContainer = styled.div`
+  max-width: 1024px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  ${media.mobile`
+  padding: 0 10px;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 1px solid black;
+`}
 `;
 
 const NavigationButton = styled.button`
-  margin: 0 50px;
+  margin: ${(props) => (props.leftArrow ? `0 50px 0 0px` : `0 0px 0 50px`)};
   height: 17px;
-  width: 19px;
+  min-width: 19px;
   background-color: white;
   border: none;
   border-radius: 5px;
@@ -295,14 +356,19 @@ const NavigationButton = styled.button`
     props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`};
   background-repeat: no-repeat;
   background-size: cover;
+  ${media.mobile`
+  margin: ${(props) => (props.leftArrow ? `0 10px 0 0px` : `0 0px 0 10px`)};
+`}
 `;
 
 const ProgressBar = styled.div`
   margin: 0 5px;
-  width: 315px;
+  width: 100%;
   height: 4px;
   background: #f3f4f6;
   border-radius: 8px;
+  ${media.mobile`
+`}
 `;
 
 const Progress = styled.div`
