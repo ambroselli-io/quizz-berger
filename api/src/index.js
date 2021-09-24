@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "development") {
   require("../scripts/migrations");
 }
 if (process.env.NODE_ENV === "production") {
-  app.use(cors({ origin: HOST, credentials: true }));
+  app.use(cors({ origin: [HOST], credentials: true }));
 }
 
 app.use(express.static(__dirname + "/../public"));
