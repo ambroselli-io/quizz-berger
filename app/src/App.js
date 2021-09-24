@@ -21,7 +21,7 @@ class App extends React.Component {
 
   onGetUser = async () => {
     const response = await API.getWithCreds({ path: "/user/me" });
-    if (!response.ok) document.cookie = null;
+    if (!response?.ok) return (document.cookie = null);
     this.setUser(response.data);
   };
 
