@@ -1,10 +1,17 @@
-import { React, useEffect, useRef } from "react";
+import { React, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { PolarArea } from "react-chartjs-2";
+import { media } from "../styles/mediaQueries";
 
 import quizz from "../quizz.json";
 
-const PolarChart = ({ candidatesScorePerThemes, partyScores }) => {
+const PolarChart = ({
+  candidatesScorePerThemes,
+  partyScores,
+  selectedThemes,
+}) => {
+  const radarChartRef = useRef();
+
   const scores = partyScores.map((score) => score.score);
   const themes = candidatesScorePerThemes[0]?.map((theme) => {
     return quizz.find((quizztheme) => quizztheme._id === theme.themeId).fr;
@@ -35,7 +42,7 @@ const PolarChart = ({ candidatesScorePerThemes, partyScores }) => {
       legend: {
         display: true,
         position: "bottom",
-        onClick: false,
+        // onClick: true,
         labels: {
           usePointStyle: true,
           boxHeight: 4,
@@ -61,11 +68,26 @@ const PolarChart = ({ candidatesScorePerThemes, partyScores }) => {
     },
   };
 
+  useEffect(() => {
+    // selectedThemes.forEach((c) => {
+    //   const getCandidateDataSetIndex = dataSets.findIndex(
+    //     (data) => data.label === c
+    //   );
+    //   chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
+    //   chartRef.current.update();
+    // });
+
+    radarChartRef.current?.toggleDataVisibility(2);
+    radarChartRef.current?.update();
+  }, [selectedThemes]);
+
+  console.log(radarChartRef.current);
+
   return (
     <>
       <ChartContainer>
         <CandidateTitle>{partyScores[0].pseudo}</CandidateTitle>
-        <PolarArea data={data} options={options} />
+        <PolarArea ref={radarChartRef} data={data} options={options} />
       </ChartContainer>
     </>
   );
@@ -77,7 +99,10 @@ const ChartContainer = styled.div`
   margin-bottom: 20px;
   width: 400px;
   height: auto;
-  border: 1px solid red;
+  border: 1px solid grey;
+  ${media.mobile`
+  width: 270px;
+`}
 `;
 
 const CandidateTitle = styled.h3`

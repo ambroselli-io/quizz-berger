@@ -1,6 +1,7 @@
 import { React, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
+import { media } from "../styles/mediaQueries";
 
 import quizz from "../quizz.json";
 
@@ -110,7 +111,6 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
       const getCandidateDataSetIndex = dataSets.findIndex(
         (data) => data.label === c
       );
-      console.log(chartRef);
       chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
       chartRef.current.update();
     });
@@ -125,8 +125,12 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
 
 const RadarContainer = styled.div`
   margin: 0 auto;
-  width: 800px;
+  width: 30vw;
   height: 600px;
+  ${media.mobile`
+  width: 200px;
+  height: 400px;
+`}
 `;
 
 export default RadarChart;

@@ -130,11 +130,17 @@ class Header extends React.Component {
                     </NavLink>
                   </BurgerMenuTab>
                   <Fillet />
-                  <BurgerMenuTab>
-                    <NavLink activeClassName='selected' to='/login'>
-                      Se connecter
-                    </NavLink>
-                  </BurgerMenuTab>
+                  {!!user?.pseudo ? (
+                    <BurgerMenuTab onClick={this.onLogout}>
+                      Se déconnecter
+                    </BurgerMenuTab>
+                  ) : (
+                    <BurgerMenuTab>
+                      <NavLink activeClassName='selected' to='/login'>
+                        Se connecter
+                      </NavLink>
+                    </BurgerMenuTab>
+                  )}
                 </Menu>
               </BurgerNavContainer>
             </HeaderMenu>
