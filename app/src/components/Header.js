@@ -13,7 +13,7 @@ class Header extends React.Component {
     const response = await API.post({
       path: "/user/logout",
     });
-    if (response.ok) this.props.setUser();
+    if (response.ok) this.props.setUser(null);
   };
 
   showSettings(event) {
@@ -70,36 +70,34 @@ class Header extends React.Component {
         <HeaderStyled>
           <HeaderContainer>
             <LeftContainer>
-              <Link to='/home'>
+              <Link to="/home">
                 <HeaderLogo />
               </Link>
-              <Link to='/home'>
+              <Link to="/home">
                 <Title>Le Quizz du Berger</Title>
               </Link>
             </LeftContainer>
             <HeaderMenu>
               <HeaderMenuTab>
-                <NavLink activeClassName='selected' to='/home'>
+                <NavLink activeClassName="selected" to="/home">
                   Accueil
                 </NavLink>
               </HeaderMenuTab>
               <HeaderMenuTab>
-                <NavLink activeClassName='selected' to='/result'>
+                <NavLink activeClassName="selected" to="/result">
                   Résultats
                 </NavLink>
               </HeaderMenuTab>
               {!!user?.pseudo ? (
-                <HeaderMenuTab onClick={this.onLogout}>
-                  Se déconnecter
-                </HeaderMenuTab>
+                <HeaderMenuTab onClick={this.onLogout}>Se déconnecter</HeaderMenuTab>
               ) : (
                 <HeaderMenuTab>
-                  <NavLink activeClassName='selected' to='/login'>
+                  <NavLink activeClassName="selected" to="/login">
                     Se connecter
                   </NavLink>
                 </HeaderMenuTab>
               )}
-              <NavLink activeClassName='selected' to='/theme'>
+              <NavLink activeClassName="selected" to="/theme">
                 <QuizzButton>
                   <span>Quizz</span>
                 </QuizzButton>
@@ -109,34 +107,29 @@ class Header extends React.Component {
                 <Menu
                   right
                   styles={burgerNavStyles}
-                  customBurgerIcon={
-                    <img src={burgerNav} alt='mobile navigation menu' />
-                  }
-                >
+                  customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
                   <BurgerNavHeaderContainer>
                     <HeaderLogo />
                     <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
                   </BurgerNavHeaderContainer>
                   <Fillet />
                   <BurgerMenuTab>
-                    <NavLink activeClassName='selected' to='/home'>
+                    <NavLink activeClassName="selected" to="/home">
                       Accueil
                     </NavLink>
                   </BurgerMenuTab>
                   <Fillet />
                   <BurgerMenuTab>
-                    <NavLink activeClassName='selected' to='/result'>
+                    <NavLink activeClassName="selected" to="/result">
                       Résultats
                     </NavLink>
                   </BurgerMenuTab>
                   <Fillet />
                   {!!user?.pseudo ? (
-                    <BurgerMenuTab onClick={this.onLogout}>
-                      Se déconnecter
-                    </BurgerMenuTab>
+                    <BurgerMenuTab onClick={this.onLogout}>Se déconnecter</BurgerMenuTab>
                   ) : (
                     <BurgerMenuTab>
-                      <NavLink activeClassName='selected' to='/login'>
+                      <NavLink activeClassName="selected" to="/login">
                         Se connecter
                       </NavLink>
                     </BurgerMenuTab>

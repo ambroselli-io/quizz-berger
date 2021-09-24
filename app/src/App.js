@@ -21,7 +21,7 @@ class App extends React.Component {
 
   onGetUser = async () => {
     const response = await API.getWithCreds({ path: "/user/me" });
-    if (!response.ok) return alert(response.error);
+    if (!response.ok) document.cookie = null;
     this.setUser(response.data);
   };
 
@@ -34,40 +34,33 @@ class App extends React.Component {
       <BrowserRouter>
         <GlobalStyles />
         <Switch>
+          <Route path="/home" render={(props) => <Home user={user} setUser={this.setUser} />} />
           <Route
-            path='/home'
-            render={(props) => <Home user={user} setUser={this.setUser} />}
-          />
-          <Route
-            path='/login'
-            render={(props) => (
-              <LoginPage {...props} user={user} setUser={this.setUser} />
-            )}
+            path="/login"
+            render={(props) => <LoginPage {...props} user={user} setUser={this.setUser} />}
           />
           <RestrictedRoute
-            path='/theme'
+            path="/theme"
             user={user}
-            Component={(props) => (
-              <ThemeSelect {...props} setUser={this.setUser} />
-            )}
+            Component={(props) => <ThemeSelect {...props} setUser={this.setUser} />}
           />
           <RestrictedRoute
-            path='/question/:themeId/:questionId'
+            path="/question/:themeId/:questionId"
             exact
             user={user}
             Component={(props) => <Quizz {...props} setUser={this.setUser} />}
           />
           <RestrictedRoute
-            path='/result'
+            path="/result"
             exact
             user={user}
             Component={(props) => <Result {...props} setUser={this.setUser} />}
           />
           <RestrictedRoute
-            path='/'
+            path="/"
             exact
             user={user}
-            Component={() => <Redirect to='/theme' setUser={this.setUser} />}
+            Component={() => <Redirect to="/theme" setUser={this.setUser} />}
           />
         </Switch>
       </BrowserRouter>
@@ -80,11 +73,7 @@ const RestrictedRoute = ({ Component, user, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        user?._id ? (
-          <Component {...props} user={user} />
-        ) : (
-          <Redirect to='/login' />
-        )
+        user?._id ? <Component {...props} user={user} /> : <Redirect to="/login" />
       }
     />
   );
