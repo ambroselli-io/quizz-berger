@@ -16,12 +16,23 @@ const app = express();
 
 if (process.env.NODE_ENV === "development") {
   app.use(logger("dev"));
-  app.use(cors({ origin: ["http://127.0.0.1:8080", "http://127.0.0.1:3000"], credentials: true }));
-  require("../scripts/migrations");
 }
-if (process.env.NODE_ENV === "production") {
-  app.use(cors({ origin: [HOST], credentials: true }));
-}
+
+const whitelist = [HOST];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (process.env.NODE_ENV === "development") return callback(null, true);
+    if (!origin) return callback(null, true); // because same-origin gives origin === undefined;
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error(`${origin} not allowed by CORS : ${JSON.stringify(whitelist)}`));
+    }
+  },
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 app.use(express.static(__dirname + "/../public"));
 // Pre middleware
