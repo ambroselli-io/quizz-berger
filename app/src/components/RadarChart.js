@@ -1,4 +1,4 @@
-import { React, useEffect, useRef } from "react";
+import { React, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
 import { media } from "../styles/mediaQueries";
@@ -49,6 +49,7 @@ const options = {
 
 const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
   const chartRef = useRef();
+  const [isMounting, setIsMounting] = useState(false);
 
   const colors = [
     {
@@ -107,14 +108,18 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
   };
 
   useEffect(() => {
-    selectedCandidates.forEach((c) => {
-      const getCandidateDataSetIndex = dataSets.findIndex(
-        (data) => data.label === c
-      );
+    if (!isMounting) setIsMounting(true);
+  }, [isMounting]);
+
+  useEffect(() => {
+    for (const candidate of selectedCandidates) {
+      if (!chartRef.current) continue;
+      const getCandidateDataSetIndex = dataSets.findIndex((data) => data.label === candidate);
       chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
       chartRef.current.update();
-    });
-  }, [selectedCandidates]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isMounting, selectedCandidates.length]);
 
   return (
     <RadarContainer>
