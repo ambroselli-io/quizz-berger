@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
 import { media } from "../styles/mediaQueries";
+import quizz from "../quizz.json";
 
 import Header from "../components/Header";
 import RadarChart from "../components/RadarChart";
@@ -14,7 +15,7 @@ class Result extends React.Component {
     candidatesAnswers: [],
     showRadarChart: true,
     selectedCandidates: [],
-    // selectedThemes: [],
+    selectedThemes: [],
   };
 
   componentDidMount() {
@@ -33,6 +34,7 @@ class Result extends React.Component {
         userAnswers: response.data,
         candidatesAnswers: candidatesResponse.data,
         selectedCandidates: candidates,
+        selectedThemes: this.props.user.themes,
       });
     }
   };
@@ -65,12 +67,26 @@ class Result extends React.Component {
     }
   };
 
-  setDefaultSelectedCandidates = () => {
-    // getCandidatesScorePerThemes(userAnswers, candidatesAnswers).map((c) => {
-    //   console.log(c);
-    // });
-    console.log(this.state);
-    // selectedCandidates: [...selectedCandidates, e.target.dataset.candidate],
+  setSelectedThemes = (e) => {
+    const { selectedThemes } = this.state;
+    const onSelectedThemes = selectedThemes.find(
+      (t) => t === e.target.dataset.themeid
+    );
+
+    if (!onSelectedThemes) {
+      this.setState({
+        selectedThemes: [...selectedThemes, e.target.dataset.themeid],
+      });
+      console.log(e.target.dataset.themeid, "added to selected candidates");
+    } else {
+      const onDeleteSelectedTheme = selectedThemes.filter((t) => {
+        return t !== e.target.dataset.themeid;
+      });
+
+      this.setState({ selectedThemes: onDeleteSelectedTheme });
+
+      console.log(onDeleteSelectedTheme);
+    }
   };
 
   render() {
@@ -79,7 +95,10 @@ class Result extends React.Component {
       candidatesAnswers,
       showRadarChart,
       selectedCandidates,
+      selectedThemes,
     } = this.state;
+
+    const { user } = this.props;
 
     const candidatesScorePerThemes = getCandidatesScorePerThemes(
       userAnswers,
@@ -117,6 +136,28 @@ class Result extends React.Component {
                   </CandidateButton>
                 ))}
               </CandidateButtonContainer>
+              {!showRadarChart && (
+                <>
+                  <SubTitle> Selectionnez les thèmes à afficher</SubTitle>
+                  <CandidateButtonContainer>
+                    {user.themes.map((userT) => {
+                      const theme = quizz.find((t) => t._id === userT);
+                      return (
+                        <CandidateButton
+                          key={userT}
+                          data-themeid={theme._id}
+                          isActive={
+                            !!selectedThemes.find((c) => c === theme._id)
+                          }
+                          onClick={this.setSelectedThemes}
+                        >
+                          {theme.fr}
+                        </CandidateButton>
+                      );
+                    })}
+                  </CandidateButtonContainer>
+                </>
+              )}
             </LeftContainer>
             <ChartsContainer>
               {showRadarChart && (
@@ -134,7 +175,8 @@ class Result extends React.Component {
                   if (isActive) {
                     return (
                       <PolarChart
-                        selectedCandidates={selectedCandidates}
+                        key={partyScores[0].pseudo}
+                        selectedThemes={selectedThemes}
                         partyScores={partyScores}
                         candidatesScorePerThemes={candidatesScorePerThemes}
                         isActive={
@@ -156,6 +198,9 @@ class Result extends React.Component {
 
 const BackgroundContainer = styled.div`
   padding: 80px 80px 0 80px;
+  ${media.mobile`
+  padding: 40px 10px 0 10px;
+`}
 `;
 
 const SwitchButtons = styled.div`
@@ -170,16 +215,20 @@ const SwitchButtons = styled.div`
 `;
 
 const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1024px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 50px;
   justify-content: space-between;
+  /* border: 1px solid red; */
+  ${media.mobile`
+    display: block;
+`}
 `;
 
 const LeftContainer = styled.div`
-  /* position: sticky;
-  top: 0px;
-  height: 100vw; */
+  /* border: 1px solid red; */
   > p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -210,6 +259,7 @@ const CandidateButtonContainer = styled.div`
 `;
 
 const CandidateButton = styled.button`
+  margin-bottom: 20px;
   padding: 0 15px;
   height: 40px;
   background-color: ${(props) => (props.isActive ? "#111827" : "white")};
