@@ -1,0 +1,156 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz BUilder</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+    input {
+      width: 350px;
+      height: 35px;
+    }
+    /* spacing */
+
+    .subcontainer {
+      position: relative;
+      height: 300px;
+      width: 800px;
+      margin: 0;
+      background: linear-gradient(45deg, #49a09d, #5f2c82);
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    table {
+      width: 800px;
+      border-collapse: collapse;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    table input {
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    th,
+    td {
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+    th {
+      text-align: left;
+    }
+    thead th {
+      background-color: #55608f;
+    }
+    tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    tbody td {
+      position: relative;
+    }
+    tbody td:hover:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -9999px;
+      bottom: -9999px;
+      background-color: rgba(255, 255, 255, 0.2);
+      z-index: -1;
+    }
+
+    .question {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <h1>Quizz Builder</h1>
+    <h2>Current theme: <input id="current-theme" value="{{CURRENT_THEME}}" /></h2>
+    <h2>Current question: <input id="current-question" value="{{CURRENT_QUESTION}}" /></h2>
+    <section>
+      <h3>Answers</h3>
+      <ol id="answers"></ol>
+    </section>
+    <div class="subcontainer">
+      <div class="container">
+        <table id="scores">
+          <thead>
+            <tr>
+              {{QUESTIONS_HEADER_ROW}}
+            </tr>
+          </thead>
+          <tbody>
+            {{SCORES}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button id="update">Update</button><br />
+    <button id="prev-theme">Thème précédent</button>
+    <button id="next-theme">Thème suivant</button><br />
+    <button id="prev-question">Question précédente</button>
+    <button id="next-question">Question suivante</button>
+    <h2>All questions:</h2>
+    {{ALL_QUESTIONS}}
+  </body>
+  <script>
+    const buttonUpdate = document.getElementById("update");
+    buttonUpdate.onclick = async function (e) {
+      const themeName = document.getElementById("current-theme").value;
+      const questionName = document.getElementById("current-question").value;
+      const answers = [...document.getElementById("answers").getElementsByTagName("input")].map((input) => input.value);
+      fetch(window.location.href, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({
+          themeName,
+          questionName,
+          answers,
+          scores: [...document.querySelectorAll(".score")].reduce((scores, input) => {
+            const line = input.dataset.line;
+            const column = input.dataset.column;
+            if (!scores[line] || !scores[line].length) scores[line] = [];
+            scores[line][column] = parseInt(input.value);
+            return scores;
+          }, []),
+        }),
+      }).then(() => window.location.reload());
+    };
+
+    [...document.querySelectorAll(".question")].forEach((q) =>
+      q.addEventListener("click", function (e) {
+        const questionIndex = q.dataset.question;
+        const themeIndex = q.dataset.theme;
+        window.location.href = `${window.location.origin}/quizz-builder/${themeIndex}/${questionIndex}`;
+      })
+    );
+
+    const currentThemeIndex = parseInt(window.location.pathname.split("/")[2], 10);
+    const currentQuestionIndex = parseInt(window.location.pathname.split("/")[3], 10);
+
+    document.getElementById("prev-theme").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex - 1}/0`;
+    };
+    document.getElementById("next-theme").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex + 1}/0`;
+    };
+    document.getElementById("prev-question").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex - 1}`;
+    };
+    document.getElementById("next-question").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex + 1}`;
+    };
+  </script>
+</html>
