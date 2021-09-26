@@ -153,6 +153,8 @@ const HeaderStyled = styled.header`
   height: 80px;
   background-color: #111827;
   ${media.mobile`
+  max-height: 80px;
+  height: 11vh;
   padding: 0 20px;
 `}
 `;
@@ -273,6 +275,10 @@ const BurgerMenuTab = styled.div`
 
 const BackContainer = styled.div`
   height: 80px;
+  ${media.mobile`
+  max-height: 80px;
+  height: 11vh;
+`}
 `;
 
 export default Header;

@@ -88,7 +88,9 @@ const FormInput = styled.input`
   border-radius: 2px;
   font-size: 12px;
   font-weight: 300;
-  color: rgba(17, 24, 39, 0.4);
+  &:placeholder {
+    color: rgba(17, 24, 39, 0.4);
+  }
 `;
 
 const LoginButton = styled.button`
