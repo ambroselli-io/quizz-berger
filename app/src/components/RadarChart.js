@@ -133,7 +133,7 @@ const RadarContainer = styled.div`
   width: 30vw;
   height: 600px;
   ${media.mobile`
-  width: 200px;
+  width: 300px;
   height: 400px;
 `}
 `;

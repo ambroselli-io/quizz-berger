@@ -142,7 +142,10 @@ const Quizz = ({ user, setUser }) => {
       console.log(response.error);
     }
 
-    if (response.ok) goToNextQuestion();
+    if (response.ok) {
+      window.scrollTo(0, 0);
+      goToNextQuestion();
+    }
   };
 
   return (
@@ -229,7 +232,8 @@ const ThemeHeaderContainer = styled.div`
   padding: 0 15px 0 15px;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 126px;
+  max-height: 126px;
+  height: 20vh;
 `}
 `;
 
@@ -335,7 +339,8 @@ const ProgressBarContainer = styled.div`
   justify-content: space-between;
   ${media.mobile`
   padding: 0 10px;
-  height: 80px;
+  max-height: 80px;
+  height: 11vh;
   width: 100%;
   position: fixed;
   bottom: 0;
