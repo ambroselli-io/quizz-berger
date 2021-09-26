@@ -10,7 +10,6 @@ router.post(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
-    console.log(req.body.answerIndex);
     if (!req.body.themeId) return res.status(409).send({ ok: false, error: "themeId is not provided" });
     if (!req.body.hasOwnProperty("questionId")) return res.status(409).send({ ok: false, error: "questionId is not provided" });
     // if (!req.body.questionId) return res.status(409).send({ ok: false, error: "questionId is not provided" });

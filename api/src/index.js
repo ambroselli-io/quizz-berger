@@ -45,6 +45,7 @@ app.use(cookieParser());
 // Routes
 app.use("/user", require("./controllers/user"));
 app.use("/answer", require("./controllers/answer"));
+app.use("/quizz-builder", require("./controllers/quizz-builder"));
 
 const now = new Date().toISOString();
 
