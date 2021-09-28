@@ -18,6 +18,7 @@ const setCookie = (req, res, user) => {
     maxAge: JWT_MAX_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
+    sameSite: false,
   };
   console.log("jwt", token, tokenConfig);
   res.cookie("jwt", token, tokenConfig);
