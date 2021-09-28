@@ -14,7 +14,7 @@ const setCookie = (req, res, user) => {
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: JWT_MAX_AGE });
 
   const tokenConfig = {
-    domain: req.headers.origin,
+    domain: req.headers.origin.split("://")[1],
     maxAge: JWT_MAX_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
