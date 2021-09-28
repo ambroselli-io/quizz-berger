@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body, #main {
+    overscroll-behavior: none;
     width: 100%;
     margin: 0;
     box-sizing: border-box;

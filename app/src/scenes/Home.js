@@ -36,6 +36,9 @@ const BackgroundContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${media.mobile`
+  min-height: calc(100vh - 11vh);
+  `}
 `;
 
 const Container = styled.div`

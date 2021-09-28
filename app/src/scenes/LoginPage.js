@@ -100,7 +100,7 @@ const LoginButton = styled.button`
   height: 45px;
   background-color: ${(props) => (props.isDisplayed ? "white" : "#E5E7EB")};
   color: ${(props) => (props.isDisplayed ? "black" : "#6B7280")};
-  font-size: 14px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 8px 8px 0 0;
@@ -114,7 +114,7 @@ const SignupButton = styled.button`
   height: 45px;
   background-color: ${(props) => (props.isDisplayed ? "white" : "#E5E7EB")};
   color: ${(props) => (props.isDisplayed ? "black" : "#6B7280")};
-  font-size: 14px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 8px 8px 0 0;

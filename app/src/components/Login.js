@@ -33,22 +33,22 @@ class Login extends React.Component {
     return (
       <>
         <SignupSubContainer>
-          <LoginForm id="sign-in-form" action="" onSubmit={this.loginRequest}>
+          <LoginForm id='sign-in-form' action='' onSubmit={this.loginRequest}>
             <FormLabel>Pseudo</FormLabel>
             <FormInput
-              type="text"
-              name="pseudo"
-              placeholder="Votre pseudo"
+              type='text'
+              name='pseudo'
+              placeholder='Votre pseudo'
               onChange={this.onChangeInput}
             />
             <FormLabel>Mot de passe</FormLabel>
             <FormInput
-              type="password"
-              name="password"
-              placeholder="Votre mot de passe"
+              type='password'
+              name='password'
+              placeholder='Votre mot de passe'
               onChange={this.onChangeInput}
             />
-            <LoginButton className="" type="submit">
+            <LoginButton className='' type='submit'>
               Se connecter
             </LoginButton>
           </LoginForm>
@@ -77,7 +77,7 @@ const LoginForm = styled.form`
 const FormLabel = styled.label`
   margin-top: 25px;
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
 `;
 
@@ -86,7 +86,7 @@ const FormInput = styled.input`
   height: 40px;
   border: 1px solid #e5e7eb;
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   &:placeholder {
     color: rgba(17, 24, 39, 0.4);
@@ -97,7 +97,7 @@ const LoginButton = styled.button`
   margin-top: 30px;
   height: 44px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   background: #facc15;
   border-radius: 44px;
   border: none;

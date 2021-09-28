@@ -233,6 +233,7 @@ const ThemeHeaderContainer = styled.div`
   justify-content: space-evenly;
   flex-direction: column;
   max-height: 126px;
+  min-height: 90px;
   height: 20vh;
 `}
 `;
@@ -340,6 +341,7 @@ const ProgressBarContainer = styled.div`
   ${media.mobile`
   padding: 0 10px;
   max-height: 80px;
+  min-height: 50px;
   height: 11vh;
   width: 100%;
   position: fixed;

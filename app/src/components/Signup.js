@@ -87,7 +87,7 @@ const SignupForm = styled.form`
 const FormLabel = styled.label`
   margin-top: 25px;
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
 `;
 
@@ -96,7 +96,7 @@ const FormInput = styled.input`
   height: 40px;
   border: 1px solid #e5e7eb;
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   color: rgba(17, 24, 39, 0.4);
 `;
@@ -105,7 +105,7 @@ const SignupButton = styled.button`
   margin-top: 30px;
   height: 44px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   background: #facc15;
   border-radius: 44px;
   border: none;
