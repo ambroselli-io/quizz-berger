@@ -26,7 +26,6 @@ class Header extends React.Component {
       bmBurgerButton: {
         width: "16px",
         height: "12px",
-        // background: `url(${burgerNav}) no-repeat`,
         border: "none",
       },
       bmCrossButton: {
@@ -70,34 +69,36 @@ class Header extends React.Component {
         <HeaderStyled>
           <HeaderContainer>
             <LeftContainer>
-              <Link to="/home">
+              <Link to='/home'>
                 <HeaderLogo />
               </Link>
-              <Link to="/home">
+              <Link to='/home'>
                 <Title>Le Quizz du Berger</Title>
               </Link>
             </LeftContainer>
             <HeaderMenu>
               <HeaderMenuTab>
-                <NavLink activeClassName="selected" to="/home">
-                  Accueil
+                <NavLink activeClassName='selected' to='/home'>
+                  <span>Accueil</span>
                 </NavLink>
               </HeaderMenuTab>
               <HeaderMenuTab>
-                <NavLink activeClassName="selected" to="/result">
-                  Résultats
+                <NavLink activeClassName='selected' to='/result'>
+                  <span>Résultats</span>
                 </NavLink>
               </HeaderMenuTab>
               {!!user?.pseudo ? (
-                <HeaderMenuTab onClick={this.onLogout}>Se déconnecter</HeaderMenuTab>
+                <HeaderMenuTab onClick={this.onLogout}>
+                  <span>Se déconnecter</span>
+                </HeaderMenuTab>
               ) : (
                 <HeaderMenuTab>
-                  <NavLink activeClassName="selected" to="/login">
-                    Se connecter
+                  <NavLink activeClassName='selected' to='/login'>
+                    <span>Se connecter</span>
                   </NavLink>
                 </HeaderMenuTab>
               )}
-              <NavLink activeClassName="selected" to="/theme">
+              <NavLink activeClassName='selected' to='/theme'>
                 <QuizzButton>
                   <span>Quizz</span>
                 </QuizzButton>
@@ -107,30 +108,35 @@ class Header extends React.Component {
                 <Menu
                   right
                   styles={burgerNavStyles}
-                  customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
+                  customBurgerIcon={
+                    <img src={burgerNav} alt='mobile navigation menu' />
+                  }
+                >
                   <BurgerNavHeaderContainer>
                     <HeaderLogo />
                     <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
                   </BurgerNavHeaderContainer>
                   <Fillet />
                   <BurgerMenuTab>
-                    <NavLink activeClassName="selected" to="/home">
-                      Accueil
+                    <NavLink activeClassName='selected' to='/home'>
+                      <span>Accueil</span>
                     </NavLink>
                   </BurgerMenuTab>
                   <Fillet />
                   <BurgerMenuTab>
-                    <NavLink activeClassName="selected" to="/result">
-                      Résultats
+                    <NavLink activeClassName='selected' to='/result'>
+                      <span>Résultats</span>
                     </NavLink>
                   </BurgerMenuTab>
                   <Fillet />
                   {!!user?.pseudo ? (
-                    <BurgerMenuTab onClick={this.onLogout}>Se déconnecter</BurgerMenuTab>
+                    <BurgerMenuTab onClick={this.onLogout}>
+                      <span>Se déconnecter</span>
+                    </BurgerMenuTab>
                   ) : (
                     <BurgerMenuTab>
-                      <NavLink activeClassName="selected" to="/login">
-                        Se connecter
+                      <NavLink activeClassName='selected' to='/login'>
+                        <span>Se connecter</span>
                       </NavLink>
                     </BurgerMenuTab>
                   )}
@@ -145,7 +151,7 @@ class Header extends React.Component {
   }
 }
 
-const HeaderStyled = styled.header`
+const HeaderStyled = styled.nav`
   position: fixed;
   z-index: 99;
   width: 100vw;
@@ -154,6 +160,7 @@ const HeaderStyled = styled.header`
   background-color: #111827;
   ${media.mobile`
   max-height: 80px;
+  min-height: 50px;
   height: 11vh;
   padding: 0 20px;
 `}
@@ -162,7 +169,6 @@ const HeaderStyled = styled.header`
 const HeaderContainer = styled.div`
   margin: 0 auto;
   height: 100%;
-  /* max-width: 1024px; */
   width: auto;
   display: flex;
   align-items: center;
@@ -197,7 +203,7 @@ const Title = styled.h1`
 `;
 
 const HeaderMenu = styled.ul`
-  height: 40px;
+  height: 100%;
   padding: 0;
   display: grid;
   align-items: center;
@@ -217,10 +223,12 @@ const HeaderMenuTab = styled.li`
   cursor: pointer;
   color: rgba(156, 163, 175, 1);
   & > a {
+    height: 80px;
+    display: flex;
+    align-items: center;
     color: rgba(156, 163, 175, 1);
   }
   .selected {
-    padding-top: 28px;
     border-top: 3px solid #facc15;
     color: white;
   }
@@ -270,13 +278,14 @@ const BurgerNavTitle = styled.h1`
 `;
 
 const BurgerMenuTab = styled.div`
-  margin: 30px 10px !important;
+  margin: 30px 30px !important;
 `;
 
 const BackContainer = styled.div`
   height: 80px;
   ${media.mobile`
   max-height: 80px;
+  min-height: 50px;
   height: 11vh;
 `}
 `;

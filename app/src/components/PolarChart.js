@@ -81,8 +81,6 @@ const PolarChart = ({
     radarChartRef.current?.update();
   }, [selectedThemes]);
 
-  console.log(radarChartRef.current);
-
   return (
     <>
       <ChartContainer>
@@ -97,11 +95,14 @@ const ChartContainer = styled.div`
   margin: 0 auto;
   padding: 40px;
   margin-bottom: 20px;
-  width: 400px;
+  width: 30vw;
+  max-width: 400px;
   height: auto;
   border: 1px solid grey;
   ${media.mobile`
-  width: 270px;
+  width: 90vw;
+  max-width: 400px;
+  padding: 20px;
 `}
 `;
 

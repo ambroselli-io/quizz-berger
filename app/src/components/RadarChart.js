@@ -114,7 +114,9 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
   useEffect(() => {
     for (const candidate of selectedCandidates) {
       if (!chartRef.current) continue;
-      const getCandidateDataSetIndex = dataSets.findIndex((data) => data.label === candidate);
+      const getCandidateDataSetIndex = dataSets.findIndex(
+        (data) => data.label === candidate
+      );
       chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
       chartRef.current.update();
     }
