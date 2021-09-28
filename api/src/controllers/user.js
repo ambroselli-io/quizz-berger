@@ -13,14 +13,14 @@ const JWT_MAX_AGE = 1000 * 60 * 60 * 24 * 30; // 30 days in ms
 const setCookie = (res, user) => {
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: JWT_MAX_AGE });
 
-  const config = {
+  const tokenConfig = {
     domain: config.HOST,
     maxAge: JWT_MAX_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
   };
-  console.log("jwt", token, config);
-  res.cookie("jwt", token, config);
+  console.log("jwt", token, tokenConfig);
+  res.cookie("jwt", token, tokenConfig);
 };
 
 router.post(
