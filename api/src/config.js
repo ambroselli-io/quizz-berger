@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 8080;
 const SECRET = process.env.SECRET || "not_so_secret";
 const ENVIRONMENT = process.env.NODE_ENV;
 const SENTRY_DSN = process.env.SENTRY_DSN;
-const HOST = process.env.HOST;
+const WHITE_LIST_DOMAINS = process.env.WHITE_LIST_DOMAINS;
 
 module.exports = {
   MONGO_URL,
@@ -11,5 +11,5 @@ module.exports = {
   SECRET,
   ENVIRONMENT,
   SENTRY_DSN,
-  HOST,
+  WHITE_LIST_DOMAINS,
 };

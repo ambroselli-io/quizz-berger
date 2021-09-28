@@ -10,11 +10,11 @@ const cookieParser = require("cookie-parser");
 
 const JWT_MAX_AGE = 1000 * 60 * 60 * 24 * 30; // 30 days in ms
 
-const setCookie = (res, user) => {
+const setCookie = (req, res, user) => {
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: JWT_MAX_AGE });
 
   const tokenConfig = {
-    domain: config.HOST,
+    domain: req.headers.host,
     maxAge: JWT_MAX_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
@@ -45,7 +45,7 @@ router.post(
       themes: req.body.themes,
     });
 
-    setCookie(res, user);
+    setCookie(req, res, user);
 
     return res.status(200).send({ ok: true, data: user.me() });
   })
@@ -62,7 +62,7 @@ router.post(
 
     if (md5(req.body.password) !== user.password) return res.status(400).send({ ok: false, error: "Authentification is incorrect" });
 
-    setCookie(res, user);
+    setCookie(req, res, user);
 
     return res.status(200).send({ ok: true, data: user.me() });
   })
