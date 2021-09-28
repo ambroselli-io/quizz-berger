@@ -14,11 +14,15 @@ const setCookie = (req, res, user) => {
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: JWT_MAX_AGE });
 
   const tokenConfig = {
-    domain: req.headers.origin.includes("fr") ? "quizz-du-berger.fr" : "quizz-du-berger.com",
+    domain:
+      production.env.NODE_ENV === "development"
+        ? req.headers.origin
+        : req.headers.origin.includes("fr")
+        ? "quizz-du-berger.fr"
+        : "quizz-du-berger.com",
     maxAge: JWT_MAX_AGE,
-    httpOnly: false,
-    secure: false,
-    sameSite: false,
+    httpOnly: production.env.NODE_ENV !== "development",
+    secure: production.env.NODE_ENV !== "development",
   };
   console.log("jwt", token, tokenConfig);
   res.cookie("jwt", token, tokenConfig);
