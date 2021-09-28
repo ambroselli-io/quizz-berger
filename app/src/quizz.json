@@ -11,44 +11,14 @@
           "Oui il y a beaucoup de dépense publique, mais dans l'ensemble ça me parait justifié",
           "Il y a juste assez de dépense publique, ni trop ni trop peu",
           "Il n'y a un manque de dépense publique",
-          "Ça ne m'interesse pas / Je n'ai pas d'avis"
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            4,
-            1,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 1, 0, 0],
+          [3, 5, 4, 1, 0],
+          [1, 3, 5, 2, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
@@ -59,44 +29,14 @@
           "Elle est trop importante, il faut en effacer une partie",
           "La dette publique est ce qu'elle est, continuons comme ça sans s'en soucier davantage",
           "La dette publique est un non-sujet",
-          "Ça ne m'interesse pas / Je n'ai pas d'avis"
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            2,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            5,
-            2,
-            0,
-            0
-          ],
-          [
-            1,
-            2,
-            5,
-            2,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 2, 1, 0, 0],
+          [2, 5, 2, 0, 0],
+          [1, 2, 5, 2, 0],
+          [0, 0, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
@@ -107,272 +47,184 @@
           "Il faut avoir un budget à l'équilibre chaque année",
           "On peut avoir un budget déficitaire, tant que c'est raisonnable",
           "Dépensons ce qu'Il faut dépenser, on s'occupera des recettes tant qu'on pourra",
-          "Ça ne m'interesse pas / Je n'ai pas d'avis"
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            1,
-            0
-          ],
-          [
-            0,
-            1,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 1, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
   },
   {
     "_id": "theme-61405fbe35e4ef21aabf09c5",
-    "fr": "Entreprises, emploi et économie",
+    "fr": "Emploi et chômage",
     "questions": [
       {
         "_id": "61405fbe35e4ef21aabf09c2",
-        "fr": "Êtes-vous pour l'augmentation du SMIC ?",
+        "fr": "Que pensez vous du salaire minimum (SMIC) ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09c3",
-        "fr": "Êtes-vous pour la mise en place d'activité d'intérêt général hebdomadaires pour les détenteurs du RSA ?",
-        "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
-        ],
-        "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09c4",
-        "fr": "Pensez-vous qu'il faut endurcir les critères d'accès à l'assurance chômage ?",
+        "fr": "Que pensez-vous du RSA ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09c3",
+        "fr": "Que pensez-vous de la mise en place d'activité d'intérêt général hebdomadaires pour les détenteurs du RSA ?",
+        "answers": [
+          "J'ai dit qu'il fallait le supprimer, alors !",
+          "Oui c'est une bonne idée, il n'y a pas d'argent magique.",
+          "Le RSA est très bien comme il est.",
+          "Non, il n'y a pas de contrepartie à apporter pour avoir de quoi subvenir à sa nourriture.",
+          "Non, je suis même pour un revenu/salaire universel !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 1, 0, 0],
+          [3, 5, 3, 2, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 1, 2, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09c4",
+        "fr": "Que pensez-vous de l'assurance chômage ?",
+        "answers": [
+          "Il faut la raccourcir ou la supprimer, ça joue à ce que le chômage ne baisse pas.",
+          "Il faut rendre ses conditions d'accès plus contraignantes, pour éviter les abus.",
+          "C'est très bien comme ça, pas besoin d'y toucher.",
+          "Elle n'aide pas assez, il faut la renforcer.",
+          "Je suis pour un revenu/salaire universel, je vous l'ai déjà dit !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 3, 1, 0, 0],
+          [3, 5, 3, 2, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 1, 2, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
   },
   {
     "_id": "theme-61405fbe35e4ef21aabf09c9",
-    "fr": "Environnement et Énergie",
+    "fr": "Climat et Énergie",
     "questions": [
       {
         "_id": "61405fbe35e4ef21aabf09c6",
-        "fr": "Pensez-vous qu'un virage à 180 degres est nécessaire pour lutter contre le réchauffement climatique ?",
+        "fr": "Que pensez-vous du dérèglement climatique ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Le dérèglement climatique nous impose une transformation de société radicale, pas encore entamée.",
+          "Nous avons certes besoin d'une transition écologique plus prononcée, mais nous la ferons plus en douceur quand assez de gens en seront convaincus.",
+          "Nous sommes en cours de transition écologique, ça se passe plutôt bien, continuons comme ça.",
+          "Nous nous adapterons bien au dérèglement climatique s'il arrive un jour chez nous, pas besoin d'anticiper des catastrophes qui n'arriveront peut-être pas.",
+          "Le dérèglement climatique est une lubie, arrêtons d'en parler et concentrons-nous sur autre chose.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 2, 0, 0, 0],
+          [1, 2, 5, 2, 0, 0],
+          [0, 0, 1, 5, 4, 0],
+          [0, 0, 0, 4, 5, 0],
+          [0, 0, 0, 0, 0, 5]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09c7",
-        "fr": "Êtes-vous pour une imposition des circuits courts et de stopper les fermes usines ?",
+        "fr": "Que pensez-vous de l'énergie nucléaire ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il en faut beaucoup plus, c'est l'avenir.",
+          "Il en faut plus, on a pas le choix.",
+          "Le nucléaire est très bien comme il est, ni plus ni moins.",
+          "Il faut s'en séparer progressivement, on a pas le choix.",
+          "Il faut absolument le faire disparaitre le plus vite possible.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 3, 1, 0, 0],
+          [4, 5, 4, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 2, 5, 4, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09c7",
+        "fr": "Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?",
+        "answers": [
+          "Il en faut beaucoup plus, c'est l'avenir.",
+          "Il en faut plus, on a pas le choix.",
+          "C'est très bien comme c'est maintenant, ni plus ni moins.",
+          "Il faut s'en séparer progressivement, c'était une erreur.",
+          "Il faut absolument les faire disparaitre le plus vite possible.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 3, 1, 0, 0],
+          [4, 5, 4, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 2, 5, 4, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09c8",
-        "fr": "Êtes-vous contre le nucléaire ?",
+        "fr": "Que pensez-vous de l'utilisation de la voiture ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faudrait se diriger vers un abandon de nos voitures, pour des transports en commun ou des vélos.",
+          "Il faudrait se diriger vers un abandon de nos voitures thermiques, pour des voitures électriques ou à hydrogène. Et des alternatives là où on peut.",
+          "Favorisons les alternatives en ville, mais on a besoin de voiture en ruralité, pas d'autre option.",
+          "La voiture, synonyme de liberté : tout un symbole, un vrai plaisir, n'y touchons pas !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 3, 0, 0],
+          [3, 5, 4, 2, 0],
+          [2, 4, 5, 3, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -385,108 +237,60 @@
         "_id": "61405fbe35e4ef21aabf09ca",
         "fr": "Theme 4 question 1",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09cb",
         "fr": "Theme 4 question 2",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09cc",
         "fr": "Theme 4 question 3",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -499,108 +303,60 @@
         "_id": "61405fbe35e4ef21aabf09ce",
         "fr": "Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut changer de constitution pour plus de démocratie",
+          "Il faut modifier la constitution pour plus de démocratie",
+          "Il ne faut rien changer, la constitution est très bien comme elle est",
+          "Il faut modifier la constitution pour plus de pouvoir au gouvernement",
+          "Il faut changer de constitution pour plus de pouvoir au gouvernement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 3, 1, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 1, 3, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09cf",
         "fr": "Que pensez-vous du recours au référendum par le Président de la République ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09d0",
         "fr": "Que pensez-vous de la représentativité de nos députés et sénateurs ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -613,108 +369,60 @@
         "_id": "61405fbe35e4ef21aabf09d2",
         "fr": "Theme 6 question 1",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09d3",
         "fr": "Theme 6 question 2",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09d4",
         "fr": "Theme 6 question 3",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -727,108 +435,60 @@
         "_id": "61405fbe35e4ef21aabf09d6",
         "fr": "Que pensez-vous de la répartition actuelle des tranches d'imposition ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09d7",
         "fr": "Que pensez-vous de l'évasion fiscale des multinationales ?",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09d8",
         "fr": "Theme 7 question 3",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -841,108 +501,60 @@
         "_id": "61405fbe35e4ef21aabf09da",
         "fr": "Theme 8 question 1",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09db",
         "fr": "Theme 8 question 2",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09dc",
         "fr": "Theme 8 question 3",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -955,108 +567,60 @@
         "_id": "61405fbe35e4ef21aabf09de",
         "fr": "Theme 9 question 1",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09df",
         "fr": "Theme 9 question 2",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09e0",
         "fr": "Theme 9 question 3",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -1069,108 +633,60 @@
         "_id": "61405fbe35e4ef21aabf09e2",
         "fr": "Theme 10 question 1",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09e3",
         "fr": "Theme 10 question 2",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "61405fbe35e4ef21aabf09e4",
         "fr": "Theme 10 question 3",
         "answers": [
-          "Totalement",
-          "Moyennement",
-          "Pas du tout",
-          "Ça ne m'interesse pas"
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
