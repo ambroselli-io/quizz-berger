@@ -16,61 +16,18 @@
     }
     /* spacing */
 
-    .subcontainer {
-      position: relative;
-      height: 300px;
-      width: 800px;
-      margin: 0;
-      background: linear-gradient(45deg, #49a09d, #5f2c82);
-      font-family: sans-serif;
-      font-weight: 100;
-    }
-    .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
     table {
-      width: 800px;
       border-collapse: collapse;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
     table input {
-      width: 20px;
-      height: 20px;
-      background-color: rgba(255, 255, 255, 0.2);
+      width: auto;
+      height: 35px;
     }
     th,
     td {
-      padding: 15px;
-      background-color: rgba(255, 255, 255, 0.2);
-      color: #fff;
+      border: 1px black solid;
+      padding: 0.25em 0.5em;
     }
-    th {
-      text-align: left;
-    }
-    thead th {
-      background-color: #55608f;
-    }
-    tbody tr:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-    tbody td {
-      position: relative;
-    }
-    tbody td:hover:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -9999px;
-      bottom: -9999px;
-      background-color: rgba(255, 255, 255, 0.2);
-      z-index: -1;
-    }
-
     .question {
       cursor: pointer;
     }
@@ -82,21 +39,19 @@
     <section>
       <h3>Answers</h3>
       <ol id="answers"></ol>
+      <button id="add-answer">Ajouter une réponse</button>
+      <button id="remove-answer">Retirer une réponse</button>
     </section>
-    <div class="subcontainer">
-      <div class="container">
-        <table id="scores">
-          <thead>
-            <tr>
-              {{QUESTIONS_HEADER_ROW}}
-            </tr>
-          </thead>
-          <tbody>
-            {{SCORES}}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <table id="scores">
+      <thead>
+        <tr>
+          {{QUESTIONS_HEADER_ROW}}
+        </tr>
+      </thead>
+      <tbody>
+        {{SCORES}}
+      </tbody>
+    </table>
     <button id="update">Update</button><br />
     <button id="prev-theme">Thème précédent</button>
     <button id="next-theme">Thème suivant</button><br />
@@ -107,7 +62,8 @@
   </body>
   <script>
     const buttonUpdate = document.getElementById("update");
-    buttonUpdate.onclick = async function (e) {
+
+    const save = async function (e) {
       const themeName = document.getElementById("current-theme").value;
       const questionName = document.getElementById("current-question").value;
       const answers = [...document.getElementById("answers").getElementsByTagName("input")].map((input) => input.value);
@@ -129,13 +85,28 @@
       }).then(() => window.location.reload());
     };
 
-    [...document.querySelectorAll(".question")].forEach((q) =>
+    buttonUpdate.onclick = save;
+
+    const buttonAddAnAnswer = document.getElementById("add-answer");
+
+    buttonAddAnAnswer.onclick = function () {
+      const answers = [...document.getElementById("answers").getElementsByTagName("input")];
+      const lastAnswer = answers[answers.length - 1].cloneNode(true);
+
+      lastAnswer.dataset.question = answers.length - 1;
+      const nodeList = document.createElement("li");
+      nodeList.appendChild(lastAnswer);
+      document.getElementById("answers").appendChild(nodeList);
+      save();
+    };
+
+    for (const q of [...document.querySelectorAll(".question")]) {
       q.addEventListener("click", function (e) {
         const questionIndex = q.dataset.question;
         const themeIndex = q.dataset.theme;
         window.location.href = `${window.location.origin}/quizz-builder/${themeIndex}/${questionIndex}`;
-      })
-    );
+      });
+    }
 
     const currentThemeIndex = parseInt(window.location.pathname.split("/")[2], 10);
     const currentQuestionIndex = parseInt(window.location.pathname.split("/")[3], 10);
