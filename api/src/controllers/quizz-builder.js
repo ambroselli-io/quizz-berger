@@ -18,9 +18,11 @@ router.get(
 
     const currentQuestion = currentTheme.questions[req.params.questionIndex || 0];
 
+    const { answers, fr, scores } = currentQuestion;
+
     const newHtml = html
       .replace("{{CURRENT_THEME}}", themeName)
-      .replace("{{CURRENT_QUESTION}}", currentQuestion.fr)
+      .replace("{{CURRENT_QUESTION}}", fr)
       .replace(
         "{{ALL_QUESTIONS}}",
         quizz.map(
@@ -30,14 +32,16 @@ router.get(
             )}</ol>`
         )
       )
-      .replace('<ol id="answers"></ol>', `<ol id="answers">${currentQuestion.answers.map((a) => `<li><input value="${a}" /></li>`).join("")}</ol>`)
-      .replace("{{QUESTIONS_HEADER_ROW}}", `<th></th>${currentQuestion.answers.map((a) => `<th>${a}</th>`).join("")}`)
+      .replace('<ol id="answers"></ol>', `<ol id="answers">${answers.map((a) => `<li><input value="${a}" /></li>`).join("")}</ol>`)
+      .replace("{{QUESTIONS_HEADER_ROW}}", `<th></th>${answers.map((a) => `<th>${a}</th>`).join("")}`)
       .replace(
         "{{SCORES}}",
-        currentQuestion.scores
+        answers
+          .map((a, index) => scores[Math.min(index, scores.length - 1)])
+          .map((lineScore) => answers.map((_, index) => lineScore[index] || 0))
           .map(
             (lineScore, lineIndex) =>
-              `<tr><td>${currentQuestion.answers[lineIndex]}</td>${lineScore
+              `<tr><td>${answers[lineIndex]}</td>${lineScore
                 .map(
                   (score, columnIndex) => `<td><input value="${score}" class="score" data-line="${lineIndex}" data-column="${columnIndex}" /></td>`
                 )
