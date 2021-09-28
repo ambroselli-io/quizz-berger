@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser");
 
 const { globalErrorHandler } = require("./utils/error");
 
-const { PORT, HOST } = require("./config.js");
+const { PORT, WHITE_LIST_DOMAINS } = require("./config.js");
 
 require("./mongo");
 
@@ -18,7 +18,8 @@ if (process.env.NODE_ENV === "development") {
   app.use(logger("dev"));
 }
 
-const whitelist = [HOST];
+const whitelist = WHITE_LIST_DOMAINS.split(",").map((domain) => `https://${domain}`);
+
 const corsOptions = {
   origin: function (origin, callback) {
     if (process.env.NODE_ENV === "development") return callback(null, true);
@@ -50,7 +51,7 @@ app.use("/quizz-builder", require("./controllers/quizz-builder"));
 const now = new Date().toISOString();
 
 app.get("/", async (req, res) => {
-  res.send(`Hello World at ${now}`);
+  res.send(`Hello World at ${now} - ${req.headers.host}`);
 });
 
 // Post middleware
