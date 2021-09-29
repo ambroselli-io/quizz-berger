@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
 import quizz from "../quizz.json";
@@ -12,6 +12,7 @@ import leftArrow from "../images/left-arrow.svg";
 
 const Quizz = ({ user, setUser }) => {
   const { themeId, questionId } = useParams();
+  const [answersList, setAnswersList] = useState([]);
   const history = useHistory();
 
   const currentTheme = quizz.find((theme) => {
@@ -128,6 +129,26 @@ const Quizz = ({ user, setUser }) => {
     return false;
   };
 
+  const setAnswersListState = (response) => {
+    const onExistingAnswer = answersList.find(
+      (a) => a.questionId === response.data.questionId
+    );
+    if (!!onExistingAnswer) {
+      const existingAnswerIndex = answersList.findIndex(
+        (a) => a.questionId === response.data.questionId
+      );
+      answersList[existingAnswerIndex].answer = response.data.answerIndex;
+    } else {
+      setAnswersList([
+        ...answersList,
+        {
+          questionId: response.data.questionId,
+          answer: response.data.answerIndex,
+        },
+      ]);
+    }
+  };
+
   const sendAnswer = async (e) => {
     const response = await API.postWithCreds({
       path: "/answer",
@@ -143,10 +164,15 @@ const Quizz = ({ user, setUser }) => {
     }
 
     if (response.ok) {
+      setAnswersListState(response);
       window.scrollTo(0, 0);
       goToNextQuestion();
     }
   };
+
+  useEffect(() => {
+    console.log(answersList);
+  }, [answersList]);
 
   return (
     <>
@@ -171,6 +197,11 @@ const Quizz = ({ user, setUser }) => {
             {answers.map((answer, index) => {
               return (
                 <AnswerButton
+                  isActive={
+                    !!answersList.find(
+                      (a) => a.questionId === questionId && a.answer === index
+                    )
+                  }
                   onClick={sendAnswer}
                   key={index}
                   data-index={index}
@@ -222,7 +253,7 @@ const Quizz = ({ user, setUser }) => {
 };
 
 const ThemeHeaderContainer = styled.div`
-  padding: 0 40px 0 40px;
+  padding: 0 20px 0 20px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -275,7 +306,7 @@ const MobileThemeTitle = styled.h2`
 `;
 
 const BackgroundContainer = styled.div`
-  padding: 40px;
+  padding: 40px 20px 40px 20px;
   height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
@@ -302,23 +333,26 @@ const QuestionTitle = styled.h2`
 `;
 
 const AnswerContainer = styled.div`
+  /* border: 1px solid red; */
   margin: 0 auto;
   max-width: 1020px;
   display: flex;
-  flex-wrap: wrap;
-  grid-gap: 20px;
+  flex-direction: column;
+  grid-gap: 15px;
   align-items: center;
   ${media.mobile`
-  flex-direction: column;
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 `};
 `;
 
 const AnswerButton = styled.button`
-  height: 120px;
-  flex: auto;
+  padding: 10px;
+  width: 450px;
+  min-height: 60px;
+  height: auto;
   font-size: 16px;
-  background: #ffffff;
+  background: ${(props) => (props.isActive ? `#111827` : `#ffffff`)};
+  color: ${(props) => (props.isActive ? `#ffffff` : `black`)};
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   cursor: pointer;

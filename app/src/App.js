@@ -35,10 +35,8 @@ class App extends React.Component {
         <GlobalStyles />
         <Switch>
           <Route
-            path='/'
-            render={(props) => (
-              <Home user={user} setUser={this.setUser} exact />
-            )}
+            path='/home'
+            render={(props) => <Home user={user} setUser={this.setUser} />}
           />
           <Route
             path='/login'

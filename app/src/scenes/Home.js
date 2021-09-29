@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { media } from "../styles/mediaQueries";
 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 class Home extends React.Component {
   render() {
@@ -12,18 +13,23 @@ class Home extends React.Component {
         <Header {...this.props} />
         <BackgroundContainer>
           <Container>
-            <Title>Know where you actually take a stand</Title>
+            <Title>
+              Trouvez le candidat qui se rapproche le plus de vos idées !
+            </Title>
             <SubTitle>
-              Take our Political Compass test to find out which political group
-              your best match is
+              Complétez notre quiz en choisissant les thèmes qui vous
+              intéressent pour situer vos idées politiques
+              {/* Take our Political
+              Compass test to find out which political group your best match is */}
             </SubTitle>
             <Link to='/theme'>
               <QuizzButton>
-                <span>Take the test now</span>
+                <span>Participer au Quizz</span>
               </QuizzButton>
             </Link>
           </Container>
         </BackgroundContainer>
+        <Footer />
       </>
     );
   }
@@ -34,6 +40,7 @@ const BackgroundContainer = styled.div`
   min-height: calc(100vh - 80px);
   background-color: #111827;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   ${media.mobile`
@@ -60,7 +67,7 @@ const Title = styled.h2`
   text-align: center;
   color: #ffffff;
   ${media.mobile`
-  font-size: 44px;
+  font-size: 34px;
 `}
 `;
 

@@ -176,15 +176,13 @@ const HeaderContainer = styled.div`
 `;
 
 const LeftContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 5px;
+  display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 const HeaderLogo = styled.div`
-  margin-right: 5px;
+  margin-right: 10px;
   height: 32px;
   width: 32px;
   background: url(${logo}) no-repeat;
