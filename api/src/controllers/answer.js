@@ -15,25 +15,25 @@ router.post(
     // if (!req.body.questionId) return res.status(409).send({ ok: false, error: "questionId is not provided" });
     if (!req.body.answerIndex) return res.status(409).send({ ok: false, error: "answerIndex is not provided" });
 
-    const answer = {
+    const answerContent = {
       user: req.body.user,
       themeId: req.body.themeId,
       questionId: req.body.questionId,
     };
 
-    const previousAnswer = await AnswerObject.findOne(answer);
+    const answer = await AnswerObject.findOne(answerContent);
 
-    if (!previousAnswer) {
+    if (!answer) {
       const newAnswer = await AnswerObject.create({
-        ...answer,
+        ...answerContent,
         answerIndex: req.body.answerIndex,
       });
       res.status(200).send({ ok: true, data: newAnswer });
     }
 
-    previousAnswer.set({ answerIndex: req.body.answerIndex });
-    await previousAnswer.save();
-    res.status(200).send({ ok: true, data: previousAnswer });
+    answer.set({ answerIndex: req.body.answerIndex });
+    await answer.save();
+    res.status(200).send({ ok: true, data: answer });
   })
 );
 
@@ -59,29 +59,6 @@ router.get(
     res.status(200).send({ ok: true, data: populatedCandidatesAnswers });
   })
 );
-
-// router.get(
-//   "/:id",
-//   passport.authenticate("user", { session: false }),
-//   catchErrors(async (req, res) => {
-//     const candidates = await UserObject.findById(req.params.id);
-//     const candidatesAnswers = await AnswerObject.find({ user: candidates });
-
-//     const populatedCandidatesAnswers = candidates.map((candidate) => {
-//       return {
-//         pseudo: candidate.pseudo,
-//         firstName: candidate.firstName,
-//         lastName: candidate.lastName,
-//         partyName: candidate.partyName,
-//         isCandidate: candidate.isCandidate,
-//         themes: candidate.themes,
-//         answers: candidatesAnswers.filter((answers) => candidate._id.equals(answers.user)),
-//       };
-//     });
-
-//     res.status(200).send({ ok: true, data: populatedCandidatesAnswers });
-//   })
-// );
 
 router.get(
   "/",
