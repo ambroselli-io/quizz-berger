@@ -16,6 +16,7 @@ const app = express();
 
 if (process.env.NODE_ENV === "development") {
   app.use(logger("dev"));
+  require("../scripts/migrations");
 }
 
 const whitelist = WHITE_LIST_DOMAINS.split(",").map((domain) => `https://${domain}`);
