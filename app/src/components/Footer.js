@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 import logo from "../images/logo.svg";
+import cross from "../images/cross.svg";
 import { Link } from "react-router-dom";
 
 class Footer extends React.Component {
@@ -9,7 +10,8 @@ class Footer extends React.Component {
     showModal: true,
   };
 
-  onCloseModal = () => {
+  onCloseModal = (e) => {
+    if (e.target !== e.currentTarget) return;
     this.setState({ showModal: false });
   };
 
@@ -30,7 +32,6 @@ class Footer extends React.Component {
             </Link>
           </LeftContainer>
           <FooterMenu>
-            <FooterMenuTab>Home</FooterMenuTab>
             <FooterMenuTab>Candidats</FooterMenuTab>
             <FooterMenuTab>Nous contacter</FooterMenuTab>
             <FooterMenuTab onClick={this.onOpenModal}>
@@ -38,12 +39,32 @@ class Footer extends React.Component {
             </FooterMenuTab>
           </FooterMenu>
         </Container>
-        <LegalModalBackground
+        {/* -- MODAL -- */}
+        <LegalMentionModalBackground
           isActive={this.state.showModal}
           onClick={this.onCloseModal}
         >
-          <LegalModalContainer></LegalModalContainer>
-        </LegalModalBackground>
+          <LegalMentionModalContainer>
+            <TitleContainer>
+              <SubTitle>Mentions Légales</SubTitle>
+              <CrossIcon onClick={this.onCloseModal} />
+            </TitleContainer>
+
+            <p>
+              Le Quiz du Berger a été développé par l'entreprise Ambroselli.io
+              dans le but d'encourager les gens à remettre en question leurs
+              idées politiques et n'a aucun but lucratif. <br />
+              <br />
+              Toutes les réponses des utilisateurs sont anonymes et nous nous
+              engageons à ne jamais les revendre. Nous essayons aussi de garder
+              une neutralité vis à vis des candidats, des questions et des
+              réponses. <br />
+              <br />
+              Si certains contenus sur notre site ne vous semblent pas respecter
+              ce principe, merci de bien vouloir nous contacter.
+            </p>
+          </LegalMentionModalContainer>
+        </LegalMentionModalBackground>
       </FooterContainer>
     );
   }
@@ -65,7 +86,6 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 `;
 
 const LeftContainer = styled.div`
@@ -82,6 +102,21 @@ const HeaderLogo = styled.div`
   border: none;
 `;
 
+const TitleContainer = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const CrossIcon = styled.div`
+  height: 15px;
+  width: 15px;
+  background: url(${cross}) no-repeat;
+  background-size: cover;
+  color: black;
+`;
+
 const Title = styled.h1`
   font-family: Merriweather;
   font-size: 20px;
@@ -89,6 +124,12 @@ const Title = styled.h1`
   ${media.mobile`
   display: none;
 `}
+`;
+
+const SubTitle = styled.h2`
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: bold;
 `;
 
 const FooterMenu = styled.ul`
@@ -102,9 +143,10 @@ const FooterMenuTab = styled.li`
   font-size: 14px;
   color: #4b5563;
   list-style: none;
+  cursor: pointer;
 `;
 
-const LegalModalBackground = styled.div`
+const LegalMentionModalBackground = styled.div`
   z-index: 99;
   position: fixed;
   top: 0;
@@ -117,11 +159,17 @@ const LegalModalBackground = styled.div`
   background: rgba(0, 0, 0, 0.7);
 `;
 
-const LegalModalContainer = styled.div`
+const LegalMentionModalContainer = styled.div`
+  padding: 40px;
   width: 1000px;
   height: 500px;
   background-color: white;
   border-radius: 50px;
+  overflow: scroll;
+  ${media.mobile`
+  max-height: 400px;
+  height: auto;
+`}
 `;
 
 export default Footer;

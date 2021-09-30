@@ -253,18 +253,18 @@ const Quizz = ({ user, setUser }) => {
 };
 
 const ThemeHeaderContainer = styled.div`
-  padding: 0 20px 0 20px;
-  height: 80px;
+  padding: 80px 20px 0 20px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f7df1e;
   ${media.mobile`
-  padding: 0 15px 0 15px;
+  padding: 80px 15px 10px 15px;
   justify-content: space-evenly;
   flex-direction: column;
-  max-height: 126px;
-  min-height: 90px;
+  max-height: 176px;
+  min-height: 120px;
   height: 20vh;
 `}
 `;

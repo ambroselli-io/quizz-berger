@@ -36,25 +36,30 @@ class Home extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  padding: 40px 20px;
-  min-height: calc(100vh - 80px);
+  padding: 120px 20px 40px 20px;
+  height: 100vh;
   background-color: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   ${media.mobile`
-  min-height: calc(100vh - 11vh);
+  padding: 100px 10px 40px 10px;
+  min-height: 640px;
+  height: 100vh;
   `}
 `;
 
 const Container = styled.div`
-  width: 770px;
+  max-width: 770px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ${media.mobile`
+  justify-content: flex-start;
+`}
 `;
 
 const Title = styled.h2`

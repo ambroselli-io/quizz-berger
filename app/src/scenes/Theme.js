@@ -97,13 +97,17 @@ class Theme extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  min-height: calc(100vh - 80px);
-  padding: 40px 20px;
+  padding: 120px 10px 40px 10px;
+  height: 100vh;
+  min-height: 900px;
+  ${media.mobile`
+  padding: 100px 10px 40px 10px;
+  height: auto;
+  `}
 `;
 
 const SubContainer = styled.div`
   margin: 0 auto;
-  height: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
