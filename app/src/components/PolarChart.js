@@ -5,11 +5,7 @@ import { media } from "../styles/mediaQueries";
 
 import quizz from "../quizz.json";
 
-const PolarChart = ({
-  candidatesScorePerThemes,
-  partyScores,
-  selectedThemes,
-}) => {
+const PolarChart = ({ candidatesScorePerThemes, partyScores, selectedThemes }) => {
   const radarChartRef = useRef();
 
   const scores = partyScores.map((score) => score.score);

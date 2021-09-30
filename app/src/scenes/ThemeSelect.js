@@ -2,12 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 
-import Header from "../components/Header";
 import ThemeButton from "../components/ThemeButton";
 import API from "../services/api";
 import quizz from "../quizz.json";
 
-class Theme extends React.Component {
+class ThemeSelect extends React.Component {
   state = {
     selectedThemesIds: this.props.user.themes,
   };
@@ -24,10 +23,7 @@ class Theme extends React.Component {
       return;
     }
     this.setState({
-      selectedThemesIds: [
-        ...this.state.selectedThemesIds,
-        e.target.dataset.themeid,
-      ],
+      selectedThemesIds: [...this.state.selectedThemesIds, e.target.dataset.themeid],
     });
     console.log("added");
   };
@@ -45,9 +41,7 @@ class Theme extends React.Component {
     });
     if (response.ok) {
       const { setUser, history } = this.props;
-      const firstQuestionId = quizz.find(
-        (t) => t._id === response.data.themes[0]
-      ).questions[0]._id;
+      const firstQuestionId = quizz.find((t) => t._id === response.data.themes[0]).questions[0]._id;
       setUser(response.data);
       history.push(`/question/${response.data.themes[0]}/${firstQuestionId}`);
     }
@@ -57,13 +51,12 @@ class Theme extends React.Component {
     const { selectedThemesIds } = this.state;
     return (
       <>
-        <Header {...this.props} />
         <BackgroundContainer>
           <SubContainer>
             <Title>Political Compass Test</Title>
             <SubTitle>
-              Take our Political Compass test to identify your political group
-              and know which candidates to vote for the upcoming elections.
+              Take our Political Compass test to identify your political group and know which
+              candidates to vote for the upcoming elections.
               <br /> <br />
               But first, please choose at least 3 themes
             </SubTitle>
@@ -84,8 +77,7 @@ class Theme extends React.Component {
             {/* <Footer> */}
             <ValidateButton
               isDisplayed={selectedThemesIds.length >= 3}
-              onClick={this.saveSelectedThemes}
-            >
+              onClick={this.saveSelectedThemes}>
               Valider mes thèmes
             </ValidateButton>
             {/* </Footer> */}
@@ -146,8 +138,7 @@ const ValidateButton = styled.button`
   margin-top: 40px;
   width: 384px;
   height: 64px;
-  background: ${(props) =>
-    props.isDisplayed ? "#facc15" : "rgba(156, 163, 175, 0.2)"};
+  background: ${(props) => (props.isDisplayed ? "#facc15" : "rgba(156, 163, 175, 0.2)")};
   color: ${(props) => (props.isDisplayed ? "black" : "rgba(17, 24, 39, 0.2)")};
   border-radius: 56px;
   border: none;
@@ -162,4 +153,4 @@ const ValidateButton = styled.button`
 `}
 `;
 
-export default Theme;
+export default ThemeSelect;

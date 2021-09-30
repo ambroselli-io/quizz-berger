@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 class Footer extends React.Component {
   state = {
-    showModal: true,
+    showModal: false,
   };
 
   onCloseModal = (e) => {
@@ -24,26 +24,21 @@ class Footer extends React.Component {
       <FooterContainer>
         <Container>
           <LeftContainer>
-            <Link to='/home'>
+            <Link to="/home">
               <HeaderLogo />
             </Link>
-            <Link to='/home'>
+            <Link to="/home">
               <Title>Le Quizz du Berger</Title>
             </Link>
           </LeftContainer>
           <FooterMenu>
             <FooterMenuTab>Candidats</FooterMenuTab>
             <FooterMenuTab>Nous contacter</FooterMenuTab>
-            <FooterMenuTab onClick={this.onOpenModal}>
-              Mentions légales
-            </FooterMenuTab>
+            <FooterMenuTab onClick={this.onOpenModal}>Mentions légales</FooterMenuTab>
           </FooterMenu>
         </Container>
         {/* -- MODAL -- */}
-        <LegalMentionModalBackground
-          isActive={this.state.showModal}
-          onClick={this.onCloseModal}
-        >
+        <LegalMentionModalBackground isActive={this.state.showModal} onClick={this.onCloseModal}>
           <LegalMentionModalContainer>
             <TitleContainer>
               <SubTitle>Mentions Légales</SubTitle>
@@ -51,17 +46,31 @@ class Footer extends React.Component {
             </TitleContainer>
 
             <p>
-              Le Quiz du Berger a été développé par l'entreprise Ambroselli.io
-              dans le but d'encourager les gens à remettre en question leurs
-              idées politiques et n'a aucun but lucratif. <br />
+              Le Quizz du Berger a été développé par Arnaud Ambroselli et Roméo Vincent dans le but
+              d'encourager les gens à conforter, confronter ou remettre en question leurs idées
+              politiques.
               <br />
-              Toutes les réponses des utilisateurs sont anonymes et nous nous
-              engageons à ne jamais les revendre. Nous essayons aussi de garder
-              une neutralité vis à vis des candidats, des questions et des
-              réponses. <br />
               <br />
-              Si certains contenus sur notre site ne vous semblent pas respecter
-              ce principe, merci de bien vouloir nous contacter.
+              Toutes les réponses des utilisateurs sont anonymes et ne sont utilisées à aucun autre
+              usage que celui pour l'utilisateur de les consulter. Notre action n'a aucun but
+              lucratif, c ést même une perte financière sèche et assumée.
+              <br />
+              <br />
+              Nous essayons aussi de garder une neutralité vis à vis des candidats, des questions et
+              des réponses. SI vous avez une remarque à faire sur un aspect quelconque du quizz -
+              contenu des questions, réponses des candidats, ou même design du quizz -, nous serions
+              heureux d'avoir vos retours, n'hésitez pas à nous contacter.
+              <br />
+              <br />
+              Si vous êtes vous-même candidat ou parti politique et que les réponses que nous avons
+              affiché en votre nom de vous conviennent pas, contactez-nous aussi, nous serons
+              heureux de faire les modifications que vous souhaitez.
+              <br />
+              <br />
+              Ce projet est open-source, si vous souhaitez y participer, venez le faire sur github :
+              <a href="https://github.com/ambroselli-io/quizz-berger">
+                https://github.com/ambroselli-io/quizz-berger
+              </a>
             </p>
           </LegalMentionModalContainer>
         </LegalMentionModalBackground>
