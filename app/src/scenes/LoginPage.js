@@ -61,12 +61,19 @@ class LoginPage extends React.Component {
 }
 
 const BackGroundContainer = styled.div`
-  min-height: calc(100vh - 80px);
+  padding: 120px 20px 40px 20px;
+  min-height: 100vh;
   background-color: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ${media.mobile`
+  padding: 80px 10px 40px 10px;
+  justify-content: flex-start;
+  min-height: 600px;
+  height: 100vh;
+  `}
 `;
 
 const Title = styled.h2`

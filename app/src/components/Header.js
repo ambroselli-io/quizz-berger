@@ -103,7 +103,7 @@ class Header extends React.Component {
                   <span>Quizz</span>
                 </QuizzButton>
               </NavLink>
-              {/* <BurgerMenu /> */}
+              {/* BurgerMenu */}
               <BurgerNavContainer>
                 <Menu
                   right
@@ -140,12 +140,19 @@ class Header extends React.Component {
                       </NavLink>
                     </BurgerMenuTab>
                   )}
+                  <Fillet />
+                  <BurgerMenuTab>
+                    <NavLink activeClassName='selected' to='/theme'>
+                      <QuizzButton showOnMobile>
+                        <span>Quizz</span>
+                      </QuizzButton>
+                    </NavLink>
+                  </BurgerMenuTab>
                 </Menu>
               </BurgerNavContainer>
             </HeaderMenu>
           </HeaderContainer>
         </HeaderStyled>
-        <BackContainer />
       </>
     );
   }
@@ -159,9 +166,7 @@ const HeaderStyled = styled.nav`
   height: 80px;
   background-color: #111827;
   ${media.mobile`
-  max-height: 80px;
-  min-height: 50px;
-  height: 11vh;
+  height: 60px;
   padding: 0 20px;
 `}
 `;
@@ -244,7 +249,7 @@ const QuizzButton = styled.button`
   border-radius: 44px;
   cursor: pointer;
   ${media.mobile`
-  display: none;
+  display: ${(props) => (props.showOnMobile ? "block" : "none")};
   `}
 `;
 
@@ -256,6 +261,7 @@ const BurgerNavContainer = styled.div`
 `;
 
 const Fillet = styled.div`
+  margin: 0 !important;
   height: 1px;
   background-color: grey;
   width: 100%;
@@ -276,16 +282,7 @@ const BurgerNavTitle = styled.h1`
 `;
 
 const BurgerMenuTab = styled.div`
-  margin: 30px 30px !important;
-`;
-
-const BackContainer = styled.div`
-  height: 80px;
-  ${media.mobile`
-  max-height: 80px;
-  min-height: 50px;
-  height: 11vh;
-`}
+  margin: 15px 30px !important;
 `;
 
 export default Header;
