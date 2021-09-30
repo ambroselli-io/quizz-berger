@@ -4,10 +4,7 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers) => {
   const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers);
 
   return candidatesAnswers.map((candidate) => {
-    const candidateScores = addScoreToCandidateAnswer(
-      userAnswersWithScoreLines,
-      candidate.answers
-    );
+    const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
     const scorePerThemes = getScorePerTheme(candidateScores);
     const results = scorePerThemes.map((theme) => {
       return {
@@ -36,27 +33,23 @@ const addScoreLinesToAnswers = (userAnswers) =>
     return { ...answer, scoreLine };
   });
 
-const addScoreToCandidateAnswer = (
-  userAnswersWithScoreLines,
-  candidateAnswers
-) =>
+const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
   userAnswersWithScoreLines.map((userAnswer) => {
     const candidateMatchingAnswer = candidateAnswers.find(
       (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
     );
-    const politicalPartyMatchingAnswersIndex =
-      candidateMatchingAnswer.answerIndex;
+    const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer?.answerIndex;
     return {
       ...userAnswer,
-      score: userAnswer.scoreLine[politicalPartyMatchingAnswersIndex],
+      score: politicalPartyMatchingAnswersIndex
+        ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex]
+        : 0,
     };
   });
 
 const getScorePerTheme = (candidateScores) => {
   return candidateScores.reduce((accumulator, currentValue, index) => {
-    const existingThemeScore = accumulator.find(
-      (child) => child.themeId === currentValue.themeId
-    );
+    const existingThemeScore = accumulator.find((child) => child.themeId === currentValue.themeId);
 
     if (existingThemeScore) {
       return accumulator.map((themeScore) => {
@@ -70,7 +63,7 @@ const getScorePerTheme = (candidateScores) => {
     }
     accumulator.push({
       themeId: currentValue.themeId,
-      score: currentValue.score,
+      score: currentValue.score + 1,
     });
 
     return accumulator;

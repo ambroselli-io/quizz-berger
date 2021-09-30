@@ -4,7 +4,6 @@ import { getCandidatesScorePerThemes } from "../utils/score";
 import { media } from "../styles/mediaQueries";
 import quizz from "../quizz.json";
 
-import Header from "../components/Header";
 import RadarChart from "../components/RadarChart";
 import PolarChart from "../components/PolarChart";
 import API from "../services/api";
@@ -49,9 +48,7 @@ class Result extends React.Component {
 
   setSelectedCandidate = (e) => {
     const { selectedCandidates } = this.state;
-    const onSelectedCandidate = selectedCandidates.find(
-      (c) => c === e.target.dataset.candidate
-    );
+    const onSelectedCandidate = selectedCandidates.find((c) => c === e.target.dataset.candidate);
 
     if (!onSelectedCandidate) {
       this.setState({
@@ -68,9 +65,7 @@ class Result extends React.Component {
 
   setSelectedThemes = (e) => {
     const { selectedThemes } = this.state;
-    const onSelectedThemes = selectedThemes.find(
-      (t) => t === e.target.dataset.themeid
-    );
+    const onSelectedThemes = selectedThemes.find((t) => t === e.target.dataset.themeid);
 
     if (!onSelectedThemes) {
       this.setState({
@@ -86,28 +81,17 @@ class Result extends React.Component {
   };
 
   render() {
-    const {
-      userAnswers,
-      candidatesAnswers,
-      showRadarChart,
-      selectedCandidates,
-      selectedThemes,
-    } = this.state;
+    const { userAnswers, candidatesAnswers, showRadarChart, selectedCandidates, selectedThemes } =
+      this.state;
 
     const { user } = this.props;
 
-    const candidatesScorePerThemes = getCandidatesScorePerThemes(
-      userAnswers,
-      candidatesAnswers
-    );
+    const candidatesScorePerThemes = getCandidatesScorePerThemes(userAnswers, candidatesAnswers);
 
     return (
       <>
-        <Header {...this.props} />
         <BackgroundContainer>
-          <SwitchButtons onClick={this.switchCharts}>
-            Changer de graphique
-          </SwitchButtons>
+          <SwitchButtons onClick={this.switchCharts}>Changer de graphique</SwitchButtons>
           <Container>
             <LeftContainer>
               <TitleContainer>
@@ -118,22 +102,14 @@ class Result extends React.Component {
               {window.screen.width > 768 && (
                 <>
                   <SubTitle>Selectionnez vos candidats</SubTitle>
-                  <p>
-                    Selectionnez les candidats que vous souhaitez comparer à vos
-                    idées
-                  </p>
+                  <p>Selectionnez les candidats que vous souhaitez comparer à vos idées</p>
                   <CandidateButtonContainer>
                     {candidatesScorePerThemes.map((candidate) => (
                       <CandidateButton
                         key={candidate[0].pseudo}
                         data-candidate={candidate[0].pseudo}
-                        isActive={
-                          !!selectedCandidates.find(
-                            (c) => c === candidate[0].pseudo
-                          )
-                        }
-                        onClick={this.setSelectedCandidate}
-                      >
+                        isActive={!!selectedCandidates.find((c) => c === candidate[0].pseudo)}
+                        onClick={this.setSelectedCandidate}>
                         {candidate[0].pseudo}
                       </CandidateButton>
                     ))}
@@ -148,11 +124,8 @@ class Result extends React.Component {
                             <CandidateButton
                               key={userT}
                               data-themeid={theme._id}
-                              isActive={
-                                !!selectedThemes.find((c) => c === theme._id)
-                              }
-                              onClick={this.setSelectedThemes}
-                            >
+                              isActive={!!selectedThemes.find((c) => c === theme._id)}
+                              onClick={this.setSelectedThemes}>
                               {theme.fr}
                             </CandidateButton>
                           );
@@ -166,8 +139,7 @@ class Result extends React.Component {
               {window.screen.width <= 768 && (
                 <>
                   <SubTitle>
-                    Cliquez ici pour modifier les candidats et les thèmes a
-                    afficher
+                    Cliquez ici pour modifier les candidats et les thèmes a afficher
                   </SubTitle>
                 </>
               )}
@@ -187,11 +159,7 @@ class Result extends React.Component {
                       selectedThemes={selectedThemes}
                       partyScores={partyScores}
                       candidatesScorePerThemes={candidatesScorePerThemes}
-                      isActive={
-                        !!selectedCandidates.find(
-                          (c) => c === partyScores[0].pseudo
-                        )
-                      }
+                      isActive={!!selectedCandidates.find((c) => c === partyScores[0].pseudo)}
                     />
                   );
                 })}

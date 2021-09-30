@@ -1,90 +1,145 @@
-import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import { useParams } from "react-router";
 import GlobalStyles from "./styles/globalStyle";
 
 import Home from "./scenes/Home";
 import LoginPage from "./scenes/LoginPage";
-import ThemeSelect from "./scenes/Theme";
+import ThemeSelect from "./scenes/ThemeSelect";
 import Quizz from "./scenes/Quizz";
 import Result from "./scenes/Result";
 import API from "./services/api";
+import Layout from "./components/Layout";
 
-class App extends React.Component {
-  state = {
-    user: {},
-    needLoading: !!document.cookie.includes("jwt"),
-  };
+const App = () => {
+  const [user, setUserState] = useState({});
+  const [needLoading, setNeedLoading] = useState(!!document.cookie.includes("jwt"));
+  const [loading, setLoading] = useState(!!document.cookie.includes("jwt"));
+  const [answersList, setAnswersList] = useState([]);
+  const { themeId, questionId } = useParams();
 
-  componentDidMount() {
-    if (this.state.needLoading) this.onGetUser();
-  }
+  const [currentAnswerIndex, setCurrentAnswerIndex] = useState(
+    answersList.find((a) => a.questionId === questionId)?.answerIndex
+  );
 
-  onGetUser = async () => {
+  const getUser = async () => {
     const response = await API.getWithCreds({ path: "/user/me" });
-    if (!response?.ok) return (document.cookie = null);
-    this.setUser(response.data);
+    if (!response?.ok) {
+      document.cookie = null;
+      return;
+    }
+    setUser(response.data);
   };
 
-  setUser = (user) => this.setState({ user, needLoading: false });
+  const getAnswers = async () => {
+    const response = await API.getWithCreds({ path: "/answer" });
+    if (response.ok) {
+      setAnswersList(response.data);
+      setCurrentAnswerIndex(response.data.find((a) => a.questionId === questionId)?.answerIndex);
+    }
+  };
 
-  render() {
-    const { needLoading, user } = this.state;
-    if (needLoading) return <div>Loading...</div>;
-    return (
-      <BrowserRouter>
-        <GlobalStyles />
+  const setUser = (user) => {
+    setUserState(user);
+    setNeedLoading(false);
+    setLoading(false);
+    getAnswers();
+  };
+
+  const setAnswersListState = (newAnswer) => {
+    const existingAnswer = answersList.find((a) => a.questionId === newAnswer.questionId);
+    if (!!existingAnswer) {
+      setAnswersList(
+        answersList.map((a) => (a.questionId === newAnswer.questionId ? newAnswer : a))
+      );
+    } else {
+      setAnswersList([...answersList, newAnswer]);
+    }
+  };
+
+  const setAnswer = async (body) => {
+    const lastCurrentAnswerIndex = currentAnswerIndex;
+    const nextCurrentAnswerIndex = parseInt(body.answerIndex, 10);
+
+    setCurrentAnswerIndex(nextCurrentAnswerIndex);
+    setLoading(true);
+    const response = await API.postWithCreds({ path: "/answer", body });
+    setLoading(false);
+    if (!response.ok) {
+      alert(response.error);
+      setCurrentAnswerIndex(lastCurrentAnswerIndex);
+      return false;
+    }
+    setAnswersListState(response.data);
+    return true;
+  };
+
+  useEffect(() => {
+    if (needLoading) {
+      getUser();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    setCurrentAnswerIndex(answersList.find((a) => a.questionId === questionId)?.answerIndex);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [themeId, questionId]);
+
+  if (needLoading) return <div>Loading...</div>;
+
+  return (
+    <>
+      <GlobalStyles />
+      <Layout loading={loading} user={user} setUser={setUser}>
         <Switch>
+          <Route path="/home" render={(props) => <Home user={user} setUser={setUser} />} />
           <Route
-            path='/home'
-            render={(props) => <Home user={user} setUser={this.setUser} />}
-          />
-          <Route
-            path='/login'
-            render={(props) => (
-              <LoginPage {...props} user={user} setUser={this.setUser} />
-            )}
+            path="/login"
+            render={(props) => <LoginPage {...props} user={user} setUser={setUser} />}
           />
           <RestrictedRoute
-            path='/theme'
+            path="/theme"
+            user={user}
+            Component={(props) => <ThemeSelect {...props} setUser={setUser} />}
+          />
+          <RestrictedRoute
+            path="/question/:themeId/:questionId"
+            exact
             user={user}
             Component={(props) => (
-              <ThemeSelect {...props} setUser={this.setUser} />
+              <Quizz
+                {...props}
+                user={user}
+                setAnswer={setAnswer}
+                currentAnswerIndex={currentAnswerIndex}
+              />
             )}
           />
           <RestrictedRoute
-            path='/question/:themeId/:questionId'
+            path="/result"
             exact
             user={user}
-            Component={(props) => <Quizz {...props} setUser={this.setUser} />}
+            Component={(props) => <Result {...props} setUser={setUser} />}
           />
           <RestrictedRoute
-            path='/result'
+            path="/"
             exact
             user={user}
-            Component={(props) => <Result {...props} setUser={this.setUser} />}
-          />
-          <RestrictedRoute
-            path='/'
-            exact
-            user={user}
-            Component={() => <Redirect to='/theme' setUser={this.setUser} />}
+            Component={() => <Redirect to="/theme" setUser={setUser} />}
           />
         </Switch>
-      </BrowserRouter>
-    );
-  }
-}
+      </Layout>
+    </>
+  );
+};
 
 const RestrictedRoute = ({ Component, user, ...rest }) => {
   return (
     <Route
       {...rest}
       render={(props) =>
-        user?._id ? (
-          <Component {...props} user={user} />
-        ) : (
-          <Redirect to='/login' />
-        )
+        user?._id ? <Component {...props} user={user} /> : <Redirect to="/login" />
       }
     />
   );

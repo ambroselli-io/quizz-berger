@@ -11,9 +11,9 @@ router.post(
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
     if (!req.body.themeId) return res.status(409).send({ ok: false, error: "themeId is not provided" });
+    if (!req.body.hasOwnProperty("themeId")) return res.status(409).send({ ok: false, error: "questionId is not provided" });
     if (!req.body.hasOwnProperty("questionId")) return res.status(409).send({ ok: false, error: "questionId is not provided" });
-    // if (!req.body.questionId) return res.status(409).send({ ok: false, error: "questionId is not provided" });
-    if (!req.body.answerIndex) return res.status(409).send({ ok: false, error: "answerIndex is not provided" });
+    if (!req.body.hasOwnProperty("answerIndex")) return res.status(409).send({ ok: false, error: "answer index is not provided" });
 
     const answerContent = {
       user: req.body.user,

@@ -3,37 +3,29 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { media } from "../styles/mediaQueries";
 
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <>
-        <Header {...this.props} />
-        <BackgroundContainer>
-          <Container>
-            <Title>
-              Trouvez le candidat qui se rapproche le plus de vos idées !
-            </Title>
-            <SubTitle>
-              Complétez notre quiz en choisissant les thèmes qui vous
-              intéressent pour situer vos idées politiques
-              {/* Take our Political
+const Home = () => (
+  <>
+    <BackgroundContainer>
+      <Container>
+        <Title>Trouvez le candidat qui se rapproche le plus de vos idées !</Title>
+        <SubTitle>
+          Complétez notre quiz en choisissant les thèmes qui vous intéressent pour situer vos idées
+          politiques
+          {/* Take our Political
               Compass test to find out which political group your best match is */}
-            </SubTitle>
-            <Link to='/theme'>
-              <QuizzButton>
-                <span>Participer au Quizz</span>
-              </QuizzButton>
-            </Link>
-          </Container>
-        </BackgroundContainer>
-        <Footer />
-      </>
-    );
-  }
-}
+        </SubTitle>
+        <Link to="/theme">
+          <QuizzButton>
+            <span>Participer au Quizz</span>
+          </QuizzButton>
+        </Link>
+      </Container>
+    </BackgroundContainer>
+    <Footer />
+  </>
+);
 
 const BackgroundContainer = styled.div`
   padding: 120px 20px 40px 20px;

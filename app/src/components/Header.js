@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useEffect, useRef, useState } from "react";
+import styled, { keyframes } from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import API from "../services/api";
@@ -8,155 +8,169 @@ import { media } from "../styles/mediaQueries";
 import logo from "../images/logo.svg";
 import burgerNav from "../images/burgerNav.svg";
 
-class Header extends React.Component {
-  onLogout = async () => {
+const Header = ({ loading, user, setUser }) => {
+  const [showLogoLoading, setShowLogoLoading] = useState(false);
+  const [showLogoKey, setShowLogoKey] = useState(false);
+
+  const loadingIntervalRef = useRef(null);
+
+  const onLogout = async () => {
     const response = await API.post({
       path: "/user/logout",
     });
-    if (response.ok) this.props.setUser(null);
+    if (response.ok) setUser(null);
   };
 
-  showSettings(event) {
-    event.preventDefault();
-  }
-  render() {
-    const { user } = this.props;
+  const keepLoadingInterval = () => {
+    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
+  };
 
-    const burgerNavStyles = {
-      bmBurgerButton: {
-        width: "16px",
-        height: "12px",
-        border: "none",
-      },
-      bmCrossButton: {
-        top: "30px",
-        right: "15px",
-        position: "fixed",
-        height: "27px",
-        width: "27px",
-      },
-      bmCross: {
-        background: "white",
-      },
-      bmMenuWrap: {
-        top: "0",
-        position: "fixed",
-        height: "100%",
-        width: "100vw",
-      },
-      bmMenu: {
-        background: "#111827",
-        padding: "23px 0",
-        fontSize: "1.15em",
-      },
-      bmItemList: {
-        color: "white",
-        // padding: "0.8em",
-      },
-      bmItem: {
-        margin: "0 0 30px 0",
-        display: "block",
-      },
-      bmOverlay: {
-        top: "0",
-        left: "0",
-        background: "rgba(0, 0, 0, 0.7)",
-      },
-    };
+  useEffect(() => {
+    if (loading && !showLogoLoading) {
+      setShowLogoLoading(true);
+      keepLoadingInterval();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading]);
 
-    return (
-      <>
-        <HeaderStyled>
-          <HeaderContainer>
-            <LeftContainer>
-              <Link to='/home'>
-                <HeaderLogo />
-              </Link>
-              <Link to='/home'>
-                <Title>Le Quizz du Berger</Title>
-              </Link>
-            </LeftContainer>
-            <HeaderMenu>
-              <HeaderMenuTab>
-                <NavLink activeClassName='selected' to='/home'>
-                  <span>Accueil</span>
-                </NavLink>
-              </HeaderMenuTab>
-              <HeaderMenuTab>
-                <NavLink activeClassName='selected' to='/result'>
-                  <span>Résultats</span>
-                </NavLink>
-              </HeaderMenuTab>
-              {!!user?.pseudo ? (
-                <HeaderMenuTab onClick={this.onLogout}>
-                  <span>Se déconnecter</span>
-                </HeaderMenuTab>
-              ) : (
-                <HeaderMenuTab>
-                  <NavLink activeClassName='selected' to='/login'>
-                    <span>Se connecter</span>
-                  </NavLink>
-                </HeaderMenuTab>
-              )}
-              <NavLink activeClassName='selected' to='/theme'>
-                <QuizzButton>
-                  <span>Quizz</span>
-                </QuizzButton>
+  useEffect(() => {
+    if (showLogoLoading && !loading) {
+      setShowLogoLoading(false);
+      clearInterval(loadingIntervalRef.current);
+    }
+  }, [showLogoKey]);
+
+  return (
+    <>
+      <HeaderStyled>
+        <HeaderContainer>
+          <LeftContainer>
+            <Link to="/home">
+              <HeaderLogo className={!!showLogoLoading && "animate"} />
+            </Link>
+            <Link to="/home">
+              <Title>Le Quizz du Berger</Title>
+            </Link>
+          </LeftContainer>
+          <HeaderMenu>
+            <HeaderMenuTab>
+              <NavLink activeClassName="selected" to="/home">
+                <span>Accueil</span>
               </NavLink>
-              {/* BurgerMenu */}
-              <BurgerNavContainer>
-                <Menu
-                  right
-                  styles={burgerNavStyles}
-                  customBurgerIcon={
-                    <img src={burgerNav} alt='mobile navigation menu' />
-                  }
-                >
-                  <BurgerNavHeaderContainer>
-                    <HeaderLogo />
-                    <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
-                  </BurgerNavHeaderContainer>
-                  <Fillet />
+            </HeaderMenuTab>
+            <HeaderMenuTab>
+              <NavLink activeClassName="selected" to="/result">
+                <span>Résultats</span>
+              </NavLink>
+            </HeaderMenuTab>
+            {!!user?.pseudo ? (
+              <HeaderMenuTab onClick={onLogout}>
+                <span>Se déconnecter</span>
+              </HeaderMenuTab>
+            ) : (
+              <HeaderMenuTab>
+                <NavLink activeClassName="selected" to="/login">
+                  <span>Se connecter</span>
+                </NavLink>
+              </HeaderMenuTab>
+            )}
+            <NavLink activeClassName="selected" to="/theme">
+              <QuizzButton>
+                <span>Quizz</span>
+              </QuizzButton>
+            </NavLink>
+            {/* BurgerMenu */}
+            <BurgerNavContainer>
+              <Menu
+                right
+                styles={burgerNavStyles}
+                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
+                <BurgerNavHeaderContainer>
+                  <HeaderLogo />
+                  <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
+                </BurgerNavHeaderContainer>
+                <Fillet />
+                <BurgerMenuTab>
+                  <NavLink activeClassName="selected" to="/home">
+                    <span>Accueil</span>
+                  </NavLink>
+                </BurgerMenuTab>
+                <Fillet />
+                <BurgerMenuTab>
+                  <NavLink activeClassName="selected" to="/result">
+                    <span>Résultats</span>
+                  </NavLink>
+                </BurgerMenuTab>
+                <Fillet />
+                {!!user?.pseudo ? (
+                  <BurgerMenuTab onClick={onLogout}>
+                    <span>Se déconnecter</span>
+                  </BurgerMenuTab>
+                ) : (
                   <BurgerMenuTab>
-                    <NavLink activeClassName='selected' to='/home'>
-                      <span>Accueil</span>
+                    <NavLink activeClassName="selected" to="/login">
+                      <span>Se connecter</span>
                     </NavLink>
                   </BurgerMenuTab>
-                  <Fillet />
-                  <BurgerMenuTab>
-                    <NavLink activeClassName='selected' to='/result'>
-                      <span>Résultats</span>
-                    </NavLink>
-                  </BurgerMenuTab>
-                  <Fillet />
-                  {!!user?.pseudo ? (
-                    <BurgerMenuTab onClick={this.onLogout}>
-                      <span>Se déconnecter</span>
-                    </BurgerMenuTab>
-                  ) : (
-                    <BurgerMenuTab>
-                      <NavLink activeClassName='selected' to='/login'>
-                        <span>Se connecter</span>
-                      </NavLink>
-                    </BurgerMenuTab>
-                  )}
-                  <Fillet />
-                  <BurgerMenuTab>
-                    <NavLink activeClassName='selected' to='/theme'>
-                      <QuizzButton showOnMobile>
-                        <span>Quizz</span>
-                      </QuizzButton>
-                    </NavLink>
-                  </BurgerMenuTab>
-                </Menu>
-              </BurgerNavContainer>
-            </HeaderMenu>
-          </HeaderContainer>
-        </HeaderStyled>
-      </>
-    );
-  }
-}
+                )}
+                <Fillet />
+                <BurgerMenuTab>
+                  <NavLink activeClassName="selected" to="/theme">
+                    <QuizzButton showOnMobile>
+                      <span>Quizz</span>
+                    </QuizzButton>
+                  </NavLink>
+                </BurgerMenuTab>
+              </Menu>
+            </BurgerNavContainer>
+          </HeaderMenu>
+        </HeaderContainer>
+      </HeaderStyled>
+    </>
+  );
+};
+
+const burgerNavStyles = {
+  bmBurgerButton: {
+    width: "16px",
+    height: "12px",
+    border: "none",
+  },
+  bmCrossButton: {
+    top: "30px",
+    right: "15px",
+    position: "fixed",
+    height: "27px",
+    width: "27px",
+  },
+  bmCross: {
+    background: "white",
+  },
+  bmMenuWrap: {
+    top: "0",
+    position: "fixed",
+    height: "100%",
+    width: "100vw",
+  },
+  bmMenu: {
+    background: "#111827",
+    padding: "23px 0",
+    fontSize: "1.15em",
+  },
+  bmItemList: {
+    color: "white",
+    // padding: "0.8em",
+  },
+  bmItem: {
+    margin: "0 0 30px 0",
+    display: "block",
+  },
+  bmOverlay: {
+    top: "0",
+    left: "0",
+    background: "rgba(0, 0, 0, 0.7)",
+  },
+};
 
 const HeaderStyled = styled.nav`
   position: fixed;
@@ -185,6 +199,15 @@ const LeftContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const HeaderLogo = styled.div`
   margin-right: 10px;
@@ -193,6 +216,9 @@ const HeaderLogo = styled.div`
   background: url(${logo}) no-repeat;
   background-size: cover;
   border: none;
+  &.animate {
+    animation: ${rotate} 2s linear infinite;
+  }
 `;
 
 const Title = styled.h1`

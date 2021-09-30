@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 
-import Header from "../components/Header";
 import Signup from "../components/Signup";
 import Login from "../components/Login";
 
@@ -23,36 +22,19 @@ class LoginPage extends React.Component {
     const { showSignup } = this.state;
     return (
       <>
-        <Header {...this.props} />
         <BackGroundContainer>
           <Title>Connectez-vous</Title>
           <LogContainer>
             <SignButtonContainer>
-              <LoginButton
-                isDisplayed={!showSignup}
-                onClick={this.displayLogin}
-              >
+              <LoginButton isDisplayed={!showSignup} onClick={this.displayLogin}>
                 Se connecter
               </LoginButton>
-              <SignupButton
-                isDisplayed={showSignup}
-                onClick={this.displaySignup}
-              >
+              <SignupButton isDisplayed={showSignup} onClick={this.displaySignup}>
                 S'inscrire
               </SignupButton>
             </SignButtonContainer>
-            {!showSignup && (
-              <Login
-                isDisplayed={!this.state.showSignup}
-                onLogin={this.onLogin}
-              />
-            )}
-            {showSignup && (
-              <Signup
-                isDisplayed={this.state.showSignup}
-                onLogin={this.onLogin}
-              />
-            )}
+            {!showSignup && <Login isDisplayed={!this.state.showSignup} onLogin={this.onLogin} />}
+            {showSignup && <Signup isDisplayed={this.state.showSignup} onLogin={this.onLogin} />}
           </LogContainer>
         </BackGroundContainer>
       </>
