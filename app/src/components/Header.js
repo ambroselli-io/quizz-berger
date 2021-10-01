@@ -74,6 +74,11 @@ const Header = ({ loading, user, setUser }) => {
                 <span>Accueil</span>
               </NavLink>
             </HeaderMenuTab>
+            <NavLink activeClassName="selected" to="/theme">
+              <QuizzButton>
+                <span>Quizz</span>
+              </QuizzButton>
+            </NavLink>
             <HeaderMenuTab>
               <NavLink activeClassName="selected" to="/result">
                 <span>Résultats</span>
@@ -93,11 +98,6 @@ const Header = ({ loading, user, setUser }) => {
                 </NavLink>
               </HeaderMenuTab>
             )}
-            <NavLink activeClassName="selected" to="/theme">
-              <QuizzButton>
-                <span>Quizz</span>
-              </QuizzButton>
-            </NavLink>
             {/* BurgerMenu */}
             <BurgerNavContainer>
               <Menu

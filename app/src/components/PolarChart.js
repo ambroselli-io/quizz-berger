@@ -5,15 +5,11 @@ import { media } from "../styles/mediaQueries";
 
 import quizz from "../quizz.json";
 
-const PolarChart = ({
-  candidatesScorePerThemes,
-  partyScores,
-  selectedThemes,
-}) => {
+const PolarChart = ({ partyScores, selectedThemes, isActive }) => {
   const radarChartRef = useRef();
 
   const scores = partyScores.map((score) => score.score);
-  const themes = candidatesScorePerThemes[0]?.map((theme) => {
+  const themes = partyScores.map((theme) => {
     return quizz.find((quizztheme) => quizztheme._id === theme.themeId).fr;
   });
 
@@ -69,6 +65,8 @@ const PolarChart = ({
   };
 
   useEffect(() => {
+    radarChartRef.current?.toggleDataVisibility(1);
+    radarChartRef.current?.update();
     // selectedThemes.forEach((c) => {
     //   const getCandidateDataSetIndex = dataSets.findIndex(
     //     (data) => data.label === c
@@ -76,14 +74,13 @@ const PolarChart = ({
     //   chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
     //   chartRef.current.update();
     // });
-
-    radarChartRef.current?.toggleDataVisibility(2);
-    radarChartRef.current?.update();
   }, [selectedThemes]);
+
+  // console.log(selectedThemes);
 
   return (
     <>
-      <ChartContainer>
+      <ChartContainer isActive={isActive}>
         <CandidateTitle>{partyScores[0].pseudo}</CandidateTitle>
         <PolarArea ref={radarChartRef} data={data} options={options} />
       </ChartContainer>
@@ -92,13 +89,14 @@ const PolarChart = ({
 };
 
 const ChartContainer = styled.div`
+  display: ${(props) => (props.isActive ? "block" : "none")};
   margin: 0 auto;
   padding: 40px;
   margin-bottom: 20px;
   width: 30vw;
   max-width: 400px;
   height: auto;
-  border: 1px solid grey;
+  /* border: 1px solid #e5e7eb; */
   ${media.mobile`
   width: 90vw;
   max-width: 400px;
