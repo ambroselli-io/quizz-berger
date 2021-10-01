@@ -4,22 +4,39 @@ import { media } from "../styles/mediaQueries";
 import logo from "../images/logo.svg";
 import cross from "../images/cross.svg";
 import { Link } from "react-router-dom";
+import ContactModal from "../components/ContactModal";
 
 class Footer extends React.Component {
   state = {
-    showModal: false,
+    showLegalModal: false,
+    showContactModal: false,
   };
 
-  onCloseModal = (e) => {
+  onCloseLegalModal = (e) => {
     if (e.target !== e.currentTarget) return;
-    this.setState({ showModal: false });
+    this.setState({ showLegalModal: false });
+    document.body.style.overflow = "visible";
   };
 
-  onOpenModal = () => {
-    this.setState({ showModal: true });
+  onOpenLegalModal = (e) => {
+    this.setState({ showLegalModal: true });
+    document.body.style.overflow = "hidden";
+    console.log(e);
+  };
+
+  onCloseContactModal = (e) => {
+    if (e.target !== e.currentTarget) return;
+    this.setState({ showContactModal: false });
+    document.body.style.overflow = "visible";
+  };
+
+  onOpenContactModal = () => {
+    this.setState({ showContactModal: true });
+    document.body.style.overflow = "hidden";
   };
 
   render() {
+    const { showContactModal, showLegalModal } = this.state;
     return (
       <FooterContainer>
         <Container>
@@ -32,60 +49,84 @@ class Footer extends React.Component {
             </Link>
           </LeftContainer>
           <FooterMenu>
-            <FooterMenuTab>Candidats</FooterMenuTab>
-            <FooterMenuTab>Nous contacter</FooterMenuTab>
-            <FooterMenuTab onClick={this.onOpenModal}>Mentions légales</FooterMenuTab>
+            <FooterMenuTab onClick={this.onOpenContactModal}>
+              Nous contacter
+            </FooterMenuTab>
+            <FooterMenuTab onClick={this.onOpenLegalModal}>
+              Mentions légales
+            </FooterMenuTab>
           </FooterMenu>
         </Container>
         {/* -- MODAL -- */}
-        <LegalMentionModalBackground isActive={this.state.showModal} onClick={this.onCloseModal}>
+        <LegalMentionModalBackground
+          isActive={showLegalModal}
+          onClick={this.onCloseLegalModal}
+        >
           <LegalMentionModalContainer>
             <TitleContainer>
               <SubTitle>Mentions Légales</SubTitle>
-              <CrossIcon onClick={this.onCloseModal} />
+              <CrossButton onClick={this.onCloseLegalModal} />
             </TitleContainer>
-
-            <p>
-              Le Quizz du Berger a été développé par Arnaud Ambroselli et Roméo Vincent dans le but
-              d'encourager les gens à conforter, confronter ou remettre en question leurs idées
-              politiques.
-              <br />
-              <br />
-              Toutes les réponses des utilisateurs sont anonymes et ne sont utilisées à aucun autre
-              usage que celui pour l'utilisateur de les consulter. Notre action n'a aucun but
-              lucratif, c ést même une perte financière sèche et assumée.
-              <br />
-              <br />
-              Nous essayons aussi de garder une neutralité vis à vis des candidats, des questions et
-              des réponses. SI vous avez une remarque à faire sur un aspect quelconque du quizz -
-              contenu des questions, réponses des candidats, ou même design du quizz -, nous serions
-              heureux d'avoir vos retours, n'hésitez pas à nous contacter.
-              <br />
-              <br />
-              Si vous êtes vous-même candidat ou parti politique et que les réponses que nous avons
-              affiché en votre nom de vous conviennent pas, contactez-nous aussi, nous serons
-              heureux de faire les modifications que vous souhaitez.
-              <br />
-              <br />
-              Ce projet est open-source, si vous souhaitez y participer, venez le faire sur github :
-              <a href="https://github.com/ambroselli-io/quizz-berger">
-                https://github.com/ambroselli-io/quizz-berger
-              </a>
-            </p>
+            <LegalMentionModalInnerContainer>
+              <p>
+                Le Quizz du Berger a été développé par Arnaud Ambroselli et
+                Roméo Vincent dans le but d'encourager les gens à conforter ou
+                de remettre en question leurs idées politiques.
+                <br />
+                <br />
+                Toutes les réponses des utilisateurs sont anonymes et ne sont
+                utilisées à aucun autre usage que celui pour l'utilisateur de
+                les consulter. Notre action n'a aucun but lucratif, elle est
+                même une perte financière sèche et assumée.
+                <br />
+                <br />
+                Nous essayons aussi de garder une neutralité vis à vis des
+                candidats, des questions et des réponses. Si vous avez une
+                remarque à faire sur un aspect quelconque du quizz - contenu des
+                questions, réponses des candidats, ou même design du quizz -,
+                nous serions heureux d'avoir vos retours, n'hésitez pas à nous
+                contacter.
+                <br />
+                <br />
+                Si vous êtes vous-même candidat ou un parti politique et que les
+                réponses que nous avons affiché en votre nom ne vous conviennent
+                pas, contactez-nous aussi, nous serons heureux de faire les
+                modifications que vous souhaitez.
+                <br />
+                <br />
+                Ce projet est open-source, si vous souhaitez y participer, venez
+                le faire sur github : <br />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/ambroselli-io/quizz-berger"
+                >
+                  https://github.com/ambroselli-io/quizz-berger
+                </a>
+              </p>
+            </LegalMentionModalInnerContainer>
           </LegalMentionModalContainer>
         </LegalMentionModalBackground>
+        <ContactModal
+          isActive={showContactModal}
+          onCloseContactModal={this.onCloseContactModal}
+        />
       </FooterContainer>
     );
   }
 }
 
 const FooterContainer = styled.div`
+  padding: 0 40px;
   height: 120px;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: white;
-  border: 1px solid green;
+  ${media.mobile`
+  height: 80px;
+  padding: 0 20px;
+`}
 `;
 
 const Container = styled.div`
@@ -111,21 +152,6 @@ const HeaderLogo = styled.div`
   border: none;
 `;
 
-const TitleContainer = styled.div`
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const CrossIcon = styled.div`
-  height: 15px;
-  width: 15px;
-  background: url(${cross}) no-repeat;
-  background-size: cover;
-  color: black;
-`;
-
 const Title = styled.h1`
   font-family: Merriweather;
   font-size: 20px;
@@ -146,6 +172,9 @@ const FooterMenu = styled.ul`
   grid-gap: 40px;
   align-items: center;
   justify-content: space-evenly;
+  ${media.mobile`
+  grid-gap: 20px;
+`}
 `;
 
 const FooterMenuTab = styled.li`
@@ -169,15 +198,42 @@ const LegalMentionModalBackground = styled.div`
 `;
 
 const LegalMentionModalContainer = styled.div`
+  flex: 1;
   padding: 40px;
-  width: 1000px;
-  height: 500px;
+  max-width: 1000px;
+  height: auto;
   background-color: white;
   border-radius: 50px;
-  overflow: scroll;
+  display: flex;
+  flex-direction: column;
   ${media.mobile`
   max-height: 400px;
   height: auto;
+`}
+`;
+
+const TitleContainer = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const CrossButton = styled.button`
+  height: 15px;
+  width: 15px;
+  background: url(${cross}) no-repeat;
+  background-size: cover;
+  color: black;
+  border: none;
+  cursor: pointer;
+`;
+
+const LegalMentionModalInnerContainer = styled.div`
+  height: auto;
+  overflow: hidden;
+  ${media.mobile`
+  overflow: scroll;
 `}
 `;
 

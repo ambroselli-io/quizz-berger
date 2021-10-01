@@ -9,14 +9,16 @@ const Home = () => (
   <>
     <BackgroundContainer>
       <Container>
-        <Title>Trouvez le candidat qui se rapproche le plus de vos idées !</Title>
+        <Title>
+          Trouvez le candidat qui se rapproche le plus de vos idées !
+        </Title>
         <SubTitle>
-          Complétez notre quiz en choisissant les thèmes qui vous intéressent pour situer vos idées
-          politiques
+          Complétez notre quizz en choisissant les thèmes qui vous intéressent
+          pour situer vos idées politiques.
           {/* Take our Political
               Compass test to find out which political group your best match is */}
         </SubTitle>
-        <Link to="/theme">
+        <Link to='/theme'>
           <QuizzButton>
             <span>Participer au Quizz</span>
           </QuizzButton>
@@ -28,29 +30,26 @@ const Home = () => (
 );
 
 const BackgroundContainer = styled.div`
-  padding: 120px 20px 40px 20px;
-  height: 100vh;
+  padding: 40px 20px 40px 20px;
+  height: calc(100vh - 80px);
   background-color: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   ${media.mobile`
-  padding: 100px 10px 40px 10px;
-  min-height: 640px;
-  height: 100vh;
+  padding: 40px 10px 40px 10px;
+  min-height: 570px;
+  height: calc(100vh - 60px);
   `}
 `;
 
 const Container = styled.div`
   max-width: 770px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   ${media.mobile`
-  justify-content: flex-start;
 `}
 `;
 

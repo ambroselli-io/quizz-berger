@@ -17,7 +17,9 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
 
   const currentThemeQuestions = currentTheme.questions;
 
-  const { fr, answers } = currentThemeQuestions.find((question) => question._id === questionId);
+  const { fr, answers } = currentThemeQuestions.find(
+    (question) => question._id === questionId
+  );
 
   const goToNextQuestion = () => {
     const currentQuestionIndex = currentThemeQuestions.findIndex(
@@ -58,7 +60,9 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     // // last question of current theme
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     const firstUserTheme = user.themes[0];
-    const firstUserThemeIndex = quizz.findIndex((t) => t._id === firstUserTheme);
+    const firstUserThemeIndex = quizz.findIndex(
+      (t) => t._id === firstUserTheme
+    );
     // last theme
     if (currentThemeIndex < firstUserThemeIndex) {
       return history.push("/theme");
@@ -67,8 +71,11 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     previousThemeId = user.themes[currentThemeIndex - 1];
     const previousTheme = quizz.find((theme) => theme._id === previousThemeId);
     const previousThemeLastQuestionIndex = previousTheme.questions.length - 1;
-    const previousThemeLastQuestionId = previousTheme.questions[previousThemeLastQuestionIndex]._id;
-    return history.push(`/question/${previousThemeId}/${previousThemeLastQuestionId}`);
+    const previousThemeLastQuestionId =
+      previousTheme.questions[previousThemeLastQuestionIndex]._id;
+    return history.push(
+      `/question/${previousThemeId}/${previousThemeLastQuestionId}`
+    );
   };
 
   const goToNextTheme = (e) => {
@@ -76,8 +83,11 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     let nextThemeId;
     if (currentThemeIndex < user.themes.length - 1) {
       nextThemeId = user.themes[currentThemeIndex + 1];
-      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId).questions[0]._id;
-      return history.push(`/question/${nextThemeId}/${nextThemeFirstQuestionId}`);
+      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId)
+        .questions[0]._id;
+      return history.push(
+        `/question/${nextThemeId}/${nextThemeFirstQuestionId}`
+      );
     } else {
       return history.push(`/result`);
     }
@@ -88,9 +98,12 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     let previousThemeId;
     if (currentThemeIndex > 0) {
       previousThemeId = user.themes[currentThemeIndex - 1];
-      const previousThemeFirstQuestionId = quizz.find((t) => t._id === previousThemeId).questions[0]
-        ._id;
-      return history.push(`/question/${previousThemeId}/${previousThemeFirstQuestionId}`);
+      const previousThemeFirstQuestionId = quizz.find(
+        (t) => t._id === previousThemeId
+      ).questions[0]._id;
+      return history.push(
+        `/question/${previousThemeId}/${previousThemeFirstQuestionId}`
+      );
     } else {
       return history.push(`/theme`);
     }
@@ -146,27 +159,30 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
       </ThemeHeaderContainer>
 
       <BackgroundContainer>
-        <QuestionContainer>
-          <QuestionTitle>{fr}</QuestionTitle>
-          <AnswerContainer>
-            {answers.map((answer, index) => {
-              return (
-                <AnswerButton
-                  isActive={currentAnswerIndex === index}
-                  onClick={sendAnswer}
-                  key={index}
-                  data-index={index}>
-                  {answer}
-                </AnswerButton>
-              );
-            })}
-          </AnswerContainer>
-        </QuestionContainer>
+        {/* <QuestionContainer> */}
+        <QuestionTitle>{fr}</QuestionTitle>
+        <AnswerContainer>
+          {answers.map((answer, index) => {
+            return (
+              <AnswerButton
+                isActive={currentAnswerIndex === index}
+                onClick={sendAnswer}
+                key={index}
+                data-index={index}
+              >
+                {answer}
+              </AnswerButton>
+            );
+          })}
+        </AnswerContainer>
+        {/* </QuestionContainer> */}
 
         <ProgressBarContainer>
           <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
           {user.themes.map((t, index) => {
-            const currentThemeIndex = user.themes.findIndex((t) => t === themeId);
+            const currentThemeIndex = user.themes.findIndex(
+              (t) => t === themeId
+            );
 
             const currentQuestionIndex = currentThemeQuestions.findIndex(
               (q) => q._id === questionId
@@ -211,9 +227,9 @@ const ThemeHeaderContainer = styled.div`
   padding: 0 15px 0 15px;
   justify-content: space-evenly;
   flex-direction: column;
-  max-height: 126px;
-  min-height: 90px;
-  height: 20vh;
+  max-height: 126px; // 
+  min-height: 90px; //
+  height: 110px;
 `}
 `;
 
@@ -254,24 +270,22 @@ const MobileThemeTitle = styled.h2`
 `;
 
 const BackgroundContainer = styled.div`
-  padding: 40px 20px 40px 20px;
-  height: calc(100vh - 160px);
+  padding: 40px 20px 80px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   ${media.mobile`
-  padding: 40px 10px;
-
+  padding: 40px 10px 100px 10px;
 `};
 `;
 
-const QuestionContainer = styled.div`
-  width: 100%;
-  ${media.mobile`
-  padding-bottom: 60px;
-`};
-`;
+// const QuestionContainer = styled.div`
+//   width: 100%;
+//   ${media.mobile`
+//   padding-bottom: 60px;
+// `};
+// `;
 
 const QuestionTitle = styled.h2`
   margin-bottom: 40px;
@@ -281,23 +295,17 @@ const QuestionTitle = styled.h2`
 `;
 
 const AnswerContainer = styled.div`
-  /* border: 1px solid red; */
-  margin: 0 auto;
   max-width: 1020px;
   display: flex;
-  flex-direction: column;
   grid-gap: 15px;
+  flex-direction: column;
   align-items: center;
-  ${media.mobile`
-    margin-bottom: 40px;
-`};
 `;
 
 const AnswerButton = styled.button`
   padding: 10px;
-  width: 450px;
+  width: 500px;
   min-height: 60px;
-  height: auto;
   font-size: 16px;
   background: ${(props) => (props.isActive ? `#111827` : `#ffffff`)};
   color: ${(props) => (props.isActive ? `#ffffff` : `black`)};
@@ -310,25 +318,25 @@ const AnswerButton = styled.button`
   }
   ${media.mobile`
   width: 300px;
-  height: 80px;
 `};
 `;
 
 const ProgressBarContainer = styled.div`
+  position: fixed;
+  bottom: 0;
+  height: 80px;
   max-width: 1024px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
   ${media.mobile`
   padding: 0 10px;
   max-height: 80px;
   min-height: 50px;
   height: 11vh;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  background-color: white;
   border-top: 1px solid black;
 `}
 `;
@@ -341,7 +349,8 @@ const NavigationButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-image: ${(props) => (props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`)};
+  background-image: ${(props) =>
+    props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`};
   background-repeat: no-repeat;
   background-size: cover;
   ${media.mobile`
