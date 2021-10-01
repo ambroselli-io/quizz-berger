@@ -4,6 +4,7 @@ import { media } from "../styles/mediaQueries";
 
 import Signup from "../components/Signup";
 import Login from "../components/Login";
+import Footer from "../components/Footer";
 
 class LoginPage extends React.Component {
   state = { showSignup: false };
@@ -26,35 +27,51 @@ class LoginPage extends React.Component {
           <Title>Connectez-vous</Title>
           <LogContainer>
             <SignButtonContainer>
-              <LoginButton isDisplayed={!showSignup} onClick={this.displayLogin}>
+              <LoginButton
+                isDisplayed={!showSignup}
+                onClick={this.displayLogin}
+              >
                 Se connecter
               </LoginButton>
-              <SignupButton isDisplayed={showSignup} onClick={this.displaySignup}>
+              <SignupButton
+                isDisplayed={showSignup}
+                onClick={this.displaySignup}
+              >
                 S'inscrire
               </SignupButton>
             </SignButtonContainer>
-            {!showSignup && <Login isDisplayed={!this.state.showSignup} onLogin={this.onLogin} />}
-            {showSignup && <Signup isDisplayed={this.state.showSignup} onLogin={this.onLogin} />}
+            {!showSignup && (
+              <Login
+                isDisplayed={!this.state.showSignup}
+                onLogin={this.onLogin}
+              />
+            )}
+            {showSignup && (
+              <Signup
+                isDisplayed={this.state.showSignup}
+                onLogin={this.onLogin}
+              />
+            )}
           </LogContainer>
         </BackGroundContainer>
+        <Footer />
       </>
     );
   }
 }
 
 const BackGroundContainer = styled.div`
-  padding: 120px 20px 40px 20px;
-  min-height: 100vh;
+  padding: 40px 20px 40px 20px;
+  height: calc(100vh - 80px);
   background-color: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   ${media.mobile`
-  padding: 80px 10px 40px 10px;
-  justify-content: flex-start;
-  min-height: 600px;
-  height: 100vh;
+  padding: 40px 10px 40px 10px;
+  min-height: auto;
+  height: calc(100vh - 60px);
   `}
 `;
 

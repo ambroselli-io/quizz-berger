@@ -7,10 +7,12 @@ import { media } from "../styles/mediaQueries";
 
 import logo from "../images/logo.svg";
 import burgerNav from "../images/burgerNav.svg";
+import ContactModal from "./ContactModal";
 
 const Header = ({ loading, user, setUser }) => {
   const [showLogoLoading, setShowLogoLoading] = useState(false);
   const [showLogoKey, setShowLogoKey] = useState(false);
+  const [showContactModal, setShowContactModal] = useState(false);
 
   const loadingIntervalRef = useRef(null);
 
@@ -22,7 +24,10 @@ const Header = ({ loading, user, setUser }) => {
   };
 
   const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
+    loadingIntervalRef.current = setInterval(
+      () => setShowLogoKey((k) => k + 1),
+      1000
+    );
   };
 
   useEffect(() => {
@@ -39,6 +44,17 @@ const Header = ({ loading, user, setUser }) => {
       clearInterval(loadingIntervalRef.current);
     }
   }, [showLogoKey]);
+
+  const onCloseContactModal = (e) => {
+    if (e.target !== e.currentTarget) return;
+    setShowContactModal(false);
+    document.body.style.overflow = "visible";
+  };
+
+  const onOpenContactModal = () => {
+    setShowContactModal(true);
+    document.body.style.overflow = "hidden";
+  };
 
   return (
     <>
@@ -63,6 +79,9 @@ const Header = ({ loading, user, setUser }) => {
                 <span>Résultats</span>
               </NavLink>
             </HeaderMenuTab>
+            <HeaderMenuTab>
+              <span onClick={onOpenContactModal}>Nous contacter</span>
+            </HeaderMenuTab>
             {!!user?.pseudo ? (
               <HeaderMenuTab onClick={onLogout}>
                 <span>Se déconnecter</span>
@@ -84,7 +103,10 @@ const Header = ({ loading, user, setUser }) => {
               <Menu
                 right
                 styles={burgerNavStyles}
-                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
+                customBurgerIcon={
+                  <img src={burgerNav} alt="mobile navigation menu" />
+                }
+              >
                 <BurgerNavHeaderContainer>
                   <HeaderLogo />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
@@ -126,6 +148,11 @@ const Header = ({ loading, user, setUser }) => {
           </HeaderMenu>
         </HeaderContainer>
       </HeaderStyled>
+      <BackContainer />
+      <ContactModal
+        isActive={showContactModal}
+        onCloseContactModal={onCloseContactModal}
+      />
     </>
   );
 };
@@ -234,9 +261,8 @@ const Title = styled.h1`
 const HeaderMenu = styled.ul`
   height: 100%;
   padding: 0;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: auto auto auto auto;
   grid-gap: 40px;
   color: white;
   list-style-type: none;
@@ -309,6 +335,13 @@ const BurgerNavTitle = styled.h1`
 
 const BurgerMenuTab = styled.div`
   margin: 15px 30px !important;
+`;
+
+const BackContainer = styled.div`
+  height: 80px;
+  ${media.mobile`
+  height: 60px;
+`}
 `;
 
 export default Header;
