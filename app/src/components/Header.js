@@ -24,10 +24,7 @@ const Header = ({ loading, user, setUser }) => {
   };
 
   const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(
-      () => setShowLogoKey((k) => k + 1),
-      1000
-    );
+    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
   };
 
   useEffect(() => {
@@ -43,6 +40,7 @@ const Header = ({ loading, user, setUser }) => {
       setShowLogoLoading(false);
       clearInterval(loadingIntervalRef.current);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showLogoKey]);
 
   const onCloseContactModal = (e) => {
@@ -103,10 +101,7 @@ const Header = ({ loading, user, setUser }) => {
               <Menu
                 right
                 styles={burgerNavStyles}
-                customBurgerIcon={
-                  <img src={burgerNav} alt="mobile navigation menu" />
-                }
-              >
+                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
                 <BurgerNavHeaderContainer>
                   <HeaderLogo />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
@@ -149,10 +144,7 @@ const Header = ({ loading, user, setUser }) => {
         </HeaderContainer>
       </HeaderStyled>
       <BackContainer />
-      <ContactModal
-        isActive={showContactModal}
-        onCloseContactModal={onCloseContactModal}
-      />
+      <ContactModal isActive={showContactModal} onCloseContactModal={onCloseContactModal} />
     </>
   );
 };

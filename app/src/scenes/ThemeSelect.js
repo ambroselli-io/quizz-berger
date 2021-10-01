@@ -5,7 +5,6 @@ import { media } from "../styles/mediaQueries";
 import ThemeButton from "../components/ThemeButton";
 import API from "../services/api";
 import quizz from "../quizz.json";
-import Footer from "../components/Footer";
 
 class ThemeSelect extends React.Component {
   state = {
@@ -24,10 +23,7 @@ class ThemeSelect extends React.Component {
       return;
     }
     this.setState({
-      selectedThemesIds: [
-        ...this.state.selectedThemesIds,
-        e.target.dataset.themeid,
-      ],
+      selectedThemesIds: [...this.state.selectedThemesIds, e.target.dataset.themeid],
     });
     console.log("added");
   };
@@ -45,9 +41,7 @@ class ThemeSelect extends React.Component {
     });
     if (response.ok) {
       const { setUser, history } = this.props;
-      const firstQuestionId = quizz.find(
-        (t) => t._id === response.data.themes[0]
-      ).questions[0]._id;
+      const firstQuestionId = quizz.find((t) => t._id === response.data.themes[0]).questions[0]._id;
       setUser(response.data);
       history.push(`/question/${response.data.themes[0]}/${firstQuestionId}`);
     }
@@ -61,8 +55,8 @@ class ThemeSelect extends React.Component {
           <SubContainer>
             <Title>Quizz politique</Title>
             <SubTitle>
-              Participez à notre quizz politique pour trouver le candidat qui se
-              rapproche le plus de vos idées !
+              Participez à notre quizz politique pour trouver le candidat qui se rapproche le plus
+              de vos idées !
               <br /> <br />
               Mais avant, veuillez choisir au moins 3 thèmes
             </SubTitle>
@@ -83,8 +77,7 @@ class ThemeSelect extends React.Component {
             {/* <Footer> */}
             <ValidateButton
               isDisplayed={selectedThemesIds.length >= 3}
-              onClick={this.saveSelectedThemes}
-            >
+              onClick={this.saveSelectedThemes}>
               Valider mes thèmes
             </ValidateButton>
             {/* </Footer> */}
@@ -148,8 +141,7 @@ const ValidateButton = styled.button`
   margin-top: 40px;
   width: 384px;
   height: 64px;
-  background: ${(props) =>
-    props.isDisplayed ? "#facc15" : "rgb(233, 233, 233)"};
+  background: ${(props) => (props.isDisplayed ? "#facc15" : "rgb(233, 233, 233)")};
   color: ${(props) => (props.isDisplayed ? "black" : "rgb(17, 24, 39, 0.2)")};
   border-radius: 56px;
   border: none;
