@@ -24,7 +24,6 @@ class Login extends React.Component {
       path: "/user/login",
       body: { pseudo, password },
     });
-    console.log(response);
     if (!response.ok) return alert(response.error);
     onLogin(response.data);
   };

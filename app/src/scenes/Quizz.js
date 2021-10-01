@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
 import quizz from "../quizz.json";
@@ -17,9 +17,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
 
   const currentThemeQuestions = currentTheme.questions;
 
-  const { fr, answers } = currentThemeQuestions.find(
-    (question) => question._id === questionId
-  );
+  const { fr, answers } = currentThemeQuestions.find((question) => question._id === questionId);
 
   const goToNextQuestion = () => {
     const currentQuestionIndex = currentThemeQuestions.findIndex(
@@ -60,9 +58,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     // // last question of current theme
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     const firstUserTheme = user.themes[0];
-    const firstUserThemeIndex = quizz.findIndex(
-      (t) => t._id === firstUserTheme
-    );
+    const firstUserThemeIndex = quizz.findIndex((t) => t._id === firstUserTheme);
     // last theme
     if (currentThemeIndex < firstUserThemeIndex) {
       return history.push("/theme");
@@ -71,11 +67,8 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     previousThemeId = user.themes[currentThemeIndex - 1];
     const previousTheme = quizz.find((theme) => theme._id === previousThemeId);
     const previousThemeLastQuestionIndex = previousTheme.questions.length - 1;
-    const previousThemeLastQuestionId =
-      previousTheme.questions[previousThemeLastQuestionIndex]._id;
-    return history.push(
-      `/question/${previousThemeId}/${previousThemeLastQuestionId}`
-    );
+    const previousThemeLastQuestionId = previousTheme.questions[previousThemeLastQuestionIndex]._id;
+    return history.push(`/question/${previousThemeId}/${previousThemeLastQuestionId}`);
   };
 
   const goToNextTheme = (e) => {
@@ -83,11 +76,8 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     let nextThemeId;
     if (currentThemeIndex < user.themes.length - 1) {
       nextThemeId = user.themes[currentThemeIndex + 1];
-      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId)
-        .questions[0]._id;
-      return history.push(
-        `/question/${nextThemeId}/${nextThemeFirstQuestionId}`
-      );
+      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId).questions[0]._id;
+      return history.push(`/question/${nextThemeId}/${nextThemeFirstQuestionId}`);
     } else {
       return history.push(`/result`);
     }
@@ -98,12 +88,9 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     let previousThemeId;
     if (currentThemeIndex > 0) {
       previousThemeId = user.themes[currentThemeIndex - 1];
-      const previousThemeFirstQuestionId = quizz.find(
-        (t) => t._id === previousThemeId
-      ).questions[0]._id;
-      return history.push(
-        `/question/${previousThemeId}/${previousThemeFirstQuestionId}`
-      );
+      const previousThemeFirstQuestionId = quizz.find((t) => t._id === previousThemeId).questions[0]
+        ._id;
+      return history.push(`/question/${previousThemeId}/${previousThemeFirstQuestionId}`);
     } else {
       return history.push(`/theme`);
     }
@@ -124,11 +111,6 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     }
     return false;
   };
-
-  useEffect(() => {
-    console.log("mounting baby", themeId, questionId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const sendAnswer = async (e) => {
     const ok = await setAnswer({
@@ -168,8 +150,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
                 isActive={currentAnswerIndex === index}
                 onClick={sendAnswer}
                 key={index}
-                data-index={index}
-              >
+                data-index={index}>
                 {answer}
               </AnswerButton>
             );
@@ -180,9 +161,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
         <ProgressBarContainer>
           <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
           {user.themes.map((t, index) => {
-            const currentThemeIndex = user.themes.findIndex(
-              (t) => t === themeId
-            );
+            const currentThemeIndex = user.themes.findIndex((t) => t === themeId);
 
             const currentQuestionIndex = currentThemeQuestions.findIndex(
               (q) => q._id === questionId
@@ -227,7 +206,7 @@ const ThemeHeaderContainer = styled.div`
   padding: 0 15px 0 15px;
   justify-content: space-evenly;
   flex-direction: column;
-  max-height: 126px; // 
+  max-height: 126px; //
   min-height: 90px; //
   height: 110px;
 `}
@@ -349,8 +328,7 @@ const NavigationButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-image: ${(props) =>
-    props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`};
+  background-image: ${(props) => (props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`)};
   background-repeat: no-repeat;
   background-size: cover;
   ${media.mobile`

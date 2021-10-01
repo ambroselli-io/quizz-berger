@@ -19,13 +19,11 @@ class ThemeSelect extends React.Component {
         (id) => id !== e.target.dataset.themeid
       );
       this.setState({ selectedThemesIds: filteredSelectedTheme });
-      console.log("deleted");
       return;
     }
     this.setState({
       selectedThemesIds: [...this.state.selectedThemesIds, e.target.dataset.themeid],
     });
-    console.log("added");
   };
 
   saveSelectedThemes = async (themeIds) => {

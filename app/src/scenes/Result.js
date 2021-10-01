@@ -78,8 +78,6 @@ class Result extends React.Component {
 
     const candidatesScorePerThemes = getCandidatesScorePerThemes(userAnswers, candidatesAnswers);
 
-    console.log(candidatesScorePerThemes);
-
     return (
       <>
         <BackgroundContainer>
