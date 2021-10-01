@@ -1,16 +1,17 @@
-import { React, useRef, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { PolarArea } from "react-chartjs-2";
 import { media } from "../styles/mediaQueries";
 
 import quizz from "../quizz.json";
 
-const PolarChart = ({ partyScores, selectedThemes, isActive }) => {
-  const radarChartRef = useRef();
+const PolarChart = ({ partyScores, selectedThemes }) => {
+  const scores = partyScores
+    .filter((score) => selectedThemes.includes(score.themeId))
+    .map((score) => score.score);
 
-  const scores = partyScores.map((score) => score.score);
-  const themes = partyScores.map((theme) => {
-    return quizz.find((quizztheme) => quizztheme._id === theme.themeId).fr;
+  const themes = selectedThemes.map((themeId) => {
+    return quizz.find((quizztheme) => quizztheme._id === themeId).fr;
   });
 
   const data = {
@@ -64,32 +65,18 @@ const PolarChart = ({ partyScores, selectedThemes, isActive }) => {
     },
   };
 
-  useEffect(() => {
-    radarChartRef.current?.toggleDataVisibility(1);
-    radarChartRef.current?.update();
-    // selectedThemes.forEach((c) => {
-    //   const getCandidateDataSetIndex = dataSets.findIndex(
-    //     (data) => data.label === c
-    //   );
-    //   chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
-    //   chartRef.current.update();
-    // });
-  }, [selectedThemes]);
-
-  // console.log(selectedThemes);
-
   return (
     <>
-      <ChartContainer isActive={isActive}>
+      <ChartContainer>
         <CandidateTitle>{partyScores[0].pseudo}</CandidateTitle>
-        <PolarArea ref={radarChartRef} data={data} options={options} />
+        <PolarArea data={data} options={options} />
       </ChartContainer>
     </>
   );
 };
 
 const ChartContainer = styled.div`
-  display: ${(props) => (props.isActive ? "block" : "none")};
+  display: block;
   margin: 0 auto;
   padding: 40px;
   margin-bottom: 20px;
@@ -98,10 +85,10 @@ const ChartContainer = styled.div`
   height: auto;
   /* border: 1px solid #e5e7eb; */
   ${media.mobile`
-  width: 90vw;
-  max-width: 400px;
-  padding: 20px;
-`}
+    width: 90vw;
+    max-width: 400px;
+    padding: 20px;
+  `}
 `;
 
 const CandidateTitle = styled.h3`

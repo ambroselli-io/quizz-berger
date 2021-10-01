@@ -47,45 +47,47 @@ const options = {
   },
 };
 
-const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
+const colors = [
+  {
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    pointBackgroundColor: "black",
+    borderColor: "black",
+  },
+  {
+    backgroundColor: "rgba(255, 0, 0, 0.1)",
+    pointBackgroundColor: "red",
+    borderColor: "red",
+  },
+  {
+    backgroundColor: "rgba(255,165,0, 0.1)",
+    pointBackgroundColor: "orange",
+    borderColor: "orange",
+  },
+  {
+    backgroundColor: "rgba(255, 99, 132, 0.1)",
+    pointBackgroundColor: "yellow",
+    borderColor: "yellow",
+  },
+  {
+    backgroundColor: "rgba(255, 99, 132, 0.1)",
+    pointBackgroundColor: "green",
+    borderColor: "green",
+  },
+  {
+    backgroundColor: "rgba(255, 99, 132, 0.1)",
+    pointBackgroundColor: "violet",
+    borderColor: "violet",
+  },
+];
+
+const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidates }) => {
   const chartRef = useRef();
   const [isMounting, setIsMounting] = useState(false);
 
-  const colors = [
-    {
-      backgroundColor: "rgba(0, 0, 0, 0.1)",
-      pointBackgroundColor: "black",
-      borderColor: "black",
-    },
-    {
-      backgroundColor: "rgba(255, 0, 0, 0.1)",
-      pointBackgroundColor: "red",
-      borderColor: "red",
-    },
-    {
-      backgroundColor: "rgba(255,165,0, 0.1)",
-      pointBackgroundColor: "orange",
-      borderColor: "orange",
-    },
-    {
-      backgroundColor: "rgba(255, 99, 132, 0.1)",
-      pointBackgroundColor: "yellow",
-      borderColor: "yellow",
-    },
-    {
-      backgroundColor: "rgba(255, 99, 132, 0.1)",
-      pointBackgroundColor: "green",
-      borderColor: "green",
-    },
-    {
-      backgroundColor: "rgba(255, 99, 132, 0.1)",
-      pointBackgroundColor: "violet",
-      borderColor: "violet",
-    },
-  ];
-
   let dataSets = candidatesScorePerThemes?.map((partyScores, index) => {
-    const scores = partyScores.map((score) => score.score);
+    const scores = partyScores
+      .filter((score) => selectedThemes.includes(score.themeId))
+      .map((score) => score.score);
 
     return {
       label: partyScores[0].pseudo,
@@ -98,13 +100,11 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
     };
   });
 
-  const themes = candidatesScorePerThemes[0]?.map((theme) => {
-    return quizz.find((quizztheme) => quizztheme._id === theme.themeId).fr;
-  });
-
   const data = {
     datasets: dataSets,
-    labels: themes,
+    labels: selectedThemes.map(
+      (themeId) => quizz.find((quizztheme) => quizztheme._id === themeId).fr
+    ),
   };
 
   useEffect(() => {
@@ -114,9 +114,7 @@ const RadarChart = ({ candidatesScorePerThemes, selectedCandidates }) => {
   useEffect(() => {
     for (const candidate of selectedCandidates) {
       if (!chartRef.current) continue;
-      const getCandidateDataSetIndex = dataSets.findIndex(
-        (data) => data.label === candidate
-      );
+      const getCandidateDataSetIndex = dataSets.findIndex((data) => data.label === candidate);
       chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
       chartRef.current.update();
     }
