@@ -1,4 +1,4 @@
-import { React, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
 import { media } from "../styles/mediaQueries";

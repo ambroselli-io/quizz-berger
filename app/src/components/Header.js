@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { useHistory } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import API from "../services/api";
@@ -13,6 +14,8 @@ const Header = ({ loading, user, setUser }) => {
   const [showLogoLoading, setShowLogoLoading] = useState(false);
   const [showLogoKey, setShowLogoKey] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const history = useHistory();
 
   const loadingIntervalRef = useRef(null);
 
@@ -53,6 +56,10 @@ const Header = ({ loading, user, setUser }) => {
     setShowContactModal(true);
     document.body.style.overflow = "hidden";
   };
+
+  useEffect(() => {
+    setMenuIsOpen(false);
+  }, [history.location.key]);
 
   return (
     <>
@@ -100,6 +107,8 @@ const Header = ({ loading, user, setUser }) => {
             <BurgerNavContainer>
               <Menu
                 right
+                isOpen={menuIsOpen}
+                onOpen={() => setMenuIsOpen(true)}
                 styles={burgerNavStyles}
                 customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
                 <BurgerNavHeaderContainer>
@@ -269,6 +278,10 @@ const HeaderMenu = styled.ul`
 const HeaderMenuTab = styled.li`
   cursor: pointer;
   color: rgba(156, 163, 175, 1);
+  > span {
+    text-align: center;
+    width: 100%;
+  }
   & > a {
     height: 80px;
     display: flex;
