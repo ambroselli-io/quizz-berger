@@ -9,7 +9,7 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quiz
     const results = scorePerThemes.map((theme) => {
       return {
         themeId: theme.themeId,
-        score: (theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100,
+        score: Math.round((theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100),
         pseudo: candidate.pseudo,
         firstName: candidate.firstName,
         lastName: candidate.lastName,
