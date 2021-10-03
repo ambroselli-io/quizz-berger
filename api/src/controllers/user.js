@@ -100,6 +100,8 @@ router.put(
     user.set(userUpdate);
     await user.save();
 
+    console.log(req.body.themes, user.themes);
+
     res.status(200).send({ ok: true, data: user.me() });
   })
 );

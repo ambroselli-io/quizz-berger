@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
 import { media } from "../styles/mediaQueries";
-import quizz from "../quizz.json";
-
 import RadarChart from "../components/RadarChart";
 import PolarChart from "../components/PolarChart";
 import API from "../services/api";
@@ -74,9 +72,16 @@ class Result extends React.Component {
     const { userAnswers, candidatesAnswers, showRadarChart, selectedCandidates, selectedThemes } =
       this.state;
 
-    const { user } = this.props;
+    const { user, quizz } = this.props;
 
-    const candidatesScorePerThemes = getCandidatesScorePerThemes(userAnswers, candidatesAnswers);
+    const candidatesScorePerThemes = getCandidatesScorePerThemes(
+      userAnswers.filter((a) => selectedThemes.includes(a.themeId)),
+      candidatesAnswers.map((c) => ({
+        ...c,
+        answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
+      })),
+      quizz
+    );
 
     return (
       <>
@@ -137,6 +142,7 @@ class Result extends React.Component {
                   selectedCandidates={selectedCandidates}
                   selectedThemes={selectedThemes}
                   candidatesScorePerThemes={candidatesScorePerThemes}
+                  quizz={quizz}
                 />
               )}
               {!showRadarChart &&
@@ -145,6 +151,7 @@ class Result extends React.Component {
                   .map((partyScores) => {
                     return (
                       <PolarChart
+                        quizz={quizz}
                         key={`${partyScores[0].pseudo}-${selectedCandidates.length}-${selectedThemes.length}`}
                         selectedThemes={selectedThemes}
                         partyScores={partyScores}

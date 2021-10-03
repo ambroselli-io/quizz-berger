@@ -1,23 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
-import quizz from "../quizz.json";
 import { media } from "../styles/mediaQueries";
 
 import rightArrow from "../images/right-arrow.svg";
 import leftArrow from "../images/left-arrow.svg";
 
-const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
+const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
   const { themeId, questionId } = useParams();
+  console.log({ themeId, questionId });
   const history = useHistory();
 
-  const currentTheme = quizz.find((theme) => {
-    return theme._id === themeId;
-  });
+  const currentTheme = quizz.find((theme) => theme._id === themeId);
 
   const currentThemeQuestions = currentTheme.questions;
 
   const { fr, answers } = currentThemeQuestions.find((question) => question._id === questionId);
+
+  console.log({ fr, answers });
 
   const goToNextQuestion = () => {
     const currentQuestionIndex = currentThemeQuestions.findIndex(
@@ -59,11 +59,12 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex }) => {
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     const firstUserTheme = user.themes[0];
     const firstUserThemeIndex = quizz.findIndex((t) => t._id === firstUserTheme);
+    console.log({ currentThemeIndex, firstUserThemeIndex });
     // last theme
-    if (currentThemeIndex < firstUserThemeIndex) {
+    if (currentThemeIndex <= firstUserThemeIndex) {
       return history.push("/theme");
     }
-    // got to next themee
+    // got to previous themee
     previousThemeId = user.themes[currentThemeIndex - 1];
     const previousTheme = quizz.find((theme) => theme._id === previousThemeId);
     const previousThemeLastQuestionIndex = previousTheme.questions.length - 1;

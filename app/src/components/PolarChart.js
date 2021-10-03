@@ -3,9 +3,32 @@ import styled from "styled-components";
 import { PolarArea } from "react-chartjs-2";
 import { media } from "../styles/mediaQueries";
 
-import quizz from "../quizz.json";
+const colors = [
+  "#e6194B",
+  "#3cb44b",
+  "#ffe119",
+  "#4363d8",
+  "#f58231",
+  "#911eb4",
+  "#42d4f4",
+  "#f032e6",
+  "#bfef45",
+  "#fabed4",
+  "#469990",
+  "#dcbeff",
+  "#9A6324",
+  "#fffac8",
+  "#800000",
+  "#aaffc3",
+  "#808000",
+  "#ffd8b1",
+  "#000075",
+  "#a9a9a9",
+  "#ffffff",
+  "#000000",
+];
 
-const PolarChart = ({ partyScores, selectedThemes }) => {
+const PolarChart = ({ partyScores, selectedThemes, quizz }) => {
   const scores = partyScores
     .filter((score) => selectedThemes.includes(score.themeId))
     .map((score) => score.score);
@@ -14,19 +37,17 @@ const PolarChart = ({ partyScores, selectedThemes }) => {
     return quizz.find((quizztheme) => quizztheme._id === themeId).fr;
   });
 
+  console.log({ scores });
+
   const data = {
     labels: themes,
     datasets: [
       {
         data: scores,
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.5)",
-          "rgba(54, 162, 235, 0.5)",
-          "rgba(255, 206, 86, 0.5)",
-          "rgba(75, 192, 192, 0.5)",
-          "rgba(153, 102, 255, 0.5)",
-          "rgba(255, 159, 64, 0.5)",
-        ],
+        backgroundColor: quizz
+          .map((theme, themeIndex) => ({ ...theme, backgroundColor: colors[themeIndex] }))
+          .filter((theme) => selectedThemes.includes(theme._id))
+          .map((t) => t.backgroundColor),
         borderWidth: 1,
       },
     ],
@@ -42,7 +63,7 @@ const PolarChart = ({ partyScores, selectedThemes }) => {
         // onClick: true,
         labels: {
           usePointStyle: true,
-          boxHeight: 4,
+          boxHeight: 5,
           pointStyle: "circle",
           font: {
             size: 10,
@@ -54,7 +75,7 @@ const PolarChart = ({ partyScores, selectedThemes }) => {
     scales: {
       r: {
         suggestedMin: 0,
-        suggestedMax: 20,
+        suggestedMax: 100,
         grid: {
           lineWidth: 1,
         },

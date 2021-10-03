@@ -2,24 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
-class Login extends React.Component {
-  state = {
-    pseudo: "",
-    password: "",
-  };
-
-  onChangeInput = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  loginRequest = async (e) => {
+const Login = ({ onLogin, onChange, pseudo, password }) => {
+  const loginRequest = async (e) => {
     e.preventDefault();
-
-    const { pseudo, password } = this.state;
-    const { onLogin } = this.props;
-
     const response = await API.post({
       path: "/user/login",
       body: { pseudo, password },
@@ -28,32 +13,32 @@ class Login extends React.Component {
     onLogin(response.data);
   };
 
-  render() {
-    return (
-      <>
-        <SignupSubContainer>
-          <LoginForm onSubmit={this.loginRequest}>
-            <FormLabel>Pseudo</FormLabel>
-            <FormInput
-              type="text"
-              name="pseudo"
-              placeholder="Votre pseudo"
-              onChange={this.onChangeInput}
-            />
-            <FormLabel>Mot de passe</FormLabel>
-            <FormInput
-              type="password"
-              name="password"
-              placeholder="Votre mot de passe"
-              onChange={this.onChangeInput}
-            />
-            <LoginButton type="submit">Se connecter</LoginButton>
-          </LoginForm>
-        </SignupSubContainer>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <SignupSubContainer>
+        <LoginForm onSubmit={loginRequest}>
+          <FormLabel>Pseudo</FormLabel>
+          <FormInput
+            type="text"
+            name="pseudo"
+            placeholder="Votre pseudo"
+            onChange={onChange}
+            value={pseudo}
+          />
+          <FormLabel>Mot de passe</FormLabel>
+          <FormInput
+            type="password"
+            name="password"
+            placeholder="Votre mot de passe"
+            onChange={onChange}
+            value={password}
+          />
+          <LoginButton type="submit">Se connecter</LoginButton>
+        </LoginForm>
+      </SignupSubContainer>
+    </>
+  );
+};
 
 const SignupSubContainer = styled.div`
   padding: 24px;
