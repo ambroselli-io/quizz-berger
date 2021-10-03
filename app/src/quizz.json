@@ -24,26 +24,6 @@
         ]
       },
       {
-        "_id": "61553f87f37b594718e5e769",
-        "fr": "Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?",
-        "answers": [
-          "Le secteur public dépense toujours mal. Laissons aussi l'éducation au privé, il saure bien dépenser, bien éduquer.",
-          "Une telle dépense pour un tel résultat : il faut faire mieux, plus efficace. Le secteur public en est capable.",
-          "L'éducation publique en généal fonctionne plutôt bien, que ça continue !",
-          "Dépenser dans l'éducation, c'est investir dans cercle vertueux : plus on le fait, plus on aura de retours dans tous les secteurs de la société.",
-          "L'Éducation Nationale est en perdition, seule une hausse des dépenses pourra la sauver.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 4, 3, 2, 0, 0],
-          [3, 5, 3, 2, 1, 0],
-          [1, 3, 5, 3, 1, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 1, 2, 4, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
         "_id": "61405fbe35e4ef21aabf09be",
         "fr": "Que pensez-vous de la dépense publique en France ?",
         "answers": [
@@ -335,21 +315,67 @@
       },
       {
         "_id": "61405fbe35e4ef21aabf09cb",
-        "fr": "Que pensez-vous du libre-échange, du fait de ne pas avoir de taxe douanière ?",
+        "fr": "Que pensez-vous de la place de l'État dans la politique industrielle ?",
         "answers": [
-          "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
-          "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
-          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
-          "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
-          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, et délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
+          "L'État doit laisser faire le secteur privé pour choisir ses industries, même stratégiques, et les diriger: entraver le marché et la concurrence est mauvais.",
+          "L'État doit laisser le secteur privé diriger toute industrie, mais il doit les protéger contre les attaques internationales potentielles au besoin.",
+          "L'État peut choisir des industries stratégiques et les financer, tout en confiant la direction au privé.",
+          "L'État peut investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques ou privées selon les secteurs.",
+          "L'État doit planifier l'économie : il doit investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques lorsque nécessaire.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 4, 3, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
+          [5, 4, 3, 1, 0, 0],
+          [4, 5, 3, 2, 1, 0],
+          [1, 3, 5, 3, 1, 0],
           [0, 1, 2, 5, 4, 0],
           [0, 0, 1, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-61405fbe35e4ef21aabf09d5",
+    "fr": "Recherche et éducation",
+    "questions": [
+      {
+        "_id": "61405fbe35e4ef21aabf09d2",
+        "fr": "Que pensez-vous du financement public de la recherche ?",
+        "answers": [
+          "La place recherche est très importante dans la société, il faut augmenter fortement son financement public.",
+          "Il faut augmenter le financement de la recherche si on en a les moyens.",
+          "Le financement de la recherche est très bien comme il est aujourd'hui.",
+          "Nous n'avons plus les moyens, il faut donc baisser le financement de la recherche.",
+          "Financer publiquement la recherche est inutile, laissons le secteur privé s'en occuper.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61553f87f37b594718e5e769",
+        "fr": "Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?",
+        "answers": [
+          "Le secteur public dépense toujours mal. Laissons aussi l'éducation au privé, il saure bien dépenser, bien éduquer.",
+          "Une telle dépense pour un tel résultat : il faut faire mieux, plus efficace. Le secteur public en est capable.",
+          "L'éducation publique en généal fonctionne plutôt bien, que ça continue !",
+          "Dépenser dans l'éducation, c'est investir dans cercle vertueux : plus on le fait, plus on aura de retours dans tous les secteurs de la société.",
+          "L'Éducation Nationale est en perdition, seule une hausse des dépenses pourra la sauver.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 3, 2, 0, 0],
+          [3, 5, 3, 2, 1, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 1, 2, 4, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
       }
@@ -383,11 +409,11 @@
         "_id": "61405fbe35e4ef21aabf09cf",
         "fr": "Que pensez-vous du recours au référendum par le Président de la République ?",
         "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
+          "Il en faut beaucoup plus, au moins tous les ans",
+          "Il en faudrait plus, au moins un ou deux par quinquennat",
+          "C'est très bien comme c'est maintenant, rien à redire",
+          "Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas de besoin",
+          "Le référendum n'est pas un bon outil politique, il ne faut pas s'en servir",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -401,88 +427,20 @@
       },
       {
         "_id": "61405fbe35e4ef21aabf09d0",
-        "fr": "Que pensez-vous de la représentativité de nos députés et sénateurs ?",
+        "fr": "Que pensez-vous du Référendum d'Initiative Populaire ?",
         "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
+          "Oui c'est une très bonne idée, à utiliser fréquemment",
+          "Oui c'est un outil intéressant, si utilisé à bon escient",
+          "Non c'est inutile, ça n'apporte rien",
+          "Non ça va à l'encontre de la démocratie représentative, c'est dangereux",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      }
-    ]
-  },
-  {
-    "_id": "theme-61405fbe35e4ef21aabf09d5",
-    "fr": "Défense et justice",
-    "questions": [
-      {
-        "_id": "61405fbe35e4ef21aabf09d2",
-        "fr": "Theme 6 question 1",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09d3",
-        "fr": "Theme 6 question 2",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09d4",
-        "fr": "Theme 6 question 3",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
+          [5, 4, 1, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 1, 4, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -493,13 +451,53 @@
     "questions": [
       {
         "_id": "61405fbe35e4ef21aabf09d6",
-        "fr": "Que pensez-vous de la répartition actuelle des tranches d'imposition ?",
+        "fr": "Que pensez-vous du taux d'imposition actuel des plus riches ?",
         "answers": [
           "Il faut l'augmenter, beaucoup",
           "Il faut l'augmenter, un peu",
           "Il faut le garder stable",
           "Il faut le diminuer",
-          "Il faut le supprimer",
+          "Il faut le diminuer, beaucoup",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09d6",
+        "fr": "Que pensez-vous du taux d'imposition actuel de la classe moyenne ?",
+        "answers": [
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le diminuer, beaucoup",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09d6",
+        "fr": "Que pensez-vous du taux d'imposition actuel des pls pauvres ?",
+        "answers": [
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le diminuer, voire le supprimer",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -515,31 +513,11 @@
         "_id": "61405fbe35e4ef21aabf09d7",
         "fr": "Que pensez-vous de l'évasion fiscale des multinationales ?",
         "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09d8",
-        "fr": "Theme 7 question 3",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
+          "C'est la loi de la mondialisation, il faut faire avec",
+          "Seul un accord international pourra empêcher cette évasion, il faut continuer à négocier avec les autres, quitte à devoir baisser notre taux d'imposition",
+          "Ce n'est pas un problème, ça n'a aucun impact",
+          "Il faut sanctionner les entreprises qui ont de telles pratiques, avec des amendes",
+          "Il faut empêcher l'évasion fiscale en entravant la libre circulation des capitaux.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -555,22 +533,22 @@
   },
   {
     "_id": "theme-61405fbe35e4ef21aabf09dd",
-    "fr": "Politique publique",
+    "fr": "Société",
     "questions": [
       {
         "_id": "61405fbe35e4ef21aabf09da",
-        "fr": "Theme 8 question 1",
+        "fr": "Que pensez-vous de l'égalité homme-femme ?",
         "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
+          "Le chemin est encore long, il faut plus de lois pour plus d'égalité",
+          "On est sur la bonne voie, il faut continuer",
+          "L'égalité homme-femme est plutôt réussie",
+          "Les hommes et les femmes sont différents, il n'y a pas d'égalité à chercher",
+          "Il faudrait songer à rééquilibrer en faveur des hommes",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
           [2, 3, 5, 2, 1, 0],
           [0, 1, 2, 5, 3, 0],
           [0, 0, 1, 2, 5, 0],
@@ -579,18 +557,38 @@
       },
       {
         "_id": "61405fbe35e4ef21aabf09db",
-        "fr": "Theme 8 question 2",
+        "fr": "Que vous évoque la question des genres ?",
         "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
+          "Le chemin est encore long, il faut plus de lois pour plus de reconnaissance, de liberté et d'égalité",
+          "On est sur la bonne voie, il faut continuer pour améliorer la condition des minorités de genre",
+          "La situation actuelle est plutôt équilibrée, rien à redire",
+          "Il y a des hommes et des femmes, et rien d'autre, il ne faut pas se poser plus de question.",
+          "Il faut légiférer pour rééquilibrer la situation en faveur des status homme/femme, et rien d'autre.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09dd",
+        "fr": "Que vous évoque la pratique des religions ?",
+        "answers": [
+          "Nous sommes un pays de culture chrétienne, les autres religions sont incompatibles, il faut protéger ce patrimoine.",
+          "Nous sommes un pays laïc de culture chrétienne, les autres religions doivent adapter leur moeurs en fonction.",
+          "Nous sommes un pays laïc, chaque religion doit rester à sa place sans altérer notre vivre-ensemble.",
+          "Nous sommes un pays laïc, chaque religion a le droit de s'exprimer selon ses moeurs quels qu'ils soient.",
+          "Il faut favoriser pour tous la découverte de tout courant religieux ou laïc, c'est ce qui enrichit la société.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
           [2, 3, 5, 2, 1, 0],
           [0, 1, 2, 5, 3, 0],
           [0, 0, 1, 2, 5, 0],
@@ -599,22 +597,58 @@
       },
       {
         "_id": "61405fbe35e4ef21aabf09dc",
-        "fr": "Theme 8 question 3",
+        "fr": "Que pensez-vous de la procréation médicalement assistée (PMA) ?",
         "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
+          "Elle doit être autorisée et remboursée pour tous, sans condition",
+          "Elle doit être autorisée seulement pour les couples hétérosexuels, et remboursée",
+          "Elle peut être autorisée, mais non remboursée",
+          "Elle doit être tolérée pour les couples hétérosexuels, mais condamnée pour les couples non hétérosexuels, et non remboursée",
+          "Elle doit être non remboursée et interdite pour tous",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
           [2, 3, 5, 2, 1, 0],
           [0, 1, 2, 5, 3, 0],
           [0, 0, 1, 2, 5, 0],
           [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09dc",
+        "fr": "Que pensez-vous de la gestation pour autrui (GPA) ?",
+        "answers": [
+          "Elle doit être autorisée et remboursée pour tous, sans condition",
+          "Elle doit être autorisée seulement pour les couples hétérosexuels, et remboursée",
+          "Elle peut être autorisée, mais non remboursée",
+          "Elle doit être tolérée pour les couples hétérosexuels, mais condamnée pour les couples non hétérosexuels, et non remboursée",
+          "Elle doit être non remboursée et interdite pour tous",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "61405fbe35e4ef21aabf09dc",
+        "fr": "Que pensez-vous de l'immigration et de son impact sur la mixité culturelle ?",
+        "answers": [
+          "Elle enrichit chacun de nous dans la société, à ce titre il faut favoriser l'immigration pour ce bénéfice",
+          "Elle fait partie de notre vie, qu'on le veuille ou non, ce n'est donc pas une question",
+          "Elle détruit notre culture locale, il faut donc empêcher ou se battre contre l'immigration",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0],
+          [3, 5, 3, 1],
+          [0, 3, 5, 2],
+          [0, 0, 0, 0]
         ]
       }
     ]
