@@ -7,7 +7,19 @@ import Login from "../components/Login";
 import Footer from "../components/Footer";
 
 class LoginPage extends React.Component {
-  state = { showSignup: false };
+  state = {
+    showSignup: false,
+    pseudo: "",
+    password: "",
+    passwordConfirm: "",
+    candidate: false,
+  };
+
+  onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
 
   onLogin = (user) => {
     const { setUser, history } = this.props;
@@ -27,16 +39,10 @@ class LoginPage extends React.Component {
           <Title>Connectez-vous</Title>
           <LogContainer>
             <SignButtonContainer>
-              <LoginButton
-                isDisplayed={!showSignup}
-                onClick={this.displayLogin}
-              >
+              <LoginButton isDisplayed={!showSignup} onClick={this.displayLogin}>
                 Se connecter
               </LoginButton>
-              <SignupButton
-                isDisplayed={showSignup}
-                onClick={this.displaySignup}
-              >
+              <SignupButton isDisplayed={showSignup} onClick={this.displaySignup}>
                 S'inscrire
               </SignupButton>
             </SignButtonContainer>
@@ -44,12 +50,16 @@ class LoginPage extends React.Component {
               <Login
                 isDisplayed={!this.state.showSignup}
                 onLogin={this.onLogin}
+                onChange={this.onChange}
+                {...this.state}
               />
             )}
             {showSignup && (
               <Signup
                 isDisplayed={this.state.showSignup}
                 onLogin={this.onLogin}
+                onChange={this.onChange}
+                {...this.state}
               />
             )}
           </LogContainer>

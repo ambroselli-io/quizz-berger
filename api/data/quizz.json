@@ -1,10 +1,10 @@
 [
   {
-    "_id": "theme-61405fbe35e4ef21aabf09c1",
+    "_id": "theme-615995cc4df0856259dba55b",
     "fr": "Dépense et dette publiques",
     "questions": [
       {
-        "_id": "61553d1bb23fe746c5146e0e",
+        "_id": "question-615995cc4df0856259dba55c",
         "fr": "Que pensez-vous de la dépense de Sécurité Sociale en France ?",
         "answers": [
           "Le trou de la sécu accroit notre dette publique et nous demande plus d'impôt. Dépensons moins dans la santé par n'importe quel moyen, et passons ce sujet au privé qui saura mieux le gérer.",
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09be",
+        "_id": "question-615995cc4df0856259dba55d",
         "fr": "Que pensez-vous de la dépense publique en France ?",
         "answers": [
           "Il y a trop de dépense publique, il faut tout faire pour la réduire",
@@ -42,7 +42,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09bf",
+        "_id": "question-615995cc4df0856259dba55e",
         "fr": "Que pensez vous de la dette publique en France ?",
         "answers": [
           "Elle est trop importante, il faut la rembourser par tous les moyens",
@@ -60,7 +60,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09c0",
+        "_id": "question-615995cc4df0856259dba55f",
         "fr": "Que pensez-vous de la balance budgétaire en France ?",
         "answers": [
           "Il faut avoir un budget en excédent chaque année",
@@ -80,11 +80,11 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09c5",
+    "_id": "theme-615995cc4df0856259dba560",
     "fr": "Chômage et Emploi",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09c2",
+        "_id": "question-615995cc4df0856259dba561",
         "fr": "Que pensez vous du salaire minimum (SMIC) ?",
         "answers": [
           "Il faut l'augmenter, beaucoup",
@@ -104,7 +104,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09c4",
+        "_id": "question-615995cc4df0856259dba562",
         "fr": "Que pensez-vous du RSA ?",
         "answers": [
           "Il faut l'augmenter, beaucoup",
@@ -124,7 +124,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09c3",
+        "_id": "question-615995cc4df0856259dba563",
         "fr": "Que pensez-vous de la mise en place d'activité d'intérêt général hebdomadaires pour les détenteurs du RSA ?",
         "answers": [
           "J'ai dit qu'il fallait le supprimer, alors !",
@@ -144,7 +144,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09e6",
+        "_id": "question-615995cc4df0856259dba564",
         "fr": "Que pensez-vous de l'assurance chômage ?",
         "answers": [
           "Il faut la raccourcir ou la supprimer, ça joue à ce que le chômage ne baisse pas.",
@@ -164,7 +164,7 @@
         ]
       },
       {
-        "_id": "6155373e04e64e460e47011c",
+        "_id": "question-615995cc4df0856259dba565",
         "fr": "Que pensez-vous de l'effet de l'imposition des plus riches sur l'emploi ?",
         "answers": [
           "D'une part en imposant les riches on les fait fuir, d'autre part l'argent que l'on n'impose pas aux personnes riches sera réinvesti dans l'économie et créera de l'emploi : il faut moins d'impôt les riches.",
@@ -186,11 +186,11 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09c9",
+    "_id": "theme-615995cc4df0856259dba566",
     "fr": "Climat et Énergie",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09c6",
+        "_id": "question-615995cc4df0856259dba567",
         "fr": "Que pensez-vous du dérèglement climatique ?",
         "answers": [
           "Le dérèglement climatique nous impose une transformation de société radicale, pas encore entamée.",
@@ -210,7 +210,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09c7",
+        "_id": "question-615995cc4df0856259dba568",
         "fr": "Que pensez-vous de l'énergie nucléaire ?",
         "answers": [
           "Il en faut beaucoup plus, c'est l'avenir.",
@@ -230,7 +230,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09e7",
+        "_id": "question-615995cc4df0856259dba569",
         "fr": "Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?",
         "answers": [
           "Il en faut beaucoup plus, c'est l'avenir.",
@@ -250,7 +250,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09c8",
+        "_id": "question-615995cc4df0856259dba56a",
         "fr": "Que pensez-vous de l'utilisation de la voiture ?",
         "answers": [
           "Il faudrait se diriger vers un abandon de nos voitures, pour des transports en commun ou des vélos.",
@@ -270,18 +270,18 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09cd",
+    "_id": "theme-615995cc4df0856259dba56b",
     "fr": "Politique industrielle et commerciale",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09ca",
+        "_id": "question-615995cc4df0856259dba56c",
         "fr": "Que pensez-vous du libre-échange, du fait de ne pas avoir de taxe douanière ?",
         "answers": [
           "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
           "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
           "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
           "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
-          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, et délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
+          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, en délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -294,14 +294,14 @@
         ]
       },
       {
-        "_id": "615563b48caf5e82094683f4",
+        "_id": "question-615995cc4df0856259dba56d",
         "fr": "Que pensez-vous du protectionnisme, de taxer certaines industries de l'étranger pour favoriser le local ?",
         "answers": [
-          "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
-          "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
+          "Le protectionnisme est une fermeture sur soi-même qui amène à la guerre : surtout pas.",
+          "Le protectionnisme va obstruer les échanges commerciaux, avec comme conséquence un accroissement du chômage : il vaut mieux éviter.",
           "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
-          "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
-          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, et délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
+          "Le protectionnisme permet de compenser les différences avec les politiques économiques ou fiscales des autres pays, c'est un bon outil stratégique pour favoriser notre économie.",
+          "Le protectionnisme permet, en plus, de ralentir le dérèglement climatique, en relocalisant la pollution et responsabilisant les pays consommateurs : c'est tout bon.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -314,7 +314,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09cb",
+        "_id": "question-615995cc4df0856259dba56e",
         "fr": "Que pensez-vous de la place de l'État dans la politique industrielle ?",
         "answers": [
           "L'État doit laisser faire le secteur privé pour choisir ses industries, même stratégiques, et les diriger: entraver le marché et la concurrence est mauvais.",
@@ -336,11 +336,11 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09d5",
+    "_id": "theme-615995cc4df0856259dba56f",
     "fr": "Recherche et éducation",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09d2",
+        "_id": "question-615995cc4df0856259dba570",
         "fr": "Que pensez-vous du financement public de la recherche ?",
         "answers": [
           "La place recherche est très importante dans la société, il faut augmenter fortement son financement public.",
@@ -360,10 +360,10 @@
         ]
       },
       {
-        "_id": "61553f87f37b594718e5e769",
+        "_id": "question-615995cc4df0856259dba571",
         "fr": "Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?",
         "answers": [
-          "Le secteur public dépense toujours mal. Laissons aussi l'éducation au privé, il saure bien dépenser, bien éduquer.",
+          "Le secteur public dépense toujours mal. Laissons aussi l'éducation au privé, il saura bien dépenser, bien éduquer.",
           "Une telle dépense pour un tel résultat : il faut faire mieux, plus efficace. Le secteur public en est capable.",
           "L'éducation publique en généal fonctionne plutôt bien, que ça continue !",
           "Dépenser dans l'éducation, c'est investir dans cercle vertueux : plus on le fait, plus on aura de retours dans tous les secteurs de la société.",
@@ -382,11 +382,11 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09d1",
+    "_id": "theme-615995cc4df0856259dba572",
     "fr": "Gouvernance et république",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09ce",
+        "_id": "question-615995cc4df0856259dba573",
         "fr": "Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
         "answers": [
           "Il faut changer de constitution pour plus de démocratie",
@@ -406,7 +406,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09cf",
+        "_id": "question-615995cc4df0856259dba574",
         "fr": "Que pensez-vous du recours au référendum par le Président de la République ?",
         "answers": [
           "Il en faut beaucoup plus, au moins tous les ans",
@@ -426,7 +426,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09d0",
+        "_id": "question-615995cc4df0856259dba575",
         "fr": "Que pensez-vous du Référendum d'Initiative Populaire ?",
         "answers": [
           "Oui c'est une très bonne idée, à utiliser fréquemment",
@@ -446,11 +446,11 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09d9",
+    "_id": "theme-615995cc4df0856259dba576",
     "fr": "Politique fiscale",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09d6",
+        "_id": "question-615995cc4df0856259dba577",
         "fr": "Que pensez-vous du taux d'imposition actuel des plus riches ?",
         "answers": [
           "Il faut l'augmenter, beaucoup",
@@ -470,7 +470,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09d6",
+        "_id": "question-615995cc4df0856259dba578",
         "fr": "Que pensez-vous du taux d'imposition actuel de la classe moyenne ?",
         "answers": [
           "Il faut l'augmenter, beaucoup",
@@ -490,8 +490,8 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09d6",
-        "fr": "Que pensez-vous du taux d'imposition actuel des pls pauvres ?",
+        "_id": "question-615995cc4df0856259dba579",
+        "fr": "Que pensez-vous du taux d'imposition actuel des plus pauvres ?",
         "answers": [
           "Il faut l'augmenter, beaucoup",
           "Il faut l'augmenter, un peu",
@@ -510,7 +510,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09d7",
+        "_id": "question-615995cc4df0856259dba57a",
         "fr": "Que pensez-vous de l'évasion fiscale des multinationales ?",
         "answers": [
           "C'est la loi de la mondialisation, il faut faire avec",
@@ -532,11 +532,11 @@
     ]
   },
   {
-    "_id": "theme-61405fbe35e4ef21aabf09dd",
+    "_id": "theme-615995cc4df0856259dba57b",
     "fr": "Société",
     "questions": [
       {
-        "_id": "61405fbe35e4ef21aabf09da",
+        "_id": "question-615995cc4df0856259dba57c",
         "fr": "Que pensez-vous de l'égalité homme-femme ?",
         "answers": [
           "Le chemin est encore long, il faut plus de lois pour plus d'égalité",
@@ -556,7 +556,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09db",
+        "_id": "question-615995cc4df0856259dba57d",
         "fr": "Que vous évoque la question des genres ?",
         "answers": [
           "Le chemin est encore long, il faut plus de lois pour plus de reconnaissance, de liberté et d'égalité",
@@ -576,7 +576,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09dd",
+        "_id": "question-615995cc4df0856259dba57e",
         "fr": "Que vous évoque la pratique des religions ?",
         "answers": [
           "Nous sommes un pays de culture chrétienne, les autres religions sont incompatibles, il faut protéger ce patrimoine.",
@@ -596,7 +596,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09dc",
+        "_id": "question-615995cc4df0856259dba57f",
         "fr": "Que pensez-vous de la procréation médicalement assistée (PMA) ?",
         "answers": [
           "Elle doit être autorisée et remboursée pour tous, sans condition",
@@ -616,7 +616,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09dc",
+        "_id": "question-615995cc4df0856259dba580",
         "fr": "Que pensez-vous de la gestation pour autrui (GPA) ?",
         "answers": [
           "Elle doit être autorisée et remboursée pour tous, sans condition",
@@ -636,7 +636,7 @@
         ]
       },
       {
-        "_id": "61405fbe35e4ef21aabf09dc",
+        "_id": "question-615995cc4df0856259dba581",
         "fr": "Que pensez-vous de l'immigration et de son impact sur la mixité culturelle ?",
         "answers": [
           "Elle enrichit chacun de nous dans la société, à ce titre il faut favoriser l'immigration pour ce bénéfice",
@@ -649,138 +649,6 @@
           [3, 5, 3, 1],
           [0, 3, 5, 2],
           [0, 0, 0, 0]
-        ]
-      }
-    ]
-  },
-  {
-    "_id": "theme-61405fbe35e4ef21aabf09e1",
-    "fr": "Social et solidarité",
-    "questions": [
-      {
-        "_id": "61405fbe35e4ef21aabf09de",
-        "fr": "Theme 9 question 1",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09df",
-        "fr": "Theme 9 question 2",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09e0",
-        "fr": "Theme 9 question 3",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      }
-    ]
-  },
-  {
-    "_id": "theme-61405fbe35e4ef21aabf09e5",
-    "fr": "Territoires et colléctivités",
-    "questions": [
-      {
-        "_id": "61405fbe35e4ef21aabf09e2",
-        "fr": "Theme 10 question 1",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09e3",
-        "fr": "Theme 10 question 2",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "61405fbe35e4ef21aabf09e4",
-        "fr": "Theme 10 question 3",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [3, 5, 3, 1, 0, 0],
-          [2, 3, 5, 2, 1, 0],
-          [0, 1, 2, 5, 3, 0],
-          [0, 0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]

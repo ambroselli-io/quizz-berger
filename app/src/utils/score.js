@@ -1,7 +1,7 @@
-import quizz from "../quizz.json";
+const maxScorePerAnswer = 5;
 
-export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers) => {
-  const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers);
+export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizz) => {
+  const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers, quizz);
 
   return candidatesAnswers.map((candidate) => {
     const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
@@ -9,7 +9,7 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers) => {
     const results = scorePerThemes.map((theme) => {
       return {
         themeId: theme.themeId,
-        score: theme.score,
+        score: (theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100,
         pseudo: candidate.pseudo,
         firstName: candidate.firstName,
         lastName: candidate.lastName,
@@ -21,7 +21,7 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers) => {
   });
 };
 
-const addScoreLinesToAnswers = (userAnswers) =>
+const addScoreLinesToAnswers = (userAnswers, quizz) =>
   userAnswers.map((answer) => {
     const theme = quizz.find((theme) => theme._id === answer.themeId);
     const { questions } = theme;
@@ -41,31 +41,38 @@ const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) 
     const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer?.answerIndex;
     return {
       ...userAnswer,
-      score: politicalPartyMatchingAnswersIndex
+      score: !isNaN(politicalPartyMatchingAnswersIndex)
         ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex]
         : 0,
     };
   });
 
 const getScorePerTheme = (candidateScores) => {
-  return candidateScores.reduce((accumulator, currentValue, index) => {
-    const existingThemeScore = accumulator.find((child) => child.themeId === currentValue.themeId);
+  console.log({ candidateScores });
+  return candidateScores.reduce((scoresPerTheme, currentAnswer) => {
+    const existingThemeScore = scoresPerTheme.find(
+      (scorePerTheme) => scorePerTheme.themeId === currentAnswer.themeId
+    );
 
+    console.log({ existingThemeScore });
     if (existingThemeScore) {
-      return accumulator.map((themeScore) => {
-        if (themeScore.themeId === currentValue.themeId)
+      return scoresPerTheme.map((themeScore) => {
+        if (themeScore.themeId === currentAnswer.themeId) {
           return {
             ...themeScore,
-            score: themeScore.score + currentValue.score,
+            score: themeScore.score + currentAnswer.score,
+            numberOfAnswers: themeScore.numberOfAnswers + 1,
           };
+        }
         return themeScore;
       });
     }
-    accumulator.push({
-      themeId: currentValue.themeId,
-      score: currentValue.score + 1,
+    scoresPerTheme.push({
+      themeId: currentAnswer.themeId,
+      score: currentAnswer.score,
+      numberOfAnswers: 1,
     });
 
-    return accumulator;
+    return scoresPerTheme;
   }, []);
 };

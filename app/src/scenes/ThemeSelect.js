@@ -4,7 +4,6 @@ import { media } from "../styles/mediaQueries";
 
 import ThemeButton from "../components/ThemeButton";
 import API from "../services/api";
-import quizz from "../quizz.json";
 
 class ThemeSelect extends React.Component {
   state = {
@@ -28,14 +27,16 @@ class ThemeSelect extends React.Component {
 
   saveSelectedThemes = async (themeIds) => {
     const { selectedThemesIds } = this.state;
+    const { quizz } = this.props;
     if (selectedThemesIds.length < 3) {
-      alert("please select atleast 3 themes");
+      alert("Veuillez sélectionner au moins 3 thèmes");
       return;
     }
 
+    const availableThemeIds = quizz.map((theme) => theme._id);
     const response = await API.putWithCreds({
       path: "/user",
-      body: { themes: selectedThemesIds },
+      body: { themes: availableThemeIds.filter((id) => selectedThemesIds.includes(id)) },
     });
     if (response.ok) {
       const { setUser, history } = this.props;
@@ -47,6 +48,7 @@ class ThemeSelect extends React.Component {
 
   render() {
     const { selectedThemesIds } = this.state;
+    const { quizz } = this.props;
     return (
       <>
         <BackgroundContainer>

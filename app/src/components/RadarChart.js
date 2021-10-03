@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
 import { media } from "../styles/mediaQueries";
 
-import quizz from "../quizz.json";
-
 const options = {
   maintainAspectRatio: false,
 
@@ -80,7 +78,7 @@ const colors = [
   },
 ];
 
-const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidates }) => {
+const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidates, quizz }) => {
   const chartRef = useRef();
   const [isMounting, setIsMounting] = useState(false);
 
