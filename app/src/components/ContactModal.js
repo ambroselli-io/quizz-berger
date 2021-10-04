@@ -1,70 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 
 import cross from "../images/cross.svg";
+import API from "../services/api";
 
-const ContactModal = ({ isActive, onCloseContactModal }) => {
+const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal, user }) => {
+  const [{ pseudo, email, message }, setState] = useState({
+    pseudo: user?.pseudo || "",
+    email: "",
+    message: "",
+  });
+
+  const onChange = (e) => {
+    setState((state) => ({
+      ...state,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
   const onFormSubmit = async (e) => {
     e.preventDefault();
-    const name = e.target[0].value;
-    const mail = e.target[1].value;
-    const message = e.target[2].value;
-    const location = window.location.href;
 
-    const data = {
-      to: [
-        {
-          address: "vincent-romeo@hotmail.fr",
-          personalName: "Roméo",
-        },
-      ],
-      msg: {
-        from: {
-          personalName: name,
-          address: mail,
-        },
-        subject: "Mail site avocat",
-        replyTo: {
-          personalName: name,
-          address: mail,
-        },
-        text: `Nom : ${name} \n Mail : ${mail} \n\n ${message}`,
-      },
-      apiKey: window.atob("NmNiMjkwYjhhYzVmZDM3MTAyNmJiNjM4MzAzNTA2NjU="),
-    };
+    const text = `
+    De: ${pseudo}
+    Email: ${email}
+    Message: ${message}
+    URL: ${window.location.href}
+    user: ${JSON.stringify(user, null, 2)}
+    `;
 
-    const response = fetch("https://api.tipimail.com/v1/messages/send", {
-      method: "POST",
-      headers: {
-        "X-Tipimail-ApiUser": window.atob(
-          "MTIxNmRlYzVjMmViOTM5NjU4MzFhYmVhMmNmMTg4YTA="
-        ),
-        "X-Tipimail-ApiKey": window.atob(
-          "NmNiMjkwYjhhYzVmZDM3MTAyNmJiNjM4MzAzNTA2NjU="
-        ),
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
+    const response = await API.post({
+      path: "/feedback",
+      body: { text, subject: `Une requête du Quizz du Berger par ${pseudo}` },
     });
-
-    console.log(response);
-
-    //   const response = await API.post({
-    //     path: "https://api.tipimail.com/v1/messages/send",
-    //     headers: {
-    //       "X-Tipimail-ApiUser": window.atob(
-    //         "MTIxNmRlYzVjMmViOTM5NjU4MzFhYmVhMmNmMTg4YTA="
-    //       ),
-    //       "X-Tipimail-ApiKey": window.atob(
-    //         "NmNiMjkwYjhhYzVmZDM3MTAyNmJiNjM4MzAzNTA2NjU="
-    //       ),
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(data),
-    //   });
-    //   console.log(response);
-    //   if (!response.ok) return alert(response.error);
+    if (!response.ok) return alert(response.error);
+    if (response.ok) {
+      alert("Message envoyé !");
+      onForceCloseContactModal();
+    }
   };
 
   return (
@@ -77,26 +51,33 @@ const ContactModal = ({ isActive, onCloseContactModal }) => {
           </TitleContainer>
           <ModalInnerContainer>
             <ContactForm onSubmit={onFormSubmit}>
-              <FormLabel>NAME*</FormLabel>
+              <FormLabel>Nom/pseudo *</FormLabel>
               <FormInput
                 type="text"
-                name="name"
+                name="pseudo"
                 autocomplete="name"
-                placeholder="Your name"
+                placeholder="Votre nom / pseudo"
+                onChange={onChange}
+                value={pseudo}
+                required
               />
-              <FormLabel>EMAIL</FormLabel>
+              <FormLabel>Email</FormLabel>
               <FormInput
                 type="email"
                 name="email"
                 autocomplete="email"
-                placeholder="Your mail"
+                placeholder="Votre email"
+                onChange={onChange}
+                value={email}
               />
-              <FormLabel>YOUR MESSAGE</FormLabel>
+              <FormLabel>Votre message *</FormLabel>
               <FormTextArea
-                name="comment"
+                name="message"
                 rows="10"
-                placeholder="A comment ? A suggestion ?"
-              ></FormTextArea>
+                onChange={onChange}
+                value={message}
+                placeholder="Un commentaire ? Une suggestion ?"
+              />
               <SubmitButton type="submit">Envoyer</SubmitButton>
             </ContactForm>
           </ModalInnerContainer>
