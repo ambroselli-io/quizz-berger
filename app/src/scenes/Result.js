@@ -17,6 +17,8 @@ class Result extends React.Component {
     showRadarChart: false,
     selectedCandidates: [],
     selectedThemes: [],
+    showCandidates: true,
+    showThemes: true,
   };
 
   componentDidMount() {
@@ -55,7 +57,9 @@ class Result extends React.Component {
         selectedCandidates: [...selectedCandidates, candidate],
       });
     } else {
-      this.setState({ selectedCandidates: selectedCandidates.filter((c) => c !== candidate) });
+      this.setState({
+        selectedCandidates: selectedCandidates.filter((c) => c !== candidate),
+      });
     }
   };
 
@@ -66,69 +70,99 @@ class Result extends React.Component {
     if (!selectedThemes.find((t) => t === themeId)) {
       this.setState({ selectedThemes: [...selectedThemes, themeId] });
     } else {
-      this.setState({ selectedThemes: selectedThemes.filter((t) => t !== themeId) });
+      this.setState({
+        selectedThemes: selectedThemes.filter((t) => t !== themeId),
+      });
     }
   };
 
   render() {
-    const { userAnswers, candidatesAnswers, showRadarChart, selectedCandidates, selectedThemes } =
-      this.state;
+    const {
+      userAnswers,
+      candidatesAnswers,
+      showRadarChart,
+      selectedCandidates,
+      selectedThemes,
+      showCandidates,
+      showThemes,
+    } = this.state;
 
     const { user } = this.props;
 
-    const candidatesScorePerThemes = getCandidatesScorePerThemes(userAnswers, candidatesAnswers);
+    const candidatesScorePerThemes = getCandidatesScorePerThemes(
+      userAnswers,
+      candidatesAnswers
+    );
 
     return (
       <>
         <BackgroundContainer>
-          <SwitchButtons onClick={this.switchCharts}>Changer de graphique</SwitchButtons>
+          <SwitchButtons onClick={this.switchCharts}>
+            Changer de graphique
+          </SwitchButtons>
           <Container>
             <LeftContainer>
               <TitleContainer>
                 <Title>Vos résultats</Title>
                 <InfoIcon src={infoIcon}></InfoIcon>
               </TitleContainer>
-
-              {window.screen.width > 768 && (
-                <>
-                  <SubTitle>Selectionnez vos candidats</SubTitle>
-                  <p>Selectionnez les candidats que vous souhaitez comparer à vos idées</p>
-                  <CandidateButtonContainer>
-                    {candidatesScorePerThemes.map((candidate) => (
-                      <CandidateButton
-                        key={candidate[0].pseudo}
-                        data-candidate={candidate[0].pseudo}
-                        isActive={!!selectedCandidates.find((c) => c === candidate[0].pseudo)}
-                        onClick={this.setSelectedCandidates}>
-                        {candidate[0].pseudo}
-                      </CandidateButton>
-                    ))}
-                  </CandidateButtonContainer>
-                  <SubTitle> Selectionnez les thèmes à afficher</SubTitle>
-                  <CandidateButtonContainer>
-                    {user.themes.map((userT) => {
-                      const theme = quizz.find((t) => t._id === userT);
-                      return (
-                        <CandidateButton
-                          key={userT}
-                          data-themeid={theme._id}
-                          isActive={!!selectedThemes.find((c) => c === theme._id)}
-                          onClick={this.setSelectedThemes}>
-                          {theme.fr}
-                        </CandidateButton>
-                      );
-                    })}
-                  </CandidateButtonContainer>
-                </>
-              )}
-
-              {window.screen.width <= 768 && (
-                <>
-                  <SubTitle>
-                    Cliquez ici pour modifier les candidats et les thèmes a afficher
-                  </SubTitle>
-                </>
-              )}
+              <OpenButtonContainer>
+                <SubTitle>Selectionnez vos candidats</SubTitle>
+                <OpenButton
+                  onClick={() =>
+                    this.setState((prevState) => ({
+                      showCandidates: !prevState.showCandidates,
+                    }))
+                  }
+                  isActive={showCandidates}
+                >
+                  &#9664;
+                </OpenButton>
+              </OpenButtonContainer>
+              <CandidateButtonContainer isActive={showCandidates}>
+                {candidatesScorePerThemes.map((candidate) => (
+                  <CandidateButton
+                    key={candidate[0].pseudo}
+                    data-candidate={candidate[0].pseudo}
+                    isActive={
+                      !!selectedCandidates.find(
+                        (c) => c === candidate[0].pseudo
+                      )
+                    }
+                    onClick={this.setSelectedCandidates}
+                  >
+                    {candidate[0].pseudo}
+                  </CandidateButton>
+                ))}
+              </CandidateButtonContainer>
+              <OpenButtonContainer>
+                <SubTitle> Selectionnez les thèmes à afficher</SubTitle>
+                <OpenButton
+                  onClick={() =>
+                    this.setState((prevState) => ({
+                      showThemes: !prevState.showThemes,
+                    }))
+                  }
+                  isActive={showThemes}
+                >
+                  &#9664;
+                </OpenButton>
+              </OpenButtonContainer>
+              <ThemeButtonContainer isActive={showThemes}>
+                {user.themes.map((userT) => {
+                  const theme = quizz.find((t) => t._id === userT);
+                  return (
+                    <CandidateButton
+                      key={userT}
+                      data-themeid={theme._id}
+                      isActive={!!selectedThemes.find((c) => c === theme._id)}
+                      onClick={this.setSelectedThemes}
+                    >
+                      {theme.fr}
+                    </CandidateButton>
+                  );
+                })}
+              </ThemeButtonContainer>
             </LeftContainer>
             <ChartsContainer>
               {showRadarChart && (
@@ -141,7 +175,9 @@ class Result extends React.Component {
               )}
               {!showRadarChart &&
                 candidatesScorePerThemes
-                  .filter((partyScores) => selectedCandidates.includes(partyScores[0].pseudo))
+                  .filter((partyScores) =>
+                    selectedCandidates.includes(partyScores[0].pseudo)
+                  )
                   .map((partyScores) => {
                     return (
                       <PolarChart
@@ -223,17 +259,41 @@ const InfoIcon = styled.img`
   cursor: pointer;
 `;
 
-const SubTitle = styled.h3`
+const OpenButtonContainer = styled.div`
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+`;
+
+const SubTitle = styled.h3`
   font-family: Merriweather;
   font-weight: bold;
   font-size: 20px;
   color: #111827;
+  ${media.mobile`
+  font-size: 16px;
+`}
+`;
+
+const OpenButton = styled.button`
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  transform: ${(props) => (props.isActive ? "rotate(-90deg)" : "none")};
+  transition: transform 0.1s linear;
+  cursor: pointer;
 `;
 
 const CandidateButtonContainer = styled.div`
   margin-bottom: 20px;
-  display: flex;
+  display: ${(props) => (props.isActive ? "flex" : "none")};
+  flex-flow: row wrap;
+  grid-gap: 12px;
+`;
+
+const ThemeButtonContainer = styled.div`
+  margin-bottom: 20px;
+  display: ${(props) => (props.isActive ? "flex" : "none")};
   flex-flow: row wrap;
   grid-gap: 12px;
 `;

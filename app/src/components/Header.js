@@ -27,7 +27,10 @@ const Header = ({ loading, user, setUser }) => {
   };
 
   const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
+    loadingIntervalRef.current = setInterval(
+      () => setShowLogoKey((k) => k + 1),
+      1000
+    );
   };
 
   useEffect(() => {
@@ -110,7 +113,10 @@ const Header = ({ loading, user, setUser }) => {
                 isOpen={menuIsOpen}
                 onOpen={() => setMenuIsOpen(true)}
                 styles={burgerNavStyles}
-                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
+                customBurgerIcon={
+                  <img src={burgerNav} alt="mobile navigation menu" />
+                }
+              >
                 <BurgerNavHeaderContainer>
                   <HeaderLogo />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
@@ -126,6 +132,10 @@ const Header = ({ loading, user, setUser }) => {
                   <NavLink activeClassName="selected" to="/result">
                     <span>Résultats</span>
                   </NavLink>
+                </BurgerMenuTab>
+                <Fillet />
+                <BurgerMenuTab>
+                  <span onClick={onOpenContactModal}>Nous contacter</span>
                 </BurgerMenuTab>
                 <Fillet />
                 {!!user?.pseudo ? (
@@ -153,7 +163,10 @@ const Header = ({ loading, user, setUser }) => {
         </HeaderContainer>
       </HeaderStyled>
       <BackContainer />
-      <ContactModal isActive={showContactModal} onCloseContactModal={onCloseContactModal} />
+      <ContactModal
+        isActive={showContactModal}
+        onCloseContactModal={onCloseContactModal}
+      />
     </>
   );
 };
