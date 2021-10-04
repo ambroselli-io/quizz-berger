@@ -92,6 +92,7 @@ const SignupButton = styled.button`
   background: #facc15;
   border-radius: 44px;
   border: none;
+  cursor: pointer;
 `;
 
 export default Signup;
