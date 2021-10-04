@@ -6,7 +6,7 @@ import RadarChart from "../components/RadarChart";
 import PolarChart from "../components/PolarChart";
 import API from "../services/api";
 
-import infoIcon from "../images/info.svg";
+// import infoIcon from "../images/info.svg";
 
 class Result extends React.Component {
   state = {
@@ -265,12 +265,12 @@ const Title = styled.h2`
   color: #082d0f;
 `;
 
-const InfoIcon = styled.img`
-  margin-left: 10px;
-  width: 20px;
-  height: auto;
-  cursor: pointer;
-`;
+// const InfoIcon = styled.img`
+//   margin-left: 10px;
+//   width: 20px;
+//   height: auto;
+//   cursor: pointer;
+// `;
 
 const OpenButtonContainer = styled.div`
   margin-bottom: 20px;
