@@ -11,8 +11,9 @@ const Login = ({ onLogin, onChange, pseudo, password }) => {
       path: "/user/login",
       body: { pseudo, password },
     });
-    if (!response?.ok) {
-      setOnLoading(true);
+    setOnLoading(true);
+    console.log(onLoading);
+    if (!response.ok) {
       return alert(response.error);
     }
     onLogin(response.data);
@@ -38,7 +39,9 @@ const Login = ({ onLogin, onChange, pseudo, password }) => {
             onChange={onChange}
             value={password}
           />
-          <LoginButton type="submit">Se connecter</LoginButton>
+          <LoginButton isLoading={onLoading} type="submit">
+            Se connecter
+          </LoginButton>
         </LoginForm>
       </SignupSubContainer>
     </>
@@ -86,11 +89,11 @@ const LoginButton = styled.button`
   font-weight: normal;
   font-size: 16px;
   background: ${(props) =>
-    props.onLoading ? "rgb(233, 233, 233)" : "#facc15"};
-  color: ${(props) => (props.onLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
+    props.isLoading ? "rgb(233, 233, 233)" : "#facc15"};
+  color: ${(props) => (props.isLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
   border-radius: 44px;
   border: none;
-  cursor: ${(props) => (props.onLoading ? "auto" : "pointer")};
+  cursor: ${(props) => (props.isLoading ? "auto" : "pointer")};
 `;
 
 export default Login;
