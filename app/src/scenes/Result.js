@@ -101,13 +101,12 @@ class Result extends React.Component {
     return (
       <>
         <BackgroundContainer>
-          <SwitchButtonsContainer>
-            <SwitchButtons onClick={this.switchCharts}>
-              Changer de graphique
-            </SwitchButtons>
-          </SwitchButtonsContainer>
           <Container>
+            <LeftContainerBlock />
             <LeftContainer>
+              <SwitchButtons onClick={this.switchCharts}>
+                Changer de graphique
+              </SwitchButtons>
               <TitleContainer>
                 <Title>
                   {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)},
@@ -231,10 +230,11 @@ const SwitchButtons = styled.div`
 `;
 
 const Container = styled.div`
+  border: 1px solid red;
   margin: 0 auto;
   max-width: 1024px;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
   grid-gap: 20px;
   justify-content: space-between;
   ${media.mobile`
@@ -242,12 +242,23 @@ const Container = styled.div`
 `}
 `;
 
+const LeftContainerBlock = styled.div`
+  max-width: 500px;
+  ${media.mobile`
+    display: none;
+`}
+`;
+
 const LeftContainer = styled.div`
+  position: fixed;
   > p {
     margin-bottom: 20px;
     font-size: 16px;
     color: #111827;
   }
+  ${media.mobile`
+  position: relative;
+`}
 `;
 
 const TitleContainer = styled.div`
@@ -299,8 +310,11 @@ const OpenButton = styled.button`
 `;
 
 const CandidateButtonContainer = styled.div`
+  max-width: 500px;
+  width: auto;
   margin-bottom: 20px;
   display: ${(props) => (props.isActive ? "flex" : "none")};
+  grid-template-columns: auto auto auto;
   flex-flow: row wrap;
   grid-gap: 12px;
 `;
@@ -326,6 +340,12 @@ const CandidateButton = styled.button`
   cursor: pointer;
 `;
 
-const ChartsContainer = styled.div``;
+const ChartsContainer = styled.div`
+  /* margin-left: 600px; */
+  /* width: 410px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden; */
+`;
 
 export default Result;
