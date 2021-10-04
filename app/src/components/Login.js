@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
+<<<<<<< HEAD
 const Login = ({ onLogin, onChange, pseudo, password }) => {
   const [onLoading, setOnLoading] = useState(false);
 
+=======
+const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
+>>>>>>> 4c45bdb (new questions)
   const loginRequest = async (e) => {
     e.preventDefault();
     const response = await API.post({
@@ -39,6 +43,7 @@ const Login = ({ onLogin, onChange, pseudo, password }) => {
             value={password}
           />
           <LoginButton type="submit">Se connecter</LoginButton>
+          <SignupLink onClick={onGoToSignup}>Pas encore de mot de passe ?</SignupLink>
         </LoginForm>
       </SignupSubContainer>
     </>
@@ -91,6 +96,16 @@ const LoginButton = styled.button`
   border-radius: 44px;
   border: none;
   cursor: ${(props) => (props.onLoading ? "auto" : "pointer")};
+`;
+
+const SignupLink = styled.button`
+  text-decoration: underline;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
 `;
 
 export default Login;
