@@ -11,12 +11,60 @@ const ContactModal = ({ isActive, onCloseContactModal }) => {
     const mail = e.target[1].value;
     const message = e.target[2].value;
     const location = window.location.href;
-    // const response = await API.post({
-    //   path: "",
-    //   body: { pseudo, password },
-    // });
-    // console.log(response);
-    // if (!response.ok) return alert(response.error);
+
+    const data = {
+      to: [
+        {
+          address: "vincent-romeo@hotmail.fr",
+          personalName: "Roméo",
+        },
+      ],
+      msg: {
+        from: {
+          personalName: name,
+          address: mail,
+        },
+        subject: "Mail site avocat",
+        replyTo: {
+          personalName: name,
+          address: mail,
+        },
+        text: `Nom : ${name} \n Mail : ${mail} \n\n ${message}`,
+      },
+      apiKey: window.atob("NmNiMjkwYjhhYzVmZDM3MTAyNmJiNjM4MzAzNTA2NjU="),
+    };
+
+    const response = fetch("https://api.tipimail.com/v1/messages/send", {
+      method: "POST",
+      headers: {
+        "X-Tipimail-ApiUser": window.atob(
+          "MTIxNmRlYzVjMmViOTM5NjU4MzFhYmVhMmNmMTg4YTA="
+        ),
+        "X-Tipimail-ApiKey": window.atob(
+          "NmNiMjkwYjhhYzVmZDM3MTAyNmJiNjM4MzAzNTA2NjU="
+        ),
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    console.log(response);
+
+    //   const response = await API.post({
+    //     path: "https://api.tipimail.com/v1/messages/send",
+    //     headers: {
+    //       "X-Tipimail-ApiUser": window.atob(
+    //         "MTIxNmRlYzVjMmViOTM5NjU4MzFhYmVhMmNmMTg4YTA="
+    //       ),
+    //       "X-Tipimail-ApiKey": window.atob(
+    //         "NmNiMjkwYjhhYzVmZDM3MTAyNmJiNjM4MzAzNTA2NjU="
+    //       ),
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(data),
+    //   });
+    //   console.log(response);
+    //   if (!response.ok) return alert(response.error);
   };
 
   return (
@@ -30,14 +78,25 @@ const ContactModal = ({ isActive, onCloseContactModal }) => {
           <ModalInnerContainer>
             <ContactForm onSubmit={onFormSubmit}>
               <FormLabel>NAME*</FormLabel>
-              <FormInput type="text" name="name" autocomplete="name" placeholder="Your name" />
+              <FormInput
+                type="text"
+                name="name"
+                autocomplete="name"
+                placeholder="Your name"
+              />
               <FormLabel>EMAIL</FormLabel>
-              <FormInput type="email" name="email" autocomplete="email" placeholder="Your mail" />
+              <FormInput
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="Your mail"
+              />
               <FormLabel>YOUR MESSAGE</FormLabel>
               <FormTextArea
                 name="comment"
                 rows="10"
-                placeholder="A comment ? A suggestion ?"></FormTextArea>
+                placeholder="A comment ? A suggestion ?"
+              ></FormTextArea>
               <SubmitButton type="submit">Envoyer</SubmitButton>
             </ContactForm>
           </ModalInnerContainer>

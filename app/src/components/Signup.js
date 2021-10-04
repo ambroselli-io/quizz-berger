@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
 const Signup = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const signupRequest = async (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     const response = await API.post({
       path: "/user/signup",
       body: { pseudo, password, passwordConfirm },
     });
-    if (!response.ok) return alert(response.error);
+    if (!response.ok) {
+      setIsLoading(false);
+      return alert(response.error);
+    }
     onLogin(response.data);
   };
 
@@ -42,7 +47,9 @@ const Signup = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
             onChange={onChange}
             value={passwordConfirm}
           />
-          <SignupButton type="submit">S'inscrire !</SignupButton>
+          <SignupButton isLoading={isLoading} type="submit">
+            S'inscrire !
+          </SignupButton>
         </SignupForm>
       </SignupSubContainer>
     </>
@@ -89,10 +96,12 @@ const SignupButton = styled.button`
   height: 44px;
   font-weight: normal;
   font-size: 16px;
-  background: #facc15;
+  background: ${(props) =>
+    props.isLoading ? "rgb(233, 233, 233)" : "#facc15"};
+  color: ${(props) => (props.isLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
   border-radius: 44px;
   border: none;
-  cursor: pointer;
+  cursor: ${(props) => (props.isLoading ? "auto" : "pointer")};
 `;
 
 export default Signup;

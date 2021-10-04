@@ -18,8 +18,8 @@ const Header = ({ loading, user, setUser }) => {
   const history = useHistory();
 
   const loadingIntervalRef = useRef(null);
-
   const onLogout = async () => {
+    setMenuIsOpen(false);
     const response = await API.post({
       path: "/user/logout",
     });
@@ -27,7 +27,10 @@ const Header = ({ loading, user, setUser }) => {
   };
 
   const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
+    loadingIntervalRef.current = setInterval(
+      () => setShowLogoKey((k) => k + 1),
+      1000
+    );
   };
 
   useEffect(() => {
@@ -116,7 +119,10 @@ const Header = ({ loading, user, setUser }) => {
                 onOpen={() => setMenuIsOpen(true)}
                 onClose={() => setMenuIsOpen(false)}
                 styles={burgerNavStyles}
-                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
+                customBurgerIcon={
+                  <img src={burgerNav} alt="mobile navigation menu" />
+                }
+              >
                 <BurgerNavHeaderContainer>
                   <HeaderLogo />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
@@ -163,7 +169,10 @@ const Header = ({ loading, user, setUser }) => {
         </HeaderContainer>
       </HeaderStyled>
       <BackContainer />
-      <ContactModal isActive={showContactModal} onCloseContactModal={onCloseContactModal} />
+      <ContactModal
+        isActive={showContactModal}
+        onCloseContactModal={onCloseContactModal}
+      />
     </>
   );
 };
