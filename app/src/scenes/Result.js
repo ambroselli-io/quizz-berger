@@ -33,7 +33,9 @@ class Result extends React.Component {
       const candidates = candidatesResponse.data.map((c) => c.pseudo);
       this.setState({
         userAnswers: response.data,
-        candidatesAnswers: candidatesResponse.data.sort(() => (Math.random() > 0.5 ? -1 : 1)),
+        candidatesAnswers: candidatesResponse.data.sort(() =>
+          Math.random() > 0.5 ? -1 : 1
+        ),
         selectedCandidates: candidates,
         selectedThemes: this.props.user.themes,
       });
@@ -100,12 +102,17 @@ class Result extends React.Component {
       <>
         <BackgroundContainer>
           <SwitchButtonsContainer>
-            <SwitchButtons onClick={this.switchCharts}>Changer de graphique</SwitchButtons>
+            <SwitchButtons onClick={this.switchCharts}>
+              Changer de graphique
+            </SwitchButtons>
           </SwitchButtonsContainer>
           <Container>
             <LeftContainer>
               <TitleContainer>
-                <Title>{user.pseudo}, voici vos résultats</Title>
+                <Title>
+                  {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)},
+                  voici vos résultats
+                </Title>
                 {/* <InfoIcon src={infoIcon}></InfoIcon> */}
               </TitleContainer>
               <OpenButtonContainer>
@@ -116,7 +123,8 @@ class Result extends React.Component {
                       showCandidates: !prevState.showCandidates,
                     }))
                   }
-                  isActive={showCandidates}>
+                  isActive={showCandidates}
+                >
                   &#9664;
                 </OpenButton>
               </OpenButtonContainer>
@@ -125,8 +133,11 @@ class Result extends React.Component {
                   <CandidateButton
                     key={candidate?.pseudo}
                     data-candidate={candidate?.pseudo}
-                    isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
-                    onClick={this.setSelectedCandidates}>
+                    isActive={
+                      !!selectedCandidates.find((c) => c === candidate?.pseudo)
+                    }
+                    onClick={this.setSelectedCandidates}
+                  >
                     {candidate?.pseudo}
                   </CandidateButton>
                 ))}
@@ -139,7 +150,8 @@ class Result extends React.Component {
                       showThemes: !prevState.showThemes,
                     }))
                   }
-                  isActive={showThemes}>
+                  isActive={showThemes}
+                >
                   &#9664;
                 </OpenButton>
               </OpenButtonContainer>
@@ -151,7 +163,8 @@ class Result extends React.Component {
                       key={userT}
                       data-themeid={theme._id}
                       isActive={!!selectedThemes.find((c) => c === theme._id)}
-                      onClick={this.setSelectedThemes}>
+                      onClick={this.setSelectedThemes}
+                    >
                       {theme.fr}
                     </CandidateButton>
                   );
@@ -170,7 +183,9 @@ class Result extends React.Component {
               )}
               {!showRadarChart &&
                 candidatesScorePerThemes
-                  .filter((candidate) => selectedCandidates.includes(candidate?.pseudo))
+                  .filter((candidate) =>
+                    selectedCandidates.includes(candidate?.pseudo)
+                  )
                   .map((candidate) => {
                     return (
                       <PolarChart

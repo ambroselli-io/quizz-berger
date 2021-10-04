@@ -4,6 +4,7 @@ import API from "../services/api";
 
 const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
   const [isLoading, setIsLoading] = useState(false);
+
   const loginRequest = async (e) => {
     e.preventDefault();
     setIsLoading(true);

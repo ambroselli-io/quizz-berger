@@ -47,7 +47,7 @@ const BackgroundContainer = styled.div`
   `}
 
   details {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 1024px;
   }
 
@@ -64,9 +64,10 @@ const BackgroundContainer = styled.div`
 
   ol {
     margin-left: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   li {
+    margin-left: 30px;
     margin-bottom: 5px;
   }
 `;
