@@ -2,18 +2,17 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
-const Login = ({ onLogin, onChange, pseudo, password }) => {
-  const [onLoading, setOnLoading] = useState(false);
-
+const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const loginRequest = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     const response = await API.post({
       path: "/user/login",
       body: { pseudo, password },
     });
-    setOnLoading(true);
-    console.log(onLoading);
-    if (!response.ok) {
+    setIsLoading(false);
+    if (!response?.ok) {
       return alert(response.error);
     }
     onLogin(response.data);
@@ -39,9 +38,12 @@ const Login = ({ onLogin, onChange, pseudo, password }) => {
             onChange={onChange}
             value={password}
           />
-          <LoginButton isLoading={onLoading} type="submit">
+          <LoginButton isLoading={isLoading} type="submit">
             Se connecter
           </LoginButton>
+          <SignupLink onClick={onGoToSignup}>
+            Pas encore de mot de passe ?
+          </SignupLink>
         </LoginForm>
       </SignupSubContainer>
     </>
@@ -94,6 +96,16 @@ const LoginButton = styled.button`
   border-radius: 44px;
   border: none;
   cursor: ${(props) => (props.isLoading ? "auto" : "pointer")};
+`;
+
+const SignupLink = styled.button`
+  text-decoration: underline;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
 `;
 
 export default Login;

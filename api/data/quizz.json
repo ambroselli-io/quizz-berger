@@ -652,5 +652,91 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "theme-615995cc4df085639im259dba57b",
+    "fr": "Pandémie Covid 19",
+    "questions": [
+      {
+        "_id": "question-615995cc39d90c9d856259dba57c",
+        "fr": "Si la pandémie devait se poursuivre avec les même paramètres (mortalité, symptômes, etc.), comment vous situez-vous par rapport à un reconfinement en cas de pic épidémique ?",
+        "answers": [
+          "J'espère qu'on confinera plus strictement et plus longtemps que la dernière fois, c'est de l'inconscience que de prendre des risques avec la vie des autres.",
+          "Il faut effectivement protéger toutes les personnes fragiles, c'est humain. S'il faut se confiner, alors confinons-nous.",
+          "Se confiner sert à aider les hôpitaux, qui n'ont pas demandé à être surchargés : s'il faut se confiner pour soulager le personnel hospitalier et ne pas les forcer à choisir qui doit vivre et qui doit mourir, alors confinons-nous.",
+          "Sacrifier la vie de nos jeunes qui ne craignent rien mais qui n'ont pas encore vécu, pour prolonger la vie de nos aînés qui ont déjà bien vécu et qui mourront de toutes façons un jour, ce n'est pas une bonne décision.",
+          "L'impact de cette pandémie sur nos vies normales est trop exagéré par rapport à son danger et sa mortalité. Il ne faut vraiment pas se confiner.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc39d90c9d856259dba57d",
+        "fr": "Si la pandémie devait se poursuivre avec les même paramètres (mortalité, symptômes, etc.), comment vous situez-vous par rapport au port du masque à l'école en cas de pic épidémique ?",
+        "answers": [
+          "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent tant dans la classe que dans la cour de récréation : on est jamais à l'abri.",
+          "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent dans la classe, mais dehors dans la cour de récréation on peut s'en passer.",
+          "Si on laisse les fenêtres ouvertes, pas besoin de masque.",
+          "Pas de masque pour les enfants, ils ont besoin de voir des visages pour leur développement personnel, c'est ça qui compte, tant pis pour le virus.",
+          "Pas de masque pour les enfants : ils ne sont pas à risque pour ce virus, et ils ont besoin de voir des visages pour leur développement personnel, c'est ça qui compte.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc39d90c9d856259dba57e",
+        "fr": "Si la pandémie devait se poursuivre avec les même paramètres (mortalité, symptômes, etc.), comment vous situez-vous par rapport au port du masque en société en cas de pic épidémique ?",
+        "answers": [
+          "Masque à l'intérieur et à l'extérieur, partout",
+          "Masque seulement à l'intérieur",
+          "Masque seulement à l'intérieur, mais pas dans les écoles",
+          "Masque seulement à l'intérieur, mais pas dans les écoles, et que lorsque l'intérieur est non ventilé et qu'on est serré",
+          "Masque nulle part",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc39d90c9d856259dba57f",
+        "fr": "Comment vous situez-vous par rapport au pas sanitaire ?",
+        "answers": [
+          "Le pass sanitaire est le début de la dictature : il faut se battre contre.",
+          "Pas besoin de forcer les gens à se vacciner s'ils ne le veulent pas : encourager, oui, forcer, non.",
+          "Moi je suis vacciné, je m'en fiche.",
+          "Il faut bien sortir de cette épidémie un jour ou l'autre, le vaccin est la seule solution, donc il faut que tout le monde se vaccine, peut importe la manière de le dire.",
+          "Cette pandémie est grave et les gens qui ne sont pas vaccinés sont inconscients : gardons le pass sanitaire tant que tout le monde n'est pas vacciné.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 2, 1, 0],
+          [0, 1, 2, 5, 3, 0],
+          [0, 0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
   }
 ]
