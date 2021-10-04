@@ -82,17 +82,17 @@ const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidat
   const chartRef = useRef();
   const [isMounting, setIsMounting] = useState(false);
 
-  let dataSets = candidatesScorePerThemes?.map((partyScores, index) => {
-    const scores = partyScores
+  let dataSets = candidatesScorePerThemes?.map((candidat, index) => {
+    const scores = candidat.scorePerThemes
       .filter((score) => selectedThemes.includes(score.themeId))
       .map((score) => score.score);
 
     return {
-      label: partyScores[0].pseudo,
+      label: candidat?.pseudo,
       hidden: true,
-      backgroundColor: colors[index].backgroundColor,
-      pointBackgroundColor: colors[index].pointBackgroundColor,
-      borderColor: colors[index].borderColor,
+      backgroundColor: colors[index % colors.length].backgroundColor,
+      pointBackgroundColor: colors[index % colors.length].pointBackgroundColor,
+      borderColor: colors[index % colors.length].borderColor,
       borderWidth: 1,
       data: scores,
     };

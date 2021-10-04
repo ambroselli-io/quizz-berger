@@ -18,8 +18,6 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     (question) => question._id === questionId
   );
 
-  console.log({ fr, answers });
-
   const goToNextQuestion = () => {
     const currentQuestionIndex = currentThemeQuestions.findIndex(
       (question) => question._id === questionId
@@ -62,7 +60,6 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     const firstUserThemeIndex = quizz.findIndex(
       (t) => t._id === firstUserTheme
     );
-    console.log({ currentThemeIndex, firstUserThemeIndex });
     // last theme
     if (currentThemeIndex <= firstUserThemeIndex) {
       return history.push("/theme");
