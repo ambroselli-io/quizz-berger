@@ -33,9 +33,7 @@ class Result extends React.Component {
       const candidates = candidatesResponse.data.map((c) => c.pseudo);
       this.setState({
         userAnswers: response.data,
-        candidatesAnswers: candidatesResponse.data.sort(() =>
-          Math.random() > 0.5 ? -1 : 1
-        ),
+        candidatesAnswers: candidatesResponse.data.sort(() => (Math.random() > 0.5 ? -1 : 1)),
         selectedCandidates: candidates,
         selectedThemes: this.props.user.themes,
       });
@@ -102,15 +100,11 @@ class Result extends React.Component {
       <>
         <BackgroundContainer>
           <Container>
-            <LeftContainerBlock />
             <LeftContainer>
-              <SwitchButtons onClick={this.switchCharts}>
-                Changer de graphique
-              </SwitchButtons>
+              <SwitchButtons onClick={this.switchCharts}>Changer de graphique</SwitchButtons>
               <TitleContainer>
                 <Title>
-                  {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)},
-                  voici vos résultats
+                  {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)}, voici vos résultats
                 </Title>
                 {/* <InfoIcon src={infoIcon}></InfoIcon> */}
               </TitleContainer>
@@ -122,8 +116,7 @@ class Result extends React.Component {
                       showCandidates: !prevState.showCandidates,
                     }))
                   }
-                  isActive={showCandidates}
-                >
+                  isActive={showCandidates}>
                   &#9664;
                 </OpenButton>
               </OpenButtonContainer>
@@ -132,11 +125,8 @@ class Result extends React.Component {
                   <CandidateButton
                     key={candidate?.pseudo}
                     data-candidate={candidate?.pseudo}
-                    isActive={
-                      !!selectedCandidates.find((c) => c === candidate?.pseudo)
-                    }
-                    onClick={this.setSelectedCandidates}
-                  >
+                    isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
+                    onClick={this.setSelectedCandidates}>
                     {candidate?.pseudo}
                   </CandidateButton>
                 ))}
@@ -149,8 +139,7 @@ class Result extends React.Component {
                       showThemes: !prevState.showThemes,
                     }))
                   }
-                  isActive={showThemes}
-                >
+                  isActive={showThemes}>
                   &#9664;
                 </OpenButton>
               </OpenButtonContainer>
@@ -162,8 +151,7 @@ class Result extends React.Component {
                       key={userT}
                       data-themeid={theme._id}
                       isActive={!!selectedThemes.find((c) => c === theme._id)}
-                      onClick={this.setSelectedThemes}
-                    >
+                      onClick={this.setSelectedThemes}>
                       {theme.fr}
                     </CandidateButton>
                   );
@@ -182,9 +170,7 @@ class Result extends React.Component {
               )}
               {!showRadarChart &&
                 candidatesScorePerThemes
-                  .filter((candidate) =>
-                    selectedCandidates.includes(candidate?.pseudo)
-                  )
+                  .filter((candidate) => selectedCandidates.includes(candidate?.pseudo))
                   .map((candidate) => {
                     return (
                       <PolarChart
@@ -204,15 +190,14 @@ class Result extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
+  height: calc(100vh - 80px);
   padding: 80px 10px 0 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
   ${media.mobile`
-  padding: 40px 10px 1px 10px;
-`}
-`;
-
-const SwitchButtonsContainer = styled.div`
-  margin: 0 auto;
-  max-width: 1024px;
+    padding: 40px 10px 1px 10px;
+    height: calc(100vh - 60px);
+  `}
 `;
 
 const SwitchButtons = styled.div`
@@ -230,35 +215,30 @@ const SwitchButtons = styled.div`
 `;
 
 const Container = styled.div`
-  border: 1px solid red;
+  height: 100%;
   margin: 0 auto;
   max-width: 1024px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: auto;
   ${media.mobile`
-    display: block;
-`}
-`;
-
-const LeftContainerBlock = styled.div`
-  max-width: 500px;
-  ${media.mobile`
-    display: none;
+    flex-direction: column;
 `}
 `;
 
 const LeftContainer = styled.div`
-  position: fixed;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   > p {
     margin-bottom: 20px;
     font-size: 16px;
     color: #111827;
   }
-  ${media.mobile`
-  position: relative;
-`}
 `;
 
 const TitleContainer = styled.div`
@@ -341,11 +321,10 @@ const CandidateButton = styled.button`
 `;
 
 const ChartsContainer = styled.div`
-  /* margin-left: 600px; */
-  /* width: 410px;
-  height: 500px;
-  overflow-y: scroll;
-  overflow-x: hidden; */
+  width: 50%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
 export default Result;
