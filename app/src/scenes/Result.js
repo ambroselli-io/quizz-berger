@@ -105,8 +105,8 @@ class Result extends React.Component {
           <Container>
             <LeftContainer>
               <TitleContainer>
-                <Title>Vos résultats</Title>
-                <InfoIcon src={infoIcon}></InfoIcon>
+                <Title>{user.pseudo}, voici vos résultats</Title>
+                {/* <InfoIcon src={infoIcon}></InfoIcon> */}
               </TitleContainer>
               <OpenButtonContainer>
                 <SubTitle>Selectionnez vos candidats</SubTitle>

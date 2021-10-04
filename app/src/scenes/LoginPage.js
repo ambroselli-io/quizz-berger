@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 class LoginPage extends React.Component {
   state = {
-    showSignup: false,
+    showSignup: process.env.NODE_ENV !== "development",
     pseudo: "",
     password: "",
     passwordConfirm: "",
@@ -51,6 +51,7 @@ class LoginPage extends React.Component {
                 isDisplayed={!this.state.showSignup}
                 onLogin={this.onLogin}
                 onChange={this.onChange}
+                onGoToSignup={this.displaySignup}
                 {...this.state}
               />
             )}

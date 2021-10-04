@@ -48,6 +48,10 @@ class ApiService {
     } catch (errorExecuteApi) {
       console.log({ errorExecuteApi });
     }
+    return {
+      ok: false,
+      error: "Une erreur est sruvenue, l'équipe technique est prévenue, veuillez nous en excuser.",
+    };
   };
 
   post = (args) => this.execute({ method: "POST", ...args });
