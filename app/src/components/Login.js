@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
-<<<<<<< HEAD
-const Login = ({ onLogin, onChange, pseudo, password }) => {
-  const [onLoading, setOnLoading] = useState(false);
-
-=======
 const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
->>>>>>> 4c45bdb (new questions)
+  const [isLoading, setIsLoading] = useState(false);
   const loginRequest = async (e) => {
     e.preventDefault();
     const response = await API.post({
@@ -16,7 +11,7 @@ const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
       body: { pseudo, password },
     });
     if (!response?.ok) {
-      setOnLoading(true);
+      setIsLoading(true);
       return alert(response.error);
     }
     onLogin(response.data);
@@ -42,7 +37,9 @@ const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
             onChange={onChange}
             value={password}
           />
-          <LoginButton type="submit">Se connecter</LoginButton>
+          <LoginButton isLoading={isLoading} type="submit">
+            Se connecter
+          </LoginButton>
           <SignupLink onClick={onGoToSignup}>Pas encore de mot de passe ?</SignupLink>
         </LoginForm>
       </SignupSubContainer>
@@ -90,12 +87,11 @@ const LoginButton = styled.button`
   height: 44px;
   font-weight: normal;
   font-size: 16px;
-  background: ${(props) =>
-    props.onLoading ? "rgb(233, 233, 233)" : "#facc15"};
-  color: ${(props) => (props.onLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
+  background: ${(props) => (props.isLoading ? "rgb(233, 233, 233)" : "#facc15")};
+  color: ${(props) => (props.isLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
   border-radius: 44px;
   border: none;
-  cursor: ${(props) => (props.onLoading ? "auto" : "pointer")};
+  cursor: ${(props) => (props.isLoading ? "auto" : "pointer")};
 `;
 
 const SignupLink = styled.button`
