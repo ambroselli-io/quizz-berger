@@ -33,7 +33,7 @@ class Result extends React.Component {
       const candidates = candidatesResponse.data.map((c) => c.pseudo);
       this.setState({
         userAnswers: response.data,
-        candidatesAnswers: candidatesResponse.data,
+        candidatesAnswers: candidatesResponse.data.sort(() => (Math.random() > 0.5 ? -1 : 1)),
         selectedCandidates: candidates,
         selectedThemes: this.props.user.themes,
       });
@@ -94,7 +94,7 @@ class Result extends React.Component {
         answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
       })),
       quizz
-    ).sort(() => (Math.random() > 0.5 ? -1 : 1));
+    );
 
     return (
       <>
