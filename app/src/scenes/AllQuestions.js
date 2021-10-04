@@ -8,16 +8,16 @@ const AllQuestions = ({ quizz }) => (
       <SubContainer>
         <Title>Toutes les questions</Title>
         <SubTitle>
-          Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une
-          question à ajouter, contactez-nous !
+          Vous pouvez voir ici toutes les questions, si vous avez une remarque à
+          faire, ou une question à ajouter, contactez-nous !
         </SubTitle>
         {quizz.map((theme) => (
           <details key={theme._id}>
-            <summary>{theme.fr}</summary>
+            <ThemeTitle>{theme.fr}</ThemeTitle>
             <div>
               {theme.questions.map((question) => (
                 <details key={question._id}>
-                  <summary>{question.fr}</summary>
+                  <QuestionTitle>{question.fr}</QuestionTitle>
                   <ol>
                     {question.answers.map((answer) => (
                       <li key={answer}>{answer}</li>
@@ -48,11 +48,7 @@ const BackgroundContainer = styled.div`
 
   details {
     margin-bottom: 50px;
-    width: 100%;
-  }
-
-  details > summary {
-    font-size: 1.5em;
+    width: 1024px;
   }
 
   h2 {
@@ -73,6 +69,15 @@ const BackgroundContainer = styled.div`
   li {
     margin-bottom: 5px;
   }
+`;
+
+const ThemeTitle = styled.summary`
+  font-size: 20px;
+`;
+
+const QuestionTitle = styled.summary`
+  margin-left: 20px;
+  font-size: 15px;
 `;
 
 const SubContainer = styled.div`
