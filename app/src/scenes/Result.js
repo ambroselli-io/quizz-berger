@@ -99,14 +99,16 @@ class Result extends React.Component {
     return (
       <>
         <BackgroundContainer>
-          <SwitchButtons onClick={this.switchCharts}>
-            Changer de graphique
-          </SwitchButtons>
+          <SwitchButtonsContainer>
+            <SwitchButtons onClick={this.switchCharts}>
+              Changer de graphique
+            </SwitchButtons>
+          </SwitchButtonsContainer>
           <Container>
             <LeftContainer>
               <TitleContainer>
                 <Title>Vos résultats</Title>
-                <InfoIcon src={infoIcon}></InfoIcon>
+                {/* <InfoIcon src={infoIcon}></InfoIcon> */}
               </TitleContainer>
               <OpenButtonContainer>
                 <SubTitle>Selectionnez vos candidats</SubTitle>
@@ -204,6 +206,11 @@ const BackgroundContainer = styled.div`
   ${media.mobile`
   padding: 40px 10px 1px 10px;
 `}
+`;
+
+const SwitchButtonsContainer = styled.div`
+  margin: 0 auto;
+  max-width: 1024px;
 `;
 
 const SwitchButtons = styled.div`
