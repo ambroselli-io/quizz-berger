@@ -11,11 +11,6 @@ const ContactModal = ({ isActive, onCloseContactModal }) => {
     const mail = e.target[1].value;
     const message = e.target[2].value;
     const location = window.location.href;
-    console.log(name);
-    console.log(mail);
-    console.log(message);
-    console.log(location);
-
     // const response = await API.post({
     //   path: "",
     //   body: { pseudo, password },
@@ -35,25 +30,14 @@ const ContactModal = ({ isActive, onCloseContactModal }) => {
           <ModalInnerContainer>
             <ContactForm onSubmit={onFormSubmit}>
               <FormLabel>NAME*</FormLabel>
-              <FormInput
-                type="text"
-                name="name"
-                autocomplete="name"
-                placeholder="Your name"
-              />
+              <FormInput type="text" name="name" autocomplete="name" placeholder="Your name" />
               <FormLabel>EMAIL</FormLabel>
-              <FormInput
-                type="email"
-                name="email"
-                autocomplete="email"
-                placeholder="Your mail"
-              />
+              <FormInput type="email" name="email" autocomplete="email" placeholder="Your mail" />
               <FormLabel>YOUR MESSAGE</FormLabel>
               <FormTextArea
                 name="comment"
                 rows="10"
-                placeholder="A comment ? A suggestion ?"
-              ></FormTextArea>
+                placeholder="A comment ? A suggestion ?"></FormTextArea>
               <SubmitButton type="submit">Envoyer</SubmitButton>
             </ContactForm>
           </ModalInnerContainer>

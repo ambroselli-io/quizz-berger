@@ -28,16 +28,14 @@ const colors = [
   "#000000",
 ];
 
-const PolarChart = ({ partyScores, selectedThemes, quizz }) => {
-  const scores = partyScores
+const PolarChart = ({ candidate, selectedThemes, quizz }) => {
+  const scores = candidate.scorePerThemes
     .filter((score) => selectedThemes.includes(score.themeId))
     .map((score) => score.score);
 
   const themes = selectedThemes.map((themeId) => {
     return quizz.find((quizztheme) => quizztheme._id === themeId).fr;
   });
-
-  console.log({ scores });
 
   const data = {
     labels: themes,
@@ -89,7 +87,7 @@ const PolarChart = ({ partyScores, selectedThemes, quizz }) => {
   return (
     <>
       <ChartContainer>
-        <CandidateTitle>{partyScores[0].pseudo}</CandidateTitle>
+        <CandidateTitle>{candidate?.pseudo}</CandidateTitle>
         <PolarArea data={data} options={options} />
       </ChartContainer>
     </>

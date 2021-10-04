@@ -5,19 +5,13 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quiz
 
   return candidatesAnswers.map((candidate) => {
     const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
-    const scorePerThemes = getScorePerTheme(candidateScores);
-    const results = scorePerThemes.map((theme) => {
-      return {
+    return {
+      ...candidate,
+      scorePerThemes: getScorePerTheme(candidateScores).map((theme) => ({
         themeId: theme.themeId,
         score: Math.round((theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100),
-        pseudo: candidate.pseudo,
-        firstName: candidate.firstName,
-        lastName: candidate.lastName,
-        partyName: candidate.partyName,
-        isCandidate: candidate.isCandidate,
-      };
-    });
-    return results;
+      })),
+    };
   });
 };
 
@@ -48,13 +42,11 @@ const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) 
   });
 
 const getScorePerTheme = (candidateScores) => {
-  console.log({ candidateScores });
   return candidateScores.reduce((scoresPerTheme, currentAnswer) => {
     const existingThemeScore = scoresPerTheme.find(
       (scorePerTheme) => scorePerTheme.themeId === currentAnswer.themeId
     );
 
-    console.log({ existingThemeScore });
     if (existingThemeScore) {
       return scoresPerTheme.map((themeScore) => {
         if (themeScore.themeId === currentAnswer.themeId) {

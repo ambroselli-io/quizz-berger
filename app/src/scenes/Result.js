@@ -94,15 +94,13 @@ class Result extends React.Component {
         answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
       })),
       quizz
-    );
+    ).sort(() => (Math.random() > 0.5 ? -1 : 1));
 
     return (
       <>
         <BackgroundContainer>
           <SwitchButtonsContainer>
-            <SwitchButtons onClick={this.switchCharts}>
-              Changer de graphique
-            </SwitchButtons>
+            <SwitchButtons onClick={this.switchCharts}>Changer de graphique</SwitchButtons>
           </SwitchButtonsContainer>
           <Container>
             <LeftContainer>
@@ -118,24 +116,18 @@ class Result extends React.Component {
                       showCandidates: !prevState.showCandidates,
                     }))
                   }
-                  isActive={showCandidates}
-                >
+                  isActive={showCandidates}>
                   &#9664;
                 </OpenButton>
               </OpenButtonContainer>
               <CandidateButtonContainer isActive={showCandidates}>
                 {candidatesScorePerThemes.map((candidate) => (
                   <CandidateButton
-                    key={candidate[0].pseudo}
-                    data-candidate={candidate[0].pseudo}
-                    isActive={
-                      !!selectedCandidates.find(
-                        (c) => c === candidate[0].pseudo
-                      )
-                    }
-                    onClick={this.setSelectedCandidates}
-                  >
-                    {candidate[0].pseudo}
+                    key={candidate?.pseudo}
+                    data-candidate={candidate?.pseudo}
+                    isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
+                    onClick={this.setSelectedCandidates}>
+                    {candidate?.pseudo}
                   </CandidateButton>
                 ))}
               </CandidateButtonContainer>
@@ -147,8 +139,7 @@ class Result extends React.Component {
                       showThemes: !prevState.showThemes,
                     }))
                   }
-                  isActive={showThemes}
-                >
+                  isActive={showThemes}>
                   &#9664;
                 </OpenButton>
               </OpenButtonContainer>
@@ -160,8 +151,7 @@ class Result extends React.Component {
                       key={userT}
                       data-themeid={theme._id}
                       isActive={!!selectedThemes.find((c) => c === theme._id)}
-                      onClick={this.setSelectedThemes}
-                    >
+                      onClick={this.setSelectedThemes}>
                       {theme.fr}
                     </CandidateButton>
                   );
@@ -180,16 +170,14 @@ class Result extends React.Component {
               )}
               {!showRadarChart &&
                 candidatesScorePerThemes
-                  .filter((partyScores) =>
-                    selectedCandidates.includes(partyScores[0].pseudo)
-                  )
-                  .map((partyScores) => {
+                  .filter((candidate) => selectedCandidates.includes(candidate?.pseudo))
+                  .map((candidate) => {
                     return (
                       <PolarChart
                         quizz={quizz}
-                        key={`${partyScores[0].pseudo}-${selectedCandidates.length}-${selectedThemes.length}`}
+                        key={`${candidate?.pseudo}-${selectedCandidates.length}-${selectedThemes.length}`}
                         selectedThemes={selectedThemes}
-                        partyScores={partyScores}
+                        candidate={candidate}
                       />
                     );
                   })}

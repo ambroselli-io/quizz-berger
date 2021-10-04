@@ -14,15 +14,11 @@ import Layout from "./components/Layout";
 const App = () => {
   const [user, setUserState] = useState({});
   const [quizz, setQuizz] = useState([]);
-  const [needLoading, setNeedLoading] = useState(
-    !!document.cookie.includes("jwt")
-  );
+  const [needLoading, setNeedLoading] = useState(!!document.cookie.includes("jwt"));
   const [loading, setLoading] = useState(!!document.cookie.includes("jwt"));
   const [answersList, setAnswersList] = useState([]);
   const location = useLocation();
-  const [themeId, questionId] = location.pathname
-    .split("/")
-    .filter((_, i) => i > 1);
+  const [themeId, questionId] = location.pathname.split("/").filter((_, i) => i > 1);
 
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState(
     answersList.find((a) => a.questionId === questionId)?.answerIndex
@@ -32,8 +28,7 @@ const App = () => {
     const response = await API.get({ path: "/quizz" });
     if (!response.ok)
       return alert(
-        response.error ||
-          "Erreur lors de l'obtention du quizz, veuillez réessayer plus tard"
+        response.error || "Erreur lors de l'obtention du quizz, veuillez réessayer plus tard"
       );
     setQuizz(response.data);
   };
@@ -51,9 +46,7 @@ const App = () => {
     const response = await API.getWithCreds({ path: "/answer" });
     if (response.ok) {
       setAnswersList(response.data);
-      setCurrentAnswerIndex(
-        response.data.find((a) => a.questionId === questionId)?.answerIndex
-      );
+      setCurrentAnswerIndex(response.data.find((a) => a.questionId === questionId)?.answerIndex);
     }
   };
 
@@ -65,14 +58,10 @@ const App = () => {
   };
 
   const setAnswersListState = (newAnswer) => {
-    const existingAnswer = answersList.find(
-      (a) => a.questionId === newAnswer.questionId
-    );
+    const existingAnswer = answersList.find((a) => a.questionId === newAnswer.questionId);
     if (!!existingAnswer) {
       setAnswersList(
-        answersList.map((a) =>
-          a.questionId === newAnswer.questionId ? newAnswer : a
-        )
+        answersList.map((a) => (a.questionId === newAnswer.questionId ? newAnswer : a))
       );
     } else {
       setAnswersList([...answersList, newAnswer]);
@@ -109,38 +98,26 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    // console.log("new index !", answersList.find((a) => a.questionId === questionId)?.answerIndex);
-    setCurrentAnswerIndex(
-      answersList.find((a) => a.questionId === questionId)?.answerIndex
-    );
+    setCurrentAnswerIndex(answersList.find((a) => a.questionId === questionId)?.answerIndex);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [themeId, questionId]);
 
   if (needLoading) return <div>Loading...</div>;
-
-  // console.log({ currentAnswerIndex });
 
   return (
     <>
       <GlobalStyles />
       <Layout loading={loading} user={user} setUser={setUser}>
         <Switch>
-          <Route
-            path="/home"
-            render={(props) => <Home user={user} setUser={setUser} />}
-          />
+          <Route path="/home" render={(props) => <Home user={user} setUser={setUser} />} />
           <Route
             path="/login"
-            render={(props) => (
-              <LoginPage {...props} user={user} setUser={setUser} />
-            )}
+            render={(props) => <LoginPage {...props} user={user} setUser={setUser} />}
           />
           <RestrictedRoute
             path="/theme"
             user={user}
-            Component={(props) => (
-              <ThemeSelect {...props} setUser={setUser} quizz={quizz} />
-            )}
+            Component={(props) => <ThemeSelect {...props} setUser={setUser} quizz={quizz} />}
           />
           <RestrictedRoute
             path="/question/:themeId/:questionId"
@@ -160,17 +137,13 @@ const App = () => {
             path="/result"
             exact
             user={user}
-            Component={(props) => (
-              <Result {...props} setUser={setUser} quizz={quizz} />
-            )}
+            Component={(props) => <Result {...props} setUser={setUser} quizz={quizz} />}
           />
           <RestrictedRoute
             path="/"
             exact
             user={user}
-            Component={() => (
-              <Redirect to="/theme" setUser={setUser} quizz={quizz} />
-            )}
+            Component={() => <Redirect to="/theme" setUser={setUser} quizz={quizz} />}
           />
         </Switch>
       </Layout>
@@ -183,11 +156,7 @@ const RestrictedRoute = ({ Component, user, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        user?._id ? (
-          <Component {...props} user={user} />
-        ) : (
-          <Redirect to="/login" />
-        )
+        user?._id ? <Component {...props} user={user} /> : <Redirect to="/login" />
       }
     />
   );
