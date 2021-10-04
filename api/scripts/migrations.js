@@ -1,5 +1,5 @@
 require("../src/mongo");
 require("dotenv").config({ path: ".env" });
 const mongoose = require("mongoose");
-
-console.log(mongoose.Types.ObjectId());
+const UserObject = require("../src/models/user");
+const AnswerObject = require("../src/models/answer");

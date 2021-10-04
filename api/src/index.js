@@ -17,6 +17,7 @@ const app = express();
 if (process.env.NODE_ENV === "development") {
   app.use(logger("dev"));
   require("../scripts/migrations");
+  // require("../scripts/rebuild-quizz-ids");
 }
 
 const whitelist = WHITE_LIST_DOMAINS.split(",").map((domain) => `https://${domain}`);
@@ -48,6 +49,7 @@ app.use(cookieParser());
 app.use("/user", require("./controllers/user"));
 app.use("/answer", require("./controllers/answer"));
 app.use("/quizz-builder", require("./controllers/quizz-builder"));
+app.use("/quizz", require("./controllers/quizz"));
 
 const now = new Date().toISOString();
 

@@ -10,7 +10,7 @@ router.get(
     if (process.env.NODE_ENV !== "development") return res.status(200).send("forbidden");
     const html = fs.readFileSync(path.resolve("./src/views/quizz-builder.html"), "utf8");
 
-    const quizz = JSON.parse(fs.readFileSync(path.resolve("../app/src/quizz.json"), "utf8"));
+    const quizz = JSON.parse(fs.readFileSync(path.resolve("./data/quizz.json"), "utf8"));
 
     const currentTheme = quizz[req.params.themeIndex || 0];
 
@@ -61,14 +61,14 @@ router.post(
 
     const { body } = req;
 
-    const quizz = JSON.parse(fs.readFileSync(path.resolve("../app/src/quizz.json"), "utf8"));
+    const quizz = JSON.parse(fs.readFileSync(path.resolve("./data/quizz.json"), "utf8"));
 
     quizz[req.params.themeIndex || 0].fr = body.themeName;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].fr = body.questionName;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].answers = body.answers;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].scores = body.scores;
 
-    fs.writeFileSync(path.resolve("../app/src/quizz.json"), JSON.stringify(quizz, null, 2));
+    fs.writeFileSync(path.resolve("./data/quizz.json"), JSON.stringify(quizz, null, 2));
 
     res.status(200).send({ ok: true });
   })
