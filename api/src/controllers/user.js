@@ -15,11 +15,7 @@ const setCookie = (req, res, user) => {
 
   const tokenConfig = {
     // domain:
-    //   production.env.NODE_ENV === "development"
-    //     ? req.headers.origin
-    //     : req.headers.origin.includes("fr")
-    //     ? "quizz-du-berger.fr"
-    //     : "quizz-du-berger.com",
+    //   process.env.NODE_ENV === "development" ? req.headers.origin : req.headers.origin.includes("fr") ? "quizz-du-berger.fr" : "quizz-du-berger.com",
     maxAge: JWT_MAX_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
@@ -99,6 +95,8 @@ router.put(
 
     user.set(userUpdate);
     await user.save();
+
+    console.log(req.body.themes, user.themes);
 
     res.status(200).send({ ok: true, data: user.me() });
   })

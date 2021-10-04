@@ -2,71 +2,52 @@ import React from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
-class Signup extends React.Component {
-  state = {
-    pseudo: "",
-    password: "",
-    passwordConfirm: "",
-    candidate: false,
-  };
-
-  onChangeInput = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  signupRequest = async (e) => {
+const Signup = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
+  const signupRequest = async (e) => {
     e.preventDefault();
-
-    const { pseudo, password, passwordConfirm, candidate } = this.state;
-    const { onLogin } = this.props;
 
     const response = await API.post({
       path: "/user/signup",
-      body: { pseudo, password, passwordConfirm, candidate },
+      body: { pseudo, password, passwordConfirm },
     });
     if (!response.ok) return alert(response.error);
     onLogin(response.data);
   };
 
-  render() {
-    return (
-      <>
-        <SignupSubContainer>
-          <SignupForm
-            onSubmit={this.signupRequest}
-            pseudo={this.state}
-            id='sign-up-form'
-          >
-            <FormLabel>Pseudo</FormLabel>
-            <FormInput
-              type='text'
-              name='pseudo'
-              placeholder='Votre pseudo'
-              onChange={this.onChangeInput}
-            />
-            <FormLabel>Mot de passe</FormLabel>
-            <FormInput
-              type='password'
-              name='password'
-              placeholder='Votre mot de passe'
-              onChange={this.onChangeInput}
-            />
-            <FormLabel>Confirmation du mot de passe</FormLabel>
-            <FormInput
-              type='password'
-              name='passwordConfirm'
-              placeholder='Confirmez votre mot de passe'
-              onChange={this.onChangeInput}
-            />
-            <SignupButton type='submit'>S'inscrire !</SignupButton>
-          </SignupForm>
-        </SignupSubContainer>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <SignupSubContainer>
+        <SignupForm onSubmit={signupRequest} id="sign-up-form">
+          <FormLabel>Pseudo</FormLabel>
+          <FormInput
+            type="text"
+            name="pseudo"
+            placeholder="Votre pseudo"
+            onChange={onChange}
+            value={pseudo}
+          />
+          <FormLabel>Mot de passe</FormLabel>
+          <FormInput
+            type="password"
+            name="password"
+            placeholder="Votre mot de passe"
+            onChange={onChange}
+            value={password}
+          />
+          <FormLabel>Confirmation du mot de passe</FormLabel>
+          <FormInput
+            type="password"
+            name="passwordConfirm"
+            placeholder="Confirmez votre mot de passe"
+            onChange={onChange}
+            value={passwordConfirm}
+          />
+          <SignupButton type="submit">S'inscrire !</SignupButton>
+        </SignupForm>
+      </SignupSubContainer>
+    </>
+  );
+};
 
 const SignupSubContainer = styled.div`
   padding: 24px;
@@ -98,7 +79,9 @@ const FormInput = styled.input`
   border-radius: 2px;
   font-size: 16px;
   font-weight: 300;
-  color: rgba(17, 24, 39, 0.4);
+  &:placeholder {
+    color: rgba(17, 24, 39, 0.4);
+  }
 `;
 
 const SignupButton = styled.button`

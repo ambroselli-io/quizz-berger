@@ -50,8 +50,8 @@
     <p>
       The first row is the party's answer, the first column is my answer. <br />
       Take the first column, second row : if I answer is this one, <br />
-      <b>1. how close is the party to what I think ?</b><br />
-      <b>2. how far is the party to what I think compared to the other answers ?</b><br />
+      <strong>1. how close is the party to what I think ?</strong><br />
+      <strong>2. how far is the party to what I think compared to the other answers ?</strong><br />
     </p>
     <table id="scores">
       <thead>
@@ -134,5 +134,13 @@
     document.getElementById("next-question").onclick = function () {
       window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex + 1}`;
     };
+
+    window.addEventListener("keydown", function (e) {
+      if (event.metaKey && event.keyCode == 83) {
+        console.log("Hey! Ctrl+S event captured!");
+        event.preventDefault();
+        save();
+      }
+    });
   </script>
 </html>

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const MODELNAME = "User";
 
 const Schema = new mongoose.Schema({
-  pseudo: { type: String, required: true, lowercase: true, trim: true, unique: true },
+  pseudo: { type: String, required: true, trim: true, unique: true },
   password: { type: String },
   themes: { type: [String], default: [] },
   createdAt: { type: Date, default: Date.now },

@@ -1,59 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import API from "../services/api";
 
-class Login extends React.Component {
-  state = {
-    pseudo: "",
-    password: "",
-  };
+const Login = ({ onLogin, onChange, pseudo, password }) => {
+  const [onLoading, setOnLoading] = useState(false);
 
-  onChangeInput = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  loginRequest = async (e) => {
+  const loginRequest = async (e) => {
     e.preventDefault();
-
-    const { pseudo, password } = this.state;
-    const { onLogin } = this.props;
-
     const response = await API.post({
       path: "/user/login",
       body: { pseudo, password },
     });
-    if (!response.ok) return alert(response.error);
+    if (!response?.ok) {
+      setOnLoading(true);
+      return alert(response.error);
+    }
     onLogin(response.data);
   };
 
-  render() {
-    return (
-      <>
-        <SignupSubContainer>
-          <LoginForm onSubmit={this.loginRequest}>
-            <FormLabel>Pseudo</FormLabel>
-            <FormInput
-              type="text"
-              name="pseudo"
-              placeholder="Votre pseudo"
-              onChange={this.onChangeInput}
-            />
-            <FormLabel>Mot de passe</FormLabel>
-            <FormInput
-              type="password"
-              name="password"
-              placeholder="Votre mot de passe"
-              onChange={this.onChangeInput}
-            />
-            <LoginButton type="submit">Se connecter</LoginButton>
-          </LoginForm>
-        </SignupSubContainer>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <SignupSubContainer>
+        <LoginForm onSubmit={loginRequest}>
+          <FormLabel>Pseudo</FormLabel>
+          <FormInput
+            type="text"
+            name="pseudo"
+            placeholder="Votre pseudo"
+            onChange={onChange}
+            value={pseudo}
+          />
+          <FormLabel>Mot de passe</FormLabel>
+          <FormInput
+            type="password"
+            name="password"
+            placeholder="Votre mot de passe"
+            onChange={onChange}
+            value={password}
+          />
+          <LoginButton type="submit">Se connecter</LoginButton>
+        </LoginForm>
+      </SignupSubContainer>
+    </>
+  );
+};
 
 const SignupSubContainer = styled.div`
   padding: 24px;
@@ -95,9 +85,12 @@ const LoginButton = styled.button`
   height: 44px;
   font-weight: normal;
   font-size: 16px;
-  background: #facc15;
+  background: ${(props) =>
+    props.onLoading ? "rgb(233, 233, 233)" : "#facc15"};
+  color: ${(props) => (props.onLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
   border-radius: 44px;
   border: none;
+  cursor: ${(props) => (props.onLoading ? "auto" : "pointer")};
 `;
 
 export default Login;
