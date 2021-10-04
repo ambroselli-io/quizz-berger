@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
-import { media } from "../styles/mediaQueries";
+import { media, minMedia } from "../styles/mediaQueries";
 import RadarChart from "../components/RadarChart";
 import PolarChart from "../components/PolarChart";
 import API from "../services/api";
@@ -190,13 +190,14 @@ class Result extends React.Component {
 }
 
 const BackgroundContainer = styled.div`
-  height: calc(100vh - 80px);
   padding: 80px 10px 0 10px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  ${minMedia.desktop`
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  `}
   ${media.mobile`
     padding: 40px 10px 1px 10px;
-    height: calc(100vh - 60px);
   `}
 `;
 
@@ -215,14 +216,16 @@ const SwitchButtons = styled.div`
 `;
 
 const Container = styled.div`
-  height: 100%;
   margin: 0 auto;
   max-width: 1024px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow-x: hidden;
-  overflow-y: auto;
+  ${minMedia.desktop`
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  `}
   ${media.mobile`
     flex-direction: column;
 `}
@@ -230,15 +233,20 @@ const Container = styled.div`
 
 const LeftContainer = styled.div`
   position: relative;
-  width: 50%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
   > p {
     margin-bottom: 20px;
     font-size: 16px;
     color: #111827;
   }
+  ${minMedia.desktop`
+  width: 50%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  `}
+  ${media.mobile`
+      width: 100%;
+  `}
 `;
 
 const TitleContainer = styled.div`
@@ -321,10 +329,12 @@ const CandidateButton = styled.button`
 `;
 
 const ChartsContainer = styled.div`
+  ${minMedia.desktop`
   width: 50%;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  `}
 `;
 
 export default Result;
