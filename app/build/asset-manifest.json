@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.5fa24215.chunk.js",
-    "main.js.map": "/static/js/main.5fa24215.chunk.js.map",
+    "main.js": "/static/js/main.5c836cf2.chunk.js",
+    "main.js.map": "/static/js/main.5c836cf2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8f78b227.js",
     "runtime-main.js.map": "/static/js/runtime-main.8f78b227.js.map",
     "static/js/2.827f8239.chunk.js": "/static/js/2.827f8239.chunk.js",
@@ -12,7 +12,6 @@
     "static/js/2.827f8239.chunk.js.LICENSE.txt": "/static/js/2.827f8239.chunk.js.LICENSE.txt",
     "static/media/burgerNav.fab2060d.svg": "/static/media/burgerNav.fab2060d.svg",
     "static/media/cross.7517a689.svg": "/static/media/cross.7517a689.svg",
-    "static/media/info.c242312f.svg": "/static/media/info.c242312f.svg",
     "static/media/left-arrow.57fb1fe0.svg": "/static/media/left-arrow.57fb1fe0.svg",
     "static/media/logo.959ac52b.svg": "/static/media/logo.959ac52b.svg",
     "static/media/right-arrow.29b5330c.svg": "/static/media/right-arrow.29b5330c.svg"
@@ -20,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.8f78b227.js",
     "static/js/2.827f8239.chunk.js",
-    "static/js/main.5fa24215.chunk.js"
+    "static/js/main.5c836cf2.chunk.js"
   ]
 }
