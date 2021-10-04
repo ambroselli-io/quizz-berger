@@ -10,6 +10,7 @@ import Quizz from "./scenes/Quizz";
 import Result from "./scenes/Result";
 import API from "./services/api";
 import Layout from "./components/Layout";
+import AllQuestions from "./scenes/AllQuestions";
 
 const App = () => {
   const [user, setUserState] = useState({});
@@ -138,6 +139,12 @@ const App = () => {
             exact
             user={user}
             Component={(props) => <Result {...props} setUser={setUser} quizz={quizz} />}
+          />
+          <Route
+            path="/all-questions"
+            exact
+            user={user}
+            render={(props) => <AllQuestions {...props} quizz={quizz} />}
           />
           <RestrictedRoute
             path="/"
