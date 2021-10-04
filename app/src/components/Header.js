@@ -11,7 +11,7 @@ import burgerNav from "../images/burgerNav.svg";
 import ContactModal from "./ContactModal";
 
 const Header = ({ loading, user, setUser }) => {
-  const [showLogoLoading, setShowLogoLoading] = useState(true);
+  const [showLogoLoading, setShowLogoLoading] = useState(false);
   const [showLogoKey, setShowLogoKey] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
