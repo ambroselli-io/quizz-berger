@@ -8,19 +8,26 @@ const AllQuestions = ({ quizz }) => (
       <SubContainer>
         <Title>Toutes les questions</Title>
         <SubTitle>
-          Vous pouvez voir ici toutes les questions, si vous avez une remarque à
-          faire, ou une question à ajouter, contactez-nous !
+          Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une
+          question à ajouter, contactez-nous !
         </SubTitle>
-        {quizz.map((theme) => (
-          <details key={theme._id}>
-            <ThemeTitle>{theme.fr}</ThemeTitle>
+        {quizz.map((theme, index) => (
+          <details open key={theme._id}>
+            <ThemeTitle>
+              {"ABCDEFGHIJKLMNOPQRST"[index]} - {theme.fr}
+            </ThemeTitle>
             <div>
-              {theme.questions.map((question) => (
-                <details key={question._id}>
-                  <QuestionTitle>{question.fr}</QuestionTitle>
+              {theme.questions.map((question, questionIndex) => (
+                <details open key={question._id}>
+                  <QuestionTitle>
+                    {"ABCDEFGHIJKLMNOPQRST"[index]}
+                    {questionIndex + 1} - {question.fr}
+                  </QuestionTitle>
                   <ol>
-                    {question.answers.map((answer) => (
-                      <li key={answer}>{answer}</li>
+                    {question.answers.map((answer, answerIndex) => (
+                      <li key={answer}>
+                        {answerIndex + 1}. {answer}
+                      </li>
                     ))}
                   </ol>
                 </details>
@@ -51,6 +58,10 @@ const BackgroundContainer = styled.div`
     width: 1024px;
   }
 
+  summary {
+    margin-bottom: 20px;
+  }
+
   h2 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -65,6 +76,8 @@ const BackgroundContainer = styled.div`
   ol {
     margin-left: 30px;
     margin-bottom: 5px;
+    font-size: 15px;
+    list-style-type: none;
   }
   li {
     margin-left: 30px;
@@ -74,11 +87,12 @@ const BackgroundContainer = styled.div`
 
 const ThemeTitle = styled.summary`
   font-size: 20px;
+  font-weight: bold;
 `;
 
 const QuestionTitle = styled.summary`
   margin-left: 20px;
-  font-size: 15px;
+  font-size: 16px;
 `;
 
 const SubContainer = styled.div`
