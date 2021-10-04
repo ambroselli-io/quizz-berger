@@ -34,19 +34,19 @@ const ContactModal = ({ isActive, onCloseContactModal }) => {
           </TitleContainer>
           <ModalInnerContainer>
             <ContactForm onSubmit={onFormSubmit}>
-              <FormLabel>NAME</FormLabel>
+              <FormLabel>NAME*</FormLabel>
               <FormInput
                 type="text"
                 name="name"
                 autocomplete="name"
-                placeholder="Your name*"
+                placeholder="Your name"
               />
               <FormLabel>EMAIL</FormLabel>
               <FormInput
                 type="email"
                 name="email"
                 autocomplete="email"
-                placeholder="Your mail*"
+                placeholder="Your mail"
               />
               <FormLabel>YOUR MESSAGE</FormLabel>
               <FormTextArea
