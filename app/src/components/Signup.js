@@ -48,7 +48,7 @@ const Signup = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
             value={passwordConfirm}
           />
           <SignupButton isLoading={isLoading} type="submit">
-            S'inscrire !
+            {isLoading ? "Chargement..." : "S'inscrire !"}
           </SignupButton>
         </SignupForm>
       </SignupSubContainer>

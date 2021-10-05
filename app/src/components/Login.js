@@ -40,7 +40,7 @@ const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
             value={password}
           />
           <LoginButton isLoading={isLoading} type="submit">
-            Se connecter
+            {isLoading ? "Chargement..." : "Se connecter"}
           </LoginButton>
           <SignupLink onClick={onGoToSignup}>
             Pas encore de mot de passe ?
