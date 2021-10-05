@@ -21,7 +21,6 @@ class Footer extends React.Component {
   onOpenLegalModal = (e) => {
     this.setState({ showLegalModal: true });
     document.body.style.overflow = "hidden";
-    console.log(e);
   };
 
   onCloseContactModal = (e) => {
@@ -50,12 +49,19 @@ class Footer extends React.Component {
             </Link>
           </LeftContainer>
           <FooterMenu>
-            <FooterMenuTab onClick={this.onOpenContactModal}>Nous contacter</FooterMenuTab>
-            <FooterMenuTab onClick={this.onOpenLegalModal}>Mentions légales</FooterMenuTab>
+            <FooterMenuTab onClick={this.onOpenContactModal}>
+              Nous contacter
+            </FooterMenuTab>
+            <FooterMenuTab onClick={this.onOpenLegalModal}>
+              Mentions légales
+            </FooterMenuTab>
           </FooterMenu>
         </Container>
         {/* -- MODAL -- */}
-        <LegalMentionModalBackground isActive={showLegalModal} onClick={this.onCloseLegalModal}>
+        <LegalMentionModalBackground
+          isActive={showLegalModal}
+          onClick={this.onCloseLegalModal}
+        >
           <LegalMentionModalContainer>
             <TitleContainer>
               <SubTitle>Mentions Légales</SubTitle>
@@ -63,33 +69,38 @@ class Footer extends React.Component {
             </TitleContainer>
             <LegalMentionModalInnerContainer>
               <p>
-                Le Quizz du Berger a été développé par Arnaud Ambroselli et Roméo Vincent dans le
-                but d'encourager les gens à conforter ou de remettre en question leurs idées
-                politiques.
+                Le Quizz du Berger a été développé par Arnaud Ambroselli et
+                Roméo Vincent dans le but d'encourager les gens à conforter ou
+                de remettre en question leurs idées politiques.
                 <br />
                 <br />
-                Toutes les réponses des utilisateurs sont anonymes et ne sont utilisées à aucun
-                autre usage que celui pour l'utilisateur de les consulter. Notre action n'a aucun
-                but lucratif, elle est même une perte financière sèche et assumée.
+                Toutes les réponses des utilisateurs sont anonymes et ne sont
+                utilisées à aucun autre usage que celui pour l'utilisateur de
+                les consulter. Notre action n'a aucun but lucratif, elle est
+                même une perte financière sèche et assumée.
                 <br />
                 <br />
-                Nous essayons aussi de garder une neutralité vis à vis des candidats, des questions
-                et des réponses. Si vous avez une remarque à faire sur un aspect quelconque du quizz
-                - contenu des questions, réponses des candidats, ou même design du quizz -, nous
-                serions heureux d'avoir vos retours, n'hésitez pas à nous contacter.
+                Nous essayons aussi de garder une neutralité vis à vis des
+                candidats, des questions et des réponses. Si vous avez une
+                remarque à faire sur un aspect quelconque du quizz - contenu des
+                questions, réponses des candidats, ou même design du quizz -,
+                nous serions heureux d'avoir vos retours, n'hésitez pas à nous
+                contacter.
                 <br />
                 <br />
-                Si vous êtes vous-même candidat ou un parti politique et que les réponses que nous
-                avons affiché en votre nom ne vous conviennent pas, contactez-nous aussi, nous
-                serons heureux de faire les modifications que vous souhaitez.
+                Si vous êtes vous-même candidat ou un parti politique et que les
+                réponses que nous avons affiché en votre nom ne vous conviennent
+                pas, contactez-nous aussi, nous serons heureux de faire les
+                modifications que vous souhaitez.
                 <br />
                 <br />
-                Ce projet est open-source, si vous souhaitez y participer, venez le faire sur github
-                : <br />
+                Ce projet est open-source, si vous souhaitez y participer, venez
+                le faire sur github : <br />
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/ambroselli-io/quizz-berger">
+                  href="https://github.com/ambroselli-io/quizz-berger"
+                >
                   https://github.com/ambroselli-io/quizz-berger
                 </a>
               </p>

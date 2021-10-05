@@ -24,18 +24,18 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     );
     let nextThemeId;
     let nextQuestionId;
-    // middle question of current theme
+
     if (currentQuestionIndex < currentThemeQuestions.length - 1) {
       nextThemeId = themeId;
       nextQuestionId = currentThemeQuestions[currentQuestionIndex + 1]._id;
       return history.push(`/question/${nextThemeId}/${nextQuestionId}`);
     }
-    // last theme
+
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     if (currentThemeIndex === user.themes.length - 1) {
       return history.push("/result");
     }
-    // got to next theme
+
     nextThemeId = user.themes[currentThemeIndex + 1];
     const nextTheme = quizz.find((theme) => theme._id === nextThemeId);
     nextQuestionId = nextTheme.questions[0]._id;
@@ -48,23 +48,23 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     );
     let previousThemeId;
     let previousQuestionId;
-    // // middle question of current theme
+
     if (currentQuestionIndex > 0) {
       previousThemeId = themeId;
       previousQuestionId = currentTheme.questions[currentQuestionIndex - 1]._id;
       return history.push(`/question/${previousThemeId}/${previousQuestionId}`);
     }
-    // // last question of current theme
+
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     const firstUserTheme = user.themes[0];
     const firstUserThemeIndex = quizz.findIndex(
       (t) => t._id === firstUserTheme
     );
-    // last theme
+
     if (currentThemeIndex <= firstUserThemeIndex) {
       return history.push("/theme");
     }
-    // got to previous themee
+
     previousThemeId = user.themes[currentThemeIndex - 1];
     const previousTheme = quizz.find((theme) => theme._id === previousThemeId);
     const previousThemeLastQuestionIndex = previousTheme.questions.length - 1;
@@ -219,8 +219,8 @@ const ThemeHeaderContainer = styled.div`
   padding: 0 15px 0 15px;
   justify-content: space-evenly;
   flex-direction: column;
-  max-height: 126px; //
-  min-height: 90px; //
+  max-height: 126px; 
+  min-height: 90px;
   height: 110px;
 `}
 `;
@@ -271,13 +271,6 @@ const BackgroundContainer = styled.div`
   padding: 40px 10px 100px 10px;
 `};
 `;
-
-// const QuestionContainer = styled.div`
-//   width: 100%;
-//   ${media.mobile`
-//   padding-bottom: 60px;
-// `};
-// `;
 
 const QuestionTitle = styled.h2`
   margin-bottom: 40px;

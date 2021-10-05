@@ -27,7 +27,10 @@ const Header = ({ loading, user, setUser }) => {
   };
 
   const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
+    loadingIntervalRef.current = setInterval(
+      () => setShowLogoKey((k) => k + 1),
+      1000
+    );
   };
 
   useEffect(() => {
@@ -65,8 +68,6 @@ const Header = ({ loading, user, setUser }) => {
   useEffect(() => {
     setMenuIsOpen(false);
   }, [history.location.key]);
-
-  // console.log(showLogoLoading);
 
   return (
     <>
@@ -123,7 +124,10 @@ const Header = ({ loading, user, setUser }) => {
                 onOpen={() => setMenuIsOpen(true)}
                 onClose={() => setMenuIsOpen(false)}
                 styles={burgerNavStyles}
-                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
+                customBurgerIcon={
+                  <img src={burgerNav} alt="mobile navigation menu" />
+                }
+              >
                 <BurgerNavHeaderContainer>
                   <HeaderLogo />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>

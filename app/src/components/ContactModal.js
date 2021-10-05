@@ -33,7 +33,7 @@ const ContactModal = ({
     De: ${pseudo}
     Email: ${email}
     Message: ${message}
-    URL: ${window.location.href}
+    URL: ${window.location.pathname}
     user: ${JSON.stringify(user, null, 2)}
     `;
 
