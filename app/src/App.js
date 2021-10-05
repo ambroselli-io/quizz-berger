@@ -109,12 +109,12 @@ const App = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // useEffect(() => {
-  //   setCurrentAnswerIndex(
-  //     answersList.find((a) => a.questionId === questionId)?.answerIndex
-  //   );
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [themeId, questionId]);
+  useEffect(() => {
+    setCurrentAnswerIndex(
+      answersList.find((a) => a.questionId === questionId)?.answerIndex
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [themeId, questionId]);
 
   if (needLoading) return <div>Loading...</div>;
 

@@ -87,24 +87,23 @@ const Header = ({ loading, user, setUser }) => {
                 <span>Accueil</span>
               </NavLink>
             </HeaderMenuTab>
-            <NavLink activeClassName="selected" to="/theme">
-              <QuizzButton>
-                <span>Quizz</span>
-              </QuizzButton>
-            </NavLink>
-            <HeaderMenuTab>
-              <NavLink activeClassName="selected" to="/result">
-                <span>Résultats</span>
-              </NavLink>
-            </HeaderMenuTab>
             <HeaderMenuTab>
               <NavLink activeClassName="selected" to="/all-questions">
                 <span>Voir toutes les questions</span>
               </NavLink>
             </HeaderMenuTab>
-            <HeaderMenuTab>
-              <span onClick={onOpenContactModal}>Nous contacter</span>
-            </HeaderMenuTab>
+            <NavLink activeClassName="selected" to="/theme">
+              <QuizzButton>
+                <span>Quizz</span>
+              </QuizzButton>
+            </NavLink>
+            {user?.pseudo && (
+              <HeaderMenuTab>
+                <NavLink activeClassName="selected" to="/result">
+                  <span>Résultats</span>
+                </NavLink>
+              </HeaderMenuTab>
+            )}
             {!!user?.pseudo ? (
               <HeaderMenuTab onClick={onLogout}>
                 <span>Se déconnecter</span>
@@ -116,6 +115,9 @@ const Header = ({ loading, user, setUser }) => {
                 </NavLink>
               </HeaderMenuTab>
             )}
+            <HeaderMenuTab>
+              <span onClick={onOpenContactModal}>Nous contacter</span>
+            </HeaderMenuTab>
             {/* BurgerMenu */}
             <BurgerNavContainer>
               <Menu
@@ -140,13 +142,15 @@ const Header = ({ loading, user, setUser }) => {
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" to="/result">
-                    <span>Résultats</span>
+                  <NavLink activeClassName="selected" to="/all-questions">
+                    <span>Voir toutes les questions</span>
                   </NavLink>
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
-                  <span onClick={onOpenContactModal}>Nous contacter</span>
+                  <NavLink activeClassName="selected" to="/result">
+                    <span>Résultats</span>
+                  </NavLink>
                 </BurgerMenuTab>
                 <Fillet />
                 {!!user?.pseudo ? (
@@ -160,6 +164,10 @@ const Header = ({ loading, user, setUser }) => {
                     </NavLink>
                   </BurgerMenuTab>
                 )}
+                <Fillet />
+                <BurgerMenuTab>
+                  <span onClick={onOpenContactModal}>Nous contacter</span>
+                </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
                   <NavLink activeClassName="selected" to="/theme">
@@ -334,6 +342,7 @@ const QuizzButton = styled.button`
   cursor: pointer;
   ${media.mobile`
   display: ${(props) => (props.showOnMobile ? "block" : "none")};
+  width: 100%;
   `}
 `;
 
