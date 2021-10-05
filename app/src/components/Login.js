@@ -39,7 +39,7 @@ const Login = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
             onChange={onChange}
             value={password}
           />
-          <LoginButton isLoading={isLoading} type="submit">
+          <LoginButton isLoading={isLoading} type="submit" disabled={isLoading}>
             {isLoading ? "Chargement..." : "Se connecter"}
           </LoginButton>
           <SignupLink onClick={onGoToSignup}>
