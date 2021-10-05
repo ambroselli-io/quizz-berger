@@ -4,12 +4,7 @@ import { HOST, SCHEME } from "../config";
 
 class ApiService {
   getUrl = (path, query) => {
-    return new URI()
-      .scheme(SCHEME)
-      .host(HOST)
-      .path(path)
-      .setSearch(query)
-      .toString();
+    return new URI().scheme(SCHEME).host(HOST).path(path).setSearch(query).toString();
   };
 
   execute = async ({
@@ -37,6 +32,7 @@ class ApiService {
       if (credentials) options.credentials = credentials;
 
       const url = this.getUrl(path, query);
+      console.log("url", url);
       const response = await fetch(url, options);
 
       if (!response.ok && response.status === 401) {
@@ -55,8 +51,7 @@ class ApiService {
     }
     return {
       ok: false,
-      error:
-        "Une erreur est survenue, l'équipe technique est prévenue, veuillez nous en excuser.",
+      error: "Une erreur est survenue, l'équipe technique est prévenue, veuillez nous en excuser.",
     };
   };
 
@@ -65,14 +60,10 @@ class ApiService {
   put = (args) => this.execute({ method: "PUT", ...args });
   delete = (args) => this.execute({ method: "DELETE", ...args });
 
-  postWithCreds = (args) =>
-    this.execute({ method: "POST", credentials: "include", ...args });
-  getWithCreds = async (args) =>
-    this.execute({ method: "GET", credentials: "include", ...args });
-  putWithCreds = (args) =>
-    this.execute({ method: "PUT", credentials: "include", ...args });
-  deleteWithCreds = (args) =>
-    this.execute({ method: "DELETE", credentials: "include", ...args });
+  postWithCreds = (args) => this.execute({ method: "POST", credentials: "include", ...args });
+  getWithCreds = async (args) => this.execute({ method: "GET", credentials: "include", ...args });
+  putWithCreds = (args) => this.execute({ method: "PUT", credentials: "include", ...args });
+  deleteWithCreds = (args) => this.execute({ method: "DELETE", credentials: "include", ...args });
 }
 
 const API = new ApiService();
