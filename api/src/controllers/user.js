@@ -19,7 +19,6 @@ const setCookie = (req, res, user) => {
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
   };
-  console.log("jwt", token, tokenConfig);
   res.cookie("jwt", token, tokenConfig);
 };
 
@@ -93,8 +92,6 @@ router.put(
 
     user.set(userUpdate);
     await user.save();
-
-    console.log(req.body.themes, user.themes);
 
     res.status(200).send({ ok: true, data: user.me() });
   })

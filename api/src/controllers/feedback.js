@@ -37,6 +37,7 @@ router.post(
       }),
     }).catch((err) => capture(err, { extra: { text, subject } }));
     res.status(200).send({ ok: response.statusText === "OK" });
+    console.log(text);
   })
 );
 module.exports = router;
