@@ -5,12 +5,18 @@ import { media } from "../styles/mediaQueries";
 import cross from "../images/cross.svg";
 import API from "../services/api";
 
-const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal, user }) => {
+const ContactModal = ({
+  isActive,
+  onCloseContactModal,
+  onForceCloseContactModal,
+  user,
+}) => {
   const [{ pseudo, email, message }, setState] = useState({
     pseudo: user?.pseudo || "",
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const onChange = (e) => {
     setState((state) => ({
@@ -21,6 +27,7 @@ const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal,
 
   const onFormSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     const text = `
     De: ${pseudo}
@@ -39,6 +46,8 @@ const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal,
       alert("Message envoyé !");
       onForceCloseContactModal();
     }
+
+    setIsLoading(false);
   };
 
   return (
@@ -78,7 +87,9 @@ const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal,
                 value={message}
                 placeholder="Un commentaire ? Une suggestion ?"
               />
-              <SubmitButton type="submit">Envoyer</SubmitButton>
+              <SubmitButton isLoading={isLoading} type="submit">
+                {isLoading ? "Envoi en cours..." : "Envoyer !"}
+              </SubmitButton>
             </ContactForm>
           </ModalInnerContainer>
         </ModalContainer>
@@ -186,9 +197,12 @@ const SubmitButton = styled.button`
   height: 44px;
   font-weight: normal;
   font-size: 16px;
-  background: #facc15;
   border-radius: 44px;
   border: none;
+  background: ${(props) =>
+    props.isLoading ? "rgb(233, 233, 233)" : "#facc15"};
+  color: ${(props) => (props.isLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
+  cursor: pointer;
 `;
 
 export default ContactModal;
