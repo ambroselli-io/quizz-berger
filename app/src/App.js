@@ -11,6 +11,7 @@ import Result from "./scenes/Result";
 import API from "./services/api";
 import Layout from "./components/Layout";
 import AllQuestions from "./scenes/AllQuestions";
+import CandidateResult from "./scenes/CandidateResult";
 
 const App = () => {
   const [user, setUserState] = useState({});
@@ -133,6 +134,12 @@ const App = () => {
               <LoginPage {...props} user={user} setUser={setUser} />
             )}
           />
+          <Route
+            path="/all-questions"
+            exact
+            user={user}
+            render={(props) => <AllQuestions {...props} quizz={quizz} />}
+          />
           <RestrictedRoute
             path="/theme"
             user={user}
@@ -158,15 +165,15 @@ const App = () => {
             path="/result"
             exact
             user={user}
-            Component={(props) => (
-              <Result {...props} setUser={setUser} quizz={quizz} />
-            )}
+            Component={(props) => <Result {...props} quizz={quizz} />}
           />
-          <Route
-            path="/all-questions"
+          <RestrictedRoute
+            path="/result/:candidateId"
             exact
             user={user}
-            render={(props) => <AllQuestions {...props} quizz={quizz} />}
+            Component={(props) => (
+              <CandidateResult {...props} quizz={quizz} user={user} />
+            )}
           />
           <RestrictedRoute
             path="/"

@@ -46,6 +46,7 @@ router.get(
 
     const populatedCandidatesAnswers = candidates.map((candidate) => {
       return {
+        _id: candidate._id,
         pseudo: candidate.pseudo,
         firstName: candidate.firstName,
         lastName: candidate.lastName,

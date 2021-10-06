@@ -1,15 +1,24 @@
 const maxScorePerAnswer = 5;
 
-export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizz) => {
+export const getCandidatesScorePerThemes = (
+  userAnswers,
+  candidatesAnswers,
+  quizz
+) => {
   const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers, quizz);
 
   return candidatesAnswers.map((candidate) => {
-    const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
+    const candidateScores = addScoreToCandidateAnswer(
+      userAnswersWithScoreLines,
+      candidate.answers
+    );
     return {
       ...candidate,
       scorePerThemes: getScorePerTheme(candidateScores).map((theme) => ({
         themeId: theme.themeId,
-        score: Math.round((theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100),
+        score: Math.round(
+          (theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100
+        ),
       })),
     };
   });
@@ -27,12 +36,16 @@ const addScoreLinesToAnswers = (userAnswers, quizz) =>
     return { ...answer, scoreLine };
   });
 
-const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
+const addScoreToCandidateAnswer = (
+  userAnswersWithScoreLines,
+  candidateAnswers
+) =>
   userAnswersWithScoreLines.map((userAnswer) => {
     const candidateMatchingAnswer = candidateAnswers.find(
       (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
     );
-    const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer?.answerIndex;
+    const politicalPartyMatchingAnswersIndex =
+      candidateMatchingAnswer?.answerIndex;
     return {
       ...userAnswer,
       score: !isNaN(politicalPartyMatchingAnswersIndex)
