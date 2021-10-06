@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PolarArea } from "react-chartjs-2";
 import { media } from "../styles/mediaQueries";
+import { Link } from "react-router-dom";
 
 const colors = [
   "#e6194B",
@@ -43,7 +44,10 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
       {
         data: scores,
         backgroundColor: quizz
-          .map((theme, themeIndex) => ({ ...theme, backgroundColor: colors[themeIndex] }))
+          .map((theme, themeIndex) => ({
+            ...theme,
+            backgroundColor: colors[themeIndex],
+          }))
           .filter((theme) => selectedThemes.includes(theme._id))
           .map((t) => t.backgroundColor),
         borderWidth: 1,
@@ -87,7 +91,9 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
   return (
     <>
       <ChartContainer>
-        <CandidateTitle>{candidate?.pseudo}</CandidateTitle>
+        <Link to={`result/${candidate._id}`}>
+          <CandidateTitle>{candidate?.pseudo}</CandidateTitle>
+        </Link>
         <PolarArea data={data} options={options} />
       </ChartContainer>
     </>
