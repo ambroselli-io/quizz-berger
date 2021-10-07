@@ -29,6 +29,7 @@ router.post(
         answerIndex: req.body.answerIndex,
       });
       res.status(200).send({ ok: true, data: newAnswer });
+      return;
     }
 
     answer.set({ answerIndex: req.body.answerIndex });
