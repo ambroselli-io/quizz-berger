@@ -9,12 +9,11 @@ const Home = () => (
   <>
     <BackgroundContainer>
       <Container>
-        <Title>
-          Trouvez le candidat qui se rapproche le plus de vos idées !
-        </Title>
+        <Title>QUI est mon candidat idéal ?</Title>
         <SubTitle>
-          Complétez notre quizz en choisissant les thèmes qui vous intéressent
-          pour situer vos idées politiques.
+          Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître le
+          ou les candidats qui se rapprochent le plus de vos idées, et
+          <strong> faites&nbsp;votre&nbsp;choix&nbsp;!</strong>
           {/* Take our Political
               Compass test to find out which political group your best match is */}
         </SubTitle>
