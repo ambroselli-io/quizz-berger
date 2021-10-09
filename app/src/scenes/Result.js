@@ -15,8 +15,8 @@ class Result extends React.Component {
     showRadarChart: false,
     selectedCandidates: [],
     selectedThemes: [],
-    showCandidates: true,
-    showThemes: true,
+    showCandidates: false,
+    showThemes: false,
   };
 
   componentDidMount() {
@@ -33,9 +33,7 @@ class Result extends React.Component {
       const candidates = candidatesResponse.data.map((c) => c.pseudo);
       this.setState({
         userAnswers: response.data,
-        candidatesAnswers: candidatesResponse.data.sort(() =>
-          Math.random() > 0.5 ? -1 : 1
-        ),
+        candidatesAnswers: candidatesResponse.data.sort(() => (Math.random() > 0.5 ? -1 : 1)),
         selectedCandidates: candidates,
         selectedThemes: this.props.user.themes,
       });
@@ -103,68 +101,54 @@ class Result extends React.Component {
         <BackgroundContainer>
           <Container>
             <LeftContainer>
-              <SwitchButtons onClick={this.switchCharts}>
-                Changer de graphique
-              </SwitchButtons>
+              <SwitchButtons onClick={this.switchCharts}>Changer de graphique</SwitchButtons>
               <TitleContainer>
                 <Title>
-                  {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)},
-                  voici vos résultats
+                  {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)}, voici vos résultats
                 </Title>
                 {/* <InfoIcon src={infoIcon}></InfoIcon> */}
               </TitleContainer>
-              <OpenButtonContainer>
-                <SubTitle>Selectionnez vos candidats</SubTitle>
-                <OpenButton
-                  onClick={() =>
-                    this.setState((prevState) => ({
-                      showCandidates: !prevState.showCandidates,
-                    }))
-                  }
-                  isActive={showCandidates}
-                >
-                  &#9664;
-                </OpenButton>
+              <OpenButtonContainer
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    showCandidates: !prevState.showCandidates,
+                  }))
+                }>
+                <OpenButton isActive={showCandidates}>&#9654;</OpenButton>
+                <SubTitle>Afficher/masquer des candidats</SubTitle>
               </OpenButtonContainer>
               <CandidateButtonContainer isActive={showCandidates}>
                 {candidatesScorePerThemes.map((candidate) => (
-                  <CandidateButton
+                  <ButtonStyled
                     key={candidate?.pseudo}
                     data-candidate={candidate?.pseudo}
-                    isActive={
-                      !!selectedCandidates.find((c) => c === candidate?.pseudo)
-                    }
-                    onClick={this.setSelectedCandidates}
-                  >
+                    isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
+                    onClick={this.setSelectedCandidates}>
                     {candidate?.pseudo}
-                  </CandidateButton>
+                  </ButtonStyled>
                 ))}
               </CandidateButtonContainer>
-              <OpenButtonContainer>
-                <SubTitle> Selectionnez les thèmes à afficher</SubTitle>
-                <OpenButton
-                  onClick={() =>
-                    this.setState((prevState) => ({
-                      showThemes: !prevState.showThemes,
-                    }))
-                  }
-                  isActive={showThemes}
-                >
-                  &#9664;
-                </OpenButton>
+              <OpenButtonContainer
+                onClick={() =>
+                  this.setState((prevState) => ({
+                    showThemes: !prevState.showThemes,
+                  }))
+                }>
+                <OpenButton isActive={showThemes}>&#9654;</OpenButton>
+                <SubTitle>Afficher/masquer les thèmes</SubTitle>
               </OpenButtonContainer>
               <ThemeButtonContainer isActive={showThemes}>
                 {user.themes.map((userT) => {
                   const theme = quizz.find((t) => t._id === userT);
                   return (
-                    <CandidateButton
+                    <ButtonStyled
                       key={userT}
                       data-themeid={theme._id}
+                      backgroundColor={theme.backgroundColor}
                       isActive={!!selectedThemes.find((c) => c === theme._id)}
-                      onClick={this.setSelectedThemes}
-                    >
+                      onClick={this.setSelectedThemes}>
                       {theme.fr}
-                    </CandidateButton>
+                    </ButtonStyled>
                   );
                 })}
               </ThemeButtonContainer>
@@ -181,9 +165,7 @@ class Result extends React.Component {
               )}
               {!showRadarChart &&
                 candidatesScorePerThemes
-                  .filter((candidate) =>
-                    selectedCandidates.includes(candidate?.pseudo)
-                  )
+                  .filter((candidate) => selectedCandidates.includes(candidate?.pseudo))
                   .map((candidate) => {
                     return (
                       <PolarChart
@@ -285,10 +267,13 @@ const Title = styled.h2`
 //   cursor: pointer;
 // `;
 
-const OpenButtonContainer = styled.div`
+const OpenButtonContainer = styled.button`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 `;
 
 const SubTitle = styled.h3`
@@ -301,11 +286,11 @@ const SubTitle = styled.h3`
 `}
 `;
 
-const OpenButton = styled.button`
-  margin-left: 10px;
+const OpenButton = styled.span`
+  margin-right: 10px;
   border: none;
   background-color: transparent;
-  transform: ${(props) => (props.isActive ? "rotate(-90deg)" : "none")};
+  transform: ${(props) => (props.isActive ? "rotate(90deg)" : "none")};
   transition: transform 0.1s linear;
   cursor: pointer;
 `;
@@ -327,15 +312,34 @@ const ThemeButtonContainer = styled.div`
   grid-gap: 12px;
 `;
 
-const CandidateButton = styled.button`
+const getBackgroundColor = ({ backgroundColor, isActive }) => {
+  if (!!backgroundColor) {
+    return `${backgroundColor}${isActive ? "CC" : "00"}`;
+  }
+  return isActive ? "#111827" : "white";
+};
+
+const getColor = ({ backgroundColor, isActive }) => {
+  if (!!backgroundColor) {
+    return isActive ? "#111827" : backgroundColor;
+  }
+  return isActive ? "white" : "#111827";
+};
+
+const getBorderColor = ({ backgroundColor, isActive }) => {
+  if (!!backgroundColor) return backgroundColor;
+  return "#111827";
+};
+
+const ButtonStyled = styled.button`
   padding: 8px 15px;
   width: auto;
   height: auto;
   max-height: 55px;
   /* flex-shrink: 0; */
-  background-color: ${(props) => (props.isActive ? "#111827" : "white")};
-  color: ${(props) => (props.isActive ? "white" : "#111827")};
-  border: 1px solid #e5e7eb;
+  background-color: ${getBackgroundColor};
+  color: ${getColor};
+  border: 1px solid ${getBorderColor};
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
