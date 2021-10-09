@@ -13,20 +13,16 @@ import Layout from "./components/Layout";
 import AllQuestions from "./scenes/AllQuestions";
 import CandidateResult from "./scenes/CandidateResult";
 
-const App = () => {
+const App = (props) => {
   const [user, setUserState] = useState({});
   const [quizz, setQuizz] = useState([]);
   const [needLoading, setNeedLoading] = useState(!!document.cookie.includes("jwt"));
   const [loading, setLoading] = useState(!!document.cookie.includes("jwt"));
   const [answersList, setAnswersList] = useState([]);
   const location = useLocation();
-  const [themeId, questionId] = location.pathname.split("/").filter((_, i) => i > 1);
+  const [_, questionId] = location.pathname.split("/").filter((_, i) => i > 1);
 
-  console.log({ questionId });
-
-  const [currentAnswerIndex, setCurrentAnswerIndex] = useState(
-    answersList.find((a) => a.questionId === questionId)?.answerIndex
-  );
+  const currentAnswerIndex = answersList.find((a) => a.questionId === questionId)?.answerIndex;
 
   const getQuizz = async () => {
     const response = await API.get({ path: "/quizz" });
@@ -48,22 +44,14 @@ const App = () => {
 
   const getAnswers = async () => {
     const response = await API.getWithCreds({ path: "/answer" });
-    if (response.ok) {
-      console.log("fetched !");
-      console.log(questionId);
-      console.log(response.data.find((a) => a.questionId === questionId)?.answerIndex);
-      console.log("---- end fetched !");
-      setAnswersList(response.data);
-      console.log(response.data.find((a) => a.questionId === questionId)?.answerIndex);
-      setCurrentAnswerIndex(response.data.find((a) => a.questionId === questionId)?.answerIndex);
-    }
+    if (response.ok) setAnswersList(response.data);
   };
 
   const setUser = (user) => {
     setUserState(user);
     setNeedLoading(false);
     setLoading(false);
-    getAnswers();
+    if (user?._id) getAnswers();
   };
 
   const setAnswersListState = (newAnswer) => {
@@ -78,16 +66,14 @@ const App = () => {
   };
 
   const setAnswer = async (body) => {
-    const lastCurrentAnswerIndex = currentAnswerIndex;
-    const nextCurrentAnswerIndex = parseInt(body.answerIndex, 10);
-
-    setCurrentAnswerIndex(nextCurrentAnswerIndex);
+    const lastAnswersState = answersList;
+    setAnswersListState(body);
     setLoading(true);
     const response = await API.postWithCreds({ path: "/answer", body });
     setLoading(false);
     if (!response.ok) {
       alert(response.error);
-      setCurrentAnswerIndex(lastCurrentAnswerIndex);
+      setAnswersList(lastAnswersState);
       return false;
     }
     setAnswersListState(response.data);
@@ -95,28 +81,16 @@ const App = () => {
   };
 
   useEffect(() => {
-    if (needLoading) {
-      getUser();
-    }
+    if (needLoading) getUser();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    if (!!questionId) getQuizz();
+    getQuizz();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [questionId]);
-
-  useEffect(() => {
-    console.log("new shit man");
-    console.log(themeId, questionId);
-    console.log(answersList.find((a) => a.questionId === questionId)?.answerIndex);
-    setCurrentAnswerIndex(answersList.find((a) => a.questionId === questionId)?.answerIndex);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [themeId, questionId]);
+  }, []);
 
   if (needLoading) return <div>Loading...</div>;
-
-  console.log({ currentAnswerIndex });
 
   return (
     <>
