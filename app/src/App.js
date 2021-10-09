@@ -13,6 +13,31 @@ import Layout from "./components/Layout";
 import AllQuestions from "./scenes/AllQuestions";
 import CandidateResult from "./scenes/CandidateResult";
 
+const colors = [
+  "#e6194B",
+  "#3cb44b",
+  "#ffe119",
+  "#4363d8",
+  "#f58231",
+  "#911eb4",
+  "#42d4f4",
+  "#f032e6",
+  "#bfef45",
+  "#fabed4",
+  "#469990",
+  "#dcbeff",
+  "#9A6324",
+  "#fffac8",
+  "#800000",
+  "#aaffc3",
+  "#808000",
+  "#ffd8b1",
+  "#000075",
+  "#a9a9a9",
+  "#ffffff",
+  "#000000",
+];
+
 const App = (props) => {
   const [user, setUserState] = useState({});
   const [quizz, setQuizz] = useState([]);
@@ -20,6 +45,7 @@ const App = (props) => {
   const [loading, setLoading] = useState(!!document.cookie.includes("jwt"));
   const [answersList, setAnswersList] = useState([]);
   const location = useLocation();
+  // eslint-disable-next-line no-unused-vars
   const [_, questionId] = location.pathname.split("/").filter((_, i) => i > 1);
 
   const currentAnswerIndex = answersList.find((a) => a.questionId === questionId)?.answerIndex;
@@ -30,7 +56,7 @@ const App = (props) => {
       return alert(
         response.error || "Erreur lors de l'obtention du quizz, veuillez réessayer plus tard"
       );
-    setQuizz(response.data);
+    setQuizz(response.data.map((theme, index) => ({ ...theme, backgroundColor: colors[index] })));
   };
 
   const getUser = async () => {
