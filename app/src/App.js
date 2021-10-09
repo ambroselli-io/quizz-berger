@@ -38,7 +38,7 @@ const colors = [
   "#000000",
 ];
 
-const App = (props) => {
+const App = () => {
   const [user, setUserState] = useState({});
   const [quizz, setQuizz] = useState([]);
   const [needLoading, setNeedLoading] = useState(!!document.cookie.includes("jwt"));
@@ -116,7 +116,15 @@ const App = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (needLoading) return <div>Loading...</div>;
+  if (needLoading)
+    return (
+      <>
+        <GlobalStyles />
+        <Layout loading={loading} user={user} setUser={setUser}>
+          Chargement...
+        </Layout>
+      </>
+    );
 
   return (
     <>
@@ -163,7 +171,9 @@ const App = (props) => {
             path="/result/:candidateId"
             exact
             user={user}
-            Component={(props) => <CandidateResult {...props} quizz={quizz} user={user} />}
+            Component={(props) => (
+              <CandidateResult {...props} quizz={quizz} user={user} answersList={answersList} />
+            )}
           />
           <RestrictedRoute
             path="/"

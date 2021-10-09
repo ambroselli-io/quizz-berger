@@ -9,11 +9,13 @@ import { media } from "../styles/mediaQueries";
 import logo from "../images/logo.svg";
 import burgerNav from "../images/burgerNav.svg";
 import ContactModal from "./ContactModal";
+import Legal from "./Legal";
 
 const Header = ({ loading, user, setUser }) => {
   const [showLogoLoading, setShowLogoLoading] = useState(false);
   const [showLogoKey, setShowLogoKey] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
+  const [showLegalModal, setShowLegalModal] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const history = useHistory();
 
@@ -27,10 +29,7 @@ const Header = ({ loading, user, setUser }) => {
   };
 
   const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(
-      () => setShowLogoKey((k) => k + 1),
-      1000
-    );
+    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
   };
 
   useEffect(() => {
@@ -126,10 +125,7 @@ const Header = ({ loading, user, setUser }) => {
                 onOpen={() => setMenuIsOpen(true)}
                 onClose={() => setMenuIsOpen(false)}
                 styles={burgerNavStyles}
-                customBurgerIcon={
-                  <img src={burgerNav} alt="mobile navigation menu" />
-                }
-              >
+                customBurgerIcon={<img src={burgerNav} alt="mobile navigation menu" />}>
                 <BurgerNavHeaderContainer>
                   <HeaderLogo />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
@@ -166,6 +162,10 @@ const Header = ({ loading, user, setUser }) => {
                 )}
                 <Fillet />
                 <BurgerMenuTab>
+                  <span onClick={() => setShowLegalModal(true)}>Mentions légales</span>
+                </BurgerMenuTab>
+                <Fillet />
+                <BurgerMenuTab>
                   <span onClick={onOpenContactModal}>Nous contacter</span>
                 </BurgerMenuTab>
                 <Fillet />
@@ -182,6 +182,7 @@ const Header = ({ loading, user, setUser }) => {
         </HeaderContainer>
       </HeaderStyled>
       <BackContainer />
+      <Legal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
       <ContactModal
         isActive={showContactModal}
         onCloseContactModal={onCloseContactModal}
@@ -333,8 +334,7 @@ const HeaderMenuTab = styled.li`
 `;
 
 const QuizzButton = styled.button`
-  height: 40px;
-  width: 80px;
+  padding: 10px 25px;
   background-color: #facc15;
   height: 40px;
   border: none;
@@ -342,7 +342,6 @@ const QuizzButton = styled.button`
   cursor: pointer;
   ${media.mobile`
   display: ${(props) => (props.showOnMobile ? "block" : "none")};
-  width: 100%;
   `}
 `;
 
@@ -356,7 +355,7 @@ const BurgerNavContainer = styled.div`
 const Fillet = styled.div`
   margin: 0 !important;
   height: 1px;
-  background-color: grey;
+  background-color: #111827;
   width: 100%;
 `;
 

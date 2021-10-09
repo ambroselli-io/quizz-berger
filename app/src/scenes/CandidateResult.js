@@ -6,7 +6,7 @@ import { media } from "../styles/mediaQueries";
 
 const CandidateResult = ({ quizz }) => {
   const { candidateId } = useParams();
-  const [candidateAnswers, setCandidateAnswers] = useState();
+  const [candidateAnswers, setCandidateAnswers] = useState({});
 
   const getAnswers = async () => {
     const response = await API.getWithCreds({
@@ -14,9 +14,7 @@ const CandidateResult = ({ quizz }) => {
     });
 
     if (response.ok) {
-      const getCandidateAnswers = response.data.find(
-        (c) => c._id === candidateId
-      );
+      const getCandidateAnswers = response.data.find((c) => c._id === candidateId);
       setCandidateAnswers(getCandidateAnswers);
     }
   };
@@ -26,14 +24,20 @@ const CandidateResult = ({ quizz }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  if (!candidateAnswers?.pseudo)
+    return (
+      <BackgroundContainer>
+        <span>Chargement</span>
+      </BackgroundContainer>
+    );
+
   return (
     <>
       <BackgroundContainer>
         <SubContainer>
-          <Title>Voici les résultats de {candidateAnswers.pseudo}</Title>
+          <Title>Voici les résultats de {candidateAnswers?.pseudo}</Title>
           <SubTitle>
-            Vous pouvez voir en rouge tous les résultats de{" "}
-            {candidateAnswers.pseudo}
+            Vous pouvez voir en rouge tous les résultats de {candidateAnswers?.pseudo}
           </SubTitle>
           {quizz.map((theme, index) => {
             return (
@@ -52,7 +56,7 @@ const CandidateResult = ({ quizz }) => {
                         {question.answers.map((answer, answerIndex) => (
                           <Answer
                             key={answer}
-                            isActive={candidateAnswers?.answers.find(
+                            isActive={candidateAnswers?.answers?.find(
                               (a) =>
                                 a.themeId === theme._id &&
                                 a.questionId === question._id &&

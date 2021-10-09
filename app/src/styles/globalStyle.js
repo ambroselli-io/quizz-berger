@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     font-family: Merriweather Sans !important;
     font-weight: 400 !important;
+    background-color: #111827;
   }
 
   html, body, #main {

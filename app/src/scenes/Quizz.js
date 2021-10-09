@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
 import { media } from "../styles/mediaQueries";
@@ -116,11 +116,12 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
       questionId: questionId,
       answerIndex: e.target.dataset.index,
     });
-    if (ok) {
-      window.scrollTo(0, 0);
-      goToNextQuestion();
-    }
+    if (ok) goToNextQuestion();
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <>

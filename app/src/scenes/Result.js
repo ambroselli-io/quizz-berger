@@ -96,8 +96,6 @@ class Result extends React.Component {
       quizz
     ).sort((c1, c2) => (c1.total > c2.total ? -1 : 1));
 
-    console.log({ candidatesScorePerThemes });
-
     return (
       <>
         <BackgroundContainer>
