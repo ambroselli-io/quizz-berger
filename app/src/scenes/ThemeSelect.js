@@ -65,6 +65,7 @@ class ThemeSelect extends React.Component {
                 return (
                   <ThemeButton
                     theme={t.fr}
+                    backgroundColor={t.backgroundColor}
                     themeId={t._id}
                     isActive={!!selectedThemesIds.find((id) => id === t._id)}
                     selectedThemesIds={selectedThemesIds}

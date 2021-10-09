@@ -14,9 +14,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
 
   const currentThemeQuestions = currentTheme.questions;
 
-  const { fr, answers } = currentThemeQuestions.find(
-    (question) => question._id === questionId
-  );
+  const { fr, answers } = currentThemeQuestions.find((question) => question._id === questionId);
 
   const goToNextQuestion = () => {
     const currentQuestionIndex = currentThemeQuestions.findIndex(
@@ -57,9 +55,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
 
     const currentThemeIndex = user.themes.findIndex((tId) => tId === themeId);
     const firstUserTheme = user.themes[0];
-    const firstUserThemeIndex = quizz.findIndex(
-      (t) => t._id === firstUserTheme
-    );
+    const firstUserThemeIndex = quizz.findIndex((t) => t._id === firstUserTheme);
 
     if (currentThemeIndex <= firstUserThemeIndex) {
       return history.push("/theme");
@@ -68,11 +64,8 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     previousThemeId = user.themes[currentThemeIndex - 1];
     const previousTheme = quizz.find((theme) => theme._id === previousThemeId);
     const previousThemeLastQuestionIndex = previousTheme.questions.length - 1;
-    const previousThemeLastQuestionId =
-      previousTheme.questions[previousThemeLastQuestionIndex]._id;
-    return history.push(
-      `/question/${previousThemeId}/${previousThemeLastQuestionId}`
-    );
+    const previousThemeLastQuestionId = previousTheme.questions[previousThemeLastQuestionIndex]._id;
+    return history.push(`/question/${previousThemeId}/${previousThemeLastQuestionId}`);
   };
 
   const goToNextTheme = (e) => {
@@ -80,11 +73,8 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     let nextThemeId;
     if (currentThemeIndex < user.themes.length - 1) {
       nextThemeId = user.themes[currentThemeIndex + 1];
-      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId)
-        .questions[0]._id;
-      return history.push(
-        `/question/${nextThemeId}/${nextThemeFirstQuestionId}`
-      );
+      const nextThemeFirstQuestionId = quizz.find((t) => t._id === nextThemeId).questions[0]._id;
+      return history.push(`/question/${nextThemeId}/${nextThemeFirstQuestionId}`);
     } else {
       return history.push(`/result`);
     }
@@ -95,12 +85,9 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
     let previousThemeId;
     if (currentThemeIndex > 0) {
       previousThemeId = user.themes[currentThemeIndex - 1];
-      const previousThemeFirstQuestionId = quizz.find(
-        (t) => t._id === previousThemeId
-      ).questions[0]._id;
-      return history.push(
-        `/question/${previousThemeId}/${previousThemeFirstQuestionId}`
-      );
+      const previousThemeFirstQuestionId = quizz.find((t) => t._id === previousThemeId).questions[0]
+        ._id;
+      return history.push(`/question/${previousThemeId}/${previousThemeFirstQuestionId}`);
     } else {
       return history.push(`/theme`);
     }
@@ -137,7 +124,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
 
   return (
     <>
-      <ThemeHeaderContainer>
+      <ThemeHeaderContainer backgroundColor={currentTheme.backgroundColor}>
         <ThemeNavigationContainer>
           <ThemeNavigationButton onClick={goToPreviousTheme}>
             {isFirstTheme() ? "‹ Retour aux thèmes" : "‹ Thème précédent"}
@@ -160,8 +147,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
                 isActive={currentAnswerIndex === index}
                 onClick={sendAnswer}
                 key={index}
-                data-index={index}
-              >
+                data-index={index}>
                 {answer}
               </AnswerButton>
             );
@@ -172,9 +158,7 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
         <ProgressBarContainer>
           <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
           {user.themes.map((t, index) => {
-            const currentThemeIndex = user.themes.findIndex(
-              (t) => t === themeId
-            );
+            const currentThemeIndex = user.themes.findIndex((t) => t === themeId);
 
             const currentQuestionIndex = currentThemeQuestions.findIndex(
               (q) => q._id === questionId
@@ -214,12 +198,12 @@ const ThemeHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f7df1e;
+  background-color: ${(props) => props.backgroundColor}CC;
   ${media.mobile`
   padding: 0 15px 0 15px;
   justify-content: space-evenly;
   flex-direction: column;
-  max-height: 126px; 
+  max-height: 126px;
   min-height: 90px;
   height: 110px;
 `}
@@ -334,8 +318,7 @@ const NavigationButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-image: ${(props) =>
-    props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`};
+  background-image: ${(props) => (props.leftArrow ? `url(${leftArrow})` : `url(${rightArrow})`)};
   background-repeat: no-repeat;
   background-size: cover;
   ${media.mobile`
