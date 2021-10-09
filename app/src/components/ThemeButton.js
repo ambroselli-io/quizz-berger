@@ -1,35 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 
-class ThemeButton extends React.Component {
-  render() {
-    const { theme, themeId, onSelect, isActive } = this.props;
-    return (
-      <ThemesButtons
-        data-themeid={themeId}
-        isActive={isActive}
-        onClick={onSelect}
-      >
-        <CheckBox data-themeid={themeId} isActive={isActive}>
-          &#10003;
-        </CheckBox>
-        <span data-themeid={themeId}>{theme}</span>
-      </ThemesButtons>
-    );
-  }
-}
+const ThemeButton = ({ backgroundColor, theme, themeId, onSelect, isActive }) => (
+  <ThemesButtonStyled
+    data-themeid={themeId}
+    isActive={isActive}
+    onClick={onSelect}
+    backgroundColor={backgroundColor}>
+    <CheckBox data-themeid={themeId} isActive={isActive}>
+      &#10003;
+    </CheckBox>
+    <span data-themeid={themeId}>{theme}</span>
+  </ThemesButtonStyled>
+);
 
-const ThemesButtons = styled.button`
+const ThemesButtonStyled = styled.button`
   padding: 24px;
   max-width: 370px;
   height: 72px;
   display: flex;
   align-items: center;
-  border: ${(props) =>
-    props.isActive ? "1px solid #6B7280" : "1px solid #e5e7eb"};
+  background-color: ${(props) => props.backgroundColor}CC;
+  border: ${(props) => (props.isActive ? "1px solid #6B7280" : "1px solid #e5e7eb")};
   box-sizing: border-box;
   border-radius: 8px;
-  background: #ffffff;
   font-size: 14px;
   cursor: pointer;
 `;
