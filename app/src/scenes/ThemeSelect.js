@@ -96,6 +96,7 @@ const BackgroundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-color: #fff;
   ${media.mobile`
   padding: 40px 10px 40px 10px;
   height: auto;
