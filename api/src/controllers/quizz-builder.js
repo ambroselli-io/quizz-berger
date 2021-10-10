@@ -32,7 +32,7 @@ router.get(
             )}</ol>`
         )
       )
-      .replace('<ol id="answers"></ol>', `<ol id="answers">${answers.map((a) => `<li><input value="${a}" /></li>`).join("")}</ol>`)
+      .replace('<ol id="answers"></ol>', `<ol id="answers">${answers.map((a) => `<li><input maxlength="140" value="${a}" /></li>`).join("")}</ol>`)
       .replace("{{QUESTIONS_HEADER_ROW}}", `<th></th>${answers.map((a) => `<th>${a}</th>`).join("")}`)
       .replace(
         "{{SCORES}}",

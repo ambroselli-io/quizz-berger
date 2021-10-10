@@ -248,6 +248,7 @@ const MobileThemeTitle = styled.h2`
 
 const BackgroundContainer = styled.div`
   padding: 40px 20px 80px 20px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;

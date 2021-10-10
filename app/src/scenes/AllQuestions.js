@@ -47,6 +47,8 @@ const BackgroundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-color: #fff;
+  overflow-y: scroll;
   ${media.mobile`
   padding: 40px 10px 40px 10px;
   height: auto;
@@ -101,6 +103,7 @@ const SubContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 `;
 
 const Title = styled.h2`
