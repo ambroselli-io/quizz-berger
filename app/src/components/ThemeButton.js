@@ -1,18 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-const ThemeButton = ({ backgroundColor, theme, themeId, onSelect, isActive }) => (
-  <ThemesButtonStyled
-    data-themeid={themeId}
-    isActive={isActive}
-    onClick={onSelect}
-    backgroundColor={backgroundColor}>
-    <CheckBox data-themeid={themeId} isActive={isActive}>
-      &#10003;
-    </CheckBox>
-    <span data-themeid={themeId}>{theme}</span>
-  </ThemesButtonStyled>
-);
+const ThemeButton = ({ theme, onClick, isActive }) => {
+  const { backgroundColor, fr, _id } = theme;
+  return (
+    <ThemesButtonStyled
+      data-themeid={_id}
+      isActive={isActive}
+      onClick={onClick}
+      backgroundColor={backgroundColor}>
+      <CheckBox data-themeid={_id} isActive={isActive}>
+        &#10003;
+      </CheckBox>
+      <span data-themeid={_id}>{fr}</span>
+    </ThemesButtonStyled>
+  );
+};
 
 const ThemesButtonStyled = styled.button`
   padding: 24px;

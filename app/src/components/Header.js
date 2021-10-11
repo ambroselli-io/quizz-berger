@@ -1,17 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { useHistory } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
-import API from "../services/api";
 import { media } from "../styles/mediaQueries";
 
 import logo from "../images/logo.svg";
 import burgerNav from "../images/burgerNav.svg";
 import ContactModal from "./ContactModal";
 import Legal from "./Legal";
+import UserContext from "../contexts/user";
 
-const Header = ({ loading, user, setUser }) => {
+const Header = ({ loading }) => {
+  const { user, logout } = useContext(UserContext);
   const [showLogoLoading, setShowLogoLoading] = useState(false);
   const [showLogoKey, setShowLogoKey] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
@@ -22,10 +23,7 @@ const Header = ({ loading, user, setUser }) => {
   const loadingIntervalRef = useRef(null);
   const onLogout = async () => {
     setMenuIsOpen(false);
-    const response = await API.post({
-      path: "/user/logout",
-    });
-    if (response.ok) setUser(null);
+    logout();
   };
 
   const keepLoadingInterval = () => {
@@ -96,16 +94,16 @@ const Header = ({ loading, user, setUser }) => {
                 <span>Quizz</span>
               </QuizzButton>
             </NavLink>
-            {user?.pseudo && (
+            {user?._id && (
               <HeaderMenuTab>
                 <NavLink activeClassName="selected" to="/result">
                   <span>Résultats</span>
                 </NavLink>
               </HeaderMenuTab>
             )}
-            {!!user?.pseudo ? (
+            {!!user?._id ? (
               <HeaderMenuTab onClick={onLogout}>
-                <span>Se déconnecter</span>
+                <span>{user?.pseudo ? "Se déconnecter" : "Recommencer"}</span>
               </HeaderMenuTab>
             ) : (
               <HeaderMenuTab>
@@ -149,9 +147,9 @@ const Header = ({ loading, user, setUser }) => {
                   </NavLink>
                 </BurgerMenuTab>
                 <Fillet />
-                {!!user?.pseudo ? (
+                {!!user?._id ? (
                   <BurgerMenuTab onClick={onLogout}>
-                    <span>Se déconnecter</span>
+                    <span>{user?.pseudo ? "Se déconnecter" : "Recommencer"}</span>
                   </BurgerMenuTab>
                 ) : (
                   <BurgerMenuTab>
@@ -188,7 +186,6 @@ const Header = ({ loading, user, setUser }) => {
         onCloseContactModal={onCloseContactModal}
         onForceCloseContactModal={onForceCloseContactModal}
         key={user?._id}
-        user={user}
       />
     </>
   );

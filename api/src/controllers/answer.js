@@ -40,7 +40,6 @@ router.post(
 
 router.get(
   "/candidates",
-  passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
     const candidates = await UserObject.find({ isCandidate: true });
     const candidatesAnswers = await AnswerObject.find({ user: candidates });

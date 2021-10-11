@@ -1,17 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory, useParams } from "react-router";
 import { media } from "../styles/mediaQueries";
 
 import rightArrow from "../images/right-arrow.svg";
 import leftArrow from "../images/left-arrow.svg";
+import UserContext from "../contexts/user";
+import DataContext from "../contexts/data";
 
-const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
+const Quizz = () => {
+  const { user, userAnswers, setAnswer } = useContext(UserContext);
+  const { quizz } = useContext(DataContext);
   const { themeId, questionId } = useParams();
+
   const history = useHistory();
 
+  const currentAnswerIndex = userAnswers.find((a) => a.questionId === questionId)?.answerIndex;
   const currentTheme = quizz.find((theme) => theme._id === themeId);
-
   const currentThemeQuestions = currentTheme.questions;
 
   const { fr, answers } = currentThemeQuestions.find((question) => question._id === questionId);
@@ -110,18 +115,18 @@ const Quizz = ({ user, setAnswer, currentAnswerIndex, quizz }) => {
   };
 
   const sendAnswer = async (e) => {
-    const ok = await setAnswer({
+    await setAnswer({
       user: user._id,
       themeId: currentTheme._id,
       questionId: questionId,
-      answerIndex: e.target.dataset.index,
+      answerIndex: Number(e.target.dataset.index),
     });
-    if (ok) goToNextQuestion();
+    goToNextQuestion();
   };
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  }, [questionId]);
 
   return (
     <>

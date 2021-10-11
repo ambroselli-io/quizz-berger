@@ -1,21 +1,56 @@
 const maxScorePerAnswer = 5;
 
+/*
+
+INPUT
+
+answer: {
+  user: ObjectId,
+  themeId: Sring,
+  questionId: Sring,
+  answerIndex: Number,
+}
+userAnswers: [answer]
+candidate: {
+  answers: [answer],
+  isCandidate: Bool, // is `true`
+  pseudo: String,
+  themes: [String], // should be all available themes
+}
+candidates: [candidate]
+
+OUTPUT
+
+newCandidate: {
+  pseudo: String,
+  scorePerThemes: [{ themeId: String, score: Number }],
+  total: Number,
+}
+[newCandidate]
+
+*/
+
 export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizz) => {
   const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers, quizz);
 
-  return candidatesAnswers.map((candidate) => {
-    const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
-    const scorePerThemes = getScorePerTheme(candidateScores).map((theme) => ({
-      themeId: theme.themeId,
-      score: Math.round((theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100),
-    }));
-    const total = scorePerThemes.reduce((total, { score }) => total + score, 0);
-    return {
-      ...candidate,
-      scorePerThemes,
-      total,
-    };
-  });
+  return candidatesAnswers
+    .map((candidate) => {
+      const candidateScores = addScoreToCandidateAnswer(
+        userAnswersWithScoreLines,
+        candidate.answers
+      );
+      const scorePerThemes = getScorePerTheme(candidateScores).map((theme) => ({
+        themeId: theme.themeId,
+        score: Math.round((theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100),
+      }));
+      const total = scorePerThemes.reduce((total, { score }) => total + score, 0);
+      return {
+        ...candidate,
+        scorePerThemes,
+        total,
+      };
+    })
+    .sort((c1, c2) => (c1.total > c2.total ? -1 : 1));
 };
 
 const addScoreLinesToAnswers = (userAnswers, quizz) =>
@@ -31,18 +66,24 @@ const addScoreLinesToAnswers = (userAnswers, quizz) =>
   });
 
 const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
-  userAnswersWithScoreLines.map((userAnswer) => {
-    const candidateMatchingAnswer = candidateAnswers.find(
-      (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
-    );
-    const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer?.answerIndex;
-    return {
-      ...userAnswer,
-      score: !isNaN(politicalPartyMatchingAnswersIndex)
-        ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex]
-        : 0,
-    };
-  });
+  userAnswersWithScoreLines
+    .map((userAnswer) => {
+      const candidateMatchingAnswer = candidateAnswers.find(
+        (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
+      );
+      // if user answer score is 0 and candidate has the same answer, we ignore it
+      const isSameAnswer = candidateMatchingAnswer?.answerIndex === userAnswer.answerIndex;
+      const isNotInterestedAnswer = !userAnswer.scoreLine.filter(Boolean).length;
+      if (isSameAnswer && isNotInterestedAnswer) return null;
+      const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer?.answerIndex;
+      return {
+        ...userAnswer,
+        score: !isNaN(politicalPartyMatchingAnswersIndex)
+          ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex]
+          : 0,
+      };
+    })
+    .filter(Boolean);
 
 const getScorePerTheme = (candidateScores) => {
   return candidateScores.reduce((scoresPerTheme, currentAnswer) => {

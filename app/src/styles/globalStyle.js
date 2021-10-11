@@ -1,23 +1,21 @@
 import { createGlobalStyle } from "styled-components";
 
+const getBodyBackgroundColor = ({ path }) => {
+  if (path.includes("home")) return "#111827";
+  return "#fff";
+};
+
 const GlobalStyle = createGlobalStyle`
 
-  html, body {
+html, body, #root {
     overscroll-behavior: none;
     height: 100%;
-    font-family: Merriweather Sans !important;
-    font-weight: 400 !important;
-    background-color: #111827;
-  }
-
-  html, body, #main {
-    overscroll-behavior: none;
-    width: 100%;
-    margin: 0;
+    background-color: ${getBodyBackgroundColor};
+    height: 100%;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Montserrat, Roboto, sans-serif;
+    font-family: Merriweather Sans, Roboto, sans-serif;
   }
 
   * {

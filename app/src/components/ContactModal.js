@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 
 import cross from "../images/cross.svg";
 import API from "../services/api";
+import UserContext from "../contexts/user";
 
-const ContactModal = ({
-  isActive,
-  onCloseContactModal,
-  onForceCloseContactModal,
-  user,
-}) => {
+const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal }) => {
+  const { user } = useContext(UserContext);
+
   const [{ pseudo, email, message }, setState] = useState({
     pseudo: user?.pseudo || "",
     email: "",
@@ -199,8 +197,7 @@ const SubmitButton = styled.button`
   font-size: 16px;
   border-radius: 44px;
   border: none;
-  background: ${(props) =>
-    props.isLoading ? "rgb(233, 233, 233)" : "#facc15"};
+  background: ${(props) => (props.isLoading ? "rgb(233, 233, 233)" : "#facc15")};
   color: ${(props) => (props.isLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
   cursor: pointer;
 `;
