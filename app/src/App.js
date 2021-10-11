@@ -37,11 +37,12 @@ const App = () => {
           <Route path="/home" component={Home} />
           <Route path="/login" component={LoginPage} />
           <Route path="/all-questions" exact component={AllQuestions} />
-          <RestrictedRoute path="/theme" component={ThemeSelect} />
+          <RestrictedRoute path="/themes" component={ThemeSelect} />
           <RestrictedRoute path="/question/:themeId/:questionId" exact component={Quizz} />
           <RestrictedRoute path="/result" exact component={Result} />
           <RestrictedRoute path="/result/:candidateId" exact component={CandidateResult} />
-          <RestrictedRoute path="/" exact component={() => <Redirect to="/theme" />} />
+          <RestrictedRoute path="/" exact component={() => <Redirect to="/themes" />} />
+          <RestrictedRoute path="/" component={() => <Redirect to="/home" />} />
         </Switch>
       </Layout>
     </>

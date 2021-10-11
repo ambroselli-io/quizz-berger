@@ -27,7 +27,7 @@ const LoginPage = () => {
 
   const onLogin = (user) => {
     setUser(user);
-    history.push("/theme");
+    history.push("/themes");
   };
 
   const displaySignup = () => setState({ showSignup: true });

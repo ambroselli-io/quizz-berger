@@ -21,19 +21,19 @@ router.post(
       questionId: req.body.questionId,
     };
 
-    const answer = await AnswerObject.findOne(answerContent);
+    let answer = await AnswerObject.findOne(answerContent);
 
-    if (!answer) {
-      const newAnswer = await AnswerObject.create({
-        ...answerContent,
-        answerIndex: req.body.answerIndex,
-      });
-      res.status(200).send({ ok: true, data: newAnswer });
-      return;
-    }
+    if (!answer) answer = await AnswerObject.create({ ...answerContent, answerIndex: req.body.answerIndex });
 
     answer.set({ answerIndex: req.body.answerIndex });
     await answer.save();
+
+    const { user } = req;
+    if (!user.themes.includes(req.body.themeId)) {
+      user.themes.push(req.body.themeId);
+      await user.save();
+    }
+
     res.status(200).send({ ok: true, data: answer });
   })
 );

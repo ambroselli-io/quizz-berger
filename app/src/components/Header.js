@@ -89,7 +89,7 @@ const Header = ({ loading }) => {
                 <span>Voir toutes les questions</span>
               </NavLink>
             </HeaderMenuTab>
-            <NavLink activeClassName="selected" to="/theme">
+            <NavLink activeClassName="selected" to="/themes">
               <QuizzButton>
                 <span>Quizz</span>
               </QuizzButton>
@@ -168,7 +168,7 @@ const Header = ({ loading }) => {
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" to="/theme">
+                  <NavLink activeClassName="selected" to="/themes">
                     <QuizzButton showOnMobile>
                       <span>Quizz</span>
                     </QuizzButton>

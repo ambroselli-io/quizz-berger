@@ -21,6 +21,8 @@ export const UserProvider = ({ children }) => {
     const response = await API.getWithCreds({ path: "/user/me" });
     if (!response?.ok) {
       document.cookie = null;
+      setUserAnswers([]);
+      setAnswersQueue([]);
       return;
     }
     setUser(response.data);
@@ -33,6 +35,8 @@ export const UserProvider = ({ children }) => {
     });
     if (response.ok) {
       setUser(null);
+      setUserAnswers([]);
+      setAnswersQueue([]);
       window.sessionStorage.clear();
     }
   };
@@ -53,7 +57,7 @@ export const UserProvider = ({ children }) => {
   useEffect(() => {
     init();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [user?._id]);
 
   useEffect(() => {
     saveInSessionStorage();
