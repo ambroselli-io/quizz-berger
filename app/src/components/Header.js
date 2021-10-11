@@ -10,6 +10,7 @@ import burgerNav from "../images/burgerNav.svg";
 import ContactModal from "./ContactModal";
 import Legal from "./Legal";
 import UserContext from "../contexts/user";
+import QuizzButton from "./QuizzButton";
 
 const Header = ({ loading }) => {
   const { user, logout } = useContext(UserContext);
@@ -46,7 +47,7 @@ const Header = ({ loading }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showLogoKey]);
 
-  const onCloseContactModal = (e) => {
+  const onCloseModal = (e) => {
     if (e.target !== e.currentTarget) return;
     setShowContactModal(false);
     document.body.style.overflow = "visible";
@@ -89,11 +90,11 @@ const Header = ({ loading }) => {
                 <span>Voir toutes les questions</span>
               </NavLink>
             </HeaderMenuTab>
-            <NavLink activeClassName="selected" to="/themes">
-              <QuizzButton>
-                <span>Quizz</span>
-              </QuizzButton>
-            </NavLink>
+            <HeaderMenuTab>
+              <NavLink activeClassName="selected" to="/themes">
+                <QuizzButton>Quizz</QuizzButton>
+              </NavLink>
+            </HeaderMenuTab>
             {user?._id && (
               <HeaderMenuTab>
                 <NavLink activeClassName="selected" to="/result">
@@ -143,9 +144,7 @@ const Header = ({ loading }) => {
                 <Fillet />
                 <BurgerMenuTab>
                   <NavLink activeClassName="selected" to="/themes">
-                    <QuizzButton showOnMobile>
-                      <span>Quizz</span>
-                    </QuizzButton>
+                    <QuizzButton>Quizz</QuizzButton>
                   </NavLink>
                 </BurgerMenuTab>
                 <Fillet />
@@ -183,8 +182,8 @@ const Header = ({ loading }) => {
       <Legal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
       <ContactModal
         isActive={showContactModal}
-        onCloseContactModal={onCloseContactModal}
-        onForceCloseContactModal={onForceCloseContactModal}
+        onCloseModal={onCloseModal}
+        onForceCloseModal={onForceCloseContactModal}
         key={user?._id}
       />
     </>
@@ -303,9 +302,14 @@ const HeaderMenu = styled.ul`
   font-size: 14px;
   font-weight: 500;
   ${media.mobile`
-  display: block;
-  height: auto;
-`}
+    display: block;
+    height: auto;
+  `}
+  ${media.mobile`
+  li {
+    display: none;
+  }
+  `}
 `;
 
 const HeaderMenuTab = styled.li`
@@ -325,21 +329,6 @@ const HeaderMenuTab = styled.li`
     border-top: 3px solid #facc15;
     color: white;
   }
-  ${media.mobile`
-  display: none;
-  `}
-`;
-
-const QuizzButton = styled.button`
-  padding: 10px 25px;
-  background-color: #facc15;
-  height: 40px;
-  border: none;
-  border-radius: 44px;
-  cursor: pointer;
-  ${media.mobile`
-  display: ${(props) => (props.showOnMobile ? "block" : "none")};
-  `}
 `;
 
 const BurgerNavContainer = styled.div`

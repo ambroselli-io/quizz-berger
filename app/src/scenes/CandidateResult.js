@@ -25,7 +25,8 @@ const CandidateResult = () => {
         <SubContainer>
           <Title>Voici les résultats de {candidateAnswers?.pseudo}</Title>
           <SubTitle>
-            Vous pouvez voir en rouge tous les résultats de {candidateAnswers?.pseudo}
+            Vous pouvez voir en rouge tous les résultats de {candidateAnswers?.pseudo}, et en
+            encadré vos résultats.
           </SubTitle>
           {quizz.map((theme, index) => {
             return (
@@ -84,6 +85,7 @@ const BackgroundContainer = styled.div`
   details {
     margin-bottom: 20px;
     width: 1024px;
+    width: 85vw;
   }
 
   summary {
@@ -124,7 +126,8 @@ const QuestionTitle = styled.summary`
 `;
 
 const SubContainer = styled.div`
-  max-width: 1200px;
+  width: 1200px;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -17,10 +17,11 @@ const Home = () => (
           {/* Take our Political
               Compass test to find out which political group your best match is */}
         </SubTitle>
-        <Link to="/themes">
-          <QuizzButton>
-            <span>Participer au Quizz</span>
-          </QuizzButton>
+        <QuizzButton>Participer au Quizz</QuizzButton>
+        <Link to="/login">
+          <LoginLink>
+            Vous avez enregistré vos résultats&nbsp;? <strong>Connectez&#8209;vous</strong>
+          </LoginLink>
         </Link>
       </Container>
     </BackgroundContainer>
@@ -89,6 +90,18 @@ const QuizzButton = styled.button`
   font-size: 16px;
   color: #111827;
   cursor: pointer;
+`;
+
+const LoginLink = styled.span`
+  display: block;
+  margin-top: 20px;
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
 `;
 
 export default Home;

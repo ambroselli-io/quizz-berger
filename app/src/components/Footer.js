@@ -1,69 +1,71 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 import logo from "../images/logo.svg";
 import { Link } from "react-router-dom";
 import ContactModal from "../components/ContactModal";
 import Legal from "./Legal";
+import UserContext from "../contexts/user";
 
-class Footer extends React.Component {
-  state = {
-    showLegalModal: false,
-    showContactModal: false,
-  };
+const Footer = () => {
+  const { user } = useContext(UserContext);
+  const [showLegalModal, setShowLegalModal] = useState(false);
+  const [showContactModal, setShowContactModal] = useState(false);
 
-  onCloseLegalModal = (e) => {
+  const onCloseLegalModal = (e) => {
     if (e.target !== e.currentTarget) return;
-    this.setState({ showLegalModal: false });
+    setShowLegalModal(false);
     document.body.style.overflow = "visible";
   };
 
-  onOpenLegalModal = (e) => {
-    this.setState({ showLegalModal: true });
+  const onOpenLegalModal = (e) => {
+    setShowLegalModal(true);
     document.body.style.overflow = "hidden";
   };
 
-  onCloseContactModal = (e) => {
+  const onCloseContactModal = (e) => {
     if (e.target !== e.currentTarget) return;
-    this.setState({ showContactModal: false });
+    setShowContactModal(false);
     document.body.style.overflow = "visible";
   };
 
-  onOpenContactModal = () => {
-    this.setState({ showContactModal: true });
+  const onForceCloseContactModal = (e) => {
+    setShowContactModal(false);
+    document.body.style.overflow = "visible";
+  };
+
+  const onOpenContactModal = () => {
+    setShowContactModal(true);
     document.body.style.overflow = "hidden";
   };
 
-  render() {
-    const { showContactModal, showLegalModal } = this.state;
-    const { user } = this.props;
-    return (
-      <FooterContainer>
-        <Container>
-          <LeftContainer>
-            <Link to="/home">
-              <HeaderLogo />
-            </Link>
-            <Link to="/home">
-              <Title>Le Quizz du Berger</Title>
-            </Link>
-          </LeftContainer>
-          <FooterMenu>
-            <FooterMenuTab onClick={this.onOpenContactModal}>Nous contacter</FooterMenuTab>
-            <FooterMenuTab onClick={this.onOpenLegalModal}>Mentions légales</FooterMenuTab>
-          </FooterMenu>
-        </Container>
-        {/* -- MODAL -- */}
-        <Legal isActive={showLegalModal} onClose={this.onCloseLegalModal} />
-        <ContactModal
-          isActive={showContactModal}
-          onCloseContactModal={this.onCloseContactModal}
-          user={user}
-        />
-      </FooterContainer>
-    );
-  }
-}
+  return (
+    <FooterContainer>
+      <Container>
+        <LeftContainer>
+          <Link to="/home">
+            <HeaderLogo />
+          </Link>
+          <Link to="/home">
+            <Title>Le Quizz du Berger</Title>
+          </Link>
+        </LeftContainer>
+        <FooterMenu>
+          <FooterMenuTab onClick={onOpenContactModal}>Nous contacter</FooterMenuTab>
+          <FooterMenuTab onClick={onOpenLegalModal}>Mentions légales</FooterMenuTab>
+        </FooterMenu>
+      </Container>
+      {/* -- MODAL -- */}
+      <Legal isActive={showLegalModal} onClose={onCloseLegalModal} />
+      <ContactModal
+        isActive={showContactModal}
+        onCloseModal={onCloseContactModal}
+        onForceCloseModal={onForceCloseContactModal}
+        key={user?._id}
+      />
+    </FooterContainer>
+  );
+};
 
 const FooterContainer = styled.div`
   padding: 0 40px;

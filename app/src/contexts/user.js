@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 import API from "../services/api";
 import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
 
@@ -9,16 +10,22 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(getFromSessionStorage("user", {}));
   const [userAnswers, setUserAnswers] = useState(getFromSessionStorage("userAnswers", []));
   const [answersQueue, setAnswersQueue] = useState(getFromSessionStorage("answersQueue", []));
+  const history = useHistory();
 
   const init = async () => {
     await getUser();
     await getAnswers();
   };
 
+  const initNewUser = async () => {
+    if (!!user?._id) return;
+    const response = await API.post({ path: "/user" });
+    if (response.ok) setUser(response.data);
+  };
+
   const getUser = async () => {
     const response = await API.getWithCreds({ path: "/user/me" });
     if (!response?.ok) {
-      document.cookie = null;
       setUserAnswers([]);
       setAnswersQueue([]);
       return;
@@ -34,10 +41,11 @@ export const UserProvider = ({ children }) => {
       path: "/user/logout",
     });
     if (response.ok) {
-      setUser(null);
+      window.sessionStorage.clear();
       setUserAnswers([]);
       setAnswersQueue([]);
-      window.sessionStorage.clear();
+      history.push("/home");
+      setUser(null);
     }
   };
 
@@ -111,7 +119,8 @@ export const UserProvider = ({ children }) => {
   }, [answersQueue.length]);
 
   return (
-    <UserContext.Provider value={{ user, setUser, logout, userAnswers, getAnswers, setAnswer }}>
+    <UserContext.Provider
+      value={{ user, setUser, initNewUser, logout, userAnswers, getAnswers, setAnswer }}>
       {children}
     </UserContext.Provider>
   );

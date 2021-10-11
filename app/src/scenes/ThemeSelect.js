@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router";
 import { media } from "../styles/mediaQueries";
@@ -10,7 +10,7 @@ import ThemeButton from "../components/ThemeButton";
 import Button from "../components/Button";
 
 const ThemeSelect = () => {
-  const { userAnswers } = useContext(UserContext);
+  const { initNewUser, userAnswers } = useContext(UserContext);
   const { quizz } = useContext(DataContext);
   const history = useHistory();
 
@@ -21,13 +21,18 @@ const ThemeSelect = () => {
     history.push(`/question/${themeId}/${firstQuestionId}`);
   };
 
+  useEffect(() => {
+    initNewUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
       <BackgroundContainer>
         <SubContainer>
           <Title>Sélectionnez vos thèmes</Title>
           <SubTitle>
-            Répondez au quizz thème par thème, en choisissant{" "}
+            Répondez au quizz, thème après thème, en commençant par{" "}
             <strong>celui qui vous tient le plus à coeur</strong>
           </SubTitle>
           <ThemesContainer>

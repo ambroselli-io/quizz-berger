@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xml:lang="fr">
+  <head>
+    <title>Le Quizz du Berger</title>
+    <meta charset="UTF-8" />
+    <script>
+      function redirect() {
+        const url = window.location.host.split(".").filter((_, i) => i > 0);
+        window.location.replace("https://www." + url + "/result/{{USER_ID}}");
+      }
+      redirect();
+    </script>
+  </head>
+  <body></body>
+</html>
