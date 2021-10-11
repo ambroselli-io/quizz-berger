@@ -5,6 +5,8 @@ import { media } from "../styles/mediaQueries";
 import cross from "../images/cross.svg";
 import API from "../services/api";
 import UserContext from "../contexts/user";
+import { FormInput, FormLabel, FormStyled, FormTextArea } from "./Form";
+import Button from "./Button";
 
 const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal }) => {
   const { user } = useContext(UserContext);
@@ -57,7 +59,7 @@ const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal 
             <CrossButton onClick={onCloseContactModal} />
           </TitleContainer>
           <ModalInnerContainer>
-            <ContactForm onSubmit={onFormSubmit}>
+            <FormStyled noPadding onSubmit={onFormSubmit}>
               <FormLabel>Nom/pseudo *</FormLabel>
               <FormInput
                 type="text"
@@ -85,10 +87,10 @@ const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal 
                 value={message}
                 placeholder="Un commentaire ? Une suggestion ?"
               />
-              <SubmitButton isLoading={isLoading} type="submit">
+              <Button disabled={isLoading} type="submit">
                 {isLoading ? "Envoi en cours..." : "Envoyer !"}
-              </SubmitButton>
-            </ContactForm>
+              </Button>
+            </FormStyled>
           </ModalInnerContainer>
         </ModalContainer>
       </BackgroundContainer>
@@ -152,54 +154,6 @@ const ModalInnerContainer = styled.div`
   ${media.mobile`
   overflow: scroll;
 `}
-`;
-
-const ContactForm = styled.form`
-  display: flex;
-  flex-direction: column;
-`;
-
-const FormLabel = styled.label`
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: 600;
-`;
-
-const FormInput = styled.input`
-  margin-bottom: 25px;
-  padding: 0 12px;
-  height: 40px;
-  border: 1px solid #e5e7eb;
-  border-radius: 2px;
-  font-size: 16px;
-  font-weight: 300;
-  &:placeholder {
-    color: rgba(17, 24, 39, 0.4);
-  }
-`;
-
-const FormTextArea = styled.textarea`
-  margin-bottom: 25px;
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  border-radius: 2px;
-  font-size: 16px;
-  font-weight: 300;
-  resize: none;
-  &:placeholder {
-    color: rgba(17, 24, 39, 0.4);
-  }
-`;
-
-const SubmitButton = styled.button`
-  height: 44px;
-  font-weight: normal;
-  font-size: 16px;
-  border-radius: 44px;
-  border: none;
-  background: ${(props) => (props.isLoading ? "rgb(233, 233, 233)" : "#facc15")};
-  color: ${(props) => (props.isLoading ? "rgb(17, 24, 39, 0.2)" : "black")};
-  cursor: pointer;
 `;
 
 export default ContactModal;
