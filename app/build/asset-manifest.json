@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.78036d3c.chunk.js",
-    "main.js.map": "/static/js/main.78036d3c.chunk.js.map",
+    "main.js": "/static/js/main.4420eaae.chunk.js",
+    "main.js.map": "/static/js/main.4420eaae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8f78b227.js",
     "runtime-main.js.map": "/static/js/runtime-main.8f78b227.js.map",
-    "static/js/2.198f53b2.chunk.js": "/static/js/2.198f53b2.chunk.js",
-    "static/js/2.198f53b2.chunk.js.map": "/static/js/2.198f53b2.chunk.js.map",
+    "static/js/2.5ef3c06e.chunk.js": "/static/js/2.5ef3c06e.chunk.js",
+    "static/js/2.5ef3c06e.chunk.js.map": "/static/js/2.5ef3c06e.chunk.js.map",
     "static/js/3.a8cb7ab7.chunk.js": "/static/js/3.a8cb7ab7.chunk.js",
     "static/js/3.a8cb7ab7.chunk.js.map": "/static/js/3.a8cb7ab7.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.198f53b2.chunk.js.LICENSE.txt": "/static/js/2.198f53b2.chunk.js.LICENSE.txt",
+    "static/js/2.5ef3c06e.chunk.js.LICENSE.txt": "/static/js/2.5ef3c06e.chunk.js.LICENSE.txt",
     "static/media/burgerNav.fab2060d.svg": "/static/media/burgerNav.fab2060d.svg",
     "static/media/cross.7517a689.svg": "/static/media/cross.7517a689.svg",
     "static/media/left-arrow.57fb1fe0.svg": "/static/media/left-arrow.57fb1fe0.svg",
@@ -18,7 +18,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8f78b227.js",
-    "static/js/2.198f53b2.chunk.js",
-    "static/js/main.78036d3c.chunk.js"
+    "static/js/2.5ef3c06e.chunk.js",
+    "static/js/main.4420eaae.chunk.js"
   ]
 }
