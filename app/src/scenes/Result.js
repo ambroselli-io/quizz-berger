@@ -10,8 +10,8 @@ import DataContext from "../contexts/data";
 import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
 
 const Result = () => {
-  const { user, userAnswers, getAnswers } = useContext(UserContext);
-  const { quizz, candidates, getCandidates } = useContext(DataContext);
+  const { user, userAnswers /* getAnswers */ } = useContext(UserContext);
+  const { quizz, candidates /* getCandidates */ } = useContext(DataContext);
 
   const userThemes = [
     ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
@@ -69,11 +69,6 @@ const Result = () => {
     })),
     quizz
   );
-
-  useEffect(() => {
-    getAnswers();
-    getCandidates();
-  }, []);
 
   useEffect(() => {
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {

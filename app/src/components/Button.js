@@ -8,13 +8,14 @@ const ButtonStyled = styled.button`
   background-color: #facc15;
   color: black;
   cursor: pointer;
+  border: 1px solid #facc15;
   :disabled {
+    border: 1px solid rgb(233, 233, 233);
     background-color: rgb(233, 233, 233);
     color: rgb(17, 24, 39, 0.2);
     cursor: auto;
   }
   border-radius: 56px;
-  border: 1px solid #facc15;
   cursor: pointer;
   line-height: 1em;
 `;

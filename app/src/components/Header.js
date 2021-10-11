@@ -101,6 +101,9 @@ const Header = ({ loading }) => {
                 </NavLink>
               </HeaderMenuTab>
             )}
+            <HeaderMenuTab>
+              <span onClick={onOpenContactModal}>Nous contacter</span>
+            </HeaderMenuTab>
             {!!user?._id ? (
               <HeaderMenuTab onClick={onLogout}>
                 <span>{user?.pseudo ? "Se déconnecter" : "Recommencer"}</span>
@@ -112,9 +115,6 @@ const Header = ({ loading }) => {
                 </NavLink>
               </HeaderMenuTab>
             )}
-            <HeaderMenuTab>
-              <span onClick={onOpenContactModal}>Nous contacter</span>
-            </HeaderMenuTab>
             {/* BurgerMenu */}
             <BurgerNavContainer>
               <Menu
@@ -142,6 +142,14 @@ const Header = ({ loading }) => {
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
+                  <NavLink activeClassName="selected" to="/themes">
+                    <QuizzButton showOnMobile>
+                      <span>Quizz</span>
+                    </QuizzButton>
+                  </NavLink>
+                </BurgerMenuTab>
+                <Fillet />
+                <BurgerMenuTab>
                   <NavLink activeClassName="selected" to="/result">
                     <span>Résultats</span>
                   </NavLink>
@@ -160,19 +168,11 @@ const Header = ({ loading }) => {
                 )}
                 <Fillet />
                 <BurgerMenuTab>
-                  <span onClick={() => setShowLegalModal(true)}>Mentions légales</span>
-                </BurgerMenuTab>
-                <Fillet />
-                <BurgerMenuTab>
                   <span onClick={onOpenContactModal}>Nous contacter</span>
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" to="/themes">
-                    <QuizzButton showOnMobile>
-                      <span>Quizz</span>
-                    </QuizzButton>
-                  </NavLink>
+                  <span onClick={() => setShowLegalModal(true)}>Mentions légales</span>
                 </BurgerMenuTab>
               </Menu>
             </BurgerNavContainer>
@@ -372,6 +372,7 @@ const BurgerNavTitle = styled.h1`
 
 const BurgerMenuTab = styled.div`
   margin: 15px 30px !important;
+  cursor: pointer;
 `;
 
 const BackContainer = styled.div`

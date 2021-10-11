@@ -11,10 +11,8 @@ export const UserProvider = ({ children }) => {
   const [answersQueue, setAnswersQueue] = useState(getFromSessionStorage("answersQueue", []));
 
   const init = async () => {
-    if (!!document.cookie.includes("jwt")) {
-      await getUser();
-      await getAnswers();
-    }
+    await getUser();
+    await getAnswers();
   };
 
   const getUser = async () => {
@@ -25,8 +23,10 @@ export const UserProvider = ({ children }) => {
       setAnswersQueue([]);
       return;
     }
-    setUser(response.data);
-    setSessionStorageUpdateKey((k) => k + 1);
+    if (JSON.stringify(user) !== JSON.stringify(response.data)) {
+      setUser(response.data);
+      setSessionStorageUpdateKey((k) => k + 1);
+    }
   };
 
   const logout = async () => {
@@ -44,7 +44,8 @@ export const UserProvider = ({ children }) => {
   const getAnswers = async () => {
     await saveAnswersInDatabase();
     const response = await API.getWithCreds({ path: "/answer" });
-    if (response.ok) {
+    if (!response.ok) return;
+    if (JSON.stringify(userAnswers) !== JSON.stringify(response.data)) {
       setUserAnswers(response.data);
       setSessionStorageUpdateKey((k) => k + 1);
     }

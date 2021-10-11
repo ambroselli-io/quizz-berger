@@ -23,8 +23,11 @@ export const DataProvider = ({ children }) => {
   const getCandidates = async () => {
     const response = await API.get({ path: "/answer/candidates" });
     if (response.ok) {
-      setToLocalStorage("candidates", response.data);
-      setCandidates(response.data);
+      if (JSON.stringify(candidates) !== JSON.stringify(response.data)) {
+        console.log("miam");
+        setToLocalStorage("candidates", response.data);
+        setCandidates(response.data);
+      }
     }
   };
 
