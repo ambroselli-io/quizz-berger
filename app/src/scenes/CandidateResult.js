@@ -1,28 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router";
 import styled from "styled-components";
-import API from "../services/api";
+import DataContext from "../contexts/data";
 import { media } from "../styles/mediaQueries";
 
 const CandidateResult = ({ quizz }) => {
   const { candidateId } = useParams();
-  const [candidateAnswers, setCandidateAnswers] = useState({});
+  const { candidates } = useContext(DataContext);
 
-  const getAnswers = async () => {
-    const response = await API.getWithCreds({
-      path: "/answer/candidates",
-    });
-
-    if (response.ok) {
-      const getCandidateAnswers = response.data.find((c) => c._id === candidateId);
-      setCandidateAnswers(getCandidateAnswers);
-    }
-  };
-
-  useEffect(() => {
-    getAnswers();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const candidateAnswers = candidates.find((c) => c._id === candidateId);
 
   if (!candidateAnswers?.pseudo)
     return (

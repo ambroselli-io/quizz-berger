@@ -9,6 +9,7 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
     .filter((score) => selectedThemes.includes(score.themeId))
     .map((score) => score.score);
 
+  console.log({ quizz, selectedThemes });
   const themes = selectedThemes.map((themeId) => {
     return quizz.find((quizztheme) => quizztheme._id === themeId).fr;
   });

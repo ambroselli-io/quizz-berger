@@ -1,44 +1,48 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import DataContext from "../contexts/data";
 import { media } from "../styles/mediaQueries";
 
-const AllQuestions = ({ quizz }) => (
-  <>
-    <BackgroundContainer>
-      <SubContainer>
-        <Title>Toutes les questions</Title>
-        <SubTitle>
-          Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une
-          question à ajouter, contactez-nous !
-        </SubTitle>
-        {quizz.map((theme, index) => (
-          <details open key={theme._id}>
-            <ThemeTitle>
-              {"ABCDEFGHIJKLMNOPQRST"[index]} - {theme.fr}
-            </ThemeTitle>
-            <div>
-              {theme.questions.map((question, questionIndex) => (
-                <details open key={question._id}>
-                  <QuestionTitle>
-                    {"ABCDEFGHIJKLMNOPQRST"[index]}
-                    {questionIndex + 1} - {question.fr}
-                  </QuestionTitle>
-                  <ol>
-                    {question.answers.map((answer, answerIndex) => (
-                      <li key={answer}>
-                        {answerIndex + 1}. {answer}
-                      </li>
-                    ))}
-                  </ol>
-                </details>
-              ))}
-            </div>
-          </details>
-        ))}
-      </SubContainer>
-    </BackgroundContainer>
-  </>
-);
+const AllQuestions = () => {
+  const { quizz } = useContext(DataContext);
+  return (
+    <>
+      <BackgroundContainer>
+        <SubContainer>
+          <Title>Toutes les questions</Title>
+          <SubTitle>
+            Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une
+            question à ajouter, contactez-nous !
+          </SubTitle>
+          {quizz.map((theme, index) => (
+            <details open key={theme._id}>
+              <ThemeTitle>
+                {"ABCDEFGHIJKLMNOPQRST"[index]} - {theme.fr}
+              </ThemeTitle>
+              <div>
+                {theme.questions.map((question, questionIndex) => (
+                  <details open key={question._id}>
+                    <QuestionTitle>
+                      {"ABCDEFGHIJKLMNOPQRST"[index]}
+                      {questionIndex + 1} - {question.fr}
+                    </QuestionTitle>
+                    <ol>
+                      {question.answers.map((answer, answerIndex) => (
+                        <li key={answer}>
+                          {answerIndex + 1}. {answer}
+                        </li>
+                      ))}
+                    </ol>
+                  </details>
+                ))}
+              </div>
+            </details>
+          ))}
+        </SubContainer>
+      </BackgroundContainer>
+    </>
+  );
+};
 
 const BackgroundContainer = styled.div`
   padding: 40px 10px 40px 10px;

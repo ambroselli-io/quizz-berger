@@ -1,93 +1,78 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router";
 import { media } from "../styles/mediaQueries";
 
-import ThemeButton from "../components/ThemeButton";
 import API from "../services/api";
+import UserContext from "../contexts/user";
+import DataContext from "../contexts/data";
 
-class ThemeSelect extends React.Component {
-  state = {
-    selectedThemesIds: this.props.user.themes,
-  };
+import ThemeButton from "../components/ThemeButton";
 
-  onSelectTheme = (e) => {
-    const { selectedThemesIds } = this.state;
+const ThemeSelect = () => {
+  const { user, setUser } = useContext(UserContext);
+  const { quizz } = useContext(DataContext);
+  const history = useHistory();
+  const [selectedThemesIds, setSelectedThemeIds] = useState(user.themes);
+
+  const onSelectTheme = (e) => {
     // if the theme is already selected, delete it from the state
-    if (!!selectedThemesIds.find((t) => t === e.target.dataset.themeid)) {
-      const filteredSelectedTheme = selectedThemesIds.filter(
-        (id) => id !== e.target.dataset.themeid
-      );
-      this.setState({ selectedThemesIds: filteredSelectedTheme });
+    const newThemeId = e.target.dataset.themeid;
+    if (!!selectedThemesIds.find((t) => t === newThemeId)) {
+      setSelectedThemeIds(selectedThemesIds.filter((id) => id !== newThemeId));
       return;
     }
-    this.setState({
-      selectedThemesIds: [...this.state.selectedThemesIds, e.target.dataset.themeid],
-    });
+    setSelectedThemeIds([...selectedThemesIds, newThemeId]);
   };
 
-  saveSelectedThemes = async (themeIds) => {
-    const { selectedThemesIds } = this.state;
-    const { quizz } = this.props;
+  const saveSelectedThemes = async () => {
     if (selectedThemesIds.length < 3) {
       alert("Veuillez sélectionner au moins 3 thèmes");
       return;
     }
-
     const availableThemeIds = quizz.map((theme) => theme._id);
     const response = await API.putWithCreds({
       path: "/user",
       body: { themes: availableThemeIds.filter((id) => selectedThemesIds.includes(id)) },
     });
     if (response.ok) {
-      const { setUser, history } = this.props;
       const firstQuestionId = quizz.find((t) => t._id === response.data.themes[0]).questions[0]._id;
       setUser(response.data);
       history.push(`/question/${response.data.themes[0]}/${firstQuestionId}`);
     }
   };
 
-  render() {
-    const { selectedThemesIds } = this.state;
-    const { quizz } = this.props;
-    return (
-      <>
-        <BackgroundContainer>
-          <SubContainer>
-            <Title>Quizz politique</Title>
-            <SubTitle>
-              Participez à notre quizz politique pour trouver le candidat qui se rapproche le plus
-              de vos idées !
-              <br /> <br />
-              Mais avant, veuillez choisir au moins 3 thèmes
-            </SubTitle>
-            <ThemesContainer>
-              {quizz.map((t) => {
-                return (
-                  <ThemeButton
-                    theme={t.fr}
-                    backgroundColor={t.backgroundColor}
-                    themeId={t._id}
-                    isActive={!!selectedThemesIds.find((id) => id === t._id)}
-                    selectedThemesIds={selectedThemesIds}
-                    key={t._id}
-                    onSelect={this.onSelectTheme}
-                  />
-                );
-              })}
-            </ThemesContainer>
-            {/* <Footer> */}
-            <ValidateButton
-              isDisplayed={selectedThemesIds.length >= 3}
-              onClick={this.saveSelectedThemes}>
-              Valider mes thèmes
-            </ValidateButton>
-            {/* </Footer> */}
-          </SubContainer>
-        </BackgroundContainer>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <BackgroundContainer>
+        <SubContainer>
+          <Title>Séletionnez vos thèmes</Title>
+          <SubTitle>
+            Répondez au quizz thème par thème, en choisissant{" "}
+            <strong>celui qui vous tient le plus à coeur</strong>
+          </SubTitle>
+          <ThemesContainer>
+            {quizz.map((theme) => {
+              return (
+                <ThemeButton
+                  key={theme._id}
+                  theme={theme}
+                  isActive={!!selectedThemesIds.find((id) => id === theme._id)}
+                  onClick={onSelectTheme}
+                />
+              );
+            })}
+          </ThemesContainer>
+          {/* <Footer> */}
+          <ValidateButton isDisplayed={selectedThemesIds.length >= 3} onClick={saveSelectedThemes}>
+            Valider mes thèmes
+          </ValidateButton>
+          {/* </Footer> */}
+        </SubContainer>
+      </BackgroundContainer>
+    </>
+  );
+};
 
 const BackgroundContainer = styled.div`
   padding: 40px 10px 40px 10px;

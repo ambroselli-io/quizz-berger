@@ -1,75 +1,75 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router";
+
 import { media } from "../styles/mediaQueries";
 
 import Signup from "../components/Signup";
 import Login from "../components/Login";
 import Footer from "../components/Footer";
+import UserContext from "../contexts/user";
 
-class LoginPage extends React.Component {
-  state = {
+const LoginPage = () => {
+  const { setUser } = useContext(UserContext);
+  const history = useHistory();
+
+  const [state, setFullState] = useState({
     showSignup: process.env.NODE_ENV !== "development",
     pseudo: "",
     password: "",
     passwordConfirm: "",
     candidate: false,
-  };
+  });
 
-  onChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
+  const setState = (newState) => setFullState((oldState) => ({ ...oldState, ...newState }));
 
-  onLogin = (user) => {
-    const { setUser, history } = this.props;
+  const onChange = (e) => setState({ [e.target.name]: e.target.value });
+
+  const onLogin = (user) => {
     setUser(user);
     history.push("/theme");
   };
 
-  displaySignup = () => this.setState({ showSignup: true });
+  const displaySignup = () => setState({ showSignup: true });
 
-  displayLogin = () => this.setState({ showSignup: false });
+  const displayLogin = () => setState({ showSignup: false });
 
-  render() {
-    const { showSignup } = this.state;
-    return (
-      <>
-        <BackGroundContainer>
-          <Title>Connectez-vous</Title>
-          <LogContainer>
-            <SignButtonContainer>
-              <LoginButton isDisplayed={!showSignup} onClick={this.displayLogin}>
-                Se connecter
-              </LoginButton>
-              <SignupButton isDisplayed={showSignup} onClick={this.displaySignup}>
-                S'inscrire
-              </SignupButton>
-            </SignButtonContainer>
-            {!showSignup && (
-              <Login
-                isDisplayed={!this.state.showSignup}
-                onLogin={this.onLogin}
-                onChange={this.onChange}
-                onGoToSignup={this.displaySignup}
-                {...this.state}
-              />
-            )}
-            {showSignup && (
-              <Signup
-                isDisplayed={this.state.showSignup}
-                onLogin={this.onLogin}
-                onChange={this.onChange}
-                {...this.state}
-              />
-            )}
-          </LogContainer>
-        </BackGroundContainer>
-        <Footer />
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <BackGroundContainer>
+        <Title>Connectez-vous</Title>
+        <LogContainer>
+          <SignButtonContainer>
+            <LoginButton isDisplayed={!state.showSignup} onClick={displayLogin}>
+              Se connecter
+            </LoginButton>
+            <SignupButton isDisplayed={state.showSignup} onClick={displaySignup}>
+              S'inscrire
+            </SignupButton>
+          </SignButtonContainer>
+          {!state.showSignup && (
+            <Login
+              isDisplayed={!state.showSignup}
+              onLogin={onLogin}
+              onChange={onChange}
+              onGoToSignup={displaySignup}
+              {...state}
+            />
+          )}
+          {state.showSignup && (
+            <Signup
+              isDisplayed={state.showSignup}
+              onLogin={onLogin}
+              onChange={onChange}
+              {...state}
+            />
+          )}
+        </LogContainer>
+      </BackGroundContainer>
+      <Footer />
+    </>
+  );
+};
 
 const BackGroundContainer = styled.div`
   padding: 40px 20px 40px 20px;

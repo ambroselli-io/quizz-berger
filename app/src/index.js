@@ -5,6 +5,8 @@ import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { DataProvider } from "./contexts/data";
+import { UserProvider } from "./contexts/user";
 
 if (process.env.NODE_ENV !== "development") {
   Sentry.init({
@@ -21,7 +23,11 @@ if (process.env.NODE_ENV !== "development") {
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <DataProvider>
+        <UserProvider>
+          <App />
+        </UserProvider>
+      </DataProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
