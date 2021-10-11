@@ -4,8 +4,8 @@ import { useHistory } from "react-router";
 
 import { media } from "../styles/mediaQueries";
 
-import Signup from "../components/Signup";
-import Login from "../components/Login";
+import SignUp from "../components/SignUp";
+import SignIn from "../components/SignIn";
 import Footer from "../components/Footer";
 import UserContext from "../contexts/user";
 
@@ -39,16 +39,16 @@ const LoginPage = () => {
       <BackGroundContainer>
         <Title>Connectez-vous</Title>
         <LogContainer>
-          <SignButtonContainer>
-            <LoginButton isDisplayed={!state.showSignup} onClick={displayLogin}>
+          <LoginTabs>
+            <LoginTab isDisplayed={!state.showSignup} onClick={displayLogin}>
               Se connecter
-            </LoginButton>
-            <SignupButton isDisplayed={state.showSignup} onClick={displaySignup}>
+            </LoginTab>
+            <LoginTab isDisplayed={state.showSignup} onClick={displaySignup}>
               S'inscrire
-            </SignupButton>
-          </SignButtonContainer>
+            </LoginTab>
+          </LoginTabs>
           {!state.showSignup && (
-            <Login
+            <SignIn
               isDisplayed={!state.showSignup}
               onLogin={onLogin}
               onChange={onChange}
@@ -57,7 +57,7 @@ const LoginPage = () => {
             />
           )}
           {state.showSignup && (
-            <Signup
+            <SignUp
               isDisplayed={state.showSignup}
               onLogin={onLogin}
               onChange={onChange}
@@ -106,38 +106,30 @@ const LogContainer = styled.div`
   align-items: center;
   background-color: #e5e7eb;
   border-radius: 8px;
+  width: 90vw;
+  max-width: 400px;
 `;
 
-const SignButtonContainer = styled.div`
+const LoginTabs = styled.div`
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
 `;
 
-const LoginButton = styled.button`
-  width: 200px;
-  height: 45px;
+const LoginTab = styled.button`
+  flex-basis: 50%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: ${(props) => (props.isDisplayed ? "white" : "#E5E7EB")};
   color: ${(props) => (props.isDisplayed ? "black" : "#6B7280")};
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 8px 8px 0 0;
-  ${media.mobile`
-  width: 150px;
-`};
-`;
-
-const SignupButton = styled.button`
-  width: 200px;
-  height: 45px;
-  background-color: ${(props) => (props.isDisplayed ? "white" : "#E5E7EB")};
-  color: ${(props) => (props.isDisplayed ? "black" : "#6B7280")};
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px 8px 0 0;
-  ${media.mobile`
-  width: 150px;
-`};
 `;
 
 export default LoginPage;
