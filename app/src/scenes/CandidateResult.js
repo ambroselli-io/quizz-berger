@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import { useParams } from "react-router";
 import styled from "styled-components";
 import DataContext from "../contexts/data";
+import UserContext from "../contexts/user";
 import { media } from "../styles/mediaQueries";
 
-const CandidateResult = ({ quizz }) => {
+const CandidateResult = () => {
   const { candidateId } = useParams();
-  const { candidates } = useContext(DataContext);
+  const { userAnswers } = useContext(UserContext);
+  const { candidates, quizz } = useContext(DataContext);
 
   const candidateAnswers = candidates.find((c) => c._id === candidateId);
 
@@ -39,19 +41,20 @@ const CandidateResult = ({ quizz }) => {
                         {questionIndex + 1} - {question.fr}
                       </QuestionTitle>
                       <ol>
-                        {question.answers.map((answer, answerIndex) => (
-                          <Answer
-                            key={answer}
-                            isActive={candidateAnswers?.answers?.find(
-                              (a) =>
-                                a.themeId === theme._id &&
-                                a.questionId === question._id &&
-                                a.answerIndex === answerIndex
-                            )} // find matching candidate answer
-                          >
-                            {answerIndex + 1}. {answer}{" "}
-                          </Answer>
-                        ))}
+                        {question.answers.map((answer, answerIndex) => {
+                          const isSameAnswer = (a) =>
+                            a.themeId === theme._id &&
+                            a.questionId === question._id &&
+                            a.answerIndex === answerIndex;
+                          return (
+                            <Answer
+                              key={answer}
+                              isUserAnswer={!!userAnswers.find(isSameAnswer)}
+                              isCandidateAnswer={!!candidateAnswers?.answers?.find(isSameAnswer)}>
+                              {answerIndex + 1}. {answer}{" "}
+                            </Answer>
+                          );
+                        })}
                       </ol>
                     </details>
                   ))}
@@ -146,7 +149,9 @@ const SubTitle = styled.h3`
 `;
 
 const Answer = styled.li`
-  color: ${(props) => (props.isActive ? "red" : "black")};
+  border: 2px solid black;
+  border-width: ${(props) => (props.isUserAnswer ? "2px" : "0px")};
+  color: ${(props) => (props.isCandidateAnswer ? "red" : "black")};
 `;
 
 export default CandidateResult;

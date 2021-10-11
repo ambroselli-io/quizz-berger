@@ -41,8 +41,6 @@ const Result = () => {
 
   const selectedThemes = themesState.filter((t) => t.show).map((t) => t.themeId);
 
-  console.log({ quizz });
-
   const switchCharts = () => setShowRadarChart((show) => !show);
 
   const onSelectCandidates = (e) => {
