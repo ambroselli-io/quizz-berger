@@ -1,17 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const passport = require("passport");
+const fs = require("fs");
+const path = require("path");
 const UserObject = require("../models/user");
-const AnswerObject = require("../models/answer");
 const { catchErrors } = require("../utils/error");
-const user = require("../models/user");
 
 router.get(
   "/:userId",
   catchErrors(async (req, res) => {
     const user = await UserObject.findById(req.params.userId);
-    if (!user || !user.isPublic || !user.isCandidate) {
-      res.status(200).redirect("https://www.quizz-du-berger.com");
+    console.log({ user });
+    if (!user || !(user.isPublic || user.isCandidate)) {
+      return res.status(200).redirect("https://www.quizz-du-berger.com");
     }
 
     const html = fs.readFileSync(path.resolve("./src/views/result.html"), "utf8");
