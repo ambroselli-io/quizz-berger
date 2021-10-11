@@ -1,49 +1,60 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import UserContext from "../contexts/user";
 
-const ThemeButton = ({ theme, onClick, isActive }) => {
+const ThemeButton = ({ theme, onClick }) => {
+  const { userAnswers } = useContext(UserContext);
   const { backgroundColor, fr, _id } = theme;
+  const userThemeAnswers = userAnswers.filter((a) => a.themeId === theme._id).length;
+  const quizzThemeAnswers = theme.questions.length;
+
+  const progress = userThemeAnswers / quizzThemeAnswers;
+
   return (
-    <ThemesButtonStyled
-      data-themeid={_id}
-      isActive={isActive}
-      onClick={onClick}
-      backgroundColor={backgroundColor}>
-      <CheckBox data-themeid={_id} isActive={isActive}>
-        &#10003;
-      </CheckBox>
+    <ThemesButtonStyled data-themeid={_id} onClick={onClick} backgroundColor={backgroundColor}>
+      <BackgroundProgress
+        data-themeid={_id}
+        backgroundColor={backgroundColor}
+        progress={progress}
+      />
+      <span />
       <span data-themeid={_id}>{fr}</span>
+      <Progress data-themeid={_id}>
+        {!!progress
+          ? `${userThemeAnswers} / ${quizzThemeAnswers}`
+          : `${quizzThemeAnswers} questions`}
+      </Progress>
     </ThemesButtonStyled>
   );
 };
 
 const ThemesButtonStyled = styled.button`
-  padding: 24px;
-  max-width: 370px;
-  height: 72px;
+  padding: 15px 24px;
+  width: 250px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: ${(props) => props.backgroundColor}CC;
-  border: ${(props) => (props.isActive ? "1px solid #6B7280" : "1px solid #e5e7eb")};
+  background-color: #fff;
+  border: 2px solid ${(props) => props.backgroundColor};
   box-sizing: border-box;
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
 `;
 
-const CheckBox = styled.div`
-  margin-right: 10px;
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  width: 25px;
-  background: ${(props) => (props.isActive ? "#111827" : "white")};
-  color: white;
-  border-radius: 16px;
-  border: ${(props) => (props.isActive ? "none" : "1px solid #D1D5DB")};
-  user-select: none;
+const BackgroundProgress = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: ${(props) => props.progress * 100}%;
+  height: 100%;
+  background-color: ${(props) => props.backgroundColor}CC;
 `;
 
+const Progress = styled.span`
+  margin-top: 5px;
+  margin-left: auto;
+  font-size: 0.65em;
+  color: #000;
+`;
 export default ThemeButton;
