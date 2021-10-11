@@ -1,14 +1,12 @@
 import React, { useContext, useState } from "react";
-import styled from "styled-components";
-import { media } from "../styles/mediaQueries";
 
-import cross from "../images/cross.svg";
 import API from "../services/api";
 import UserContext from "../contexts/user";
 import { FormInput, FormLabel, FormStyled, FormTextArea } from "./Form";
 import Button from "./Button";
+import Modal from "./Modal";
 
-const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal }) => {
+const ContactModal = ({ isActive, onCloseModal, onForceCloseContactModal }) => {
   const { user } = useContext(UserContext);
 
   const [{ pseudo, email, message }, setState] = useState({
@@ -51,109 +49,41 @@ const ContactModal = ({ isActive, onCloseContactModal, onForceCloseContactModal 
   };
 
   return (
-    <>
-      <BackgroundContainer isActive={isActive} onClick={onCloseContactModal}>
-        <ModalContainer>
-          <TitleContainer>
-            <Title>Nous contacter</Title>
-            <CrossButton onClick={onCloseContactModal} />
-          </TitleContainer>
-          <ModalInnerContainer>
-            <FormStyled noPadding onSubmit={onFormSubmit}>
-              <FormLabel>Nom/pseudo *</FormLabel>
-              <FormInput
-                type="text"
-                name="pseudo"
-                autocomplete="name"
-                placeholder="Votre nom / pseudo"
-                onChange={onChange}
-                value={pseudo}
-                required
-              />
-              <FormLabel>Email</FormLabel>
-              <FormInput
-                type="email"
-                name="email"
-                autocomplete="email"
-                placeholder="Votre email"
-                onChange={onChange}
-                value={email}
-              />
-              <FormLabel>Votre message *</FormLabel>
-              <FormTextArea
-                name="message"
-                rows="10"
-                onChange={onChange}
-                value={message}
-                placeholder="Un commentaire ? Une suggestion ?"
-              />
-              <Button disabled={isLoading} type="submit">
-                {isLoading ? "Envoi en cours..." : "Envoyer !"}
-              </Button>
-            </FormStyled>
-          </ModalInnerContainer>
-        </ModalContainer>
-      </BackgroundContainer>
-    </>
+    <Modal title="Nous contacter" isActive={isActive} onCloseModal={onCloseModal}>
+      <FormStyled noPadding onSubmit={onFormSubmit}>
+        <FormLabel>Nom/pseudo *</FormLabel>
+        <FormInput
+          type="text"
+          name="pseudo"
+          autocomplete="name"
+          placeholder="Votre nom / pseudo"
+          onChange={onChange}
+          value={pseudo}
+          required
+        />
+        <FormLabel>Email</FormLabel>
+        <FormInput
+          type="email"
+          name="email"
+          autocomplete="email"
+          placeholder="Votre email"
+          onChange={onChange}
+          value={email}
+        />
+        <FormLabel>Votre message *</FormLabel>
+        <FormTextArea
+          name="message"
+          rows="10"
+          onChange={onChange}
+          value={message}
+          placeholder="Un commentaire ? Une suggestion ?"
+        />
+        <Button disabled={isLoading} type="submit">
+          {isLoading ? "Envoi en cours..." : "Envoyer !"}
+        </Button>
+      </FormStyled>
+    </Modal>
   );
 };
-
-const BackgroundContainer = styled.div`
-  z-index: 99;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: ${(props) => (props.isActive ? `flex` : `none`)};
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.7);
-`;
-
-const ModalContainer = styled.div`
-  flex: 1;
-  padding: 40px;
-  max-width: 700px;
-  height: auto;
-  background-color: white;
-  border-radius: 50px;
-  display: flex;
-  flex-direction: column;
-  ${media.mobile`
-  max-height: 400px;
-
-`}
-`;
-
-const TitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const Title = styled.h1`
-  font-family: Merriweather;
-  font-size: 20px;
-  font-weight: bold;
-`;
-
-const CrossButton = styled.button`
-  height: 15px;
-  width: 15px;
-  background: url(${cross}) no-repeat;
-  background-size: cover;
-  color: black;
-  border: none;
-  cursor: pointer;
-`;
-
-const ModalInnerContainer = styled.div`
-  margin-top: 25px;
-  overflow: visible;
-  ${media.mobile`
-  overflow: scroll;
-`}
-`;
 
 export default ContactModal;

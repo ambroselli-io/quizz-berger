@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const MODELNAME = "User";
 
 const Schema = new mongoose.Schema({
-  pseudo: { type: String, required: true, trim: true, unique: true },
+  pseudo: { type: String, trim: true, unique: true, sparse: true },
   password: { type: String },
   themes: { type: [String], default: [] },
   createdAt: { type: Date, default: Date.now },
@@ -27,7 +27,7 @@ Schema.methods.me = function () {
     partyName: this.partyName,
     themes: this.themes,
     isCandidate: this.isCandidate,
-    isPublic: this.isPublic,
+    isPublic: this.isCandidate || this.isPublic,
   };
 };
 

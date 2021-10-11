@@ -8,6 +8,8 @@ import PolarChart from "../components/PolarChart";
 import UserContext from "../contexts/user";
 import DataContext from "../contexts/data";
 import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
+import LoginModal from "../components/LoginModal";
+import ShareModal from "../components/ShareModal";
 
 const Result = () => {
   const { user, userAnswers /* getAnswers */ } = useContext(UserContext);
@@ -17,6 +19,8 @@ const Result = () => {
     ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
   ];
 
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
   const [showRadarChart, setShowRadarChart] = useState(false);
   const [showCandidates, setShowCandidates] = useState(
     Boolean(getFromSessionStorage("selectedCandidates", false))
@@ -94,8 +98,19 @@ const Result = () => {
             <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons>
             <TitleContainer>
               <Title>
-                {user.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)}, voici vos résultats
+                {user?.pseudo
+                  ? `${user?.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)}, v`
+                  : "V"}
+                oici vos résultats
               </Title>
+              <SaveContainer>
+                {!user?.pseudo && (
+                  <>
+                    <SaveButton onClick={() => setShowLoginModal(true)}>Enregistrer</SaveButton>/
+                  </>
+                )}
+                <SaveButton onClick={() => setShowShareModal(true)}>Partager</SaveButton>
+              </SaveContainer>
               {/* <InfoIcon src={infoIcon}></InfoIcon> */}
             </TitleContainer>
             <OpenButtonContainer onClick={() => setShowCandidates((show) => !show)}>
@@ -159,6 +174,12 @@ const Result = () => {
           </ChartsContainer>
         </Container>
       </BackgroundContainer>
+      <LoginModal
+        isActive={showLoginModal}
+        onForceCloseModal={(e) => setShowLoginModal(false)}
+        onCloseModal={(e) => setShowLoginModal(false)}
+      />
+      <ShareModal isActive={showShareModal} onCloseModal={() => setShowShareModal(false)} />
     </>
   );
 };
@@ -226,7 +247,8 @@ const LeftContainer = styled.div`
 const TitleContainer = styled.div`
   margin-bottom: 60px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   ${media.mobile`
   margin-bottom: 30px;
 `}
@@ -237,6 +259,7 @@ const Title = styled.h2`
   font-weight: bold;
   font-size: 30px;
   color: #082d0f;
+  margin-bottom: 5px;
 `;
 
 // const InfoIcon = styled.img`
@@ -249,7 +272,8 @@ const Title = styled.h2`
 const OpenButtonContainer = styled.button`
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -259,6 +283,7 @@ const SubTitle = styled.h3`
   font-family: Merriweather;
   font-weight: bold;
   font-size: 20px;
+  text-align: left;
   color: #111827;
   ${media.mobile`
   font-size: 16px;
@@ -333,4 +358,21 @@ const ChartsContainer = styled.div`
   `}
 `;
 
+const SaveContainer = styled.div`
+  display: flex;
+  > :first-child {
+    margin-right: 5px;
+  }
+  > ::nth-child(2) {
+    margin-left: 5px;
+  }
+`;
+
+const SaveButton = styled.button`
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 0.9em;
+  cursor: pointer;
+`;
 export default Result;

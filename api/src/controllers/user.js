@@ -9,13 +9,14 @@ const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 
 const JWT_MAX_AGE = 1000 * 60 * 60 * 24 * 30; // 30 days in ms
+const JWT_MIN_AGE = 1000 * 60 * 60 * 3; // 3 hours in ms
 
 const setCookie = (req, res, user) => {
-  const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: JWT_MAX_AGE });
+  const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE });
 
   const tokenConfig = {
     domain: process.env.NODE_ENV === "development" ? null : req.headers.origin.includes("fr") ? "quizz-du-berger.fr" : "quizz-du-berger.com",
-    maxAge: JWT_MAX_AGE,
+    maxAge: user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
   };
@@ -74,6 +75,19 @@ router.post(
   })
 );
 
+router.post(
+  "/",
+  catchErrors(async (req, res) => {
+    const user = await UserObject.create({});
+
+    console.log("new one", { user });
+
+    setCookie(req, res, user);
+
+    return res.status(200).send({ ok: true, data: user.me() });
+  })
+);
+
 router.put(
   "/",
   passport.authenticate("user", { session: false }),
@@ -84,7 +98,7 @@ router.put(
     if (req.body.hasOwnProperty("pseudo")) userUpdate.pseudo = req.body.pseudo;
     // not activated automatically, manual change only
     // if (req.body.hasOwnProperty("isCandidate")) userUpdate.isCandidate = req.body.isCandidate;
-    if (req.body.hasOwnProperty("public")) userUpdate.public = req.body.public;
+    if (req.body.hasOwnProperty("isPublic")) userUpdate.isPublic = req.body.isPublic;
     if (req.body.hasOwnProperty("themes")) userUpdate.themes = req.body.themes;
     if (req.body.hasOwnProperty("firstName")) userUpdate.firstName = req.body.firstName;
     if (req.body.hasOwnProperty("lastName")) userUpdate.lastName = req.body.lastName;
