@@ -7,6 +7,7 @@ import UserContext from "../contexts/user";
 import DataContext from "../contexts/data";
 
 import ThemeButton from "../components/ThemeButton";
+import Button from "../components/Button";
 
 const ThemeSelect = () => {
   const { userAnswers } = useContext(UserContext);
@@ -35,9 +36,9 @@ const ThemeSelect = () => {
             })}
           </ThemesContainer>
           {/* <Footer> */}
-          <ResultsButton disabled={!userAnswers.length} onClick={goToResults}>
+          <Button disabled={!userAnswers.length} onClick={goToResults}>
             Voir les résultats
-          </ResultsButton>
+          </Button>
           {/* </Footer> */}
         </SubContainer>
       </BackgroundContainer>
@@ -89,28 +90,11 @@ const ThemesContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
+  margin-bottom: 40px;
   ${media.mobile`
-  grid-template-columns: auto;
-`}
-`;
-
-const ResultsButton = styled.button`
-  margin-top: 40px;
-  padding: 15px 25px;
-  background-color: #facc15;
-  color: black;
-  cursor: pointer;
-  :disabled {
-    background-color: rgb(233, 233, 233);
-    color: rgb(17, 24, 39, 0.2);
-    cursor: auto;
-  }
-  border-radius: 56px;
-  border: none;
-  cursor: pointer;
-  ${media.mobile`
-  margin-top: 20px;
-`}
+    grid-template-columns: auto;
+    margin-bottom: 20px;
+  `}
 `;
 
 export default ThemeSelect;

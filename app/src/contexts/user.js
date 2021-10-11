@@ -8,7 +8,7 @@ export const UserProvider = ({ children }) => {
   const [sessionStorageUpdateKey, setSessionStorageUpdateKey] = useState(0);
   const [user, setUser] = useState(getFromSessionStorage("user", {}));
   const [userAnswers, setUserAnswers] = useState(getFromSessionStorage("userAnswers", []));
-  const [answersQueue, setAnswersQueue] = useState([]);
+  const [answersQueue, setAnswersQueue] = useState(getFromSessionStorage("answersQueue", []));
 
   const init = async () => {
     if (!!document.cookie.includes("jwt")) {
@@ -42,6 +42,7 @@ export const UserProvider = ({ children }) => {
   };
 
   const getAnswers = async () => {
+    await saveAnswersInDatabase();
     const response = await API.getWithCreds({ path: "/answer" });
     if (response.ok) {
       setUserAnswers(response.data);
@@ -52,6 +53,7 @@ export const UserProvider = ({ children }) => {
   const saveInSessionStorage = () => {
     setToSessionStorage("user", user);
     setToSessionStorage("userAnswers", userAnswers);
+    setToSessionStorage("answersQueue", answersQueue);
   };
 
   useEffect(() => {
@@ -99,6 +101,7 @@ export const UserProvider = ({ children }) => {
     }
     setAnswersListState(savedAnswers);
     setAnswersQueue(newQueue);
+    setSessionStorageUpdateKey((k) => k + 1);
   };
 
   useEffect(() => {

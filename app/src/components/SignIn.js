@@ -1,27 +1,28 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import API from "../services/api";
 import Button from "./Button";
 import { FormInput, FormLabel, FormStyled } from "./Form";
 
-const SignUp = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
+const SignIn = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
   const [isLoading, setIsLoading] = useState(false);
 
-  const signupRequest = async (e) => {
+  const loginRequest = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     const response = await API.post({
-      path: "/user/signup",
-      body: { pseudo, password, passwordConfirm },
+      path: "/user/login",
+      body: { pseudo, password },
     });
-    if (!response.ok) {
-      setIsLoading(false);
+    setIsLoading(false);
+    if (!response?.ok) {
       return alert(response.error);
     }
     onLogin(response.data);
   };
 
   return (
-    <FormStyled onSubmit={signupRequest} id="sign-up-form">
+    <FormStyled onSubmit={loginRequest}>
       <FormLabel>Pseudo</FormLabel>
       <FormInput
         type="text"
@@ -38,19 +39,23 @@ const SignUp = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
         onChange={onChange}
         value={password}
       />
-      <FormLabel>Confirmation du mot de passe</FormLabel>
-      <FormInput
-        type="password"
-        name="passwordConfirm"
-        placeholder="Confirmez votre mot de passe"
-        onChange={onChange}
-        value={passwordConfirm}
-      />
       <Button type="submit" disabled={isLoading}>
-        {isLoading ? "Chargement..." : "S'inscrire !"}
+        {isLoading ? "Chargement..." : "Se connecter"}
       </Button>
+      <SignupLink onClick={onGoToSignup}>Pas encore de mot de passe ?</SignupLink>
     </FormStyled>
   );
 };
 
-export default SignUp;
+const SignupLink = styled.button`
+  text-decoration: underline;
+  color: black;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+`;
+
+export default SignIn;
