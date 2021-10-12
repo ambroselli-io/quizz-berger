@@ -66,7 +66,7 @@ export const UserProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    init();
+    if (user?._id) init();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?._id]);
 
