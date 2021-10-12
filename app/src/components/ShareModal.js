@@ -32,11 +32,11 @@ const ShareModal = ({ isActive, onCloseModal }) => {
   const publicLink = `https://partage.quizz-du-berger.com/result/${user?.pseudo}`;
 
   const onCopy = async () => {
-    const isCopied = await navigator.clipboard.writeText(publicLink);
-    console.log(isCopied);
+    await navigator.clipboard.writeText(publicLink);
     setCopyButtonCaption("Copié !");
     await new Promise((res) => setTimeout(res, 2500));
     setCopyButtonCaption("Copier le lien");
+    navigator.clipboard.writeText(publicLink).then(console.log);
   };
 
   return (
