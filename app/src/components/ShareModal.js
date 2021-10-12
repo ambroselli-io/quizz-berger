@@ -30,7 +30,8 @@ const ShareModal = ({ isActive, onCloseModal }) => {
           <PublicLink href={publicLink} target="_blank">
             {publicLink}
           </PublicLink>
-          <Button>Ne plus partager ces résultats</Button>
+          <Button>Copier le lien</Button>
+          <StopShare>Arrêter le partage</StopShare>
         </>
       )}
     </Modal>
@@ -38,7 +39,7 @@ const ShareModal = ({ isActive, onCloseModal }) => {
 };
 
 const PublicLink = styled.a`
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-family: Merriweather Sans;
   font-style: normal;
   font-weight: 500;
@@ -46,6 +47,22 @@ const PublicLink = styled.a`
   text-align: center;
   text-decoration: underline;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+`;
+
+const StopShare = styled.button`
+  margin-top: 10px;
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 `;
 
 export default ShareModal;

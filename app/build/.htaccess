@@ -1,7 +1,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTP_HOST} !^quizz-du-berger\.fr$
-  RewriteRule ^ https://quizz-du-berger.com%{REQUEST_URI} [L,R=301]
+  RewriteRule ^ https://www.quizz-du-berger.com%{REQUEST_URI} [L,R=301]
+</IfModule>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

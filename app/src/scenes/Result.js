@@ -175,7 +175,7 @@ const Result = () => {
             </CandidateButtonContainer>
             <OpenButtonContainer onClick={() => setShowThemes((show) => !show)}>
               <OpenButton isActive={showThemes}>&#9654;</OpenButton>
-              <SubTitle>Afficher/masquer les thèmes</SubTitle>
+              <SubTitle>Afficher/masquer des thèmes</SubTitle>
             </OpenButtonContainer>
             <ThemeButtonContainer isActive={showThemes}>
               {userThemes.map((userThemeId) => {
