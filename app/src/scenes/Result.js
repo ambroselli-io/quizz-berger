@@ -10,14 +10,27 @@ import DataContext from "../contexts/data";
 import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
 import LoginModal from "../components/LoginModal";
 import ShareModal from "../components/ShareModal";
+import { useHistory, useParams } from "react-router";
+import API from "../services/api";
+
+const getUserThemes = (userAnswers) => [
+  ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
+];
 
 const Result = () => {
-  const { user, userAnswers /* getAnswers */ } = useContext(UserContext);
+  const userContext = useContext(UserContext);
   const { quizz, candidates /* getCandidates */ } = useContext(DataContext);
+  const { userPseudo } = useParams();
+  const history = useHistory();
+  const [publicUser, setPublicUser] = useState({});
+  const [publicUserAnswers, setPublicUserAnswers] = useState([]);
 
-  const userThemes = [
-    ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
-  ];
+  const publicPage = !!userPseudo;
+
+  const user = publicPage ? publicUser : userContext.user;
+  const userAnswers = publicPage ? publicUserAnswers : userContext.userAnswers;
+
+  const userThemes = getUserThemes(userAnswers);
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
@@ -28,22 +41,19 @@ const Result = () => {
   const [showThemes, setShowThemes] = useState(
     Boolean(getFromSessionStorage("selectedThemes", false))
   );
-  const [selectedCandidates, setSelectedCandidates] = useState(
-    getFromSessionStorage(
-      "selectedCandidates",
-      candidates.map((c) => c.pseudo)
-    )
-  );
-  const [themesState, setThemeState] = useState(() => {
-    const previousThemesState = getFromSessionStorage("selectedThemes", []);
-    if (!previousThemesState.length) {
-      return userThemes.map((themeId) => ({ themeId, show: true }));
-    }
-    if (userThemes.length === previousThemesState.length) return previousThemesState;
-    return userThemes.map((themeId) => ({ themeId, show: true }));
+  const [selectedCandidates, setSelectedCandidates] = useState(() => {
+    const allCandidates = candidates.map((c) => c.pseudo);
+    if (publicPage) return allCandidates;
+    return getFromSessionStorage("selectedCandidates", allCandidates);
   });
-
-  const selectedThemes = themesState.filter((t) => t.show).map((t) => t.themeId);
+  const [selectedThemes, setSelectedThemes] = useState(() => {
+    const allThemes = userThemes;
+    if (publicPage) return allThemes;
+    const previousThemesSelected = getFromSessionStorage("selectedThemes", []);
+    if (!previousThemesSelected.length) return allThemes;
+    if (userThemes.length !== previousThemesSelected.length) return previousThemesSelected;
+    return allThemes;
+  });
 
   const switchCharts = () => setShowRadarChart((show) => !show);
 
@@ -58,11 +68,11 @@ const Result = () => {
   };
   const onSelectThemes = (e) => {
     const themeId = e.target.dataset.themeid;
-    setThemeState(
-      themesState.map((themeSelected) =>
-        themeSelected.themeId === themeId ? { themeId, show: !themeSelected.show } : themeSelected
-      )
-    );
+    if (selectedThemes.includes(themeId)) {
+      setSelectedThemes(selectedThemes.filter((id) => id !== themeId));
+    } else {
+      setSelectedThemes([...selectedThemes, themeId]);
+    }
   };
 
   const candidatesScorePerThemes = getCandidatesScorePerThemes(
@@ -90,6 +100,31 @@ const Result = () => {
     }
   }, [selectedThemes.length]);
 
+  const getPublicUser = async () => {
+    const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
+    if (!publicUserResponse.ok) return history.push("/home");
+    setPublicUser(publicUserResponse.data);
+    const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
+    if (!publicUserAnswersResponse.ok) return history.push("/home");
+    setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
+    setPublicUserAnswers(publicUserAnswersResponse.data);
+  };
+
+  useEffect(() => {
+    if (userPseudo) getPublicUser();
+  }, [userPseudo]);
+
+  const renderTitle = () => {
+    if (!publicPage && !user?.pseudo) return "Voici vos résultats";
+    const name = user?.pseudo?.charAt(0).toUpperCase() + user?.pseudo?.slice(1);
+    if (!!publicPage) {
+      return `Voici les résultats de ${name}`;
+    }
+    return `${name}, voici vos résultats`;
+  };
+
+  if (!!publicPage && !user?.pseudo) return "Chargement...";
+
   return (
     <>
       <BackgroundContainer>
@@ -97,20 +132,30 @@ const Result = () => {
           <LeftContainer>
             <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons>
             <TitleContainer>
-              <Title>
-                {user?.pseudo
-                  ? `${user?.pseudo.charAt(0).toUpperCase() + user.pseudo.slice(1)}, v`
-                  : "V"}
-                oici vos résultats
-              </Title>
-              <SaveContainer>
-                {!user?.pseudo && (
-                  <>
-                    <SaveButton onClick={() => setShowLoginModal(true)}>Enregistrer</SaveButton>/
-                  </>
-                )}
-                <SaveButton onClick={() => setShowShareModal(true)}>Partager</SaveButton>
-              </SaveContainer>
+              <Title>{renderTitle()}</Title>
+              {!publicPage && (
+                <SaveContainer>
+                  {!user?.pseudo && (
+                    <>
+                      <SaveButton
+                        onClick={() => {
+                          setShowLoginModal(true);
+                          document.body.style.overflow = "hidden";
+                        }}>
+                        Enregistrer
+                      </SaveButton>
+                      /
+                    </>
+                  )}
+                  <SaveButton
+                    onClick={() => {
+                      setShowShareModal(true);
+                      document.body.style.overflow = "hidden";
+                    }}>
+                    Partager
+                  </SaveButton>
+                </SaveContainer>
+              )}
               {/* <InfoIcon src={infoIcon}></InfoIcon> */}
             </TitleContainer>
             <OpenButtonContainer onClick={() => setShowCandidates((show) => !show)}>
@@ -176,10 +221,24 @@ const Result = () => {
       </BackgroundContainer>
       <LoginModal
         isActive={showLoginModal}
-        onForceCloseModal={(e) => setShowLoginModal(false)}
-        onCloseModal={(e) => setShowLoginModal(false)}
+        onForceCloseModal={(e) => {
+          setShowLoginModal(false);
+          document.body.style.overflow = "visible";
+        }}
+        onCloseModal={(e) => {
+          if (e.target !== e.currentTarget) return;
+          setShowLoginModal(false);
+          document.body.style.overflow = "visible";
+        }}
       />
-      <ShareModal isActive={showShareModal} onCloseModal={() => setShowShareModal(false)} />
+      <ShareModal
+        isActive={showShareModal}
+        onCloseModal={(e) => {
+          if (e.target !== e.currentTarget) return;
+          setShowShareModal(false);
+          document.body.style.overflow = "visible";
+        }}
+      />
     </>
   );
 };

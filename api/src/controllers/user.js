@@ -119,4 +119,17 @@ router.get(
   })
 );
 
+router.get(
+  "/:pseudo",
+  catchErrors(async (req, res) => {
+    if (!req.params.pseudo) return res.status(400).send({ ok: false });
+    const user = await UserObject.findOne({ pseudo: req.params.pseudo });
+    if (!user || !(user.isPublic || user.isCandidate)) {
+      return res.status(400).send({ ok: false });
+    }
+
+    res.status(200).send({ ok: true, data: user.me() });
+  })
+);
+
 module.exports = router;

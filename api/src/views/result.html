@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <script>
       function redirect() {
-        const url = window.location.host.split(".").filter((_, i) => i > 0);
-        window.location.replace("https://www." + url + "/result/{{USER_ID}}");
+        window.location.replace("https://quizz-du-berger.com/result/{{PSEUDO}}");
       }
       redirect();
     </script>
