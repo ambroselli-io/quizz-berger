@@ -234,7 +234,7 @@ const Result = () => {
       <ShareModal
         isActive={showShareModal}
         onCloseModal={(e) => {
-          if (e.target !== e.currentTarget) return;
+          if (e?.target !== e?.currentTarget) return;
           setShowShareModal(false);
           document.body.style.overflow = "visible";
         }}
