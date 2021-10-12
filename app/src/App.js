@@ -39,9 +39,9 @@ const App = () => {
           <Route path="/all-questions" exact component={AllQuestions} />
           <Route path="/themes" component={ThemeSelect} />
           <Route path="/result/:userPseudo" exact component={Result} />
+          <Route path="/quizz/:candidatePseudo" exact component={CandidateResult} />
           <RestrictedRoute path="/question/:themeId/:questionId" exact component={Quizz} />
           <RestrictedRoute path="/result" exact component={Result} />
-          <RestrictedRoute path="/quizz/:candidateId" exact component={CandidateResult} />
           <RestrictedRoute path="/" exact component={() => <Redirect to="/themes" />} />
           <RestrictedRoute path="/" component={() => <Redirect to="/home" />} />
         </Switch>
@@ -52,7 +52,7 @@ const App = () => {
 
 const RestrictedRoute = ({ Component, ...rest }) => {
   const { user } = useContext(UserContext);
-  if (!user?._id) return <Redirect to="/login" />;
+  if (!user?._id) return <Redirect to="/home" />;
   return <Route {...rest} />;
 };
 

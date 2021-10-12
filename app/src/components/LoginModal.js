@@ -3,9 +3,9 @@ import React from "react";
 import LoginContainer from "./LoginContainer";
 import Modal from "./Modal";
 
-const LoginModal = ({ isActive, onCloseModal, onForceCloseModal }) => {
+const LoginModal = ({ isActive, onCloseModal, onForceCloseModal, title }) => {
   return (
-    <Modal title="Connectez-vous" onCloseModal={onCloseModal} isActive={isActive}>
+    <Modal title={title} onCloseModal={onCloseModal} isActive={isActive}>
       <LoginContainer showSignup forceSignup onSuccess={onForceCloseModal} />
     </Modal>
   );

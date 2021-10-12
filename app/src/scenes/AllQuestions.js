@@ -120,7 +120,7 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
   font-weight: normal;
   font-size: 16px;
   text-align: center;

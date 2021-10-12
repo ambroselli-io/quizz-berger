@@ -1,23 +1,19 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router";
 import styled from "styled-components";
+import Loader from "../components/Loader";
 import DataContext from "../contexts/data";
 import UserContext from "../contexts/user";
 import { media } from "../styles/mediaQueries";
 
 const CandidateResult = () => {
-  const { candidateId } = useParams();
-  const { userAnswers } = useContext(UserContext);
+  const { candidatePseudo } = useParams();
+  const { user, userAnswers } = useContext(UserContext);
   const { candidates, quizz } = useContext(DataContext);
 
-  const candidateAnswers = candidates.find((c) => c._id === candidateId);
+  const candidateAnswers = candidates.find((c) => c.pseudo === candidatePseudo);
 
-  if (!candidateAnswers?.pseudo)
-    return (
-      <BackgroundContainer>
-        <span>Chargement</span>
-      </BackgroundContainer>
-    );
+  const isLoading = !candidateAnswers?.pseudo;
 
   return (
     <>
@@ -25,8 +21,8 @@ const CandidateResult = () => {
         <SubContainer>
           <Title>Voici les résultats de {candidateAnswers?.pseudo}</Title>
           <SubTitle>
-            Vous pouvez voir en rouge tous les résultats de {candidateAnswers?.pseudo}, et en
-            encadré vos résultats.
+            Vous pouvez voir en rouge tous les résultats de {candidateAnswers?.pseudo}
+            {user?._id ? ", et en encadré vos résultats." : "."}
           </SubTitle>
           {quizz.map((theme, index) => {
             return (
@@ -64,7 +60,8 @@ const CandidateResult = () => {
             );
           })}
         </SubContainer>
-      </BackgroundContainer>{" "}
+      </BackgroundContainer>
+      <Loader isLoading={isLoading} withBackground />
     </>
   );
 };
@@ -144,7 +141,7 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
   font-weight: normal;
   font-size: 16px;
   text-align: center;

@@ -6,7 +6,7 @@ const DataContext = React.createContext({});
 
 export const DataProvider = ({ children }) => {
   const [quizz, setQuizz] = useState(getFromLocalStorage("quizz", []));
-  const [candidates, setCandidates] = useState(getFromLocalStorage("candidates"), []);
+  const [candidates, setCandidates] = useState(getFromLocalStorage("candidates", []));
 
   const getQuizz = async () => {
     const response = await API.get({ path: "/quizz" });
@@ -24,7 +24,6 @@ export const DataProvider = ({ children }) => {
     const response = await API.get({ path: "/answer/candidates" });
     if (response.ok) {
       if (JSON.stringify(candidates) !== JSON.stringify(response.data)) {
-        console.log("miam");
         setToLocalStorage("candidates", response.data);
         setCandidates(response.data);
       }

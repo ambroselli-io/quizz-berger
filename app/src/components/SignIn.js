@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import API from "../services/api";
 import Button from "./Button";
 import { FormInput, FormLabel, FormStyled } from "./Form";
+import InternalLink from "./InternalLink";
 
 const SignIn = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -39,23 +39,12 @@ const SignIn = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
         onChange={onChange}
         value={password}
       />
-      <Button type="submit" disabled={isLoading}>
-        {isLoading ? "Chargement..." : "Se connecter"}
+      <Button type="submit" disabled={isLoading} isLoading={isLoading} withLoader>
+        Se connecter
       </Button>
-      <SignupLink onClick={onGoToSignup}>Pas encore de mot de passe ?</SignupLink>
+      <InternalLink onClick={onGoToSignup}>Pas encore de mot de passe ?</InternalLink>
     </FormStyled>
   );
 };
-
-const SignupLink = styled.button`
-  text-decoration: underline;
-  color: black;
-  margin-top: 10px;
-  font-size: 14px;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  cursor: pointer;
-`;
 
 export default SignIn;

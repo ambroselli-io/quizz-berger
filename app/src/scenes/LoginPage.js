@@ -22,16 +22,16 @@ const LoginPage = () => {
 
 const BackGroundContainer = styled.div`
   padding: 40px 20px 40px 20px;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   background-color: #111827;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   ${media.mobile`
   padding: 40px 10px 40px 10px;
-  min-height: auto;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   `}
 `;
 

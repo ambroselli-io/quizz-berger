@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import styled from "styled-components";
 
 import API from "../services/api";
 import UserContext from "../contexts/user";
@@ -78,12 +79,20 @@ const ContactModal = ({ isActive, onCloseModal, onForceCloseContactModal }) => {
           value={message}
           placeholder="Un commentaire ? Une suggestion ?"
         />
-        <Button disabled={isLoading} type="submit">
-          {isLoading ? "Envoi en cours..." : "Envoyer !"}
-        </Button>
+        <ButtonContainer>
+          <Button disabled={isLoading} withLoader isLoading={isLoading} type="submit">
+            Envoyer
+          </Button>
+        </ButtonContainer>
       </FormStyled>
     </Modal>
   );
 };
+
+const ButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 export default ContactModal;

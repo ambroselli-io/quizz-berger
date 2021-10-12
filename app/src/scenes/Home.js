@@ -17,7 +17,7 @@ const Home = () => (
           {/* Take our Political
               Compass test to find out which political group your best match is */}
         </SubTitle>
-        <QuizzButton>Participer au Quizz</QuizzButton>
+        <QuizzButton>Répondre au Quizz</QuizzButton>
         <Link to="/login">
           <LoginLink>
             Vous avez enregistré vos résultats&nbsp;? <strong>Connectez&#8209;vous</strong>
