@@ -12,6 +12,8 @@ import LoginModal from "../components/LoginModal";
 import ShareModal from "../components/ShareModal";
 import { useHistory, useParams } from "react-router";
 import API from "../services/api";
+import Loader from "../components/Loader";
+import InternalLink from "../components/InternalLink";
 
 const getUserThemes = (userAnswers) => [
   ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
@@ -41,8 +43,9 @@ const Result = () => {
   const [showThemes, setShowThemes] = useState(
     Boolean(getFromSessionStorage("selectedThemes", false))
   );
+
+  const allCandidates = candidates.map((c) => c.pseudo);
   const [selectedCandidates, setSelectedCandidates] = useState(() => {
-    const allCandidates = candidates.map((c) => c.pseudo);
     if (publicPage) return allCandidates;
     return getFromSessionStorage("selectedCandidates", allCandidates);
   });
@@ -108,11 +111,16 @@ const Result = () => {
     if (!publicUserAnswersResponse.ok) return history.push("/home");
     setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
     setPublicUserAnswers(publicUserAnswersResponse.data);
+    setSelectedCandidates(allCandidates);
   };
 
   useEffect(() => {
     if (userPseudo) getPublicUser();
   }, [userPseudo]);
+
+  useEffect(() => {
+    if (userPseudo) setSelectedCandidates(allCandidates);
+  }, [candidates.length]);
 
   const renderTitle = () => {
     if (!publicPage && !user?.pseudo) return "Voici vos résultats";
@@ -123,7 +131,7 @@ const Result = () => {
     return `${name}, voici vos résultats`;
   };
 
-  if (!!publicPage && !user?.pseudo) return "Chargement...";
+  const isLoading = !!publicPage && !user?.pseudo;
 
   return (
     <>
@@ -144,11 +152,12 @@ const Result = () => {
                         }}>
                         Enregistrer
                       </SaveButton>
-                      /
+                      <Tiret />
                     </>
                   )}
                   <SaveButton
                     onClick={() => {
+                      if (!user?.pseudo) setShowLoginModal(true);
                       setShowShareModal(true);
                       document.body.style.overflow = "hidden";
                     }}>
@@ -219,7 +228,17 @@ const Result = () => {
           </ChartsContainer>
         </Container>
       </BackgroundContainer>
+      <Loader isLoading={isLoading} withBackground />
+      <ShareModal
+        isActive={showShareModal}
+        onCloseModal={(e) => {
+          if (e?.target !== e?.currentTarget) return;
+          setShowShareModal(false);
+          document.body.style.overflow = "visible";
+        }}
+      />
       <LoginModal
+        title={showShareModal ? "Enregistrez vos résultats d'abord" : "Enregistrez-vous"}
         isActive={showLoginModal}
         onForceCloseModal={(e) => {
           setShowLoginModal(false);
@@ -228,13 +247,6 @@ const Result = () => {
         onCloseModal={(e) => {
           if (e.target !== e.currentTarget) return;
           setShowLoginModal(false);
-          document.body.style.overflow = "visible";
-        }}
-      />
-      <ShareModal
-        isActive={showShareModal}
-        onCloseModal={(e) => {
-          if (e?.target !== e?.currentTarget) return;
           setShowShareModal(false);
           document.body.style.overflow = "visible";
         }}
@@ -419,19 +431,23 @@ const ChartsContainer = styled.div`
 
 const SaveContainer = styled.div`
   display: flex;
+  align-items: center;
   > :first-child {
     margin-right: 5px;
   }
-  > ::nth-child(2) {
+  > :nth-child(3) {
     margin-left: 5px;
   }
 `;
 
-const SaveButton = styled.button`
-  background: transparent;
-  border: none;
-  text-decoration: underline;
-  font-size: 0.9em;
-  cursor: pointer;
+const Tiret = styled.div`
+  height: 1px;
+  background-color: #111827;
+  width: 10px;
 `;
+
+const SaveButton = styled(InternalLink)`
+  font-size: 0.9em;
+`;
+
 export default Result;

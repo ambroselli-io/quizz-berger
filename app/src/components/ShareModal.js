@@ -1,28 +1,43 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import UserContext from "../contexts/user";
 import API from "../services/api";
 
 import Button from "./Button";
+import InternalLink from "./InternalLink";
 import Modal from "./Modal";
 
 const ShareModal = ({ isActive, onCloseModal }) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [copyButtonCaption, setCopyButtonCaption] = useState("Copier le lien");
   const { user, setUser } = useContext(UserContext);
 
   const onEnablePublicLink = async () => {
+    setIsLoading(true);
     const response = await API.put({ path: "user", body: { isPublic: true } });
+    setIsLoading(false);
     if (!response.ok) return alert(response.error);
     setUser(response.data);
   };
 
   const onDisablePublicLink = async () => {
+    setIsLoading(true);
     const response = await API.put({ path: "user", body: { isPublic: false } });
+    setIsLoading(false);
     if (!response.ok) return alert(response.error);
     setUser(response.data);
     onCloseModal();
   };
 
   const publicLink = `https://partage.quizz-du-berger.com/result/${user?.pseudo}`;
+
+  const onCopy = async () => {
+    const isCopied = await navigator.clipboard.writeText(publicLink);
+    console.log(isCopied);
+    setCopyButtonCaption("Copié !");
+    await new Promise((res) => setTimeout(res, 2500));
+    setCopyButtonCaption("Copier le lien");
+  };
 
   return (
     <Modal center isActive={isActive} onCloseModal={onCloseModal} title="Partagez vos résultats">
@@ -32,7 +47,13 @@ const ShareModal = ({ isActive, onCloseModal }) => {
             Quand vous aurez cliqué sur le bouton ci-dessous, toute personne avec ce lien pourra
             voir ces résultats
           </span>
-          <Button onClick={onEnablePublicLink}>J'ai compris, afficher le lien</Button>
+          <Button
+            onClick={onEnablePublicLink}
+            disabled={isLoading}
+            withLoader
+            isLoading={isLoading}>
+            J'ai compris, afficher le lien
+          </Button>
         </>
       ) : (
         <>
@@ -40,8 +61,15 @@ const ShareModal = ({ isActive, onCloseModal }) => {
           <PublicLink href={publicLink} target="_blank">
             {publicLink}
           </PublicLink>
-          <Button>Copier le lien</Button>
-          <StopShare onClick={onDisablePublicLink}>Arrêter le partage</StopShare>
+          <Button onClick={onCopy}>{copyButtonCaption}</Button>
+          <StopShare
+            disabled={isLoading}
+            withLoader
+            isLoading={isLoading}
+            loaderSize="20px"
+            onClick={onDisablePublicLink}>
+            Arrêter le partage
+          </StopShare>
         </>
       )}
     </Modal>
@@ -61,18 +89,10 @@ const PublicLink = styled.a`
   border: none;
 `;
 
-const StopShare = styled.button`
+const StopShare = styled(InternalLink)`
   margin-top: 10px;
-  font-family: Merriweather Sans;
-  font-style: normal;
   font-size: 0.75em;
-  font-weight: 500;
   line-height: 1.5em;
-  text-align: center;
-  text-decoration: underline;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
 `;
 
 export default ShareModal;
