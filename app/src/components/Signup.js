@@ -4,7 +4,7 @@ import API from "../services/api";
 import Button from "./Button";
 import { FormInput, FormLabel, FormStyled } from "./Form";
 
-const SignUp = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
+const SignUp = ({ pseudo, passwordConfirm, password, onChange, onSuccess }) => {
   const { user } = useContext(UserContext);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -27,7 +27,7 @@ const SignUp = ({ pseudo, passwordConfirm, password, onChange, onLogin }) => {
       setIsLoading(false);
       return alert(response.error);
     }
-    onLogin(response.data);
+    onSuccess(response.data);
   };
 
   return (

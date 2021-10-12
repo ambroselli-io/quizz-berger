@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import UserContext from "../contexts/user";
 import API from "../services/api";
 import Button from "./Button";
 import { FormInput, FormLabel, FormStyled } from "./Form";
 import InternalLink from "./InternalLink";
 
-const SignIn = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
+const SignIn = ({ onSuccess, onChange, onGoToSignup, pseudo, password }) => {
+  const { getAnswers, setUser } = useContext(UserContext);
   const [isLoading, setIsLoading] = useState(false);
 
   const loginRequest = async (e) => {
@@ -14,11 +16,14 @@ const SignIn = ({ onLogin, onChange, onGoToSignup, pseudo, password }) => {
       path: "/user/login",
       body: { pseudo, password },
     });
-    setIsLoading(false);
     if (!response?.ok) {
+      setIsLoading(false);
       return alert(response.error);
     }
-    onLogin(response.data);
+    setUser(response.data);
+    await getAnswers();
+    setIsLoading(false);
+    onSuccess(response.data);
   };
 
   return (

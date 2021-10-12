@@ -46,14 +46,19 @@ const LoginContainer = ({ onSuccess, title = null, showSignup = false, forceSign
         {!state.showSignup && (
           <SignIn
             isDisplayed={!state.showSignup}
-            onLogin={onLogin}
+            onSuccess={onLogin}
             onChange={onChange}
             onGoToSignup={displaySignup}
             {...state}
           />
         )}
         {state.showSignup && (
-          <SignUp isDisplayed={state.showSignup} onLogin={onLogin} onChange={onChange} {...state} />
+          <SignUp
+            isDisplayed={state.showSignup}
+            onSuccess={onLogin}
+            onChange={onChange}
+            {...state}
+          />
         )}
       </LogContainer>
     </>
