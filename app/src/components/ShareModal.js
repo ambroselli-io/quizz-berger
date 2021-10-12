@@ -15,7 +15,7 @@ const ShareModal = ({ isActive, onCloseModal }) => {
     setUser(response.data);
   };
 
-  const publicLink = `https://api.quizz-du-berger.com/result/${user._id}`;
+  const publicLink = `https://partage.quizz-du-berger.com/result/${user?.pseudo}`;
 
   return (
     <Modal center isActive={isActive} onCloseModal={onCloseModal} title="Partagez vos résultats">
@@ -23,7 +23,7 @@ const ShareModal = ({ isActive, onCloseModal }) => {
         Quand vous aurez cliqué sur le bouton ci-dessous, toute personne avec ce lien pourra voir
         ces résultats
       </span>
-      {!user.isPublic ? (
+      {!user?.isPublic ? (
         <Button onClick={onEnablePublicLink}>J'ai compris, afficher le lien</Button>
       ) : (
         <>

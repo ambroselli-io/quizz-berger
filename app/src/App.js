@@ -38,9 +38,10 @@ const App = () => {
           <Route path="/login" component={LoginPage} />
           <Route path="/all-questions" exact component={AllQuestions} />
           <Route path="/themes" component={ThemeSelect} />
+          <Route path="/result/:userPseudo" exact component={Result} />
           <RestrictedRoute path="/question/:themeId/:questionId" exact component={Quizz} />
           <RestrictedRoute path="/result" exact component={Result} />
-          <RestrictedRoute path="/result/:candidateId" exact component={CandidateResult} />
+          <RestrictedRoute path="/quizz/:candidateId" exact component={CandidateResult} />
           <RestrictedRoute path="/" exact component={() => <Redirect to="/themes" />} />
           <RestrictedRoute path="/" component={() => <Redirect to="/home" />} />
         </Switch>

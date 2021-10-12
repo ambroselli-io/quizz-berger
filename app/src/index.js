@@ -20,6 +20,11 @@ if (process.env.NODE_ENV !== "development") {
   });
 }
 
+if (window.location.pathname.includes("quizz-du-berger.fr")) {
+  const newUrl = window.location.pathname.replace("quizz-du-berger.fr", "quizz-du-berger.com");
+  window.location.replace(newUrl);
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

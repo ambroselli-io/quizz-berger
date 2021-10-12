@@ -62,7 +62,7 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
   return (
     <>
       <ChartContainer>
-        <Link to={`result/${candidate._id}`}>
+        <Link to={`quizz/${candidate._id}`}>
           <CandidateTitle>{candidate?.pseudo}</CandidateTitle>
         </Link>
         <PolarArea data={data} options={options} />
