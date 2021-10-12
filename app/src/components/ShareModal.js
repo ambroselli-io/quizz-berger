@@ -15,23 +15,33 @@ const ShareModal = ({ isActive, onCloseModal }) => {
     setUser(response.data);
   };
 
+  const onDisablePublicLink = async () => {
+    const response = await API.put({ path: "user", body: { isPublic: false } });
+    if (!response.ok) return alert(response.error);
+    setUser(response.data);
+    onCloseModal();
+  };
+
   const publicLink = `https://partage.quizz-du-berger.com/result/${user?.pseudo}`;
 
   return (
     <Modal center isActive={isActive} onCloseModal={onCloseModal} title="Partagez vos résultats">
-      <span>
-        Quand vous aurez cliqué sur le bouton ci-dessous, toute personne avec ce lien pourra voir
-        ces résultats
-      </span>
       {!user?.isPublic ? (
-        <Button onClick={onEnablePublicLink}>J'ai compris, afficher le lien</Button>
+        <>
+          <span>
+            Quand vous aurez cliqué sur le bouton ci-dessous, toute personne avec ce lien pourra
+            voir ces résultats
+          </span>
+          <Button onClick={onEnablePublicLink}>J'ai compris, afficher le lien</Button>
+        </>
       ) : (
         <>
+          <span>Toute personne avec ce lien peut voir ces résultats:</span>
           <PublicLink href={publicLink} target="_blank">
             {publicLink}
           </PublicLink>
           <Button>Copier le lien</Button>
-          <StopShare>Arrêter le partage</StopShare>
+          <StopShare onClick={onDisablePublicLink}>Arrêter le partage</StopShare>
         </>
       )}
     </Modal>
