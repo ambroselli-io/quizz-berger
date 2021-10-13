@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
-import styled, { keyframes } from "styled-components";
+import React, { useContext, useEffect, useState } from "react";
+import styled from "styled-components";
 import { useHistory } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
@@ -14,39 +14,15 @@ import QuizzButton from "./QuizzButton";
 
 const Header = ({ loading }) => {
   const { user, logout } = useContext(UserContext);
-  const [showLogoLoading, setShowLogoLoading] = useState(false);
-  const [showLogoKey, setShowLogoKey] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const history = useHistory();
 
-  const loadingIntervalRef = useRef(null);
   const onLogout = async () => {
     setMenuIsOpen(false);
     logout();
   };
-
-  const keepLoadingInterval = () => {
-    loadingIntervalRef.current = setInterval(() => setShowLogoKey((k) => k + 1), 1000);
-  };
-
-  useEffect(() => {
-    if (loading && !showLogoLoading) {
-      setShowLogoLoading(true);
-      keepLoadingInterval();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loading]);
-
-  useEffect(() => {
-    if (showLogoLoading && !loading) {
-      setShowLogoLoading(false);
-      clearInterval(loadingIntervalRef.current);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showLogoKey]);
-
   const onCloseModal = (e) => {
     if (e.target !== e.currentTarget) return;
     setShowContactModal(false);
@@ -73,7 +49,7 @@ const Header = ({ loading }) => {
         <HeaderContainer>
           <LeftContainer>
             <Link to="/home">
-              <HeaderLogo className={!!showLogoLoading && "animate"} />
+              <HeaderLogo />
             </Link>
             <Link to="/home">
               <Title>Le Quizz du Berger</Title>
@@ -147,12 +123,16 @@ const Header = ({ loading }) => {
                     <QuizzButton>Quizz</QuizzButton>
                   </NavLink>
                 </BurgerMenuTab>
-                <Fillet />
-                <BurgerMenuTab>
-                  <NavLink activeClassName="selected" to="/result">
-                    <span>Résultats</span>
-                  </NavLink>
-                </BurgerMenuTab>
+                {user?._id && (
+                  <>
+                    <Fillet />
+                    <BurgerMenuTab>
+                      <NavLink activeClassName="selected" to="/result">
+                        <span>Résultats</span>
+                      </NavLink>
+                    </BurgerMenuTab>
+                  </>
+                )}
                 <Fillet />
                 {!!user?._id ? (
                   <BurgerMenuTab onClick={onLogout}>
@@ -259,15 +239,6 @@ const LeftContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
 
 const HeaderLogo = styled.div`
   margin-right: 10px;
@@ -276,9 +247,6 @@ const HeaderLogo = styled.div`
   background: url(${logo}) no-repeat;
   background-size: cover;
   border: none;
-  &.animate {
-    animation: ${rotate} 2s linear infinite;
-  }
 `;
 
 const Title = styled.h1`
