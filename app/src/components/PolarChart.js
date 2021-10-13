@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { PolarArea } from "react-chartjs-2";
+import { Chart, PolarAreaController } from "chart.js";
 import { media } from "../styles/mediaQueries";
 import { Link } from "react-router-dom";
+
+Chart.register(PolarAreaController);
 
 const PolarChart = ({ candidate, selectedThemes, quizz }) => {
   const scores = candidate.scorePerThemes

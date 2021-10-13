@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { Radar } from "react-chartjs-2";
+import { Chart, RadarController } from "chart.js";
 import { media } from "../styles/mediaQueries";
+
+Chart.register(RadarController);
 
 const options = {
   maintainAspectRatio: false,
