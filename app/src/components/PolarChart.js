@@ -1,11 +1,18 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { Chart, PolarAreaController } from "chart.js";
+import {
+  Chart,
+  PolarAreaController,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  ArcElement,
+} from "chart.js";
 import { media } from "../styles/mediaQueries";
 import { Link } from "react-router-dom";
 
-Chart.register(PolarAreaController);
+Chart.register(PolarAreaController, RadialLinearScale, PointElement, LineElement, ArcElement);
 
 const PolarChart = ({ candidate, selectedThemes, quizz }) => {
   const [isMounted, setIsMounted] = useState(false);
@@ -18,19 +25,6 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
     return quizz.find((quizztheme) => quizztheme._id === themeId).fr;
   });
 
-  const data = {
-    labels: themes,
-    datasets: [
-      {
-        data: scores,
-        backgroundColor: quizz
-          .filter((theme) => selectedThemes.includes(theme._id))
-          .map((t) => t.backgroundColor),
-        borderWidth: 1,
-      },
-    ],
-  };
-
   const polarChartCanvasRef = useRef(null);
   const polarChartRef = useRef(null);
 
@@ -39,7 +33,18 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
       const ctx = polarChartCanvasRef.current.getContext("2d");
       polarChartRef.current = new Chart(ctx, {
         type: "polarArea",
-        data,
+        data: {
+          labels: themes,
+          datasets: [
+            {
+              data: scores,
+              backgroundColor: quizz
+                .filter((theme) => selectedThemes.includes(theme._id))
+                .map((t) => t.backgroundColor),
+              borderWidth: 1,
+            },
+          ],
+        },
         options: {
           maintainAspectRatio: true,
 
