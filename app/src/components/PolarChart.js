@@ -1,6 +1,6 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { PolarArea } from "react-chartjs-2";
 import { Chart, PolarAreaController } from "chart.js";
 import { media } from "../styles/mediaQueries";
 import { Link } from "react-router-dom";
@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 Chart.register(PolarAreaController);
 
 const PolarChart = ({ candidate, selectedThemes, quizz }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
   const scores = candidate.scorePerThemes
     .filter((score) => selectedThemes.includes(score.themeId))
     .map((score) => score.score);
@@ -29,38 +31,54 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
     ],
   };
 
-  const options = {
-    maintainAspectRatio: true,
+  const polarChartCanvasRef = useRef(null);
+  const polarChartRef = useRef(null);
 
-    plugins: {
-      legend: {
-        display: true,
-        position: "bottom",
-        // onClick: true,
-        labels: {
-          usePointStyle: true,
-          boxHeight: 5,
-          pointStyle: "circle",
-          font: {
-            size: 10,
+  useEffect(() => {
+    if (isMounted) {
+      const ctx = polarChartCanvasRef.current.getContext("2d");
+      polarChartRef.current = new Chart(ctx, {
+        type: "polarArea",
+        data,
+        options: {
+          maintainAspectRatio: true,
+
+          plugins: {
+            legend: {
+              display: true,
+              position: "bottom",
+              // onClick: true,
+              labels: {
+                usePointStyle: true,
+                boxHeight: 5,
+                pointStyle: "circle",
+                font: {
+                  size: 10,
+                },
+              },
+            },
+          },
+
+          scales: {
+            r: {
+              suggestedMin: 0,
+              suggestedMax: 100,
+              grid: {
+                lineWidth: 1,
+              },
+              ticks: {
+                display: false,
+              },
+            },
           },
         },
-      },
-    },
+      });
+    }
+  }, [isMounted]);
 
-    scales: {
-      r: {
-        suggestedMin: 0,
-        suggestedMax: 100,
-        grid: {
-          lineWidth: 1,
-        },
-        ticks: {
-          display: false,
-        },
-      },
-    },
-  };
+  useEffect(() => {
+    if (!isMounted) setIsMounted(true);
+  }, []);
 
   return (
     <>
@@ -68,7 +86,7 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
         <Link to={`/quizz/${candidate?.pseudo}`}>
           <CandidateTitle>{candidate?.pseudo}</CandidateTitle>
         </Link>
-        <PolarArea data={data} options={options} />
+        <canvas ref={polarChartCanvasRef} width="400" height="400" />
       </ChartContainer>
     </>
   );

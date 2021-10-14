@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { Radar } from "react-chartjs-2";
 import { Chart, RadarController } from "chart.js";
 import { media } from "../styles/mediaQueries";
 
@@ -82,10 +81,9 @@ const colors = [
 ];
 
 const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidates, quizz }) => {
-  const chartRef = useRef();
-  const [isMounting, setIsMounting] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-  let dataSets = candidatesScorePerThemes?.map((candidat, index) => {
+  const dataSets = candidatesScorePerThemes?.map((candidat, index) => {
     const scores = candidat.scorePerThemes
       .filter((score) => selectedThemes.includes(score.themeId))
       .map((score) => score.score);
@@ -107,24 +105,27 @@ const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidat
       (themeId) => quizz.find((quizztheme) => quizztheme._id === themeId).fr
     ),
   };
+  const radarChartCanvasRef = useRef(null);
+  const radarChartRef = useRef(null);
 
   useEffect(() => {
-    if (!isMounting) setIsMounting(true);
-  }, [isMounting]);
-
-  useEffect(() => {
-    for (const candidate of selectedCandidates) {
-      if (!chartRef.current) continue;
-      const getCandidateDataSetIndex = dataSets.findIndex((data) => data.label === candidate);
-      chartRef.current.data.datasets[getCandidateDataSetIndex].hidden = false;
-      chartRef.current.update();
-    }
+    const ctx = radarChartCanvasRef.current.getContext("2d");
+    radarChartRef.current = null;
+    radarChartRef.current = new Chart(ctx, {
+      type: "radar",
+      data,
+      options,
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isMounting, selectedCandidates.length]);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) setIsMounted(true);
+  }, []);
 
   return (
     <RadarContainer>
-      <Radar ref={chartRef} data={data} options={options} />
+      <canvas ref={radarChartCanvasRef} />
     </RadarContainer>
   );
 };

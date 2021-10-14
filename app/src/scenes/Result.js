@@ -36,7 +36,7 @@ const Result = () => {
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [showRadarChart, setShowRadarChart] = useState(false);
+  const [showRadarChart, setShowRadarChart] = useState(true);
   const [showCandidates, setShowCandidates] = useState(
     Boolean(getFromSessionStorage("selectedCandidates", false))
   );
@@ -214,6 +214,7 @@ const Result = () => {
             )}
             {!showRadarChart &&
               candidatesScorePerThemes
+                .filter((_, i) => i === 0)
                 .filter((candidate) => selectedCandidates.includes(candidate?.pseudo))
                 .map((candidate) => {
                   return (
