@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { Chart, RadarController, RadialLinearScale } from "chart.js";
+import { Chart, RadarController, RadialLinearScale, Legend } from "chart.js";
 import { media } from "../styles/mediaQueries";
 
-Chart.register(RadarController, RadialLinearScale);
+Chart.register(RadarController, RadialLinearScale, Legend);
 
 const options = {
   maintainAspectRatio: false,
@@ -48,37 +48,33 @@ const options = {
 };
 
 const colors = [
-  {
-    backgroundColor: "rgba(0, 0, 0, 0.1)",
-    pointBackgroundColor: "black",
-    borderColor: "black",
-  },
-  {
-    backgroundColor: "rgba(255, 0, 0, 0.1)",
-    pointBackgroundColor: "red",
-    borderColor: "red",
-  },
-  {
-    backgroundColor: "rgba(255,165,0, 0.1)",
-    pointBackgroundColor: "orange",
-    borderColor: "orange",
-  },
-  {
-    backgroundColor: "rgba(255, 99, 132, 0.1)",
-    pointBackgroundColor: "yellow",
-    borderColor: "yellow",
-  },
-  {
-    backgroundColor: "rgba(255, 99, 132, 0.1)",
-    pointBackgroundColor: "green",
-    borderColor: "green",
-  },
-  {
-    backgroundColor: "rgba(255, 99, 132, 0.1)",
-    pointBackgroundColor: "violet",
-    borderColor: "violet",
-  },
-];
+  "#e6194B",
+  "#3cb44b",
+  "#ffe119",
+  "#4363d8",
+  "#f58231",
+  "#911eb4",
+  "#42d4f4",
+  "#f032e6",
+  "#bfef45",
+  "#fabed4",
+  "#469990",
+  "#dcbeff",
+  "#9A6324",
+  "#fffac8",
+  "#800000",
+  "#aaffc3",
+  "#808000",
+  "#ffd8b1",
+  "#000075",
+  "#a9a9a9",
+  "#ffffff",
+  "#000000",
+].map((color) => ({
+  backgroundColor: color,
+  pointBackgroundColor: color,
+  borderColor: color,
+}));
 
 const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidates, quizz }) => {
   const [isMounted, setIsMounted] = useState(false);
@@ -90,7 +86,7 @@ const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidat
 
     return {
       label: candidat?.pseudo,
-      hidden: false,
+      hidden: true,
       backgroundColor: colors[index % colors.length].backgroundColor,
       pointBackgroundColor: colors[index % colors.length].pointBackgroundColor,
       borderColor: colors[index % colors.length].borderColor,
