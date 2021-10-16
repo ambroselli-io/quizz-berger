@@ -272,6 +272,72 @@
     ]
   },
   {
+    "_id": "theme-61695243c59e1ef0fe35e485",
+    "fr": "Agriculture et alimentation",
+    "questions": [
+      {
+        "_id": "question-61695243c59e1ef0fe35e486",
+        "fr": "Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?",
+        "answers": [
+          "C'est indispensable pour l'agriculture, comme respirer pour l'homme.",
+          "Ça a beaucoup apporté à l'agriculture et à l'économie, continuons leur développement",
+          "Tant qu'on connait et maitrise leurs impacts sur l'environnement et la santé humaine, tout va bien.",
+          "Il faut s'en séparer, si possible.",
+          "Il faut s'en séparer le plus vite possible, pour sauver l'environnement, la biodiversité et la santé humaine.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616953e05d4480f129b86af4",
+        "fr": "Que pensez-vous de la gestion du bétail ?",
+        "answers": [
+          "L'animal ne doit plus être exploité par l'homme, ni pour être mangé, ni pour nous assister.",
+          "Il faut arrêter de manger de la viande, néfaste pour la planète et pour le corps humain.",
+          "Il faut que les élevages sont bien traités et qu'on réduise notre consommation, et tout ira bien.",
+          "Il y a une maltraitance animale, mais qui est peut-être inévitable pour assurer notre consommation.",
+          "Tout va très bien !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616977ba3785f9f1b393b4ef",
+        "fr": "Que pensez-vous de l'agriculture biologique ?",
+        "answers": [
+          "Dans le mesure où il n'y a pas de problème avec l'agriculture conventionnelle, l'agriculture bio est inutile, chère et contre-productive.",
+          "L'agriculture bio ne suffira de toutes façons pas à nourrir la planète entière, donc rien ne sert de vouloir l'imposer partout",
+          "C'est un autre marché, parallèle à l'agriculture conventionnelle, tant mieux pour l'économie.",
+          "C'est un mouvement qui s'est inscrit durablement et qui aura transformé l'agriculture entière un jour ou l'autre, il le faut",
+          "Il faut accélérer la transition écologique dans l'agriculture pour n'avoir que du bio, le plus vite possible",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
     "_id": "theme-615995cc4df0856259dba56b",
     "fr": "Industrie et commerce",
     "questions": [
@@ -380,6 +446,132 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba572",
+        "fr": "Que pensez-vous de l'utilisation du numérique (tablettes, téléphones...) à l'école ?",
+        "answers": [
+          "Si on peut tout numériser, numérisons tout : le numérique fait partie de notre vie, les enfants doivent se l'approprier.",
+          "On peut l'utiliser plus souvent, c'est une excellente manière pour enseigner.",
+          "Il faut bien choisir comment l'utiliser dans l'éducation, mais je n'ai pas de problème contre.",
+          "Ne l'utiliser que dans les matières appropriées : informatique, technologie...",
+          "Le numérique est néfaste pour la construction sociale, il faut le bannir dans la scolarité de nos enfants.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-61686cc84e7189a68aa2e4b3",
+    "fr": "Finance",
+    "questions": [
+      {
+        "_id": "question-61686eff1778a9a6ea716761",
+        "fr": "Que vous évoque la Finance, de manière générale ?",
+        "answers": [
+          "La meilleure invention du XXème siècle pour financer les projets et rémunérer les investisseurs : merci la Finance pour améliorer notre vie.",
+          "Une nécessité de la mondialisation et du marché, qui a plus d'avantages que d'inconvénients, et qui s'impose à nous, pour le meilleur.",
+          "Une industrie comme une autre, pourquoi ?",
+          "Une nécessité de la mondialisation et du marché, qui a plus d'inconvénients que d'avantages, et qui s'impose à nous, pour le pire.",
+          "La pire invention du XXème siècle qui a pris trop de pouvoir sur nos décideurs politiques : tout un système à démanteler.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616870c4c323c3a72e0dd2d0",
+        "fr": "Que pensez-vous de la spéculation financière ?",
+        "answers": [
+          "Elle est une pièce nécessaire du puzzle complexe du fonctionnement du marché : sans elle, pas d'investissement, c'est la crise.",
+          "Ça a créé des points de croissance supplémentaire, et donc une amélioration de nos vies.",
+          "C'est une manière comme une autre de faire de l'argent, tant mieux pour ceux que ça intéresse.",
+          "C'est un secteur qui peut être facteur de crise, et qui mérite d'être mieux régulé. C'est important.",
+          "Il est déjà arrivé dans l'Histoire que la spéculation soit interdite : il le faut encore aujourd'hui, c'est nécessaire.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-61694aba53b716ef30e442b5",
+        "fr": "Que vous évoque les produits financiers appelés produits dérivés, vanille ou exotique ?",
+        "answers": [
+          "Cette complexification de la finance est la cause de la déconnection avec l'économie réelle : il faut interdire ces produits.",
+          "Il faut dissocier les assurances des purs paris sans lien avec l'économie réelle, qu'il faut interdire tout simplement.",
+          "Ce n'est pas un sujet particulier, c'est un produit industriel comme un autre.",
+          "Cela fluidifie le marché financier et économique mondial, c'est donc utile pour nos sociétés.",
+          "C'est une vraie réussite de l'imagination humaine, qui associe sécurité et enrichissement, une preuve que la finance apporte du progrès !",
+          "Je ne connais pas / Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-61694cf26000edef6951bc95",
+        "fr": "Que pensez-vous du Trading à Haute Fréquence (HFT) ?",
+        "answers": [
+          "Ce processus rend le marché plus efficace tout en créant plus de richesse, une preuve supplémentaire que la finance apporte du progrès !",
+          "Cela fluidifie le marché financier et économique mondial, c'est donc utile pour nos sociétés.",
+          "Ce n'est pas un sujet particulier, c'est un produit industriel comme un autre.",
+          "On devrait imposer un minimum de temps entre deux transactions pour apporter plus de sérénité dans les échanges de HFT.",
+          "Des robots qui font spéculer des cours en total déconnection avec la réalité : pas de doute, il faut interdire cette pratique.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-61694ea6f663d0efec2fdb17",
+        "fr": "Nouvelle question",
+        "answers": [
+          "Réponse 1",
+          "Réponse 2",
+          "Réponse 3",
+          "Réponse 4",
+          "Réponse 5",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -443,6 +635,238 @@
           [0, 1, 5, 4, 0],
           [0, 1, 4, 5, 0],
           [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-6169796cd131e4fafb1825d1",
+    "fr": "Union Européenne",
+    "questions": [
+      {
+        "_id": "question-6169796cd131e4fafb1825d2",
+        "fr": "Que pensez-vous des traités de l'Union Européenne ?",
+        "answers": [
+          "Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant",
+          "Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux",
+          "Ces traités sont bien comme ils sont, l'Union Européenne se développe come il le faut.",
+          "Il faut encore plus d'intégration de chaque pays dans l'Union Européenne",
+          "Il faudrait enfin une fédération de pays, avec une constitution commune",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616a82e1df23ae4a56d50ecf",
+        "fr": "Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?",
+        "answers": [
+          "La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique",
+          "Un taux d'imposition unique est impossible, les membres n'en veulent pas, dont acte.",
+          "L'harmonie et la concurrence fiscales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.",
+          "La situation actuelle n'est pas tenable, au moins un taux minimum serait un gros progrès",
+          "Il faut que tous les pays aient le même taux d'imposition sinon le moins-disant gagnera toujours dans un espace sans protectionnisme.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616a85126b80c74ab28a0edf",
+        "fr": "Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?",
+        "answers": [
+          "Les prestations sociales sont liées aux taxes et impôts, donc dans un espace libre comme l'UE, il faut harmonisation fiscale ET sociale",
+          "Un minimum doit être défini, comme un salaire minimum européen par exemple.",
+          "L'harmonie et la concurrence sociales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.",
+          "Avoir des prestations sociales communes est impossible, les membres n'en veulent pas, dont acte.",
+          "La concurrence des prestations sociales est saine pour les pays, il ne faut pas d'harmonisation.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616a8ab9650e054b27632e09",
+        "fr": "Que pensez-vous du nombre de membres de l'Union Européenne ?",
+        "answers": [
+          "Il en faudrait beaucoup moins, juste un noyau dur de quelques pays",
+          "Il en faudrait un peu moins",
+          "Nous sommes le bon nombre",
+          "On pourrait ajouter quelques pays",
+          "Il faudrait élargir beaucoup plus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616a8b1b4ae6d14b47d4ac6c",
+        "fr": "Que pensez-vous d'une défense commune européenne ?",
+        "answers": [
+          "Il faut que l'Union Européenne ait le pouvoir nucléaire et celui de faire la guerre à la place des pays.",
+          "Il faut que une stratégie de défense commune, avec une armée commune.",
+          "La situation actuelle est bien équilibrée, avec seulement une diplomatie européenne, mais une défense par Nation.",
+          "La défense et la diplomatie doivent être des compétences nationales et non européennes.",
+          "Étant pour une dislocation de l'Union Européenne, mon avis sur une défense commune va sans dire.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-616a8cb4526a514b77028b39",
+    "fr": "Géopolitique - Affaires étrangères",
+    "questions": [
+      {
+        "_id": "question-616a8cb4526a514b77028b3a",
+        "fr": "Comment devons-nous considérer nos relations avec les États-Unis ?",
+        "answers": [
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616ac675de0e474cc11959bc",
+        "fr": "Comment devons-nous considérer nos relations avec la Chine ?",
+        "answers": [
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616ac69773d61d4cf6d9d604",
+        "fr": "Comment devons-nous considérer nos relations avec la Russie ?",
+        "answers": [
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616ac6d1c8f2de4d3a1d9dba",
+        "fr": "Comment devons-nous considérer nos relations avec la Grande Bretagne ?",
+        "answers": [
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616ac6fa254c544d7559e707",
+        "fr": "Comment devons-nous considérer nos relations avec l'Inde ?",
+        "answers": [
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616ac721fb2bad4dadf48ac6",
+        "fr": "Que pensez-vous de la relation commerciale avec les pays en développement ?",
+        "answers": [
+          "Réponse 1",
+          "Réponse 2",
+          "Réponse 3",
+          "Réponse 4",
+          "Réponse 5",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -515,11 +939,31 @@
         "_id": "question-615995cc4df0856259dba57a",
         "fr": "Que pensez-vous de l'évasion fiscale des multinationales ?",
         "answers": [
-          "C'est la loi de la mondialisation, il faut faire avec",
-          "Seul un accord international pourra empêcher cette évasion, il faut continuer à négocier avec les autres, quitte à devoir baisser notre taux d'imposition",
           "Ce n'est pas un problème, ça n'a aucun impact",
+          "C'est la loi de la mondialisation, il faut faire avec",
+          "Seul un accord international pourra empêcher cette évasion, quitte à devoir baisser notre taux d'imposition",
           "Il faut sanctionner les entreprises qui ont de telles pratiques, avec des amendes",
           "Il faut empêcher l'évasion fiscale en entravant la libre circulation des capitaux.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-61694eb30abaa1eff835bfa3",
+        "fr": "Que pensez-vous d'une taxe sur les transactions financières spéculatives ?",
+        "answers": [
+          "Les transactions financières ne sont pas taxées, contrairement aux produits de la vie courante taxés à 20% : c'est injuste. Taxons !",
+          "Surtout, une toute petite taxe insignifiante pourrait rapporter gros, pourquoi s'en priver ?",
+          "Je suis neutre sur le sujet : pourquoi pas, mais pourquoi ?",
+          "Il faut un accord international, sinon les marchés vont se délocaliser vers des lieux plus propices.",
+          "En plus d'une distorsion de concurrence, l'efficacité des marchés va chuter et la croissance va en payer le prix : veto !",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -546,6 +990,26 @@
           "L'égalité homme-femme est plutôt réussie",
           "Les hommes et les femmes sont différents, il n'y a pas d'égalité à chercher",
           "Il faudrait songer à rééquilibrer en faveur des hommes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-61686cc84e7189a68aa2e4b3",
+        "fr": "Que pensez-vous de la façon dont la politique s'occupe des handicapés ?",
+        "answers": [
+          "C'est honteux, il faut absolument en faire un sujet prioritaire, question de survie.",
+          "Même si les choses avancent dans le bon sens, ce n'est pas encore assez digne d'un pays avancé, il faut accélérer.",
+          "De gros progrès ont été fait, et continuent d'être fait, c'est bien.",
+          "On en a fait beaucoup pour les handicapés, il serait peut-être temps de passer à autre chose.",
+          "On en fait trop pour les handicapés, ça coûte très cher, voire trop.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -602,9 +1066,9 @@
         "fr": "Que pensez-vous de la procréation médicalement assistée (PMA) ?",
         "answers": [
           "Elle doit être autorisée et remboursée pour tous, sans condition",
+          "Elle doit être autorisée et remboursée pour tous couple hétérosexuel ou homosexuel féminin ",
           "Elle doit être autorisée seulement pour les couples hétérosexuels, et remboursée",
-          "Elle peut être autorisée, mais non remboursée",
-          "Elle doit être tolérée pour les couples hétérosexuels, mais condamnée pour les couples non hétérosexuels, et non remboursée",
+          "Elle peut être autorisée seulement pour les couples hétérosexuels, mais non remboursée",
           "Elle doit être non remboursée et interdite pour tous",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -622,7 +1086,7 @@
         "fr": "Que pensez-vous de la gestation pour autrui (GPA) ?",
         "answers": [
           "Elle doit être autorisée et remboursée pour tous, sans condition",
-          "Elle doit être autorisée seulement pour les couples hétérosexuels, et remboursée",
+          "Elle doit être autorisée et remboursée, seulement pour les couples hétérosexuels ou homosexuels féminins",
           "Elle peut être autorisée, mais non remboursée",
           "Elle doit être tolérée pour les couples hétérosexuels, mais condamnée pour les couples non hétérosexuels, et non remboursée",
           "Elle doit être non remboursée et interdite pour tous",
@@ -641,16 +1105,20 @@
         "_id": "question-615995cc4df0856259dba581",
         "fr": "Que pensez-vous de l'immigration et de son impact sur la mixité culturelle ?",
         "answers": [
-          "Elle enrichit chacun de nous dans la société, à ce titre il faut favoriser l'immigration pour ce bénéfice",
-          "Elle fait partie de notre vie, qu'on le veuille ou non, ce n'est donc pas une question",
-          "Elle détruit notre culture locale, il faut donc empêcher ou se battre contre l'immigration",
+          "Elle enrichit chacun de nous dans la société, à ce titre il faut favoriser l'immigration",
+          "Elle fait partie de notre vie, qu'on le veuille ou non: mieux vaut l'embrasser que la redouter",
+          "Je ne sais pas mais je ne suis pas contre un débat public sur la question",
+          "Toute immigration n'est pas enrichissante : il faut sélectionner celle qui nous intéresse",
+          "Elle détruit notre culture locale, il faut donc empêcher ou se battre contre toute immigration",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 0, 0],
-          [3, 5, 3, 0],
-          [0, 3, 5, 0],
-          [0, 0, 0, 0]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -661,7 +1129,7 @@
     "questions": [
       {
         "_id": "question-615995cc39d90c9d856259dba57c",
-        "fr": "Si la pandémie devait se poursuivre avec les même paramètres (mortalité, symptômes, etc.), comment vous situez-vous par rapport à un reconfinement en cas de pic épidémique ?",
+        "fr": "Comment vous situez-vous par rapport à un reconfinement en cas de pic épidémique ?",
         "answers": [
           "J'espère qu'on confinera plus strictement et plus longtemps que la dernière fois, c'est de l'inconscience que de prendre des risques avec la vie des autres.",
           "Il faut effectivement protéger toutes les personnes fragiles, c'est humain. S'il faut se confiner, alors confinons-nous.",
@@ -681,7 +1149,7 @@
       },
       {
         "_id": "question-615995cc39d90c9d856259dba57d",
-        "fr": "Si la pandémie devait se poursuivre avec les même paramètres (mortalité, symptômes, etc.), comment vous situez-vous par rapport au port du masque à l'école en cas de pic épidémique ?",
+        "fr": "Comment vous situez-vous par rapport au port du masque à l'école en cas de pic épidémique ?",
         "answers": [
           "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent tant dans la classe que dans la cour de récréation : on est jamais à l'abri.",
           "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent dans la classe, mais dehors dans la cour de récréation on peut s'en passer.",
@@ -701,7 +1169,7 @@
       },
       {
         "_id": "question-615995cc39d90c9d856259dba57e",
-        "fr": "Si la pandémie devait se poursuivre avec les même paramètres (mortalité, symptômes, etc.), comment vous situez-vous par rapport au port du masque en société en cas de pic épidémique ?",
+        "fr": "Comment vous situez-vous par rapport au port du masque en société en cas de pic épidémique ?",
         "answers": [
           "Masque à l'intérieur et à l'extérieur, partout",
           "Masque seulement à l'intérieur",

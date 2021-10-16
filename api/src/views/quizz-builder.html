@@ -11,7 +11,7 @@
       font-weight: 100;
     }
     input {
-      width: 350px;
+      width: 550px;
       height: 35px;
     }
     #answers input {
@@ -39,6 +39,15 @@
     <h1>Quizz Builder</h1>
     <h2>Current theme: <input id="current-theme" value="{{CURRENT_THEME}}" /></h2>
     <h2>Current question: <input id="current-question" maxlength="280" value="{{CURRENT_QUESTION}}" /></h2>
+    <button id="new-theme">Nouveau thème</button>
+    <button id="new-question">Nouvelle question</button>
+    <br />
+    <button id="update">Update</button><br />
+    <button id="prev-theme">Thème précédent</button>
+    <button id="next-theme">Thème suivant</button><br />
+    <button id="prev-question">Question précédente</button>
+    <button id="next-question">Question suivante</button>
+    <br />
     <section>
       <h3>Answers</h3>
       <ol id="answers"></ol>
@@ -64,10 +73,6 @@
       </tbody>
     </table>
     <button id="update">Update</button><br />
-    <button id="prev-theme">Thème précédent</button>
-    <button id="next-theme">Thème suivant</button><br />
-    <button id="prev-question">Question précédente</button>
-    <button id="next-question">Question suivante</button>
     <h2>All questions:</h2>
     {{ALL_QUESTIONS}}
   </body>
@@ -133,6 +138,22 @@
     };
     document.getElementById("next-question").onclick = function () {
       window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex + 1}`;
+    };
+    document.getElementById("new-question").onclick = async function () {
+      await fetch("http://localhost:8080/quizz-builder/new-question", {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ currentThemeIndex, currentQuestionIndex }),
+      });
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex + 1}`;
+    };
+    document.getElementById("new-theme").onclick = async function () {
+      await fetch("http://localhost:8080/quizz-builder/new-theme", {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ currentThemeIndex }),
+      });
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex + 1}/0`;
     };
 
     window.addEventListener("keydown", function (e) {
