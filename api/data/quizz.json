@@ -1,17 +1,18 @@
 [
   {
-    "_id": "theme-615995cc4df0856259dba55b",
-    "fr": "Dépense et dette publiques",
+    "_id": "theme-616a8cb4526a514b77028b39",
+    "fr": "Affaires étrangères",
     "questions": [
       {
-        "_id": "question-615995cc4df0856259dba55c",
-        "fr": "Que pensez-vous de la dépense de Sécurité Sociale en France ?",
+        "_id": "question-616a8cb4526a514b77028b3a",
+        "fr": "Comment devons-nous considérer nos relations avec les États-Unis ?",
+        "help": "https://fr.wikipedia.org/wiki/Relations_entre_les_États-Unis_et_la_France",
         "answers": [
-          "Il faut la réduire beaucoup",
-          "Il faut la réduire un peu",
-          "Il faut qu'elle reste stable",
-          "Il faut l'augmenter un peu",
-          "Il faut l'augmenter beaucoup",
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -24,14 +25,15 @@
         ]
       },
       {
-        "_id": "question-615995cc4df0856259dba55d",
-        "fr": "Que pensez-vous de la dépense publique en général en France ?",
+        "_id": "question-616ac675de0e474cc11959bc",
+        "fr": "Comment devons-nous considérer nos relations avec la Chine ?",
+        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_Chine_et_la_France",
         "answers": [
-          "Il faut l'augmenter beaucoup",
-          "Il faut l'augmenter un peu",
-          "Il faut qu'elle reste stable",
-          "Il faut la réduire un peu",
-          "Il faut la réduire beaucoup",
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -44,40 +46,178 @@
         ]
       },
       {
-        "_id": "question-615995cc4df0856259dba55e",
-        "fr": "Que pensez vous de la dette publique en France ?",
+        "_id": "question-616ac69773d61d4cf6d9d604",
+        "fr": "Comment devons-nous considérer nos relations avec la Russie ?",
+        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_France_et_la_Russie",
         "answers": [
-          "Elle est trop importante, il faut la rembourser par tous les moyens",
-          "Elle est trop importante, il faut en effacer une partie",
-          "La dette publique est ce qu'elle est, continuons comme ça sans s'en soucier davantage",
-          "La dette publique est un non-sujet",
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 2, 1, 0, 0],
-          [2, 5, 2, 0, 0],
-          [1, 2, 5, 2, 0],
-          [0, 0, 2, 5, 0],
-          [0, 0, 0, 0, 0]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
-        "_id": "question-615995cc4df0856259dba55f",
-        "fr": "Que pensez-vous de la balance budgétaire en France ?",
+        "_id": "question-616ac6d1c8f2de4d3a1d9dba",
+        "fr": "Comment devons-nous considérer nos relations avec la Grande Bretagne ?",
+        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_France_et_le_Royaume-Uni",
         "answers": [
-          "Il faut avoir un budget en excédent chaque année",
-          "Il faut avoir un budget à l'équilibre chaque année",
-          "On peut avoir un budget déficitaire, tant que c'est raisonnable",
-          "Dépensons ce qu'il faut dépenser, on s'occupera des recettes tant qu'on pourra",
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 4, 2, 0, 0],
-          [3, 5, 3, 1, 0],
-          [2, 3, 5, 1, 0],
-          [0, 1, 2, 5, 0],
-          [0, 0, 0, 0, 0]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-616ac6fa254c544d7559e707",
+        "fr": "Comment devons-nous considérer nos relations avec l'Inde ?",
+        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_France_et_l%27Inde",
+        "answers": [
+          "Comme des alliés",
+          "Comme des partenaires privilégiés",
+          "Ni ennemis ni alliés, comme des partenaires normaux",
+          "Comme une menace pour nos intérêts",
+          "Comme un ennemi",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616ac721fb2bad4dadf48ac6",
+        "fr": "Que pensez-vous de la relation avec les pays en développement ?",
+        "help": "https://www.vie-publique.fr/ressources/mots-cles/france-pays-en-voie-de-developpement",
+        "answers": [
+          "Il faut si besoin s'immiscer dans leur organisation politique pour y consolider nos intérêts, stratégiques et/ou commerciaux.",
+          "Il faut agir dans notre intérêt, peu importe l'éthique des politiques locales qui ne nous concerne pas.",
+          "Il faut analyser si leurs valeurs sont en accord avec les nôtres, et avoir des relations d'égal à égal le cas échéant.",
+          "Il faut encourager toute sorte de relation - commerciale, stratégique, universitaire - pour les aider à se développer.",
+          "Il faut s'impliquer et les aider à se développer dans tous les domaines : commerce, démocratie, éthique...",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-61695243c59e1ef0fe35e485",
+    "fr": "Agriculture et alimentation",
+    "questions": [
+      {
+        "_id": "question-61695243c59e1ef0fe35e486",
+        "fr": "Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?",
+        "help": "https://fr.wikipedia.org/wiki/Pesticide",
+        "answers": [
+          "C'est indispensable pour l'agriculture, comme respirer pour l'homme.",
+          "Ça a beaucoup apporté à l'agriculture et à l'économie, continuons leur développement",
+          "Tant qu'on connait et maitrise leurs impacts sur l'environnement et la santé humaine, tout va bien.",
+          "Il faut s'en séparer, si possible.",
+          "Il faut s'en séparer le plus vite possible, pour sauver l'environnement, la biodiversité et la santé humaine.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616953e05d4480f129b86af4",
+        "fr": "Que pensez-vous de la gestion du bétail ?",
+        "help": "https://fr.wikipedia.org/wiki/Élevage_en_France",
+        "answers": [
+          "L'animal ne doit plus être exploité par l'homme, ni pour être mangé, ni pour nous assister.",
+          "Il faut arrêter de manger de la viande, néfaste pour la planète et pour le corps humain.",
+          "Il faut que les élevages sont bien traités et qu'on réduise notre consommation, et tout ira bien.",
+          "Il y a une maltraitance animale, mais qui est peut-être inévitable pour assurer notre consommation.",
+          "Tout va très bien !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616977ba3785f9f1b393b4ef",
+        "fr": "Que pensez-vous de l'agriculture biologique ?",
+        "help": "https://fr.wikipedia.org/wiki/Agriculture_biologique",
+        "answers": [
+          "Dans le mesure où il n'y a pas de problème avec l'agriculture conventionnelle, l'agriculture bio est inutile, chère et contre-productive.",
+          "L'agriculture bio ne suffira de toutes façons pas à nourrir la planète entière, donc rien ne sert de vouloir l'imposer partout",
+          "C'est un autre marché, parallèle à l'agriculture conventionnelle, tant mieux pour l'économie.",
+          "C'est un mouvement qui s'est inscrit durablement et qui aura transformé l'agriculture entière un jour ou l'autre, il le faut",
+          "Il faut accélérer la transition écologique dans l'agriculture pour n'avoir que du bio, le plus vite possible",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616c4bc04441785b60283291",
+        "fr": "Que pensez-vous de la souveraineté / l'indépendance alimentaire de la France ?",
+        "answers": [
+          "C'est aussi stratégique que la défense nationale : il faut prendre toutes les mesures nécessaires pour avoir notre indépendance alimentaire.",
+          "C'est une des conditions de survie d'un État, il faut éviter de se mettre en danger sur certaines filières d'approvisionnement.",
+          "Pour l'instant tout va bien, donc pas de problème, continuons comme ça.",
+          "Ce n'est pas une inquiétude puisque le commerce international permet de se procurer ce qu'on a pas chez nous.",
+          "C'est contre-productif d'avoir un tel objectif, il faut produire ce qu'on sait produire et les échanges commerciaux font le reste.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://www.lesechos.fr/industrie-services/conso-distribution/la-souverainete-alimentaire-de-la-france-en-quatre-questions-1197142"
       }
     ]
   },
@@ -301,81 +441,18 @@
     ]
   },
   {
-    "_id": "theme-61695243c59e1ef0fe35e485",
-    "fr": "Agriculture et alimentation",
+    "_id": "theme-616dd426b4561233f094b2e1",
+    "fr": "Culture",
     "questions": [
       {
-        "_id": "question-61695243c59e1ef0fe35e486",
-        "fr": "Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?",
-        "help": "https://fr.wikipedia.org/wiki/Pesticide",
+        "_id": "question-616dd426b4561233f094b2e2",
+        "fr": "Que pensez-vous du budget alloué à la culture ?",
         "answers": [
-          "C'est indispensable pour l'agriculture, comme respirer pour l'homme.",
-          "Ça a beaucoup apporté à l'agriculture et à l'économie, continuons leur développement",
-          "Tant qu'on connait et maitrise leurs impacts sur l'environnement et la santé humaine, tout va bien.",
-          "Il faut s'en séparer, si possible.",
-          "Il faut s'en séparer le plus vite possible, pour sauver l'environnement, la biodiversité et la santé humaine.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616953e05d4480f129b86af4",
-        "fr": "Que pensez-vous de la gestion du bétail ?",
-        "help": "https://fr.wikipedia.org/wiki/Élevage_en_France",
-        "answers": [
-          "L'animal ne doit plus être exploité par l'homme, ni pour être mangé, ni pour nous assister.",
-          "Il faut arrêter de manger de la viande, néfaste pour la planète et pour le corps humain.",
-          "Il faut que les élevages sont bien traités et qu'on réduise notre consommation, et tout ira bien.",
-          "Il y a une maltraitance animale, mais qui est peut-être inévitable pour assurer notre consommation.",
-          "Tout va très bien !",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616977ba3785f9f1b393b4ef",
-        "fr": "Que pensez-vous de l'agriculture biologique ?",
-        "help": "https://fr.wikipedia.org/wiki/Agriculture_biologique",
-        "answers": [
-          "Dans le mesure où il n'y a pas de problème avec l'agriculture conventionnelle, l'agriculture bio est inutile, chère et contre-productive.",
-          "L'agriculture bio ne suffira de toutes façons pas à nourrir la planète entière, donc rien ne sert de vouloir l'imposer partout",
-          "C'est un autre marché, parallèle à l'agriculture conventionnelle, tant mieux pour l'économie.",
-          "C'est un mouvement qui s'est inscrit durablement et qui aura transformé l'agriculture entière un jour ou l'autre, il le faut",
-          "Il faut accélérer la transition écologique dans l'agriculture pour n'avoir que du bio, le plus vite possible",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616c4bc04441785b60283291",
-        "fr": "Que pensez-vous de la souveraineté / l'indépendance alimentaire de la France ?",
-        "answers": [
-          "C'est aussi stratégique que la défense nationale : il faut prendre toutes les mesures nécessaires pour avoir notre indépendance alimentaire.",
-          "C'est une des conditions de survie d'un État, il faut éviter de se mettre en danger sur certaines filières d'approvisionnement.",
-          "Pour l'instant tout va bien, donc pas de problème, continuons comme ça.",
-          "Ce n'est pas une inquiétude puisque le commerce international permet de se procurer ce qu'on a pas chez nous.",
-          "C'est contre-productif d'avoir un tel objectif, il faut produire ce qu'on sait produire et les échanges commerciaux font le reste.",
+          "Il faut beaucoup le diminuer ",
+          "Il faut le diminuer un peu",
+          "Il faut qu'il reste stable",
+          "Il faut l'augmenter un peu",
+          "Il faut beaucoup l'augmenter",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -386,24 +463,23 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ],
-        "help": "https://www.lesechos.fr/industrie-services/conso-distribution/la-souverainete-alimentaire-de-la-france-en-quatre-questions-1197142"
+        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_(France)#Budget"
       }
     ]
   },
   {
-    "_id": "theme-615995cc4df0856259dba56b",
-    "fr": "Industrie et commerce",
+    "_id": "theme-615995cc4df0856259dba55b",
+    "fr": "Dépense et dette publiques",
     "questions": [
       {
-        "_id": "question-615995cc4df0856259dba56c",
-        "fr": "Que pensez-vous du libre-échange, du fait de ne pas avoir de taxe douanière ?",
-        "help": "https://fr.wikipedia.org/wiki/Libre-échange",
+        "_id": "question-615995cc4df0856259dba55c",
+        "fr": "Que pensez-vous de la dépense de Sécurité Sociale en France ?",
         "answers": [
-          "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
-          "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
-          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
-          "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
-          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, en délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
+          "Il faut la réduire beaucoup",
+          "Il faut la réduire un peu",
+          "Il faut qu'elle reste stable",
+          "Il faut l'augmenter un peu",
+          "Il faut l'augmenter beaucoup",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -416,15 +492,14 @@
         ]
       },
       {
-        "_id": "question-615995cc4df0856259dba56d",
-        "fr": "Que pensez-vous du protectionnisme, de taxer certaines industries de l'étranger pour favoriser le local ?",
-        "help": "https://fr.wikipedia.org/wiki/Protectionnisme",
+        "_id": "question-615995cc4df0856259dba55d",
+        "fr": "Que pensez-vous de la dépense publique en général en France ?",
         "answers": [
-          "Le protectionnisme est une fermeture sur soi-même qui amène à la guerre : surtout pas.",
-          "Le protectionnisme va obstruer les échanges commerciaux, avec comme conséquence un accroissement du chômage : il vaut mieux éviter.",
-          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
-          "Le protectionnisme permet de compenser les différences avec les politiques économiques ou fiscales des autres pays, c'est un bon outil stratégique pour favoriser notre économie.",
-          "Le protectionnisme permet, en plus, de ralentir le dérèglement climatique, en relocalisant la pollution et responsabilisant les pays consommateurs : c'est tout bon.",
+          "Il faut l'augmenter beaucoup",
+          "Il faut l'augmenter un peu",
+          "Il faut qu'elle reste stable",
+          "Il faut la réduire un peu",
+          "Il faut la réduire beaucoup",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -437,93 +512,39 @@
         ]
       },
       {
-        "_id": "question-615995cc4df0856259dba56e",
-        "fr": "Que pensez-vous de la place de l'État dans la politique industrielle ?",
-        "help": "https://fr.wikipedia.org/wiki/Politique_industrielle_de_la_France",
+        "_id": "question-615995cc4df0856259dba55e",
+        "fr": "Que pensez vous de la dette publique en France ?",
         "answers": [
-          "L'État doit laisser faire le secteur privé pour choisir ses industries, même stratégiques, et les diriger: entraver le marché et la concurrence est mauvais.",
-          "L'État doit laisser le secteur privé diriger toute industrie, mais il doit les protéger contre les attaques internationales potentielles au besoin.",
-          "L'État peut choisir des industries stratégiques et les financer, tout en confiant la direction au privé.",
-          "L'État peut investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques ou privées selon les secteurs.",
-          "L'État doit planifier l'économie : il doit investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques lorsque nécessaire.",
+          "Elle est trop importante, il faut la rembourser par tous les moyens",
+          "Elle est trop importante, il faut en effacer une partie",
+          "La dette publique est ce qu'elle est, continuons comme ça sans s'en soucier davantage",
+          "La dette publique est un non-sujet",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      }
-    ]
-  },
-  {
-    "_id": "theme-615995cc4df0856259dba56f",
-    "fr": "Recherche et éducation",
-    "questions": [
-      {
-        "_id": "question-615995cc4df0856259dba570",
-        "fr": "Que pensez-vous du financement public de la recherche ?",
-        "help": "https://fr.wikipedia.org/wiki/Recherche_publique_(France)",
-        "answers": [
-          "La recherche est très importante dans la société, il faut augmenter fortement son financement public.",
-          "Il faut augmenter le financement de la recherche si on en a les moyens.",
-          "Le financement de la recherche est très bien comme il est aujourd'hui.",
-          "Nous n'avons plus les moyens, il faut donc baisser le financement de la recherche.",
-          "Financer publiquement la recherche est inutile, laissons le secteur privé s'en occuper.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
+          [5, 2, 1, 0, 0],
+          [2, 5, 2, 0, 0],
+          [1, 2, 5, 2, 0],
+          [0, 0, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
-        "_id": "question-615995cc4df0856259dba571",
-        "fr": "Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?",
-        "help": "https://fr.wikipedia.org/wiki/Système_éducatif_en_France",
+        "_id": "question-615995cc4df0856259dba55f",
+        "fr": "Que pensez-vous de la balance budgétaire en France ?",
         "answers": [
-          "Le secteur public dépense toujours mal. Laissons aussi l'éducation au privé, il saura bien dépenser, bien éduquer.",
-          "Une telle dépense pour un tel résultat : il faut faire mieux, plus efficace. Le secteur public en est capable.",
-          "L'éducation publique en généal fonctionne plutôt bien, que ça continue !",
-          "Dépenser dans l'éducation, c'est investir dans cercle vertueux : plus on le fait, plus on aura de retours dans tous les secteurs de la société.",
-          "L'Éducation Nationale est en perdition, seule une hausse des dépenses pourra la sauver.",
+          "Il faut avoir un budget en excédent chaque année",
+          "Il faut avoir un budget à l'équilibre chaque année",
+          "On peut avoir un budget déficitaire, tant que c'est raisonnable",
+          "Dépensons ce qu'il faut dépenser, on s'occupera des recettes tant qu'on pourra",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba572",
-        "fr": "Que pensez-vous de l'utilisation du numérique (tablettes, téléphones...) à l'école ?",
-        "help": "https://fr.wikipedia.org/wiki/Technologies_de_l%27information_et_de_la_communication_pour_l%27enseignement",
-        "answers": [
-          "Si on peut tout numériser, numérisons tout : le numérique fait partie de notre vie, les enfants doivent se l'approprier.",
-          "On peut l'utiliser plus souvent, c'est une excellente manière pour enseigner.",
-          "Il faut bien choisir comment l'utiliser dans l'éducation, mais je n'ai pas de problème contre.",
-          "Ne l'utiliser que dans les matières appropriées : informatique, technologie...",
-          "Le numérique est néfaste pour la construction sociale, il faut le bannir dans la scolarité de nos enfants.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 1, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -620,7 +641,7 @@
   },
   {
     "_id": "theme-615995cc4df0856259dba572",
-    "fr": "Gouvernance et république",
+    "fr": "Gouvernance et République",
     "questions": [
       {
         "_id": "question-615995cc4df0856259dba573",
@@ -686,19 +707,19 @@
     ]
   },
   {
-    "_id": "theme-6169796cd131e4fafb1825d1",
-    "fr": "Union Européenne",
+    "_id": "theme-615995cc4df0856259dba56b",
+    "fr": "Industrie et commerce",
     "questions": [
       {
-        "_id": "question-6169796cd131e4fafb1825d2",
-        "fr": "Que pensez-vous des traités de l'Union Européenne ?",
-        "help": "https://fr.wikipedia.org/wiki/Traités_de_l%27Union_européenne",
+        "_id": "question-615995cc4df0856259dba56c",
+        "fr": "Que pensez-vous du libre-échange, du fait de ne pas avoir de taxe douanière ?",
+        "help": "https://fr.wikipedia.org/wiki/Libre-échange",
         "answers": [
-          "Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant",
-          "Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux",
-          "Ces traités sont bien comme ils sont, l'Union Européenne se développe come il le faut.",
-          "Il faut encore plus d'intégration de chaque pays dans l'Union Européenne",
-          "Il faudrait enfin une fédération de pays, avec une constitution commune",
+          "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
+          "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
+          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
+          "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
+          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, en délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -711,15 +732,15 @@
         ]
       },
       {
-        "_id": "question-616a82e1df23ae4a56d50ecf",
-        "fr": "Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?",
-        "help": "https://fr.wikipedia.org/wiki/Fiscalité_dans_l%27Union_européenne#Harmonisation",
+        "_id": "question-615995cc4df0856259dba56d",
+        "fr": "Que pensez-vous du protectionnisme, de taxer certaines industries de l'étranger pour favoriser le local ?",
+        "help": "https://fr.wikipedia.org/wiki/Protectionnisme",
         "answers": [
-          "La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique",
-          "Un taux d'imposition unique est impossible, les membres n'en veulent pas, dont acte.",
-          "L'harmonie et la concurrence fiscales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.",
-          "La situation actuelle n'est pas tenable, au moins un taux minimum serait un gros progrès",
-          "Il faut que tous les pays aient le même taux d'imposition sinon le moins-disant gagnera toujours dans un espace sans protectionnisme.",
+          "Le protectionnisme est une fermeture sur soi-même qui amène à la guerre : surtout pas.",
+          "Le protectionnisme va obstruer les échanges commerciaux, avec comme conséquence un accroissement du chômage : il vaut mieux éviter.",
+          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
+          "Le protectionnisme permet de compenser les différences avec les politiques économiques ou fiscales des autres pays, c'est un bon outil stratégique pour favoriser notre économie.",
+          "Le protectionnisme permet, en plus, de ralentir le dérèglement climatique, en relocalisant la pollution et responsabilisant les pays consommateurs : c'est tout bon.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -732,57 +753,15 @@
         ]
       },
       {
-        "_id": "question-616a85126b80c74ab28a0edf",
-        "fr": "Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?",
-        "help": "https://www.vie-publique.fr/fiches/20405-quest-ce-que-leurope-sociale",
+        "_id": "question-615995cc4df0856259dba56e",
+        "fr": "Que pensez-vous de la place de l'État dans la politique industrielle ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_industrielle_de_la_France",
         "answers": [
-          "Les prestations sociales sont liées aux taxes et impôts, donc dans un espace libre comme l'UE, il faut harmonisation fiscale ET sociale",
-          "Un minimum doit être défini, comme un salaire minimum européen par exemple.",
-          "L'harmonie et la concurrence sociales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.",
-          "Avoir des prestations sociales communes est impossible, les membres n'en veulent pas, dont acte.",
-          "La concurrence des prestations sociales est saine pour les pays, il ne faut pas d'harmonisation.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616a8ab9650e054b27632e09",
-        "fr": "Que pensez-vous du nombre de membres de l'Union Européenne ?",
-        "help": "https://fr.wikipedia.org/wiki/Élargissement_de_l%27Union_européenne",
-        "answers": [
-          "Il en faudrait beaucoup moins, juste un noyau dur de quelques pays",
-          "Il en faudrait un peu moins",
-          "Nous sommes le bon nombre",
-          "On pourrait ajouter quelques pays",
-          "Il faudrait élargir beaucoup plus",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616a8b1b4ae6d14b47d4ac6c",
-        "fr": "Que pensez-vous d'une défense commune européenne ?",
-        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_et_de_défense_commune",
-        "answers": [
-          "Il faut que l'Union Européenne ait le pouvoir nucléaire et celui de faire la guerre à la place des pays.",
-          "Il faut que une stratégie de défense commune, avec une armée commune.",
-          "La situation actuelle est bien équilibrée, avec seulement une diplomatie européenne, mais une défense par Nation.",
-          "La défense et la diplomatie doivent être des compétences nationales et non européennes.",
-          "Étant pour une dislocation de l'Union Européenne, mon avis sur une défense commune va sans dire.",
+          "L'État doit laisser faire le secteur privé pour choisir ses industries, même stratégiques, et les diriger: entraver le marché et la concurrence est mauvais.",
+          "L'État doit laisser le secteur privé diriger toute industrie, mais il doit les protéger contre les attaques internationales potentielles au besoin.",
+          "L'État peut choisir des industries stratégiques et les financer, tout en confiant la direction au privé.",
+          "L'État peut investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques ou privées selon les secteurs.",
+          "L'État doit planifier l'économie : il doit investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques lorsque nécessaire.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -797,19 +776,19 @@
     ]
   },
   {
-    "_id": "theme-616a8cb4526a514b77028b39",
-    "fr": "Géopolitique - Affaires étrangères",
+    "_id": "theme-615995cc4df085639im259dba57b",
+    "fr": "Pandémie Covid 19",
     "questions": [
       {
-        "_id": "question-616a8cb4526a514b77028b3a",
-        "fr": "Comment devons-nous considérer nos relations avec les États-Unis ?",
-        "help": "https://fr.wikipedia.org/wiki/Relations_entre_les_États-Unis_et_la_France",
+        "_id": "question-615995cc39d90c9d856259dba57c",
+        "fr": "Comment vous situez-vous par rapport à un reconfinement en cas de pic épidémique ?",
+        "help": "https://fr.wikipedia.org/wiki/Confinements_liés_à_la_pandémie_de_Covid-19_en_France",
         "answers": [
-          "Comme des alliés",
-          "Comme des partenaires privilégiés",
-          "Ni ennemis ni alliés, comme des partenaires normaux",
-          "Comme une menace pour nos intérêts",
-          "Comme un ennemi",
+          "J'espère qu'on confinera plus strictement et plus longtemps que la dernière fois, c'est de l'inconscience que de prendre des risques avec la vie des autres.",
+          "Il faut effectivement protéger toutes les personnes fragiles, c'est humain. S'il faut se confiner, alors confinons-nous.",
+          "Se confiner sert à aider les hôpitaux, qui n'ont pas demandé à être surchargés : s'il faut se confiner pour soulager le personnel hospitalier et ne pas les forcer à choisir qui doit vivre et qui doit mourir, alors confinons-nous.",
+          "Sacrifier la vie de nos jeunes qui ne craignent rien mais qui n'ont pas encore vécu, pour prolonger la vie de nos aînés qui ont déjà bien vécu et qui mourront de toutes façons un jour, ce n'est pas une bonne décision.",
+          "L'impact de cette pandémie sur nos vies normales est trop exagéré par rapport à son danger et sa mortalité. Il ne faut vraiment pas se confiner.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -822,15 +801,15 @@
         ]
       },
       {
-        "_id": "question-616ac675de0e474cc11959bc",
-        "fr": "Comment devons-nous considérer nos relations avec la Chine ?",
-        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_Chine_et_la_France",
+        "_id": "question-615995cc39d90c9d856259dba57d",
+        "fr": "Comment vous situez-vous par rapport au port du masque à l'école en cas de pic épidémique ?",
+        "help": "https://fr.wikipedia.org/wiki/Port_du_masque_pendant_la_pandémie_de_Covid-19",
         "answers": [
-          "Comme des alliés",
-          "Comme des partenaires privilégiés",
-          "Ni ennemis ni alliés, comme des partenaires normaux",
-          "Comme une menace pour nos intérêts",
-          "Comme un ennemi",
+          "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent tant dans la classe que dans la cour de récréation : on est jamais à l'abri.",
+          "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent dans la classe, mais dehors dans la cour de récréation on peut s'en passer.",
+          "Si on laisse les fenêtres ouvertes, pas besoin de masque.",
+          "Pas de masque pour les enfants, ils ont besoin de voir des visages pour leur développement personnel, c'est ça qui compte, tant pis pour le virus.",
+          "Pas de masque pour les enfants : ils ne sont pas à risque pour ce virus, et ils ont besoin de voir des visages pour leur développement personnel, c'est ça qui compte.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -843,15 +822,15 @@
         ]
       },
       {
-        "_id": "question-616ac69773d61d4cf6d9d604",
-        "fr": "Comment devons-nous considérer nos relations avec la Russie ?",
-        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_France_et_la_Russie",
+        "_id": "question-615995cc39d90c9d856259dba57e",
+        "fr": "Comment vous situez-vous par rapport au port du masque en société en cas de pic épidémique ?",
+        "help": "https://fr.wikipedia.org/wiki/Port_du_masque_pendant_la_pandémie_de_Covid-19",
         "answers": [
-          "Comme des alliés",
-          "Comme des partenaires privilégiés",
-          "Ni ennemis ni alliés, comme des partenaires normaux",
-          "Comme une menace pour nos intérêts",
-          "Comme un ennemi",
+          "Masque à l'intérieur et à l'extérieur, partout",
+          "Masque seulement à l'intérieur",
+          "Masque seulement à l'intérieur, mais pas dans les écoles",
+          "Masque seulement à l'intérieur, mais pas dans les écoles, et que lorsque l'intérieur est non ventilé et qu'on est serré",
+          "Masque nulle part",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -864,57 +843,15 @@
         ]
       },
       {
-        "_id": "question-616ac6d1c8f2de4d3a1d9dba",
-        "fr": "Comment devons-nous considérer nos relations avec la Grande Bretagne ?",
-        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_France_et_le_Royaume-Uni",
+        "_id": "question-615995cc39d90c9d856259dba57f",
+        "fr": "Comment vous situez-vous par rapport au passe sanitaire ?",
+        "help": "https://fr.wikipedia.org/wiki/Passe_sanitaire_français",
         "answers": [
-          "Comme des alliés",
-          "Comme des partenaires privilégiés",
-          "Ni ennemis ni alliés, comme des partenaires normaux",
-          "Comme une menace pour nos intérêts",
-          "Comme un ennemi",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616ac6fa254c544d7559e707",
-        "fr": "Comment devons-nous considérer nos relations avec l'Inde ?",
-        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_France_et_l%27Inde",
-        "answers": [
-          "Comme des alliés",
-          "Comme des partenaires privilégiés",
-          "Ni ennemis ni alliés, comme des partenaires normaux",
-          "Comme une menace pour nos intérêts",
-          "Comme un ennemi",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616ac721fb2bad4dadf48ac6",
-        "fr": "Que pensez-vous de la relation avec les pays en développement ?",
-        "help": "https://www.vie-publique.fr/ressources/mots-cles/france-pays-en-voie-de-developpement",
-        "answers": [
-          "Il faut si besoin s'immiscer dans leur organisation politique pour y consolider nos intérêts, stratégiques et/ou commerciaux.",
-          "Il faut agir dans notre intérêt, peu importe l'éthique des politiques locales qui ne nous concerne pas.",
-          "Il faut analyser si leurs valeurs sont en accord avec les nôtres, et avoir des relations d'égal à égal le cas échéant.",
-          "Il faut encourager toute sorte de relation - commerciale, stratégique, universitaire - pour les aider à se développer.",
-          "Il faut s'impliquer et les aider à se développer dans tous les domaines : commerce, démocratie, éthique...",
+          "Le passe sanitaire est le début de la dictature : il faut se battre contre.",
+          "Pas besoin de forcer les gens à se vacciner s'ils ne le veulent pas : encourager, oui, forcer, non.",
+          "Moi je suis vacciné, je m'en fiche.",
+          "Il faut bien sortir de cette épidémie un jour ou l'autre, le vaccin est la seule solution, donc il faut que tout le monde se vaccine, peut importe la manière de le dire.",
+          "Cette pandémie est grave et les gens qui ne sont pas vaccinés sont inconscients : gardons le passe sanitaire tant que tout le monde n'est pas vacciné.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1036,6 +973,102 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-615995cc4df0856259dba56f",
+    "fr": "Recherche et éducation",
+    "questions": [
+      {
+        "_id": "question-615995cc4df0856259dba570",
+        "fr": "Que pensez-vous du financement public de la recherche ?",
+        "help": "https://fr.wikipedia.org/wiki/Recherche_publique_(France)",
+        "answers": [
+          "La recherche est très importante dans la société, il faut augmenter fortement son financement public.",
+          "Il faut augmenter le financement de la recherche si on en a les moyens.",
+          "Le financement de la recherche est très bien comme il est aujourd'hui.",
+          "Nous n'avons plus les moyens, il faut donc baisser le financement de la recherche.",
+          "Financer publiquement la recherche est inutile, laissons le secteur privé s'en occuper.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba571",
+        "fr": "Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Système_éducatif_en_France",
+        "answers": [
+          "Le secteur public dépense toujours mal. Laissons aussi l'éducation au privé, il saura bien dépenser, bien éduquer.",
+          "Une telle dépense pour un tel résultat : il faut faire mieux, plus efficace. Le secteur public en est capable.",
+          "L'éducation publique en généal fonctionne plutôt bien, que ça continue !",
+          "Dépenser dans l'éducation, c'est investir dans cercle vertueux : plus on le fait, plus on aura de retours dans tous les secteurs de la société.",
+          "L'Éducation Nationale est en perdition, seule une hausse des dépenses pourra la sauver.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba572",
+        "fr": "Que pensez-vous de l'utilisation du numérique (tablettes, téléphones...) à l'école ?",
+        "help": "https://fr.wikipedia.org/wiki/Technologies_de_l%27information_et_de_la_communication_pour_l%27enseignement",
+        "answers": [
+          "Si on peut tout numériser, numérisons tout : le numérique fait partie de notre vie, les enfants doivent se l'approprier.",
+          "On peut l'utiliser plus souvent, c'est une excellente manière pour enseigner.",
+          "Il faut bien choisir comment l'utiliser dans l'éducation, mais je n'ai pas de problème contre.",
+          "Ne l'utiliser que dans les matières appropriées : informatique, technologie...",
+          "Le numérique est néfaste pour la construction sociale, il faut le bannir dans la scolarité de nos enfants.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-616dd4f55c6f5a34549cc313",
+    "fr": "Santé",
+    "questions": [
+      {
+        "_id": "question-616dd4f55c6f5a34549cc314",
+        "fr": "Que pensez-vous du budget alloué à la santé ?",
+        "answers": [
+          "Il faut beaucoup le diminuer ",
+          "Il faut le diminuer un peu",
+          "Il faut qu'il reste stable",
+          "Il faut l'augmenter un peu",
+          "Il faut beaucoup l'augmenter",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_des_Affaires_sociales_et_de_la_Sant%C3%A9_(France)"
       }
     ]
   },
@@ -1213,19 +1246,19 @@
     ]
   },
   {
-    "_id": "theme-615995cc4df085639im259dba57b",
-    "fr": "Pandémie Covid 19",
+    "_id": "theme-6169796cd131e4fafb1825d1",
+    "fr": "Union Européenne",
     "questions": [
       {
-        "_id": "question-615995cc39d90c9d856259dba57c",
-        "fr": "Comment vous situez-vous par rapport à un reconfinement en cas de pic épidémique ?",
-        "help": "https://fr.wikipedia.org/wiki/Confinements_liés_à_la_pandémie_de_Covid-19_en_France",
+        "_id": "question-6169796cd131e4fafb1825d2",
+        "fr": "Que pensez-vous des traités de l'Union Européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Traités_de_l%27Union_européenne",
         "answers": [
-          "J'espère qu'on confinera plus strictement et plus longtemps que la dernière fois, c'est de l'inconscience que de prendre des risques avec la vie des autres.",
-          "Il faut effectivement protéger toutes les personnes fragiles, c'est humain. S'il faut se confiner, alors confinons-nous.",
-          "Se confiner sert à aider les hôpitaux, qui n'ont pas demandé à être surchargés : s'il faut se confiner pour soulager le personnel hospitalier et ne pas les forcer à choisir qui doit vivre et qui doit mourir, alors confinons-nous.",
-          "Sacrifier la vie de nos jeunes qui ne craignent rien mais qui n'ont pas encore vécu, pour prolonger la vie de nos aînés qui ont déjà bien vécu et qui mourront de toutes façons un jour, ce n'est pas une bonne décision.",
-          "L'impact de cette pandémie sur nos vies normales est trop exagéré par rapport à son danger et sa mortalité. Il ne faut vraiment pas se confiner.",
+          "Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant",
+          "Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux",
+          "Ces traités sont bien comme ils sont, l'Union Européenne se développe come il le faut.",
+          "Il faut encore plus d'intégration de chaque pays dans l'Union Européenne",
+          "Il faudrait enfin une fédération de pays, avec une constitution commune",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1238,15 +1271,15 @@
         ]
       },
       {
-        "_id": "question-615995cc39d90c9d856259dba57d",
-        "fr": "Comment vous situez-vous par rapport au port du masque à l'école en cas de pic épidémique ?",
-        "help": "https://fr.wikipedia.org/wiki/Port_du_masque_pendant_la_pandémie_de_Covid-19",
+        "_id": "question-616a82e1df23ae4a56d50ecf",
+        "fr": "Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Fiscalité_dans_l%27Union_européenne#Harmonisation",
         "answers": [
-          "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent tant dans la classe que dans la cour de récréation : on est jamais à l'abri.",
-          "Les enfants sont vecteur de transmission du virus, il faut qu'ils en portent dans la classe, mais dehors dans la cour de récréation on peut s'en passer.",
-          "Si on laisse les fenêtres ouvertes, pas besoin de masque.",
-          "Pas de masque pour les enfants, ils ont besoin de voir des visages pour leur développement personnel, c'est ça qui compte, tant pis pour le virus.",
-          "Pas de masque pour les enfants : ils ne sont pas à risque pour ce virus, et ils ont besoin de voir des visages pour leur développement personnel, c'est ça qui compte.",
+          "La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique",
+          "Un taux d'imposition unique est impossible, les membres n'en veulent pas, dont acte.",
+          "L'harmonie et la concurrence fiscales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.",
+          "La situation actuelle n'est pas tenable, au moins un taux minimum serait un gros progrès",
+          "Il faut que tous les pays aient le même taux d'imposition sinon le moins-disant gagnera toujours dans un espace sans protectionnisme.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1259,15 +1292,15 @@
         ]
       },
       {
-        "_id": "question-615995cc39d90c9d856259dba57e",
-        "fr": "Comment vous situez-vous par rapport au port du masque en société en cas de pic épidémique ?",
-        "help": "https://fr.wikipedia.org/wiki/Port_du_masque_pendant_la_pandémie_de_Covid-19",
+        "_id": "question-616a85126b80c74ab28a0edf",
+        "fr": "Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?",
+        "help": "https://www.vie-publique.fr/fiches/20405-quest-ce-que-leurope-sociale",
         "answers": [
-          "Masque à l'intérieur et à l'extérieur, partout",
-          "Masque seulement à l'intérieur",
-          "Masque seulement à l'intérieur, mais pas dans les écoles",
-          "Masque seulement à l'intérieur, mais pas dans les écoles, et que lorsque l'intérieur est non ventilé et qu'on est serré",
-          "Masque nulle part",
+          "Les prestations sociales sont liées aux taxes et impôts, donc dans un espace libre comme l'UE, il faut harmonisation fiscale ET sociale",
+          "Un minimum doit être défini, comme un salaire minimum européen par exemple.",
+          "L'harmonie et la concurrence sociales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.",
+          "Avoir des prestations sociales communes est impossible, les membres n'en veulent pas, dont acte.",
+          "La concurrence des prestations sociales est saine pour les pays, il ne faut pas d'harmonisation.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1280,15 +1313,36 @@
         ]
       },
       {
-        "_id": "question-615995cc39d90c9d856259dba57f",
-        "fr": "Comment vous situez-vous par rapport au passe sanitaire ?",
-        "help": "https://fr.wikipedia.org/wiki/Passe_sanitaire_français",
+        "_id": "question-616a8ab9650e054b27632e09",
+        "fr": "Que pensez-vous du nombre de membres de l'Union Européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Élargissement_de_l%27Union_européenne",
         "answers": [
-          "Le passe sanitaire est le début de la dictature : il faut se battre contre.",
-          "Pas besoin de forcer les gens à se vacciner s'ils ne le veulent pas : encourager, oui, forcer, non.",
-          "Moi je suis vacciné, je m'en fiche.",
-          "Il faut bien sortir de cette épidémie un jour ou l'autre, le vaccin est la seule solution, donc il faut que tout le monde se vaccine, peut importe la manière de le dire.",
-          "Cette pandémie est grave et les gens qui ne sont pas vaccinés sont inconscients : gardons le passe sanitaire tant que tout le monde n'est pas vacciné.",
+          "Il en faudrait beaucoup moins, juste un noyau dur de quelques pays",
+          "Il en faudrait un peu moins",
+          "Nous sommes le bon nombre",
+          "On pourrait ajouter quelques pays",
+          "Il faudrait élargir beaucoup plus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616a8b1b4ae6d14b47d4ac6c",
+        "fr": "Que pensez-vous d'une défense commune européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_et_de_défense_commune",
+        "answers": [
+          "Il faut que l'Union Européenne ait le pouvoir nucléaire et celui de faire la guerre à la place des pays.",
+          "Il faut que une stratégie de défense commune, avec une armée commune.",
+          "La situation actuelle est bien équilibrée, avec seulement une diplomatie européenne, mais une défense par Nation.",
+          "La défense et la diplomatie doivent être des compétences nationales et non européennes.",
+          "Étant pour une dislocation de l'Union Européenne, mon avis sur une défense commune va sans dire.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

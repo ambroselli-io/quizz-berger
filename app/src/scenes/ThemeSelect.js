@@ -15,16 +15,12 @@ const ThemeSelect = () => {
   const history = useHistory();
 
   const goToResults = () => history.push("/result");
-  const goToQuizz = (e) => {
+  const goToQuizz = async (e) => {
+    await initNewUser();
     const themeId = e.target.dataset.themeid;
     const firstQuestionId = quizz.find((t) => t._id === themeId).questions[0]._id;
     history.push(`/question/${themeId}/${firstQuestionId}`);
   };
-
-  useEffect(() => {
-    initNewUser();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <>
