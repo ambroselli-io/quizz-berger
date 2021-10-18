@@ -21,7 +21,7 @@ const Quizz = () => {
 
   const questionIndex = questions.findIndex((question) => question._id === questionId);
 
-  const { fr, answers } = questions.find((question) => question._id === questionId);
+  const question = questions.find((question) => question._id === questionId);
 
   const userThemes = [
     ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
@@ -76,9 +76,14 @@ const Quizz = () => {
 
       <BackgroundContainer>
         {/* <QuestionContainer> */}
-        <QuestionTitle>{fr}</QuestionTitle>
+        <QuestionTitle>{question.fr}</QuestionTitle>
+        {!!question.help && (
+          <QuestionHelp href={question.help} target="_blank">
+            Cliquez <strong>ici</strong> pour en savoir plus
+          </QuestionHelp>
+        )}
         <AnswerContainer>
-          {answers.map((answer, index) => {
+          {question.answers.map((answer, index) => {
             return (
               <AnswerButton
                 isActive={currentAnswerIndex === index}
@@ -174,6 +179,17 @@ const QuestionTitle = styled.h2`
   font-weight: 700;
   font-size: 24px;
   text-align: center;
+`;
+
+const QuestionHelp = styled.a`
+  margin-top: -30px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  strong {
+    text-decoration: underline;
+  }
 `;
 
 const AnswerContainer = styled.div`

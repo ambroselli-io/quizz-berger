@@ -10,7 +10,6 @@ import Quizz from "./scenes/Quizz";
 import Result from "./scenes/Result";
 import Layout from "./components/Layout";
 import AllQuestions from "./scenes/AllQuestions";
-import CandidateResult from "./scenes/CandidateResult";
 import UserContext from "./contexts/user";
 import DataContext from "./contexts/data";
 
@@ -39,7 +38,7 @@ const App = () => {
           <Route path="/all-questions" exact component={AllQuestions} />
           <Route path="/themes" component={ThemeSelect} />
           <Route path="/result/:userPseudo" exact component={Result} />
-          <Route path="/quizz/:candidatePseudo" exact component={CandidateResult} />
+          <Route path="/quizz/:candidatePseudo" exact component={AllQuestions} />
           <RestrictedRoute path="/question/:themeId/:questionId" exact component={Quizz} />
           <RestrictedRoute path="/result" exact component={Result} />
           <RestrictedRoute path="/" exact component={() => <Redirect to="/themes" />} />

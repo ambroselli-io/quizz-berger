@@ -39,6 +39,7 @@
     <h1>Quizz Builder</h1>
     <h2>Current theme: <input id="current-theme" value="{{CURRENT_THEME}}" /></h2>
     <h2>Current question: <input id="current-question" maxlength="280" value="{{CURRENT_QUESTION}}" /></h2>
+    <h2>Current help: <input id="current-help" value="{{CURRENT_HELP}}" /></h2>
     <button id="new-theme">Nouveau thème</button>
     <button id="new-question">Nouvelle question</button>
     <br />
@@ -82,6 +83,7 @@
     const save = async function (e) {
       const themeName = document.getElementById("current-theme").value;
       const questionName = document.getElementById("current-question").value;
+      const help = document.getElementById("current-help").value;
       const answers = [...document.getElementById("answers").getElementsByTagName("input")].map((input) => input.value);
       fetch(window.location.href, {
         method: "POST",
@@ -89,6 +91,7 @@
         body: JSON.stringify({
           themeName,
           questionName,
+          help,
           answers,
           scores: [...document.querySelectorAll(".score")].reduce((scores, input) => {
             const line = input.dataset.line;

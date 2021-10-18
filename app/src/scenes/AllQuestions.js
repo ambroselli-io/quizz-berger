@@ -1,37 +1,85 @@
 import React, { useContext } from "react";
+import { useParams } from "react-router";
 import styled from "styled-components";
+import Loader from "../components/Loader";
 import DataContext from "../contexts/data";
+import UserContext from "../contexts/user";
 import { media } from "../styles/mediaQueries";
 
+const getUserThemes = (userAnswers) => [
+  ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
+];
+
 const AllQuestions = () => {
-  const { quizz } = useContext(DataContext);
+  const { candidatePseudo } = useParams();
+  const forCandidate = !!candidatePseudo;
+  const { user, userAnswers } = useContext(UserContext);
+  const { candidates, quizz } = useContext(DataContext);
+
+  const candidateAnswers = candidates.find((c) => c.pseudo === candidatePseudo);
+  const userThemes = getUserThemes(userAnswers);
+  const userAnswersId = userAnswers.map((a) => a.questionId);
+
+  const isLoading = forCandidate && !candidateAnswers?.pseudo;
+
   return (
     <>
       <BackgroundContainer>
         <SubContainer>
           <Title>Toutes les questions</Title>
-          <SubTitle>
-            Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une
-            question à ajouter, contactez-nous !
-          </SubTitle>
+          <SubTitle
+            dangerouslySetInnerHTML={{
+              __html: !forCandidate
+                ? "Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une question à ajouter, contactez-nous !"
+                : `Vous pouvez voir en rouge tous les résultats de <strong>${
+                    candidateAnswers?.pseudo
+                  }</strong>
+            ${user?._id ? ", et en encadré vos résultats." : "."}`,
+            }}
+          />
           {quizz.map((theme, index) => (
-            <details open key={theme._id}>
-              <ThemeTitle>
-                {"ABCDEFGHIJKLMNOPQRST"[index]} - {theme.fr}
+            <details
+              open={forCandidate && (!userThemes.length || userThemes.includes(theme._id))}
+              key={theme._id}>
+              <ThemeTitle backgroundColor={theme.backgroundColor}>
+                <h3>
+                  {"ABCDEFGHIJKLMNOPQRST"[index]} - {theme.fr}
+                </h3>
               </ThemeTitle>
               <div>
                 {theme.questions.map((question, questionIndex) => (
-                  <details open key={question._id}>
-                    <QuestionTitle>
-                      {"ABCDEFGHIJKLMNOPQRST"[index]}
-                      {questionIndex + 1} - {question.fr}
+                  <details
+                    open={
+                      forCandidate &&
+                      (!userAnswersId.length || userAnswersId.includes(question._id))
+                    }
+                    key={question._id}>
+                    <QuestionTitle backgroundColor={theme.backgroundColor}>
+                      <h4>
+                        {"ABCDEFGHIJKLMNOPQRST"[index]}
+                        {questionIndex + 1} - {question.fr}
+                      </h4>
                     </QuestionTitle>
                     <ol>
-                      {question.answers.map((answer, answerIndex) => (
-                        <li key={answer}>
-                          {answerIndex + 1}. {answer}
-                        </li>
-                      ))}
+                      {question.answers.map((answer, answerIndex) => {
+                        const isSameAnswer = (a) =>
+                          a.themeId === theme._id &&
+                          a.questionId === question._id &&
+                          a.answerIndex === answerIndex;
+                        return (
+                          <>
+                            <Answer
+                              key={answer}
+                              isUserAnswer={forCandidate && !!userAnswers.find(isSameAnswer)}
+                              isCandidateAnswer={
+                                forCandidate && !!candidateAnswers?.answers?.find(isSameAnswer)
+                              }>
+                              {answerIndex + 1}. {answer}{" "}
+                            </Answer>
+                            <br />
+                          </>
+                        );
+                      })}
                     </ol>
                   </details>
                 ))}
@@ -40,6 +88,7 @@ const AllQuestions = () => {
           ))}
         </SubContainer>
       </BackgroundContainer>
+      <Loader isLoading={isLoading} withBackground />
     </>
   );
 };
@@ -92,13 +141,39 @@ const BackgroundContainer = styled.div`
 `;
 
 const ThemeTitle = styled.summary`
-  font-size: 20px;
-  font-weight: bold;
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      content: "";
+      height: 10px;
+      background-color: ${(props) => props.backgroundColor}aa;
+      bottom: -7px;
+      transform: skew(-18deg) rotate3d(1, 1, 1, -1deg);
+    }
+  }
 `;
 
 const QuestionTitle = styled.summary`
   margin-left: 20px;
-  font-size: 16px;
+  h4 {
+    font-size: 16px;
+    display: inline;
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      content: "";
+      height: 5px;
+      background-color: ${(props) => props.backgroundColor}aa;
+      bottom: -3px;
+      transform: skew(18deg) rotate3d(1, 0.2, 0.2, 1deg);
+    }
+  }
 `;
 
 const SubContainer = styled.div`
@@ -125,6 +200,15 @@ const SubTitle = styled.h3`
   font-size: 16px;
   text-align: center;
   color: #111827;
+`;
+
+const Answer = styled.li`
+  display: inline-block;
+  border: 2px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-width: ${(props) => (props.isUserAnswer ? "2px" : "0px")};
+  color: ${(props) => (props.isCandidateAnswer ? "red" : "black")};
 `;
 
 export default AllQuestions;

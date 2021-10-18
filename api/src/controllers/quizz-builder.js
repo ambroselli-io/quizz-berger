@@ -20,11 +20,12 @@ router.get(
 
     const currentQuestion = currentTheme.questions[req.params.questionIndex || 0];
 
-    const { answers, fr, scores } = currentQuestion;
+    const { answers, fr, help, scores } = currentQuestion;
 
     const newHtml = html
       .replace("{{CURRENT_THEME}}", themeName)
       .replace("{{CURRENT_QUESTION}}", fr)
+      .replace("{{CURRENT_HELP}}", help)
       .replace(
         "{{ALL_QUESTIONS}}",
         quizz
@@ -92,8 +93,6 @@ router.post(
       return themes;
     }, []);
 
-    console.log(stringify(newQuizz));
-
     fs.writeFileSync(path.resolve("./data/quizz.json"), stringify(newQuizz));
 
     res.status(200).send({ ok: true });
@@ -135,8 +134,6 @@ router.post(
       };
     });
 
-    console.log(stringify(newQuizz));
-
     fs.writeFileSync(path.resolve("./data/quizz.json"), stringify(newQuizz));
 
     res.status(200).send({ ok: true });
@@ -154,6 +151,7 @@ router.post(
 
     quizz[req.params.themeIndex || 0].fr = body.themeName;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].fr = body.questionName;
+    quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].help = body.help;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].answers = body.answers;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].scores = body.scores;
 
