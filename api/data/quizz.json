@@ -222,138 +222,6 @@
     ]
   },
   {
-    "_id": "theme-615995cc4df0856259dba560",
-    "fr": "Chômage et Emploi",
-    "questions": [
-      {
-        "_id": "question-615995cc4df0856259dba561",
-        "fr": "Que pensez vous du salaire minimum (SMIC) ?",
-        "help": "https://fr.wikipedia.org/wiki/Salaire_minimum_interprofessionnel_de_croissance",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba562",
-        "fr": "Que pensez-vous du RSA ?",
-        "help": "https://en.wikipedia.org/wiki/Revenu_de_solidarité_active",
-        "answers": [
-          "Il faut l'augmenter, beaucoup",
-          "Il faut l'augmenter, un peu",
-          "Il faut le garder stable",
-          "Il faut le diminuer",
-          "Il faut le supprimer",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-616afccef200f152da97e2b3",
-        "fr": "Que pensez-vous d'un revenu/salaire universel ?",
-        "help": "https://fr.wikipedia.org/wiki/Revenu_de_base",
-        "answers": [
-          "C'est une très bonne idée, vite et pour tous !",
-          "C'est une bonne idée, mais sous certaines conditions",
-          "Avec ou sans, je ne sais pas ce que ça va changer. Pourquoi faire et pourquoi pas !",
-          "C'est plutôt une mauvaise idée",
-          "C'est dangereux, surtout pas !",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba563",
-        "fr": "Que pensez-vous de la mise en place d'activité d'intérêt général hebdomadaires pour les détenteurs du RSA ?",
-        "help": "https://en.wikipedia.org/wiki/Revenu_de_solidarité_active",
-        "answers": [
-          "J'ai dit qu'il fallait le supprimer, alors !",
-          "Oui c'est une bonne idée, il n'y a pas d'argent magique.",
-          "Le RSA est très bien comme il est.",
-          "Non, il n'y a pas de contrepartie à apporter pour avoir de quoi subvenir à sa nourriture.",
-          "Non, je suis même pour un revenu/salaire universel !",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba564",
-        "fr": "Que pensez-vous de l'assurance chômage ?",
-        "help": "https://fr.wikipedia.org/wiki/Assurance_chômage_en_France",
-        "answers": [
-          "Il faut la raccourcir ou la supprimer.",
-          "Il faut rendre ses conditions d'accès plus contraignantes.",
-          "C'est très bien comme ça, pas besoin d'y toucher.",
-          "Il faut la renforcer.",
-          "Je suis pour un revenu/salaire universel, je vous ai dit !",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba565",
-        "fr": "Que pensez-vous de l'effet de l'imposition des plus riches sur l'emploi ?",
-        "help": "https://fr.wikipedia.org/wiki/Théorie_du_ruissellement",
-        "answers": [
-          "Moins on impose les riches, plus ils épargnent et spéculent. Il faut imposer les riches, et beaucoup plus !",
-          "Plus on impose, plus on a de moyen pour construire une politique publique de l'emploi.",
-          "Je crois que plus ou moins de taxation sur les plus riches n'a que peu d'effet sur l'emploi.",
-          "Plus on impose les riches, plus les talents qui créent l'emploi s'en vont : il faut moins imposer les riches.",
-          "En plus, les riches réinvestissent cet argent et créent de l'emploi : il faut moins d'impôt pour les riches.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      }
-    ]
-  },
-  {
     "_id": "theme-615995cc4df0856259dba566",
     "fr": "Climat et Énergie",
     "questions": [
@@ -446,9 +314,9 @@
     "questions": [
       {
         "_id": "question-616dd426b4561233f094b2e2",
-        "fr": "Que pensez-vous du budget alloué à la culture ?",
+        "fr": "Que pensez-vous du budget alloué à la culture en général ?",
         "answers": [
-          "Il faut beaucoup le diminuer ",
+          "Il faut beaucoup le diminuer",
           "Il faut le diminuer un peu",
           "Il faut qu'il reste stable",
           "Il faut l'augmenter un peu",
@@ -464,6 +332,48 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_(France)#Budget"
+      },
+      {
+        "_id": "question-616f16bd2665f0b96e117201",
+        "fr": "Que pensez-vous du budget lié à la préservation du patrimoine ?",
+        "answers": [
+          "Il faut beaucoup l'augmenter",
+          "Il faut l'augmenter un peu",
+          "Il faut qu'il reste stable",
+          "Il faut le diminuer un peu",
+          "Il faut beaucoup le diminuer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Politique_culturelle_française#La_protection_et_la_conservation_du_patrimoine"
+      },
+      {
+        "_id": "question-616f17876a2b2eba267d76f5",
+        "fr": "Que pensez-vous du Pass Culture ?",
+        "answers": [
+          "C'est très bien, il faut même l'augmenter",
+          "C'est bien, on pourrait même l'augmenter",
+          "Il est bien comme il est",
+          "On peut le garder mais il faut diminuer le montant",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Pass_Culture"
       }
     ]
   },
@@ -866,6 +776,54 @@
     ]
   },
   {
+    "_id": "theme-616f1b3e6f8423bbeaf281e3",
+    "fr": "Police, Justice et Sécurité",
+    "questions": [
+      {
+        "_id": "question-616f1b3e6f8423bbeaf281e4",
+        "fr": "Que pensez-vous du nombre de policiers ?",
+        "answers": [
+          "Il y a trop de policiers dans l'absolu : il faut en réduire leur nombre",
+          "Il y a trop de policiers, pas assez bien répartis : il faut mieux répartir",
+          "Il y a juste ce qu'il faut",
+          "Il n'y a pas assez de policiers là où il en faudrait : il faut recruter dans certains endroits",
+          "Il n'y a pas assez de policiers dans l'absolu : il faut recruter",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Police_française"
+      },
+      {
+        "_id": "question-616f1c462dd316bc422101d7",
+        "fr": "Que pensez-vous de la formation des policiers ?",
+        "answers": [
+          "Il sont très bien formés",
+          "Il sont assez bien formés",
+          "Il n'y a pas de question à se poser sur la formation de la police",
+          "Il ne sont pas très bien formés",
+          "Ils sont très mals formés",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Centre_de_formation_de_police"
+      }
+    ]
+  },
+  {
     "_id": "theme-615995cc4df0856259dba576",
     "fr": "Politique fiscale",
     "questions": [
@@ -981,27 +939,6 @@
     "fr": "Recherche et éducation",
     "questions": [
       {
-        "_id": "question-615995cc4df0856259dba570",
-        "fr": "Que pensez-vous du financement public de la recherche ?",
-        "help": "https://fr.wikipedia.org/wiki/Recherche_publique_(France)",
-        "answers": [
-          "La recherche est très importante dans la société, il faut augmenter fortement son financement public.",
-          "Il faut augmenter le financement de la recherche si on en a les moyens.",
-          "Le financement de la recherche est très bien comme il est aujourd'hui.",
-          "Nous n'avons plus les moyens, il faut donc baisser le financement de la recherche.",
-          "Financer publiquement la recherche est inutile, laissons le secteur privé s'en occuper.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
         "_id": "question-615995cc4df0856259dba571",
         "fr": "Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?",
         "help": "https://fr.wikipedia.org/wiki/Système_éducatif_en_France",
@@ -1023,6 +960,27 @@
         ]
       },
       {
+        "_id": "question-616f18e7814211bad76c8f67",
+        "fr": "Que pensez-vous du rôle de l'Éducation Nationale dans l'ascenseur social ?",
+        "answers": [
+          "L'Éducation Nationale joue un rôle très positif sur l'ascenseur social",
+          "L'Éducation Nationale joue un rôle plutôt positif sur l'ascenseur social",
+          "L'Éducation Nationale n'a pas d'effet sur la mobilité sociale, et n'a pas forcément à en avoir",
+          "L'Éducation Nationale joue un rôle plutôt négatif sur l'ascenseur social",
+          "L'Éducation Nationale joue un rôle très négatif sur l'ascenseur social",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Mobilité_sociale"
+      },
+      {
         "_id": "question-615995cc4df0856259dba572",
         "fr": "Que pensez-vous de l'utilisation du numérique (tablettes, téléphones...) à l'école ?",
         "help": "https://fr.wikipedia.org/wiki/Technologies_de_l%27information_et_de_la_communication_pour_l%27enseignement",
@@ -1032,6 +990,27 @@
           "Il faut bien choisir comment l'utiliser dans l'éducation, mais je n'ai pas de problème contre.",
           "Ne l'utiliser que dans les matières appropriées : informatique, technologie...",
           "Le numérique est néfaste pour la construction sociale, il faut le bannir dans la scolarité de nos enfants.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba570",
+        "fr": "Que pensez-vous du financement public de la recherche ?",
+        "help": "https://fr.wikipedia.org/wiki/Recherche_publique_(France)",
+        "answers": [
+          "La recherche est très importante dans la société, il faut augmenter fortement son financement public.",
+          "Il faut augmenter le financement de la recherche si on en a les moyens.",
+          "Le financement de la recherche est très bien comme il est aujourd'hui.",
+          "Nous n'avons plus les moyens, il faut donc baisser le financement de la recherche.",
+          "Financer publiquement la recherche est inutile, laissons le secteur privé s'en occuper.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1069,6 +1048,90 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_des_Affaires_sociales_et_de_la_Sant%C3%A9_(France)"
+      },
+      {
+        "_id": "question-616f0d29f6ad1eb5ff47fd57",
+        "fr": "Que pensez-vous de la rémunération du personnel soignant en général ?",
+        "answers": [
+          "Le personnel soignant est bien trop payé, il faudrait beaucoup réduire leur rémunération",
+          "Le personnel soignant un peu trop payé, il faudrait réduire leur rémunération",
+          "Le personnel soignant est payé comme il faut",
+          "Le personnel soignant n'est pas assez payé, il faudrait augmenter leur rémunération",
+          "Le personnel soignant n'est pas bien payé, il faudrait beaucoup augmenter leur rémunération",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Hôpital_en_France#Personnels"
+      },
+      {
+        "_id": "question-616f0db8b01edcb66e1107f7",
+        "fr": "Que pensez-vous de la question des déserts médicaux ?",
+        "answers": [
+          "Il faut reconstruire l'offre médicale dans les déserts médicaux, en détresse médicale",
+          "Il faut désormais arrêter de continuer la désertification",
+          "C'est la vie, on ne peut pas y faire grand chose",
+          "C'est en regroupant les établissements éparpillés qu'on améliore l'offre, c'est normal",
+          "Il faut absolument fermer les établissements non rentables par manque de population, c'est la logique économique",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Désertification_médicale_en_France"
+      },
+      {
+        "_id": "question-616f0ec39a9251b6b1d559ca",
+        "fr": "Que pensez-vous de la quantité de soins de santé réalisés en France ?",
+        "answers": [
+          "On en fait trop d'inutiles, on pourrait en faire beaucoup moins comme dans d'autres pays développés où les gens ne se portent pas plus mal",
+          "On pourrait faire quelques efforts en en faisant un peu moins pour économiser nos dépenses",
+          "On fait juste ce qu'il faut, tout va très bien",
+          "Certaines personnes devraient avoir plus de soins que ce qu'on peut leur proposer actuellement",
+          "Globalement, on ne prodigue pas assez de soins, au détriment de la santé de tous.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Système_de_santé_français"
+      },
+      {
+        "_id": "question-616f108f31b425b713828c22",
+        "fr": "Que pensez-vous du remboursement des soins médicaux ?",
+        "answers": [
+          "Tout ce qui touche à la santé doit être entièrement gratuit, pour tous",
+          "Certains soins aujourd'hui payants devraient être gratuits",
+          "L'équilibre actuel entre ce qui est payant et ce qui est gratuit est correct",
+          "Certains soins aujourd'hui gratuits devraient être payants",
+          "Tous les soins devraient demander un minimum de contribution, voire être complètement payants",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Assurance_maladie_en_France"
       }
     ]
   },
@@ -1242,6 +1305,243 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-615995cc4df0856259dba560",
+    "fr": "Travail, Chômage, Retraite",
+    "questions": [
+      {
+        "_id": "question-615995cc4df0856259dba561",
+        "fr": "Que pensez vous du salaire minimum (SMIC) ?",
+        "help": "https://fr.wikipedia.org/wiki/Salaire_minimum_interprofessionnel_de_croissance",
+        "answers": [
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba562",
+        "fr": "Que pensez-vous du RSA ?",
+        "help": "https://en.wikipedia.org/wiki/Revenu_de_solidarité_active",
+        "answers": [
+          "Il faut l'augmenter, beaucoup",
+          "Il faut l'augmenter, un peu",
+          "Il faut le garder stable",
+          "Il faut le diminuer",
+          "Il faut le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616afccef200f152da97e2b3",
+        "fr": "Que pensez-vous d'un revenu/salaire universel ?",
+        "help": "https://fr.wikipedia.org/wiki/Revenu_de_base",
+        "answers": [
+          "C'est une très bonne idée, vite et pour tous !",
+          "C'est une bonne idée, mais sous certaines conditions",
+          "Avec ou sans, je ne sais pas ce que ça va changer. Pourquoi faire et pourquoi pas !",
+          "C'est plutôt une mauvaise idée",
+          "C'est dangereux, surtout pas !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba563",
+        "fr": "Que pensez-vous de la mise en place d'activité d'intérêt général hebdomadaires pour les détenteurs du RSA ?",
+        "help": "https://en.wikipedia.org/wiki/Revenu_de_solidarité_active",
+        "answers": [
+          "J'ai dit qu'il fallait le supprimer, alors !",
+          "Oui c'est une bonne idée, il n'y a pas d'argent magique.",
+          "Le RSA est très bien comme il est.",
+          "Non, il n'y a pas de contrepartie à apporter pour avoir de quoi subvenir à sa nourriture.",
+          "Non, je suis même pour un revenu/salaire universel !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba564",
+        "fr": "Que pensez-vous de l'assurance chômage ?",
+        "help": "https://fr.wikipedia.org/wiki/Assurance_chômage_en_France",
+        "answers": [
+          "Il faut la raccourcir ou la supprimer.",
+          "Il faut rendre ses conditions d'accès plus contraignantes.",
+          "C'est très bien comme ça, pas besoin d'y toucher.",
+          "Il faut la renforcer.",
+          "Je suis pour un revenu/salaire universel, je vous ai dit !",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba565",
+        "fr": "Que pensez-vous de l'effet de l'imposition des plus riches sur l'emploi ?",
+        "help": "https://fr.wikipedia.org/wiki/Théorie_du_ruissellement",
+        "answers": [
+          "Moins on impose les riches, plus ils épargnent et spéculent. Il faut imposer les riches, et beaucoup plus !",
+          "Plus on impose, plus on a de moyen pour construire une politique publique de l'emploi.",
+          "Je crois que plus ou moins de taxation sur les plus riches n'a que peu d'effet sur l'emploi.",
+          "Plus on impose les riches, plus les talents qui créent l'emploi s'en vont : il faut moins imposer les riches.",
+          "En plus, les riches réinvestissent cet argent et créent de l'emploi : il faut moins d'impôt pour les riches.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616f11c1f33d3db79f9900bf",
+        "fr": "Que pensez-vous de la durée légale du travail ?",
+        "answers": [
+          "Elle devrait être augmentée, largement",
+          "Elle devrait être augmentée, un peu",
+          "Elle est bien comme elle est",
+          "Elle devrait être diminuée, un peu",
+          "Elle devrait être diminuée, largement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Durée_du_travail_en_France"
+      },
+      {
+        "_id": "question-616f12102be036b7d747d2f6",
+        "fr": "Que pensez-vous du contenu de la fiche de paye ?",
+        "answers": [
+          "Elle est bien trop complexe, on devrait la rendre la plus simple possible : une ligne pour le salaire, et c'est tout",
+          "Elle est un peu complexe, on devrait retirer des taxes et autres pour la simplifier",
+          "Elle est bien comme elle est",
+          "Elle est un peu complexe, on devrait mieux l'expliquer pour mieux la comprendre",
+          "Elle en reflète pas tout ce qui est vraiment lié au salaire, il faudrait la compléter",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Bulletin_de_salaire_(droit_français)"
+      },
+      {
+        "_id": "question-616f12e2bbba4fb825a2fd8b",
+        "fr": "Que pensez-vous du lien entre droit du travail et facilité/difficulté à embaucher ?",
+        "answers": [
+          "Grâce au droit du travail, il y a beaucoup plus d'embauches, et de qualité : qu'on le renforce encore.",
+          "Le droit du travail est nécessaire pour la protection des travailleurs, il faut faire avec et ne pas l'ajuster à la baisse",
+          "Une embauche, ou pas, n'a pas lien avec le droit du travail",
+          "Le trop-plein de protections grâce au droit du travail empêche certaines embauches, il faudrait l'alléger.",
+          "Les droits de l'homme suffisent pour protéger les travailleurs, il faut supprimer le droit du travail, contrainte inutile à l'embauche.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Droit_du_travail_en_France"
+      },
+      {
+        "_id": "question-616f15809c1418b8ad432ea3",
+        "fr": "Que pensez-vous de l'âge de départ à la retraite ?",
+        "answers": [
+          "Il est bien trop bas, il faut le relever",
+          "Il est un peu trop bas, il faut l'ajuster",
+          "Il est bien comme il est",
+          "Il est un peu trop haut, il faut l'ajuster",
+          "Il est bien trop haut, il faut le diminuer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Retraite_en_France"
+      },
+      {
+        "_id": "question-616f164660f4ccb91417a8c5",
+        "fr": "Que pensez-vous des pensions de retraites ?",
+        "answers": [
+          "Elles sont bien trop hautes, il faut les diminuer",
+          "Elles sont un peu trop hautes, il faut les ajuster",
+          "Elles sont bien comme elles sont",
+          "Elles sont un peu trop basses, il faut les ajuster",
+          "Elles sont bien trop basses, il faut les relever",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Retraite_en_France"
       }
     ]
   },

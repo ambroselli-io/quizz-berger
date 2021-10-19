@@ -1,11 +1,22 @@
 import React, { useState } from "react";
 import API from "../services/api";
+import { normalizeWord } from "../utils/diacritics";
 import { getFromLocalStorage, setToLocalStorage } from "../utils/storage";
 
 const DataContext = React.createContext({});
 
+const formatQuizzForSearch = (quizz) =>
+  quizz.map((theme) => {
+    const questions = theme.questions.map((q) => q.fr).join(" ");
+    const answers = theme.questions.map((q) => q.answers.join(" ")).join(" ");
+    return normalizeWord(`${theme.fr} ${questions} ${answers}`.toLocaleLowerCase());
+  });
+
 export const DataProvider = ({ children }) => {
   const [quizz, setQuizz] = useState(getFromLocalStorage("quizz", []));
+  const [quizzForSearch, setQuizzForSearch] = useState(
+    formatQuizzForSearch(getFromLocalStorage("quizz", []))
+  );
   const [candidates, setCandidates] = useState(getFromLocalStorage("candidates", []));
 
   const getQuizz = async () => {
@@ -17,6 +28,7 @@ export const DataProvider = ({ children }) => {
       }));
       setQuizz(enrichedQuizz);
       setToLocalStorage("quizz", enrichedQuizz);
+      setQuizzForSearch(formatQuizzForSearch(enrichedQuizz));
     }
   };
 
@@ -31,7 +43,7 @@ export const DataProvider = ({ children }) => {
   };
 
   return (
-    <DataContext.Provider value={{ quizz, getQuizz, candidates, getCandidates }}>
+    <DataContext.Provider value={{ quizz, quizzForSearch, getQuizz, candidates, getCandidates }}>
       {children}
     </DataContext.Provider>
   );

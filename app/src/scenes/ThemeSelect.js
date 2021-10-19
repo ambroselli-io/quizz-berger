@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router";
 import { media } from "../styles/mediaQueries";
@@ -8,11 +8,19 @@ import DataContext from "../contexts/data";
 
 import ThemeButton from "../components/ThemeButton";
 import Button from "../components/Button";
+import { FormInput } from "../components/Form";
+import { normalizeWord } from "../utils/diacritics";
+
+const filterBySearch = (search, quizzForSearch) => (theme, index) => {
+  if (!search) return true;
+  return quizzForSearch[index].includes(normalizeWord(search));
+};
 
 const ThemeSelect = () => {
   const { initNewUser, userAnswers } = useContext(UserContext);
-  const { quizz } = useContext(DataContext);
+  const { quizz, quizzForSearch } = useContext(DataContext);
   const history = useHistory();
+  const [search, setSearch] = useState("");
 
   const goToResults = () => history.push("/result");
   const goToQuizz = async (e) => {
@@ -21,6 +29,7 @@ const ThemeSelect = () => {
     const firstQuestionId = quizz.find((t) => t._id === themeId).questions[0]._id;
     history.push(`/question/${themeId}/${firstQuestionId}`);
   };
+  const onSearchChange = async (e) => setSearch(e.target.value);
 
   return (
     <>
@@ -32,10 +41,15 @@ const ThemeSelect = () => {
             <strong>celui qui vous tient le plus à coeur</strong>
           </SubTitle>
           <ThemesContainer>
-            {quizz.map((theme) => {
+            {quizz.filter(filterBySearch(search, quizzForSearch)).map((theme) => {
               return <ThemeButton key={theme._id} theme={theme} onClick={goToQuizz} />;
             })}
           </ThemesContainer>
+          <SearchInput
+            placeholder="Recherchez par mot-clé"
+            value={search}
+            onChange={onSearchChange}
+          />
           {/* <Footer> */}
           <Button disabled={!userAnswers.length} onClick={goToResults}>
             Voir les résultats
@@ -49,7 +63,6 @@ const ThemeSelect = () => {
 
 const BackgroundContainer = styled.div`
   padding: 40px 10px 40px 10px;
-  height: calc(100vh - 80px);
   min-height: 600px;
   display: flex;
   justify-content: center;
@@ -97,5 +110,7 @@ const ThemesContainer = styled.div`
     margin-bottom: 20px;
   `}
 `;
+
+const SearchInput = styled(FormInput)``;
 
 export default ThemeSelect;
