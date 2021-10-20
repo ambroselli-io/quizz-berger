@@ -35,10 +35,20 @@ const ThemeSelect = () => {
     <>
       <BackgroundContainer>
         <SubContainer>
-          <Title>Sélectionnez vos thèmes</Title>
+          <Title>Choisissez vos thèmes</Title>
           <SubTitle>
             Répondez au quizz, thème après thème, en commençant par{" "}
-            <strong>celui qui vous tient le plus à coeur</strong>
+            <strong>celui qui vous tient le plus à coeur.</strong>
+            <br />
+            <small>
+              Ce test essaie de représenter l'ensemble d'idées le plus large possible, et contient
+              des éléments que vous pourrez trouver choquant.
+            </small>
+            <br />
+            <small>
+              Vous pouvez toujours ne pas répondre à une question : vous répondez à ce que vous
+              voulez, si vous le voulez. Vos réponses et résultats sont <strong>anonymes</strong>
+            </small>
           </SubTitle>
           <ThemesContainer>
             {quizz.filter(filterBySearch(search, quizzForSearch)).map((theme) => {
@@ -93,6 +103,7 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
+  max-width: 90vw;
   margin-bottom: 40px;
   font-weight: normal;
   font-size: 16px;

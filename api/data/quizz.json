@@ -616,13 +616,13 @@
       },
       {
         "_id": "question-616f99445d2e7dbcb5475125",
-        "fr": "Nouvelle question",
+        "fr": "Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?",
         "answers": [
-          "Réponse 1",
-          "Réponse 2",
-          "Réponse 3",
-          "Réponse 4",
-          "Réponse 5",
+          "Le système est paralysé par la bureaucratie",
+          "Le système est handicapé par la bureaucratie",
+          "Cela n'a pas d'effet, pas de conséquence",
+          "Le système est aidé par la bureaucratie",
+          "Le système ne vivrait pas sans la bureaucratie",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -632,7 +632,8 @@
           [0, 1, 3, 5, 4, 0],
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
-        ]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Bureaucratie"
       }
     ]
   },
@@ -840,6 +841,111 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Centre_de_formation_de_police"
+      },
+      {
+        "_id": "question-616f9ae42aa835c5f0f16bcf",
+        "fr": "Que pensez-vous des violences policières ?",
+        "answers": [
+          "Il arrive trop souvent que la police soit violente sans que ça soit justifié, il y a un vice dans l'institution",
+          "Il arrive parfois que la police soit violente sans que ça soit justifié, il y a quelques procédures à améliorer",
+          "Il peut arriver quelques dérapages, on est humain après tout.",
+          "Il arrive que la police soit violente, mais c'est justifié.",
+          "Il n'existe pas de violence policière.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Violence_policière_en_France"
+      },
+      {
+        "_id": "question-616f9df590cdaec7092ce18e",
+        "fr": "Que pensez-vous du budget alloué à la Justice ?",
+        "answers": [
+          "Il faut beaucoup l'augmenter",
+          "Il faut l'augmenter un peu",
+          "Il faut qu'il reste stable",
+          "Il faut le diminuer un peu",
+          "Il faut beaucoup le diminuer ",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Ministère_de_la_Justice_(France)"
+      },
+      {
+        "_id": "question-616f9e48c4ee85c75cad6665",
+        "fr": "Que pensez-vous de la lenteur / rapidité de la justice ?",
+        "answers": [
+          "La justice est trop rapide, il n'y a pas assez de recul et trop d'innocents sont mal jugés",
+          "Il arrive que la justice soit trop rapide, il y a quelques efforts à faire pour améliorer le processus",
+          "La justice avance à la bonne vitesse",
+          "Il arrive que la justice soit trop lente, il y a quelques efforts à faire pour améliorer le processus",
+          "La justice est trop lente, trop de coupables sont en liberté, et d'innocents croupissent en détention provisoire non justifiée.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Histoire_de_la_justice_en_France#La_justice_au_XXe_siècle"
+      },
+      {
+        "_id": "question-616f9f399a576fc7a6a00db1",
+        "fr": "Que pensez-vous d'une justice à deux vitesses en France ?",
+        "answers": [
+          "Selon que vous serez puissant ou misérable, les jugements de cour vous rendront blanc ou noir (Jean de La Fontaine)",
+          "Les condamnations de ceux qui ont du pouvoir sont trop lentes ou trop peu nombreuses",
+          "Tout le monde est jugé de manière égale, il n'y a pas de justice à deux vitesses",
+          "Les condamnations de ",
+          "La justice épargne plus les ",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Les_Animaux_malades_de_la_peste"
+      },
+      {
+        "_id": "question-616fa0a671d3f9c8079e3c73",
+        "fr": "Que vous évoque la sécurité nationale, la protection par l'État de ses citoyens ?",
+        "answers": [
+          "Nous sommes en sécurité partout en France, l'État fait très bien son travail",
+          "Nous sommes globalement en sécurité en France, sauf quelques territoires d'exceptions, négligeables : l'État fait plutôt bien son travail",
+          "L'État fait ce qu'il peut, il y aura toujours des temps ou des zones d'insécurité, rien ne peut être parfait",
+          "Nous ne sommes globalement pas en sécurité, sauf quelques territoires : l'État fait plutôt mal son travail",
+          "Nous ne sommes pas en sécurité en France, l'État fait très mal son travail",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_nationale"
       }
     ]
   },
