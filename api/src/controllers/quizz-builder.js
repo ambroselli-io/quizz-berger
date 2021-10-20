@@ -140,6 +140,8 @@ router.post(
   })
 );
 
+const normalizedWord = (word) => word.normalize("NFD").toLowerCase().trim().normalize("NFKD").replace(/[^\w]/g, "");
+
 router.post(
   "/:themeIndex/:questionIndex",
   catchErrors(async (req, res) => {
@@ -155,7 +157,7 @@ router.post(
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].answers = body.answers;
     quizz[req.params.themeIndex || 0].questions[req.params.questionIndex || 0].scores = body.scores;
 
-    fs.writeFileSync(path.resolve("./data/quizz.json"), stringify(quizz.sort((a, b) => (a.fr < b.fr ? -1 : 1))));
+    fs.writeFileSync(path.resolve("./data/quizz.json"), stringify(quizz.sort((a, b) => (normalizedWord(a.fr) < normalizedWord(b.fr) ? -1 : 1))));
 
     res.status(200).send({ ok: true });
   })

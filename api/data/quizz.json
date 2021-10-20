@@ -460,6 +460,96 @@
     ]
   },
   {
+    "_id": "theme-615995cc4df0856259dba56b",
+    "fr": "Économie et Industrie",
+    "questions": [
+      {
+        "_id": "question-615995cc4df0856259dba56c",
+        "fr": "Que pensez-vous du libre-échange, du fait de ne pas avoir de taxe douanière ?",
+        "help": "https://fr.wikipedia.org/wiki/Libre-échange",
+        "answers": [
+          "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
+          "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
+          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
+          "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
+          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, en délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba56d",
+        "fr": "Que pensez-vous du protectionnisme, de taxer certaines industries de l'étranger pour favoriser le local ?",
+        "help": "https://fr.wikipedia.org/wiki/Protectionnisme",
+        "answers": [
+          "Le protectionnisme est une fermeture sur soi-même qui amène à la guerre : surtout pas.",
+          "Le protectionnisme va obstruer les échanges commerciaux, avec comme conséquence un accroissement du chômage : il vaut mieux éviter.",
+          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
+          "Le protectionnisme permet de compenser les différences avec les politiques économiques ou fiscales des autres pays, c'est un bon outil stratégique pour favoriser notre économie.",
+          "Le protectionnisme permet, en plus, de ralentir le dérèglement climatique, en relocalisant la pollution et responsabilisant les pays consommateurs : c'est tout bon.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-615995cc4df0856259dba56e",
+        "fr": "Que pensez-vous de la place de l'État dans la politique industrielle ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_industrielle_de_la_France",
+        "answers": [
+          "L'État doit laisser faire le secteur privé pour choisir ses industries, même stratégiques, et les diriger: entraver le marché et la concurrence est mauvais.",
+          "L'État doit laisser le secteur privé diriger toute industrie, mais il doit les protéger contre les attaques internationales potentielles au besoin.",
+          "L'État peut choisir des industries stratégiques et les financer, tout en confiant la direction au privé.",
+          "L'État peut investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques ou privées selon les secteurs.",
+          "L'État doit planifier l'économie : il doit investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques lorsque nécessaire.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-616fb8fc06b65fcd9934d902",
+        "fr": "Que pensez-vous de l'attractivité de la France, ou de la fuite des talents, par rapport au développement économique ?",
+        "answers": [
+          "La fuite est réelle, considérable et dramatique pour notre développement",
+          "Il y a fuite des talents, mais elle n'a pas beaucoup d'influence sur notre développement",
+          "Fuite des talents ou attractivité, ça n'a pas d'influence sur le développement",
+          "Il y a une certaine attractivité de la France, mais elle n'a pas beaucoup d'influence sur notre développement",
+          "L'attractivité de la France est réelle, et très bénéfique pour notre développement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Fuite_des_cerveaux#France"
+      }
+    ]
+  },
+  {
     "_id": "theme-61686cc84e7189a68aa2e4b3",
     "fr": "Finance",
     "questions": [
@@ -634,75 +724,6 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Bureaucratie"
-      }
-    ]
-  },
-  {
-    "_id": "theme-615995cc4df0856259dba56b",
-    "fr": "Industrie et commerce",
-    "questions": [
-      {
-        "_id": "question-615995cc4df0856259dba56c",
-        "fr": "Que pensez-vous du libre-échange, du fait de ne pas avoir de taxe douanière ?",
-        "help": "https://fr.wikipedia.org/wiki/Libre-échange",
-        "answers": [
-          "Qui dit moins de taxe douanière dit plus d'échanges commerciaux entre pays, et qui dit plus de commerce dit plus d'argent et plus d'emplois, c'est tout bon !",
-          "Avec internet et la mondialisation, nous n'avons de toute façon pas notre mot à dire : le libre-échange est la suite logique de l'histoire, embrassons-la comme tout le monde !",
-          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
-          "Le libre-échange est source de déséquilibre commercial, avec la production vers les salaires les plus bas et la consommation vers les pays riches qui subventionnent leur propre économie : ça ne marche pas.",
-          "Le libre-échange est, en plus, une cause importante du dérèglement climatique, en délocalisant la pollution et déresponsabilisant les pays consommateurs : il faut que ça s'arrête, vite.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba56d",
-        "fr": "Que pensez-vous du protectionnisme, de taxer certaines industries de l'étranger pour favoriser le local ?",
-        "help": "https://fr.wikipedia.org/wiki/Protectionnisme",
-        "answers": [
-          "Le protectionnisme est une fermeture sur soi-même qui amène à la guerre : surtout pas.",
-          "Le protectionnisme va obstruer les échanges commerciaux, avec comme conséquence un accroissement du chômage : il vaut mieux éviter.",
-          "Que ce soit avec du libre-échange ou du protectionnisme, il y a toujours moyen de créer de l'activité économique. Chacun a ses avantages et ses inconvénients, il faut s'adapter.",
-          "Le protectionnisme permet de compenser les différences avec les politiques économiques ou fiscales des autres pays, c'est un bon outil stratégique pour favoriser notre économie.",
-          "Le protectionnisme permet, en plus, de ralentir le dérèglement climatique, en relocalisant la pollution et responsabilisant les pays consommateurs : c'est tout bon.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
-      },
-      {
-        "_id": "question-615995cc4df0856259dba56e",
-        "fr": "Que pensez-vous de la place de l'État dans la politique industrielle ?",
-        "help": "https://fr.wikipedia.org/wiki/Politique_industrielle_de_la_France",
-        "answers": [
-          "L'État doit laisser faire le secteur privé pour choisir ses industries, même stratégiques, et les diriger: entraver le marché et la concurrence est mauvais.",
-          "L'État doit laisser le secteur privé diriger toute industrie, mais il doit les protéger contre les attaques internationales potentielles au besoin.",
-          "L'État peut choisir des industries stratégiques et les financer, tout en confiant la direction au privé.",
-          "L'État peut investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques ou privées selon les secteurs.",
-          "L'État doit planifier l'économie : il doit investir, être actionnaire et avoir une politique globale d'industries stratégiques, avec des entreprises publiques lorsque nécessaire.",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
-          [0, 0, 0, 0, 0, 0]
-        ]
       }
     ]
   },
