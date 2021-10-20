@@ -223,7 +223,7 @@
   },
   {
     "_id": "theme-615995cc4df0856259dba566",
-    "fr": "Climat et Énergie",
+    "fr": "Climat, Énergie et Écologie",
     "questions": [
       {
         "_id": "question-615995cc4df0856259dba567",
@@ -546,6 +546,27 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Fuite_des_cerveaux#France"
+      },
+      {
+        "_id": "question-617077d47a98574ee1085b0c",
+        "fr": "Que pensez-vous de la privatisation de grandes entreprises publiques (SNCF, EDF...) ?",
+        "answers": [
+          "L'État ne doit pas interférer dans quelconque entreprise : une entreprise doit être entièrement privée",
+          "Une entreprise peut avoir un actionnariat de l'État, mais elle doit être de droit privé",
+          "Ça dépend des entreprises",
+          "L'État peut garder des entreprises stratégiques sous le service public",
+          "Si l'État n'a pas quelques entreprises en service public, c'est une dégradation assurée pour les habitants",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://en.wikipedia.org/wiki/SNCF"
       }
     ]
   },
@@ -724,6 +745,27 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Bureaucratie"
+      },
+      {
+        "_id": "question-617070fa7367454d4be33ca4",
+        "fr": "Que pensez-vous de la dématérialisation des services publics des services publics numériques ?",
+        "answers": [
+          "Tant qu'il y aura des services publics non numériques, il y aura encore des progrès à faire",
+          "Il y a encore des services publics à dématérialiser pour rendre l'administration plus efficace",
+          "Il y a un bon équilibre entre services publics physiques et services publics dématérialisés",
+          "Il faudrait remettre quelques services publics importants en physique pour aider ceux en délicatesse avec le numérique",
+          "Il faut en parallèle un service public complet physique pour ceux qui n'ont pas accès au numérique",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Administration_électronique"
       }
     ]
   },
@@ -821,6 +863,27 @@
     "_id": "theme-616f1b3e6f8423bbeaf281e3",
     "fr": "Police, Justice et Sécurité",
     "questions": [
+      {
+        "_id": "question-61706f571404ddce06e28cbf",
+        "fr": "Que pensez-vous de l'autorité de l'État par rapport aux libertés individuelles ?",
+        "answers": [
+          "L'État est beaucoup trop autoritaire par rapport aux libertés individuelles",
+          "L'État est plus autoritaire que nous n'avons de liberté individuelle",
+          "Il y a un équilibre entre l'autorité de l'État et les libertés individuelles",
+          "L'État est moins autoritaire que nous n'avons de liberté individuelle",
+          "L'État n'est pas assez autoritaire par rapport aux libertés individuelles",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": ""
+      },
       {
         "_id": "question-616f1b3e6f8423bbeaf281e4",
         "fr": "Que pensez-vous du nombre de policiers ?",
@@ -967,6 +1030,27 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_nationale"
+      },
+      {
+        "_id": "question-617076a8e930f14e968fcb3f",
+        "fr": "Que pensez-vous des prisons en France ?",
+        "answers": [
+          "Il y a trop de prisons, ce qu'il faut c'est corriger le reste de la société pour éviter les entrées en prisons",
+          "Il y a assez de prisons, mais il faut y envoyer moins de gens pour qu'elles ne soient pas surpeuplées",
+          "Les prisons sont au bon nombre, et en bonne condition",
+          "Il y a assez de prisons, mais il faut les rendre plus habitables en les modernisant",
+          "Il faut construire des prisons supplémentaires et rénover les prisons actuelles",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Prison_en_France"
       }
     ]
   },
@@ -1800,6 +1884,48 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-6170732ecc404b4dd52a41ec",
+        "fr": "Que pensez-vous de l'espace Shengen ?",
+        "answers": [
+          "Il faut rétablir une douane aux frontières internes de l'UE pour contrôler les allées et venues de tous, européens et hors-européens inclus",
+          "Il faut contrôler les allées et venues de tous les hors-européens au sein de l'Union Européenne",
+          "L'espace Shenghen est très bien comme il est",
+          "Il faut faciliter plus les allées et venues de tous au sein de l'Union Européenne",
+          "Il faut faciliter les arrivées venant hors de l'Union Européenne",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Espace_Schengen"
+      },
+      {
+        "_id": "question-6170755e2282d24e45b34fce",
+        "fr": "Que pensez-vous de la concurrence libre et non faussée au sein de l'Union Européenne ?",
+        "answers": [
+          "Il faut permettre aux pays d'ajuster comme ils veulent les déséquilibres entre eux pour avoir une concurrence enfin saine",
+          "Il faut permettre aux États d'utiliser la commande publique comme il veulent pour participer à leur économie nationale",
+          "L'état de la concurrence est bien comme il faut aujourd'hui",
+          "Il faut améliorer certaines règles existantes pour parfaire la concurrence au sein de l'UE",
+          "Moins il y a de règlementation, plus la concurrence va vers la perfection : il faut aller vers cette voie-là",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ],
+        "help": "https://fr.wikipedia.org/wiki/Droit_de_la_concurrence_(Union_européenne)"
       }
     ]
   }
