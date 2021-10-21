@@ -1,33 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import { media } from "../styles/mediaQueries";
 
 import Footer from "../components/Footer";
 
-const Home = () => (
-  <>
-    <BackgroundContainer>
-      <Container>
-        <Title>QUI est mon candidat idéal ?</Title>
-        <SubTitle>
-          Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître le
-          ou les candidats qui se rapprochent le plus de vos idées, et
-          <strong> faites&nbsp;votre&nbsp;choix&nbsp;!</strong>
-          {/* Take our Political
+const Home = () => {
+  const history = useHistory();
+
+  return (
+    <>
+      <BackgroundContainer>
+        <Container>
+          <Title>QUI est mon candidat idéal ?</Title>
+          <SubTitle>
+            Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître
+            le ou les candidats qui se rapprochent le plus de vos idées, et
+            <strong> faites&nbsp;votre&nbsp;choix&nbsp;!</strong>
+            {/* Take our Political
               Compass test to find out which political group your best match is */}
-        </SubTitle>
-        <QuizzButton>Répondre au Quizz</QuizzButton>
-        <Link to="/login">
-          <LoginLink>
-            Vous avez enregistré vos résultats&nbsp;? <strong>Connectez&#8209;vous</strong>
-          </LoginLink>
-        </Link>
-      </Container>
-    </BackgroundContainer>
-    <Footer />
-  </>
-);
+          </SubTitle>
+          <QuizzButton onClick={() => history.push("/themes")}>Répondre au Quizz</QuizzButton>
+          <Link to="/login">
+            <LoginLink>
+              Vous avez enregistré vos résultats&nbsp;? <strong>Connectez&#8209;vous</strong>
+            </LoginLink>
+          </Link>
+        </Container>
+      </BackgroundContainer>
+      <Footer />
+    </>
+  );
+};
 
 const BackgroundContainer = styled.div`
   padding: 40px 20px 40px 20px;
