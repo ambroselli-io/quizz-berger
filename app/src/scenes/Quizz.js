@@ -98,11 +98,13 @@ const Quizz = () => {
         {/* </QuestionContainer> */}
 
         <ProgressBarContainer>
-          <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
-          <ProgressBar>
-            <Progress questionsProgress={questionIndex / questions.length} />
-          </ProgressBar>
-          <NavigationButton onClick={goToNextQuestion} />
+          <ProgressBarSubContainer>
+            <NavigationButton leftArrow={true} onClick={goToPreviousQuestion} />
+            <ProgressBar>
+              <Progress questionsProgress={questionIndex / questions.length} />
+            </ProgressBar>
+            <NavigationButton onClick={goToNextQuestion} />
+          </ProgressBarSubContainer>
         </ProgressBarContainer>
       </BackgroundContainer>
     </>
@@ -163,7 +165,7 @@ const MobileThemeTitle = styled.h2`
 `;
 
 const BackgroundContainer = styled.div`
-  padding: 40px 20px 80px 20px;
+  padding: 40px 20px 120px 20px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -223,20 +225,28 @@ const ProgressBarContainer = styled.div`
   position: fixed;
   bottom: 0;
   height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -2px 3px #ddddddcc;
+  background-color: white;
+  ${media.mobile`
+    max-height: 80px;
+    min-height: 50px;
+    height: 11vh;
+  `}
+`;
+const ProgressBarSubContainer = styled.div`
+  height: 100%;
   max-width: 1024px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
   ${media.mobile`
-  padding: 0 10px;
-  max-height: 80px;
-  min-height: 50px;
-  height: 11vh;
-  width: 100%;
-  border-top: 1px solid black;
-`}
+    padding: 0 10px;
+  `}
 `;
 
 const NavigationButton = styled.button`
