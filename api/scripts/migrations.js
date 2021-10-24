@@ -17,11 +17,15 @@ const fiveAnswersScores = [
 ];
 
 // (async () => {
-//   for (const question of questions) {
-//     if (question.answers.length === 6) {
-//       if (JSON.stringify(question.scores) !== JSON.stringify(fiveAnswersScores)) {
-//         console.log(question.fr);
-//       }
-//     }
+//   const answers = await AnswerObject.find({ user: "" });
+//   for (const answer of answers) {
+//     const newAnswer = {
+//       user: "",
+//       themeId: answer.themeId,
+//       questionId: answer.questionId,
+//       answerIndex: answer.answerIndex,
+//     };
+//     await AnswerObject.create(newAnswer);
 //   }
+//   console.log("DONE", answers.length);
 // })();

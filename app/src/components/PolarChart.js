@@ -98,6 +98,10 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
 };
 
 const ChartContainer = styled.div`
+  * {
+    user-select: text;
+  }
+
   display: block;
   margin: 0 auto;
   padding: 40px;

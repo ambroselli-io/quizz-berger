@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Loader from "../components/Loader";
 import DataContext from "../contexts/data";
 import UserContext from "../contexts/user";
+import API from "../services/api";
 import { media } from "../styles/mediaQueries";
 
 const getUserThemes = (userAnswers) => [
@@ -27,16 +28,23 @@ const AllQuestions = () => {
       <BackgroundContainer>
         <SubContainer>
           <Title>Toutes les questions</Title>
-          <SubTitle
-            dangerouslySetInnerHTML={{
-              __html: !forCandidate
-                ? "Vous pouvez voir ici toutes les questions, si vous avez une remarque à faire, ou une question à ajouter, contactez-nous !"
-                : `Vous pouvez voir en rouge tous les résultats de <strong>${
-                    candidateAnswers?.pseudo
-                  }</strong>
-            ${user?._id ? ", et en encadré vos résultats." : "."}`,
-            }}
-          />
+          <SubTitle>
+            {!forCandidate ? (
+              <>
+                Vous pouvez voir ici toutes les questions, et les télécharger en{" "}
+                <a href={API.getUrl("/quizz/download")} target="_blank" rel="noreferrer">
+                  cliquant ici
+                </a>
+                . si vous avez une remarque à faire, ou une question à ajouter, contactez-nous !
+              </>
+            ) : (
+              <>
+                Vous pouvez voir en rouge tous les résultats de{" "}
+                <strong>{candidateAnswers?.pseudo}</strong>
+                {user?._id ? ", et en encadré vos résultats." : "."}
+              </>
+            )}
+          </SubTitle>
           {quizz.map((theme, index) => (
             <details
               open={forCandidate && (!userThemes.length || userThemes.includes(theme._id))}
@@ -200,6 +208,9 @@ const SubTitle = styled.h3`
   font-size: 16px;
   text-align: center;
   color: #111827;
+  a {
+    text-decoration: underline;
+  }
 `;
 
 const Answer = styled.li`
