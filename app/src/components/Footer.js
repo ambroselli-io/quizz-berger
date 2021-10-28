@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { media } from "../styles/mediaQueries";
 import logo from "../images/logo.svg";
 import { Link } from "react-router-dom";
-import ContactModal from "../components/ContactModal";
-import Legal from "./Legal";
+import ModalContact from "./ModalContact";
+import ModalLegal from "./ModalLegal";
 import UserContext from "../contexts/user";
 
 const Footer = () => {
@@ -56,8 +56,8 @@ const Footer = () => {
         </FooterMenu>
       </Container>
       {/* -- MODAL -- */}
-      <Legal isActive={showLegalModal} onClose={onCloseLegalModal} />
-      <ContactModal
+      <ModalLegal isActive={showLegalModal} onClose={onCloseLegalModal} />
+      <ModalContact
         isActive={showContactModal}
         onCloseModal={onCloseContactModal}
         onForceCloseModal={onForceCloseContactModal}

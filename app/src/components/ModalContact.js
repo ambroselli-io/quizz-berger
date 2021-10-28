@@ -7,7 +7,7 @@ import { FormInput, FormLabel, FormStyled, FormTextArea } from "./Form";
 import Button from "./Button";
 import Modal from "./Modal";
 
-const ContactModal = ({ isActive, onCloseModal, onForceCloseContactModal }) => {
+const ModalContact = ({ isActive, onCloseModal, onForceCloseContactModal }) => {
   const { user } = useContext(UserContext);
 
   const [{ pseudo, email, message }, setState] = useState({
@@ -95,4 +95,4 @@ const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
-export default ContactModal;
+export default ModalContact;

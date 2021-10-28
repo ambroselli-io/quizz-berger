@@ -65,10 +65,12 @@ const Quizz = () => {
     <>
       <ThemeHeaderContainer backgroundColor={theme.backgroundColor}>
         <ThemeNavigationContainer>
-          <ThemeNavigationButton onClick={goToThemes}>‹ Retour aux thèmes</ThemeNavigationButton>
+          <ThemeNavigationButton onClick={goToThemes} visible>
+            ‹ Retour aux thèmes
+          </ThemeNavigationButton>
           <ThemeTitle>{theme.fr}</ThemeTitle>
-          <ThemeNavigationButton onClick={goToResults}>
-            {!!userThemes.length ? "Voir les résultats ›" : ""}
+          <ThemeNavigationButton onClick={goToResults} visible={userThemes.length > 2}>
+            Voir les résultats ›
           </ThemeNavigationButton>
         </ThemeNavigationContainer>
         <MobileThemeTitle>{theme.fr}</MobileThemeTitle>
@@ -141,6 +143,7 @@ const ThemeNavigationButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  ${(props) => !props.visible && "opacity: 0;"}
 `;
 
 const ThemeTitle = styled.h2`

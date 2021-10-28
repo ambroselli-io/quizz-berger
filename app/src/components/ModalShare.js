@@ -7,7 +7,7 @@ import Button from "./Button";
 import InternalLink from "./InternalLink";
 import Modal from "./Modal";
 
-const ShareModal = ({ isActive, onCloseModal }) => {
+const ModalShare = ({ isActive, onCloseModal }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [copyButtonCaption, setCopyButtonCaption] = useState("Copier le lien");
   const { user, setUser } = useContext(UserContext);
@@ -95,4 +95,4 @@ const StopShare = styled(InternalLink)`
   line-height: 1.5em;
 `;
 
-export default ShareModal;
+export default ModalShare;

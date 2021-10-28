@@ -6,10 +6,7 @@ import DataContext from "../contexts/data";
 import UserContext from "../contexts/user";
 import API from "../services/api";
 import { media } from "../styles/mediaQueries";
-
-const getUserThemes = (userAnswers) => [
-  ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
-];
+import getUserThemes from "../utils/getUserThemes";
 
 const AllQuestions = () => {
   const { candidatePseudo } = useParams();

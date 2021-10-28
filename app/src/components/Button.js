@@ -29,7 +29,7 @@ const ButtonStyled = styled.button`
     ${(props) => props.isLoading && "color: #facc15;"}
     ${(props) => props.isLoading && "cursor: wait;"}
   }
-  > :first-child {
+  > :first-child:not(sup) {
     position: absolute;
   }
   border-radius: 56px;

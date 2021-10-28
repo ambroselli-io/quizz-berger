@@ -19,7 +19,7 @@ const PolarChart = ({ candidate, selectedThemes, quizz }) => {
 
   const scores = candidate.scorePerThemes
     .filter((score) => selectedThemes.includes(score.themeId))
-    .map((score) => score.score);
+    .map((score) => score.percent);
 
   const themes = selectedThemes.map((themeId) => {
     return quizz.find((quizztheme) => quizztheme._id === themeId).fr;

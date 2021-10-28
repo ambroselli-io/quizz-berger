@@ -79,13 +79,12 @@ const ModalInnerContainer = styled.div`
   ${(props) => props.center && "align-items: center;"}
   ${(props) => props.center && "text-align: center;"}
   margin-top: 25px;
-  overflow: visible;
   > span {
     width: 75%;
     margin-bottom: 25px;
   }
   ${media.mobile`
-  overflow: scroll;
+  overflow: auto;
 `}
 `;
 

@@ -7,8 +7,8 @@ import { media } from "../styles/mediaQueries";
 
 import logo from "../images/logo.svg";
 import burgerNav from "../images/burgerNav.svg";
-import ContactModal from "./ContactModal";
-import Legal from "./Legal";
+import ModalContact from "./ModalContact";
+import ModalLegal from "./ModalLegal";
 import UserContext from "../contexts/user";
 import QuizzButton from "./QuizzButton";
 
@@ -159,8 +159,8 @@ const Header = ({ loading }) => {
         </HeaderContainer>
       </HeaderStyled>
       <BackContainer />
-      <Legal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
-      <ContactModal
+      <ModalLegal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
+      <ModalContact
         isActive={showContactModal}
         onCloseModal={onCloseModal}
         onForceCloseModal={onForceCloseContactModal}

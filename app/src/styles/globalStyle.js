@@ -98,8 +98,9 @@ html, body, #root {
   }
   b,
   strong {
-    font-weight: inherit;
-    font-weight: bolder;
+    /* font-weight: inherit; */
+    /* font-weight: bolder; */
+    font-weight: 800;
   }
   dfn {
     font-style: italic;
@@ -350,9 +351,6 @@ html, body, #root {
   address {
   }
   b {
-    font-weight: bold;
-  }
-  strong {
     font-weight: bold;
   }
   dt {

@@ -25,13 +25,14 @@ newCandidate: {
   pseudo: String,
   scorePerThemes: [{ themeId: String, score: Number }],
   total: Number,
+  totalPercentage: percent
 }
 [newCandidate]
 
 */
 
 export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizz) => {
-  const userAnswersWithScoreLines = addScoreLinesToAnswers(userAnswers, quizz);
+  const userAnswersWithScoreLines = userAnswers.map(addScoreLinesToAnswers(quizz));
 
   return candidatesAnswers
     .map((candidate) => {
@@ -39,31 +40,37 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quiz
         userAnswersWithScoreLines,
         candidate.answers
       );
-      const scorePerThemes = getScorePerTheme(candidateScores).map((theme) => ({
-        themeId: theme.themeId,
-        score: Math.round((theme.score / (theme.numberOfAnswers * maxScorePerAnswer)) * 100),
-      }));
+      const scorePerThemes = getScorePerTheme(candidateScores).map((theme) => {
+        const max = theme.numberOfAnswers * maxScorePerAnswer;
+        return {
+          themeId: theme.themeId,
+          score: theme.score,
+          percent: Math.round((theme.score / max) * 100),
+          max,
+        };
+      });
       const total = scorePerThemes.reduce((total, { score }) => total + score, 0);
+      const totalMax = scorePerThemes.reduce((totalMax, { max }) => totalMax + max, 0);
       return {
         ...candidate,
         scorePerThemes,
         total,
+        totalMax,
       };
     })
     .sort((c1, c2) => (c1.total > c2.total ? -1 : 1));
 };
 
-const addScoreLinesToAnswers = (userAnswers, quizz) =>
-  userAnswers.map((answer) => {
-    const theme = quizz.find((theme) => theme._id === answer.themeId);
-    const { questions } = theme;
-    const question = questions.find((q) => {
-      return q._id === answer.questionId;
-    });
-
-    const scoreLine = question.scores[answer.answerIndex];
-    return { ...answer, scoreLine };
+const addScoreLinesToAnswers = (quizz) => (answer) => {
+  const theme = quizz.find((theme) => theme._id === answer.themeId);
+  const { questions } = theme;
+  const question = questions.find((q) => {
+    return q._id === answer.questionId;
   });
+
+  const scoreLine = question.scores[answer.answerIndex];
+  return { ...answer, scoreLine };
+};
 
 const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
   userAnswersWithScoreLines

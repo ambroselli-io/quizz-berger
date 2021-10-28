@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router";
 import { media } from "../styles/mediaQueries";
@@ -10,6 +11,10 @@ import ThemeButton from "../components/ThemeButton";
 import Button from "../components/Button";
 import { FormInput } from "../components/Form";
 import { normalizeWord } from "../utils/diacritics";
+import ModalFirstThemeSelection from "../components/ModalFirstThemeSelection";
+import ModalLastThemeSelection from "../components/ModalLastThemeSelection";
+import getUserThemes from "../utils/getUserThemes";
+import ModalAccessToResults from "../components/ModalAccessToResults";
 
 const filterBySearch = (search, quizzForSearch) => (theme, index) => {
   if (!search) return true;
@@ -21,6 +26,26 @@ const ThemeSelect = () => {
   const { quizz, quizzForSearch } = useContext(DataContext);
   const history = useHistory();
   const [search, setSearch] = useState("");
+  const [showModal, setShowModal] = useState(null);
+  const questionsNumber = quizz.reduce(
+    (questionsNumber, theme) => questionsNumber + theme.questions.length,
+    0
+  );
+
+  const showModalRequest = (modalName) => {
+    document.body.style.overflow = "hidden";
+    setShowModal(modalName);
+  };
+
+  const onCloseModal = (e) => {
+    if (e.target !== e.currentTarget) return;
+    onForceCloseModal();
+  };
+
+  const onForceCloseModal = () => {
+    setShowModal(null);
+    document.body.style.overflow = "visible";
+  };
 
   const goToResults = () => history.push("/result");
   const goToQuizz = async (e) => {
@@ -31,14 +56,101 @@ const ThemeSelect = () => {
   };
   const onSearchChange = async (e) => setSearch(e.target.value);
 
+  const userThemes = getUserThemes(userAnswers);
+
+  useEffect(() => {
+    if (!userAnswers.length && !window.sessionStorage.getItem("theme-select_first")) {
+      setTimeout(() => {
+        showModalRequest("theme-select_first");
+        window.sessionStorage.setItem("theme-select_first", "true");
+      }, 1000);
+    }
+    if (userThemes.length === 2 && !window.sessionStorage.getItem("theme-select_last")) {
+      setTimeout(() => {
+        showModalRequest("theme-select_last");
+        window.sessionStorage.setItem("theme-select_last", "true");
+      }, 1000);
+    }
+    if (userThemes.length === 3 && !window.sessionStorage.getItem("theme-select_result")) {
+      setTimeout(() => {
+        showModalRequest("theme-select_result");
+        window.sessionStorage.setItem("theme-select_result", "true");
+      }, 1000);
+    }
+  }, []);
+
+  const buttonCaption = () => {
+    if (!userThemes.length) return "Choisissez votre 1<sup>er</sup>&nbsp;&nbsp;thème";
+    if (userThemes.length === 1) return "Choisissez un 2<sup>ème</sup>&nbsp;&nbsp;thème";
+    if (userThemes.length === 2) return "Choisissez un 3<sup>ème</sup>&nbsp;&nbsp;thème";
+    return "Voir les résultats";
+  };
+
+  const titleCaption = () => {
+    if (!userThemes.length) return "Choisissez votre premier thème";
+    if (userThemes.length === 1) return "Choisissez un deuxième thème";
+    if (userThemes.length === 2) return "Choisissez un troisième thème";
+    return "Choisissez un thème";
+  };
+
+  const renderSubtitle = () => {
+    if (!userThemes.length) {
+      return (
+        <>
+          Répondez au quizz, thème après thème, en commençant par
+          <strong> celui qui vous tient le plus à coeur.</strong>
+        </>
+      );
+    }
+    if (userThemes.length === 1) {
+      return (
+        <>
+          Prenez désormais un deuxième thème
+          <strong> qui vous tient à coeur.</strong>
+        </>
+      );
+    }
+    if (userThemes.length === 2) {
+      return (
+        <>
+          Encore un thème avant de pouvoir
+          <strong> voir vos résultats !</strong>
+        </>
+      );
+    }
+    if (userAnswers.length === questionsNumber) {
+      return <>Bravo, vous avez répondu à toutes les questions !</>;
+    }
+    if (userThemes.length === quizz.length) {
+      return (
+        <>
+          Bravo, vous avez répondu à tous les thèmes !<br />
+          Il reste toutefois <strong> quelques questions non répondues</strong>, si vous voulez
+          aller jusqu'au bout de votre pensée.
+        </>
+      );
+    }
+    return (
+      <>
+        Vous pouvez
+        <strong> répondre aux autres questions</strong> thème après thème <br />
+        pour approfondir votre pensée politique ou directement <strong>
+          {" "}
+          voir les résultats
+        </strong>{" "}
+        pour la comparer aux autres candidats.
+      </>
+    );
+  };
+
   return (
     <>
       <BackgroundContainer>
         <SubContainer>
-          <Title>Choisissez vos thèmes</Title>
+          <Title>{titleCaption()}</Title>
           <SubTitle>
-            Répondez au quizz, thème après thème, en commençant par{" "}
-            <strong>celui qui vous tient le plus à coeur.</strong>
+            {renderSubtitle()}
+            <br />
             <br />
             <small>
               Ce test essaie de représenter l'ensemble d'idées le plus large possible, et contient
@@ -47,7 +159,7 @@ const ThemeSelect = () => {
             <br />
             <small>
               Vous pouvez toujours ne pas répondre à une question : vous répondez à ce que vous
-              voulez, si vous le voulez. Vos réponses et résultats sont <strong>anonymes</strong>
+              voulez, si vous le voulez. Vos réponses et résultats sont <strong>anonymes</strong>.
             </small>
           </SubTitle>
           <ThemesContainer>
@@ -61,12 +173,29 @@ const ThemeSelect = () => {
             onChange={onSearchChange}
           />
           {/* <Footer> */}
-          <Button disabled={!userAnswers.length} onClick={goToResults}>
-            Voir les résultats
-          </Button>
+          <Button
+            disabled={buttonCaption() !== "Voir les résultats"}
+            onClick={goToResults}
+            dangerouslySetInnerHTML={{ __html: buttonCaption() }}
+          />
           {/* </Footer> */}
         </SubContainer>
       </BackgroundContainer>
+      <ModalFirstThemeSelection
+        isActive={showModal === "theme-select_first"}
+        onForceCloseModal={onForceCloseModal}
+        onCloseModal={onCloseModal}
+      />
+      <ModalLastThemeSelection
+        isActive={showModal === "theme-select_last"}
+        onForceCloseModal={onForceCloseModal}
+        onCloseModal={onCloseModal}
+      />
+      <ModalAccessToResults
+        isActive={showModal === "theme-select_result"}
+        onForceCloseModal={onForceCloseModal}
+        onCloseModal={onCloseModal}
+      />
     </>
   );
 };

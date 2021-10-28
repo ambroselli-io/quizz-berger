@@ -8,16 +8,14 @@ import PolarChart from "../components/PolarChart";
 import UserContext from "../contexts/user";
 import DataContext from "../contexts/data";
 import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
-import LoginModal from "../components/LoginModal";
-import ShareModal from "../components/ShareModal";
+import ModalLogin from "../components/ModalLogin";
+import ModalShare from "../components/ModalShare";
 import { useHistory, useParams } from "react-router";
 import API from "../services/api";
 import Loader from "../components/Loader";
 import InternalLink from "../components/InternalLink";
-
-const getUserThemes = (userAnswers) => [
-  ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
-];
+import getUserThemes from "../utils/getUserThemes";
+import Podium from "../components/Podium";
 
 const Result = () => {
   const userContext = useContext(UserContext);
@@ -87,6 +85,13 @@ const Result = () => {
     quizz
   );
 
+  const candidatesScore = candidatesScorePerThemes.map((c) => ({
+    _id: c._id,
+    pseudo: c.pseudo,
+    total: c.total,
+    totalMax: c.totalMax,
+  }));
+
   useEffect(() => {
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
       setToSessionStorage("selectedCandidates", selectedCandidates);
@@ -137,36 +142,39 @@ const Result = () => {
     <>
       <BackgroundContainer>
         <Container>
-          <LeftContainer>
-            <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons>
-            <TitleContainer>
-              <Title>{renderTitle()}</Title>
-              {!publicPage && (
-                <SaveContainer>
-                  {!user?.pseudo && (
-                    <>
-                      <SaveButton
-                        onClick={() => {
-                          setShowLoginModal(true);
-                          document.body.style.overflow = "hidden";
-                        }}>
-                        Enregistrer
-                      </SaveButton>
-                      <Tiret />
-                    </>
-                  )}
+          <Title>{renderTitle()}</Title>
+          {!publicPage && (
+            <SaveContainer>
+              {!user?.pseudo && (
+                <>
                   <SaveButton
                     onClick={() => {
-                      if (!user?.pseudo) setShowLoginModal(true);
-                      setShowShareModal(true);
+                      setShowLoginModal(true);
                       document.body.style.overflow = "hidden";
                     }}>
-                    Partager
+                    Enregistrer
                   </SaveButton>
-                </SaveContainer>
+                  <Tiret />
+                </>
               )}
-              {/* <InfoIcon src={infoIcon}></InfoIcon> */}
-            </TitleContainer>
+              <SaveButton
+                onClick={() => {
+                  if (!user?.pseudo) setShowLoginModal(true);
+                  setShowShareModal(true);
+                  document.body.style.overflow = "hidden";
+                }}>
+                Partager
+              </SaveButton>
+            </SaveContainer>
+          )}
+        </Container>
+        <Podium candidatesScore={candidatesScore} />
+        <div>
+          <Title>Aller plus loin</Title>
+        </div>
+        <ChartsContainer>
+          <LeftContainer>
+            <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons>
             <OpenButtonContainer onClick={() => setShowCandidates((show) => !show)}>
               <OpenButton isActive={showCandidates}>&#9654;</OpenButton>
               <SubTitle>Afficher/masquer des candidats</SubTitle>
@@ -202,7 +210,7 @@ const Result = () => {
               })}
             </ThemeButtonContainer>
           </LeftContainer>
-          <ChartsContainer>
+          <RightContainer>
             {showRadarChart && (
               <RadarChart
                 key={`${selectedCandidates.length}-${selectedThemes.length}`}
@@ -225,11 +233,11 @@ const Result = () => {
                     />
                   );
                 })}
-          </ChartsContainer>
-        </Container>
+          </RightContainer>
+        </ChartsContainer>
       </BackgroundContainer>
       <Loader isLoading={isLoading} withBackground />
-      <ShareModal
+      <ModalShare
         isActive={showShareModal}
         onCloseModal={(e) => {
           if (e?.target !== e?.currentTarget) return;
@@ -237,7 +245,7 @@ const Result = () => {
           document.body.style.overflow = "visible";
         }}
       />
-      <LoginModal
+      <ModalLogin
         title={showShareModal ? "Enregistrez vos résultats d'abord" : "Enregistrez-vous"}
         isActive={showLoginModal}
         onForceCloseModal={(e) => {
@@ -263,8 +271,16 @@ const BackgroundContainer = styled.div`
     overflow-y: auto;
   `}
   ${media.mobile`
-    padding: 40px 10px 1px 10px;
+    padding: 3vh 10px 1px 10px;
   `}
+
+  > div {
+    margin: 0 auto 2vh;
+    max-width: 1024px;
+  }
+  > section {
+    margin: 0 -10px;
+  }
 `;
 
 const SwitchButtons = styled.div`
@@ -282,8 +298,10 @@ const SwitchButtons = styled.div`
 `;
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1024px;
+  /* height: 80%; */
+`;
+
+const ChartsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -315,16 +333,6 @@ const LeftContainer = styled.div`
   `}
 `;
 
-const TitleContainer = styled.div`
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  ${media.mobile`
-  margin-bottom: 30px;
-`}
-`;
-
 const Title = styled.h2`
   font-family: Merriweather;
   font-weight: bold;
@@ -332,13 +340,6 @@ const Title = styled.h2`
   color: #082d0f;
   margin-bottom: 5px;
 `;
-
-// const InfoIcon = styled.img`
-//   margin-left: 10px;
-//   width: 20px;
-//   height: auto;
-//   cursor: pointer;
-// `;
 
 const OpenButtonContainer = styled.button`
   margin-bottom: 20px;
@@ -420,7 +421,7 @@ const ButtonStyled = styled.button`
   cursor: pointer;
 `;
 
-const ChartsContainer = styled.div`
+const RightContainer = styled.div`
   ${minMedia.desktop`
   width: 50%;
   height: 100%;

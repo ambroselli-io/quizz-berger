@@ -83,7 +83,7 @@ const RadarChart = ({ candidatesScorePerThemes, selectedThemes, selectedCandidat
   const dataSets = candidatesScorePerThemes?.map((candidat, index) => {
     const scores = candidat.scorePerThemes
       .filter((score) => selectedThemes.includes(score.themeId))
-      .map((score) => score.score);
+      .map((score) => score.percent);
 
     return {
       label: candidat?.pseudo,

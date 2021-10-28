@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import cross from "../images/cross.svg";
 
-const Legal = ({ isActive, onClose }) => (
+const ModalLegal = ({ isActive, onClose }) => (
   <ModalBackground isActive={isActive} onClick={onClose}>
     <ModalContainer>
       <TitleContainer>
@@ -113,10 +113,10 @@ const CrossButton = styled.button`
 const Content = styled.div`
   padding-top: 1em;
   height: auto;
-  overflow: scroll;
+  overflow: auto;
   a {
     text-decoration: underline;
   }
 `;
 
-export default Legal;
+export default ModalLegal;
