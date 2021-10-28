@@ -114,17 +114,18 @@ const ThemeSelect = () => {
       return (
         <>
           Encore un thème avant de pouvoir
-          <strong> voir vos résultats !</strong>
+          <strong> voir vos résultats&nbsp;!</strong>
         </>
       );
     }
     if (userAnswers.length === questionsNumber) {
-      return <>Bravo, vous avez répondu à toutes les questions !</>;
+      return <>Bravo, vous avez répondu à toutes les questions&nbsp;!</>;
     }
     if (userThemes.length === quizz.length) {
       return (
         <>
-          Bravo, vous avez répondu à tous les thèmes !<br />
+          Bravo, vous avez répondu à tous les thèmes&nbsp;!
+          <br />
           Il reste toutefois <strong> quelques questions non répondues</strong>, si vous voulez
           aller jusqu'au bout de votre pensée.
         </>
@@ -134,10 +135,8 @@ const ThemeSelect = () => {
       <>
         Vous pouvez
         <strong> répondre aux autres questions</strong> thème après thème <br />
-        pour approfondir votre pensée politique ou directement <strong>
-          {" "}
-          voir les résultats
-        </strong>{" "}
+        pour approfondir votre pensée politique ou directement
+        <strong> voir les résultats </strong>
         pour la comparer aux autres candidats.
       </>
     );

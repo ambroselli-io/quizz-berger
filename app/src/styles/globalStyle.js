@@ -154,6 +154,7 @@ html, body, #root {
   select,
   textarea {
     font: inherit;
+    color: black;
   }
   optgroup {
     font-weight: 700;

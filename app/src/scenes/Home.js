@@ -14,6 +14,7 @@ const Home = () => {
       <BackgroundContainer>
         <Container>
           <Title>QUI est mon candidat idéal ?</Title>
+          <QuizzButton onClick={() => history.push("/themes")}>Répondre au Quizz</QuizzButton>
           <SubTitle>
             Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître
             le ou les candidats qui se rapprochent le plus de vos idées, et
@@ -21,7 +22,6 @@ const Home = () => {
             {/* Take our Political
               Compass test to find out which political group your best match is */}
           </SubTitle>
-          <QuizzButton onClick={() => history.push("/themes")}>Répondre au Quizz</QuizzButton>
           <Link to="/login">
             <LoginLink>
               Vous avez enregistré vos résultats&nbsp;? <strong>Connectez&#8209;vous</strong>
@@ -54,8 +54,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${media.mobile`
-`}
+  > * {
+    flex-shrink: 0;
+  }
 `;
 
 const Title = styled.h2`
@@ -74,6 +75,7 @@ const Title = styled.h2`
 
 const SubTitle = styled.h3`
   margin-bottom: 40px;
+  margin-top: 40px;
   font-family: Merriweather Sans;
   font-style: normal;
   font-weight: 300;
