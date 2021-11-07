@@ -62,7 +62,7 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
     <Background noPadding={noPadding} withTitle={!!title}>
       {!!title && <Title>{title}</Title>}
       <PodiumStairs>
-        {podiumised.map(({ pseudos, height, percent }) => (
+        {podiumised.reverse().map(({ pseudos, height, percent }) => (
           <Stair key={height} height={height} percent={percent}>
             <span>{percent}%</span>
             <span dangerouslySetInnerHTML={{ __html: pseudos.join(",<br/>") }} />
@@ -117,6 +117,7 @@ const Background = styled.div`
 `;
 
 const PodiumStairs = styled.div`
+  flex-direction: row;
   align-items: flex-end;
   height: 100%;
 `;
@@ -126,14 +127,30 @@ const Stair = styled.div`
   background-color: rgba(205, 127, 50, ${(props) => props.height / 100});
   display: flex;
   flex-direction: column;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   justify-content: space-around;
   align-items: flex-start;
+  overflow: hidden;
   > span:first-of-type {
     font-size: min(1em, ${(props) => (props.percent / 100) * 3}em);
   }
   > span:first-of-type {
     font-size: min(10vw, ${(props) => (props.percent / 100) * 3}em);
     word-break: keep-all;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 60px;
+    /* border-radius: 50%; */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    transform: rotate(-18deg);
+    left: -13px;
+    top: -60px;
   }
 `;
 

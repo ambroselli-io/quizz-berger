@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router";
 import { media } from "../styles/mediaQueries";
@@ -58,26 +58,29 @@ const ThemeSelect = () => {
 
   const userThemes = getUserThemes(userAnswers);
 
+  const alertTimeouts = useRef(null);
+
   useEffect(() => {
+    clearTimeout(alertTimeouts?.current);
     if (!userAnswers.length && !window.sessionStorage.getItem("theme-select_first")) {
-      setTimeout(() => {
+      alertTimeouts.current = setTimeout(() => {
         showModalRequest("theme-select_first");
         window.sessionStorage.setItem("theme-select_first", "true");
       }, 1000);
     }
     if (userThemes.length === 2 && !window.sessionStorage.getItem("theme-select_last")) {
-      setTimeout(() => {
+      alertTimeouts.current = setTimeout(() => {
         showModalRequest("theme-select_last");
         window.sessionStorage.setItem("theme-select_last", "true");
       }, 1000);
     }
     if (userThemes.length === 3 && !window.sessionStorage.getItem("theme-select_result")) {
-      setTimeout(() => {
+      alertTimeouts.current = setTimeout(() => {
         showModalRequest("theme-select_result");
         window.sessionStorage.setItem("theme-select_result", "true");
       }, 1000);
     }
-  }, []);
+  }, [userAnswers.length]);
 
   const buttonCaption = () => {
     if (!userThemes.length) return "Choisissez votre 1<sup>er</sup>&nbsp;&nbsp;thème";
