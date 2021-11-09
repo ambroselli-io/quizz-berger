@@ -55,6 +55,7 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
           percent: Math.round((c.total / c.totalMax) * 100),
           height: Math.round((c.total / (fullHeight ? c.highest : c.totalMax)) * 100),
         }))
+        .sort((c1, c2) => (c1.percent > c2.percent ? -1 : 1))
     );
   }, [candidatesScore]);
 
