@@ -8,7 +8,6 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
   useEffect(() => {
     setPodiumised(
       candidatesScore
-        ?.sort((c1, c2) => (c1.total > c2.total ? 1 : -1))
         .reduce(
           ([candidates, highest], candidate) => {
             const newHighest = Math.max(highest, candidate.total);
@@ -63,7 +62,7 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
     <Background noPadding={noPadding} withTitle={!!title}>
       {!!title && <Title>{title}</Title>}
       <PodiumStairs>
-        {podiumised.reverse().map(({ pseudos, height, percent }) => (
+        {podiumised.map(({ pseudos, height, percent }) => (
           <Stair key={height} height={height} percent={percent}>
             <span>{percent}%</span>
             <span dangerouslySetInnerHTML={{ __html: pseudos.join(",<br/>") }} />

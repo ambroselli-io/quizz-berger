@@ -228,6 +228,7 @@ const Result = () => {
               .map(({ candidatesScore, themeId }) => (
                 <ThemePodiumContainer>
                   <Podium
+                    key={themeId}
                     candidatesScore={candidatesScore}
                     noPadding
                     fullHeight
