@@ -8,7 +8,7 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
   useEffect(() => {
     setPodiumised(
       candidatesScore
-        ?.sort((c1, c2) => (c1.total > c2.total ? -1 : 1))
+        ?.sort((c1, c2) => (c1.total > c2.total ? 1 : -1))
         .reduce(
           ([candidates, highest], candidate) => {
             const newHighest = Math.max(highest, candidate.total);

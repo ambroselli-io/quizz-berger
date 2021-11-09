@@ -3,8 +3,6 @@ import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
 import { media, minMedia } from "../styles/mediaQueries";
-import RadarChart from "../components/RadarChart";
-import PolarChart from "../components/PolarChart";
 import UserContext from "../contexts/user";
 import DataContext from "../contexts/data";
 import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
@@ -16,8 +14,6 @@ import Loader from "../components/Loader";
 import InternalLink from "../components/InternalLink";
 import getUserThemes from "../utils/getUserThemes";
 import Podium from "../components/Podium";
-
-const charts = ["podium", "polar", "radar"];
 
 const Result = () => {
   const userContext = useContext(UserContext);
@@ -36,7 +32,6 @@ const Result = () => {
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [showChartIndex, setShowChartIndex] = useState(0);
   const [showCandidates, setShowCandidates] = useState(
     Boolean(getFromSessionStorage("selectedCandidates", false))
   );
@@ -57,8 +52,6 @@ const Result = () => {
     if (userThemes.length !== previousThemesSelected.length) return previousThemesSelected;
     return allThemes;
   });
-
-  const switchCharts = () => setShowChartIndex((index) => (index + 1) % charts.length);
 
   const onSelectCandidates = (e) => {
     const pseudo = e.target.dataset.pseudo;
@@ -186,7 +179,6 @@ const Result = () => {
         </div>
         <ChartsContainer>
           <LeftContainer>
-            {/* <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons> */}
             <OpenButtonContainer onClick={() => setShowCandidates((show) => !show)}>
               <OpenButton isActive={showCandidates}>&#9654;</OpenButton>
               <SubTitle>Afficher/masquer des candidats</SubTitle>
@@ -222,51 +214,27 @@ const Result = () => {
               })}
             </ThemeButtonContainer>
           </LeftContainer>
-          {/* <SwitchButtons onlyMobile onClick={switchCharts}>
-            Changer de graphique
-          </SwitchButtons> */}
           <RightContainer>
-            {charts[showChartIndex] === "radar" && (
-              <RadarChart
-                key={`${selectedCandidates.length}-${selectedThemes.length}`}
-                selectedCandidates={selectedCandidates}
-                selectedThemes={selectedThemes}
-                candidatesScorePerThemes={filteredCandidatesScorePerThemes}
-                quizz={quizz}
-              />
-            )}
-            {charts[showChartIndex] === "polar" &&
-              filteredCandidatesScorePerThemes.map((candidate) => {
-                return (
-                  <PolarChart
-                    quizz={quizz}
-                    key={`${candidate?.pseudo}-${selectedCandidates.length}-${selectedThemes.length}`}
-                    selectedThemes={selectedThemes}
-                    candidate={candidate}
+            {selectedThemes
+              .map((themeId) => ({
+                themeId,
+                candidatesScore: filteredCandidatesScorePerThemes?.map((c) => ({
+                  _id: c._id,
+                  pseudo: c.pseudo,
+                  total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
+                  totalMax: 100,
+                })),
+              }))
+              .map(({ candidatesScore, themeId }) => (
+                <ThemePodiumContainer>
+                  <Podium
+                    candidatesScore={candidatesScore}
+                    noPadding
+                    fullHeight
+                    title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
                   />
-                );
-              })}
-            {charts[showChartIndex] === "podium" &&
-              selectedThemes
-                .map((themeId) => ({
-                  themeId,
-                  candidatesScore: filteredCandidatesScorePerThemes?.map((c) => ({
-                    _id: c._id,
-                    pseudo: c.pseudo,
-                    total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
-                    totalMax: 100,
-                  })),
-                }))
-                .map(({ candidatesScore, themeId }) => (
-                  <ThemePodiumContainer>
-                    <Podium
-                      candidatesScore={candidatesScore}
-                      noPadding
-                      fullHeight
-                      title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
-                    />
-                  </ThemePodiumContainer>
-                ))}
+                </ThemePodiumContainer>
+              ))}
           </RightContainer>
         </ChartsContainer>
       </BackgroundContainer>
@@ -315,20 +283,6 @@ const BackgroundContainer = styled.div`
   > section {
     margin: 0 -10px;
   }
-`;
-
-const SwitchButtons = styled.div`
-  margin: 0 auto 40px auto;
-  padding: 5px;
-  display: inline-block;
-  width: auto;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  ${media.mobile`
-    ${(props) => (!props.onlyMobile ? "display: none;" : "display: inline-block;")}
-  `}
 `;
 
 const Container = styled.div`
