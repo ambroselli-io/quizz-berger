@@ -58,15 +58,27 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
     );
   }, [candidatesScore]);
 
+  const maxPersons = podiumised.reduce(
+    (maxPersons, step) => Math.max(step.pseudos?.length, maxPersons),
+    0
+  );
+
   return (
     <Background noPadding={noPadding} withTitle={!!title}>
       {!!title && <Title>{title}</Title>}
       <PodiumStairs>
         {podiumised.map(({ pseudos, height, percent }) => (
-          <Stair key={height} height={height} percent={percent}>
-            <span>{percent}%</span>
-            <span dangerouslySetInnerHTML={{ __html: pseudos.join(",<br/>") }} />
-          </Stair>
+          <Step key={height}>
+            <StairContainer>
+              <Stair height={height} percent={percent}>
+                <span>{percent}%</span>
+              </Stair>
+            </StairContainer>
+            <Pseudos
+              maxPersons={maxPersons}
+              dangerouslySetInnerHTML={{ __html: pseudos.join(",<br/>") }}
+            />
+          </Step>
         ))}
       </PodiumStairs>
     </Background>
@@ -87,39 +99,13 @@ const Background = styled.div`
     word-break: keep-all;
     margin-bottom: 15px;
   }
-  > div {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    padding-left: max(10px, calc((100% - 1024px) / 2));
-    ${(props) => props.noPadding && "padding-left: 0;"}
-    padding-bottom: 16px; // scrollbar
-    overflow-x: auto;
-    overflow-y: hidden;
-    > * {
-      flex-shrink: 0;
-      flex-grow: 0;
-      width: calc(min(100%, 1024px) / 3.5);
-    }
-    > *:nth-of-type(1) {
-      width: calc(min(100%, 1024px) / 3);
-      background-color: gold;
-    }
-    > *:nth-of-type(2) {
-      width: calc(min(100%, 1024px) / 3.4);
-      background-color: silver;
-    }
-    > *:nth-of-type(3) {
-      width: calc(min(100%, 1024px) / 3);
-      background-color: #cd7f32;
-    }
-  }
 `;
 
-const PodiumStairs = styled.div`
-  flex-direction: row;
-  align-items: flex-end;
+const StairContainer = styled.div`
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 `;
 
 const Stair = styled.div`
@@ -127,8 +113,6 @@ const Stair = styled.div`
   background-color: rgba(205, 127, 50, ${(props) => props.height / 100});
   display: flex;
   flex-direction: column;
-  margin-left: 3px;
-  margin-right: 3px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   justify-content: space-around;
@@ -144,14 +128,68 @@ const Stair = styled.div`
   &:after {
     content: "";
     width: 100%;
-    height: 60px;
+    height: 100px;
     /* border-radius: 50%; */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     transform: rotate(-18deg);
-    left: -13px;
-    top: -60px;
+    left: -25px;
+    top: -80px;
   }
+`;
+
+const PodiumStairs = styled.div`
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  padding-left: max(10px, calc((100% - 1024px) / 2));
+  ${(props) => props.noPadding && "padding-left: 0;"}
+  padding-bottom: 16px; // scrollbar
+  overflow-x: auto;
+  overflow-y: hidden;
+  > * {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: calc(min(100%, 1024px) / 3.5);
+  }
+  > *:nth-of-type(1) {
+    width: calc(min(100%, 1024px) / 3);
+    ${Stair} {
+      background-color: gold;
+    }
+  }
+  > *:nth-of-type(2) {
+    width: calc(min(100%, 1024px) / 3.4);
+    ${Stair} {
+      background-color: silver;
+    }
+  }
+  > *:nth-of-type(3) {
+    width: calc(min(100%, 1024px) / 3);
+    ${Stair} {
+      background-color: #cd7f32;
+    }
+  }
+`;
+
+const Pseudos = styled.span`
+  height: ${(props) => Math.min(props.maxPersons, 3.2)}em;
+  flex-shrink: 0;
+  margin-top: 5px;
+  overflow: auto;
+`;
+
+const Step = styled.div`
+  margin-left: 3px;
+  margin-right: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  height: 100%;
 `;
 
 const Title = styled.h3`
