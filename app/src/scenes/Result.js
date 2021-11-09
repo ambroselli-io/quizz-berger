@@ -186,7 +186,7 @@ const Result = () => {
         </div>
         <ChartsContainer>
           <LeftContainer>
-            <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons>
+            {/* <SwitchButtons onClick={switchCharts}>Changer de graphique</SwitchButtons> */}
             <OpenButtonContainer onClick={() => setShowCandidates((show) => !show)}>
               <OpenButton isActive={showCandidates}>&#9654;</OpenButton>
               <SubTitle>Afficher/masquer des candidats</SubTitle>
@@ -222,9 +222,9 @@ const Result = () => {
               })}
             </ThemeButtonContainer>
           </LeftContainer>
-          <SwitchButtons onlyMobile onClick={switchCharts}>
+          {/* <SwitchButtons onlyMobile onClick={switchCharts}>
             Changer de graphique
-          </SwitchButtons>
+          </SwitchButtons> */}
           <RightContainer>
             {charts[showChartIndex] === "radar" && (
               <RadarChart
