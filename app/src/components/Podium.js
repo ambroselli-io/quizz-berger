@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
+const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
   const [podiumised, setPodiumised] = useState([]);
 
   useEffect(() => {
     setPodiumised(
-      candidatesScore
+      personsScore
         .reduce(
           ([candidates, highest], candidate) => {
             const newHighest = Math.max(highest, candidate.total);
@@ -57,7 +57,7 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
         }))
         .sort((c1, c2) => (c1.percent > c2.percent ? -1 : 1))
     );
-  }, [candidatesScore]);
+  }, [personsScore]);
 
   const maxPersons = podiumised.reduce(
     (maxPersons, step) => Math.max(step.pseudos?.length, maxPersons),
@@ -77,12 +77,12 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
             </StairContainer>
             <Pseudos maxPersons={maxPersons}>
               {pseudos.map((pseudo) => (
-                <>
+                <React.Fragment key={pseudo}>
                   <Link to={`/quizz/${pseudo}`}>
                     <Candidate>{pseudo}</Candidate>
                   </Link>
                   <br />
-                </>
+                </React.Fragment>
               ))}
             </Pseudos>
           </Step>

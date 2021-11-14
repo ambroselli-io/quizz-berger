@@ -14,13 +14,14 @@ import UserContext from "./contexts/user";
 import DataContext from "./contexts/data";
 
 const App = () => {
-  const { getQuizz, getCandidates } = useContext(DataContext);
+  const { getQuizz, getCandidates, getFriends } = useContext(DataContext);
 
   const location = useLocation();
 
   const init = async () => {
     await getQuizz();
-    getCandidates();
+    await getCandidates();
+    await getFriends();
   };
 
   useEffect(() => {

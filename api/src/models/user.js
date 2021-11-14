@@ -1,22 +1,24 @@
 const mongoose = require("mongoose");
 const MODELNAME = "User";
 
-const Schema = new mongoose.Schema({
-  pseudo: { type: String, trim: true, unique: true, sparse: true },
-  password: { type: String },
-  themes: { type: [String], default: [] },
-  createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now },
+const Schema = new mongoose.Schema(
+  {
+    pseudo: { type: String, trim: true, unique: true, sparse: true },
+    password: { type: String },
+    themes: { type: [String], default: [] },
 
-  /* to allow sharing answers publicly */
-  isPublic: { type: Boolean },
+    /* to allow sharing answers publicly */
+    isPublic: { type: Boolean },
 
-  /* for candidate or pary politic */
-  firstName: { type: String },
-  lastName: { type: String },
-  partyName: { type: String },
-  isCandidate: { type: Boolean },
-});
+    /* for candidate or pary politic */
+    firstName: { type: String },
+    lastName: { type: String },
+    partyName: { type: String },
+    isCandidate: { type: Boolean },
+    friends: { type: [{ type: mongoose.Types.ObjectId, ref: "User", index: true }], default: [] },
+  },
+  { timestamps: true }
+);
 
 Schema.methods.me = function () {
   return {
@@ -27,6 +29,7 @@ Schema.methods.me = function () {
     partyName: this.partyName,
     themes: this.themes,
     isCandidate: this.isCandidate,
+    friends: this.friends,
     isPublic: this.isCandidate || this.isPublic,
   };
 };

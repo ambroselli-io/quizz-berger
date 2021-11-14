@@ -4,7 +4,13 @@ import logo from "../images/logo.svg";
 
 const transitionInMillisec = 1000;
 
-const Loader = ({ isLoading, size = "15vh", withBackground = false, withLogoBorder = false }) => {
+const Loader = ({
+  isLoading,
+  size = "15vh",
+  withBackground = false,
+  withLogoBorder = false,
+  displayOnLoadingOnly = false,
+}) => {
   const [showLogoLoading, setShowLogoLoading] = useState(false);
   const [showLogoKey, setShowLogoKey] = useState(false);
 
@@ -37,6 +43,7 @@ const Loader = ({ isLoading, size = "15vh", withBackground = false, withLogoBord
     return (
       <Logo
         size={size}
+        displayOnLoadingOnly={displayOnLoadingOnly}
         withLogoBorder={withLogoBorder}
         className={!!showLogoLoading && "animate"}
       />
@@ -46,6 +53,7 @@ const Loader = ({ isLoading, size = "15vh", withBackground = false, withLogoBord
       <Logo
         size={size}
         withLogoBorder={withLogoBorder}
+        displayOnLoadingOnly={displayOnLoadingOnly}
         className={!!showLogoLoading && "animate"}
       />
     </BackgroundContainer>
@@ -97,7 +105,9 @@ const Logo = styled.div`
   background-repeat: no-repeat;
   border: none;
   ${(props) => props.withLogoBorder && "border: 1px solid #111827;"}
+  ${(props) => props.displayOnLoadingOnly && "visibility: hidden;"}
   &.animate {
+    ${(props) => props.displayOnLoadingOnly && "visibility: visible;"}
     animation: ${rotate} ${transitionInMillisec}ms linear infinite;
   }
 `;

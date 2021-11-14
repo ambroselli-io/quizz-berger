@@ -12,9 +12,9 @@ const AllQuestions = () => {
   const { candidatePseudo } = useParams();
   const forCandidate = !!candidatePseudo;
   const { user, userAnswers } = useContext(UserContext);
-  const { candidates, quizz } = useContext(DataContext);
+  const { candidates, quizz, friends } = useContext(DataContext);
 
-  const candidateAnswers = candidates.find((c) => c.pseudo === candidatePseudo);
+  const candidateAnswers = [...candidates, ...friends].find((c) => c.pseudo === candidatePseudo);
   const userThemes = getUserThemes(userAnswers);
   const userAnswersId = userAnswers.map((a) => a.questionId);
 

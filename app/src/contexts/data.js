@@ -18,6 +18,7 @@ export const DataProvider = ({ children }) => {
     formatQuizzForSearch(getFromLocalStorage("quizz", []))
   );
   const [candidates, setCandidates] = useState(getFromLocalStorage("candidates", []));
+  const [friends, setFriends] = useState(getFromLocalStorage("friends", []));
 
   const getQuizz = async () => {
     const response = await API.get({ path: "/quizz" });
@@ -42,8 +43,20 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  const getFriends = async () => {
+    const response = await API.get({ path: "/answer/friends" });
+    console.log(response);
+    if (response.ok) {
+      if (JSON.stringify(friends) !== JSON.stringify(response.data)) {
+        setToLocalStorage("friends", response.data);
+        setFriends(response.data);
+      }
+    }
+  };
+
   return (
-    <DataContext.Provider value={{ quizz, quizzForSearch, getQuizz, candidates, getCandidates }}>
+    <DataContext.Provider
+      value={{ quizz, quizzForSearch, getQuizz, candidates, getCandidates, friends, getFriends }}>
       {children}
     </DataContext.Provider>
   );

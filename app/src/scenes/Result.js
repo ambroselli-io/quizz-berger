@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { getCandidatesScorePerThemes } from "../utils/score";
 import { media, minMedia } from "../styles/mediaQueries";
@@ -11,14 +11,13 @@ import ModalShare from "../components/ModalShare";
 import { useHistory, useParams } from "react-router";
 import API from "../services/api";
 import Loader from "../components/Loader";
-import InternalLink from "../components/InternalLink";
 import getUserThemes from "../utils/getUserThemes";
 import Podium from "../components/Podium";
 import QuizzButton from "../components/QuizzButton";
 
 const Result = () => {
   const userContext = useContext(UserContext);
-  const { quizz, candidates /* getCandidates */ } = useContext(DataContext);
+  const { quizz, candidates, getFriends, friends /* getCandidates */ } = useContext(DataContext);
   const { userPseudo } = useParams();
   const history = useHistory();
   const [publicUser, setPublicUser] = useState({});
@@ -39,11 +38,22 @@ const Result = () => {
   const [showThemes, setShowThemes] = useState(
     Boolean(getFromSessionStorage("selectedThemes", false))
   );
+  const [showFriends, setShowFriends] = useState(
+    Boolean(getFromSessionStorage("selectedFriends", false))
+  );
+
+  const [newFriend, setNewFriend] = useState("");
+  const [loadingFriend, setLoadingFriend] = useState(false);
 
   const allCandidates = candidates.map((c) => c.pseudo);
+  const allFriends = friends.map((c) => c.pseudo);
   const [selectedCandidates, setSelectedCandidates] = useState(() => {
     if (publicPage) return allCandidates;
     return getFromSessionStorage("selectedCandidates", allCandidates);
+  });
+  const [selectedFriends, setSelectedFriends] = useState(() => {
+    if (publicPage) return [];
+    return getFromSessionStorage("selectedFriends", allFriends);
   });
   const [selectedThemes, setSelectedThemes] = useState(() => {
     const allThemes = userThemes;
@@ -63,6 +73,17 @@ const Result = () => {
       setSelectedCandidates(selectedCandidates.filter((c) => c !== pseudo));
     }
   };
+
+  const onSelectFriends = (e) => {
+    const pseudo = e.target.dataset.pseudo;
+
+    if (!selectedFriends.find((p) => p === pseudo)) {
+      setSelectedFriends([...selectedFriends, pseudo]);
+    } else {
+      setSelectedFriends(selectedFriends.filter((c) => c !== pseudo));
+    }
+  };
+
   const onSelectThemes = (e) => {
     const themeId = e.target.dataset.themeid;
     if (selectedThemes.includes(themeId)) {
@@ -70,6 +91,46 @@ const Result = () => {
     } else {
       setSelectedThemes([...selectedThemes, themeId]);
     }
+  };
+
+  const newFriendTimeout = useRef(null);
+  const setNewFriendRequest = async (e) => {
+    const newName = e.target.value;
+    setNewFriend(e.target.value);
+    if (
+      newName?.length < 3 ||
+      allFriends.includes(newName) ||
+      userContext?.user?.pseudo === newName
+    ) {
+      setLoadingFriend(false);
+      return clearTimeout(newFriendTimeout.current);
+    }
+    newFriendTimeout.current = setTimeout(async () => {
+      setLoadingFriend(true);
+      const response = await API.get({ path: `/user/friends/${newName}` });
+      if (response.ok) {
+        if (window.confirm(`Voulez-vous ajouter ${response.data.pseudo} à vos amis ?`)) {
+          console.log("ok", response.data);
+          setLoadingFriend(true);
+          await API.put({
+            path: "/user",
+            body: { friends: [...(userContext?.user.friends || []), response.data] },
+          });
+          await getFriends();
+          setLoadingFriend(false);
+          setNewFriend("");
+        } else {
+          setLoadingFriend(false);
+        }
+      } else {
+        setLoadingFriend(false);
+        if (response.code === "NOT_PUBLIC")
+          alert(
+            `${newName} n'a pas cliqué sur "Partager" en haut à droite de cette page. Demandez-lui !`
+          );
+        console.log("not ok", response.data);
+      }
+    }, 500);
   };
 
   const candidatesScorePerThemes = getCandidatesScorePerThemes(
@@ -81,16 +142,28 @@ const Result = () => {
     quizz
   );
 
-  const candidatesScore = candidatesScorePerThemes.map((c) => ({
+  const friendsScorePerThemes = getCandidatesScorePerThemes(
+    userAnswers.filter((a) => selectedThemes.includes(a.themeId)),
+    friends.map((f) => ({
+      ...f,
+      answers: f.answers.filter((a) => selectedThemes.includes(a.themeId)),
+    })),
+    quizz
+  );
+
+  const filteredPersons = [
+    ...candidatesScorePerThemes.filter((candidate) =>
+      selectedCandidates.includes(candidate?.pseudo)
+    ),
+    ...friendsScorePerThemes.filter((friend) => selectedFriends.includes(friend?.pseudo)),
+  ];
+
+  const personsScore = filteredPersons.map((c) => ({
     _id: c._id,
     pseudo: c.pseudo,
     total: c.total,
     totalMax: c.totalMax,
   }));
-
-  const filteredCandidatesScorePerThemes = candidatesScorePerThemes.filter((candidate) =>
-    selectedCandidates.includes(candidate?.pseudo)
-  );
 
   useEffect(() => {
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
@@ -107,6 +180,10 @@ const Result = () => {
       window.sessionStorage.removeItem("selectedThemes");
     }
   }, [selectedThemes.length]);
+
+  useEffect(() => {
+    getFriends();
+  }, []);
 
   const getPublicUser = async () => {
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
@@ -175,7 +252,7 @@ const Result = () => {
           </Header>
         </Container>
         <PodiumContainer>
-          <Podium fullHeight candidatesScore={candidatesScore} />
+          <Podium fullHeight personsScore={personsScore} />
         </PodiumContainer>
         <TipContainer>
           <Tip>Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses</Tip>
@@ -189,7 +266,7 @@ const Result = () => {
               <OpenButton isActive={showCandidates}>&#9654;</OpenButton>
               <SubTitle>Afficher/masquer des candidats</SubTitle>
             </OpenButtonContainer>
-            <CandidateButtonContainer isActive={showCandidates}>
+            <ButtonsContainer isActive={showCandidates}>
               {candidatesScorePerThemes.map((candidate) => (
                 <ButtonStyled
                   key={candidate?.pseudo}
@@ -199,12 +276,12 @@ const Result = () => {
                   {candidate?.pseudo}
                 </ButtonStyled>
               ))}
-            </CandidateButtonContainer>
+            </ButtonsContainer>
             <OpenButtonContainer onClick={() => setShowThemes((show) => !show)}>
               <OpenButton isActive={showThemes}>&#9654;</OpenButton>
               <SubTitle>Afficher/masquer des thèmes</SubTitle>
             </OpenButtonContainer>
-            <ThemeButtonContainer isActive={showThemes}>
+            <ButtonsContainer isActive={showThemes}>
               {userThemes.map((userThemeId) => {
                 const theme = quizz.find((t) => t._id === userThemeId);
                 return (
@@ -218,23 +295,48 @@ const Result = () => {
                   </ButtonStyled>
                 );
               })}
-            </ThemeButtonContainer>
+            </ButtonsContainer>
+            <OpenButtonContainer onClick={() => setShowFriends((show) => !show)}>
+              <OpenButton isActive={showFriends}>&#9654;</OpenButton>
+              <SubTitle>Se comparer à mes amis</SubTitle>
+            </OpenButtonContainer>
+            <ButtonsContainer isActive={showFriends}>
+              {friendsScorePerThemes.map((friend) => (
+                <ButtonStyled
+                  key={friend?.pseudo}
+                  data-pseudo={friend?.pseudo}
+                  isActive={!!selectedFriends.find((c) => c === friend?.pseudo)}
+                  onClick={onSelectFriends}>
+                  {friend?.pseudo}
+                </ButtonStyled>
+              ))}
+              <InputWithLoader>
+                <FriendsInput
+                  placeholder={
+                    !!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"
+                  }
+                  value={!!loadingFriend ? null : newFriend}
+                  onChange={setNewFriendRequest}
+                />
+                <Loader size="20px" isLoading={loadingFriend} displayOnLoadingOnly />
+              </InputWithLoader>
+            </ButtonsContainer>
           </LeftContainer>
           <RightContainer>
             {selectedThemes
               .map((themeId) => ({
                 themeId,
-                candidatesScore: filteredCandidatesScorePerThemes?.map((c) => ({
+                personsScore: filteredPersons?.map((c) => ({
                   _id: c._id,
                   pseudo: c.pseudo,
                   total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
                   totalMax: 100,
                 })),
               }))
-              .map(({ candidatesScore, themeId }) => (
+              .map(({ personsScore, themeId }) => (
                 <ThemePodiumContainer key={themeId}>
                   <Podium
-                    candidatesScore={candidatesScore}
+                    personsScore={personsScore}
                     noPadding
                     fullHeight
                     title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
@@ -375,19 +477,12 @@ const OpenButton = styled.span`
   cursor: pointer;
 `;
 
-const CandidateButtonContainer = styled.div`
+const ButtonsContainer = styled.div`
   max-width: 500px;
   width: auto;
   margin-bottom: 20px;
   display: ${(props) => (props.isActive ? "flex" : "none")};
   grid-template-columns: auto auto auto;
-  flex-flow: row wrap;
-  grid-gap: 12px;
-`;
-
-const ThemeButtonContainer = styled.div`
-  margin-bottom: 20px;
-  display: ${(props) => (props.isActive ? "flex" : "none")};
   flex-flow: row wrap;
   grid-gap: 12px;
 `;
@@ -474,6 +569,27 @@ const Header = styled.div`
   ${media.mobile`
     flex-direction: column;
   `}
+`;
+
+const FriendsInput = styled.input`
+  padding: 12px 12px;
+  border: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  &:placeholder {
+    color: rgba(17, 24, 39, 0.4);
+  }
+`;
+
+const InputWithLoader = styled.div`
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  > div {
+    margin-left: -25px;
+  }
 `;
 
 export default Result;

@@ -19,6 +19,7 @@ const setCookie = (req, res, user) => {
     maxAge: user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE,
     httpOnly: process.env.NODE_ENV !== "development",
     secure: process.env.NODE_ENV !== "development",
+    sameSite: process.env.NODE_ENV === "development" ? "None" : "Lax",
   };
   res.cookie("jwt", token, tokenConfig);
 };
@@ -103,9 +104,12 @@ router.put(
     if (req.body.hasOwnProperty("firstName")) userUpdate.firstName = req.body.firstName;
     if (req.body.hasOwnProperty("lastName")) userUpdate.lastName = req.body.lastName;
     if (req.body.hasOwnProperty("partyName")) userUpdate.partyName = req.body.partyName;
+    if (req.body.hasOwnProperty("friends")) userUpdate.friends = req.body.friends;
 
     user.set(userUpdate);
     await user.save();
+
+    c;
 
     res.status(200).send({ ok: true, data: user.me() });
   })
@@ -116,6 +120,23 @@ router.get(
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
     res.status(200).send({ ok: true, data: req.user.me() });
+  })
+);
+
+router.get(
+  "/friends/:pseudo",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    if (!req.params.pseudo) return res.status(400).send({ ok: false });
+    const user = await UserObject.findOne({ pseudo: req.params.pseudo });
+    if (!user) {
+      return res.status(400).send({ ok: false });
+    }
+    if (!(user.isPublic || user.isCandidate)) {
+      return res.status(200).send({ ok: false, code: "NOT_PUBLIC" });
+    }
+
+    res.status(200).send({ ok: true, data: user.me() });
   })
 );
 

@@ -62,6 +62,27 @@ router.get(
 );
 
 router.get(
+  "/friends",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    const friends = await UserObject.find({ _id: req.user?.friends });
+    const friendsAnswers = await AnswerObject.find({ user: friends });
+
+    const populatedFriendsAnswers = friends.map((friend) => {
+      return {
+        _id: friend._id,
+        pseudo: friend.pseudo,
+        isCandidate: false,
+        themes: friend.themes,
+        answers: friendsAnswers.filter((answers) => friend._id.equals(answers.user)),
+      };
+    });
+
+    res.status(200).send({ ok: true, data: populatedFriendsAnswers });
+  })
+);
+
+router.get(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
