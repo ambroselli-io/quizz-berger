@@ -48,16 +48,16 @@ const Header = ({ loading }) => {
       <HeaderStyled>
         <HeaderContainer>
           <LeftContainer>
-            <Link to="/home">
+            <Link to="/">
               <HeaderLogo />
             </Link>
-            <Link to="/home">
+            <Link to="/">
               <Title>Le Quizz du Berger</Title>
             </Link>
           </LeftContainer>
           <HeaderMenu>
             <HeaderMenuTab>
-              <NavLink activeClassName="selected" to="/home">
+              <NavLink activeClassName="selected" to="/">
                 <span>Accueil</span>
               </NavLink>
             </HeaderMenuTab>
@@ -107,7 +107,7 @@ const Header = ({ loading }) => {
                 </BurgerNavHeaderContainer>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" to="/home">
+                  <NavLink activeClassName="selected" to="/">
                     <span>Accueil</span>
                   </NavLink>
                 </BurgerMenuTab>

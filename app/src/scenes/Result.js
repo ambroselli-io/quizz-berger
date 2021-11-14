@@ -109,10 +109,10 @@ const Result = () => {
 
   const getPublicUser = async () => {
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
-    if (!publicUserResponse.ok) return history.push("/home");
+    if (!publicUserResponse.ok) return history.push("/");
     setPublicUser(publicUserResponse.data);
     const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
-    if (!publicUserAnswersResponse.ok) return history.push("/home");
+    if (!publicUserAnswersResponse.ok) return history.push("/");
     setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
     setPublicUserAnswers(publicUserAnswersResponse.data);
     setSelectedCandidates(allCandidates);

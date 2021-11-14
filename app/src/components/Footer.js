@@ -43,10 +43,10 @@ const Footer = () => {
     <FooterContainer>
       <Container>
         <LeftContainer>
-          <Link to="/home">
+          <Link to="/">
             <HeaderLogo />
           </Link>
-          <Link to="/home">
+          <Link to="/">
             <Title>Le Quizz du Berger</Title>
           </Link>
         </LeftContainer>

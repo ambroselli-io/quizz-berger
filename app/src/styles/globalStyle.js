@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const getBodyBackgroundColor = ({ path }) => {
-  if (path.includes("home")) return "#111827";
+  console.log(path);
+  if (path === "/") return "#111827";
   if (path.includes("login")) return "#111827";
   return "#fff";
 };
