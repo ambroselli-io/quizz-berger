@@ -20,6 +20,16 @@ const AllQuestions = () => {
 
   const isLoading = forCandidate && !candidateAnswers?.pseudo;
 
+  if (window.innerWidth < 768) {
+    return (
+      <BackgroundContainer>
+        <SubContainer>
+          <Title>Cet écran n'est disponible que sur ordinateur, désolé !</Title>
+        </SubContainer>
+      </BackgroundContainer>
+    );
+  }
+
   return (
     <>
       <BackgroundContainer>

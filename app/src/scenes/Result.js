@@ -14,6 +14,7 @@ import Loader from "../components/Loader";
 import InternalLink from "../components/InternalLink";
 import getUserThemes from "../utils/getUserThemes";
 import Podium from "../components/Podium";
+import QuizzButton from "../components/QuizzButton";
 
 const Result = () => {
   const userContext = useContext(UserContext);
@@ -145,35 +146,40 @@ const Result = () => {
     <>
       <BackgroundContainer>
         <Container>
-          <Title>{renderTitle()}</Title>
-          {!publicPage && (
-            <SaveContainer>
-              {!user?.pseudo && (
-                <>
-                  <SaveButton
-                    onClick={() => {
-                      setShowLoginModal(true);
-                      document.body.style.overflow = "hidden";
-                    }}>
-                    Enregistrer
-                  </SaveButton>
-                  <Tiret />
-                </>
-              )}
-              <SaveButton
-                onClick={() => {
-                  if (!user?.pseudo) setShowLoginModal(true);
-                  setShowShareModal(true);
-                  document.body.style.overflow = "hidden";
-                }}>
-                Partager
-              </SaveButton>
-            </SaveContainer>
-          )}
+          <Header>
+            <Title>{renderTitle()}</Title>
+            {!publicPage && (
+              <SaveContainer>
+                {!user?.pseudo && (
+                  <>
+                    <SaveButton
+                      onClick={() => {
+                        setShowLoginModal(true);
+                        document.body.style.overflow = "hidden";
+                      }}>
+                      Enregistrer
+                    </SaveButton>
+                    <Tiret />
+                  </>
+                )}
+                <SaveButton
+                  onClick={() => {
+                    if (!user?.pseudo) setShowLoginModal(true);
+                    setShowShareModal(true);
+                    document.body.style.overflow = "hidden";
+                  }}>
+                  Partager
+                </SaveButton>
+              </SaveContainer>
+            )}
+          </Header>
         </Container>
         <PodiumContainer>
           <Podium fullHeight candidatesScore={candidatesScore} />
         </PodiumContainer>
+        <TipContainer>
+          <Tip>Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses</Tip>
+        </TipContainer>
         <div>
           <Title>Aller plus loin</Title>
         </div>
@@ -445,8 +451,29 @@ const Tiret = styled.div`
   width: 10px;
 `;
 
-const SaveButton = styled(InternalLink)`
+const SaveButton = styled(QuizzButton)`
   font-size: 0.9em;
+`;
+
+const Tip = styled.span`
+  font-size: 0.65em;
+  font-style: italic;
+`;
+
+const TipContainer = styled.div`
+  margin-top: -5vh !important;
+  margin-bottom: 5vh !important;
+  ${media.mobile`
+    display: none;
+  `}
+`;
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  ${media.mobile`
+    flex-direction: column;
+  `}
 `;
 
 export default Result;

@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
@@ -74,10 +75,16 @@ const Podium = ({ candidatesScore, noPadding, title, fullHeight = false }) => {
                 <span>{percent}%</span>
               </Stair>
             </StairContainer>
-            <Pseudos
-              maxPersons={maxPersons}
-              dangerouslySetInnerHTML={{ __html: pseudos.join(",<br/>") }}
-            />
+            <Pseudos maxPersons={maxPersons}>
+              {pseudos.map((pseudo) => (
+                <>
+                  <Link to={`/quizz/${pseudo}`}>
+                    <Candidate>{pseudo}</Candidate>
+                  </Link>
+                  <br />
+                </>
+              ))}
+            </Pseudos>
           </Step>
         ))}
       </PodiumStairs>
@@ -201,4 +208,10 @@ const Title = styled.h3`
   text-align: center;
 `;
 
+const Candidate = styled.span`
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+`;
 export default Podium;
