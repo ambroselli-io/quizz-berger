@@ -24,7 +24,7 @@
     "json-stringify-pretty-compact": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
     "md5": "^2.3.0",
-    "mongoose": "^5.8.5",
+    "mongoose": "^6.0.12",
     "morgan": "^1.10.0",
     "node-fetch": "2.6.5",
     "passport": "^0.4.0",
