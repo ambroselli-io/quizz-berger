@@ -33,7 +33,7 @@ const App = () => {
       <GlobalStyles path={location.pathname} />
       <Layout loading={false}>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/login" component={LoginPage} />
           <Route path="/all-questions" exact component={AllQuestions} />
           <Route path="/themes" component={ThemeSelect} />
@@ -41,8 +41,6 @@ const App = () => {
           <Route path="/quizz/:candidatePseudo" exact component={AllQuestions} />
           <RestrictedRoute path="/question/:themeId/:questionId" exact component={Quizz} />
           <RestrictedRoute path="/result" exact component={Result} />
-          <RestrictedRoute path="/" exact component={() => <Redirect to="/themes" />} />
-          <RestrictedRoute path="/" component={() => <Redirect to="/" />} />
         </Switch>
       </Layout>
     </>
@@ -51,7 +49,7 @@ const App = () => {
 
 const RestrictedRoute = ({ Component, ...rest }) => {
   const { user } = useContext(UserContext);
-  if (!user?._id) return <Redirect to="/home" />;
+  if (!user?._id) return <Redirect to="/" />;
   return <Route {...rest} />;
 };
 
