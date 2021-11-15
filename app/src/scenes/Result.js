@@ -104,6 +104,7 @@ const Result = () => {
             path: "/user",
             body: { friends: [...(userContext?.user.friends || []), response.data] },
           });
+          setSelectedFriends([...selectedFriends, response.data.pseudo]);
           await getFriends();
           setLoadingFriend(false);
           setNewFriend("");

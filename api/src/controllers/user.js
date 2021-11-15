@@ -114,8 +114,6 @@ router.put(
     user.set(userUpdate);
     await user.save();
 
-    c;
-
     res.status(200).send({ ok: true, data: user.me() });
   })
 );
