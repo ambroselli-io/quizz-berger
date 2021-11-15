@@ -173,6 +173,8 @@ const Result = () => {
     getFriends();
   }, []);
 
+  console.log({ loadingFriend });
+
   const getPublicUser = async () => {
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
     if (!publicUserResponse.ok) return history.push("/");
@@ -276,7 +278,7 @@ const Result = () => {
                 placeholder={
                   !!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"
                 }
-                value={!!loadingFriend ? null : newFriend}
+                value={!!loadingFriend ? "" : newFriend}
                 onChange={setNewFriendRequest}
               />
               <Loader size="20px" isLoading={loadingFriend} displayOnLoadingOnly />
