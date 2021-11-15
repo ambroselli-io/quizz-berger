@@ -4,10 +4,12 @@ import styled from "styled-components";
 import InternalLink from "../components/InternalLink";
 import Modal from "../components/Modal";
 
-const Filter = ({ toggle, isActive, children, title }) => {
+const Filter = ({ toggle, isActive, children, title, hideTitle }) => {
   return (
     <>
-      <InternalLinkStyled onClick={() => toggle((show) => !show)}>{title}</InternalLinkStyled>
+      {!hideTitle && (
+        <InternalLinkStyled onClick={() => toggle((show) => !show)}>{title}</InternalLinkStyled>
+      )}
       <Modal
         title={title}
         isActive={isActive}

@@ -173,8 +173,6 @@ const Result = () => {
     getFriends();
   }, []);
 
-  console.log({ loadingFriend });
-
   const getPublicUser = async () => {
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
     if (!publicUserResponse.ok) return history.push("/");
@@ -215,36 +213,42 @@ const Result = () => {
         <Container>
           <Header>
             <Title>{renderTitle()}</Title>
-            {!publicPage && (
-              <SaveContainer>
-                {!user?.pseudo && (
-                  <>
-                    <SaveButton
-                      onClick={() => {
-                        setShowLoginModal(true);
-                        document.body.style.overflow = "hidden";
-                      }}>
-                      Enregistrer
-                    </SaveButton>
-                    <Tiret />
-                  </>
-                )}
-                <SaveButton
-                  onClick={() => {
-                    if (!user?.pseudo) setShowLoginModal(true);
-                    setShowShareModal(true);
-                    document.body.style.overflow = "hidden";
-                  }}>
-                  Partager
-                </SaveButton>
-              </SaveContainer>
-            )}
           </Header>
         </Container>
         <PodiumContainer>
           <Podium fullHeight personsScore={personsScore} />
         </PodiumContainer>
         <TipContainer>
+          {!publicPage && (
+            <SaveContainer>
+              {!user?.pseudo && (
+                <>
+                  <SaveButton
+                    onClick={() => {
+                      setShowLoginModal(true);
+                      document.body.style.overflow = "hidden";
+                    }}>
+                    Enregistrer
+                  </SaveButton>
+                </>
+              )}
+              <SaveButton
+                onClick={() => {
+                  if (!user?.pseudo) setShowLoginModal(true);
+                  setShowShareModal(true);
+                  document.body.style.overflow = "hidden";
+                }}>
+                Partager
+              </SaveButton>
+              <SaveButton
+                onClick={() => {
+                  setShowFriends(true);
+                  document.body.style.overflow = "hidden";
+                }}>
+                Se comparer à mes amis
+              </SaveButton>
+            </SaveContainer>
+          )}
           <Tip>Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses</Tip>
         </TipContainer>
         <Container>
@@ -263,7 +267,11 @@ const Result = () => {
               </ButtonStyled>
             ))}
           </Filter>
-          <Filter toggle={setShowFriends} isActive={showFriends} title="Se comparer à mes amis">
+          <Filter
+            toggle={setShowFriends}
+            isActive={showFriends}
+            title="Se comparer à mes amis"
+            hideTitle>
             {friendsScorePerThemes.map((friend) => (
               <ButtonStyled
                 key={friend?.pseudo}
@@ -414,17 +422,22 @@ const ButtonStyled = styled.button`
 const SaveContainer = styled.div`
   display: flex;
   align-items: center;
-  > :first-child {
-    margin-right: 5px;
+  > * {
+    margin-left: 10px;
   }
-  > :nth-child(3) {
-    margin-left: 5px;
-  }
+  ${media.mobile`
+    flex-direction: column;
+    align-items: flex-start;
+    > * {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  `}
 `;
 
 const Tiret = styled.div`
   height: 1px;
-  background-color: #111827;
+  /* background-color: #111827; */
   width: 10px;
 `;
 
@@ -435,14 +448,14 @@ const SaveButton = styled(QuizzButton)`
 const Tip = styled.span`
   font-size: 0.65em;
   font-style: italic;
+  ${media.mobile`
+  display: none;
+`}
 `;
 
 const TipContainer = styled.div`
   margin-top: -5vh !important;
   margin-bottom: 5vh !important;
-  ${media.mobile`
-    display: none;
-  `}
 `;
 
 const Header = styled.div`

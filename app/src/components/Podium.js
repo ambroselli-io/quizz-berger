@@ -207,7 +207,8 @@ const Title = styled.h3`
   font-weight: bold;
   font-size: 20px;
   color: #111827;
-  text-align: center;
+  text-align: left;
+  padding-left: max(10px, calc((100% - 1024px) / 2));
 `;
 
 const Candidate = styled.span`
