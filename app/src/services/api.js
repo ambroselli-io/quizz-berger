@@ -1,6 +1,8 @@
 import URI from "urijs";
 import { version } from "../../package.json";
 import { HOST, SCHEME } from "../config";
+import fetchRetry from "fetch-retry";
+const fetch = fetchRetry(window.fetch);
 
 class ApiService {
   getUrl = (path, query = {}) => {
@@ -25,6 +27,8 @@ class ApiService {
           "Content-Type": "application/json",
           Accept: "application/json",
           version,
+          retries: 3,
+          retryDelay: 1000,
         },
       };
 
