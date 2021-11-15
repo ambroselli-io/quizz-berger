@@ -45,7 +45,6 @@ export const DataProvider = ({ children }) => {
 
   const getFriends = async () => {
     const response = await API.get({ path: "/answer/friends" });
-    console.log(response);
     if (response.ok) {
       if (JSON.stringify(friends) !== JSON.stringify(response.data)) {
         setToLocalStorage("friends", response.data);

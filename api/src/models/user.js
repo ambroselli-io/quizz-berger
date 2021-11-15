@@ -8,13 +8,13 @@ const Schema = new mongoose.Schema(
     themes: { type: [String], default: [] },
 
     /* to allow sharing answers publicly */
-    isPublic: { type: Boolean },
+    isPublic: { type: Boolean, default: false },
 
     /* for candidate or pary politic */
     firstName: { type: String },
     lastName: { type: String },
     partyName: { type: String },
-    isCandidate: { type: Boolean },
+    isCandidate: { type: Boolean, default: false, index: true },
     friends: { type: [{ type: mongoose.Types.ObjectId, ref: "User", index: true }], default: [] },
   },
   { timestamps: true }

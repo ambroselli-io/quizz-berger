@@ -12,15 +12,20 @@ const JWT_MAX_AGE = 1000 * 60 * 60 * 24 * 30; // 30 days in ms
 const JWT_MIN_AGE = 1000 * 60 * 60 * 3; // 3 hours in ms
 
 const setCookie = (req, res, user) => {
-  const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE });
+  const maxAge = user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE;
+  const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: maxAge });
 
   const tokenConfig = {
-    domain: process.env.NODE_ENV === "development" ? null : req.headers.origin.includes("fr") ? "quizz-du-berger.fr" : "quizz-du-berger.com",
-    maxAge: user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE,
-    httpOnly: process.env.NODE_ENV !== "development",
-    secure: process.env.NODE_ENV !== "development",
-    sameSite: process.env.NODE_ENV === "development" ? "None" : "Lax",
+    maxAge: maxAge * 1000,
+    httpOnly: true,
+    secure: true,
   };
+  if (config.ENVIRONMENT === "development") {
+    tokenConfig.sameSite = "None";
+  } else {
+    tokenConfig.domain = "quizz-du-berger.com";
+    tokenConfig.sameSite = "Lax";
+  }
   res.cookie("jwt", token, tokenConfig);
 };
 
@@ -130,7 +135,7 @@ router.get(
     if (!req.params.pseudo) return res.status(400).send({ ok: false });
     const user = await UserObject.findOne({ pseudo: req.params.pseudo });
     if (!user) {
-      return res.status(400).send({ ok: false });
+      return res.status(200).send({ ok: false });
     }
     if (!(user.isPublic || user.isCandidate)) {
       return res.status(200).send({ ok: false, code: "NOT_PUBLIC" });

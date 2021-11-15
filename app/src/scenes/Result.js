@@ -14,6 +14,7 @@ import Loader from "../components/Loader";
 import getUserThemes from "../utils/getUserThemes";
 import Podium from "../components/Podium";
 import QuizzButton from "../components/QuizzButton";
+import Filter from "./Filter";
 
 const Result = () => {
   const userContext = useContext(UserContext);
@@ -35,9 +36,6 @@ const Result = () => {
   const [showCandidates, setShowCandidates] = useState(
     Boolean(getFromSessionStorage("selectedCandidates", false))
   );
-  const [showThemes, setShowThemes] = useState(
-    Boolean(getFromSessionStorage("selectedThemes", false))
-  );
   const [showFriends, setShowFriends] = useState(
     Boolean(getFromSessionStorage("selectedFriends", false))
   );
@@ -57,11 +55,11 @@ const Result = () => {
   });
   const [selectedThemes, setSelectedThemes] = useState(() => {
     const allThemes = userThemes;
-    if (publicPage) return allThemes;
-    const previousThemesSelected = getFromSessionStorage("selectedThemes", []);
-    if (!previousThemesSelected.length) return allThemes;
-    if (userThemes.length !== previousThemesSelected.length) return previousThemesSelected;
     return allThemes;
+    // if (publicPage) return allThemes;
+    // const previousThemesSelected = getFromSessionStorage("selectedThemes", []);
+    // if (!previousThemesSelected.length) return allThemes;
+    // if (userThemes.length !== previousThemesSelected.length) return previousThemesSelected;
   });
 
   const onSelectCandidates = (e) => {
@@ -84,15 +82,6 @@ const Result = () => {
     }
   };
 
-  const onSelectThemes = (e) => {
-    const themeId = e.target.dataset.themeid;
-    if (selectedThemes.includes(themeId)) {
-      setSelectedThemes(selectedThemes.filter((id) => id !== themeId));
-    } else {
-      setSelectedThemes([...selectedThemes, themeId]);
-    }
-  };
-
   const newFriendTimeout = useRef(null);
   const setNewFriendRequest = async (e) => {
     const newName = e.target.value;
@@ -110,7 +99,6 @@ const Result = () => {
       const response = await API.get({ path: `/user/friends/${newName}` });
       if (response.ok) {
         if (window.confirm(`Voulez-vous ajouter ${response.data.pseudo} à vos amis ?`)) {
-          console.log("ok", response.data);
           setLoadingFriend(true);
           await API.put({
             path: "/user",
@@ -128,7 +116,6 @@ const Result = () => {
           alert(
             `${newName} n'a pas cliqué sur "Partager" en haut à droite de cette page. Demandez-lui !`
           );
-        console.log("not ok", response.data);
       }
     }, 500);
   };
@@ -257,94 +244,67 @@ const Result = () => {
         <TipContainer>
           <Tip>Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses</Tip>
         </TipContainer>
-        <div>
-          <Title>Aller plus loin</Title>
-        </div>
-        <ChartsContainer>
-          <LeftContainer>
-            <OpenButtonContainer onClick={() => setShowCandidates((show) => !show)}>
-              <OpenButton isActive={showCandidates}>&#9654;</OpenButton>
-              <SubTitle>Afficher/masquer des candidats</SubTitle>
-            </OpenButtonContainer>
-            <ButtonsContainer isActive={showCandidates}>
-              {candidatesScorePerThemes.map((candidate) => (
-                <ButtonStyled
-                  key={candidate?.pseudo}
-                  data-pseudo={candidate?.pseudo}
-                  isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
-                  onClick={onSelectCandidates}>
-                  {candidate?.pseudo}
-                </ButtonStyled>
-              ))}
-            </ButtonsContainer>
-            <OpenButtonContainer onClick={() => setShowThemes((show) => !show)}>
-              <OpenButton isActive={showThemes}>&#9654;</OpenButton>
-              <SubTitle>Afficher/masquer des thèmes</SubTitle>
-            </OpenButtonContainer>
-            <ButtonsContainer isActive={showThemes}>
-              {userThemes.map((userThemeId) => {
-                const theme = quizz.find((t) => t._id === userThemeId);
-                return (
-                  <ButtonStyled
-                    key={userThemeId}
-                    data-themeid={theme._id}
-                    backgroundColor={theme.backgroundColor}
-                    isActive={!!selectedThemes.find((c) => c === theme._id)}
-                    onClick={onSelectThemes}>
-                    {theme.fr}
-                  </ButtonStyled>
-                );
-              })}
-            </ButtonsContainer>
-            <OpenButtonContainer onClick={() => setShowFriends((show) => !show)}>
-              <OpenButton isActive={showFriends}>&#9654;</OpenButton>
-              <SubTitle>Se comparer à mes amis</SubTitle>
-            </OpenButtonContainer>
-            <ButtonsContainer isActive={showFriends}>
-              {friendsScorePerThemes.map((friend) => (
-                <ButtonStyled
-                  key={friend?.pseudo}
-                  data-pseudo={friend?.pseudo}
-                  isActive={!!selectedFriends.find((c) => c === friend?.pseudo)}
-                  onClick={onSelectFriends}>
-                  {friend?.pseudo}
-                </ButtonStyled>
-              ))}
-              <InputWithLoader>
-                <FriendsInput
-                  placeholder={
-                    !!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"
-                  }
-                  value={!!loadingFriend ? null : newFriend}
-                  onChange={setNewFriendRequest}
+        <Container>
+          <Title>Thème par thème</Title>
+          <Filter
+            toggle={setShowCandidates}
+            isActive={showCandidates}
+            title="Afficher/masquer des candidats">
+            {candidatesScorePerThemes.map((candidate) => (
+              <ButtonStyled
+                key={candidate?.pseudo}
+                data-pseudo={candidate?.pseudo}
+                isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
+                onClick={onSelectCandidates}>
+                {candidate?.pseudo}
+              </ButtonStyled>
+            ))}
+          </Filter>
+          <Filter toggle={setShowFriends} isActive={showFriends} title="Se comparer à mes amis">
+            {friendsScorePerThemes.map((friend) => (
+              <ButtonStyled
+                key={friend?.pseudo}
+                data-pseudo={friend?.pseudo}
+                isActive={!!selectedFriends.find((c) => c === friend?.pseudo)}
+                onClick={onSelectFriends}>
+                {friend?.pseudo}
+              </ButtonStyled>
+            ))}
+            <InputWithLoader>
+              <FriendsInput
+                placeholder={
+                  !!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"
+                }
+                value={!!loadingFriend ? null : newFriend}
+                onChange={setNewFriendRequest}
+              />
+              <Loader size="20px" isLoading={loadingFriend} displayOnLoadingOnly />
+            </InputWithLoader>
+          </Filter>
+        </Container>
+        <PodiumContainer>
+          {selectedThemes
+            .map((themeId) => ({
+              themeId,
+              personsScore: filteredPersons?.map((c) => ({
+                _id: c._id,
+                pseudo: c.pseudo,
+                total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
+                totalMax: 100,
+              })),
+            }))
+            .map(({ personsScore, themeId }) => (
+              <ThemePodiumContainer key={themeId}>
+                <Podium
+                  personsScore={personsScore}
+                  // noPadding
+                  fullHeight
+                  title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
                 />
-                <Loader size="20px" isLoading={loadingFriend} displayOnLoadingOnly />
-              </InputWithLoader>
-            </ButtonsContainer>
-          </LeftContainer>
-          <RightContainer>
-            {selectedThemes
-              .map((themeId) => ({
-                themeId,
-                personsScore: filteredPersons?.map((c) => ({
-                  _id: c._id,
-                  pseudo: c.pseudo,
-                  total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
-                  totalMax: 100,
-                })),
-              }))
-              .map(({ personsScore, themeId }) => (
-                <ThemePodiumContainer key={themeId}>
-                  <Podium
-                    personsScore={personsScore}
-                    noPadding
-                    fullHeight
-                    title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
-                  />
-                </ThemePodiumContainer>
-              ))}
-          </RightContainer>
-        </ChartsContainer>
+              </ThemePodiumContainer>
+            ))}
+        </PodiumContainer>
+        {/* </ChartsContainer> */}
       </BackgroundContainer>
       <Loader isLoading={isLoading} withBackground />
       <ModalShare
@@ -397,38 +357,6 @@ const Container = styled.div`
   /* height: 80%; */
 `;
 
-const ChartsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  ${minMedia.desktop`
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-  `}
-  ${media.mobile`
-    flex-direction: column;
-`}
-`;
-
-const LeftContainer = styled.div`
-  position: relative;
-  > p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #111827;
-  }
-  ${minMedia.desktop`
-  width: 50%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  `}
-  ${media.mobile`
-      width: 100%;
-  `}
-`;
-
 const Title = styled.h2`
   font-family: Merriweather;
   font-weight: bold;
@@ -442,49 +370,9 @@ const ThemePodiumContainer = styled.div`
   width: 100%;
 `;
 
-const OpenButtonContainer = styled.button`
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-`;
-
-const SubTitle = styled.h3`
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: left;
-  color: #111827;
-  ${media.mobile`
-  font-size: 16px;
-`}
-`;
-
 const PodiumContainer = styled.section`
   height: 50vh;
   margin-bottom: 5vh !important;
-`;
-
-const OpenButton = styled.span`
-  margin-right: 10px;
-  border: none;
-  background-color: transparent;
-  transform: ${(props) => (props.isActive ? "rotate(90deg)" : "none")};
-  transition: transform 0.1s linear;
-  cursor: pointer;
-`;
-
-const ButtonsContainer = styled.div`
-  max-width: 500px;
-  width: auto;
-  margin-bottom: 20px;
-  display: ${(props) => (props.isActive ? "flex" : "none")};
-  grid-template-columns: auto auto auto;
-  flex-flow: row wrap;
-  grid-gap: 12px;
 `;
 
 const getBackgroundColor = ({ backgroundColor, isActive }) => {
@@ -518,15 +406,6 @@ const ButtonStyled = styled.button`
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
-`;
-
-const RightContainer = styled.div`
-  ${minMedia.desktop`
-  width: 50%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  `}
 `;
 
 const SaveContainer = styled.div`
@@ -578,12 +457,14 @@ const FriendsInput = styled.input`
   border-radius: 2px;
   font-size: 16px;
   font-weight: 300;
+  width: 100%;
   &:placeholder {
     color: rgba(17, 24, 39, 0.4);
   }
 `;
 
 const InputWithLoader = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   padding-right: 12px;

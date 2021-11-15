@@ -407,11 +407,11 @@
         "fr": "Que pensez-vous de l'immigration et de son impact sur la mixité culturelle ?",
         "help": "https://fr.wikipedia.org/wiki/Mixité_sociale#Mixité_sociale_et_mixité_ethnique",
         "answers": [
-          "Elle enrichit chacun de nous dans la société, à ce titre il faut favoriser l'immigration",
+          "Elle enrichit chacun de nous dans la société",
           "Elle fait partie de notre vie, qu'on le veuille ou non: mieux vaut l'embrasser que la redouter",
           "Je ne sais pas mais je ne suis pas contre un débat public sur la question",
           "Toute immigration n'est pas enrichissante : il faut sélectionner celle qui nous intéresse",
-          "Elle détruit notre culture locale, il faut donc empêcher ou se battre contre toute immigration",
+          "Elle détruit notre culture locale",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

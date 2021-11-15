@@ -27,9 +27,9 @@ class ApiService {
           "Content-Type": "application/json",
           Accept: "application/json",
           version,
-          retries: 3,
-          retryDelay: 1000,
         },
+        retries: 3,
+        retryDelay: 1000,
       };
 
       if (body) options.body = JSON.stringify(body);

@@ -126,10 +126,10 @@ const Stair = styled.div`
   align-items: flex-start;
   overflow: hidden;
   > span:first-of-type {
-    font-size: min(1em, ${(props) => (props.percent / 100) * 3}em);
+    font-size: min(1em, ${(props) => Math.max((props.percent / 100) * 2.5, 0.75)}em);
   }
   > span:first-of-type {
-    font-size: min(10vw, ${(props) => (props.percent / 100) * 3}em);
+    font-size: min(10vw, ${(props) => Math.max((props.percent / 100) * 2.5, 0.75)}em);
     word-break: keep-all;
   }
   &:after {
@@ -144,6 +144,8 @@ const Stair = styled.div`
     top: -80px;
   }
 `;
+
+const stairWidth = 350;
 
 const PodiumStairs = styled.div`
   flex-direction: row;
@@ -160,22 +162,22 @@ const PodiumStairs = styled.div`
   > * {
     flex-shrink: 0;
     flex-grow: 0;
-    width: calc(min(100%, 1024px) / 3.5);
+    width: calc(min(100%, ${stairWidth}px) / 3.5);
   }
   > *:nth-of-type(1) {
-    width: calc(min(100%, 1024px) / 3);
+    width: calc(min(100%, ${stairWidth}px) / 3);
     ${Stair} {
       background-color: gold;
     }
   }
   > *:nth-of-type(2) {
-    width: calc(min(100%, 1024px) / 3.4);
+    width: calc(min(100%, ${stairWidth}px) / 3.4);
     ${Stair} {
       background-color: silver;
     }
   }
   > *:nth-of-type(3) {
-    width: calc(min(100%, 1024px) / 3);
+    width: calc(min(100%, ${stairWidth}px) / 3);
     ${Stair} {
       background-color: #cd7f32;
     }
