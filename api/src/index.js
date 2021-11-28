@@ -20,8 +20,7 @@ if (process.env.NODE_ENV === "development") {
   // require("../scripts/rebuild-quizz-ids");
 }
 
-const whitelist = WHITE_LIST_DOMAINS.split(",").map((domain) => `${process.env.NODE_ENV === "development" ? "http" : "https"}://${domain}`);
-
+console.log(WHITE_LIST_DOMAINS.split(","));
 console.log({ WHITE_LIST_DOMAINS: WHITE_LIST_DOMAINS.split(",") });
 
 app.use(cors({ credentials: true, origin: WHITE_LIST_DOMAINS.split(",") }));

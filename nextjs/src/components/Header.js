@@ -62,7 +62,7 @@ const Header = () => {
           <LeftContainer>
             <Link href="/" passHref>
               <a>
-                <Logo />
+                <Logo height={32} width={32} />
               </a>
             </Link>
             <Link href="/" passHref>
@@ -117,7 +117,7 @@ const Header = () => {
                 customBurgerIcon={<img src="/burgerNav.svg" alt="mobile navigation menu" width={30} height={30} />}
               >
                 <BurgerNavHeaderContainer>
-                  <Logo />
+                  <Logo height={32} width={32} />
                   <BurgerNavTitle>Le Quizz du Berger</BurgerNavTitle>
                 </BurgerNavHeaderContainer>
                 <Fillet />

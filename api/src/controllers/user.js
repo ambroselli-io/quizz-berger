@@ -16,13 +16,13 @@ const setCookie = (req, res, user) => {
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: maxAge });
 
   const tokenConfig = {
-    maxAge: maxAge * 1000,
+    maxAge: maxAge,
+    httpOnly: true,
+    secure: true,
   };
   if (config.ENVIRONMENT === "development") {
     tokenConfig.sameSite = "None";
   } else {
-    tokenConfig.httpOnly = true;
-    tokenConfig.secure = true;
     tokenConfig.sameSite = "Lax";
   }
   res.cookie("jwt", token, tokenConfig);
