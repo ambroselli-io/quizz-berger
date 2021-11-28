@@ -13,12 +13,12 @@ export default function Home() {
       router.asPath,
       router.asPath?.includes("result"),
       router.asPath?.split("/").length > 1,
-      router.asPath?.includes("result")
+      router.asPath?.includes("all-questions")
     );
     if (router.asPath?.includes("result") && router.asPath?.split("/").length > 1) {
       router.push(router.asPath);
     }
-    if (router.asPath?.includes("result") && router.asPath?.split("/").length > 1) {
+    if (router.asPath?.includes("all-questions") && router.asPath?.split("/").length > 1) {
       router.push(router.asPath);
     }
   }, [router.asPath]);

@@ -35,7 +35,7 @@ const Result = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(!!userPseudo && !userToShow?.pseudo);
-  }, []);
+  }, [userPseudo, userToShow?.pseudo]);
 
   const [userToShow, setUserToShow] = useState(publicPage ? publicUser : user);
   const [answersToShow, setAnswersToShow] = useState(publicPage ? publicUserAnswers : userAnswers);
@@ -237,6 +237,7 @@ const Result = () => {
     setPublicUserAnswers(publicUserAnswersResponse.data);
     if (!allCandidates.length) return;
     setSelectedCandidates(allCandidates);
+    setIsLoading(false);
   };
 
   useEffect(() => {
