@@ -70,23 +70,23 @@ const Header = () => {
             </Link>
           </LeftContainer>
           <HeaderMenu>
-            <NavLink activeClassName="selected" href="/">
+            <NavLink exact href="/">
               <HeaderMenuTab>
                 <span>Accueil</span>
               </HeaderMenuTab>
             </NavLink>
-            <NavLink activeClassName="selected" href="/all-questions">
+            <NavLink href="/all-questions">
               <HeaderMenuTab>
                 <span>Voir toutes les questions</span>
               </HeaderMenuTab>
             </NavLink>
-            <NavLink activeClassName="selected" href="/themes">
+            <NavLink href="/themes">
               <HeaderMenuTab>
                 <QuizzButton>Quizz</QuizzButton>
               </HeaderMenuTab>
             </NavLink>
             {!!userIsLoggedIn && (
-              <NavLink activeClassName="selected" href="/result">
+              <NavLink href="/result">
                 <HeaderMenuTab>
                   <span>Résultats</span>
                 </HeaderMenuTab>
@@ -100,7 +100,7 @@ const Header = () => {
                 <span>{user?.pseudo ? "Se déconnecter" : "Recommencer"}</span>
               </HeaderMenuTab>
             ) : (
-              <NavLink activeClassName="selected" href="/login">
+              <NavLink href="/login">
                 <HeaderMenuTab>
                   <span>Se connecter</span>
                 </HeaderMenuTab>
@@ -122,19 +122,19 @@ const Header = () => {
                 </BurgerNavHeaderContainer>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" href="/home">
+                  <NavLink href="/home">
                     <span>Accueil</span>
                   </NavLink>
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" href="/all-questions">
+                  <NavLink href="/all-questions">
                     <span>Voir toutes les questions</span>
                   </NavLink>
                 </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink activeClassName="selected" href="/themes">
+                  <NavLink href="/themes">
                     <a>
                       <QuizzButton>Quizz</QuizzButton>
                     </a>
@@ -144,7 +144,7 @@ const Header = () => {
                   <>
                     <Fillet />
                     <BurgerMenuTab>
-                      <NavLink activeClassName="selected" href="/result">
+                      <NavLink href="/result">
                         <span>Résultats</span>
                       </NavLink>
                     </BurgerMenuTab>
@@ -157,7 +157,7 @@ const Header = () => {
                   </BurgerMenuTab>
                 ) : (
                   <BurgerMenuTab>
-                    <NavLink activeClassName="selected" href="/login">
+                    <NavLink href="/login">
                       <span>Se connecter</span>
                     </NavLink>
                   </BurgerMenuTab>

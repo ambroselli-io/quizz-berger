@@ -31,15 +31,12 @@ newCandidate: {
 
 */
 
-export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizz) => {
-  const userAnswersWithScoreLines = userAnswers.map(addScoreLinesToAnswers(quizz));
+export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizzQuestions) => {
+  const userAnswersWithScoreLines = userAnswers.map(addScoreLinesToAnswers(quizzQuestions));
 
   return candidatesAnswers
     .map((candidate) => {
-      const candidateScores = addScoreToCandidateAnswer(
-        userAnswersWithScoreLines,
-        candidate.answers
-      );
+      const candidateScores = addScoreToCandidateAnswer(userAnswersWithScoreLines, candidate.answers);
       const scorePerThemes = getScorePerTheme(candidateScores).map((theme) => {
         const max = theme.numberOfAnswers * maxScorePerAnswer;
         return {
@@ -61,12 +58,8 @@ export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quiz
     .sort((c1, c2) => (c1.total > c2.total ? -1 : 1));
 };
 
-const addScoreLinesToAnswers = (quizz) => (answer) => {
-  const theme = quizz.find((theme) => theme._id === answer.themeId);
-  const { questions } = theme;
-  const question = questions.find((q) => {
-    return q._id === answer.questionId;
-  });
+const addScoreLinesToAnswers = (quizzQuestions) => (answer) => {
+  const question = quizzQuestions.find((q) => q._id === answer.questionId);
 
   const scoreLine = question.scores[answer.answerIndex];
   return { ...answer, scoreLine };
@@ -94,9 +87,7 @@ const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) 
 
 const getScorePerTheme = (candidateScores) => {
   return candidateScores.reduce((scoresPerTheme, currentAnswer) => {
-    const existingThemeScore = scoresPerTheme.find(
-      (scorePerTheme) => scorePerTheme.themeId === currentAnswer.themeId
-    );
+    const existingThemeScore = scoresPerTheme.find((scorePerTheme) => scorePerTheme.themeId === currentAnswer.themeId);
 
     if (existingThemeScore) {
       return scoresPerTheme.map((themeScore) => {

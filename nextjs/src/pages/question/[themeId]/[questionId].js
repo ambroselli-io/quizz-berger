@@ -20,13 +20,11 @@ const Quizz = () => {
   );
 
   useEffect(() => {
-    console.log("1");
     setCurrentAnswerIndex(userAnswers.find((a) => a.questionId === questionId)?.answerIndex);
   }, [questionId]);
 
   const [theme, setTheme] = useState(quizz.find((theme) => theme._id === themeId) || { questions: [] } || {});
   useEffect(() => {
-    console.log("2");
     if (themeId) setTheme(quizz.find((theme) => theme._id === themeId));
   }, [quizz, themeId]);
 
@@ -35,7 +33,6 @@ const Quizz = () => {
   const [questionIndex, setQuestionIndex] = useState(questions.findIndex((question) => question._id === questionId));
   const [question, setQuestion] = useState(questions[questionIndex]);
   useEffect(() => {
-    console.log("3");
     const newIndex = questions.findIndex((question) => question._id === questionId);
     setQuestionIndex(newIndex);
     setQuestion(questions[newIndex]);
@@ -43,7 +40,6 @@ const Quizz = () => {
 
   const [showHelp, setShowHelp] = useState(!!question?.help);
   useEffect(() => {
-    console.log("4");
     setShowHelp(!!question?.help);
   }, [question]);
 
@@ -51,13 +47,11 @@ const Quizz = () => {
     ...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set()),
   ]);
   useEffect(() => {
-    console.log("5");
     setUserThemes([...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set())]);
   }, [userAnswers]);
 
   const [showResultsButton, setShowResultsButton] = useState(false);
   useEffect(() => {
-    console.log("6");
     setShowResultsButton(userThemes.length > 2);
   }, [userThemes]);
 
@@ -92,7 +86,6 @@ const Quizz = () => {
   };
 
   useEffect(() => {
-    console.log("7");
     if (!!questionId) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [questionId]);
 

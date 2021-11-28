@@ -1,9 +1,17 @@
 import { useRouter } from "next/router";
-import PropTypes from "prop-types";
 import Link from "next/link";
 import React, { Children } from "react";
 
-const NavLink = ({ children, activeClassName, ...props }) => {
+const getActiveClassName = (pathname, href, exact) => {
+  if (exact) {
+    if (pathname === href) return "selected";
+    return "";
+  }
+  if (pathname.includes(href)) return "selected";
+  return "";
+};
+
+const NavLink = ({ children, exact, ...props }) => {
   const { asPath } = useRouter();
   const child = Children.only(children);
   const childClassName = child.props.className || "";
@@ -11,10 +19,7 @@ const NavLink = ({ children, activeClassName, ...props }) => {
   // pages/index.js will be matched via props.href
   // pages/about.js will be matched via props.href
   // pages/[slug].js will be matched via props.as
-  const className =
-    asPath === props.href || asPath === props.as
-      ? `${childClassName} ${activeClassName}`.trim()
-      : childClassName;
+  const className = `${childClassName} ${getActiveClassName(asPath, props.href, exact)}`.trim();
 
   return (
     <Link {...props}>
@@ -23,10 +28,6 @@ const NavLink = ({ children, activeClassName, ...props }) => {
       })}
     </Link>
   );
-};
-
-NavLink.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
 };
 
 export default NavLink;

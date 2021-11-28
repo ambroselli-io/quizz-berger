@@ -7,6 +7,12 @@ const { withSentryConfig } = require("@sentry/nextjs");
 
 const moduleExports = {
   // Your existing module.exports
+  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+    return {
+      "/": { page: "/" },
+      "/all-questions": { page: "/all-questions" },
+    };
+  },
   reactStrictMode: true,
   images: {
     loader: "imgix",

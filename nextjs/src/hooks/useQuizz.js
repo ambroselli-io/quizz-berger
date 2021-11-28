@@ -61,6 +61,9 @@ const enrichedQuizz = quizz.map((theme, index) => ({
 
 const quizzForSearch = formatQuizzForSearch(enrichedQuizz);
 const quizzDownload = formatQuizzText(quizz);
+const quizzQuestions = quizz.reduce((questions, theme) => {
+  return [...questions, ...theme.questions];
+}, []);
 
 // const useQuizz = () => {
 //   // const { data } = useSWR(API.getUrl("/quizz"));
@@ -77,6 +80,7 @@ const useQuizz = () => ({
   quizz: enrichedQuizz,
   quizzForSearch,
   quizzDownload,
+  quizzQuestions,
 });
 
 export default useQuizz;

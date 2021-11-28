@@ -22,7 +22,7 @@ import Filter from "../../components/Filter";
 const Result = () => {
   const { user } = useUser();
   const { userAnswers } = useUserAnswers();
-  const { quizz } = useQuizz();
+  const { quizz, quizzQuestions } = useQuizz();
   const { candidates } = useCandidates();
   const { friends, mutateFriends } = useFriends();
   const router = useRouter();
@@ -76,10 +76,6 @@ const Result = () => {
   const [selectedThemes, setSelectedThemes] = useState(() => {
     const allThemes = userThemes;
     return allThemes;
-    // if (publicPage) return allThemes;
-    // const previousThemesSelected = getFromSessionStorage("selectedThemes", []);
-    // if (!previousThemesSelected.length) return allThemes;
-    // if (userThemes.length !== previousThemesSelected.length) return previousThemesSelected;
   });
 
   const [title, setTitle] = useState();
@@ -159,10 +155,10 @@ const Result = () => {
           ...c,
           answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
         })),
-        quizz
+        quizzQuestions
       )
     );
-  }, [answersToShow, selectedThemes, candidates, quizz]);
+  }, [answersToShow, selectedThemes, candidates, quizzQuestions]);
 
   const [friendsScorePerThemes, setFriendsScorePerThemes] = useState([]);
   useEffect(() => {
@@ -173,10 +169,10 @@ const Result = () => {
           ...f,
           answers: f.answers.filter((a) => selectedThemes.includes(a.themeId)),
         })),
-        quizz
+        quizzQuestions
       )
     );
-  }, [answersToShow, selectedThemes, friends.length, quizz]);
+  }, [answersToShow, selectedThemes, friends.length, quizzQuestions]);
 
   const [filteredPersons, setFilteredPersons] = useState([]);
   useEffect(() => {
