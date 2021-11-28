@@ -8,6 +8,10 @@ const { withSentryConfig } = require("@sentry/nextjs");
 const moduleExports = {
   // Your existing module.exports
   reactStrictMode: true,
+  images: {
+    loader: "imgix",
+    path: "",
+  },
 };
 
 const sentryWebpackPluginOptions = {
