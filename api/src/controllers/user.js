@@ -21,9 +21,8 @@ const setCookie = (req, res, user) => {
   if (config.ENVIRONMENT === "development") {
     tokenConfig.sameSite = "None";
   } else {
-    tokenConfig.httpOnly = "quizz-du-berger.com";
-    tokenConfig.secure = "quizz-du-berger.com";
-    tokenConfig.domain = "quizz-du-berger.com";
+    tokenConfig.httpOnly = true;
+    tokenConfig.secure = true;
     tokenConfig.sameSite = "Lax";
   }
   res.cookie("jwt", token, tokenConfig);

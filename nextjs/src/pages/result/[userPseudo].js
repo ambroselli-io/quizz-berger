@@ -34,6 +34,7 @@ const Result = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
+    console.log("11");
     setIsLoading(!!userPseudo && !userToShow?.pseudo);
   }, []);
 
@@ -42,11 +43,13 @@ const Result = () => {
   const [userThemes, setUserThemes] = useState(getUserThemes(answersToShow));
 
   useEffect(() => {
+    console.log("12");
     setUserToShow(publicPage ? publicUser : user);
     setAnswersToShow(publicPage ? publicUserAnswers : userAnswers);
   }, [publicUser, publicUserAnswers, publicPage]);
 
   useEffect(() => {
+    console.log("13");
     setUserThemes(getUserThemes(answersToShow));
   }, [answersToShow]);
 
@@ -57,6 +60,7 @@ const Result = () => {
 
   const [showSaveButton, setShowSaveButton] = useState(false);
   useEffect(() => {
+    console.log("14");
     setShowSaveButton(!userToShow?.pseudo);
   }, [userToShow]);
 
@@ -89,6 +93,7 @@ const Result = () => {
   };
 
   useEffect(() => {
+    console.log("1");
     setTitle(computeTitle());
   }, [publicPage, userToShow]);
 
@@ -148,6 +153,7 @@ const Result = () => {
 
   const [candidatesScorePerThemes, setCandidatesScorePerThemes] = useState([]);
   useEffect(() => {
+    console.log("2");
     setCandidatesScorePerThemes(
       getCandidatesScorePerThemes(
         answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
@@ -162,6 +168,7 @@ const Result = () => {
 
   const [friendsScorePerThemes, setFriendsScorePerThemes] = useState([]);
   useEffect(() => {
+    console.log("3");
     setFriendsScorePerThemes(
       getCandidatesScorePerThemes(
         answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
@@ -176,6 +183,7 @@ const Result = () => {
 
   const [filteredPersons, setFilteredPersons] = useState([]);
   useEffect(() => {
+    console.log("4");
     setFilteredPersons([
       ...candidatesScorePerThemes.filter((candidate) => selectedCandidates.includes(candidate?.pseudo)),
       ...friendsScorePerThemes.filter((friend) => selectedFriends.includes(friend?.pseudo)),
@@ -185,6 +193,7 @@ const Result = () => {
   const [podiumsPerTheme, setPodiumsPerTheme] = useState([]);
 
   useEffect(() => {
+    console.log("5");
     setPodiumsPerTheme(
       selectedThemes.map((themeId) => ({
         themeId,
@@ -199,6 +208,7 @@ const Result = () => {
   }, [selectedThemes, filteredPersons]);
 
   useEffect(() => {
+    console.log("6");
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
       setToSessionStorage("selectedCandidates", selectedCandidates);
     } else {
@@ -207,6 +217,7 @@ const Result = () => {
   }, [selectedCandidates.length]);
 
   useEffect(() => {
+    console.log("7");
     if (userThemes.length !== selectedThemes.length) {
       setToSessionStorage("selectedThemes", selectedThemes);
     } else {
@@ -227,14 +238,17 @@ const Result = () => {
   };
 
   useEffect(() => {
+    console.log("8");
     if (userPseudo) getPublicUser();
   }, [userPseudo]);
 
   useEffect(() => {
+    console.log("9");
     if (userPseudo) setSelectedCandidates(allCandidates);
   }, [candidates.length]);
 
   useEffect(() => {
+    console.log("10");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
