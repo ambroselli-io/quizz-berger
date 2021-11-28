@@ -1,13 +1,23 @@
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react/cjs/react.development";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import { media } from "../styles/mediaQueries";
 
 export default function Home() {
   const router = useRouter();
+
+  useEffect(() => {
+    console.log(router.asPath, router.asPath.includes("result").includes("result"),router.asPath.split("/").length > 1, router.asPath.includes("result")e.includes("all-questions"));
+    if (router.asPath.includes("result") && router.asPath.split("/").length > 1) {
+      router.push(router.asPath);
+    }
+    if (router.asPath.includes("result") && router.asPath.split("/").length > 1) {
+      router.push(router.asPath);
+    }
+  }, [router.asPath]);
+
   return (
     <>
       <BackgroundContainer>

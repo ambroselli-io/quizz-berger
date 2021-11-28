@@ -12,7 +12,6 @@ const useUser = ({ redirectOnLoggedOut = "", redirectOnLoggedIn, from } = {}) =>
   const user = data && data.ok ? { ...data.user, isLoggedIn: true } : { isLoggedIn: false };
 
   useEffect(() => {
-    console.log("BOLOS");
     if (redirectOnLoggedOut && !isLoading && !user.isLoggedIn) {
       router.push(redirectOnLoggedOut);
     }
