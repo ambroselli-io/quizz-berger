@@ -31,13 +31,13 @@ const Result = () => {
 
   const [publicUser, setPublicUser] = useState({});
   const [publicUserAnswers, setPublicUserAnswers] = useState([]);
+  const [userToShow, setUserToShow] = useState(publicPage ? publicUser : user);
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(!!userPseudo && !userToShow?.pseudo);
   }, [userPseudo, userToShow?.pseudo]);
 
-  const [userToShow, setUserToShow] = useState(publicPage ? publicUser : user);
   const [answersToShow, setAnswersToShow] = useState(publicPage ? publicUserAnswers : userAnswers);
   const [userThemes, setUserThemes] = useState(getUserThemes(answersToShow));
 
