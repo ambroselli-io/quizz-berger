@@ -185,12 +185,7 @@ const Result = () => {
       ...candidatesScorePerThemes.filter((candidate) => selectedCandidates.includes(candidate?.pseudo)),
       ...friendsScorePerThemes.filter((friend) => selectedFriends.includes(friend?.pseudo)),
     ]);
-  }, [
-    candidatesScorePerThemes.length,
-    friendsScorePerThemes.length,
-    selectedCandidates.length,
-    selectedFriends.length,
-  ]);
+  }, [candidatesScorePerThemes, friendsScorePerThemes, selectedCandidates.length, selectedFriends.length]);
 
   const [podiumsPerTheme, setPodiumsPerTheme] = useState([]);
 
@@ -225,16 +220,13 @@ const Result = () => {
   }, [selectedThemes.length]);
 
   const getPublicUser = async () => {
-    console.log("GET PUCLIB USER");
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
-    console.log("GET PUCLIB USER", { publicUserResponse });
     if (!publicUserResponse.ok) return router.push("/");
     setPublicUser(publicUserResponse.data);
     const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
-    console.log("GET PUCLIB USER", { publicUserAnswersResponse });
     if (!publicUserAnswersResponse.ok) return router.push("/");
-    setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
     setPublicUserAnswers(publicUserAnswersResponse.data);
+    setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
     if (!allCandidates.length) return;
     setSelectedCandidates(allCandidates);
     setIsLoading(false);
