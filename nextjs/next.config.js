@@ -12,6 +12,7 @@ const moduleExports = {
     loader: "imgix",
     path: "",
   },
+  trailingSlash: true,
 };
 
 const sentryWebpackPluginOptions = {
