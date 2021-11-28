@@ -20,17 +20,17 @@ import QuizzButton from "../../components/QuizzButton";
 import Filter from "../../components/Filter";
 
 const Result = () => {
+  const router = useRouter();
+  const { userPseudo } = router.query;
+  const publicPage = !!userPseudo;
   const { user } = useUser();
   const { userAnswers } = useUserAnswers();
   const { quizz, quizzQuestions } = useQuizz();
   const { candidates } = useCandidates();
   const { friends, mutateFriends } = useFriends();
-  const router = useRouter();
-  const { userPseudo } = router.query;
 
   const [publicUser, setPublicUser] = useState({});
   const [publicUserAnswers, setPublicUserAnswers] = useState([]);
-  const publicPage = !!userPseudo;
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -45,6 +45,10 @@ const Result = () => {
     setUserToShow(publicPage ? publicUser : user);
     setAnswersToShow(publicPage ? publicUserAnswers : userAnswers);
   }, [publicUser, publicUserAnswers, publicPage]);
+
+  useEffect(() => {
+    throw new Error("test");
+  }, []);
 
   useEffect(() => {
     setUserThemes(getUserThemes(answersToShow));
