@@ -8,15 +8,20 @@ import { media } from "../styles/mediaQueries";
 export default function Home() {
   const router = useRouter();
 
-  // useEffect(() => {
-  //   console.log(router.asPath, router.asPath.includes("result").includes("result"),router.asPath.split("/").length > 1, router.asPath.includes("result").includes("all-questions"));
-  //   if (router.asPath.includes("result") && router.asPath.split("/").length > 1) {
-  //     router.push(router.asPath);
-  //   }
-  //   if (router.asPath.includes("result") && router.asPath.split("/").length > 1) {
-  //     router.push(router.asPath);
-  //   }
-  // }, [router.asPath]);
+  useEffect(() => {
+    console.log(
+      router.asPath,
+      router.asPath?.includes("result"),
+      router.asPath?.split("/").length > 1,
+      router.asPath?.includes("result")
+    );
+    if (router.asPath?.includes("result") && router.asPath?.split("/").length > 1) {
+      router.push(router.asPath);
+    }
+    if (router.asPath?.includes("result") && router.asPath?.split("/").length > 1) {
+      router.push(router.asPath);
+    }
+  }, [router.asPath]);
 
   return (
     <>

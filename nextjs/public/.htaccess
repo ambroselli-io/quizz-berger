@@ -8,8 +8,6 @@
   Options -MultiViews
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^result/(.*)$ /result/$1 [R=301,NC,L]
-  RewriteRule ^all-questions/(.*)$ /all-questions/$1 [R=301,NC,L]
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
