@@ -17,12 +17,12 @@ const setCookie = (req, res, user) => {
 
   const tokenConfig = {
     maxAge: maxAge * 1000,
-    httpOnly: true,
-    secure: true,
   };
   if (config.ENVIRONMENT === "development") {
     tokenConfig.sameSite = "None";
   } else {
+    tokenConfig.httpOnly = "quizz-du-berger.com";
+    tokenConfig.secure = "quizz-du-berger.com";
     tokenConfig.domain = "quizz-du-berger.com";
     tokenConfig.sameSite = "Lax";
   }
@@ -73,6 +73,17 @@ router.post(
   })
 );
 
+router.get(
+  "/signin_token",
+  passport.authenticate("user", { session: false }),
+  catchErrors(async (req, res) => {
+    const { user } = req;
+    user.set({ lastLoginAt: Date.now() });
+    await user.save();
+    res.send({ ok: true, token: value.token, user: user.me() });
+  })
+);
+
 router.post(
   "/logout",
   catchErrors(async (req, res) => {
@@ -118,11 +129,11 @@ router.put(
   })
 );
 
-router.get(
+router.post(
   "/me",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
-    res.status(200).send({ ok: true, data: req.user.me() });
+    res.status(200).send({ ok: true, user: req.user.me() });
   })
 );
 

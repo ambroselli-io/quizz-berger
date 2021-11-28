@@ -16,6 +16,7 @@ const Schema = new mongoose.Schema(
     partyName: { type: String },
     isCandidate: { type: Boolean, default: false, index: true },
     friends: { type: [{ type: mongoose.Types.ObjectId, ref: "User", index: true }], default: [] },
+    lastLogineAt: { type: Date },
   },
   { timestamps: true }
 );

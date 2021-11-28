@@ -1,44 +1,64 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { getCandidatesScorePerThemes } from "../utils/score";
-import { media, minMedia } from "../styles/mediaQueries";
-import UserContext from "../contexts/user";
-import DataContext from "../contexts/data";
-import { getFromSessionStorage, setToSessionStorage } from "../utils/storage";
-import ModalLogin from "../components/ModalLogin";
-import ModalShare from "../components/ModalShare";
-import { useHistory, useParams } from "react-router";
-import API from "../services/api";
-import Loader from "../components/Loader";
-import getUserThemes from "../utils/getUserThemes";
-import Podium from "../components/Podium";
-import QuizzButton from "../components/QuizzButton";
-import Filter from "./Filter";
+import { useRouter } from "next/router";
+import { media, minMedia } from "../../styles/mediaQueries";
+import { getCandidatesScorePerThemes } from "../../utils/score";
+import { getFromSessionStorage, setToSessionStorage } from "../../utils/storage";
+import getUserThemes from "../../utils/getUserThemes";
+import API from "../../services/api";
+import useUser from "../../hooks/useUser";
+import useQuizz from "../../hooks/useQuizz";
+import useCandidates from "../../hooks/useCandidates";
+import useFriends from "../../hooks/useFriends";
+import useUserAnswers from "../../hooks/useUserAnswers";
+import ModalLogin from "../../components/ModalLogin";
+import ModalShare from "../../components/ModalShare";
+import Loader from "../../components/Loader";
+import Podium from "../../components/Podium";
+import QuizzButton from "../../components/QuizzButton";
+import Filter from "../../components/Filter";
 
 const Result = () => {
-  const userContext = useContext(UserContext);
-  const { quizz, candidates, getFriends, friends /* getCandidates */ } = useContext(DataContext);
-  const { userPseudo } = useParams();
-  const history = useHistory();
+  const { user } = useUser();
+  const { userAnswers } = useUserAnswers();
+  const { quizz } = useQuizz();
+  const { candidates } = useCandidates();
+  const { friends, mutateFriends } = useFriends();
+  const router = useRouter();
+  const { userPseudo } = router.query;
+
   const [publicUser, setPublicUser] = useState({});
   const [publicUserAnswers, setPublicUserAnswers] = useState([]);
-
   const publicPage = !!userPseudo;
 
-  const user = publicPage ? publicUser : userContext.user;
-  const userAnswers = publicPage ? publicUserAnswers : userContext.userAnswers;
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setIsLoading(!!userPseudo && !userToShow?.pseudo);
+  }, []);
 
-  const userThemes = getUserThemes(userAnswers);
+  const [userToShow, setUserToShow] = useState(publicPage ? publicUser : user);
+  const [answersToShow, setAnswersToShow] = useState(publicPage ? publicUserAnswers : userAnswers);
+  const [userThemes, setUserThemes] = useState(getUserThemes(answersToShow));
+
+  useEffect(() => {
+    setUserToShow(publicPage ? publicUser : user);
+    setAnswersToShow(publicPage ? publicUserAnswers : userAnswers);
+  }, [publicUser, publicUserAnswers, publicPage]);
+
+  useEffect(() => {
+    setUserThemes(getUserThemes(answersToShow));
+  }, [answersToShow]);
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [showCandidates, setShowCandidates] = useState(
-    Boolean(getFromSessionStorage("selectedCandidates", false))
-  );
-  const [showFriends, setShowFriends] = useState(
-    Boolean(getFromSessionStorage("selectedFriends", false))
-  );
+  const [showCandidates, setShowCandidates] = useState(Boolean(getFromSessionStorage("selectedCandidates", false)));
+  const [showFriends, setShowFriends] = useState(Boolean(getFromSessionStorage("selectedFriends", false)));
+
+  const [showSaveButton, setShowSaveButton] = useState(false);
+  useEffect(() => {
+    setShowSaveButton(!userToShow?.pseudo);
+  }, [userToShow]);
 
   const [newFriend, setNewFriend] = useState("");
   const [loadingFriend, setLoadingFriend] = useState(false);
@@ -61,6 +81,20 @@ const Result = () => {
     // if (!previousThemesSelected.length) return allThemes;
     // if (userThemes.length !== previousThemesSelected.length) return previousThemesSelected;
   });
+
+  const [title, setTitle] = useState();
+  const computeTitle = () => {
+    if (!publicPage && !userToShow?.pseudo) return "Voici vos résultats";
+    const name = userToShow?.pseudo?.charAt(0).toUpperCase() + userToShow?.pseudo?.slice(1);
+    if (!!publicPage) {
+      return `Voici les résultats de ${name}`;
+    }
+    return `${name}, voici vos résultats`;
+  };
+
+  useEffect(() => {
+    setTitle(computeTitle());
+  }, [publicPage, userToShow]);
 
   const onSelectCandidates = (e) => {
     const pseudo = e.target.dataset.pseudo;
@@ -86,26 +120,22 @@ const Result = () => {
   const setNewFriendRequest = async (e) => {
     const newName = e.target.value;
     setNewFriend(e.target.value);
-    if (
-      newName?.length < 3 ||
-      allFriends.includes(newName) ||
-      userContext?.user?.pseudo === newName
-    ) {
+    if (newName?.length < 3 || allFriends.includes(newName) || userToShow?.pseudo === newName) {
       setLoadingFriend(false);
       return clearTimeout(newFriendTimeout.current);
     }
     newFriendTimeout.current = setTimeout(async () => {
       setLoadingFriend(true);
-      const response = await API.get({ path: `/user/friends/${newName}` });
+      const response = await API.get({ path: `/userToShow/friends/${newName}` });
       if (response.ok) {
         if (window.confirm(`Voulez-vous ajouter ${response.data.pseudo} à vos amis ?`)) {
           setLoadingFriend(true);
           await API.put({
-            path: "/user",
-            body: { friends: [...(userContext?.user.friends || []), response.data] },
+            path: "/userToShow",
+            body: { friends: [...(userToShow?.friends || []), response.data] },
           });
           setSelectedFriends([...selectedFriends, response.data.pseudo]);
-          await getFriends();
+          await mutateFriends();
           setLoadingFriend(false);
           setNewFriend("");
         } else {
@@ -113,45 +143,64 @@ const Result = () => {
         }
       } else {
         setLoadingFriend(false);
-        if (response.code === "NOT_PUBLIC")
-          alert(
-            `${newName} n'a pas cliqué sur "Partager" en haut à droite de cette page. Demandez-lui !`
-          );
+        if (response.code === "NOT_PUBLIC") {
+          alert(`${newName} n'a pas cliqué sur "Partager" en haut à droite de cette page. Demandez-lui !`);
+        }
       }
     }, 500);
   };
 
-  const candidatesScorePerThemes = getCandidatesScorePerThemes(
-    userAnswers.filter((a) => selectedThemes.includes(a.themeId)),
-    candidates.map((c) => ({
-      ...c,
-      answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
-    })),
-    quizz
-  );
+  const [candidatesScorePerThemes, setCandidatesScorePerThemes] = useState([]);
+  useEffect(() => {
+    setCandidatesScorePerThemes(
+      getCandidatesScorePerThemes(
+        answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
+        candidates.map((c) => ({
+          ...c,
+          answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
+        })),
+        quizz
+      )
+    );
+  }, [answersToShow, selectedThemes, candidates, quizz]);
 
-  const friendsScorePerThemes = getCandidatesScorePerThemes(
-    userAnswers.filter((a) => selectedThemes.includes(a.themeId)),
-    friends.map((f) => ({
-      ...f,
-      answers: f.answers.filter((a) => selectedThemes.includes(a.themeId)),
-    })),
-    quizz
-  );
+  const [friendsScorePerThemes, setFriendsScorePerThemes] = useState([]);
+  useEffect(() => {
+    setFriendsScorePerThemes(
+      getCandidatesScorePerThemes(
+        answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
+        friends.map((f) => ({
+          ...f,
+          answers: f.answers.filter((a) => selectedThemes.includes(a.themeId)),
+        })),
+        quizz
+      )
+    );
+  }, [answersToShow, selectedThemes, friends.length, quizz]);
 
-  const filteredPersons = [
-    ...candidatesScorePerThemes.filter((candidate) =>
-      selectedCandidates.includes(candidate?.pseudo)
-    ),
-    ...friendsScorePerThemes.filter((friend) => selectedFriends.includes(friend?.pseudo)),
-  ];
+  const [filteredPersons, setFilteredPersons] = useState([]);
+  useEffect(() => {
+    setFilteredPersons([
+      ...candidatesScorePerThemes.filter((candidate) => selectedCandidates.includes(candidate?.pseudo)),
+      ...friendsScorePerThemes.filter((friend) => selectedFriends.includes(friend?.pseudo)),
+    ]);
+  }, [candidatesScorePerThemes, friendsScorePerThemes, selectedCandidates, selectedFriends]);
 
-  const personsScore = filteredPersons.map((c) => ({
-    _id: c._id,
-    pseudo: c.pseudo,
-    total: c.total,
-    totalMax: c.totalMax,
-  }));
+  const [podiumsPerTheme, setPodiumsPerTheme] = useState([]);
+
+  useEffect(() => {
+    setPodiumsPerTheme(
+      selectedThemes.map((themeId) => ({
+        themeId,
+        personsScore: filteredPersons?.map((c) => ({
+          _id: c._id,
+          pseudo: c.pseudo,
+          total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
+          totalMax: 100,
+        })),
+      }))
+    );
+  }, [selectedThemes, filteredPersons]);
 
   useEffect(() => {
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
@@ -169,18 +218,15 @@ const Result = () => {
     }
   }, [selectedThemes.length]);
 
-  useEffect(() => {
-    getFriends();
-  }, []);
-
   const getPublicUser = async () => {
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
-    if (!publicUserResponse.ok) return history.push("/");
+    if (!publicUserResponse.ok) return router.push("/");
     setPublicUser(publicUserResponse.data);
     const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
-    if (!publicUserAnswersResponse.ok) return history.push("/");
+    if (!publicUserAnswersResponse.ok) return router.push("/");
     setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
     setPublicUserAnswers(publicUserAnswersResponse.data);
+    if (!allCandidates.length) return;
     setSelectedCandidates(allCandidates);
   };
 
@@ -192,17 +238,6 @@ const Result = () => {
     if (userPseudo) setSelectedCandidates(allCandidates);
   }, [candidates.length]);
 
-  const renderTitle = () => {
-    if (!publicPage && !user?.pseudo) return "Voici vos résultats";
-    const name = user?.pseudo?.charAt(0).toUpperCase() + user?.pseudo?.slice(1);
-    if (!!publicPage) {
-      return `Voici les résultats de ${name}`;
-    }
-    return `${name}, voici vos résultats`;
-  };
-
-  const isLoading = !!publicPage && !user?.pseudo;
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -212,39 +247,50 @@ const Result = () => {
       <BackgroundContainer>
         <Container>
           <Header>
-            <Title>{renderTitle()}</Title>
+            <Title>{title}</Title>
           </Header>
         </Container>
         <PodiumContainer>
-          <Podium fullHeight personsScore={personsScore} />
+          <Podium
+            fullHeight
+            personsScore={filteredPersons.map((c) => ({
+              _id: c._id,
+              pseudo: c.pseudo,
+              total: c.total,
+              totalMax: c.totalMax,
+            }))}
+          />
         </PodiumContainer>
         <TipContainer>
           {!publicPage && (
             <SaveContainer>
-              {!user?.pseudo && (
+              {!!showSaveButton && (
                 <>
                   <SaveButton
                     onClick={() => {
                       setShowLoginModal(true);
                       document.body.style.overflow = "hidden";
-                    }}>
+                    }}
+                  >
                     Enregistrer
                   </SaveButton>
                 </>
               )}
               <SaveButton
                 onClick={() => {
-                  if (!user?.pseudo) setShowLoginModal(true);
+                  if (!userToShow?.pseudo) setShowLoginModal(true);
                   setShowShareModal(true);
                   document.body.style.overflow = "hidden";
-                }}>
+                }}
+              >
                 Partager
               </SaveButton>
               <SaveButton
                 onClick={() => {
                   setShowFriends(true);
                   document.body.style.overflow = "hidden";
-                }}>
+                }}
+              >
                 Se comparer à mes amis
               </SaveButton>
             </SaveContainer>
@@ -253,39 +299,32 @@ const Result = () => {
         </TipContainer>
         <Container>
           <Title>Thème par thème</Title>
-          <Filter
-            toggle={setShowCandidates}
-            isActive={showCandidates}
-            title="Afficher/masquer des candidats">
+          <Filter toggle={setShowCandidates} isActive={showCandidates} title="Afficher/masquer des candidats">
             {candidatesScorePerThemes.map((candidate) => (
               <ButtonStyled
                 key={candidate?.pseudo}
                 data-pseudo={candidate?.pseudo}
                 isActive={!!selectedCandidates.find((c) => c === candidate?.pseudo)}
-                onClick={onSelectCandidates}>
+                onClick={onSelectCandidates}
+              >
                 {candidate?.pseudo}
               </ButtonStyled>
             ))}
           </Filter>
-          <Filter
-            toggle={setShowFriends}
-            isActive={showFriends}
-            title="Se comparer à mes amis"
-            hideTitle>
+          <Filter toggle={setShowFriends} isActive={showFriends} title="Se comparer à mes amis" hideTitle>
             {friendsScorePerThemes.map((friend) => (
               <ButtonStyled
                 key={friend?.pseudo}
                 data-pseudo={friend?.pseudo}
                 isActive={!!selectedFriends.find((c) => c === friend?.pseudo)}
-                onClick={onSelectFriends}>
+                onClick={onSelectFriends}
+              >
                 {friend?.pseudo}
               </ButtonStyled>
             ))}
             <InputWithLoader>
               <FriendsInput
-                placeholder={
-                  !!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"
-                }
+                placeholder={!!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
                 value={!!loadingFriend ? "" : newFriend}
                 onChange={setNewFriendRequest}
               />
@@ -294,30 +333,20 @@ const Result = () => {
           </Filter>
         </Container>
         <PodiumContainer>
-          {selectedThemes
-            .map((themeId) => ({
-              themeId,
-              personsScore: filteredPersons?.map((c) => ({
-                _id: c._id,
-                pseudo: c.pseudo,
-                total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
-                totalMax: 100,
-              })),
-            }))
-            .map(({ personsScore, themeId }) => (
-              <ThemePodiumContainer key={themeId}>
-                <Podium
-                  personsScore={personsScore}
-                  // noPadding
-                  fullHeight
-                  title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
-                />
-              </ThemePodiumContainer>
-            ))}
+          {podiumsPerTheme.map(({ personsScore, themeId }) => (
+            <ThemePodiumContainer key={themeId}>
+              <Podium
+                personsScore={personsScore}
+                // noPadding
+                fullHeight
+                title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}
+              />
+            </ThemePodiumContainer>
+          ))}
         </PodiumContainer>
         {/* </ChartsContainer> */}
       </BackgroundContainer>
-      <Loader isLoading={isLoading} withBackground />
+      <Loader isLoading={isLoading} withBackground size="15vh" />
       <ModalShare
         isActive={showShareModal}
         onCloseModal={(e) => {

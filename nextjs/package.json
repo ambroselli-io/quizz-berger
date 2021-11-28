@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8083",
+    "build": "next build",
+    "start": "next start"
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^6.15.0",
+    "dayjs": "^1.10.7",
+    "fetch-retry": "^5.0.1",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.19.5",
+    "react-modal": "^3.14.4",
+    "styled-components": "^5.3.3",
+    "swr": "^1.0.1",
+    "urijs": "^1.19.7"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.13.3",
+    "babel-preset-next": "^1.4.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.3"
+  }
+}

@@ -1,4 +1,4 @@
-import { getUserResultScoreLines } from "../utils/score";
+import { getUserResultScoreLines } from "../src/utils/score";
 
 describe("test score calculation", () => {
   test("test normal", () => {
@@ -33,8 +33,7 @@ describe("test score calculation", () => {
         user: "612f426534efc4204fbad515",
         theme: "Entreprises, emploi et économie",
         themeId: "theme2",
-        question:
-          "Pensez-vous qu'il faut endurcir les critères d'accès à l'assurance chômage ?",
+        question: "Pensez-vous qu'il faut endurcir les critères d'accès à l'assurance chômage ?",
         questionIndex: 2,
         answer: "Moyennement",
         answerIndex: 1,
@@ -84,8 +83,7 @@ describe("test score calculation", () => {
         user: "612f426534efc4204fbad515",
         theme: "Gouvernance et république",
         themeId: "theme5",
-        question:
-          "Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
+        question: "Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
         questionIndex: 0,
         answer: "Moyennement",
         answerIndex: 1,
@@ -97,8 +95,7 @@ describe("test score calculation", () => {
         user: "612f426534efc4204fbad515",
         theme: "Gouvernance et république",
         themeId: "theme5",
-        question:
-          "Que pensez-vous du recours au référendum par le Président de la République ?",
+        question: "Que pensez-vous du recours au référendum par le Président de la République ?",
         questionIndex: 1,
         answer: "Moyennement",
         answerIndex: 1,
@@ -110,8 +107,7 @@ describe("test score calculation", () => {
         user: "612f426534efc4204fbad515",
         theme: "Gouvernance et république",
         themeId: "theme5",
-        question:
-          "Que pensez-vous de la représentativité de nos députés et sénateurs ?",
+        question: "Que pensez-vous de la représentativité de nos députés et sénateurs ?",
         questionIndex: 2,
         answer: "Moyennement",
         answerIndex: 1,
@@ -151,8 +147,7 @@ describe("test score calculation", () => {
         user: "61372714aba6dd580e026caf",
         theme: "Entreprises, emploi et économie",
         themeId: "theme2",
-        question:
-          "Pensez-vous qu'il faut endurcir les critères d'accès à l'assurance chômage ?",
+        question: "Pensez-vous qu'il faut endurcir les critères d'accès à l'assurance chômage ?",
         questionIndex: 2,
         answer: "Totalement",
         answerIndex: 0,
@@ -202,8 +197,7 @@ describe("test score calculation", () => {
         user: "61372714aba6dd580e026caf",
         theme: "Gouvernance et république",
         themeId: "theme5",
-        question:
-          "Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
+        question: "Que pensez vous du régime de la Cinquième République et de sa Constitution ?",
         questionIndex: 0,
         answer: "Totalement",
         answerIndex: 0,
@@ -215,8 +209,7 @@ describe("test score calculation", () => {
         user: "61372714aba6dd580e026caf",
         theme: "Gouvernance et république",
         themeId: "theme5",
-        question:
-          "Que pensez-vous du recours au référendum par le Président de la République ?",
+        question: "Que pensez-vous du recours au référendum par le Président de la République ?",
         questionIndex: 1,
         answer: "Totalement",
         answerIndex: 0,
@@ -228,8 +221,7 @@ describe("test score calculation", () => {
         user: "61372714aba6dd580e026caf",
         theme: "Gouvernance et république",
         themeId: "theme5",
-        question:
-          "Que pensez-vous de la représentativité de nos députés et sénateurs ?",
+        question: "Que pensez-vous de la représentativité de nos députés et sénateurs ?",
         questionIndex: 2,
         answer: "Totalement",
         answerIndex: 0,
