@@ -47,10 +47,6 @@ const Result = () => {
   }, [publicUser, publicUserAnswers, publicPage]);
 
   useEffect(() => {
-    throw new Error("test");
-  }, []);
-
-  useEffect(() => {
     setUserThemes(getUserThemes(answersToShow));
   }, [answersToShow]);
 
@@ -254,6 +250,14 @@ const Result = () => {
 
   return (
     <>
+      <button
+        type="button"
+        onClick={() => {
+          throw new Error("Sentry Frontend Error");
+        }}
+      >
+        Throw error
+      </button>
       <BackgroundContainer>
         <Container>
           <Header>
