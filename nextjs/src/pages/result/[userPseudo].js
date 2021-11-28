@@ -225,10 +225,13 @@ const Result = () => {
   }, [selectedThemes.length]);
 
   const getPublicUser = async () => {
+    console.log("GET PUCLIB USER");
     const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
+    console.log("GET PUCLIB USER", { publicUserResponse });
     if (!publicUserResponse.ok) return router.push("/");
     setPublicUser(publicUserResponse.data);
     const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
+    console.log("GET PUCLIB USER", { publicUserAnswersResponse });
     if (!publicUserAnswersResponse.ok) return router.push("/");
     setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
     setPublicUserAnswers(publicUserAnswersResponse.data);
@@ -250,14 +253,6 @@ const Result = () => {
 
   return (
     <>
-      <button
-        type="button"
-        onClick={() => {
-          throw new Error("Sentry Frontend Error");
-        }}
-      >
-        Throw error
-      </button>
       <BackgroundContainer>
         <Container>
           <Header>
