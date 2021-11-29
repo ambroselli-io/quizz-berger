@@ -20,13 +20,12 @@ const NavLink = ({ children, exact, ...props }) => {
   // pages/about.js will be matched via props.href
   // pages/[slug].js will be matched via props.as
   const className = `${childClassName} ${getActiveClassName(asPath, props.href, exact)}`.trim();
-  console.log({ pathname: asPath, href: props.href, exact }, getActiveClassName(asPath, props.href, exact), className);
 
   return (
     <Link {...props}>
       {React.cloneElement(child, {
         className: className || null,
-        key: className || null,
+        key: `${asPath}-${className}`,
       })}
     </Link>
   );
