@@ -17,11 +17,13 @@ import { useSWRConfig } from "swr";
 const Header = () => {
   const { mutate } = useSWRConfig();
   const { user } = useUser({ from: "Header" });
+  const router = useRouter();
+  const { userPseudo } = router.query;
+  const publicPage = !!userPseudo;
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const router = useRouter();
 
   const onLogout = async () => {
     await API.post({ path: "/user/logout" });
@@ -85,7 +87,7 @@ const Header = () => {
                 <QuizzButton>Quizz</QuizzButton>
               </HeaderMenuTab>
             </NavLink>
-            {!!userIsLoggedIn && (
+            {(!!userIsLoggedIn || !!publicPage) && (
               <NavLink href="/result">
                 <HeaderMenuTab>
                   <span>Résultats</span>
@@ -122,7 +124,7 @@ const Header = () => {
                 </BurgerNavHeaderContainer>
                 <Fillet />
                 <BurgerMenuTab>
-                  <NavLink href="/home">
+                  <NavLink exact href="/">
                     <span>Accueil</span>
                   </NavLink>
                 </BurgerMenuTab>
@@ -140,7 +142,7 @@ const Header = () => {
                     </a>
                   </NavLink>
                 </BurgerMenuTab>
-                {!!userIsLoggedIn && (
+                {(!!userIsLoggedIn || !!publicPage) && (
                   <>
                     <Fillet />
                     <BurgerMenuTab>

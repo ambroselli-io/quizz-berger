@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { Children } from "react";
 
 const getActiveClassName = (pathname, href, exact) => {
+  console.log({ pathname, href, exact });
   if (exact) {
     if (pathname === href) return "selected";
     return "";

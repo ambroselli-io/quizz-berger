@@ -5,7 +5,6 @@
   RewriteRule ^(.*)$ https://www.quizz-du-berger.com/$1 [R=301,L]
 </IfModule>
 <IfModule mod_rewrite.c>
-  Options -MultiViews
   RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
