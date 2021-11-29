@@ -26,6 +26,7 @@ const NavLink = ({ children, exact, ...props }) => {
     <Link {...props}>
       {React.cloneElement(child, {
         className: className || null,
+        key: className || null,
       })}
     </Link>
   );
