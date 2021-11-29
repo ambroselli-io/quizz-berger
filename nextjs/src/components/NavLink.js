@@ -3,7 +3,6 @@ import Link from "next/link";
 import React, { Children } from "react";
 
 const getActiveClassName = (pathname, href, exact) => {
-  console.log({ pathname, href, exact }, exact && pathname === href, pathname.includes(href));
   if (exact) {
     if (pathname === href) return "selected";
     return "";
@@ -21,6 +20,7 @@ const NavLink = ({ children, exact, ...props }) => {
   // pages/about.js will be matched via props.href
   // pages/[slug].js will be matched via props.as
   const className = `${childClassName} ${getActiveClassName(asPath, props.href, exact)}`.trim();
+  console.log({ pathname: asPath, href: props.href, exact }, getActiveClassName(asPath, props.href, exact), className);
 
   return (
     <Link {...props}>
