@@ -36,6 +36,7 @@ export const FormTextArea = styled.textarea`
   border: 1px solid #e5e7eb;
   border-radius: 2px;
   font-size: 16px;
+  flex-grow: 1;
   font-weight: 300;
   resize: none;
   &:placeholder {

@@ -16,6 +16,7 @@ import ModalFirstThemeSelection from "../components/ModalFirstThemeSelection";
 import ModalLastThemeSelection from "../components/ModalLastThemeSelection";
 import ModalAccessToResults from "../components/ModalAccessToResults";
 import useUserAnswers from "../hooks/useUserAnswers";
+import Banner from "../components/Banner";
 
 const filterBySearch = (search, quizzForSearch) => (theme, index) => {
   if (!search) return true;
@@ -143,6 +144,7 @@ const ThemeSelect = () => {
           />
           {/* </Footer> */}
         </SubContainer>
+        <Banner />
       </BackgroundContainer>
       <ModalFirstThemeSelection
         isActive={showModal === "theme-select_first"}

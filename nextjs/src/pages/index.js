@@ -9,12 +9,6 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(
-      router.asPath,
-      router.asPath?.includes("result"),
-      router.asPath?.split("/").length > 1,
-      router.asPath?.includes("all-questions")
-    );
     if (router.asPath?.includes("result") && router.asPath?.split("/").length > 1) {
       router.push(router.asPath);
     }

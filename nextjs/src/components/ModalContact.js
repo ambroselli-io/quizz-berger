@@ -7,7 +7,7 @@ import Button from "./Button";
 import Modal from "./Modal";
 import useUser from "../hooks/useUser";
 
-const ModalContact = ({ isActive, onCloseModal, onForceCloseContactModal }) => {
+const ModalContact = ({ title = "Nous contacter", isActive, onCloseModal, onForceCloseContactModal, children }) => {
   const { user } = useUser();
 
   const [{ pseudo, email, message }, setState] = useState({
@@ -50,14 +50,35 @@ const ModalContact = ({ isActive, onCloseModal, onForceCloseContactModal }) => {
   };
 
   return (
-    <Modal title="Nous contacter" isActive={isActive} onCloseModal={onCloseModal}>
+    <Modal title={title} isActive={isActive} onCloseModal={onCloseModal}>
+      {children}
       <FormStyled noPadding onSubmit={onFormSubmit}>
         <FormLabel>Nom/pseudo *</FormLabel>
-        <FormInput type="text" name="pseudo" autocomplete="name" placeholder="Votre nom / pseudo" onChange={onChange} value={pseudo} required />
+        <FormInput
+          type="text"
+          name="pseudo"
+          autocomplete="name"
+          placeholder="Votre nom / pseudo"
+          onChange={onChange}
+          value={pseudo}
+          required
+        />
         <FormLabel>Email</FormLabel>
-        <FormInput type="email" name="email" autocomplete="email" placeholder="Votre email" onChange={onChange} value={email} />
+        <FormInput
+          type="email"
+          name="email"
+          autocomplete="email"
+          placeholder="Votre email"
+          onChange={onChange}
+          value={email}
+        />
         <FormLabel>Votre message *</FormLabel>
-        <FormTextArea name="message" rows="10" onChange={onChange} value={message} placeholder="Un commentaire ? Une suggestion ?" />
+        <FormTextArea
+          name="message"
+          onChange={onChange}
+          value={message}
+          placeholder="Un commentaire ? Une suggestion ?"
+        />
         <ButtonContainer>
           <Button disabled={isLoading} withLoader isLoading={isLoading} type="submit">
             Envoyer

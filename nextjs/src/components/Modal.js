@@ -5,7 +5,7 @@ import { media } from "../styles/mediaQueries";
 const Modal = ({ title, isActive, onCloseModal, children, center = false }) => {
   return (
     <>
-      <BackgroundContainer isActive={isActive} onClick={onCloseModal}>
+      <BackgroundContainer className="modal-container" isActive={isActive} onClick={onCloseModal}>
         <ModalContainer>
           <TitleContainer>
             <Title>{title}</Title>

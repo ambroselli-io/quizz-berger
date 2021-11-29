@@ -18,6 +18,7 @@ import Loader from "../../components/Loader";
 import Podium from "../../components/Podium";
 import QuizzButton from "../../components/QuizzButton";
 import Filter from "../../components/Filter";
+import Banner from "../../components/Banner";
 
 const Result = () => {
   const router = useRouter();
@@ -334,7 +335,7 @@ const Result = () => {
             </InputWithLoader>
           </Filter>
         </Container>
-        <PodiumContainer>
+        <PodiumContainer as="aside">
           {podiumsPerTheme.map(({ personsScore, themeId }) => (
             <ThemePodiumContainer key={themeId}>
               <Podium
@@ -347,6 +348,11 @@ const Result = () => {
           ))}
         </PodiumContainer>
         {/* </ChartsContainer> */}
+        <Banner>
+          En construction.
+          <br />
+          Envie d'aider ?
+        </Banner>
       </BackgroundContainer>
       <Loader isLoading={isLoading} withBackground size="15vh" />
       <ModalShare
@@ -386,11 +392,13 @@ const BackgroundContainer = styled.div`
     padding: 3vh 10px 1px 10px;
   `}
 
-  > div {
+  > div:not(.modal-container) {
     margin: 0 auto 2vh;
     max-width: 1024px;
   }
-  > section {
+  > section,
+  main,
+  aside {
     margin: 0 -10px;
   }
 `;
@@ -412,7 +420,7 @@ const ThemePodiumContainer = styled.div`
   width: 100%;
 `;
 
-const PodiumContainer = styled.section`
+const PodiumContainer = styled.main`
   height: 50vh;
   margin-bottom: 5vh !important;
 `;
