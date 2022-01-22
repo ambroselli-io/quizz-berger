@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import Loader from "../../components/Loader";
 import { media } from "../../styles/mediaQueries";
 import getUserThemes from "../../utils/getUserThemes";
@@ -51,6 +52,9 @@ const AllQuestions = () => {
 
   return (
     <>
+      <Head>
+        <title>Toutes les questions | Le Quizz du Berger</title>
+      </Head>
       <BackgroundContainer mobile>
         <SubContainer>
           <Title>Cet écran n'est disponible que sur ordinateur, désolé !</Title>

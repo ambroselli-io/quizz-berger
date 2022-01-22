@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 import { media } from "../styles/mediaQueries";
 
@@ -12,6 +13,9 @@ const LoginPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Connectez-vous | Le Quizz du Berger</title>
+      </Head>
       <BackGroundContainer>
         <LoginContainer onSuccess={() => router.push("/themes")} title="Connectez-vous" />
       </BackGroundContainer>

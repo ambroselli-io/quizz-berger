@@ -48,9 +48,8 @@ router.get(
       return {
         _id: candidate._id,
         pseudo: candidate.pseudo,
-        firstName: candidate.firstName,
-        lastName: candidate.lastName,
-        partyName: candidate.partyName,
+        picture: candidate.picture,
+        color: candidate.color,
         isCandidate: candidate.isCandidate,
         themes: candidate.themes,
         answers: candidatesAnswers.filter((answers) => candidate._id.equals(answers.user)),

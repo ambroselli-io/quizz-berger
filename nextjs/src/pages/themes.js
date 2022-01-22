@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-
+import Head from "next/head";
 import { media } from "../styles/mediaQueries";
 import API from "../services/api";
 import { normalizeWord } from "../utils/diacritics";
@@ -113,6 +113,9 @@ const ThemeSelect = () => {
 
   return (
     <>
+      <Head>
+        <title>{titleCaption} | Le Quizz du Berger</title>
+      </Head>
       <BackgroundContainer>
         <SubContainer>
           <Title>{titleCaption}</Title>

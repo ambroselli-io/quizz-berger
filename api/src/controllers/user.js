@@ -14,7 +14,6 @@ const JWT_MIN_AGE = 1000 * 60 * 60 * 3; // 3 hours in ms
 const setCookie = (req, res, user) => {
   const maxAge = user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE;
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: maxAge });
-
   const tokenConfig = {
     maxAge: maxAge,
     httpOnly: true,
@@ -26,6 +25,19 @@ const setCookie = (req, res, user) => {
     tokenConfig.sameSite = "Lax";
   }
   res.cookie("jwt", token, tokenConfig);
+};
+
+const logoutCookieOptions = () => {
+  const tokenConfig = {
+    httpOnly: true,
+    secure: true,
+  };
+  if (config.ENVIRONMENT === "development") {
+    tokenConfig.sameSite = "None";
+  } else {
+    tokenConfig.sameSite = "Lax";
+  }
+  return tokenConfig;
 };
 
 router.post(
@@ -86,7 +98,7 @@ router.get(
 router.post(
   "/logout",
   catchErrors(async (req, res) => {
-    res.clearCookie("jwt", {});
+    res.clearCookie("jwt", logoutCookieOptions());
     res.status(200).send({ ok: true });
   })
 );
@@ -95,8 +107,6 @@ router.post(
   "/",
   catchErrors(async (req, res) => {
     const user = await UserObject.create({});
-
-    console.log("new one", { user });
 
     setCookie(req, res, user);
 
@@ -133,6 +143,8 @@ router.post(
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
     res.status(200).send({ ok: true, user: req.user.me() });
+    req.user.set({ lastLoginAt: Date.now() });
+    await req.user.save();
   })
 );
 

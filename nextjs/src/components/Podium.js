@@ -28,6 +28,12 @@ const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
                         pseudos: [...c.pseudos, candidate.pseudo].sort((pseudo1, pseudo2) =>
                           pseudo1.localeCompare(pseudo2)
                         ),
+                        pictures: [...c.pictures, candidate.picture].sort((pseudo1, pseudo2) =>
+                          pseudo1.localeCompare(pseudo2)
+                        ),
+                        colors: [...c.colors, candidate.color].sort((pseudo1, pseudo2) =>
+                          pseudo1.localeCompare(pseudo2)
+                        ),
                       }
                 ),
                 newHighest,
@@ -39,6 +45,8 @@ const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
                   {
                     ...candidate,
                     pseudos: [candidate.pseudo],
+                    pictures: [candidate.picture],
+                    colors: [candidate.color],
                   },
                 ],
                 newHighest,
@@ -72,30 +80,42 @@ const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
   }, [podiumised]);
 
   return (
-    <Background noPadding={noPadding} withTitle={withTitle}>
-      {!!withTitle && <Title>{title}</Title>}
-      <PodiumStairs>
-        {podiumised.map(({ pseudos, height, percent }) => (
-          <Step key={height}>
-            <StairContainer>
-              <Stair height={height} percent={percent}>
-                <span>{percent}%</span>
-              </Stair>
-            </StairContainer>
-            <Pseudos maxPersons={maxPersons}>
-              {pseudos.map((pseudo) => (
-                <React.Fragment key={pseudo}>
-                  <Link href={`/all-questions/${pseudo}`} passHref>
-                    <Candidate>{pseudo}</Candidate>
-                  </Link>
-                  <br />
-                </React.Fragment>
-              ))}
-            </Pseudos>
-          </Step>
-        ))}
-      </PodiumStairs>
-    </Background>
+    <>
+      <Background noPadding={noPadding} withTitle={withTitle}>
+        {!!withTitle && <Title>{title}</Title>}
+        <PodiumStairs>
+          {podiumised.map(({ pseudos, pictures, height, percent, colors }) => (
+            <React.Fragment key={height}>
+              <Step>
+                <StairContainer>
+                  <Stair stairHeight={height} percent={percent}>
+                    <span>{percent}%</span>
+                  </Stair>
+                  <Avatars stairHeight={height}>
+                    {pictures.filter(Boolean).map((pic, index) => (
+                      <Avatar
+                        candidateColor={colors[index]}
+                        src={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${pic}`}
+                      />
+                    ))}
+                  </Avatars>
+                </StairContainer>
+                <Pseudos maxPersons={maxPersons}>
+                  {pseudos.map((pseudo) => (
+                    <React.Fragment key={pseudo}>
+                      <Link href={`/all-questions/${pseudo}`} passHref>
+                        <Candidate>{pseudo}</Candidate>
+                      </Link>
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </Pseudos>
+              </Step>
+            </React.Fragment>
+          ))}
+        </PodiumStairs>
+      </Background>
+    </>
   );
 };
 
@@ -104,6 +124,8 @@ const Background = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  overflow-y: visible;
+
   ${(props) => props.withTitle && "margin-top: 50px;"}
   ${(props) => props.withTitle && "border-bottom: 1px solid #ddd;"}
   ${(props) => props.withTitle && "padding-bottom: 10px;"}
@@ -123,8 +145,8 @@ const StairContainer = styled.div`
 `;
 
 const Stair = styled.div`
-  height: ${(props) => props.height}%;
-  background-color: rgba(205, 127, 50, ${(props) => props.height / 100});
+  height: ${(props) => props.stairHeight}%;
+  background-color: rgba(205, 127, 50, ${(props) => props.stairHeight / 100});
   display: flex;
   flex-direction: column;
   border-top-left-radius: 8px;
@@ -164,8 +186,11 @@ const PodiumStairs = styled.div`
   padding-left: max(10px, calc((100% - 1024px) / 2));
   ${(props) => props.noPadding && "padding-left: 0;"}
   padding-bottom: 16px; // scrollbar
-  overflow-x: auto;
-  overflow-y: hidden;
+  /* overflow-x: auto; */
+  /* overflow-y: visible; */
+  /* z-index: 20; */
+
+  /* overflow-y: auto; */
   > * {
     flex-shrink: 0;
     flex-grow: 0;
@@ -206,6 +231,7 @@ const Step = styled.div`
   justify-content: flex-end;
   align-items: stretch;
   height: 100%;
+  overflow-y: visible;
 `;
 
 const Title = styled.h3`
@@ -225,4 +251,26 @@ const Candidate = styled.span`
     text-decoration: underline;
   }
 `;
+
+const Avatars = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: calc(${(props) => props.stairHeight}% - 20px);
+  left: 0;
+  right: 0;
+`;
+
+const Avatar = styled.img`
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border: 2px solid ${(props) => props.candidateColor};
+  background-color: ${(props) => props.candidateColor};
+  :not(:last-of-type) {
+    margin-right: -15px;
+  }
+`;
+
 export default Podium;

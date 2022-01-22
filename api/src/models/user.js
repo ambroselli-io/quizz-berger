@@ -6,7 +6,8 @@ const Schema = new mongoose.Schema(
     pseudo: { type: String, trim: true, unique: true, sparse: true },
     password: { type: String },
     themes: { type: [String], default: [] },
-
+    picture: String,
+    color: String,
     /* to allow sharing answers publicly */
     isPublic: { type: Boolean, default: false },
 
@@ -16,7 +17,7 @@ const Schema = new mongoose.Schema(
     partyName: { type: String },
     isCandidate: { type: Boolean, default: false, index: true },
     friends: { type: [{ type: mongoose.Types.ObjectId, ref: "User", index: true }], default: [] },
-    lastLogineAt: { type: Date },
+    lastLoginAt: { type: Date },
   },
   { timestamps: true }
 );
@@ -32,6 +33,8 @@ Schema.methods.me = function () {
     isCandidate: this.isCandidate,
     friends: this.friends,
     isPublic: this.isCandidate || this.isPublic,
+    picture: this.picture,
+    color: this.color,
   };
 };
 

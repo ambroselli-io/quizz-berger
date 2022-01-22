@@ -10,6 +10,7 @@ const { globalErrorHandler } = require("./utils/error");
 const { PORT, WHITE_LIST_DOMAINS } = require("./config.js");
 
 require("./mongo");
+require("./utils/picture");
 
 // Put together a schema
 const app = express();

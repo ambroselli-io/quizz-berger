@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { media } from "../../../styles/mediaQueries";
 
 import useQuizz from "../../../hooks/useQuizz";
@@ -91,6 +92,9 @@ const Quizz = () => {
 
   return (
     <>
+      <Head>
+        <title>{title} | Le Quizz du Berger</title>
+      </Head>
       <ThemeHeaderContainer backgroundColor={theme.backgroundColor}>
         <ThemeNavigationContainer>
           <ThemeNavigationButton onClick={goToThemes} visible>

@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { media, minMedia } from "../../styles/mediaQueries";
 import { getCandidatesScorePerThemes } from "../../utils/score";
 import { getFromSessionStorage, setToSessionStorage } from "../../utils/storage";
@@ -32,24 +33,20 @@ const Result = () => {
 
   const [publicUser, setPublicUser] = useState({});
   const [publicUserAnswers, setPublicUserAnswers] = useState([]);
-  const [userToShow, setUserToShow] = useState(publicPage ? publicUser : user);
+
+  const userToShow = useMemo(() => (publicPage ? publicUser : user), [publicUser, publicUserAnswers, publicPage]);
+  const answersToShow = useMemo(
+    () => (publicPage ? publicUserAnswers : userAnswers),
+    [publicUser, publicUserAnswers, publicPage]
+  );
 
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     setIsLoading(!!userPseudo && !userToShow?.pseudo);
   }, [userPseudo, userToShow?.pseudo]);
 
-  const [answersToShow, setAnswersToShow] = useState(publicPage ? publicUserAnswers : userAnswers);
-  const [userThemes, setUserThemes] = useState(getUserThemes(answersToShow));
-
-  useEffect(() => {
-    setUserToShow(publicPage ? publicUser : user);
-    setAnswersToShow(publicPage ? publicUserAnswers : userAnswers);
-  }, [publicUser, publicUserAnswers, publicPage]);
-
-  useEffect(() => {
-    setUserThemes(getUserThemes(answersToShow));
-  }, [answersToShow]);
+  const userThemes = useMemo(() => getUserThemes(answersToShow), [answersToShow]);
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
@@ -64,8 +61,9 @@ const Result = () => {
   const [newFriend, setNewFriend] = useState("");
   const [loadingFriend, setLoadingFriend] = useState(false);
 
-  const allCandidates = candidates.map((c) => c.pseudo);
-  const allFriends = friends.map((c) => c.pseudo);
+  const allCandidates = useMemo(() => candidates.map((c) => c.pseudo), [candidates]);
+  const allFriends = useMemo(() => friends.map((c) => c.pseudo), [friends]);
+
   const [selectedCandidates, setSelectedCandidates] = useState(() => {
     if (publicPage) return allCandidates;
     return getFromSessionStorage("selectedCandidates", allCandidates);
@@ -79,18 +77,13 @@ const Result = () => {
     return allThemes;
   });
 
-  const [title, setTitle] = useState();
-  const computeTitle = () => {
+  const title = useMemo(() => {
     if (!publicPage && !userToShow?.pseudo) return "Voici vos résultats";
     const name = userToShow?.pseudo?.charAt(0).toUpperCase() + userToShow?.pseudo?.slice(1);
     if (!!publicPage) {
       return `Voici les résultats de ${name}`;
     }
     return `${name}, voici vos résultats`;
-  };
-
-  useEffect(() => {
-    setTitle(computeTitle());
   }, [publicPage, userToShow]);
 
   const onSelectCandidates = (e) => {
@@ -147,9 +140,8 @@ const Result = () => {
     }, 500);
   };
 
-  const [candidatesScorePerThemes, setCandidatesScorePerThemes] = useState([]);
-  useEffect(() => {
-    setCandidatesScorePerThemes(
+  const candidatesScorePerThemes = useMemo(
+    () =>
       getCandidatesScorePerThemes(
         answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
         candidates.map((c) => ({
@@ -157,18 +149,17 @@ const Result = () => {
           answers: c.answers.filter((a) => selectedThemes.includes(a.themeId)),
         })),
         quizzQuestions
-      )
-    );
-  }, [
-    JSON.stringify(answersToShow),
-    JSON.stringify(selectedThemes),
-    JSON.stringify(candidates),
-    JSON.stringify(quizzQuestions),
-  ]);
+      ),
+    [
+      JSON.stringify(answersToShow),
+      JSON.stringify(selectedThemes),
+      JSON.stringify(candidates),
+      JSON.stringify(quizzQuestions),
+    ]
+  );
 
-  const [friendsScorePerThemes, setFriendsScorePerThemes] = useState([]);
-  useEffect(() => {
-    setFriendsScorePerThemes(
+  const friendsScorePerThemes = useMemo(
+    () =>
       getCandidatesScorePerThemes(
         answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
         friends.map((f) => ({
@@ -176,33 +167,33 @@ const Result = () => {
           answers: f.answers.filter((a) => selectedThemes.includes(a.themeId)),
         })),
         quizzQuestions
-      )
-    );
-  }, [answersToShow, selectedThemes, friends.length, quizzQuestions]);
+      ),
+    [answersToShow, selectedThemes, friends.length, quizzQuestions]
+  );
 
-  const [filteredPersons, setFilteredPersons] = useState([]);
-  useEffect(() => {
-    setFilteredPersons([
+  const filteredPersons = useMemo(
+    () => [
       ...candidatesScorePerThemes.filter((candidate) => selectedCandidates.includes(candidate?.pseudo)),
       ...friendsScorePerThemes.filter((friend) => selectedFriends.includes(friend?.pseudo)),
-    ]);
-  }, [candidatesScorePerThemes, friendsScorePerThemes, selectedCandidates.length, selectedFriends.length]);
+    ],
+    [candidatesScorePerThemes, friendsScorePerThemes, selectedCandidates.length, selectedFriends.length]
+  );
 
-  const [podiumsPerTheme, setPodiumsPerTheme] = useState([]);
-
-  useEffect(() => {
-    setPodiumsPerTheme(
+  const podiumsPerTheme = useMemo(
+    () =>
       selectedThemes.map((themeId) => ({
         themeId,
         personsScore: filteredPersons?.map((c) => ({
           _id: c._id,
           pseudo: c.pseudo,
+          picture: c.picture,
+          color: c.color,
           total: c.scorePerThemes?.find((score) => themeId === score.themeId)?.percent,
           totalMax: 100,
         })),
-      }))
-    );
-  }, [selectedThemes, filteredPersons]);
+      })),
+    [selectedThemes, filteredPersons]
+  );
 
   useEffect(() => {
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
@@ -247,6 +238,9 @@ const Result = () => {
 
   return (
     <>
+      <Head>
+        <title>{title} | Le Quizz du Berger</title>
+      </Head>
       <BackgroundContainer>
         <Container>
           <Header>
@@ -259,6 +253,8 @@ const Result = () => {
             personsScore={filteredPersons.map((c) => ({
               _id: c._id,
               pseudo: c.pseudo,
+              picture: c.picture,
+              color: c.color,
               total: c.total,
               totalMax: c.totalMax,
             }))}
@@ -422,6 +418,7 @@ const ThemePodiumContainer = styled.div`
 
 const PodiumContainer = styled.main`
   height: 50vh;
+  overflow-y: visible;
   margin-bottom: 5vh !important;
 `;
 
