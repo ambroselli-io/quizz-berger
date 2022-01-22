@@ -93,7 +93,9 @@ const Quizz = () => {
   return (
     <>
       <Head>
-        <title>{title} | Le Quizz du Berger</title>
+        <title>
+          {question?.fr} - {theme.fr} | Le Quizz du Berger
+        </title>
       </Head>
       <ThemeHeaderContainer backgroundColor={theme.backgroundColor}>
         <ThemeNavigationContainer>
