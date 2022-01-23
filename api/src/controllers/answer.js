@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 const passport = require("passport");
+const fetch = require("node-fetch");
 const UserObject = require("../models/user");
 const AnswerObject = require("../models/answer");
 const { catchErrors } = require("../utils/error");
@@ -11,6 +12,7 @@ const nodeHtmlToImage = require("node-html-to-image");
 const { uploadBuffer } = require("../utils/picture");
 const { quizz } = require("quizz-du-berger-shared");
 const { getPodium, getCandidatesScorePerThemes } = require("quizz-du-berger-shared");
+const { getPicName } = require("quizz-du-berger-shared");
 const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);
@@ -95,7 +97,7 @@ router.get(
 router.get(
   "/",
   passport.authenticate("user", { session: false }),
-  catchErrors(async (req, res) => {
+  catchErrors(async (req, res, next) => {
     const userAnswers = await AnswerObject.find({ user: req.user._id }).lean();
 
     res.status(200).send({ ok: true, data: userAnswers });
@@ -112,6 +114,14 @@ router.get(
     }));
 
     const podiumData = getPodium(personsScore, true).filter((_, i) => i < 6);
+
+    const picName = getPicName(podiumData);
+
+    const existingPic = await fetch(`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${picName}.png`);
+
+    if (existingPic.status < 300) {
+      return next();
+    }
 
     const html = fs.readFileSync(path.resolve("./src/views/result.html"), "utf8");
 
@@ -146,10 +156,23 @@ router.get(
 
     const image = await nodeHtmlToImage({
       html: newHtml,
+      puppeteerArgs: {
+        args: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-dev-shm-usage",
+          "--disable-accelerated-2d-canvas",
+          "--no-first-run",
+          "--headless",
+          "--no-zygote",
+          "--disable-gpu",
+        ],
+        headless: true,
+        ignoreHTTPSErrors: true,
+      },
     });
-    console.log({ newHtml });
-    const uploaded = await uploadBuffer(image, "test-2.png");
-    console.log({ uploaded });
+
+    const uploaded = await uploadBuffer(image, `${picName}.png`);
   })
 );
 

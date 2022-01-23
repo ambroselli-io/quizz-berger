@@ -1,4 +1,10 @@
-exports.getMaxPersons = (podiumised) => podiumised.reduce((maxPersons, step) => Math.max(step.pseudos?.length, maxPersons), 0);
+exports.getMaxPersons = (podiumised) =>
+  podiumised.reduce((maxPersons, step) => Math.max(step.pseudos?.length, maxPersons), 0);
+
+exports.getPicName = (podiumised) =>
+  podiumised
+    .map((data) => `${data.total}${data.pictures.map((pic) => pic.slice(0, 2)).join("")}`)
+    .join("");
 
 exports.getPodium = (personsScore, fullHeight) =>
   personsScore
@@ -13,9 +19,15 @@ exports.getPodium = (personsScore, fullHeight) =>
                 ? c
                 : {
                     ...c,
-                    pseudos: [...c.pseudos, candidate.pseudo].sort((pseudo1, pseudo2) => pseudo1.localeCompare(pseudo2)),
-                    pictures: [...c.pictures, candidate.picture].sort((pseudo1, pseudo2) => pseudo1.localeCompare(pseudo2)),
-                    colors: [...c.colors, candidate.color].sort((pseudo1, pseudo2) => pseudo1.localeCompare(pseudo2)),
+                    pseudos: [...c.pseudos, candidate.pseudo].sort((pseudo1, pseudo2) =>
+                      pseudo1.localeCompare(pseudo2)
+                    ),
+                    pictures: [...c.pictures, candidate.picture].sort((pseudo1, pseudo2) =>
+                      pseudo1.localeCompare(pseudo2)
+                    ),
+                    colors: [...c.colors, candidate.color].sort((pseudo1, pseudo2) =>
+                      pseudo1.localeCompare(pseudo2)
+                    ),
                   }
             ),
             newHighest,
@@ -49,7 +61,10 @@ exports.getPodium = (personsScore, fullHeight) =>
       return {
         ...c,
         percent: c.totalMax === 0 ? 0 : Math.round((c.total / c.totalMax) * 100),
-        height: c.totalMax === 0 ? 0 : Math.round((c.total / (fullHeight ? c.highest : c.totalMax)) * 100),
+        height:
+          c.totalMax === 0
+            ? 0
+            : Math.round((c.total / (fullHeight ? c.highest : c.totalMax)) * 100),
       };
     })
     .sort((c1, c2) => (c1.percent > c2.percent ? -1 : 1));
