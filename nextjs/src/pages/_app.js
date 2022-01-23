@@ -11,6 +11,30 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Le Quizz du Berger</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#101827" />
+        <meta
+          name="description"
+          content="QUI est mon candidat idéal ? Répondez de façon anonyme aux questions pour connaître les candidats qui se rapprochent le plus de vos idées, et faites votre choix !"
+        />
+        <meta property="og:title" content="Le Quizz du Berger - QUI sont vos candidats pour les Présidentielles 2022" />
+        <meta property="og:url" content="https://www.quizz-du-berger.com/" />
+        <meta
+          property="og:description"
+          content="QUI est mon candidat idéal ? Répondez de façon anonyme aux questions pour connaître les candidats qui se rapprochent le plus de vos idées, et faites votre choix !"
+        />
+
+        <meta property="og:image" content="https://www.quizz-du-berger.com/og_1200_630.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Copie de la page d'accueil du Quizz du Berger: QUI est mon candidat idéal ?"
+        />
+
+        <meta property="og:type" content="article" />
+        <title>Le Quizz du Berger - QUI sont vos candidats pour les Présidentielles 2022</title>
       </Head>
       <SWRConfig value={swrConfigOptions}>
         <GlobalStyle path={router.asPath} />

@@ -46,7 +46,7 @@ const Result = ({ publicUser, publicUserAnswers }) => {
     [publicUser, publicUserAnswers, publicPage]
   );
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!!userPseudo && !userToShow?.pseudo);
 
   useEffect(() => {
     setIsLoading(!!userPseudo && !userToShow?.pseudo);

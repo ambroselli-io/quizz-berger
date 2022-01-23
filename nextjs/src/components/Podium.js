@@ -146,7 +146,7 @@ const StairContainer = styled.div`
 `;
 
 const Stair = styled.div`
-  height: ${(props) => props.stairHeight}%;
+  height: calc(${(props) => props.stairHeight}% - 20px);
   background-color: rgba(205, 127, 50, ${(props) => props.stairHeight / 100});
   display: flex;
   flex-direction: column;
@@ -187,11 +187,7 @@ const PodiumStairs = styled.div`
   padding-left: max(10px, calc((100% - 1024px) / 2));
   ${(props) => props.noPadding && "padding-left: 0;"}
   padding-bottom: 16px; // scrollbar
-  /* overflow-x: auto; */
-  /* overflow-y: visible; */
-  /* z-index: 20; */
-
-  /* overflow-y: auto; */
+  overflow-x: auto;
   > * {
     flex-shrink: 0;
     flex-grow: 0;
@@ -236,7 +232,7 @@ const Step = styled.div`
 `;
 
 const Title = styled.h3`
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: Merriweather;
   font-weight: bold;
   font-size: 20px;
@@ -258,7 +254,7 @@ const Avatars = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: calc(${(props) => props.stairHeight}% - 20px);
+  bottom: calc(${(props) => props.stairHeight}% - 40px);
   left: 0;
   right: 0;
 `;

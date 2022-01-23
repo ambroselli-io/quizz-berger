@@ -66,7 +66,7 @@ const BannerStyled = styled.button`
   left: 0;
   top: 0;
   background-color: #facc15;
-  display: block;
+  display: ${process.env.NODE_ENV === "production" ? "block" : "none"};
   padding: 4px 120px;
   text-align: center;
   transform: rotate(-45deg) translateX(-30%);
