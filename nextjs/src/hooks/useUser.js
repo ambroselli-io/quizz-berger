@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 import API from "../services/api";
 
-const useUser = ({ redirectOnLoggedOut = "", redirectOnLoggedIn, from } = {}) => {
+const useUser = ({ redirectOnLoggedOut = "", redirectOnLoggedIn } = {}) => {
   const { data, mutate, error } = useSWR(API.getUrl("/user/me"), API.swrFetcher("POST"));
 
   const router = useRouter();

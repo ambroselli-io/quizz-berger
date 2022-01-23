@@ -138,7 +138,12 @@ const ThemeSelect = () => {
               return <ThemeButton key={theme._id} theme={theme} userAnswers={userAnswers} onClick={goToQuizz} />;
             })}
           </ThemesContainer>
-          <SearchInput placeholder="Recherchez par mot-clé" value={search} onChange={onSearchChange} />
+          <SearchInput
+            placeholder="Recherchez par mot-clé"
+            autoComplete="off"
+            value={search}
+            onChange={onSearchChange}
+          />
           {/* <Footer> */}
           <Button
             disabled={buttonCaption !== "Voir les résultats"}

@@ -57,7 +57,7 @@ const ModalContact = ({ title = "Nous contacter", isActive, onCloseModal, onForc
         <FormInput
           type="text"
           name="pseudo"
-          autocomplete="name"
+          autoComplete="name"
           placeholder="Votre nom / pseudo"
           onChange={onChange}
           value={pseudo}
@@ -67,7 +67,7 @@ const ModalContact = ({ title = "Nous contacter", isActive, onCloseModal, onForc
         <FormInput
           type="email"
           name="email"
-          autocomplete="email"
+          autoComplete="email"
           placeholder="Votre email"
           onChange={onChange}
           value={email}
@@ -75,6 +75,7 @@ const ModalContact = ({ title = "Nous contacter", isActive, onCloseModal, onForc
         <FormLabel>Votre message *</FormLabel>
         <FormTextArea
           name="message"
+          autoComplete="off"
           onChange={onChange}
           value={message}
           placeholder="Un commentaire ? Une suggestion ?"

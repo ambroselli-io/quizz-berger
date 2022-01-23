@@ -21,20 +21,26 @@ import QuizzButton from "../../components/QuizzButton";
 import Filter from "../../components/Filter";
 import Banner from "../../components/Banner";
 
-const Result = () => {
+const Result = ({ publicUser, publicUserAnswers }) => {
   const router = useRouter();
   const { userPseudo } = router.query;
-  const publicPage = !!userPseudo;
   const { user } = useUser();
   const { userAnswers } = useUserAnswers();
   const { quizz, quizzQuestions } = useQuizz();
   const { candidates } = useCandidates();
   const { friends, mutateFriends } = useFriends();
 
-  const [publicUser, setPublicUser] = useState({});
-  const [publicUserAnswers, setPublicUserAnswers] = useState([]);
+  const publicPage = useMemo(() => {
+    if (!userPseudo) return false;
+    if (publicUser.pseudo === user.pseudo) return false;
+    return true;
+  }, [userPseudo, user, publicUser]);
 
-  const userToShow = useMemo(() => (publicPage ? publicUser : user), [publicUser, publicUserAnswers, publicPage]);
+  const userToShow = useMemo(() => {
+    if (!publicPage) return user;
+    if (publicUser.pseudo === user.pseudo) return user;
+    return publicUser;
+  }, [publicUser, publicUserAnswers, publicPage]);
   const answersToShow = useMemo(
     () => (publicPage ? publicUserAnswers : userAnswers),
     [publicUser, publicUserAnswers, publicPage]
@@ -50,13 +56,12 @@ const Result = () => {
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [showCandidates, setShowCandidates] = useState(Boolean(getFromSessionStorage("selectedCandidates", false)));
-  const [showFriends, setShowFriends] = useState(Boolean(getFromSessionStorage("selectedFriends", false)));
+  const [showCandidates, setShowCandidates] = useState(() =>
+    Boolean(getFromSessionStorage("selectedCandidates", false))
+  );
+  const [showFriends, setShowFriends] = useState(() => Boolean(getFromSessionStorage("selectedFriends", false)));
 
-  const [showSaveButton, setShowSaveButton] = useState(false);
-  useEffect(() => {
-    setShowSaveButton(!userToShow?.pseudo);
-  }, [userToShow]);
+  const showSaveButton = useMemo(() => !userToShow?.pseudo, [userToShow]);
 
   const [newFriend, setNewFriend] = useState("");
   const [loadingFriend, setLoadingFriend] = useState(false);
@@ -72,18 +77,18 @@ const Result = () => {
     if (publicPage) return [];
     return getFromSessionStorage("selectedFriends", allFriends);
   });
-  const [selectedThemes, setSelectedThemes] = useState(() => {
-    const allThemes = userThemes;
-    return allThemes;
-  });
+
+  const selectedThemes = useMemo(() => {
+    if (userPseudo) return getUserThemes(publicUserAnswers);
+    return userThemes;
+  }, [publicUserAnswers, userPseudo]);
 
   const title = useMemo(() => {
     if (!publicPage && !userToShow?.pseudo) return "Voici vos résultats";
     const name = userToShow?.pseudo?.charAt(0).toUpperCase() + userToShow?.pseudo?.slice(1);
-    if (!!publicPage) {
-      return `Voici les résultats de ${name}`;
-    }
-    return `${name}, voici vos résultats`;
+    if (!publicPage) return `${name}, voici vos résultats`;
+    if (publicUser?.pseudo === user?.pseudo) return `${name}, voici vos résultats`;
+    return `Voici les résultats de ${name}`;
   }, [publicPage, userToShow]);
 
   const onSelectCandidates = (e) => {
@@ -211,23 +216,6 @@ const Result = () => {
     }
   }, [selectedThemes.length]);
 
-  const getPublicUser = async () => {
-    const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
-    if (!publicUserResponse.ok) return router.push("/");
-    setPublicUser(publicUserResponse.data);
-    const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
-    if (!publicUserAnswersResponse.ok) return router.push("/");
-    setPublicUserAnswers(publicUserAnswersResponse.data);
-    setSelectedThemes(getUserThemes(publicUserAnswersResponse.data));
-    if (!allCandidates.length) return;
-    setSelectedCandidates(allCandidates);
-    setIsLoading(false);
-  };
-
-  useEffect(() => {
-    if (userPseudo) getPublicUser();
-  }, [userPseudo]);
-
   useEffect(() => {
     if (userPseudo || !selectedCandidates.length) setSelectedCandidates(allCandidates);
   }, [candidates.length]);
@@ -326,6 +314,7 @@ const Result = () => {
                 placeholder={!!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
                 value={!!loadingFriend ? "" : newFriend}
                 onChange={setNewFriendRequest}
+                autoComplete="name"
               />
               <Loader size="20px" isLoading={loadingFriend} displayOnLoadingOnly />
             </InputWithLoader>
@@ -520,3 +509,29 @@ const InputWithLoader = styled.div`
 `;
 
 export default Result;
+
+export const getServerSideProps = async (context) => {
+  const { userPseudo } = context.params;
+  const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
+  if (!publicUserResponse.ok) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+  const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
+  if (!publicUserAnswersResponse.ok) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: { publicUser: publicUserResponse.data, publicUserAnswers: publicUserAnswersResponse.data },
+  };
+};

@@ -29,11 +29,19 @@ const SignIn = ({ onSuccess, onChange, onGoToSignup, pseudo, password }) => {
   return (
     <FormStyled onSubmit={loginRequest}>
       <FormLabel>Pseudo</FormLabel>
-      <FormInput type="text" name="pseudo" placeholder="Votre pseudo" onChange={onChange} value={pseudo} />
+      <FormInput
+        type="text"
+        name="pseudo"
+        autoComplete="username"
+        placeholder="Votre pseudo"
+        onChange={onChange}
+        value={pseudo}
+      />
       <FormLabel>Mot de passe</FormLabel>
       <FormInput
         type="password"
         name="password"
+        autoComplete="password"
         placeholder="Votre mot de passe"
         onChange={onChange}
         value={password}

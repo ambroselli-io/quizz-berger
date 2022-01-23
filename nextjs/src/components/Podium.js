@@ -94,6 +94,7 @@ const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
                   <Avatars stairHeight={height}>
                     {pictures.filter(Boolean).map((pic, index) => (
                       <Avatar
+                        key={pic}
                         candidateColor={colors[index]}
                         src={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${pic}`}
                       />

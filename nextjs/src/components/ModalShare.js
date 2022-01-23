@@ -33,7 +33,7 @@ const ModalShare = ({ isActive, onCloseModal }) => {
     onCloseModal();
   };
 
-  const publicLink = `https://partage.quizz-du-berger.com/result/${user?.pseudo}`;
+  const publicLink = `https://www.quizz-du-berger.com/result/${user?.pseudo}`;
 
   const onCopy = async () => {
     await navigator.clipboard.writeText(publicLink);

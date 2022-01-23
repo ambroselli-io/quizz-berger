@@ -33,11 +33,32 @@ const SignUp = ({ pseudo, passwordConfirm, password, onChange, onSuccess }) => {
   return (
     <FormStyled onSubmit={signupRequest} id="sign-up-form">
       <FormLabel>Pseudo</FormLabel>
-      <FormInput type="text" name="pseudo" placeholder="Votre pseudo" onChange={onChange} value={pseudo} />
+      <FormInput
+        type="text"
+        name="pseudo"
+        autoComplete="username"
+        placeholder="Votre pseudo"
+        onChange={onChange}
+        value={pseudo}
+      />
       <FormLabel>Mot de passe</FormLabel>
-      <FormInput type="password" name="password" placeholder="Votre mot de passe" onChange={onChange} value={password} />
+      <FormInput
+        type="password"
+        name="password"
+        autoComplete="new-password"
+        placeholder="Votre mot de passe"
+        onChange={onChange}
+        value={password}
+      />
       <FormLabel>Confirmation du mot de passe</FormLabel>
-      <FormInput type="password" name="passwordConfirm" placeholder="Confirmez votre mot de passe" onChange={onChange} value={passwordConfirm} />
+      <FormInput
+        type="password"
+        name="passwordConfirm"
+        autoComplete="new-password"
+        placeholder="Confirmez votre mot de passe"
+        onChange={onChange}
+        value={passwordConfirm}
+      />
       <Button type="submit" disabled={isLoading} isLoading={isLoading} withLoader>
         S'inscrire
       </Button>
