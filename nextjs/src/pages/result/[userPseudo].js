@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { media, minMedia } from "../../styles/mediaQueries";
-import { getCandidatesScorePerThemes } from "../../utils/score";
+import { getCandidatesScorePerThemes } from "quizz-du-berger-shared";
 import { getFromSessionStorage, setToSessionStorage } from "../../utils/storage";
 import getUserThemes from "../../utils/getUserThemes";
 import API from "../../services/api";
@@ -162,6 +162,8 @@ const Result = ({ publicUser, publicUserAnswers }) => {
       JSON.stringify(quizzQuestions),
     ]
   );
+
+  console.log({ candidatesScorePerThemes });
 
   const friendsScorePerThemes = useMemo(
     () =>

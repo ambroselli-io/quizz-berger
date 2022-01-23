@@ -1,10 +1,19 @@
 const express = require("express");
 const router = express.Router();
+const fs = require("fs");
+const path = require("path");
 const passport = require("passport");
 const UserObject = require("../models/user");
 const AnswerObject = require("../models/answer");
 const { catchErrors } = require("../utils/error");
 const user = require("../models/user");
+const nodeHtmlToImage = require("node-html-to-image");
+const { uploadBuffer } = require("../utils/picture");
+const { quizz } = require("quizz-du-berger-shared");
+const { getPodium, getCandidatesScorePerThemes } = require("quizz-du-berger-shared");
+const quizzQuestions = quizz.reduce((questions, theme) => {
+  return [...questions, ...theme.questions];
+}, []);
 
 router.post(
   "/",
@@ -38,25 +47,27 @@ router.post(
   })
 );
 
+const getCandidatesAnswers = async () => {
+  const candidates = await UserObject.find({ isCandidate: true }).lean();
+  const candidatesAnswers = await AnswerObject.find({ user: candidates }).lean();
+
+  return candidates.map((candidate) => {
+    return {
+      _id: candidate._id,
+      pseudo: candidate.pseudo,
+      picture: candidate.picture,
+      color: candidate.color,
+      isCandidate: candidate.isCandidate,
+      themes: candidate.themes,
+      answers: candidatesAnswers.filter((answers) => candidate._id.equals(answers.user)),
+    };
+  });
+};
+
 router.get(
   "/candidates",
   catchErrors(async (req, res) => {
-    const candidates = await UserObject.find({ isCandidate: true });
-    const candidatesAnswers = await AnswerObject.find({ user: candidates });
-
-    const populatedCandidatesAnswers = candidates.map((candidate) => {
-      return {
-        _id: candidate._id,
-        pseudo: candidate.pseudo,
-        picture: candidate.picture,
-        color: candidate.color,
-        isCandidate: candidate.isCandidate,
-        themes: candidate.themes,
-        answers: candidatesAnswers.filter((answers) => candidate._id.equals(answers.user)),
-      };
-    });
-
-    res.status(200).send({ ok: true, data: populatedCandidatesAnswers });
+    res.status(200).send({ ok: true, data: await getCandidatesAnswers() });
   })
 );
 
@@ -85,9 +96,60 @@ router.get(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
-    const userAnswers = await AnswerObject.find({ user: req.user._id });
+    const userAnswers = await AnswerObject.find({ user: req.user._id }).lean();
 
     res.status(200).send({ ok: true, data: userAnswers });
+
+    const candidateAnswers = await getCandidatesAnswers();
+
+    const personsScore = getCandidatesScorePerThemes(userAnswers, candidateAnswers, quizzQuestions).map((c) => ({
+      _id: c._id,
+      pseudo: c.pseudo,
+      picture: c.picture,
+      color: c.color,
+      total: c.total,
+      totalMax: c.totalMax,
+    }));
+
+    const podiumData = getPodium(personsScore, true).filter((_, i) => i < 6);
+
+    const html = fs.readFileSync(path.resolve("./src/views/result.html"), "utf8");
+
+    const newHtml = html.replace(
+      "{{RESULTS}}",
+      podiumData
+        .map(
+          ({ pictures, height, percent, colors }, i) =>
+            `<div class="step">
+                  <div class="stair-container">
+                    <div class="stair ${
+                      i === 0 ? "gold" : i == 1 ? "silver" : i == 2 ? "bronze" : ""
+                    }" style="height: calc(${height}% - 20px); background-color: rgba(205, 127, 50, ${percent / 100});" >
+                      <span style="font-size: min(10vw, ${Math.max((percent / 100) * 2.5, 0.75)}em);">${percent}%</span>
+                    </div>
+                    <div class="avatars" style="bottom: calc(${height}% - 40px);">
+                      ${pictures.filter(Boolean).map(
+                        (pic, index) =>
+                          `<img
+                          class="avatar"
+                          style="border: 2px solid ${colors[index]}; background-color: ${colors[index]}"
+                          alt="${pic}"
+                          src="https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${pic}"
+                        />`
+                      )}
+                    </div>
+                  </div>
+                </div>`
+        )
+        .join("")
+    );
+
+    const image = await nodeHtmlToImage({
+      html: newHtml,
+    });
+    console.log({ newHtml });
+    const uploaded = await uploadBuffer(image, "test-2.png");
+    console.log({ uploaded });
   })
 );
 

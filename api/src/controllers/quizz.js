@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { catchErrors } = require("../utils/error");
-const quizz = require("../../data/quizz.json");
+const { quizz } = require("quizz-du-berger-shared");
 
 router.get(
   "/",

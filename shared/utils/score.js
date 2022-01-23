@@ -31,7 +31,7 @@ newCandidate: {
 
 */
 
-export const getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizzQuestions) => {
+exports.getCandidatesScorePerThemes = (userAnswers, candidatesAnswers, quizzQuestions) => {
   const userAnswersWithScoreLines = userAnswers.map(addScoreLinesToAnswers(quizzQuestions));
 
   return candidatesAnswers
@@ -68,9 +68,7 @@ const addScoreLinesToAnswers = (quizzQuestions) => (answer) => {
 const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) =>
   userAnswersWithScoreLines
     .map((userAnswer) => {
-      const candidateMatchingAnswer = candidateAnswers.find(
-        (partyAnswer) => partyAnswer.questionId === userAnswer.questionId
-      );
+      const candidateMatchingAnswer = candidateAnswers.find((partyAnswer) => partyAnswer.questionId === userAnswer.questionId);
       // if user answer score is 0 and candidate has the same answer, we ignore it
       const isSameAnswer = candidateMatchingAnswer?.answerIndex === userAnswer.answerIndex;
       const isNotInterestedAnswer = !userAnswer.scoreLine.filter(Boolean).length;
@@ -78,9 +76,7 @@ const addScoreToCandidateAnswer = (userAnswersWithScoreLines, candidateAnswers) 
       const politicalPartyMatchingAnswersIndex = candidateMatchingAnswer?.answerIndex;
       return {
         ...userAnswer,
-        score: !isNaN(politicalPartyMatchingAnswersIndex)
-          ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex]
-          : 0,
+        score: !isNaN(politicalPartyMatchingAnswersIndex) ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex] : 0,
       };
     })
     .filter(Boolean);

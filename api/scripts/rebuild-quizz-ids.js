@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 console.log(mongoose.Types.ObjectId());
 
-const quizz = require("../data/quizz.json");
+const { quizz } = require("quizz-du-berger-shared");
 
 (async () => {
   for (const theme of quizz) {
@@ -15,5 +15,5 @@ const quizz = require("../data/quizz.json");
       question._id = `question-${mongoose.Types.ObjectId()}`;
     }
   }
-  fs.writeFileSync(path.resolve("./data/quizz.json"), JSON.stringify(quizz, null, 2));
+  // fs.writeFileSync(path.resolve("../../../shared/quizz.json"), JSON.stringify(quizz, null, 2));
 })();

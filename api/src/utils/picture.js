@@ -5,6 +5,29 @@ AWS.config.update({ accessKeyId: process.env.CELLAR_ADDON_KEY_ID, secretAccessKe
 
 const s3bucket = new AWS.S3({ endpoint: process.env.CELLAR_ADDON_HOST });
 
+exports.uploadBuffer = (buffer, fileName) =>
+  new Promise((resolve, reject) => {
+    // Setting up S3 upload parameters
+    const params = {
+      Bucket: "quizz-du-berger-pictures",
+      Key: fileName, // File name you want to save as in S3
+      Body: buffer,
+      ContentType: "image/png",
+      ACL: "public-read",
+      Metadata: { "Cache-Control": "max-age=31536000" },
+    };
+
+    // Uploading files to the bucket
+    s3bucket.upload(params, function (err, data) {
+      if (err) {
+        console.log("error is ", err);
+        console.log("file didnt upload ", fileName);
+        reject(err);
+      }
+      resolve(`File ${fileName} uploaded successfully. ${data.Location}`);
+    });
+  });
+
 exports.uploadPublicPicture = (path, file) => {
   return new Promise((resolve, reject) => {
     const s3bucket = new AWS.S3({
@@ -99,4 +122,4 @@ const uploadAllLocalFiles = async () => {
   }
 };
 
-uploadAllLocalFiles();
+// uploadAllLocalFiles();

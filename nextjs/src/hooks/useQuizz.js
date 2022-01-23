@@ -1,6 +1,4 @@
-// import useSWR from "swr";
-// import API from "../services/api";
-import quizz from "../quizz.json";
+import { quizz } from "quizz-du-berger-shared";
 import { normalizeWord } from "../utils/diacritics";
 
 const formatQuizzForSearch = (quizz) =>

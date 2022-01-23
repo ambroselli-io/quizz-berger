@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import { getMaxPersons, getPodium } from "quizz-du-berger-shared";
 
 const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
   const [podiumised, setPodiumised] = useState([]);
@@ -12,72 +13,12 @@ const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
 
   useEffect(() => {
     if (!personsScore.filter((c) => c.total !== undefined).length) return;
-    setPodiumised(
-      personsScore
-        .reduce(
-          ([candidates, highest], candidate) => {
-            const newHighest = Math.max(highest, candidate.total || 0);
-            const sameTotal = candidates.find((c) => c.total === candidate.total);
-            if (!!sameTotal) {
-              return [
-                candidates.map((c) =>
-                  c._id !== sameTotal._id
-                    ? c
-                    : {
-                        ...c,
-                        pseudos: [...c.pseudos, candidate.pseudo].sort((pseudo1, pseudo2) =>
-                          pseudo1.localeCompare(pseudo2)
-                        ),
-                        pictures: [...c.pictures, candidate.picture].sort((pseudo1, pseudo2) =>
-                          pseudo1.localeCompare(pseudo2)
-                        ),
-                        colors: [...c.colors, candidate.color].sort((pseudo1, pseudo2) =>
-                          pseudo1.localeCompare(pseudo2)
-                        ),
-                      }
-                ),
-                newHighest,
-              ];
-            } else {
-              return [
-                [
-                  ...candidates,
-                  {
-                    ...candidate,
-                    pseudos: [candidate.pseudo],
-                    pictures: [candidate.picture],
-                    colors: [candidate.color],
-                  },
-                ],
-                newHighest,
-              ];
-            }
-          },
-          [[], 0]
-        )
-        // .reduce((sorted, c, index) => {
-        //   if (index === 1) return [c, ...sorted];
-        //   return [...sorted, c];
-        // }, [])
-        .reduce((onlyCandidates, item, index) => {
-          if (index === 0) return item;
-          return onlyCandidates.map((c) => ({ ...c, highest: item }));
-        }, [])
-        .map((c) => {
-          return {
-            ...c,
-            percent: c.totalMax === 0 ? 0 : Math.round((c.total / c.totalMax) * 100),
-            height: c.totalMax === 0 ? 0 : Math.round((c.total / (fullHeight ? c.highest : c.totalMax)) * 100),
-          };
-        })
-        .sort((c1, c2) => (c1.percent > c2.percent ? -1 : 1))
-    );
+    setPodiumised(getPodium(personsScore, fullHeight));
   }, [JSON.stringify(personsScore)]);
 
-  const [maxPersons, setMaxPersons] = useState(0);
-  useEffect(() => {
-    setMaxPersons(podiumised.reduce((maxPersons, step) => Math.max(step.pseudos?.length, maxPersons), 0));
-  }, [podiumised]);
+  const maxPersons = useMemo(() => getMaxPersons(podiumised), [podiumised]);
+
+  // console.log({ personsScore, podiumised });
 
   return (
     <>
@@ -155,9 +96,9 @@ const Stair = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   overflow: hidden;
-  > span:first-of-type {
+  /* > span:first-of-type {
     font-size: min(1em, ${(props) => Math.max((props.percent / 100) * 2.5, 0.75)}em);
-  }
+  } */
   > span:first-of-type {
     font-size: min(10vw, ${(props) => Math.max((props.percent / 100) * 2.5, 0.75)}em);
     word-break: keep-all;
