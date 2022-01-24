@@ -9,7 +9,7 @@ import { getFromSessionStorage, setToSessionStorage } from "../../utils/storage"
 import getUserThemes from "../../utils/getUserThemes";
 import API from "../../services/api";
 import useUser from "../../hooks/useUser";
-import useQuizz from "../../hooks/useQuizz";
+import useQuizz, { quizzQuestions } from "../../hooks/useQuizz";
 import useCandidates from "../../hooks/useCandidates";
 import useFriends from "../../hooks/useFriends";
 import useUserAnswers from "../../hooks/useUserAnswers";
@@ -21,7 +21,7 @@ import QuizzButton from "../../components/QuizzButton";
 import Filter from "../../components/Filter";
 import Banner from "../../components/Banner";
 
-const Result = ({ publicUser, publicUserAnswers }) => {
+const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const router = useRouter();
   const { userPseudo } = router.query;
   const { user } = useUser();
@@ -224,25 +224,6 @@ const Result = ({ publicUser, publicUserAnswers }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  const ogImageName = useMemo(
-    () =>
-      getPicName(
-        getPodium(
-          filteredPersons
-            .filter((c) => c.isCandidate)
-            .map((c) => ({
-              _id: c._id,
-              pseudo: c.pseudo,
-              picture: c.picture,
-              color: c.color,
-              total: c.total,
-              totalMax: c.totalMax,
-            }))
-        )
-      ),
-    [filteredPersons]
-  );
-
   return (
     <>
       <Head>
@@ -255,7 +236,11 @@ const Result = ({ publicUser, publicUserAnswers }) => {
           content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${ogImageName}.png`}
         />
         <meta rel="canonical" key="canonical" content={`https://www.quizz-du-berger.com/result/${userPseudo}`} />
-        <meta property="og:image:alt" key="og:image:alt" content={`${title} | Le Quizz du Berger`} />
+        <meta
+          property="og:image:alt"
+          key="og:image:alt"
+          content={`Voici les résultats de ${userPseudo} | Le Quizz du Berger`}
+        />
       </Head>
       <BackgroundContainer>
         <Container>
@@ -558,8 +543,16 @@ export const getServerSideProps = async (context) => {
       },
     };
   }
+  const candidatesResponse = await API.get({ path: "/answer/candidates" });
+  const ogImageName = getPicName(
+    getPodium(
+      getCandidatesScorePerThemes(publicUserAnswersResponse.data, candidatesResponse.data, quizzQuestions).filter(
+        (c) => c.isCandidate
+      )
+    )
+  );
 
   return {
-    props: { publicUser: publicUserResponse.data, publicUserAnswers: publicUserAnswersResponse.data },
+    props: { publicUser: publicUserResponse.data, publicUserAnswers: publicUserAnswersResponse.data, ogImageName },
   };
 };

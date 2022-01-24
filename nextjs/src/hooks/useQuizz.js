@@ -59,7 +59,7 @@ const enrichedQuizz = quizz.map((theme, index) => ({
 
 const quizzForSearch = formatQuizzForSearch(enrichedQuizz);
 const quizzDownload = formatQuizzText(quizz);
-const quizzQuestions = quizz.reduce((questions, theme) => {
+export const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);
 
