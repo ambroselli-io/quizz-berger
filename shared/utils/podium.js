@@ -3,7 +3,8 @@ exports.getMaxPersons = (podiumised) =>
 
 exports.getPicName = (podiumised) =>
   podiumised
-    .map((data) => `${data.total}${data.pictures.map((pic) => pic.slice(0, 2)).join("")}`)
+    .filter((_, i) => i < 6)
+    .map((data) => `${data.percent}${data.pictures.map((pic) => pic.slice(0, 2)).join("")}`)
     .join("");
 
 exports.getPodium = (personsScore, fullHeight) =>

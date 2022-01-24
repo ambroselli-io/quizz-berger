@@ -3,8 +3,8 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { getCandidatesScorePerThemes, getPicName, getPodium } from "quizz-du-berger-shared";
 import { media, minMedia } from "../../styles/mediaQueries";
-import { getCandidatesScorePerThemes } from "quizz-du-berger-shared";
 import { getFromSessionStorage, setToSessionStorage } from "../../utils/storage";
 import getUserThemes from "../../utils/getUserThemes";
 import API from "../../services/api";
@@ -163,8 +163,6 @@ const Result = ({ publicUser, publicUserAnswers }) => {
     ]
   );
 
-  console.log({ candidatesScorePerThemes });
-
   const friendsScorePerThemes = useMemo(
     () =>
       getCandidatesScorePerThemes(
@@ -226,10 +224,51 @@ const Result = ({ publicUser, publicUserAnswers }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  const ogImageName = useMemo(
+    () =>
+      getPicName(
+        getPodium(
+          filteredPersons
+            .filter((c) => c.isCandidate)
+            .map((c) => ({
+              _id: c._id,
+              pseudo: c.pseudo,
+              picture: c.picture,
+              color: c.color,
+              total: c.total,
+              totalMax: c.totalMax,
+            }))
+        )
+      ),
+    [filteredPersons]
+  );
+
   return (
     <>
       <Head>
         <title>{title} | Le Quizz du Berger</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="QUI est mon candidat idéal ? Répondez de façon anonyme aux questions pour connaître les candidats qui se rapprochent le plus de vos idées, et faites votre choix !"
+        />
+        <meta property="og:title" content={`${title} | Le Quizz du Berger`} />
+        <meta property="og:url" content={`https://www.quizz-du-berger.com/result/${userPseudo}`} />
+        <meta
+          property="og:description"
+          content="QUI est mon candidat idéal ? Répondez de façon anonyme aux questions pour connaître les candidats qui se rapprochent le plus de vos idées, et faites votre choix !"
+        />
+
+        <meta
+          property="og:image"
+          content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${ogImageName}.png`}
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${title} | Le Quizz du Berger`} />
+
+        <meta property="og:type" content="article" />
       </Head>
       <BackgroundContainer>
         <Container>

@@ -11,8 +11,7 @@ const user = require("../models/user");
 const nodeHtmlToImage = require("node-html-to-image");
 const { uploadBuffer } = require("../utils/picture");
 const { quizz } = require("quizz-du-berger-shared");
-const { getPodium, getCandidatesScorePerThemes } = require("quizz-du-berger-shared");
-const { getPicName } = require("quizz-du-berger-shared");
+const { getPodium, getCandidatesScorePerThemes, getPicName } = require("quizz-du-berger-shared");
 const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);
@@ -163,16 +162,16 @@ router.get(
           "--disable-dev-shm-usage",
           "--disable-accelerated-2d-canvas",
           "--no-first-run",
-          "--headless",
           "--no-zygote",
           "--disable-gpu",
         ],
-        headless: true,
+        headless: false,
         ignoreHTTPSErrors: true,
       },
     });
 
     const uploaded = await uploadBuffer(image, `${picName}.png`);
+    console.log({ uploaded });
   })
 );
 
