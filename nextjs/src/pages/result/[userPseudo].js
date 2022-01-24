@@ -247,28 +247,15 @@ const Result = ({ publicUser, publicUserAnswers }) => {
     <>
       <Head>
         <title>{title} | Le Quizz du Berger</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="QUI est mon candidat idéal ? Répondez de façon anonyme aux questions pour connaître les candidats qui se rapprochent le plus de vos idées, et faites votre choix !"
-        />
-        <meta property="og:title" content={`${title} | Le Quizz du Berger`} />
-        <meta property="og:url" content={`https://www.quizz-du-berger.com/result/${userPseudo}`} />
-        <meta
-          property="og:description"
-          content="QUI est mon candidat idéal ? Répondez de façon anonyme aux questions pour connaître les candidats qui se rapprochent le plus de vos idées, et faites votre choix !"
-        />
-
+        <meta property="og:title" key="og:title" content={`${title} | Le Quizz du Berger`} />
+        <meta property="og:url" key="og:url" content={`https://www.quizz-du-berger.com/result/${userPseudo}`} />
         <meta
           property="og:image"
+          key="og:image"
           content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${ogImageName}.png`}
         />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={`${title} | Le Quizz du Berger`} />
-
-        <meta property="og:type" content="article" />
+        <meta rel="canonical" key="canonical" content={`https://www.quizz-du-berger.com/result/${userPseudo}`} />
+        <meta property="og:image:alt" key="og:image:alt" content={`${title} | Le Quizz du Berger`} />
       </Head>
       <BackgroundContainer>
         <Container>
