@@ -6,7 +6,7 @@ import Loader from "../../components/Loader";
 import { media } from "../../styles/mediaQueries";
 import getUserThemes from "../../utils/getUserThemes";
 import useUser from "../../hooks/useUser";
-import useQuizz from "../../hooks/useQuizz";
+import { quizz, quizzDownload } from "../../utils/quizz";
 import useUserAnswers from "../../hooks/useUserAnswers";
 import useCandidates from "../../hooks/useCandidates";
 import useFriends from "../../hooks/useFriends";
@@ -16,7 +16,6 @@ const AllQuestions = () => {
   const { candidatePseudo } = router.query;
   const forCandidate = !!candidatePseudo;
   const { user } = useUser();
-  const { quizz, quizzDownload } = useQuizz();
   const { userAnswers } = useUserAnswers();
   const { candidates } = useCandidates();
   const { friends } = useFriends();

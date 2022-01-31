@@ -2,23 +2,15 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import { getMaxPersons, getPodium } from "quizz-du-berger-shared";
+import { getMaxPersons } from "quizz-du-berger-shared";
 
-const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
-  const [podiumised, setPodiumised] = useState([]);
+const Podium = ({ podiumised, noPadding, title, fullHeight = true }) => {
   const [withTitle, setWithTitle] = useState(!!title);
   useEffect(() => {
     setWithTitle(!!title);
   }, [title]);
 
-  useEffect(() => {
-    if (!personsScore.filter((c) => c.total !== undefined).length) return;
-    setPodiumised(getPodium(personsScore, fullHeight));
-  }, [JSON.stringify(personsScore)]);
-
   const maxPersons = useMemo(() => getMaxPersons(podiumised), [podiumised]);
-
-  // console.log({ personsScore, podiumised });
 
   return (
     <>
@@ -26,7 +18,7 @@ const Podium = ({ personsScore, noPadding, title, fullHeight = false }) => {
         {!!withTitle && <Title>{title}</Title>}
         <PodiumStairs>
           {podiumised.map(({ pseudos, pictures, height, percent, colors }) => (
-            <React.Fragment key={height}>
+            <React.Fragment key={height + pseudos.join(",")}>
               <Step>
                 <StairContainer>
                   <Stair stairHeight={height} percent={percent}>

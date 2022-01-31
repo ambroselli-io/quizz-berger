@@ -9,7 +9,7 @@ import { getFromSessionStorage, setToSessionStorage } from "../../utils/storage"
 import getUserThemes from "../../utils/getUserThemes";
 import API from "../../services/api";
 import useUser from "../../hooks/useUser";
-import useQuizz, { quizzQuestions } from "../../hooks/useQuizz";
+import { quizz, quizzQuestions } from "../../utils/quizz";
 import useCandidates from "../../hooks/useCandidates";
 import useFriends from "../../hooks/useFriends";
 import useUserAnswers from "../../hooks/useUserAnswers";
@@ -26,7 +26,6 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const { userPseudo } = router.query;
   const { user } = useUser();
   const { userAnswers } = useUserAnswers();
-  const { quizz, quizzQuestions } = useQuizz();
   const { candidates } = useCandidates();
   const { friends, mutateFriends } = useFriends();
 
@@ -249,17 +248,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
           </Header>
         </Container>
         <PodiumContainer>
-          <Podium
-            fullHeight
-            personsScore={filteredPersons.map((c) => ({
-              _id: c._id,
-              pseudo: c.pseudo,
-              picture: c.picture,
-              color: c.color,
-              total: c.total,
-              totalMax: c.totalMax,
-            }))}
-          />
+          <Podium fullHeight podiumised={getPodium(filteredPersons)} />
         </PodiumContainer>
         <TipContainer>
           {!publicPage && (
@@ -337,7 +326,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
           {podiumsPerTheme.map(({ personsScore, themeId }) => (
             <ThemePodiumContainer key={themeId}>
               <Podium
-                personsScore={personsScore}
+                podiumised={getPodium(personsScore)}
                 // noPadding
                 fullHeight
                 title={quizz.find((quizztheme) => quizztheme._id === themeId).fr}

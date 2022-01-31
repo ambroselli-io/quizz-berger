@@ -8,7 +8,7 @@ import API from "../services/api";
 import { normalizeWord } from "../utils/diacritics";
 import getUserThemes from "../utils/getUserThemes";
 import useUser from "../hooks/useUser";
-import useQuizz from "../hooks/useQuizz";
+import { quizz, quizzForSearch } from "../utils/quizz";
 import ThemeButton from "../components/ThemeButton";
 import Button from "../components/Button";
 import { FormInput } from "../components/Form";
@@ -26,7 +26,6 @@ const filterBySearch = (search, quizzForSearch) => (theme, index) => {
 const ThemeSelect = () => {
   const { user, mutate } = useUser({ from: "ThemeSelect" });
   const { userAnswers } = useUserAnswers();
-  const { quizz, quizzForSearch } = useQuizz();
   const router = useRouter();
   const [search, setSearch] = useState("");
   const [showModal, setShowModal] = useState(null);

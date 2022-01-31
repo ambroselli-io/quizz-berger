@@ -171,7 +171,29 @@ router.get(
     });
 
     const uploaded = await uploadBuffer(image, `${picName}.png`);
-    console.log({ uploaded });
+  })
+);
+
+router.get(
+  "/random/for-onboarding",
+  catchErrors(async (req, res, next) => {
+    if (!!req.cookies["jwt"]) {
+      await passport.authenticate("user", { session: false })(req, res, next);
+      return;
+    }
+    req.user = null;
+    next();
+  }),
+  catchErrors(async (req, res) => {
+    const users = await UserObject.aggregate([{ $match: { isCandidate: true } }, { $sample: { size: 1 } }]);
+
+    const userAnswers = await AnswerObject.find({ user: users[0]._id }).lean();
+    const candidateAnswers = await getCandidatesAnswers();
+
+    const personsScore = getCandidatesScorePerThemes(userAnswers, candidateAnswers, quizzQuestions);
+    const podiumData = getPodium(personsScore, true);
+
+    return res.status(200).send({ ok: true, data: podiumData, user: users[0] });
   })
 );
 

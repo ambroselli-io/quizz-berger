@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useMemo } from "react";
 import styled from "styled-components";
 
-const ThemeButton = ({ theme, onClick, userAnswers }) => {
-  const { backgroundColor, fr, _id } = theme;
+const ThemeButton = ({ theme, onClick, userAnswers = [] }) => {
+  const { backgroundColor, fr, _id, questions } = theme;
 
-  const [userThemeAnswers, setUserThemeAnswers] = useState(0);
+  const userThemeAnswers = useMemo(
+    () => userAnswers?.filter((a) => a.themeId === theme._id)?.length || 0,
+    [userAnswers]
+  );
 
-  useEffect(() => {
-    setUserThemeAnswers(userAnswers.filter((a) => a.themeId === theme._id).length);
-  }, [userAnswers]);
-
-  const quizzThemeAnswers = theme.questions.length;
-
-  const progress = userThemeAnswers / quizzThemeAnswers;
+  const progress = useMemo(() => userThemeAnswers / questions.length, [userThemeAnswers, questions.length]);
 
   return (
     <ThemesButtonStyled data-themeid={_id} onClick={onClick} backgroundColor={backgroundColor}>
@@ -20,13 +17,13 @@ const ThemeButton = ({ theme, onClick, userAnswers }) => {
       <span />
       <span data-themeid={_id}>{fr}</span>
       <Progress data-themeid={_id}>
-        {!!progress ? `${userThemeAnswers} / ${quizzThemeAnswers}` : `${quizzThemeAnswers} questions`}
+        {!!progress ? `${userThemeAnswers} / ${questions.length}` : `${questions.length} questions`}
       </Progress>
     </ThemesButtonStyled>
   );
 };
 
-const ThemesButtonStyled = styled.button`
+export const ThemesButtonStyled = styled.button`
   padding: 15px 24px;
   width: 250px;
   display: flex;

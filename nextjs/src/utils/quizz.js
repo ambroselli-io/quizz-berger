@@ -1,5 +1,5 @@
 import { quizz } from "quizz-du-berger-shared";
-import { normalizeWord } from "../utils/diacritics";
+import { normalizeWord } from "./diacritics";
 
 const formatQuizzForSearch = (quizz) =>
   quizz.map((theme) => {
@@ -59,26 +59,8 @@ const enrichedQuizz = quizz.map((theme, index) => ({
 
 const quizzForSearch = formatQuizzForSearch(enrichedQuizz);
 const quizzDownload = formatQuizzText(quizz);
-export const quizzQuestions = quizz.reduce((questions, theme) => {
+const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);
 
-// const useQuizz = () => {
-//   // const { data } = useSWR(API.getUrl("/quizz"));
-//   // const quizz = data?.data || [];
-//   return (
-//      quizz.map((theme, index) => ({
-//   ...theme,
-//   backgroundColor: colors[index],
-// })) || []
-//   );
-// };
-
-const useQuizz = () => ({
-  quizz: enrichedQuizz,
-  quizzForSearch,
-  quizzDownload,
-  quizzQuestions,
-});
-
-export default useQuizz;
+export { enrichedQuizz as quizz, quizzForSearch, quizzDownload, quizzQuestions };

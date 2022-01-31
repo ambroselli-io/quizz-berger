@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { media } from "../../../styles/mediaQueries";
 
-import useQuizz from "../../../hooks/useQuizz";
+import { quizz } from "../../../utils/quizz";
 import useUser from "../../../hooks/useUser";
 import useUserAnswers from "../../../hooks/useUserAnswers";
 import withAuth from "../../../hocs/withAuth";
@@ -12,7 +12,6 @@ import withAuth from "../../../hocs/withAuth";
 const Quizz = () => {
   const { user } = useUser();
   const { userAnswers, setAnswer } = useUserAnswers();
-  const { quizz } = useQuizz();
   const router = useRouter();
   const { themeId, questionId } = router.query;
 
