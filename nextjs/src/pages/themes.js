@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { media } from "../styles/mediaQueries";
+import { media, minMedia } from "../styles/mediaQueries";
 import API from "../services/api";
 import { normalizeWord } from "../utils/diacritics";
 import getUserThemes from "../utils/getUserThemes";
@@ -151,7 +151,7 @@ const ThemeSelect = () => {
           />
           {/* </Footer> */}
         </SubContainer>
-        <Banner />
+        {/* <Banner /> */}
       </BackgroundContainer>
       <ModalFirstThemeSelection
         isActive={showModal === "theme-select_first"}
@@ -173,17 +173,25 @@ const ThemeSelect = () => {
 };
 
 const BackgroundContainer = styled.div`
-  padding: 40px 10px 40px 10px;
-  min-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: #fff;
-  ${media.mobile`
-  padding: 40px 10px 40px 10px;
-  height: auto;
-  min-height: 900px;
+  padding: 80px 10px 80px 10px;
+  ${minMedia.desktop`
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+    overflow-y: auto;
   `}
+  ${media.mobile`
+    padding: 3vh 10px 1px 10px;
+  `}
+
+  > div:not(.modal-container) {
+    margin: 0 auto 2vh;
+    max-width: 1024px;
+  }
+  > section,
+  main,
+  aside {
+    margin: 0 -10px;
+  }
 `;
 
 const SubContainer = styled.div`
@@ -223,7 +231,9 @@ const ThemesContainer = styled.div`
   `}
 `;
 
-const SearchInput = styled(FormInput)``;
+const SearchInput = styled(FormInput)`
+  width: 250px;
+`;
 
 const computeButtonCaption = (userThemes) => {
   if (!userThemes?.length) return "Choisissez votre 1<sup>er</sup>&nbsp;&nbsp;thème";

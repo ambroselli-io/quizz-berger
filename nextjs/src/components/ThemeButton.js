@@ -35,6 +35,7 @@ export const ThemesButtonStyled = styled.button`
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
+  overflow: hidden;
 `;
 
 const BackgroundProgress = styled.div`

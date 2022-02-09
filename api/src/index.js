@@ -41,6 +41,7 @@ app.use("/quizz-builder", require("./controllers/quizz-builder"));
 app.use("/quizz", require("./controllers/quizz"));
 app.use("/feedback", require("./controllers/feedback"));
 app.use("/result", require("./controllers/result"));
+app.use("/public", require("./controllers/public"));
 
 const now = new Date().toISOString();
 

@@ -9,6 +9,7 @@ import { media } from "../styles/mediaQueries";
 import useSWR from "swr";
 import API from "../services/api";
 import Podium from "../components/Podium";
+import { colors, temoignages } from "../utils/temoignages";
 
 export default function Home() {
   const router = useRouter();
@@ -32,11 +33,14 @@ export default function Home() {
 
   const [random, setRandom] = useState(() => Math.round(Math.random() * 15));
 
-  const { data } = useSWR(API.getUrl("/answer/random/for-onboarding", { random }));
-  const [randomUserData, setRandomUserData] = useState(data?.data ? data : { data: [], user: null });
-  useEffect(() => {
-    if (data?.data) setRandomUserData(data);
-  }, [data]);
+  const { data: onboardingData } = useSWR(API.getUrl("/answer/random/for-onboarding", { random }));
+  const randomUserData = useMemo(
+    () => (onboardingData?.data ? onboardingData : { data: [], user: null }),
+    [onboardingData]
+  );
+  const { data: countData } = useSWR(API.getUrl("/public/count"));
+  const countUsers = useMemo(() => countData?.data?.countUsers || 0, [countData]);
+  const countAnswers = useMemo(() => countData?.data?.countAnswers || 0, [countData]);
 
   return (
     <>
@@ -158,6 +162,26 @@ export default function Home() {
             </PodiumContainer>
           </DemoContent>
         </Demo>
+      </BackgroundContainer>
+      <BackgroundContainer>
+        <Title>
+          <b>{countUsers}</b> quizz effectués
+          <br />
+          <br />
+          <b>{countAnswers}</b> réponses données
+          <br />
+        </Title>
+      </BackgroundContainer>
+      <BackgroundContainer>
+        <Title>Ils ont apprécié</Title>
+        <Carousel>
+          {temoignages.map(({ blockquote, figcaption }, index) => (
+            <Figure key={index} color={colors[index]}>
+              <blockquote dangerouslySetInnerHTML={{ __html: blockquote }} />
+              <figcaption>{figcaption}</figcaption>
+            </Figure>
+          ))}
+        </Carousel>
       </BackgroundContainer>
       <Footer />
     </>
@@ -401,5 +425,46 @@ const BackgroundContainer = styled.section`
     ${Title} {
       color: #111827;
     }
+  }
+`;
+
+const Carousel = styled.div`
+  margin-top: 15px;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  padding-left: 10vw;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  figure {
+    scroll-snap-align: start;
+    margin-right: 80px;
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 80vw;
+  }
+  figure:nth-of-type(2n + 2) {
+    margin-top: 30px;
+  }
+  figure:nth-of-type(2n + 3) {
+    width: 300px;
+  }
+  blockquote {
+    border: 1px solid #ddd;
+    padding: 25px 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  figcaption {
+    font-style: italic;
+  }
+`;
+
+const Figure = styled.figure`
+  blockquote {
+    border-color: ${(p) => p.color} !important;
   }
 `;

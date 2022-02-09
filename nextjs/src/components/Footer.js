@@ -75,7 +75,8 @@ const FooterContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #111827;
+  color: #ffffff;
   ${media.mobile`
   display: none;
 `}

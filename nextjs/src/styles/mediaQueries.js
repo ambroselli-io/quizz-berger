@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 const maxSizes = {
-  mobile: 768, // 1100 - 400 = tablet ?
+  mobile: 1250, // 1100 - 400 = tablet ?
 };
 
 // Iterate through the sizes and create a media template
@@ -15,7 +15,7 @@ export const media = Object.keys(maxSizes).reduce((acc, label) => {
 }, {});
 
 const minSizes = {
-  desktop: 768, // 1100 - 400 = tablet ?
+  desktop: 1250, // 1100 - 400 = tablet ?
 };
 
 export const minMedia = Object.keys(minSizes).reduce((acc, label) => {
