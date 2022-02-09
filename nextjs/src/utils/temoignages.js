@@ -43,6 +43,10 @@ export const temoignages = [
     figcaption: "Jean-Marie",
   },
   {
+    blockquote: "****** JE T'AIME ! ❤️❤️❤️",
+    figcaption: "Hélène",
+  },
+  {
     blockquote:
       "Je n'avais jamais réfléchi avant à ce que je pensais vraiment. Politiquement, je veux dire. Ben ça m'a permis de vachement y réfléchir ! Je ne sais pas encore pour qui je vais voter, mais je sais ce que je pense\u00A0! 🤓",
     figcaption: "Titouan",
