@@ -10,6 +10,7 @@ import useSWR from "swr";
 import API from "../services/api";
 import Podium from "../components/Podium";
 import { colors, temoignages } from "../utils/temoignages";
+import Loader from "../components/Loader";
 
 export default function Home() {
   const router = useRouter();
@@ -79,8 +80,7 @@ export default function Home() {
                 ${themes
                   .map((t, i) => t.fr)
                   .slice(0, 8)
-                  .join(", ")}
-                ...`,
+                  .join(", ")}\u00A0...`,
                 }}
               />
             </Description>
@@ -153,12 +153,16 @@ export default function Home() {
             onClick={() => setRandom(Math.round(Math.random() * 15))}
           >
             <PodiumContainer as="aside">
-              <Podium
-                podiumised={randomUserData.data}
-                // noPadding
-                fullHeight
-                title={`Exemple: ${randomUserData?.user?.pseudo}`}
-              />
+              {!randomUserData?.user?.pseudo ? (
+                <Loader isLoading={true} size="33px" withBackground />
+              ) : (
+                <Podium
+                  podiumised={randomUserData.data}
+                  // noPadding
+                  fullHeight
+                  title={`Exemple: ${randomUserData?.user?.pseudo}`}
+                />
+              )}
             </PodiumContainer>
           </DemoContent>
         </Demo>
