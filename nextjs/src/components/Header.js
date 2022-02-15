@@ -15,7 +15,7 @@ import API from "../services/api";
 import { useSWRConfig } from "swr";
 
 const Header = () => {
-  const { mutate, cache } = useSWRConfig();
+  const { cache } = useSWRConfig();
   const { user } = useUser({ from: "Header" });
   const router = useRouter();
   const { userPseudo } = router.query;
@@ -27,9 +27,6 @@ const Header = () => {
 
   const onLogout = async () => {
     await API.post({ path: "/user/logout" });
-    mutate(API.getUrl("/user/me"), null);
-    mutate(API.getUrl("/answer/friends"), null);
-    mutate(API.getUrl("/answer"), null);
     cache.clear();
     window?.sessionStorage?.clear();
     router.push("/");

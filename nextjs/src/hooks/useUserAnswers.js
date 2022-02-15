@@ -6,7 +6,8 @@ const useUserAnswers = () => {
   const userAnswers = data?.data || [];
 
   const setAnswer = async (newAnswer) => {
-    mutate(async ({ data: answers }) => {
+    mutate(async (oldData) => {
+      const answers = oldData?.data || [];
       const response = await API.postWithCreds({ path: "/answer", body: newAnswer });
       if (response.ok) return { data: [...answers, response.data], ok: true };
       return { data: answers, ok: true };
