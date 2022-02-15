@@ -16,7 +16,7 @@ import ModalFirstThemeSelection from "../components/ModalFirstThemeSelection";
 import ModalLastThemeSelection from "../components/ModalLastThemeSelection";
 import ModalAccessToResults from "../components/ModalAccessToResults";
 import useUserAnswers from "../hooks/useUserAnswers";
-import Banner from "../components/Banner";
+// import Banner from "../components/Banner";
 
 const filterBySearch = (search, quizzForSearch) => (theme, index) => {
   if (!search) return true;
@@ -40,7 +40,7 @@ const ThemeSelect = () => {
   const initNewUser = async () => {
     if (!!user?._id) return;
     const response = await API.post({ path: "/user" });
-    if (response.ok) mutate(response.data);
+    if (response.ok) mutate(response, false); // skip revalidation, if not: bug
   };
 
   const showModalRequest = (modalName) => {
@@ -78,19 +78,22 @@ const ThemeSelect = () => {
         window.sessionStorage.setItem("theme-select_first", "true");
       }, 1000);
     }
-    if (userThemes.length === 2 && !window.sessionStorage.getItem("theme-select_last")) {
-      alertTimeouts.current = setTimeout(() => {
-        showModalRequest("theme-select_last");
-        window.sessionStorage.setItem("theme-select_last", "true");
-      }, 1000);
-    }
-    if (userThemes.length === 3 && !window.sessionStorage.getItem("theme-select_result")) {
+    // if (userThemes.length === 2 && !window.sessionStorage.getItem("theme-select_last")) {
+    //   alertTimeouts.current = setTimeout(() => {
+    //     showModalRequest("theme-select_last");
+    //     window.sessionStorage.setItem("theme-select_last", "true");
+    //   }, 1000);
+    // }
+    if (userThemes.length > 0 && !window.sessionStorage.getItem("theme-select_result")) {
       alertTimeouts.current = setTimeout(() => {
         showModalRequest("theme-select_result");
         window.sessionStorage.setItem("theme-select_result", "true");
       }, 1000);
     }
-  }, [userAnswers.length]);
+    return () => {
+      clearTimeout(alertTimeouts?.current);
+    };
+  }, [userAnswers.length, userThemes.length]);
 
   useEffect(() => {
     setUserThemes(getUserThemes(userAnswers));
@@ -133,8 +136,16 @@ const ThemeSelect = () => {
             </small>
           </SubTitle>
           <ThemesContainer>
-            {quizzFiltered.map((theme) => {
-              return <ThemeButton key={theme._id} theme={theme} userAnswers={userAnswers} onClick={goToQuizz} />;
+            {quizzFiltered.map((theme, index) => {
+              return (
+                <ThemeButton
+                  key={theme._id}
+                  debug={index === 0}
+                  theme={theme}
+                  userAnswers={userAnswers}
+                  onClick={goToQuizz}
+                />
+              );
             })}
           </ThemesContainer>
           <SearchInput
@@ -158,11 +169,11 @@ const ThemeSelect = () => {
         onForceCloseModal={onForceCloseModal}
         onCloseModal={onCloseModal}
       />
-      <ModalLastThemeSelection
+      {/* <ModalLastThemeSelection
         isActive={showModal === "theme-select_last"}
         onForceCloseModal={onForceCloseModal}
         onCloseModal={onCloseModal}
-      />
+      /> */}
       <ModalAccessToResults
         isActive={showModal === "theme-select_result"}
         onForceCloseModal={onForceCloseModal}
@@ -237,14 +248,14 @@ const SearchInput = styled(FormInput)`
 
 const computeButtonCaption = (userThemes) => {
   if (!userThemes?.length) return "Choisissez votre 1<sup>er</sup>&nbsp;&nbsp;thème";
-  if (userThemes.length === 1) return "Choisissez un 2<sup>ème</sup>&nbsp;&nbsp;thème";
-  if (userThemes.length === 2) return "Choisissez un 3<sup>ème</sup>&nbsp;&nbsp;thème";
+  // if (userThemes.length === 1) return "Choisissez un 2<sup>ème</sup>&nbsp;&nbsp;thème";
+  // if (userThemes.length === 2) return "Choisissez un 3<sup>ème</sup>&nbsp;&nbsp;thème";
   return "Voir les résultats";
 };
 const computeTitleCaption = (userThemes) => {
   if (!userThemes?.length) return "Choisissez votre premier thème";
-  if (userThemes.length === 1) return "Choisissez un deuxième thème";
-  if (userThemes.length === 2) return "Choisissez un troisième thème";
+  // if (userThemes.length === 1) return "Choisissez un deuxième thème";
+  // if (userThemes.length === 2) return "Choisissez un troisième thème";
   return "Choisissez un thème";
 };
 
@@ -252,12 +263,12 @@ const computeSubtitle = (userThemes, questionsNumber, userAnswers, quizz) => {
   if (!userThemes?.length) {
     return "Répondez au quizz, thème après thème, en commençant par<strong> celui qui vous tient le plus à coeur.</strong>";
   }
-  if (userThemes.length === 1) {
-    return "Prenez désormais un deuxième thème <strong> qui vous tient à coeur.</strong>";
-  }
-  if (userThemes.length === 2) {
-    return "Encore un thème avant de pouvoir <strong> voir vos résultats&nbsp;!</strong>";
-  }
+  // if (userThemes.length === 1) {
+  //   return "Prenez désormais un deuxième thème <strong> qui vous tient à coeur.</strong>";
+  // }
+  // if (userThemes.length === 2) {
+  //   return "Encore un thème avant de pouvoir <strong> voir vos résultats&nbsp;!</strong>";
+  // }
   if (userAnswers.length === questionsNumber) {
     return "Bravo, vous avez répondu à toutes les questions&nbsp;!";
   }

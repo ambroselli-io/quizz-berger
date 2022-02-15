@@ -3,24 +3,16 @@ import Button from "./Button";
 import Modal from "./Modal";
 
 const ModalFirstThemeSelection = ({ isActive, onForceCloseModal, onCloseModal }) => (
-  <Modal
-    title="Choisissez votre premier thème"
-    isActive={isActive}
-    onCloseModal={onCloseModal}
-    center>
+  <Modal title="Choisissez votre premier thème" isActive={isActive} onCloseModal={onCloseModal} center>
     <p>
       Répondez au quizz, thème après thème, en commençant par
       <br />
       <strong>celui&nbsp;qui&nbsp;vous&nbsp;tient le&nbsp;plus&nbsp;à&nbsp;coeur.</strong>
       <br />
       <br />
-      Vous devez répondre à <strong>au&nbsp;moins&nbsp;trois&nbsp;thèmes</strong>
-      <br /> afin que nous puissions vous dire quel est votre candidat idéal
-      <br />
-      <br />
       <small>
-        Libre à vous ensuite de répondre à tous les thèmes, pour avoir plus de détails sur les
-        points communs entre votre pensée politique et celle des candidats
+        Libre à vous ensuite de répondre à tous les thèmes, pour avoir plus de détails sur les points communs entre
+        votre pensée politique et celle des candidats
       </small>
       <br />
       <br />

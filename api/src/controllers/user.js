@@ -43,6 +43,17 @@ const logoutCookieOptions = () => {
 };
 
 router.post(
+  "/",
+  catchErrors(async (req, res) => {
+    const user = await UserObject.create({});
+
+    setCookie(req, res, user);
+
+    return res.status(200).send({ ok: true, data: user.me() });
+  })
+);
+
+router.post(
   "/signup",
   catchErrors(async (req, res) => {
     if (!req.body.pseudo) return res.status(400).send({ ok: false, error: "Veuillez fournir un pseudo" });
@@ -102,17 +113,6 @@ router.post(
   catchErrors(async (req, res) => {
     res.clearCookie("jwt", logoutCookieOptions());
     res.status(200).send({ ok: true });
-  })
-);
-
-router.post(
-  "/",
-  catchErrors(async (req, res) => {
-    const user = await UserObject.create({});
-
-    setCookie(req, res, user);
-
-    return res.status(200).send({ ok: true, data: user.me() });
   })
 );
 

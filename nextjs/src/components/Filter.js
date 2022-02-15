@@ -7,9 +7,7 @@ import Modal from "../components/Modal";
 const Filter = ({ toggle, isActive, children, title, hideTitle }) => {
   return (
     <>
-      {!hideTitle && (
-        <InternalLinkStyled onClick={() => toggle((show) => !show)}>{title}</InternalLinkStyled>
-      )}
+      {!hideTitle && <InternalLinkStyled onClick={() => toggle((show) => !show)}>{title}</InternalLinkStyled>}
       <Modal
         title={title}
         isActive={isActive}
@@ -22,7 +20,8 @@ const Filter = ({ toggle, isActive, children, title, hideTitle }) => {
           toggle(false);
           document.body.style.overflow = "visible";
         }}
-        center>
+        center
+      >
         <ButtonsContainer isActive={isActive}>{children}</ButtonsContainer>
       </Modal>
     </>
@@ -35,7 +34,7 @@ const InternalLinkStyled = styled(InternalLink)`
 
 const ButtonsContainer = styled.div`
   max-width: 500px;
-  width: auto;
+  width: 100%;
   margin-bottom: 20px;
   display: ${(props) => (props.isActive ? "flex" : "none")};
   grid-template-columns: auto auto auto;

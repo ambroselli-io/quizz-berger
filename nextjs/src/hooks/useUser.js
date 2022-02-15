@@ -18,7 +18,7 @@ const useUser = ({ redirectOnLoggedOut = "", redirectOnLoggedIn } = {}) => {
     if (redirectOnLoggedIn && !isLoading && !!user.isLoggedIn) {
       router.push(redirectOnLoggedIn);
     }
-  }, [isLoading, error, redirectOnLoggedOut, redirectOnLoggedIn]);
+  }, [isLoading, error, redirectOnLoggedOut, redirectOnLoggedIn, user]);
 
   return {
     user,

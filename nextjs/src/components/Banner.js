@@ -21,6 +21,7 @@ const Banner = () => {
     document.body.style.overflow = "hidden";
   };
 
+  return null;
   return (
     <>
       <ModalContact

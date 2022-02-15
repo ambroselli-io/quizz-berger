@@ -18,8 +18,6 @@ router.get(
 
     const newHtml = html.replace("{{PSEUDO}}", req.params.pseudo);
 
-    console.log("BAH OUI");
-
     res.status(200).set("Content-Type", "text/html").send(Buffer.from(newHtml));
   })
 );

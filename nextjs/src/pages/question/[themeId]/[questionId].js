@@ -48,12 +48,12 @@ const Quizz = () => {
   ]);
   useEffect(() => {
     setUserThemes([...userAnswers.reduce((themes, answer) => themes.add(answer.themeId), new Set())]);
-  }, [userAnswers]);
+  }, [userAnswers.length]);
 
   const [showResultsButton, setShowResultsButton] = useState(false);
   useEffect(() => {
     setShowResultsButton(userThemes.length > 2);
-  }, [userThemes]);
+  }, [userThemes.length]);
 
   const goToNextQuestion = () => {
     if (questionIndex < questions.length - 1) {

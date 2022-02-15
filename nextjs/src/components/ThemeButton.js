@@ -1,7 +1,7 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import styled from "styled-components";
 
-const ThemeButton = ({ theme, onClick, userAnswers = [] }) => {
+const ThemeButton = ({ theme, onClick, userAnswers = [], debug }) => {
   const { backgroundColor, fr, _id, questions } = theme;
 
   const userThemeAnswers = useMemo(
@@ -9,11 +9,19 @@ const ThemeButton = ({ theme, onClick, userAnswers = [] }) => {
     [userAnswers]
   );
 
-  const progress = useMemo(() => userThemeAnswers / questions.length, [userThemeAnswers, questions.length]);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    setProgress(userThemeAnswers / questions.length);
+  }, [userThemeAnswers, questions]);
 
   return (
-    <ThemesButtonStyled data-themeid={_id} onClick={onClick} backgroundColor={backgroundColor}>
-      <BackgroundProgress key={progress} data-themeid={_id} backgroundColor={backgroundColor} progress={progress} />
+    <ThemesButtonStyled key={progress + 100} data-themeid={_id} onClick={onClick} backgroundColor={backgroundColor}>
+      <BgProgress
+        data-themeid={_id}
+        backgroundColor={backgroundColor}
+        style={{ width: `${Math.round(progress * 100)}%` }}
+      />
       <span />
       <span data-themeid={_id}>{fr}</span>
       <Progress data-themeid={_id}>
@@ -38,11 +46,10 @@ export const ThemesButtonStyled = styled.button`
   overflow: hidden;
 `;
 
-const BackgroundProgress = styled.div`
+const BgProgress = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: ${(props) => Math.round(props.progress * 100)}%;
   height: 100%;
   background-color: ${(props) => props.backgroundColor}CC;
 `;
