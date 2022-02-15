@@ -18,6 +18,7 @@ const setCookie = (req, res, user) => {
     maxAge: maxAge,
     httpOnly: true,
     secure: true,
+    path: "/",
   };
   if (config.ENVIRONMENT === "development") {
     tokenConfig.sameSite = "None";
@@ -31,6 +32,7 @@ const logoutCookieOptions = () => {
   const tokenConfig = {
     httpOnly: true,
     secure: true,
+    path: "/",
   };
   if (config.ENVIRONMENT === "development") {
     tokenConfig.sameSite = "None";

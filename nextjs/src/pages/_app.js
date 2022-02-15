@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Le Quizz du Berger</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#101827" />
         <meta

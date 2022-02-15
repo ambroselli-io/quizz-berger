@@ -16,6 +16,12 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);
 
+const quizzQuestionsIds = quizz
+  .reduce((questions, theme) => {
+    return [...questions, ...theme.questions];
+  }, [])
+  .map((q) => q._id);
+
 router.post(
   "/",
   passport.authenticate("user", { session: false }),
@@ -50,7 +56,7 @@ router.post(
 
 const getCandidatesAnswers = async () => {
   const candidates = await UserObject.find({ isCandidate: true }).lean();
-  const candidatesAnswers = await AnswerObject.find({ user: candidates }).lean();
+  const candidatesAnswers = await AnswerObject.find({ user: candidates, questionId: { $in: quizzQuestionsIds } }).lean();
 
   return candidates.map((candidate) => {
     return {
@@ -77,7 +83,7 @@ router.get(
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res) => {
     const friends = await UserObject.find({ _id: req.user?.friends });
-    const friendsAnswers = await AnswerObject.find({ user: friends });
+    const friendsAnswers = await AnswerObject.find({ user: friends, questionId: { $in: quizzQuestionsIds } });
 
     const populatedFriendsAnswers = friends.map((friend) => {
       return {
@@ -97,7 +103,7 @@ router.get(
   "/",
   passport.authenticate("user", { session: false }),
   catchErrors(async (req, res, next) => {
-    const userAnswers = await AnswerObject.find({ user: req.user._id }).lean();
+    const userAnswers = await AnswerObject.find({ user: req.user._id, questionId: { $in: quizzQuestionsIds } }).lean();
 
     res.status(200).send({ ok: true, data: userAnswers });
 
@@ -187,7 +193,7 @@ router.get(
   catchErrors(async (req, res) => {
     const users = await UserObject.aggregate([{ $match: { isCandidate: true } }, { $sample: { size: 1 } }]);
 
-    const userAnswers = await AnswerObject.find({ user: users[0]._id }).lean();
+    const userAnswers = await AnswerObject.find({ user: users[0]._id, questionId: { $in: quizzQuestionsIds } }).lean();
     const candidateAnswers = await getCandidatesAnswers();
 
     const personsScore = getCandidatesScorePerThemes(userAnswers, candidateAnswers, quizzQuestions);
@@ -205,7 +211,7 @@ router.get(
     if (!user || !(user.isPublic || user.isCandidate)) {
       return res.status(400).send({ ok: false });
     }
-    const userAnswers = await AnswerObject.find({ user: user._id });
+    const userAnswers = await AnswerObject.find({ user: user._id, questionId: { $in: quizzQuestionsIds } });
 
     res.status(200).send({ ok: true, data: userAnswers });
   })
