@@ -43,6 +43,40 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-620b92395a0afa612d005e7b",
+        "fr": "Quelle est votre vision de l'Europe ?",
+        "answers": [
+          "Il est nécessaire d'approfondir les fondements politiques de l'Union, en progressant peu à peu vers une Europe fédérale et démocratique",
+          "Nous devons conserver notre souveraineté actuelle tout en favorisant la mise en œuvre de grands projets de coopération à l'échelle européenne",
+          "Il faut récupérer notre souveraineté budgétaire, monétaire et rétablir notre propre politique aux frontières, quitte à devoir renégocier certains traités",
+          "Nous devons retrouver notre pleine souveraineté en dénonçant les traités européens et en quittant si nécessaire l'Europe",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 2, 0],
+          [1, 3, 5, 4, 0],
+          [0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-620b92395a0afa612d005e7b",
+        "fr": "Que pensez-vous de la création d'une armée / de défense européenne commune ?",
+        "answers": [
+          "Il est nécessaire de construire une politique extérieure et de défense européenne",
+          "Il faut limiter l'approfondissement et l'élargissement de l'UE dans le domaine militaire",
+          "Il faut refuser tout projet d'armée européenne",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0],
+          [4, 5, 0, 0],
+          [0, 0, 5, 0],
+          [0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -133,6 +167,26 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://www.lesechos.fr/industrie-services/conso-distribution/la-souverainete-alimentaire-de-la-france-en-quatre-questions-1197142"
+      },
+      {
+        "_id": "question-620b92395a0afa612d005e80",
+        "fr": "Selon ces propositions sur la Politique Agricole Commune (PAC), laquelle vous paraît la plus pertinente ?",
+        "answers": [
+          "Développer la PAC vers pour renforcer les grandes exploitations",
+          "Renforcer et développer la PAC vers plus de libre-échange pour soutenir les petites exploitations",
+          "La PAC est très bien comme elle est, il ne faut la toucher",
+          "Durcir la PAC, notamment en réduisant les accords de libre-échange et en instaurant un contrôle des importations agricoles",
+          "Sortir de la PAC pour retrouver notre pleine souveraineté agricole et renforcer le pouvoir d'achat de nos exploitants",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -327,6 +381,22 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-620b92395a0afa612d005e8c",
+        "fr": "Pensez-vous qu'il y ait des inégalités d'accès à la culture ?",
+        "answers": [
+          "La culture représente un outil de croissance, et au même rang que toute industrie, elle doit être rendue la plus compétitive possible.",
+          "La culture devrait être financée par l'Etat, et par le privé quand c'est nécessaire",
+          "Il faut que la culture sorte de la logique de rentabilité, un seul mot d'ordre : l'art pour l'art",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -395,6 +465,22 @@
           [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Immigration_en_France"
+      },
+      {
+        "_id": "question-620b92395a0afa612d005e8c",
+        "fr": "Quelle position sur l'intégration des migrants en France ?",
+        "answers": [
+          "Il faut régulariser tous les travailleurs et travailleuses sans-papiers et faciliter l'accès à la ationalité française pour les personnes étrangères présentes légalement sur le territoire.",
+          "Il faut instaurer et régulariser une immigration choisie avec des quota par métiers et par pays.",
+          "Il ne faut régulariser aucun étranger, la France appartient aux Français de souche",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-620b92395a0afa612d005e91",
@@ -563,7 +649,7 @@
     "questions": [
       {
         "_id": "question-620b92395a0afa612d005e9b",
-        "fr": "Que pensez-vous du libre-échange favorisant une libre circulation des marchandises ?",
+        "fr": "Que pensez-vous d’un c omme rce ouvert favorisant une libre circulation des marchandises ?",
         "help": "https://fr.wikipedia.org/wiki/Libre-échange",
         "answers": [
           "Le libre-échange a permis une phase de prospérité incomparable dans l'histoire, il nous faut donc le promouvoir",
@@ -684,16 +770,20 @@
         "_id": "question-620b92395a0afa612d005ea1",
         "fr": "Avec quelle proposition êtes-vous d'accord sur le temps de travail en entreprise ?",
         "answers": [
-          "Passer aux 32 heures et favoriser leur généralisation par la négociation collective",
+          "Généraliser le régime des 32 heures à tous les salariés",
+          "Passer aux 32 heures dans les métiers pénibles ou de nuit et favoriser leur généralisation par la négociation collective",
           "Maintenir le régime actuel des 35 heures tout en favorisant des négociations internes à chaque secteur",
           "Mettre fin aux 35 heures et libéraliser le choix du temps de travail sans durée maximale",
+          "Augmenter la durée de travail au-delà de 35 heures, il faut remettre la France au travail",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 1, 0, 0],
-          [1, 5, 1, 0],
-          [0, 1, 5, 0],
-          [0, 0, 0, 0]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ],
         "help": "https://fr.wikipedia.org/wiki/Fuite_des_cerveaux#France"
       }
@@ -1178,11 +1268,11 @@
         "_id": "question-620b92395a0afa612d005ebd",
         "fr": "Pour lutter contre la délinquance et le terrorisme il faut, selon vous",
         "answers": [
-          "Renforcer les moyens humains du renseignement en revenant sur la fusion de la direction de la surveillance du territoire (DST) et des renseignements généraux (RG)",
-          "Répondre aux besoins de sécurité du quotidien (petite délinquance, incivilités, harcèlement de rue) tout en luttant plus efficacement contre la criminalité organisée (trafics de drogue, proxénétisme, cybercriminalité).",
-          "Ouvrir un bagne aux îles Kerguelen réservé aux condamnés pour faits de terrorisme",
-          "Expulser les délinquants étrangers incarcérés immédiatement et les criminels étrangers à l'issue de leur peine",
-          "Expulser pour menace à l'ordre public tous les étrangers dont le comportement participe de l'islamisme radical et qui sont inscrits dans les fichiers de l'antiterrorisme",
+          "Un renforcement des moyens du renseignement général et une politique sécuritaire accrue dans tous les domaines",
+          "Une lutte plus efficace contre les problèmes sécuritaires quotidiens en privilégiant la proximité et la répression de l'insécurité quotidienne",
+          "Le renforcement de nos capacités répressives par l'augmentation d'ouvertures de prisons et le recours potentiel à des emprisonnements plus stricts",
+          "L'expulsion prioritaire des étrangers radicalis és ou fichés S pour lutter contre l'islamisation de notre société et préserver l'ordre public",
+          "L'expulsion de l'ensemble des étrangers délinquants enfermés dans nos prisons pour soulager le milieu carcéral et préserver la sécurité nationale",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1305,6 +1395,24 @@
         ]
       },
       {
+        "_id": "question-620b92395a0afa612d005ec3",
+        "fr": "Selon vous, quelle est la meilleure solution pour favoriser une fiscalité plus verte?",
+        "answers": [
+          "Mise en place d'un ISF afin de mettre à contribution les plus fortunés pour financer la transition énergétique : il faut cibler les plus riches",
+          "Augmenter l'ensemble des taxes sur les produits polluants: il faut un effort financier collectif",
+          "Baisse de la TVA à 5,5% sur les produits énergétiques et quotidiens: c'est en redonnant du pouvoir d'achat aux ménages que nous transformerons leurs modes de vie : il faut cibler les classes moyennes et les plus pauvres",
+          "Ne rien faire car l’environnement n’est pas une priorité",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
         "_id": "question-620b92395a0afa612d005ec4",
         "fr": "S'agissant de l'Impôt de Solidarité sur la Fortune (ISF), il faut selon vous :",
         "answers": [
@@ -1313,6 +1421,26 @@
           "Conserver le système actuel d'Impôt focalisé sur la Fortune Immobilière, juste et équilibré",
           "Retirer tout impôt spécifique aux grandes fortunes, qui doivent être traitées comme les autres",
           "...et réduire tous les impôts de manière générale",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-620b92395a0afa612d005ec4",
+        "fr": "Quelle devrait être l'évolution de la fiscalité des entreprises dans le contexte économique actuel ?",
+        "answers": [
+          "Il est nécessaire de poursuivre les allègements fiscaux pour l'ensemble des entreprises, nous devons les soutenir et stimuler leur compétitivité",
+          "Il faut alléger la fiscalité sur les TPE-PME et sur l'embauche pour lutter contre le chômage et garantir la croissance",
+          "Il est nécessaire de recalculer la répartition actuelle des montants fiscaux pour rétablir l'égalité entre TPE/PME et grands groupes",
+          "Nous devons alourdir la fiscalité des grandes multinationales pour financer les programmes publics de redistribution et de cohésion sociale",
+          "Nous devons rétablir l'égalité fiscale entre firmes et citoyens en augmentant dans son ensemble la fiscalité des entreprises",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1587,11 +1715,11 @@
         "fr": "Que pensez-vous de la façon dont la politique s'occupe des handicapés ?",
         "help": "https://fr.wikipedia.org/wiki/Handicap_en_France",
         "answers": [
-          "C'est honteux, il faut absolument en faire un sujet prioritaire, question de survie.",
-          "Même si les choses avancent dans le bon sens, ce n'est pas encore assez digne d'un pays avancé, il faut accélérer.",
-          "De gros progrès ont été fait, et continuent d'être fait, c'est bien.",
-          "On en a fait beaucoup pour les handicapés, il serait peut-être temps de passer à autre chose.",
-          "On en fait trop pour les handicapés, ça coûte très cher, voire trop.",
+          "Il faut que les questions relatives aux handicapés soient des sujets prioritaires",
+          "Il faut prendre davantage de mesures pour le bien-être des handicapés",
+          "De gros progrès ont été fait, il faut continuer sur cette lancée sans en faire davantage",
+          "Nous avons déjà réalisé suffisamment d'effort pour les personnes handicapées, il est inutile d'aller plus loin",
+          "On en fait trop pour les handicapés, ça coûte très cher, voire trop",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
