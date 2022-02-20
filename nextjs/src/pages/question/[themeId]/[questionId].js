@@ -220,6 +220,7 @@ const QuestionHelp = styled.a`
   margin-bottom: 40px;
   font-weight: 400;
   font-size: 12px;
+  font-family: default;
   text-align: center;
   strong {
     text-decoration: underline;
@@ -231,12 +232,15 @@ const AnswerContainer = styled.div`
   display: flex;
   grid-gap: 15px;
   flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   align-items: center;
 `;
 
 const AnswerButton = styled.button`
   padding: 10px;
   width: 500px;
+  letter-spacing: 0.01rem;
   min-height: 60px;
   font-size: 16px;
   background: ${(props) => (props.isActive ? `#111827` : `#ffffff`)};
