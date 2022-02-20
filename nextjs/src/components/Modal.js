@@ -74,9 +74,14 @@ const CrossButton = styled.button`
 const ModalInnerContainer = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   ${(props) => props.center && "align-items: center;"}
   ${(props) => props.center && "text-align: center;"}
   margin-top: 25px;
+  * {
+    letter-spacing: 0.01rem;
+  }
   > span {
     width: 75%;
     margin-bottom: 25px;
