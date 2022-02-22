@@ -16,58 +16,17 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d03520e8",
+        "help": "https://fr.wikipedia.org/wiki/Organisation_du_trait%C3%A9_de_l%27Atlantique_nord",
         "fr": "Quel avenir devrions-nous dessiner pour la relation transatlantique ?",
         "answers": [
           "Il faut renforcer notre alliance avec les USA, en jouant pleinement notre rôle de membre de l'OTAN",
@@ -78,59 +37,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d03520e9",
         "fr": "Quelle est votre vision de l'Europe ?",
+        "help": "https://www.google.com/search?q=futur+de+l%27union+europ%C3%A9enne",
         "answers": [
           "Il est nécessaire d'approfondir les fondements politiques de l'Union, en progressant peu à peu vers une Europe fédérale et démocratique",
           "Nous devons conserver notre souveraineté actuelle tout en favorisant la mise en œuvre de grands projets de coopération à l'échelle européenne",
@@ -139,46 +57,17 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 2, 0],
+          [1, 3, 5, 4, 0],
+          [0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d03520ea",
         "fr": "Que pensez-vous de la création d'une armée / de défense européenne commune ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_de_s%C3%A9curit%C3%A9_et_de_d%C3%A9fense_commune",
         "answers": [
           "Il est nécessaire de construire une politique extérieure et de défense européenne",
           "Il faut limiter l'approfondissement et l'élargissement de l'UE dans le domaine militaire",
@@ -186,30 +75,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0],
+          [4, 5, 0, 0],
+          [0, 0, 5, 0],
+          [0, 0, 0, 0]
         ]
       }
     ]
@@ -231,54 +100,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -294,54 +121,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -357,59 +142,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d03520ef",
         "fr": "Que pensez-vous de la souveraineté / l'indépendance alimentaire de la France ?",
+        "help": "https://www.lesechos.fr/industrie-services/conso-distribution/la-souverainete-alimentaire-de-la-france-en-quatre-questions-1197142",
         "answers": [
           "C'est aussi stratégique que la défense nationale : il faut prendre toutes les mesures nécessaires pour avoir notre indépendance alimentaire",
           "C'est une des conditions de survie d'un État, il faut éviter de se mettre en danger sur certaines filières d'approvisionnement indispensables",
@@ -419,60 +163,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://www.lesechos.fr/industrie-services/conso-distribution/la-souverainete-alimentaire-de-la-france-en-quatre-questions-1197142"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d03520f0",
         "fr": "Selon ces propositions sur la Politique Agricole Commune (PAC), laquelle vous paraît la plus pertinente ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_agricole_commune",
         "answers": [
           "Développer la PAC vers pour renforcer les grandes exploitations",
           "Renforcer et développer la PAC vers plus de libre-échange pour soutenir les petites exploitations",
@@ -482,54 +184,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -551,54 +211,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -614,54 +232,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -677,54 +253,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -738,41 +272,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            4,
-            2,
-            0
-          ],
-          [
-            2,
-            4,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 3, 0, 0],
+          [3, 5, 4, 2, 0],
+          [2, 4, 5, 3, 0],
+          [0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
@@ -786,41 +290,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            4,
-            2,
-            0
-          ],
-          [
-            2,
-            4,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 3, 0, 0],
+          [3, 5, 4, 2, 0],
+          [2, 4, 5, 3, 0],
+          [0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -832,6 +306,7 @@
       {
         "_id": "question-6211242a3f15af68d03520f8",
         "fr": "Que pensez-vous du budget alloué à la culture en général ?",
+        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_(France)#Budget",
         "answers": [
           "Il faut beaucoup le diminuer",
           "Il faut le diminuer un peu",
@@ -841,60 +316,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_(France)#Budget"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d03520f9",
         "fr": "Que pensez-vous du budget lié à la préservation du patrimoine ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_culturelle_française#La_protection_et_la_conservation_du_patrimoine",
         "answers": [
           "Il faut beaucoup l'augmenter",
           "Il faut l'augmenter un peu",
@@ -904,60 +337,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Politique_culturelle_française#La_protection_et_la_conservation_du_patrimoine"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d03520fa",
-        "fr": "Que pensez-vous du fait de démocratiser la culture avec le pass culture ?",
+        "fr": "Que pensez-vous du pass culture ?",
+        "help": "https://fr.wikipedia.org/wiki/Pass_Culture",
         "answers": [
           "C'est très bien, la culture doit être accessible à tous",
           "C'est bien, on pourrait même l'améliorer en augmentant son budget",
@@ -967,60 +358,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Pass_Culture"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d03520fb",
         "fr": "Pensez-vous qu'il y ait des inégalités d'accès à la culture ?",
+        "help": "https://fr.wikipedia.org/wiki/Sociologie_des_pratiques_culturelles",
         "answers": [
           "Oui beaucoup et toujours en faveur des classes privilégiées",
           "Oui, un peu, et en général les classes privilégiées ont accès plus facilement à la culture",
@@ -1030,59 +379,17 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d03520fc",
-        "fr": "Pensez-vous qu'il y ait des inégalités d'accès à la culture ?",
+        "fr": "Quelle est votre vision de la culture ?",
         "answers": [
           "La culture représente un outil de croissance, et au même rang que toute industrie, elle doit être rendue la plus compétitive possible.",
           "La culture devrait être financée par l'Etat, et par le privé quand c'est nécessaire",
@@ -1090,30 +397,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            2,
-            0,
-            0
-          ],
-          [
-            2,
-            5,
-            2,
-            0
-          ],
-          [
-            0,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
         ]
       }
     ]
@@ -1125,6 +412,7 @@
       {
         "_id": "question-6211242a3f15af68d03520fe",
         "fr": "Que pensez-vous de la politique communautaire d'immigration menée par l'Union Européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_europ%C3%A9enne_d%27immigration",
         "answers": [
           "La politique européenne est inhumaine et profondément injuste : il est nécessaire d'ouvrir massivement les frontières européennes",
           "Le système de Schengen est efficace, mais il est nécessaire de modifier les critères de répartition entre pays, afin de soulager les pays d'arrivée",
@@ -1134,59 +422,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d03520ff",
         "fr": "S'agissant de la politique migratoire, selon vous il faut :",
+        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France",
         "answers": [
           "Un encouragement aux réfugiés du monde entier pour venir dans notre pays, qui saura les accueillir dignement",
           "Un assouplissement de la politique française actuelle avec un accueil plus important notamment des réfugiés",
@@ -1196,60 +443,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352100",
         "fr": "Comment considérez-vous les conséquences de l'immigration sur la démographie française ?",
+        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France",
         "answers": [
           "L'immigration permet un apport démographique et culturel enrichissant grandement notre société",
           "L'immigration est un phénomène bénéfique avec la mise en place d'une gestion raisonnée et d'une intégration équilibrée",
@@ -1259,56 +464,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352101",
@@ -1320,35 +482,16 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            2,
-            0,
-            0
-          ],
-          [
-            2,
-            5,
-            2,
-            0
-          ],
-          [
-            0,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352102",
         "fr": "Quelle mesure vous paraît la plus pertinente concernant le droit de vote pour les étrangers vivant en France depuis un certain temps ?",
+        "help": "https://fr.wikipedia.org/wiki/Droit_de_vote_des_%C3%A9trangers_en_France",
         "answers": [
           "Attribuer le droit de vote pour les élections nationales",
           "Attribuer le droit de vote pour les élections locales",
@@ -1356,32 +499,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France"
+          [5, 3, 0, 0],
+          [4, 5, 0, 0],
+          [0, 0, 5, 0],
+          [0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352103",
@@ -1393,32 +515,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France"
+          [5, 3, 0, 0],
+          [4, 5, 0, 0],
+          [0, 0, 5, 0],
+          [0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352104",
@@ -1433,54 +534,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -1492,6 +551,7 @@
       {
         "_id": "question-6211242a3f15af68d0352106",
         "fr": "Que pensez-vous du modèle de financement public de la Sécurité Sociale en France ?",
+        "help": "https://assurance-maladie.ameli.fr/qui-sommes-nous/notre-fonctionnement/financement/principes-generaux",
         "answers": [
           "Il faut mettre en place une Sécurité Sociale entièrement prise en charge par l'État qui rembourserait 100% des frais médicaux",
           "L'État doit augmenter son financement de la Sécurité Sociale en mettant en place des remboursements supplémentaires",
@@ -1501,59 +561,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352107",
         "fr": "Quelle doit être la trajectoire des dépenses publiques françaises après la pandémie ?",
+        "help": "https://fr.wikipedia.org/wiki/Finances_publiques_en_France",
         "answers": [
           "Il est nécessaire que notre État augmente massivement ses dépenses pour faire face aux enjeux sociaux qui menacent la société française",
           "Le déficit ne doit pas être un obstacle à un accroissement raisonné des dépenses via des plans d'investissement et de redistribution nécessaires",
@@ -1563,59 +582,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352108",
         "fr": "Quelle doit être la place de l'État dans l'économie française ?",
+        "help": "https://fr.wikipedia.org/wiki/%C3%89tat#%C3%89conomie",
         "answers": [
           "Il est nécessaire pour transformer le système capitaliste d'augmenter massivement l'intervention de l'État dans l'économie afin d'assurer une vie décente à ses citoyens",
           "L'État doit retrouver un rôle important dans l'économie afin de rétablir ses capacités de régulation et de redistribution sociale",
@@ -1625,59 +603,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352109",
         "fr": "Comment appréhendez-vous la dette publique française, qui s'élevait à 118% du PIB en 2021 ?",
+        "help": "https://fr.wikipedia.org/wiki/Dette_publique_de_la_France",
         "answers": [
           "La dette publique répond à la nécessité d'un État protecteur du pouvoir d'achat de ses citoyens et une partie de son accroissement liée à la pandémie devrait être annulée",
           "L'endettement de l'État n'est pas un fardeau mais permet de financer des politiques publiques nécessaires dans le contexte actuel",
@@ -1687,59 +624,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035210a",
         "fr": "Que pensez-vous de la balance budgétaire en France ?",
+        "help": "https://www.google.com/search?q=balance+budg%C3%A9taire+france",
         "answers": [
           "Il faut avoir un budget en excédent chaque année",
           "Il faut avoir un budget à l'équilibre chaque année",
@@ -1748,41 +644,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            1,
-            0
-          ],
-          [
-            0,
-            1,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 1, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -1793,7 +659,7 @@
     "questions": [
       {
         "_id": "question-6211242a3f15af68d035210c",
-        "fr": "Que pensez-vous d’un c omme rce ouvert favorisant une libre circulation des marchandises ?",
+        "fr": "Que pensez-vous d'un commerce ouvert favorisant une libre circulation des marchandises ?",
         "help": "https://fr.wikipedia.org/wiki/Libre-échange",
         "answers": [
           "Le libre-échange a permis une phase de prospérité incomparable dans l'histoire, il nous faut donc le promouvoir",
@@ -1804,54 +670,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -1865,30 +689,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            2,
-            0,
-            0
-          ],
-          [
-            2,
-            5,
-            2,
-            0
-          ],
-          [
-            0,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
         ]
       },
       {
@@ -1903,46 +707,17 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            1,
-            0
-          ],
-          [
-            0,
-            1,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 1, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035210f",
         "fr": "Que pensez-vous de la privatisation de grandes entreprises publiques (SNCF, EDF...) ?",
+        "help": "https://en.wikipedia.org/wiki/SNCF",
         "answers": [
           "L'État ne doit pas interférer dans quelconque entreprise : une entreprise doit être entièrement privée",
           "Une entreprise peut avoir un actionnariat de l'État, mais elle doit être de droit privé",
@@ -1952,60 +727,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://en.wikipedia.org/wiki/SNCF"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352110",
         "fr": "Quelle place le secteur public doit-il occuper dans l'économie ?",
+        "help": "https://fr.wikipedia.org/wiki/%C3%89tat#%C3%89conomie",
         "answers": [
           "L'État doit procéder à des nationalisations massives afin de reconstituer un secteur public puissant dans le cadre d'une économie mixte",
           "L'État doit renationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)",
@@ -2015,59 +748,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352111",
         "fr": "Selon-vous, la France est-elle attractive sur le plan économique ?",
+        "help": "https://fr.wikipedia.org/wiki/Fuite_des_cerveaux#France",
         "answers": [
           "La fuite des talents est réelle, considérable et dramatique pour notre développement",
           "Il y a une certaine fuite des talents, mais elle n'a pas beaucoup d'influence sur notre développement",
@@ -2077,60 +769,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Fuite_des_cerveaux#France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352112",
         "fr": "Avec quelle proposition êtes-vous d'accord sur le temps de travail en entreprise ?",
+        "help": "https://fr.wikipedia.org/wiki/Dur%C3%A9e_du_travail_en_France",
         "answers": [
           "Généraliser le régime des 32 heures à tous les salariés",
           "Passer aux 32 heures dans les métiers pénibles ou de nuit et favoriser leur généralisation par la négociation collective",
@@ -2140,56 +790,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Fuite_des_cerveaux#France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -2210,54 +817,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -2273,60 +838,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352116",
         "fr": "Quel devrait être le traitement du patrimoine financier des candidats durant une campagne électorale ?",
-        "help": "https://fr.wikipedia.org/wiki/Transactions_à_haute_fréquence",
+        "help": "https://www.hatvp.fr/presse/presidentielle-2022-le-role-de-la-haute-autorite/",
         "answers": [
           "Il est nécessaire de rendre publiques toutes les ressources financières des candidats pour moraliser la démocratie et éviter tout conflit d'intérêt",
           "Les déclarations de patrimoine et de revenus régulières permettent de tendre vers une transparence démocratique accrue et bénéfique si elle demeure raisonnée",
@@ -2336,60 +859,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352117",
         "fr": "Quelle est votre vision des grands rendez-vous économiques et financiers tels que le sommet de Davos ?",
-        "help": "https://fr.wikipedia.org/wiki/Transactions_à_haute_fréquence",
+        "help": "https://fr.wikipedia.org/wiki/Forum_%C3%A9conomique_mondial",
         "answers": [
           "L'expression des réussites de notre ordre économique et du nécessaire rôle fondamental de la finance dans l'économie",
           "Des lieux centraux pour démontrer la compétitivité de la France qu'il convient de rendre plus en phase avec les enjeux sociaux et environnementaux",
@@ -2399,59 +880,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352118",
         "fr": "Avec quelle proposition êtes-vous d'accord sur les droits de succession ?",
+        "help": "https://www.service-public.fr/particuliers/vosdroits/F14198",
         "answers": [
           "Alourdir les droits de succession et de donation pour corriger les inégalités",
           "Conserver tel quel le système actuel, juste et équilibré",
@@ -2459,30 +899,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            2,
-            0,
-            0
-          ],
-          [
-            2,
-            5,
-            2,
-            0
-          ],
-          [
-            0,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
         ]
       }
     ]
@@ -2504,54 +924,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -2567,54 +945,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -2629,46 +965,17 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            1,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            1,
-            4,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 1, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 1, 4, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035211d",
         "fr": "Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?",
+        "help": "https://fr.wikipedia.org/wiki/Bureaucratie",
         "answers": [
           "Le système est paralysé par la bureaucratie",
           "Le système est handicapé par la bureaucratie",
@@ -2678,60 +985,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Bureaucratie"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035211e",
         "fr": "Que pensez-vous de la dématérialisation des services publics numériques ?",
+        "help": "https://fr.wikipedia.org/wiki/Administration_électronique",
         "answers": [
           "Tant qu'il y aura des services publics non numériques, il y aura encore des progrès à faire",
           "Il y a encore des services publics à dématérialiser pour rendre l'administration plus efficace",
@@ -2741,56 +1006,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Administration_électronique"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -2811,54 +1033,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -2874,54 +1054,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -2936,41 +1074,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            1,
-            0
-          ],
-          [
-            0,
-            1,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 1, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
@@ -2986,54 +1094,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -3046,30 +1112,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0],
+          [3, 5, 0, 0],
+          [0, 0, 5, 0],
+          [0, 0, 0, 0]
         ]
       },
       {
@@ -3082,30 +1128,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0],
+          [3, 5, 0, 0],
+          [0, 0, 5, 0],
+          [0, 0, 0, 0]
         ]
       },
       {
@@ -3119,41 +1145,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            1,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            1,
-            0
-          ],
-          [
-            0,
-            1,
-            2,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 1, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -3165,6 +1161,7 @@
       {
         "_id": "question-6211242a3f15af68d0352128",
         "fr": "Que pensez-vous de l'autorité de l'État par rapport aux libertés individuelles ?",
+        "help": "https://www.google.com/search?q=autorite+etat+liberte+individuelles",
         "answers": [
           "L'État est trop autoritaire par rapport aux libertés individuelles",
           "Il y a un équilibre entre l'autorité de l'État et les libertés individuelles",
@@ -3172,36 +1169,16 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": ""
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352129",
         "fr": "Que pensez-vous de la formation des policiers ?",
+        "help": "https://fr.wikipedia.org/wiki/Centre_de_formation_de_police",
         "answers": [
           "Il sont très bien formés",
           "Il sont assez bien formés",
@@ -3211,60 +1188,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Centre_de_formation_de_police"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035212a",
         "fr": "Que pensez-vous des violences policières ?",
+        "help": "https://fr.wikipedia.org/wiki/Violence_policière_en_France",
         "answers": [
           "Il arrive trop souvent que la police soit violente sans que ça soit justifié, il y a un vice dans l'institution",
           "Il arrive parfois que la police soit violente sans que ça soit justifié, il y a quelques procédures à améliorer",
@@ -3274,60 +1209,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Violence_policière_en_France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035212b",
         "fr": "Que pensez-vous de la lenteur / rapidité de la justice ?",
+        "help": "https://fr.wikipedia.org/wiki/Histoire_de_la_justice_en_France#La_justice_au_XXe_siècle",
         "answers": [
           "La justice est trop rapide, il n'y a pas assez de recul et trop d'innocents sont mal jugés",
           "Il arrive que la justice soit trop rapide, il y a quelques efforts à faire pour améliorer le processus",
@@ -3337,60 +1230,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Histoire_de_la_justice_en_France#La_justice_au_XXe_siècle"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035212c",
         "fr": "Que vous évoque la sécurité nationale, la protection par l'État de ses citoyens ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_nationale",
         "answers": [
           "Nous sommes en sécurité partout en France, l'État fait très bien son travail",
           "Nous sommes globalement en sécurité en France, sauf quelques territoires d'exceptions : l'État fait plutôt bien son travail",
@@ -3400,60 +1251,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_nationale"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035212d",
         "fr": "Que pensez-vous de la situation carcérale en France? Il faudrait :",
+        "help": "https://fr.wikipedia.org/wiki/Prison_en_France",
         "answers": [
           "Rénover les prisons et mettre fin au tout-carcéral par des peines alternatives",
           "Doubler le nombre de centres éducatifs fermés pour les mineurs et ouvrir à terme 20000 places de prison",
@@ -3461,36 +1270,16 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Prison_en_France"
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035212e",
         "fr": "Pour lutter contre la délinquance et le terrorisme il faut, selon vous",
+        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_nationale",
         "answers": [
           "Un renforcement des moyens du renseignement général et une politique sécuritaire accrue dans tous les domaines",
           "Une lutte plus efficace contre les problèmes sécuritaires quotidiens en privilégiant la proximité et la répression de l'insécurité quotidienne",
@@ -3500,56 +1289,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Politique_de_sécurité_nationale"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -3570,54 +1316,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -3633,54 +1337,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -3696,54 +1358,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -3759,54 +1379,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -3821,41 +1399,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
@@ -3865,50 +1413,21 @@
           "Mise en place d'un ISF afin de mettre à contribution les plus fortunés pour financer la transition énergétique : il faut cibler les plus riches",
           "Augmenter l'ensemble des taxes sur les produits polluants: il faut un effort financier collectif",
           "Baisse de la TVA à 5,5% sur les produits énergétiques et quotidiens: c'est en redonnant du pouvoir d'achat aux ménages que nous transformerons leurs modes de vie : il faut cibler les classes moyennes et les plus pauvres",
-          "Ne rien faire car l’environnement n’est pas une priorité",
+          "Ne rien faire car l'environnement n'est pas une priorité",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352136",
         "fr": "S'agissant de l'Impôt de Solidarité sur la Fortune (ISF), il faut selon vous :",
+        "help": "https://www.service-public.fr/particuliers/vosdroits/N20074",
         "answers": [
           "Rétablir l'ISF",
           "Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements climaticides, notamment des ménages les plus aisés",
@@ -3918,59 +1437,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352137",
         "fr": "Quelle devrait être l'évolution de la fiscalité des entreprises dans le contexte économique actuel ?",
+        "help": "https://bpifrance-creation.fr/encyclopedie/fiscalite-lentreprise",
         "answers": [
           "Il est nécessaire de poursuivre les allègements fiscaux pour l'ensemble des entreprises, nous devons les soutenir et stimuler leur compétitivité",
           "Il faut alléger la fiscalité sur les TPE-PME et sur l'embauche pour lutter contre le chômage et garantir la croissance",
@@ -3980,54 +1458,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            4,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -4049,59 +1485,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035213a",
         "fr": "Quel doit être le rôle de l'éducation nationale dans la mobilité sociale des individus ?",
+        "help": "https://fr.wikipedia.org/wiki/Mobilité_sociale",
         "answers": [
           "L'Éducation Nationale constitue un formidable ascenseur social au fondement de la méritocratie républicaine",
           "L'Éducation Nationale n'a pas d'effet majeur sur la mobilité sociale, elle donne une base commune aux individus qui se spécialiseront ensuite",
@@ -4110,43 +1505,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Mobilité_sociale"
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d035213b",
@@ -4161,54 +1525,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -4224,59 +1546,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035213d",
         "fr": "Que pensez-vous de la situation actuelle des universités françaises ?",
+        "help": "https://fr.wikipedia.org/wiki/Universit%C3%A9_en_France",
         "answers": [
           "Les universités françaises font face à un déficit chronique de moyens : il faut réinvestir massivement pour restaurer leur prestige et leur équité",
           "Les récentes réformes sont venues nuire à l'autonomie de l'université : il est nécessaire d'abroger les dernières lois sur la recherche",
@@ -4286,59 +1567,17 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035213e",
-        "fr": "Que pensez-vous de la situation actuelle des universités françaises ?",
+        "fr": "Que pensez-vous de la tenue que devrait porter un étudiant du secondaire ?",
         "answers": [
           "Les étudiants sont libres de porter ce qui leur chante, la France est un pays libre !",
           "Les étudiants ne doivent pas porter de signe religieux ostentatoires, la France est un pays laïque",
@@ -4346,30 +1585,10 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
         ]
       }
     ]
@@ -4381,6 +1600,7 @@
       {
         "_id": "question-6211242a3f15af68d0352140",
         "fr": "Que pensez-vous du budget alloué à la santé ?",
+        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_des_Affaires_sociales_et_de_la_Sant%C3%A9_(France)",
         "answers": [
           "Il faut aller vers la suppression de la gestion de la santé par l'État : c'est une affaire privée",
           "Il faut le diminuer puisque l'Etat alloue déjà beaucoup de financement à la santé",
@@ -4390,60 +1610,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_des_Affaires_sociales_et_de_la_Sant%C3%A9_(France)"
+          [5, 3, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352141",
         "fr": "Que pensez-vous de la rémunération du personnel soignant en général ?",
+        "help": "https://fr.wikipedia.org/wiki/Hôpital_en_France#Personnels",
         "answers": [
           "Le personnel soignant est bien trop payé, il faudrait beaucoup réduire leur rémunération",
           "Le personnel soignant un peu trop payé, il faudrait réduire leur rémunération",
@@ -4453,60 +1631,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Hôpital_en_France#Personnels"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352142",
         "fr": "Que pensez-vous de la question des déserts médicaux ?",
+        "help": "https://fr.wikipedia.org/wiki/Désertification_médicale_en_France",
         "answers": [
           "Il faut reconstruire l'offre médicale dans les déserts médicaux, en détresse médicale",
           "C'est en regroupant les établissements éparpillés qu'on améliore l'offre, c'est normal",
@@ -4514,36 +1650,16 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Désertification_médicale_en_France"
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352143",
         "fr": "Que pensez-vous de la quantité de soins de santé réalisés en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Système_de_santé_français",
         "answers": [
           "On en fait trop d'inutiles, on pourrait en faire beaucoup moins comme dans d'autres pays développés où les gens ne se portent pas plus mal",
           "On pourrait faire quelques efforts en en faisant un peu moins pour économiser nos dépenses",
@@ -4553,60 +1669,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Système_de_santé_français"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352144",
         "fr": "Que pensez-vous du remboursement des soins médicaux ?",
+        "help": "https://fr.wikipedia.org/wiki/Assurance_maladie_en_France",
         "answers": [
           "Tout ce qui touche à la santé doit être entièrement gratuit, pour tous",
           "Certains soins aujourd'hui payants devraient être gratuits",
@@ -4616,56 +1690,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Assurance_maladie_en_France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -4686,54 +1717,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -4749,54 +1738,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -4811,54 +1758,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -4874,54 +1779,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -4937,54 +1800,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5000,54 +1821,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5063,59 +1842,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035214d",
         "fr": "Que pensez-vous de la législation française sur l'Interruption Volontaire de Grossesse ? (Avortement)",
+        "help": "https://fr.wikipedia.org/wiki/Interruption_volontaire_de_grossesse_en_France",
         "answers": [
           "Elle doit être étendue à 14 semaines, comme dans les pays anglo-saxons",
           "La loi Veil doit être maintenue et constitutionnalisée pour consacrer dans notre ordre juridique ce droit fondamental",
@@ -5125,59 +1863,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035214e",
         "fr": "Que pensez-vous de la question de l'euthanasie (suicide assisté) ?",
+        "help": "https://fr.wikipedia.org/wiki/Euthanasie_en_France",
         "answers": [
           "Le droit de mourir dans la dignité est un droit fondamental : l'État français devrait légaliser l'euthanasie et ouvrir la voie à sa prise en charge publique",
           "Les souffrances des malades en fin de vie et l'acharnement thérapeutique sont des pratiques archaïques : il faut aller progressivement vers une légalisation très encadrée de l'euthanasie",
@@ -5187,54 +1884,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -5256,54 +1911,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5319,54 +1932,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5381,41 +1952,11 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5431,59 +1972,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352154",
         "fr": "Que pensez-vous de la durée légale du travail ?",
+        "help": "https://fr.wikipedia.org/wiki/Durée_du_travail_en_France",
         "answers": [
           "Elle doit être diminuée pour passer progressivement aux 32 heures, factrices de productivité et de bien-être pour les salariés",
           "Elle doit être maintenue aux 35 heures et diminuée pour les métiers les plus pénibles afin de conserver une certaine équité entre les travailleurs",
@@ -5493,60 +1993,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Durée_du_travail_en_France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       },
       {
         "_id": "question-6211242a3f15af68d0352155",
         "fr": "Que pensez-vous de l'âge de départ à la retraite ?",
+        "help": "https://fr.wikipedia.org/wiki/Retraite_en_France",
         "answers": [
           "Nous devons rétablir une retraite à 60 ans, avec des possibilités de départs anticipés pour les métiers les plus pénibles ou après un certain nombre d'années de cotisation",
           "Il est nécessaire de mettre fin aux processus d'élévation de l'âge de la retraite en permettant des départs effectifs à 62 ans",
@@ -5556,56 +2014,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Retraite_en_France"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -5626,54 +2041,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5689,54 +2062,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5752,54 +2083,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5815,54 +2104,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
@@ -5878,59 +2125,18 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035215c",
-        "fr": "Quelle est votre vision du système de Schengen, qui garantit la libre-circulation au sein de l'espace européen ?",
+        "fr": "Quelle est votre vision du système de Schengen, qui organise l'ouverture des frontières au sein de l'espace européen ?",
+        "help": "https://fr.wikipedia.org/wiki/Espace_Schengen",
         "answers": [
           "Le régime de Schengen doit être élargi, en favorisant l'arrivée des non-ressortissants et des migrants au sein de l'espace européen",
           "Il faut supprimer les entorses au principe de Schengen en empêchant les États d'y réinstaurer des contrôles réguliers",
@@ -5940,56 +2146,13 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ],
-        "help": "https://fr.wikipedia.org/wiki/Espace_Schengen"
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -6000,6 +2163,7 @@
       {
         "_id": "question-6211242a3f15af68d035215e",
         "fr": "Si Anne Hidalgo était élu(e), quel serait votre sentiment ?",
+        "help": "https://www.2022avechidalgo.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6009,59 +2173,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035215f",
         "fr": "Si Christiane Taubira était élu(e), quel serait votre sentiment ?",
+        "help": "https://primairepopulaire.fr/le-socle-commun/",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6071,59 +2194,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352160",
         "fr": "Si Emmanuel Macron était élu(e), quel serait votre sentiment ?",
+        "help": "https://www.lepoint.fr/presidentielle/presidentielle-le-futur-programme-de-macron-sera-envoye-par-courrier-aux-francais-17-02-2022-2465252_3121.php",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6133,59 +2215,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352161",
         "fr": "Si Éric Zemmour était élu(e), quel serait votre sentiment ?",
+        "help": "https://www.zemmour2022.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6195,59 +2236,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352162",
         "fr": "Si Fabien Roussel était élu(e), quel serait votre sentiment ?",
+        "help": "https://www.fabienroussel2022.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6257,59 +2257,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352163",
         "fr": "Si François Asselineau était élu(e), quel serait votre sentiment ?",
+        "help": "https://asselineau2022.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6319,59 +2278,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352164",
         "fr": "Si Jean Lassalle était élu(e), quel serait votre sentiment ?",
+        "help": "https://jl2022.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6381,59 +2299,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352165",
         "fr": "Si Jean-Luc Mélenchon était élu(e), quel serait votre sentiment ?",
+        "help": "https://melenchon2022.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6443,59 +2320,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352166",
         "fr": "Si Marine Le Pen était élu(e), quel serait votre sentiment ?",
+        "help": "https://mlafrance.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6505,59 +2341,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352167",
         "fr": "Si Nathalie Arthaud était élu(e), quel serait votre sentiment ?",
+        "help": "https://www.lemonde.fr/politique/article/2022/02/14/le-programme-de-nathalie-arthaud-a-la-presidentielle-2022_6113609_823448.html",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6567,59 +2362,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352168",
         "fr": "Si Nicolas Dupont-Aignan était élu(e), quel serait votre sentiment ?",
+        "help": "https://2022nda.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6629,59 +2383,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d0352169",
         "fr": "Si Philippe Poutou était élu(e), quel serait votre sentiment ?",
+        "help": "https://poutou2022.org",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6691,59 +2404,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035216a",
         "fr": "Si Valérie Pécresse était élu(e), quel serait votre sentiment ?",
+        "help": "https://valeriepecresse.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6753,59 +2425,18 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {
         "_id": "question-6211242a3f15af68d035216b",
         "fr": "Si Yannick Jadot était élu(e), quel serait votre sentiment ?",
+        "help": "https://www.jadot2022.fr",
         "answers": [
           "Très content(e)",
           "Plutôt content(e)",
@@ -6815,54 +2446,12 @@
           "Indifférent / Je n'ai pas d'avis"
         ],
         "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]

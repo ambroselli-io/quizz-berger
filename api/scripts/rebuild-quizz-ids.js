@@ -19,11 +19,11 @@ const { quizz } = require("quizz-du-berger-shared");
 //   console.log("FOINITO");
 // })();
 
-// (async () => {
-//   for (const theme of quizz) {
-//     for (const question of theme.questions) {
-//       if (question.answers.length !== question.scores.length) console.log("PROBLEM", question._id);
-//     }
-//   }
-//   console.log("OK");
-// })();
+(async () => {
+  // for (const theme of quizz) {
+  //   for (const question of theme.questions) {
+  //     if (question.answers.length !== question.scores.length) console.log("PROBLEM", question._id);
+  //   }
+  // }
+  // console.log("OK pas de prob");
+})();
