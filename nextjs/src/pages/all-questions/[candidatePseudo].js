@@ -66,7 +66,7 @@ const AllQuestions = () => {
             {!forCandidate ? (
               <>
                 Vous pouvez voir ici toutes les questions, et les télécharger en{" "}
-                <span onClick={downloadQuizz}>cliquant ici</span>. si vous avez une remarque à faire, ou une question à
+                <span onClick={downloadQuizz}>cliquant ici</span>. Si vous avez une remarque à faire, ou une question à
                 ajouter, contactez-nous !
               </>
             ) : (
@@ -178,6 +178,7 @@ const ThemeTitle = styled.summary`
     font-size: 20px;
     font-weight: bold;
     display: inline;
+    cursor: pointer;
     &::after {
       position: absolute;
       left: 0;
@@ -196,6 +197,7 @@ const QuestionTitle = styled.summary`
   h4 {
     font-size: 16px;
     display: inline;
+    cursor: pointer;
     &::after {
       position: absolute;
       left: 0;
