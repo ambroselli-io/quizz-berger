@@ -59,32 +59,4 @@ const candidates = [
   },
 ].sort((c1, c2) => c1.pseudo.localeCompare(c2.pseudo));
 
-const quizzWithLastQuestion = [
-  ...quizz,
-  {
-    _id: "theme-620b92395a0afa612d005ef3",
-    fr: "Candidats",
-    questions: candidates.map((c) => ({
-      _id: `question-${c._id}`,
-      fr: `Si ${c.pseudo} était élu(e), quel serait votre sentiment ?`,
-      answers: [
-        "Très content(e)",
-        "Plutôt content(e)",
-        "Dans l'expectative",
-        "Plutôt mécontent(e)",
-        "Très mécontent(e)",
-        "Indifférent / Je n'ai pas d'avis",
-      ],
-      scores: [
-        [5, 3, 2, 0, 0, 0],
-        [4, 5, 3, 1, 0, 0],
-        [2, 3, 5, 3, 2, 0],
-        [0, 1, 3, 5, 4, 0],
-        [0, 0, 2, 3, 5, 0],
-        [0, 0, 0, 0, 0, 0],
-      ],
-    })),
-  },
-];
-
-module.exports = quizzWithLastQuestion;
+module.exports = quizz;
