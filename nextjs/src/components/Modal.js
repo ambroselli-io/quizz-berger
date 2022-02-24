@@ -82,6 +82,9 @@ const ModalInnerContainer = styled.div`
   * {
     letter-spacing: 0.01rem;
   }
+  button {
+    font-family: Merriweather Sans;
+  }
   > span {
     width: 75%;
     margin-bottom: 25px;
