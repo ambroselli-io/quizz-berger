@@ -91,6 +91,7 @@ const ModalContainer = styled.div`
 `;
 
 const TitleContainer = styled.div`
+  color: black;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -108,6 +109,7 @@ const CrossButton = styled.button`
 `;
 
 const Content = styled.div`
+  color: black;
   padding-top: 1em;
   height: auto;
   overflow: auto;
