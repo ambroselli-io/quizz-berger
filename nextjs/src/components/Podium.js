@@ -147,7 +147,8 @@ const PodiumStairs = styled.div`
 `;
 
 const Pseudos = styled.span`
-  height: ${(props) => Math.min(props.maxPersons, 3.2)}em;
+  height: ${(props) => Math.min(Math.max(props.maxPersons, 2), 3.2)}em;
+  line-height: 0.75em;
   flex-shrink: 0;
   margin-top: 5px;
   overflow: auto;
