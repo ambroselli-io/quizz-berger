@@ -176,6 +176,7 @@ const Title = styled.h3`
 
 const Candidate = styled.span`
   cursor: pointer;
+  font-size: 0.65rem;
   &:hover {
     font-weight: bold;
     text-decoration: underline;
