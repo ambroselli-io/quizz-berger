@@ -50,10 +50,6 @@ exports.getPodium = (personsScore, fullHeight) =>
       },
       [[], 0]
     )
-    // .reduce((sorted, c, index) => {
-    //   if (index === 1) return [c, ...sorted];
-    //   return [...sorted, c];
-    // }, [])
     .reduce((onlyCandidates, item, index) => {
       if (index === 0) return item;
       return onlyCandidates.map((c) => ({ ...c, highest: item }));

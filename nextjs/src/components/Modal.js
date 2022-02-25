@@ -41,7 +41,7 @@ const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   ${media.mobile`
-    max-height: 400px;
+    max-height: 70vh;
   `}
 `;
 
