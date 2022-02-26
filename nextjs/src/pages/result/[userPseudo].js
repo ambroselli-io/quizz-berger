@@ -120,12 +120,12 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
     }
     newFriendTimeout.current = setTimeout(async () => {
       setLoadingFriend(true);
-      const response = await API.get({ path: `/userToShow/friends/${newName}` });
+      const response = await API.get({ path: `/user/friends/${newName}` });
       if (response.ok) {
         if (window.confirm(`Voulez-vous ajouter ${response.data.pseudo} à vos amis ?`)) {
           setLoadingFriend(true);
           await API.put({
-            path: "/userToShow",
+            path: "/user",
             body: { friends: [...(userToShow?.friends || []), response.data] },
           });
           setSelectedFriends([...selectedFriends, response.data.pseudo]);

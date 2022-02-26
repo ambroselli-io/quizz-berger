@@ -21,10 +21,18 @@ if (process.env.NODE_ENV === "development") {
   require("../scripts/rebuild-quizz-ids");
 }
 
-console.log(WHITE_LIST_DOMAINS.split(","));
-console.log({ WHITE_LIST_DOMAINS: WHITE_LIST_DOMAINS.split(",") });
+const corsOptionsDelegate = function (req, callback) {
+  let corsOptions;
+  if (WHITE_LIST_DOMAINS.split(",").indexOf(req.header("Origin")) !== -1) {
+    corsOptions = { credentials: true, origin: true }; // reflect (enable) the requested origin in the CORS response
+  } else {
+    corsOptions = { credentials: true, origin: false }; // disable CORS for this request
+  }
+  console.log({ corsOptions });
+  callback(null, corsOptions); // callback expects two parameters: error and options
+};
 
-app.use(cors({ credentials: true, origin: WHITE_LIST_DOMAINS.split(",") }));
+app.use(cors(corsOptionsDelegate));
 
 app.use(express.static(__dirname + "/../public"));
 // Pre middleware

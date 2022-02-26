@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const { quizz } = require("quizz-du-berger-shared");
 const UserObject = require("../src/models/user");
 const AnswerObject = require("../src/models/answer");
+const md5 = require("md5");
 
 const questions = quizz.reduce((questions, theme) => [...questions, ...theme.questions], []);
 
