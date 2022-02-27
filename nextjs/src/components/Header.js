@@ -86,7 +86,7 @@ const Header = () => {
                 <QuizzButton>Quizz</QuizzButton>
               </HeaderMenuTab>
             </NavLink>
-            {(!!userIsLoggedIn || !!publicPage) && (
+            {!!userIsLoggedIn && (
               <NavLink href="/result">
                 <HeaderMenuTab>
                   <span>Résultats</span>
@@ -106,6 +106,20 @@ const Header = () => {
                   <span>Se connecter</span>
                 </HeaderMenuTab>
               </NavLink>
+            )}
+            {!!userIsLoggedIn && router.pathname === "/themes" && (
+              <BurgerMenuTab>
+                <NavLink exact href="/result">
+                  <span>Voir mes résultats</span>
+                </NavLink>
+              </BurgerMenuTab>
+            )}
+            {!!userIsLoggedIn && router.pathname.includes("result") && (
+              <BurgerMenuTab>
+                <NavLink exact href="/themes">
+                  <span>Retourner au quizz</span>
+                </NavLink>
+              </BurgerMenuTab>
             )}
             {/* BurgerMenu */}
             <BurgerNavContainer>
@@ -141,7 +155,7 @@ const Header = () => {
                     </a>
                   </NavLink>
                 </BurgerMenuTab>
-                {(!!userIsLoggedIn || !!publicPage) && (
+                {!!userIsLoggedIn && (
                   <>
                     <Fillet />
                     <BurgerMenuTab>
@@ -190,13 +204,13 @@ const Header = () => {
 
 const burgerNavStyles = {
   bmBurgerButton: {
-    width: "16px",
-    height: "12px",
+    width: "1rem",
+    height: "1rem",
     border: "none",
   },
   bmCrossButton: {
-    top: "30px",
-    right: "15px",
+    top: "1.6rem",
+    right: "1rem",
     position: "fixed",
     height: "27px",
     width: "27px",
@@ -277,16 +291,15 @@ const HeaderMenu = styled.ul`
   grid-gap: 40px;
   color: white;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
   ${media.mobile`
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     height: auto;
-  `}
-  ${media.mobile`
-  li {
-    display: none;
-  }
+    li {
+      display: none;
+    }
   `}
 `;
 
@@ -339,6 +352,10 @@ const BurgerNavTitle = styled.h1`
 const BurgerMenuTab = styled.div`
   margin: 15px 30px !important;
   cursor: pointer;
+  display: none;
+  ${media.mobile`
+  display: block;
+`}
 `;
 
 const BackContainer = styled.div`
