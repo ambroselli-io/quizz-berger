@@ -19,14 +19,14 @@ const ModalLegal = ({ isActive, onClose }) => (
           <br />
           <br />
           Toutes les réponses des utilisateurs sont <strong>anonymes</strong>. Nous enregistrons anonymement
-          (c'est-à-dire qu'il est <strong>mathématiquement impossible</strong> de faire un lien quelconque entre vous,
-          votre ordinateur et les réponses que vous donnez) en base de donnée votre parcours dans un seul but
-          statistique de voir combien de personnes ont participé au quizz : vous pouvez vous y opposer en nous
-          contactant via le formulaire de contact disponible sur le site. Vous avez aussi l'option de pouvoir partager
-          un lien vers vos résultats, pour en discuter avec vos amis par exemple : un pseudonyme et un mot de passe
-          seront alors requis pour que vous puissiez accéder quand vous voulez à votre Quizz. Si vous perdez votre mot
-          de passe, n'ayant aucun email ou numéro de téléphone associé à votre compte, il nous sera impossible de vous
-          donner accès à votre Quizz.
+          (c'est-à-dire qu'il est <strong>physiquement impossible</strong> de faire un lien quelconque entre vous, votre
+          ordinateur et les réponses que vous donnez) en base de donnée votre parcours dans un seul but statistique de
+          voir combien de personnes ont participé au quizz : vous pouvez vous y opposer en nous contactant via le
+          formulaire de contact disponible sur le site. Vous avez aussi l'option de pouvoir partager un lien vers vos
+          résultats, pour en discuter avec vos amis par exemple : un pseudonyme et un mot de passe seront alors requis
+          pour que vous puissiez accéder quand vous voulez à votre Quizz. Si vous perdez votre mot de passe, n'ayant
+          aucun email ou numéro de téléphone associé à votre compte, il nous sera impossible de vous donner accès à
+          votre Quizz.
           <br />
           <br />
           Notre action n'a aucun but lucratif, elle est même une perte financière sèche et assumée.
@@ -109,6 +109,7 @@ const CrossButton = styled.button`
 `;
 
 const Content = styled.div`
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
   color: black;
   padding-top: 1em;
   height: auto;
