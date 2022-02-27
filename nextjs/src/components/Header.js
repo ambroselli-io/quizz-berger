@@ -185,6 +185,12 @@ const Header = () => {
                 <BurgerMenuTab>
                   <span onClick={() => setShowLegalModal(true)}>Mentions légales</span>
                 </BurgerMenuTab>
+                <Fillet />
+                <BurgerMenuTab>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger">
+                    Open-source
+                  </a>
+                </BurgerMenuTab>
               </Menu>
             </BurgerNavContainer>
           </HeaderMenu>

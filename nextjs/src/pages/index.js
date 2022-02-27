@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useMemo, useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import Footer from "../components/Footer";
 import ThemeButton, { ThemesButtonStyled } from "../components/ThemeButton";
 import { quizz, quizzQuestions } from "../utils/quizz";
@@ -62,6 +62,18 @@ export default function Home() {
             </LoginLink>
           </Link>
         </Container>
+        <ArrowDown
+          width="24px"
+          height="24px"
+          version="1.1"
+          viewBox="0 0 700 700"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          onClick={() => window.scrollBy({ top: 500, behavior: "smooth" })}
+        >
+          <path d="m626.44 247.06c-4.7461-4.7461-12.465-4.7734-17.238-0.023438l-259.21 259.24-259.21-259.24c-4.7461-4.7461-12.465-4.7461-17.215 0-4.7461 4.7461-4.7461 12.465 0 17.215l267.83 267.83c2.3633 2.3867 5.4766 3.5781 8.5938 3.5781 3.1172 0 6.2344-1.1914 8.6211-3.5547l267.83-267.83c4.7461-4.7461 4.7461-12.465-0.003906-17.215z" />
+          <path d="m626.44 27.926c-4.7461-4.7461-12.465-4.7461-17.215 0l-259.23 259.21-259.21-259.24c-4.7461-4.7461-12.465-4.7461-17.215 0-4.7461 4.7461-4.7461 12.465 0 17.215l267.81 267.86c2.3867 2.3633 5.5039 3.5547 8.6211 3.5547 3.1172 0 6.2344-1.1914 8.6211-3.5547l267.82-267.83c4.75-4.7461 4.75-12.465 0-17.211z" />
+        </ArrowDown>
       </BackgroundContainer>
       <BackgroundContainer>
         <Title>Comment ça marche&nbsp;?</Title>
@@ -509,4 +521,24 @@ const SaveButton = styled.button`
   color: black;
   cursor: pointer;
   font-size: 0.9em;
+`;
+
+const opacityANimation = keyframes`
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const ArrowDown = styled.svg`
+  animation: 2s linear 2s infinite running ${opacityANimation};
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  cursor: pointer;
 `;

@@ -53,6 +53,11 @@ const Footer = () => {
           </Link>
         </LeftContainer>
         <FooterMenu>
+          <FooterMenuTab>
+            <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger">
+              Open-source
+            </a>
+          </FooterMenuTab>
           <FooterMenuTab onClick={onOpenContactModal}>Nous contacter</FooterMenuTab>
           <FooterMenuTab onClick={onOpenLegalModal}>Mentions légales</FooterMenuTab>
         </FooterMenu>
