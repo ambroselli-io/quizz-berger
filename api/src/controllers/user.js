@@ -87,6 +87,8 @@ router.post(
 
     const user = await UserObject.findOne({ pseudo: req.body.pseudo });
     if (!user) return res.status(400).send({ ok: false, error: "Ce compte n'existe pas" });
+    if (!!user.isCandidate)
+      return res.status(400).send({ ok: false, error: "Ce compte est protégé ! Veuillez nous contacter si vous vous sentez concerné" });
 
     if (md5(req.body.password) !== user.password)
       return res.status(400).send({ ok: false, error: "Le pseudo et/ou le mot-de-passe sont incorrects" });
