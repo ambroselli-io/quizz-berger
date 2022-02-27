@@ -124,7 +124,7 @@ const FooterMenu = styled.ul`
 
 const FooterMenuTab = styled.li`
   font-size: 14px;
-  color: #4b5563;
+  color: rgba(156, 163, 175, 1);
   list-style: none;
   cursor: pointer;
 `;
