@@ -68,21 +68,15 @@ export default function Home() {
         <Demo>
           <div>
             <h3>
-              <Number>1</Number>Commencez par un thème
+              <Number>1</Number>Répondez aux questions que vous voulez
             </h3>
             <Description>
+              <small>parmi</small>
+              <br />
+              <br />
               <b>{themes.length} thèmes </b>
               <br />
-              <br />
-              <small
-                dangerouslySetInnerHTML={{
-                  __html: `parmi lesquels :
-                ${themes
-                  .map((t, i) => t.fr)
-                  .slice(0, 8)
-                  .join(", ")}\u00A0...`,
-                }}
-              />
+              <b>{quizzQuestions.length} questions </b>
             </Description>
           </div>
           <DemoContent onClick={() => router.push("/themes")}>
@@ -91,7 +85,7 @@ export default function Home() {
             })}
           </DemoContent>
         </Demo>
-        <Demo>
+        {/* <Demo>
           <div>
             <h3>
               <Number>2</Number>Répondez aux questions que vous voulez
@@ -129,11 +123,11 @@ export default function Home() {
               })}
             </AnswerContainer>
           </DemoContent>
-        </Demo>
+        </Demo> */}
         <Demo>
           <div>
             <h3>
-              <Number>3</Number>
+              <Number>2</Number>
               Comparez votre pensée
               <br />à celle des candidats
             </h3>
@@ -164,6 +158,27 @@ export default function Home() {
                 />
               )}
             </PodiumContainer>
+          </DemoContent>
+        </Demo>
+        <Demo>
+          <div>
+            <h3>
+              <Number>3</Number>
+              Confrontez vos convictions
+              <br />
+              avec vos amis !
+            </h3>
+            <Description>
+              <br />
+              <small>
+                Vous pouvez <b>enregistrer vos résultats</b> sous un <b>pseudonyme</b> et ajouter le pseudo de vos amis
+                pour comparer vos convictions. Débat assuré, et de qualité !
+              </small>
+            </Description>
+          </div>
+          <DemoContent forShare>
+            <SaveButton>Partager</SaveButton>
+            <SaveButton>Se comparer à mes amis</SaveButton>
           </DemoContent>
         </Demo>
       </BackgroundContainer>
@@ -280,18 +295,25 @@ const Demo = styled.div`
   > *:first-of-type {
     flex-direction: column;
   }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Description = styled.p`
   margin-top: 15px;
   text-align: center;
   small {
-    display: block;
+    display: inline;
     /* width: 50%; */
     max-width: 50ch;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.5;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
   }
 `;
 
@@ -299,10 +321,10 @@ const Number = styled.span`
   height: 2rem;
   width: 2rem;
   border-radius: 2rem;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1rem;
+  margin-bottom: 0.5rem;
   background: #facc15;
   color: #111827;
 `;
@@ -318,6 +340,7 @@ const DemoContent = styled.div`
   }
   ${(props) => props.questions && questionsCss}
   ${(props) => props.forResults && resultsCss}
+  ${(props) => props.forShare && shareCss}
 `;
 
 const questionsCss = css`
@@ -338,6 +361,11 @@ const resultsCss = css`
   border: 1px solid ${(props) => props.color};
   font-size: 10px;
   max-width: 100%;
+`;
+
+const shareCss = css`
+  flex-direction: column;
+  gap: 15px;
 `;
 
 const ThemeBackground = styled.div`
@@ -471,4 +499,14 @@ const Figure = styled.figure`
   blockquote {
     border-color: ${(p) => p.color} !important;
   }
+`;
+
+const SaveButton = styled.button`
+  padding: 10px 25px;
+  background-color: #facc15;
+  border: none;
+  border-radius: 44px;
+  color: black;
+  cursor: pointer;
+  font-size: 0.9em;
 `;
