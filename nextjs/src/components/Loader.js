@@ -4,7 +4,15 @@ import Logo from "./Logo";
 
 const transitionInMillisec = 1000;
 
-const Loader = ({ isLoading, size, withBackground = false, withLogoBorder = false, displayOnLoadingOnly = false }) => {
+const Loader = ({
+  isLoading,
+  size,
+  withBackground = false,
+  withLogoBorder = false,
+  displayOnLoadingOnly = false,
+  from,
+}) => {
+  console.log("loader", { isLoading });
   const [showLogoLoading, setShowLogoLoading] = useState(!!isLoading);
   const [showLogoKey, setShowLogoKey] = useState(0);
 
@@ -46,6 +54,7 @@ const Loader = ({ isLoading, size, withBackground = false, withLogoBorder = fals
         <Logo size={size} />
       </LogoContainer>
     );
+
   return (
     <BackgroundContainer showLogoLoading={showLogoLoading}>
       <LogoContainer

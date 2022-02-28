@@ -28,7 +28,6 @@ const corsOptionsDelegate = function (req, callback) {
   } else {
     corsOptions = { credentials: true, origin: false }; // disable CORS for this request
   }
-  console.log({ corsOptions });
   callback(null, corsOptions); // callback expects two parameters: error and options
 };
 

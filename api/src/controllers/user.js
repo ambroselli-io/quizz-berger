@@ -173,9 +173,15 @@ router.get(
   "/:pseudo",
   catchErrors(async (req, res) => {
     if (!req.params.pseudo) return res.status(400).send({ ok: false });
-    const user = await UserObject.findOne({ pseudo: req.params.pseudo });
-    if (!user || !(user.isPublic || user.isCandidate)) {
-      return res.status(400).send({ ok: false });
+    console.log(req.params, req.query);
+    const user = await UserObject.findOne({ pseudo: req.params.pseudo.split("?")[0] });
+    console.log({ user });
+    if (!user) return res.status(404).send({ ok: false });
+    console.log(req.query.ssr, req.query.ssr !== "true");
+    if (!(user.isPublic || user.isCandidate)) {
+      if (req.query.ssr !== "true") {
+        return res.status(404).send({ ok: false });
+      }
     }
 
     res.status(200).send({ ok: true, data: user.me() });

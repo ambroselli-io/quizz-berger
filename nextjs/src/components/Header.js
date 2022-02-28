@@ -19,7 +19,6 @@ const Header = () => {
   const { user } = useUser({ from: "Header" });
   const router = useRouter();
   const { userPseudo } = router.query;
-  const publicPage = !!userPseudo;
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);

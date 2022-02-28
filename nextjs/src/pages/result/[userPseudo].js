@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { getCandidatesScorePerThemes, getPicName, getPodium } from "quizz-du-berger-shared";
@@ -31,21 +31,27 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
 
   const publicPage = useMemo(() => {
     if (!userPseudo) return false;
-    if (publicUser.pseudo === user.pseudo) return false;
+    if (userPseudo === user.pseudo) return false;
+    if (!user.isPublic) return false;
     return true;
   }, [userPseudo, user, publicUser]);
 
   const userToShow = useMemo(() => {
     if (!publicPage) return user;
-    if (publicUser.pseudo === user.pseudo) return user;
+    if (userPseudo === user.pseudo) return user;
     return publicUser;
   }, [publicUser, publicUserAnswers, publicPage]);
-  const answersToShow = useMemo(
-    () => (publicPage ? publicUserAnswers : userAnswers),
-    [publicUser, publicUserAnswers, publicPage]
-  );
 
-  const [isLoading, setIsLoading] = useState(!!userPseudo && !userToShow?.pseudo);
+  const answersToShow = useMemo(() => {
+    if (userPseudo === user.pseudo) return userAnswers;
+    if (publicPage) return publicUserAnswers;
+    return userAnswers;
+  }, [publicUser, publicUserAnswers, publicPage]);
+
+  // const [isLoading, setIsLoading] = useState(!!userPseudo && !userToShow?.pseudo);
+  const [isLoading, setIsLoading] = useState(true);
+
+  console.log({ isLoading });
 
   useEffect(() => {
     setIsLoading(!!userPseudo && !userToShow?.pseudo);
@@ -78,9 +84,10 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   });
 
   const selectedThemes = useMemo(() => {
-    if (userPseudo) return getUserThemes(publicUserAnswers);
+    if (publicUser?.pseudo === user.pseudo) return userThemes;
+    if (publicPage) return getUserThemes(publicUserAnswers);
     return userThemes;
-  }, [publicUserAnswers, userPseudo]);
+  }, [publicUserAnswers, userPseudo, userThemes]);
 
   const title = useMemo(() => {
     if (!publicPage && !userToShow?.pseudo) return "Voici vos résultats";
@@ -260,6 +267,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
                       setShowLoginModal(true);
                       document.body.style.overflow = "hidden";
                     }}
+                    animate={showSaveButton}
                   >
                     Enregistrer
                   </SaveButton>
@@ -271,6 +279,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
                   setShowShareModal(true);
                   document.body.style.overflow = "hidden";
                 }}
+                animate={showSaveButton}
               >
                 Partager
               </SaveButton>
@@ -279,6 +288,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
                   setShowFriends(true);
                   document.body.style.overflow = "hidden";
                 }}
+                animate={showSaveButton}
               >
                 Se comparer à mes amis
               </SaveButton>
@@ -462,8 +472,28 @@ const SaveContainer = styled.div`
   `}
 `;
 
+// const opacityANimation = keyframes`
+//   0% {
+//     opacity: 1;
+//     transform: scale(1.03);
+//   }
+//   50% {
+//     opacity: 0.2;
+//     transform: scale(1);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: scale(1.03);
+//   }
+// `;
+
+// const animateCss = css`
+//   ${(props) => props.animate && `animation: 2s linear 2s infinite running ${opacityANimation};`};
+// `;
+
 const SaveButton = styled(QuizzButton)`
   font-size: 0.9em;
+  /* ${animateCss} */
 `;
 
 const Tip = styled.span`
@@ -514,7 +544,8 @@ export default Result;
 
 export const getServerSideProps = async (context) => {
   const { userPseudo } = context.params;
-  const publicUserResponse = await API.get({ path: `/user/${userPseudo}` });
+  if (!userPseudo) return { props: {} };
+  const publicUserResponse = await API.get({ path: `/user/${userPseudo}`, query: { ssr: true } });
   if (!publicUserResponse.ok) {
     return {
       redirect: {
@@ -523,6 +554,7 @@ export const getServerSideProps = async (context) => {
       },
     };
   }
+  if (!publicUserResponse.isPublic) return { props: {} };
   const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
   if (!publicUserAnswersResponse.ok) {
     return {
