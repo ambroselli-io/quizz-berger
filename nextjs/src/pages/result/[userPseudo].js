@@ -51,8 +51,6 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   // const [isLoading, setIsLoading] = useState(!!userPseudo && !userToShow?.pseudo);
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log({ isLoading });
-
   useEffect(() => {
     setIsLoading(!!userPseudo && !userToShow?.pseudo);
   }, [userPseudo, userToShow?.pseudo]);

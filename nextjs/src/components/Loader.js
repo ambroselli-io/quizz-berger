@@ -12,7 +12,6 @@ const Loader = ({
   displayOnLoadingOnly = false,
   from,
 }) => {
-  console.log("loader", { isLoading });
   const [showLogoLoading, setShowLogoLoading] = useState(!!isLoading);
   const [showLogoKey, setShowLogoKey] = useState(0);
 
