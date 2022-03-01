@@ -19,6 +19,7 @@ if (process.env.NODE_ENV === "development") {
   app.use(logger("dev"));
   require("../scripts/migrations");
   require("../scripts/rebuild-quizz-ids");
+  // require("../scripts/extract-all-answers");
 }
 
 const corsOptionsDelegate = function (req, callback) {
