@@ -10,6 +10,7 @@ import { quizz, quizzDownload } from "../../utils/quizz";
 import useUserAnswers from "../../hooks/useUserAnswers";
 import useCandidates from "../../hooks/useCandidates";
 import useFriends from "../../hooks/useFriends";
+import Link from "next/link";
 
 const AllQuestions = () => {
   const router = useRouter();
@@ -71,10 +72,16 @@ const AllQuestions = () => {
               </>
             ) : (
               <>
-                Vous pouvez voir en rouge tous les résultats de <strong>{candidateAnswers?.pseudo}</strong>
-                {user?._id ? ", et en encadré vos résultats." : "."}
+                Vous pouvez voir en rouge toutes les réponses de <strong>{candidateAnswers?.pseudo}</strong>
+                {user?._id ? ", et en encadré vos propres réponses." : "."}
               </>
             )}
+            <br />
+            Cliquez{" "}
+            <b>
+              <Link href={`/result/${candidateAnswers?.pseudo}`}>ici</Link>
+            </b>{" "}
+            pour voir le graphique des ses résultats.
           </SubTitle>
           {quizz.map((theme, index) => (
             <details open={forCandidate && (!userThemes.length || userThemes.includes(theme._id))} key={theme._id}>

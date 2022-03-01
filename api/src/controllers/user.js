@@ -59,6 +59,7 @@ router.post(
     if (!req.body.pseudo) return res.status(400).send({ ok: false, error: "Veuillez fournir un pseudo" });
     if (!req.body.password) return res.status(400).send({ ok: false, error: "Veuillez fournir un mot-de-passe" });
     if (!req.body.passwordConfirm) return res.status(400).send({ ok: false, error: "Veuillez confirmer votre mot-de-passe" });
+    if (req.body.pseudo.length < 3) return res.status(400).send({ ok: false, error: "Votre pseudo doit faire au moins 3 lettres" });
 
     const checkPseudo = await UserObject.findOne({ pseudo: req.body.pseudo });
 
@@ -173,11 +174,8 @@ router.get(
   "/:pseudo",
   catchErrors(async (req, res) => {
     if (!req.params.pseudo) return res.status(400).send({ ok: false });
-    console.log(req.params, req.query);
     const user = await UserObject.findOne({ pseudo: req.params.pseudo.split("?")[0] });
-    console.log({ user });
     if (!user) return res.status(404).send({ ok: false });
-    console.log(req.query.ssr, req.query.ssr !== "true");
     if (!(user.isPublic || user.isCandidate)) {
       if (req.query.ssr !== "true") {
         return res.status(404).send({ ok: false });

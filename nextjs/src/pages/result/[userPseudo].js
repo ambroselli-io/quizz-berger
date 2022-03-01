@@ -32,7 +32,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const publicPage = useMemo(() => {
     if (!userPseudo) return false;
     if (userPseudo === user.pseudo) return false;
-    if (!user.isPublic) return false;
+    if (!publicUser?.isPublic) return false;
     return true;
   }, [userPseudo, user, publicUser]);
 
@@ -68,6 +68,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
 
   const [newFriend, setNewFriend] = useState("");
   const [loadingFriend, setLoadingFriend] = useState(false);
+  const [noFriend, setNoFriend] = useState(false);
 
   const allCandidates = useMemo(() => candidates.map((c) => c.pseudo), [candidates]);
   const allFriends = useMemo(() => friends.map((c) => c.pseudo), [friends]);
@@ -118,16 +119,20 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const newFriendTimeout = useRef(null);
   const setNewFriendRequest = async (e) => {
     const newName = e.target.value;
+    setNoFriend(null);
     setNewFriend(e.target.value);
     if (newName?.length < 3 || allFriends.includes(newName) || userToShow?.pseudo === newName) {
       setLoadingFriend(false);
+      setNoFriend(null);
       return clearTimeout(newFriendTimeout.current);
     }
     newFriendTimeout.current = setTimeout(async () => {
+      setNoFriend(null);
       setLoadingFriend(true);
       const response = await API.get({ path: `/user/friends/${newName}` });
       if (response.ok) {
         if (window.confirm(`Voulez-vous ajouter ${response.data.pseudo} à vos amis ?`)) {
+          setNoFriend(null);
           setLoadingFriend(true);
           await API.put({
             path: "/user",
@@ -143,7 +148,9 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
       } else {
         setLoadingFriend(false);
         if (response.code === "NOT_PUBLIC") {
-          alert(`${newName} n'a pas cliqué sur "Partager" en haut à droite de cette page. Demandez-lui !`);
+          alert(`${newName} n'a pas cliqué sur "Partager". Demandez-lui !`);
+        } else {
+          setNoFriend(newName);
         }
       }
     }, 500);
@@ -277,16 +284,16 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
                   setShowShareModal(true);
                   document.body.style.overflow = "hidden";
                 }}
-                animate={showSaveButton}
+                animate={!user?.isPublic}
               >
-                Partager
+                Partager avec mes amis
               </SaveButton>
               <SaveButton
                 onClick={() => {
                   setShowFriends(true);
                   document.body.style.overflow = "hidden";
                 }}
-                animate={showSaveButton}
+                animate={!user?.friends?.length}
               >
                 Se comparer à mes amis
               </SaveButton>
@@ -322,12 +329,21 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
             <InputWithLoader>
               <FriendsInput
                 placeholder={!!loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
-                value={!!loadingFriend ? "" : newFriend}
+                value={newFriend}
                 onChange={setNewFriendRequest}
                 autoComplete="name"
               />
               <Loader size="20px" isLoading={loadingFriend} displayOnLoadingOnly />
             </InputWithLoader>
+            <NoFriend show={!!noFriend && noFriend === newFriend}>
+              Il n'y a pas de pseudo <b>{newFriend}</b> existant. Vérifiez les majuscules ?
+            </NoFriend>
+            {!user?.isPublic && (
+              <small>
+                N'oubliez pas de cliquer sur le bouton <b>Partager avec mes amis</b> pour leur permettre de faire la
+                même chose avec vous !
+              </small>
+            )}
           </Filter>
         </Container>
         <PodiumContainer as="aside">
@@ -470,28 +486,25 @@ const SaveContainer = styled.div`
   `}
 `;
 
-// const opacityANimation = keyframes`
-//   0% {
-//     opacity: 1;
-//     transform: scale(1.03);
-//   }
-//   50% {
-//     opacity: 0.2;
-//     transform: scale(1);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: scale(1.03);
-//   }
-// `;
-
-// const animateCss = css`
-//   ${(props) => props.animate && `animation: 2s linear 2s infinite running ${opacityANimation};`};
-// `;
+const opacityANimation = keyframes`
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 const SaveButton = styled(QuizzButton)`
   font-size: 0.9em;
-  /* ${animateCss} */
+  animation: 2s linear 2s 3 running ${opacityANimation};
+  ${(props) => !props.animate && "animation-name: none;"}
 `;
 
 const Tip = styled.span`
@@ -538,6 +551,12 @@ const InputWithLoader = styled.div`
   }
 `;
 
+const NoFriend = styled.span`
+  font-size: 0.75rem;
+  color: red;
+  ${(props) => !props.show && "opacity: 0;"}
+`;
+
 export default Result;
 
 export const getServerSideProps = async (context) => {
@@ -552,7 +571,9 @@ export const getServerSideProps = async (context) => {
       },
     };
   }
-  if (!publicUserResponse.isPublic) return { props: {} };
+  if (!publicUserResponse.data.isPublic) {
+    return { props: {} };
+  }
   const publicUserAnswersResponse = await API.get({ path: `/answer/${userPseudo}` });
   if (!publicUserAnswersResponse.ok) {
     return {

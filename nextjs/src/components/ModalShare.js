@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import styled from "styled-components";
 import useUser from "../hooks/useUser";
 import API from "../services/api";
@@ -9,12 +9,9 @@ import Modal from "./Modal";
 
 const ModalShare = ({ isActive, onCloseModal }) => {
   const [isLoading, setIsLoading] = useState(false);
-  const [copyButtonCaption, setCopyButtonCaption] = useState("Copier le lien");
   const { user, mutate } = useUser();
-  const [showPublicMessage, setShowPublicMessage] = useState(false);
-  useEffect(() => {
-    setShowPublicMessage(user?.isPublic);
-  }, [user?.isPublic]);
+  const [copyButtonCaption, setCopyButtonCaption] = useState("Copier le lien");
+  const showPublicMessage = useMemo(() => !!user?.isPublic, [user?.isPublic]);
 
   const onEnablePublicLink = async () => {
     setIsLoading(true);
@@ -33,7 +30,7 @@ const ModalShare = ({ isActive, onCloseModal }) => {
     onCloseModal();
   };
 
-  const publicLink = `https://www.quizz-du-berger.com/result/${user?.pseudo}`;
+  const publicLink = encodeURI(`https://www.quizz-du-berger.com/result/${user?.pseudo}`);
 
   const onCopy = async () => {
     await navigator.clipboard.writeText(publicLink);
@@ -47,16 +44,24 @@ const ModalShare = ({ isActive, onCloseModal }) => {
     <Modal center isActive={isActive} onCloseModal={onCloseModal} title="Partagez vos résultats">
       {!showPublicMessage ? (
         <>
-          <span>
-            Quand vous aurez cliqué sur le bouton ci-dessous, toute personne avec ce lien pourra voir ces résultats
-          </span>
+          <span>En cliquant sur le bouton ci-dessous:</span>
+          <ul>
+            <li>
+              Vos amis pourront se comparer à vous en cliquant sur le bouton
+              <b> Se&nbsp;comparer&nbsp;à&nbsp;mes&nbsp;amis</b> et en ajoutant votre pseudo{" "}
+              <b dangerouslySetInnerHTML={{ __html: user?.pseudo?.split(" ").join("&nbsp;") }} />
+            </li>
+            <br />
+            <li>nous vous fournirons un lien qui permettra à vos amis de voir vos résultats</li>
+          </ul>
+          <br />
           <Button onClick={onEnablePublicLink} disabled={isLoading} withLoader isLoading={isLoading}>
             J'ai compris, afficher le lien
           </Button>
         </>
       ) : (
         <>
-          <span>Toute personne avec ce lien peut voir ces résultats:</span>
+          <span>Vous pouvez partager vos résultats avec vos amis en leur donnant ce lien:</span>
           <PublicLink href={publicLink} target="_blank">
             {publicLink}
           </PublicLink>
@@ -70,6 +75,10 @@ const ModalShare = ({ isActive, onCloseModal }) => {
           >
             Arrêter le partage
           </StopShare>
+          {/* <br />
+          <small>
+            <i>Toute personne avec ce lien peut désormais accéder à cette page de résultats</i>
+          </small> */}
         </>
       )}
     </Modal>

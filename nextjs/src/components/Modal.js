@@ -85,9 +85,11 @@ const ModalInnerContainer = styled.div`
   button {
     font-family: Merriweather Sans;
   }
-  > span {
-    width: 75%;
+  > span,
+  ul {
+    width: 80%;
     margin-bottom: 25px;
+    list-style-position: inside;
   }
   ${media.mobile`
   overflow: auto;
