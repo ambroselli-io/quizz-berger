@@ -127,6 +127,7 @@ router.put(
     const userUpdate = { updatedAt: Date.now() };
 
     if (req.body.hasOwnProperty("pseudo")) userUpdate.pseudo = req.body.pseudo;
+    if (req.body.hasOwnProperty("password")) userUpdate.password = md5(req.body.password);
     // not activated automatically, manual change only
     // if (req.body.hasOwnProperty("isCandidate")) userUpdate.isCandidate = req.body.isCandidate;
     if (req.body.hasOwnProperty("isPublic")) userUpdate.isPublic = req.body.isPublic;
