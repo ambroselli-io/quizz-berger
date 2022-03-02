@@ -189,7 +189,7 @@ export default function Home() {
             </Description>
           </div>
           <DemoContent forShare>
-            <SaveButton>Partager</SaveButton>
+            <SaveButton>Partager avec mes amis</SaveButton>
             <SaveButton>Se comparer à mes amis</SaveButton>
           </DemoContent>
         </Demo>

@@ -152,6 +152,11 @@ const Pseudos = styled.span`
   flex-shrink: 0;
   margin-top: 5px;
   overflow: auto;
+  &::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 `;
 
 const Step = styled.div`

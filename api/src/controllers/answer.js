@@ -7,11 +7,11 @@ const fetch = require("node-fetch");
 const UserObject = require("../models/user");
 const AnswerObject = require("../models/answer");
 const { catchErrors } = require("../utils/error");
-const user = require("../models/user");
 const nodeHtmlToImage = require("node-html-to-image");
 const { uploadBuffer } = require("../utils/picture");
 const { quizz } = require("quizz-du-berger-shared");
 const { getPodium, getCandidatesScorePerThemes, getPicName } = require("quizz-du-berger-shared");
+
 const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);

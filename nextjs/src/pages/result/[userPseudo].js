@@ -64,7 +64,8 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   );
   const [showFriends, setShowFriends] = useState(() => Boolean(getFromSessionStorage("selectedFriends", false)));
 
-  const showSaveButton = useMemo(() => !userToShow?.pseudo, [userToShow]);
+  const showSaveButton = useMemo(() => !publicPage && !userToShow?.pseudo, [publicPage, userToShow]);
+  const [hideSaveTip, setHideSaveTip] = useState(() => getFromSessionStorage("hideSaveTip", false));
 
   const [newFriend, setNewFriend] = useState("");
   const [loadingFriend, setLoadingFriend] = useState(false);
@@ -257,6 +258,30 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
         <Container>
           <Header>
             <Title>{title}</Title>
+            {!!showSaveButton && !hideSaveTip && (
+              <small>
+                Enregistrez vos résultats maintenant, sinon dans une heure ils sont perdus !{" - "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowLoginModal(true);
+                    document.body.style.overflow = "hidden";
+                  }}
+                >
+                  Oui !
+                </button>
+                {" - "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setHideSaveTip(true);
+                    setToSessionStorage("hideSaveTip", true);
+                  }}
+                >
+                  Non merci !
+                </button>
+              </small>
+            )}
           </Header>
         </Container>
         <PodiumContainer>
@@ -398,9 +423,12 @@ const BackgroundContainer = styled.div`
     height: calc(100vh - 80px);
     overflow-x: hidden;
     overflow-y: auto;
-  `}
+    `}
   ${media.mobile`
+    height: calc(100vh - 80px);
     padding: 3vh 10px 1px 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
   `}
 
   > div:not(.modal-container) {
@@ -523,9 +551,21 @@ const TipContainer = styled.div`
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
-  ${media.mobile`
-    flex-direction: column;
-  `}
+  flex-direction: column;
+  button:first-of-type {
+    background-color: #facc15;
+    border: none;
+    height: 1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+  button:not(first-of-type) {
+    background-color: transparent;
+    border: none;
+  }
 `;
 
 const FriendsInput = styled.input`

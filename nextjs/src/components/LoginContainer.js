@@ -73,15 +73,15 @@ const Title = styled.h2`
 
 const LogContainer = styled.div`
   margin: 0 auto;
-  max-width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e5e7eb;
   border-radius: 8px;
-  width: 90vw;
+  width: 100%;
   max-width: 400px;
+  flex-shrink: 0;
 `;
 
 const LoginTabs = styled.div`

@@ -34,14 +34,14 @@ const BackgroundContainer = styled.div`
 const ModalContainer = styled.div`
   flex: 1;
   padding: 40px;
-  max-width: 700px;
+  max-width: min(100vw, 700px);
   height: auto;
   background-color: white;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   ${media.mobile`
-    max-height: 70vh;
+    max-height: 85vh;
   `}
 `;
 
