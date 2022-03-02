@@ -66,7 +66,7 @@ router.post(
     if (checkPseudo !== null) return res.status(400).send({ ok: false, error: "Ce pseudonyme existe déjà" });
 
     if (req.body.password !== req.body.passwordConfirm) {
-      return res.status(400).send({ ok: false, error: "Les mots-de-passes no sont pas identiques" });
+      return res.status(400).send({ ok: false, error: "Les mots-de-passes ne sont pas identiques" });
     }
 
     const user = await UserObject.create({
@@ -126,7 +126,10 @@ router.put(
     const user = req.user;
     const userUpdate = { updatedAt: Date.now() };
 
-    if (req.body.hasOwnProperty("pseudo")) userUpdate.pseudo = req.body.pseudo;
+    if (req.body.hasOwnProperty("pseudo")) {
+      if (req.body.pseudo.length < 3) return res.status(400).send({ ok: false, error: "Votre pseudo doit faire au moins 3 lettres" });
+      userUpdate.pseudo = req.body.pseudo;
+    }
     if (req.body.hasOwnProperty("password")) userUpdate.password = md5(req.body.password);
     // not activated automatically, manual change only
     // if (req.body.hasOwnProperty("isCandidate")) userUpdate.isCandidate = req.body.isCandidate;
