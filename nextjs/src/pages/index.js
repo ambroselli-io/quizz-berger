@@ -158,9 +158,9 @@ export default function Home() {
             color={randomUserData?.user?.color}
             onClick={() => setRandom(Math.round(Math.random() * 15))}
           >
-            <PodiumContainer as="aside">
+            <PodiumContainer as="aside" showLoading={!randomUserData?.user?.pseudo}>
               {!randomUserData?.user?.pseudo ? (
-                <Loader isLoading={true} size="33px" withBackground />
+                <Loader isLoading={true} size="33px" />
               ) : (
                 <Podium
                   podiumised={randomUserData.data}
@@ -444,6 +444,15 @@ const AnswerButton = styled.button`
 const PodiumContainer = styled.div`
   height: 50vh;
   overflow-y: visible;
+  position: relative;
+  ${(props) =>
+    props.showLoading &&
+    `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  `}
+  width: 100%;
 `;
 
 const BackgroundContainer = styled.section`

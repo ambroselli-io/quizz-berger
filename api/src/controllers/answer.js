@@ -182,14 +182,6 @@ router.get(
 
 router.get(
   "/random/for-onboarding",
-  catchErrors(async (req, res, next) => {
-    if (!!req.cookies["jwt"]) {
-      await passport.authenticate("user", { session: false })(req, res, next);
-      return;
-    }
-    req.user = null;
-    next();
-  }),
   catchErrors(async (req, res) => {
     const users = await UserObject.aggregate([{ $match: { isCandidate: true } }, { $sample: { size: 1 } }]);
 
