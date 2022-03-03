@@ -13,11 +13,9 @@ const useUser = ({ redirectOnLoggedOut = "", redirectOnLoggedIn } = {}) => {
 
   useEffect(() => {
     if (redirectOnLoggedOut && !isLoading && !user.isLoggedIn) {
-      console.log("REDIRECTONLOGGEDOUT");
       router.push(redirectOnLoggedOut);
     }
     if (redirectOnLoggedIn && !isLoading && !!user.isLoggedIn) {
-      console.log("REDIRECTONLOGGEDIN");
       router.push(redirectOnLoggedIn);
     }
   }, [isLoading, error, redirectOnLoggedOut, redirectOnLoggedIn, user]);

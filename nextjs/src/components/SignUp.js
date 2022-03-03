@@ -4,7 +4,7 @@ import API from "../services/api";
 import Button from "./Button";
 import { FormInput, FormLabel, FormStyled } from "./Form";
 
-const SignUp = ({ pseudo, passwordConfirm, password, onChange, onSuccess }) => {
+const SignUp = ({ pseudo, passwordConfirm, password, isPublic, onChange, onSuccess }) => {
   const { user } = useUser();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -15,12 +15,12 @@ const SignUp = ({ pseudo, passwordConfirm, password, onChange, onSuccess }) => {
     if (user?._id) {
       response = await API.put({
         path: "/user",
-        body: { pseudo, password, passwordConfirm },
+        body: { pseudo, password, passwordConfirm, isPublic },
       });
     } else {
       response = await API.post({
         path: "/user/signup",
-        body: { pseudo, password, passwordConfirm },
+        body: { pseudo, password, passwordConfirm, isPublic },
       });
     }
     if (!response.ok) {
@@ -59,6 +59,12 @@ const SignUp = ({ pseudo, passwordConfirm, password, onChange, onSuccess }) => {
         onChange={onChange}
         value={passwordConfirm}
       />
+      <div style={{ marginBottom: 10, fontSize: "0.85rem" }}>
+        <input type="checkbox" id="isPublic" name="isPublic" onChange={onChange} checked={isPublic} />
+        <label style={{ marginLeft: 10 }} for="isPublic">
+          Permettre le partage à mes amis, si je leur transmet mon pseudo
+        </label>
+      </div>
       <Button type="submit" disabled={isLoading} isLoading={isLoading} withLoader>
         S'inscrire
       </Button>

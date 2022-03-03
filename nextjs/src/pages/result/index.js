@@ -7,8 +7,6 @@ const AuthResult = () => {
   const { user } = useUser();
   const router = useRouter();
 
-  console.log({ user });
-
   useEffect(() => {
     if (!!user?.pseudo) {
       router.push(`/result/${user?.pseudo}`);

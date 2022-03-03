@@ -14,11 +14,14 @@ const LoginContainer = ({ onSuccess, title = null, showSignup = false, forceSign
     password: "",
     passwordConfirm: "",
     candidate: false,
+    isPublic: true,
   });
 
   const setState = (newState) => setFullState((oldState) => ({ ...oldState, ...newState }));
 
-  const onChange = (e) => setState({ [e.target.name]: e.target.value });
+  const onChange = (e) => {
+    setState({ [e.target.name]: e.target.type === "checkbox" ? e.target.checked : e.target.value });
+  };
 
   const onLogin = (user) => {
     mutate(user);

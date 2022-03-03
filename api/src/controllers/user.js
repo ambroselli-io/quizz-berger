@@ -71,6 +71,7 @@ router.post(
 
     const user = await UserObject.create({
       pseudo: req.body.pseudo,
+      isPublic: req.body.isPublic,
       password: md5(req.body.password),
     });
 
