@@ -10,6 +10,7 @@ const Schema = new mongoose.Schema(
     color: String,
     /* to allow sharing answers publicly */
     isPublic: { type: Boolean, default: false },
+    isAdmin: { type: Boolean, default: false },
 
     /* for candidate or pary politic */
     firstName: { type: String },

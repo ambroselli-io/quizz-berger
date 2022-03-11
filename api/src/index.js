@@ -20,6 +20,7 @@ if (process.env.NODE_ENV === "development") {
   // require("../scripts/migrations");
   // require("../scripts/rebuild-quizz-ids");
   // require("../scripts/extract-all-answers");
+  // require("../scripts/stats");
 }
 
 const corsOptionsDelegate = function (req, callback) {

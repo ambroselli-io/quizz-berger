@@ -45,6 +45,7 @@ const logoutCookieOptions = () => {
 router.post(
   "/",
   catchErrors(async (req, res) => {
+    console.log("CREATE");
     const user = await UserObject.create({});
 
     setCookie(req, res, user);
@@ -68,6 +69,8 @@ router.post(
     if (req.body.password !== req.body.passwordConfirm) {
       return res.status(400).send({ ok: false, error: "Les mots-de-passes ne sont pas identiques" });
     }
+
+    console.log("CREATE");
 
     const user = await UserObject.create({
       pseudo: req.body.pseudo,

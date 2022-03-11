@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const UserObject = require("../models/user");
 const { catchErrors } = require("../utils/error");
+const passport = require("passport");
 
 router.get(
   "/test",
@@ -19,6 +20,31 @@ router.get(
     const newHtml = html.replace("{{PSEUDO}}", req.params.pseudo);
 
     res.status(200).set("Content-Type", "text/html").send(Buffer.from(newHtml));
+  })
+);
+
+router.get(
+  "/charts",
+  passport.authenticate("admin", { session: false }),
+  catchErrors(async (req, res) => {
+    let globalAmount = 0;
+    const data = (
+      await UserObject.aggregate([
+        {
+          $group: {
+            _id: { $dateToString: { format: "%Y-%m-%d", date: "$createdAt" } },
+            count: { $sum: 1 },
+          },
+        },
+        {
+          $sort: { _id: 1 },
+        },
+      ])
+    ).map((doc, index) => {
+      globalAmount += doc.count;
+      return Object.assign(doc, { cumulative: globalAmount });
+    });
+    res.status(200).send({ ok: true, data });
   })
 );
 

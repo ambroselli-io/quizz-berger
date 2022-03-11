@@ -31,6 +31,25 @@ module.exports = (app) => {
       }
     )
   );
+  passport.use(
+    "admin",
+    new JwtStrategy(
+      {
+        jwtFromRequest: cookieExtractor,
+        secretOrKey: config.SECRET,
+      },
+      async function (jwtPayload, done) {
+        try {
+          const user = await UserObject.findById(jwtPayload._id);
+          if (user && user.isAdmin) return done(null, user);
+        } catch (e) {
+          console.log("error passport", e);
+        }
+
+        return done(null, false);
+      }
+    )
+  );
 
   app.use(passport.initialize());
 };
