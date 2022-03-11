@@ -19,7 +19,7 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
 router.get(
   "/count",
   catchErrors(async (req, res) => {
-    const countUsers = await UserObject.countDocuments({ isCandidate: false });
+    const countUsers = await UserObject.countDocuments({ $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] });
     const countAnswers = await AnswerObject.countDocuments();
 
     res.status(200).send({ ok: true, data: { countUsers, countAnswers } });
