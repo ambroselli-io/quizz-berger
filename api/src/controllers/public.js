@@ -20,8 +20,7 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
 // sorry for this, but no other choice yet !
 const appealingFactor = (number) => {
   number = Number(number);
-  if (number > 10) return number * 10 + Number(String(number)[0]) + Number(String(number)[1]);
-  return number * 10 + Number(String(number)[0]);
+  return number * 10 + [...String(number)].reduce((sum, chiffre) => sum + Number(chiffre), 0);
 };
 
 router.get(
