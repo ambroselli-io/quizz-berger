@@ -18,7 +18,6 @@ const Header = () => {
   const { cache } = useSWRConfig();
   const { user } = useUser({ from: "Header" });
   const router = useRouter();
-  const { userPseudo } = router.query;
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
@@ -75,6 +74,13 @@ const Header = () => {
                 <span>Accueil</span>
               </HeaderMenuTab>
             </NavLink>
+            {process.env.NODE_ENV === "development" && (
+              <NavLink href="/stats">
+                <HeaderMenuTab>
+                  <span>Stats</span>
+                </HeaderMenuTab>
+              </NavLink>
+            )}
             <NavLink href="/all-questions">
               <HeaderMenuTab>
                 <span>Voir toutes les questions</span>

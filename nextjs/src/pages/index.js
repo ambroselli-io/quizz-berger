@@ -1,8 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
-// import { ComposedChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import styled, { css, keyframes } from "styled-components";
 import Footer from "../components/Footer";
 import ThemeButton, { ThemesButtonStyled } from "../components/ThemeButton";
@@ -14,72 +12,7 @@ import Podium from "../components/Podium";
 import { colors, temoignages } from "../utils/temoignages";
 import Loader from "../components/Loader";
 
-const AreaChartStyled = styled(AreaChart)``; // styled components can use
-AreaChartStyled.displayName = AreaChart.displayName;
-
-const AreaStyled = styled(Area)``; // styled components can use
-AreaStyled.displayName = Area.displayName;
-
-const XAxisStyled = styled(XAxis)``; // styled components can use
-XAxisStyled.displayName = XAxis.displayName;
-
-const YAxisStyled = styled(YAxis)``; // styled components can use
-YAxisStyled.displayName = YAxis.displayName;
-
-const CartesianGridStyled = styled(CartesianGrid)``; // styled components can use
-CartesianGridStyled.displayName = CartesianGrid.displayName;
-
-const TooltipStyled = styled(Tooltip)``; // styled components can use
-TooltipStyled.displayName = Tooltip.displayName;
-
-const ResponsiveContainerStyled = styled(ResponsiveContainer)``; // styled components can use
-ResponsiveContainerStyled.displayName = ResponsiveContainer.displayName;
-
 export default function Home() {
-  const data = [
-    {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
-  ];
   const router = useRouter();
 
   useEffect(() => {
@@ -103,11 +36,6 @@ export default function Home() {
   const { data: countData } = useSWR(API.getUrl("/public/count"));
   const countUsers = useMemo(() => countData?.data?.countUsers || 0, [countData]);
   const countAnswers = useMemo(() => countData?.data?.countAnswers || 0, [countData]);
-
-  const { data: chartsData } = useSWR(API.getUrl("/result/charts"));
-  const cumulativeUsers = useMemo(() => chartsData?.data || [], [chartsData]);
-
-  console.log({ cumulativeUsers });
 
   return (
     <>
@@ -229,27 +157,6 @@ export default function Home() {
           <b>{countAnswers}</b> réponses données
           <br />
         </Title>
-        <div width="100%" height="50vh" style={{ background: "white", width: "100%" }}>
-          <ResponsiveContainerStyled width="100%" height="100%">
-            <AreaChartStyled
-              width={500}
-              height={400}
-              data={data}
-              margin={{
-                top: 10,
-                right: 30,
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <CartesianGridStyled strokeDasharray="3 3" />
-              <XAxisStyled dataKey="name" />
-              <YAxisStyled />
-              <TooltipStyled />
-              <AreaStyled type="monotone" dataKey="pv" stroke="#8884d8" fill="#8884d8" />
-            </AreaChartStyled>
-          </ResponsiveContainerStyled>
-        </div>
       </BackgroundContainer>
       <BackgroundContainer>
         <Title>Ils ont apprécié</Title>

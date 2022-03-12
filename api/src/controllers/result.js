@@ -25,7 +25,6 @@ router.get(
 
 router.get(
   "/charts",
-  passport.authenticate("admin", { session: false }),
   catchErrors(async (req, res) => {
     let globalAmount = 0;
     const data = (
