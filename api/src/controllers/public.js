@@ -27,6 +27,7 @@ const appealingFactor = (number) => {
 router.get(
   "/count",
   catchErrors(async (req, res) => {
+    console.log("coming from", req.query);
     const countUsers = appealingFactor(await UserObject.countDocuments({ $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] }));
     const countAnswers = appealingFactor(await AnswerObject.countDocuments());
 
