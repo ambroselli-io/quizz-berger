@@ -40,6 +40,22 @@ function MyApp({ Component, pageProps }) {
         />
 
         <meta property="og:type" content="article" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@arnaudambro" />
+        <meta name="twitter:site" content="@arnaudambro" />
+        <meta name="twitter:title" content="Le Quizz du Berger - Vos candidats pour les Présidentielles 2022" />
+        <meta
+          name="twitter:description"
+          content="Présidentielles 2022 - Répondez aux questions que vous voulez pour connaître le candidat qui pense comme vous"
+        />
+        <meta name="twitter:image" key="twitter:image" content="https://www.quizz-du-berger.com/og_1200_630.png" />
+        <meta
+          name="twitter:image:alt"
+          key="twitter:image:alt"
+          content="Copie de la page d'accueil du Quizz du Berger: Vos candidats pour les Présidentielles 2022"
+        />
+
         <title>Le Quizz du Berger - Vos candidats pour les Présidentielles 2022</title>
       </Head>
       <SWRConfig value={swrConfigOptions}>
