@@ -74,14 +74,14 @@ const AllQuestions = () => {
               <>
                 Vous pouvez voir en rouge toutes les réponses de <strong>{candidateAnswers?.pseudo}</strong>
                 {user?._id ? ", et en encadré vos propres réponses." : "."}
+                <br />
+                Cliquez{" "}
+                <b>
+                  <Link href={`/result/${candidateAnswers?.pseudo}`}>ici</Link>
+                </b>{" "}
+                pour voir le graphique des ses résultats.
               </>
             )}
-            <br />
-            Cliquez{" "}
-            <b>
-              <Link href={`/result/${candidateAnswers?.pseudo}`}>ici</Link>
-            </b>{" "}
-            pour voir le graphique des ses résultats.
           </SubTitle>
           {quizz.map((theme, index) => (
             <details open={forCandidate && (!userThemes.length || userThemes.includes(theme._id))} key={theme._id}>

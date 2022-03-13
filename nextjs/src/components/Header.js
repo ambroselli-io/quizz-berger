@@ -74,13 +74,13 @@ const Header = () => {
                 <span>Accueil</span>
               </HeaderMenuTab>
             </NavLink>
-            {process.env.NODE_ENV === "development" && (
+            {/* process.env.NODE_ENV === "development" && (
               <NavLink href="/stats">
                 <HeaderMenuTab>
                   <span>Stats</span>
                 </HeaderMenuTab>
               </NavLink>
-            )}
+            ) */}
             <NavLink href="/all-questions">
               <HeaderMenuTab>
                 <span>Voir toutes les questions</span>

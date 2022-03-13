@@ -19,6 +19,7 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
 // temporary cheating to make people more want even more to do the test...
 // sorry for this, but no other choice yet !
 const appealingFactor = (number) => {
+  return number;
   number = Number(number);
   return number * 10 + [...String(number)].reduce((sum, chiffre) => sum + Number(chiffre), 0);
 };
@@ -39,6 +40,9 @@ router.get(
     let globalUsers = 0;
     const users = (
       await UserObject.aggregate([
+        {
+          $match: { $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] },
+        },
         {
           $group: {
             _id: { $dateToString: { format: "%Y-%m-%d", date: "$createdAt" } },
