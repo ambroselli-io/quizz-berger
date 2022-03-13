@@ -61,7 +61,7 @@ const SignUp = ({ pseudo, passwordConfirm, password, isPublic, onChange, onSucce
       />
       <div style={{ marginBottom: 10, fontSize: "0.85rem" }}>
         <input type="checkbox" id="isPublic" name="isPublic" onChange={onChange} checked={isPublic} />
-        <label style={{ marginLeft: 10 }} for="isPublic">
+        <label style={{ marginLeft: 10 }} htmlFor="isPublic">
           Permettre le partage à mes amis, si je leur transmet mon pseudo
         </label>
       </div>
