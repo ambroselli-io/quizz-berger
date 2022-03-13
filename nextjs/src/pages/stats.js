@@ -1,20 +1,29 @@
 import React from "react";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 import styled from "styled-components";
 import API from "../services/api";
 
-export default function Stats({ cumulativeUsers, cumulativeAnswers, countUsers, countAnswers }) {
+export default function Stats({
+  cumulativeUsers,
+  cumulativeAnswers,
+  countUsers,
+  countAnswers,
+  answersPerUser,
+  answersPerUserAverage,
+}) {
   return (
     <>
       <Subtitle>Nombre cumulé d'utilisateurs: {countUsers}</Subtitle>
-      <Chart data={cumulativeUsers} />
+      <Chart data={cumulativeUsers} dataKey="cumulative" />
       <Subtitle>Nombre cumulé de réponses: {countAnswers}</Subtitle>
-      <Chart data={cumulativeAnswers} />
+      <Chart data={cumulativeAnswers} dataKey="cumulative" />
+      <Subtitle>Nombre moyen de réponses par utilisateur {answersPerUserAverage}</Subtitle>
+      <BarChartWithData data={answersPerUser} dataKey="totalUsers" />
     </>
   );
 }
 
-const Chart = ({ data }) => (
+const Chart = ({ data, dataKey }) => (
   <Container>
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart
@@ -32,8 +41,32 @@ const Chart = ({ data }) => (
         <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
         <YAxis />
         <Tooltip />
-        <Area type="monotone" dataKey="cumulative" stroke="#111827" fill="#facc15" />
+        <Area type="monotone" dataKey={dataKey} stroke="#111827" fill="#facc15" />
       </AreaChart>
+    </ResponsiveContainer>
+  </Container>
+);
+
+const BarChartWithData = ({ data, dataKey }) => (
+  <Container>
+    <ResponsiveContainer width="100%" height="100%">
+      <BarChart
+        width={500}
+        height={300}
+        data={data}
+        margin={{
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Bar dataKey={dataKey} stroke="#111827" fill="#facc15" />
+      </BarChart>
     </ResponsiveContainer>
   </Container>
 );
@@ -65,6 +98,8 @@ export const getServerSideProps = async (context) => {
       cumulativeAnswers: chartData.data.answers,
       countUsers: chartData.data.countUsers,
       countAnswers: chartData.data.countAnswers,
+      answersPerUser: chartData.data.answersPerUser,
+      answersPerUserAverage: chartData.data.answersPerUserAverage,
     },
   };
 };

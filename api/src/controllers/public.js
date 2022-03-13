@@ -84,9 +84,42 @@ router.get(
         globalAnswers += doc.count;
         return Object.assign(doc, { cumulative: appealingFactor(globalAnswers) });
       });
+
     const countUsers = appealingFactor(await UserObject.countDocuments({ $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] }));
     const countAnswers = appealingFactor(await AnswerObject.countDocuments());
-    res.status(200).send({ ok: true, data: { users, answers, countUsers, countAnswers } });
+
+    const answersPerUserRaw = await AnswerObject.aggregate([
+      {
+        $match: {
+          createdAt: { $gte: new Date("2022-02-20") },
+        },
+      },
+      {
+        $group: {
+          _id: "$user",
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $sort: { count: 1 },
+      },
+    ]);
+
+    const answersPerUserAverage = Math.round(
+      answersPerUserRaw.reduce((sum, userGroup) => sum + Math.min(userGroup.count, quizzQuestions.length), 0) / answersPerUserRaw.length
+    );
+    const answersPerUser = answersPerUserRaw.reduce(
+      (averages, newItem) => {
+        const newItemCount = Math.ceil(Math.min(quizzQuestions.length, newItem.count) / 10) * 10;
+        if (averages.find((item) => item.name === newItemCount)) {
+          return averages.map((item) => (item.name === newItemCount ? { ...item, totalUsers: item.totalUsers + 1 } : item));
+        }
+        return [...averages, { ...newItem, totalUsers: 1 }];
+      },
+      [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120].map((name) => ({ name, totalUsers: 0 }))
+    );
+
+    res.status(200).send({ ok: true, data: { users, answers, countUsers, countAnswers, answersPerUser, answersPerUserAverage } });
   })
 );
 
