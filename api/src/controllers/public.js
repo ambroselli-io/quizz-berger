@@ -18,8 +18,8 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
 
 // temporary cheating to make people more want even more to do the test...
 // sorry for this, but no other choice yet !
-const appealingFactor = (number) => {
-  return number;
+const appealingFactor = (number, force = false) => {
+  if (!force) return number;
   number = Number(number);
   return number * 10 + [...String(number)].reduce((sum, chiffre) => sum + Number(chiffre), 0);
 };
@@ -28,8 +28,8 @@ router.get(
   "/count",
   catchErrors(async (req, res) => {
     console.log("coming from", req.query);
-    const countUsers = appealingFactor(await UserObject.countDocuments({ $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] }));
-    const countAnswers = appealingFactor(await AnswerObject.countDocuments());
+    const countUsers = appealingFactor(await UserObject.countDocuments({ $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] }), true);
+    const countAnswers = appealingFactor(await AnswerObject.countDocuments(), true);
 
     res.status(200).send({ ok: true, data: { countUsers, countAnswers } });
   })
