@@ -58,14 +58,13 @@ const CustomizedAxisTick = ({ x, y, payload }) => (
 
 export const getServerSideProps = async (context) => {
   const chartData = await API.get({ path: "/public/charts" });
-  const countData = await API.get({ path: "/public/count" });
 
   return {
     props: {
       cumulativeUsers: chartData.data.users,
       cumulativeAnswers: chartData.data.answers,
-      countUsers: countData.data.countUsers,
-      countAnswers: countData.data.countAnswers,
+      countUsers: chartData.data.countUsers,
+      countAnswers: chartData.data.countAnswers,
     },
   };
 };

@@ -84,7 +84,9 @@ router.get(
         globalAnswers += doc.count;
         return Object.assign(doc, { cumulative: appealingFactor(globalAnswers) });
       });
-    res.status(200).send({ ok: true, data: { users, answers } });
+    const countUsers = appealingFactor(await UserObject.countDocuments({ $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] }));
+    const countAnswers = appealingFactor(await AnswerObject.countDocuments());
+    res.status(200).send({ ok: true, data: { users, answers, countUsers, countAnswers } });
   })
 );
 
