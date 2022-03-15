@@ -91,7 +91,7 @@ router.get(
     const answersPerUserRaw = await AnswerObject.aggregate([
       {
         $match: {
-          createdAt: { $gte: new Date("2022-02-20") },
+          createdAt: { $gt: new Date("2022-02-24") },
         },
       },
       {
@@ -119,7 +119,40 @@ router.get(
       [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120].map((name) => ({ name, totalUsers: 0 }))
     );
 
-    res.status(200).send({ ok: true, data: { users, answers, countUsers, countAnswers, answersPerUser, answersPerUserAverage } });
+    const answersPerUserPerDay = users
+      .filter((u) => u._id >= "2022-02-25")
+      .map((u) => ({
+        _id: u._id,
+        users: u.count,
+        answers: answers.find((a) => a._id === u._id).count,
+        percentageQuizz: Math.round((answers.find((a) => a._id === u._id).count / u.count / quizzQuestions.length) * 100),
+      }));
+
+    const answersPerTheme = (
+      await AnswerObject.aggregate([
+        {
+          $match: {
+            createdAt: { $gt: new Date("2022-02-25") },
+          },
+        },
+        {
+          $group: {
+            _id: "$themeId",
+            count: { $sum: 1 },
+          },
+        },
+        {
+          $sort: { count: 1 },
+        },
+      ])
+    ).map((doc) => {
+      return { _id: doc._id, name: quizz.find((theme) => theme._id === doc._id)?.fr, value: doc.count };
+    });
+
+    res.status(200).send({
+      ok: true,
+      data: { users, answers, countUsers, countAnswers, answersPerUser, answersPerUserAverage, answersPerUserPerDay, answersPerTheme },
+    });
   })
 );
 
