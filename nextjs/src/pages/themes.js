@@ -117,6 +117,23 @@ const ThemeSelect = () => {
     <>
       <Head>
         <title>{titleCaption} | Le Quizz du Berger</title>
+        <meta
+          property="og:title"
+          key="og:title"
+          content="Choisissez un thème en suivant votre coeur 💕 | Le Quizz du Berger"
+        />
+        <meta property="og:url" key="og:url" content="https://www.quizz-du-berger.com/themes/" />
+        <meta
+          property="og:image"
+          key="og:image"
+          content="https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/themes.png"
+        />
+        <meta rel="canonical" key="canonical" content="https://www.quizz-du-berger.com/themes/" />
+        <meta
+          property="og:image:alt"
+          key="og:image:alt"
+          content={`Les thèmes du Quizz du Berger | Le Quizz du Berger`}
+        />
       </Head>
       <BackgroundContainer>
         <SubContainer>
