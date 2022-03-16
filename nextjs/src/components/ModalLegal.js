@@ -45,7 +45,7 @@ const ModalLegal = ({ isActive, onClose }) => (
           <br />
           Ce projet est open-source, si vous souhaitez y participer, venez{" "}
           <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger">
-            le faire sur GitHub :
+            le faire sur GitHub
           </a>
           <br />
           <br />

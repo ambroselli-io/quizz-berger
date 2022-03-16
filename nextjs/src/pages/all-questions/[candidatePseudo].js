@@ -67,8 +67,8 @@ const AllQuestions = () => {
             {!forCandidate ? (
               <>
                 Vous pouvez voir ici toutes les questions, et les télécharger en{" "}
-                <span onClick={downloadQuizz}>cliquant ici</span>. Si vous avez une remarque à faire, ou une question à
-                ajouter, contactez-nous !
+                <span onClick={downloadQuizz}>cliquant ici</span>.<br />
+                Si vous avez une remarque à faire, ou une question à ajouter, contactez-nous{"\u00A0"}!
               </>
             ) : (
               <>
@@ -82,6 +82,14 @@ const AllQuestions = () => {
                 pour voir le graphique des ses résultats.
               </>
             )}
+            <br />
+            <br />
+            Les questions/réponses du Quizz ont été réalisées en fonction des programmes de chaque candidat.
+            <br />
+            Vous pouvez retrouver l'analyse détaillée{" "}
+            <a href="Analyse_Quizz_du_Berger.pdf" target="_blank">
+              en cliquant ici
+            </a>
           </SubTitle>
           {quizz.map((theme, index) => (
             <details open={forCandidate && (!userThemes.length || userThemes.includes(theme._id))} key={theme._id}>
@@ -242,7 +250,8 @@ const SubTitle = styled.h3`
   font-size: 16px;
   text-align: center;
   color: #111827;
-  span {
+  span,
+  a {
     text-decoration: underline;
     cursor: pointer;
   }

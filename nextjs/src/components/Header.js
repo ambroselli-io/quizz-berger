@@ -13,6 +13,7 @@ import useUser from "../hooks/useUser";
 import Logo from "./Logo";
 import API from "../services/api";
 import { useSWRConfig } from "swr";
+import ModalQuiSommesNous from "./ModalQuiSommesNous";
 
 const Header = () => {
   const { cache } = useSWRConfig();
@@ -21,6 +22,7 @@ const Header = () => {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
+  const [showQuiSommesNousModal, setShowQuiSommesNouslModal] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const onLogout = async () => {
@@ -190,6 +192,9 @@ const Header = () => {
                 <BurgerMenuTab>
                   <span onClick={() => setShowLegalModal(true)}>Mentions légales</span>
                 </BurgerMenuTab>
+                <BurgerMenuTab>
+                  <span onClick={() => setShowQuiSommesNouslModal(true)}>Qui sommes nous ?</span>
+                </BurgerMenuTab>
                 <Fillet />
                 <BurgerMenuTab>
                   <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger">
@@ -203,6 +208,7 @@ const Header = () => {
       </HeaderStyled>
       <BackContainer />
       <ModalLegal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
+      <ModalQuiSommesNous isActive={showQuiSommesNousModal} onClose={() => setShowQuiSommesNouslModal(false)} />
       <ModalContact
         isActive={showContactModal}
         onCloseModal={onCloseModal}

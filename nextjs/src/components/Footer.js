@@ -6,10 +6,12 @@ import ModalContact from "./ModalContact";
 import ModalLegal from "./ModalLegal";
 import Logo from "./Logo";
 import useUser from "../hooks/useUser";
+import ModalQuiSommesNous from "./ModalQuiSommesNous";
 
 const Footer = () => {
   const { user } = useUser({ from: "Footer" });
   const [showLegalModal, setShowLegalModal] = useState(false);
+  const [showQuiSommesNousModal, setShowQuiSommesNouslModal] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
 
   const onCloseLegalModal = (e) => {
@@ -26,6 +28,17 @@ const Footer = () => {
   const onCloseContactModal = (e) => {
     if (e.target !== e.currentTarget) return;
     setShowContactModal(false);
+    document.body.style.overflow = "visible";
+  };
+
+  const onOpenQuiSommesNousModal = (e) => {
+    setShowQuiSommesNouslModal(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const onCloseQuiSommesNousModal = (e) => {
+    if (e.target !== e.currentTarget) return;
+    setShowQuiSommesNouslModal(false);
     document.body.style.overflow = "visible";
   };
 
@@ -60,10 +73,12 @@ const Footer = () => {
           </FooterMenuTab>
           <FooterMenuTab onClick={onOpenContactModal}>Nous contacter</FooterMenuTab>
           <FooterMenuTab onClick={onOpenLegalModal}>Mentions légales</FooterMenuTab>
+          <FooterMenuTab onClick={onOpenQuiSommesNousModal}>Qui sommes nous ?</FooterMenuTab>
         </FooterMenu>
       </Container>
       {/* -- MODAL -- */}
       <ModalLegal isActive={showLegalModal} onClose={onCloseLegalModal} />
+      <ModalQuiSommesNous isActive={showQuiSommesNousModal} onClose={onCloseQuiSommesNousModal} />
       <ModalContact
         isActive={showContactModal}
         onCloseModal={onCloseContactModal}
