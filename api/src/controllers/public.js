@@ -146,7 +146,11 @@ router.get(
         },
       ])
     ).map((doc) => {
-      return { _id: doc._id, name: quizz.find((theme) => theme._id === doc._id)?.fr, value: doc.count };
+      return {
+        _id: doc._id,
+        name: quizz.find((theme) => theme._id === doc._id)?.fr,
+        value: Math.round(doc.count / quizz.find((theme) => theme._id === doc._id).questions.length),
+      };
     });
 
     res.status(200).send({
