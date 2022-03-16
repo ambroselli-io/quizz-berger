@@ -57,6 +57,17 @@ function MyApp({ Component, pageProps }) {
         />
 
         <title>Le Quizz du Berger - Vos candidats pour les Présidentielles 2022</title>
+        {/* <!-- Lumiere Tracking Code for www.quizz-du-berger.com --> */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://api.lumiere.app/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "4f03b6e7-24fe-4776-86c4-5c94c977bdad");`,
+          }}
+        ></script>
       </Head>
       <SWRConfig value={swrConfigOptions}>
         <GlobalStyle path={router.asPath} />
