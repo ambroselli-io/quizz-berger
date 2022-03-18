@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import Head from "next/head";
@@ -36,6 +36,17 @@ const ThemeSelect = () => {
   const [titleCaption, setTitleCaption] = useState(computeTitleCaption(userThemes));
   const [subtitle, setSubtitle] = useState(computeSubtitle(userThemes, questionsNumber, userAnswers, quizz));
   const [quizzFiltered, setQuizzFiltered] = useState(quizz);
+
+  const shuffledQuizz = useMemo(() => {
+    const hour = new Date().getHours();
+    return [...quizzFiltered].sort((t1, t2) => {
+      const t1onlyLetter = t1.fr.split(" ").join("");
+      const t2onlyLetter = t2.fr.split(" ").join("");
+      const letter1 = t1onlyLetter[Math.min(hour, t1onlyLetter.length)];
+      const letter2 = t2onlyLetter[Math.min(hour, t2onlyLetter.length)];
+      return letter1 > letter2 ? -1 : 1;
+    });
+  }, [new Date().getHours() + 4, quizzFiltered.length]);
 
   const initNewUser = async () => {
     if (!!user?._id) return;
@@ -163,7 +174,7 @@ const ThemeSelect = () => {
             </small>
           </SubTitle>
           <ThemesContainer>
-            {quizzFiltered.map((theme, index) => {
+            {shuffledQuizz.map((theme, index) => {
               return (
                 <ThemeButton
                   key={theme._id}
