@@ -123,16 +123,26 @@ const ThemeSelect = () => {
           content="Choisissez un thème en suivant votre coeur 💕 | Le Quizz du Berger"
         />
         <meta property="og:url" key="og:url" content="https://www.quizz-du-berger.com/themes/" />
-        <meta
-          property="og:image"
-          key="og:image"
-          content="https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/themes.png"
-        />
+        <meta property="og:image" key="og:image" content="https://www.quizz-du-berger.com/themes.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta rel="canonical" key="canonical" content="https://www.quizz-du-berger.com/themes/" />
+        <meta property="og:image:alt" key="og:image:alt" content="Les thèmes du Quizz du Berger | Le Quizz du Berger" />
         <meta
-          property="og:image:alt"
-          key="og:image:alt"
-          content={`Les thèmes du Quizz du Berger | Le Quizz du Berger`}
+          key="twitter:title"
+          name="twitter:title"
+          content="Choisissez un thème en suivant votre coeur 💕 | Le Quizz du Berger"
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content="Présidentielles 2022 - Répondez aux questions que vous voulez pour connaître le candidat qui pense comme vous"
+        />
+        <meta name="twitter:image" key="twitter:image" content="https://www.quizz-du-berger.com/themes.png" />
+        <meta
+          key="twitter:image:alt"
+          name="twitter:image:alt"
+          content="Choisissez un thème en suivant votre coeur 💕 | Le Quizz du Berger"
         />
       </Head>
       <BackgroundContainer>
