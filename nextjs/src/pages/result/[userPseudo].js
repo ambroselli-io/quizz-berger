@@ -24,7 +24,7 @@ import Banner from "../../components/Banner";
 const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const router = useRouter();
   const { userPseudo } = router.query;
-  const { user } = useUser();
+  const { user, mutate } = useUser();
   const { userAnswers } = useUserAnswers();
   const { candidates } = useCandidates();
   const { friends, mutateFriends } = useFriends();
@@ -40,7 +40,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
     if (!publicPage) return user;
     if (userPseudo === user.pseudo) return user;
     return publicUser;
-  }, [publicUser, publicUserAnswers, publicPage]);
+  }, [user, publicUser, publicUserAnswers, publicPage]);
 
   const answersToShow = useMemo(() => {
     if (userPseudo === user.pseudo) return userAnswers;
@@ -137,9 +137,10 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
           setLoadingFriend(true);
           await API.put({
             path: "/user",
-            body: { friends: [...(userToShow?.friends || []), response.data] },
+            body: { friends: [...(userToShow?.friends || []), response.data._id] },
           });
           setSelectedFriends([...selectedFriends, response.data.pseudo]);
+          await mutate();
           await mutateFriends();
           setLoadingFriend(false);
           setNewFriend("");

@@ -148,6 +148,7 @@ router.put(
     if (req.body.hasOwnProperty("partyName")) userUpdate.partyName = req.body.partyName;
     if (req.body.hasOwnProperty("friends")) userUpdate.friends = req.body.friends;
 
+    console.log(JSON.stringify({ userUpdate }));
     user.set(userUpdate);
     await user.save();
 
