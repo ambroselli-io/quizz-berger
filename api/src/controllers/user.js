@@ -132,7 +132,11 @@ router.put(
 
     if (req.body.hasOwnProperty("pseudo")) {
       if (req.body.pseudo.length < 3) return res.status(400).send({ ok: false, error: "Votre pseudo doit faire au moins 3 lettres" });
-      userUpdate.pseudo = req.body.pseudo;
+      if (user.pseudo !== req.body.pseudo) {
+        const checkPseudo = await UserObject.findOne({ pseudo: req.body.pseudo });
+        if (checkPseudo !== null) return res.status(400).send({ ok: false, error: "Ce pseudonyme existe déjà" });
+        userUpdate.pseudo = req.body.pseudo;
+      }
     }
     if (req.body.hasOwnProperty("password")) userUpdate.password = md5(req.body.password);
     // not activated automatically, manual change only
