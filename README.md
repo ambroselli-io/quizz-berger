@@ -1,9 +1,9 @@
 # Le Quizz du Berger
 
-C'est un quizz créé à l'occasion des élections présidentielles 2022 en France qui se veut différent d'autres quizzs politiques qu'on peut trouver sur le web
+C'est un quiz créé à l'occasion des élections présidentielles 2022 en France qui se veut différent d'autres quizzs politiques qu'on peut trouver sur le web
 
-- ce quizz ne catégorise pas ceux qu'il le font dans des concepts que l'on maîtrise parfois mal et qui peuvent être sujets à débat (libéral, conservateur, communiste, raciste, que sais-je) : il ne fait que comparer les réponses données aux réponses des candidats
-- ce quizz sépare les questions en thèmes, pour pouvoir d'une part comprendre qu'une pensée est complexe, et qu'on peut ne pas être 100% d'accord avec tel ou tel candidat sur tous les thèmes, cela n'empêche pas de vouloir voter pour tel ou tel autre.
+- ce quiz ne catégorise pas ceux qu'il le font dans des concepts que l'on maîtrise parfois mal et qui peuvent être sujets à débat (libéral, conservateur, communiste, raciste, que sais-je) : il ne fait que comparer les réponses données aux réponses des candidats
+- ce quiz sépare les questions en thèmes, pour pouvoir d'une part comprendre qu'une pensée est complexe, et qu'on peut ne pas être 100% d'accord avec tel ou tel candidat sur tous les thèmes, cela n'empêche pas de vouloir voter pour tel ou tel autre.
 
 ## Participer à l'écriture des questions
 

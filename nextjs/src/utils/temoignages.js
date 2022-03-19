@@ -35,7 +35,7 @@ export const temoignages = [
   },
   {
     blockquote:
-      "Je suis arrivée avec quelques certitudes sur mon choix, mais je me rend compte avec ce quizz que pour chaque candidat(e), il y a des thèmes qui me rapprochent et d'autres qui m'éloignent de ses idées.",
+      "Je suis arrivée avec quelques certitudes sur mon choix, mais je me rend compte avec ce quiz que pour chaque candidat(e), il y a des thèmes qui me rapprochent et d'autres qui m'éloignent de ses idées.",
     figcaption: "Élisabeth",
   },
   {
@@ -71,7 +71,7 @@ export const temoignages = [
     figcaption: "Thomas",
   },
   {
-    blockquote: "Bien foutu ce quizz ! Ça fait réfléchir... 🥸",
+    blockquote: "Bien foutu ce quiz ! Ça fait réfléchir... 🥸",
     figcaption: "Nacim",
   },
 ];

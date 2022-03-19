@@ -299,7 +299,7 @@ const computeTitleCaption = (userThemes) => {
 
 const computeSubtitle = (userThemes, questionsNumber, userAnswers, quizz) => {
   if (!userThemes?.length) {
-    return "Répondez au quizz, thème après thème, en commençant par<strong> celui qui vous tient le plus à coeur.</strong>";
+    return "Répondez au quiz, thème après thème, en commençant par<strong> celui qui vous tient le plus à coeur.</strong>";
   }
   // if (userThemes.length === 1) {
   //   return "Prenez désormais un deuxième thème <strong> qui vous tient à coeur.</strong>";
