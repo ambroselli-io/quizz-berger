@@ -55,7 +55,7 @@ Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
 Le développement des énergies renouvelables est très bien mené, qu'il continue ainsi
 
 Que pensez-vous de l'utilisation de la voiture ?
-Favorisons les alternatives en ville - électrique, transports en commmun - mais on a besoin de voiture en ruralité, à essence, pas d'autre option.
+Favorisons les alternatives en ville - électrique, transports en commun - mais on a besoin de voiture en campagne, à essence, pas d'autre option.
 
 Que pensez-vous du prix des transports en commun ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -88,7 +88,7 @@ Démographie et question migratoire:
 
 
 Que pensez-vous de la politique communautaire d'immigration menée par l'Union Européenne ?
-L'UE contraint la France dans sa politique migratoire : il est nécessaire de s'en autonomiser en reprenant le contrôle souverain de nos frontières
+L'UE contraint la France dans sa politique migratoire : il est nécessaire de reprendre le contrôle souverain de nos frontières
 
 S'agissant de la politique migratoire, selon vous il faut :
 Une fermeture des frontières nationales
@@ -183,7 +183,7 @@ Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
 Il faut modifier la constitution pour davantage de démocratie
 
 Que pensez-vous du recours au référendum par le Président de la République ?
@@ -192,7 +192,7 @@ Il en faudrait plus, au moins un ou deux par quinquennat
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Le système est handicapé par la bureaucratie
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -298,7 +298,7 @@ Quelle devrait être la place des technologies numériques dans l'enseignement s
 Le numérique est néfaste pour l'éducation de nos enfants, et il faut strictement limiter son usage dans l'enseignement scolaire
 
 Que pensez-vous du financement public de la recherche ?
-Il faut accroitre le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle
+Il faut accroître le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle
 
 Que pensez-vous de la situation actuelle des universités françaises ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -346,7 +346,7 @@ Que vous évoque la question des minorités sexuelles et des luttes LGBT ?
 Nos valeurs chrétiennes sont menacées par cette nouvelle idéologie : il faut abroger la loi Taubira et restaurer notre modèle familial traditionnel
 
 Quelle place devrait avoir la sphère religieuse dans notre société ?
-Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnait pas notre République
+Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnaît pas notre République
 
 Que pensez-vous de la procréation médicalement assistée (PMA) ?
 Elle peut être autorisée seulement pour les couples hétérosexuels, mais non remboursée
@@ -355,7 +355,7 @@ Que pensez-vous de la gestation pour autrui (GPA) ?
 Elle doit être non remboursée et interdite pour tous
 
 Que pensez-vous de la législation française sur l'Interruption Volontaire de Grossesse ? (Avortement)
-Elle doit réglementée plus strictement, par un déremboursement et une limitation du nombre d'IVG par femmes
+Elle être doit réglementée plus strictement, par un non-remboursement et une limitation du nombre d'IVG par femmes
 
 Que pensez-vous de la question de l'euthanasie (suicide assisté) ?
 Le droit à la vie humaine est garanti par nos textes fondateurs : il est nécessaire de prohiber toute remise en cause, même dans le secteur médical
@@ -366,7 +366,7 @@ Le droit à la vie humaine est garanti par nos textes fondateurs : il est néces
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut le garder stable en le maintenant indexé sur l'inflation, un système déjà juste et rémunérateur
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 Avoir des prestations sociales communes est impossible, les membres n'en veulent pas
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

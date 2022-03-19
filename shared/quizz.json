@@ -246,7 +246,7 @@
         "help": "https://fr.wikipedia.org/wiki/Énergie_renouvelable",
         "answers": [
           "Il faut arriver le plus vite possible à 100% renouvelable, pour limiter les conséquences de la dégradation de l'environnement",
-          "Il faut accélerer leur déploiement, qui est actuellement insuffisant",
+          "Il faut accélérer leur déploiement, qui est actuellement insuffisant",
           "Le développement des énergies renouvelables est très bien mené, qu'il continue ainsi",
           "Ce n'est pas cela dont nous avons besoin, regardons d'autres sources d'énergie",
           "Elles n'ont aucune utilité, la planète ne court aucun danger et l'énergie est abondante",
@@ -266,7 +266,7 @@
         "fr": "Que pensez-vous de l'utilisation de la voiture ?",
         "answers": [
           "La voiture, synonyme de liberté : tout un symbole, un vrai plaisir, n'y touchons pas !",
-          "Favorisons les alternatives en ville - électrique, transports en commmun - mais on a besoin de voiture en ruralité, à essence, pas d'autre option.",
+          "Favorisons les alternatives en ville - électrique, transports en commun - mais on a besoin de voiture en campagne, à essence, pas d'autre option.",
           "Il faut abandonner nos voitures à essence pour des voitures électriques ou à hydrogène. Et des alternatives là où on peut.",
           "Il faudrait se diriger vers un abandon de nos voitures, pour des transports en commun ou des vélos.",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
@@ -417,8 +417,8 @@
           "La politique européenne est inhumaine et profondément injuste : il est nécessaire d'ouvrir massivement les frontières européennes",
           "Le système de Schengen est efficace, mais il est nécessaire de modifier les critères de répartition entre pays, afin de soulager les pays d'arrivée",
           "Le système migratoire communautaire actuel est efficace, et il convient de le prolonger en l'améliorant sans remettre en cause son équilibre",
-          "Il est nécessaire que l'Europe renforce drastiquement sa fermeté en fermant ses frontières extérieures, et en réinstaurant des contrôles dans l'espace Schengen",
-          "L'UE contraint la France dans sa politique migratoire : il est nécessaire de s'en autonomiser en reprenant le contrôle souverain de nos frontières",
+          "Il est nécessaire que l'Europe renforce drastiquement sa fermeté en fermant ses frontières extérieures, et en remettant des contrôles dans l'espace Schengen",
+          "L'UE contraint la France dans sa politique migratoire : il est nécessaire de reprendre le contrôle souverain de nos frontières",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -477,7 +477,7 @@
         "fr": "Quelle position sur l'intégration des migrants en France ?",
         "answers": [
           "Il faut régulariser tous les travailleurs et travailleuses sans-papiers et faciliter l'accès à la nationalité française pour les personnes étrangères présentes légalement sur le territoire.",
-          "Il faut instaurer et régulariser une immigration choisie avec des quota par métiers et par pays.",
+          "Il faut instaurer et régulariser une immigration choisie avec des quotas par métiers et par pays.",
           "Il ne faut régulariser aucun étranger, la France appartient aux Français de souche",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -741,7 +741,7 @@
         "help": "https://fr.wikipedia.org/wiki/%C3%89tat#%C3%89conomie",
         "answers": [
           "L'État doit procéder à des nationalisations massives afin de reconstituer un secteur public puissant dans le cadre d'une économie mixte",
-          "L'État doit renationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)",
+          "L'État doit nationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)",
           "L'État doit achever son désengagement de l'industrie en conservant ses entreprises publiques stratégiques actuelles",
           "L'État doit seulement conserver une poignée d'entreprises fondamentales en privatisant les autres secteurs",
           "L'État doit se concentrer seulement sur les secteurs régaliens en laissant le reste de l'économie se réguler elle-même",
@@ -875,7 +875,7 @@
           "L'expression des réussites de notre ordre économique et du nécessaire rôle fondamental de la finance dans l'économie",
           "Des lieux centraux pour démontrer la compétitivité de la France qu'il convient de rendre plus en phase avec les enjeux sociaux et environnementaux",
           "Des rendez-vous réservés aux puissants mais nécessaires à la régulation économique mondiale",
-          "Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut réinstaurer une prise en compte des enjeux sociaux",
+          "Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut remettre une prise en compte des enjeux sociaux",
           "Une trace évidente du pouvoir majeur de la finance et de la proximité anti-démocratique entre les représentants politiques et les acteurs économiques",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -913,12 +913,12 @@
     "questions": [
       {
         "_id": "question-6211242a3f15af68d035211a",
-        "fr": "Que pensez vous du régime de la Vème République et de sa Constitution ?",
+        "fr": "Que pensez-vous du régime de la Vème République et de sa Constitution ?",
         "help": "https://fr.wikipedia.org/wiki/Cinquième_République_(France)",
         "answers": [
           "Il faut changer de constitution pour permettre davantage de démocratie",
           "Il faut modifier la constitution pour davantage de démocratie",
-          "Il ne faut rien changer, la constitution garantie déjà tous nos droits fondamentaux",
+          "Il ne faut rien changer, la constitution garantit déjà tous nos droits fondamentaux",
           "Il faut modifier la constitution actuelle pour donner davantage de pouvoir au gouvernement",
           "Il faut changer de constitution pour donner davantage de pouvoir au gouvernement",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
@@ -974,7 +974,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d035211d",
-        "fr": "Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?",
+        "fr": "Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?",
         "help": "https://fr.wikipedia.org/wiki/Bureaucratie",
         "answers": [
           "Le système est paralysé par la bureaucratie",
@@ -1086,7 +1086,7 @@
         "fr": "Comment vous situez-vous par rapport aux passes sanitaire et vaccinal ?",
         "help": "https://fr.wikipedia.org/wiki/Passe_sanitaire_français",
         "answers": [
-          "Le pass sanitaire est le début d'une restriction progressive et continu de nos libertés: il faut conserver nos droits !",
+          "Le pass sanitaire est le début d'une restriction progressive et continue de nos libertés: il faut conserver nos droits !",
           "Pas besoin de forcer les gens à se vacciner s'ils ne le veulent pas : encourager oui, forcer non",
           "C'est une question de l'ordre privé, chacun doit être libre de faire ce qu'il veut",
           "Il faut bien sortir de cette épidémie un jour ou l'autre, le vaccin est la seule solution, donc il faut que tout le monde se vaccine",
@@ -1184,7 +1184,7 @@
           "Il sont assez bien formés",
           "Il n'y a pas de question à se poser sur la formation de la police",
           "Il ne sont pas très bien formés",
-          "Ils sont très mals formés",
+          "Ils sont très mal formés",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1430,7 +1430,7 @@
         "help": "https://www.service-public.fr/particuliers/vosdroits/N20074",
         "answers": [
           "Rétablir l'ISF",
-          "Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements climaticides, notamment des ménages les plus aisés",
+          "Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements mauvais pour le climat, notamment des ménages les plus aisés",
           "Conserver le système actuel d'Impôt focalisé sur la Fortune Immobilière, juste et équilibré",
           "Retirer tout impôt spécifique aux grandes fortunes, qui doivent être traitées comme les autres",
           "...et réduire tous les impôts de manière générale",
@@ -1518,7 +1518,7 @@
         "help": "https://fr.wikipedia.org/wiki/Technologies_de_l%27information_et_de_la_communication_pour_l%27enseignement",
         "answers": [
           "Le modèle scandinave et les pratiques des jeunes nous montrent que le numérique constitue un outil d'avenir : il faut investir pour passer au tout numérique",
-          "Nous devons accroitre la place du numérique dans l'enseignement afin d'aller vers un système hybride",
+          "Nous devons accroître la place du numérique dans l'enseignement afin d'aller vers un système hybride",
           "Le numérique est un outil intéressant pour lequel les enseignements doivent être également dotés",
           "Le numérique doit être régulé et l'éducation doit demeurer autant que possible indépendante de l'influence des écrans",
           "Le numérique est néfaste pour l'éducation de nos enfants, et il faut strictement limiter son usage dans l'enseignement scolaire",
@@ -1539,9 +1539,9 @@
         "help": "https://fr.wikipedia.org/wiki/Recherche_publique_(France)",
         "answers": [
           "La France souffre d'un manque de financement criant de sa recherche, et l'État doit en augmenter grandement le financement",
-          "Il faut accroitre le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle",
+          "Il faut accroître le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle",
           "Le financement de la recherche publique est suffisant, il faut réformer les modes de formation des chercheurs et favoriser l'initiative privée",
-          "La recherche en France est couteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux",
+          "La recherche en France est coûteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux",
           "Financer publiquement la recherche est inutile : nous devons laisser la main au privé et orienter notre recherche sur les priorités de l'État",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -1795,7 +1795,7 @@
           "La religion constitue l'opium du peuple : l'État doit la reléguer à une stricte sphère privée et imposer une sécularisation totale de l'espace public et de l'éducation",
           "La religion est une affaire de croyances privées : l'État doit demeurer strictement laïc et laisser sa pleine autonomie au religieux dans un cadre réglementé",
           "Nous sommes un pays laïc, chaque religion doit rester à sa place sans altérer notre vivre-ensemble et se voir reconnue par l'État comme équivalente aux autres croyances",
-          "Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnait pas notre République",
+          "Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnaît pas notre République",
           "Il est nécessaire de renouer avec notre essence chrétienne dans la sphère publique en privilégiant son apprentissage à la prolifération d'autres religions",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -1858,7 +1858,7 @@
           "Elle doit être étendue à 14 semaines, comme dans les pays anglo-saxons",
           "La loi Veil doit être maintenue et constitutionnalisée pour consacrer dans notre ordre juridique ce droit fondamental",
           "Elle doit être maintenue en l'état, c'est un héritage et une conquête plus que jamais d'actualité dans notre société",
-          "Elle doit réglementée plus strictement, par un déremboursement et une limitation du nombre d'IVG par femmes",
+          "Elle être doit réglementée plus strictement, par un non-remboursement et une limitation du nombre d'IVG par femmes",
           "Elle doit être profondément réformée avec une limitation des conditions d'IVG afin de préserver la vie humaine",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -1900,7 +1900,7 @@
     "questions": [
       {
         "_id": "question-6211242a3f15af68d0352150",
-        "fr": "Que pensez vous du salaire minimum (SMIC) ?",
+        "fr": "Que pensez-vous du salaire minimum (SMIC) ?",
         "help": "https://fr.wikipedia.org/wiki/Salaire_minimum_interprofessionnel_de_croissance",
         "answers": [
           "Il faut un SMIC réellement rémunérateur afin d'améliorer le pouvoir d'achat des salariés",
@@ -2035,7 +2035,7 @@
         "answers": [
           "Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant",
           "Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux",
-          "Ces traités sont bien comme ils sont, l'Union Européenne se développe come il le faut.",
+          "Ces traités sont bien comme ils sont, l'Union Européenne se développe comme il le faut.",
           "De manière générale, il faut encore plus d'intégration de chaque pays dans l'Union Européenne",
           "Il faudrait enfin une fédération de pays, avec une constitution commune",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
@@ -2051,7 +2051,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352158",
-        "fr": "Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?",
+        "fr": "Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?",
         "help": "https://fr.wikipedia.org/wiki/Fiscalité_dans_l%27Union_européenne#Harmonisation",
         "answers": [
           "La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique",
@@ -2072,7 +2072,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352159",
-        "fr": "Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?",
+        "fr": "Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?",
         "help": "https://www.vie-publique.fr/fiches/20405-quest-ce-que-leurope-sociale",
         "answers": [
           "Les prestations sociales devraient être totalement harmonisées dans un espace libre comme l'Union européenne",
@@ -2142,7 +2142,7 @@
           "Il faut supprimer les entorses au principe de Schengen en empêchant les États d'y réinstaurer des contrôles réguliers",
           "L'espace Schengen est un principe pertinent dont les récentes adaptations démontre la compatibilité avec la nécessaire fermeté des contrôles frontaliers",
           "L'espace Schengen dans sa forme actuelle est dépassé par les enjeux migratoires et sécuritaires : il faut le durcir en redonnant une autonomie accrue aux États",
-          "La France doit sortir du système de Schengen et retrouver la pleine maitrise de ses frontières nationales",
+          "La France doit sortir du système de Schengen et retrouver la pleine maîtrise de ses frontières nationales",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -2162,7 +2162,7 @@
     "questions": [
       {
         "_id": "question-6211242a3f15af68d035215e",
-        "fr": "Si Anne Hidalgo était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Anne Hidalgo était élue, quel serait votre sentiment ?",
         "help": "https://www.2022avechidalgo.fr",
         "answers": [
           "Très content(e)",
@@ -2183,7 +2183,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352160",
-        "fr": "Si Emmanuel Macron était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Emmanuel Macron était élu, quel serait votre sentiment ?",
         "help": "https://www.lepoint.fr/presidentielle/presidentielle-le-futur-programme-de-macron-sera-envoye-par-courrier-aux-francais-17-02-2022-2465252_3121.php",
         "answers": [
           "Très content(e)",
@@ -2204,7 +2204,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352161",
-        "fr": "Si Éric Zemmour était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Éric Zemmour était élu, quel serait votre sentiment ?",
         "help": "https://www.zemmour2022.fr",
         "answers": [
           "Très content(e)",
@@ -2225,7 +2225,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352162",
-        "fr": "Si Fabien Roussel était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Fabien Roussel était élu, quel serait votre sentiment ?",
         "help": "https://www.fabienroussel2022.fr",
         "answers": [
           "Très content(e)",
@@ -2246,7 +2246,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352164",
-        "fr": "Si Jean Lassalle était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Jean Lassalle était élu, quel serait votre sentiment ?",
         "help": "https://jl2022.fr",
         "answers": [
           "Très content(e)",
@@ -2267,7 +2267,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352165",
-        "fr": "Si Jean-Luc Mélenchon était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Jean-Luc Mélenchon était élu, quel serait votre sentiment ?",
         "help": "https://melenchon2022.fr",
         "answers": [
           "Très content(e)",
@@ -2288,7 +2288,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352166",
-        "fr": "Si Marine Le Pen était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Marine Le Pen était élue, quel serait votre sentiment ?",
         "help": "https://mlafrance.fr",
         "answers": [
           "Très content(e)",
@@ -2309,7 +2309,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352167",
-        "fr": "Si Nathalie Arthaud était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Nathalie Arthaud était élue, quel serait votre sentiment ?",
         "help": "https://www.lemonde.fr/politique/article/2022/02/14/le-programme-de-nathalie-arthaud-a-la-presidentielle-2022_6113609_823448.html",
         "answers": [
           "Très content(e)",
@@ -2330,7 +2330,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352168",
-        "fr": "Si Nicolas Dupont-Aignan était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Nicolas Dupont-Aignan était élu, quel serait votre sentiment ?",
         "help": "https://2022nda.fr",
         "answers": [
           "Très content(e)",
@@ -2351,7 +2351,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d0352169",
-        "fr": "Si Philippe Poutou était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Philippe Poutou était élu, quel serait votre sentiment ?",
         "help": "https://poutou2022.org",
         "answers": [
           "Très content(e)",
@@ -2372,7 +2372,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d035216a",
-        "fr": "Si Valérie Pécresse était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Valérie Pécresse était élue, quel serait votre sentiment ?",
         "help": "https://valeriepecresse.fr",
         "answers": [
           "Très content(e)",
@@ -2393,7 +2393,7 @@
       },
       {
         "_id": "question-6211242a3f15af68d035216b",
-        "fr": "Si Yannick Jadot était élu(e), quel serait votre sentiment ?",
+        "fr": "Si Yannick Jadot était élu, quel serait votre sentiment ?",
         "help": "https://www.jadot2022.fr",
         "answers": [
           "Très content(e)",

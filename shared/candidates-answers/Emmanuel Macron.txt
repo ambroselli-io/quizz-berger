@@ -52,7 +52,7 @@ Que pensez-vous de l'énergie nucléaire ?
 Il en faut plus, le nucléaire permet à la France d'être indépendante et de ne pas avoir à importer son électricité.
 
 Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
-Il faut accélerer leur déploiement, qui est actuellement insuffisant
+Il faut accélérer leur déploiement, qui est actuellement insuffisant
 
 Que pensez-vous de l'utilisation de la voiture ?
 Il faut abandonner nos voitures à essence pour des voitures électriques ou à hydrogène. Et des alternatives là où on peut.
@@ -97,7 +97,7 @@ Comment considérez-vous les conséquences de l'immigration sur la démographie 
 L'immigration est un sujet controversé nécessitant un équilibre certain entre humanité, intégration et restriction
 
 Quelle position sur l'intégration des migrants en France ?
-Il faut instaurer et régulariser une immigration choisie avec des quota par métiers et par pays.
+Il faut instaurer et régulariser une immigration choisie avec des quotas par métiers et par pays.
 
 Quelle mesure vous paraît la plus pertinente concernant le droit de vote pour les étrangers vivant en France depuis un certain temps ?
 Ne pas attribuer le droit de vote aux étrangers
@@ -183,8 +183,8 @@ Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
-Il ne faut rien changer, la constitution garantie déjà tous nos droits fondamentaux
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
+Il ne faut rien changer, la constitution garantit déjà tous nos droits fondamentaux
 
 Que pensez-vous du recours au référendum par le Président de la République ?
 Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas de besoin
@@ -192,7 +192,7 @@ Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas d
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Oui c'est un outil intéressant, si utilisé à bon escient
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Le système est handicapé par la bureaucratie
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -295,7 +295,7 @@ Quel doit être le rôle de l'éducation nationale dans la mobilité sociale des
 L'Éducation Nationale constitue un formidable ascenseur social au fondement de la méritocratie républicaine
 
 Quelle devrait être la place des technologies numériques dans l'enseignement scolaire ?
-Nous devons accroitre la place du numérique dans l'enseignement afin d'aller vers un système hybride
+Nous devons accroître la place du numérique dans l'enseignement afin d'aller vers un système hybride
 
 Que pensez-vous du financement public de la recherche ?
 Le financement de la recherche publique est suffisant, il faut réformer les modes de formation des chercheurs et favoriser l'initiative privée
@@ -366,7 +366,7 @@ Les souffrances des malades en fin de vie et l'acharnement thérapeutique sont d
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut le garder stable en le maintenant indexé sur l'inflation, un système déjà juste et rémunérateur
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 De manière générale, il faut encore plus d'intégration de chaque pays dans l'Union Européenne
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 L'harmonie et la concurrence sociales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

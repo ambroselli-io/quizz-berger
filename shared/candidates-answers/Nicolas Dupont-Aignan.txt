@@ -52,10 +52,10 @@ Que pensez-vous de l'énergie nucléaire ?
 Il en faut beaucoup plus, c'est la solution en faveur du climat
 
 Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
-Il faut accélerer leur déploiement, qui est actuellement insuffisant
+Il faut accélérer leur déploiement, qui est actuellement insuffisant
 
 Que pensez-vous de l'utilisation de la voiture ?
-Favorisons les alternatives en ville - électrique, transports en commmun - mais on a besoin de voiture en ruralité, à essence, pas d'autre option.
+Favorisons les alternatives en ville - électrique, transports en commun - mais on a besoin de voiture en campagne, à essence, pas d'autre option.
 
 Que pensez-vous du prix des transports en commun ?
 Réduire le prix des transports collectifs pour les plus précaires afin d'inciter à les utiliser
@@ -88,7 +88,7 @@ Démographie et question migratoire:
 
 
 Que pensez-vous de la politique communautaire d'immigration menée par l'Union Européenne ?
-Il est nécessaire que l'Europe renforce drastiquement sa fermeté en fermant ses frontières extérieures, et en réinstaurant des contrôles dans l'espace Schengen
+Il est nécessaire que l'Europe renforce drastiquement sa fermeté en fermant ses frontières extérieures, et en remettant des contrôles dans l'espace Schengen
 
 S'agissant de la politique migratoire, selon vous il faut :
 Un durcissement des contrôles frontaliers et la mise en place de quotas d'accueil et de conditions plus strictes qu'auparavant
@@ -97,7 +97,7 @@ Comment considérez-vous les conséquences de l'immigration sur la démographie 
 L'immigration est un sujet controversé nécessitant un équilibre certain entre humanité, intégration et restriction
 
 Quelle position sur l'intégration des migrants en France ?
-Il faut instaurer et régulariser une immigration choisie avec des quota par métiers et par pays.
+Il faut instaurer et régulariser une immigration choisie avec des quotas par métiers et par pays.
 
 Quelle mesure vous paraît la plus pertinente concernant le droit de vote pour les étrangers vivant en France depuis un certain temps ?
 Ne pas attribuer le droit de vote aux étrangers
@@ -183,8 +183,8 @@ Mettre en place le principe de “zéro taxation” sur les droits de succession
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
-Il ne faut rien changer, la constitution garantie déjà tous nos droits fondamentaux
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
+Il ne faut rien changer, la constitution garantit déjà tous nos droits fondamentaux
 
 Que pensez-vous du recours au référendum par le Président de la République ?
 Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas de besoin
@@ -192,7 +192,7 @@ Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas d
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Oui c'est un outil intéressant, si utilisé à bon escient
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -214,7 +214,7 @@ Comment vous situez-vous par rapport au port du masque en société en cas de pi
 Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 Comment vous situez-vous par rapport aux passes sanitaire et vaccinal ?
-Le pass sanitaire est le début d'une restriction progressive et continu de nos libertés: il faut conserver nos droits !
+Le pass sanitaire est le début d'une restriction progressive et continue de nos libertés: il faut conserver nos droits !
 
 Doit-on faire payer les soins de santé aux personnes non vaccinées ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -298,7 +298,7 @@ Quelle devrait être la place des technologies numériques dans l'enseignement s
 Le numérique est néfaste pour l'éducation de nos enfants, et il faut strictement limiter son usage dans l'enseignement scolaire
 
 Que pensez-vous du financement public de la recherche ?
-Il faut accroitre le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle
+Il faut accroître le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle
 
 Que pensez-vous de la situation actuelle des universités françaises ?
 Les universités françaises font face à un déficit chronique de moyens : il faut réinvestir massivement pour restaurer leur prestige et leur équité
@@ -346,7 +346,7 @@ Que vous évoque la question des minorités sexuelles et des luttes LGBT ?
 Le chemin est encore long, il faut renforcer la législation pour protéger les droits des individus
 
 Quelle place devrait avoir la sphère religieuse dans notre société ?
-Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnait pas notre République
+Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnaît pas notre République
 
 Que pensez-vous de la procréation médicalement assistée (PMA) ?
 Elle doit être autorisée seulement pour les couples hétérosexuels, et remboursée
@@ -366,7 +366,7 @@ Le droit à la vie humaine est garanti par nos textes fondateurs : il est néces
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 Un taux d'imposition unique est impossible, les membres n'en veulent pas
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 Avoir des prestations sociales communes est impossible, les membres n'en veulent pas
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

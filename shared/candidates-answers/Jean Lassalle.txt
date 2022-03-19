@@ -52,10 +52,10 @@ Que pensez-vous de l'énergie nucléaire ?
 Il faut sortir du nucléaire progressivement
 
 Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
-Il faut accélerer leur déploiement, qui est actuellement insuffisant
+Il faut accélérer leur déploiement, qui est actuellement insuffisant
 
 Que pensez-vous de l'utilisation de la voiture ?
-Favorisons les alternatives en ville - électrique, transports en commmun - mais on a besoin de voiture en ruralité, à essence, pas d'autre option.
+Favorisons les alternatives en ville - électrique, transports en commun - mais on a besoin de voiture en campagne, à essence, pas d'autre option.
 
 Que pensez-vous du prix des transports en commun ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -148,7 +148,7 @@ Que pensez-vous de la privatisation de grandes entreprises publiques (SNCF, EDF.
 Si l'État n'a pas quelques entreprises en service public, c'est une dégradation assurée pour les habitants
 
 Quelle place le secteur public doit-il occuper dans l'économie ?
-L'État doit renationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)
+L'État doit nationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)
 
 Selon-vous, la France est-elle attractive sur le plan économique ?
 La fuite des talents est réelle, considérable et dramatique pour notre développement
@@ -172,7 +172,7 @@ Quel devrait être le traitement du patrimoine financier des candidats durant un
 Il est nécessaire de rendre publiques toutes les ressources financières des candidats pour moraliser la démocratie et éviter tout conflit d'intérêt
 
 Quelle est votre vision des grands rendez-vous économiques et financiers tels que le sommet de Davos ?
-Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut réinstaurer une prise en compte des enjeux sociaux
+Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut remettre une prise en compte des enjeux sociaux
 
 Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -183,7 +183,7 @@ Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
 Il faut modifier la constitution pour davantage de démocratie
 
 Que pensez-vous du recours au référendum par le Président de la République ?
@@ -192,7 +192,7 @@ Il en faudrait plus, au moins un ou deux par quinquennat
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Oui c'est un outil intéressant, si utilisé à bon escient
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Le système est handicapé par la bureaucratie
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -295,10 +295,10 @@ Quel doit être le rôle de l'éducation nationale dans la mobilité sociale des
 L'Éducation Nationale tend à reproduire les classes sociales en permettant aux individus favorisés de mettre à profit leurs ressources pour réussir dans la sphère scolaire
 
 Quelle devrait être la place des technologies numériques dans l'enseignement scolaire ?
-Nous devons accroitre la place du numérique dans l'enseignement afin d'aller vers un système hybride
+Nous devons accroître la place du numérique dans l'enseignement afin d'aller vers un système hybride
 
 Que pensez-vous du financement public de la recherche ?
-Il faut accroitre le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle
+Il faut accroître le financement de la recherche et favoriser le mécénat privé pour combler les failles de notre recherche actuelle
 
 Que pensez-vous de la situation actuelle des universités françaises ?
 Les récentes réformes sont venues nuire à l'autonomie de l'université : il est nécessaire d'abroger les dernières lois sur la recherche
@@ -366,7 +366,7 @@ Le droit à la vie humaine est garanti par nos textes fondateurs : il est néces
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 Un taux d'imposition unique est impossible, les membres n'en veulent pas
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 Avoir des prestations sociales communes est impossible, les membres n'en veulent pas
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

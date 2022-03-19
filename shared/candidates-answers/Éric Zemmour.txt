@@ -88,7 +88,7 @@ Démographie et question migratoire:
 
 
 Que pensez-vous de la politique communautaire d'immigration menée par l'Union Européenne ?
-L'UE contraint la France dans sa politique migratoire : il est nécessaire de s'en autonomiser en reprenant le contrôle souverain de nos frontières
+L'UE contraint la France dans sa politique migratoire : il est nécessaire de reprendre le contrôle souverain de nos frontières
 
 S'agissant de la politique migratoire, selon vous il faut :
 Une fermeture des frontières nationales
@@ -183,7 +183,7 @@ Mettre en place le principe de “zéro taxation” sur les droits de succession
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
 Il faut modifier la constitution actuelle pour donner davantage de pouvoir au gouvernement
 
 Que pensez-vous du recours au référendum par le Président de la République ?
@@ -192,7 +192,7 @@ Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas d
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Non ça va à l'encontre de la démocratie représentative, c'est dangereux
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Le système est paralysé par la bureaucratie
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -214,7 +214,7 @@ Comment vous situez-vous par rapport au port du masque en société en cas de pi
 Il faut porter le masque seulement quand il s'agit de grands rassemblements
 
 Comment vous situez-vous par rapport aux passes sanitaire et vaccinal ?
-Le pass sanitaire est le début d'une restriction progressive et continu de nos libertés: il faut conserver nos droits !
+Le pass sanitaire est le début d'une restriction progressive et continue de nos libertés: il faut conserver nos droits !
 
 Doit-on faire payer les soins de santé aux personnes non vaccinées ?
 Les non vaccinés sont des citoyens qui paient les mêmes impôts que les personnes vaccinés, ils ont le droit d'être soignés et d'être pris en charge
@@ -298,7 +298,7 @@ Quelle devrait être la place des technologies numériques dans l'enseignement s
 Le numérique est néfaste pour l'éducation de nos enfants, et il faut strictement limiter son usage dans l'enseignement scolaire
 
 Que pensez-vous du financement public de la recherche ?
-La recherche en France est couteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux
+La recherche en France est coûteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux
 
 Que pensez-vous de la situation actuelle des universités françaises ?
 Les universités ne sont plus des lieux neutres politiquement et idéologiquement : il faut que l'État reprenne la main sur leur gouvernance et y réinsère ses valeurs
@@ -355,7 +355,7 @@ Que pensez-vous de la gestation pour autrui (GPA) ?
 Elle doit être non remboursée et interdite pour tous
 
 Que pensez-vous de la législation française sur l'Interruption Volontaire de Grossesse ? (Avortement)
-Elle doit réglementée plus strictement, par un déremboursement et une limitation du nombre d'IVG par femmes
+Elle être doit réglementée plus strictement, par un non-remboursement et une limitation du nombre d'IVG par femmes
 
 Que pensez-vous de la question de l'euthanasie (suicide assisté) ?
 L'euthanasie va à l'encontre même de nos valeurs fondamentales : il faut interdire au secteur médical la possibilité d'arrêter les soins d'un patient, la vie humaine est sacrée
@@ -366,7 +366,7 @@ L'euthanasie va à l'encontre même de nos valeurs fondamentales : il faut inter
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 La concurrence des prestations sociales est saine pour les pays, il ne faut pas d'harmonisation.
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?
@@ -406,7 +406,7 @@ Que pensez-vous d'une défense commune européenne ?
 L'Europe est un fléau pour nos intérêts nationaux : nous devons mettre un terme à toute communautarisation de notre politique de défense nationale
 
 Quelle est votre vision du système de Schengen, qui organise l'ouverture des frontières au sein de l'espace européen ?
-La France doit sortir du système de Schengen et retrouver la pleine maitrise de ses frontières nationales
+La France doit sortir du système de Schengen et retrouver la pleine maîtrise de ses frontières nationales
 
 
 

@@ -52,7 +52,7 @@ Que pensez-vous de l'énergie nucléaire ?
 Il faut maintenir le nucléaire tel qu'il est aujourd'hui, tout en continuant d'investir dans la recherche pour trouver des alternatives
 
 Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
-Il faut accélerer leur déploiement, qui est actuellement insuffisant
+Il faut accélérer leur déploiement, qui est actuellement insuffisant
 
 Que pensez-vous de l'utilisation de la voiture ?
 Il faudrait se diriger vers un abandon de nos voitures, pour des transports en commun ou des vélos.
@@ -97,7 +97,7 @@ Comment considérez-vous les conséquences de l'immigration sur la démographie 
 L'immigration est un phénomène bénéfique avec la mise en place d'une gestion raisonnée et d'une intégration équilibrée
 
 Quelle position sur l'intégration des migrants en France ?
-Il faut instaurer et régulariser une immigration choisie avec des quota par métiers et par pays.
+Il faut instaurer et régulariser une immigration choisie avec des quotas par métiers et par pays.
 
 Quelle mesure vous paraît la plus pertinente concernant le droit de vote pour les étrangers vivant en France depuis un certain temps ?
 Ne pas attribuer le droit de vote aux étrangers
@@ -148,7 +148,7 @@ Que pensez-vous de la privatisation de grandes entreprises publiques (SNCF, EDF.
 Ça dépend de l'entreprise concernée (taille, secteurs d'activité, etc...)
 
 Quelle place le secteur public doit-il occuper dans l'économie ?
-L'État doit renationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)
+L'État doit nationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)
 
 Selon-vous, la France est-elle attractive sur le plan économique ?
 Fuite des talents et attractivité se compensent car la France attire dans certains domaines et fait fuir dans d'autres
@@ -172,7 +172,7 @@ Quel devrait être le traitement du patrimoine financier des candidats durant un
 Les déclarations de patrimoine et de revenus régulières permettent de tendre vers une transparence démocratique accrue et bénéfique si elle demeure raisonnée
 
 Quelle est votre vision des grands rendez-vous économiques et financiers tels que le sommet de Davos ?
-Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut réinstaurer une prise en compte des enjeux sociaux
+Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut remettre une prise en compte des enjeux sociaux
 
 Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Conserver tel quel le système actuel, juste et équilibré
@@ -183,7 +183,7 @@ Conserver tel quel le système actuel, juste et équilibré
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
 Il faut modifier la constitution pour davantage de démocratie
 
 Que pensez-vous du recours au référendum par le Président de la République ?
@@ -192,7 +192,7 @@ Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas d
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Non ça va à l'encontre de la démocratie représentative, c'est dangereux
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Cela n'a pas d'effet, pas de conséquence
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -277,7 +277,7 @@ Selon vous, quelle est la meilleure solution pour favoriser une fiscalité plus 
 Mise en place d'un ISF afin de mettre à contribution les plus fortunés pour financer la transition énergétique : il faut cibler les plus riches
 
 S'agissant de l'Impôt de Solidarité sur la Fortune (ISF), il faut selon vous :
-Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements climaticides, notamment des ménages les plus aisés
+Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements mauvais pour le climat, notamment des ménages les plus aisés
 
 Quelle devrait être l'évolution de la fiscalité des entreprises dans le contexte économique actuel ?
 Il est nécessaire de recalculer la répartition actuelle des montants fiscaux pour rétablir l'égalité entre TPE/PME et grands groupes
@@ -366,7 +366,7 @@ Le droit de mourir dans la dignité est un droit fondamental : l'État français
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 De manière générale, il faut encore plus d'intégration de chaque pays dans l'Union Européenne
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 La situation actuelle n'est pas tenable, au moins un taux minimum serait un gros progrès
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 Un minimum doit être défini, comme un salaire minimum européen par exemple.
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

@@ -88,7 +88,7 @@ Démographie et question migratoire:
 
 
 Que pensez-vous de la politique communautaire d'immigration menée par l'Union Européenne ?
-Il est nécessaire que l'Europe renforce drastiquement sa fermeté en fermant ses frontières extérieures, et en réinstaurant des contrôles dans l'espace Schengen
+Il est nécessaire que l'Europe renforce drastiquement sa fermeté en fermant ses frontières extérieures, et en remettant des contrôles dans l'espace Schengen
 
 S'agissant de la politique migratoire, selon vous il faut :
 Un durcissement des contrôles frontaliers et la mise en place de quotas d'accueil et de conditions plus strictes qu'auparavant
@@ -97,7 +97,7 @@ Comment considérez-vous les conséquences de l'immigration sur la démographie 
 L'immigration est un fardeau qu'il convient de limiter et dont il faut restreindre les effets sur notre société par de véritables politiques d'assimilation
 
 Quelle position sur l'intégration des migrants en France ?
-Il faut instaurer et régulariser une immigration choisie avec des quota par métiers et par pays.
+Il faut instaurer et régulariser une immigration choisie avec des quotas par métiers et par pays.
 
 Quelle mesure vous paraît la plus pertinente concernant le droit de vote pour les étrangers vivant en France depuis un certain temps ?
 Ne pas attribuer le droit de vote aux étrangers
@@ -183,8 +183,8 @@ Mettre en place le principe de “zéro taxation” sur les droits de succession
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
-Il ne faut rien changer, la constitution garantie déjà tous nos droits fondamentaux
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
+Il ne faut rien changer, la constitution garantit déjà tous nos droits fondamentaux
 
 Que pensez-vous du recours au référendum par le Président de la République ?
 Il en faudrait plus, au moins un ou deux par quinquennat
@@ -192,7 +192,7 @@ Il en faudrait plus, au moins un ou deux par quinquennat
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Non ça va à l'encontre de la démocratie représentative, c'est dangereux
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Le système est paralysé par la bureaucratie
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -298,7 +298,7 @@ Quelle devrait être la place des technologies numériques dans l'enseignement s
 Le numérique est un outil intéressant pour lequel les enseignements doivent être également dotés
 
 Que pensez-vous du financement public de la recherche ?
-La recherche en France est couteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux
+La recherche en France est coûteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux
 
 Que pensez-vous de la situation actuelle des universités françaises ?
 La démocratisation universitaire est un mythe : il est nécessaire de retrouver un système sélectif mais prestigieux et efficace
@@ -346,10 +346,10 @@ Que vous évoque la question des minorités sexuelles et des luttes LGBT ?
 La situation actuelle est plutôt équilibrée, rien à redire
 
 Quelle place devrait avoir la sphère religieuse dans notre société ?
-Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnait pas notre République
+Nous sommes un pays laïc fondé sur des valeurs notamment judéo-chrétiennes: il faut protéger ce socle et lutter contre l'islamisme qui ne reconnaît pas notre République
 
 Que pensez-vous de la procréation médicalement assistée (PMA) ?
-Elle doit être autorisée et remboursée pour tous couple hétérosexuel ou homosexuel féminin 
+Elle doit être autorisée et remboursée pour tous couple hétérosexuel ou homosexuel féminin
 
 Que pensez-vous de la gestation pour autrui (GPA) ?
 Elle doit être non remboursée et interdite pour tous
@@ -366,7 +366,7 @@ Le cadre légal actuel permet un équilibre pertinent en permettant de réduire 
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 Il faut modifier ces traités pour faire place à plus de collaboration entre États, avec plus de liberté de mouvement pour chacun d'entre eux
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 La concurrence des prestations sociales est saine pour les pays, il ne faut pas d'harmonisation.
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

@@ -183,7 +183,7 @@ Alourdir les droits de succession et de donation pour corriger les inégalités
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
 Il faut changer de constitution pour permettre davantage de démocratie
 
 Que pensez-vous du recours au référendum par le Président de la République ?
@@ -192,7 +192,7 @@ Il en faut beaucoup plus, au moins tous les ans
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Oui c'est une très bonne idée, à utiliser fréquemment
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Cela n'a pas d'effet, pas de conséquence
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -214,7 +214,7 @@ Comment vous situez-vous par rapport au port du masque en société en cas de pi
 Il ne faut plus porter de masque
 
 Comment vous situez-vous par rapport aux passes sanitaire et vaccinal ?
-Le pass sanitaire est le début d'une restriction progressive et continu de nos libertés: il faut conserver nos droits !
+Le pass sanitaire est le début d'une restriction progressive et continue de nos libertés: il faut conserver nos droits !
 
 Doit-on faire payer les soins de santé aux personnes non vaccinées ?
 Les non vaccinés sont des citoyens qui paient les mêmes impôts que les personnes vaccinés, ils ont le droit d'être soignés et d'être pris en charge
@@ -295,7 +295,7 @@ Quel doit être le rôle de l'éducation nationale dans la mobilité sociale des
 L'Éducation Nationale est l'arme de domination des puissants: il est nécessaire de la réformer grandement pour la rendre réellement égalitaire et démocratisée
 
 Quelle devrait être la place des technologies numériques dans l'enseignement scolaire ?
-Nous devons accroitre la place du numérique dans l'enseignement afin d'aller vers un système hybride
+Nous devons accroître la place du numérique dans l'enseignement afin d'aller vers un système hybride
 
 Que pensez-vous du financement public de la recherche ?
 La France souffre d'un manque de financement criant de sa recherche, et l'État doit en augmenter grandement le financement
@@ -366,7 +366,7 @@ Le droit de mourir dans la dignité est un droit fondamental : l'État français
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut un SMIC réellement rémunérateur afin d'améliorer le pouvoir d'achat des salariés
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 Il faut que tous les pays aient le même taux d'imposition sinon le moins-disant gagnera toujours dans un espace sans protectionnisme.
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 Les prestations sociales devraient être totalement harmonisées dans un espace libre comme l'Union européenne
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?

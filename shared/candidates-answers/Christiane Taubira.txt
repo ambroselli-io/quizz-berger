@@ -148,7 +148,7 @@ Que pensez-vous de la privatisation de grandes entreprises publiques (SNCF, EDF.
 Si l'État n'a pas quelques entreprises en service public, c'est une dégradation assurée pour les habitants
 
 Quelle place le secteur public doit-il occuper dans l'économie ?
-L'État doit renationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)
+L'État doit nationaliser des entreprises privatisées dans des secteurs stratégiques essentiels (EDF)
 
 Selon-vous, la France est-elle attractive sur le plan économique ?
 Il y a une certaine fuite des talents, mais elle n'a pas beaucoup d'influence sur notre développement
@@ -172,7 +172,7 @@ Quel devrait être le traitement du patrimoine financier des candidats durant un
 Les déclarations de patrimoine et de revenus régulières permettent de tendre vers une transparence démocratique accrue et bénéfique si elle demeure raisonnée
 
 Quelle est votre vision des grands rendez-vous économiques et financiers tels que le sommet de Davos ?
-Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut réinstaurer une prise en compte des enjeux sociaux
+Une expression des excès de la mondialisation et du capitalisme aux côtés desquels il faut remettre une prise en compte des enjeux sociaux
 
 Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -183,7 +183,7 @@ Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
 Gouvernance et République:
 
 
-Que pensez vous du régime de la Vème République et de sa Constitution ?
+Que pensez-vous du régime de la Vème République et de sa Constitution ?
 Il faut modifier la constitution pour davantage de démocratie
 
 Que pensez-vous du recours au référendum par le Président de la République ?
@@ -192,7 +192,7 @@ Que pensez-vous du recours au référendum par le Président de la République ?
 Que pensez-vous du Référendum d'Initiative Populaire ?
 Oui c'est un outil intéressant, si utilisé à bon escient
 
-Que pensez-vous des lourdeurs l'administration / de la bureaucratie ?
+Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
 Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 Que pensez-vous de la dématérialisation des services publics numériques ?
@@ -277,7 +277,7 @@ Selon vous, quelle est la meilleure solution pour favoriser une fiscalité plus 
 Mise en place d'un ISF afin de mettre à contribution les plus fortunés pour financer la transition énergétique : il faut cibler les plus riches
 
 S'agissant de l'Impôt de Solidarité sur la Fortune (ISF), il faut selon vous :
-Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements climaticides, notamment des ménages les plus aisés
+Établir un ISF climatique, indexé sur les émissions de carbone afin de pénaliser les investissements mauvais pour le climat, notamment des ménages les plus aisés
 
 Quelle devrait être l'évolution de la fiscalité des entreprises dans le contexte économique actuel ?
 Nous devons alourdir la fiscalité des grandes multinationales pour financer les programmes publics de redistribution et de cohésion sociale
@@ -366,7 +366,7 @@ Les souffrances des malades en fin de vie et l'acharnement thérapeutique sont d
 Travail, Chômage, Retraite:
 
 
-Que pensez vous du salaire minimum (SMIC) ?
+Que pensez-vous du salaire minimum (SMIC) ?
 Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
 
 Que pensez-vous de l'allocation actuelle du RSA ?
@@ -393,10 +393,10 @@ Union Européenne:
 Que pensez-vous des traités de l'Union Européenne ?
 De manière générale, il faut encore plus d'intégration de chaque pays dans l'Union Européenne
 
-Que pensez vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
 Il faut que tous les pays aient le même taux d'imposition sinon le moins-disant gagnera toujours dans un espace sans protectionnisme.
 
-Que pensez vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
+Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
 L'harmonie et la concurrence sociales ont chacun leur avantage et leur inconvénient : peu importe ce qui est en place, il faut s'adapter.
 
 Que pensez-vous des projets d'élargissement de l'Union Européenne ?
