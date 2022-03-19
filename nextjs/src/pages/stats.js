@@ -32,7 +32,7 @@ export default function Stats({
   return (
     <>
       <Subtitle>Nombre cumulé d'utilisateurs: {countUsers}</Subtitle>
-      <Chart data={cumulativeUsers} dataKey="cumulative" />
+      <LineAreaChart data={cumulativeUsers} dataKey="cumulative" secondaryDataKey="count" />
       <Subtitle>Nombre cumulé de réponses: {countAnswers}</Subtitle>
       <Chart data={cumulativeAnswers} dataKey="cumulative" />
       {/* <Subtitle>Nombre moyen de réponses par utilisateur {answersPerUserAverage}</Subtitle>
@@ -65,6 +65,32 @@ const Chart = ({ data, dataKey }) => (
         <Tooltip />
         <Area type="monotone" dataKey={dataKey} stroke="#111827" fill="#facc15" />
       </AreaChart>
+    </ResponsiveContainer>
+  </Container>
+);
+
+const LineAreaChart = ({ data, dataKey, secondaryDataKey }) => (
+  <Container>
+    <ResponsiveContainer width="100%" height="100%">
+      <ComposedChart
+        width={500}
+        height={400}
+        data={data}
+        margin={{
+          top: 10,
+          right: 30,
+          left: 30,
+          bottom: 30,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
+        <YAxis yAxisId="left" />
+        <YAxis yAxisId="right" orientation="right" />
+        <Tooltip />
+        <Area type="monotone" yAxisId="left" dataKey={dataKey} stroke="#111827" fill="#facc15" />
+        <Line type="monotone" yAxisId="right" dataKey={secondaryDataKey} stroke="#111827" />
+      </ComposedChart>
     </ResponsiveContainer>
   </Container>
 );
