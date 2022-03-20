@@ -80,7 +80,7 @@ const Quizz = () => {
       user: user._id,
       themeId: theme._id,
       questionId: questionId,
-      answerIndex: Number(e.target.dataset.index),
+      answerIndex: Number(e.target.getAttribute("data-index")),
     });
     goToNextQuestion();
   };
