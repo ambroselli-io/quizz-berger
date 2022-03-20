@@ -32,6 +32,8 @@ export default function Stats({
   return (
     <>
       <Subtitle>Nombre cumulé d'utilisateurs: {countUsers}</Subtitle>
+      <MiniSubtitle>Aujourd'hui: {cumulativeUsers[cumulativeUsers.length - 1].count}</MiniSubtitle>
+      <MiniSubtitle>Max: {Math.max(...cumulativeUsers.map((c) => c.count))}</MiniSubtitle>
       <LineAreaChart data={cumulativeUsers} dataKey="cumulative" secondaryDataKey="count" />
       <Subtitle>Nombre cumulé de réponses: {countAnswers}</Subtitle>
       <Chart data={cumulativeAnswers} dataKey="cumulative" />
@@ -155,6 +157,10 @@ const Container = styled.div`
 `;
 
 const Subtitle = styled.h2`
+  margin: 3rem 3rem 0;
+`;
+
+const MiniSubtitle = styled.span`
   margin: 3rem 3rem 0;
 `;
 
