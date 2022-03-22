@@ -155,6 +155,7 @@ router.get(
 
     const start = new Date();
     start.setHours(0, 0, 0, 0);
+    const now = new Date();
     const usersPerHourAggregation = await UserObject.aggregate([
       {
         $match: {
@@ -177,15 +178,42 @@ router.get(
       },
     ]);
 
+    const usersPerHourToday = await UserObject.aggregate([
+      {
+        $match: {
+          createdAt: { $gt: start },
+        },
+      },
+      {
+        $project: {
+          hour: { $hour: "$createdAt" },
+        },
+      },
+      {
+        $group: {
+          _id: "$hour",
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $sort: { _id: 1 },
+      },
+    ]);
+
+    const maxUsersOnADay = Math.max(...cumulativeUsers.map((c) => c.count));
+
     const totalUsersForTheDay = usersPerHourAggregation.reduce((sum, agg) => sum + agg.count, 0);
     let globalUsersForTheDay = 0;
+    let globalUsersForToday = 0;
     const usersPerHour = usersPerHourAggregation.map((agg) => {
       const percentOftheDay = agg.count / totalUsersForTheDay;
       globalUsersForTheDay = globalUsersForTheDay + percentOftheDay;
+      globalUsersForToday = globalUsersForToday + (usersPerHourToday.find((u) => u._id === agg._id)?.count || 0);
       return {
         _id: agg._id,
         count: percentOftheDay,
         cumulative: globalUsersForTheDay,
+        today: now.getHours() < agg._id ? null : globalUsersForToday / maxUsersOnADay,
       };
     });
 
@@ -201,6 +229,7 @@ router.get(
         countUsers,
         countAnswers,
         answersPerUser,
+        maxUsersOnADay,
         answersPerUserAverage,
         answersPerUserPerDay,
         answersPerTheme,

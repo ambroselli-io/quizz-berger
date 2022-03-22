@@ -20,6 +20,7 @@ export default function Stats({
   cumulativeAnswers,
   countUsers,
   countAnswers,
+  maxUsersOnADay,
   answersPerUser,
   answersPerUserAverage,
   answersPerUserPerDay,
@@ -33,10 +34,10 @@ export default function Stats({
       <Subtitle>Nombre cumulé d'utilisateurs: {countUsers}</Subtitle>
       <MiniSubtitle>Aujourd'hui: {today}</MiniSubtitle>
       <MiniSubtitle>Projection: {projection}</MiniSubtitle>
-      <MiniSubtitle>Max: {Math.max(...cumulativeUsers.map((c) => c.count))}</MiniSubtitle>
+      <MiniSubtitle>Max: {maxUsersOnADay}</MiniSubtitle>
       <LineAreaChart data={cumulativeUsers} dataKey="cumulative" secondaryDataKey="count" />
       <Subtitle>Utilisateurs par heure</Subtitle>
-      <AllCharts data={usersPerHour} barKey="count" areaKey="cumulative" />
+      <AllCharts data={usersPerHour} barKey="count" areaKey="cumulative" lineKey="today" />
       {/* <Subtitle>Nombre de réponses par utilisateur par jour</Subtitle>
       <AllCharts data={answersPerUserPerDay} barKey="percentageQuizz" lineKey="users" areaKey="percentageQuizz" /> */}
       <Subtitle>Nombre cumulé de réponses: {countAnswers}</Subtitle>
@@ -145,7 +146,7 @@ const AllCharts = ({ data, barKey, lineKey, areaKey }) => (
         <Tooltip />
         <Area type="monotone" yAxisId="left" dataKey={areaKey} fill="#facc15" stroke="#facc15" />
         <Bar dataKey={barKey} yAxisId="right" barSize={20} fill="#6faea6" stroke="#111827" />
-        {!!lineKey && <Line type="monotone" dataKey={lineKey} stroke="#111827" />}
+        {!!lineKey && <Line type="monotone" dataKey={lineKey} stroke="#111827" yAxisId="left" />}
       </ComposedChart>
     </ResponsiveContainer>
   </Container>
@@ -189,6 +190,7 @@ export const getServerSideProps = async (context) => {
       usersPerHour: chartData.data.usersPerHour,
       today: chartData.data.today,
       projection: chartData.data.projection,
+      maxUsersOnADay: chartData.data.maxUsersOnADay,
     },
   };
 };
