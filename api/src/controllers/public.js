@@ -39,7 +39,7 @@ router.get(
   "/charts",
   catchErrors(async (req, res) => {
     let globalUsers = 0;
-    const users = (
+    const cumulativeUsers = (
       await UserObject.aggregate([
         {
           $match: { $or: [{ isCandidate: false }, { isCandidate: { $exists: false } }] },
@@ -119,7 +119,7 @@ router.get(
       [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120].map((name) => ({ name, totalUsers: 0 }))
     );
 
-    const answersPerUserPerDay = users
+    const answersPerUserPerDay = cumulativeUsers
       .filter((u) => u._id >= "2022-02-25")
       .map((u) => ({
         _id: u._id,
@@ -153,9 +153,59 @@ router.get(
       };
     });
 
+    const usersPerHourAggregation = await UserObject.aggregate([
+      {
+        $match: {
+          createdAt: { $gt: new Date("2022-02-25") },
+        },
+      },
+      {
+        $project: {
+          hour: { $hour: "$createdAt" },
+        },
+      },
+      {
+        $group: {
+          _id: "$hour",
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $sort: { _id: 1 },
+      },
+    ]);
+
+    const totalUsersForTheDay = usersPerHourAggregation.reduce((sum, agg) => sum + agg.count, 0);
+    let globalUsersForTheDay = 0;
+    const usersPerHour = usersPerHourAggregation.map((agg) => {
+      const percentOftheDay = agg.count / totalUsersForTheDay;
+      globalUsersForTheDay = globalUsersForTheDay + percentOftheDay;
+      return {
+        _id: agg._id,
+        count: percentOftheDay,
+        cumulative: globalUsersForTheDay,
+      };
+    });
+
+    const today = cumulativeUsers[cumulativeUsers.length - 1].count;
+    const nowHour = new Date().getHours();
+    const projection = Math.round(today / usersPerHour.find((u) => u._id === nowHour).cumulative);
+
     res.status(200).send({
       ok: true,
-      data: { users, answers, countUsers, countAnswers, answersPerUser, answersPerUserAverage, answersPerUserPerDay, answersPerTheme },
+      data: {
+        cumulativeUsers,
+        answers,
+        countUsers,
+        countAnswers,
+        answersPerUser,
+        answersPerUserAverage,
+        answersPerUserPerDay,
+        answersPerTheme,
+        usersPerHour,
+        projection,
+        today,
+      },
     });
   })
 );

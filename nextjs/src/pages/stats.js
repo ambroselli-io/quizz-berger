@@ -11,10 +11,6 @@ import {
   Bar,
   ComposedChart,
   Line,
-  Scatter,
-  PieChart,
-  Pie,
-  Cell,
 } from "recharts";
 import styled from "styled-components";
 import API from "../services/api";
@@ -28,21 +24,27 @@ export default function Stats({
   answersPerUserAverage,
   answersPerUserPerDay,
   answersPerTheme,
+  usersPerHour,
+  today,
+  projection,
 }) {
   return (
     <>
       <Subtitle>Nombre cumulé d'utilisateurs: {countUsers}</Subtitle>
-      <MiniSubtitle>Aujourd'hui: {cumulativeUsers[cumulativeUsers.length - 1].count}</MiniSubtitle>
+      <MiniSubtitle>Aujourd'hui: {today}</MiniSubtitle>
+      <MiniSubtitle>Projection: {projection}</MiniSubtitle>
       <MiniSubtitle>Max: {Math.max(...cumulativeUsers.map((c) => c.count))}</MiniSubtitle>
       <LineAreaChart data={cumulativeUsers} dataKey="cumulative" secondaryDataKey="count" />
+      <Subtitle>Utilisateurs par heure</Subtitle>
+      <AllCharts data={usersPerHour} barKey="count" areaKey="cumulative" />
+      {/* <Subtitle>Nombre de réponses par utilisateur par jour</Subtitle>
+      <AllCharts data={answersPerUserPerDay} barKey="percentageQuizz" lineKey="users" areaKey="percentageQuizz" /> */}
       <Subtitle>Nombre cumulé de réponses: {countAnswers}</Subtitle>
       <Chart data={cumulativeAnswers} dataKey="cumulative" />
-      {/* <Subtitle>Nombre moyen de réponses par utilisateur {answersPerUserAverage}</Subtitle>
-      <BarChartWithData data={answersPerUser} dataKey="totalUsers" /> */}
-      <Subtitle>Nombre de réponses par utilisateur par jour</Subtitle>
-      <AllCharts data={answersPerUserPerDay} />
       <Subtitle>Popularité des thèmes</Subtitle>
       <BarChartWithData data={answersPerTheme} dataKey="value" />
+      <Subtitle>Nombre moyen de réponses par utilisateur {answersPerUserAverage}</Subtitle>
+      <BarChartWithData data={answersPerUser} dataKey="totalUsers" />
     </>
   );
 }
@@ -121,7 +123,7 @@ const BarChartWithData = ({ data, dataKey }) => (
   </Container>
 );
 
-const AllCharts = ({ data }) => (
+const AllCharts = ({ data, barKey, lineKey, areaKey }) => (
   <Container>
     <ResponsiveContainer width="100%" height="100%">
       <ComposedChart
@@ -141,10 +143,9 @@ const AllCharts = ({ data }) => (
         <YAxis yAxisId="left" />
         <YAxis yAxisId="right" orientation="right" />
         <Tooltip />
-        <Area type="monotone" yAxisId="left" dataKey="answers" fill="#facc15" stroke="#facc15" />
-        <Bar dataKey="percentageQuizz" yAxisId="right" barSize={20} fill="#6faea6" stroke="#111827" />
-        <Line type="monotone" dataKey="users" stroke="#111827" />
-        <Scatter dataKey="cnt" fill="red" />
+        <Area type="monotone" yAxisId="left" dataKey={areaKey} fill="#facc15" stroke="#facc15" />
+        <Bar dataKey={barKey} yAxisId="right" barSize={20} fill="#6faea6" stroke="#111827" />
+        {!!lineKey && <Line type="monotone" dataKey={lineKey} stroke="#111827" />}
       </ComposedChart>
     </ResponsiveContainer>
   </Container>
@@ -177,7 +178,7 @@ export const getServerSideProps = async (context) => {
 
   return {
     props: {
-      cumulativeUsers: chartData.data.users,
+      cumulativeUsers: chartData.data.cumulativeUsers,
       cumulativeAnswers: chartData.data.answers,
       countUsers: chartData.data.countUsers,
       countAnswers: chartData.data.countAnswers,
@@ -185,6 +186,9 @@ export const getServerSideProps = async (context) => {
       answersPerUserAverage: chartData.data.answersPerUserAverage,
       answersPerUserPerDay: chartData.data.answersPerUserPerDay,
       answersPerTheme: chartData.data.answersPerTheme,
+      usersPerHour: chartData.data.usersPerHour,
+      today: chartData.data.today,
+      projection: chartData.data.projection,
     },
   };
 };
