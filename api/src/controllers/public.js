@@ -153,10 +153,12 @@ router.get(
       };
     });
 
+    const start = new Date();
+    start.setHours(0, 0, 0, 0);
     const usersPerHourAggregation = await UserObject.aggregate([
       {
         $match: {
-          createdAt: { $gt: new Date("2022-02-25") },
+          createdAt: { $gt: new Date("2022-02-25"), $lt: start },
         },
       },
       {
