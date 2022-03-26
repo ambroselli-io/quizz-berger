@@ -174,17 +174,19 @@ const ThemeSelect = () => {
             </small>
           </SubTitle>
           <ThemesContainer>
-            {shuffledQuizz.map((theme, index) => {
-              return (
-                <ThemeButton
-                  key={theme._id}
-                  debug={index === 0}
-                  theme={theme}
-                  userAnswers={userAnswers}
-                  onClick={goToQuizz}
-                />
-              );
-            })}
+            {shuffledQuizz
+              .filter((t) => t._id !== "theme-6211242a3f15af68d035215d")
+              .map((theme, index) => {
+                return (
+                  <ThemeButton
+                    key={theme._id}
+                    debug={index === 0}
+                    theme={theme}
+                    userAnswers={userAnswers}
+                    onClick={goToQuizz}
+                  />
+                );
+              })}
           </ThemesContainer>
           <SearchInput
             placeholder="Recherchez par mot-clé"
