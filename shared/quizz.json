@@ -2155,5 +2155,263 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "theme-6211242a3f15af68d035215d",
+    "fr": "Et si un(e) autre gagnait...",
+    "questions": [
+      {
+        "_id": "question-6211242a3f15af68d035215e",
+        "fr": "Si Anne Hidalgo était élue, quel serait votre sentiment ?",
+        "help": "https://www.2022avechidalgo.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352160",
+        "fr": "Si Emmanuel Macron était élu, quel serait votre sentiment ?",
+        "help": "https://www.lepoint.fr/presidentielle/presidentielle-le-futur-programme-de-macron-sera-envoye-par-courrier-aux-francais-17-02-2022-2465252_3121.php",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352161",
+        "fr": "Si Éric Zemmour était élu, quel serait votre sentiment ?",
+        "help": "https://www.zemmour2022.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352162",
+        "fr": "Si Fabien Roussel était élu, quel serait votre sentiment ?",
+        "help": "https://www.fabienroussel2022.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352164",
+        "fr": "Si Jean Lassalle était élu, quel serait votre sentiment ?",
+        "help": "https://jl2022.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352165",
+        "fr": "Si Jean-Luc Mélenchon était élu, quel serait votre sentiment ?",
+        "help": "https://melenchon2022.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352166",
+        "fr": "Si Marine Le Pen était élue, quel serait votre sentiment ?",
+        "help": "https://mlafrance.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352167",
+        "fr": "Si Nathalie Arthaud était élue, quel serait votre sentiment ?",
+        "help": "https://www.lemonde.fr/politique/article/2022/02/14/le-programme-de-nathalie-arthaud-a-la-presidentielle-2022_6113609_823448.html",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352168",
+        "fr": "Si Nicolas Dupont-Aignan était élu, quel serait votre sentiment ?",
+        "help": "https://2022nda.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d0352169",
+        "fr": "Si Philippe Poutou était élu, quel serait votre sentiment ?",
+        "help": "https://poutou2022.org",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d035216a",
+        "fr": "Si Valérie Pécresse était élue, quel serait votre sentiment ?",
+        "help": "https://valeriepecresse.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-6211242a3f15af68d035216b",
+        "fr": "Si Yannick Jadot était élu, quel serait votre sentiment ?",
+        "help": "https://www.jadot2022.fr",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Dans l'expectative",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Indifférent / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
   }
 ]
