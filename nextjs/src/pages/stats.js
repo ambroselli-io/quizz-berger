@@ -14,6 +14,7 @@ import {
 } from "recharts";
 import styled from "styled-components";
 import API from "../services/api";
+import { media } from "../styles/mediaQueries";
 
 export default function Stats({
   cumulativeUsers,
@@ -35,7 +36,11 @@ export default function Stats({
       <MiniSubtitle>Aujourd'hui: {today}</MiniSubtitle>
       <MiniSubtitle>Projection: {projection}</MiniSubtitle>
       <MiniSubtitle>Max: {maxUsersOnADay}</MiniSubtitle>
-      <LineAreaChart data={cumulativeUsers} dataKey="cumulative" secondaryDataKey="count" />
+      <LineAreaChart
+        data={cumulativeUsers.filter((c) => c._id > "2022-03-07")}
+        dataKey="cumulative"
+        secondaryDataKey="count"
+      />
       <Subtitle>Utilisateurs par heure</Subtitle>
       <AllCharts data={usersPerHour} barKey="count" areaKey="cumulative" lineKey="today" />
       {/* <Subtitle>Nombre de réponses par utilisateur par jour</Subtitle>
@@ -156,14 +161,20 @@ const Container = styled.div`
   width: 100%;
   height: 80vh;
   padding: 3rem;
+  ${media.mobile`padding: 0rem;`}
+  ${media.mobile`height: 50vh;`}
+  ${media.mobile`margin-top: 1rem;`}
 `;
 
 const Subtitle = styled.h2`
   margin: 3rem 3rem 0;
+  ${media.mobile`margin: 2rem 1rem 0.25rem;`}
 `;
 
 const MiniSubtitle = styled.span`
   margin: 3rem 3rem 0;
+  ${media.mobile`display: block;`}
+  ${media.mobile`margin: 0 1rem;`}
 `;
 
 const CustomizedAxisTick = ({ x, y, payload }) => (
