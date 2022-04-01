@@ -109,7 +109,7 @@ const Quizz = () => {
         <MobileThemeTitle>{theme.fr}</MobileThemeTitle>
       </ThemeHeaderContainer>
 
-      <BackgroundContainer>
+      <BackgroundContainer key={questionId}>
         {/* <QuestionContainer> */}
         <QuestionTitle>{question?.fr}</QuestionTitle>
         {showHelp && (
