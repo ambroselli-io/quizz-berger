@@ -11,6 +11,8 @@ import useUserAnswers from "../../hooks/useUserAnswers";
 import useCandidates from "../../hooks/useCandidates";
 import useFriends from "../../hooks/useFriends";
 import Link from "next/link";
+import { API_URL } from "../../config";
+// import analyze from "../../../public/Analyse_Quizz_du_Berger.pdf";
 
 const AllQuestions = () => {
   const router = useRouter();
@@ -87,7 +89,7 @@ const AllQuestions = () => {
             Les questions/réponses du Quizz ont été réalisées en fonction des programmes de chaque candidat.
             <br />
             Vous pouvez retrouver l'analyse détaillée{" "}
-            <a href="Analyse_Quizz_du_Berger.pdf" target="_blank">
+            <a href={`${API_URL}/quizz/download-analyze`} target="_blank">
               en cliquant ici
             </a>
           </SubTitle>
