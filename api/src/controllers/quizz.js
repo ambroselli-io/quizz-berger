@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const { catchErrors } = require("../utils/error");
 const { quizz } = require("quizz-du-berger-shared");
+const fs = require("fs");
+const path = require("path");
 
 router.get(
   "/",
@@ -27,6 +29,16 @@ router.get(
     const fileName = "quizz-du-berger_elections_presidentielles_2022_questions.txt";
     res.set({ "Content-Disposition": `attachment; filename=${fileName}` });
     res.send(formatQuizzText(quizz));
+  })
+);
+
+router.get(
+  "/download-analyze",
+  catchErrors(async (req, res) => {
+    const analyze = fs.readFileSync(path.resolve("./public/Analyse_Quizz_du_Berger.pdf"));
+
+    res.set({ "Content-Disposition": "attachment; filename=Analyse_Quizz_du_Berger.pdf" });
+    res.send(analyze);
   })
 );
 
