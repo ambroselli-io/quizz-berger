@@ -19,7 +19,6 @@ const Header = () => {
   const { cache } = useSWRConfig();
   const { user } = useUser({ from: "Header" });
   const router = useRouter();
-  const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
   const [showQuiSommesNousModal, setShowQuiSommesNouslModal] = useState(false);
@@ -51,10 +50,6 @@ const Header = () => {
   useEffect(() => {
     setMenuIsOpen(false);
   }, [router?.pathname]);
-
-  useEffect(() => {
-    setUserIsLoggedIn(Boolean(user.isLoggedIn));
-  }, [user]);
 
   return (
     <>
@@ -93,7 +88,7 @@ const Header = () => {
                 <QuizzButton>Quizz</QuizzButton>
               </HeaderMenuTab>
             </NavLink>
-            {!!userIsLoggedIn && (
+            {!!user.isLoggedIn && (
               <NavLink href="/result">
                 <HeaderMenuTab>
                   <span>Résultats</span>
@@ -103,9 +98,9 @@ const Header = () => {
             <HeaderMenuTab>
               <span onClick={onOpenContactModal}>Nous contacter</span>
             </HeaderMenuTab>
-            {!!userIsLoggedIn ? (
+            {!!user.isLoggedIn ? (
               <HeaderMenuTab onClick={onLogout}>
-                <span>{user?.pseudo ? "Se déconnecter" : "Recommencer"}</span>
+                <span>{!!user?.pseudo?.length ? "Se déconnecter" : "Recommencer"}</span>
               </HeaderMenuTab>
             ) : (
               <NavLink href="/login">
@@ -114,14 +109,14 @@ const Header = () => {
                 </HeaderMenuTab>
               </NavLink>
             )}
-            {!!userIsLoggedIn && router.pathname === "/themes" && (
+            {!!user.isLoggedIn && router.pathname === "/themes" && (
               <BurgerMenuTab>
                 <NavLink exact href="/result">
                   <span>Voir mes résultats</span>
                 </NavLink>
               </BurgerMenuTab>
             )}
-            {!!userIsLoggedIn && router.pathname.includes("result") && (
+            {!!user.isLoggedIn && router.pathname.includes("result") && (
               <BurgerMenuTab>
                 <NavLink exact href="/themes">
                   <span>Retourner au quizz</span>
@@ -162,7 +157,7 @@ const Header = () => {
                     </a>
                   </NavLink>
                 </BurgerMenuTab>
-                {!!userIsLoggedIn && (
+                {!!user.isLoggedIn && (
                   <>
                     <Fillet />
                     <BurgerMenuTab>
@@ -173,7 +168,7 @@ const Header = () => {
                   </>
                 )}
                 <Fillet />
-                {!!userIsLoggedIn ? (
+                {!!user.isLoggedIn ? (
                   <BurgerMenuTab onClick={onLogout}>
                     <span>{user?.pseudo ? "Se déconnecter" : "Recommencer"}</span>
                   </BurgerMenuTab>
@@ -213,7 +208,7 @@ const Header = () => {
         isActive={showContactModal}
         onCloseModal={onCloseModal}
         onForceCloseModal={onForceCloseContactModal}
-        key={userIsLoggedIn}
+        key={user.isLoggedIn}
       />
     </>
   );

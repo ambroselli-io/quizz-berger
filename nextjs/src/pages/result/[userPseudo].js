@@ -59,9 +59,6 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [showCandidates, setShowCandidates] = useState(() =>
-    Boolean(getFromSessionStorage("selectedCandidates", false))
-  );
   const [showFriends, setShowFriends] = useState(() => Boolean(getFromSessionStorage("selectedFriends", false)));
 
   const showSaveButton = useMemo(() => !publicPage && !userToShow?.pseudo, [publicPage, userToShow]);
@@ -75,6 +72,10 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
     () => candidates.filter((c) => ["Emmanuel Macron", "Marine Le Pen"].includes(c.pseudo)).map((c) => c.pseudo),
     [candidates]
   );
+  const [showCandidates, setShowCandidates] = useState(false);
+  // const [showCandidates, setShowCandidates] = useState(() =>
+  //   Boolean(getFromSessionStorage("selectedCandidates", false))
+  // );
   // const allCandidates = useMemo(() => candidates.map((c) => c.pseudo), [candidates]);
   const allFriends = useMemo(() => friends.map((c) => c.pseudo), [friends]);
 
@@ -120,6 +121,8 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
       setSelectedFriends(selectedFriends.filter((c) => c !== pseudo));
     }
   };
+
+  console.log({ showCandidates });
 
   const newFriendTimeout = useRef(null);
   const setNewFriendRequest = async (e) => {
