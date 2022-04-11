@@ -71,12 +71,16 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const [loadingFriend, setLoadingFriend] = useState(false);
   const [noFriend, setNoFriend] = useState(false);
 
-  const allCandidates = useMemo(() => candidates.map((c) => c.pseudo), [candidates]);
+  const allCandidatesQualified = useMemo(
+    () => candidates.filter((c) => ["Emmanuel Macron", "Marine Le Pen"].includes(c.pseudo)).map((c) => c.pseudo),
+    [candidates]
+  );
+  // const allCandidates = useMemo(() => candidates.map((c) => c.pseudo), [candidates]);
   const allFriends = useMemo(() => friends.map((c) => c.pseudo), [friends]);
 
   const [selectedCandidates, setSelectedCandidates] = useState(() => {
-    if (publicPage) return allCandidates;
-    return getFromSessionStorage("selectedCandidates", allCandidates);
+    if (publicPage) return allCandidatesQualified;
+    return getFromSessionStorage("selectedCandidates", allCandidatesQualified);
   });
   const [selectedFriends, setSelectedFriends] = useState(() => {
     if (publicPage) return [];
@@ -230,7 +234,7 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   }, [selectedThemes.length]);
 
   useEffect(() => {
-    if (userPseudo || !selectedCandidates.length) setSelectedCandidates(allCandidates);
+    if (userPseudo || !selectedCandidates.length) setSelectedCandidates(allCandidatesQualified);
   }, [candidates.length]);
 
   useEffect(() => {

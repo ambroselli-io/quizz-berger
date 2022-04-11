@@ -11,35 +11,27 @@ const cookieParser = require("cookie-parser");
 const JWT_MAX_AGE = 1000 * 60 * 60 * 24 * 30; // 30 days in ms
 const JWT_MIN_AGE = 1000 * 60 * 60 * 3; // 3 hours in ms
 
+function cookieOptions(user) {
+  const maxAge = user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE;
+  if (config.ENVIRONMENT === "development") {
+    return { maxAge, httpOnly: true, secure: true, sameSite: "None" };
+  } else {
+    return { maxAge, httpOnly: true, secure: true, domain: ".quizz-du-berger.com", sameSite: "Lax" };
+  }
+}
+
+function logoutCookieOptions() {
+  if (config.ENVIRONMENT === "development") {
+    return { httpOnly: true, secure: true, sameSite: "None" };
+  } else {
+    return { httpOnly: true, secure: true, domain: ".quizz-du-berger.com", sameSite: "Lax" };
+  }
+}
+
 const setCookie = (req, res, user) => {
   const maxAge = user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE;
   const token = jwt.sign({ _id: user._id }, config.SECRET, { expiresIn: maxAge });
-  const tokenConfig = {
-    maxAge: maxAge,
-    httpOnly: config.ENVIRONMENT !== "development",
-    secure: config.ENVIRONMENT !== "development",
-    path: "/",
-  };
-  if (config.ENVIRONMENT === "development") {
-    tokenConfig.sameSite = "None";
-  } else {
-    tokenConfig.sameSite = "Lax";
-  }
-  res.cookie("jwt", token, tokenConfig);
-};
-
-const logoutCookieOptions = () => {
-  const tokenConfig = {
-    httpOnly: true,
-    secure: true,
-    path: "/",
-  };
-  if (config.ENVIRONMENT === "development") {
-    tokenConfig.sameSite = "None";
-  } else {
-    tokenConfig.sameSite = "Lax";
-  }
-  return tokenConfig;
+  res.cookie("jwt", token, cookieOptions());
 };
 
 router.post(
