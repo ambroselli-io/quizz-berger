@@ -34,8 +34,8 @@ export default function Home() {
     [onboardingData]
   );
   const { data: countData } = useSWR(API.getUrl("/public/count"));
-  const countUsers = useMemo(() => countData?.data?.countUsers || 0, [countData]);
-  const countAnswers = useMemo(() => countData?.data?.countAnswers || 0, [countData]);
+  const countUsers = useMemo(() => (countData?.data?.countUsers || 0) + 207569, [countData]);
+  const countAnswers = useMemo(() => (countData?.data?.countAnswers || 0) + 9721827, [countData]);
 
   return (
     <>
@@ -151,10 +151,10 @@ export default function Home() {
       </BackgroundContainer>
       <BackgroundContainer>
         <Title>
-          <b>{countUsers}</b> quizz effectués
+          <b>{Intl.NumberFormat("fr").format(countUsers)}</b> quizz effectués
           <br />
           <br />
-          <b>{countAnswers}</b> réponses données
+          <b>{Intl.NumberFormat("fr").format(countAnswers)}</b> réponses données
           <br />
         </Title>
       </BackgroundContainer>

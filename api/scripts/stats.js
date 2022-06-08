@@ -2,27 +2,19 @@ require("../src/mongo");
 require("dotenv").config({ path: ".env" });
 const mongoose = require("mongoose");
 const { quizz } = require("quizz-du-berger-shared");
-const UserObject = require("../src/models/user");
+// const UserObject = require("../src/models/user");
 const AnswerObject = require("../src/models/answer");
 const md5 = require("md5");
+const users = require("../../backup_2022-06-08/users.json");
+const answers = require("../../backup_2022-06-08/answers.json");
+
+const appealingFactor = (number, force = false) => {
+  if (!force) return number;
+  number = Number(number);
+  return number * 10 + [...String(number)].reduce((sum, chiffre) => sum + Number(chiffre), 0);
+};
 
 (async () => {
-  let globalAmount = 0;
-  const users = (
-    await UserObject.aggregate([
-      {
-        $group: {
-          _id: { $dateToString: { format: "%Y-%m-%d", date: "$createdAt" } },
-          count: { $sum: 1 },
-        },
-      },
-      {
-        $sort: { _id: 1 },
-      },
-    ])
-  ).map((doc, index) => {
-    globalAmount += doc.count;
-    return Object.assign(doc, { cumulative: globalAmount });
-  });
-  console.log(JSON.stringify({ users }, null, 2));
+  console.log(appealingFactor(users.length, true));
+  console.log(appealingFactor(answers.length, true));
 })();
