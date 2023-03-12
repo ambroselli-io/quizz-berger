@@ -69,7 +69,8 @@ const Result = ({ publicUser, publicUserAnswers, ogImageName }) => {
   const [noFriend, setNoFriend] = useState(false);
 
   const allCandidatesQualified = useMemo(
-    () => candidates.filter((c) => ["Emmanuel Macron", "Marine Le Pen"].includes(c.pseudo)).map((c) => c.pseudo),
+    () => candidates.map((c) => c.pseudo),
+    // () => candidates.filter((c) => ["Emmanuel Macron", "Marine Le Pen"].includes(c.pseudo)).map((c) => c.pseudo),
     [candidates]
   );
   const [showCandidates, setShowCandidates] = useState(false);
