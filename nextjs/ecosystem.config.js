@@ -4,8 +4,8 @@ module.exports = {
   apps: [
     {
       name: "quizz-du-berger-nextjs",
-      script: "npm",
-      args: "run start-pm2",
+      script: "node_modules/next/dist/bin/next",
+      args: "start -p 5178",
       env: {
         NODE_ENV: "production",
         NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
