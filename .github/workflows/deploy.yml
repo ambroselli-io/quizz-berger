@@ -56,7 +56,7 @@ jobs:
           sleep 10
 
           # Check if the app is running (adjust the port if necessary)
-          if curl -f http://localhost:5178/health; then
+          if curl -f http://localhost:5178/; then
             echo "Quizz du berger NEXTJS is running correctly."
           else
             echo "Quizz du berger NEXTJS failed to start."
@@ -79,7 +79,7 @@ jobs:
           sleep 10
 
           # Check if the app is running (adjust the port if necessary)
-          if curl -f http://localhost:5179/health; then
+          if curl -f http://localhost:5179/; then
             echo "Quizz du berger API is running correctly."
           else
             echo "Quizz du berger API failed to start."
