@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   apps: [
     {
-      name: "quizz-du-berger-nextjs",
+      name: "quizz-du-berger-api",
       script: "npm",
       args: "run start-pm2",
       env: {

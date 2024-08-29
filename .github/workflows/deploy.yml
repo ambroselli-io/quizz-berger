@@ -50,7 +50,7 @@ jobs:
           npm run build
 
           # Restart or start the application using PM2
-          pm2 restart ecosystem.config.js || pm2 start ecosystem.config.js
+          pm2 restart ecosystem.config.js --update-env || pm2 start ecosystem.config.js --update-env
 
           # Wait for the app to start
           sleep 10
