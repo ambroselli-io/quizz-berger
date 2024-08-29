@@ -5,7 +5,7 @@ module.exports = {
     {
       name: "quizz-du-berger-nextjs",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 5178",
+      args: "start",
       env: {
         NODE_ENV: "production",
         NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
