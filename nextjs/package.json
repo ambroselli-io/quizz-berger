@@ -30,6 +30,7 @@
     "babel-plugin-recharts": "^2.0.0",
     "babel-plugin-styled-components": "^1.13.3",
     "babel-preset-next": "^1.4.0",
+    "dotenv": "^16.4.5",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.3"
   },
