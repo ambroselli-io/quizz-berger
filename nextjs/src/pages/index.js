@@ -45,7 +45,7 @@ export default function Home() {
           <QuizzButton onClick={() => router.push("/themes")}>Répondre au Quizz</QuizzButton>
           <SubTitle>
             Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître le ou les candidats
-            <strong> des élections présidentielles de 2017</strong> qui se rapprochent le plus de vos idées, et
+            <strong> des élections présidentielles de 2022</strong> qui se rapprochent le plus de vos idées, et
             <strong> faites&nbsp;votre&nbsp;choix&nbsp;!</strong>
             {/* Take our Political
               Compass test to find out which political group your best match is */}
