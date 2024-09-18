@@ -4,8 +4,8 @@
     "dev": "next dev -p 8093",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start",
-    "start-pm2": "next start"
+    "start": "next start -p 5178",
+    "start-pm2": "next start -p 5178"
   },
   "prettier": {
     "printWidth": 120
