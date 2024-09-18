@@ -14,6 +14,9 @@ module.exports = {
         PORT: process.env.PORT,
         SENTRY_AUTH_TOKEN: process.env.SENTRY_AUTH_TOKEN,
       },
+      output: "./logs/nextjs-out.log",
+      error: "./logs/nextjs-error.log",
+      log_date_format: "YYYY-MM-DD HH:mm Z",
     },
   ],
 };
