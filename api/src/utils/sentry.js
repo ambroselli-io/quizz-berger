@@ -5,6 +5,8 @@ if (process.env.NODE_ENV === "production") {
   Sentry.init({
     dsn: SENTRY_DSN,
     environment: `api-${ENVIRONMENT}`,
+    tracesSampleRate: 0.001,
+    enabled: false,
   });
 }
 
