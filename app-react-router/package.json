@@ -8,10 +8,10 @@
     "dev": "vite --port 5178 --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview --port 6600",
-    "start": "NODE_ENV=production PORT=6600 node ./server-app.js",
-    "start-pm2": "NODE_ENV=production PORT=6600 node ./server-app.js",
-    "start-local": "NODE_ENV=production PORT=6600 node ./server-app.js"
+    "preview": "vite preview --port 5178",
+    "start": "NODE_ENV=production PORT=5178 node ./server-app.js",
+    "start-pm2": "NODE_ENV=production PORT=5178 node ./server-app.js",
+    "start-local": "NODE_ENV=production PORT=5178 node ./server-app.js"
   },
   "dependencies": {
     "@af-utils/scrollend-polyfill": "^0.0.14",

@@ -16,7 +16,7 @@ module.exports = {
         TIPIMAIL_API_KEY: process.env.TIPIMAIL_API_KEY,
         TIPIMAIL_API_USER: process.env.TIPIMAIL_API_USER,
         WHITE_LIST_DOMAINS: process.env.WHITE_LIST_DOMAINS,
-        PORT: process.env.PORT,
+        PORT: "5179",
       },
     },
   ],

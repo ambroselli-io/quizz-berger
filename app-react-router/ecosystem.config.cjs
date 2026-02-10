@@ -4,12 +4,12 @@ require('dotenv').config();
 module.exports = {
   apps: [
     {
-      name: 'niki-coach-app-react-router',
+      name: 'quizz-du-berger-app-react-router',
       script: 'npm',
       args: 'run start-pm2',
       time: true,
       env: {
-        PORT: 6600,
+        PORT: '6600',
         NODE_ENV: 'production',
       },
     },
