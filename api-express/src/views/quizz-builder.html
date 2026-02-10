@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz Builder</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+    input {
+      width: 550px;
+      height: 35px;
+    }
+    #answers input {
+      width: 100%;
+    }
+    /* spacing */
+
+    table {
+      border-collapse: collapse;
+    }
+    table input {
+      width: auto;
+      height: 35px;
+    }
+    th,
+    td {
+      border: 1px black solid;
+      padding: 0.25em 0.5em;
+    }
+    .question {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <h1>Quizz Builder</h1>
+    <h2>Current theme: <input id="current-theme" value="{{CURRENT_THEME}}" /></h2>
+    <h2>Current question: <input id="current-question" maxlength="280" value="{{CURRENT_QUESTION}}" /></h2>
+    <h2>Current help: <input id="current-help" value="{{CURRENT_HELP}}" /></h2>
+    <button id="new-theme">Nouveau thème</button>
+    <button id="new-question">Nouvelle question</button>
+    <br />
+    <button id="update">Update</button><br />
+    <button id="prev-theme">Thème précédent</button>
+    <button id="next-theme">Thème suivant</button><br />
+    <button id="prev-question">Question précédente</button>
+    <button id="next-question">Question suivante</button>
+    <br />
+    <section>
+      <h3>Answers</h3>
+      <ol id="answers"></ol>
+      <button id="add-answer">Ajouter une réponse</button>
+      <button id="remove-answer">Retirer une réponse</button>
+    </section>
+    <h3>Scores</h3>
+    <p>How to read it ?</p>
+    <p>
+      The first row is the party's answer, the first column is my answer. <br />
+      Take the first column, second row : if I answer is this one, <br />
+      <strong>1. how close is the party to what I think ?</strong><br />
+      <strong>2. how far is the party to what I think compared to the other answers ?</strong><br />
+    </p>
+    <table id="scores">
+      <thead>
+        <tr>
+          {{QUESTIONS_HEADER_ROW}}
+        </tr>
+      </thead>
+      <tbody>
+        {{SCORES}}
+      </tbody>
+    </table>
+    <button id="update">Update</button><br />
+    <h2>All questions:</h2>
+    {{ALL_QUESTIONS}}
+  </body>
+  <script>
+    const buttonUpdate = document.getElementById("update");
+
+    const save = async function (e) {
+      const themeName = document.getElementById("current-theme").value;
+      const questionName = document.getElementById("current-question").value;
+      const help = document.getElementById("current-help").value;
+      const answers = [...document.getElementById("answers").getElementsByTagName("input")].map((input) => input.value);
+      fetch(window.location.href, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({
+          themeName,
+          questionName,
+          help,
+          answers,
+          scores: [...document.querySelectorAll(".score")].reduce((scores, input) => {
+            const line = input.dataset.line;
+            const column = input.dataset.column;
+            if (!scores[line] || !scores[line].length) scores[line] = [];
+            scores[line][column] = parseInt(input.value);
+            return scores;
+          }, []),
+        }),
+      }).then(() => window.location.reload());
+    };
+
+    buttonUpdate.onclick = save;
+
+    const buttonAddAnAnswer = document.getElementById("add-answer");
+
+    buttonAddAnAnswer.onclick = function () {
+      const answers = [...document.getElementById("answers").getElementsByTagName("input")];
+      const lastAnswer = answers[answers.length - 1].cloneNode(true);
+
+      lastAnswer.dataset.question = answers.length - 1;
+      const nodeList = document.createElement("li");
+      nodeList.appendChild(lastAnswer);
+      document.getElementById("answers").appendChild(nodeList);
+      save();
+    };
+
+    for (const q of [...document.querySelectorAll(".question")]) {
+      q.addEventListener("click", function (e) {
+        const questionIndex = q.dataset.question;
+        const themeIndex = q.dataset.theme;
+        window.location.href = `${window.location.origin}/quizz-builder/${themeIndex}/${questionIndex}`;
+      });
+    }
+
+    const currentThemeIndex = parseInt(window.location.pathname.split("/")[2], 10);
+    const currentQuestionIndex = parseInt(window.location.pathname.split("/")[3], 10);
+
+    document.getElementById("prev-theme").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex - 1}/0`;
+    };
+    document.getElementById("next-theme").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex + 1}/0`;
+    };
+    document.getElementById("prev-question").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex - 1}`;
+    };
+    document.getElementById("next-question").onclick = function () {
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex + 1}`;
+    };
+    document.getElementById("new-question").onclick = async function () {
+      await fetch("http://localhost:5179/quizz-builder/new-question", {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ currentThemeIndex, currentQuestionIndex }),
+      });
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex}/${currentQuestionIndex + 1}`;
+    };
+    document.getElementById("new-theme").onclick = async function () {
+      await fetch("http://localhost:5179/quizz-builder/new-theme", {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ currentThemeIndex }),
+      });
+      window.location.href = `${window.location.origin}/quizz-builder/${currentThemeIndex + 1}/0`;
+    };
+
+    window.addEventListener("keydown", function (e) {
+      if (event.metaKey && event.keyCode == 83) {
+        event.preventDefault();
+        save();
+      }
+    });
+  </script>
+</html>

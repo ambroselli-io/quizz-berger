@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xml:lang="fr">
+  <head>
+    <title>Le Quizz du Berger</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800;900&amp;family=Merriweather:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        font-family: Merriweather Sans, Roboto, sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      nav {
+        height: 80px;
+        width: 100%;
+        background-color: #101827;
+        color: white;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        font-family: Merriweather, serif;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      nav svg {
+        margin-right: 10px;
+        flex-shrink: 0;
+      }
+      main {
+        display: flex;
+        height: 100%;
+        flex-shrink: 1;
+        flex-grow: 1;
+        position: relative;
+        padding: 100px;
+      }
+      span {
+        text-align: center;
+        width: 100%;
+      }
+      .podium-stairs {
+        flex-direction: row;
+        align-items: flex-end;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        justify-content: space-around;
+        padding-left: max(10px, calc((100% - 1024px) / 2));
+        padding-bottom: 16px;
+        padding-top: 16px;
+        overflow-x: auto;
+      }
+      .podium-stairs > * {
+        flex-shrink: 0;
+        flex-grow: 0;
+        width: calc(min(100%, 350px) / 3.5);
+      }
+      .podium-stairs > *:nth-of-type(1) {
+        width: calc(min(100%, 350px) / 3);
+      }
+
+      .podium-stairs > *:nth-of-type(2) {
+        width: calc(min(100%, 350px) / 3.4);
+      }
+      .podium-stairs > *:nth-of-type(3) {
+        width: calc(min(100%, 350px) / 3);
+      }
+      .stair.gold {
+        background-color: gold;
+      }
+      .stair.silver {
+        background-color: silver;
+      }
+      .stair.bronze {
+        background-color: #cd7f32;
+      }
+      .stair {
+        height: calc(100% - 20px);
+        background-color: rgba(205, 127, 50, 1);
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        justify-content: space-around;
+        align-items: flex-start;
+        overflow: hidden;
+        position: relative;
+      }
+      .stair > span:first-of-type {
+        font-size: min(1em, 0.75em);
+      }
+      .stair > span:first-of-type {
+        font-size: min(10vw, 0.75em);
+        word-break: keep-all;
+      }
+      .stair:after {
+        content: "";
+        width: 100%;
+        height: 100px;
+        /* border-radius: 50%; */
+        background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        transform: rotate(-18deg);
+        left: -25px;
+        top: -80px;
+      }
+      .stair.gold {
+        background-color: gold !important;
+      }
+      .stair.silver {
+        background-color: silver !important;
+      }
+      .stair.bronze {
+        background-color: #cd7f32 !important;
+      }
+      .step {
+        margin-left: 3px;
+        margin-right: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        height: 100%;
+        overflow-y: visible;
+      }
+      .stair-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+      }
+      .avatars {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: calc(100% - 40px);
+        left: 0;
+        right: 0;
+      }
+      .avatar {
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        border: 2px solid #f00;
+        background-color: #f00;
+      }
+      .avatar:not(:last-of-type) {
+        margin-right: -15px;
+      }
+      .pseudos {
+        height: 3.2em;
+        flex-shrink: 0;
+        margin-top: 5px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
+        <circle cx="16.5" cy="16.5" r="12.5" fill="#111827"></circle>
+        <path
+          d="M13.9355 16C13.9355 15.4409 14.1398 14.957 14.5484 14.5484C14.957 14.1398 15.4409 13.9355 16 13.9355C16.5591 13.9355 17.043 14.1398 17.4516 14.5484C17.8602 14.957 18.0645 15.4409 18.0645 16C18.0645 16.5591 17.8602 17.043 17.4516 17.4516C17.043 17.8602 16.5591 18.0645 16 18.0645C15.4409 18.0645 14.957 17.8602 14.5484 17.4516C14.1398 17.043 13.9355 16.5591 13.9355 16ZM4.64516 4.70968C7.78496 1.56988 11.5699 0 16 0C20.4301 0 24.2043 1.55912 27.3226 4.67742C30.4409 7.79571 32 11.5699 32 16C32 20.4301 30.4409 24.2043 27.3226 27.3226C24.2043 30.4409 20.4301 32 16 32C11.5699 32 7.79571 30.4409 4.67742 27.3226C1.55912 24.2043 0 20.4301 0 16C0 11.5699 1.54837 7.80647 4.64516 4.70968ZM24.129 9.54839C24.3011 9.2043 24.3118 8.86022 24.1613 8.51613C24.0108 8.17204 23.7849 7.94624 23.4839 7.83871C23.1828 7.73118 22.8387 7.74193 22.4516 7.87097L13.1613 12.129C12.6882 12.3441 12.3441 12.6882 12.129 13.1613L7.87097 22.4516C7.6129 22.9677 7.69892 23.4409 8.12903 23.871C8.55914 24.3011 9.03226 24.3871 9.54839 24.129L18.8387 19.871C19.3118 19.6559 19.6559 19.3118 19.871 18.8387L24.129 9.54839Z"
+          fill="#facc15"
+        ></path>
+      </svg>
+      Le Quizz du Berger
+    </nav>
+    <main>
+      <div class="podium-stairs">{{RESULTS}}</div>
+    </main>
+  </body>
+</html>

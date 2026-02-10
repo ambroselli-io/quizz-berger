@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /qr
+Disallow: /download
+Disallow: /parrainage
+
+
+Sitemap: https://niki-coach.com/sitemap.xml
