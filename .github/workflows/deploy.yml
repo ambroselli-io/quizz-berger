@@ -2,86 +2,83 @@ name: Quizz du Berger Deploy
 
 on:
   push:
-    branches: [ main ]  # Or the name of your main branch
+    branches: [main] # Or the name of your main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy to VPS
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: deployer
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          # Load fnm
-          echo "Loading fnm"
-          FNM_PATH="$HOME/.local/share/fnm"
-          if [ -d "$FNM_PATH" ]; then
-            export PATH="$FNM_PATH:$PATH"
-            eval "`fnm env`"
-          fi
-          export PATH=$HOME/.npm-global/bin:$PATH
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: deployer
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # Load fnm
+            echo "Loading fnm"
+            FNM_PATH="$HOME/.local/share/fnm"
+            if [ -d "$FNM_PATH" ]; then
+              export PATH="$FNM_PATH:$PATH"
+              eval "`fnm env`"
+            fi
+            export PATH=$HOME/.npm-global/bin:$PATH
 
-          # Verify fnm is loaded
-          echo "Verifying fnm is loaded"
-          if ! command -v fnm &> /dev/null; then
-            echo "Error: fnm is not available. Please check its installation."
-            exit 1
-          fi
+            # Verify fnm is loaded
+            echo "Verifying fnm is loaded"
+            if ! command -v fnm &> /dev/null; then
+              echo "Error: fnm is not available. Please check its installation."
+              exit 1
+            fi
 
-          # Display fnm version for debugging
-          fnm --version
+            # Display fnm version for debugging
+            fnm --version
 
-          # Navigate to the quizz-berger project directory
-          cd /var/www/quizz-berger
+            # Navigate to the quizz-berger project directory
+            cd /var/www/quizz-berger
 
-          # Pull the latest changes
-          git pull origin main
+            # Pull the latest changes
+            git pull origin main
 
-          # Navigate to the app directory
-          cd app-react-router
+            # Navigate to the app directory
+            cd app-react-router
 
-          # Install dependencies
-          npm ci --include=dev
+            # Install dependencies
+            npm ci --include=dev
 
-          # Build the application
-          npm run build
+            # Build the application
+            npm run build
 
-          # Restart or start the application using PM2
-          pm2 restart ecosystem.config.js --update-env || pm2 start ecosystem.config.js --update-env
+            # Restart or start the application using PM2
+            pm2 restart ecosystem.config.js --update-env || pm2 start ecosystem.config.js --update-env
 
-          # Wait for the app to start
-          sleep 10
+            # Wait for the app to start
+            sleep 10
 
-          # Check if the app is running (adjust the port if necessary)
-          if curl -f http://localhost:5178/; then
-            echo "Quizz du berger APP is running correctly."
-          else
-            echo "Quizz du berger APP failed to start."
-            exit 1
-          fi
+            # Check if the app is running (adjust the port if necessary)
+            if curl -f http://localhost:5178/; then
+              echo "Quizz du berger APP is running correctly."
+            else
+              echo "Quizz du berger APP failed to start."
+              exit 1
+            fi
 
-          # Navigate to the api directory
-          cd ../api-express
+            # Navigate to the api directory
+            cd ../api-express
 
-          # Install dependencies
-          npm ci --include=dev
+            # Install dependencies
+            npm ci --include=dev
 
-          # Build the application
-          # npm run build
+            # Restart or start the application using PM2
+            pm2 restart ecosystem.config.js --update-env || pm2 start ecosystem.config.js --update-env
 
-          # Restart or start the application using PM2
-          pm2 restart ecosystem.config.js --update-env || pm2 start ecosystem.config.js --update-env
+            # Wait for the app to start
+            sleep 10
 
-          # Wait for the app to start
-          sleep 10
-
-          # Check if the app is running (adjust the port if necessary)
-          if curl -f http://localhost:5179/; then
-            echo "Quizz du berger API is running correctly."
-          else
-            echo "Quizz du berger API failed to start."
-            exit 1
-          fi
+            # Check if the app is running (adjust the port if necessary)
+            if curl -f http://localhost:5179/; then
+              echo "Quizz du berger API is running correctly."
+            else
+              echo "Quizz du berger API failed to start."
+              exit 1
+            fi
