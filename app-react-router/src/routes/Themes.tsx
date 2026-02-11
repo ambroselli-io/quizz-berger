@@ -131,9 +131,9 @@ export default function ThemeSelect() {
       <title>{titleCaption} | Le Quizz du Berger</title>
       <div className="px-2.5 py-20 max-lg:px-2.5 max-lg:py-[3vh] lg:h-[calc(100vh-80px)] lg:overflow-y-auto">
         <div className="mx-auto mb-[2vh] flex max-w-[1200px] flex-col items-center justify-center">
-          <h2 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
+          <h1 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
             {titleCaption}
-          </h2>
+          </h1>
           <h3 className="mb-10 max-w-[90vw] text-center text-base font-normal text-quizz-dark">
             <span dangerouslySetInnerHTML={{ __html: subtitle }} />
             <br />

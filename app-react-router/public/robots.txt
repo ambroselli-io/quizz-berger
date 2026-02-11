@@ -1,8 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /qr
-Disallow: /download
-Disallow: /parrainage
+Disallow: /login
+Disallow: /result
 
-
-Sitemap: https://niki-coach.com/sitemap.xml
+Sitemap: https://www.quizz-du-berger.com/sitemap.xml

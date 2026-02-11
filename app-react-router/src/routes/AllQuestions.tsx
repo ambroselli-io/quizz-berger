@@ -30,7 +30,7 @@ export default function AllQuestions() {
     const dataStr = 'data:text/text;charset=utf-8,' + encodeURIComponent(quizzDownload);
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute('href', dataStr);
-    downloadAnchorNode.setAttribute('download', 'quizz-du-berger_elections_presidentielles_2022_questions.txt');
+    downloadAnchorNode.setAttribute('download', 'quizz-du-berger_election_presidentielle_2027_questions.txt');
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
@@ -58,18 +58,18 @@ export default function AllQuestions() {
       {/* Mobile: desktop-only message */}
       <div className="flex min-h-[900px] items-start justify-center bg-white px-2.5 py-10 max-lg:h-[calc(100vh-60px)] max-lg:overflow-y-auto lg:hidden">
         <div className="flex max-w-[1200px] flex-col items-center justify-center bg-white">
-          <h2 className="mb-5 mt-4 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
+          <h1 className="mb-5 mt-4 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
             Cet écran n'est disponible que sur ordinateur, désolé !
-          </h2>
+          </h1>
         </div>
       </div>
 
       {/* Desktop */}
       <div className="hidden min-h-[600px] justify-center overflow-y-scroll bg-white px-2.5 py-10 lg:flex lg:h-[calc(100vh-80px)] [&_details]:mb-5 [&_details]:w-[1024px] [&_h2]:mt-4 [&_h2]:mb-4 [&_h3]:mt-2.5 [&_h3]:mb-2.5 [&_h3]:ml-2.5 [&_li]:ml-[30px] [&_li]:mb-1 [&_ol]:ml-[30px] [&_ol]:mb-1 [&_ol]:list-none [&_ol]:text-[15px] [&_summary]:mb-5">
         <div className="flex max-w-[1200px] flex-col items-center bg-white">
-          <h2 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
+          <h1 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
             Toutes les questions
-          </h2>
+          </h1>
           <h3 className="mb-10 text-center text-base font-normal text-quizz-dark [&_a]:cursor-pointer [&_a]:underline [&_span]:cursor-pointer [&_span]:underline">
             {!forCandidate ? (
               <>

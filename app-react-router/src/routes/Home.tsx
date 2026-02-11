@@ -40,15 +40,15 @@ export default function Home() {
       {/* Hero section - dark */}
       <section className="relative flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px)]">
         <div className="flex max-w-[770px] shrink-0 flex-col items-center">
-          <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
+          <h1 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
             QUI est mon candidat&nbsp;idéal&nbsp;?
-          </h2>
+          </h1>
           <QuizzButton onClick={() => navigate('/themes')} className="h-[65px] w-[240px] text-base font-semibold">
             Répondre au Quizz
           </QuizzButton>
           <h3 className="mt-10 mb-10 max-w-[770px] text-center font-[Merriweather_Sans] text-xl font-light leading-[200%] text-white/80">
             Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître le ou les candidats
-            <strong> des élections présidentielles de 2022</strong> qui se rapprochent le plus de vos idées, et
+            <strong> de l'élection présidentielle de 2027</strong> qui se rapprochent le plus de vos idées, et
             <strong> faites&nbsp;votre&nbsp;choix&nbsp;!</strong>
           </h3>
           <Link to="/login" className="mt-5 text-center font-[Merriweather_Sans] font-light leading-relaxed text-white/80">

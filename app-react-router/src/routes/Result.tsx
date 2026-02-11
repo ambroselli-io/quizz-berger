@@ -251,7 +251,7 @@ export default function Result() {
       <div className="overflow-y-auto px-2.5 pt-20 max-lg:pt-[3vh] lg:h-[calc(100vh-80px)]">
         <div className="mx-auto mb-[2vh] max-w-[1024px]">
           <div className="flex flex-col justify-between">
-            <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">{title}</h2>
+            <h1 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">{title}</h1>
             {showSaveButton && !hideSaveTip && (
               <small>
                 Enregistrez vos résultats maintenant, sinon dans une heure ils sont perdus !{' - '}
