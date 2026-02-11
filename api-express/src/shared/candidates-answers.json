@@ -2,7 +2,7 @@
   {
     "id": "candidate-nathalie-arthaud",
     "pseudo": "Nathalie Arthaud",
-    "picture": "",
+    "picture": "candidates/nathalie-arthaud.png",
     "color": "#8B0000",
     "isCandidate": true,
     "themes": [
@@ -629,7 +629,7 @@
   {
     "id": "candidate-francois-asselineau",
     "pseudo": "François Asselineau",
-    "picture": "",
+    "picture": "candidates/francois-asselineau.png",
     "color": "#003366",
     "isCandidate": true,
     "themes": [
@@ -1256,7 +1256,7 @@
   {
     "id": "candidate-delphine-batho",
     "pseudo": "Delphine Batho",
-    "picture": "",
+    "picture": "candidates/delphine-batho.png",
     "color": "#2E8B57",
     "isCandidate": true,
     "themes": [
@@ -1883,7 +1883,7 @@
   {
     "id": "candidate-xavier-bertrand",
     "pseudo": "Xavier Bertrand",
-    "picture": "",
+    "picture": "candidates/xavier-bertrand.png",
     "color": "#4169E1",
     "isCandidate": true,
     "themes": [
@@ -2510,7 +2510,7 @@
   {
     "id": "candidate-nicolas-dupont-aignan",
     "pseudo": "Nicolas Dupont-Aignan",
-    "picture": "",
+    "picture": "candidates/nicolas-dupont-aignan.png",
     "color": "#1C3A5F",
     "isCandidate": true,
     "themes": [
@@ -3137,7 +3137,7 @@
   {
     "id": "candidate-jerome-guedj",
     "pseudo": "Jérôme Guedj",
-    "picture": "",
+    "picture": "candidates/jerome-guedj.png",
     "color": "#E75480",
     "isCandidate": true,
     "themes": [
@@ -3764,7 +3764,7 @@
   {
     "id": "candidate-marine-le-pen",
     "pseudo": "Marine Le Pen",
-    "picture": "",
+    "picture": "candidates/marine-le-pen.png",
     "color": "#0D1B2A",
     "isCandidate": true,
     "themes": [
@@ -4391,7 +4391,7 @@
   {
     "id": "candidate-edouard-philippe",
     "pseudo": "Édouard Philippe",
-    "picture": "",
+    "picture": "candidates/edouard-philippe.png",
     "color": "#4a90d9",
     "isCandidate": true,
     "themes": [
@@ -5018,7 +5018,7 @@
   {
     "id": "candidate-laurent-wauquiez",
     "pseudo": "Laurent Wauquiez",
-    "picture": "",
+    "picture": "candidates/laurent-wauquiez.png",
     "color": "#0055A4",
     "isCandidate": true,
     "themes": [
@@ -5645,7 +5645,7 @@
   {
     "id": "candidate-clementine-autain",
     "pseudo": "Clémentine Autain",
-    "picture": "",
+    "picture": "candidates/clementine-autain.png",
     "color": "#FF6B6B",
     "isCandidate": true,
     "themes": [
@@ -6272,7 +6272,7 @@
   {
     "id": "candidate-francois-ruffin",
     "pseudo": "François Ruffin",
-    "picture": "",
+    "picture": "candidates/francois-ruffin.png",
     "color": "#c9462c",
     "isCandidate": true,
     "themes": [
@@ -6899,7 +6899,7 @@
   {
     "id": "candidate-marine-tondelier",
     "pseudo": "Marine Tondelier",
-    "picture": "",
+    "picture": "candidates/marine-tondelier.png",
     "color": "#00A86B",
     "isCandidate": true,
     "themes": [
@@ -7526,7 +7526,7 @@
   {
     "id": "candidate-david-lisnard",
     "pseudo": "David Lisnard",
-    "picture": "",
+    "picture": "candidates/david-lisnard.png",
     "color": "#87CEEB",
     "isCandidate": true,
     "themes": [
@@ -8153,7 +8153,7 @@
   {
     "id": "candidate-gabriel-attal",
     "pseudo": "Gabriel Attal",
-    "picture": "",
+    "picture": "candidates/gabriel-attal.png",
     "color": "#FFD700",
     "isCandidate": true,
     "themes": [
@@ -8780,7 +8780,7 @@
   {
     "id": "candidate-francois-bayrou",
     "pseudo": "François Bayrou",
-    "picture": "",
+    "picture": "candidates/francois-bayrou.png",
     "color": "#FF8C00",
     "isCandidate": true,
     "themes": [
@@ -9407,7 +9407,7 @@
   {
     "id": "candidate-bernard-cazeneuve",
     "pseudo": "Bernard Cazeneuve",
-    "picture": "",
+    "picture": "candidates/bernard-cazeneuve.png",
     "color": "#B22222",
     "isCandidate": true,
     "themes": [
@@ -10034,7 +10034,7 @@
   {
     "id": "candidate-gerald-darmanin",
     "pseudo": "Gérald Darmanin",
-    "picture": "",
+    "picture": "candidates/gerald-darmanin.png",
     "color": "#6A5ACD",
     "isCandidate": true,
     "themes": [
@@ -10661,7 +10661,7 @@
   {
     "id": "candidate-raphael-glucksmann",
     "pseudo": "Raphaël Glucksmann",
-    "picture": "",
+    "picture": "candidates/raphael-glucksmann.png",
     "color": "#FF69B4",
     "isCandidate": true,
     "themes": [
@@ -11288,7 +11288,7 @@
   {
     "id": "candidate-francois-hollande",
     "pseudo": "François Hollande",
-    "picture": "",
+    "picture": "candidates/francois-hollande.png",
     "color": "#DC143C",
     "isCandidate": true,
     "themes": [
@@ -11915,7 +11915,7 @@
   {
     "id": "candidate-jean-luc-melenchon",
     "pseudo": "Jean-Luc Mélenchon",
-    "picture": "",
+    "picture": "candidates/jean-luc-melenchon.png",
     "color": "#CC0000",
     "isCandidate": true,
     "themes": [
@@ -12542,7 +12542,7 @@
   {
     "id": "candidate-bruno-retailleau",
     "pseudo": "Bruno Retailleau",
-    "picture": "",
+    "picture": "candidates/bruno-retailleau.png",
     "color": "#2F4F4F",
     "isCandidate": true,
     "themes": [
@@ -13169,7 +13169,7 @@
   {
     "id": "candidate-fabien-roussel",
     "pseudo": "Fabien Roussel",
-    "picture": "",
+    "picture": "candidates/fabien-roussel.png",
     "color": "#FF0000",
     "isCandidate": true,
     "themes": [
@@ -13796,7 +13796,7 @@
   {
     "id": "candidate-eric-zemmour",
     "pseudo": "Éric Zemmour",
-    "picture": "",
+    "picture": "candidates/eric-zemmour.png",
     "color": "#0a1c3f",
     "isCandidate": true,
     "themes": [
@@ -14423,7 +14423,7 @@
   {
     "id": "candidate-dominique-de-villepin",
     "pseudo": "Dominique de Villepin",
-    "picture": "",
+    "picture": "candidates/dominique-de-villepin.png",
     "color": "#708090",
     "isCandidate": true,
     "themes": [
