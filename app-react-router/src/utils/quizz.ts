@@ -1,4 +1,4 @@
-import rawQuizzData from '~/shared/quizz.json';
+import rawQuizzData from '~/shared/quizz-2027.json';
 import { normalizeWord } from './diacritics';
 import type { QuizzTheme, QuizzQuestion } from '@app/types/quizz';
 

@@ -4,7 +4,7 @@ require("../src/mongo");
 require("dotenv").config({ path: ".env" });
 const mongoose = require("mongoose");
 
-const quizz = require("../../shared/quizz.json");
+const quizz = require("../../shared/quizz-2027.json");
 
 // (async () => {
 //   for (const theme of quizz) {
@@ -15,7 +15,7 @@ const quizz = require("../../shared/quizz.json");
 //       console.log(question._id);
 //     }
 //   }
-//   fs.writeFileSync(path.resolve("../shared/quizz.json"), JSON.stringify(quizz, null, 2));
+//   fs.writeFileSync(path.resolve("../shared/quizz-2027.json"), JSON.stringify(quizz, null, 2));
 //   console.log("FOINITO");
 // })();
 

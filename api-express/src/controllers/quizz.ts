@@ -2,7 +2,7 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 import { catchErrors } from "~/utils/error";
-import quizz from "~/shared/quizz.json";
+import quizz from "~/shared/quizz-2027.json";
 import type { Theme } from "~/types/quizz";
 
 const router = express.Router();

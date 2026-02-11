@@ -10,4 +10,4 @@ C'est un quiz créé à l'occasion des élections présidentielles 2022 en Franc
 Pour participer à l'écriture des questions,
 
 - soit [vous ouvrez une Issue directement](https://github.com/ambroselli-io/quizz-berger/issues/new) avec votre question, les réponses (5 allant d'un extrême à un autre en passant par un stade neutre et deux modérés), et le thème associé
-- soit [vous ouvrez un pull request](https://github.com/ambroselli-io/quizz-berger/pulls) : vous pouvez modifier le fichier `quizz.json` en faisant tourner localement ce repo, en lançant `npm install` puis `npm run dev` dans le dossier `api`, et en vous rendant dans `http://localhost:5179/quizz-builder/0/0` par exemple.
+- soit [vous ouvrez un pull request](https://github.com/ambroselli-io/quizz-berger/pulls) : vous pouvez modifier le fichier `quizz-2027.json` en faisant tourner localement ce repo, en lançant `npm install` puis `npm run dev` dans le dossier `api`, et en vous rendant dans `http://localhost:5179/quizz-builder/0/0` par exemple.

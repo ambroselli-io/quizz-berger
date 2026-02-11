@@ -1,6 +1,6 @@
 import express from "express";
 import { catchErrors } from "../utils/error";
-import quizz from "~/shared/quizz.json";
+import quizz from "~/shared/quizz-2027.json";
 import { Question } from "~/types/quizz";
 import prisma from "~/prisma";
 import { CountResponse } from "~/types/responses";

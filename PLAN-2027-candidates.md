@@ -1,7 +1,7 @@
 # Plan: Generate Candidate Answers — 2027 French Presidential Election
 
 ## Context
-Rewrite all candidate data for the **2027** election (not 2022). The quiz questions in `quizz.json` stay the same. We generate new answers for new candidates based on Claude's knowledge of their political positions.
+Rewrite all candidate data for the **2027** election (not 2022). The quiz questions in `quizz-2027.json` stay the same. We generate new answers for new candidates based on Claude's knowledge of their political positions.
 
 ## Candidate List (from Wikipedia, Feb 2026)
 
@@ -41,7 +41,7 @@ Rewrite all candidate data for the **2027** election (not 2022). The quiz questi
 ## Approach
 1. **User selects which candidates to include** (TBD)
 2. **Update `quizz.ts`** with new candidate IDs and names
-3. **Update `quizz.json`** "Et si un(e) autre gagnait..." theme with new candidate names
+3. **Update `quizz-2027.json`** "Et si un(e) autre gagnait..." theme with new candidate names
 4. **For each candidate** (one by one):
    a. Claude picks answer indices for all ~102 policy questions + candidate-opinion questions
    b. User reviews and validates
@@ -52,7 +52,7 @@ Rewrite all candidate data for the **2027** election (not 2022). The quiz questi
 
 ## Files to modify
 - `api-express/src/shared/utils/quizz.ts` — candidate list (IDs, names)
-- `api-express/src/shared/quizz.json` — "Et si un(e) autre gagnait..." theme
+- `api-express/src/shared/quizz-2027.json` — "Et si un(e) autre gagnait..." theme
 - `api-express/src/shared/candidates-answers.json` — main output
 - `api-express/src/shared/candidates-answers/*.txt` — rewrite all
 
@@ -64,7 +64,7 @@ Rewrite all candidate data for the **2027** election (not 2022). The quiz questi
 ## Status
 - [ ] Confirm candidate selection with user
 - [ ] Update quizz.ts with new candidates
-- [ ] Update quizz.json "Et si un(e) autre gagnait..." theme
+- [ ] Update quizz-2027.json "Et si un(e) autre gagnait..." theme
 - [ ] Generate answers for each candidate (one by one, with user validation)
 - [ ] Write candidates-answers.json
 - [ ] Write .txt files

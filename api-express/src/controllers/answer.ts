@@ -7,7 +7,7 @@ import { catchErrors } from "~/utils/error";
 import { uploadBuffer } from "~/utils/picture";
 import { getPodium, getPicName } from "~/shared/utils/podium";
 import { getCandidatesScorePerThemes } from "~/shared/utils/score";
-import quizz from "~/shared/quizz.json";
+import quizz from "~/shared/quizz-2027.json";
 import candidatesAnswersData from "~/shared/candidates-answers.json";
 import prisma from "~/prisma";
 import type { Question, Theme } from "~/types/quizz";
