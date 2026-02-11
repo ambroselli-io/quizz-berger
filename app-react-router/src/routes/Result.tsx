@@ -276,6 +276,9 @@ export default function Result() {
               </small>
             )}
           </div>
+          <span className="text-[0.65em] italic">
+            Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses
+          </span>
         </div>
         <main className="mx-0 mb-[5vh] h-[50vh] overflow-y-visible max-lg:h-[40vh]">
           <Podium podiumised={getPodium(filteredPersons)} />
@@ -311,9 +314,6 @@ export default function Result() {
               </QuizzButton>
             </div>
           )}
-          <span className="text-[0.65em] italic">
-            Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses
-          </span>
         </div>
         <div className="mx-auto mb-[2vh] max-w-[1024px]">
           <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">Thème par thème</h2>
