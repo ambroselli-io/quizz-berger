@@ -1,457 +1,438 @@
-Réponses de Éric Zemmour
-
-
+Réponses d'Éric Zemmour (Reconquête — droite identitaire, souverainiste)
 
 
 Affaires étrangères:
 
 
-Que pensez-vous de la relation avec les pays en développement ?
-Il faut agir dans notre intérêt, peu importe l'éthique des politiques locales qui ne nous concerne pas.
+question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
+[4] L'OTAN et les USA ont provoqué ce conflit : la France devrait jouer un rôle de médiateur indépendant
 
-Quel avenir devrions-nous dessiner pour la relation transatlantique ?
-La France doit avoir une politique étrangère indépendante en sortant de l'OTAN et des traités d'alliance
+question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
+[1] La France doit sortir du commandement intégré de l'OTAN et développer ses propres capacités militaires
 
-Quelle est votre vision de l'Europe ?
-Nous devons retrouver notre pleine souveraineté en dénonçant les traités européens et en quittant si nécessaire l'Europe
+question-2027-ae-03: Quelle relation la France devrait-elle avoir avec l'Afrique ?
+[3] L'Afrique est stratégique pour nos intérêts : il faut y rester présent militairement et économiquement
 
-Que pensez-vous de la création d'une armée / de défense européenne commune ?
-Il faut refuser tout projet d'armée européenne
+question-2027-ae-04: Comment voyez-vous l'avenir de la construction européenne ?
+[3] Il faut renégocier les traités pour récupérer notre souveraineté sur les frontières, le budget et la monnaie
 
+question-2027-ae-05: Que pensez-vous d'une armée européenne commune ?
+[0] Chaque pays doit garder son armée indépendante, point final
 
+question-2027-ae-06: Face à la montée en puissance de la Chine, la France devrait...
+[2] Maintenir des relations commerciales pragmatiques tout en gardant nos distances politiques
 
 
 Agriculture et alimentation:
 
 
-Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
-C'est indispensable pour l'agriculture
+question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
+[2] Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative
 
-Quels devraient être nos rapports aux animaux et à l'élevage ?
-Il est nécessaire de consommer de la viande pour le développement biologique de l'être humain
+question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
+[2] Il faut construire des retenues d'eau et des bassines pour que les agriculteurs puissent continuer à travailler
 
-Dans quelle mesure la France devrait-elle avoir recours à l'agriculture biologique ?
-Il s'agit d'un concept inventé et dangereux pour nos terroirs : il est nécessaire d'en limiter la progression
+question-2027-agri-03: Quelle place pour l'agriculture biologique en France ?
+[1] Le bio a sa place, mais l'agriculture conventionnelle reste indispensable pour les rendements
 
-Que pensez-vous de la souveraineté / l'indépendance alimentaire de la France ?
-C'est une des conditions de survie d'un État, il faut éviter de se mettre en danger sur certaines filières d'approvisionnement indispensables
+question-2027-agri-04: La France devrait-elle viser l'indépendance alimentaire ?
+[3] C'est aussi stratégique que la défense nationale : la France doit pouvoir nourrir sa population sans dépendre de personne
 
-Selon ces propositions sur la Politique Agricole Commune (PAC), laquelle vous paraît la plus pertinente ?
-Sortir de la PAC pour retrouver notre pleine souveraineté agricole et renforcer le pouvoir d'achat de nos exploitants
-
-
+question-2027-agri-05: Quel rapport devrions-nous avoir avec l'élevage et la consommation de viande ?
+[3] L'élevage fait partie de notre histoire et de nos terroirs, il faut le protéger et arrêter de culpabiliser les gens
 
 
 Climat, Énergie et Écologie:
 
 
-Comment vous positionnez-vous vis-à-vis du changement climatique ?
-Il n'est pas urgent de prendre des mesures pour pallier le dérèglement climatique
+question-2027-climat-01: Comment vous positionnez-vous face au changement climatique ?
+[1] Le climat change, mais les mesures écologistes pénalisent les gens modestes pour pas grand-chose
 
-Que pensez-vous de l'énergie nucléaire ?
-Il en faut plus, le nucléaire permet à la France d'être indépendante et de ne pas avoir à importer son électricité.
+question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
+[0] C'est la meilleure arme contre le changement climatique : il faut construire beaucoup plus de centrales
 
-Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
-Ce n'est pas cela dont nous avons besoin, regardons d'autres sources d'énergie
+question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
+[0] Elles n'ont aucune utilité sérieuse, c'est du gaspillage d'argent public
 
-Que pensez-vous de l'utilisation de la voiture ?
-La voiture, synonyme de liberté : tout un symbole, un vrai plaisir, n'y touchons pas !
+question-2027-climat-04: Que pensez-vous de la voiture individuelle ?
+[3] La voiture c'est la liberté, touchez pas à nos bagnoles
 
-Que pensez-vous du prix des transports en commun ?
-Ne rien changer, les tickets/ abonnements des transports collectifs sont à des prix raisonnables
+question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
+[3] On ne peut rien faire à l'échelle de la France, ce sont la Chine et les USA qui polluent
+
+question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
+[3] C'est une arnaque pour nous faire accepter un appauvrissement : produisons plus d'énergie plutôt
 
 
+Corruption et lobbying:
+
+
+question-2027-corr-01: Que pensez-vous du recours aux cabinets de conseil privés (type McKinsey) par l'État ?
+[2] C'est scandaleux : l'État devrait avoir ses propres compétences au lieu d'enrichir des cabinets privés
+
+question-2027-corr-02: Que pensez-vous du lobbying auprès des élus et des institutions ?
+[1] Il faut encadrer bien plus strictement le lobbying et rendre publiques toutes les rencontres entre lobbies et élus
+
+question-2027-corr-03: Que pensez-vous des allers-retours entre la politique et le secteur privé (les « portes tournantes ») ?
+[1] Il faut un délai de carence sérieux (5 ans minimum) et des contrôles stricts
+
+question-2027-corr-04: Pensez-vous que le système politique français est globalement honnête ?
+[1] Il y a de vrais problèmes de corruption, il faut une grande opération de nettoyage
+
+question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
+[2] Le système actuel est un bon compromis entre financement public et dons privés
 
 
 Culture:
 
 
-Que pensez-vous du budget alloué à la culture en général ?
-Il faut beaucoup le diminuer
+question-2027-cult-01: Que pensez-vous du budget alloué à la culture ?
+[1] Il faut l'augmenter un peu, certains secteurs culturels en ont besoin
 
-Que pensez-vous du budget lié à la préservation du patrimoine ?
-Il faut l'augmenter un peu
+question-2027-cult-02: Que pensez-vous du budget pour la préservation du patrimoine ?
+[4] Il faut beaucoup l'augmenter, notre patrimoine est notre identité
 
-Que pensez-vous du pass culture ?
-On peut le garder mais il faut diminuer le montant
+question-2027-cult-03: Que pensez-vous du pass Culture ?
+[1] On peut le garder mais réduire le montant et mieux cibler les bénéficiaires
 
-Pensez-vous qu'il y ait des inégalités d'accès à la culture ?
-L'accès à la culture dépend de la volonté des individus et de rien d'autre
+question-2027-cult-04: Y a-t-il des inégalités d'accès à la culture en France ?
+[1] Pas vraiment, les dispositifs actuels permettent un accès assez large
 
-Quelle est votre vision de la culture ?
-La culture devrait être financée par l'Etat, et par le privé quand c'est nécessaire
-
-
+question-2027-cult-05: Quelle est votre vision du rôle de l'État dans la culture ?
+[1] L'État doit financer la culture en complément du privé
 
 
 Démographie et question migratoire:
 
 
-Que pensez-vous de la politique communautaire d'immigration menée par l'Union Européenne ?
-L'UE contraint la France dans sa politique migratoire : il est nécessaire de reprendre le contrôle souverain de nos frontières
+question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
+[0] Il faut fermer les frontières et stopper l'immigration, la France n'en peut plus
 
-S'agissant de la politique migratoire, selon vous il faut :
-Une fermeture des frontières nationales
+question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
+[0] L'immigration est un danger pour notre identité et notre culture, on risque de ne plus se reconnaître chez nous
 
-Comment considérez-vous les conséquences de l'immigration sur la démographie française ?
-L'immigration est un danger démographique et culturel majeur pour nos sociétés qui risquent d'être remplacées par des éléments étrangers
+question-2027-immi-03: Que pensez-vous de la politique migratoire européenne (Schengen) ?
+[0] La France doit reprendre le contrôle total de ses frontières et sortir de Schengen
 
-Quelle position sur l'intégration des migrants en France ?
-Il ne faut régulariser aucun étranger, la France appartient aux Français de souche
+question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant en France ?
+[0] Voter c'est pour les Français, point. Si tu veux voter, tu deviens français
 
-Quelle mesure vous paraît la plus pertinente concernant le droit de vote pour les étrangers vivant en France depuis un certain temps ?
-Ne pas attribuer le droit de vote aux étrangers
+question-2027-immi-05: Que pensez-vous de l'intégration des personnes étrangères en France ?
+[3] Il ne faut régulariser personne et renvoyer chez eux ceux qui sont en situation irrégulière
 
-Quelle mesure vous paraît la plus pertinente concernant le traitement des familles des délinquants ?
-Expulser des logements sociaux les familles de délinquants
+question-2027-immi-06: Que pensez-vous du traitement des familles de délinquants ?
+[3] Il faut expulser des logements sociaux les familles de délinquants récidivistes
 
-Que pensez-vous de l'immigration et de son impact sur la mixité culturelle ?
-Elle détruit notre culture locale
-
-
+question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
+[0] Elle détruit notre culture et notre identité nationale
 
 
 Dépenses et dette publiques:
 
 
-Que pensez-vous du modèle de financement public de la Sécurité Sociale en France ?
-L'État doit réduire sa participation en limitant ses remboursements et en favorisant une progression des assurances privées pour réduire son endettement
+question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
+[2] L'équilibre actuel est correct, il ne faut pas creuser davantage le déficit
 
-Quelle doit être la trajectoire des dépenses publiques françaises après la pandémie ?
-La dépense publique doit être réduite afin de contenir les conséquences budgétaires de la pandémie, dangereuses pour notre économie et nos comptes publics
+question-2027-dep-02: Que devrait faire l'État avec ses dépenses publiques ?
+[1] Il faut réduire les dépenses pour rétablir l'équilibre budgétaire, c'est urgent
 
-Quelle doit être la place de l'État dans l'économie française ?
-L'État doit poursuivre son désengagement de la sphère économique afin de réduire ses dépenses et de garantir la croissance économique
+question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
+[2] L'État joue un rôle suffisant, il faut garder cet équilibre entre régulation et liberté
 
-Comment appréhendez-vous la dette publique française, qui s'élevait à 118% du PIB en 2021 ?
-La dette publique menace les fondements de l'économie française, et l'État doit la réduire drastiquement par des politiques de rigueur et de désendettement
+question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'en pensez-vous ?
+[1] C'est préoccupant, il faut la réduire progressivement par des économies
 
-Que pensez-vous de la balance budgétaire en France ?
-Il faut avoir un budget en excédent chaque année
-
-
+question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
+[2] Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine
 
 
 Économie et Industrie:
 
 
-Que pensez-vous d'un commerce ouvert favorisant une libre circulation des marchandises ?
-Le libre-échange est une menace pour nos industries : il doit se limiter à importer ce que nous ne pouvons produire
+question-2027-eco-01: Que pensez-vous du libre-échange et de la mondialisation ?
+[1] Le libre-échange menace nos industries, il faut le limiter à ce qu'on ne peut pas produire nous-mêmes
 
-Quelle décision la France devrait-elle prendre en matière de politiques protectionnistes ?
-Le protectionnisme est le meilleur moyen de recentrer notre production sur la demande intérieure et l'intérêt national
+question-2027-eco-02: La France devrait-elle réindustrialiser son territoire ?
+[0] Absolument, il faut rapatrier nos usines, quitte à mettre des barrières douanières
 
-Que pensez-vous de la place de l'État dans la politique industrielle ?
-L'État peut choisir de protéger ou d'investir dans certaines industries en collaboration avec des acteurs privés
+question-2027-eco-03: Que pensez-vous de la privatisation des grandes entreprises publiques (EDF, SNCF...) ?
+[2] Ça dépend du secteur : l'énergie et les transports doivent rester publics, le reste on peut discuter
 
-Que pensez-vous de la privatisation de grandes entreprises publiques (SNCF, EDF...) ?
-Ça dépend de l'entreprise concernée (taille, secteurs d'activité, etc...)
+question-2027-eco-04: Quel rôle l'État doit-il jouer dans la politique industrielle ?
+[2] L'État peut aider certaines industries en collaboration avec le privé, mais sans tout contrôler
 
-Quelle place le secteur public doit-il occuper dans l'économie ?
-L'État doit seulement conserver une poignée d'entreprises fondamentales en privatisant les autres secteurs
+question-2027-eco-05: La France est-elle un pays économiquement attractif ?
+[0] La fuite des talents est un vrai problème, la France fait fuir ses meilleurs éléments
 
-Selon-vous, la France est-elle attractive sur le plan économique ?
-La fuite des talents est réelle, considérable et dramatique pour notre développement
+question-2027-eco-06: Que pensez-vous du temps de travail en France ?
+[0] Il faut remettre la France au travail : au-delà de 35h, voire 39h pour tous
 
-Avec quelle proposition êtes-vous d'accord sur le temps de travail en entreprise ?
-Augmenter la durée de travail au-delà de 35 heures, il faut remettre la France au travail
-
-
+question-2027-eco-07: Que pensez-vous de la dépendance de la France aux chaînes d'approvisionnement mondiales ?
+[3] C'est une question de survie nationale : il faut rapatrier toutes les productions essentielles en France ou en Europe
 
 
 Finance:
 
 
-Quelle vision avez-vous du domaine financier et de son rôle dans l'économie ?
-La finance est un secteur important de notre économie qu'il convient de réguler correctement afin d'éviter ses crises
+question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
+[2] La finance est utile mais il faut la réguler correctement pour éviter les crises
 
-Quelle est votre vision du rôle de la spéculation financière et de ses conséquences ?
-Un lieu de risques et d'incertitudes pourtant essentiel au fonctionnement du secteur financier
+question-2027-fin-02: Que pensez-vous de la spéculation financière ?
+[2] C'est un mal nécessaire pour les investissements, à condition de contrôler les dérives
 
-Quel devrait être le traitement du patrimoine financier des candidats durant une campagne électorale ?
-Le patrimoine financier des candidats concerne leur vie privée : une simple déclaration globale de patrimoine pour vérifier qu'il n'y a rien d'interdit suffit
+question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine financier ?
+[1] Il faut des déclarations régulières et vérifiables, c'est un minimum en démocratie
 
-Quelle est votre vision des grands rendez-vous économiques et financiers tels que le sommet de Davos ?
-Une trace évidente du pouvoir majeur de la finance et de la proximité anti-démocratique entre les représentants politiques et les acteurs économiques
+question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rendez-vous financiers mondiaux ?
+[1] C'est la vitrine des excès de la mondialisation, il faudrait y remettre du social et de l'écologie
 
-Avec quelle proposition êtes-vous d'accord sur les droits de succession ?
-Mettre en place le principe de “zéro taxation” sur les droits de succession “en dessous de 118 000 euros, qui correspond à l'héritage moyen”
-
-
+question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
+[1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
 
 
 Gouvernance et République:
 
 
-Que pensez-vous du régime de la Vème République et de sa Constitution ?
-Il faut modifier la constitution actuelle pour donner davantage de pouvoir au gouvernement
+question-2027-gouv-01: Que pensez-vous de la Vème République et de sa Constitution ?
+[3] Il faut renforcer le pouvoir de l'exécutif pour que le pays soit mieux gouverné
 
-Que pensez-vous du recours au référendum par le Président de la République ?
-Le référendum est un outil de mesure de popularité, à n'utiliser qu'en cas de besoin
+question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
+[1] C'était une erreur politique, mais le droit de dissolution fait partie de nos institutions
 
-Que pensez-vous du Référendum d'Initiative Populaire ?
-Non ça va à l'encontre de la démocratie représentative, c'est dangereux
+question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
+[1] Oui, au moins une dose de proportionnelle pour que les petits partis soient représentés
 
-Que pensez-vous des lourdeurs de l'administration / de la bureaucratie ?
-Le système est paralysé par la bureaucratie
+question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
+[1] Il faudrait organiser des référendums plus souvent, au moins un ou deux par quinquennat
 
-Que pensez-vous de la dématérialisation des services publics numériques ?
-Il faudrait remettre quelques services publics importants en physique pour aider ceux en difficulté avec le numérique
+question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
+[0] Le système est paralysé par la bureaucratie, c'est devenu invivable
 
-
-
-
-Pandémie Covid 19:
+question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
+[3] L'État n'est pas assez ferme, il faut plus d'autorité pour que les lois soient respectées
 
 
-Comment vous situez-vous par rapport à un reconfinement en cas de pic épidémique ?
-L'impact de cette pandémie sur nos vies normales/mentales est trop important par rapport à son danger et sa mortalité. Il ne faut vraiment pas se confiner
-
-Comment vous situez-vous par rapport au port du masque à l'école en cas de pic épidémique ?
-Pas de masque pour les enfants : ils ne sont pas à risque pour ce virus
-
-Comment vous situez-vous par rapport au port du masque en société en cas de pic épidémique ?
-Il faut porter le masque seulement quand il s'agit de grands rassemblements
-
-Comment vous situez-vous par rapport aux passes sanitaire et vaccinal ?
-Le pass sanitaire est le début d'une restriction progressive et continue de nos libertés: il faut conserver nos droits !
-
-Doit-on faire payer les soins de santé aux personnes non vaccinées ?
-Les non vaccinés sont des citoyens qui paient les mêmes impôts que les personnes vaccinés, ils ont le droit d'être soignés et d'être pris en charge
-
-Faut-il permettre aux non-vaccinés de se tester gratuitement ?
-La France est un pays libre et il faut respecter le choix des citoyens qui ne veulent pas se faire vacciner et donc rembourser leurs tests
-
-Doit-on fermer complètement nos frontières en cas de pic de l'épidémie ?
-Oui bien sûr, c'est essentiel pour endiguer l'épidémie en limitant la circulation du virus
+Logement:
 
 
+question-2027-log-01: Que pensez-vous de la crise du logement en France ?
+[3] C'est le marché qui doit réguler : moins de normes, moins de contraintes, et les prix se stabiliseront
+
+question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
+[2] Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie
+
+question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
+[2] Il faut les encadrer raisonnablement, mais c'est un complément de revenu utile pour beaucoup
+
+question-2027-log-04: Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?
+[1] Il faut améliorer les transports et le numérique en zone rurale, mais sans forcer les choses
+
+question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
+[1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
+
+
+Numérique et IA:
+
+
+question-2027-num-01: Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?
+[1] L'IA est un outil puissant qu'il faut développer, mais en l'encadrant pour éviter les abus
+
+question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
+[0] C'est le problème numéro un de cette génération : il faut interdire les réseaux sociaux avant 16 ans
+
+question-2027-num-03: Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?
+[1] La vidéosurveillance et le fichage sont des outils nécessaires pour la sécurité, à condition de les encadrer
+
+question-2027-num-04: La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?
+[3] Il faut imposer que les données des Français restent en France et créer nos propres plateformes souveraines
+
+question-2027-num-05: Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?
+[1] Le numérique c'est bien pour la plupart des gens, mais il faut garder des guichets physiques pour ceux qui en ont besoin
 
 
 Police, Justice et Sécurité:
 
 
-Que pensez-vous de l'autorité de l'État par rapport aux libertés individuelles ?
-L'État n'est pas assez autoritaire par rapport aux libertés individuelles
+question-2027-pol-01: Que pensez-vous des violences policières ?
+[0] Il n'existe pas de violences policières, la police fait son travail
 
-Que pensez-vous de la formation des policiers ?
-Il sont très bien formés
+question-2027-pol-02: La France est-elle un pays sûr ?
+[1] Il y a de vrais problèmes d'insécurité dans certains territoires, l'État doit agir plus fermement
 
-Que pensez-vous des violences policières ?
-Il n'existe pas de violence policière.
+question-2027-pol-03: Que pensez-vous de la justice en France ?
+[0] La justice est trop lente et trop laxiste, il faut la durcir sérieusement
 
-Que pensez-vous de la lenteur / rapidité de la justice ?
-La justice est trop lente, trop de coupables sont en liberté, et d'innocents croupissent en détention provisoire non justifiée.
+question-2027-pol-04: Que pensez-vous de la situation dans les prisons françaises ?
+[0] Il faut construire plus de prisons et être plus sévère, trop de délinquants sont en liberté
 
-Que vous évoque la sécurité nationale, la protection par l'État de ses citoyens ?
-Nous ne sommes pas en sécurité en France, l'État fait très mal son travail
+question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
+[0] Expulser tous les étrangers délinquants et radicalisés, et fermer les mosquées salafistes
 
-Que pensez-vous de la situation carcérale en France? Il faudrait :
-Expulser immédiatement plus de 10 000 délinquants étrangers emprisonnés et construire 10 000 places de prison supplémentaires
+question-2027-pol-06: Que pensez-vous de la formation des policiers ?
+[3] Les policiers sont bien formés et font un travail difficile qu'on devrait davantage respecter
 
-Pour lutter contre la délinquance et le terrorisme il faut, selon vous
-Un renforcement des moyens du renseignement général et une politique sécuritaire accrue dans tous les domaines
-
-
+question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
+[0] La drogue c'est la drogue, il faut renforcer la répression et les peines
 
 
 Politique fiscale:
 
 
-Que pensez-vous du taux d'imposition actuel des plus riches ?
-Il faut le diminuer
+question-2027-fisc-01: Que pensez-vous des impôts sur les plus riches ?
+[1] Il faut les diminuer un peu pour rester compétitifs
 
-Que pensez-vous du taux d'imposition actuel de la classe moyenne ?
-Il faut le diminuer, beaucoup
+question-2027-fisc-02: Que pensez-vous des impôts sur la classe moyenne ?
+[0] Il faut beaucoup les diminuer, la classe moyenne est étranglée
 
-Que pensez-vous du taux d'imposition actuel des plus pauvres ?
-Il faut le diminuer
+question-2027-fisc-03: Que pensez-vous des impôts sur les plus modestes ?
+[3] Tout le monde doit payer des impôts, même symboliquement : c'est le prix de la citoyenneté
 
-Que pensez-vous de l'évasion fiscale des multinationales ?
-Il faut empêcher l'évasion fiscale en entravant la libre circulation des capitaux.
+question-2027-fisc-04: Que pensez-vous de l'évasion fiscale des multinationales ?
+[2] Seul un accord international peut régler ce problème, il faut continuer à négocier
 
-Que pensez-vous d'une taxe sur les transactions financières spéculatives ?
-Surtout, une toute petite taxe insignifiante pourrait rapporter gros, pourquoi s'en priver ?
+question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la Fortune) ?
+[3] Non, l'ISF faisait fuir les riches et détruisait de la richesse
 
-Selon vous, quelle est la meilleure solution pour favoriser une fiscalité plus verte?
-Ça ne m'intéresse pas / Je n'ai pas d'avis
+question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
+[2] Il faut un accord international, sinon les marchés iront se délocaliser ailleurs
 
-S'agissant de l'Impôt de Solidarité sur la Fortune (ISF), il faut selon vous :
-...et réduire tous les impôts de manière générale
+question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
+[0] Il ne faut rien faire, l'environnement n'est pas une priorité fiscale
 
-Quelle devrait être l'évolution de la fiscalité des entreprises dans le contexte économique actuel ?
-Il faut alléger la fiscalité sur les TPE-PME et sur l'embauche pour lutter contre le chômage et garantir la croissance
+question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
+[3] Il faut continuer à baisser les impôts des entreprises pour la compétitivité et l'emploi
 
 
+Pouvoir d'achat et vie quotidienne:
+
+
+question-2027-pa-01: L'inflation et la hausse des prix, c'est la faute de qui ?
+[2] C'est la faute de l'État qui dépense trop et fait tourner la planche à billets
+
+question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
+[1] L'État peut donner un coup de pouce temporaire aux ménages les plus modestes
+
+question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
+[2] Les prix actuels sont raisonnables, pas besoin de changer
+
+question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
+[1] Il y a un peu d'inflation mais les enseignes font des efforts, ça va
+
+question-2027-pa-05: Comment améliorer le pouvoir d'achat des Français ?
+[0] Baisser les impôts et les charges, laisser les gens garder ce qu'ils gagnent
 
 
 Recherche et éducation:
 
 
-Que pensez-vous des dépenses dans l'Éducation Nationale et Universités en France ?
-Le secteur public est capable de dépenser plus efficacement, il faut donc qu'il s'améliore avec l'aide du secteur privé
+question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
+[2] Le budget est suffisant, il faut surtout mieux dépenser l'argent existant
 
-Quel doit être le rôle de l'éducation nationale dans la mobilité sociale des individus ?
-Ça ne m'intéresse pas / Je n'ai pas d'avis
+question-2027-edu-02: L'école permet-elle vraiment de s'élever socialement ?
+[3] L'école donne une base commune, mais c'est ensuite le talent et l'effort individuel qui comptent
 
-Quelle devrait être la place des technologies numériques dans l'enseignement scolaire ?
-Le numérique est néfaste pour l'éducation de nos enfants, et il faut strictement limiter son usage dans l'enseignement scolaire
+question-2027-edu-03: Que pensez-vous des écrans et de l'IA à l'école ?
+[3] Les écrans abîment le cerveau des enfants : il faut limiter drastiquement leur usage à l'école
 
-Que pensez-vous du financement public de la recherche ?
-La recherche en France est coûteuse et inefficace : il faut réduire nos financements et les recentrer sur les domaines stratégiques pour nos intérêts nationaux
+question-2027-edu-04: Que pensez-vous du financement de la recherche publique ?
+[1] Le financement est suffisant, il faut juste mieux cibler les priorités stratégiques
 
-Que pensez-vous de la situation actuelle des universités françaises ?
-Les universités ne sont plus des lieux neutres politiquement et idéologiquement : il faut que l'État reprenne la main sur leur gouvernance et y réinsère ses valeurs
+question-2027-edu-05: Que pensez-vous de Parcoursup et de l'accès à l'enseignement supérieur ?
+[3] Il faudrait aller plus loin dans la sélection pour former une élite performante
 
-Que pensez-vous de la tenue que devrait porter un étudiant du secondaire ?
-Les étudiants devraient tous porter des uniformes scolaires pour éviter la différenciation des classes sociales
-
-
+question-2027-edu-06: Que pensez-vous de la laïcité et des signes religieux à l'école ?
+[2] Il faut aller plus loin : uniforme scolaire pour tout le monde, ça évite les discriminations
 
 
 Santé:
 
 
-Que pensez-vous du budget alloué à la santé ?
-Il faut le diminuer puisque l'Etat alloue déjà beaucoup de financement à la santé
+question-2027-san-01: Que pensez-vous du budget alloué à la santé publique ?
+[1] Le budget est suffisant, il faut surtout mieux le gérer
 
-Que pensez-vous de la rémunération du personnel soignant en général ?
-Le personnel soignant n'est pas assez payé, il faudrait augmenter leur rémunération
+question-2027-san-02: Que pensez-vous de la rémunération du personnel soignant ?
+[1] Il faudrait augmenter un peu leurs salaires, surtout pour les infirmiers et aides-soignants
 
-Que pensez-vous de la question des déserts médicaux ?
-Il faut reconstruire l'offre médicale dans les déserts médicaux, en détresse médicale
+question-2027-san-03: Que pensez-vous des déserts médicaux ?
+[2] Il faut des mesures fortes : incitations financières, obligation d'installation en zone sous-dotée
 
-Que pensez-vous de la quantité de soins de santé réalisés en France ?
-On en fait trop d'inutiles, on pourrait en faire beaucoup moins comme dans d'autres pays développés où les gens ne se portent pas plus mal
+question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
+[1] Les gens devraient être encouragés à se vacciner, mais jamais forcés
 
-Que pensez-vous du remboursement des soins médicaux ?
-Certains soins aujourd'hui gratuits devraient être payants
+question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
+[2] L'équilibre actuel entre gratuit et payant est correct
 
-
+question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
+[3] On en fait trop : les jeunes ont toujours eu des difficultés, ça fait partie de la vie
 
 
 Société:
 
 
-Quel rôle les pouvoirs publics doivent-ils jouer dans la lutte pour l'égalité homme-femme ?
-Les pouvoirs publics sont guidés par des considérations idéologiques qui détournent les sexes de leurs différences naturelles : ils doivent revenir à des politiques de stricte neutralité
+question-2027-soc-01: Que pensez-vous de l'égalité homme-femme en France ?
+[0] On va trop loin dans le féminisme, les différences entre hommes et femmes sont naturelles
 
-Que pensez-vous de la façon dont la politique s'occupe des handicapés ?
-On en fait trop pour les handicapés, ça coûte très cher, voire trop
+question-2027-soc-02: Que pensez-vous des droits des personnes LGBT+ ?
+[1] Il y a un lobby LGBT qui va trop loin, il faut que l'État reste neutre
 
-Que pensez-vous de la façon dont la politique s'occupe des personnes âgées ?
-Des progrès sur la prise en charge des personnes âgées ont été fait, il faut continuer ainsi
+question-2027-soc-03: Quelle place pour la religion dans notre société ?
+[0] Il faut renouer avec nos racines chrétiennes et les défendre face à l'islamisation
 
-Que vous évoque la question des minorités sexuelles et des luttes LGBT ?
-Nos valeurs chrétiennes sont menacées par cette nouvelle idéologie : il faut abroger la loi Taubira et restaurer notre modèle familial traditionnel
+question-2027-soc-04: Que pensez-vous de la PMA (procréation médicalement assistée) ?
+[1] Elle devrait être réservée aux couples hétérosexuels ayant des problèmes de fertilité
 
-Quelle place devrait avoir la sphère religieuse dans notre société ?
-Il est nécessaire de renouer avec notre essence chrétienne dans la sphère publique en privilégiant son apprentissage à la prolifération d'autres religions
+question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
+[2] C'est une exploitation du corps des femmes, il faut que ça reste interdit
 
-Que pensez-vous de la procréation médicalement assistée (PMA) ?
-Elle doit être non remboursée et interdite pour tous
+question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en pensez-vous ?
+[2] C'est aller trop loin, l'IVG n'avait pas besoin d'être dans la Constitution
 
-Que pensez-vous de la gestation pour autrui (GPA) ?
-Elle doit être non remboursée et interdite pour tous
+question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
+[1] Le cadre actuel (sédation profonde) est suffisant, pas besoin d'aller vers l'euthanasie
 
-Que pensez-vous de la législation française sur l'Interruption Volontaire de Grossesse ? (Avortement)
-Elle être doit réglementée plus strictement, par un non-remboursement et une limitation du nombre d'IVG par femmes
-
-Que pensez-vous de la question de l'euthanasie (suicide assisté) ?
-L'euthanasie va à l'encontre même de nos valeurs fondamentales : il faut interdire au secteur médical la possibilité d'arrêter les soins d'un patient, la vie humaine est sacrée
-
-
+question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?
+[1] Des progrès ont été faits, il faut continuer sans en faire beaucoup plus
 
 
 Travail, Chômage, Retraite:
 
 
-Que pensez-vous du salaire minimum (SMIC) ?
-Il faut augmenter légèrement le SMIC pour redonner du pouvoir d'achat aux français face à l'inflation et à la crise économique
+question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
+[3] Il faudrait aller plus loin, 65 ou 66 ans, comme dans les pays voisins
 
-Que pensez-vous de l'allocation actuelle du RSA ?
-Il faut la supprimer et le remplacer par un revenu d'activité minimum : c'est le travail qui sort les individus de la misère et non l'assistanat
+question-2027-trav-02: Que pensez-vous du temps de travail en France ?
+[3] Il faut supprimer les 35 heures, les Français ne travaillent pas assez
 
-Que pensez-vous d'un revenu/salaire universel ?
-C'est une idée dangereuse pour nos finances publiques : elle ruinerait l'État et pèserait lourd sur nos capacités productives
+question-2027-trav-03: Comment réduire le chômage en France ?
+[3] Le chômage baissera quand on arrêtera de payer les gens à ne rien faire — il faut durcir les conditions d'indemnisation
 
-Comment devrait évoluer l'assurance-chômage en France ?
-Il faut conserver le caractère incitatif de la progressivité de l'assurance chômage tout en l'ouvrant progressivement aux indépendants
+question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
+[3] Le RSA est devenu une trappe à inactivité, il faut le conditionner fortement ou le supprimer
 
-Que pensez-vous de la durée légale du travail ?
-Nous devons retrouver la productivité des 39h/semaine et aller vers une libéralisation de cette décision en laissant le libre choix aux acteurs économiques dans leur contrat
+question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
+[2] Le SMIC doit rester raisonnable sinon les petites entreprises ne suivent pas — mieux vaut baisser les charges
 
-Que pensez-vous de l'âge de départ à la retraite ?
-L'augmentation de l'espérance de vie et la crise des retraites rendent nécessaire sa progressive élévation vers 64 ans, avec des modalités adaptées pour certains métiers
-
-
+question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
+[2] On est allé trop loin, le présentiel est important pour la productivité et le lien social
 
 
 Union Européenne:
 
 
-Que pensez-vous des traités de l'Union Européenne ?
-Ce sont des traités qui retirent de la souveraineté aux Nations qui la composent, il faut en sortir et redevenir indépendant
+question-2027-ue-01: Globalement, que pensez-vous de l'Union européenne ?
+[1] L'UE a de gros défauts mais il faut rester dedans et la réformer en profondeur
 
-Que pensez-vous de l'harmonie fiscale, c'est-à-dire un taux d'imposition unique au sein de l'Union Européenne ?
-La concurrence fiscale est saine pour les pays, il ne faut pas de taux d'imposition unique
+question-2027-ue-02: Que pensez-vous du pouvoir de la Commission européenne par rapport aux parlements nationaux ?
+[0] Les parlements nationaux doivent reprendre le pouvoir — la Commission a trop d'influence non élue
 
-Que pensez-vous de l'harmonie sociale, c'est-à-dire des prestations sociales communes au sein de l'Union Européenne ?
-La concurrence des prestations sociales est saine pour les pays, il ne faut pas d'harmonisation.
+question-2027-ue-03: Que pensez-vous de la position de l'UE face à la guerre en Ukraine ?
+[1] L'UE devrait jouer un rôle diplomatique neutre au lieu de s'aligner sur les États-Unis
 
-Que pensez-vous des projets d'élargissement de l'Union Européenne ?
-L'Europe communautaire est un échec condamné à l'inefficacité : il faut recréer une nouvelle organisation garante de l'Europe des Nations
+question-2027-ue-04: Que pensez-vous du lobbying et de la corruption au niveau européen ?
+[0] L'UE est corrompue jusqu'à la moelle, c'est une des raisons de sortir — les lobbies dirigent tout
 
-Que pensez-vous d'une défense commune européenne ?
-L'Europe est un fléau pour nos intérêts nationaux : nous devons mettre un terme à toute communautarisation de notre politique de défense nationale
+question-2027-ue-05: Que pensez-vous de l'euro ?
+[1] L'euro pose des problèmes structurels mais en sortir serait trop risqué — il faut réformer la zone euro
 
-Quelle est votre vision du système de Schengen, qui organise l'ouverture des frontières au sein de l'espace européen ?
-La France doit sortir du système de Schengen et retrouver la pleine maîtrise de ses frontières nationales
-
-
-
-
-Candidats:
-
-
-Si Anne Hidalgo était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si Christiane Taubira était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si Emmanuel Macron était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si Éric Zemmour était élu(e), quel serait votre sentiment ?
-Très content(e)
-
-Si Fabien Roussel était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si François Asselineau était élu(e), quel serait votre sentiment ?
-Plutôt content(e)
-
-Si Jean Lassalle était élu(e), quel serait votre sentiment ?
-Plutôt mécontent(e)
-
-Si Jean-Luc Mélenchon était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si Marine Le Pen était élu(e), quel serait votre sentiment ?
-Plutôt content(e)
-
-Si Nathalie Arthaud était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si Nicolas Dupont-Aignan était élu(e), quel serait votre sentiment ?
-Plutôt content(e)
-
-Si Philippe Poutou était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
-
-Si Valérie Pécresse était élu(e), quel serait votre sentiment ?
-Dans l'expectative
-
-Si Yannick Jadot était élu(e), quel serait votre sentiment ?
-Très mécontent(e)
+question-2027-ue-06: Que pensez-vous de la politique migratoire européenne ?
+[3] Chaque pays doit reprendre le contrôle total de ses frontières — l'UE n'a pas à décider qui entre chez nous
