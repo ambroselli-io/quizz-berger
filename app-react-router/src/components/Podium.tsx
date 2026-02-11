@@ -37,7 +37,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
                     key={pic}
                     src={`${IMAGE_BASE_URL}${pic}`}
                     alt=""
-                    className="h-10 w-10 rounded-full border-2 [&:not(:last-of-type)]:-mr-4"
+                    className="h-10 w-10 rounded-full border-2 object-cover [&:not(:last-of-type)]:-mr-4"
                     style={{ borderColor: colors[i] ?? undefined, backgroundColor: colors[i] ?? undefined }}
                   />
                 ))}
