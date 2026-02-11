@@ -50,7 +50,8 @@ jobs:
             npm run build
 
             # Restart or start the application using PM2
-            pm2 restart ecosystem.config.cjs --update-env || pm2 start ecosystem.config.cjs --update-env
+            pm2 delete quizz-du-berger-app-react-router
+            pm2 start ecosystem.config.cjs
 
             # Wait for the app to start
             sleep 10
@@ -70,7 +71,7 @@ jobs:
             npm ci --include=dev
 
             # Restart or start the application using PM2
-            pm2 restart ecosystem.config.cjs --update-env || pm2 start ecosystem.config.cjs --update-env
+            pm2 restart ecosystem.config.cjs || pm2 start ecosystem.config.cjs
 
             # Wait for the app to start
             sleep 10
