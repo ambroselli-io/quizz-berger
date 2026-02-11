@@ -26,7 +26,12 @@ const computeTitleCaption = (userThemes: string[]) => {
   return 'Choisissez un thème';
 };
 
-const computeSubtitle = (userThemes: string[], questionsNumber: number, userAnswers: { themeId: string }[], allQuizz: typeof quizz) => {
+const computeSubtitle = (
+  userThemes: string[],
+  questionsNumber: number,
+  userAnswers: { themeId: string }[],
+  allQuizz: typeof quizz,
+) => {
   if (!userThemes?.length) {
     return 'Répondez au quiz, thème après thème, en commençant par<strong> celui qui vous tient le plus à coeur.</strong>';
   }
@@ -81,9 +86,8 @@ export default function ThemeSelect() {
   };
 
   const goToResults = () => navigate('/result');
-  const goToQuizz = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const goToQuizz = async (themeId: string) => {
     await initNewUser();
-    const themeId = (e.currentTarget as HTMLElement).dataset.themeid;
     if (!themeId) return;
     const firstQuestionId = quizz.find((t) => t._id === themeId)?.questions[0]?._id;
     if (firstQuestionId) navigate(`/question/${themeId}/${firstQuestionId}`);
@@ -127,18 +131,21 @@ export default function ThemeSelect() {
       <title>{titleCaption} | Le Quizz du Berger</title>
       <div className="px-2.5 py-20 max-lg:px-2.5 max-lg:py-[3vh] lg:h-[calc(100vh-80px)] lg:overflow-y-auto">
         <div className="mx-auto mb-[2vh] flex max-w-[1200px] flex-col items-center justify-center">
-          <h2 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">{titleCaption}</h2>
+          <h2 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
+            {titleCaption}
+          </h2>
           <h3 className="mb-10 max-w-[90vw] text-center text-base font-normal text-quizz-dark">
             <span dangerouslySetInnerHTML={{ __html: subtitle }} />
-            <br /><br />
+            <br />
+            <br />
             <small>
-              Ce test essaie de représenter l'ensemble d'idées le plus large possible, et contient des éléments que vous
-              pourrez trouver choquant.
+              Ce test essaie de représenter l'ensemble d'idées le plus large possible, et contient des
+              éléments que vous pourrez trouver choquant.
             </small>
             <br />
             <small>
-              Vous pouvez toujours ne pas répondre à une question : vous répondez à ce que vous voulez, si vous le
-              voulez. Vos réponses et résultats sont <strong>anonymes</strong>.
+              Vous pouvez toujours ne pas répondre à une question : vous répondez à ce que vous voulez, si
+              vous le voulez. Vos réponses et résultats sont <strong>anonymes</strong>.
             </small>
           </h3>
           <div className="mb-10 grid grid-cols-1 gap-5 lg:grid-cols-3">
@@ -149,7 +156,7 @@ export default function ThemeSelect() {
                   key={theme._id}
                   theme={theme}
                   userAnswers={userAnswers}
-                  onClick={goToQuizz}
+                  onClick={() => goToQuizz(theme._id)}
                 />
               ))}
           </div>
@@ -160,22 +167,13 @@ export default function ThemeSelect() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <QuizzButton
-            disabled={buttonCaption !== 'Voir les résultats'}
-            onClick={goToResults}
-          >
+          <QuizzButton disabled={buttonCaption !== 'Voir les résultats'} onClick={goToResults}>
             <span dangerouslySetInnerHTML={{ __html: buttonCaption }} />
           </QuizzButton>
         </div>
       </div>
-      <ModalFirstThemeSelection
-        isActive={showModal === 'theme-select_first'}
-        onClose={onForceCloseModal}
-      />
-      <ModalAccessToResults
-        isActive={showModal === 'theme-select_result'}
-        onClose={onForceCloseModal}
-      />
+      <ModalFirstThemeSelection isActive={showModal === 'theme-select_first'} onClose={onForceCloseModal} />
+      <ModalAccessToResults isActive={showModal === 'theme-select_result'} onClose={onForceCloseModal} />
     </>
   );
 }
