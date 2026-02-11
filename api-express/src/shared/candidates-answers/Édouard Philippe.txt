@@ -1,0 +1,438 @@
+Réponses d'Édouard Philippe (Horizons — centre-droit, libéral-conservateur, ex-Premier ministre)
+
+
+Affaires étrangères:
+
+
+question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
+[1] Il faut continuer à armer l'Ukraine et maintenir les sanctions contre la Russie
+
+question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
+[3] L'OTAN reste indispensable face à la Russie et la Chine, il faut y jouer pleinement notre rôle
+
+question-2027-ae-03: Quelle relation la France devrait-elle avoir avec l'Afrique ?
+[2] On doit maintenir notre influence mais la moderniser, avec plus de coopération économique et moins de militaire
+
+question-2027-ae-04: Comment voyez-vous l'avenir de la construction européenne ?
+[1] Il faut approfondir la coopération européenne sur les grands projets sans perdre notre souveraineté
+
+question-2027-ae-05: Que pensez-vous d'une armée européenne commune ?
+[1] On peut coopérer sur certaines missions, mais chacun garde le commandement de ses troupes
+
+question-2027-ae-06: Face à la montée en puissance de la Chine, la France devrait...
+[2] Maintenir des relations commerciales pragmatiques tout en gardant nos distances politiques
+
+
+Agriculture et alimentation:
+
+
+question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
+[1] Il faut en sortir progressivement, sans mettre en danger la production alimentaire
+
+question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
+[1] Il faut mieux partager l'eau entre agriculture, industrie et particuliers, avec des restrictions en période de sécheresse
+
+question-2027-agri-03: Quelle place pour l'agriculture biologique en France ?
+[1] Le bio a sa place, mais l'agriculture conventionnelle reste indispensable pour les rendements
+
+question-2027-agri-04: La France devrait-elle viser l'indépendance alimentaire ?
+[2] Il faut éviter de dépendre de l'étranger sur les produits essentiels, c'est du bon sens
+
+question-2027-agri-05: Quel rapport devrions-nous avoir avec l'élevage et la consommation de viande ?
+[2] Il faut améliorer les conditions d'élevage et laisser chacun libre de ses choix alimentaires
+
+
+Climat, Énergie et Écologie:
+
+
+question-2027-climat-01: Comment vous positionnez-vous face au changement climatique ?
+[3] Il faut transformer sérieusement notre économie pour aller vers une croissance durable
+
+question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
+[1] C'est la meilleure arme contre le changement climatique : il faut construire beaucoup plus de centrales
+
+question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
+[2] C'est un bon complément au nucléaire, il faut continuer à les développer raisonnablement
+
+question-2027-climat-04: Que pensez-vous de la voiture individuelle ?
+[1] Il faut passer à l'électrique et développer les alternatives, mais en accompagnant les gens
+
+question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
+[2] C'est un effort collectif, chacun à son niveau, des citoyens aux entreprises
+
+question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
+[1] C'est une bonne idée si c'est bien accompagné, avec des aides pour isoler les logements par exemple
+
+
+Corruption et lobbying:
+
+
+question-2027-corr-01: Que pensez-vous du recours aux cabinets de conseil privés (type McKinsey) par l'État ?
+[1] Ça peut se justifier ponctuellement, mais il faut de la transparence sur les montants et les missions
+
+question-2027-corr-02: Que pensez-vous du lobbying auprès des élus et des institutions ?
+[2] Le lobbying fait partie du jeu démocratique, à condition d'être transparent
+
+question-2027-corr-03: Que pensez-vous des allers-retours entre la politique et le secteur privé (les « portes tournantes ») ?
+[2] Les règles actuelles suffisent, c'est normal que les gens aient des carrières variées
+
+question-2027-corr-04: Pensez-vous que le système politique français est globalement honnête ?
+[2] Il y a des brebis galeuses, mais le système fonctionne globalement
+
+question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
+[2] Le système actuel est un bon compromis entre financement public et dons privés
+
+
+Culture:
+
+
+question-2027-cult-01: Que pensez-vous du budget alloué à la culture ?
+[1] Il faut l'augmenter un peu, certains secteurs culturels en ont besoin
+
+question-2027-cult-02: Que pensez-vous du budget pour la préservation du patrimoine ?
+[3] Il faut l'augmenter un peu, notre patrimoine se dégrade
+
+question-2027-cult-03: Que pensez-vous du pass Culture ?
+[2] Il est bien comme il est
+
+question-2027-cult-04: Y a-t-il des inégalités d'accès à la culture en France ?
+[2] Un peu, mais la situation s'améliore avec le numérique et les politiques culturelles
+
+question-2027-cult-05: Quelle est votre vision du rôle de l'État dans la culture ?
+[1] L'État doit financer la culture en complément du privé
+
+
+Démographie et question migratoire:
+
+
+question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
+[2] Il faut un système d'immigration choisie avec des quotas, ni trop ouvert ni trop fermé
+
+question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
+[2] C'est un sujet complexe qui nécessite un équilibre entre accueil, intégration et fermeté
+
+question-2027-immi-03: Que pensez-vous de la politique migratoire européenne (Schengen) ?
+[1] Il faut renforcer drastiquement les contrôles aux frontières de l'Europe et remettre des contrôles dans Schengen
+
+question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant en France ?
+[1] Pas de droit de vote pour les étrangers, c'est un privilège lié à la nationalité
+
+question-2027-immi-05: Que pensez-vous de l'intégration des personnes étrangères en France ?
+[1] Il faut une immigration choisie avec des quotas par métiers, et accompagner l'intégration
+
+question-2027-immi-06: Que pensez-vous du traitement des familles de délinquants ?
+[2] Il faut responsabiliser les familles : suspendre les allocations si les enfants sont délinquants
+
+question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
+[2] C'est un sujet complexe, mieux vaut en débattre sereinement que s'enfermer dans des positions
+
+
+Dépenses et dette publiques:
+
+
+question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
+[2] L'équilibre actuel est correct, il ne faut pas creuser davantage le déficit
+
+question-2027-dep-02: Que devrait faire l'État avec ses dépenses publiques ?
+[1] Il faut réduire les dépenses pour rétablir l'équilibre budgétaire, c'est urgent
+
+question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
+[2] L'État joue un rôle suffisant, il faut garder cet équilibre entre régulation et liberté
+
+question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'en pensez-vous ?
+[1] C'est préoccupant, il faut la réduire progressivement par des économies
+
+question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
+[2] Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine
+
+
+Économie et Industrie:
+
+
+question-2027-eco-01: Que pensez-vous du libre-échange et de la mondialisation ?
+[2] Il faut un équilibre pragmatique entre ouverture commerciale et protection de nos intérêts
+
+question-2027-eco-02: La France devrait-elle réindustrialiser son territoire ?
+[2] Il faut encourager l'industrie sans forcer : des aides fiscales et un cadre attractif suffisent
+
+question-2027-eco-03: Que pensez-vous de la privatisation des grandes entreprises publiques (EDF, SNCF...) ?
+[2] Ça dépend du secteur : l'énergie et les transports doivent rester publics, le reste on peut discuter
+
+question-2027-eco-04: Quel rôle l'État doit-il jouer dans la politique industrielle ?
+[2] L'État peut aider certaines industries en collaboration avec le privé, mais sans tout contrôler
+
+question-2027-eco-05: La France est-elle un pays économiquement attractif ?
+[2] Ça se compense : on perd des gens dans certains domaines, on en attire dans d'autres
+
+question-2027-eco-06: Que pensez-vous du temps de travail en France ?
+[1] Les 35h c'est bien, mais il faut plus de souplesse avec des accords par secteur
+
+question-2027-eco-07: Que pensez-vous de la dépendance de la France aux chaînes d'approvisionnement mondiales ?
+[2] Il faut diversifier nos fournisseurs et relocaliser les productions les plus critiques
+
+
+Finance:
+
+
+question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
+[2] La finance est utile mais il faut la réguler correctement pour éviter les crises
+
+question-2027-fin-02: Que pensez-vous de la spéculation financière ?
+[2] C'est un mal nécessaire pour les investissements, à condition de contrôler les dérives
+
+question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine financier ?
+[1] Il faut des déclarations régulières et vérifiables, c'est un minimum en démocratie
+
+question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rendez-vous financiers mondiaux ?
+[2] Ce sont des rendez-vous nécessaires pour la régulation économique mondiale, même s'ils sont imparfaits
+
+question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
+[1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
+
+
+Gouvernance et République:
+
+
+question-2027-gouv-01: Que pensez-vous de la Vème République et de sa Constitution ?
+[2] La Constitution fonctionne bien, pas besoin de la changer
+
+question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
+[1] C'était une erreur politique, mais le droit de dissolution fait partie de nos institutions
+
+question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
+[1] Oui, au moins une dose de proportionnelle pour que les petits partis soient représentés
+
+question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
+[2] Le référendum est un outil utile, mais à utiliser avec précaution
+
+question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
+[1] Il y a trop de lourdeurs administratives, ça freine tout
+
+question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
+[3] L'État n'est pas assez ferme, il faut plus d'autorité pour que les lois soient respectées
+
+
+Logement:
+
+
+question-2027-log-01: Que pensez-vous de la crise du logement en France ?
+[2] C'est un problème localisé dans les grandes villes, pas besoin de mesures nationales radicales
+
+question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
+[2] Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie
+
+question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
+[2] Il faut les encadrer raisonnablement, mais c'est un complément de revenu utile pour beaucoup
+
+question-2027-log-04: Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?
+[1] Il faut améliorer les transports et le numérique en zone rurale, mais sans forcer les choses
+
+question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
+[1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
+
+
+Numérique et IA:
+
+
+question-2027-num-01: Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?
+[1] L'IA est un outil puissant qu'il faut développer, mais en l'encadrant pour éviter les abus
+
+question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
+[1] C'est préoccupant, il faut réguler fortement les plateformes et protéger les mineurs
+
+question-2027-num-03: Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?
+[1] La vidéosurveillance et le fichage sont des outils nécessaires pour la sécurité, à condition de les encadrer
+
+question-2027-num-04: La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?
+[2] Il faut des alternatives européennes aux GAFAM et protéger nos données des géants américains et chinois
+
+question-2027-num-05: Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?
+[1] Le numérique c'est bien pour la plupart des gens, mais il faut garder des guichets physiques pour ceux qui en ont besoin
+
+
+Police, Justice et Sécurité:
+
+
+question-2027-pol-01: Que pensez-vous des violences policières ?
+[2] Il y a des cas isolés qui méritent des sanctions, mais pas de problème systémique
+
+question-2027-pol-02: La France est-elle un pays sûr ?
+[1] Il y a de vrais problèmes d'insécurité dans certains territoires, l'État doit agir plus fermement
+
+question-2027-pol-03: Que pensez-vous de la justice en France ?
+[1] La justice manque de moyens, il faut plus de juges, plus de tribunaux, et des procédures plus rapides
+
+question-2027-pol-04: Que pensez-vous de la situation dans les prisons françaises ?
+[0] Il faut construire plus de prisons et être plus sévère, trop de délinquants sont en liberté
+
+question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
+[1] Renforcer les moyens du renseignement, plus de policiers, des peines plus lourdes
+
+question-2027-pol-06: Que pensez-vous de la formation des policiers ?
+[2] La formation est correcte, pas besoin de tout changer
+
+question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
+[1] La politique actuelle fonctionne à peu près, pas besoin de tout changer
+
+
+Politique fiscale:
+
+
+question-2027-fisc-01: Que pensez-vous des impôts sur les plus riches ?
+[1] Il faut les diminuer un peu pour rester compétitifs
+
+question-2027-fisc-02: Que pensez-vous des impôts sur la classe moyenne ?
+[1] Il faut les diminuer un peu pour redonner du pouvoir d'achat
+
+question-2027-fisc-03: Que pensez-vous des impôts sur les plus modestes ?
+[2] Le niveau actuel est correct, les plus pauvres paient déjà peu
+
+question-2027-fisc-04: Que pensez-vous de l'évasion fiscale des multinationales ?
+[2] Seul un accord international peut régler ce problème, il faut continuer à négocier
+
+question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la Fortune) ?
+[3] Non, l'ISF faisait fuir les riches et détruisait de la richesse
+
+question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
+[2] Il faut un accord international, sinon les marchés iront se délocaliser ailleurs
+
+question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
+[1] Baisser la TVA sur les produits verts et l'énergie pour redonner du pouvoir d'achat
+
+question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
+[3] Il faut continuer à baisser les impôts des entreprises pour la compétitivité et l'emploi
+
+
+Pouvoir d'achat et vie quotidienne:
+
+
+question-2027-pa-01: L'inflation et la hausse des prix, c'est la faute de qui ?
+[1] C'est un problème mondial lié aux crises (Covid, Ukraine, énergie), personne n'y peut grand-chose
+
+question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
+[1] L'État peut donner un coup de pouce temporaire aux ménages les plus modestes
+
+question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
+[2] Les prix actuels sont raisonnables, pas besoin de changer
+
+question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
+[1] Il y a un peu d'inflation mais les enseignes font des efforts, ça va
+
+question-2027-pa-05: Comment améliorer le pouvoir d'achat des Français ?
+[0] Baisser les impôts et les charges, laisser les gens garder ce qu'ils gagnent
+
+
+Recherche et éducation:
+
+
+question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
+[2] Le budget est suffisant, il faut surtout mieux dépenser l'argent existant
+
+question-2027-edu-02: L'école permet-elle vraiment de s'élever socialement ?
+[2] L'école reste un formidable ascenseur social, la méritocratie républicaine fonctionne
+
+question-2027-edu-03: Que pensez-vous des écrans et de l'IA à l'école ?
+[2] Le numérique est un outil parmi d'autres, à utiliser avec modération
+
+question-2027-edu-04: Que pensez-vous du financement de la recherche publique ?
+[2] Il faut augmenter le financement public et encourager aussi le mécénat privé
+
+question-2027-edu-05: Que pensez-vous de Parcoursup et de l'accès à l'enseignement supérieur ?
+[1] Parcoursup a des défauts, mais le principe de sélection est normal : il faut l'améliorer
+
+question-2027-edu-06: Que pensez-vous de la laïcité et des signes religieux à l'école ?
+[1] Pas de signe religieux ostentatoire à l'école, c'est la loi et c'est bien comme ça
+
+
+Santé:
+
+
+question-2027-san-01: Que pensez-vous du budget alloué à la santé publique ?
+[2] Il faut l'augmenter un peu, certains secteurs en ont vraiment besoin
+
+question-2027-san-02: Que pensez-vous de la rémunération du personnel soignant ?
+[1] Il faudrait augmenter un peu leurs salaires, surtout pour les infirmiers et aides-soignants
+
+question-2027-san-03: Que pensez-vous des déserts médicaux ?
+[1] Le problème existe mais se résoudra avec la télémédecine et les maisons de santé
+
+question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
+[2] Certains vaccins essentiels doivent rester obligatoires, c'est une question de santé publique
+
+question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
+[2] L'équilibre actuel entre gratuit et payant est correct
+
+question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
+[1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
+
+
+Société:
+
+
+question-2027-soc-01: Que pensez-vous de l'égalité homme-femme en France ?
+[2] Il y a eu des progrès, mais il reste du chemin à faire, surtout sur les salaires et les violences
+
+question-2027-soc-02: Que pensez-vous des droits des personnes LGBT+ ?
+[2] Le cadre légal actuel (mariage pour tous, PMA) est suffisant, pas besoin d'aller plus loin
+
+question-2027-soc-03: Quelle place pour la religion dans notre société ?
+[2] Chaque religion doit rester à sa place, l'État est laïc et traite toutes les croyances de la même façon
+
+question-2027-soc-04: Que pensez-vous de la PMA (procréation médicalement assistée) ?
+[2] La loi actuelle est bien : PMA ouverte à toutes les femmes, remboursée
+
+question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
+[2] C'est une exploitation du corps des femmes, il faut que ça reste interdit
+
+question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en pensez-vous ?
+[1] C'était bien de le constitutionnaliser, mais la loi suffit, c'est avant tout symbolique
+
+question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
+[2] Il faut aller vers une légalisation très encadrée de l'aide à mourir pour les malades en fin de vie
+
+question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?
+[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et la dignité de ces personnes
+
+
+Travail, Chômage, Retraite:
+
+
+question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
+[2] 64 ans c'est raisonnable vu la situation des finances publiques
+
+question-2027-trav-02: Que pensez-vous du temps de travail en France ?
+[2] Il faut assouplir les 35 heures et laisser plus de liberté aux entreprises et salariés
+
+question-2027-trav-03: Comment réduire le chômage en France ?
+[2] Il faut baisser les charges sur les entreprises pour qu'elles embauchent plus facilement
+
+question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
+[2] Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer
+
+question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
+[2] Le SMIC doit rester raisonnable sinon les petites entreprises ne suivent pas — mieux vaut baisser les charges
+
+question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
+[1] C'est un bon outil mais ça doit rester à la négociation entre employeur et salarié
+
+
+Union Européenne:
+
+
+question-2027-ue-01: Globalement, que pensez-vous de l'Union européenne ?
+[2] L'UE fonctionne plutôt bien, il faut l'améliorer sans tout bouleverser
+
+question-2027-ue-02: Que pensez-vous du pouvoir de la Commission européenne par rapport aux parlements nationaux ?
+[2] Le système actuel est un bon compromis entre efficacité et souveraineté
+
+question-2027-ue-03: Que pensez-vous de la position de l'UE face à la guerre en Ukraine ?
+[2] Le soutien à l'Ukraine est nécessaire mais on devrait aussi préparer les négociations de paix
+
+question-2027-ue-04: Que pensez-vous du lobbying et de la corruption au niveau européen ?
+[2] Des progrès ont été faits (registre de transparence), il faut continuer à renforcer les contrôles
+
+question-2027-ue-05: Que pensez-vous de l'euro ?
+[2] L'euro est globalement une bonne chose, il faut surtout harmoniser les politiques fiscales
+
+question-2027-ue-06: Que pensez-vous de la politique migratoire européenne ?
+[2] Le pacte migratoire européen va dans le bon sens : des frontières mieux protégées et une gestion ordonnée
