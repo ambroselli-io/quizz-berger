@@ -19,6 +19,9 @@ const Footer = () => {
         </div>
         <ul className="flex items-center gap-10">
           <li className="cursor-pointer list-none text-sm text-gray-400">
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li className="cursor-pointer list-none text-sm text-gray-400">
             <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger">Open-source</a>
           </li>
           <li className="cursor-pointer list-none text-sm text-gray-400" onClick={() => setShowContactModal(true)}>Nous contacter</li>

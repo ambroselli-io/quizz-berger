@@ -16,56 +16,39 @@ export const articles: Article[] = [
     date: '2026-02-11',
     tag: 'Candidats',
     content: `
-<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>24 candidats potentiels</strong> couvrant l'ensemble du spectre politique, les électeurs font face à un choix complexe.</p>
+<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>24 candidats potentiels</strong>, les électeurs font face à un choix complexe. Plutôt que de les classer sur un axe politique, nous vous invitons à découvrir leurs positions thème par thème.</p>
 
-<h2>Les candidats de gauche</h2>
-<p>Le camp de la gauche présente plusieurs candidatures allant de l'extrême-gauche à la social-démocratie :</p>
+<h2>Les 24 candidats</h2>
 <ul>
-<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> — Lutte Ouvrière, candidate de l'extrême-gauche communiste révolutionnaire</li>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> — La France Insoumise, figure de la gauche radicale</li>
-<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> — Parti Communiste Français, gauche sociale et républicaine</li>
-<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Gauche populaire, défenseur des classes laborieuses</li>
-<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Gauche écologiste et féministe</li>
-<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> — Parti Socialiste, aile gauche</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> — UPR</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> — Renaissance</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> — Lutte Ouvrière</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a></li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> — Génération Écologie</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> — MoDem</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Les Républicains</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a></li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a></li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> — Debout la France</li>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> — Place Publique</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> — Parti Socialiste</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a></li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> — Rassemblement National</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a></li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> — La France Insoumise</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> — Horizons</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a></li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> — Parti Communiste Français</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a></li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> — Les Écologistes</li>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a></li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> — Les Républicains</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> — Reconquête</li>
 </ul>
 
-<h2>Les écologistes</h2>
-<ul>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> — Les Écologistes, cheffe de file de l'écologie politique</li>
-<li><a href="/candidat/delphine-batho">Delphine Batho</a> — Génération Écologie, écologie radicale</li>
-</ul>
-
-<h2>Le centre et la social-démocratie</h2>
-<ul>
-<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> — Place Publique / PS, social-démocrate européen</li>
-<li><a href="/candidat/francois-hollande">François Hollande</a> — Ancien président, centre-gauche</li>
-<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Gauche républicaine et social-démocrate</li>
-<li><a href="/candidat/francois-bayrou">François Bayrou</a> — MoDem, centriste historique</li>
-<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> — Renaissance, centre macroniste</li>
-<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> — Horizons, centre-droit réformateur</li>
-<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Gaulliste social, diplomate</li>
-</ul>
-
-<h2>La droite</h2>
-<ul>
-<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Les Républicains, droite sociale</li>
-<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> — Les Républicains, droite conservatrice</li>
-<li><a href="/candidat/david-lisnard">David Lisnard</a> — Droite libérale et décentralisatrice</li>
-<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> — Droite conservatrice et sécuritaire</li>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Droite sécuritaire</li>
-</ul>
-
-<h2>L'extrême-droite et les souverainistes</h2>
-<ul>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> — Rassemblement National, droite nationale-populiste</li>
-<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> — Reconquête, droite identitaire</li>
-<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> — Debout la France, souverainiste gaulliste</li>
-<li><a href="/candidat/francois-asselineau">François Asselineau</a> — UPR, Frexit et souveraineté</li>
-</ul>
-
-<h2>Comparez-les avec le Quizz du Berger</h2>
-<p>Le Quizz du Berger vous permet de comparer vos idées avec celles des 24 candidats sur <strong>21 thèmes</strong> et <strong>119 questions</strong>. C'est anonyme, gratuit, et les résultats sont disponibles thème par thème pour une analyse fine de votre pensée politique.</p>
-<p><a href="/themes">→ Répondre au quiz et découvrir votre candidat idéal</a></p>
+<h2>Ne les classez pas : comparez-les à vous</h2>
+<p>La politique ne se résume pas à un axe gauche-droite. Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger vous permet de comparer vos idées avec celles des 24 candidats sur <strong>21 thèmes</strong> et <strong>119 questions</strong>, thème par thème. Vous pourriez être surpris.</p>
+<p><a href="/themes">→ Répondre au quiz et découvrir quel candidat pense comme vous</a></p>
 `,
   },
   {
