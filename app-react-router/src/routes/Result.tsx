@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import API from '@app/services/api';
-import { getFromSessionStorage, setToSessionStorage } from '@app/utils/storage';
+import { getFromLocalStorage, getFromSessionStorage, setToLocalStorage, setToSessionStorage } from '@app/utils/storage';
 import getUserThemes from '@app/utils/getUserThemes';
 import useUser from '@app/hooks/useUser';
 import { quizz, quizzQuestions } from '@app/utils/quizz';
@@ -73,7 +73,7 @@ export default function Result() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const [showFriends, setShowFriends] = useState(() =>
-    Boolean(getFromSessionStorage('selectedFriends', false)),
+    Boolean(getFromLocalStorage('selectedFriends', false) || getFromSessionStorage('selectedFriends', false)),
   );
 
   const showSaveButton = useMemo(() => !publicPage && !userToShow?.pseudo, [publicPage, userToShow]);
@@ -87,13 +87,17 @@ export default function Result() {
   const [showCandidates, setShowCandidates] = useState(false);
   const allFriends = useMemo(() => friends.map((c) => c.pseudo), [friends]);
 
+  const isSignedUp = Boolean(user?.pseudo);
+
   const [selectedCandidates, setSelectedCandidates] = useState<string[]>(() => {
     if (publicPage) return allCandidatesQualified;
-    return getFromSessionStorage('selectedCandidates', allCandidatesQualified) as string[];
+    return (getFromLocalStorage('selectedCandidates', null) ??
+      getFromSessionStorage('selectedCandidates', allCandidatesQualified)) as string[];
   });
   const [selectedFriends, setSelectedFriends] = useState<string[]>(() => {
     if (publicPage) return [];
-    return getFromSessionStorage('selectedFriends', allFriends) as string[];
+    return (getFromLocalStorage('selectedFriends', null) ??
+      getFromSessionStorage('selectedFriends', allFriends)) as string[];
   });
 
   const selectedThemes = useMemo(() => {
@@ -229,12 +233,24 @@ export default function Result() {
   );
 
   useEffect(() => {
+    const save = isSignedUp ? setToLocalStorage : setToSessionStorage;
+    const storage = isSignedUp ? 'localStorage' : 'sessionStorage';
     if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
-      setToSessionStorage('selectedCandidates', selectedCandidates);
+      save('selectedCandidates', selectedCandidates);
     } else {
-      window.sessionStorage.removeItem('selectedCandidates');
+      window[storage].removeItem('selectedCandidates');
     }
-  }, [selectedCandidates, candidates]);
+  }, [selectedCandidates, candidates, isSignedUp]);
+
+  useEffect(() => {
+    const save = isSignedUp ? setToLocalStorage : setToSessionStorage;
+    const storage = isSignedUp ? 'localStorage' : 'sessionStorage';
+    if (selectedFriends.length > 0) {
+      save('selectedFriends', selectedFriends);
+    } else {
+      window[storage].removeItem('selectedFriends');
+    }
+  }, [selectedFriends, isSignedUp]);
 
   useEffect(() => {
     if (userPseudo || !selectedCandidates.length) setSelectedCandidates(allCandidatesQualified);
