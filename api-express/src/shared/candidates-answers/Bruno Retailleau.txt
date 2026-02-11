@@ -1,14 +1,14 @@
-Réponses de Nicolas Dupont-Aignan (Debout la France — droite souverainiste, gaulliste)
+Réponses de Bruno Retailleau (LR — droite conservatrice, sécuritaire, ministre de l'Intérieur)
 
 
 Affaires étrangères:
 
 
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
-[4] L'OTAN et les USA ont provoqué ce conflit : la France devrait jouer un rôle de médiateur indépendant
+[1] Il faut continuer à armer l'Ukraine et maintenir les sanctions contre la Russie
 
 question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
-[1] La France doit sortir du commandement intégré de l'OTAN et développer ses propres capacités militaires
+[3] L'OTAN reste indispensable face à la Russie et la Chine, il faut y jouer pleinement notre rôle
 
 question-2027-ae-03: Quelle relation la France devrait-elle avoir avec l'Afrique ?
 [3] L'Afrique est stratégique pour nos intérêts : il faut y rester présent militairement et économiquement
@@ -17,10 +17,10 @@ question-2027-ae-04: Comment voyez-vous l'avenir de la construction européenne 
 [3] Il faut renégocier les traités pour récupérer notre souveraineté sur les frontières, le budget et la monnaie
 
 question-2027-ae-05: Que pensez-vous d'une armée européenne commune ?
-[0] Chaque pays doit garder son armée indépendante, point final
+[1] On peut coopérer sur certaines missions, mais chacun garde le commandement de ses troupes
 
 question-2027-ae-06: Face à la montée en puissance de la Chine, la France devrait...
-[2] Maintenir des relations commerciales pragmatiques tout en gardant nos distances politiques
+[1] Réduire notre dépendance économique à la Chine et défendre fermement les droits humains
 
 
 Agriculture et alimentation:
@@ -49,7 +49,7 @@ question-2027-climat-01: Comment vous positionnez-vous face au changement climat
 [1] Le climat change, mais les mesures écologistes pénalisent les gens modestes pour pas grand-chose
 
 question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
-[1] Le nucléaire nous rend indépendants énergétiquement, il faut le maintenir et le développer
+[0] C'est la meilleure arme contre le changement climatique : il faut construire beaucoup plus de centrales
 
 question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
 [1] C'est pas la priorité, il y a des solutions plus efficaces comme le nucléaire
@@ -68,19 +68,19 @@ Corruption et lobbying:
 
 
 question-2027-corr-01: Que pensez-vous du recours aux cabinets de conseil privés (type McKinsey) par l'État ?
-[2] C'est scandaleux : l'État devrait avoir ses propres compétences au lieu d'enrichir des cabinets privés
+[1] Ça peut se justifier ponctuellement, mais il faut de la transparence sur les montants et les missions
 
 question-2027-corr-02: Que pensez-vous du lobbying auprès des élus et des institutions ?
-[1] Il faut encadrer bien plus strictement le lobbying et rendre publiques toutes les rencontres entre lobbies et élus
+[2] Le lobbying fait partie du jeu démocratique, à condition d'être transparent
 
 question-2027-corr-03: Que pensez-vous des allers-retours entre la politique et le secteur privé (les « portes tournantes ») ?
-[1] Il faut un délai de carence sérieux (5 ans minimum) et des contrôles stricts
+[3] C'est même souhaitable : des élus qui connaissent le monde de l'entreprise, c'est mieux que des politiciens de carrière
 
 question-2027-corr-04: Pensez-vous que le système politique français est globalement honnête ?
-[1] Il y a de vrais problèmes de corruption, il faut une grande opération de nettoyage
+[2] Il y a des brebis galeuses, mais le système fonctionne globalement
 
 question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
-[1] Principalement par de l'argent public, avec un plafond très bas pour les dons privés
+[2] Le système actuel est un bon compromis entre financement public et dons privés
 
 
 Culture:
@@ -96,7 +96,7 @@ question-2027-cult-03: Que pensez-vous du pass Culture ?
 [1] On peut le garder mais réduire le montant et mieux cibler les bénéficiaires
 
 question-2027-cult-04: Y a-t-il des inégalités d'accès à la culture en France ?
-[2] Un peu, mais la situation s'améliore avec le numérique et les politiques culturelles
+[1] Pas vraiment, les dispositifs actuels permettent un accès assez large
 
 question-2027-cult-05: Quelle est votre vision du rôle de l'État dans la culture ?
 [1] L'État doit financer la culture en complément du privé
@@ -121,7 +121,7 @@ question-2027-immi-05: Que pensez-vous de l'intégration des personnes étrangè
 [2] L'intégration ne marche pas : il faut exiger l'assimilation — langue, culture, valeurs républicaines
 
 question-2027-immi-06: Que pensez-vous du traitement des familles de délinquants ?
-[2] Il faut responsabiliser les familles : suspendre les allocations si les enfants sont délinquants
+[3] Il faut expulser des logements sociaux les familles de délinquants récidivistes
 
 question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
 [1] Toute immigration n'est pas un enrichissement : il faut choisir celle qui est compatible avec nos valeurs
@@ -131,79 +131,79 @@ Dépenses et dette publiques:
 
 
 question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
-[2] L'équilibre actuel est correct, il ne faut pas creuser davantage le déficit
+[3] Il faut réduire les remboursements et laisser plus de place aux assurances privées
 
 question-2027-dep-02: Que devrait faire l'État avec ses dépenses publiques ?
-[1] Il faut réduire les dépenses pour rétablir l'équilibre budgétaire, c'est urgent
+[0] Il faut une rigueur budgétaire stricte : la dépense publique menace notre économie
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
-[3] L'État doit reprendre la main sur l'économie, renationaliser des secteurs clés
+[1] L'État doit continuer à se désengager pour favoriser la croissance et réduire ses dépenses
 
 question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'en pensez-vous ?
-[1] C'est préoccupant, il faut la réduire progressivement par des économies
+[0] C'est une catastrophe, il faut un plan de rigueur pour rembourser cette dette
 
 question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
-[2] Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine
+[3] Il faut être en excédent pour rembourser la dette et préparer l'avenir
 
 
 Économie et Industrie:
 
 
 question-2027-eco-01: Que pensez-vous du libre-échange et de la mondialisation ?
-[1] Le libre-échange menace nos industries, il faut le limiter à ce qu'on ne peut pas produire nous-mêmes
+[3] Le libre-échange a créé une prospérité sans précédent, il faut le défendre tout en le régulant
 
 question-2027-eco-02: La France devrait-elle réindustrialiser son territoire ?
-[0] Absolument, il faut rapatrier nos usines, quitte à mettre des barrières douanières
+[2] Il faut encourager l'industrie sans forcer : des aides fiscales et un cadre attractif suffisent
 
 question-2027-eco-03: Que pensez-vous de la privatisation des grandes entreprises publiques (EDF, SNCF...) ?
-[3] Il faut renationaliser les entreprises stratégiques qu'on a bradées : EDF, les autoroutes, etc.
+[1] Les entreprises peuvent avoir l'État comme actionnaire, mais elles doivent fonctionner comme le privé
 
 question-2027-eco-04: Quel rôle l'État doit-il jouer dans la politique industrielle ?
-[1] L'État doit investir, être actionnaire et piloter les industries stratégiques
+[3] L'État doit se contenter de créer un cadre favorable et laisser le privé faire
 
 question-2027-eco-05: La France est-elle un pays économiquement attractif ?
 [0] La fuite des talents est un vrai problème, la France fait fuir ses meilleurs éléments
 
 question-2027-eco-06: Que pensez-vous du temps de travail en France ?
-[1] Les 35h c'est bien, mais il faut plus de souplesse avec des accords par secteur
+[0] Il faut remettre la France au travail : au-delà de 35h, voire 39h pour tous
 
 question-2027-eco-07: Que pensez-vous de la dépendance de la France aux chaînes d'approvisionnement mondiales ?
-[3] C'est une question de survie nationale : il faut rapatrier toutes les productions essentielles en France ou en Europe
+[2] Il faut diversifier nos fournisseurs et relocaliser les productions les plus critiques
 
 
 Finance:
 
 
 question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
-[3] La finance a pris trop de pouvoir dans nos sociétés, il faut sérieusement la recadrer
+[2] La finance est utile mais il faut la réguler correctement pour éviter les crises
 
 question-2027-fin-02: Que pensez-vous de la spéculation financière ?
-[1] C'est dangereux pour la stabilité financière, il faut l'encadrer le plus strictement possible
+[2] C'est un mal nécessaire pour les investissements, à condition de contrôler les dérives
 
 question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine financier ?
-[0] Il faut une transparence totale : revenus, patrimoine, investissements, tout doit être public
+[2] Une déclaration globale suffit, les candidats ont droit à leur vie privée
 
 question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rendez-vous financiers mondiaux ?
-[0] C'est la preuve que le monde est dirigé par une oligarchie financière : ces gens décident pour nous
+[3] Ce sont des lieux essentiels où la France doit montrer sa compétitivité et son attractivité
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
-[1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
+[0] Il faut supprimer les droits de succession : ce que les parents ont gagné appartient à leurs enfants
 
 
 Gouvernance et République:
 
 
 question-2027-gouv-01: Que pensez-vous de la Vème République et de sa Constitution ?
-[2] La Constitution fonctionne bien, pas besoin de la changer
+[3] Il faut renforcer le pouvoir de l'exécutif pour que le pays soit mieux gouverné
 
 question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
-[0] C'était irresponsable et antidémocratique, il faut limiter ce pouvoir du Président
+[1] C'était une erreur politique, mais le droit de dissolution fait partie de nos institutions
 
 question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
-[1] Oui, au moins une dose de proportionnelle pour que les petits partis soient représentés
+[3] Surtout pas, la proportionnelle c'est l'instabilité permanente et l'impossibilité de gouverner
 
 question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
-[0] Il faut un référendum d'initiative citoyenne (RIC) sur tous les sujets, y compris pour révoquer un élu
+[2] Le référendum est un outil utile, mais à utiliser avec précaution
 
 question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
 [0] Le système est paralysé par la bureaucratie, c'est devenu invivable
@@ -216,16 +216,16 @@ Logement:
 
 
 question-2027-log-01: Que pensez-vous de la crise du logement en France ?
-[2] C'est un problème localisé dans les grandes villes, pas besoin de mesures nationales radicales
+[3] C'est le marché qui doit réguler : moins de normes, moins de contraintes, et les prix se stabiliseront
 
 question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
-[2] Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie
+[3] C'est une atteinte au droit de propriété, les propriétaires doivent fixer librement leurs prix
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
-[1] Il faut les limiter strictement : nombre de jours par an, quotas par quartier
+[3] C'est la liberté de chacun de faire ce qu'il veut avec son logement
 
 question-2027-log-04: Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?
-[2] Il faut des vraies politiques de décentralisation : services publics, emplois, investissements dans les campagnes
+[1] Il faut améliorer les transports et le numérique en zone rurale, mais sans forcer les choses
 
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
 [1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
@@ -235,26 +235,26 @@ Numérique et IA:
 
 
 question-2027-num-01: Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?
-[2] L'IA est utile dans certains domaines, mais il faut être très prudent et protéger les emplois
+[1] L'IA est un outil puissant qu'il faut développer, mais en l'encadrant pour éviter les abus
 
 question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
 [0] C'est le problème numéro un de cette génération : il faut interdire les réseaux sociaux avant 16 ans
 
 question-2027-num-03: Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?
-[1] La vidéosurveillance et le fichage sont des outils nécessaires pour la sécurité, à condition de les encadrer
+[0] Si vous n'avez rien à cacher, vous n'avez rien à craindre : mettons des caméras partout
 
 question-2027-num-04: La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?
-[3] Il faut imposer que les données des Français restent en France et créer nos propres plateformes souveraines
+[2] Il faut des alternatives européennes aux GAFAM et protéger nos données des géants américains et chinois
 
 question-2027-num-05: Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?
-[3] Il faut remettre des humains partout : la dématérialisation exclut trop de gens, les personnes âgées, les ruraux, les précaires
+[1] Le numérique c'est bien pour la plupart des gens, mais il faut garder des guichets physiques pour ceux qui en ont besoin
 
 
 Police, Justice et Sécurité:
 
 
 question-2027-pol-01: Que pensez-vous des violences policières ?
-[1] Il y a parfois des dérapages, mais la police est globalement justifiée dans ses interventions
+[0] Il n'existe pas de violences policières, la police fait son travail
 
 question-2027-pol-02: La France est-elle un pays sûr ?
 [0] On n'est plus en sécurité nulle part, l'État a complètement failli
@@ -279,44 +279,44 @@ Politique fiscale:
 
 
 question-2027-fisc-01: Que pensez-vous des impôts sur les plus riches ?
-[2] Le niveau actuel est correct
+[1] Il faut les diminuer un peu pour rester compétitifs
 
 question-2027-fisc-02: Que pensez-vous des impôts sur la classe moyenne ?
 [0] Il faut beaucoup les diminuer, la classe moyenne est étranglée
 
 question-2027-fisc-03: Que pensez-vous des impôts sur les plus modestes ?
-[1] Il faut les diminuer fortement
+[2] Le niveau actuel est correct, les plus pauvres paient déjà peu
 
 question-2027-fisc-04: Que pensez-vous de l'évasion fiscale des multinationales ?
-[1] Il faut sanctionner durement les entreprises qui trichent, avec de grosses amendes
+[3] C'est la mondialisation, on fait avec : si on taxe trop, les entreprises iront ailleurs
 
 question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la Fortune) ?
-[2] Le système actuel (IFI sur l'immobilier) est un bon compromis
+[4] Non, et il faut supprimer tout impôt spécifique aux grandes fortunes
 
 question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
-[1] Une petite taxe pourrait rapporter gros sans gêner les marchés, pourquoi s'en priver ?
+[3] Ça tuerait l'efficacité des marchés et donc la croissance : surtout pas
 
 question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
 [0] Il ne faut rien faire, l'environnement n'est pas une priorité fiscale
 
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
-[1] Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales
+[4] Il faut baisser massivement les impôts sur toutes les entreprises
 
 
 Pouvoir d'achat et vie quotidienne:
 
 
 question-2027-pa-01: L'inflation et la hausse des prix, c'est la faute de qui ?
-[3] C'est la faute de l'Union européenne et de l'euro, on serait mieux avec le franc
+[2] C'est la faute de l'État qui dépense trop et fait tourner la planche à billets
 
 question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
-[2] Il faut bloquer les prix de l'énergie et taxer les superprofits des énergéticiens
+[0] C'est le marché qui fixe les prix, l'État ne doit pas intervenir
 
 question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
-[1] Il faut baisser le prix des transports en commun, surtout pour les plus modestes
+[2] Les prix actuels sont raisonnables, pas besoin de changer
 
 question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
-[2] Les prix augmentent trop et les marges des distributeurs sont scandaleuses, il faut les encadrer
+[0] Les prix sont normaux, c'est le marché qui les fixe et c'est très bien comme ça
 
 question-2027-pa-05: Comment améliorer le pouvoir d'achat des Français ?
 [0] Baisser les impôts et les charges, laisser les gens garder ce qu'ils gagnent
@@ -326,19 +326,19 @@ Recherche et éducation:
 
 
 question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
-[1] Il faut investir davantage dans l'éducation, c'est l'investissement le plus rentable pour une société
+[2] Le budget est suffisant, il faut surtout mieux dépenser l'argent existant
 
 question-2027-edu-02: L'école permet-elle vraiment de s'élever socialement ?
-[2] L'école reste un formidable ascenseur social, la méritocratie républicaine fonctionne
+[3] L'école donne une base commune, mais c'est ensuite le talent et l'effort individuel qui comptent
 
 question-2027-edu-03: Que pensez-vous des écrans et de l'IA à l'école ?
 [3] Les écrans abîment le cerveau des enfants : il faut limiter drastiquement leur usage à l'école
 
 question-2027-edu-04: Que pensez-vous du financement de la recherche publique ?
-[2] Il faut augmenter le financement public et encourager aussi le mécénat privé
+[1] Le financement est suffisant, il faut juste mieux cibler les priorités stratégiques
 
 question-2027-edu-05: Que pensez-vous de Parcoursup et de l'accès à l'enseignement supérieur ?
-[1] Parcoursup a des défauts, mais le principe de sélection est normal : il faut l'améliorer
+[3] Il faudrait aller plus loin dans la sélection pour former une élite performante
 
 question-2027-edu-06: Que pensez-vous de la laïcité et des signes religieux à l'école ?
 [2] Il faut aller plus loin : uniforme scolaire pour tout le monde, ça évite les discriminations
@@ -348,22 +348,22 @@ Santé:
 
 
 question-2027-san-01: Que pensez-vous du budget alloué à la santé publique ?
-[2] Il faut l'augmenter un peu, certains secteurs en ont vraiment besoin
+[1] Le budget est suffisant, il faut surtout mieux le gérer
 
 question-2027-san-02: Que pensez-vous de la rémunération du personnel soignant ?
-[0] Les soignants sont très mal payés pour ce qu'ils font, il faut une revalorisation massive
+[1] Il faudrait augmenter un peu leurs salaires, surtout pour les infirmiers et aides-soignants
 
 question-2027-san-03: Que pensez-vous des déserts médicaux ?
-[2] Il faut des mesures fortes : incitations financières, obligation d'installation en zone sous-dotée
+[1] Le problème existe mais se résoudra avec la télémédecine et les maisons de santé
 
 question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
-[1] Les gens devraient être encouragés à se vacciner, mais jamais forcés
+[2] Certains vaccins essentiels doivent rester obligatoires, c'est une question de santé publique
 
 question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
-[2] L'équilibre actuel entre gratuit et payant est correct
+[1] Certains soins aujourd'hui gratuits pourraient être payants pour responsabiliser les patients
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
-[1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
+[2] C'est un sujet parmi d'autres, pas plus prioritaire que le reste
 
 
 Société:
@@ -373,7 +373,7 @@ question-2027-soc-01: Que pensez-vous de l'égalité homme-femme en France ?
 [1] La société est déjà suffisamment égalitaire, l'État n'a plus besoin d'intervenir
 
 question-2027-soc-02: Que pensez-vous des droits des personnes LGBT+ ?
-[1] Il y a un lobby LGBT qui va trop loin, il faut que l'État reste neutre
+[0] Il faut abroger le mariage pour tous et revenir au modèle familial traditionnel
 
 question-2027-soc-03: Quelle place pour la religion dans notre société ?
 [1] La France est laïque mais nos valeurs sont judéo-chrétiennes, il faut les protéger
@@ -398,22 +398,22 @@ Travail, Chômage, Retraite:
 
 
 question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
-[1] Il faut revenir à 62 ans, c'était un bon compromis
+[3] Il faudrait aller plus loin, 65 ou 66 ans, comme dans les pays voisins
 
 question-2027-trav-02: Que pensez-vous du temps de travail en France ?
-[2] Il faut assouplir les 35 heures et laisser plus de liberté aux entreprises et salariés
+[3] Il faut supprimer les 35 heures, les Français ne travaillent pas assez
 
 question-2027-trav-03: Comment réduire le chômage en France ?
-[1] Il faut mieux former les chômeurs et investir dans les filières qui recrutent
+[3] Le chômage baissera quand on arrêtera de payer les gens à ne rien faire — il faut durcir les conditions d'indemnisation
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
-[2] Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer
+[3] Le RSA est devenu une trappe à inactivité, il faut le conditionner fortement ou le supprimer
 
 question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
-[1] Il faut augmenter le SMIC régulièrement et que l'État complète avec des aides
+[2] Le SMIC doit rester raisonnable sinon les petites entreprises ne suivent pas — mieux vaut baisser les charges
 
 question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
-[1] C'est un bon outil mais ça doit rester à la négociation entre employeur et salarié
+[2] On est allé trop loin, le présentiel est important pour la productivité et le lien social
 
 
 Union Européenne:
@@ -423,16 +423,16 @@ question-2027-ue-01: Globalement, que pensez-vous de l'Union européenne ?
 [1] L'UE a de gros défauts mais il faut rester dedans et la réformer en profondeur
 
 question-2027-ue-02: Que pensez-vous du pouvoir de la Commission européenne par rapport aux parlements nationaux ?
-[0] Les parlements nationaux doivent reprendre le pouvoir — la Commission a trop d'influence non élue
+[1] Il faut un meilleur équilibre, la Commission va trop loin sur certains sujets
 
 question-2027-ue-03: Que pensez-vous de la position de l'UE face à la guerre en Ukraine ?
-[1] L'UE devrait jouer un rôle diplomatique neutre au lieu de s'aligner sur les États-Unis
+[3] Il faut soutenir l'Ukraine autant que nécessaire, y compris militairement — c'est notre sécurité qui est en jeu
 
 question-2027-ue-04: Que pensez-vous du lobbying et de la corruption au niveau européen ?
-[0] L'UE est corrompue jusqu'à la moelle, c'est une des raisons de sortir — les lobbies dirigent tout
+[1] Il y a un vrai problème de lobbying à Bruxelles, il faut des règles beaucoup plus strictes
 
 question-2027-ue-05: Que pensez-vous de l'euro ?
-[1] L'euro pose des problèmes structurels mais en sortir serait trop risqué — il faut réformer la zone euro
+[2] L'euro est globalement une bonne chose, il faut surtout harmoniser les politiques fiscales
 
 question-2027-ue-06: Que pensez-vous de la politique migratoire européenne ?
 [3] Chaque pays doit reprendre le contrôle total de ses frontières — l'UE n'a pas à décider qui entre chez nous
