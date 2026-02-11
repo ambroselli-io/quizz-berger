@@ -525,6 +525,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 3
@@ -1149,6 +1159,16 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
         "answerIndex": 1
       },
       {
@@ -1779,6 +1799,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 3
@@ -2406,6 +2436,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -3015,7 +3055,7 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-03",
-        "answerIndex": 2
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-sante",
@@ -3031,6 +3071,16 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-societe",
@@ -3660,6 +3710,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -4287,6 +4347,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -4911,6 +4981,16 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
         "answerIndex": 1
       },
       {
@@ -5541,6 +5621,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 1
@@ -6168,6 +6258,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 3
@@ -6777,7 +6877,7 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-03",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-sante",
@@ -6793,6 +6893,16 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-societe",
@@ -7422,6 +7532,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 3
@@ -8049,6 +8169,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -8673,6 +8803,16 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
         "answerIndex": 1
       },
       {
@@ -9303,6 +9443,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -9927,6 +10077,16 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
         "answerIndex": 1
       },
       {
@@ -10557,6 +10717,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -11184,6 +11354,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 3
@@ -11808,6 +11988,16 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
         "answerIndex": 1
       },
       {
@@ -12438,6 +12628,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 3
@@ -13063,6 +13263,16 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-societe",
@@ -13692,6 +13902,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 2
@@ -14319,6 +14539,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-societe",
         "questionId": "question-2027-soc-01",
         "answerIndex": 0
@@ -14943,6 +15173,16 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
         "answerIndex": 1
       },
       {
