@@ -83,7 +83,7 @@ export default function ThemeSelect() {
   const goToResults = () => navigate('/result');
   const goToQuizz = async (e: React.MouseEvent<HTMLButtonElement>) => {
     await initNewUser();
-    const themeId = (e.target as HTMLElement).dataset.themeid;
+    const themeId = (e.currentTarget as HTMLElement).dataset.themeid;
     if (!themeId) return;
     const firstQuestionId = quizz.find((t) => t._id === themeId)?.questions[0]?._id;
     if (firstQuestionId) navigate(`/question/${themeId}/${firstQuestionId}`);
