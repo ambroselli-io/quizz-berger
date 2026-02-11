@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router';
 import * as Sentry from '@sentry/react';
 import Header from './components/Header';
+import BottomTabBar from './components/BottomTabBar';
 import Home from './routes/Home';
 import Login from './routes/Login';
 import Themes from './routes/Themes';
@@ -32,7 +33,7 @@ function App() {
   return (
     <div className="flex h-full flex-col bg-white">
       <Header />
-      <main className="box-border flex grow flex-col">
+      <main className="box-border flex grow flex-col max-lg:pb-16">
         <SentryRoutes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -52,6 +53,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogArticle />} />
         </SentryRoutes>
       </main>
+      <BottomTabBar />
     </div>
   );
 }

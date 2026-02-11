@@ -63,6 +63,10 @@
 
 @layer base {
   :root {
+    --bottom-bar-height: 0px;
+    @media (width < 1024px) {
+      --bottom-bar-height: 64px;
+    }
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -126,4 +130,12 @@
 
 @utility text-balance {
   text-wrap: balance;
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

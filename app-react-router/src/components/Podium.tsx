@@ -1,8 +1,20 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router';
 import type { PodiumDataWithPercentAndHeightAndHighest } from '@api/src/types/answer';
 
 import { getMaxPersons } from '~/shared/utils/podium';
+
+function useIsSmallScreen() {
+  const [isSmall, setIsSmall] = useState(false);
+  useEffect(() => {
+    const mql = window.matchMedia('(max-width: 1023px)');
+    const onChange = () => setIsSmall(mql.matches);
+    onChange();
+    mql.addEventListener('change', onChange);
+    return () => mql.removeEventListener('change', onChange);
+  }, []);
+  return isSmall;
+}
 
 const IMAGE_BASE_URL = '/';
 
@@ -13,10 +25,12 @@ interface PodiumProps {
 
 const Podium = ({ podiumised, title }: PodiumProps) => {
   const maxPersons = useMemo(() => getMaxPersons(podiumised), [podiumised]);
+  const isSmall = useIsSmallScreen();
+  const heightMultiplier = isSmall ? 1.2 : 2;
 
   return (
     <div
-      className={`flex h-full shrink-0 flex-col overflow-y-visible ${title ? 'mt-12 border-b border-gray-200 pb-2.5' : ''}`}
+      className={`flex h-full shrink-0 flex-col overflow-y-visible ${title ? 'mt-12 border-b border-gray-200 pb-2.5 max-lg:mt-6' : ''}`}
     >
       {title && (
         <h3 className="mb-5 pl-[max(10px,calc((100%-1024px)/2))] text-left font-[Merriweather] text-xl font-bold text-quizz-dark">
@@ -37,7 +51,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
                     key={pic}
                     src={`${IMAGE_BASE_URL}${pic}`}
                     alt=""
-                    className="h-10 w-10 rounded-full border-2 object-cover [&:not(:last-of-type)]:-mr-4"
+                    className="h-10 w-10 rounded-full border-2 object-cover max-lg:h-7 max-lg:w-7 [&:not(:last-of-type)]:-mr-4"
                     style={{ borderColor: colors[i] ?? undefined, backgroundColor: colors[i] ?? undefined }}
                   />
                 ))}
@@ -45,7 +59,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
               <div
                 className="relative flex flex-col items-start justify-around overflow-hidden rounded-t-lg"
                 style={{
-                  height: `${Math.max(height * 2, 20)}px`,
+                  height: `${Math.max(height * heightMultiplier, 20)}px`,
                   backgroundColor:
                     index === 0
                       ? 'gold'
@@ -72,7 +86,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
                 <span key={pseudo}>
                   <Link
                     to={`/all-questions/${pseudo}`}
-                    className="cursor-pointer text-[0.65rem] hover:font-bold hover:underline"
+                    className="cursor-pointer text-[0.65rem] hover:font-bold hover:underline max-lg:text-[0.55rem]"
                   >
                     {pseudo}
                   </Link>

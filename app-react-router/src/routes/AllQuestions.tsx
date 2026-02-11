@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import Loader from '@app/components/Loader';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@app/components/ui/accordion';
 import getUserThemes from '@app/utils/getUserThemes';
 import useUser from '@app/hooks/useUser';
 import { quizz, quizzDownload } from '@app/utils/quizz';
@@ -55,13 +56,70 @@ export default function AllQuestions() {
     <>
       <title>Toutes les questions | Le Quizz du Berger</title>
 
-      {/* Mobile: desktop-only message */}
-      <div className="flex min-h-[900px] items-start justify-center bg-white px-2.5 py-10 max-lg:h-[calc(100vh-60px)] max-lg:overflow-y-auto lg:hidden">
-        <div className="flex max-w-[1200px] flex-col items-center justify-center bg-white">
-          <h1 className="mb-5 mt-4 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
-            Cet écran n'est disponible que sur ordinateur, désolé !
-          </h1>
-        </div>
+      {/* Mobile: accordion view */}
+      <div className="flex flex-col bg-white px-3 py-6 lg:hidden">
+        <h1 className="mb-4 text-center font-[Merriweather] text-xl font-bold text-quizz-dark">
+          Toutes les questions
+        </h1>
+        {forCandidate && candidateAnswers?.pseudo && (
+          <p className="mb-4 text-center text-sm text-gray-600">
+            En rouge : réponses de <strong>{candidateAnswers.pseudo}</strong>
+            {user?._id ? ', encadré : vos réponses.' : '.'}
+          </p>
+        )}
+        <Accordion
+          type="multiple"
+          defaultValue={forCandidate ? quizz.filter((t) => !userThemes.length || userThemes.includes(t._id)).map((t) => t._id) : []}
+        >
+          {quizz.map((theme, themeIndex) => (
+            <AccordionItem key={theme._id} value={theme._id}>
+              <AccordionTrigger className="px-2 py-3 text-left text-base font-semibold">
+                <span className="flex items-center gap-2 text-left">
+                  <span className="inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: theme.backgroundColor }} />
+                  {'ABCDEFGHIJKLMNOPQRST'[themeIndex]} - {theme.fr}
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="px-0">
+                <Accordion
+                  type="multiple"
+                  defaultValue={forCandidate ? theme.questions.filter((q) => !userAnswersId.length || userAnswersId.includes(q._id)).map((q) => q._id) : []}
+                >
+                  {theme.questions.map((question, questionIndex) => (
+                    <AccordionItem key={question._id} value={question._id} className="border-b-0">
+                      <AccordionTrigger className="py-2 pl-4 pr-2 text-left text-sm font-medium" style={{ borderLeftWidth: 3, borderLeftColor: theme.backgroundColor }}>
+                        {'ABCDEFGHIJKLMNOPQRST'[themeIndex]}{questionIndex + 1} - {question.fr}
+                      </AccordionTrigger>
+                      <AccordionContent className="pl-5 pr-2">
+                        <ol className="list-none space-y-1.5 text-sm">
+                          {question.answers.map((answer, answerIndex) => {
+                            const isSameAnswer = (a: { themeId: string; questionId: string; answerIndex: number }) =>
+                              a.themeId === theme._id && a.questionId === question._id && a.answerIndex === answerIndex;
+                            const isUserAnswer = forCandidate && !!userAnswers.find(isSameAnswer);
+                            const isCandidateAnswer = forCandidate && !!candidateAnswers?.answers?.find(isSameAnswer);
+                            return (
+                              <li
+                                key={answer}
+                                className="rounded px-2 py-1"
+                                style={{
+                                  borderWidth: isUserAnswer ? 2 : 0,
+                                  borderColor: 'black',
+                                  borderStyle: 'solid',
+                                  color: isCandidateAnswer ? 'red' : 'inherit',
+                                }}
+                              >
+                                {answerIndex + 1}. {answer}
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
 
       {/* Desktop */}

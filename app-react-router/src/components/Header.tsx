@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@app/components/ui/sheet';
 import Logo from './Logo';
 import QuizzButton from './QuizzButton';
 import ModalContact from './modals/ModalContact';
@@ -14,7 +13,6 @@ const Header = () => {
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
   const [showQuiSommesNousModal, setShowQuiSommesNousModal] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
 
   const NavItem = ({ href, children, exact }: { href: string; children: React.ReactNode; exact?: boolean }) => {
     const active = exact ? location.pathname === href : location.pathname.startsWith(href);
@@ -47,39 +45,6 @@ const Header = () => {
             )}
           </ul>
 
-          <div className="lg:hidden">
-            <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-              <SheetTrigger asChild>
-                <button className="cursor-pointer border-none bg-transparent"><img src="/burgerNav.svg" alt="menu" width={30} height={30} /></button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-screen border-none bg-quizz-dark p-0 text-white">
-                <SheetTitle className="sr-only">Navigation</SheetTitle>
-                <div className="flex items-center gap-2.5 p-5">
-                  <Logo height={32} width={32} />
-                  <span className="font-[Merriweather] text-xl font-bold">Le Quizz du Berger</span>
-                </div>
-                <nav className="flex flex-col">
-                  {[
-                    { label: 'Accueil', href: '/' },
-                    { label: 'Voir toutes les questions', href: '/all-questions' },
-                  ].map(({ label, href }) => (
-                    <Link key={href} to={href} onClick={() => setMobileOpen(false)} className="px-8 py-4">{label}</Link>
-                  ))}
-                  <Link to="/themes" onClick={() => setMobileOpen(false)} className="px-8 py-4"><QuizzButton>Quizz</QuizzButton></Link>
-                  {user?.isLoggedIn && <Link to="/result" onClick={() => setMobileOpen(false)} className="px-8 py-4">Résultats</Link>}
-                  {user?.isLoggedIn ? (
-                    <button onClick={() => { logout(); setMobileOpen(false); }} className="cursor-pointer border-none bg-transparent px-8 py-4 text-left text-white">{user?.pseudo ? 'Se déconnecter' : 'Recommencer'}</button>
-                  ) : (
-                    <Link to="/login" onClick={() => setMobileOpen(false)} className="px-8 py-4">Se connecter</Link>
-                  )}
-                  <button onClick={() => { setShowContactModal(true); setMobileOpen(false); }} className="cursor-pointer border-none bg-transparent px-8 py-4 text-left text-white">Nous contacter</button>
-                  <button onClick={() => { setShowLegalModal(true); setMobileOpen(false); }} className="cursor-pointer border-none bg-transparent px-8 py-4 text-left text-white">Mentions légales</button>
-                  <button onClick={() => { setShowQuiSommesNousModal(true); setMobileOpen(false); }} className="cursor-pointer border-none bg-transparent px-8 py-4 text-left text-white">Qui sommes nous ?</button>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger" className="px-8 py-4">Open-source</a>
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </div>
         </div>
       </nav>
       <div className="h-20 shrink-0 max-lg:h-[60px]" />

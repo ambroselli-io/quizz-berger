@@ -277,7 +277,7 @@ export default function Result() {
             )}
           </div>
         </div>
-        <main className="mx-0 mb-[5vh] h-[50vh] overflow-y-visible">
+        <main className="mx-0 mb-[5vh] h-[50vh] overflow-y-visible max-lg:h-[40vh]">
           <Podium podiumised={getPodium(filteredPersons)} />
         </main>
         <div className="mx-auto mb-[5vh] -mt-[5vh] max-w-[1024px]">
@@ -375,7 +375,7 @@ export default function Result() {
         </div>
         <aside className="mx-0">
           {podiumsPerTheme.map(({ personsScore, themeId }) => (
-            <div key={themeId} className="h-[max(15vh,400px)] w-full">
+            <div key={themeId} className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
               <Podium podiumised={getPodium(personsScore)} title={quizz.find((t) => t._id === themeId)?.fr} />
             </div>
           ))}

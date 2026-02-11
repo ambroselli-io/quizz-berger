@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <>
       {/* Hero section - dark */}
-      <section className="relative flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px)]">
+      <section className="relative flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <div className="flex max-w-[770px] shrink-0 flex-col items-center">
           <h1 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
             QUI est mon candidat&nbsp;idéal&nbsp;?
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* How it works - white */}
-      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-white px-5 py-10 text-quizz-dark max-lg:min-h-[calc(100vh-60px)]">
+      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-white px-5 py-10 text-quizz-dark max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
           Comment ça marche&nbsp;?
         </h2>
@@ -114,11 +114,11 @@ export default function Home() {
             </p>
           </div>
           <div
-            className="flex shrink-0 basis-[40%] cursor-pointer flex-col overflow-hidden rounded-2xl text-[10px]"
+            className="flex shrink-0 basis-[40%] cursor-pointer flex-col overflow-hidden rounded-2xl text-[10px] max-lg:basis-auto max-lg:w-full max-lg:overflow-visible max-lg:rounded-none"
             style={{ borderColor: onboardingData?.user?.color, borderWidth: onboardingData?.user?.color ? 1 : 0 }}
             onClick={() => setRandom(Math.round(Math.random() * 15))}
           >
-            <div className="relative h-[50vh] w-full overflow-y-visible">
+            <div className="relative h-[50vh] w-full overflow-y-visible max-lg:h-[65vw]">
               {!onboardingData?.user?.pseudo ? (
                 <div className="flex h-full w-full items-center justify-center">
                   <Loader size="33px" isLoading />
@@ -157,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* Stats counter - dark */}
-      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px)]">
+      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
           <b>{Intl.NumberFormat('fr').format(countUsers)}</b> quizz effectués
           <br /><br />
@@ -166,18 +166,18 @@ export default function Home() {
       </section>
 
       {/* Testimonials - white */}
-      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-white px-5 py-10 text-quizz-dark max-lg:min-h-[calc(100vh-60px)]">
+      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-white px-5 py-10 text-quizz-dark max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
           Ils ont apprécié
         </h2>
-        <div className="mt-4 flex w-full snap-x items-center overflow-x-auto pl-[10vw]">
+        <div className="mt-4 flex w-full snap-x snap-mandatory items-center overflow-x-auto pl-[10vw] max-lg:pl-4 max-lg:scrollbar-hide">
           {temoignages.map(({ blockquote, figcaption }, index) => (
             <figure
               key={index}
-              className={`mr-20 flex max-w-[80vw] shrink-0 snap-start flex-col items-end ${index % 2 === 1 ? 'mt-8' : ''} ${index % 3 === 2 ? 'w-[300px]' : 'w-[250px]'}`}
+              className={`mr-20 flex max-w-[80vw] shrink-0 snap-start flex-col items-end max-lg:mr-6 ${index % 2 === 1 ? 'mt-8' : ''} ${index % 3 === 2 ? 'w-[300px]' : 'w-[250px]'}`}
             >
               <blockquote
-                className="mb-2.5 rounded-lg border p-6 px-12"
+                className="mb-2.5 rounded-lg border p-6 px-12 max-lg:px-4"
                 style={{ borderColor: colors[index] }}
                 dangerouslySetInnerHTML={{ __html: blockquote }}
               />
