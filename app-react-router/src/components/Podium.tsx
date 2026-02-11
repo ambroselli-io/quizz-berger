@@ -86,7 +86,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
                 <span key={pseudo}>
                   <Link
                     to={`/all-questions/${pseudo}`}
-                    className="cursor-pointer text-[0.65rem] hover:font-bold hover:underline max-lg:text-[0.55rem]"
+                    className="cursor-pointer text-[0.65rem] text-blue-700 underline hover:font-bold max-lg:text-[0.55rem]"
                   >
                     {pseudo}
                   </Link>

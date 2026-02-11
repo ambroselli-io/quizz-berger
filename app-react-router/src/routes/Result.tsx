@@ -311,7 +311,7 @@ export default function Result() {
               </QuizzButton>
             </div>
           )}
-          <span className="text-[0.65em] italic max-lg:hidden">
+          <span className="text-[0.65em] italic">
             Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses
           </span>
         </div>
