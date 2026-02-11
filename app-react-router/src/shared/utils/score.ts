@@ -99,7 +99,7 @@ const addScoreToCandidateAnswer = (
     toReturn.push({
       ...userAnswer,
       score:
-        politicalPartyMatchingAnswersIndex && !isNaN(politicalPartyMatchingAnswersIndex)
+        politicalPartyMatchingAnswersIndex != null && !isNaN(politicalPartyMatchingAnswersIndex)
           ? userAnswer.scoreLine[politicalPartyMatchingAnswersIndex]
           : 0,
     });
