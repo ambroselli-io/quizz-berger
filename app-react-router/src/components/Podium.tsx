@@ -4,7 +4,7 @@ import type { PodiumDataWithPercentAndHeightAndHighest } from '@api/src/types/an
 
 import { getMaxPersons } from '~/shared/utils/podium';
 
-const IMAGE_BASE_URL = 'https://avatar-personnalites.cellar-c2.services.clever-cloud.com/';
+const IMAGE_BASE_URL = '/';
 
 interface PodiumProps {
   podiumised: PodiumDataWithPercentAndHeightAndHighest[];
