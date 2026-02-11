@@ -6,6 +6,7 @@ module.exports = {
       name: "quizz-du-berger-api-express",
       script: "npm",
       args: "run start-pm2",
+      time: true,
       env: {
         NODE_ENV: "production",
         MONGODB_ADDON_URI: process.env.MONGODB_ADDON_URI,
