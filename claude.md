@@ -9,7 +9,8 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - **App**: `app-react-router/` — React 19 + React Router v7 + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI
 - **API**: `api-express/` — Express, JWT cookies, CORS
 - **Shared code**: duplicated in `app-react-router/src/shared/` and `api-express/src/shared/` (no separate package)
-- **Candidates data**: `api-express/src/shared/candidates-answers.json` is the source of truth for candidate answers (static JSON, not DB). Text files in `candidates-answers/*.txt` are human-readable versions. When updating candidates, edit the JSON and copy to `app-react-router/src/shared/`.
+- **Candidates data**: `api-express/src/shared/candidates-answers.json` is the source of truth for candidate answers (static JSON, not DB). Text files in `api-express/src/shared/candidates-answers/*.txt` are human-readable versions. When updating candidates, edit the JSON and copy to `app-react-router/src/shared/`.
+- **Candidate pictures**: PNGs in `app-react-router/public/candidates/{slug}.png`. To generate: fetch portrait from Wikipedia API (`action=query&prop=pageimages&pithumbsize=800`), remove background with `rembg` (`pip install "rembg[cpu]"`), resize to max 800px, save as PNG.
 
 # Conventions
 

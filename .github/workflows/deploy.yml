@@ -50,19 +50,7 @@ jobs:
             npm run build
 
             # Restart or start the application using PM2
-            pm2 delete quizz-du-berger-app-react-router
-            pm2 start ecosystem.config.cjs
-
-            # Wait for the app to start
-            sleep 10
-
-            # Check if the app is running (adjust the port if necessary)
-            if curl -f http://localhost:5178/; then
-              echo "Quizz du berger APP is running correctly."
-            else
-              echo "Quizz du berger APP failed to start."
-              exit 1
-            fi
+            pm2 restart quizz-du-berger-app-react-router || pm2 start ecosystem.config.cjs
 
             # Navigate to the api directory
             cd ../api-express
@@ -71,15 +59,48 @@ jobs:
             npm ci --include=dev
 
             # Restart or start the application using PM2
-            pm2 restart ecosystem.config.cjs || pm2 start ecosystem.config.cjs
+            pm2 restart quizz-du-berger-api-express || pm2 start ecosystem.config.cjs
 
-            # Wait for the app to start
+            # Wait for the apps to start
             sleep 10
 
-            # Check if the app is running (adjust the port if necessary)
+            # Check if the apps are running (adjust the port if necessary)
             if curl -f http://localhost:5179/; then
               echo "Quizz du berger API is running correctly."
             else
-              echo "Quizz du berger API failed to start."
-              exit 1
+              cd /var/www/quizz-berger/api-express
+              pm2 delete quizz-du-berger-api-express
+              pm2 start ecosystem.config.cjs
+              echo "Quizz du berger API restarted."
+
+              # Wait for the app to start
+              sleep 10
+
+              # Check if the app is running (adjust the port if necessary)
+              if curl -f http://localhost:5179/; then
+                echo "Quizz du berger API is running correctly."
+              else
+                echo "Quizz du berger API failed to start."
+                exit 1
+              fi
+            fi
+            # Check if the apps are running (adjust the port if necessary)
+            if curl -f http://localhost:5178/; then
+              echo "Quizz du berger APP is running correctly."
+            else
+              cd /var/www/quizz-berger/app-react-router
+              pm2 delete quizz-du-berger-app-react-router
+              pm2 start ecosystem.config.cjs
+              echo "Quizz du berger APP restarted."
+
+              # Wait for the app to start
+              sleep 10
+
+              # Check if the app is running (adjust the port if necessary)
+              if curl -f http://localhost:5178/; then
+                echo "Quizz du berger APP is running correctly."
+              else
+                echo "Quizz du berger APP failed to start."
+                exit 1
+              fi
             fi
