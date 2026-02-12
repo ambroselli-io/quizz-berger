@@ -12,9 +12,9 @@ import ModalLogin from '@app/components/modals/ModalLogin';
 import ModalShare from '@app/components/modals/ModalShare';
 import Loader from '@app/components/Loader';
 import Podium from '@app/components/Podium';
-import QuizzButton from '@app/components/QuizzButton';
 import Filter from '@app/components/Filter';
 import type { Answer } from '@app/types/quizz';
+import { Share2, Users, Save } from 'lucide-react';
 
 import { getCandidatesScorePerThemes } from '~/shared/utils/score';
 import { getPodium } from '~/shared/utils/podium';
@@ -292,42 +292,45 @@ export default function Result() {
               </small>
             )}
           </div>
-          <span className="text-[0.65em] italic">
-            Vous pouvez cliquer sur le nom d'un candidat pour voir ses réponses
-          </span>
+          <p className="mt-1 rounded-md bg-amber-50 px-3 py-1.5 text-xs text-amber-800">
+            Appuyez sur le nom d'un candidat pour voir ses réponses
+          </p>
         </div>
         <main className="mx-0 mb-[5vh] h-[50vh] overflow-y-visible max-lg:h-[40vh]">
           <Podium podiumised={getPodium(filteredPersons)} />
         </main>
         <div className="mx-auto mb-[5vh] -mt-[5vh] max-w-[1024px]">
           {!publicPage && (
-            <div className="flex items-center max-lg:flex-col max-lg:items-start max-lg:gap-2.5">
+            <div className="flex flex-wrap gap-2">
               {showSaveButton && (
-                <QuizzButton
+                <button
+                  type="button"
                   onClick={() => setShowLoginModal(true)}
-                  animate
-                  className="ml-2.5 text-[0.9em] max-lg:ml-0"
+                  className="inline-flex animate-pulse items-center gap-2 rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black"
                 >
+                  <Save size={16} />
                   Enregistrer
-                </QuizzButton>
+                </button>
               )}
-              <QuizzButton
+              <button
+                type="button"
                 onClick={() => {
                   if (!userToShow?.pseudo) setShowLoginModal(true);
                   setShowShareModal(true);
                 }}
-                animate={!user?.isPublic}
-                className="ml-2.5 text-[0.9em] max-lg:ml-0"
+                className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.isPublic ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
               >
-                Partager avec mes amis
-              </QuizzButton>
-              <QuizzButton
+                <Share2 size={16} />
+                Partager
+              </button>
+              <button
+                type="button"
                 onClick={() => setShowFriends(true)}
-                animate={!user?.friends?.length}
-                className="ml-2.5 text-[0.9em] max-lg:ml-0"
+                className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.friends?.length ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
               >
-                Se comparer à mes amis
-              </QuizzButton>
+                <Users size={16} />
+                Comparer avec mes amis
+              </button>
             </div>
           )}
         </div>

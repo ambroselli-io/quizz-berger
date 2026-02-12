@@ -1,3 +1,4 @@
+import { SlidersHorizontal } from 'lucide-react';
 import QuizzModal from './QuizzModal';
 
 interface FilterProps {
@@ -11,7 +12,11 @@ interface FilterProps {
 const Filter = ({ toggle, isActive, children, title, hideTitle }: FilterProps) => (
   <>
     {!hideTitle && (
-      <button onClick={() => toggle((show) => !show)} className="mr-4 cursor-pointer bg-transparent text-sm underline border-none">
+      <button
+        onClick={() => toggle((show) => !show)}
+        className="inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 active:bg-gray-100"
+      >
+        <SlidersHorizontal size={14} />
         {title}
       </button>
     )}
