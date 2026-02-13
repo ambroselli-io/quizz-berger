@@ -166,22 +166,29 @@ export default function Home() {
       </section>
 
       {/* Testimonials - white */}
-      <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-white px-5 py-10 text-quizz-dark max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
-        <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
+      <section className="flex flex-col items-center bg-white px-5 py-20 text-quizz-dark max-lg:py-12">
+        <h2 className="mb-12 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:mb-8 max-lg:text-[34px]">
           Ils ont apprécié
         </h2>
-        <div className="mt-4 flex w-full snap-x snap-mandatory items-center overflow-x-auto pl-[10vw] max-lg:pl-4 max-lg:scrollbar-hide">
+        <div className="w-full max-w-6xl columns-1 gap-6 sm:columns-2 lg:columns-3">
           {temoignages.map(({ blockquote, figcaption }, index) => (
             <figure
               key={index}
-              className={`mr-20 flex max-w-[80vw] shrink-0 snap-start flex-col items-end max-lg:mr-6 ${index % 2 === 1 ? 'mt-8' : ''} ${index % 3 === 2 ? 'w-[300px]' : 'w-[250px]'}`}
+              className="mb-6 break-inside-avoid rounded-xl bg-gray-50 p-6 shadow-sm sm:p-8"
             >
+              <div className="mb-4 flex items-center gap-3">
+                <div
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+                  style={{ backgroundColor: colors[index] }}
+                >
+                  {figcaption.charAt(0)}
+                </div>
+                <figcaption className="font-medium text-gray-900">{figcaption}</figcaption>
+              </div>
               <blockquote
-                className="mb-2.5 rounded-lg border p-6 px-12 max-lg:px-4"
-                style={{ borderColor: colors[index] }}
+                className="text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: blockquote }}
               />
-              <figcaption className="italic">{figcaption}</figcaption>
             </figure>
           ))}
         </div>
