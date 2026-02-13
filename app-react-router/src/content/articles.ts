@@ -13,13 +13,13 @@ export const articles: Article[] = [
     slug: 'candidats-presidentielles-2027',
     title: 'Présidentielle 2027 : tous les candidats et leurs programmes',
     excerpt:
-      "Découvrez les 24 candidats à l'élection présidentielle 2027 et comparez leurs positions sur 21 thèmes politiques majeurs.",
+      "Découvrez les 26 candidats à l'élection présidentielle 2027 et comparez leurs positions sur 21 thèmes politiques majeurs.",
     date: '2026-02-11',
     tag: 'Candidats',
     content: `
-<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>24 candidats potentiels</strong>, les électeurs font face à un choix complexe. Plutôt que de les classer sur un axe politique, nous vous invitons à découvrir leurs positions thème par thème.</p>
+<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>26 candidats potentiels</strong>, les électeurs font face à un choix complexe. Plutôt que de les classer sur un axe politique, nous vous invitons à découvrir leurs positions thème par thème.</p>
 
-<h2>Les 24 candidats</h2>
+<h2>Les 26 candidats</h2>
 <ul>
 <li><a href="/candidat/francois-asselineau">François Asselineau</a> — UPR</li>
 <li><a href="/candidat/gabriel-attal">Gabriel Attal</a> — Renaissance</li>
@@ -34,6 +34,7 @@ export const articles: Article[] = [
 <li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> — Place Publique</li>
 <li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> — Parti Socialiste</li>
 <li><a href="/candidat/francois-hollande">François Hollande</a></li>
+<li><a href="/candidat/juan-branco">Juan Branco</a></li>
 <li><a href="/candidat/marine-le-pen">Marine Le Pen</a> — Rassemblement National</li>
 <li><a href="/candidat/david-lisnard">David Lisnard</a></li>
 <li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> — La France Insoumise</li>
@@ -41,6 +42,7 @@ export const articles: Article[] = [
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a></li>
 <li><a href="/candidat/fabien-roussel">Fabien Roussel</a> — Parti Communiste Français</li>
 <li><a href="/candidat/francois-ruffin">François Ruffin</a></li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a></li>
 <li><a href="/candidat/marine-tondelier">Marine Tondelier</a> — Les Écologistes</li>
 <li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a></li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> — Les Républicains</li>
@@ -48,7 +50,7 @@ export const articles: Article[] = [
 </ul>
 
 <h2>Ne les classez pas : comparez-les à vous</h2>
-<p>La politique ne se résume pas à un axe gauche-droite. Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger vous permet de comparer vos idées avec celles des 24 candidats sur <strong>21 thèmes</strong> et <strong>119 questions</strong>, thème par thème. Vous pourriez être surpris.</p>
+<p>La politique ne se résume pas à un axe gauche-droite. Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger vous permet de comparer vos idées avec celles des 26 candidats sur <strong>21 thèmes</strong> et <strong>119 questions</strong>, thème par thème. Vous pourriez être surpris.</p>
 <p><a href="/themes">→ Répondre au quiz et découvrir quel candidat pense comme vous</a></p>
 `,
   },
@@ -63,7 +65,7 @@ export const articles: Article[] = [
 <p>Le Quizz du Berger est un outil d'aide au choix électoral pour l'élection présidentielle. Plus de <strong>207 000 personnes</strong> l'ont déjà utilisé en 2022, on vise le million en 2027. Voici comment il fonctionne.</p>
 
 <h2>L'algorithme de comparaison</h2>
-<p>Le principe est simple : vous répondez aux questions qui vous intéressent, et un algorithme compare vos réponses à celles des 24 candidats.</p>
+<p>Le principe est simple : vous répondez aux questions qui vous intéressent, et un algorithme compare vos réponses à celles des 26 candidats.</p>
 <p>Pour chaque question, les réponses sont échelonnées du plus radical d'un côté au plus radical de l'autre, en passant par des nuances intermédiaires. Quand vous répondez :</p>
 <ul>
 <li><strong>Réponse identique</strong> à celle d'un candidat = 5 points</li>
@@ -102,7 +104,7 @@ export const articles: Article[] = [
 <p>L'élection présidentielle 2027 s'articulera autour de grandes questions qui divisent et passionnent les Français. Voici les 10 thèmes qui structureront le débat.</p>
 
 <h2>1. Immigration et identité</h2>
-<p>Sujet brûlant depuis des années, la question migratoire reste au cœur du débat. Régularisation, quotas, droit du sol — les 24 candidats ont des positions très variées.</p>
+<p>Sujet brûlant depuis des années, la question migratoire reste au cœur du débat. Régularisation, quotas, droit du sol — les 26 candidats ont des positions très variées.</p>
 <p><a href="/theme/demographie-et-question-migratoire">→ Les positions des candidats sur l'immigration</a></p>
 
 <h2>2. Pouvoir d'achat et vie quotidienne</h2>
@@ -165,7 +167,7 @@ export const articles: Article[] = [
 <tr><td>Thèmes couverts</td><td><strong>21 thèmes</strong></td><td>Mélangés</td></tr>
 <tr><td>Résultats par thème</td><td><strong>Oui, thème par thème</strong></td><td>Global uniquement</td></tr>
 <tr><td>Comparaison avec amis</td><td><strong>Oui</strong></td><td>Non</td></tr>
-<tr><td>Candidats</td><td><strong>24 candidats</strong></td><td>Variable</td></tr>
+<tr><td>Candidats</td><td><strong>26 candidats</strong></td><td>Variable</td></tr>
 <tr><td>Open-source</td><td><strong>Oui</strong></td><td>Non</td></tr>
 </table>
 
