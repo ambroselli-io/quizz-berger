@@ -12,7 +12,8 @@ export const articles: Article[] = [
   {
     slug: 'candidats-presidentielles-2027',
     title: 'Présidentielle 2027 : tous les candidats et leurs programmes',
-    excerpt: 'Découvrez les 24 candidats à l\'élection présidentielle 2027 et comparez leurs positions sur 21 thèmes politiques majeurs.',
+    excerpt:
+      "Découvrez les 24 candidats à l'élection présidentielle 2027 et comparez leurs positions sur 21 thèmes politiques majeurs.",
     date: '2026-02-11',
     tag: 'Candidats',
     content: `
@@ -54,11 +55,12 @@ export const articles: Article[] = [
   {
     slug: 'comment-fonctionne-le-quizz-du-berger',
     title: 'Comment fonctionne le Quizz du Berger ? Méthodologie et transparence',
-    excerpt: 'Découvrez l\'algorithme, la construction des questions et la méthodologie derrière le Quizz du Berger.',
+    excerpt:
+      "Découvrez l'algorithme, la construction des questions et la méthodologie derrière le Quizz du Berger.",
     date: '2026-02-11',
     tag: 'Méthodologie',
     content: `
-<p>Le Quizz du Berger est un outil d'aide au choix électoral pour l'élection présidentielle 2027. Plus de <strong>207 000 personnes</strong> l'ont déjà utilisé. Voici comment il fonctionne.</p>
+<p>Le Quizz du Berger est un outil d'aide au choix électoral pour l'élection présidentielle. Plus de <strong>207 000 personnes</strong> l'ont déjà utilisé en 2022, on vise le million en 2027. Voici comment il fonctionne.</p>
 
 <h2>L'algorithme de comparaison</h2>
 <p>Le principe est simple : vous répondez aux questions qui vous intéressent, et un algorithme compare vos réponses à celles des 24 candidats.</p>
@@ -72,14 +74,15 @@ export const articles: Article[] = [
 <p>Le candidat qui cumule le plus de points est celui dont les positions sont les plus proches des vôtres.</p>
 
 <h2>La construction des questions</h2>
-<p>Les <strong>119 questions</strong> réparties en <strong>21 thèmes</strong> ont été construites à partir des programmes officiels des candidats, de leurs déclarations publiques et de leurs votes passés. Chaque question propose entre 3 et 6 réponses possibles.</p>
-<p>L'objectif est de couvrir l'ensemble du spectre politique et de permettre à chaque sensibilité de se retrouver dans au moins une réponse.</p>
+<p>Les <strong>119 questions</strong> réparties en <strong>21 thèmes</strong> ont été construites à partir des thèmes qui intéressent les Français. Les réponses possibles sont aussi celles des Français, et non celles des candidats. Chaque question propose entre 3 et 6 réponses possibles.</p>
+<p>L'objectif est de couvrir l'ensemble des possibilités de réponse, et de permettre à chacun de se retrouver dans au moins une réponse.</p>
 
-<h2>Pourquoi c'est plus nuancé qu'un simple "d'accord / pas d'accord"</h2>
+<h2>Pourquoi c'est mieux qu'un simple "d'accord / pas d'accord"</h2>
 <p>Contrairement à d'autres quiz politiques qui proposent seulement deux options (d'accord / pas d'accord), le Quizz du Berger offre <strong>jusqu'à 6 nuances</strong> par question. Cela permet de refléter la complexité réelle des opinions politiques.</p>
+<p>Votre réalité est souvent plus complexe que "je suis pour" ou "je suis contre". Le Quizz du Berger vous permet de le refléter.</p>
 
 <h2>Les résultats thème par thème</h2>
-<p>C'est la vraie force du Quizz : les résultats ne sont pas seulement globaux, mais aussi <strong>thème par thème</strong>. Vous pouvez ainsi découvrir que vous êtes proche d'un candidat sur l'économie mais d'un autre sur les questions de société.</p>
+<p>es résultats ne sont pas seulement globaux, mais aussi <strong>thème par thème</strong>. Vous pouvez ainsi découvrir que vous êtes proche d'un candidat sur l'économie mais d'un autre sur les questions de société.</p>
 <p>Cette approche multi-dimensionnelle montre que la pensée politique est complexe et ne se résume pas à un axe gauche-droite.</p>
 
 <h2>Anonymat et données</h2>
@@ -91,7 +94,8 @@ export const articles: Article[] = [
   {
     slug: '10-themes-cles-presidentielle-2027',
     title: 'Les 10 thèmes clés de la présidentielle 2027',
-    excerpt: 'Immigration, pouvoir d\'achat, climat, retraites, sécurité... Les grands thèmes qui vont structurer le débat présidentiel.',
+    excerpt:
+      "Immigration, pouvoir d'achat, climat, retraites, sécurité... Les grands thèmes qui vont structurer le débat présidentiel.",
     date: '2026-02-11',
     tag: 'Analyse',
     content: `
@@ -145,7 +149,8 @@ export const articles: Article[] = [
   {
     slug: 'alternative-elyze-2027',
     title: 'Quizz du Berger : la meilleure alternative à Elyze pour 2027',
-    excerpt: 'Pourquoi le Quizz du Berger est plus complet, plus nuancé et plus profond qu\'Elyze pour choisir votre candidat à la présidentielle 2027.',
+    excerpt:
+      "Pourquoi le Quizz du Berger est plus complet, plus nuancé et plus profond qu'Elyze pour choisir votre candidat à la présidentielle 2027.",
     date: '2026-02-11',
     tag: 'Comparatif',
     content: `
@@ -185,7 +190,8 @@ export const articles: Article[] = [
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: 'Quizz du Berger : la meilleure alternative à Elyze pour 2027',
-      description: 'Comparatif détaillé entre le Quizz du Berger et Elyze pour l\'élection présidentielle 2027.',
+      description:
+        "Comparatif détaillé entre le Quizz du Berger et Elyze pour l'élection présidentielle 2027.",
       author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
       datePublished: '2026-02-11',
     },
@@ -193,7 +199,8 @@ export const articles: Article[] = [
   {
     slug: 'comparatif-quiz-politiques-2027',
     title: 'Comparatif des quiz politiques 2027 : Elyze, Quizz du Berger, Boussole Présidentielle',
-    excerpt: 'Quel quiz politique choisir pour la présidentielle 2027 ? Comparaison détaillée des principales applications.',
+    excerpt:
+      'Quel quiz politique choisir pour la présidentielle 2027 ? Comparaison détaillée des principales applications.',
     date: '2026-02-11',
     tag: 'Comparatif',
     content: `
@@ -225,7 +232,8 @@ export const articles: Article[] = [
   {
     slug: 'quizz-du-berger-vs-boussole-presidentielle',
     title: 'Quizz du Berger vs Boussole Présidentielle : quelle différence ?',
-    excerpt: 'Analyse multi-thèmes vs axe gauche-droite : deux approches complémentaires pour trouver votre candidat.',
+    excerpt:
+      'Analyse multi-thèmes vs axe gauche-droite : deux approches complémentaires pour trouver votre candidat.',
     date: '2026-02-11',
     tag: 'Comparatif',
     content: `
