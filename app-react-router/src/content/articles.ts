@@ -162,7 +162,7 @@ export const articles: Article[] = [
 
 <table>
 <tr><th>Critère</th><th>Quizz du Berger</th><th>Elyze</th></tr>
-<tr><td>Nombre de questions</td><td><strong>119 questions</strong></td><td>~30 questions</td></tr>
+<tr><td>Nombre de questions</td><td><strong>119 questions</strong></td><td>~300 questions</td></tr>
 <tr><td>Nuances de réponse</td><td><strong>3 à 6 nuances</strong> par question</td><td>D'accord / Pas d'accord</td></tr>
 <tr><td>Thèmes couverts</td><td><strong>21 thèmes</strong></td><td>Mélangés</td></tr>
 <tr><td>Résultats par thème</td><td><strong>Oui, thème par thème</strong></td><td>Global uniquement</td></tr>
@@ -175,13 +175,13 @@ export const articles: Article[] = [
 <p>Elyze propose seulement "d'accord" ou "pas d'accord" — le Quizz du Berger offre <strong>jusqu'à 6 réponses</strong> par question, du plus radical d'un côté au plus radical de l'autre, avec des nuances intermédiaires. Cela reflète bien mieux la complexité des opinions politiques.</p>
 
 <h2>Plus profond : les résultats thème par thème</h2>
-<p>C'est la vraie différence. Avec Elyze, vous obtenez un classement global. Avec le Quizz du Berger, vous découvrez vos affinités <strong>thème par thème</strong>. Vous pouvez être proche de Mélenchon sur l'économie et de Le Pen sur la sécurité — le Quizz vous le montre.</p>
+<p>Avec Elyze, vous obtenez un classement global. Avec le Quizz du Berger, en plus du classement global, vous découvrez vos affinités <strong>thème par thème</strong>. Vous pouvez être proche de Mélenchon sur l'économie et de Le Pen sur la sécurité — on vous le montre.</p>
 
 <h2>Plus complet</h2>
-<p>119 questions sur 21 thèmes vs ~30 questions mélangées. Le Quizz du Berger couvre davantage de sujets et va plus en profondeur sur chacun d'entre eux.</p>
+<p>119 questions sur 21 thèmes vs ~300 questions mélangées. Le Quizz du Berger couvre davantage de sujets et va plus en profondeur sur chacun d'entre eux.</p>
 
 <h2>Comparaison avec vos amis</h2>
-<p>Fonctionnalité unique : enregistrez vos résultats sous un pseudonyme et comparez vos convictions avec celles de vos amis. Le débat est garanti !</p>
+<p>Fonctionnalité unique : enregistrez vos résultats sous un pseudonyme et comparez vos convictions avec celles de vos amis. Pour un débat sain et profond !</p>
 
 <h2>207 000+ utilisateurs en 2022</h2>
 <p>Le Quizz du Berger a déjà convaincu plus de 207 000 personnes lors de la présidentielle 2022, avec plus de 9,7 millions de réponses. Un quart des utilisateurs a répondu aux 119 questions en entier.</p>
@@ -218,7 +218,7 @@ export const articles: Article[] = [
 <h3>Elyze</h3>
 <p><strong>Points forts :</strong> Interface type Tinder simple et rapide, popularité.</p>
 <p><strong>Points faibles :</strong> Seulement d'accord/pas d'accord, pas de résultats par thème, moins de questions.</p>
-<p><strong>Idéal pour :</strong> Ceux qui veulent un aperçu rapide et ludique.</p>
+<p><strong>Idéal pour :</strong> Ceux qui veulent s'amuser.</p>
 
 <h3>La Boussole Présidentielle (Sciences Po)</h3>
 <p><strong>Points forts :</strong> Méthodologie académique, axe gauche-droite et libéral-autoritaire.</p>
