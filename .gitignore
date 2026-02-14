@@ -6,4 +6,4 @@ users.json
 backup
 
 .playwright-mcp/
-java -jar ../../bfg.jar --delete-folders ..playwright-mcp  --no-blob-protection 
+.env
