@@ -6,6 +6,11 @@ import prisma from "./prisma";
 
 export default (app: Application) => {
   const cookieExtractor = function (req: Request) {
+    // Check Authorization header first (for mobile app), then fall back to cookie
+    const authHeader = req.headers.authorization;
+    if (authHeader && authHeader.startsWith("Bearer ")) {
+      return authHeader.substring(7);
+    }
     let token = req?.cookies?.["jwt"];
     return token;
   };

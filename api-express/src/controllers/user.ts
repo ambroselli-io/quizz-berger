@@ -31,10 +31,11 @@ function logoutCookieOptions() {
   }
 }
 
-const setCookie = (req: express.Request, res: express.Response, user: User) => {
+const setCookie = (req: express.Request, res: express.Response, user: User): string => {
   const maxAge = user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE;
   const token = jwt.sign({ _id: user.id }, SECRET, { expiresIn: maxAge });
   res.cookie("jwt", token, cookieOptions(user));
+  return token;
 };
 
 router.post(
@@ -45,9 +46,9 @@ router.post(
       data: { password: "" },
     });
 
-    setCookie(req, res, user);
+    const token = setCookie(req, res, user);
 
-    res.status(200).send({ ok: true, data: sanitizeUser(user) });
+    res.status(200).send({ ok: true, data: sanitizeUser(user), token });
   }),
 );
 
@@ -93,9 +94,9 @@ router.post(
       },
     });
 
-    setCookie(req, res, user);
+    const token = setCookie(req, res, user);
 
-    res.status(200).send({ ok: true, data: sanitizeUser(user) });
+    res.status(200).send({ ok: true, data: sanitizeUser(user), token });
   }),
 );
 
@@ -126,9 +127,9 @@ router.post(
       return;
     }
 
-    setCookie(req, res, user);
+    const token = setCookie(req, res, user);
 
-    res.status(200).send({ ok: true, data: sanitizeUser(user) });
+    res.status(200).send({ ok: true, data: sanitizeUser(user), token });
   }),
 );
 

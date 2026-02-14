@@ -1,0 +1,2474 @@
+[
+  {
+    "_id": "theme-2027-affaires-etrangeres",
+    "fr": "Affaires étrangères",
+    "questions": [
+      {
+        "_id": "question-2027-ae-01",
+        "fr": "Que devrait faire la France face à la guerre en Ukraine ?",
+        "help": "https://fr.wikipedia.org/wiki/Invasion_de_l%27Ukraine_par_la_Russie",
+        "answers": [
+          "Il faut envoyer des troupes françaises si nécessaire : on ne peut pas laisser la Russie grignoter l'Europe",
+          "Il faut continuer à armer l'Ukraine et maintenir les sanctions contre la Russie",
+          "Il faut pousser pour des négociations de paix, même si ça implique des compromis territoriaux",
+          "Ce n'est pas notre guerre, on ferait mieux de s'occuper de nos propres problèmes",
+          "L'OTAN et les USA ont provoqué ce conflit : la France devrait jouer un rôle de médiateur indépendant",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-02",
+        "fr": "Quel avenir pour la relation entre la France et l'OTAN ?",
+        "help": "https://fr.wikipedia.org/wiki/Organisation_du_trait%C3%A9_de_l%27Atlantique_nord",
+        "answers": [
+          "La France doit sortir de l'OTAN et des traités d'alliance : on doit retrouver une politique étrangère vraiment indépendante",
+          "La France doit sortir du commandement intégré de l'OTAN et développer ses propres capacités militaires",
+          "On garde nos alliances mais on renforce sérieusement la défense européenne pour ne plus dépendre des Américains",
+          "L'OTAN reste indispensable face à la Russie et la Chine, il faut y jouer pleinement notre rôle",
+          "Il faut renforcer encore notre engagement dans l'OTAN, c'est le pilier de notre sécurité",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-03",
+        "fr": "Quelle relation la France devrait-elle avoir avec l'Afrique ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_africaine_de_la_France",
+        "answers": [
+          "La France n'a plus rien à faire en Afrique, on doit retirer toutes nos bases militaires et arrêter le néocolonialisme",
+          "Il faut repenser la relation de zéro : partenariats d'égal à égal, sans ingérence ni paternalisme",
+          "On doit maintenir notre influence mais la moderniser, avec plus de coopération économique et moins de militaire",
+          "L'Afrique est stratégique pour nos intérêts : il faut y rester présent militairement et économiquement",
+          "Si la France se retire, la Chine et la Russie prendront toute la place : il faut renforcer notre présence",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-04",
+        "fr": "Comment voyez-vous l'avenir de la construction européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Union_européenne",
+        "answers": [
+          "Il faut aller vers une Europe fédérale avec une vraie constitution commune",
+          "Il faut approfondir la coopération européenne sur les grands projets sans perdre notre souveraineté",
+          "L'Europe actuelle fonctionne à peu près, pas besoin de tout changer",
+          "Il faut renégocier les traités pour récupérer notre souveraineté sur les frontières, le budget et la monnaie",
+          "Il faut sortir de l'Union européenne, on s'en sortira mieux tout seuls",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-05",
+        "fr": "Que pensez-vous d'une armée européenne commune ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_de_s%C3%A9curit%C3%A9_et_de_d%C3%A9fense_commune",
+        "answers": [
+          "Chaque pays doit garder son armée indépendante, point final",
+          "On peut coopérer sur certaines missions, mais chacun garde le commandement de ses troupes",
+          "Il faut créer une vraie force militaire européenne capable de se défendre sans les Américains",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-06",
+        "fr": "Face à la montée en puissance de la Chine, la France devrait...",
+        "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_Chine_et_la_France",
+        "answers": [
+          "Couper nos liens économiques avec la Chine : on ne peut pas commercer normalement avec une dictature",
+          "Réduire notre dépendance économique à la Chine et défendre fermement les droits humains",
+          "Maintenir des relations commerciales pragmatiques tout en gardant nos distances politiques",
+          "La Chine est un partenaire incontournable, il faut renforcer nos échanges sans se mêler de leurs affaires intérieures",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-agriculture",
+    "fr": "Agriculture et alimentation",
+    "questions": [
+      {
+        "_id": "question-2027-agri-01",
+        "fr": "Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?",
+        "help": "https://fr.wikipedia.org/wiki/Pesticide",
+        "answers": [
+          "Il faut les interdire le plus vite possible, c'est une question de santé publique et de survie de la biodiversité",
+          "Il faut en sortir progressivement, sans mettre en danger la production alimentaire",
+          "Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative",
+          "Les pesticides sont indispensables pour nourrir la population, il faut arrêter de les diaboliser",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-agri-02",
+        "fr": "Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?",
+        "help": "https://fr.wikipedia.org/wiki/Sécheresse_en_France",
+        "answers": [
+          "C'est la priorité absolue : il faut changer radicalement notre modèle agricole pour économiser l'eau",
+          "Il faut mieux partager l'eau entre agriculture, industrie et particuliers, avec des restrictions en période de sécheresse",
+          "Il faut construire des retenues d'eau et des bassines pour que les agriculteurs puissent continuer à travailler",
+          "On fait beaucoup de bruit pour pas grand-chose, la France ne manque pas d'eau",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-agri-03",
+        "fr": "Quelle place pour l'agriculture biologique en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Agriculture_biologique",
+        "answers": [
+          "Le bio c'est du marketing : ça coûte plus cher, ça produit moins, et ça ne nourrit personne",
+          "Le bio a sa place, mais l'agriculture conventionnelle reste indispensable pour les rendements",
+          "Il faut développer le bio progressivement, en aidant les agriculteurs à faire la transition",
+          "Le bio devrait devenir la norme, c'est une question de santé et d'environnement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-agri-04",
+        "fr": "La France devrait-elle viser l'indépendance alimentaire ?",
+        "help": "https://fr.wikipedia.org/wiki/Souveraineté_alimentaire",
+        "answers": [
+          "C'est contre-productif, le commerce international permet de se procurer ce qu'on ne produit pas",
+          "On s'en sort bien avec le système actuel, pas besoin de s'inquiéter",
+          "Il faut éviter de dépendre de l'étranger sur les produits essentiels, c'est du bon sens",
+          "C'est aussi stratégique que la défense nationale : la France doit pouvoir nourrir sa population sans dépendre de personne",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-agri-05",
+        "fr": "Quel rapport devrions-nous avoir avec l'élevage et la consommation de viande ?",
+        "help": "https://fr.wikipedia.org/wiki/Élevage_en_France",
+        "answers": [
+          "Il faut mettre fin à l'exploitation animale, c'est une question d'éthique fondamentale",
+          "Il faut réduire fortement notre consommation de viande et interdire l'élevage intensif",
+          "Il faut améliorer les conditions d'élevage et laisser chacun libre de ses choix alimentaires",
+          "L'élevage fait partie de notre histoire et de nos terroirs, il faut le protéger et arrêter de culpabiliser les gens",
+          "Manger de la viande c'est naturel et nécessaire, il faut arrêter de nous embêter avec ça",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-climat",
+    "fr": "Climat, Énergie et Écologie",
+    "questions": [
+      {
+        "_id": "question-2027-climat-01",
+        "fr": "Comment vous positionnez-vous face au changement climatique ?",
+        "help": "https://fr.wikipedia.org/wiki/Réchauffement_climatique",
+        "answers": [
+          "Il n'y a pas de dérèglement climatique causé par l'homme, c'est un cycle naturel",
+          "Le climat change, mais les mesures écologistes pénalisent les gens modestes pour pas grand-chose",
+          "Il faut faire une transition écologique sans empêcher les ménages modestes de vivre normalement",
+          "Il faut transformer sérieusement notre économie pour aller vers une croissance durable",
+          "Il faut changer radicalement notre mode de vie : la décroissance est la seule option sérieuse",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-climat-02",
+        "fr": "Que pensez-vous de l'énergie nucléaire ?",
+        "help": "https://fr.wikipedia.org/wiki/Énergie_nucléaire_en_France",
+        "answers": [
+          "C'est la meilleure arme contre le changement climatique : il faut construire beaucoup plus de centrales",
+          "Le nucléaire nous rend indépendants énergétiquement, il faut le maintenir et le développer",
+          "On garde le nucléaire existant, mais on investit aussi dans les renouvelables pour diversifier",
+          "Il faut sortir du nucléaire progressivement, c'est trop dangereux et ça produit des déchets ingérables",
+          "Il faut sortir du nucléaire le plus vite possible, c'est une folie",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-climat-03",
+        "fr": "Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?",
+        "help": "https://fr.wikipedia.org/wiki/Énergie_renouvelable_en_France",
+        "answers": [
+          "Elles n'ont aucune utilité sérieuse, c'est du gaspillage d'argent public",
+          "C'est pas la priorité, il y a des solutions plus efficaces comme le nucléaire",
+          "C'est un bon complément au nucléaire, il faut continuer à les développer raisonnablement",
+          "Il faut accélérer massivement leur déploiement, on est en retard",
+          "Il faut viser le 100% renouvelable le plus vite possible",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-climat-04",
+        "fr": "Que pensez-vous de la voiture individuelle ?",
+        "answers": [
+          "Il faudrait abandonner la voiture individuelle au profit des transports en commun et du vélo",
+          "Il faut passer à l'électrique et développer les alternatives, mais en accompagnant les gens",
+          "En ville il y a des alternatives, mais à la campagne on a besoin de la voiture, faut arrêter de culpabiliser les gens",
+          "La voiture c'est la liberté, touchez pas à nos bagnoles",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-climat-05",
+        "fr": "Qui devrait faire le plus d'efforts pour le climat ?",
+        "answers": [
+          "Les grands groupes industriels et les milliardaires, pas les citoyens ordinaires",
+          "Tout le monde doit faire sa part, mais les plus gros pollueurs d'abord",
+          "C'est un effort collectif, chacun à son niveau, des citoyens aux entreprises",
+          "On ne peut rien faire à l'échelle de la France, ce sont la Chine et les USA qui polluent",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-climat-06",
+        "fr": "Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?",
+        "help": "https://fr.wikipedia.org/wiki/Sobriété_énergétique",
+        "answers": [
+          "C'est indispensable : il faut consommer moins, point final, même si ça change nos habitudes",
+          "C'est une bonne idée si c'est bien accompagné, avec des aides pour isoler les logements par exemple",
+          "On peut faire des économies intelligentes, mais pas question de revenir en arrière sur notre confort",
+          "C'est une arnaque pour nous faire accepter un appauvrissement : produisons plus d'énergie plutôt",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-corruption",
+    "fr": "Corruption et lobbying",
+    "questions": [
+      {
+        "_id": "question-2027-corr-01",
+        "fr": "Que pensez-vous du recours aux cabinets de conseil privés (type McKinsey) par l'État ?",
+        "help": "https://fr.wikipedia.org/wiki/Affaire_McKinsey",
+        "answers": [
+          "C'est normal, l'État a besoin d'expertise extérieure comme n'importe quelle organisation",
+          "Ça peut se justifier ponctuellement, mais il faut de la transparence sur les montants et les missions",
+          "C'est scandaleux : l'État devrait avoir ses propres compétences au lieu d'enrichir des cabinets privés",
+          "C'est de la corruption déguisée, un système où les politiques renvoient l'ascenseur à ceux qui les financent",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-corr-02",
+        "fr": "Que pensez-vous du lobbying auprès des élus et des institutions ?",
+        "help": "https://fr.wikipedia.org/wiki/Lobbying",
+        "answers": [
+          "C'est de la corruption légalisée : les lobbies achètent les lois, il faut l'interdire",
+          "Il faut encadrer bien plus strictement le lobbying et rendre publiques toutes les rencontres entre lobbies et élus",
+          "Le lobbying fait partie du jeu démocratique, à condition d'être transparent",
+          "Tout le monde fait du lobbying, y compris les associations et les syndicats : c'est juste de la représentation d'intérêts",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-corr-03",
+        "fr": "Que pensez-vous des allers-retours entre la politique et le secteur privé (les « portes tournantes ») ?",
+        "help": "https://fr.wikipedia.org/wiki/Porte_tournante_(politique)",
+        "answers": [
+          "Il faut interdire aux anciens ministres et hauts fonctionnaires de rejoindre le privé dans leur secteur pendant au moins 10 ans",
+          "Il faut un délai de carence sérieux (5 ans minimum) et des contrôles stricts",
+          "Les règles actuelles suffisent, c'est normal que les gens aient des carrières variées",
+          "C'est même souhaitable : des élus qui connaissent le monde de l'entreprise, c'est mieux que des politiciens de carrière",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-corr-04",
+        "fr": "Pensez-vous que le système politique français est globalement honnête ?",
+        "answers": [
+          "Le système est pourri jusqu'à la moelle : les politiques sont tous au service des riches et des lobbies",
+          "Il y a de vrais problèmes de corruption, il faut une grande opération de nettoyage",
+          "Il y a des brebis galeuses, mais le système fonctionne globalement",
+          "La France est une démocratie solide avec des contre-pouvoirs efficaces, pas besoin de tout remettre en cause",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-corr-05",
+        "fr": "Comment devrait-on financer les campagnes électorales ?",
+        "help": "https://fr.wikipedia.org/wiki/Financement_des_campagnes_électorales_en_France",
+        "answers": [
+          "Uniquement par de l'argent public, à parts égales pour tous les candidats : c'est le seul moyen d'avoir une vraie démocratie",
+          "Principalement par de l'argent public, avec un plafond très bas pour les dons privés",
+          "Le système actuel est un bon compromis entre financement public et dons privés",
+          "Il faut libéraliser le financement : les citoyens et les entreprises doivent pouvoir soutenir qui ils veulent",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-culture",
+    "fr": "Culture",
+    "questions": [
+      {
+        "_id": "question-2027-cult-01",
+        "fr": "Que pensez-vous du budget alloué à la culture ?",
+        "help": "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_(France)#Budget",
+        "answers": [
+          "Il faut beaucoup l'augmenter, la culture est aussi essentielle que l'éducation",
+          "Il faut l'augmenter un peu, certains secteurs culturels en ont besoin",
+          "Il est bien comme il est",
+          "Il faut le réduire, il y a des priorités plus urgentes",
+          "Il faut le réduire fortement, c'est pas à l'État de financer la culture",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-cult-02",
+        "fr": "Que pensez-vous du budget pour la préservation du patrimoine ?",
+        "help": "https://fr.wikipedia.org/wiki/Patrimoine_culturel",
+        "answers": [
+          "Il faut beaucoup le diminuer, on a d'autres priorités",
+          "Il faut le diminuer un peu",
+          "Il faut qu'il reste stable",
+          "Il faut l'augmenter un peu, notre patrimoine se dégrade",
+          "Il faut beaucoup l'augmenter, notre patrimoine est notre identité",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-cult-03",
+        "fr": "Que pensez-vous du pass Culture ?",
+        "help": "https://fr.wikipedia.org/wiki/Pass_Culture",
+        "answers": [
+          "Il faut le supprimer, c'est du gaspillage d'argent public",
+          "On peut le garder mais réduire le montant et mieux cibler les bénéficiaires",
+          "Il est bien comme il est",
+          "C'est une bonne idée, on pourrait même l'étendre à d'autres tranches d'âge",
+          "C'est génial, il faut l'augmenter : la culture doit être accessible à tous",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-cult-04",
+        "fr": "Y a-t-il des inégalités d'accès à la culture en France ?",
+        "answers": [
+          "Non, tout le monde y a accès, c'est une question de volonté personnelle",
+          "Pas vraiment, les dispositifs actuels permettent un accès assez large",
+          "Un peu, mais la situation s'améliore avec le numérique et les politiques culturelles",
+          "Oui, clairement, les classes populaires et les zones rurales sont défavorisées",
+          "Oui, énormément : la culture reste un truc de privilégiés, de Parisiens et de CSP+",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-cult-05",
+        "fr": "Quelle est votre vision du rôle de l'État dans la culture ?",
+        "answers": [
+          "La culture est une industrie comme les autres, elle doit être rentable et compétitive",
+          "L'État doit financer la culture en complément du privé",
+          "La culture doit être un service public à part entière, financé principalement par l'État",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 2, 0, 0],
+          [2, 5, 2, 0],
+          [0, 2, 5, 0],
+          [0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-immigration",
+    "fr": "Démographie et question migratoire",
+    "questions": [
+      {
+        "_id": "question-2027-immi-01",
+        "fr": "De manière générale, que pensez-vous de l'immigration en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Immigration_en_France",
+        "answers": [
+          "Il faut fermer les frontières et stopper l'immigration, la France n'en peut plus",
+          "Il faut réduire fortement l'immigration et durcir les conditions d'accueil",
+          "Il faut un système d'immigration choisie avec des quotas, ni trop ouvert ni trop fermé",
+          "Il faut assouplir notre politique migratoire et mieux accueillir ceux qui arrivent",
+          "Il faut ouvrir les frontières : la libre circulation des personnes est un droit fondamental",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-02",
+        "fr": "Comment considérez-vous l'impact de l'immigration sur la société française ?",
+        "answers": [
+          "L'immigration est un danger pour notre identité et notre culture, on risque de ne plus se reconnaître chez nous",
+          "L'immigration pose des problèmes réels d'intégration qu'il faut traiter fermement avec de vraies politiques d'assimilation",
+          "C'est un sujet complexe qui nécessite un équilibre entre accueil, intégration et fermeté",
+          "L'immigration est globalement positive et enrichit notre société, même si l'intégration prend du temps",
+          "L'immigration est une richesse culturelle et démographique qu'il faut embrasser pleinement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-03",
+        "fr": "Que pensez-vous de la politique migratoire européenne (Schengen) ?",
+        "help": "https://fr.wikipedia.org/wiki/Espace_Schengen",
+        "answers": [
+          "La France doit reprendre le contrôle total de ses frontières et sortir de Schengen",
+          "Il faut renforcer drastiquement les contrôles aux frontières de l'Europe et remettre des contrôles dans Schengen",
+          "Le système actuel fonctionne à peu près, il faut juste l'améliorer à la marge",
+          "Schengen est une réussite, mais il faut mieux répartir l'accueil des migrants entre pays européens",
+          "Il faut ouvrir davantage les frontières européennes, la politique actuelle est inhumaine",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-04",
+        "fr": "Que pensez-vous du droit de vote des étrangers résidant en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Droit_de_vote_des_%C3%A9trangers_en_France",
+        "answers": [
+          "Voter c'est pour les Français, point. Si tu veux voter, tu deviens français",
+          "Pas de droit de vote pour les étrangers, c'est un privilège lié à la nationalité",
+          "On pourrait leur accorder le droit de vote aux élections locales, après un certain temps de résidence",
+          "Tout résident de longue durée devrait pouvoir voter à toutes les élections",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-05",
+        "fr": "Que pensez-vous de l'intégration des personnes étrangères en France ?",
+        "answers": [
+          "Il faut régulariser tous les sans-papiers qui travaillent et faciliter l'accès à la nationalité",
+          "Il faut une immigration choisie avec des quotas par métiers, et accompagner l'intégration",
+          "L'intégration ne marche pas : il faut exiger l'assimilation — langue, culture, valeurs républicaines",
+          "Il ne faut régulariser personne et renvoyer chez eux ceux qui sont en situation irrégulière",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-06",
+        "fr": "Que pensez-vous du traitement des familles de délinquants ?",
+        "answers": [
+          "Il faut accompagner et aider les familles de délinquants pour prévenir la récidive",
+          "Il y a déjà des dispositifs en place, pas besoin d'en rajouter",
+          "Il faut responsabiliser les familles : suspendre les allocations si les enfants sont délinquants",
+          "Il faut expulser des logements sociaux les familles de délinquants récidivistes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-07",
+        "fr": "Que pensez-vous de l'immigration et de la mixité culturelle ?",
+        "answers": [
+          "Elle détruit notre culture et notre identité nationale",
+          "Toute immigration n'est pas un enrichissement : il faut choisir celle qui est compatible avec nos valeurs",
+          "C'est un sujet complexe, mieux vaut en débattre sereinement que s'enfermer dans des positions",
+          "La mixité culturelle fait partie de notre vie, autant l'embrasser plutôt que la craindre",
+          "La diversité culturelle est une richesse incroyable qui nous rend plus forts",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-depenses",
+    "fr": "Dépenses et dette publiques",
+    "questions": [
+      {
+        "_id": "question-2027-dep-01",
+        "fr": "Que pensez-vous de la Sécurité Sociale et de son financement ?",
+        "help": "https://fr.wikipedia.org/wiki/Sécurité_sociale_en_France",
+        "answers": [
+          "La Sécu devrait tout rembourser à 100%, c'est un droit fondamental",
+          "Il faut augmenter les remboursements, trop de gens renoncent à se soigner",
+          "L'équilibre actuel est correct, il ne faut pas creuser davantage le déficit",
+          "Il faut réduire les remboursements et laisser plus de place aux assurances privées",
+          "La Sécu publique est un gouffre financier, il faut basculer vers un système privé",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-dep-02",
+        "fr": "Que devrait faire l'État avec ses dépenses publiques ?",
+        "help": "https://fr.wikipedia.org/wiki/Finances_publiques_en_France",
+        "answers": [
+          "Il faut une rigueur budgétaire stricte : la dépense publique menace notre économie",
+          "Il faut réduire les dépenses pour rétablir l'équilibre budgétaire, c'est urgent",
+          "Il faut stabiliser les dépenses au niveau actuel, ni plus ni moins",
+          "Il faut investir davantage dans les services publics, même si ça creuse le déficit à court terme",
+          "Il faut augmenter massivement les dépenses pour répondre aux urgences sociales et écologiques",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-dep-03",
+        "fr": "Quelle place l'État doit-il occuper dans l'économie ?",
+        "help": "https://fr.wikipedia.org/wiki/Interventionnisme",
+        "answers": [
+          "L'État doit se retirer de l'économie et laisser le marché se réguler tout seul",
+          "L'État doit continuer à se désengager pour favoriser la croissance et réduire ses dépenses",
+          "L'État joue un rôle suffisant, il faut garder cet équilibre entre régulation et liberté",
+          "L'État doit reprendre la main sur l'économie, renationaliser des secteurs clés",
+          "Il faut que l'État contrôle les secteurs essentiels : énergie, transports, santé, logement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-dep-04",
+        "fr": "La dette publique française dépasse les 110% du PIB. Qu'en pensez-vous ?",
+        "help": "https://fr.wikipedia.org/wiki/Dette_publique_de_la_France",
+        "answers": [
+          "C'est une catastrophe, il faut un plan de rigueur pour rembourser cette dette",
+          "C'est préoccupant, il faut la réduire progressivement par des économies",
+          "La dette est un outil, tant qu'on peut payer les intérêts ça va",
+          "S'endetter pour investir dans l'avenir (éducation, écologie, santé) c'est pas un problème",
+          "La dette est une arnaque : une partie devrait être annulée, elle profite surtout aux banques",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-dep-05",
+        "fr": "La France devrait-elle viser un budget à l'équilibre ?",
+        "answers": [
+          "Il faut dépenser selon les besoins, l'équilibre budgétaire est une obsession inutile",
+          "On peut être en déficit tant que c'est raisonnable et que ça finance des investissements utiles",
+          "Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine",
+          "Il faut être en excédent pour rembourser la dette et préparer l'avenir",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0],
+          [3, 5, 3, 1, 0],
+          [2, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-economie",
+    "fr": "Économie et Industrie",
+    "questions": [
+      {
+        "_id": "question-2027-eco-01",
+        "fr": "Que pensez-vous du libre-échange et de la mondialisation ?",
+        "help": "https://fr.wikipedia.org/wiki/Libre-échange",
+        "answers": [
+          "La mondialisation c'est un hold-up : les riches s'enrichissent, les pauvres trinquent. Il faut du protectionnisme",
+          "Le libre-échange menace nos industries, il faut le limiter à ce qu'on ne peut pas produire nous-mêmes",
+          "Il faut un équilibre pragmatique entre ouverture commerciale et protection de nos intérêts",
+          "Le libre-échange a créé une prospérité sans précédent, il faut le défendre tout en le régulant",
+          "Vive le libre-échange ! Moins de barrières, c'est plus de croissance pour tout le monde",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-eco-02",
+        "fr": "La France devrait-elle réindustrialiser son territoire ?",
+        "help": "https://fr.wikipedia.org/wiki/Désindustrialisation_de_la_France",
+        "answers": [
+          "Absolument, il faut rapatrier nos usines, quitte à mettre des barrières douanières",
+          "Oui, il faut une vraie politique industrielle de l'État pour relocaliser les productions stratégiques",
+          "Il faut encourager l'industrie sans forcer : des aides fiscales et un cadre attractif suffisent",
+          "La désindustrialisation est normale dans une économie de services, pas besoin de forcer le retour des usines",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-eco-03",
+        "fr": "Que pensez-vous de la privatisation des grandes entreprises publiques (EDF, SNCF...) ?",
+        "help": "https://fr.wikipedia.org/wiki/Privatisation",
+        "answers": [
+          "Il faut tout privatiser : une entreprise publique, c'est inefficace par nature",
+          "Les entreprises peuvent avoir l'État comme actionnaire, mais elles doivent fonctionner comme le privé",
+          "Ça dépend du secteur : l'énergie et les transports doivent rester publics, le reste on peut discuter",
+          "Il faut renationaliser les entreprises stratégiques qu'on a bradées : EDF, les autoroutes, etc.",
+          "Tous les services essentiels doivent être publics, sinon c'est la dégradation assurée pour les citoyens",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-eco-04",
+        "fr": "Quel rôle l'État doit-il jouer dans la politique industrielle ?",
+        "help": "https://fr.wikipedia.org/wiki/Politique_industrielle_de_la_France",
+        "answers": [
+          "L'État doit planifier et diriger la production industrielle au service de l'intérêt général",
+          "L'État doit investir, être actionnaire et piloter les industries stratégiques",
+          "L'État peut aider certaines industries en collaboration avec le privé, mais sans tout contrôler",
+          "L'État doit se contenter de créer un cadre favorable et laisser le privé faire",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-eco-05",
+        "fr": "La France est-elle un pays économiquement attractif ?",
+        "help": "https://fr.wikipedia.org/wiki/Économie_de_la_France",
+        "answers": [
+          "La fuite des talents est un vrai problème, la France fait fuir ses meilleurs éléments",
+          "Il y a un certain exode, mais ça dépend des secteurs",
+          "Ça se compense : on perd des gens dans certains domaines, on en attire dans d'autres",
+          "La France est attractive et le devient de plus en plus, arrêtons de nous flageller",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-eco-06",
+        "fr": "Que pensez-vous du temps de travail en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Durée_du_travail_en_France",
+        "answers": [
+          "Il faut remettre la France au travail : au-delà de 35h, voire 39h pour tous",
+          "Les 35h c'est bien, mais il faut plus de souplesse avec des accords par secteur",
+          "Les 35h sont un acquis social important qu'il faut maintenir tel quel",
+          "Il faudrait passer aux 32h dans les métiers pénibles et les généraliser progressivement",
+          "Il faut passer aux 32h pour tout le monde, on vit pour travailler au lieu de travailler pour vivre",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-eco-07",
+        "fr": "Que pensez-vous de la dépendance de la France aux chaînes d'approvisionnement mondiales ?",
+        "answers": [
+          "On s'en fiche, le commerce mondial fonctionne bien, pas de raison de s'inquiéter",
+          "C'est un risque théorique, mais les marchés s'autorégulent",
+          "Il faut diversifier nos fournisseurs et relocaliser les productions les plus critiques",
+          "C'est une question de survie nationale : il faut rapatrier toutes les productions essentielles en France ou en Europe",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-finance",
+    "fr": "Finance",
+    "questions": [
+      {
+        "_id": "question-2027-fin-01",
+        "fr": "Quel rôle la finance joue-t-elle dans notre société ?",
+        "help": "https://fr.wikipedia.org/wiki/Finance",
+        "answers": [
+          "La finance doit fonctionner librement, le marché s'autorégule très bien",
+          "La finance souffre de trop de régulation, il faut la laisser respirer pour qu'elle soit plus efficace",
+          "La finance est utile mais il faut la réguler correctement pour éviter les crises",
+          "La finance a pris trop de pouvoir dans nos sociétés, il faut sérieusement la recadrer",
+          "La finance est le domaine le plus injuste du capitalisme, il faut reprendre le contrôle dessus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fin-02",
+        "fr": "Que pensez-vous de la spéculation financière ?",
+        "help": "https://fr.wikipedia.org/wiki/Spéculation",
+        "answers": [
+          "C'est une aberration déconnectée de l'économie réelle, il faut l'interdire sur les produits dérivés",
+          "C'est dangereux pour la stabilité financière, il faut l'encadrer le plus strictement possible",
+          "C'est un mal nécessaire pour les investissements, à condition de contrôler les dérives",
+          "C'est le fondement de notre système économique, ça récompense l'intelligence et la prise de risque",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fin-03",
+        "fr": "Les candidats devraient-ils rendre public leur patrimoine financier ?",
+        "help": "https://www.hatvp.fr",
+        "answers": [
+          "Il faut une transparence totale : revenus, patrimoine, investissements, tout doit être public",
+          "Il faut des déclarations régulières et vérifiables, c'est un minimum en démocratie",
+          "Une déclaration globale suffit, les candidats ont droit à leur vie privée",
+          "Le patrimoine des candidats ne regarde personne, c'est leur affaire",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fin-04",
+        "fr": "Que pensez-vous des sommets type Davos et des grands rendez-vous financiers mondiaux ?",
+        "help": "https://fr.wikipedia.org/wiki/Forum_économique_mondial",
+        "answers": [
+          "C'est la preuve que le monde est dirigé par une oligarchie financière : ces gens décident pour nous",
+          "C'est la vitrine des excès de la mondialisation, il faudrait y remettre du social et de l'écologie",
+          "Ce sont des rendez-vous nécessaires pour la régulation économique mondiale, même s'ils sont imparfaits",
+          "Ce sont des lieux essentiels où la France doit montrer sa compétitivité et son attractivité",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fin-05",
+        "fr": "Que pensez-vous des droits de succession (héritage) ?",
+        "help": "https://www.service-public.fr/particuliers/vosdroits/F14198",
+        "answers": [
+          "Il faut supprimer les droits de succession : ce que les parents ont gagné appartient à leurs enfants",
+          "Il faut les alléger, surtout pour les patrimoines modestes et moyens",
+          "Le système actuel est un bon compromis, il n'y a pas besoin de le changer",
+          "Il faut les alourdir pour réduire les inégalités de naissance et redistribuer les richesses",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-gouvernance",
+    "fr": "Gouvernance et République",
+    "questions": [
+      {
+        "_id": "question-2027-gouv-01",
+        "fr": "Que pensez-vous de la Vème République et de sa Constitution ?",
+        "help": "https://fr.wikipedia.org/wiki/Cinquième_République_(France)",
+        "answers": [
+          "Il faut une VIème République avec plus de démocratie directe et moins de pouvoir présidentiel",
+          "Il faut modifier la Constitution pour donner plus de pouvoir au Parlement et aux citoyens",
+          "La Constitution fonctionne bien, pas besoin de la changer",
+          "Il faut renforcer le pouvoir de l'exécutif pour que le pays soit mieux gouverné",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gouv-02",
+        "fr": "Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?",
+        "help": "https://fr.wikipedia.org/wiki/Dissolution_de_l%27Assemblée_nationale_française_de_2024",
+        "answers": [
+          "C'était irresponsable et antidémocratique, il faut limiter ce pouvoir du Président",
+          "C'était une erreur politique, mais le droit de dissolution fait partie de nos institutions",
+          "C'était un choix courageux pour redonner la parole au peuple",
+          "C'est normal, le Président a le droit de dissoudre quand il veut, c'est dans la Constitution",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gouv-03",
+        "fr": "Faudrait-il passer à la proportionnelle pour les élections législatives ?",
+        "help": "https://fr.wikipedia.org/wiki/Scrutin_proportionnel",
+        "answers": [
+          "Oui, la proportionnelle intégrale : chaque voix doit compter, c'est ça la vraie démocratie",
+          "Oui, au moins une dose de proportionnelle pour que les petits partis soient représentés",
+          "Le scrutin actuel fonctionne bien, il donne des majorités stables pour gouverner",
+          "Surtout pas, la proportionnelle c'est l'instabilité permanente et l'impossibilité de gouverner",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gouv-04",
+        "fr": "Que pensez-vous du référendum et de la démocratie directe ?",
+        "help": "https://fr.wikipedia.org/wiki/Référendum_d%27initiative_citoyenne",
+        "answers": [
+          "Il faut un référendum d'initiative citoyenne (RIC) sur tous les sujets, y compris pour révoquer un élu",
+          "Il faudrait organiser des référendums plus souvent, au moins un ou deux par quinquennat",
+          "Le référendum est un outil utile, mais à utiliser avec précaution",
+          "Le référendum c'est dangereux, ça simplifie des sujets complexes et ça donne des résultats imprévisibles",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gouv-05",
+        "fr": "Que pensez-vous de la bureaucratie et de l'administration française ?",
+        "help": "https://fr.wikipedia.org/wiki/Administration_publique_en_France",
+        "answers": [
+          "Le système est paralysé par la bureaucratie, c'est devenu invivable",
+          "Il y a trop de lourdeurs administratives, ça freine tout",
+          "L'administration fonctionne à peu près, il y a du bon et du moins bon",
+          "L'administration est certes lourde, mais elle protège les citoyens et garantit l'égalité",
+          "Notre administration est un pilier essentiel de la République, il faut la défendre et la renforcer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gouv-06",
+        "fr": "L'État est-il trop autoritaire ou pas assez ?",
+        "answers": [
+          "L'État est beaucoup trop autoritaire, on vit dans une société de surveillance",
+          "L'État empiète trop sur nos libertés individuelles, il faut le remettre à sa place",
+          "Il y a un équilibre correct entre autorité et liberté",
+          "L'État n'est pas assez ferme, il faut plus d'autorité pour que les lois soient respectées",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-logement",
+    "fr": "Logement",
+    "questions": [
+      {
+        "_id": "question-2027-log-01",
+        "fr": "Que pensez-vous de la crise du logement en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Crise_du_logement_en_France",
+        "answers": [
+          "C'est une urgence absolue : l'État doit construire massivement des logements sociaux",
+          "Il faut construire plus et encadrer les loyers dans les zones tendues",
+          "C'est un problème localisé dans les grandes villes, pas besoin de mesures nationales radicales",
+          "C'est le marché qui doit réguler : moins de normes, moins de contraintes, et les prix se stabiliseront",
+          "Il n'y a pas de crise du logement, les gens ont juste des exigences trop élevées",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-02",
+        "fr": "Que pensez-vous de l'encadrement des loyers ?",
+        "help": "https://fr.wikipedia.org/wiki/Encadrement_des_loyers_en_France",
+        "answers": [
+          "Il faut encadrer strictement les loyers partout en France, pas seulement dans quelques villes",
+          "C'est une bonne mesure dans les zones où les loyers explosent",
+          "Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie",
+          "C'est une atteinte au droit de propriété, les propriétaires doivent fixer librement leurs prix",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-03",
+        "fr": "Que pensez-vous des locations touristiques type Airbnb ?",
+        "help": "https://fr.wikipedia.org/wiki/Airbnb",
+        "answers": [
+          "Il faut interdire Airbnb dans les grandes villes : ça vide les quartiers de leurs habitants",
+          "Il faut les limiter strictement : nombre de jours par an, quotas par quartier",
+          "Il faut les encadrer raisonnablement, mais c'est un complément de revenu utile pour beaucoup",
+          "C'est la liberté de chacun de faire ce qu'il veut avec son logement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-04",
+        "fr": "Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?",
+        "answers": [
+          "C'est un faux problème, les gens vivent où ils veulent et les villes sont dynamiques",
+          "Il faut améliorer les transports et le numérique en zone rurale, mais sans forcer les choses",
+          "Il faut des vraies politiques de décentralisation : services publics, emplois, investissements dans les campagnes",
+          "Il faut obliger les entreprises et les administrations à s'installer hors des grandes métropoles",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-05",
+        "fr": "Que faire face aux logements insalubres et aux passoires thermiques ?",
+        "help": "https://fr.wikipedia.org/wiki/Passoire_thermique",
+        "answers": [
+          "Les propriétaires doivent se débrouiller, ce n'est pas à l'État de rénover leurs biens",
+          "Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre",
+          "Il faut interdire la location des passoires thermiques et aider financièrement les propriétaires à rénover",
+          "L'État doit financer massivement la rénovation de tous les logements mal isolés",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-numerique",
+    "fr": "Numérique et IA",
+    "questions": [
+      {
+        "_id": "question-2027-num-01",
+        "fr": "Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?",
+        "help": "https://fr.wikipedia.org/wiki/Intelligence_artificielle",
+        "answers": [
+          "L'IA va tout révolutionner en bien : santé, éducation, productivité. Il faut foncer",
+          "L'IA est un outil puissant qu'il faut développer, mais en l'encadrant pour éviter les abus",
+          "L'IA est utile dans certains domaines, mais il faut être très prudent et protéger les emplois",
+          "L'IA est une menace pour l'emploi et la vie privée, il faut la limiter fortement",
+          "L'IA est un danger existentiel : si on ne l'arrête pas, elle finira par nous contrôler",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-num-02",
+        "fr": "Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?",
+        "help": "https://fr.wikipedia.org/wiki/Addiction_aux_écrans",
+        "answers": [
+          "C'est le problème numéro un de cette génération : il faut interdire les réseaux sociaux avant 16 ans",
+          "C'est préoccupant, il faut réguler fortement les plateformes et protéger les mineurs",
+          "Les parents doivent gérer ça, c'est pas à l'État de décider combien de temps les gamins passent sur leur téléphone",
+          "Chaque génération a eu ses peurs : la télé, les jeux vidéo, maintenant les écrans. Ça passera",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-num-03",
+        "fr": "Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?",
+        "help": "https://fr.wikipedia.org/wiki/Vidéosurveillance_en_France",
+        "answers": [
+          "Si vous n'avez rien à cacher, vous n'avez rien à craindre : mettons des caméras partout",
+          "La vidéosurveillance et le fichage sont des outils nécessaires pour la sécurité, à condition de les encadrer",
+          "Il faut un équilibre entre sécurité et vie privée, mais attention à la dérive sécuritaire",
+          "La reconnaissance faciale et la surveillance de masse sont incompatibles avec une démocratie, il faut les interdire",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-num-04",
+        "fr": "La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?",
+        "help": "https://fr.wikipedia.org/wiki/Souveraineté_numérique",
+        "answers": [
+          "Internet est mondial par nature, la souveraineté numérique est un concept absurde",
+          "On peut encourager les entreprises tech européennes, mais sans fermer notre marché",
+          "Il faut des alternatives européennes aux GAFAM et protéger nos données des géants américains et chinois",
+          "Il faut imposer que les données des Français restent en France et créer nos propres plateformes souveraines",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-num-05",
+        "fr": "Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?",
+        "help": "https://fr.wikipedia.org/wiki/Administration_électronique",
+        "answers": [
+          "Tout doit être numérique, c'est plus efficace et moins cher",
+          "Le numérique c'est bien pour la plupart des gens, mais il faut garder des guichets physiques pour ceux qui en ont besoin",
+          "Il y a un bon équilibre actuellement entre services en ligne et services physiques",
+          "Il faut remettre des humains partout : la dématérialisation exclut trop de gens, les personnes âgées, les ruraux, les précaires",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-police",
+    "fr": "Police, Justice et Sécurité",
+    "questions": [
+      {
+        "_id": "question-2027-pol-01",
+        "fr": "Que pensez-vous des violences policières ?",
+        "help": "https://fr.wikipedia.org/wiki/Violence_policière_en_France",
+        "answers": [
+          "Il n'existe pas de violences policières, la police fait son travail",
+          "Il y a parfois des dérapages, mais la police est globalement justifiée dans ses interventions",
+          "Il y a des cas isolés qui méritent des sanctions, mais pas de problème systémique",
+          "Il y a un vrai problème de violences policières, il faut réformer les procédures et mieux former les agents",
+          "Il y a un vice profond dans l'institution policière, il faut une refonte complète",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-02",
+        "fr": "La France est-elle un pays sûr ?",
+        "help": "https://fr.wikipedia.org/wiki/Criminalité_en_France",
+        "answers": [
+          "On n'est plus en sécurité nulle part, l'État a complètement failli",
+          "Il y a de vrais problèmes d'insécurité dans certains territoires, l'État doit agir plus fermement",
+          "L'État fait ce qu'il peut, il y aura toujours des zones plus sûres que d'autres",
+          "On est globalement en sécurité en France, il ne faut pas exagérer le problème",
+          "La France est un pays très sûr, le discours sécuritaire est largement exagéré par les médias",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-03",
+        "fr": "Que pensez-vous de la justice en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Système_judiciaire_en_France",
+        "answers": [
+          "La justice est trop lente et trop laxiste, il faut la durcir sérieusement",
+          "La justice manque de moyens, il faut plus de juges, plus de tribunaux, et des procédures plus rapides",
+          "La justice avance à son rythme, c'est normal de prendre le temps pour bien juger",
+          "La justice est trop sévère avec les petits délits et trop laxiste avec la délinquance en col blanc",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-04",
+        "fr": "Que pensez-vous de la situation dans les prisons françaises ?",
+        "help": "https://fr.wikipedia.org/wiki/Prison_en_France",
+        "answers": [
+          "Il faut construire plus de prisons et être plus sévère, trop de délinquants sont en liberté",
+          "Il faut plus de places de prison et expulser les détenus étrangers pour désengorger",
+          "Il faut rénover les prisons existantes et développer les peines alternatives pour désengorger",
+          "La prison ne résout rien, il faut investir massivement dans la prévention et la réinsertion",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-05",
+        "fr": "Comment lutter contre la délinquance et le terrorisme ?",
+        "help": "https://fr.wikipedia.org/wiki/Terrorisme_en_France",
+        "answers": [
+          "Expulser tous les étrangers délinquants et radicalisés, et fermer les mosquées salafistes",
+          "Renforcer les moyens du renseignement, plus de policiers, des peines plus lourdes",
+          "Trouver un équilibre entre répression et prévention, en investissant dans les deux",
+          "La délinquance est surtout un problème social : il faut s'attaquer aux causes (pauvreté, exclusion, éducation)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-06",
+        "fr": "Que pensez-vous de la formation des policiers ?",
+        "help": "https://fr.wikipedia.org/wiki/Police_nationale_(France)",
+        "answers": [
+          "Ils sont très mal formés, ça explique beaucoup de bavures",
+          "La formation est insuffisante, il faut la rallonger et l'améliorer",
+          "La formation est correcte, pas besoin de tout changer",
+          "Les policiers sont bien formés et font un travail difficile qu'on devrait davantage respecter",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-07",
+        "fr": "Que pensez-vous du cannabis et de sa légalisation ?",
+        "help": "https://fr.wikipedia.org/wiki/Cannabis_en_France",
+        "answers": [
+          "La drogue c'est la drogue, il faut renforcer la répression et les peines",
+          "La politique actuelle fonctionne à peu près, pas besoin de tout changer",
+          "Il faut dépénaliser l'usage pour ne plus engorger les tribunaux et se concentrer sur les trafiquants",
+          "Il faut légaliser et encadrer le cannabis : ça assèchera les trafics et rapportera des impôts",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-fiscal",
+    "fr": "Politique fiscale",
+    "questions": [
+      {
+        "_id": "question-2027-fisc-01",
+        "fr": "Que pensez-vous des impôts sur les plus riches ?",
+        "help": "https://fr.wikipedia.org/wiki/Impôt_sur_le_revenu_(France)",
+        "answers": [
+          "Il faut beaucoup les diminuer, les riches créent de la richesse pour tout le monde",
+          "Il faut les diminuer un peu pour rester compétitifs",
+          "Le niveau actuel est correct",
+          "Il faut les augmenter, les plus riches ne paient pas leur juste part",
+          "Il faut les augmenter beaucoup : les ultra-riches se moquent de nous",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-02",
+        "fr": "Que pensez-vous des impôts sur la classe moyenne ?",
+        "answers": [
+          "Il faut beaucoup les diminuer, la classe moyenne est étranglée",
+          "Il faut les diminuer un peu pour redonner du pouvoir d'achat",
+          "Le niveau actuel est correct",
+          "Il faut les augmenter un peu si c'est pour financer des services publics de qualité",
+          "Il faut les augmenter, tout le monde doit contribuer davantage",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-03",
+        "fr": "Que pensez-vous des impôts sur les plus modestes ?",
+        "answers": [
+          "Il faut les supprimer et augmenter les aides pour les plus pauvres",
+          "Il faut les diminuer fortement",
+          "Le niveau actuel est correct, les plus pauvres paient déjà peu",
+          "Tout le monde doit payer des impôts, même symboliquement : c'est le prix de la citoyenneté",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-04",
+        "fr": "Que pensez-vous de l'évasion fiscale des multinationales ?",
+        "help": "https://fr.wikipedia.org/wiki/Évasion_fiscale",
+        "answers": [
+          "Il faut bloquer la circulation des capitaux et empêcher l'évasion par tous les moyens",
+          "Il faut sanctionner durement les entreprises qui trichent, avec de grosses amendes",
+          "Seul un accord international peut régler ce problème, il faut continuer à négocier",
+          "C'est la mondialisation, on fait avec : si on taxe trop, les entreprises iront ailleurs",
+          "Ce n'est pas un problème, l'optimisation fiscale est légale et logique",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-05",
+        "fr": "Faut-il rétablir l'ISF (Impôt de Solidarité sur la Fortune) ?",
+        "help": "https://fr.wikipedia.org/wiki/Impôt_de_solidarité_sur_la_fortune",
+        "answers": [
+          "Oui, et même l'élargir : il faut taxer la fortune pour financer les services publics",
+          "Oui, il faut rétablir un ISF, éventuellement avec un volet climatique",
+          "Le système actuel (IFI sur l'immobilier) est un bon compromis",
+          "Non, l'ISF faisait fuir les riches et détruisait de la richesse",
+          "Non, et il faut supprimer tout impôt spécifique aux grandes fortunes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-06",
+        "fr": "Que pensez-vous d'une taxe sur les transactions financières ?",
+        "help": "https://fr.wikipedia.org/wiki/Taxe_sur_les_transactions_financières",
+        "answers": [
+          "Les transactions financières ne sont même pas taxées comme nos courses au supermarché : c'est injuste, taxons !",
+          "Une petite taxe pourrait rapporter gros sans gêner les marchés, pourquoi s'en priver ?",
+          "Il faut un accord international, sinon les marchés iront se délocaliser ailleurs",
+          "Ça tuerait l'efficacité des marchés et donc la croissance : surtout pas",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-07",
+        "fr": "Comment rendre la fiscalité plus verte ?",
+        "answers": [
+          "Il ne faut rien faire, l'environnement n'est pas une priorité fiscale",
+          "Baisser la TVA sur les produits verts et l'énergie pour redonner du pouvoir d'achat",
+          "Augmenter les taxes sur les produits polluants : il faut un effort financier collectif",
+          "Créer un ISF climatique pour faire payer les plus gros pollueurs (jets privés, yachts...)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fisc-08",
+        "fr": "Que pensez-vous de la fiscalité des entreprises ?",
+        "help": "https://fr.wikipedia.org/wiki/Impôt_sur_les_sociétés_en_France",
+        "answers": [
+          "Il faut augmenter les impôts sur les grandes entreprises pour financer les services publics",
+          "Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales",
+          "Le niveau actuel est un bon compromis",
+          "Il faut continuer à baisser les impôts des entreprises pour la compétitivité et l'emploi",
+          "Il faut baisser massivement les impôts sur toutes les entreprises",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-pouvoir-achat",
+    "fr": "Pouvoir d'achat et vie quotidienne",
+    "questions": [
+      {
+        "_id": "question-2027-pa-01",
+        "fr": "L'inflation et la hausse des prix, c'est la faute de qui ?",
+        "help": "https://fr.wikipedia.org/wiki/Inflation_en_France",
+        "answers": [
+          "C'est la faute des entreprises qui augmentent leurs marges sur le dos des consommateurs",
+          "C'est un problème mondial lié aux crises (Covid, Ukraine, énergie), personne n'y peut grand-chose",
+          "C'est la faute de l'État qui dépense trop et fait tourner la planche à billets",
+          "C'est la faute de l'Union européenne et de l'euro, on serait mieux avec le franc",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pa-02",
+        "fr": "Que devrait faire l'État face à la hausse des prix de l'énergie ?",
+        "help": "https://fr.wikipedia.org/wiki/Crise_énergétique_mondiale_de_2021-2023",
+        "answers": [
+          "C'est le marché qui fixe les prix, l'État ne doit pas intervenir",
+          "L'État peut donner un coup de pouce temporaire aux ménages les plus modestes",
+          "Il faut bloquer les prix de l'énergie et taxer les superprofits des énergéticiens",
+          "Il faut renationaliser l'énergie : l'électricité et le gaz ne devraient pas être des marchandises",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pa-03",
+        "fr": "Que pensez-vous du coût des transports au quotidien ?",
+        "answers": [
+          "Les transports en commun devraient être entièrement gratuits pour tous",
+          "Il faut baisser le prix des transports en commun, surtout pour les plus modestes",
+          "Les prix actuels sont raisonnables, pas besoin de changer",
+          "Les transports en commun coûtent cher à l'État, il faut que les usagers paient le juste prix",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pa-04",
+        "fr": "Que pensez-vous des prix dans les supermarchés ?",
+        "answers": [
+          "Les prix sont normaux, c'est le marché qui les fixe et c'est très bien comme ça",
+          "Il y a un peu d'inflation mais les enseignes font des efforts, ça va",
+          "Les prix augmentent trop et les marges des distributeurs sont scandaleuses, il faut les encadrer",
+          "Il faut un contrôle des prix sur les produits de première nécessité : alimentation, hygiène, etc.",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pa-05",
+        "fr": "Comment améliorer le pouvoir d'achat des Français ?",
+        "answers": [
+          "Baisser les impôts et les charges, laisser les gens garder ce qu'ils gagnent",
+          "Augmenter les salaires, le SMIC, et indexer tout sur l'inflation",
+          "Baisser les prix de l'essentiel (énergie, logement, alimentation) en régulant les marchés",
+          "Redistribuer davantage : augmenter les aides sociales et les minima sociaux",
+          "Le vrai problème c'est pas le pouvoir d'achat, c'est que les richesses sont mal réparties",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-education",
+    "fr": "Recherche et éducation",
+    "questions": [
+      {
+        "_id": "question-2027-edu-01",
+        "fr": "Que pensez-vous du budget de l'Éducation nationale ?",
+        "help": "https://fr.wikipedia.org/wiki/Système_éducatif_en_France",
+        "answers": [
+          "L'Éducation nationale est en perdition, seule une hausse massive du budget peut la sauver",
+          "Il faut investir davantage dans l'éducation, c'est l'investissement le plus rentable pour une société",
+          "Le budget est suffisant, il faut surtout mieux dépenser l'argent existant",
+          "Le privé ferait mieux que le public : il faut laisser plus de place aux écoles privées",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-edu-02",
+        "fr": "L'école permet-elle vraiment de s'élever socialement ?",
+        "help": "https://fr.wikipedia.org/wiki/Mobilité_sociale",
+        "answers": [
+          "L'école reproduit les inégalités : il faut la réformer en profondeur pour la rendre vraiment égalitaire",
+          "L'école aide un peu, mais les inégalités de départ pèsent encore trop lourd",
+          "L'école reste un formidable ascenseur social, la méritocratie républicaine fonctionne",
+          "L'école donne une base commune, mais c'est ensuite le talent et l'effort individuel qui comptent",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-edu-03",
+        "fr": "Que pensez-vous des écrans et de l'IA à l'école ?",
+        "help": "https://fr.wikipedia.org/wiki/Technologies_de_l%27information_et_de_la_communication_pour_l%27enseignement",
+        "answers": [
+          "Les écrans et l'IA sont l'avenir de l'éducation, il faut aller vers le tout numérique",
+          "L'IA peut aider les enseignants, mais il faut un système hybride écrans/papier",
+          "Le numérique est un outil parmi d'autres, à utiliser avec modération",
+          "Les écrans abîment le cerveau des enfants : il faut limiter drastiquement leur usage à l'école",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-edu-04",
+        "fr": "Que pensez-vous du financement de la recherche publique ?",
+        "help": "https://fr.wikipedia.org/wiki/Recherche_publique_(France)",
+        "answers": [
+          "Financer la recherche publique est inutile, le privé est plus efficace",
+          "Le financement est suffisant, il faut juste mieux cibler les priorités stratégiques",
+          "Il faut augmenter le financement public et encourager aussi le mécénat privé",
+          "La France sous-investit gravement dans sa recherche, il faut rattraper le retard massivement",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-edu-05",
+        "fr": "Que pensez-vous de Parcoursup et de l'accès à l'enseignement supérieur ?",
+        "help": "https://fr.wikipedia.org/wiki/Parcoursup",
+        "answers": [
+          "Parcoursup est une machine à broyer les jeunes, il faut revenir à un système ouvert et non sélectif",
+          "Parcoursup a des défauts, mais le principe de sélection est normal : il faut l'améliorer",
+          "Le système actuel fonctionne correctement, il a rationalisé l'orientation",
+          "Il faudrait aller plus loin dans la sélection pour former une élite performante",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-edu-06",
+        "fr": "Que pensez-vous de la laïcité et des signes religieux à l'école ?",
+        "answers": [
+          "Les élèves sont libres de porter ce qu'ils veulent, la France est un pays libre",
+          "Pas de signe religieux ostentatoire à l'école, c'est la loi et c'est bien comme ça",
+          "Il faut aller plus loin : uniforme scolaire pour tout le monde, ça évite les discriminations",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-sante",
+    "fr": "Santé",
+    "questions": [
+      {
+        "_id": "question-2027-san-01",
+        "fr": "Que pensez-vous du budget alloué à la santé publique ?",
+        "help": "https://fr.wikipedia.org/wiki/Système_de_santé_français",
+        "answers": [
+          "Il faut privatiser davantage la santé, l'État n'est pas un bon gestionnaire",
+          "Le budget est suffisant, il faut surtout mieux le gérer",
+          "Il faut l'augmenter un peu, certains secteurs en ont vraiment besoin",
+          "Il faut l'augmenter beaucoup, les hôpitaux et les soignants sont au bord de la rupture",
+          "Tout ce qui touche à la santé devrait être entièrement gratuit, c'est un droit fondamental",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-02",
+        "fr": "Que pensez-vous de la rémunération du personnel soignant ?",
+        "help": "https://fr.wikipedia.org/wiki/Hôpital_en_France",
+        "answers": [
+          "Les soignants sont très mal payés pour ce qu'ils font, il faut une revalorisation massive",
+          "Il faudrait augmenter un peu leurs salaires, surtout pour les infirmiers et aides-soignants",
+          "Les salaires sont corrects, il y a d'autres priorités",
+          "Les soignants se plaignent mais ils ont quand même la sécurité de l'emploi et une bonne retraite",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-03",
+        "fr": "Que pensez-vous des déserts médicaux ?",
+        "help": "https://fr.wikipedia.org/wiki/Désertification_médicale_en_France",
+        "answers": [
+          "C'est normal, on ne peut pas mettre un médecin dans chaque village : il faut regrouper l'offre",
+          "Le problème existe mais se résoudra avec la télémédecine et les maisons de santé",
+          "Il faut des mesures fortes : incitations financières, obligation d'installation en zone sous-dotée",
+          "C'est scandaleux que des millions de Français n'aient plus accès à un médecin à moins de 30 minutes",
+          "Le vrai problème c'est la concentration dans les métropoles : tant qu'on ne revitalisera pas les territoires ruraux, on n'aura pas de médecins en campagne",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0, 0],
+          [3, 5, 2, 0, 1, 0],
+          [0, 2, 5, 3, 3, 0],
+          [0, 0, 3, 5, 4, 0],
+          [0, 1, 3, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-04",
+        "fr": "Que pensez-vous de la vaccination obligatoire ?",
+        "help": "https://fr.wikipedia.org/wiki/Vaccination_en_France",
+        "answers": [
+          "La vaccination devrait être un choix totalement libre, l'État n'a pas à imposer quoi que ce soit dans nos corps",
+          "Les gens devraient être encouragés à se vacciner, mais jamais forcés",
+          "Certains vaccins essentiels doivent rester obligatoires, c'est une question de santé publique",
+          "Tous les vaccins recommandés par les autorités sanitaires devraient être obligatoires",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-05",
+        "fr": "Que pensez-vous du remboursement des soins médicaux ?",
+        "help": "https://fr.wikipedia.org/wiki/Assurance_maladie_en_France",
+        "answers": [
+          "Tous les soins devraient demander une contribution du patient, y compris les urgences",
+          "Certains soins aujourd'hui gratuits pourraient être payants pour responsabiliser les patients",
+          "L'équilibre actuel entre gratuit et payant est correct",
+          "Trop de soins restent payants : lunettes, dentaire, psy... il faut élargir le 100% Santé",
+          "Tous les soins devraient être entièrement gratuits, sans exception",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-06",
+        "fr": "La santé mentale des jeunes est-elle un sujet prioritaire ?",
+        "answers": [
+          "C'est une urgence nationale : il faut des psychologues gratuits et accessibles partout",
+          "C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention",
+          "C'est un sujet parmi d'autres, pas plus prioritaire que le reste",
+          "On en fait trop : les jeunes ont toujours eu des difficultés, ça fait partie de la vie",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-07",
+        "fr": "Notre système de santé dépense beaucoup plus pour soigner les maladies que pour les prévenir. Qu'en pensez-vous ?",
+        "help": "https://fr.wikipedia.org/wiki/Médecine_préventive",
+        "answers": [
+          "La santé c'est une affaire personnelle : l'État n'a pas à dire aux gens ce qu'ils doivent manger, boire ou fumer",
+          "La prévention c'est bien, mais il ne faut pas tomber dans l'hygiénisme ou la culpabilisation",
+          "Il faut investir bien plus dans la prévention : ça coûterait moins cher et les gens seraient en meilleure santé",
+          "On dépense des milliards à soigner des maladies évitables : il faut une vraie politique sur l'alimentation, le tabac, l'alcool et la sédentarité",
+          "La prévention passe d'abord par la lutte contre la pauvreté et les inégalités, qui sont les premières causes de mauvaise santé",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 4, 2, 0],
+          [0, 1, 4, 5, 3, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-08",
+        "fr": "La France est l'un des plus gros consommateurs de médicaments en Europe. Qu'en pensez-vous ?",
+        "help": "https://fr.wikipedia.org/wiki/Surmédicalisation",
+        "answers": [
+          "Si les médecins prescrivent, c'est qu'il y a besoin : ce n'est pas un problème",
+          "On prescrit sans doute un peu trop, mais c'est aux médecins de réguler leurs pratiques",
+          "On prescrit beaucoup trop facilement : il faudrait s'inspirer de pays comme les Pays-Bas, qui privilégient d'autres approches avant le médicament",
+          "Le problème c'est surtout l'industrie pharmaceutique qui pousse à la surconsommation pour son profit",
+          "Il faut un pôle public du médicament pour sortir la santé de la logique de marché",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 2, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 2, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "theme-2027-societe",
+    "fr": "Société",
+    "questions": [
+      {
+        "_id": "question-2027-soc-01",
+        "fr": "Que pensez-vous de l'égalité homme-femme en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Égalité_des_sexes_en_France",
+        "answers": [
+          "On va trop loin dans le féminisme, les différences entre hommes et femmes sont naturelles",
+          "La société est déjà suffisamment égalitaire, l'État n'a plus besoin d'intervenir",
+          "Il y a eu des progrès, mais il reste du chemin à faire, surtout sur les salaires et les violences",
+          "L'inégalité est encore profonde, il faut des mesures fortes pour en finir avec le patriarcat",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-02",
+        "fr": "Que pensez-vous des droits des personnes LGBT+ ?",
+        "help": "https://fr.wikipedia.org/wiki/Droits_LGBT_en_France",
+        "answers": [
+          "Il faut abroger le mariage pour tous et revenir au modèle familial traditionnel",
+          "Il y a un lobby LGBT qui va trop loin, il faut que l'État reste neutre",
+          "Le cadre légal actuel (mariage pour tous, PMA) est suffisant, pas besoin d'aller plus loin",
+          "Il y a encore des discriminations, il faut renforcer la loi pour les combattre",
+          "Il reste beaucoup à faire : droits des personnes trans, lutte contre les discriminations au quotidien",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-03",
+        "fr": "Quelle place pour la religion dans notre société ?",
+        "help": "https://fr.wikipedia.org/wiki/Laïcité_en_France",
+        "answers": [
+          "Il faut renouer avec nos racines chrétiennes et les défendre face à l'islamisation",
+          "La France est laïque mais nos valeurs sont judéo-chrétiennes, il faut les protéger",
+          "Chaque religion doit rester à sa place, l'État est laïc et traite toutes les croyances de la même façon",
+          "La religion est une affaire strictement privée, l'État doit imposer la sécularisation de l'espace public",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-04",
+        "fr": "Que pensez-vous de la PMA (procréation médicalement assistée) ?",
+        "help": "https://fr.wikipedia.org/wiki/Procréation_médicalement_assistée",
+        "answers": [
+          "Elle devrait être interdite pour tous, c'est contre-nature",
+          "Elle devrait être réservée aux couples hétérosexuels ayant des problèmes de fertilité",
+          "La loi actuelle est bien : PMA ouverte à toutes les femmes, remboursée",
+          "Il faut aller plus loin et ouvrir la PMA aux hommes trans et aux couples d'hommes via la GPA",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-05",
+        "fr": "Que pensez-vous de la GPA (gestation pour autrui) ?",
+        "help": "https://fr.wikipedia.org/wiki/Gestation_pour_autrui",
+        "answers": [
+          "Il faut la légaliser et l'encadrer, comme dans d'autres pays",
+          "On peut la tolérer à l'étranger et reconnaître les enfants nés par GPA",
+          "C'est une exploitation du corps des femmes, il faut que ça reste interdit",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-06",
+        "fr": "L'IVG est désormais inscrite dans la Constitution. Qu'en pensez-vous ?",
+        "help": "https://fr.wikipedia.org/wiki/Interruption_volontaire_de_grossesse_en_France",
+        "answers": [
+          "C'est une excellente chose, il fallait protéger ce droit fondamental dans la Constitution",
+          "C'était bien de le constitutionnaliser, mais la loi suffit, c'est avant tout symbolique",
+          "C'est aller trop loin, l'IVG n'avait pas besoin d'être dans la Constitution",
+          "L'IVG devrait être plus encadré et limité, voire remis en question",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-07",
+        "fr": "Que pensez-vous de la fin de vie et de l'euthanasie ?",
+        "help": "https://fr.wikipedia.org/wiki/Euthanasie_en_France",
+        "answers": [
+          "La vie est sacrée, on ne doit jamais aider quelqu'un à mourir",
+          "Le cadre actuel (sédation profonde) est suffisant, pas besoin d'aller vers l'euthanasie",
+          "Il faut aller vers une légalisation très encadrée de l'aide à mourir pour les malades en fin de vie",
+          "Mourir dans la dignité est un droit fondamental, il faut légaliser l'euthanasie et le suicide assisté",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-08",
+        "fr": "Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?",
+        "answers": [
+          "On en fait assez, il y a d'autres priorités budgétaires",
+          "Des progrès ont été faits, il faut continuer sans en faire beaucoup plus",
+          "Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et la dignité de ces personnes",
+          "C'est une honte nationale : il faut en faire un sujet prioritaire avec un plan massif",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "fr": "Travail, Chômage, Retraite",
+    "_id": "theme-travail-chomage-retraite-2027",
+    "questions": [
+      {
+        "_id": "question-2027-trav-01",
+        "fr": "Que pensez-vous de la retraite à 64 ans votée en 2023 ?",
+        "help": "https://fr.wikipedia.org/wiki/R%C3%A9forme_des_retraites_en_France_en_2023",
+        "answers": [
+          "Il faut abroger cette réforme, on devrait revenir à 60 ans voire moins",
+          "Il faut revenir à 62 ans, c'était un bon compromis",
+          "64 ans c'est raisonnable vu la situation des finances publiques",
+          "Il faudrait aller plus loin, 65 ou 66 ans, comme dans les pays voisins",
+          "Le système par répartition est à bout, il faut passer à la capitalisation",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-02",
+        "fr": "Que pensez-vous du temps de travail en France ?",
+        "answers": [
+          "On travaille trop, il faut passer à la semaine de 4 jours ou 32 heures",
+          "Les 35 heures c'est bien, on ne doit pas y toucher",
+          "Il faut assouplir les 35 heures et laisser plus de liberté aux entreprises et salariés",
+          "Il faut supprimer les 35 heures, les Français ne travaillent pas assez",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 2, 0, 0],
+          [0, 2, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-03",
+        "fr": "Comment réduire le chômage en France ?",
+        "answers": [
+          "L'État doit créer massivement des emplois publics et garantir un emploi à tous",
+          "Il faut mieux former les chômeurs et investir dans les filières qui recrutent",
+          "Il faut baisser les charges sur les entreprises pour qu'elles embauchent plus facilement",
+          "Le chômage baissera quand on arrêtera de payer les gens à ne rien faire — il faut durcir les conditions d'indemnisation",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [3, 5, 3, 0, 0],
+          [0, 3, 5, 3, 0],
+          [0, 0, 4, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-04",
+        "fr": "Que pensez-vous du RSA conditionné à des heures d'activité ?",
+        "help": "https://fr.wikipedia.org/wiki/Revenu_de_solidarit%C3%A9_active",
+        "answers": [
+          "Conditionner le RSA à du travail forcé, c'est humiliant et dangereux — il faut aller vers un revenu universel",
+          "Le RSA doit rester inconditionnel, c'est un filet de sécurité minimum pour tous",
+          "Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer",
+          "Le RSA est devenu une trappe à inactivité, il faut le conditionner fortement ou le supprimer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 0, 0, 0],
+          [3, 5, 2, 0, 0],
+          [0, 2, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-05",
+        "fr": "Que pensez-vous du SMIC et des bas salaires ?",
+        "answers": [
+          "Le SMIC est trop bas, il faut une augmentation massive — personne ne devrait vivre avec moins de 2000 € net",
+          "Il faut augmenter le SMIC régulièrement et que l'État complète avec des aides",
+          "Le SMIC doit rester raisonnable sinon les petites entreprises ne suivent pas — mieux vaut baisser les charges",
+          "C'est au marché de fixer les salaires, pas à l'État — il faut supprimer le SMIC",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 2, 0, 0],
+          [0, 2, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-06",
+        "fr": "Quel est votre avis sur le télétravail et les nouvelles formes de travail ?",
+        "answers": [
+          "Le télétravail devrait être un droit pour tous les métiers qui le permettent — c'est une question de liberté",
+          "C'est un bon outil mais ça doit rester à la négociation entre employeur et salarié",
+          "On est allé trop loin, le présentiel est important pour la productivité et le lien social",
+          "L'ubérisation et l'auto-entrepreneuriat sont l'avenir — chacun doit pouvoir travailler comme il veut, sans cadre rigide",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [3, 5, 3, 1, 0],
+          [0, 3, 5, 2, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "fr": "Union Européenne",
+    "_id": "theme-union-europeenne-2027",
+    "questions": [
+      {
+        "_id": "question-2027-ue-01",
+        "fr": "Globalement, que pensez-vous de l'Union européenne ?",
+        "help": "https://fr.wikipedia.org/wiki/Union_europ%C3%A9enne",
+        "answers": [
+          "Il faut sortir de l'UE (Frexit) — on a perdu notre souveraineté",
+          "L'UE a de gros défauts mais il faut rester dedans et la réformer en profondeur",
+          "L'UE fonctionne plutôt bien, il faut l'améliorer sans tout bouleverser",
+          "Il faut aller vers beaucoup plus d'intégration — un vrai État fédéral européen",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [3, 5, 3, 0, 0],
+          [0, 3, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ue-02",
+        "fr": "Que pensez-vous du pouvoir de la Commission européenne par rapport aux parlements nationaux ?",
+        "answers": [
+          "Les parlements nationaux doivent reprendre le pouvoir — la Commission a trop d'influence non élue",
+          "Il faut un meilleur équilibre, la Commission va trop loin sur certains sujets",
+          "Le système actuel est un bon compromis entre efficacité et souveraineté",
+          "Il faut renforcer la Commission et le Parlement européen pour qu'ils puissent vraiment agir",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 0, 0, 0],
+          [3, 5, 3, 0, 0],
+          [0, 2, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ue-03",
+        "fr": "Que pensez-vous de la position de l'UE face à la guerre en Ukraine ?",
+        "help": "https://fr.wikipedia.org/wiki/Invasion_de_l%27Ukraine_par_la_Russie",
+        "answers": [
+          "L'UE n'a rien à faire dans ce conflit, il faut arrêter les sanctions et chercher la paix avec la Russie",
+          "L'UE devrait jouer un rôle diplomatique neutre au lieu de s'aligner sur les États-Unis",
+          "Le soutien à l'Ukraine est nécessaire mais on devrait aussi préparer les négociations de paix",
+          "Il faut soutenir l'Ukraine autant que nécessaire, y compris militairement — c'est notre sécurité qui est en jeu",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [3, 5, 3, 0, 0],
+          [0, 3, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ue-04",
+        "fr": "Que pensez-vous du lobbying et de la corruption au niveau européen ?",
+        "help": "https://fr.wikipedia.org/wiki/Qatargate",
+        "answers": [
+          "L'UE est corrompue jusqu'à la moelle, c'est une des raisons de sortir — les lobbies dirigent tout",
+          "Il y a un vrai problème de lobbying à Bruxelles, il faut des règles beaucoup plus strictes",
+          "Des progrès ont été faits (registre de transparence), il faut continuer à renforcer les contrôles",
+          "Le lobbying fait partie du processus démocratique, il faut juste mieux l'encadrer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 2, 0, 0],
+          [0, 3, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ue-05",
+        "fr": "Que pensez-vous de l'euro ?",
+        "help": "https://fr.wikipedia.org/wiki/Euro",
+        "answers": [
+          "Il faut revenir au franc — l'euro nous a appauvris et on ne contrôle plus notre monnaie",
+          "L'euro pose des problèmes structurels mais en sortir serait trop risqué — il faut réformer la zone euro",
+          "L'euro est globalement une bonne chose, il faut surtout harmoniser les politiques fiscales",
+          "L'euro est une grande réussite, il faut aller plus loin avec un budget commun européen",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [3, 5, 3, 0, 0],
+          [0, 3, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ue-06",
+        "fr": "Que pensez-vous de la politique migratoire européenne ?",
+        "answers": [
+          "L'UE devrait accueillir plus largement et créer des voies légales d'immigration — c'est un devoir moral et économique",
+          "Il faut une politique commune d'asile juste, avec une répartition solidaire entre pays",
+          "Le pacte migratoire européen va dans le bon sens : des frontières mieux protégées et une gestion ordonnée",
+          "Chaque pays doit reprendre le contrôle total de ses frontières — l'UE n'a pas à décider qui entre chez nous",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 2, 0, 0],
+          [0, 3, 5, 3, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
+    "fr": "Et si un(e) autre gagnait...",
+    "_id": "theme-et-si-un-autre-gagnait-2027",
+    "questions": []
+  }
+]

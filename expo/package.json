@@ -1,0 +1,39 @@
+{
+  "name": "quizz-du-berger",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "expo start --dev-client --clear --port 8084",
+    "prebuild": "npx expo prebuild --clean && echo 'export NODE_BINARY='$(which node) > ./ios/.xcode.env.local",
+    "android": "expo run:android --port 8084",
+    "ios": "expo run:ios --port 8084",
+    "web": "expo start --web",
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo-google-fonts/merriweather": "^0.2.3",
+    "@expo-google-fonts/merriweather-sans": "^0.2.3",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/native": "^7.0.0",
+    "@react-navigation/native-stack": "^7.0.0",
+    "expo": "~54.0.0",
+    "expo-font": "~14.0.0",
+    "expo-image": "~3.0.0",
+    "expo-linking": "~8.0.11",
+    "expo-splash-screen": "~31.0.13",
+    "expo-status-bar": "~3.0.9",
+    "nativewind": "^4.1.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "~5.9.2",
+    "@types/react": "~19.1.0"
+  }
+}
