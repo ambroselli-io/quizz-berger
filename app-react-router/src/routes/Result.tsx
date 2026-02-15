@@ -278,12 +278,12 @@ export default function Result() {
           />
           <meta
             property="og:image"
-            content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`}
+            content={`https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`}
           />
           <meta property="og:url" content={`https://www.quizz-du-berger.com/result/${userToShow.pseudo}`} />
           <meta
             name="twitter:image"
-            content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`}
+            content={`https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`}
           />
           <meta name="twitter:title" content={`${title} | Le Quizz du Berger`} />
           <meta

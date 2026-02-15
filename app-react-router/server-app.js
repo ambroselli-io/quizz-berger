@@ -48,7 +48,7 @@ const BOT_AGENTS = [
 
 const isBot = (userAgent) => BOT_AGENTS.some((bot) => userAgent?.includes(bot));
 
-const OG_CDN = 'https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com';
+const OG_CDN = 'https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com';
 
 // Cache index.html in memory for production
 let cachedIndexHtml = null;
@@ -77,15 +77,34 @@ app.get('/result/:pseudo', (req, res) => {
 
   html = html
     .replace(/<title>[^<]*<\/title>/, `<title>${ogTitle}</title>`)
-    .replace(/<meta property="og:title" content="[^"]*" \/>/, `<meta property="og:title" content="${ogTitle}" />`)
-    .replace(/<meta property="og:description" content="[^"]*" \/>/, `<meta property="og:description" content="${ogDescription}" />`)
-    .replace(/<meta property="og:image" content="[^"]*" \/>/, `<meta property="og:image" content="${ogImage}" />`)
+    .replace(
+      /<meta property="og:title" content="[^"]*" \/>/,
+      `<meta property="og:title" content="${ogTitle}" />`,
+    )
+    .replace(
+      /<meta property="og:description" content="[^"]*" \/>/,
+      `<meta property="og:description" content="${ogDescription}" />`,
+    )
+    .replace(
+      /<meta property="og:image" content="[^"]*" \/>/,
+      `<meta property="og:image" content="${ogImage}" />`,
+    )
     .replace(/<meta property="og:url" content="[^"]*" \/>/, `<meta property="og:url" content="${ogUrl}" />`)
-    .replace(/<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${ogTitle}" />`)
-    .replace(/<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${ogDescription}" />`)
-    .replace(/<meta name="twitter:image" content="[^"]*" \/>/, `<meta name="twitter:image" content="${ogImage}" />`);
+    .replace(
+      /<meta name="twitter:title" content="[^"]*" \/>/,
+      `<meta name="twitter:title" content="${ogTitle}" />`,
+    )
+    .replace(
+      /<meta name="twitter:description" content="[^"]*" \/>/,
+      `<meta name="twitter:description" content="${ogDescription}" />`,
+    )
+    .replace(
+      /<meta name="twitter:image" content="[^"]*" \/>/,
+      `<meta name="twitter:image" content="${ogImage}" />`,
+    );
 
   res.setHeader('Content-Type', 'text/html');
+  console.log('Sending HTML for result page', ogTitle);
   res.send(html);
 });
 

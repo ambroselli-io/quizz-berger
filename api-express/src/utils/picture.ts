@@ -1,6 +1,6 @@
 import { S3Client, PutObjectCommand, ObjectCannedACL } from "@aws-sdk/client-s3";
 
-const BUCKET_NAME = "quizz-du-berger-pictures";
+const BUCKET_NAME = "quizz-du-berger-og";
 
 const s3Client = new S3Client({
   endpoint: `https://${process.env.CELLAR_ADDON_HOST}`,

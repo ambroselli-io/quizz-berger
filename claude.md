@@ -17,7 +17,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - French UI strings, English code/comments
 - Tailwind mobile-first, `max-lg:` for mobile overrides
 - Path alias: `@app` → `app-react-router/src` (tsconfig + vite)
-- Image CDN: `https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/`
+- Image CDN: `https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com/`
 - API host: dev = `localhost:5179`, prod = `api.quizz-du-berger.com`
 
 # Dev

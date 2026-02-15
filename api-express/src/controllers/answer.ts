@@ -151,10 +151,10 @@ router.get(
 
     // Skip OG image generation entirely if results haven't changed
     if (req.user?.ogPicName === picName) {
-      return next();
+      return;
     }
 
-    const CDN_BASE = "https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com";
+    const CDN_BASE = "https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com";
 
     const existingPic = await fetch(`${CDN_BASE}/${picName}.png`);
 
