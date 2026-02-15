@@ -147,73 +147,81 @@ router.get(
     const podiumData = getPodium(personsScore, true).filter((_, i) => i < 6);
 
     const picName = getPicName(podiumData);
+    const pseudo = req.user?.pseudo;
+
+    // Skip OG image generation entirely if results haven't changed
+    if (req.user?.ogPicName === picName) {
+      return next();
+    }
 
     const CDN_BASE = "https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com";
-    const pseudo = req.user?.pseudo;
 
     const existingPic = await fetch(`${CDN_BASE}/${picName}.png`);
 
     if (existingPic.status < 300) {
-      // Image exists for this result set. Also save a copy under og/{pseudo}.png
+      // Image already exists for this result set (maybe from another user), reuse it
       if (pseudo) {
         const imageBuffer = Buffer.from(await existingPic.arrayBuffer());
         await uploadBuffer(imageBuffer, `og/${pseudo}.png`, "no-cache");
       }
-      return next();
+    } else {
+      // Generate new image
+      const html = fs.readFileSync(path.resolve("./src/views/result.html"), "utf8");
+
+      const newHtml = html.replace(
+        "{{RESULTS}}",
+        podiumData
+          .map(
+            ({ pictures, height, percent, colors }, i) =>
+              `<div class="step">
+                    <div class="stair-container">
+                      <div class="stair ${
+                        i === 0 ? "gold" : i == 1 ? "silver" : i == 2 ? "bronze" : ""
+                      }" style="height: calc(${height}% - 20px); background-color: rgba(205, 127, 50, ${percent / 100});" >
+                        <span style="font-size: min(10vw, ${Math.max((percent / 100) * 2.5, 0.75)}em);">${percent}%</span>
+                      </div>
+                      <div class="avatars" style="bottom: calc(${height}% - 40px);">
+                        ${pictures.filter(Boolean).map(
+                          (pic, index) =>
+                            `<img
+                            class="avatar"
+                            style="border: 2px solid ${colors[index]}; background-color: ${colors[index]}"
+                            alt="${pic}"
+                            src="https://www.quizz-du-berger.com/${pic}"
+                          />`,
+                        )}
+                      </div>
+                    </div>
+                  </div>`,
+          )
+          .join(""),
+      );
+
+      const image = await nodeHtmlToImage({
+        html: newHtml,
+        puppeteerArgs: {
+          args: [
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--disable-dev-shm-usage",
+            "--disable-accelerated-2d-canvas",
+            "--no-first-run",
+            "--no-zygote",
+            "--disable-gpu",
+          ],
+          headless: false,
+          ignoreHTTPSErrors: true,
+        },
+      });
+
+      await uploadBuffer(image as Buffer, `${picName}.png`);
+      if (pseudo) {
+        await uploadBuffer(image as Buffer, `og/${pseudo}.png`, "no-cache");
+      }
     }
 
-    const html = fs.readFileSync(path.resolve("./src/views/result.html"), "utf8");
-
-    const newHtml = html.replace(
-      "{{RESULTS}}",
-      podiumData
-        .map(
-          ({ pictures, height, percent, colors }, i) =>
-            `<div class="step">
-                  <div class="stair-container">
-                    <div class="stair ${
-                      i === 0 ? "gold" : i == 1 ? "silver" : i == 2 ? "bronze" : ""
-                    }" style="height: calc(${height}% - 20px); background-color: rgba(205, 127, 50, ${percent / 100});" >
-                      <span style="font-size: min(10vw, ${Math.max((percent / 100) * 2.5, 0.75)}em);">${percent}%</span>
-                    </div>
-                    <div class="avatars" style="bottom: calc(${height}% - 40px);">
-                      ${pictures.filter(Boolean).map(
-                        (pic, index) =>
-                          `<img
-                          class="avatar"
-                          style="border: 2px solid ${colors[index]}; background-color: ${colors[index]}"
-                          alt="${pic}"
-                          src="https://www.quizz-du-berger.com/${pic}"
-                        />`,
-                      )}
-                    </div>
-                  </div>
-                </div>`,
-        )
-        .join(""),
-    );
-
-    const image = await nodeHtmlToImage({
-      html: newHtml,
-      puppeteerArgs: {
-        args: [
-          "--no-sandbox",
-          "--disable-setuid-sandbox",
-          "--disable-dev-shm-usage",
-          "--disable-accelerated-2d-canvas",
-          "--no-first-run",
-          "--no-zygote",
-          "--disable-gpu",
-        ],
-        headless: false,
-        ignoreHTTPSErrors: true,
-      },
-    });
-
-    await uploadBuffer(image as Buffer, `${picName}.png`);
-    if (pseudo) {
-      await uploadBuffer(image as Buffer, `og/${pseudo}.png`, "no-cache");
-    }
+    // Remember which picName was used, so we skip next time if unchanged
+    await prisma.user.update({ where: { id: req.user!.id }, data: { ogPicName: picName } });
   }),
 );
 

@@ -23,6 +23,7 @@ model User {
   partyName   String?
   isCandidate Boolean   @default(false)
   lastLoginAt DateTime?
+  ogPicName   String?
 
   // Relations
   answers  Answer[]
