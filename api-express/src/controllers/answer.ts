@@ -157,7 +157,7 @@ router.get(
       // Image exists for this result set. Also save a copy under og/{pseudo}.png
       if (pseudo) {
         const imageBuffer = Buffer.from(await existingPic.arrayBuffer());
-        await uploadBuffer(imageBuffer, `og/${pseudo}.png`);
+        await uploadBuffer(imageBuffer, `og/${pseudo}.png`, "no-cache");
       }
       return next();
     }
@@ -183,7 +183,7 @@ router.get(
                           class="avatar"
                           style="border: 2px solid ${colors[index]}; background-color: ${colors[index]}"
                           alt="${pic}"
-                          src="https://avatar-personnalites.cellar-c2.services.clever-cloud.com/${pic}"
+                          src="https://www.quizz-du-berger.com/${pic}"
                         />`,
                       )}
                     </div>
@@ -212,7 +212,7 @@ router.get(
 
     await uploadBuffer(image as Buffer, `${picName}.png`);
     if (pseudo) {
-      await uploadBuffer(image as Buffer, `og/${pseudo}.png`);
+      await uploadBuffer(image as Buffer, `og/${pseudo}.png`, "no-cache");
     }
   }),
 );

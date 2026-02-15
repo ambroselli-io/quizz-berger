@@ -11,14 +11,14 @@ const s3Client = new S3Client({
   },
 });
 
-export async function uploadBuffer(buffer: Buffer, fileName: string): Promise<string> {
+export async function uploadBuffer(buffer: Buffer, fileName: string, cacheControl?: string): Promise<string> {
   const command = new PutObjectCommand({
     Bucket: BUCKET_NAME,
     Key: fileName,
     Body: buffer,
     ContentType: "image/png",
     ACL: ObjectCannedACL.public_read,
-    Metadata: { "Cache-Control": "max-age=31536000" },
+    CacheControl: cacheControl ?? "max-age=31536000",
   });
 
   try {
