@@ -1,6 +1,11 @@
 import { useMemo } from 'react';
 import { Link, useParams, Navigate } from 'react-router';
-import { getQuestionBySlug, candidateSlugMap, getCandidateAnswerForQuestion, themeSlugMap } from '@app/utils/seo';
+import {
+  getQuestionBySlug,
+  candidateSlugMap,
+  getCandidateAnswerForQuestion,
+  themeSlugMap,
+} from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
 export default function QuestionPolitiquePage() {
@@ -40,7 +45,10 @@ export default function QuestionPolitiquePage() {
         name: question.fr,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: `Les candidats à la présidentielle 2027 ont des positions variées sur cette question. ${question.answers.slice(0, 3).map((a, i) => `Position ${i + 1} : "${a}"`).join('. ')}.`,
+          text: `Les candidats à la présidentielle 2027 ont des positions variées sur cette question. ${question.answers
+            .slice(0, 3)
+            .map((a, i) => `Position ${i + 1} : "${a}"`)
+            .join('. ')}.`,
         },
       },
       {
@@ -60,7 +68,7 @@ export default function QuestionPolitiquePage() {
 
   return (
     <>
-      <title>{question.seoTitle}</title>
+      <title>{`${question.seoTitle} | Le Quizz du Berger`}</title>
       <meta name="description" content={question.seoDescription} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -69,7 +77,10 @@ export default function QuestionPolitiquePage() {
         <section className="w-full bg-quizz-dark px-5 py-16 text-center text-white">
           <div className="mx-auto max-w-3xl">
             {themeSlug && (
-              <Link to={`/theme/${themeSlug}`} className="mb-4 inline-block text-sm text-yellow-400 no-underline hover:underline">
+              <Link
+                to={`/theme/${themeSlug}`}
+                className="mb-4 inline-block text-sm text-yellow-400 no-underline hover:underline"
+              >
                 ← {question.themeName}
               </Link>
             )}
@@ -107,12 +118,19 @@ export default function QuestionPolitiquePage() {
               const isLastAnswer = answer.includes("m'intéresse pas") || answer.includes("pas d'avis");
               if (isLastAnswer && candidatesForAnswer.length === 0) return null;
               return (
-                <div key={idx} className={`rounded-lg border p-5 ${isLastAnswer ? 'border-gray-100 bg-gray-50' : 'border-gray-200'}`}>
+                <div
+                  key={idx}
+                  className={`rounded-lg border p-5 ${isLastAnswer ? 'border-gray-100 bg-gray-50' : 'border-gray-200'}`}
+                >
                   <div className="mb-3 flex items-start gap-3">
-                    <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white ${isLastAnswer ? 'bg-gray-300' : 'bg-quizz-dark'}`}>
+                    <span
+                      className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white ${isLastAnswer ? 'bg-gray-300' : 'bg-quizz-dark'}`}
+                    >
                       {idx + 1}
                     </span>
-                    <p className={`font-medium ${isLastAnswer ? 'text-gray-400' : 'text-quizz-dark'}`}>{answer}</p>
+                    <p className={`font-medium ${isLastAnswer ? 'text-gray-400' : 'text-quizz-dark'}`}>
+                      {answer}
+                    </p>
                   </div>
                   {candidatesForAnswer.length > 0 && (
                     <div className="ml-9 flex flex-wrap gap-2">
@@ -122,7 +140,10 @@ export default function QuestionPolitiquePage() {
                           to={`/candidat/${c.slug}`}
                           className="flex items-center gap-1.5 rounded-full border border-gray-200 px-3 py-1 text-xs text-quizz-dark no-underline hover:bg-gray-50"
                         >
-                          <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: c.color }} />
+                          <span
+                            className="inline-block h-2 w-2 rounded-full"
+                            style={{ backgroundColor: c.color }}
+                          />
                           {c.pseudo}
                         </Link>
                       ))}
@@ -149,7 +170,10 @@ export default function QuestionPolitiquePage() {
                     to={`/candidat/${c.slug}`}
                     className="flex items-start gap-3 rounded-lg border border-gray-200 bg-white p-4 no-underline hover:shadow-sm"
                   >
-                    <span className="mt-1 inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: c.color }} />
+                    <span
+                      className="mt-1 inline-block h-3 w-3 shrink-0 rounded-full"
+                      style={{ backgroundColor: c.color }}
+                    />
                     <div>
                       <p className="font-semibold text-quizz-dark">{c.pseudo}</p>
                       <p className="mt-1 text-sm italic text-gray-600">« {c.answerText} »</p>
@@ -162,18 +186,16 @@ export default function QuestionPolitiquePage() {
 
         {/* FAQ */}
         <section className="mx-auto w-full max-w-4xl px-5 py-12">
-          <h2 className="mb-6 font-[Merriweather] text-xl font-bold text-quizz-dark">
-            Questions fréquentes
-          </h2>
+          <h2 className="mb-6 font-[Merriweather] text-xl font-bold text-quizz-dark">Questions fréquentes</h2>
           <div className="space-y-4">
             <details className="rounded-lg border border-gray-200 p-5">
               <summary className="cursor-pointer font-medium text-quizz-dark">
                 Comment les positions des candidats ont-elles été déterminées ?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                Les réponses des candidats sont basées sur l'analyse de leurs programmes officiels, déclarations publiques
-                et votes passés. Chaque position est classée sur une échelle de nuances pour refléter au mieux
-                la complexité des opinions politiques.
+                Les réponses des candidats sont basées sur l'analyse de leurs programmes officiels,
+                déclarations publiques et votes passés. Chaque position est classée sur une échelle de nuances
+                pour refléter au mieux la complexité des opinions politiques.
               </p>
             </details>
             <details className="rounded-lg border border-gray-200 p-5">
@@ -181,9 +203,9 @@ export default function QuestionPolitiquePage() {
                 Comment fonctionne le Quizz du Berger ?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                Vous répondez aux questions qui vous intéressent, thème par thème. Un algorithme compare vos réponses
-                à celles des 24 candidats : une réponse identique vaut 5 points, proche 2-4 points, opposée 0 point.
-                Le candidat avec le plus de points est le plus proche de vos idées.
+                Vous répondez aux questions qui vous intéressent, thème par thème. Un algorithme compare vos
+                réponses à celles des 24 candidats : une réponse identique vaut 5 points, proche 2-4 points,
+                opposée 0 point. Le candidat avec le plus de points est le plus proche de vos idées.
               </p>
             </details>
           </div>

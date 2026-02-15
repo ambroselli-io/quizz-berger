@@ -10,14 +10,20 @@ export default function Question() {
   const navigate = useNavigate();
   const { themeId, questionId } = useParams<{ themeId: string; questionId: string }>();
 
-  const theme = useMemo(() => quizz.find((t) => t._id === themeId) ?? { _id: '', fr: '', backgroundColor: '', questions: [] }, [themeId]);
+  const theme = useMemo(
+    () => quizz.find((t) => t._id === themeId) ?? { _id: '', fr: '', backgroundColor: '', questions: [] },
+    [themeId],
+  );
   const questions = theme.questions;
 
-  const questionIndex = useMemo(() => questions.findIndex((q) => q._id === questionId), [questions, questionId]);
+  const questionIndex = useMemo(
+    () => questions.findIndex((q) => q._id === questionId),
+    [questions, questionId],
+  );
   const question = questions[questionIndex];
 
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState<number | undefined>(
-    userAnswers.find((a) => a.questionId === questionId)?.answerIndex
+    userAnswers.find((a) => a.questionId === questionId)?.answerIndex,
   );
 
   useEffect(() => {
@@ -30,8 +36,10 @@ export default function Question() {
   }, [question]);
 
   const userThemes = useMemo(
-    () => [...userAnswers.reduce((themes: Set<string>, answer) => themes.add(answer.themeId), new Set<string>())],
-    [userAnswers]
+    () => [
+      ...userAnswers.reduce((themes: Set<string>, answer) => themes.add(answer.themeId), new Set<string>()),
+    ],
+    [userAnswers],
   );
   const showResultsButton = userThemes.length > 0;
 
@@ -72,7 +80,7 @@ export default function Question() {
 
   return (
     <>
-      <title>{question?.fr} - {theme.fr} | Le Quizz du Berger</title>
+      <title>{`${question?.fr} - ${theme.fr} | Le Quizz du Berger`}</title>
 
       {/* Theme header */}
       <div
@@ -96,10 +104,18 @@ export default function Question() {
       </div>
 
       {/* Question */}
-      <div key={questionId} className="flex flex-col items-center justify-center bg-white px-5 pb-28 pt-10 max-lg:px-2.5 max-lg:pb-24">
+      <div
+        key={questionId}
+        className="flex flex-col items-center justify-center bg-white px-5 pb-28 pt-10 max-lg:px-2.5 max-lg:pb-24"
+      >
         <h2 className="mb-10 text-center text-2xl font-bold">{question?.fr}</h2>
         {showHelp && question?.help && (
-          <a href={question.help} target="_blank" rel="noreferrer" className="-mt-[30px] mb-10 text-center text-xs font-normal">
+          <a
+            href={question.help}
+            target="_blank"
+            rel="noreferrer"
+            className="-mt-[30px] mb-10 text-center text-xs font-normal"
+          >
             Cliquez <strong className="underline">ici</strong> pour en savoir plus
           </a>
         )}
