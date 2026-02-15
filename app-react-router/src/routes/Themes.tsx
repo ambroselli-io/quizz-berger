@@ -129,6 +129,7 @@ export default function ThemeSelect() {
   return (
     <>
       <title>{titleCaption} | Le Quizz du Berger</title>
+      <meta name="description" content={`Présidentielle 2027 - ${quizz.length} thèmes, ${questionsNumber} questions, 24 candidats. Répondez au quiz pour découvrir quel candidat pense comme vous.`} />
       <div className="px-2.5 py-20 max-lg:px-2.5 max-lg:py-[3vh] lg:h-[calc(100vh-80px)] lg:overflow-y-auto">
         <div className="mx-auto mb-[2vh] flex max-w-[1200px] flex-col items-center justify-center">
           <h1 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">

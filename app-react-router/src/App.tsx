@@ -18,6 +18,7 @@ import QuestionPolitiquePage from './routes/QuestionPolitiquePage';
 import ComparaisonPage from './routes/ComparaisonPage';
 import BlogIndex from './routes/BlogIndex';
 import BlogArticle from './routes/BlogArticle';
+import QuiSommesNous from './routes/QuiSommesNous';
 import useCanonical from './hooks/useCanonical';
 
 const SentryRoutes = Sentry.withSentryReactRouterV6Routing(Routes);
@@ -51,6 +52,7 @@ function App() {
           <Route path="/comparer/:pairSlug" element={<ComparaisonPage />} />
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/blog/:slug" element={<BlogArticle />} />
+          <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
         </SentryRoutes>
       </main>
       <BottomTabBar />

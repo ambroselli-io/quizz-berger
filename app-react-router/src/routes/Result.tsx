@@ -1,7 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import API from '@app/services/api';
-import { getFromLocalStorage, getFromSessionStorage, setToLocalStorage, setToSessionStorage } from '@app/utils/storage';
+import {
+  getFromLocalStorage,
+  getFromSessionStorage,
+  setToLocalStorage,
+  setToSessionStorage,
+} from '@app/utils/storage';
 import getUserThemes from '@app/utils/getUserThemes';
 import useUser from '@app/hooks/useUser';
 import { quizz, quizzQuestions } from '@app/utils/quizz';
@@ -263,16 +268,28 @@ export default function Result() {
 
   return (
     <>
-      <title>{title} | Le Quizz du Berger</title>
+      <title>{`${title} | Le Quizz du Berger`}</title>
       {userToShow?.pseudo && (
         <>
           <meta property="og:title" content={`${title} | Le Quizz du Berger`} />
-          <meta property="og:description" content={`Découvrez les affinités politiques de ${userToShow.pseudo} pour la présidentielle 2027.`} />
-          <meta property="og:image" content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`} />
+          <meta
+            property="og:description"
+            content={`Découvrez les affinités politiques de ${userToShow.pseudo} pour la présidentielle 2027.`}
+          />
+          <meta
+            property="og:image"
+            content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`}
+          />
           <meta property="og:url" content={`https://www.quizz-du-berger.com/result/${userToShow.pseudo}`} />
-          <meta name="twitter:image" content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`} />
+          <meta
+            name="twitter:image"
+            content={`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/og/${userToShow.pseudo}.png`}
+          />
           <meta name="twitter:title" content={`${title} | Le Quizz du Berger`} />
-          <meta name="twitter:description" content={`Découvrez les affinités politiques de ${userToShow.pseudo} pour la présidentielle 2027.`} />
+          <meta
+            name="twitter:description"
+            content={`Découvrez les affinités politiques de ${userToShow.pseudo} pour la présidentielle 2027.`}
+          />
         </>
       )}
       <div className="overflow-y-auto px-2.5 pt-20 max-lg:pt-[3vh] lg:h-[calc(100vh-80px)]">

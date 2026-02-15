@@ -3,11 +3,9 @@ import { Link } from 'react-router';
 import Logo from './Logo';
 import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
-import ModalQuiSommesNous from './modals/ModalQuiSommesNous';
 
 const Footer = () => {
   const [showLegalModal, setShowLegalModal] = useState(false);
-  const [showQuiSommesNousModal, setShowQuiSommesNousModal] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
 
   return (
@@ -26,12 +24,13 @@ const Footer = () => {
           </li>
           <li className="cursor-pointer list-none text-sm text-gray-400" onClick={() => setShowContactModal(true)}>Nous contacter</li>
           <li className="cursor-pointer list-none text-sm text-gray-400" onClick={() => setShowLegalModal(true)}>Mentions légales</li>
-          <li className="cursor-pointer list-none text-sm text-gray-400" onClick={() => setShowQuiSommesNousModal(true)}>Qui sommes nous ?</li>
+          <li className="list-none text-sm text-gray-400">
+            <Link to="/qui-sommes-nous">Qui sommes-nous ?</Link>
+          </li>
         </ul>
       </div>
 
       <ModalLegal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
-      <ModalQuiSommesNous isActive={showQuiSommesNousModal} onClose={() => setShowQuiSommesNousModal(false)} />
       <ModalContact isActive={showContactModal} onClose={() => setShowContactModal(false)} />
     </div>
   );

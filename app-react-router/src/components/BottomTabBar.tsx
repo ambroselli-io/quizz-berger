@@ -4,7 +4,6 @@ import { Home, Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail,
 import { Sheet, SheetContent, SheetTitle } from '@app/components/ui/sheet';
 import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
-import ModalQuiSommesNous from './modals/ModalQuiSommesNous';
 import useUser from '@app/hooks/useUser';
 
 const BottomTabBar = () => {
@@ -13,7 +12,6 @@ const BottomTabBar = () => {
   const [moreOpen, setMoreOpen] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
-  const [showQuiSommesNousModal, setShowQuiSommesNousModal] = useState(false);
 
   const tabs = [
     { label: 'Accueil', icon: Home, href: '/', exact: true },
@@ -83,13 +81,10 @@ const BottomTabBar = () => {
               <Scale size={20} />
               Mentions legales
             </button>
-            <button
-              onClick={() => { setShowQuiSommesNousModal(true); setMoreOpen(false); }}
-              className="flex cursor-pointer items-center gap-3 rounded-lg border-none bg-transparent px-4 py-3 text-left text-base text-gray-700 active:bg-gray-100"
-            >
+            <Link to="/qui-sommes-nous" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
               <Users size={20} />
-              Qui sommes nous ?
-            </button>
+              Qui sommes-nous ?
+            </Link>
             <a
               href="https://github.com/ambroselli-io/quizz-berger"
               target="_blank"
@@ -105,7 +100,6 @@ const BottomTabBar = () => {
 
       <ModalContact isActive={showContactModal} onClose={() => setShowContactModal(false)} />
       <ModalLegal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
-      <ModalQuiSommesNous isActive={showQuiSommesNousModal} onClose={() => setShowQuiSommesNousModal(false)} />
     </>
   );
 };

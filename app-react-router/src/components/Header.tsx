@@ -4,7 +4,6 @@ import Logo from './Logo';
 import QuizzButton from './QuizzButton';
 import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
-import ModalQuiSommesNous from './modals/ModalQuiSommesNous';
 import useUser from '@app/hooks/useUser';
 
 const Header = () => {
@@ -12,7 +11,6 @@ const Header = () => {
   const location = useLocation();
   const [showContactModal, setShowContactModal] = useState(false);
   const [showLegalModal, setShowLegalModal] = useState(false);
-  const [showQuiSommesNousModal, setShowQuiSommesNousModal] = useState(false);
 
   const NavItem = ({ href, children, exact }: { href: string; children: React.ReactNode; exact?: boolean }) => {
     const active = exact ? location.pathname === href : location.pathname.startsWith(href);
@@ -50,7 +48,6 @@ const Header = () => {
       <div className="h-20 shrink-0 max-lg:h-[60px]" />
 
       <ModalLegal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
-      <ModalQuiSommesNous isActive={showQuiSommesNousModal} onClose={() => setShowQuiSommesNousModal(false)} />
       <ModalContact isActive={showContactModal} onClose={() => setShowContactModal(false)} />
     </>
   );
