@@ -49,6 +49,8 @@ const BOT_AGENTS = [
 const isBot = (userAgent) => BOT_AGENTS.some((bot) => userAgent?.includes(bot));
 
 const OG_CDN = 'https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com';
+const API_BASE =
+  process.env.NODE_ENV === 'production' ? 'https://api.quizz-du-berger.com' : 'http://localhost:5179';
 
 // Cache index.html in memory for production
 let cachedIndexHtml = null;
@@ -102,6 +104,13 @@ app.get('/result/:pseudo', (req, res) => {
       /<meta name="twitter:image" content="[^"]*" \/>/,
       `<meta name="twitter:image" content="${ogImage}" />`,
     );
+
+  // Fire-and-forget: trigger OG image generation via API
+  fetch(`${API_BASE}/og/generate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ pseudo }),
+  }).catch((err) => console.error('OG generation trigger failed:', err));
 
   res.setHeader('Content-Type', 'text/html');
   console.log('Sending HTML for result page', ogTitle);

@@ -14,6 +14,7 @@ import quizzBuilderRoutes from "./controllers/quizz-builder";
 import quizzRoutes from "./controllers/quizz";
 import feedbackRoutes from "./controllers/feedback";
 import publicRoutes from "./controllers/public";
+import ogRoutes from "./controllers/og";
 import configurePassport from "./passport";
 
 dotenv.config({ path: ".env" });
@@ -75,6 +76,7 @@ app.use("/quizz-builder", quizzBuilderRoutes);
 app.use("/quizz", quizzRoutes);
 app.use("/feedback", feedbackRoutes);
 app.use("/public", publicRoutes);
+app.use("/og", ogRoutes);
 
 const now = new Date().toISOString();
 
