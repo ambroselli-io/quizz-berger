@@ -148,9 +148,17 @@ router.get(
 
     const picName = getPicName(podiumData);
 
-    const existingPic = await fetch(`https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com/${picName}.png`);
+    const CDN_BASE = "https://quizz-du-berger-pictures.cellar-c2.services.clever-cloud.com";
+    const pseudo = req.user?.pseudo;
+
+    const existingPic = await fetch(`${CDN_BASE}/${picName}.png`);
 
     if (existingPic.status < 300) {
+      // Image exists for this result set. Also save a copy under og/{pseudo}.png
+      if (pseudo) {
+        const imageBuffer = Buffer.from(await existingPic.arrayBuffer());
+        await uploadBuffer(imageBuffer, `og/${pseudo}.png`);
+      }
       return next();
     }
 
@@ -202,7 +210,10 @@ router.get(
       },
     });
 
-    const uploaded = await uploadBuffer(image as Buffer, `${picName}.png`);
+    await uploadBuffer(image as Buffer, `${picName}.png`);
+    if (pseudo) {
+      await uploadBuffer(image as Buffer, `og/${pseudo}.png`);
+    }
   }),
 );
 
