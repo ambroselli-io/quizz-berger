@@ -60,9 +60,9 @@ function getIndexHtml() {
 }
 
 // Serve result pages with custom OG tags for social media bots
-app.get('/result/:pseudo', (req, res, next) => {
+app.get('/result/:pseudo', (req, res) => {
   if (!isBot(req.headers['user-agent'])) {
-    return res.sendFile(path.join(process.cwd(), 'build', 'index.html'), next);
+    return res.sendFile(path.join(process.cwd(), 'build', 'index.html'));
   }
 
   const pseudo = decodeURIComponent(req.params.pseudo);
