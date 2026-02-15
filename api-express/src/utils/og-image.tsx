@@ -4,9 +4,10 @@ import fs from "fs";
 import path from "path";
 import type { PodiumDataWithPercentAndHeightAndHighest } from "~/types/answer";
 
-// Load fonts once at startup
-const merriweatherBold = fs.readFileSync(path.resolve(__dirname, "../assets/fonts/Merriweather-Bold.ttf"));
-const merriweatherSans = fs.readFileSync(path.resolve(__dirname, "../assets/fonts/MerriweatherSans-Regular.ttf"));
+// Load static WOFF fonts from fontsource packages at startup (satori supports TTF, OTF, WOFF — not WOFF2)
+// Use "latin" subset (covers A-Z, 0-9, and common accented chars like é, è, ê)
+const merriweatherBold = fs.readFileSync(require.resolve("@fontsource/merriweather/files/merriweather-latin-700-normal.woff"));
+const merriweatherSans = fs.readFileSync(require.resolve("@fontsource/merriweather-sans/files/merriweather-sans-latin-400-normal.woff"));
 
 // Cache candidate avatar images in memory as base64 data URIs
 const avatarCache = new Map<string, string>();
@@ -38,6 +39,9 @@ function getStairColor(index: number, percent: number): string {
   if (index === 2) return "#cd7f32";
   return `rgba(205, 127, 50, ${percent / 100})`;
 }
+
+// Scale factor so 100% score = 75% of available height
+const HEIGHT_SCALE = 0.75;
 
 export async function generateOgImage(podiumData: Array<PodiumDataWithPercentAndHeightAndHighest>): Promise<Buffer> {
   // Pre-fetch all avatar images
@@ -79,7 +83,7 @@ export async function generateOgImage(podiumData: Array<PodiumDataWithPercentAnd
         style={{
           display: "flex",
           flexGrow: 1,
-          padding: "20px 80px 30px",
+          padding: "20px 60px 30px",
           height: "550px",
         }}
       >
@@ -95,7 +99,7 @@ export async function generateOgImage(podiumData: Array<PodiumDataWithPercentAnd
           }}
         >
           {podiumData.map((step, i) => {
-            const stairHeight = Math.max(step.height, 10);
+            const stairHeight = Math.max(step.height * HEIGHT_SCALE, 8);
             const fontSize = Math.max((step.percent / 100) * 36, 14);
 
             return (
@@ -110,37 +114,10 @@ export async function generateOgImage(podiumData: Array<PodiumDataWithPercentAnd
                   width: i < 3 ? `${100 / podiumData.length + 2}%` : `${100 / podiumData.length}%`,
                   marginLeft: "3px",
                   marginRight: "3px",
+                  position: "relative",
                 }}
               >
-                {/* Avatars above the stair */}
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginBottom: "-15px",
-                  }}
-                >
-                  {step.pictures.filter(Boolean).map((pic: string, picIdx: number) => {
-                    const avatarSrc = avatarCache.get(pic) || "";
-                    return avatarSrc ? (
-                      <img
-                        key={picIdx}
-                        src={avatarSrc}
-                        width={40}
-                        height={40}
-                        style={{
-                          borderRadius: "50%",
-                          border: `2px solid ${step.colors[picIdx] || "#ccc"}`,
-                          backgroundColor: step.colors[picIdx] || "#ccc",
-                          marginLeft: picIdx > 0 ? "-15px" : "0",
-                        }}
-                      />
-                    ) : null;
-                  })}
-                </div>
-
-                {/* Stair bar */}
+                {/* Stair bar — rendered first (behind) */}
                 <div
                   style={{
                     width: "100%",
@@ -149,23 +126,51 @@ export async function generateOgImage(podiumData: Array<PodiumDataWithPercentAnd
                     borderTopLeftRadius: "8px",
                     borderTopRightRadius: "8px",
                     display: "flex",
-                    flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    overflow: "hidden",
-                    position: "relative",
                   }}
                 >
                   <span
                     style={{
                       fontSize: `${fontSize}px`,
-                      textAlign: "center",
-                      width: "100%",
                       color: "#000",
                     }}
                   >
                     {step.percent}%
                   </span>
+                </div>
+
+                {/* Avatars — positioned absolutely on top of the stair, rendered last (in front) */}
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    position: "absolute",
+                    bottom: `${stairHeight}%`,
+                    left: 0,
+                    right: 0,
+                    transform: "translateY(70%)",
+                  }}
+                >
+                  {step.pictures.filter(Boolean).map((pic: string, picIdx: number) => {
+                    const avatarSrc = avatarCache.get(pic) || "";
+                    return avatarSrc ? (
+                      <img
+                        key={picIdx}
+                        src={avatarSrc}
+                        width={88}
+                        height={88}
+                        style={{
+                          borderRadius: "50%",
+                          border: `3px solid ${step.colors[picIdx] || "#ccc"}`,
+                          backgroundColor: step.colors[picIdx] || "#ccc",
+                          marginLeft: picIdx > 0 ? "-20px" : "0",
+                          objectFit: "cover",
+                        }}
+                      />
+                    ) : null;
+                  })}
                 </div>
               </div>
             );

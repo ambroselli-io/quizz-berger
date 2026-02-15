@@ -76,24 +76,8 @@ router.post(
       return;
     }
 
-    // Check if {picName}.png already exists on CDN (reuse across users with same results)
-    let imageBuffer: Buffer | null = null;
-    try {
-      const existingPic = await fetch(`${CDN_BASE}/${picName}.png`);
-      if (existingPic.ok) {
-        imageBuffer = Buffer.from(await existingPic.arrayBuffer());
-      }
-    } catch {
-      // CDN check failed, will generate
-    }
-
-    if (!imageBuffer) {
-      // Generate new image with satori
-      imageBuffer = await generateOgImage(podiumData);
-      await uploadBuffer(imageBuffer, `${picName}.png`);
-    }
-
-    // Upload user-specific copy
+    // Generate image with satori and upload as og/{pseudo}.png
+    const imageBuffer = await generateOgImage(podiumData);
     await uploadBuffer(imageBuffer, `og/${pseudo}.png`, "no-cache");
 
     // Update user's ogPicName in DB
