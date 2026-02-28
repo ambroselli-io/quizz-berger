@@ -20,9 +20,10 @@ jobs:
             FNM_PATH="$HOME/.local/share/fnm"
             if [ -d "$FNM_PATH" ]; then
               export PATH="$FNM_PATH:$PATH"
-              eval "`fnm env`"
+              eval "$(fnm env --shell bash)"
+              NODE_BIN="$HOME/.local/share/fnm/node-versions/$(fnm current)/installation/bin"
+              export PATH="$NODE_BIN:$PATH"
             fi
-            export PATH=$HOME/.npm-global/bin:$PATH
 
             # Verify fnm is loaded
             echo "Verifying fnm is loaded"
