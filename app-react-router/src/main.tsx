@@ -17,8 +17,9 @@ import { capture } from './services/sentry.ts';
 
 if (import.meta.env.PROD) {
   Sentry.init({
-    dsn: 'https://02c1b85c288d3b0775948e03c4db725c@o117731.ingest.us.sentry.io/4508444404416512',
+    dsn: 'https://f236c855f25740bcba54f33469b35452@o117731.ingest.us.sentry.io/5991642',
     environment: `quizz-du-berger-${import.meta.env.VITE_ENV}`,
+    sendDefaultPii: true,
     release: __VITE_BUILD_ID__,
     integrations: [
       Sentry.reactRouterV6BrowserTracingIntegration({

@@ -2,11 +2,14 @@ const Sentry = require("@sentry/node");
 const { ENVIRONMENT, SENTRY_DSN } = require("../config");
 
 if (process.env.NODE_ENV === "production") {
+  // Import with `import * as Sentry from "@sentry/node"` if you are using ESM
+
   Sentry.init({
-    dsn: SENTRY_DSN,
-    environment: `api-${ENVIRONMENT}`,
-    tracesSampleRate: 0.001,
-    enabled: false,
+    dsn: "https://c1e9413d48d056873c3ff7d7e9b9fe3a@o117731.ingest.us.sentry.io/4511240810987520",
+    // Setting this option to true will send default PII data to Sentry.
+    // For example, automatic IP address collection on events
+    sendDefaultPii: true,
+    environment: `api-express-${ENVIRONMENT}`,
   });
 }
 

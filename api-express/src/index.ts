@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import { sendError } from "~/utils/error";
 import { PORT, ENVIRONMENT, SENTRY_DSN, VERSION } from "~/config";
 import * as Sentry from "@sentry/node";
+import "./utils/sentry";
 // Import controllers
 import userRoutes from "./controllers/user";
 import answerRoutes from "./controllers/answer";
@@ -22,29 +23,6 @@ dotenv.config({ path: ".env" });
 // Put together a schema
 const app = express();
 app.use(logger("tiny"));
-
-const sentryEnabled = ENVIRONMENT !== "development" && ENVIRONMENT !== "test";
-
-if (sentryEnabled) {
-  Sentry.init({
-    dsn: SENTRY_DSN,
-    environment: `api-express-${ENVIRONMENT}`,
-    release: VERSION,
-    integrations: [
-      // enable HTTP calls tracing
-      new Sentry.Integrations.Http({ tracing: true }),
-      // enable Express.js middleware tracing
-      new Sentry.Integrations.Express({ app }),
-      // Automatically instrument Node.js libraries and frameworks
-      ...Sentry.autoDiscoverNodePerformanceMonitoringIntegrations(),
-    ],
-
-    // Set tracesSampleRate to 1.0 to capture 100%
-    // of transactions for performance monitoring.
-    // We recommend adjusting this value in production
-    tracesSampleRate: 0.01,
-  });
-}
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
