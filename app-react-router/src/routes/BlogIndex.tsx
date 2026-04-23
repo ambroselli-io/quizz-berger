@@ -20,24 +20,26 @@ export default function BlogIndex() {
 
         <section className="mx-auto w-full max-w-4xl px-5 py-12">
           <div className="grid gap-6 lg:grid-cols-2">
-            {articles.map((article) => (
-              <Link
-                key={article.slug}
-                to={`/blog/${article.slug}`}
-                className="group rounded-lg border border-gray-200 p-6 no-underline transition hover:shadow-md"
-              >
-                {article.tag && (
-                  <span className="mb-2 inline-block rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">
-                    {article.tag}
-                  </span>
-                )}
-                <h2 className="mb-2 text-lg font-bold text-quizz-dark group-hover:text-blue-700">
-                  {article.title}
-                </h2>
-                <p className="text-sm leading-relaxed text-gray-600">{article.excerpt}</p>
-                <p className="mt-3 text-xs text-gray-400">{article.date}</p>
-              </Link>
-            ))}
+            {[...articles]
+              .sort((a, b) => b.date.localeCompare(a.date))
+              .map((article) => (
+                <Link
+                  key={article.slug}
+                  to={`/blog/${article.slug}`}
+                  className="group rounded-lg border border-gray-200 p-6 no-underline transition hover:shadow-md"
+                >
+                  {article.tag && (
+                    <span className="mb-2 inline-block rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">
+                      {article.tag}
+                    </span>
+                  )}
+                  <h2 className="mb-2 text-lg font-bold text-quizz-dark group-hover:text-blue-700">
+                    {article.title}
+                  </h2>
+                  <p className="text-sm leading-relaxed text-gray-600">{article.excerpt}</p>
+                  <p className="mt-3 text-xs text-gray-400">{article.date}</p>
+                </Link>
+              ))}
           </div>
         </section>
 
