@@ -96,6 +96,7 @@ const blogSlugs = [
   'quizz-du-berger-vs-boussole-presidentielle',
   'accord-ue-mercosur-france-candidats-2027',
   'affaire-epstein-france-candidats-2027',
+  'guerre-iran-detroit-ormuz-france-candidats-2027',
 ];
 
 function buildUrls() {

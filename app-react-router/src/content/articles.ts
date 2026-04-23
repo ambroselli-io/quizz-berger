@@ -288,7 +288,12 @@ export const articles: Article[] = [
 <li><strong>2019</strong> : accord politique « de principe » annoncé entre la Commission européenne et le Mercosur.</li>
 <li><strong>2020-2023</strong> : la France, plusieurs pays européens et le Parlement européen bloquent la ratification en raison d'enjeux environnementaux et agricoles.</li>
 <li><strong>6 décembre 2024</strong> : à Montevideo, Ursula von der Leyen annonce la conclusion politique de l'accord avec les présidents du Mercosur.</li>
-<li><strong>2025-2026</strong> : début du processus de ratification, avec une division en deux parties (commerciale et politique) pour tenter de contourner les États membres récalcitrants.</li>
+<li><strong>Novembre 2025</strong> : l'Assemblée nationale française adopte une seconde résolution contre l'accord, à la quasi-unanimité (244 voix pour, 1 contre), le groupe macroniste étant le seul à s'abstenir.</li>
+<li><strong>9 janvier 2026</strong> : les États membres de l'UE, réunis au Conseil, valident le texte malgré l'opposition française.</li>
+<li><strong>17 janvier 2026</strong> : signature officielle de l'accord par Ursula von der Leyen côté européen.</li>
+<li><strong>21 janvier 2026</strong> : le Parlement européen, par une majorité étroite (334 pour, 324 contre, 11 abstentions), saisit la Cour de justice de l'Union européenne, ce qui <strong>suspend la ratification</strong> en attendant la décision de la Cour.</li>
+<li><strong>Début mars 2026</strong> : le Parlement brésilien approuve de son côté l'accord.</li>
+<li><strong>1er mai 2026</strong> : entrée en vigueur provisoire prévue pour la partie commerciale, malgré la saisine.</li>
 </ul>
 <p>Concrètement, l'accord prévoit l'importation en Europe de <strong>99 000 tonnes</strong> de bœuf sud-américain à droits réduits, <strong>180 000 tonnes</strong> de volaille, <strong>190 000 tonnes</strong> de sucre, ainsi que du maïs, du soja et de l'éthanol, en échange d'un meilleur accès pour l'automobile, les vins, les spiritueux, les produits laitiers et les biens industriels européens.</p>
 
@@ -307,8 +312,10 @@ export const articles: Article[] = [
 <p>Au-delà du clivage gauche-droite, la question de l'<strong>indépendance alimentaire</strong> traverse tout le spectre politique. Pour beaucoup, importer massivement de la nourriture d'un autre continent est à la fois un non-sens écologique (transport) et stratégique (dépendance).</p>
 
 <h2>Le Mercosur à l'Assemblée nationale</h2>
-<p>Le <strong>26 novembre 2024</strong>, l'Assemblée nationale française a voté une résolution symbolique rejetant l'accord UE-Mercosur en l'état, à une très large majorité transpartisane (<strong>484 voix pour, 70 contre</strong>). Ont voté contre l'accord : le Rassemblement National, La France Insoumise, le Parti Socialiste, Les Écologistes, le Parti Communiste, LR, les non-inscrits et une majorité du groupe Renaissance. Ce vote n'a pas de valeur juridique contraignante mais exprime la volonté politique de la représentation nationale.</p>
+<p>Le <strong>26 novembre 2024</strong>, l'Assemblée nationale française a voté une première résolution rejetant l'accord UE-Mercosur en l'état, à une très large majorité transpartisane (<strong>484 voix pour, 70 contre</strong>). Ont voté contre l'accord : le Rassemblement National, La France Insoumise, le Parti Socialiste, Les Écologistes, le Parti Communiste, LR, les non-inscrits et une majorité du groupe Renaissance. Ce vote n'a pas de valeur juridique contraignante mais exprime la volonté politique de la représentation nationale.</p>
 <p>Côté Sénat, une résolution similaire avait été adoptée le <strong>5 novembre 2024</strong>. Fin 2024, le gouvernement français a réaffirmé officiellement son opposition à l'accord « en l'état ».</p>
+<p>En <strong>novembre 2025</strong>, à la veille des votes européens décisifs, l'Assemblée nationale a récidivé avec une <strong>seconde résolution à la quasi-unanimité</strong> (244 voix pour, 1 contre), appelant le gouvernement à adopter une « minorité de blocage » au Conseil de l'UE. Fait remarquable, <strong>le groupe macroniste est le seul à s'être abstenu</strong>, creusant un écart politique entre la majorité présidentielle et l'ensemble des autres groupes.</p>
+<p>Malgré la pression parlementaire française, la France n'est pas parvenue à réunir une minorité de blocage suffisante au Conseil de l'UE le 9 janvier 2026. L'accord a donc été formellement signé le 17 janvier 2026 par Ursula von der Leyen, avant d'être partiellement suspendu par la saisine de la Cour de justice de l'UE le 21 janvier.</p>
 
 <h2>Les positions des 26 candidats à la présidentielle 2027</h2>
 <p>Ce qui rend le débat Mercosur particulièrement intéressant, c'est qu'il <strong>traverse les clivages habituels</strong>. Pour y voir clair, nous avons regroupé les 26 candidats en quatre familles selon leurs positions publiques et leurs réponses aux questions du Quizz du Berger sur le <a href="/question-politique/reindustrialisation-france">libre-échange</a> et l'<a href="/theme/agriculture-et-alimentation">indépendance alimentaire</a>.</p>
@@ -355,7 +362,16 @@ export const articles: Article[] = [
 </ul>
 
 <h3>Un consensus français, des nuances à l'étranger</h3>
-<p>Fait remarquable : sur les 26 candidats du Quizz du Berger, <strong>aucun ne défend la ratification de l'accord UE-Mercosur dans sa version actuelle</strong>. Les différences portent sur l'intensité du rejet (refus de principe vs. demande de renégociation) et sur les motifs (souveraineté, écologie, agriculture, libéralisme équitable). Cette quasi-unanimité française contraste avec la position de l'Allemagne, de l'Espagne et du Portugal, favorables à l'accord.</p>
+<p>Fait remarquable : sur les 26 candidats du Quizz du Berger, <strong>aucun ne défend la ratification de l'accord UE-Mercosur dans sa version actuelle</strong>. Les différences portent sur l'intensité du rejet (refus de principe vs. demande de renégociation) et sur les motifs (souveraineté, écologie, agriculture, libéralisme équitable). Cette quasi-unanimité française contraste avec la position de l'Allemagne, de l'Espagne et du Portugal, favorables à l'accord — qui ont d'ailleurs permis sa signature au Conseil de l'UE le 9 janvier 2026 malgré la pression française.</p>
+
+<h3>Et maintenant ? Les recours qui restent</h3>
+<p>Avec la signature du 17 janvier 2026, le front s'est déplacé. Les opposants misent désormais sur quatre recours :</p>
+<ul>
+<li>La <strong>saisine de la Cour de justice de l'UE</strong> par le Parlement européen (21 janvier 2026), qui conteste la manière dont la Commission a scindé l'accord en deux volets pour éviter une ratification par les 27 parlements nationaux.</li>
+<li>Le <strong>blocage possible par le Parlement européen</strong> lors du vote de ratification une fois la question juridique tranchée.</li>
+<li>Le vote éventuel des parlements nationaux sur le volet politique (Portugal, Italie, Pologne et Irlande pourraient basculer).</li>
+<li>Les mesures nationales d'accompagnement : clauses de sauvegarde, soutiens aux filières sensibles, renforcement des contrôles sanitaires à l'importation.</li>
+</ul>
 
 <h2>Arguments pour et arguments contre l'accord UE-Mercosur</h2>
 
@@ -421,7 +437,9 @@ export const articles: Article[] = [
 <li><strong>Juillet 2020</strong> : Ghislaine Maxwell est arrêtée.</li>
 <li><strong>Décembre 2021</strong> : Maxwell est reconnue coupable de cinq chefs d'accusation, dont trafic sexuel de mineurs. Elle est condamnée à <strong>20 ans de prison</strong>.</li>
 <li><strong>Janvier 2024</strong> : la justice américaine rend publics <strong>plus de 900 pages</strong> de documents judiciaires dans l'affaire Giuffre v. Maxwell, contenant les noms de dizaines de personnalités associées à Epstein.</li>
-<li><strong>2025-2026</strong> : nouvelles vagues de déclassification aux États-Unis (les « Epstein files »), relances d'enquêtes parlementaires et nouvelles procédures civiles.</li>
+<li><strong>Fin 2025</strong> : le Congrès américain adopte l'<strong>Epstein Files Transparency Act</strong> à la quasi-unanimité (427 voix pour contre 1 à la Chambre, adoption à l'unanimité au Sénat).</li>
+<li><strong>30 janvier 2026</strong> : le Department of Justice publie, en application de la loi, <strong>plus de 3 millions de pages</strong> de documents, <strong>plus de 2 000 vidéos</strong> et <strong>180 000 images</strong>. C'est la plus grande déclassification de l'histoire de l'affaire.</li>
+<li><strong>Février-mars 2026</strong> : multiplication des enquêtes dans le monde, arrestation d'Andrew Mountbatten-Windsor (ex-prince Andrew) le 18 février au Royaume-Uni, ouverture d'enquêtes françaises, premières mises en cause publiques.</li>
 </ul>
 
 <h2>La « liste Epstein » : qu'est-ce que c'est exactement ?</h2>
@@ -435,23 +453,41 @@ export const articles: Article[] = [
 <p>Important : figurer dans l'un de ces documents ne vaut pas accusation. La présence d'un nom peut simplement signaler une relation professionnelle, mondaine ou une fréquentation ponctuelle.</p>
 
 <h2>Les « Epstein files » : que révèlent les documents judiciaires ?</h2>
-<p>Les documents descellés en 2024 et 2025 révèlent principalement :</p>
+<p>Les documents descellés en 2024, 2025 puis massivement en <strong>janvier 2026</strong> révèlent :</p>
 <ul>
 <li>L'ampleur du <strong>réseau de recrutement</strong> de victimes, souvent mineures, par Ghislaine Maxwell et d'autres complices.</li>
 <li>La <strong>complaisance de certaines autorités</strong> locales américaines, notamment lors de l'accord de 2008.</li>
 <li>Les <strong>liens entre Epstein et plusieurs institutions académiques et financières</strong> (Harvard, MIT, banques d'affaires).</li>
-<li>Des <strong>témoignages directs de victimes</strong> citant des hommes puissants, dont le prince Andrew d'York — qui a réglé à l'amiable une plainte civile pour 12 millions de livres en 2022.</li>
+<li>Des <strong>témoignages directs de victimes</strong> citant des hommes puissants, dont le prince Andrew d'York — qui a réglé à l'amiable une plainte civile pour 12 millions de livres en 2022, avant d'être finalement arrêté le <strong>18 février 2026</strong> au Royaume-Uni pour soupçons de partage de documents confidentiels avec Epstein.</li>
+<li>De nouveaux noms internationaux rendus publics en 2026 : la future reine de Norvège Mette-Marit, l'ancien Premier ministre norvégien Thorbjørn Jagland, l'ancien ministre slovaque des Affaires étrangères Miroslav Lajčák, et plusieurs personnalités françaises (voir ci-dessous).</li>
+</ul>
+<p>Comme pour les précédentes vagues, figurer dans ces documents ne vaut pas accusation : il peut s'agir d'une fréquentation mondaine, d'un contact professionnel ou d'une mention faite par un tiers.</p>
+
+<h2>Le volet français de l'affaire Epstein : Brunel, Jack Lang, Gérald Marie</h2>
+<p>La France n'est pas restée à l'écart de l'affaire. La publication massive des « Epstein Files » le 30 janvier 2026 a au contraire ouvert un <strong>volet français inédit</strong>, avec plusieurs noms désormais dans le viseur de la justice.</p>
+
+<h3>Jean-Luc Brunel : le pilier historique du dossier français</h3>
+<p>Ancien agent de mannequins, fondateur de MC2 Model Management, <strong>Jean-Luc Brunel</strong> est considéré comme un collaborateur central d'Epstein côté français.</p>
+<ul>
+<li><strong>Décembre 2020</strong> : ouverture d'une information judiciaire pour viol sur mineur, agression sexuelle et trafic d'êtres humains.</li>
+<li><strong>Décembre 2021</strong> : Brunel est arrêté à Roissy et placé en détention provisoire à la prison de la Santé.</li>
+<li><strong>19 février 2022</strong> : Brunel est retrouvé mort dans sa cellule, officiellement par pendaison.</li>
+<li><strong>20 février 2026</strong> : à la suite de la publication des « Epstein Files », le parquet de Paris <strong>rouvre l'enquête</strong> sur les associés d'Epstein en France, Brunel compris, pour éclaircir les complicités.</li>
 </ul>
 
-<h2>Le volet français de l'affaire Epstein : Jean-Luc Brunel</h2>
-<p>La France n'est pas restée à l'écart de l'affaire. Le nom qui a concentré l'attention est celui de <strong>Jean-Luc Brunel</strong>, ancien agent de mannequins, fondateur de MC2 Model Management, et proche collaborateur présumé d'Epstein.</p>
+<h3>Jack Lang : enquête du PNF pour blanchiment aggravé de fraude fiscale</h3>
+<p>C'est l'onde de choc politique de 2026. L'ancien ministre de la Culture de François Mitterrand <strong>Jack Lang</strong> est cité <strong>673 fois</strong> dans les « Epstein Files » publiés le 30 janvier 2026.</p>
 <ul>
-<li><strong>Décembre 2020</strong> : ouverture d'une information judiciaire en France pour viol sur mineur, agression sexuelle et trafic d'êtres humains.</li>
-<li><strong>Décembre 2021</strong> : Brunel est arrêté à l'aéroport de Roissy et placé en détention provisoire à la prison de la Santé.</li>
-<li><strong>19 février 2022</strong> : Brunel est retrouvé mort dans sa cellule, officiellement par pendaison. Sa mort relance les interrogations sur la capacité de la justice à traiter les dossiers impliquant les élites.</li>
-<li>L'instruction française se poursuit sans lui, visant d'autres complices présumés et les pratiques de recrutement dans l'industrie du mannequinat.</li>
+<li><strong>6 février 2026</strong> : le <strong>Parquet national financier (PNF)</strong> ouvre une enquête pour « blanchiment aggravé de fraude fiscale » visant Jack Lang et sa fille Caroline Lang. À ce stade, aucune accusation de violences sexuelles n'est portée contre lui.</li>
+<li><strong>10 février 2026</strong> : Jack Lang démissionne de la présidence de l'Institut du Monde Arabe, qu'il occupait depuis 2013. Le siège parisien de l'Institut est perquisitionné.</li>
+<li><strong>14 février 2026</strong> : dans sa première interview, Jack Lang conteste vigoureusement les accusations, se dit « plus blanc que blanc », dénonce un « tsunami de calomnies » et affirme n'avoir « jamais reçu un centime » d'Epstein.</li>
 </ul>
-<p>En parallèle, l'Office central pour la répression des violences aux personnes (OCRVP) continue de recueillir des témoignages. Plusieurs mannequins et anciens modèles ont déposé plainte pour dénoncer un système d'exploitation et de recrutement de jeunes filles, parfois mineures.</p>
+<p>D'autres Français sont cités par France 24 (17 février 2026) comme étant « dans le viseur de la justice » : <strong>Fabrice Aidan</strong>, homme d'affaires mentionné dans les échanges, et plusieurs intermédiaires.</p>
+
+<h3>Gérald Marie et les anciennes mannequins d'Elite</h3>
+<p>Le <strong>19 mars 2026</strong>, <strong>15 anciennes mannequins</strong> demandent à la justice française d'enquêter sur <strong>Gérald Marie</strong>, ancien patron de l'agence Elite, et sur <strong>Daniel Siad</strong>, recruteur. Les plaignantes affirment détenir des « documents judiciaires et des e-mails » prouvant la collaboration entre Gérald Marie, Jean-Luc Brunel et Jeffrey Epstein, via les agences MC2 et E Model Management.</p>
+<p>Le parquet de Paris a ouvert deux enquêtes-cadre : l'une pour <strong>infractions de traite d'êtres humains</strong>, l'autre pour <strong>infractions financières</strong>, afin d'analyser méthodiquement les dénonciations liées à Epstein.</p>
+<p>L'Office central pour la répression des violences aux personnes (OCRVP) continue parallèlement de recueillir des témoignages. Plusieurs mannequins et anciens modèles ont déposé plainte pour dénoncer un système d'exploitation et de recrutement de jeunes filles, parfois mineures.</p>
 
 <h2>Ce que l'affaire Epstein dit de notre époque</h2>
 <p>Au-delà du cas pénal, l'affaire Epstein agit comme un révélateur. Elle met en lumière :</p>
@@ -544,6 +580,177 @@ export const articles: Article[] = [
         { '@type': 'Thing', name: 'Jeffrey Epstein' },
         { '@type': 'Thing', name: 'Ghislaine Maxwell' },
         { '@type': 'Thing', name: 'Jean-Luc Brunel' },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
+  {
+    slug: 'guerre-iran-detroit-ormuz-france-candidats-2027',
+    title: 'Guerre Iran-Israël et détroit d\'Ormuz : tout comprendre et les positions des 26 candidats à la présidentielle 2027',
+    excerpt:
+      "Guerre Iran-Israël, programme nucléaire iranien, détroit d'Ormuz et prix du pétrole : le décryptage complet et les positions de chaque candidat à 2027 sur l'Iran et la diplomatie française.",
+    date: '2026-04-23',
+    tag: 'Analyse',
+    content: `
+<p>Massacres de manifestants en janvier, guerre ouverte avec Israël et les États-Unis à partir du 28 février, mort du Guide suprême, fermeture effective du <strong>détroit d'Ormuz</strong> début mars, baril au-dessus de 100 dollars : 2026 a fait basculer le Moyen-Orient et, avec lui, les prix de l'énergie en Europe. Voici ce qu'il faut savoir sur la <strong>guerre Iran-Israël-États-Unis</strong> et ce qu'en disent les 26 candidats à la présidentielle 2027.</p>
+
+<h2>Le détroit d'Ormuz : c'est quoi ?</h2>
+<p>Le <strong>détroit d'Ormuz</strong> est un bras de mer de <strong>55 km de large</strong> (à son point le plus resserré, seulement 33 km) qui relie le golfe Persique au golfe d'Oman et à l'océan Indien. Il borde au nord l'Iran, au sud le sultanat d'Oman et les Émirats arabes unis.</p>
+<p>C'est l'un des plus importants passages stratégiques de la planète :</p>
+<ul>
+<li><strong>Environ 20 % du pétrole mondial</strong> y transite chaque jour (soit près de <strong>20 millions de barils</strong>).</li>
+<li><strong>Près d'un tiers du gaz naturel liquéfié (GNL) mondial</strong> y passe, notamment depuis le Qatar.</li>
+<li>Les principaux fournisseurs du monde — Arabie saoudite, Iran, Irak, Koweït, Émirats, Qatar — exportent tous par ce seul couloir.</li>
+</ul>
+<p>Toute fermeture — même partielle, même temporaire — ferait immédiatement exploser les cours mondiaux du pétrole et du gaz, avec un effet direct sur l'inflation en Europe et sur la facture énergétique des ménages français.</p>
+
+<h2>Acte I : la guerre éclair de juin 2025 (« Douze Jours »)</h2>
+<p>Un premier conflit direct a éclaté à l'été 2025, prélude à la guerre ouverte de 2026. Rappel des dates :</p>
+<ul>
+<li><strong>13 juin 2025</strong> : Israël lance l'opération « Rising Lion », une série de frappes aériennes massives contre les installations nucléaires iraniennes (Natanz, Ispahan), des sites militaires, des chefs du corps des Gardiens de la Révolution et plusieurs scientifiques atomistes.</li>
+<li><strong>13-21 juin 2025</strong> : l'Iran riposte par des salves de missiles balistiques et de drones contre Israël. Des missiles atteignent Tel-Aviv, Haïfa et Beer-Sheva. Israël intercepte la majorité des projectiles grâce au Dôme de fer et à la Fronde de David.</li>
+<li><strong>22 juin 2025</strong> : les États-Unis entrent directement dans le conflit avec l'opération « Midnight Hammer ». Des bombardiers B-2 larguent des bombes anti-bunker GBU-57 sur les sites enfouis de <strong>Fordo, Natanz et Ispahan</strong>. C'est la première utilisation opérationnelle de cette arme.</li>
+<li><strong>22 juin 2025</strong> : le Parlement iranien vote symboliquement la fermeture du <strong>détroit d'Ormuz</strong>. La décision finale revient au Conseil suprême de sécurité nationale, qui ne l'applique pas.</li>
+<li><strong>23 juin 2025</strong> : l'Iran frappe la base américaine d'Al-Udeid au Qatar en représailles, en prévenant à l'avance les autorités du Qatar pour éviter les pertes.</li>
+<li><strong>24 juin 2025</strong> : cessez-le-feu annoncé par Donald Trump, entré en vigueur après quelques heures de tensions.</li>
+</ul>
+
+<h2>Acte II : les massacres de janvier 2026</h2>
+<p>Fin 2025, une <strong>vague de manifestations populaires</strong> éclate en Iran, déclenchée par l'effondrement du rial et la paupérisation brutale de la classe moyenne. La contestation s'étend à des dizaines de villes, franchit les lignes ethniques, et se radicalise en appel au renversement du régime. La réponse des autorités est d'une brutalité extrême.</p>
+<ul>
+<li><strong>8 et 9 janvier 2026</strong> : les forces de sécurité tirent sur des cortèges dans plusieurs provinces. Amnesty International et Human Rights Watch parlent de <strong>massacres de manifestants</strong> à grande échelle.</li>
+<li>Le bilan exact est <strong>disputé et probablement sous-estimé</strong> : l'ONG HRAI dénombrait <strong>5 848 morts vérifiés</strong> au 25 janvier 2026 et enquêtait sur 17 000 autres cas. Certaines estimations internes citées par les services iraniens évoqueraient jusqu'à 36 500 morts. Les autorités iraniennes contestent ces chiffres et parlent d'« émeutes fomentées par l'étranger ».</li>
+<li><strong>Répression numérique et militaire</strong> : coupure totale d'Internet pendant plusieurs jours, couvre-feu nocturne, patrouilles lourdement armées, arrestations dans les hôpitaux, usage massif de gaz lacrymogènes et d'armes à létalité contestée.</li>
+<li><strong>Onde de choc internationale</strong> : Amnesty parle de la « période de répression la plus meurtrière en Iran depuis des décennies ». L'ONU dénonce une « brutalité persistante ». C'est dans ce contexte que Washington place ses options militaires sur la table, le 13 janvier, à la Maison-Blanche.</li>
+</ul>
+
+<h2>Acte III : la guerre Iran-Israël-États-Unis de 2026</h2>
+<p>La bascule militaire se produit fin février. Rappel des dates clés :</p>
+<ul>
+<li><strong>25 janvier 2026</strong> : le groupe aéronaval de l'<strong>USS Abraham Lincoln</strong> est déployé vers le golfe Persique, accompagné de renforts aériens américains.</li>
+<li><strong>3 février 2026</strong> : six canonnières des Gardiens de la Révolution tentent d'arraisonner le pétrolier <strong>Stena Imperative</strong> dans le détroit d'Ormuz. Le navire poursuit sa route sous escorte du destroyer américain USS McFaul. La crise du détroit commence.</li>
+<li><strong>28 février 2026</strong> : les États-Unis et Israël lancent une opération conjointe massive contre l'Iran — frappes coordonnées sur des dizaines de sites militaires, les stocks de missiles, les lanceurs et les installations nucléaires. Le <strong>Guide suprême Ali Khamenei est tué</strong> pendant l'attaque ; un conseil provisoire prend le contrôle du régime. Donald Trump affirme publiquement que l'objectif inclut un <strong>changement de régime</strong>, en plus de l'arrêt du programme nucléaire.</li>
+<li><strong>1er mars 2026</strong> : le front libanais s'ouvre. Tsahal lance une campagne de bombardements contre le Hezbollah. Une frappe de missile iranien sur la ville de <strong>Beit Shemesh</strong> tue 9 civils israéliens — bilan le plus lourd côté civils en ce début de guerre.</li>
+<li><strong>2 mars 2026</strong> : un haut responsable des Gardiens de la Révolution annonce officiellement la <strong>fermeture du détroit d'Ormuz</strong>. Tout navire tentant la traversée est menacé d'interception.</li>
+<li><strong>Mars 2026</strong> : l'Iran tire plus de <strong>450 missiles balistiques</strong> sur Israël. Le Dôme de fer et la Fronde de David interceptent environ 92 % des projectiles visant des zones habitées.</li>
+<li><strong>21 mars 2026</strong> : nouvelle série de frappes américaines sur le site nucléaire enfoui de <strong>Natanz</strong>, à nouveau avec des bombes anti-bunker GBU-57. L'Iran suspend la coopération avec l'AIEA pour les sites bombardés.</li>
+<li><strong>Avril 2026</strong> : le détroit reste fermé, des négociations discrètes reprennent via le Qatar et Oman, tandis que des affrontements limités se poursuivent en mer d'Oman et au Liban.</li>
+</ul>
+
+<h2>Le programme nucléaire iranien : où en est-on ?</h2>
+<p>Officiellement, l'Iran a toujours défendu un programme nucléaire <strong>exclusivement civil</strong>. Dans les faits, plusieurs éléments expliquent la crise actuelle :</p>
+<ul>
+<li>L'Iran enrichissait fin 2025 de l'uranium à <strong>60 %</strong>, très au-delà des besoins civils (5 %) et à un pas technique du niveau militaire (90 %).</li>
+<li>Les sites de Fordo et Natanz sont enfouis à plus de 80 m sous la montagne, ce qui rend leur neutralisation très difficile sauf pour les bombes anti-bunker GBU-57 américaines — utilisées à nouveau le 21 mars 2026.</li>
+<li>Après les frappes conjointes de juin 2025 puis de février-mars 2026, le retard imposé au programme est estimé entre <strong>plusieurs mois et plusieurs années</strong>, selon les sources (Pentagone, AIEA, services israéliens). Les évaluations divergent largement.</li>
+<li>Depuis les frappes du 28 février 2026, Téhéran <strong>refuse à l'AIEA l'accès</strong> aux sites bombardés. Mohammad Eslami, chef de l'Organisation iranienne de l'énergie atomique, conditionne toute inspection à l'adoption de règles internationales sur les « installations attaquées militairement » et à une condamnation des frappes par l'Agence.</li>
+</ul>
+<p>Le dossier nucléaire n'est donc pas clos : il est <strong>en pleine recomposition</strong>. Les connaissances scientifiques n'ont pas été détruites, la volonté politique iranienne s'est peut-être durcie, et la communauté internationale reste divisée entre fermeté et retour à un cadre diplomatique de type JCPoA.</p>
+
+<h2>La fermeture d'Ormuz fait exploser les prix de l'énergie</h2>
+<p>Contrairement à juin 2025, où la fermeture était restée une menace, Téhéran l'a <strong>effectivement mise en œuvre</strong> le 2 mars 2026 en réponse aux frappes du 28 février. Les conséquences sont immédiates et massives :</p>
+<ul>
+<li><strong>Brent au-dessus de 100 dollars</strong> le baril dès la première semaine de mars, avec un pic observé <strong>proche de 120 dollars</strong>. Le 21 mars, le directeur exécutif de l'<strong>Agence internationale de l'énergie (AIE)</strong> qualifie cette fermeture prolongée de « <em>plus grande menace pour la sécurité énergétique mondiale de toute l'histoire</em> ».</li>
+<li>Projections des analystes : environ 105 $ le baril après 1 mois, <strong>140 $ après 2 mois</strong>, autour de <strong>165 $ après 3 mois</strong> si la fermeture se prolonge.</li>
+<li>Flambée des prix à la pompe et de la facture d'électricité en Europe, retour brutal de l'inflation.</li>
+<li>Pression accrue sur la Banque centrale européenne et risque de remontée des taux, avec effet récessif.</li>
+<li>Tensions d'approvisionnement en Asie : Chine, Inde, Japon, Corée — plusieurs pays asiatiques signalent déjà des manques.</li>
+<li>Recomposition accélérée des routes énergétiques : plus de GNL américain et qatari transitant par d'autres routes, plus d'hydrocarbures russes via l'Asie.</li>
+</ul>
+
+<h2>Les enjeux pour la France</h2>
+<p>La France n'est pas directement sur la ligne de front, mais la crise iranienne touche plusieurs points sensibles de la politique hexagonale :</p>
+<ul>
+<li><strong>Énergie</strong> : la France importe une part de son gaz via le GNL qatari, qui passe par Ormuz. La fermeture effective du détroit fait exploser les prix de l'énergie pour les ménages et l'industrie, avec un effet direct sur l'inflation.</li>
+<li><strong>Diplomatie</strong> : la France est membre permanent du Conseil de sécurité de l'ONU et signataire de l'accord de Vienne de 2015 (JCPoA). Elle doit choisir entre l'alignement sur Washington, la médiation européenne avec Berlin et Londres, ou une voie plus indépendante, après la mort de Khamenei et les frappes sur Natanz.</li>
+<li><strong>Défense</strong> : la marine française est présente dans la zone (base interarmées des Émirats, mission européenne Aspides, Agenor). La fermeture d'Ormuz pose directement la question du budget militaire et du partage du fardeau avec l'OTAN.</li>
+<li><strong>Communautés</strong> : en France vivent une diaspora iranienne active et une communauté juive attentive à la sécurité d'Israël. Les prises de position officielles sont suivies de près, et les massacres de janvier 2026 ont ravivé la mobilisation des Iraniennes et Iraniens de France.</li>
+<li><strong>Nucléaire civil</strong> : l'épisode ravive le débat intérieur sur l'indépendance énergétique via le parc nucléaire français, au moment où le débat sur les EPR2 et la place des renouvelables devient central pour la présidentielle 2027.</li>
+</ul>
+
+<h2>Les 26 candidats à la présidentielle 2027 face à l'Iran et à Ormuz</h2>
+<p>Sur ce dossier, les clivages classiques gauche-droite ne suffisent pas. Il faut croiser au moins trois lignes de fracture : <strong>alliance occidentale vs. non-alignement</strong>, <strong>soutien à Israël vs. équidistance</strong>, et <strong>fermeté militaire vs. diplomatie et désescalade</strong>. Voici les 26 candidats regroupés en quatre familles.</p>
+
+<h3>Famille 1 — Atlantistes et partisans d'une ligne ferme face à l'Iran</h3>
+<p>Ces candidats considèrent que l'Iran représente une menace majeure pour la paix régionale, qu'il faut continuer à soutenir Israël face au Hezbollah et aux Gardiens de la Révolution, et rester coordonnés avec les États-Unis et l'OTAN.</p>
+<ul>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> — atlantiste assumé, pro-Ukraine, ferme contre toutes les dictatures ; position claire en faveur d'une Europe de la défense alignée avec Washington face à Téhéran.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> — soutien appuyé à Israël, vision civilisationnelle du conflit ; favorable à une ligne dure contre Téhéran, y compris militaire.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a>, <a href="/candidat/bruno-retailleau">Bruno Retailleau</a>, <a href="/candidat/xavier-bertrand">Xavier Bertrand</a> (LR) — soutien constant à Israël, fermeté sur le programme nucléaire iranien, vigilance contre l'ingérence iranienne en Europe.</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a>, <a href="/candidat/gerald-darmanin">Gérald Darmanin</a>, <a href="/candidat/david-lisnard">David Lisnard</a> — fermeté sur le nucléaire iranien, sanctions ciblées, soutien à Israël tout en rappelant la nécessité d'un cadre de droit international.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> — position de gouvernance : solidarité atlantique, fermeté sur la non-prolifération, soutien politique à Israël dans son droit à la sécurité.</li>
+</ul>
+
+<h3>Famille 2 — Fermeté mais diplomatie, équilibre et désescalade</h3>
+<p>Ces candidats reconnaissent la gravité du programme nucléaire iranien mais insistent sur la voie diplomatique, sur l'équilibre entre la sécurité d'Israël et les droits du peuple palestinien, et sur la nécessité de ne pas laisser les États-Unis dicter la ligne européenne.</p>
+<ul>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — voix historique du refus de la guerre en Irak en 2003 ; plaide pour une médiation française et une désescalade, contre toute logique d'intervention militaire.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> — ligne centriste et européenne : retour à un JCPoA actualisé, soutien à la diplomatie plutôt qu'aux frappes.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — position socialiste classique : fermeté sur le nucléaire, soutien à Israël, mais refus de laisser le conflit déraper en guerre régionale.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — accent mis sur la diplomatie multilatérale et la coopération ONU, vigilance sur le retour à la table des négociations.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — ligne socialiste et pro-européenne ; soutien à Israël mais fermeté sur le respect du droit international à Gaza.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a>, <a href="/candidat/delphine-batho">Delphine Batho</a> (écologistes) — priorité à la désescalade, au climat et à la sortie des énergies fossiles ; critique des frappes préventives, soutien aux mouvements démocratiques iraniens, notamment aux femmes.</li>
+</ul>
+
+<h3>Famille 3 — Souverainistes et non-alignés : une France qui parle seule</h3>
+<p>Ces candidats refusent que la France s'aligne sur les États-Unis ou l'OTAN. Ils défendent une diplomatie « gaullo-mitterrandienne » ou souverainiste, et la capacité de la France à parler à tous les acteurs, y compris à Téhéran.</p>
+<ul>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> — refus de l'alignement automatique sur Washington ; défense de l'intérêt national français, d'un équilibre au Moyen-Orient et de la lutte contre l'islamisme radical sans ingérence militaire.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> — souverainiste historique, opposé à toute guerre « pour le compte » des États-Unis, partisan d'une diplomatie française indépendante.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Frexit, sortie de l'OTAN, neutralité stricte ; la France ne doit prendre parti ni pour l'Iran ni pour Israël, mais défendre la paix et le droit.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — expression d'un non-alignement populaire : « ce n'est pas notre guerre », priorité aux problèmes des Français.</li>
+</ul>
+
+<h3>Famille 4 — Anti-impérialistes et partisans d'une paix négociée</h3>
+<p>Ces candidats voient dans l'intervention américaine et israélienne une manifestation de l'impérialisme occidental. Ils appellent à une paix négociée, à la levée des sanctions et au soutien aux sociétés civiles, en Iran comme ailleurs.</p>
+<ul>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> — dénonce les frappes israélo-américaines comme des actes de guerre illégaux ; appelle à un ordre international non aligné, à la fin des guerres et au retour du droit international.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — pacifisme affirmé, critique des va-t-en-guerre, plaidoyer pour la diplomatie et pour parler aux peuples.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — refus de l'escalade militaire, soutien aux mouvements démocratiques et féministes iraniens, opposition à la logique des blocs.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — paix, désarmement, négociations ; refus d'une guerre par procuration.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — analyse anticapitaliste : la guerre sert les intérêts pétroliers et militaires, refus de tout soutien à un État impérialiste.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — dénonciation de l'hégémonie occidentale et plaidoyer pour une refondation du droit international.</li>
+</ul>
+
+<h3>Une ligne qui traverse tout le spectre : le soutien aux Iraniennes</h3>
+<p>Un point rassemble presque toutes les familles : le soutien aux <strong>femmes iraniennes</strong> et au mouvement « <em>Femme, Vie, Liberté</em> » né en 2022 après la mort de Mahsa Amini. Des Écologistes à LR, en passant par LFI, le PS et Renaissance, tous les candidats ont, à des degrés divers, affiché leur solidarité avec les Iraniennes. Les différences portent sur les moyens : sanctions, soutien politique, accueil des réfugiés, diplomatie.</p>
+
+<h2>Arguments pour une ligne ferme vs. arguments pour la diplomatie</h2>
+
+<table>
+<tr><th>Arguments pour une ligne ferme (sanctions, dissuasion, frappes)</th><th>Arguments pour la diplomatie (négociation, désescalade)</th></tr>
+<tr><td>L'Iran a enrichi l'uranium à 60 %, seuil incompatible avec un usage civil.</td><td>Les frappes n'éliminent pas les connaissances scientifiques ni la volonté politique.</td></tr>
+<tr><td>Le régime iranien finance le Hezbollah, les Houthis et des milices en Irak et en Syrie.</td><td>Toute guerre de grande ampleur déstabilise la région, y compris les alliés arabes modérés.</td></tr>
+<tr><td>La sécurité d'Israël ne peut pas être négociée.</td><td>La sécurité durable passe par un accord vérifiable, comme le JCPoA de 2015.</td></tr>
+<tr><td>Une fermeture d'Ormuz doit être rendue impossible par la présence militaire occidentale.</td><td>La meilleure protection d'Ormuz est diplomatique : ne pas donner à Téhéran de raison d'y toucher.</td></tr>
+<tr><td>La France doit être fiable pour ses alliés.</td><td>La France n'est utile que si elle parle à tous les acteurs, y compris Téhéran.</td></tr>
+</table>
+
+<h2>Et vous, où vous situez-vous ?</h2>
+<p>L'Iran, Ormuz et la question du nucléaire recoupent plusieurs thèmes du Quizz du Berger :</p>
+<ul>
+<li><a href="/theme/affaires-etrangeres">Thème : Affaires étrangères</a> — OTAN, Ukraine, Chine, construction européenne, armée européenne commune.</li>
+<li><a href="/theme/climat-energie-et-ecologie">Thème : Climat, énergie et écologie</a> — nucléaire civil, énergies renouvelables, sobriété énergétique.</li>
+<li><a href="/theme/economie-et-industrie">Thème : Économie et industrie</a> — dépendance énergétique, réindustrialisation, souveraineté.</li>
+<li><a href="/theme/depenses-et-dette-publiques">Thème : Dépenses et dette publiques</a> — budget de la défense, arbitrages budgétaires.</li>
+</ul>
+<p>Répondez aux 119 questions et comparez-vous aux 26 candidats. Vous pourriez découvrir que, sur le Moyen-Orient et l'énergie, vous êtes plus proche d'un candidat auquel vous ne vous attendiez pas.</p>
+
+<p><a href="/themes">→ Faire le quiz et découvrir quel candidat pense comme vous</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Guerre Iran-Israël et détroit d\'Ormuz : tout comprendre et les positions des 26 candidats à la présidentielle 2027',
+      description:
+        "Guerre Iran-Israël de juin 2025, programme nucléaire iranien, détroit d'Ormuz, enjeux énergétiques pour la France et positions détaillées des 26 candidats à la présidentielle 2027.",
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-04-23',
+      about: [
+        { '@type': 'Thing', name: 'Détroit d\'Ormuz' },
+        { '@type': 'Thing', name: 'Iran' },
+        { '@type': 'Thing', name: 'Guerre Iran-Israël' },
+        { '@type': 'Thing', name: 'Programme nucléaire iranien' },
         { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
       ],
     },
