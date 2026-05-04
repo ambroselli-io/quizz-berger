@@ -16,6 +16,9 @@ import ThemePage from './routes/ThemePage';
 import CandidatePage from './routes/CandidatePage';
 import QuestionPolitiquePage from './routes/QuestionPolitiquePage';
 import ComparaisonPage from './routes/ComparaisonPage';
+import CandidatesIndex from './routes/CandidatesIndex';
+import ComparerIndex from './routes/ComparerIndex';
+import SujetsIndex from './routes/SujetsIndex';
 import BlogIndex from './routes/BlogIndex';
 import BlogArticle from './routes/BlogArticle';
 import QuiSommesNous from './routes/QuiSommesNous';
@@ -47,8 +50,11 @@ function App() {
           {import.meta.env.DEV && <Route path="/stats" element={<Stats />} />}
           <Route path="/communique/2022-03-26" element={<Communique />} />
           <Route path="/theme/:themeSlug" element={<ThemePage />} />
+          <Route path="/candidats" element={<CandidatesIndex />} />
           <Route path="/candidat/:candidateSlug" element={<CandidatePage />} />
+          <Route path="/sujets" element={<SujetsIndex />} />
           <Route path="/question-politique/:questionSlug" element={<QuestionPolitiquePage />} />
+          <Route path="/comparer" element={<ComparerIndex />} />
           <Route path="/comparer/:pairSlug" element={<ComparaisonPage />} />
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/blog/:slug" element={<BlogArticle />} />

@@ -8,6 +8,7 @@ import Loader from '@app/components/Loader';
 import Footer from '@app/components/Footer';
 import QuizzButton from '@app/components/QuizzButton';
 import API from '@app/services/api';
+import { candidateSlugMap, themeSlugMap, comparisonPairs, hotTopicQuestions } from '@app/utils/seo';
 import type { PodiumStep } from '@app/types/quizz';
 
 export default function Home() {
@@ -166,8 +167,98 @@ export default function Home() {
         </h2>
       </section>
 
-      {/* Testimonials - white */}
+      {/* Explorer — SEO discoverability hub */}
       <section className="flex flex-col items-center bg-white px-5 py-20 text-quizz-dark max-lg:py-12">
+        <h2 className="mb-12 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:mb-8 max-lg:text-[34px]">
+          Explorer la présidentielle 2027
+        </h2>
+
+        <div className="grid w-full max-w-6xl gap-8 lg:grid-cols-3">
+          {/* Candidats */}
+          <div className="flex flex-col">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="font-[Merriweather] text-xl font-bold">Les candidats</h3>
+              <Link to="/candidats" className="text-sm text-blue-600 no-underline hover:underline">Tous les {candidateSlugMap.length} →</Link>
+            </div>
+            <ul className="flex flex-wrap gap-2">
+              {candidateSlugMap.slice(0, 12).map((c) => (
+                <li key={c.id}>
+                  <Link
+                    to={`/candidat/${c.slug}`}
+                    className="flex items-center gap-1.5 rounded-full border border-gray-200 px-3 py-1.5 text-xs text-quizz-dark no-underline hover:bg-gray-50"
+                  >
+                    <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: c.color }} />
+                    {c.pseudo}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Sujets */}
+          <div className="flex flex-col">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="font-[Merriweather] text-xl font-bold">Les sujets</h3>
+              <Link to="/sujets" className="text-sm text-blue-600 no-underline hover:underline">Tous les {themeSlugMap.length} →</Link>
+            </div>
+            <ul className="flex flex-wrap gap-2">
+              {themeSlugMap.slice(0, 10).map((theme) => (
+                <li key={theme.themeId}>
+                  <Link
+                    to={`/theme/${theme.slug}`}
+                    className="rounded-full border border-gray-200 px-3 py-1.5 text-xs text-quizz-dark no-underline hover:bg-gray-50"
+                  >
+                    {theme.fr}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Comparer */}
+          <div className="flex flex-col">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="font-[Merriweather] text-xl font-bold">Comparer</h3>
+              <Link to="/comparer" className="text-sm text-blue-600 no-underline hover:underline">Toutes les {comparisonPairs.length} →</Link>
+            </div>
+            <ul className="space-y-2">
+              {comparisonPairs.slice(0, 6).map((pair) => (
+                <li key={pair.slug}>
+                  <Link
+                    to={`/comparer/${pair.slug}`}
+                    className="block rounded-md border border-gray-200 px-3 py-2 text-xs text-quizz-dark no-underline hover:bg-gray-50"
+                  >
+                    {pair.candidate1Name} <span className="text-gray-400">vs</span> {pair.candidate2Name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Hot questions */}
+        <div className="mt-12 w-full max-w-6xl">
+          <div className="mb-4 flex items-center justify-between">
+            <h3 className="font-[Merriweather] text-xl font-bold">Sujets brûlants</h3>
+            <Link to="/sujets" className="text-sm text-blue-600 no-underline hover:underline">Voir plus →</Link>
+          </div>
+          <ul className="grid gap-2 lg:grid-cols-2">
+            {hotTopicQuestions.slice(0, 8).map((q) => (
+              <li key={q.questionId}>
+                <Link
+                  to={`/question-politique/${q.slug}`}
+                  className="block rounded-md border border-gray-200 px-3 py-2 text-sm text-quizz-dark no-underline hover:bg-gray-50"
+                >
+                  {q.fr}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Testimonials - white */}
+      <section className="flex flex-col items-center bg-gray-50 px-5 py-20 text-quizz-dark max-lg:py-12">
         <h2 className="mb-12 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:mb-8 max-lg:text-[34px]">
           Ils ont apprécié
         </h2>

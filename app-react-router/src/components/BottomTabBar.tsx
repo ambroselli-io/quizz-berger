@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Home, Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail, Scale, Users, Github, BookOpen } from 'lucide-react';
+import { Home, Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail, Scale, Users, Github, BookOpen, UserSquare2, Layers, ArrowLeftRight } from 'lucide-react';
 import { Sheet, SheetContent, SheetTitle } from '@app/components/ui/sheet';
 import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
@@ -63,6 +63,18 @@ const BottomTabBar = () => {
                 Se connecter
               </Link>
             )}
+            <Link to="/candidats" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+              <UserSquare2 size={20} />
+              Tous les candidats
+            </Link>
+            <Link to="/sujets" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+              <Layers size={20} />
+              Tous les sujets
+            </Link>
+            <Link to="/comparer" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+              <ArrowLeftRight size={20} />
+              Comparer les candidats
+            </Link>
             <Link to="/blog" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
               <BookOpen size={20} />
               Blog
