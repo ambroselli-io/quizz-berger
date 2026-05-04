@@ -1,6 +1,14 @@
 import { useMemo } from 'react';
 import { Link, useParams, Navigate } from 'react-router';
-import { getCandidateBySlug, themeSlugMap, getCandidateAnswerForQuestion, candidateSlugMap } from '@app/utils/seo';
+import {
+  getCandidateBySlug,
+  themeSlugMap,
+  getCandidateAnswerForQuestion,
+  candidateSlugMap,
+  getComparisonPairsForCandidate,
+  hotTopicQuestions,
+  getQuestionSlugById,
+} from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
 export default function CandidatePage() {
@@ -13,6 +21,7 @@ export default function CandidatePage() {
     return themeSlugMap.map((theme) => {
       const positions = theme.questions.map((q) => ({
         questionFr: q.fr,
+        questionSlug: getQuestionSlugById(q._id),
         answer: getCandidateAnswerForQuestion(candidate.answers, q._id, q.answers),
       }));
       return { ...theme, positions };
@@ -20,6 +29,21 @@ export default function CandidatePage() {
   }, [candidate]);
 
   const otherCandidates = candidateSlugMap.filter((c) => c.slug !== candidateSlug).slice(0, 6);
+
+  const candidateComparisons = useMemo(
+    () => getComparisonPairsForCandidate(candidate.slug),
+    [candidate.slug],
+  );
+
+  const candidateHotTopics = useMemo(() => {
+    return hotTopicQuestions
+      .map((q) => ({
+        ...q,
+        answerText: getCandidateAnswerForQuestion(candidate.answers, q.questionId, q.answers),
+      }))
+      .filter((q) => q.answerText)
+      .slice(0, 12);
+  }, [candidate]);
 
   return (
     <>
@@ -77,7 +101,16 @@ export default function CandidatePage() {
                   <ul className="space-y-4">
                     {theme.positions.map((pos, idx) => (
                       <li key={idx}>
-                        <p className="mb-1 text-sm font-medium text-gray-800">{pos.questionFr}</p>
+                        {pos.questionSlug ? (
+                          <Link
+                            to={`/question-politique/${pos.questionSlug}`}
+                            className="mb-1 block text-sm font-medium text-gray-800 no-underline hover:text-blue-700 hover:underline"
+                          >
+                            {pos.questionFr}
+                          </Link>
+                        ) : (
+                          <p className="mb-1 text-sm font-medium text-gray-800">{pos.questionFr}</p>
+                        )}
                         <p className="text-sm italic" style={{ color: candidate.color }}>
                           {pos.answer ? `→ ${pos.answer}` : '— Pas de position renseignée'}
                         </p>
@@ -90,8 +123,69 @@ export default function CandidatePage() {
           </div>
         </section>
 
+        {/* Hot-topic positions */}
+        {candidateHotTopics.length > 0 && (
+          <section className="w-full bg-white px-5 py-12">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="mb-2 font-[Merriweather] text-xl font-bold text-quizz-dark">
+                {candidate.pseudo} sur les sujets sensibles
+              </h2>
+              <p className="mb-6 text-sm text-gray-600">
+                Découvrez la position de {candidate.pseudo} sur les grands sujets de la présidentielle 2027.
+              </p>
+              <ul className="grid gap-3 lg:grid-cols-2">
+                {candidateHotTopics.map((q) => (
+                  <li key={q.questionId}>
+                    <Link
+                      to={`/question-politique/${q.slug}`}
+                      className="block rounded-lg border border-gray-200 p-4 no-underline transition hover:shadow-sm"
+                    >
+                      <p className="text-sm font-semibold text-quizz-dark">{q.fr}</p>
+                      <p className="mt-1 text-xs italic" style={{ color: candidate.color }}>
+                        → {q.answerText}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {/* Comparer with opponents */}
+        {candidateComparisons.length > 0 && (
+          <section className="w-full bg-gray-50 px-5 py-12">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="mb-2 font-[Merriweather] text-xl font-bold text-quizz-dark">
+                Comparer {candidate.pseudo} avec d'autres candidats
+              </h2>
+              <p className="mb-6 text-sm text-gray-600">
+                Voyez les points d'accord et de désaccord, thème par thème.
+              </p>
+              <div className="grid gap-3 lg:grid-cols-2">
+                {candidateComparisons.map((pair) => {
+                  const otherName =
+                    pair.candidate1Slug === candidate.slug ? pair.candidate2Name : pair.candidate1Name;
+                  return (
+                    <Link
+                      key={pair.slug}
+                      to={`/comparer/${pair.slug}`}
+                      className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4 no-underline transition hover:shadow-sm"
+                    >
+                      <span className="text-sm font-medium text-quizz-dark">
+                        {candidate.pseudo} <span className="text-gray-400">vs</span> {otherName}
+                      </span>
+                      <span className="text-sm text-blue-600">→</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Other candidates */}
-        <section className="w-full bg-gray-50 px-5 py-12">
+        <section className="w-full bg-white px-5 py-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-6 font-[Merriweather] text-xl font-bold text-quizz-dark">Voir aussi</h2>
             <div className="flex flex-wrap gap-3">

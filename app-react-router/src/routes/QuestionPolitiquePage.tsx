@@ -5,6 +5,8 @@ import {
   candidateSlugMap,
   getCandidateAnswerForQuestion,
   themeSlugMap,
+  getQuestionsByThemeId,
+  comparisonPairs,
 } from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
@@ -34,6 +36,30 @@ export default function QuestionPolitiquePage() {
     }
     return groups;
   }, [candidateAnswers]);
+
+  // Other questions in the same theme (sibling questions)
+  const relatedQuestions = useMemo(() => {
+    if (!question) return [];
+    return getQuestionsByThemeId(question.themeId)
+      .filter((q) => q.questionId !== question.questionId)
+      .slice(0, 8);
+  }, [question]);
+
+  // Comparer pairs where the two candidates take opposing answers on this question
+  const divergentPairs = useMemo(() => {
+    if (!question) return [];
+    return comparisonPairs
+      .map((pair) => {
+        const c1 = candidateAnswers.find((c) => c.slug === pair.candidate1Slug);
+        const c2 = candidateAnswers.find((c) => c.slug === pair.candidate2Slug);
+        const disagree =
+          c1 && c2 && c1.answerIndex !== -1 && c2.answerIndex !== -1 && c1.answerIndex !== c2.answerIndex;
+        return { pair, disagree };
+      })
+      .filter((p) => p.disagree)
+      .slice(0, 6)
+      .map((p) => p.pair);
+  }, [question, candidateAnswers]);
 
   // FAQ structured data
   const faqSchema = {
@@ -183,6 +209,58 @@ export default function QuestionPolitiquePage() {
             </div>
           </div>
         </section>
+
+        {/* Compare candidates on this topic */}
+        {divergentPairs.length > 0 && (
+          <section className="mx-auto w-full max-w-4xl px-5 py-12">
+            <h2 className="mb-2 font-[Merriweather] text-xl font-bold text-quizz-dark">
+              Comparer les candidats qui s'opposent sur ce sujet
+            </h2>
+            <p className="mb-6 text-sm text-gray-600">
+              Ces candidats prennent des positions différentes sur cette question. Voyez l'ensemble de leurs désaccords.
+            </p>
+            <div className="grid gap-3 lg:grid-cols-2">
+              {divergentPairs.map((pair) => (
+                <Link
+                  key={pair.slug}
+                  to={`/comparer/${pair.slug}`}
+                  className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4 no-underline transition hover:shadow-sm"
+                >
+                  <span className="text-sm font-medium text-quizz-dark">
+                    {pair.candidate1Name} <span className="text-gray-400">vs</span> {pair.candidate2Name}
+                  </span>
+                  <span className="text-sm text-blue-600">→</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Related questions on the same theme */}
+        {relatedQuestions.length > 0 && (
+          <section className="w-full bg-gray-50 px-5 py-12">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="mb-2 font-[Merriweather] text-xl font-bold text-quizz-dark">
+                Voir aussi sur le thème : {question.themeName}
+              </h2>
+              <p className="mb-6 text-sm text-gray-600">
+                D'autres questions clés sur ce thème, avec les positions des 24 candidats.
+              </p>
+              <ul className="grid gap-3 lg:grid-cols-2">
+                {relatedQuestions.map((q) => (
+                  <li key={q.questionId}>
+                    <Link
+                      to={`/question-politique/${q.slug}`}
+                      className="block rounded-lg border border-gray-200 bg-white p-4 text-sm font-medium text-quizz-dark no-underline transition hover:shadow-sm"
+                    >
+                      {q.fr}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
 
         {/* FAQ */}
         <section className="mx-auto w-full max-w-4xl px-5 py-12">

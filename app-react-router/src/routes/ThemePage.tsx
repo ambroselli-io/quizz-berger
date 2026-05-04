@@ -1,6 +1,11 @@
 import { useMemo } from 'react';
 import { Link, useParams, Navigate } from 'react-router';
-import { getThemeBySlug, candidateSlugMap, getCandidateAnswerForQuestion } from '@app/utils/seo';
+import {
+  getThemeBySlug,
+  candidateSlugMap,
+  getCandidateAnswerForQuestion,
+  getQuestionSlugById,
+} from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
 export default function ThemePage() {
@@ -50,29 +55,52 @@ export default function ThemePage() {
             Les {theme.questions.length} questions sur {theme.fr.toLowerCase()}
           </h2>
           <div className="space-y-8">
-            {theme.questions.map((question, idx) => (
-              <div key={question._id} className="rounded-lg border border-gray-200 p-6">
-                <h3 className="mb-4 text-lg font-semibold text-quizz-dark">
-                  {idx + 1}. {question.fr}
-                </h3>
-                <p className="mb-3 text-sm text-gray-500">Les réponses possibles :</p>
-                <ul className="space-y-2">
-                  {question.answers.map((answer, ansIdx) => (
-                    <li key={ansIdx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gray-100 text-xs font-medium">
-                        {ansIdx + 1}
-                      </span>
-                      {answer}
-                    </li>
-                  ))}
-                </ul>
-                {question.help && (
-                  <a href={question.help} target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm text-blue-600 hover:underline">
-                    En savoir plus (Wikipedia)
-                  </a>
-                )}
-              </div>
-            ))}
+            {theme.questions.map((question, idx) => {
+              const questionSlug = getQuestionSlugById(question._id);
+              return (
+                <div key={question._id} className="rounded-lg border border-gray-200 p-6">
+                  <h3 className="mb-4 text-lg font-semibold text-quizz-dark">
+                    {idx + 1}.{' '}
+                    {questionSlug ? (
+                      <Link
+                        to={`/question-politique/${questionSlug}`}
+                        className="text-quizz-dark no-underline hover:text-blue-700 hover:underline"
+                      >
+                        {question.fr}
+                      </Link>
+                    ) : (
+                      question.fr
+                    )}
+                  </h3>
+                  <p className="mb-3 text-sm text-gray-500">Les réponses possibles :</p>
+                  <ul className="space-y-2">
+                    {question.answers.map((answer, ansIdx) => (
+                      <li key={ansIdx} className="flex items-start gap-2 text-sm text-gray-700">
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gray-100 text-xs font-medium">
+                          {ansIdx + 1}
+                        </span>
+                        {answer}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-3 flex flex-wrap items-center gap-4">
+                    {questionSlug && (
+                      <Link
+                        to={`/question-politique/${questionSlug}`}
+                        className="text-sm font-medium text-blue-600 no-underline hover:underline"
+                      >
+                        Voir les positions des candidats →
+                      </Link>
+                    )}
+                    {question.help && (
+                      <a href={question.help} target="_blank" rel="noreferrer" className="text-sm text-blue-600 hover:underline">
+                        En savoir plus (Wikipedia)
+                      </a>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 

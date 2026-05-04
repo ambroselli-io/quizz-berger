@@ -232,6 +232,14 @@ export function getQuestionBySlug(slug: string): QuestionSlugEntry | undefined {
   return questionSlugMap.find((q) => q.slug === slug);
 }
 
+export function getQuestionSlugById(questionId: string): string | undefined {
+  return questionSlugMap.find((q) => q.questionId === questionId)?.slug;
+}
+
+export function getQuestionsByThemeId(themeId: string): QuestionSlugEntry[] {
+  return questionSlugMap.filter((q) => q.themeId === themeId);
+}
+
 // --- Candidate comparison pairs (top matchups) ---
 
 export interface ComparisonPair {
@@ -286,6 +294,12 @@ export const comparisonPairs: ComparisonPair[] = topPairSlugs.map(([c1slug, c2sl
     candidate2Name: c2?.pseudo || c2slug,
   };
 });
+
+export function getComparisonPairsForCandidate(candidateSlug: string): ComparisonPair[] {
+  return comparisonPairs.filter(
+    (p) => p.candidate1Slug === candidateSlug || p.candidate2Slug === candidateSlug,
+  );
+}
 
 // --- Helper: get candidate answer text for a question ---
 

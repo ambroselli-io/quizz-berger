@@ -1,6 +1,11 @@
 import { useMemo } from 'react';
 import { Link, useParams, Navigate } from 'react-router';
-import { getCandidateBySlug, themeSlugMap, getCandidateAnswerForQuestion } from '@app/utils/seo';
+import {
+  getCandidateBySlug,
+  themeSlugMap,
+  getCandidateAnswerForQuestion,
+  comparisonPairs,
+} from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
 export default function ComparaisonPage() {
@@ -36,6 +41,24 @@ export default function ComparaisonPage() {
   const totalAgreements = comparisonByTheme.reduce((sum, t) => sum + t.agreements, 0);
   const totalQuestions = comparisonByTheme.reduce((sum, t) => sum + t.total, 0);
   const agreementPercent = totalQuestions > 0 ? Math.round((totalAgreements / totalQuestions) * 100) : 0;
+
+  // Other comparison pairs involving either candidate
+  const otherComparisons = useMemo(() => {
+    if (!candidate1 || !candidate2) return [];
+    return comparisonPairs
+      .filter((p) => {
+        const involvesEither =
+          p.candidate1Slug === candidate1.slug ||
+          p.candidate2Slug === candidate1.slug ||
+          p.candidate1Slug === candidate2.slug ||
+          p.candidate2Slug === candidate2.slug;
+        const isThisPair =
+          (p.candidate1Slug === candidate1.slug && p.candidate2Slug === candidate2.slug) ||
+          (p.candidate1Slug === candidate2.slug && p.candidate2Slug === candidate1.slug);
+        return involvesEither && !isThisPair;
+      })
+      .slice(0, 8);
+  }, [candidate1, candidate2]);
 
   return (
     <>
@@ -126,6 +149,48 @@ export default function ComparaisonPage() {
             ))}
           </div>
         </section>
+
+        {/* Other comparisons */}
+        {otherComparisons.length > 0 && (
+          <section className="w-full bg-gray-50 px-5 py-12">
+            <div className="mx-auto max-w-5xl">
+              <h2 className="mb-2 font-[Merriweather] text-xl font-bold text-quizz-dark">
+                Voir d'autres comparaisons
+              </h2>
+              <p className="mb-6 text-sm text-gray-600">
+                D'autres duels de candidats à la présidentielle 2027.
+              </p>
+              <div className="grid gap-3 lg:grid-cols-2">
+                {otherComparisons.map((pair) => (
+                  <Link
+                    key={pair.slug}
+                    to={`/comparer/${pair.slug}`}
+                    className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4 no-underline transition hover:shadow-sm"
+                  >
+                    <span className="text-sm font-medium text-quizz-dark">
+                      {pair.candidate1Name} <span className="text-gray-400">vs</span> {pair.candidate2Name}
+                    </span>
+                    <span className="text-sm text-blue-600">→</span>
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-6 flex flex-wrap gap-2">
+                <Link
+                  to={`/candidat/${candidate1.slug}`}
+                  className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-quizz-dark no-underline hover:bg-gray-50"
+                >
+                  Voir toutes les positions de {candidate1.pseudo}
+                </Link>
+                <Link
+                  to={`/candidat/${candidate2.slug}`}
+                  className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-quizz-dark no-underline hover:bg-gray-50"
+                >
+                  Voir toutes les positions de {candidate2.pseudo}
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="w-full bg-quizz-dark px-5 py-16 text-center text-white">
