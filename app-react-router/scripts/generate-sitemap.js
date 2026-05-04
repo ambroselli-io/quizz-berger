@@ -109,6 +109,11 @@ function buildUrls() {
   urls.push({ loc: '/blog', priority: '0.8', changefreq: 'weekly' });
   urls.push({ loc: '/communique/2022-03-26', priority: '0.3', changefreq: 'yearly' });
 
+  // SEO hub pages
+  urls.push({ loc: '/candidats', priority: '0.9', changefreq: 'weekly' });
+  urls.push({ loc: '/sujets', priority: '0.9', changefreq: 'weekly' });
+  urls.push({ loc: '/comparer', priority: '0.9', changefreq: 'weekly' });
+
   // Theme pages
   for (const theme of quizz) {
     if (theme.questions.length === 0) continue;
@@ -136,9 +141,25 @@ function buildUrls() {
     }
   }
 
-  // Comparison pages
-  for (const [c1, c2] of comparisonPairs) {
-    urls.push({ loc: `/comparer/${c1}-vs-${c2}`, priority: '0.6', changefreq: 'monthly' });
+  // Comparison pages — all C(n, 2) candidate pairs, canonical form
+  // Curated pairs keep their existing slug order; the rest use alphabetical-of-slug.
+  const curatedByKey = new Map(
+    comparisonPairs.map(([a, b]) => [[a, b].sort().join('|'), `${a}-vs-${b}`]),
+  );
+  const candidateSlugs = candidates.map((c) => slugify(c.pseudo));
+  for (let i = 0; i < candidateSlugs.length; i++) {
+    for (let j = i + 1; j < candidateSlugs.length; j++) {
+      const a = candidateSlugs[i];
+      const b = candidateSlugs[j];
+      const key = [a, b].sort().join('|');
+      const curatedSlug = curatedByKey.get(key);
+      if (curatedSlug) {
+        urls.push({ loc: `/comparer/${curatedSlug}`, priority: '0.7', changefreq: 'monthly' });
+      } else {
+        const [first, second] = a < b ? [a, b] : [b, a];
+        urls.push({ loc: `/comparer/${first}-vs-${second}`, priority: '0.5', changefreq: 'monthly' });
+      }
+    }
   }
 
   // Blog articles
