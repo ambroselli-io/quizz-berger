@@ -35,6 +35,7 @@ router.post(
         },
       }),
     }).catch((err) => capture(err, { extra: { text, subject } }));
+    console.log(response);
     res.status(200).send({ ok: response?.statusText === "OK" });
   }),
 );

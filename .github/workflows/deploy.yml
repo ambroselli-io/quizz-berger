@@ -2,7 +2,7 @@ name: Quizz du Berger Deploy
 
 on:
   push:
-    branches: [main] # Or the name of your main branch
+    branches: [ main ] # Or the name of your main branch
 
 jobs:
   deploy:
@@ -15,26 +15,7 @@ jobs:
           username: deployer
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            # Load fnm
-            echo "Loading fnm"
-            FNM_PATH="$HOME/.local/share/fnm"
-            if [ -d "$FNM_PATH" ]; then
-              export PATH="$FNM_PATH:$PATH"
-              eval "$(fnm env --shell bash)"
-              NODE_BIN="$HOME/.local/share/fnm/node-versions/$(fnm current)/installation/bin"
-              export PATH="$NODE_BIN:$PATH"
-            fi
-
-            # Verify fnm is loaded
-            echo "Verifying fnm is loaded"
-            if ! command -v fnm &> /dev/null; then
-              echo "Error: fnm is not available. Please check its installation."
-              exit 1
-            fi
-
-            # Display fnm version for debugging
-            fnm --version
-
+            
             # Navigate to the quizz-berger project directory
             cd /var/www/quizz-berger
 
