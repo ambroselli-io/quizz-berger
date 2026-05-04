@@ -5,6 +5,7 @@ import {
   themeSlugMap,
   getCandidateAnswerForQuestion,
   comparisonPairs,
+  getCanonicalPairSlug,
 } from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
@@ -60,9 +61,12 @@ export default function ComparaisonPage() {
       .slice(0, 8);
   }, [candidate1, candidate2]);
 
+  const canonicalSlug = getCanonicalPairSlug(candidate1.slug, candidate2.slug);
+
   return (
     <>
       <title>{`${candidate1.pseudo} vs ${candidate2.pseudo} — Comparaison présidentielle 2027 | Le Quizz du Berger`}</title>
+      <link rel="canonical" href={`https://www.quizz-du-berger.com/comparer/${canonicalSlug}`} />
       <meta
         name="description"
         content={`Comparez les positions de ${candidate1.pseudo} et ${candidate2.pseudo} sur les 21 thèmes de la présidentielle 2027. ${agreementPercent}% d'accord.`}

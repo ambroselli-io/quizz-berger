@@ -295,8 +295,52 @@ export const comparisonPairs: ComparisonPair[] = topPairSlugs.map(([c1slug, c2sl
   };
 });
 
+// --- All possible candidate pairs (C(n, 2)) — canonical form ---
+
+function pairKey(s1: string, s2: string): string {
+  return [s1, s2].sort().join('|');
+}
+
+const curatedPairsByKey = new Map<string, ComparisonPair>(
+  comparisonPairs.map((p) => [pairKey(p.candidate1Slug, p.candidate2Slug), p]),
+);
+
+export const allComparisonPairs: ComparisonPair[] = (() => {
+  const out: ComparisonPair[] = [];
+  for (let i = 0; i < candidateSlugMap.length; i++) {
+    for (let j = i + 1; j < candidateSlugMap.length; j++) {
+      const a = candidateSlugMap[i];
+      const b = candidateSlugMap[j];
+      const key = pairKey(a.slug, b.slug);
+      const curated = curatedPairsByKey.get(key);
+      if (curated) {
+        out.push(curated);
+      } else {
+        const [first, second] = a.slug < b.slug ? [a, b] : [b, a];
+        out.push({
+          slug: `${first.slug}-vs-${second.slug}`,
+          candidate1Slug: first.slug,
+          candidate2Slug: second.slug,
+          candidate1Name: first.pseudo,
+          candidate2Name: second.pseudo,
+        });
+      }
+    }
+  }
+  return out;
+})();
+
+export function getCanonicalPairSlug(c1Slug: string, c2Slug: string): string {
+  if (c1Slug === c2Slug) return '';
+  const key = pairKey(c1Slug, c2Slug);
+  const curated = curatedPairsByKey.get(key);
+  if (curated) return curated.slug;
+  const [first, second] = c1Slug < c2Slug ? [c1Slug, c2Slug] : [c2Slug, c1Slug];
+  return `${first}-vs-${second}`;
+}
+
 export function getComparisonPairsForCandidate(candidateSlug: string): ComparisonPair[] {
-  return comparisonPairs.filter(
+  return allComparisonPairs.filter(
     (p) => p.candidate1Slug === candidateSlug || p.candidate2Slug === candidateSlug,
   );
 }
