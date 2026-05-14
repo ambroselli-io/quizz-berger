@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import { candidateSlugMap } from '@app/utils/seo';
+import { candidateSlugMap, candidatesCount } from '@app/utils/seo';
+import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import Footer from '@app/components/Footer';
 
 export default function CandidatesIndex() {
@@ -8,7 +9,7 @@ export default function CandidatesIndex() {
       <title>Tous les candidats à la présidentielle 2027 | Le Quizz du Berger</title>
       <meta
         name="description"
-        content={`Découvrez les positions politiques des ${candidateSlugMap.length} candidats à l'élection présidentielle 2027 : programme, idées, comparaisons.`}
+        content={`Découvrez les positions politiques des ${candidatesCount} candidats à l'élection présidentielle 2027 : programme, idées, comparaisons.`}
       />
 
       <div className="flex flex-col items-center bg-white">
@@ -18,7 +19,7 @@ export default function CandidatesIndex() {
               Les candidats à la présidentielle 2027
             </h1>
             <p className="text-lg text-white/80">
-              Découvrez les positions des {candidateSlugMap.length} candidats sur les 21 thèmes de l'élection.
+              Découvrez les positions des {candidatesCount} candidats sur les {quizzThemesCount} thèmes de l'élection.
             </p>
           </div>
         </section>
@@ -46,7 +47,7 @@ export default function CandidatesIndex() {
           <h2 className="mb-4 font-[Merriweather] text-2xl font-bold">
             Quel candidat pense comme vous ?
           </h2>
-          <p className="mb-8 text-white/80">21 thèmes, 119 questions, {candidateSlugMap.length} candidats.</p>
+          <p className="mb-8 text-white/80">{quizzThemesCount} thèmes, {quizzQuestionsCount} questions, {candidatesCount} candidats.</p>
           <Link
             to="/themes"
             className="inline-block rounded-full bg-yellow-400 px-8 py-3 font-semibold text-black no-underline hover:bg-yellow-300"

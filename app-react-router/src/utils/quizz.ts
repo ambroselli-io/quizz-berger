@@ -64,5 +64,7 @@ const quizzDownload = formatQuizzText(rawQuizz);
 const quizzQuestions: QuizzQuestion[] = rawQuizz.reduce<QuizzQuestion[]>((questions, theme) => {
   return [...questions, ...theme.questions];
 }, []);
+const quizzQuestionsCount = quizzQuestions.length;
+const quizzThemesCount = rawQuizz.length;
 
-export { enrichedQuizz as quizz, quizzForSearch, quizzDownload, quizzQuestions };
+export { enrichedQuizz as quizz, quizzForSearch, quizzDownload, quizzQuestions, quizzQuestionsCount, quizzThemesCount };

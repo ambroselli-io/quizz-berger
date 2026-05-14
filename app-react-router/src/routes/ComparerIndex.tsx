@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
-import { comparisonPairs, candidateSlugMap, getCanonicalPairSlug } from '@app/utils/seo';
+import { comparisonPairs, candidateSlugMap, candidatesCount, getCanonicalPairSlug } from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
 export default function ComparerIndex() {
@@ -124,7 +124,7 @@ export default function ComparerIndex() {
           <h2 className="mb-4 font-[Merriweather] text-2xl font-bold">
             Et vous, de quel côté êtes-vous ?
           </h2>
-          <p className="mb-8 text-white/80">Répondez au quiz pour vous comparer aux 24 candidats.</p>
+          <p className="mb-8 text-white/80">Répondez au quiz pour vous comparer aux {candidatesCount} candidats.</p>
           <Link
             to="/themes"
             className="inline-block rounded-full bg-yellow-400 px-8 py-3 font-semibold text-black no-underline hover:bg-yellow-300"

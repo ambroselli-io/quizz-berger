@@ -9,6 +9,7 @@ import {
   hotTopicQuestions,
   getQuestionSlugById,
 } from '@app/utils/seo';
+import { quizzThemesCount } from '@app/utils/quizz';
 import Footer from '@app/components/Footer';
 
 export default function CandidatePage() {
@@ -48,7 +49,7 @@ export default function CandidatePage() {
   return (
     <>
       <title>{`${candidate.pseudo} — Positions politiques 2027 | Le Quizz du Berger`}</title>
-      <meta name="description" content={`Découvrez les positions politiques de ${candidate.pseudo} sur les 21 thèmes de l'élection présidentielle 2027. Comparez avec les autres candidats.`} />
+      <meta name="description" content={`Découvrez les positions politiques de ${candidate.pseudo} sur les ${quizzThemesCount} thèmes de l'élection présidentielle 2027. Comparez avec les autres candidats.`} />
 
       <script
         type="application/ld+json"

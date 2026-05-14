@@ -39,7 +39,6 @@
     "src/**/*",
     "../shared/**/*.js",
     "../shared/**/*.json",
-    "../api-express/**/*.ts",
-    "../api-express/**/*.tsx",
+    "../api-express/src/types/**/*.ts",
   ],
 }

@@ -1,3 +1,6 @@
+import { quizzQuestionsCount, quizzThemesCount } from '~/utils/quizz';
+import { candidatesCount } from '~/utils/seo';
+
 export interface Article {
   slug: string;
   title: string;
@@ -12,14 +15,13 @@ export const articles: Article[] = [
   {
     slug: 'candidats-presidentielles-2027',
     title: 'Présidentielle 2027 : tous les candidats et leurs programmes',
-    excerpt:
-      "Découvrez les 26 candidats à l'élection présidentielle 2027 et comparez leurs positions sur 21 thèmes politiques majeurs.",
+    excerpt: `Découvrez les ${candidatesCount} candidats à l'élection présidentielle 2027 et comparez leurs positions sur ${quizzThemesCount} thèmes politiques majeurs.`,
     date: '2026-02-11',
     tag: 'Candidats',
     content: `
-<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>26 candidats potentiels</strong>, les électeurs font face à un choix complexe. Plutôt que de les classer sur un axe politique, nous vous invitons à découvrir leurs positions thème par thème.</p>
+<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>${candidatesCount} candidats potentiels</strong>, les électeurs font face à un choix complexe. Plutôt que de les classer sur un axe politique, nous vous invitons à découvrir leurs positions thème par thème.</p>
 
-<h2>Les 26 candidats</h2>
+<h2>Les ${candidatesCount} candidats</h2>
 <ul>
 <li><a href="/candidat/francois-asselineau">François Asselineau</a> — UPR</li>
 <li><a href="/candidat/gabriel-attal">Gabriel Attal</a> — Renaissance</li>
@@ -50,7 +52,7 @@ export const articles: Article[] = [
 </ul>
 
 <h2>Ne les classez pas : comparez-les à vous</h2>
-<p>La politique ne se résume pas à un axe gauche-droite. Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger vous permet de comparer vos idées avec celles des 26 candidats sur <strong>21 thèmes</strong> et <strong>119 questions</strong>, thème par thème. Vous pourriez être surpris.</p>
+<p>La politique ne se résume pas à un axe gauche-droite. Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger vous permet de comparer vos idées avec celles des ${candidatesCount} candidats sur <strong>${quizzThemesCount} thèmes</strong> et <strong>${quizzQuestionsCount} questions</strong>, thème par thème. Vous pourriez être surpris.</p>
 <p><a href="/themes">→ Répondre au quiz et découvrir quel candidat pense comme vous</a></p>
 `,
   },
@@ -65,7 +67,7 @@ export const articles: Article[] = [
 <p>Le Quizz du Berger est un outil d'aide au choix électoral pour l'élection présidentielle. Plus de <strong>207 000 personnes</strong> l'ont déjà utilisé en 2022, on vise le million en 2027. Voici comment il fonctionne.</p>
 
 <h2>L'algorithme de comparaison</h2>
-<p>Le principe est simple : vous répondez aux questions qui vous intéressent, et un algorithme compare vos réponses à celles des 26 candidats.</p>
+<p>Le principe est simple : vous répondez aux questions qui vous intéressent, et un algorithme compare vos réponses à celles des ${candidatesCount} candidats.</p>
 <p>Pour chaque question, les réponses sont échelonnées du plus radical d'un côté au plus radical de l'autre, en passant par des nuances intermédiaires. Quand vous répondez :</p>
 <ul>
 <li><strong>Réponse identique</strong> à celle d'un candidat = 5 points</li>
@@ -76,7 +78,7 @@ export const articles: Article[] = [
 <p>Le candidat qui cumule le plus de points est celui dont les positions sont les plus proches des vôtres.</p>
 
 <h2>La construction des questions</h2>
-<p>Les <strong>119 questions</strong> réparties en <strong>21 thèmes</strong> ont été construites à partir des thèmes qui intéressent les Français. Les réponses possibles sont aussi celles des Français, et non celles des candidats. Chaque question propose entre 3 et 6 réponses possibles.</p>
+<p>Les <strong>${quizzQuestionsCount} questions</strong> réparties en <strong>${quizzThemesCount} thèmes</strong> ont été construites à partir des thèmes qui intéressent les Français. Les réponses possibles sont aussi celles des Français, et non celles des candidats. Chaque question propose entre 3 et 6 réponses possibles.</p>
 <p>L'objectif est de couvrir l'ensemble des possibilités de réponse, et de permettre à chacun de se retrouver dans au moins une réponse.</p>
 
 <h2>La construction des réponses des candidats</h2>
@@ -110,7 +112,7 @@ export const articles: Article[] = [
 <p>L'élection présidentielle 2027 s'articulera autour de grandes questions qui divisent et passionnent les Français. Voici les 10 thèmes qui structureront le débat.</p>
 
 <h2>1. Immigration et identité</h2>
-<p>Sujet brûlant depuis des années, la question migratoire reste au cœur du débat. Régularisation, quotas, droit du sol — les 26 candidats ont des positions très variées.</p>
+<p>Sujet brûlant depuis des années, la question migratoire reste au cœur du débat. Régularisation, quotas, droit du sol — les ${candidatesCount} candidats ont des positions très variées.</p>
 <p><a href="/theme/demographie-et-question-migratoire">→ Les positions des candidats sur l'immigration</a></p>
 
 <h2>2. Pouvoir d'achat et vie quotidienne</h2>
@@ -150,7 +152,7 @@ export const articles: Article[] = [
 <p><a href="/theme/societe">→ Les positions des candidats sur la société</a></p>
 
 <h2>Explorez tous les thèmes</h2>
-<p>Le Quizz du Berger couvre <strong>21 thèmes</strong> en tout, avec <strong>119 questions</strong> détaillées. Découvrez quel candidat pense comme vous.</p>
+<p>Le Quizz du Berger couvre <strong>${quizzThemesCount} thèmes</strong> en tout, avec <strong>${quizzQuestionsCount} questions</strong> détaillées. Découvrez quel candidat pense comme vous.</p>
 <p><a href="/themes">→ Faire le quiz</a></p>
 `,
   },
@@ -168,12 +170,12 @@ export const articles: Article[] = [
 
 <table>
 <tr><th>Critère</th><th>Quizz du Berger</th><th>Elyze</th></tr>
-<tr><td>Nombre de questions</td><td><strong>119 questions</strong></td><td>~300 questions</td></tr>
+<tr><td>Nombre de questions</td><td><strong>${quizzQuestionsCount} questions</strong></td><td>~300 questions</td></tr>
 <tr><td>Nuances de réponse</td><td><strong>3 à 6 nuances</strong> par question</td><td>D'accord / Pas d'accord</td></tr>
-<tr><td>Thèmes couverts</td><td><strong>21 thèmes</strong></td><td>Mélangés</td></tr>
+<tr><td>Thèmes couverts</td><td><strong>${quizzThemesCount} thèmes</strong></td><td>Mélangés</td></tr>
 <tr><td>Résultats par thème</td><td><strong>Oui, thème par thème</strong></td><td>Global uniquement</td></tr>
 <tr><td>Comparaison avec amis</td><td><strong>Oui</strong></td><td>Non</td></tr>
-<tr><td>Candidats</td><td><strong>26 candidats</strong></td><td>Variable</td></tr>
+<tr><td>Candidats</td><td><strong>${candidatesCount} candidats</strong></td><td>Variable</td></tr>
 <tr><td>Open-source</td><td><strong>Oui</strong></td><td>Non</td></tr>
 </table>
 
@@ -184,13 +186,13 @@ export const articles: Article[] = [
 <p>Avec Elyze, vous obtenez un classement global. Avec le Quizz du Berger, en plus du classement global, vous découvrez vos affinités <strong>thème par thème</strong>. Vous pouvez être proche de Mélenchon sur l'économie et de Le Pen sur la sécurité — on vous le montre.</p>
 
 <h2>Plus complet</h2>
-<p>119 questions sur 21 thèmes vs ~300 questions mélangées. Le Quizz du Berger couvre davantage de sujets et va plus en profondeur sur chacun d'entre eux.</p>
+<p>${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes vs ~300 questions mélangées. Le Quizz du Berger couvre davantage de sujets et va plus en profondeur sur chacun d'entre eux.</p>
 
 <h2>Comparaison avec vos amis</h2>
 <p>Fonctionnalité unique : enregistrez vos résultats sous un pseudonyme et comparez vos convictions avec celles de vos amis. Pour un débat sain et profond !</p>
 
 <h2>207 000+ utilisateurs en 2022</h2>
-<p>Le Quizz du Berger a déjà convaincu plus de 207 000 personnes lors de la présidentielle 2022, avec plus de 9,7 millions de réponses. Un quart des utilisateurs a répondu aux 119 questions en entier.</p>
+<p>Le Quizz du Berger a déjà convaincu plus de 207 000 personnes lors de la présidentielle 2022, avec plus de 9,7 millions de réponses. Un quart des utilisateurs a répondu aux ${quizzQuestionsCount} questions en entier.</p>
 
 <p><a href="/themes">→ Essayez le Quizz du Berger maintenant</a></p>
 `,
@@ -217,7 +219,7 @@ export const articles: Article[] = [
 <h2>Les quiz politiques disponibles</h2>
 
 <h3>Le Quizz du Berger</h3>
-<p><strong>Points forts :</strong> 119 questions, 21 thèmes, jusqu'à 6 nuances de réponse, résultats thème par thème, comparaison avec amis, open-source.</p>
+<p><strong>Points forts :</strong> ${quizzQuestionsCount} questions, ${quizzThemesCount} thèmes, jusqu'à 6 nuances de réponse, résultats thème par thème, comparaison avec amis, open-source.</p>
 <p><strong>Points faibles :</strong> Plus long à compléter (mais on répond à ce qu'on veut).</p>
 <p><strong>Idéal pour :</strong> Ceux qui veulent une analyse en profondeur de leur pensée politique.</p>
 
@@ -258,7 +260,7 @@ export const articles: Article[] = [
 <li>Écologiste mais souverainiste sur l'Europe</li>
 <li>Progressiste sur la santé mais sécuritaire sur la justice</li>
 </ul>
-<p>Un axe 2D ne capture pas cette complexité. 21 thèmes séparés, si.</p>
+<p>Un axe 2D ne capture pas cette complexité. ${quizzThemesCount} thèmes séparés, si.</p>
 
 <h2>En pratique</h2>
 <p>Faites les deux ! La Boussole vous donne une vue d'ensemble de votre positionnement, le Quizz du Berger vous montre dans le détail quels candidats pensent comme vous, et sur quels sujets.</p>
@@ -268,13 +270,13 @@ export const articles: Article[] = [
   },
   {
     slug: 'accord-ue-mercosur-france-candidats-2027',
-    title: 'Accord UE-Mercosur : tout comprendre et les positions des 26 candidats à la présidentielle 2027',
+    title: `Accord UE-Mercosur : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
     excerpt:
       "Mercosur, c'est quoi ? Que contient l'accord UE-Mercosur ? Pourquoi divise-t-il la France ? Le détail et les positions de chaque candidat à 2027.",
     date: '2026-02-27',
     tag: 'Analyse',
     content: `
-<p>Le <strong>Mercosur</strong> est redevenu l'un des sujets les plus brûlants du débat politique français. Signature de l'accord commercial avec l'Union européenne fin 2024, mobilisation des agriculteurs, vote à l'Assemblée nationale, prises de position des candidats à la présidentielle 2027 : tout le monde a un avis. Voici ce qu'il faut savoir, et ce que pense <strong>chacun des 26 candidats</strong>.</p>
+<p>Le <strong>Mercosur</strong> est redevenu l'un des sujets les plus brûlants du débat politique français. Signature de l'accord commercial avec l'Union européenne fin 2024, mobilisation des agriculteurs, vote à l'Assemblée nationale, prises de position des candidats à la présidentielle 2027 : tout le monde a un avis. Voici ce qu'il faut savoir, et ce que pense <strong>chacun des ${candidatesCount} candidats</strong>.</p>
 
 <h2>Mercosur : c'est quoi, exactement ?</h2>
 <p>Le <strong>Mercosur</strong> (<em>Mercado Común del Sur</em>, « Marché commun du Sud ») est une union douanière créée en 1991 par le traité d'Asunción. Elle regroupe aujourd'hui <strong>quatre pays membres à part entière</strong> : l'Argentine, le Brésil, le Paraguay et l'Uruguay. La Bolivie est en cours d'adhésion, le Venezuela est suspendu depuis 2016, et plusieurs pays (Chili, Colombie, Pérou, Équateur, Guyana, Suriname) sont associés.</p>
@@ -317,8 +319,8 @@ export const articles: Article[] = [
 <p>En <strong>novembre 2025</strong>, à la veille des votes européens décisifs, l'Assemblée nationale a récidivé avec une <strong>seconde résolution à la quasi-unanimité</strong> (244 voix pour, 1 contre), appelant le gouvernement à adopter une « minorité de blocage » au Conseil de l'UE. Fait remarquable, <strong>le groupe macroniste est le seul à s'être abstenu</strong>, creusant un écart politique entre la majorité présidentielle et l'ensemble des autres groupes.</p>
 <p>Malgré la pression parlementaire française, la France n'est pas parvenue à réunir une minorité de blocage suffisante au Conseil de l'UE le 9 janvier 2026. L'accord a donc été formellement signé le 17 janvier 2026 par Ursula von der Leyen, avant d'être partiellement suspendu par la saisine de la Cour de justice de l'UE le 21 janvier.</p>
 
-<h2>Les positions des 26 candidats à la présidentielle 2027</h2>
-<p>Ce qui rend le débat Mercosur particulièrement intéressant, c'est qu'il <strong>traverse les clivages habituels</strong>. Pour y voir clair, nous avons regroupé les 26 candidats en quatre familles selon leurs positions publiques et leurs réponses aux questions du Quizz du Berger sur le <a href="/question-politique/reindustrialisation-france">libre-échange</a> et l'<a href="/theme/agriculture-et-alimentation">indépendance alimentaire</a>.</p>
+<h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
+<p>Ce qui rend le débat Mercosur particulièrement intéressant, c'est qu'il <strong>traverse les clivages habituels</strong>. Pour y voir clair, nous avons regroupé les ${candidatesCount} candidats en quatre familles selon leurs positions publiques et leurs réponses aux questions du Quizz du Berger sur le <a href="/question-politique/reindustrialisation-france">libre-échange</a> et l'<a href="/theme/agriculture-et-alimentation">indépendance alimentaire</a>.</p>
 
 <h3>Famille 1 — Opposants déclarés à l'accord, au nom du protectionnisme ou de l'écologie</h3>
 <p>Ces candidats rejettent l'accord UE-Mercosur sans ambiguïté. Leurs motifs varient (souveraineté, écologie, défense des classes populaires, anti-libéralisme) mais leur conclusion converge : non à la ratification.</p>
@@ -362,7 +364,7 @@ export const articles: Article[] = [
 </ul>
 
 <h3>Un consensus français, des nuances à l'étranger</h3>
-<p>Fait remarquable : sur les 26 candidats du Quizz du Berger, <strong>aucun ne défend la ratification de l'accord UE-Mercosur dans sa version actuelle</strong>. Les différences portent sur l'intensité du rejet (refus de principe vs. demande de renégociation) et sur les motifs (souveraineté, écologie, agriculture, libéralisme équitable). Cette quasi-unanimité française contraste avec la position de l'Allemagne, de l'Espagne et du Portugal, favorables à l'accord — qui ont d'ailleurs permis sa signature au Conseil de l'UE le 9 janvier 2026 malgré la pression française.</p>
+<p>Fait remarquable : sur les ${candidatesCount} candidats du Quizz du Berger, <strong>aucun ne défend la ratification de l'accord UE-Mercosur dans sa version actuelle</strong>. Les différences portent sur l'intensité du rejet (refus de principe vs. demande de renégociation) et sur les motifs (souveraineté, écologie, agriculture, libéralisme équitable). Cette quasi-unanimité française contraste avec la position de l'Allemagne, de l'Espagne et du Portugal, favorables à l'accord — qui ont d'ailleurs permis sa signature au Conseil de l'UE le 9 janvier 2026 malgré la pression française.</p>
 
 <h3>Et maintenant ? Les recours qui restent</h3>
 <p>Avec la signature du 17 janvier 2026, le front s'est déplacé. Les opposants misent désormais sur quatre recours :</p>
@@ -385,7 +387,7 @@ export const articles: Article[] = [
 </table>
 
 <h2>Et vous, où vous situez-vous ?</h2>
-<p>Le Mercosur n'est qu'une pièce d'un débat plus large sur le libre-échange, la souveraineté alimentaire et le modèle agricole français. Le Quizz du Berger vous permet de comparer vos positions à celles des 26 candidats sur ces questions précises :</p>
+<p>Le Mercosur n'est qu'une pièce d'un débat plus large sur le libre-échange, la souveraineté alimentaire et le modèle agricole français. Le Quizz du Berger vous permet de comparer vos positions à celles des ${candidatesCount} candidats sur ces questions précises :</p>
 <ul>
 <li><a href="/theme/economie-et-industrie">Thème : Économie et industrie</a> — libre-échange, réindustrialisation, protectionnisme.</li>
 <li><a href="/theme/agriculture-et-alimentation">Thème : Agriculture et alimentation</a> — pesticides, bio, indépendance alimentaire, élevage.</li>
@@ -398,9 +400,9 @@ export const articles: Article[] = [
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: 'Accord UE-Mercosur : tout comprendre et les positions des 26 candidats à la présidentielle 2027',
+      headline: `Accord UE-Mercosur : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
       description:
-        "Mercosur, définition, contenu de l'accord UE-Mercosur, enjeux pour la France et positions détaillées des 26 candidats à l'élection présidentielle 2027.",
+        `Mercosur, définition, contenu de l'accord UE-Mercosur, enjeux pour la France et positions détaillées des ${candidatesCount} candidats à l'élection présidentielle 2027.`,
       author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
       datePublished: '2026-02-27',
       about: [
@@ -418,7 +420,7 @@ export const articles: Article[] = [
     date: '2026-03-01',
     tag: 'Analyse',
     content: `
-<p>Peu d'affaires judiciaires ont autant alimenté les théories, les enquêtes et les débats politiques que l'<strong>affaire Epstein</strong>. Réseau de trafic sexuel de mineures, clients milliardaires et chefs d'État, suicide contesté en prison, documents judiciaires rendus publics : l'affaire touche aux élites mondiales, à la justice, à la presse et — par ricochet — à la politique française. Voici un point complet, et ce que les 26 candidats à la présidentielle 2027 disent des enjeux qu'elle soulève.</p>
+<p>Peu d'affaires judiciaires ont autant alimenté les théories, les enquêtes et les débats politiques que l'<strong>affaire Epstein</strong>. Réseau de trafic sexuel de mineures, clients milliardaires et chefs d'État, suicide contesté en prison, documents judiciaires rendus publics : l'affaire touche aux élites mondiales, à la justice, à la presse et — par ricochet — à la politique française. Voici un point complet, et ce que les ${candidatesCount} candidats à la présidentielle 2027 disent des enjeux qu'elle soulève.</p>
 
 <h2>Affaire Epstein : c'est quoi, en résumé ?</h2>
 <p>L'<strong>affaire Epstein</strong> désigne l'ensemble des enquêtes, procès et révélations autour du financier américain <strong>Jeffrey Epstein</strong> (1953-2019) et de sa complice <strong>Ghislaine Maxwell</strong>. Tous deux sont accusés — et condamnés, dans le cas de Maxwell — d'avoir organisé pendant plus de vingt ans un <strong>réseau de trafic sexuel de mineures</strong>, en recrutant, transportant et livrant des adolescentes à Epstein et à son cercle d'amis puissants, dans ses différentes résidences (Manhattan, Palm Beach, Nouveau-Mexique, et son île privée de Little Saint James).</p>
@@ -499,8 +501,8 @@ export const articles: Article[] = [
 <li><strong>La transparence judiciaire</strong> : faut-il publier plus, et plus vite, les documents liés aux affaires touchant les personnalités publiques ?</li>
 </ul>
 
-<h2>Les 26 candidats à la présidentielle 2027 et les enjeux soulevés par l'affaire Epstein</h2>
-<p>Peu de candidats ont commenté directement l'affaire Epstein — c'est une affaire essentiellement américaine. En revanche, les <strong>sujets qu'elle soulève</strong> — impunité des élites, protection des mineurs, indépendance de la justice, liberté de la presse — traversent tous les programmes. Voici comment les 26 candidats du Quizz du Berger se positionnent sur ces enjeux, en quatre axes.</p>
+<h2>Les ${candidatesCount} candidats à la présidentielle 2027 et les enjeux soulevés par l'affaire Epstein</h2>
+<p>Peu de candidats ont commenté directement l'affaire Epstein — c'est une affaire essentiellement américaine. En revanche, les <strong>sujets qu'elle soulève</strong> — impunité des élites, protection des mineurs, indépendance de la justice, liberté de la presse — traversent tous les programmes. Voici comment les ${candidatesCount} candidats du Quizz du Berger se positionnent sur ces enjeux, en quatre axes.</p>
 
 <h3>1. Lutte contre la pédocriminalité et les violences sexuelles</h3>
 <p>Un consensus transpartisan existe sur le principe : il faut renforcer la lutte contre la pédocriminalité et les violences sexuelles. Les divergences portent sur les moyens (imprescriptibilité, formation des magistrats, budgets, victimologie).</p>
@@ -563,7 +565,7 @@ export const articles: Article[] = [
 </ul>
 
 <h2>En résumé</h2>
-<p>L'affaire Epstein n'est pas un dossier que les candidats français commentent tous les jours. Mais les <strong>questions qu'elle soulève</strong> — protection des mineurs, impunité des puissants, indépendance de la justice, rôle de la presse — structurent en profondeur le débat de la présidentielle 2027. En répondant aux 119 questions du Quizz du Berger, vous pouvez voir lequel des 26 candidats est le plus proche de vos convictions sur ces sujets, <strong>sans vous laisser enfermer dans une étiquette partisane</strong>.</p>
+<p>L'affaire Epstein n'est pas un dossier que les candidats français commentent tous les jours. Mais les <strong>questions qu'elle soulève</strong> — protection des mineurs, impunité des puissants, indépendance de la justice, rôle de la presse — structurent en profondeur le débat de la présidentielle 2027. En répondant aux ${quizzQuestionsCount} questions du Quizz du Berger, vous pouvez voir lequel des ${candidatesCount} candidats est le plus proche de vos convictions sur ces sujets, <strong>sans vous laisser enfermer dans une étiquette partisane</strong>.</p>
 
 <p><a href="/themes">→ Faire le quiz et découvrir quel candidat pense comme vous</a></p>
 `,
@@ -572,7 +574,7 @@ export const articles: Article[] = [
       '@type': 'Article',
       headline: 'Affaire Epstein : tout comprendre, le volet français et les enjeux pour la présidentielle 2027',
       description:
-        "Affaire Epstein : chronologie, liste Epstein, volet français (Jean-Luc Brunel) et positions des 26 candidats à la présidentielle 2027 sur les enjeux soulevés.",
+        `Affaire Epstein : chronologie, liste Epstein, volet français (Jean-Luc Brunel) et positions des ${candidatesCount} candidats à la présidentielle 2027 sur les enjeux soulevés.`,
       author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
       datePublished: '2026-03-01',
       about: [
@@ -586,13 +588,13 @@ export const articles: Article[] = [
   },
   {
     slug: 'guerre-iran-detroit-ormuz-france-candidats-2027',
-    title: 'Guerre Iran-Israël et détroit d\'Ormuz : tout comprendre et les positions des 26 candidats à la présidentielle 2027',
+    title: `Guerre Iran-Israël et détroit d'Ormuz : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
     excerpt:
       "Guerre Iran-Israël, programme nucléaire iranien, détroit d'Ormuz et prix du pétrole : le décryptage complet et les positions de chaque candidat à 2027 sur l'Iran et la diplomatie française.",
     date: '2026-04-23',
     tag: 'Analyse',
     content: `
-<p>Massacres de manifestants en janvier, guerre ouverte avec Israël et les États-Unis à partir du 28 février, mort du Guide suprême, fermeture effective du <strong>détroit d'Ormuz</strong> début mars, baril au-dessus de 100 dollars : 2026 a fait basculer le Moyen-Orient et, avec lui, les prix de l'énergie en Europe. Voici ce qu'il faut savoir sur la <strong>guerre Iran-Israël-États-Unis</strong> et ce qu'en disent les 26 candidats à la présidentielle 2027.</p>
+<p>Massacres de manifestants en janvier, guerre ouverte avec Israël et les États-Unis à partir du 28 février, mort du Guide suprême, fermeture effective du <strong>détroit d'Ormuz</strong> début mars, baril au-dessus de 100 dollars : 2026 a fait basculer le Moyen-Orient et, avec lui, les prix de l'énergie en Europe. Voici ce qu'il faut savoir sur la <strong>guerre Iran-Israël-États-Unis</strong> et ce qu'en disent les ${candidatesCount} candidats à la présidentielle 2027.</p>
 
 <h2>Le détroit d'Ormuz : c'est quoi ?</h2>
 <p>Le <strong>détroit d'Ormuz</strong> est un bras de mer de <strong>55 km de large</strong> (à son point le plus resserré, seulement 33 km) qui relie le golfe Persique au golfe d'Oman et à l'océan Indien. Il borde au nord l'Iran, au sud le sultanat d'Oman et les Émirats arabes unis.</p>
@@ -668,8 +670,8 @@ export const articles: Article[] = [
 <li><strong>Nucléaire civil</strong> : l'épisode ravive le débat intérieur sur l'indépendance énergétique via le parc nucléaire français, au moment où le débat sur les EPR2 et la place des renouvelables devient central pour la présidentielle 2027.</li>
 </ul>
 
-<h2>Les 26 candidats à la présidentielle 2027 face à l'Iran et à Ormuz</h2>
-<p>Sur ce dossier, les clivages classiques gauche-droite ne suffisent pas. Il faut croiser au moins trois lignes de fracture : <strong>alliance occidentale vs. non-alignement</strong>, <strong>soutien à Israël vs. équidistance</strong>, et <strong>fermeté militaire vs. diplomatie et désescalade</strong>. Voici les 26 candidats regroupés en quatre familles.</p>
+<h2>Les ${candidatesCount} candidats à la présidentielle 2027 face à l'Iran et à Ormuz</h2>
+<p>Sur ce dossier, les clivages classiques gauche-droite ne suffisent pas. Il faut croiser au moins trois lignes de fracture : <strong>alliance occidentale vs. non-alignement</strong>, <strong>soutien à Israël vs. équidistance</strong>, et <strong>fermeté militaire vs. diplomatie et désescalade</strong>. Voici les ${candidatesCount} candidats regroupés en quatre familles.</p>
 
 <h3>Famille 1 — Atlantistes et partisans d'une ligne ferme face à l'Iran</h3>
 <p>Ces candidats considèrent que l'Iran représente une menace majeure pour la paix régionale, qu'il faut continuer à soutenir Israël face au Hezbollah et aux Gardiens de la Révolution, et rester coordonnés avec les États-Unis et l'OTAN.</p>
@@ -734,16 +736,15 @@ export const articles: Article[] = [
 <li><a href="/theme/economie-et-industrie">Thème : Économie et industrie</a> — dépendance énergétique, réindustrialisation, souveraineté.</li>
 <li><a href="/theme/depenses-et-dette-publiques">Thème : Dépenses et dette publiques</a> — budget de la défense, arbitrages budgétaires.</li>
 </ul>
-<p>Répondez aux 119 questions et comparez-vous aux 26 candidats. Vous pourriez découvrir que, sur le Moyen-Orient et l'énergie, vous êtes plus proche d'un candidat auquel vous ne vous attendiez pas.</p>
+<p>Répondez aux ${quizzQuestionsCount} questions et comparez-vous aux ${candidatesCount} candidats. Vous pourriez découvrir que, sur le Moyen-Orient et l'énergie, vous êtes plus proche d'un candidat auquel vous ne vous attendiez pas.</p>
 
 <p><a href="/themes">→ Faire le quiz et découvrir quel candidat pense comme vous</a></p>
 `,
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: 'Guerre Iran-Israël et détroit d\'Ormuz : tout comprendre et les positions des 26 candidats à la présidentielle 2027',
-      description:
-        "Guerre Iran-Israël de juin 2025, programme nucléaire iranien, détroit d'Ormuz, enjeux énergétiques pour la France et positions détaillées des 26 candidats à la présidentielle 2027.",
+      headline: `Guerre Iran-Israël et détroit d'Ormuz : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+      description: `Guerre Iran-Israël de juin 2025, programme nucléaire iranien, détroit d'Ormuz, enjeux énergétiques pour la France et positions détaillées des ${candidatesCount} candidats à la présidentielle 2027.`,
       author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
       datePublished: '2026-04-23',
       about: [
@@ -799,7 +800,7 @@ export const articles: Article[] = [
 <tr><th>Critère</th><th>MonVote2027</th><th>Quizz du Berger</th></tr>
 <tr><td>Format des questions</td><td>Affirmation à valider/rejeter</td><td><strong>Question neutre + réponses substantielles</strong></td></tr>
 <tr><td>Options de réponse</td><td>5 points d'accord (Likert)</td><td><strong>3 à 6 réponses concrètes</strong> par question</td></tr>
-<tr><td>Nombre de questions</td><td>20 (rapide) ou 100 (complet)</td><td><strong>119 questions</strong> sur 21 thèmes</td></tr>
+<tr><td>Nombre de questions</td><td>20 (rapide) ou 100 (complet)</td><td><strong>${quizzQuestionsCount} questions</strong> sur ${quizzThemesCount} thèmes</td></tr>
 <tr><td>Candidats</td><td>23</td><td><strong>26</strong></td></tr>
 <tr><td>Résultats par thème</td><td>Oui (pondération possible)</td><td><strong>Oui, détaillé par thème</strong></td></tr>
 <tr><td>Sources des positions candidats</td><td>Programmes, déclarations, votes</td><td>Programmes, déclarations, votes</td></tr>

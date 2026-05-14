@@ -3,6 +3,7 @@ import { Link, useParams, Navigate } from 'react-router';
 import {
   getThemeBySlug,
   candidateSlugMap,
+  candidatesCount,
   getCandidateAnswerForQuestion,
   getQuestionSlugById,
 } from '@app/utils/seo';
@@ -27,7 +28,7 @@ export default function ThemePage() {
   return (
     <>
       <title>{`${theme.fr} — Élection présidentielle 2027 | Le Quizz du Berger`}</title>
-      <meta name="description" content={`Que proposent les 24 candidats à la présidentielle 2027 sur le thème : ${theme.fr} ? Découvrez leurs positions et comparez avec les vôtres.`} />
+      <meta name="description" content={`Que proposent les ${candidatesCount} candidats à la présidentielle 2027 sur le thème : ${theme.fr} ? Découvrez leurs positions et comparez avec les vôtres.`} />
 
       <div className="flex flex-col items-center bg-white">
         {/* Hero */}
@@ -37,7 +38,7 @@ export default function ThemePage() {
               Élection 2027 : que proposent les candidats sur {theme.fr.toLowerCase()}&nbsp;?
             </h1>
             <p className="text-lg leading-relaxed text-white/80">
-              Découvrez les positions des 24 candidats à l'élection présidentielle 2027 sur le thème <strong>{theme.fr}</strong>.
+              Découvrez les positions des {candidatesCount} candidats à l'élection présidentielle 2027 sur le thème <strong>{theme.fr}</strong>.
               {' '}{theme.questions.length} questions pour comprendre les différences entre les candidats.
             </p>
             <Link

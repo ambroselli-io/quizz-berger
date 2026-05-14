@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { themeSlugMap, hotTopicQuestions } from '@app/utils/seo';
+import { themeSlugMap, hotTopicQuestions, candidatesCount } from '@app/utils/seo';
 import Footer from '@app/components/Footer';
 
 export default function SujetsIndex() {
@@ -18,7 +18,7 @@ export default function SujetsIndex() {
               Tous les sujets de la présidentielle 2027
             </h1>
             <p className="text-lg text-white/80">
-              {themeSlugMap.length} thèmes politiques, des centaines de questions, 24 candidats.
+              {themeSlugMap.length} thèmes politiques, des centaines de questions, {candidatesCount} candidats.
             </p>
           </div>
         </section>

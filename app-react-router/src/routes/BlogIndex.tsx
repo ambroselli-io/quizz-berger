@@ -1,6 +1,8 @@
 import { Link } from 'react-router';
 import Footer from '@app/components/Footer';
 import { articles } from '@app/content/articles';
+import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
+import { candidatesCount } from '@app/utils/seo';
 
 export default function BlogIndex() {
   return (
@@ -45,7 +47,7 @@ export default function BlogIndex() {
 
         <section className="w-full bg-quizz-dark px-5 py-16 text-center text-white">
           <h2 className="mb-4 font-[Merriweather] text-2xl font-bold">Trouvez votre candidat idéal</h2>
-          <p className="mb-8 text-white/80">21 thèmes, 119 questions, 24 candidats.</p>
+          <p className="mb-8 text-white/80">{quizzThemesCount} thèmes, {quizzQuestionsCount} questions, {candidatesCount} candidats.</p>
           <Link
             to="/themes"
             className="inline-block rounded-full bg-yellow-400 px-8 py-3 font-semibold text-black no-underline hover:bg-yellow-300"

@@ -7,6 +7,7 @@ import {
   comparisonPairs,
   getCanonicalPairSlug,
 } from '@app/utils/seo';
+import { quizzThemesCount } from '@app/utils/quizz';
 import Footer from '@app/components/Footer';
 
 export default function ComparaisonPage() {
@@ -69,7 +70,7 @@ export default function ComparaisonPage() {
       <link rel="canonical" href={`https://www.quizz-du-berger.com/comparer/${canonicalSlug}`} />
       <meta
         name="description"
-        content={`Comparez les positions de ${candidate1.pseudo} et ${candidate2.pseudo} sur les 21 thèmes de la présidentielle 2027. ${agreementPercent}% d'accord.`}
+        content={`Comparez les positions de ${candidate1.pseudo} et ${candidate2.pseudo} sur les ${quizzThemesCount} thèmes de la présidentielle 2027. ${agreementPercent}% d'accord.`}
       />
 
       <div className="flex flex-col items-center bg-white">

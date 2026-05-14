@@ -3,6 +3,7 @@ import { Link, useParams, Navigate } from 'react-router';
 import {
   getQuestionBySlug,
   candidateSlugMap,
+  candidatesCount,
   getCandidateAnswerForQuestion,
   themeSlugMap,
   getQuestionsByThemeId,
@@ -114,7 +115,7 @@ export default function QuestionPolitiquePage() {
               {question.seoTitle}
             </h1>
             <p className="text-lg leading-relaxed text-white/80">
-              Découvrez ce que pensent les 24 candidats à la présidentielle 2027 sur cette question clé.
+              Découvrez ce que pensent les {candidatesCount} candidats à la présidentielle 2027 sur cette question clé.
             </p>
           </div>
         </section>
@@ -185,7 +186,7 @@ export default function QuestionPolitiquePage() {
         <section className="w-full bg-gray-50 px-5 py-12">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-6 font-[Merriweather] text-xl font-bold text-quizz-dark">
-              Les 24 candidats répondent
+              Les {candidatesCount} candidats répondent
             </h2>
             <div className="grid gap-4 lg:grid-cols-2">
               {candidateAnswers
@@ -244,7 +245,7 @@ export default function QuestionPolitiquePage() {
                 Voir aussi sur le thème : {question.themeName}
               </h2>
               <p className="mb-6 text-sm text-gray-600">
-                D'autres questions clés sur ce thème, avec les positions des 24 candidats.
+                D'autres questions clés sur ce thème, avec les positions des {candidatesCount} candidats.
               </p>
               <ul className="grid gap-3 lg:grid-cols-2">
                 {relatedQuestions.map((q) => (
@@ -282,7 +283,7 @@ export default function QuestionPolitiquePage() {
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
                 Vous répondez aux questions qui vous intéressent, thème par thème. Un algorithme compare vos
-                réponses à celles des 24 candidats : une réponse identique vaut 5 points, proche 2-4 points,
+                réponses à celles des {candidatesCount} candidats : une réponse identique vaut 5 points, proche 2-4 points,
                 opposée 0 point. Le candidat avec le plus de points est le plus proche de vos idées.
               </p>
             </details>

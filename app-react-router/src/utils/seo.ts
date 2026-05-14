@@ -55,6 +55,8 @@ export const candidateSlugMap: CandidateSlugEntry[] = candidatesData.map((c) => 
   answers: c.answers,
 }));
 
+export const candidatesCount = candidateSlugMap.length;
+
 export function getCandidateBySlug(slug: string): CandidateSlugEntry | undefined {
   return candidateSlugMap.find((c) => c.slug === slug);
 }
@@ -79,7 +81,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   'question-2027-ae-01': {
     slug: 'guerre-ukraine-france',
     seoTitle: 'Guerre en Ukraine : que pensent les candidats à la présidentielle 2027 ?',
-    seoDescription: 'Découvrez les positions des 24 candidats à la présidentielle 2027 sur la guerre en Ukraine et le rôle de la France.',
+    seoDescription: `Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la guerre en Ukraine et le rôle de la France.`,
   },
   'question-2027-ae-02': {
     slug: 'france-otan-alliance',
@@ -99,12 +101,12 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   'question-2027-agri-03': {
     slug: 'agriculture-biologique-france',
     seoTitle: 'Agriculture biologique : les positions des candidats 2027',
-    seoDescription: 'Quelle place pour le bio en France ? Découvrez les positions des 24 candidats à la présidentielle 2027.',
+    seoDescription: `Quelle place pour le bio en France ? Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-climat-01': {
     slug: 'nucleaire-france-avenir',
     seoTitle: 'Nucléaire en France : que proposent les candidats à la présidentielle 2027 ?',
-    seoDescription: 'Relancer le nucléaire ou en sortir ? Comparez les positions des 24 candidats à la présidentielle 2027.',
+    seoDescription: `Relancer le nucléaire ou en sortir ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-climat-03': {
     slug: 'voiture-electrique-interdiction-thermique',
@@ -114,7 +116,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   'question-2027-immigration-01': {
     slug: 'immigration-france-2027',
     seoTitle: 'Immigration : les positions des candidats à la présidentielle 2027',
-    seoDescription: 'Immigration en France : régularisation, quotas ou immigration zéro ? Comparez les positions des 24 candidats.',
+    seoDescription: `Immigration en France : régularisation, quotas ou immigration zéro ? Comparez les positions des ${candidatesCount} candidats.`,
   },
   'question-2027-immigration-03': {
     slug: 'droit-du-sol-nationalite',
@@ -215,7 +217,7 @@ function buildQuestionSlugMap(): QuestionSlugEntry[] {
         scores: question.scores,
         help: question.help,
         seoTitle: hotTopic?.seoTitle || `${question.fr} — Les candidats à la présidentielle 2027 répondent`,
-        seoDescription: hotTopic?.seoDescription || `Découvrez les positions des 24 candidats à la présidentielle 2027 : ${question.fr}`,
+        seoDescription: hotTopic?.seoDescription || `Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027 : ${question.fr}`,
       });
     }
   }
