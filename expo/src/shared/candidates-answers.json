@@ -316,11 +316,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -632,6 +627,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 0
       }
     ]
@@ -953,11 +963,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -1270,6 +1275,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
       }
     ]
   },
@@ -1590,11 +1610,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -1906,6 +1921,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 1
       }
     ]
@@ -2227,11 +2257,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -2543,6 +2568,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 2
       }
     ]
@@ -2864,11 +2904,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -3181,6 +3216,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -3501,11 +3551,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -3817,6 +3862,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 1
       }
     ]
@@ -4138,11 +4198,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -4455,6 +4510,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -4775,11 +4845,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -5091,6 +5156,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 2
       }
     ]
@@ -5412,11 +5492,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -5729,6 +5804,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -6049,11 +6139,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -6365,6 +6450,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 0
       }
     ]
@@ -6686,11 +6786,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -7003,6 +7098,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 0
       }
     ]
   },
@@ -7323,11 +7433,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -7640,6 +7745,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 0
       }
     ]
   },
@@ -7960,11 +8080,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 3
       },
@@ -8276,6 +8391,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 2
       }
     ]
@@ -8597,11 +8727,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -8913,6 +9038,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 2
       }
     ]
@@ -9234,11 +9374,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -9550,6 +9685,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 1
       }
     ]
@@ -9871,11 +10021,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -10187,6 +10332,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 1
       }
     ]
@@ -10508,11 +10668,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -10825,6 +10980,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -11145,11 +11315,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -11461,6 +11626,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 1
       }
     ]
@@ -11782,11 +11962,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -12098,6 +12273,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 1
       }
     ]
@@ -12419,11 +12609,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -12735,6 +12920,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 0
       }
     ]
@@ -13056,11 +13256,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 3
       },
@@ -13372,6 +13567,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 3
       }
     ]
@@ -13693,11 +13903,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -14010,6 +14215,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 0
       }
     ]
   },
@@ -14330,11 +14550,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
       },
@@ -14646,6 +14861,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 3
       }
     ]
@@ -14967,11 +15197,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -15284,6 +15509,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
       }
     ]
   },
@@ -15809,11 +16049,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
       },
@@ -15920,6 +16155,21 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
         "answerIndex": 0
       }
     ]
@@ -16451,11 +16701,6 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-01",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
       },
@@ -16558,6 +16803,21 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 2
       }
     ]
   }

@@ -3,6 +3,7 @@ Réponses de Juan Branco (avocat, activiste — gauche radicale anti-système)
 
 Affaires étrangères:
 
+
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
 [4] L'OTAN et les USA ont provoqué ce conflit : la France devrait jouer un rôle de médiateur indépendant
 
@@ -24,6 +25,7 @@ question-2027-ae-06: Face à la montée en puissance de la Chine, la France devr
 
 Agriculture et alimentation:
 
+
 question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
 [0] Il faut les interdire le plus vite possible, c'est une question de santé publique et de survie de la biodiversité
 
@@ -41,6 +43,7 @@ question-2027-agri-05: Quel rapport devrions-nous avoir avec l'élevage et la co
 
 
 Climat, Énergie et Écologie:
+
 
 question-2027-climat-01: Comment vous positionnez-vous face au changement climatique ?
 [4] Il faut changer radicalement notre mode de vie : la décroissance est la seule option sérieuse
@@ -63,6 +66,7 @@ question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consomm
 
 Corruption et lobbying:
 
+
 question-2027-corr-01: Que pensez-vous du recours aux cabinets de conseil privés (type McKinsey) par l'État ?
 [3] C'est de la corruption déguisée, un système où les politiques renvoient l'ascenseur à ceux qui les financent
 
@@ -81,6 +85,7 @@ question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
 
 Culture:
 
+
 question-2027-cult-01: Que pensez-vous du budget alloué à la culture ?
 [0] Il faut beaucoup l'augmenter, la culture est aussi essentielle que l'éducation
 
@@ -98,6 +103,7 @@ question-2027-cult-05: Quelle est votre vision du rôle de l'État dans la cultu
 
 
 Démographie et question migratoire:
+
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
 [3] Il faut assouplir notre politique migratoire et mieux accueillir ceux qui arrivent
@@ -123,6 +129,7 @@ question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culture
 
 Dépenses et dette publiques:
 
+
 question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
 [0] La Sécu devrait tout rembourser à 100%, c'est un droit fondamental
 
@@ -140,6 +147,7 @@ question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
 
 
 Économie et Industrie:
+
 
 question-2027-eco-01: Que pensez-vous du libre-échange et de la mondialisation ?
 [0] La mondialisation c'est un hold-up : les riches s'enrichissent, les pauvres trinquent. Il faut du protectionnisme
@@ -165,6 +173,7 @@ question-2027-eco-07: Que pensez-vous de la dépendance de la France aux chaîne
 
 Finance:
 
+
 question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
 [4] La finance est le domaine le plus injuste du capitalisme, il faut reprendre le contrôle dessus
 
@@ -181,7 +190,99 @@ question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
 [3] Il faut les alourdir pour réduire les inégalités de naissance et redistribuer les richesses
 
 
+Gouvernance et République:
+
+
+question-2027-gouv-01: Que pensez-vous de la Vème République et de sa Constitution ?
+[0] Il faut une VIème République avec plus de démocratie directe et moins de pouvoir présidentiel
+
+question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
+[0] C'était irresponsable et antidémocratique, il faut limiter ce pouvoir du Président
+
+question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
+[0] Oui, la proportionnelle intégrale : chaque voix doit compter, c'est ça la vraie démocratie
+
+question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
+[0] Il faut un référendum d'initiative citoyenne (RIC) sur tous les sujets, y compris pour révoquer un élu
+
+question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
+[3] L'administration est certes lourde, mais elle protège les citoyens et garantit l'égalité
+
+question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
+[0] L'État est beaucoup trop autoritaire, on vit dans une société de surveillance
+
+
+Logement:
+
+
+question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
+[0] Il faut encadrer strictement les loyers partout en France, pas seulement dans quelques villes
+
+question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
+[0] Il faut interdire Airbnb dans les grandes villes : ça vide les quartiers de leurs habitants
+
+question-2027-log-04: Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?
+[3] Il faut obliger les entreprises et les administrations à s'installer hors des grandes métropoles
+
+question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
+[3] L'État doit financer massivement la rénovation de tous les logements mal isolés
+
+question-2027-log-06: Quel rôle l'État devrait-il jouer dans le logement ?
+[4] Total : le logement est un service public, l'État doit construire et gérer
+
+question-2027-log-07: Que pensez-vous du niveau actuel des prix du logement ?
+[4] C'est un scandale, une génération entière est exclue de la propriété et étranglée par le loyer
+
+question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
+[0] Il faut réquisitionner massivement les logements vides en zone tendue
+
+
+Numérique et IA:
+
+
+question-2027-num-01: Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?
+[3] L'IA est une menace pour l'emploi et la vie privée, il faut la limiter fortement
+
+question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
+[1] C'est préoccupant, il faut réguler fortement les plateformes et protéger les mineurs
+
+question-2027-num-03: Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?
+[3] La reconnaissance faciale et la surveillance de masse sont incompatibles avec une démocratie, il faut les interdire
+
+question-2027-num-04: La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?
+[3] Il faut imposer que les données des Français restent en France et créer nos propres plateformes souveraines
+
+question-2027-num-05: Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?
+[3] Il faut remettre des humains partout : la dématérialisation exclut trop de gens, les personnes âgées, les ruraux, les précaires
+
+
+Police, Justice et Sécurité:
+
+
+question-2027-pol-01: Que pensez-vous des violences policières ?
+[4] Il y a un vice profond dans l'institution policière, il faut une refonte complète
+
+question-2027-pol-02: La France est-elle un pays sûr ?
+[4] La France est un pays très sûr, le discours sécuritaire est largement exagéré par les médias
+
+question-2027-pol-03: Que pensez-vous de la justice en France ?
+[3] La justice est trop sévère avec les petits délits et trop laxiste avec la délinquance en col blanc
+
+question-2027-pol-04: Que pensez-vous de la situation dans les prisons françaises ?
+[3] La prison ne résout rien, il faut investir massivement dans la prévention et la réinsertion
+
+question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
+[3] La délinquance est surtout un problème social : il faut s'attaquer aux causes (pauvreté, exclusion, éducation)
+
+question-2027-pol-06: Que pensez-vous de la formation des policiers ?
+[0] Ils sont très mal formés, ça explique beaucoup de bavures
+
+question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
+[3] Il faut légaliser et encadrer le cannabis : ça assèchera les trafics et rapportera des impôts
+
+
 Politique fiscale:
+
 
 question-2027-fisc-01: Que pensez-vous des impôts sur les plus riches ?
 [4] Il faut les augmenter beaucoup : les ultra-riches se moquent de nous
@@ -210,6 +311,7 @@ question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 
 Pouvoir d'achat et vie quotidienne:
 
+
 question-2027-pa-01: L'inflation et la hausse des prix, c'est la faute de qui ?
 [0] C'est la faute des entreprises qui augmentent leurs marges sur le dos des consommateurs
 
@@ -227,6 +329,7 @@ question-2027-pa-05: Comment améliorer le pouvoir d'achat des Français ?
 
 
 Recherche et éducation:
+
 
 question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
 [0] L'Éducation nationale est en perdition, seule une hausse massive du budget peut la sauver
@@ -248,6 +351,7 @@ question-2027-edu-06: Que pensez-vous de la laïcité et des signes religieux à
 
 
 Santé:
+
 
 question-2027-san-01: Que pensez-vous du budget alloué à la santé publique ?
 [4] Tout ce qui touche à la santé devrait être entièrement gratuit, c'est un droit fondamental
@@ -276,6 +380,7 @@ question-2027-san-08: La France est l'un des plus gros consommateurs de médicam
 
 Société:
 
+
 question-2027-soc-01: Que pensez-vous de l'égalité homme-femme en France ?
 [3] L'inégalité est encore profonde, il faut des mesures fortes pour en finir avec le patriarcat
 
@@ -303,6 +408,7 @@ question-2027-soc-08: Que pensez-vous de la politique envers les personnes handi
 
 Travail, Chômage, Retraite:
 
+
 question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
 [0] Il faut abroger cette réforme, on devrait revenir à 60 ans voire moins
 
@@ -322,88 +428,8 @@ question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles
 [0] Le télétravail devrait être un droit pour tous les métiers qui le permettent — c'est une question de liberté
 
 
-Gouvernance et République:
-
-question-2027-gouv-01: Que pensez-vous de la Vème République et de sa Constitution ?
-[0] Il faut une VIème République avec plus de démocratie directe et moins de pouvoir présidentiel
-
-question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
-[0] C'était irresponsable et antidémocratique, il faut limiter ce pouvoir du Président
-
-question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
-[0] Oui, la proportionnelle intégrale : chaque voix doit compter, c'est ça la vraie démocratie
-
-question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
-[0] Il faut un référendum d'initiative citoyenne (RIC) sur tous les sujets, y compris pour révoquer un élu
-
-question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
-[3] L'administration est certes lourde, mais elle protège les citoyens et garantit l'égalité
-
-question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
-[0] L'État est beaucoup trop autoritaire, on vit dans une société de surveillance
-
-
-Logement:
-
-question-2027-log-01: Que pensez-vous de la crise du logement en France ?
-[0] C'est une urgence absolue : l'État doit construire massivement des logements sociaux
-
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
-[0] Il faut encadrer strictement les loyers partout en France, pas seulement dans quelques villes
-
-question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
-[0] Il faut interdire Airbnb dans les grandes villes : ça vide les quartiers de leurs habitants
-
-question-2027-log-04: Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?
-[3] Il faut obliger les entreprises et les administrations à s'installer hors des grandes métropoles
-
-question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
-[3] L'État doit financer massivement la rénovation de tous les logements mal isolés
-
-
-Numérique et IA:
-
-question-2027-num-01: Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?
-[3] L'IA est une menace pour l'emploi et la vie privée, il faut la limiter fortement
-
-question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
-[1] C'est préoccupant, il faut réguler fortement les plateformes et protéger les mineurs
-
-question-2027-num-03: Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?
-[3] La reconnaissance faciale et la surveillance de masse sont incompatibles avec une démocratie, il faut les interdire
-
-question-2027-num-04: La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?
-[3] Il faut imposer que les données des Français restent en France et créer nos propres plateformes souveraines
-
-question-2027-num-05: Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?
-[3] Il faut remettre des humains partout : la dématérialisation exclut trop de gens, les personnes âgées, les ruraux, les précaires
-
-
-Police, Justice et Sécurité:
-
-question-2027-pol-01: Que pensez-vous des violences policières ?
-[4] Il y a un vice profond dans l'institution policière, il faut une refonte complète
-
-question-2027-pol-02: La France est-elle un pays sûr ?
-[4] La France est un pays très sûr, le discours sécuritaire est largement exagéré par les médias
-
-question-2027-pol-03: Que pensez-vous de la justice en France ?
-[3] La justice est trop sévère avec les petits délits et trop laxiste avec la délinquance en col blanc
-
-question-2027-pol-04: Que pensez-vous de la situation dans les prisons françaises ?
-[3] La prison ne résout rien, il faut investir massivement dans la prévention et la réinsertion
-
-question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
-[3] La délinquance est surtout un problème social : il faut s'attaquer aux causes (pauvreté, exclusion, éducation)
-
-question-2027-pol-06: Que pensez-vous de la formation des policiers ?
-[0] Ils sont très mal formés, ça explique beaucoup de bavures
-
-question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
-[3] Il faut légaliser et encadrer le cannabis : ça assèchera les trafics et rapportera des impôts
-
-
 Union Européenne:
+
 
 question-2027-ue-01: Globalement, que pensez-vous de l'Union européenne ?
 [1] L'UE a de gros défauts mais il faut rester dedans et la réformer en profondeur

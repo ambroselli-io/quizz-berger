@@ -215,9 +215,6 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 Logement:
 
 
-question-2027-log-01: Que pensez-vous de la crise du logement en France ?
-[1] Il faut construire plus et encadrer les loyers dans les zones tendues
-
 question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
 [0] Il faut encadrer strictement les loyers partout en France, pas seulement dans quelques villes
 
@@ -229,6 +226,15 @@ question-2027-log-04: Comment rééquilibrer le territoire entre les grandes vil
 
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
 [2] Il faut interdire la location des passoires thermiques et aider financièrement les propriétaires à rénover
+
+question-2027-log-06: Quel rôle l'État devrait-il jouer dans le logement ?
+[3] Fort : l'État doit pouvoir imposer (prix, quotas, normes contraignantes)
+
+question-2027-log-07: Que pensez-vous du niveau actuel des prix du logement ?
+[4] C'est un scandale, une génération entière est exclue de la propriété et étranglée par le loyer
+
+question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
+[0] Il faut réquisitionner massivement les logements vides en zone tendue
 
 
 Numérique et IA:
@@ -364,6 +370,12 @@ question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [0] C'est une urgence nationale : il faut des psychologues gratuits et accessibles partout
+
+question-2027-san-07: Notre système de santé dépense beaucoup plus pour soigner les maladies que pour les prévenir. Qu'en pensez-vous ?
+[3] On dépense des milliards à soigner des maladies évitables : il faut une vraie politique sur l'alimentation, le tabac, l'alcool et la sédentarité
+
+question-2027-san-08: La France est l'un des plus gros consommateurs de médicaments en Europe. Qu'en pensez-vous ?
+[3] Le problème c'est surtout l'industrie pharmaceutique qui pousse à la surconsommation pour son profit
 
 
 Société:

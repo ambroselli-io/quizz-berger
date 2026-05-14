@@ -215,9 +215,6 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 Logement:
 
 
-question-2027-log-01: Que pensez-vous de la crise du logement en France ?
-[1] Il faut construire plus et encadrer les loyers dans les zones tendues
-
 question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
 [1] C'est une bonne mesure dans les zones où les loyers explosent
 
@@ -229,6 +226,15 @@ question-2027-log-04: Comment rééquilibrer le territoire entre les grandes vil
 
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
 [1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
+
+question-2027-log-06: Quel rôle l'État devrait-il jouer dans le logement ?
+[3] Fort : l'État doit pouvoir imposer (prix, quotas, normes contraignantes)
+
+question-2027-log-07: Que pensez-vous du niveau actuel des prix du logement ?
+[3] Les prix sont déconnectés des revenus, c'est devenu invivable pour beaucoup
+
+question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
+[2] La réquisition n'est pas la bonne solution, mieux vaut inciter ou taxer la vacance
 
 
 Numérique et IA:
@@ -364,6 +370,12 @@ question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
+
+question-2027-san-07: Notre système de santé dépense beaucoup plus pour soigner les maladies que pour les prévenir. Qu'en pensez-vous ?
+[1] La prévention c'est bien, mais il ne faut pas tomber dans l'hygiénisme ou la culpabilisation
+
+question-2027-san-08: La France est l'un des plus gros consommateurs de médicaments en Europe. Qu'en pensez-vous ?
+[2] On prescrit beaucoup trop facilement : il faudrait s'inspirer de pays comme les Pays-Bas, qui privilégient d'autres approches avant le médicament
 
 
 Société:
