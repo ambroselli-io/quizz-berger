@@ -19,7 +19,7 @@ export const articles: Article[] = [
     date: '2026-02-11',
     tag: 'Candidats',
     content: `
-<p>L'élection présidentielle 2027 s'annonce comme l'une des plus disputées de la Ve République. Avec <strong>${candidatesCount} candidats potentiels</strong>, les électeurs font face à un choix complexe. Plutôt que de les classer sur un axe politique, nous vous invitons à découvrir leurs positions thème par thème.</p>
+<p>${candidatesCount} candidats potentiels à la présidentielle 2027. Plutôt que de les classer sur un axe gauche-droite, on les liste ici par ordre alphabétique, avec un lien vers leur page de positions thème par thème.</p>
 
 <h2>Les ${candidatesCount} candidats</h2>
 <ul>
@@ -51,9 +51,9 @@ export const articles: Article[] = [
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> — Reconquête</li>
 </ul>
 
-<h2>Ne les classez pas : comparez-les à vous</h2>
-<p>La politique ne se résume pas à un axe gauche-droite. Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger vous permet de comparer vos idées avec celles des ${candidatesCount} candidats sur <strong>${quizzThemesCount} thèmes</strong> et <strong>${quizzQuestionsCount} questions</strong>, thème par thème. Vous pourriez être surpris.</p>
-<p><a href="/themes">→ Répondre au quiz et découvrir quel candidat pense comme vous</a></p>
+<h2>Comparez-les à vous</h2>
+<p>Chaque candidat a des positions nuancées sur des dizaines de sujets. Le Quizz du Berger permet de comparer vos réponses aux leurs sur ${quizzThemesCount} thèmes et ${quizzQuestionsCount} questions, thème par thème. Le résultat est parfois différent de ce qu'on imagine.</p>
+<p><a href="/themes">→ Faire le quiz</a></p>
 `,
   },
   {
@@ -87,13 +87,11 @@ export const articles: Article[] = [
 <p>Ainsi, nous avons décidé de ne pas les solliciter, et d'imaginer leurs réponses selon leurs opinions partagées sur le web ou dans les médias.</p>
 <p>Toutefois, si l'un ou l'une d'entre eux se prend soudain d'envie de répondre, nous serons ravis de les intégrer à la base de données des candidats.</p>
 
-<h2>Pourquoi c'est mieux qu'un simple "d'accord / pas d'accord"</h2>
-<p>Contrairement à d'autres quiz politiques qui proposent seulement deux options (d'accord / pas d'accord), le Quizz du Berger offre <strong>jusqu'à 6 nuances</strong> par question. Cela permet de refléter la complexité réelle des opinions politiques.</p>
-<p>Votre réalité est souvent plus complexe que "je suis pour" ou "je suis contre". Le Quizz du Berger vous permet de le refléter.</p>
+<h2>Plusieurs réponses possibles, pas juste d'accord / pas d'accord</h2>
+<p>Certains quiz politiques fonctionnent en oui/non ou en échelle d'accord. Le Quizz du Berger propose 3 à 6 réponses concrètes par question, chacune étant une position cohérente. On essaie de couvrir l'éventail des positions qu'on entend dans le débat, pour que chacun puisse retrouver la sienne sans avoir à choisir un degré d'adhésion à une formulation préchargée.</p>
 
 <h2>Les résultats thème par thème</h2>
-<p>es résultats ne sont pas seulement globaux, mais aussi <strong>thème par thème</strong>. Vous pouvez ainsi découvrir que vous êtes proche d'un candidat sur l'économie mais d'un autre sur les questions de société.</p>
-<p>Cette approche multi-dimensionnelle montre que la pensée politique est complexe et ne se résume pas à un axe gauche-droite.</p>
+<p>Les résultats sont aussi affichés <strong>thème par thème</strong>, en plus du résultat global. On peut être proche d'un candidat sur l'économie et d'un autre sur les questions de société, et c'est intéressant à voir séparément.</p>
 
 <h2>Anonymat et données</h2>
 <p>Vos réponses sont <strong>anonymes</strong>. Vous pouvez optionnellement sauvegarder vos résultats sous un pseudonyme pour les partager avec vos amis et comparer vos convictions.</p>
@@ -109,7 +107,7 @@ export const articles: Article[] = [
     date: '2026-02-11',
     tag: 'Analyse',
     content: `
-<p>L'élection présidentielle 2027 s'articulera autour de grandes questions qui divisent et passionnent les Français. Voici les 10 thèmes qui structureront le débat.</p>
+<p>Voici les 10 thèmes qui vont structurer le débat de la présidentielle 2027, avec un lien direct vers la page du Quizz du Berger pour voir les positions des candidats sur chacun.</p>
 
 <h2>1. Immigration et identité</h2>
 <p>Sujet brûlant depuis des années, la question migratoire reste au cœur du débat. Régularisation, quotas, droit du sol — les ${candidatesCount} candidats ont des positions très variées.</p>
@@ -120,7 +118,7 @@ export const articles: Article[] = [
 <p><a href="/theme/pouvoir-dachat-et-vie-quotidienne">→ Les positions des candidats sur le pouvoir d'achat</a></p>
 
 <h2>3. Climat, énergie et écologie</h2>
-<p>Nucléaire, énergies renouvelables, transition écologique : un thème transversal qui touche tous les pans de la politique.</p>
+<p>Nucléaire, énergies renouvelables, transition écologique. Un thème qui croise économie, industrie, agriculture et géopolitique.</p>
 <p><a href="/theme/climat-energie-et-ecologie">→ Les positions des candidats sur le climat</a></p>
 
 <h2>4. Travail, chômage et retraites</h2>
@@ -136,7 +134,7 @@ export const articles: Article[] = [
 <p><a href="/theme/sante">→ Les positions des candidats sur la santé</a></p>
 
 <h2>7. Éducation et recherche</h2>
-<p>Réforme de l'école, uniforme, programmes, universités : un sujet qui engage l'avenir du pays.</p>
+<p>Réforme de l'école, uniforme, programmes, universités, financement de la recherche.</p>
 <p><a href="/theme/recherche-et-education">→ Les positions des candidats sur l'éducation</a></p>
 
 <h2>8. Économie et industrie</h2>
@@ -151,121 +149,116 @@ export const articles: Article[] = [
 <p>Cannabis, laïcité, GPA/PMA, fin de vie : les sujets qui touchent aux valeurs et aux libertés individuelles.</p>
 <p><a href="/theme/societe">→ Les positions des candidats sur la société</a></p>
 
-<h2>Explorez tous les thèmes</h2>
-<p>Le Quizz du Berger couvre <strong>${quizzThemesCount} thèmes</strong> en tout, avec <strong>${quizzQuestionsCount} questions</strong> détaillées. Découvrez quel candidat pense comme vous.</p>
+<h2>Et les autres thèmes</h2>
+<p>Le Quizz du Berger en couvre ${quizzThemesCount} au total, sur ${quizzQuestionsCount} questions. Vous pouvez répondre uniquement aux thèmes qui vous intéressent.</p>
 <p><a href="/themes">→ Faire le quiz</a></p>
 `,
   },
   {
     slug: 'alternative-elyze-2027',
-    title: 'Quizz du Berger : la meilleure alternative à Elyze pour 2027',
+    title: 'Elyze et Quizz du Berger : les différences pour 2027',
     excerpt:
-      "Pourquoi le Quizz du Berger est plus complet, plus nuancé et plus profond qu'Elyze pour choisir votre candidat à la présidentielle 2027.",
+      "Elyze a popularisé les quiz politiques en 2022 avec son interface façon Tinder. Le Quizz du Berger fait des choix de design différents : plus de nuances par réponse, résultats par thème, comparaison avec amis. Voici les différences.",
     date: '2026-02-11',
     tag: 'Comparatif',
     content: `
-<p>Elyze a popularisé les quiz politiques en France lors de la présidentielle 2022. Pour 2027, le <strong>Quizz du Berger</strong> va beaucoup plus loin.</p>
+<p>Elyze a popularisé les quiz politiques en France lors de la présidentielle 2022, avec son interface façon Tinder et son côté ludique. Pour 2027, le Quizz du Berger fait des choix de design différents. À vous de juger ce que vous préférez.</p>
 
-<h2>Comparatif : Quizz du Berger vs Elyze</h2>
+<h2>Tableau comparatif</h2>
 
 <table>
 <tr><th>Critère</th><th>Quizz du Berger</th><th>Elyze</th></tr>
-<tr><td>Nombre de questions</td><td><strong>${quizzQuestionsCount} questions</strong></td><td>~300 questions</td></tr>
-<tr><td>Nuances de réponse</td><td><strong>3 à 6 nuances</strong> par question</td><td>D'accord / Pas d'accord</td></tr>
-<tr><td>Thèmes couverts</td><td><strong>${quizzThemesCount} thèmes</strong></td><td>Mélangés</td></tr>
-<tr><td>Résultats par thème</td><td><strong>Oui, thème par thème</strong></td><td>Global uniquement</td></tr>
-<tr><td>Comparaison avec amis</td><td><strong>Oui</strong></td><td>Non</td></tr>
-<tr><td>Candidats</td><td><strong>${candidatesCount} candidats</strong></td><td>Variable</td></tr>
-<tr><td>Open-source</td><td><strong>Oui</strong></td><td>Non</td></tr>
+<tr><td>Nombre de questions</td><td>${quizzQuestionsCount}</td><td>~300</td></tr>
+<tr><td>Format des réponses</td><td>3 à 6 réponses par question</td><td>D'accord / Pas d'accord</td></tr>
+<tr><td>Thèmes</td><td>${quizzThemesCount} thèmes, résultats par thème</td><td>Mélangés, résultat global</td></tr>
+<tr><td>Comparaison avec amis</td><td>Oui</td><td>Non</td></tr>
+<tr><td>Candidats</td><td>${candidatesCount}</td><td>Variable</td></tr>
+<tr><td>Open-source</td><td>Oui</td><td>Non</td></tr>
 </table>
 
-<h2>Plus nuancé</h2>
-<p>Elyze propose seulement "d'accord" ou "pas d'accord" — le Quizz du Berger offre <strong>jusqu'à 6 réponses</strong> par question, du plus radical d'un côté au plus radical de l'autre, avec des nuances intermédiaires. Cela reflète bien mieux la complexité des opinions politiques.</p>
+<h2>Réponses oui/non ou réponses substantielles</h2>
+<p>Elyze fonctionne sur du "d'accord / pas d'accord" pour chaque carte. C'est rapide et lisible. Le Quizz du Berger propose 3 à 6 réponses concrètes par question, chacune étant une position cohérente plutôt qu'un degré d'adhésion. Le choix entre les deux dépend de ce que vous cherchez : rapide et fun, ou plus détaillé.</p>
 
-<h2>Plus profond : les résultats thème par thème</h2>
-<p>Avec Elyze, vous obtenez un classement global. Avec le Quizz du Berger, en plus du classement global, vous découvrez vos affinités <strong>thème par thème</strong>. Vous pouvez être proche de Mélenchon sur l'économie et de Le Pen sur la sécurité — on vous le montre.</p>
+<h2>Résultat global ou résultat par thème</h2>
+<p>Avec Elyze, vous obtenez un classement global. Avec le Quizz du Berger, vous obtenez aussi un classement <strong>thème par thème</strong>. Utile si vous pensez par exemple comme un candidat sur l'économie et comme un autre sur la sécurité.</p>
 
-<h2>Plus complet</h2>
-<p>${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes vs ~300 questions mélangées. Le Quizz du Berger couvre davantage de sujets et va plus en profondeur sur chacun d'entre eux.</p>
+<h2>Comparer ses résultats avec ses amis</h2>
+<p>Sur le Quizz du Berger, vous pouvez enregistrer vos résultats sous un pseudonyme et comparer avec vos amis. C'est l'occasion d'une discussion qui part de vraies réponses plutôt que d'étiquettes.</p>
 
-<h2>Comparaison avec vos amis</h2>
-<p>Fonctionnalité unique : enregistrez vos résultats sous un pseudonyme et comparez vos convictions avec celles de vos amis. Pour un débat sain et profond !</p>
+<h2>Ce qui s'est passé en 2022</h2>
+<p>Le Quizz du Berger a été utilisé par plus de 207 000 personnes lors de la présidentielle 2022, avec 9,7 millions de réponses. Un quart des utilisateurs a répondu à l'ensemble des questions.</p>
 
-<h2>207 000+ utilisateurs en 2022</h2>
-<p>Le Quizz du Berger a déjà convaincu plus de 207 000 personnes lors de la présidentielle 2022, avec plus de 9,7 millions de réponses. Un quart des utilisateurs a répondu aux ${quizzQuestionsCount} questions en entier.</p>
-
-<p><a href="/themes">→ Essayez le Quizz du Berger maintenant</a></p>
+<p><a href="/themes">→ Essayer le Quizz du Berger</a></p>
 `,
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: 'Quizz du Berger : la meilleure alternative à Elyze pour 2027',
+      headline: 'Elyze et Quizz du Berger : les différences pour 2027',
       description:
-        "Comparatif détaillé entre le Quizz du Berger et Elyze pour l'élection présidentielle 2027.",
+        "Comparatif entre le Quizz du Berger et Elyze pour la présidentielle 2027.",
       author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
       datePublished: '2026-02-11',
     },
   },
   {
     slug: 'comparatif-quiz-politiques-2027',
-    title: 'Comparatif des quiz politiques 2027 : Elyze, Quizz du Berger, Boussole Présidentielle',
+    title: 'Les quiz politiques de la présidentielle 2027 : tour d\'horizon',
     excerpt:
-      'Quel quiz politique choisir pour la présidentielle 2027 ? Comparaison détaillée des principales applications.',
+      'Quizz du Berger, Elyze, Boussole Présidentielle, MonVote2027 : quatre approches différentes pour se positionner. Voici les différences, à vous de choisir.',
     date: '2026-02-11',
     tag: 'Comparatif',
     content: `
-<p>Plusieurs outils en ligne permettent de trouver le candidat qui vous correspond le mieux. Voici un comparatif objectif.</p>
-
-<h2>Les quiz politiques disponibles</h2>
+<p>Plusieurs quiz politiques existent en ligne pour la présidentielle 2027. Chacun a sa philosophie. Voici un tour d'horizon.</p>
 
 <h3>Le Quizz du Berger</h3>
-<p><strong>Points forts :</strong> ${quizzQuestionsCount} questions, ${quizzThemesCount} thèmes, jusqu'à 6 nuances de réponse, résultats thème par thème, comparaison avec amis, open-source.</p>
-<p><strong>Points faibles :</strong> Plus long à compléter (mais on répond à ce qu'on veut).</p>
-<p><strong>Idéal pour :</strong> Ceux qui veulent une analyse en profondeur de leur pensée politique.</p>
+<p><strong>Format :</strong> ${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes, 3 à 6 réponses concrètes par question, résultats par thème, comparaison avec amis, open-source.</p>
+<p><strong>Approche :</strong> chaque question propose plusieurs réponses substantielles, chacune étant une position cohérente. Plus long à remplir, mais on peut ne répondre qu'aux thèmes qui nous intéressent.</p>
 
 <h3>Elyze</h3>
-<p><strong>Points forts :</strong> Interface type Tinder simple et rapide, popularité.</p>
-<p><strong>Points faibles :</strong> Seulement d'accord/pas d'accord, pas de résultats par thème, moins de questions.</p>
-<p><strong>Idéal pour :</strong> Ceux qui veulent s'amuser.</p>
+<p><strong>Format :</strong> interface façon Tinder, swipe d'accord / pas d'accord sur chaque carte.</p>
+<p><strong>Approche :</strong> rapide, ludique, très populaire. Pas de résultats par thème, format binaire qui ne capture pas les nuances.</p>
 
 <h3>La Boussole Présidentielle (Sciences Po)</h3>
-<p><strong>Points forts :</strong> Méthodologie académique, axe gauche-droite et libéral-autoritaire.</p>
-<p><strong>Points faibles :</strong> Résultats en 2D seulement, moins de granularité par thème.</p>
-<p><strong>Idéal pour :</strong> Ceux qui veulent se situer sur un axe politique traditionnel.</p>
+<p><strong>Format :</strong> questionnaire académique, restitution sur deux axes (gauche-droite, libéral-autoritaire).</p>
+<p><strong>Approche :</strong> méthodologie de science politique classique, utile pour se situer dans l'espace politique. Moins de granularité par thème.</p>
 
-<h2>Notre recommandation</h2>
-<p>Les trois outils sont complémentaires. Si vous n'en faites qu'un, le Quizz du Berger offre l'analyse la plus complète grâce à ses résultats thème par thème et ses nuances de réponse.</p>
+<h3>MonVote2027</h3>
+<p><strong>Format :</strong> 20 ou 100 questions, échelle d'accord à 5 points sur chaque affirmation, 23 candidats.</p>
+<p><strong>Approche :</strong> méthodologie publique, sources des positions des candidats citées. Les questions sont parfois des affirmations qui prennent déjà position, voir <a href="/blog/monvote2027-vs-quizz-du-berger">notre comparatif détaillé</a>.</p>
 
-<p><a href="/themes">→ Essayez le Quizz du Berger</a></p>
+<h2>Lequel choisir</h2>
+<p>Ça dépend de ce que vous cherchez. Si vous voulez quelque chose de rapide et fun : Elyze. Pour vous situer sur un axe politique classique : la Boussole. Pour confronter vos opinions aux formulations du débat public : MonVote2027. Pour une lecture détaillée par thème avec des réponses substantielles : le Quizz du Berger. Ils sont complémentaires, faire les deux ou trois donne souvent des résultats intéressants à comparer.</p>
+
+<p><a href="/themes">→ Essayer le Quizz du Berger</a></p>
 `,
   },
   {
     slug: 'quizz-du-berger-vs-boussole-presidentielle',
-    title: 'Quizz du Berger vs Boussole Présidentielle : quelle différence ?',
+    title: 'Boussole Présidentielle et Quizz du Berger : deux approches différentes',
     excerpt:
-      'Analyse multi-thèmes vs axe gauche-droite : deux approches complémentaires pour trouver votre candidat.',
+      'La Boussole Présidentielle de Sciences Po vous situe sur deux axes politiques. Le Quizz du Berger compare vos réponses thème par thème aux candidats. Deux philosophies, deux usages.',
     date: '2026-02-11',
     tag: 'Comparatif',
     content: `
-<p>La Boussole Présidentielle de Sciences Po et le Quizz du Berger sont deux outils sérieux pour l'élection 2027, mais avec des approches très différentes.</p>
+<p>La Boussole Présidentielle de Sciences Po et le Quizz du Berger sont deux outils sérieux pour la présidentielle 2027. Leurs approches sont différentes, et ils répondent à des questions différentes.</p>
 
-<h2>Deux philosophies différentes</h2>
-<p>La <strong>Boussole Présidentielle</strong> vous situe sur deux axes : gauche-droite et libéral-autoritaire. C'est une approche traditionnelle de la science politique qui permet de se positionner dans un espace bidimensionnel.</p>
-<p>Le <strong>Quizz du Berger</strong> ne vous place pas sur un axe. Il compare vos réponses question par question avec celles des candidats, et vous montre les résultats <strong>thème par thème</strong>. L'approche est plus pragmatique : pas de catégorisation, mais une mesure de proximité directe.</p>
+<h2>Deux philosophies</h2>
+<p>La <strong>Boussole Présidentielle</strong> vous situe sur deux axes : gauche-droite et libéral-autoritaire. C'est l'approche classique de la science politique, qui place chaque personne et chaque candidat dans un espace bidimensionnel. Utile pour avoir une vue d'ensemble de son positionnement.</p>
+<p>Le <strong>Quizz du Berger</strong> ne vous place pas sur un axe. Il compare vos réponses question par question à celles des candidats, et affiche les résultats <strong>thème par thème</strong>. Pas de catégorisation, juste une mesure de proximité directe.</p>
 
-<h2>Pourquoi l'approche thème par thème est plus riche</h2>
-<p>La politique est multidimensionnelle. Vous pouvez être :</p>
+<h2>Quand l'approche thème par thème est plus utile</h2>
+<p>Sur un axe gauche-droite et libéral-autoritaire, on est forcément réduit à une position globale. En thèmes séparés, on peut être :</p>
 <ul>
-<li>Libéral sur l'économie mais conservateur sur les questions de société</li>
-<li>Écologiste mais souverainiste sur l'Europe</li>
-<li>Progressiste sur la santé mais sécuritaire sur la justice</li>
+<li>Libéral sur l'économie mais conservateur sur les questions de société.</li>
+<li>Écologiste mais souverainiste sur l'Europe.</li>
+<li>Progressiste sur la santé mais sécuritaire sur la justice.</li>
 </ul>
-<p>Un axe 2D ne capture pas cette complexité. ${quizzThemesCount} thèmes séparés, si.</p>
+<p>Avec ${quizzThemesCount} thèmes, le Quizz du Berger garde cette granularité.</p>
 
-<h2>En pratique</h2>
-<p>Faites les deux ! La Boussole vous donne une vue d'ensemble de votre positionnement, le Quizz du Berger vous montre dans le détail quels candidats pensent comme vous, et sur quels sujets.</p>
+<h2>Faites les deux</h2>
+<p>La Boussole donne une vue d'ensemble, le Quizz du Berger donne le détail thème par thème. Les deux sont complémentaires.</p>
 
-<p><a href="/themes">→ Essayez le Quizz du Berger</a></p>
+<p><a href="/themes">→ Faire le Quizz du Berger</a></p>
 `,
   },
   {
@@ -276,7 +269,7 @@ export const articles: Article[] = [
     date: '2026-02-27',
     tag: 'Analyse',
     content: `
-<p>Le <strong>Mercosur</strong> est redevenu l'un des sujets les plus brûlants du débat politique français. Signature de l'accord commercial avec l'Union européenne fin 2024, mobilisation des agriculteurs, vote à l'Assemblée nationale, prises de position des candidats à la présidentielle 2027 : tout le monde a un avis. Voici ce qu'il faut savoir, et ce que pense <strong>chacun des ${candidatesCount} candidats</strong>.</p>
+<p>Signature de l'accord UE-Mercosur fin 2024, mobilisation des agriculteurs, votes à l'Assemblée nationale, ratification européenne en janvier 2026 puis saisine de la Cour de justice de l'UE : le dossier Mercosur structure une partie du débat politique français depuis bientôt deux ans. Voici les éléments à connaître, et les positions des ${candidatesCount} candidats à la présidentielle 2027.</p>
 
 <h2>Mercosur : c'est quoi, exactement ?</h2>
 <p>Le <strong>Mercosur</strong> (<em>Mercado Común del Sur</em>, « Marché commun du Sud ») est une union douanière créée en 1991 par le traité d'Asunción. Elle regroupe aujourd'hui <strong>quatre pays membres à part entière</strong> : l'Argentine, le Brésil, le Paraguay et l'Uruguay. La Bolivie est en cours d'adhésion, le Venezuela est suspendu depuis 2016, et plusieurs pays (Chili, Colombie, Pérou, Équateur, Guyana, Suriname) sont associés.</p>
@@ -320,7 +313,7 @@ export const articles: Article[] = [
 <p>Malgré la pression parlementaire française, la France n'est pas parvenue à réunir une minorité de blocage suffisante au Conseil de l'UE le 9 janvier 2026. L'accord a donc été formellement signé le 17 janvier 2026 par Ursula von der Leyen, avant d'être partiellement suspendu par la saisine de la Cour de justice de l'UE le 21 janvier.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Ce qui rend le débat Mercosur particulièrement intéressant, c'est qu'il <strong>traverse les clivages habituels</strong>. Pour y voir clair, nous avons regroupé les ${candidatesCount} candidats en quatre familles selon leurs positions publiques et leurs réponses aux questions du Quizz du Berger sur le <a href="/question-politique/reindustrialisation-france">libre-échange</a> et l'<a href="/theme/agriculture-et-alimentation">indépendance alimentaire</a>.</p>
+<p>Le débat Mercosur traverse les clivages habituels gauche-droite. Pour y voir clair, on a regroupé les ${candidatesCount} candidats en quatre familles selon leurs positions publiques et leurs réponses aux questions du Quizz du Berger sur le <a href="/question-politique/reindustrialisation-france">libre-échange</a> et l'<a href="/theme/agriculture-et-alimentation">indépendance alimentaire</a>.</p>
 
 <h3>Famille 1 — Opposants déclarés à l'accord, au nom du protectionnisme ou de l'écologie</h3>
 <p>Ces candidats rejettent l'accord UE-Mercosur sans ambiguïté. Leurs motifs varient (souveraineté, écologie, défense des classes populaires, anti-libéralisme) mais leur conclusion converge : non à la ratification.</p>
@@ -364,7 +357,7 @@ export const articles: Article[] = [
 </ul>
 
 <h3>Un consensus français, des nuances à l'étranger</h3>
-<p>Fait remarquable : sur les ${candidatesCount} candidats du Quizz du Berger, <strong>aucun ne défend la ratification de l'accord UE-Mercosur dans sa version actuelle</strong>. Les différences portent sur l'intensité du rejet (refus de principe vs. demande de renégociation) et sur les motifs (souveraineté, écologie, agriculture, libéralisme équitable). Cette quasi-unanimité française contraste avec la position de l'Allemagne, de l'Espagne et du Portugal, favorables à l'accord — qui ont d'ailleurs permis sa signature au Conseil de l'UE le 9 janvier 2026 malgré la pression française.</p>
+<p>Sur les ${candidatesCount} candidats du Quizz du Berger, aucun ne défend la ratification de l'accord UE-Mercosur dans sa version actuelle. Les différences portent sur l'intensité du rejet (refus de principe ou demande de renégociation) et sur les motifs (souveraineté, écologie, agriculture, libéralisme équitable). Cette quasi-unanimité française contraste avec la position de l'Allemagne, de l'Espagne et du Portugal, favorables à l'accord, qui ont permis sa signature au Conseil de l'UE le 9 janvier 2026 malgré la pression française.</p>
 
 <h3>Et maintenant ? Les recours qui restent</h3>
 <p>Avec la signature du 17 janvier 2026, le front s'est déplacé. Les opposants misent désormais sur quatre recours :</p>
@@ -386,16 +379,15 @@ export const articles: Article[] = [
 <tr><td>Baisse potentielle des prix de certains produits pour le consommateur européen.</td><td>Menace sur la souveraineté alimentaire et sur des filières d'élevage déjà fragilisées.</td></tr>
 </table>
 
-<h2>Et vous, où vous situez-vous ?</h2>
-<p>Le Mercosur n'est qu'une pièce d'un débat plus large sur le libre-échange, la souveraineté alimentaire et le modèle agricole français. Le Quizz du Berger vous permet de comparer vos positions à celles des ${candidatesCount} candidats sur ces questions précises :</p>
+<h2>Pour aller plus loin</h2>
+<p>Le Mercosur n'est qu'une pièce d'un débat plus large sur le libre-échange, la souveraineté alimentaire et le modèle agricole français. Sur le Quizz du Berger, les thèmes qui touchent à ces sujets :</p>
 <ul>
-<li><a href="/theme/economie-et-industrie">Thème : Économie et industrie</a> — libre-échange, réindustrialisation, protectionnisme.</li>
-<li><a href="/theme/agriculture-et-alimentation">Thème : Agriculture et alimentation</a> — pesticides, bio, indépendance alimentaire, élevage.</li>
-<li><a href="/theme/climat-energie-et-ecologie">Thème : Climat, énergie et écologie</a> — la cohérence climatique de l'accord.</li>
+<li><a href="/theme/economie-et-industrie">Économie et industrie</a> — libre-échange, réindustrialisation, protectionnisme.</li>
+<li><a href="/theme/agriculture-et-alimentation">Agriculture et alimentation</a> — pesticides, bio, indépendance alimentaire, élevage.</li>
+<li><a href="/theme/climat-energie-et-ecologie">Climat, énergie et écologie</a> — la cohérence climatique de l'accord.</li>
 </ul>
-<p>Plutôt que de se ranger derrière une étiquette, répondez question par question : vous pourriez découvrir que sur le Mercosur, vous pensez comme un candidat auquel vous ne vous attendiez pas.</p>
 
-<p><a href="/themes">→ Faire le quiz et découvrir quel candidat pense comme vous</a></p>
+<p><a href="/themes">→ Faire le quiz</a></p>
 `,
     schema: {
       '@context': 'https://schema.org',
@@ -420,11 +412,11 @@ export const articles: Article[] = [
     date: '2026-03-01',
     tag: 'Analyse',
     content: `
-<p>Peu d'affaires judiciaires ont autant alimenté les théories, les enquêtes et les débats politiques que l'<strong>affaire Epstein</strong>. Réseau de trafic sexuel de mineures, clients milliardaires et chefs d'État, suicide contesté en prison, documents judiciaires rendus publics : l'affaire touche aux élites mondiales, à la justice, à la presse et — par ricochet — à la politique française. Voici un point complet, et ce que les ${candidatesCount} candidats à la présidentielle 2027 disent des enjeux qu'elle soulève.</p>
+<p>Réseau de trafic sexuel de mineures, clients milliardaires et chefs d'État, suicide contesté en prison, documents judiciaires massivement déclassifiés en janvier 2026, volet français en cours d'instruction : l'affaire Epstein touche aux élites mondiales, à la justice, à la presse et désormais à la politique française. Voici un point complet, et ce que les ${candidatesCount} candidats à la présidentielle 2027 disent des enjeux qu'elle soulève.</p>
 
 <h2>Affaire Epstein : c'est quoi, en résumé ?</h2>
-<p>L'<strong>affaire Epstein</strong> désigne l'ensemble des enquêtes, procès et révélations autour du financier américain <strong>Jeffrey Epstein</strong> (1953-2019) et de sa complice <strong>Ghislaine Maxwell</strong>. Tous deux sont accusés — et condamnés, dans le cas de Maxwell — d'avoir organisé pendant plus de vingt ans un <strong>réseau de trafic sexuel de mineures</strong>, en recrutant, transportant et livrant des adolescentes à Epstein et à son cercle d'amis puissants, dans ses différentes résidences (Manhattan, Palm Beach, Nouveau-Mexique, et son île privée de Little Saint James).</p>
-<p>L'affaire est devenue un symbole mondial de l'impunité des élites. Elle mêle justice pénale, lutte contre les violences sexuelles sur mineurs, transparence judiciaire, influence politique et financière, et liberté de la presse.</p>
+<p>L'<strong>affaire Epstein</strong> désigne l'ensemble des enquêtes, procès et révélations autour du financier américain <strong>Jeffrey Epstein</strong> (1953-2019) et de sa complice <strong>Ghislaine Maxwell</strong>. Tous deux sont accusés — et condamnés, dans le cas de Maxwell — d'avoir organisé pendant plus de vingt ans un réseau de trafic sexuel de mineures, en recrutant, transportant et livrant des adolescentes à Epstein et à son cercle d'amis puissants, dans ses différentes résidences (Manhattan, Palm Beach, Nouveau-Mexique, et son île privée de Little Saint James).</p>
+<p>L'affaire croise plusieurs sujets : justice pénale, violences sexuelles sur mineurs, transparence judiciaire, influence politique et financière, liberté de la presse.</p>
 
 <h2>Qui était Jeffrey Epstein ?</h2>
 <p>Jeffrey Epstein est un financier américain né en 1953 à Brooklyn. Ancien professeur de mathématiques, il devient banquier d'affaires chez Bear Stearns dans les années 1970, avant de créer sa propre société de gestion de fortune réservée aux clients pesant plus d'un milliard de dollars. Son patrimoine estimé à sa mort : <strong>plus de 500 millions de dollars</strong>. Son réseau mondain, aussi, est immense : il fréquente des milliardaires, des universitaires de Harvard et du MIT, des personnalités politiques (dont plusieurs présidents américains) et des membres de familles royales européennes.</p>
@@ -478,7 +470,7 @@ export const articles: Article[] = [
 </ul>
 
 <h3>Jack Lang : enquête du PNF pour blanchiment aggravé de fraude fiscale</h3>
-<p>C'est l'onde de choc politique de 2026. L'ancien ministre de la Culture de François Mitterrand <strong>Jack Lang</strong> est cité <strong>673 fois</strong> dans les « Epstein Files » publiés le 30 janvier 2026.</p>
+<p>L'ancien ministre de la Culture de François Mitterrand <strong>Jack Lang</strong> est cité <strong>673 fois</strong> dans les « Epstein Files » publiés le 30 janvier 2026.</p>
 <ul>
 <li><strong>6 février 2026</strong> : le <strong>Parquet national financier (PNF)</strong> ouvre une enquête pour « blanchiment aggravé de fraude fiscale » visant Jack Lang et sa fille Caroline Lang. À ce stade, aucune accusation de violences sexuelles n'est portée contre lui.</li>
 <li><strong>10 février 2026</strong> : Jack Lang démissionne de la présidence de l'Institut du Monde Arabe, qu'il occupait depuis 2013. Le siège parisien de l'Institut est perquisitionné.</li>
@@ -491,10 +483,10 @@ export const articles: Article[] = [
 <p>Le parquet de Paris a ouvert deux enquêtes-cadre : l'une pour <strong>infractions de traite d'êtres humains</strong>, l'autre pour <strong>infractions financières</strong>, afin d'analyser méthodiquement les dénonciations liées à Epstein.</p>
 <p>L'Office central pour la répression des violences aux personnes (OCRVP) continue parallèlement de recueillir des témoignages. Plusieurs mannequins et anciens modèles ont déposé plainte pour dénoncer un système d'exploitation et de recrutement de jeunes filles, parfois mineures.</p>
 
-<h2>Ce que l'affaire Epstein dit de notre époque</h2>
-<p>Au-delà du cas pénal, l'affaire Epstein agit comme un révélateur. Elle met en lumière :</p>
+<h2>Les enjeux soulevés par l'affaire</h2>
+<p>L'affaire touche à plusieurs sujets qui dépassent le seul cas pénal :</p>
 <ul>
-<li><strong>La question de l'impunité des puissants</strong> : la justice a-t-elle les moyens de poursuivre des hommes dotés d'un patrimoine, d'un réseau et d'une armée d'avocats ?</li>
+<li><strong>L'impunité des puissants</strong> : la justice a-t-elle les moyens de poursuivre des hommes dotés d'un patrimoine, d'un réseau et d'une armée d'avocats ?</li>
 <li><strong>La protection des mineurs</strong> dans des industries où la porosité est forte : mannequinat, cinéma, nuit, élites financières.</li>
 <li><strong>Le rôle du journalisme d'investigation</strong> : sans le travail de Julie K. Brown et du <em>Miami Herald</em>, l'affaire ne serait jamais ressortie.</li>
 <li><strong>La culture du silence</strong> autour des violences sexuelles, avec des victimes qui ont mis parfois 20 ans à être écoutées.</li>
@@ -531,7 +523,7 @@ export const articles: Article[] = [
 </ul>
 
 <h3>3. Transparence, liberté de la presse et lanceurs d'alerte</h3>
-<p>Sans enquêtes longues et libres, des affaires comme Epstein ne sortiraient jamais. Tous les candidats reconnaissent cette nécessité, avec des intensités variables.</p>
+<p>L'affaire Epstein n'aurait jamais ressurgi sans le travail de presse au long cours. Tous les candidats reconnaissent l'importance de cette liberté, avec des intensités variables.</p>
 <ul>
 <li><a href="/candidat/francois-ruffin">François Ruffin</a>, <a href="/candidat/clementine-autain">Clémentine Autain</a>, <a href="/candidat/juan-branco">Juan Branco</a> — défense offensive de la liberté de la presse, soutien aux lanceurs d'alerte, critique de la concentration médiatique.</li>
 <li><a href="/candidat/marine-tondelier">Marine Tondelier</a>, <a href="/candidat/delphine-batho">Delphine Batho</a>, <a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> — plaident pour une loi anti-concentration renforcée et la protection des sources journalistiques.</li>
@@ -544,7 +536,7 @@ export const articles: Article[] = [
 </ul>
 
 <h3>4. Corruption, lobbying et impunité des élites</h3>
-<p>C'est l'angle le plus directement saillant : le Quizz du Berger consacre un thème entier à la corruption et au lobbying, avec des positions tranchées.</p>
+<p>C'est l'angle le plus directement lié à l'affaire. Le Quizz du Berger consacre un thème entier à la corruption et au lobbying, avec des positions tranchées.</p>
 <ul>
 <li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a>, <a href="/candidat/francois-ruffin">François Ruffin</a>, <a href="/candidat/clementine-autain">Clémentine Autain</a>, <a href="/candidat/fabien-roussel">Fabien Roussel</a>, <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a>, <a href="/candidat/juan-branco">Juan Branco</a> — le système est structurellement corrompu ; il faut un choc démocratique (VIᵉ République, RIC, interdiction stricte du pantouflage).</li>
 <li><a href="/candidat/marine-tondelier">Marine Tondelier</a>, <a href="/candidat/delphine-batho">Delphine Batho</a>, <a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a>, <a href="/candidat/jerome-guedj">Jérôme Guedj</a> — renforcer la HATVP, encadrer le lobbying, créer un registre européen contraignant.</li>
@@ -564,10 +556,10 @@ export const articles: Article[] = [
 <li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — la relation de la France avec les grandes puissances, dont les États-Unis, d'où est parti le dossier.</li>
 </ul>
 
-<h2>En résumé</h2>
-<p>L'affaire Epstein n'est pas un dossier que les candidats français commentent tous les jours. Mais les <strong>questions qu'elle soulève</strong> — protection des mineurs, impunité des puissants, indépendance de la justice, rôle de la presse — structurent en profondeur le débat de la présidentielle 2027. En répondant aux ${quizzQuestionsCount} questions du Quizz du Berger, vous pouvez voir lequel des ${candidatesCount} candidats est le plus proche de vos convictions sur ces sujets, <strong>sans vous laisser enfermer dans une étiquette partisane</strong>.</p>
+<h2>Pour aller plus loin</h2>
+<p>L'affaire Epstein n'est pas un dossier que les candidats français commentent tous les jours, mais les sujets qu'elle soulève — protection des mineurs, impunité des puissants, indépendance de la justice, rôle de la presse — touchent plusieurs thèmes du Quizz du Berger. Les ${quizzQuestionsCount} questions vous permettent de comparer vos positions à celles des ${candidatesCount} candidats.</p>
 
-<p><a href="/themes">→ Faire le quiz et découvrir quel candidat pense comme vous</a></p>
+<p><a href="/themes">→ Faire le quiz</a></p>
 `,
     schema: {
       '@context': 'https://schema.org',
@@ -728,17 +720,17 @@ export const articles: Article[] = [
 <tr><td>La France doit être fiable pour ses alliés.</td><td>La France n'est utile que si elle parle à tous les acteurs, y compris Téhéran.</td></tr>
 </table>
 
-<h2>Et vous, où vous situez-vous ?</h2>
+<h2>Pour aller plus loin</h2>
 <p>L'Iran, Ormuz et la question du nucléaire recoupent plusieurs thèmes du Quizz du Berger :</p>
 <ul>
-<li><a href="/theme/affaires-etrangeres">Thème : Affaires étrangères</a> — OTAN, Ukraine, Chine, construction européenne, armée européenne commune.</li>
-<li><a href="/theme/climat-energie-et-ecologie">Thème : Climat, énergie et écologie</a> — nucléaire civil, énergies renouvelables, sobriété énergétique.</li>
-<li><a href="/theme/economie-et-industrie">Thème : Économie et industrie</a> — dépendance énergétique, réindustrialisation, souveraineté.</li>
-<li><a href="/theme/depenses-et-dette-publiques">Thème : Dépenses et dette publiques</a> — budget de la défense, arbitrages budgétaires.</li>
+<li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — OTAN, Ukraine, Chine, construction européenne, armée européenne commune.</li>
+<li><a href="/theme/climat-energie-et-ecologie">Climat, énergie et écologie</a> — nucléaire civil, énergies renouvelables, sobriété énergétique.</li>
+<li><a href="/theme/economie-et-industrie">Économie et industrie</a> — dépendance énergétique, réindustrialisation, souveraineté.</li>
+<li><a href="/theme/depenses-et-dette-publiques">Dépenses et dette publiques</a> — budget de la défense, arbitrages budgétaires.</li>
 </ul>
-<p>Répondez aux ${quizzQuestionsCount} questions et comparez-vous aux ${candidatesCount} candidats. Vous pourriez découvrir que, sur le Moyen-Orient et l'énergie, vous êtes plus proche d'un candidat auquel vous ne vous attendiez pas.</p>
+<p>Les ${quizzQuestionsCount} questions du Quizz du Berger permettent de comparer vos positions à celles des ${candidatesCount} candidats sur ces sujets.</p>
 
-<p><a href="/themes">→ Faire le quiz et découvrir quel candidat pense comme vous</a></p>
+<p><a href="/themes">→ Faire le quiz</a></p>
 `,
     schema: {
       '@context': 'https://schema.org',
