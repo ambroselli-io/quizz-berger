@@ -8,11 +8,11 @@
         "fr": "Que devrait faire la France face à la guerre en Ukraine ?",
         "help": "https://fr.wikipedia.org/wiki/Invasion_de_l%27Ukraine_par_la_Russie",
         "answers": [
-          "Il faut envoyer des troupes françaises si nécessaire : on ne peut pas laisser la Russie grignoter l'Europe",
-          "Il faut continuer à armer l'Ukraine et maintenir les sanctions contre la Russie",
-          "Il faut pousser pour des négociations de paix, même si ça implique des compromis territoriaux",
-          "Ce n'est pas notre guerre, on ferait mieux de s'occuper de nos propres problèmes",
-          "L'OTAN et les USA ont provoqué ce conflit : la France devrait jouer un rôle de médiateur indépendant",
+          "Envoyer des troupes françaises au sol si nécessaire",
+          "Continuer le soutien militaire fort (armement, formation) et maintenir les sanctions",
+          "Soutenir l'Ukraine mais pousser activement pour des négociations de paix",
+          "Réduire notre soutien, ce conflit n'est pas le nôtre",
+          "Cesser tout soutien à l'Ukraine et jouer un rôle de médiation avec la Russie",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -71,11 +71,11 @@
         "fr": "Quel avenir pour la relation entre la France et l'OTAN ?",
         "help": "https://fr.wikipedia.org/wiki/Organisation_du_trait%C3%A9_de_l%27Atlantique_nord",
         "answers": [
-          "La France doit sortir de l'OTAN et des traités d'alliance : on doit retrouver une politique étrangère vraiment indépendante",
-          "La France doit sortir du commandement intégré de l'OTAN et développer ses propres capacités militaires",
-          "On garde nos alliances mais on renforce sérieusement la défense européenne pour ne plus dépendre des Américains",
-          "L'OTAN reste indispensable face à la Russie et la Chine, il faut y jouer pleinement notre rôle",
-          "Il faut renforcer encore notre engagement dans l'OTAN, c'est le pilier de notre sécurité",
+          "Sortir de l'OTAN et de la plupart des alliances militaires",
+          "Sortir du commandement intégré de l'OTAN, garder le reste",
+          "Rester dans l'OTAN, mais prioriser une défense européenne autonome",
+          "Rester dans l'OTAN pleinement, c'est notre cadre essentiel",
+          "Renforcer encore notre engagement dans l'OTAN",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -131,21 +131,19 @@
       },
       {
         "_id": "question-2027-ae-03",
-        "fr": "Quelle relation la France devrait-elle avoir avec l'Afrique ?",
+        "fr": "Quelle présence militaire française en Afrique ?",
         "help": "https://fr.wikipedia.org/wiki/Politique_africaine_de_la_France",
         "answers": [
-          "La France n'a plus rien à faire en Afrique, on doit retirer toutes nos bases militaires et arrêter le néocolonialisme",
-          "Il faut repenser la relation de zéro : partenariats d'égal à égal, sans ingérence ni paternalisme",
-          "On doit maintenir notre influence mais la moderniser, avec plus de coopération économique et moins de militaire",
-          "L'Afrique est stratégique pour nos intérêts : il faut y rester présent militairement et économiquement",
-          "Si la France se retire, la Chine et la Russie prendront toute la place : il faut renforcer notre présence",
+          "Renforcer notre présence militaire (lutte anti-terroriste, partenariats stratégiques)",
+          "Maintenir le niveau de présence actuel",
+          "Réduire notre présence militaire mais en garder une",
+          "Retirer complètement nos bases et nos troupes",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
           [
             5,
             3,
-            2,
             0,
             0,
             0
@@ -153,23 +151,13 @@
           [
             4,
             5,
-            3,
             1,
             0,
             0
           ],
           [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
             0,
             1,
-            3,
             5,
             4,
             0
@@ -177,13 +165,11 @@
           [
             0,
             0,
-            2,
             3,
             5,
             0
           ],
           [
-            0,
             0,
             0,
             0,
@@ -294,13 +280,233 @@
       },
       {
         "_id": "question-2027-ae-06",
-        "fr": "Face à la montée en puissance de la Chine, la France devrait...",
+        "fr": "Face à la montée en puissance de la Chine, que doit faire la France ?",
         "help": "https://fr.wikipedia.org/wiki/Relations_entre_la_Chine_et_la_France",
         "answers": [
-          "Couper nos liens économiques avec la Chine : on ne peut pas commercer normalement avec une dictature",
-          "Réduire notre dépendance économique à la Chine et défendre fermement les droits humains",
-          "Maintenir des relations commerciales pragmatiques tout en gardant nos distances politiques",
-          "La Chine est un partenaire incontournable, il faut renforcer nos échanges sans se mêler de leurs affaires intérieures",
+          "Rompre avec la Chine : dictature inacceptable",
+          "Réduire fortement notre dépendance économique à la Chine",
+          "Relations pragmatiques : commerce maintenu, distance politique",
+          "Partenaire incontournable : renforcer les échanges, ne pas s'ingérer",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [
+            5,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            5,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-07",
+        "fr": "Quel rôle économique la France doit-elle jouer en Afrique ?",
+        "answers": [
+          "Renforcer notre influence économique (investissements, échanges, partenariats)",
+          "Maintenir le niveau d'engagement actuel",
+          "Repenser les partenariats sur une base égalitaire (sortir de la Françafrique)",
+          "Réduire fortement notre engagement économique",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [
+            5,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            5,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-08",
+        "fr": "Dans le conflit Israël / Palestine, où vous situez-vous ?",
+        "answers": [
+          "Soutien sans réserve à Israël : c'est une démocratie qui se défend contre le terrorisme",
+          "Plutôt du côté d'Israël, tout en regrettant les pertes civiles palestiniennes",
+          "Position d'équilibre : les deux camps ont leur part de responsabilité",
+          "Plutôt du côté des Palestiniens, victimes d'une occupation et d'une politique militaire écrasante",
+          "Soutien sans réserve à la cause palestinienne : ce qui se passe à Gaza est un crime de guerre",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [
+            5,
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            5,
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            3,
+            5,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            3,
+            5,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-09",
+        "fr": "Que devrait faire la France face au conflit Israël / Palestine ?",
+        "answers": [
+          "Soutenir activement Israël (matériel, diplomatique)",
+          "Maintenir une position pro-israélienne tout en appelant à la modération",
+          "Jouer un rôle de médiation diplomatique neutre",
+          "Faire pression sur Israël (sanctions, embargo militaire, résolutions ONU)",
+          "Rompre toute relation avec Israël tant que la politique actuelle continue",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [
+            5,
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            5,
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            3,
+            5,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            3,
+            5,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "_id": "question-2027-ae-10",
+        "fr": "La France doit-elle reconnaître l'État de Palestine ?",
+        "answers": [
+          "Oui, immédiatement et sans condition : c'est un droit du peuple palestinien",
+          "Oui, mais dans le cadre d'un accord de paix négocié",
+          "Pas pour l'instant, ce n'est pas le bon moment",
+          "Non, ce serait récompenser le terrorisme et fragiliser Israël",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -548,11 +754,11 @@
         "fr": "Quel rapport devrions-nous avoir avec l'élevage et la consommation de viande ?",
         "help": "https://fr.wikipedia.org/wiki/Élevage_en_France",
         "answers": [
-          "Il faut mettre fin à l'exploitation animale, c'est une question d'éthique fondamentale",
-          "Il faut réduire fortement notre consommation de viande et interdire l'élevage intensif",
-          "Il faut améliorer les conditions d'élevage et laisser chacun libre de ses choix alimentaires",
-          "L'élevage fait partie de notre histoire et de nos terroirs, il faut le protéger et arrêter de culpabiliser les gens",
-          "Manger de la viande c'est naturel et nécessaire, il faut arrêter de nous embêter avec ça",
+          "Mettre fin à l'élevage : l'exploitation animale est inacceptable",
+          "Interdire l'élevage intensif (mais accepter les autres formes)",
+          "Améliorer les conditions d'élevage (bien-être animal renforcé)",
+          "Maintenir le cadre actuel",
+          "Cesser de stigmatiser l'élevage et la consommation de viande",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -680,11 +886,11 @@
         "fr": "Que pensez-vous de l'énergie nucléaire ?",
         "help": "https://fr.wikipedia.org/wiki/Énergie_nucléaire_en_France",
         "answers": [
-          "C'est la meilleure arme contre le changement climatique : il faut construire beaucoup plus de centrales",
-          "Le nucléaire nous rend indépendants énergétiquement, il faut le maintenir et le développer",
-          "On garde le nucléaire existant, mais on investit aussi dans les renouvelables pour diversifier",
-          "Il faut sortir du nucléaire progressivement, c'est trop dangereux et ça produit des déchets ingérables",
-          "Il faut sortir du nucléaire le plus vite possible, c'est une folie",
+          "Construire massivement de nouvelles centrales nucléaires",
+          "Maintenir et développer modérément le parc existant",
+          "Maintenir le parc existant sans construire de nouvelles centrales",
+          "Sortir progressivement du nucléaire",
+          "Sortir du nucléaire le plus vite possible",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -805,10 +1011,10 @@
         "_id": "question-2027-climat-04",
         "fr": "Que pensez-vous de la voiture individuelle ?",
         "answers": [
-          "Il faudrait abandonner la voiture individuelle au profit des transports en commun et du vélo",
-          "Il faut passer à l'électrique et développer les alternatives, mais en accompagnant les gens",
-          "En ville il y a des alternatives, mais à la campagne on a besoin de la voiture, faut arrêter de culpabiliser les gens",
-          "La voiture c'est la liberté, touchez pas à nos bagnoles",
+          "Abandonner la voiture individuelle, miser sur transports en commun et mobilités douces",
+          "Transition vers l'électrique, avec accompagnement social",
+          "Maintenir la voiture là où elle est nécessaire (campagne), réduire en ville",
+          "Pas toucher à la voiture, c'est une liberté individuelle",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1734,12 +1940,12 @@
       },
       {
         "_id": "question-2027-immi-05",
-        "fr": "Que pensez-vous de l'intégration des personnes étrangères en France ?",
+        "fr": "Faut-il régulariser les personnes étrangères en situation irrégulière ?",
         "answers": [
-          "Il faut régulariser tous les sans-papiers qui travaillent et faciliter l'accès à la nationalité",
-          "Il faut une immigration choisie avec des quotas par métiers, et accompagner l'intégration",
-          "L'intégration ne marche pas : il faut exiger l'assimilation — langue, culture, valeurs républicaines",
-          "Il ne faut régulariser personne et renvoyer chez eux ceux qui sont en situation irrégulière",
+          "Oui, massivement, sans condition particulière",
+          "Oui, pour celles qui travaillent et sont installées depuis longtemps",
+          "Au cas par cas, avec critères stricts",
+          "Non, il faut au contraire les expulser systématiquement",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1837,6 +2043,68 @@
           "C'est un sujet complexe, mieux vaut en débattre sereinement que s'enfermer dans des positions",
           "La mixité culturelle fait partie de notre vie, autant l'embrasser plutôt que la craindre",
           "La diversité culturelle est une richesse incroyable qui nous rend plus forts",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [
+            5,
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            5,
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            3,
+            5,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            3,
+            5,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "_id": "question-2027-immi-08",
+        "fr": "Quel niveau d'intégration faut-il exiger des personnes étrangères ?",
+        "answers": [
+          "Aucune exigence particulière, chacun garde sa culture",
+          "Apprendre le français, ça suffit",
+          "Langue + connaissance des institutions et règles républicaines",
+          "Langue + institutions + adhésion aux valeurs (laïcité, égalité hommes-femmes)",
+          "Assimilation complète : abandon des marqueurs culturels d'origine",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -2207,11 +2475,11 @@
         "fr": "Que pensez-vous du libre-échange et de la mondialisation ?",
         "help": "https://fr.wikipedia.org/wiki/Libre-échange",
         "answers": [
-          "La mondialisation c'est un hold-up : les riches s'enrichissent, les pauvres trinquent. Il faut du protectionnisme",
-          "Le libre-échange menace nos industries, il faut le limiter à ce qu'on ne peut pas produire nous-mêmes",
-          "Il faut un équilibre pragmatique entre ouverture commerciale et protection de nos intérêts",
-          "Le libre-échange a créé une prospérité sans précédent, il faut le défendre tout en le régulant",
-          "Vive le libre-échange ! Moins de barrières, c'est plus de croissance pour tout le monde",
+          "Protectionnisme fort, sortir de la mondialisation actuelle",
+          "Limiter le libre-échange à ce qu'on ne peut pas produire nous-mêmes",
+          "Équilibre pragmatique entre ouverture et protection",
+          "Défendre le libre-échange, l'encadrer raisonnablement",
+          "Libre-échange total, moins de barrières partout",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -2467,69 +2735,6 @@
             0
           ],
           [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ]
-      },
-      {
-        "_id": "question-2027-eco-06",
-        "fr": "Que pensez-vous du temps de travail en France ?",
-        "help": "https://fr.wikipedia.org/wiki/Durée_du_travail_en_France",
-        "answers": [
-          "Il faut remettre la France au travail : au-delà de 35h, voire 39h pour tous",
-          "Les 35h c'est bien, mais il faut plus de souplesse avec des accords par secteur",
-          "Les 35h sont un acquis social important qu'il faut maintenir tel quel",
-          "Il faudrait passer aux 32h dans les métiers pénibles et les généraliser progressivement",
-          "Il faut passer aux 32h pour tout le monde, on vit pour travailler au lieu de travailler pour vivre",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [
-            5,
-            3,
-            2,
-            0,
-            0,
-            0
-          ],
-          [
-            4,
-            5,
-            3,
-            1,
-            0,
-            0
-          ],
-          [
-            2,
-            3,
-            5,
-            3,
-            2,
-            0
-          ],
-          [
-            0,
-            1,
-            3,
-            5,
-            4,
-            0
-          ],
-          [
-            0,
-            0,
-            2,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
             0,
             0,
             0,
@@ -3270,12 +3475,12 @@
       },
       {
         "_id": "question-2027-log-04",
-        "fr": "Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?",
+        "fr": "Équilibre territorial : que doit faire l'État pour les zones rurales ?",
         "answers": [
-          "C'est un faux problème, les gens vivent où ils veulent et les villes sont dynamiques",
-          "Il faut améliorer les transports et le numérique en zone rurale, mais sans forcer les choses",
-          "Il faut des vraies politiques de décentralisation : services publics, emplois, investissements dans les campagnes",
-          "Il faut obliger les entreprises et les administrations à s'installer hors des grandes métropoles",
+          "Rien, c'est aux gens et aux marchés de s'organiser",
+          "Améliorations légères (transports, numérique)",
+          "Politiques actives de décentralisation (services publics, emplois)",
+          "Mesures contraignantes (obligations d'implantation des entreprises et administrations)",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -3545,14 +3750,14 @@
     "questions": [
       {
         "_id": "question-2027-num-01",
-        "fr": "Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?",
+        "fr": "Comment voyez-vous l'impact de l'IA sur la société ?",
         "help": "https://fr.wikipedia.org/wiki/Intelligence_artificielle",
         "answers": [
-          "L'IA va tout révolutionner en bien : santé, éducation, productivité. Il faut foncer",
-          "L'IA est un outil puissant qu'il faut développer, mais en l'encadrant pour éviter les abus",
-          "L'IA est utile dans certains domaines, mais il faut être très prudent et protéger les emplois",
-          "L'IA est une menace pour l'emploi et la vie privée, il faut la limiter fortement",
-          "L'IA est un danger existentiel : si on ne l'arrête pas, elle finira par nous contrôler",
+          "L'IA va révolutionner la société positivement",
+          "Plus d'effets positifs que négatifs, à condition d'encadrer",
+          "Un impact mixte, difficile à prédire",
+          "L'IA fera plus de mal que de bien (emplois, vie privée, désinformation)",
+          "L'IA est un danger existentiel pour l'humanité",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -3813,11 +4018,11 @@
         "fr": "Que pensez-vous des violences policières ?",
         "help": "https://fr.wikipedia.org/wiki/Violence_policière_en_France",
         "answers": [
-          "Il n'existe pas de violences policières, la police fait son travail",
-          "Il y a parfois des dérapages, mais la police est globalement justifiée dans ses interventions",
-          "Il y a des cas isolés qui méritent des sanctions, mais pas de problème systémique",
-          "Il y a un vrai problème de violences policières, il faut réformer les procédures et mieux former les agents",
-          "Il y a un vice profond dans l'institution policière, il faut une refonte complète",
+          "Il n'existe pas de violences policières",
+          "Quelques dérapages, mais rien de structurel",
+          "Des cas isolés à sanctionner, pas de problème systémique",
+          "Un vrai problème dans les pratiques, à réformer",
+          "Un vice profond et systémique de l'institution",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -3939,10 +4144,10 @@
         "fr": "Que pensez-vous de la justice en France ?",
         "help": "https://fr.wikipedia.org/wiki/Système_judiciaire_en_France",
         "answers": [
-          "La justice est trop lente et trop laxiste, il faut la durcir sérieusement",
-          "La justice manque de moyens, il faut plus de juges, plus de tribunaux, et des procédures plus rapides",
-          "La justice avance à son rythme, c'est normal de prendre le temps pour bien juger",
-          "La justice est trop sévère avec les petits délits et trop laxiste avec la délinquance en col blanc",
+          "Trop lente et trop laxiste, il faut la durcir",
+          "Manque de moyens (juges, tribunaux, procédures), il faut investir",
+          "Fonctionne à son rythme, pas de problème majeur",
+          "Trop sévère avec les petits délits, trop laxiste avec les puissants",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -3985,19 +4190,21 @@
       },
       {
         "_id": "question-2027-pol-04",
-        "fr": "Que pensez-vous de la situation dans les prisons françaises ?",
+        "fr": "Quelle doctrine pénale faut-il privilégier ?",
         "help": "https://fr.wikipedia.org/wiki/Prison_en_France",
         "answers": [
-          "Il faut construire plus de prisons et être plus sévère, trop de délinquants sont en liberté",
-          "Il faut plus de places de prison et expulser les détenus étrangers pour désengorger",
-          "Il faut rénover les prisons existantes et développer les peines alternatives pour désengorger",
-          "La prison ne résout rien, il faut investir massivement dans la prévention et la réinsertion",
+          "Tout-répressif : peines plus lourdes, plus de places de prison",
+          "Plutôt répressif, avec quelques alternatives ciblées",
+          "Équilibre entre répression et réinsertion",
+          "Plutôt favoriser la réinsertion et les peines alternatives",
+          "Tout miser sur la prévention et la réinsertion, la prison est inefficace",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
           [
             5,
             3,
+            2,
             0,
             0,
             0
@@ -4005,13 +4212,23 @@
           [
             4,
             5,
+            3,
             1,
             0,
             0
           ],
           [
+            2,
+            3,
+            5,
+            3,
+            2,
+            0
+          ],
+          [
             0,
             1,
+            3,
             5,
             4,
             0
@@ -4019,11 +4236,13 @@
           [
             0,
             0,
+            2,
             3,
             5,
             0
           ],
           [
+            0,
             0,
             0,
             0,
@@ -4037,10 +4256,10 @@
         "fr": "Comment lutter contre la délinquance et le terrorisme ?",
         "help": "https://fr.wikipedia.org/wiki/Terrorisme_en_France",
         "answers": [
-          "Expulser tous les étrangers délinquants et radicalisés, et fermer les mosquées salafistes",
-          "Renforcer les moyens du renseignement, plus de policiers, des peines plus lourdes",
-          "Trouver un équilibre entre répression et prévention, en investissant dans les deux",
-          "La délinquance est surtout un problème social : il faut s'attaquer aux causes (pauvreté, exclusion, éducation)",
+          "Approche identitaire et répressive (expulsions, surveillance des milieux radicaux)",
+          "Approche sécuritaire (renseignement, police, peines lourdes)",
+          "Équilibre entre répression et prévention",
+          "Approche sociale (s'attaquer aux causes : pauvreté, exclusion, éducation)",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -4135,10 +4354,10 @@
         "fr": "Que pensez-vous du cannabis et de sa légalisation ?",
         "help": "https://fr.wikipedia.org/wiki/Cannabis_en_France",
         "answers": [
-          "La drogue c'est la drogue, il faut renforcer la répression et les peines",
-          "La politique actuelle fonctionne à peu près, pas besoin de tout changer",
-          "Il faut dépénaliser l'usage pour ne plus engorger les tribunaux et se concentrer sur les trafiquants",
-          "Il faut légaliser et encadrer le cannabis : ça assèchera les trafics et rapportera des impôts",
+          "Renforcer la répression et les peines",
+          "Maintenir le cadre actuel",
+          "Dépénaliser l'usage (sans légaliser la vente)",
+          "Légaliser et encadrer la vente",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -4846,13 +5065,13 @@
       },
       {
         "_id": "question-2027-pa-05",
-        "fr": "Comment améliorer le pouvoir d'achat des Français ?",
+        "fr": "Quel levier prioritaire pour améliorer le pouvoir d'achat ?",
         "answers": [
-          "Baisser les impôts et les charges, laisser les gens garder ce qu'ils gagnent",
-          "Augmenter les salaires, le SMIC, et indexer tout sur l'inflation",
-          "Baisser les prix de l'essentiel (énergie, logement, alimentation) en régulant les marchés",
-          "Redistribuer davantage : augmenter les aides sociales et les minima sociaux",
-          "Le vrai problème c'est pas le pouvoir d'achat, c'est que les richesses sont mal réparties",
+          "Baisser les impôts et charges sur les ménages",
+          "Augmenter les salaires (notamment le SMIC)",
+          "Encadrer les prix de l'essentiel (énergie, alimentation, logement)",
+          "Augmenter les aides sociales et minima sociaux",
+          "Le vrai problème n'est pas le pouvoir d'achat mais la répartition des richesses",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -5012,13 +5231,13 @@
       },
       {
         "_id": "question-2027-edu-03",
-        "fr": "Que pensez-vous des écrans et de l'IA à l'école ?",
+        "fr": "Quelle place pour les écrans et l'IA à l'école ?",
         "help": "https://fr.wikipedia.org/wiki/Technologies_de_l%27information_et_de_la_communication_pour_l%27enseignement",
         "answers": [
-          "Les écrans et l'IA sont l'avenir de l'éducation, il faut aller vers le tout numérique",
-          "L'IA peut aider les enseignants, mais il faut un système hybride écrans/papier",
-          "Le numérique est un outil parmi d'autres, à utiliser avec modération",
-          "Les écrans abîment le cerveau des enfants : il faut limiter drastiquement leur usage à l'école",
+          "Tout numérique : écrans et IA partout dans l'enseignement",
+          "Système hybride (écrans + papier), avec IA pour aider les enseignants",
+          "Usage modéré, le numérique est un outil parmi d'autres",
+          "Limiter drastiquement les écrans à l'école",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -5316,11 +5535,11 @@
         "fr": "Que pensez-vous des déserts médicaux ?",
         "help": "https://fr.wikipedia.org/wiki/Désertification_médicale_en_France",
         "answers": [
-          "C'est normal, on ne peut pas mettre un médecin dans chaque village : il faut regrouper l'offre",
-          "Le problème existe mais se résoudra avec la télémédecine et les maisons de santé",
-          "Il faut des mesures fortes : incitations financières, obligation d'installation en zone sous-dotée",
-          "C'est scandaleux que des millions de Français n'aient plus accès à un médecin à moins de 30 minutes",
-          "Le vrai problème c'est la concentration dans les métropoles : tant qu'on ne revitalisera pas les territoires ruraux, on n'aura pas de médecins en campagne",
+          "Pas de problème, regrouper l'offre dans des centres",
+          "La télémédecine et les maisons de santé suffiront",
+          "Mesures incitatives (aides financières pour s'installer en zone sous-dotée)",
+          "Mesures coercitives (obligation d'installation en zone sous-dotée)",
+          "Revitaliser les territoires ruraux dans leur ensemble (la solution est plus large que la santé)",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -5536,14 +5755,14 @@
       },
       {
         "_id": "question-2027-san-07",
-        "fr": "Notre système de santé dépense beaucoup plus pour soigner les maladies que pour les prévenir. Qu'en pensez-vous ?",
+        "fr": "Notre système dépense beaucoup plus pour soigner que pour prévenir. Qu'en pensez-vous ?",
         "help": "https://fr.wikipedia.org/wiki/Médecine_préventive",
         "answers": [
-          "La santé c'est une affaire personnelle : l'État n'a pas à dire aux gens ce qu'ils doivent manger, boire ou fumer",
-          "La prévention c'est bien, mais il ne faut pas tomber dans l'hygiénisme ou la culpabilisation",
-          "Il faut investir bien plus dans la prévention : ça coûterait moins cher et les gens seraient en meilleure santé",
-          "On dépense des milliards à soigner des maladies évitables : il faut une vraie politique sur l'alimentation, le tabac, l'alcool et la sédentarité",
-          "La prévention passe d'abord par la lutte contre la pauvreté et les inégalités, qui sont les premières causes de mauvaise santé",
+          "Affaire personnelle : l'État ne doit pas se mêler de nos modes de vie",
+          "Prévention oui, mais sans culpabiliser ni hygiénisme",
+          "Investir plus dans la prévention médicale",
+          "Politique forte sur les comportements à risque (tabac, alcool, alimentation, sédentarité)",
+          "S'attaquer aux causes sociales (pauvreté, inégalités) avant tout",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -5720,11 +5939,11 @@
         "fr": "Que pensez-vous des droits des personnes LGBT+ ?",
         "help": "https://fr.wikipedia.org/wiki/Droits_LGBT_en_France",
         "answers": [
-          "Il faut abroger le mariage pour tous et revenir au modèle familial traditionnel",
-          "Il y a un lobby LGBT qui va trop loin, il faut que l'État reste neutre",
-          "Le cadre légal actuel (mariage pour tous, PMA) est suffisant, pas besoin d'aller plus loin",
-          "Il y a encore des discriminations, il faut renforcer la loi pour les combattre",
-          "Il reste beaucoup à faire : droits des personnes trans, lutte contre les discriminations au quotidien",
+          "Abroger le mariage pour tous et revenir au modèle familial traditionnel",
+          "Statu quo, mais l'État ne devrait pas en faire plus",
+          "Le cadre légal actuel (mariage pour tous, PMA) est suffisant",
+          "Renforcer la loi pour combattre les discriminations restantes",
+          "Aller plus loin (droits des personnes trans, lutte au quotidien)",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -6070,11 +6289,11 @@
         "fr": "Que pensez-vous de la retraite à 64 ans votée en 2023 ?",
         "help": "https://fr.wikipedia.org/wiki/R%C3%A9forme_des_retraites_en_France_en_2023",
         "answers": [
-          "Il faut abroger cette réforme, on devrait revenir à 60 ans voire moins",
-          "Il faut revenir à 62 ans, c'était un bon compromis",
-          "64 ans c'est raisonnable vu la situation des finances publiques",
-          "Il faudrait aller plus loin, 65 ou 66 ans, comme dans les pays voisins",
-          "Le système par répartition est à bout, il faut passer à la capitalisation",
+          "Revenir à 60 ans (ou moins)",
+          "Revenir à 62 ans",
+          "Maintenir à 64 ans",
+          "Repousser à 65-66 ans",
+          "Changer de système (passer à la capitalisation)",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -6130,18 +6349,20 @@
       },
       {
         "_id": "question-2027-trav-02",
-        "fr": "Que pensez-vous du temps de travail en France ?",
+        "fr": "Quel devrait être le temps de travail légal en France ?",
         "answers": [
-          "On travaille trop, il faut passer à la semaine de 4 jours ou 32 heures",
-          "Les 35 heures c'est bien, on ne doit pas y toucher",
-          "Il faut assouplir les 35 heures et laisser plus de liberté aux entreprises et salariés",
-          "Il faut supprimer les 35 heures, les Français ne travaillent pas assez",
+          "Le réduire à 32 heures par semaine (ou 4 jours)",
+          "Maintenir les 35 heures actuelles",
+          "Assouplir les 35 heures avec accords par secteur ou par entreprise",
+          "Revenir à 39 heures ou augmenter la durée légale",
+          "Supprimer toute durée légale, laisser au marché",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
           [
             5,
             3,
+            2,
             0,
             0,
             0
@@ -6149,25 +6370,37 @@
           [
             4,
             5,
-            2,
-            0,
-            0
-          ],
-          [
-            0,
-            2,
-            5,
             3,
+            1,
+            0,
             0
           ],
           [
-            0,
-            0,
+            2,
             3,
             5,
+            3,
+            2,
             0
           ],
           [
+            0,
+            1,
+            3,
+            5,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
             0,
             0,
             0,
@@ -6180,10 +6413,10 @@
         "_id": "question-2027-trav-03",
         "fr": "Comment réduire le chômage en France ?",
         "answers": [
-          "L'État doit créer massivement des emplois publics et garantir un emploi à tous",
-          "Il faut mieux former les chômeurs et investir dans les filières qui recrutent",
-          "Il faut baisser les charges sur les entreprises pour qu'elles embauchent plus facilement",
-          "Le chômage baissera quand on arrêtera de payer les gens à ne rien faire — il faut durcir les conditions d'indemnisation",
+          "L'État doit créer des emplois publics et garantir un emploi à tous",
+          "Former les chômeurs et investir dans les filières porteuses",
+          "Baisser les charges sur les entreprises pour qu'elles embauchent",
+          "Durcir les conditions d'indemnisation pour inciter au retour à l'emploi",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -6277,10 +6510,10 @@
         "_id": "question-2027-trav-05",
         "fr": "Que pensez-vous du SMIC et des bas salaires ?",
         "answers": [
-          "Le SMIC est trop bas, il faut une augmentation massive — personne ne devrait vivre avec moins de 2000 € net",
-          "Il faut augmenter le SMIC régulièrement et que l'État complète avec des aides",
-          "Le SMIC doit rester raisonnable sinon les petites entreprises ne suivent pas — mieux vaut baisser les charges",
-          "C'est au marché de fixer les salaires, pas à l'État — il faut supprimer le SMIC",
+          "Augmentation massive du SMIC (cible 2000 € net)",
+          "Augmentation régulière, indexée sur l'inflation",
+          "Stabilité, ne pas alourdir les entreprises",
+          "Supprimer le SMIC, laisser le marché fixer les salaires",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -6473,55 +6706,6 @@
         ]
       },
       {
-        "_id": "question-2027-ue-03",
-        "fr": "Que pensez-vous de la position de l'UE face à la guerre en Ukraine ?",
-        "help": "https://fr.wikipedia.org/wiki/Invasion_de_l%27Ukraine_par_la_Russie",
-        "answers": [
-          "L'UE n'a rien à faire dans ce conflit, il faut arrêter les sanctions et chercher la paix avec la Russie",
-          "L'UE devrait jouer un rôle diplomatique neutre au lieu de s'aligner sur les États-Unis",
-          "Le soutien à l'Ukraine est nécessaire mais on devrait aussi préparer les négociations de paix",
-          "Il faut soutenir l'Ukraine autant que nécessaire, y compris militairement — c'est notre sécurité qui est en jeu",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
-        "scores": [
-          [
-            5,
-            3,
-            0,
-            0,
-            0
-          ],
-          [
-            3,
-            5,
-            3,
-            0,
-            0
-          ],
-          [
-            0,
-            3,
-            5,
-            3,
-            0
-          ],
-          [
-            0,
-            0,
-            3,
-            5,
-            0
-          ],
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ]
-      },
-      {
         "_id": "question-2027-ue-04",
         "fr": "Que pensez-vous du lobbying et de la corruption au niveau européen ?",
         "help": "https://fr.wikipedia.org/wiki/Qatargate",
@@ -6623,10 +6807,10 @@
         "_id": "question-2027-ue-06",
         "fr": "Que pensez-vous de la politique migratoire européenne ?",
         "answers": [
-          "L'UE devrait accueillir plus largement et créer des voies légales d'immigration — c'est un devoir moral et économique",
-          "Il faut une politique commune d'asile juste, avec une répartition solidaire entre pays",
-          "Le pacte migratoire européen va dans le bon sens : des frontières mieux protégées et une gestion ordonnée",
-          "Chaque pays doit reprendre le contrôle total de ses frontières — l'UE n'a pas à décider qui entre chez nous",
+          "Accueillir plus largement et créer des voies légales d'immigration",
+          "Politique commune d'asile avec répartition solidaire entre pays",
+          "Frontières extérieures protégées et gestion ordonnée (pacte actuel)",
+          "Chaque pays reprend le contrôle total de ses frontières",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

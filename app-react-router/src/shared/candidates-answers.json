@@ -42,7 +42,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 0
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -251,11 +251,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 4
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -377,7 +372,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-police",
@@ -611,11 +606,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 0
       },
@@ -642,6 +632,31 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
         "answerIndex": 0
       }
     ]
@@ -689,7 +704,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -898,11 +913,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -1024,7 +1034,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-police",
@@ -1258,11 +1268,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 0
       },
@@ -1290,6 +1295,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -1336,7 +1366,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -1545,11 +1575,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -1671,7 +1696,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-police",
@@ -1905,11 +1930,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -1937,6 +1957,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -2192,11 +2237,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -2552,11 +2592,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 2
       },
@@ -2584,6 +2619,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -2630,7 +2690,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 3
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -2836,11 +2896,6 @@
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
         "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-economie",
@@ -3199,11 +3254,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 0
       },
@@ -3231,6 +3281,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -3277,7 +3352,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -3486,11 +3561,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -3612,7 +3682,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -3846,11 +3916,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -3878,6 +3943,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -4133,11 +4223,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -4493,11 +4578,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 0
       },
@@ -4525,6 +4605,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 4
       }
     ]
   },
@@ -4780,11 +4885,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -5140,11 +5240,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 2
       },
@@ -5172,6 +5267,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -5427,11 +5547,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -5787,11 +5902,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -5819,6 +5929,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 4
       }
     ]
   },
@@ -5865,7 +6000,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -6074,11 +6209,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 4
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -6200,7 +6330,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-police",
@@ -6434,11 +6564,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -6466,6 +6591,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 1
       }
     ]
   },
@@ -6512,7 +6662,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -6721,11 +6871,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -6847,7 +6992,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -7081,11 +7226,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -7113,6 +7253,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -7159,7 +7324,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -7368,11 +7533,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -7494,7 +7654,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -7728,11 +7888,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -7760,6 +7915,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -8015,11 +8195,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -8375,11 +8550,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 3
       },
@@ -8407,6 +8577,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -8453,7 +8648,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -8662,11 +8857,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -9022,11 +9212,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 2
       },
@@ -9054,6 +9239,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -9309,11 +9519,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -9435,7 +9640,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -9669,11 +9874,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -9701,6 +9901,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -9747,7 +9972,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -9956,11 +10181,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -10082,7 +10302,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -10316,11 +10536,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -10348,6 +10563,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -10394,7 +10634,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 3
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -10599,11 +10839,6 @@
       {
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
         "answerIndex": 1
       },
       {
@@ -10963,11 +11198,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 2
       },
@@ -10995,6 +11225,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
       }
     ]
   },
@@ -11041,7 +11296,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -11250,11 +11505,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -11376,7 +11626,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -11610,11 +11860,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -11642,6 +11887,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -11688,7 +11958,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -11897,11 +12167,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 2
       },
@@ -12023,7 +12288,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -12257,11 +12522,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 2
       },
@@ -12289,6 +12549,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -12335,7 +12620,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 0
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -12544,11 +12829,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 4
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -12670,7 +12950,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-police",
@@ -12904,11 +13184,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 0
       },
@@ -12936,6 +13211,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 1
       }
     ]
   },
@@ -12982,7 +13282,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 3
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -13187,11 +13487,6 @@
       {
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
         "answerIndex": 0
       },
       {
@@ -13551,11 +13846,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -13583,6 +13873,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 4
       }
     ]
   },
@@ -13629,7 +13944,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -13838,11 +14153,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -13964,7 +14274,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -14198,11 +14508,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -14230,6 +14535,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -14276,7 +14606,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 3
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -14481,11 +14811,6 @@
       {
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
         "answerIndex": 0
       },
       {
@@ -14845,11 +15170,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 0
       },
@@ -14877,6 +15197,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 4
       }
     ]
   },
@@ -14923,7 +15268,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -15132,11 +15477,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -15258,7 +15598,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-police",
@@ -15492,11 +15832,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -15524,6 +15859,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
       }
     ]
   },
@@ -15570,7 +15930,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-03",
-        "answerIndex": 0
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -15776,11 +16136,6 @@
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
         "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-economie",
@@ -16110,7 +16465,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-police",
@@ -16136,11 +16491,6 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-02",
         "answerIndex": 0
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
       },
       {
         "themeId": "theme-union-europeenne-2027",
@@ -16171,6 +16521,31 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 1
       }
     ]
   },
@@ -16426,11 +16801,6 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-07",
         "answerIndex": 3
       },
@@ -16786,11 +17156,6 @@
       },
       {
         "themeId": "theme-union-europeenne-2027",
-        "questionId": "question-2027-ue-03",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
         "answerIndex": 1
       },
@@ -16817,6 +17182,31 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
         "answerIndex": 2
       }
     ]

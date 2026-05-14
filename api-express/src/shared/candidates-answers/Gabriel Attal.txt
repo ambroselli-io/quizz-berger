@@ -5,13 +5,13 @@ Affaires étrangères:
 
 
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
-[1] Il faut continuer à armer l'Ukraine et maintenir les sanctions contre la Russie
+[1] Continuer le soutien militaire fort (armement, formation) et maintenir les sanctions
 
 question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
-[3] L'OTAN reste indispensable face à la Russie et la Chine, il faut y jouer pleinement notre rôle
+[3] Rester dans l'OTAN pleinement, c'est notre cadre essentiel
 
-question-2027-ae-03: Quelle relation la France devrait-elle avoir avec l'Afrique ?
-[1] Il faut repenser la relation de zéro : partenariats d'égal à égal, sans ingérence ni paternalisme
+question-2027-ae-03: Quelle présence militaire française en Afrique ?
+[2] Réduire notre présence militaire mais en garder une
 
 question-2027-ae-04: Comment voyez-vous l'avenir de la construction européenne ?
 [1] Il faut approfondir la coopération européenne sur les grands projets sans perdre notre souveraineté
@@ -19,8 +19,20 @@ question-2027-ae-04: Comment voyez-vous l'avenir de la construction européenne 
 question-2027-ae-05: Que pensez-vous d'une armée européenne commune ?
 [2] Il faut créer une vraie force militaire européenne capable de se défendre sans les Américains
 
-question-2027-ae-06: Face à la montée en puissance de la Chine, la France devrait...
-[1] Réduire notre dépendance économique à la Chine et défendre fermement les droits humains
+question-2027-ae-06: Face à la montée en puissance de la Chine, que doit faire la France ?
+[1] Réduire fortement notre dépendance économique à la Chine
+
+question-2027-ae-07: Quel rôle économique la France doit-elle jouer en Afrique ?
+[0] Renforcer notre influence économique (investissements, échanges, partenariats)
+
+question-2027-ae-08: Dans le conflit Israël / Palestine, où vous situez-vous ?
+[1] Plutôt du côté d'Israël, tout en regrettant les pertes civiles palestiniennes
+
+question-2027-ae-09: Que devrait faire la France face au conflit Israël / Palestine ?
+[1] Maintenir une position pro-israélienne tout en appelant à la modération
+
+question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
+[1] Oui, mais dans le cadre d'un accord de paix négocié
 
 
 Agriculture et alimentation:
@@ -39,7 +51,7 @@ question-2027-agri-04: La France devrait-elle viser l'indépendance alimentaire 
 [2] Il faut éviter de dépendre de l'étranger sur les produits essentiels, c'est du bon sens
 
 question-2027-agri-05: Quel rapport devrions-nous avoir avec l'élevage et la consommation de viande ?
-[2] Il faut améliorer les conditions d'élevage et laisser chacun libre de ses choix alimentaires
+[2] Améliorer les conditions d'élevage (bien-être animal renforcé)
 
 
 Climat, Énergie et Écologie:
@@ -49,13 +61,13 @@ question-2027-climat-01: Comment vous positionnez-vous face au changement climat
 [3] Il faut transformer sérieusement notre économie pour aller vers une croissance durable
 
 question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
-[1] Le nucléaire nous rend indépendants énergétiquement, il faut le maintenir et le développer
+[1] Maintenir et développer modérément le parc existant
 
 question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
 [2] C'est un bon complément au nucléaire, il faut continuer à les développer raisonnablement
 
 question-2027-climat-04: Que pensez-vous de la voiture individuelle ?
-[1] Il faut passer à l'électrique et développer les alternatives, mais en accompagnant les gens
+[1] Transition vers l'électrique, avec accompagnement social
 
 question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 [1] Tout le monde doit faire sa part, mais les plus gros pollueurs d'abord
@@ -117,14 +129,17 @@ question-2027-immi-03: Que pensez-vous de la politique migratoire européenne (S
 question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant en France ?
 [1] Pas de droit de vote pour les étrangers, c'est un privilège lié à la nationalité
 
-question-2027-immi-05: Que pensez-vous de l'intégration des personnes étrangères en France ?
-[1] Il faut une immigration choisie avec des quotas par métiers, et accompagner l'intégration
+question-2027-immi-05: Faut-il régulariser les personnes étrangères en situation irrégulière ?
+[1] Oui, pour celles qui travaillent et sont installées depuis longtemps
 
 question-2027-immi-06: Que pensez-vous du traitement des familles de délinquants ?
 [2] Il faut responsabiliser les familles : suspendre les allocations si les enfants sont délinquants
 
 question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
 [2] C'est un sujet complexe, mieux vaut en débattre sereinement que s'enfermer dans des positions
+
+question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes étrangères ?
+[3] Langue + institutions + adhésion aux valeurs (laïcité, égalité hommes-femmes)
 
 
 Dépenses et dette publiques:
@@ -150,7 +165,7 @@ question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
 
 
 question-2027-eco-01: Que pensez-vous du libre-échange et de la mondialisation ?
-[3] Le libre-échange a créé une prospérité sans précédent, il faut le défendre tout en le régulant
+[3] Défendre le libre-échange, l'encadrer raisonnablement
 
 question-2027-eco-02: La France devrait-elle réindustrialiser son territoire ?
 [2] Il faut encourager l'industrie sans forcer : des aides fiscales et un cadre attractif suffisent
@@ -163,9 +178,6 @@ question-2027-eco-04: Quel rôle l'État doit-il jouer dans la politique industr
 
 question-2027-eco-05: La France est-elle un pays économiquement attractif ?
 [3] La France est attractive et le devient de plus en plus, arrêtons de nous flageller
-
-question-2027-eco-06: Que pensez-vous du temps de travail en France ?
-[1] Les 35h c'est bien, mais il faut plus de souplesse avec des accords par secteur
 
 question-2027-eco-07: Que pensez-vous de la dépendance de la France aux chaînes d'approvisionnement mondiales ?
 [2] Il faut diversifier nos fournisseurs et relocaliser les productions les plus critiques
@@ -221,8 +233,8 @@ question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
 [2] Il faut les encadrer raisonnablement, mais c'est un complément de revenu utile pour beaucoup
 
-question-2027-log-04: Comment rééquilibrer le territoire entre les grandes villes et les zones rurales ?
-[1] Il faut améliorer les transports et le numérique en zone rurale, mais sans forcer les choses
+question-2027-log-04: Équilibre territorial : que doit faire l'État pour les zones rurales ?
+[1] Améliorations légères (transports, numérique)
 
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
 [1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
@@ -240,8 +252,8 @@ question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
 Numérique et IA:
 
 
-question-2027-num-01: Que pensez-vous de l'intelligence artificielle et de son impact sur la société ?
-[0] L'IA va tout révolutionner en bien : santé, éducation, productivité. Il faut foncer
+question-2027-num-01: Comment voyez-vous l'impact de l'IA sur la société ?
+[0] L'IA va révolutionner la société positivement
 
 question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
 [0] C'est le problème numéro un de cette génération : il faut interdire les réseaux sociaux avant 16 ans
@@ -260,25 +272,25 @@ Police, Justice et Sécurité:
 
 
 question-2027-pol-01: Que pensez-vous des violences policières ?
-[2] Il y a des cas isolés qui méritent des sanctions, mais pas de problème systémique
+[2] Des cas isolés à sanctionner, pas de problème systémique
 
 question-2027-pol-02: La France est-elle un pays sûr ?
 [1] Il y a de vrais problèmes d'insécurité dans certains territoires, l'État doit agir plus fermement
 
 question-2027-pol-03: Que pensez-vous de la justice en France ?
-[1] La justice manque de moyens, il faut plus de juges, plus de tribunaux, et des procédures plus rapides
+[1] Manque de moyens (juges, tribunaux, procédures), il faut investir
 
-question-2027-pol-04: Que pensez-vous de la situation dans les prisons françaises ?
-[0] Il faut construire plus de prisons et être plus sévère, trop de délinquants sont en liberté
+question-2027-pol-04: Quelle doctrine pénale faut-il privilégier ?
+[0] Tout-répressif : peines plus lourdes, plus de places de prison
 
 question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
-[1] Renforcer les moyens du renseignement, plus de policiers, des peines plus lourdes
+[1] Approche sécuritaire (renseignement, police, peines lourdes)
 
 question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 [2] La formation est correcte, pas besoin de tout changer
 
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
-[1] La politique actuelle fonctionne à peu près, pas besoin de tout changer
+[1] Maintenir le cadre actuel
 
 
 Politique fiscale:
@@ -324,8 +336,8 @@ question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
 [1] Il y a un peu d'inflation mais les enseignes font des efforts, ça va
 
-question-2027-pa-05: Comment améliorer le pouvoir d'achat des Français ?
-[0] Baisser les impôts et les charges, laisser les gens garder ce qu'ils gagnent
+question-2027-pa-05: Quel levier prioritaire pour améliorer le pouvoir d'achat ?
+[0] Baisser les impôts et charges sur les ménages
 
 
 Recherche et éducation:
@@ -337,8 +349,8 @@ question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
 question-2027-edu-02: L'école permet-elle vraiment de s'élever socialement ?
 [2] L'école reste un formidable ascenseur social, la méritocratie républicaine fonctionne
 
-question-2027-edu-03: Que pensez-vous des écrans et de l'IA à l'école ?
-[1] L'IA peut aider les enseignants, mais il faut un système hybride écrans/papier
+question-2027-edu-03: Quelle place pour les écrans et l'IA à l'école ?
+[1] Système hybride (écrans + papier), avec IA pour aider les enseignants
 
 question-2027-edu-04: Que pensez-vous du financement de la recherche publique ?
 [2] Il faut augmenter le financement public et encourager aussi le mécénat privé
@@ -360,7 +372,7 @@ question-2027-san-02: Que pensez-vous de la rémunération du personnel soignant
 [1] Il faudrait augmenter un peu leurs salaires, surtout pour les infirmiers et aides-soignants
 
 question-2027-san-03: Que pensez-vous des déserts médicaux ?
-[1] Le problème existe mais se résoudra avec la télémédecine et les maisons de santé
+[1] La télémédecine et les maisons de santé suffiront
 
 question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
 [2] Certains vaccins essentiels doivent rester obligatoires, c'est une question de santé publique
@@ -371,8 +383,8 @@ question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
 
-question-2027-san-07: Notre système de santé dépense beaucoup plus pour soigner les maladies que pour les prévenir. Qu'en pensez-vous ?
-[2] Il faut investir bien plus dans la prévention : ça coûterait moins cher et les gens seraient en meilleure santé
+question-2027-san-07: Notre système dépense beaucoup plus pour soigner que pour prévenir. Qu'en pensez-vous ?
+[2] Investir plus dans la prévention médicale
 
 question-2027-san-08: La France est l'un des plus gros consommateurs de médicaments en Europe. Qu'en pensez-vous ?
 [1] On prescrit sans doute un peu trop, mais c'est aux médecins de réguler leurs pratiques
@@ -385,7 +397,7 @@ question-2027-soc-01: Que pensez-vous de l'égalité homme-femme en France ?
 [2] Il y a eu des progrès, mais il reste du chemin à faire, surtout sur les salaires et les violences
 
 question-2027-soc-02: Que pensez-vous des droits des personnes LGBT+ ?
-[3] Il y a encore des discriminations, il faut renforcer la loi pour les combattre
+[3] Renforcer la loi pour combattre les discriminations restantes
 
 question-2027-soc-03: Quelle place pour la religion dans notre société ?
 [2] Chaque religion doit rester à sa place, l'État est laïc et traite toutes les croyances de la même façon
@@ -410,19 +422,19 @@ Travail, Chômage, Retraite:
 
 
 question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
-[2] 64 ans c'est raisonnable vu la situation des finances publiques
+[2] Maintenir à 64 ans
 
-question-2027-trav-02: Que pensez-vous du temps de travail en France ?
-[2] Il faut assouplir les 35 heures et laisser plus de liberté aux entreprises et salariés
+question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
+[2] Assouplir les 35 heures avec accords par secteur ou par entreprise
 
 question-2027-trav-03: Comment réduire le chômage en France ?
-[2] Il faut baisser les charges sur les entreprises pour qu'elles embauchent plus facilement
+[2] Baisser les charges sur les entreprises pour qu'elles embauchent
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
 [2] Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer
 
 question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
-[2] Le SMIC doit rester raisonnable sinon les petites entreprises ne suivent pas — mieux vaut baisser les charges
+[2] Stabilité, ne pas alourdir les entreprises
 
 question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
 [1] C'est un bon outil mais ça doit rester à la négociation entre employeur et salarié
@@ -437,9 +449,6 @@ question-2027-ue-01: Globalement, que pensez-vous de l'Union européenne ?
 question-2027-ue-02: Que pensez-vous du pouvoir de la Commission européenne par rapport aux parlements nationaux ?
 [2] Le système actuel est un bon compromis entre efficacité et souveraineté
 
-question-2027-ue-03: Que pensez-vous de la position de l'UE face à la guerre en Ukraine ?
-[3] Il faut soutenir l'Ukraine autant que nécessaire, y compris militairement — c'est notre sécurité qui est en jeu
-
 question-2027-ue-04: Que pensez-vous du lobbying et de la corruption au niveau européen ?
 [2] Des progrès ont été faits (registre de transparence), il faut continuer à renforcer les contrôles
 
@@ -447,4 +456,4 @@ question-2027-ue-05: Que pensez-vous de l'euro ?
 [2] L'euro est globalement une bonne chose, il faut surtout harmoniser les politiques fiscales
 
 question-2027-ue-06: Que pensez-vous de la politique migratoire européenne ?
-[2] Le pacte migratoire européen va dans le bon sens : des frontières mieux protégées et une gestion ordonnée
+[2] Frontières extérieures protégées et gestion ordonnée (pacte actuel)

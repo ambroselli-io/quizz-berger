@@ -14,26 +14,76 @@ Principe : chaque réponse à une question doit porter **une seule position**. T
 
 | Thème | Diagnostic | Refonte |
 |---|---|---|
-| Affaires étrangères | ✅ | ⬜ |
-| Agriculture | ✅ | ⬜ |
-| Climat / Énergie | ✅ | ⬜ |
+| Affaires étrangères | ✅ | ✅ (+ 3 Israël, + Afrique éco split, ae-01/02/03/06 refondues) |
+| Agriculture | ✅ | 🟧 agri-05 refondue |
+| Climat / Énergie | ✅ | 🟧 climat-02 refondue, climat-04 reformulée |
 | Corruption | ✅ | ⬜ |
 | Culture | ✅ | ⬜ |
-| Démographie / Immigration | ✅ | ⬜ |
+| Démographie / Immigration | ✅ | ✅ (immi-05 refondue + immi-08 nouvelle exigences d'intégration) |
 | Dépenses / Dette | ✅ | ⬜ |
-| Économie / Industrie | ✅ | ⬜ |
+| Économie / Industrie | ✅ | 🟧 eco-01 reformulée, eco-06 supprimée (doublon) |
 | Finance | ✅ | ⬜ |
 | Gouvernance | ✅ | ⬜ |
 | Logement | ✅ | ✅ |
-| Numérique / IA | ✅ | ⬜ |
-| Police / Justice | ✅ | ⬜ |
+| Numérique / IA | ✅ | 🟧 num-01 refondue |
+| Police / Justice | ✅ | ✅ (pol-04 refondue, pol-01/03/05/07 reformulées) |
 | Fiscalité | ✅ | ⬜ |
-| Pouvoir d'achat | ✅ | ⬜ |
-| Éducation / Recherche | ✅ | ⬜ |
-| Santé | ✅ | ⬜ |
-| Société | ✅ | ⬜ |
-| Travail / Chômage / Retraite | ✅ | ⬜ |
-| Union Européenne | ✅ | ⬜ |
+| Pouvoir d'achat | ✅ | 🟧 pa-05 refondue |
+| Éducation / Recherche | ✅ | 🟧 edu-03 reformulée |
+| Santé | ✅ | 🟧 san-03 + san-07 reformulées |
+| Société | ✅ | 🟧 soc-02 reformulée |
+| Travail / Chômage / Retraite | ✅ | ✅ (trav-02 refondue, trav-01/03/05 reformulées) |
+| Union Européenne | ✅ | 🟧 ue-03 supprimée (doublon), ue-06 reformulée |
+
+## Travaux effectués
+
+**Suppressions** (2)
+- `eco-06` — doublon avec `trav-02`
+- `ue-03` — doublon avec `ae-01`
+
+**Refontes complètes** (9, structure des réponses changée — index candidats remappés)
+- `ae-01` Ukraine — libellés mono-position
+- `ae-03` Afrique — devient **présence militaire** uniquement
+- `climat-02` Nucléaire — axe unique pro/anti nucléaire
+- `immi-05` Intégration — devient **régularisation** uniquement
+- `num-01` IA — devient **impact perçu** (séparé de la régulation)
+- `pol-04` Prisons — devient **doctrine pénale** (répression vs réinsertion)
+- `pa-05` Pouvoir d'achat — chaque réponse = un seul levier
+- `log-04` Territoire — axe = intensité de l'intervention
+- `trav-02` Temps de travail — fusionné avec `eco-06`
+
+**Nouvelles questions** (5)
+- `ae-07` — Rôle économique en Afrique (split d'`ae-03`)
+- `ae-08` — Position dans le conflit Israël/Palestine
+- `ae-09` — Action de la France face au conflit
+- `ae-10` — Reconnaissance de l'État de Palestine
+- `immi-08` — Niveau d'exigence d'intégration (split d'`immi-05`)
+
+**Reformulations de libellés** (17, indexes candidats inchangés)
+- `ae-02`, `ae-06`, `agri-05`, `climat-04`, `eco-01`, `pol-01`, `pol-03`, `pol-05`, `pol-07`, `trav-01`, `trav-03`, `trav-05`, `edu-03`, `san-03`, `san-07`, `soc-02`, `ue-06`
+
+**Total : 123 → 126 questions** (−2 supprimées, +5 nouvelles, log-01 déjà refait en début de session).
+
+## Reste à faire (questions encore avec >1 réponse pourrie, basse priorité)
+
+- `ae-04` (UE), `ae-05` (armée européenne)
+- `agri-02` (eau)
+- `climat-06` (sobriété)
+- `corr-01`, `corr-02`, `corr-03`, `corr-05`
+- `cult-01`, `cult-03`, `cult-05`
+- `immi-02`, `immi-03`, `immi-04`
+- `dep-01`, `dep-04`, `dep-05`
+- `eco-02`, `eco-03`, `eco-07`
+- `fin-03`, `fin-05`
+- `gouv-02`, `gouv-04`
+- `num-02`, `num-03`, `num-04`
+- `pol-02`, `pol-06`
+- `fisc-04`, `fisc-05`, `fisc-07`
+- `pa-02`, `pa-04`
+- `edu-01`, `edu-02`, `edu-05`, `edu-06`
+- `san-01`, `san-02`, `san-06`
+- `soc-01`, `soc-04`, `soc-06`, `soc-07`
+- `trav-04`, `trav-06`
 
 ---
 
