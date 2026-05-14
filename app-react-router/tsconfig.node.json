@@ -14,7 +14,6 @@
     "moduleDetection": "force",
     "noEmit": true,
     "types": [
-        "@prisma/client",
         "vite-plugin-pwa/info",
         "vite-plugin-pwa/pwa-assets",
         "vite-plugin-pwa/react",

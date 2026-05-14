@@ -1,8 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router';
-import type { PodiumDataWithPercentAndHeightAndHighest } from '@api/src/types/answer';
-
-import { getMaxPersons } from '~/shared/utils/podium';
 
 function useIsSmallScreen() {
   const [isSmall, setIsSmall] = useState(false);
@@ -19,12 +16,21 @@ function useIsSmallScreen() {
 const IMAGE_BASE_URL = '/';
 
 interface PodiumProps {
-  podiumised: PodiumDataWithPercentAndHeightAndHighest[];
+  podiumised: Array<{
+    pseudos: string[];
+    pictures: string[];
+    colors: string[];
+    height: number;
+    percent: number;
+  }>;
   title?: string;
 }
 
 const Podium = ({ podiumised, title }: PodiumProps) => {
-  const maxPersons = useMemo(() => getMaxPersons(podiumised), [podiumised]);
+  const maxPersons = useMemo(
+    () => podiumised.reduce((max, step) => Math.max(step.pseudos?.length ?? 0, max), 0),
+    [podiumised],
+  );
   const isSmall = useIsSmallScreen();
   const heightMultiplier = isSmall ? 1.2 : 2;
 

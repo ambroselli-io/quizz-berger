@@ -184,11 +184,13 @@ export default function Result() {
   const candidatesScorePerThemes = useMemo(
     () =>
       getCandidatesScorePerThemes(
-        answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
+        answersToShow.filter((a) => selectedThemes.includes(a.themeId)) as Parameters<
+          typeof getCandidatesScorePerThemes
+        >[0],
         candidates.map((c) => ({
           ...c,
           answers: c.answers.filter((a: Answer) => selectedThemes.includes(a.themeId)),
-        })),
+        })) as unknown as Parameters<typeof getCandidatesScorePerThemes>[1],
         quizzQuestions,
       ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -203,11 +205,13 @@ export default function Result() {
   const friendsScorePerThemes = useMemo(
     () =>
       getCandidatesScorePerThemes(
-        answersToShow.filter((a) => selectedThemes.includes(a.themeId)),
+        answersToShow.filter((a) => selectedThemes.includes(a.themeId)) as Parameters<
+          typeof getCandidatesScorePerThemes
+        >[0],
         friends.map((f) => ({
           ...f,
           answers: f.answers.filter((a: Answer) => selectedThemes.includes(a.themeId)),
-        })),
+        })) as unknown as Parameters<typeof getCandidatesScorePerThemes>[1],
         quizzQuestions,
       ),
     [answersToShow, selectedThemes, friends],
