@@ -755,4 +755,85 @@ export const articles: Article[] = [
       ],
     },
   },
+  {
+    slug: 'monvote2027-vs-quizz-du-berger',
+    title: 'MonVote2027 vs Quizz du Berger : quand la formulation de la question fait tout',
+    excerpt:
+      "MonVote2027 propose une échelle d'accord à 5 points sur des questions… qui prennent déjà position. On décortique, on compare avec le Quizz du Berger, et on explique pourquoi la formulation compte autant que l'algorithme.",
+    date: '2026-05-14',
+    tag: 'Comparatif',
+    content: `
+<p>Un nouveau quiz politique pour la présidentielle 2027 est apparu : <a href="https://monvote2027.fr/" rel="nofollow">MonVote2027</a>. Outil citoyen indépendant, sans pub, méthodologie publique : sur le papier, tout va bien. On a regardé sous le capot, et il y a une question de fond à poser — pas sur l'algorithme, mais sur <strong>la façon dont les questions sont écrites</strong>.</p>
+
+<h2>Comment fonctionne MonVote2027</h2>
+<p>Le principe est classique : une <strong>échelle de Likert à 5 points</strong> (Tout à fait d'accord, Plutôt d'accord, Partagé/Nuancé, Plutôt pas d'accord, Pas du tout d'accord), plus une option "Passer / Je ne sais pas". Deux formats sont proposés : 20 questions (quiz rapide) ou 100 questions (quiz complet), pour 23 candidats à la présidentielle.</p>
+<p>L'algorithme calcule un score de concordance linéaire : votre réponse est comparée à la position connue du candidat, et la distance est convertie en score entre −1 et +1. Les positions des candidats sont sourcées depuis leurs programmes, déclarations publiques, votes au Parlement et interviews. Méthodologiquement, c'est propre.</p>
+
+<h2>Le vrai sujet : la formulation des questions</h2>
+<p>Voici deux questions issues du quiz :</p>
+<blockquote><em>"Il faut interdire progressivement l'élevage intensif."</em></blockquote>
+<blockquote><em>"La France doit accueillir davantage de demandeurs d'asile."</em></blockquote>
+<p>Lisez-les une deuxième fois. Vous remarquez ? <strong>Ce ne sont pas des questions, ce sont des affirmations</strong>. Et pas des affirmations neutres : elles arrivent déjà avec une direction, une position, un parti pris.</p>
+<ul>
+<li><strong>"Interdire progressivement l'élevage intensif"</strong> — pourquoi <em>progressivement</em> ? Pourquoi pas "tout de suite", "jamais", ou "seulement dans certains cas" ? L'option de base, déjà, c'est l'interdiction. On vous demande juste à quel rythme.</li>
+<li><strong>"Accueillir davantage de demandeurs d'asile"</strong> — bah… <em>ça dépend</em>. Combien ? Dans quelles conditions ? Avec quel système d'instruction des dossiers ? La question écrase tout ça dans un curseur d'accord.</li>
+</ul>
+
+<h2>Pourquoi c'est un problème, même avec 5 nuances</h2>
+<p>L'échelle de Likert est très utilisée en sciences sociales, et elle est utile <em>quand la question est neutre</em>. Quand la question prend déjà position, l'échelle ne fait que mesurer à quel point vous adhérez ou résistez à <strong>la formulation choisie par l'auteur du quiz</strong> — pas à votre propre pensée.</p>
+<p>Concrètement, sur "Il faut interdire progressivement l'élevage intensif" :</p>
+<ul>
+<li>Vous êtes pour l'élevage intensif tel quel ? Vous êtes "Pas du tout d'accord".</li>
+<li>Vous voulez l'interdire tout de suite, pas progressivement ? Vous êtes… aussi "Pas du tout d'accord" ? Ou alors "Plutôt d'accord" ? Personne ne sait.</li>
+<li>Vous voulez le réformer profondément mais pas l'interdire ? Vous êtes "Partagé/Nuancé", ce qui ne veut rien dire.</li>
+</ul>
+<p>Trois opinions très différentes, voire opposées, finissent dans la même case. C'est dommage.</p>
+
+<h2>L'approche du Quizz du Berger : pas une échelle, des réponses</h2>
+<p>Le Quizz du Berger fait un autre choix : la question est posée le plus neutre possible, et on vous propose <strong>jusqu'à 6 réponses substantielles</strong>, qui couvrent l'éventail réel des positions des Français. Pas "d'accord/pas d'accord", mais des options concrètes.</p>
+<p>Sur l'élevage intensif, par exemple, plutôt que "Il faut l'interdire progressivement, oui ou non ?", on vous propose une grille du type : "Maintenir tel quel" / "Améliorer les conditions sans changer le modèle" / "Sortir de l'élevage intensif sur 20 ans" / "Interdire dès maintenant" / "Supprimer l'élevage tout court". <strong>Chaque réponse est une position autonome</strong>, pas un degré d'adhésion à une seule.</p>
+<p>Résultat : vous ne vous positionnez pas <em>par rapport à</em> une affirmation préchargée. Vous choisissez la réponse qui ressemble vraiment à ce que vous pensez.</p>
+
+<h2>Tableau comparatif</h2>
+<table>
+<tr><th>Critère</th><th>MonVote2027</th><th>Quizz du Berger</th></tr>
+<tr><td>Format des questions</td><td>Affirmation à valider/rejeter</td><td><strong>Question neutre + réponses substantielles</strong></td></tr>
+<tr><td>Options de réponse</td><td>5 points d'accord (Likert)</td><td><strong>3 à 6 réponses concrètes</strong> par question</td></tr>
+<tr><td>Nombre de questions</td><td>20 (rapide) ou 100 (complet)</td><td><strong>119 questions</strong> sur 21 thèmes</td></tr>
+<tr><td>Candidats</td><td>23</td><td><strong>26</strong></td></tr>
+<tr><td>Résultats par thème</td><td>Oui (pondération possible)</td><td><strong>Oui, détaillé par thème</strong></td></tr>
+<tr><td>Sources des positions candidats</td><td>Programmes, déclarations, votes</td><td>Programmes, déclarations, votes</td></tr>
+<tr><td>Open-source</td><td>Non documenté</td><td><strong>Oui</strong></td></tr>
+</table>
+
+<h2>Ce qui n'enlève rien au mérite de MonVote2027</h2>
+<p>Soyons honnêtes : MonVote2027 est un projet sérieux. La méthodologie est publiée, les sources des positions des candidats sont citées, l'outil est gratuit et sans pub, et l'algorithme est transparent. C'est mille fois mieux que la moyenne des "tests politiques" de magazine.</p>
+<p>Et il faut aussi reconnaître une chose : <strong>l'utilisateur doit, qu'on le veuille ou non, se positionner par rapport aux messages que font passer les médias et les politiques</strong>. "Faut-il accueillir davantage de demandeurs d'asile ?" est <em>littéralement</em> la formulation utilisée dans les débats publics. Forcer les gens à se prononcer sur ces formulations toutes faites a un intérêt : ça les met face au vocabulaire du débat tel qu'il existe.</p>
+
+<h2>Mais un quiz devrait aider à penser par soi-même</h2>
+<p>Notre conviction, derrière le Quizz du Berger, c'est qu'un outil d'aide au vote ne devrait pas se contenter de mesurer l'adhésion à des formulations toutes faites. Il devrait <strong>élargir le champ des possibles</strong> — montrer que sur n'importe quel sujet, il y a souvent 4 ou 5 positions cohérentes, pas juste "pour" ou "contre" avec quelques nuances.</p>
+<p>C'est pour ça qu'on a fait le choix des réponses substantielles plutôt que de l'échelle d'accord. C'est plus long à concevoir, plus dur à équilibrer, mais ça respecte mieux la complexité de ce que pensent réellement les gens.</p>
+
+<h2>Notre recommandation</h2>
+<p>Faites les deux. MonVote2027 vous donnera une lecture rapide de votre positionnement <em>face au discours politique tel qu'il s'exprime aujourd'hui</em>. Le Quizz du Berger vous donnera une lecture plus fine de <em>ce que vous pensez vraiment</em>, indépendamment du cadrage médiatique. Les deux exercices sont complémentaires — et instructifs surtout quand les résultats divergent.</p>
+<p>La politique n'est ni noire ni blanche. Détendez-vous, et réfléchissez.</p>
+
+<p><a href="/themes">→ Faire le Quizz du Berger</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'MonVote2027 vs Quizz du Berger : quand la formulation de la question fait tout',
+      description:
+        "Comparatif méthodologique entre MonVote2027 (échelle de Likert sur affirmations engagées) et le Quizz du Berger (réponses substantielles sur questions ouvertes) pour la présidentielle 2027.",
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-05-14',
+      about: [
+        { '@type': 'Thing', name: 'MonVote2027' },
+        { '@type': 'Thing', name: 'Quiz politique' },
+        { '@type': 'Thing', name: 'Échelle de Likert' },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
 ];
