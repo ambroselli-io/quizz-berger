@@ -11,7 +11,9 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const quizz = JSON.parse(readFileSync(resolve(__dirname, '../src/shared/quizz-2027.json'), 'utf-8'));
-const candidates = JSON.parse(readFileSync(resolve(__dirname, '../src/shared/candidates-answers.json'), 'utf-8'));
+const candidates = JSON.parse(
+  readFileSync(resolve(__dirname, '../src/shared/candidates-answers.json'), 'utf-8'),
+);
 
 const BASE_URL = 'https://www.quizz-du-berger.com';
 
@@ -97,6 +99,7 @@ const blogSlugs = [
   'accord-ue-mercosur-france-candidats-2027',
   'affaire-epstein-france-candidats-2027',
   'guerre-iran-detroit-ormuz-france-candidats-2027',
+  'monvote2027-vs-quizz-du-berger',
 ];
 
 function buildUrls() {
@@ -143,9 +146,7 @@ function buildUrls() {
 
   // Comparison pages — all C(n, 2) candidate pairs, canonical form
   // Curated pairs keep their existing slug order; the rest use alphabetical-of-slug.
-  const curatedByKey = new Map(
-    comparisonPairs.map(([a, b]) => [[a, b].sort().join('|'), `${a}-vs-${b}`]),
-  );
+  const curatedByKey = new Map(comparisonPairs.map(([a, b]) => [[a, b].sort().join('|'), `${a}-vs-${b}`]));
   const candidateSlugs = candidates.map((c) => slugify(c.pseudo));
   for (let i = 0; i < candidateSlugs.length; i++) {
     for (let j = i + 1; j < candidateSlugs.length; j++) {
@@ -177,7 +178,7 @@ function generateSitemapXml(urls) {
     <loc>${BASE_URL}${u.loc}</loc>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
-  </url>`
+  </url>`,
     )
     .join('\n');
 
