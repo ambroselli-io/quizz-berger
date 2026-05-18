@@ -5,7 +5,33 @@ on:
     branches: [ main ] # Or the name of your main branch
 
 jobs:
+  test:
+    name: Tests + type-check
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app-react-router
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: app-react-router/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type-check
+        run: npx tsc --noEmit --project tsconfig.app.json
+
+      - name: Run tests
+        run: npm test
+
   deploy:
+    name: Deploy to VPS
+    needs: [ test ]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to VPS
@@ -15,7 +41,7 @@ jobs:
           username: deployer
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            
+
             # Navigate to the quizz-berger project directory
             cd /var/www/quizz-berger
 
@@ -86,3 +112,64 @@ jobs:
                 exit 1
               fi
             fi
+
+  notify-failure:
+    name: Notify Slack on failure
+    needs: [ test, deploy ]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine which job failed
+        id: which
+        run: |
+          if [ "${{ needs.test.result }}" = "failure" ]; then
+            echo "stage=tests" >> "$GITHUB_OUTPUT"
+          elif [ "${{ needs.deploy.result }}" = "failure" ]; then
+            echo "stage=deploy" >> "$GITHUB_OUTPUT"
+          else
+            echo "stage=unknown" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Post failure to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          STAGE: ${{ steps.which.outputs.stage }}
+          REPO: ${{ github.repository }}
+          REF: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL secret is not set; skipping notification."
+            exit 0
+          fi
+          SHORT_SHA="${SHA:0:7}"
+          PAYLOAD=$(jq -nc \
+            --arg text ":x: *Quizz du Berger* — \`$STAGE\` failed on \`$REF\` (commit \`$SHORT_SHA\` by $ACTOR)\n<$RUN_URL|See workflow run>" \
+            '{text: $text}')
+          curl -sS -X POST -H 'Content-Type: application/json' --data "$PAYLOAD" "$SLACK_WEBHOOK_URL"
+
+  notify-success:
+    name: Notify Slack on success
+    needs: [ test, deploy ]
+    if: success()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post success to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          REF: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL secret is not set; skipping notification."
+            exit 0
+          fi
+          SHORT_SHA="${SHA:0:7}"
+          PAYLOAD=$(jq -nc \
+            --arg text ":white_check_mark: *Quizz du Berger* deployed on \`$REF\` (commit \`$SHORT_SHA\` by $ACTOR)\n<$RUN_URL|See workflow run>" \
+            '{text: $text}')
+          curl -sS -X POST -H 'Content-Type: application/json' --data "$PAYLOAD" "$SLACK_WEBHOOK_URL"

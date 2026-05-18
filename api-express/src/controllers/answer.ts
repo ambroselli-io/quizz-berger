@@ -141,7 +141,16 @@ router.get(
     const personsScore = getCandidatesScorePerThemes(candidate.answers as Array<Answer>, allCandidates, quizzQuestions);
     const podiumData = getPodium(personsScore, true);
 
-    res.status(200).send({ ok: true, data: podiumData, user: candidate });
+    const slimPodium = podiumData.map(({ pseudos, pictures, colors, height, percent }) => ({
+      pseudos,
+      pictures,
+      colors,
+      height,
+      percent,
+    }));
+    const slimUser = { pseudo: candidate.pseudo, color: candidate.color };
+
+    res.status(200).send({ ok: true, data: slimPodium, user: slimUser });
     return;
   }),
 );

@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import checker from 'vite-plugin-checker';
@@ -28,7 +29,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@app': '/src',
+      '@app': resolve(__dirname, 'src'),
       '@api': resolve(__dirname, '../api-express'),
       '~': resolve(__dirname, 'src'),
     },
@@ -36,5 +37,12 @@ export default defineConfig({
   define: {
     __VITE_BUILD_ID__: buildId,
     'process.env': process.env,
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./src/test/setup.ts'],
+    include: ['src/**/*.test.{ts,tsx}'],
+    css: false,
   },
 });

@@ -1,6 +1,9 @@
 import type { Answer } from "@prisma/client";
 import { CandidateAnswer, FriendAnswer, PodiumDataWithPercentAndHeightAndHighest } from "./answer";
 
+export type SlimPodiumStep = Pick<PodiumDataWithPercentAndHeightAndHighest, "pseudos" | "pictures" | "colors" | "height" | "percent">;
+export type SlimCandidateUser = Pick<CandidateAnswer, "pseudo" | "color">;
+
 export interface CandidatesAnswersResponse {
   ok: boolean;
   data: Array<CandidateAnswer>;
@@ -18,8 +21,8 @@ export interface UserAnswersResponse {
 
 export interface RandomCandidateResponse {
   ok: boolean;
-  data: Array<PodiumDataWithPercentAndHeightAndHighest>;
-  user: CandidateAnswer | null;
+  data: Array<SlimPodiumStep>;
+  user: SlimCandidateUser | null;
 }
 
 export interface AnswersForUserResponse {
