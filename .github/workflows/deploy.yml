@@ -8,9 +8,6 @@ jobs:
   test:
     name: Tests + type-check
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: app-react-router
     steps:
       - uses: actions/checkout@v4
 
@@ -18,15 +15,33 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: app-react-router/package-lock.json
+          cache-dependency-path: |
+            app-react-router/package-lock.json
+            api-express/package-lock.json
 
-      - name: Install dependencies
+      - name: Install app dependencies
+        working-directory: app-react-router
         run: npm ci
 
+      - name: Install api dependencies
+        # tsconfig.app.json includes ../api-express/src/types/**/*.ts which
+        # reference @prisma/client and express. Type-check needs those modules
+        # resolvable on disk.
+        working-directory: api-express
+        run: npm ci
+
+      - name: Generate Prisma client types
+        # @prisma/client types are generated, not shipped. Without this the
+        # type-check sees `Answer`/`User` as `any` (or errors, depending on version).
+        working-directory: api-express
+        run: npx prisma generate
+
       - name: Type-check
+        working-directory: app-react-router
         run: npx tsc --noEmit --project tsconfig.app.json
 
       - name: Run tests
+        working-directory: app-react-router
         run: npm test
 
   deploy:
