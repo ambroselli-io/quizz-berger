@@ -1,10 +1,13 @@
 {
   "name": "quizz-du-berger-app",
   "private": true,
-  "sideEffects": ["**/app-init.ts", "**/*.css"],
+  "sideEffects": [
+    "**/app-init.ts",
+    "**/*.css"
+  ],
   "type": "module",
   "scripts": {
-    "typecheck": "tsc -b",
+    "typecheck": "tsr generate && tsc -b",
     "dev": "vite dev --port 5178 --host",
     "generate-sitemap": "tsx --tsconfig ./tsconfig.app.json scripts/generate-sitemap.ts",
     "build": "tsx --tsconfig ./tsconfig.app.json scripts/generate-sitemap.ts && vite build",
@@ -80,6 +83,7 @@
     "@eslint/js": "^9.13.0",
     "@sentry/vite-plugin": "^2.22.6",
     "@tailwindcss/postcss": "^4.1.8",
+    "@tanstack/router-cli": "^1.167.17",
     "@tanstack/router-plugin": "^1.168.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
