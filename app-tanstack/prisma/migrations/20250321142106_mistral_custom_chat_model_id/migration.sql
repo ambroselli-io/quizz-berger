@@ -1,0 +1,6 @@
+-- CreateEnum
+CREATE TYPE "MistralCustomChatModelId" AS ENUM ('MINISTRAL_3B_LATEST', 'MINISTRAL_8B_LATEST', 'MISTRAL_LARGE_LATEST', 'MISTRAL_SMALL_LATEST', 'PIXTRAL_LARGE_LATEST');
+
+-- AlterTable
+ALTER TABLE "Prompt" ADD COLUMN     "activated" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "model" "MistralCustomChatModelId";

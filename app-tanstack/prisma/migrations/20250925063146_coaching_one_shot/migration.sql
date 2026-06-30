@@ -1,0 +1,2 @@
+-- AlterEnum
+ALTER TYPE "Advantage" ADD VALUE 'COACHING_ONE_SHOT';

@@ -1,0 +1,157 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Result (/result) > renders every candidate and locks their global percentages via snapshot 1`] = `
+[
+  {
+    "percent": 100,
+    "pseudos": [
+      "Nathalie Arthaud",
+    ],
+  },
+  {
+    "percent": 96,
+    "pseudos": [
+      "Jean-Luc Mélenchon",
+      "Juan Branco",
+    ],
+  },
+  {
+    "percent": 92,
+    "pseudos": [
+      "Clémentine Autain",
+    ],
+  },
+  {
+    "percent": 80,
+    "pseudos": [
+      "François Ruffin",
+    ],
+  },
+  {
+    "percent": 77,
+    "pseudos": [
+      "Delphine Batho",
+    ],
+  },
+  {
+    "percent": 75,
+    "pseudos": [
+      "Marine Tondelier",
+    ],
+  },
+  {
+    "percent": 70,
+    "pseudos": [
+      "Fabien Roussel",
+    ],
+  },
+  {
+    "percent": 67,
+    "pseudos": [
+      "Raphaël Glucksmann",
+    ],
+  },
+  {
+    "percent": 66,
+    "pseudos": [
+      "Jérôme Guedj",
+    ],
+  },
+  {
+    "percent": 57,
+    "pseudos": [
+      "Dominique de Villepin",
+    ],
+  },
+  {
+    "percent": 56,
+    "pseudos": [
+      "Bernard Cazeneuve",
+    ],
+  },
+  {
+    "percent": 52,
+    "pseudos": [
+      "François Asselineau",
+    ],
+  },
+  {
+    "percent": 49,
+    "pseudos": [
+      "François Hollande",
+    ],
+  },
+  {
+    "percent": 48,
+    "pseudos": [
+      "François Bayrou",
+    ],
+  },
+  {
+    "percent": 48,
+    "pseudos": [
+      "Patrick Sébastien",
+    ],
+  },
+  {
+    "percent": 40,
+    "pseudos": [
+      "Marine Le Pen",
+    ],
+  },
+  {
+    "percent": 38,
+    "pseudos": [
+      "Nicolas Dupont-Aignan",
+    ],
+  },
+  {
+    "percent": 29,
+    "pseudos": [
+      "Édouard Philippe",
+    ],
+  },
+  {
+    "percent": 28,
+    "pseudos": [
+      "Gabriel Attal",
+    ],
+  },
+  {
+    "percent": 24,
+    "pseudos": [
+      "Xavier Bertrand",
+    ],
+  },
+  {
+    "percent": 22,
+    "pseudos": [
+      "Éric Zemmour",
+    ],
+  },
+  {
+    "percent": 19,
+    "pseudos": [
+      "Gérald Darmanin",
+    ],
+  },
+  {
+    "percent": 17,
+    "pseudos": [
+      "Laurent Wauquiez",
+    ],
+  },
+  {
+    "percent": 16,
+    "pseudos": [
+      "David Lisnard",
+    ],
+  },
+  {
+    "percent": 13,
+    "pseudos": [
+      "Bruno Retailleau",
+    ],
+  },
+]
+`;

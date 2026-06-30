@@ -1,0 +1,111 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Themes (/themes) > locks the visible theme list + per-theme question counts via snapshot 1`] = `
+[
+  {
+    "fr": "Affaires étrangères",
+    "id": "theme-2027-affaires-etrangeres",
+    "questionCount": 10,
+  },
+  {
+    "fr": "Agriculture et alimentation",
+    "id": "theme-2027-agriculture",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Climat, Énergie et Écologie",
+    "id": "theme-2027-climat",
+    "questionCount": 6,
+  },
+  {
+    "fr": "Corruption et lobbying",
+    "id": "theme-2027-corruption",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Culture",
+    "id": "theme-2027-culture",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Dépenses et dette publiques",
+    "id": "theme-2027-depenses",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Économie et Industrie",
+    "id": "theme-2027-economie",
+    "questionCount": 6,
+  },
+  {
+    "fr": "Recherche et éducation",
+    "id": "theme-2027-education",
+    "questionCount": 6,
+  },
+  {
+    "fr": "Finance",
+    "id": "theme-2027-finance",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Politique fiscale",
+    "id": "theme-2027-fiscal",
+    "questionCount": 8,
+  },
+  {
+    "fr": "Gouvernance et République",
+    "id": "theme-2027-gouvernance",
+    "questionCount": 6,
+  },
+  {
+    "fr": "Démographie et question migratoire",
+    "id": "theme-2027-immigration",
+    "questionCount": 8,
+  },
+  {
+    "fr": "Logement",
+    "id": "theme-2027-logement",
+    "questionCount": 7,
+  },
+  {
+    "fr": "Numérique et IA",
+    "id": "theme-2027-numerique",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Police, Justice et Sécurité",
+    "id": "theme-2027-police",
+    "questionCount": 7,
+  },
+  {
+    "fr": "Pouvoir d'achat et vie quotidienne",
+    "id": "theme-2027-pouvoir-achat",
+    "questionCount": 5,
+  },
+  {
+    "fr": "Santé",
+    "id": "theme-2027-sante",
+    "questionCount": 8,
+  },
+  {
+    "fr": "Société",
+    "id": "theme-2027-societe",
+    "questionCount": 8,
+  },
+  {
+    "fr": "Et si un(e) autre gagnait...",
+    "id": "theme-et-si-un-autre-gagnait-2027",
+    "questionCount": 0,
+  },
+  {
+    "fr": "Travail, Chômage, Retraite",
+    "id": "theme-travail-chomage-retraite-2027",
+    "questionCount": 6,
+  },
+  {
+    "fr": "Union Européenne",
+    "id": "theme-union-europeenne-2027",
+    "questionCount": 5,
+  },
+]
+`;
