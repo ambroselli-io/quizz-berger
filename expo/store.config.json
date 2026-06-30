@@ -1,0 +1,30 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "info": {
+      "fr-FR": {
+        "title": "Quizz du Berger – Vote 2027",
+        "subtitle": "Test pour qui voter en 2027",
+        "description": "QUI est votre candidat idéal pour la présidentielle 2027 ?\n\n70 % des électeurs demanderont à une intelligence artificielle pour qui voter. Pas vous. Le Quizz du Berger vous laisse vous faire VOTRE propre opinion.\n\nRépondez aux questions qui vous intéressent — vous seul décidez lesquelles — et découvrez, chiffres à l'appui, le candidat qui pense vraiment comme vous.\n\n➡️ COMMENT ÇA MARCHE ?\n\n1. Répondez aux questions que vous voulez\nParmi 21 thèmes et 126 questions : économie, immigration, écologie, santé, fiscalité, retraites, sécurité, agriculture, Europe, international… Aucune obligation de tout faire : 1 question suffit pour commencer.\n\n2. Comparez la pensée des candidats à la vôtre\nUn classement global ET un classement thème par thème. Parce qu'on n'est jamais d'accord à 100 % avec quelqu'un, le détail par sujet vous aide à trouver le candidat le plus proche de votre pensée, sur les thèmes qui comptent VRAIMENT pour vous.\n\n3. Confrontez vos amis !\nEnregistrez vos résultats sous un pseudo, ajoutez vos amis et comparez vos convictions. Débat assuré… et de qualité !\n\n➡️ 26 CANDIDATS À LA PRÉSIDENTIELLE 2027\n\nMélenchon, Le Pen, Zemmour, Philippe, Glucksmann, Bayrou, Attal, Darmanin, Retailleau, Wauquiez, Bertrand, Tondelier, Ruffin, Autain, Roussel, Hollande, Cazeneuve, de Villepin, Asselineau, Branco, Dupont-Aignan, Batho, Guedj, Arthaud, Lisnard… et d'autres. Leurs réponses ont été renseignées à partir de leurs programmes et déclarations publiques.\n\n➡️ POURQUOI NOUS FAIRE CONFIANCE ?\n\n• Neutralité : les questions ont été rédigées par des étudiants de droite ET de gauche, pour éviter tout biais.\n• Transparence : le projet est open-source.\n• Gratuit, sans pub intrusive, et conçu pour vous faire réfléchir — pas pour vous dire quoi penser.\n\nPlus de 200 000 quizz déjà réalisés et près de 10 millions de réponses données.\n\nL'objectif ? Vous montrer que la politique n'est pas toute noire ou toute blanche. Conforter ou remettre en question vos idées. Vous détendre, et vous faire réfléchir.\n\nAlors, pour qui allez-vous voter en 2027 ?\nRépondez au Quizz. 🐑",
+        "keywords": [
+          "présidentielle",
+          "candidat",
+          "politique",
+          "election",
+          "sondage",
+          "boussole",
+          "elyze",
+          "monvote",
+          "simulateur",
+          "gauche",
+          "droite"
+        ],
+        "releaseNotes": "Nouvelle version pour la présidentielle 2027 : 126 questions, 26 candidats, comparaison thème par thème et confrontation entre amis.",
+        "promoText": "Présidentielle 2027 : répondez aux questions que vous voulez et découvrez le candidat qui pense vraiment comme vous. 21 thèmes, 126 questions, 26 candidats.",
+        "marketingUrl": "https://www.quizz-du-berger.com",
+        "supportUrl": "https://www.quizz-du-berger.com/qui-sommes-nous",
+        "privacyPolicyUrl": "https://www.quizz-du-berger.com/confidentialite"
+      }
+    }
+  }
+}

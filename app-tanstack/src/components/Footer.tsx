@@ -35,6 +35,7 @@ const Footer = () => {
             <Link to="/qui-sommes-nous" className="text-sm text-gray-300 hover:text-white">Qui sommes-nous ?</Link>
             <button onClick={() => setShowContactModal(true)} className="cursor-pointer border-none bg-transparent p-0 text-left text-sm text-gray-300 hover:text-white">Nous contacter</button>
             <button onClick={() => setShowLegalModal(true)} className="cursor-pointer border-none bg-transparent p-0 text-left text-sm text-gray-300 hover:text-white">Mentions légales</button>
+            <Link to="/confidentialite" className="text-sm text-gray-300 hover:text-white">Confidentialité</Link>
             <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger" className="text-sm text-gray-300 hover:text-white">Open-source</a>
           </div>
         </div>

@@ -24,6 +24,9 @@
       "android": {
         "serviceAccountKeyPath": "~/.googleplayconsole/service-account.json",
         "track": "production"
+      },
+      "ios": {
+        "metadataPath": "./store.config.json"
       }
     }
   }

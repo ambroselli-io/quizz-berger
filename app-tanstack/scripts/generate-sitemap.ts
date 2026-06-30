@@ -38,6 +38,7 @@ function buildUrls(): SitemapUrl[] {
   urls.push({ loc: '/all-questions', priority: '0.7', changefreq: 'monthly' });
   urls.push({ loc: '/blog', priority: '0.8', changefreq: 'weekly' });
   urls.push({ loc: '/communique/2022-03-26', priority: '0.3', changefreq: 'yearly' });
+  urls.push({ loc: '/confidentialite', priority: '0.2', changefreq: 'yearly' });
 
   // SEO hub pages
   urls.push({ loc: '/candidats', priority: '0.9', changefreq: 'weekly' });
