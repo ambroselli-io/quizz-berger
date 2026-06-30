@@ -2,7 +2,7 @@ name: Quizz du Berger Deploy
 
 on:
   push:
-    branches: [ main ] # Or the name of your main branch
+    branches: [main] # Or the name of your main branch
 
 jobs:
   test:
@@ -13,8 +13,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
           cache-dependency-path: |
             app-tanstack/package-lock.json
             api-express/package-lock.json
@@ -48,7 +48,7 @@ jobs:
 
   deploy:
     name: Deploy to VPS
-    needs: [ test ]
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to VPS
@@ -58,6 +58,12 @@ jobs:
           username: deployer
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+
+            # Add npm global bin to PATH so pm2 is resolvable in this non-interactive shell
+            export PATH="$HOME/.npm-global/bin:$PATH"
+
+            echo "Vérification que pm2 est disponible"
+            pm2 --version
 
             # Navigate to the quizz-berger project directory
             cd /var/www/quizz-berger
@@ -73,9 +79,6 @@ jobs:
 
             # Build the application (generates sitemap + vite build → dist/)
             npm run build
-
-            # Stop the legacy react-router process if it is still around
-            pm2 delete quizz-du-berger-app-react-router || true
 
             # Restart or start the application using PM2
             pm2 restart quizz-du-berger-app-tanstack || pm2 start ecosystem.config.cjs
@@ -135,7 +138,7 @@ jobs:
 
   notify-failure:
     name: Notify Slack on failure
-    needs: [ test, deploy ]
+    needs: [test, deploy]
     if: failure()
     runs-on: ubuntu-latest
     steps:
@@ -172,7 +175,7 @@ jobs:
 
   notify-success:
     name: Notify Slack on success
-    needs: [ test, deploy ]
+    needs: [test, deploy]
     if: success()
     runs-on: ubuntu-latest
     steps:
