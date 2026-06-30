@@ -23,9 +23,11 @@ describe('Home', () => {
     renderWithRouter(<Home />);
 
     // Hero
-    expect(screen.getByRole('heading', { level: 1, name: /qui est mon candidat\s+idéal/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 1, name: /qui est mon candidat\s+idéal/i }),
+    ).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /répondre au quizz/i })).toBeInTheDocument();
-    expect(screen.getByText(/Répondez de façon/)).toBeInTheDocument();
+    expect(screen.getByText(/Pas vous/)).toBeInTheDocument();
 
     // "Comment ça marche ?"
     expect(screen.getByRole('heading', { level: 2, name: /comment ça marche/i })).toBeInTheDocument();
@@ -35,9 +37,7 @@ describe('Home', () => {
     expect(screen.getByText(new RegExp(`${quizzQuestions.length}\\s+questions`))).toBeInTheDocument();
 
     // Podium fed by the onboarding API
-    await waitFor(() =>
-      expect(screen.getByText(`Exemple: ${pinnedCandidate.pseudo}`)).toBeInTheDocument(),
-    );
+    await waitFor(() => expect(screen.getByText(`Exemple: ${pinnedCandidate.pseudo}`)).toBeInTheDocument());
     expect(screen.getByText('100%')).toBeInTheDocument();
     expect(screen.getByText('60%')).toBeInTheDocument();
 
@@ -67,7 +67,9 @@ describe('Home', () => {
 
     renderWithRouter(<Home />);
 
-    expect(screen.getByRole('heading', { level: 1, name: /qui est mon candidat\s+idéal/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 1, name: /qui est mon candidat\s+idéal/i }),
+    ).toBeInTheDocument();
     // No "Exemple:" title since onboarding user is null
     await waitFor(() => {
       expect(screen.queryByText(/^Exemple:/)).not.toBeInTheDocument();

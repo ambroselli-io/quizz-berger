@@ -16,11 +16,11 @@ jobs:
           node-version: '20'
           cache: 'npm'
           cache-dependency-path: |
-            app-react-router/package-lock.json
+            app-tanstack/package-lock.json
             api-express/package-lock.json
 
       - name: Install app dependencies
-        working-directory: app-react-router
+        working-directory: app-tanstack
         run: npm ci
 
       - name: Install api dependencies
@@ -37,11 +37,11 @@ jobs:
         run: npx prisma generate
 
       - name: Type-check
-        working-directory: app-react-router
-        run: npx tsc --noEmit --project tsconfig.app.json
+        working-directory: app-tanstack
+        run: npx tsc -b
 
       - name: Run tests
-        working-directory: app-react-router
+        working-directory: app-tanstack
         run: npm test
 
   deploy:
@@ -64,16 +64,19 @@ jobs:
             git pull origin main
 
             # Navigate to the app directory
-            cd app-react-router
+            cd app-tanstack
 
             # Install dependencies
             npm ci --include=dev
 
-            # Build the application
+            # Build the application (generates sitemap + vite build → dist/)
             npm run build
 
+            # Stop the legacy react-router process if it is still around
+            pm2 delete quizz-du-berger-app-react-router || true
+
             # Restart or start the application using PM2
-            pm2 restart quizz-du-berger-app-react-router || pm2 start ecosystem.config.cjs
+            pm2 restart quizz-du-berger-app-tanstack || pm2 start ecosystem.config.cjs
 
             # Navigate to the api directory
             cd ../api-express
@@ -111,8 +114,8 @@ jobs:
             if curl -f http://localhost:5178/; then
               echo "Quizz du berger APP is running correctly."
             else
-              cd /var/www/quizz-berger/app-react-router
-              pm2 delete quizz-du-berger-app-react-router
+              cd /var/www/quizz-berger/app-tanstack
+              pm2 delete quizz-du-berger-app-tanstack
               pm2 start ecosystem.config.cjs
               echo "Quizz du berger APP restarted."
 

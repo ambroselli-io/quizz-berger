@@ -17,7 +17,11 @@ import PodiumSkeleton from "~/components/PodiumSkeleton";
 import QuizzButton from "~/components/QuizzButton";
 import useStore from "~/zustand/store";
 import API from "~/services/api";
+import storage from "~/utils/storage";
+import * as StoreReview from "expo-store-review";
 import type { Answer, UserAnswerWithScorePerThemeAndMax } from "~/types/quizz";
+
+const REVIEW_REQUESTED_KEY = "app-review-requested";
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, "Result">;
@@ -92,6 +96,26 @@ export default function ResultScreen() {
       )
     });
   }, [navigation, candidates.length, shownCandidatesCount]);
+
+  // Ask for an app store review once the user has reached their results, at most
+  // once per install (the OS throttles further and may show nothing).
+  const reviewAsked = useRef(false);
+  useEffect(() => {
+    if (reviewAsked.current) return;
+    if (!answersToShow.length || candidatesLoading) return;
+    if (storage.getString(REVIEW_REQUESTED_KEY)) return;
+    reviewAsked.current = true;
+    const timeout = setTimeout(async () => {
+      try {
+        if (!(await StoreReview.hasAction())) return;
+        await StoreReview.requestReview();
+        storage.set(REVIEW_REQUESTED_KEY, "1");
+      } catch {
+        // never block the UI on a review prompt
+      }
+    }, 2500);
+    return () => clearTimeout(timeout);
+  }, [answersToShow.length, candidatesLoading]);
 
   const allFriendPseudos = useMemo(() => friends.map((f) => f.pseudo), [friends]);
   const [selectedFriends, setSelectedFriends] = useState<string[]>([]);
