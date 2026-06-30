@@ -48,7 +48,7 @@ Rewrite all candidate data for the **2027** election (not 2022). The quiz questi
    c. Move to next candidate
 5. **Generate `candidates-answers.json`** with the validated data
 6. **Update `.txt` files** for human readability
-7. **Sync** to `app-react-router/src/shared/` if needed
+7. **Sync** to `app-tanstack/src/shared/` if needed
 
 ## Files to modify
 - `api-express/src/shared/utils/quizz.ts` — candidate list (IDs, names)
@@ -68,4 +68,4 @@ Rewrite all candidate data for the **2027** election (not 2022). The quiz questi
 - [ ] Generate answers for each candidate (one by one, with user validation)
 - [ ] Write candidates-answers.json
 - [ ] Write .txt files
-- [ ] Sync to app-react-router/src/shared/
+- [ ] Sync to app-tanstack/src/shared/

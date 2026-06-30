@@ -1,2 +1,0 @@
--- AlterEnum
-ALTER TYPE "Advantage" ADD VALUE 'COACHING_30_OFF';

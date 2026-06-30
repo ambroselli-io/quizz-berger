@@ -139,6 +139,6 @@ Pour chaque thème, on va :
 
 ## Vérification
 - Une fois tous les thèmes terminés : valider la structure JSON
-- Type-check : `cd app-react-router && npx tsc --noEmit --project tsconfig.app.json`
-- Build : `cd app-react-router && npx vite build`
+- Type-check : `cd app-tanstack && npx tsc --noEmit --project tsconfig.app.json`
+- Build : `cd app-tanstack && npx vite build`
 - Test instinctif par question : « est-ce qu'une vraie personne de [n'importe quelle sensibilité politique] choisirait naturellement une de ces réponses ? »

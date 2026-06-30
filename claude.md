@@ -6,57 +6,57 @@ Goal: show people that politics isn't black and white — make them relax, make 
 
 # Architecture
 
-- **App**: `app-react-router/` — React 19 + React Router v7 + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI
+- **App**: `app-tanstack/` — React 19 + TanStack Start (TanStack Router, SSR) + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI. File-based routes in `src/routes/` (thin: `loader`/`head()`/`notFound()`); page components in `src/pages/`. Per-page SEO meta via each route's `head()` + the `seoHead()` helper in `src/utils/seo-head.ts`. Router API is accessed through the compat shim `src/lib/router.tsx` (`Link`/`useNavigate`/`useParams`). Prod is served by `server.mjs` (Express adapter over the `dist/server/server.js` web-fetch handler). `src/routeTree.gen.ts` is generated (gitignored) by the Vite plugin / `tsr generate`.
 - **API**: `api-express/` — Express, JWT cookies, CORS, Postgres via Prisma (user answers stored in `Answer` table, keyed by `themeId` + `questionId`)
 - **Mobile**: `expo/` — Expo / React Native version
-- **Shared code**: duplicated in `app-react-router/src/shared/`, `api-express/src/shared/` AND `expo/src/shared/` (no sync script — manual copy-paste between the three)
-- **Candidates data**: `api-express/src/shared/candidates-answers.json` is the source of truth for candidate answers (static JSON, not DB). Text files in `api-express/src/shared/candidates-answers/*.txt` are human-readable versions. When updating candidates, edit the JSON and copy to `app-react-router/src/shared/` and `expo/src/shared/`.
-- **Candidate pictures**: PNGs in `app-react-router/public/candidates/{slug}.png`. To generate: fetch portrait from Wikipedia API (`action=query&prop=pageimages&pithumbsize=800`), remove background with `rembg` (`pip install "rembg[cpu]"`), resize to max 800px, save as PNG.
+- **Shared code**: duplicated in `app-tanstack/src/shared/`, `api-express/src/shared/` AND `expo/src/shared/` (no sync script — manual copy-paste between the three)
+- **Candidates data**: `api-express/src/shared/candidates-answers.json` is the source of truth for candidate answers (static JSON, not DB). Text files in `api-express/src/shared/candidates-answers/*.txt` are human-readable versions. When updating candidates, edit the JSON and copy to `app-tanstack/src/shared/` and `expo/src/shared/`.
+- **Candidate pictures**: PNGs in `app-tanstack/public/candidates/{slug}.png`. To generate: fetch portrait from Wikipedia API (`action=query&prop=pageimages&pithumbsize=800`), remove background with `rembg` (`pip install "rembg[cpu]"`), resize to max 800px, save as PNG.
 
 # Conventions
 
 - French UI strings, English code/comments
 - Tailwind mobile-first, `max-lg:` for mobile overrides
-- Path alias: `@app` → `app-react-router/src` (tsconfig + vite)
+- Path alias: `@app` → `app-tanstack/src` (tsconfig + vite)
 - Image CDN: `https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com/`
 - API host: dev = `localhost:5179`, prod = `api.quizz-du-berger.com`
 
 # Dev
 
-- App: `cd app-react-router && npm run dev` (port 5178)
+- App: `cd app-tanstack && npm run dev` (port 5178)
 - API: `cd api-express && npm run dev` (port 5179)
-- Type check: `cd app-react-router && npx tsc --noEmit --project tsconfig.app.json`
-- Build: `cd app-react-router && npx vite build`
+- Type check: `cd app-tanstack && npm run typecheck` (runs `tsr generate` then `tsc -b` — needed because `routeTree.gen.ts` is gitignored)
+- Build: `cd app-tanstack && npm run build` (generates sitemap, then `vite build` → `dist/`)
 
 # Modifying a question
 
 Quiz questions live in `quizz-2027.json`, **duplicated in 3 places** (no sync script):
 - `api-express/src/shared/quizz-2027.json`
-- `app-react-router/src/shared/quizz-2027.json`
+- `app-tanstack/src/shared/quizz-2027.json`
 - `expo/src/shared/quizz-2027.json`
 
 Question shape: `{ _id, fr, help?, answers: string[], scores: number[][] }`. **Invariant: `scores.length === answers.length` AND every `scores[i].length === answers.length`** — the scoring algorithm in `*/shared/utils/score.ts` indexes `question.scores[answer.answerIndex]` and will silently break otherwise.
 
-Type definitions are also duplicated, not shared: `api-express/src/types/quizz.ts`, `app-react-router/src/types/quizz.ts`, `expo/src/types/quizz.ts`.
+Type definitions are also duplicated, not shared: `api-express/src/types/quizz.ts`, `app-tanstack/src/types/quizz.ts`, `expo/src/types/quizz.ts`.
 
 ## Adding a question
 
 1. Add the entry inside the right theme's `questions[]` in **all 3** `quizz-2027.json` files.
 2. For each candidate in **all 3** `candidates-answers.json` files: add `{ themeId, questionId, answerIndex }` to their `answers[]` (otherwise the candidate is considered as not having answered).
 3. Regenerate `api-express/src/shared/candidates-answers/*.txt` via `node api-express/scripts/extract-all-answers.js` (human-readable export, optional but keep it in sync).
-4. If it's a "hot topic" question that should have its own SEO page: add an entry in `hotTopicSlugs` in `app-react-router/src/utils/seo.ts` (maps `_id` → `{ slug, seoTitle }`).
-5. Regenerate the sitemap: `npx tsx app-react-router/scripts/generate-sitemap.ts`.
-6. Question/theme/candidate counts shown in marketing copy are derived dynamically: `quizzQuestionsCount` and `quizzThemesCount` from `app-react-router/src/utils/quizz.ts`, `candidatesCount` from `app-react-router/src/utils/seo.ts`. Use those when adding new copy — don't hard-code numbers.
+4. If it's a "hot topic" question that should have its own SEO page: add an entry in `hotTopicSlugs` in `app-tanstack/src/utils/seo.ts` (maps `_id` → `{ slug, seoTitle }`).
+5. Regenerate the sitemap: `npx tsx app-tanstack/scripts/generate-sitemap.ts`.
+6. Question/theme/candidate counts shown in marketing copy are derived dynamically: `quizzQuestionsCount` and `quizzThemesCount` from `app-tanstack/src/utils/quizz.ts`, `candidatesCount` from `app-tanstack/src/utils/seo.ts`. Use those when adding new copy — don't hard-code numbers.
 
 ## Removing a question
 
 1. Delete the entry in **all 3** `quizz-2027.json`.
 2. Delete the matching `{ questionId }` entries in **all 3** `candidates-answers.json` for every candidate.
 3. Regenerate the `.txt` candidate files.
-4. Remove the `_id` from `hotTopicSlugs` in `app-react-router/src/utils/seo.ts` if it was there.
+4. Remove the `_id` from `hotTopicSlugs` in `app-tanstack/src/utils/seo.ts` if it was there.
 5. Regenerate sitemap.
 6. Orphaned user answers remain in the Prisma `Answer` table (keyed by `questionId`) — harmless but consider a cleanup script if the volume matters.
-7. The URL `/question/{themeId}/{questionId}` (React Router) and the slug-based `/question-politique/{slug}` (SEO) become 404 — acceptable for old shares.
+7. The URL `/question/{themeId}/{questionId}` (app route) and the slug-based `/question-politique/{slug}` (SEO) become 404 — acceptable for old shares.
 
 ## Changing a question's `_id`
 
