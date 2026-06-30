@@ -17,7 +17,10 @@ export default function Home() {
   const themes = useMemo(() => [...quizz].sort(() => 0.5 - Math.random()), []);
   const [random, setRandom] = useState(() => Math.round(Math.random() * 15));
 
-  const [onboardingData, setOnboardingData] = useState<{ data: PodiumStep[]; user: { pseudo?: string; color?: string } | null }>({ data: [], user: null });
+  const [onboardingData, setOnboardingData] = useState<{
+    data: PodiumStep[];
+    user: { pseudo?: string; color?: string } | null;
+  }>({ data: [], user: null });
   const [countUsers, setCountUsers] = useState(207569);
   const [countAnswers, setCountAnswers] = useState(9721827);
 
@@ -45,15 +48,22 @@ export default function Home() {
           <h1 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
             QUI est mon candidat&nbsp;idéal&nbsp;?
           </h1>
-          <QuizzButton onClick={() => navigate('/themes')} className="h-[65px] w-[240px] text-base font-semibold">
+          <QuizzButton
+            onClick={() => navigate('/themes')}
+            className="h-[65px] w-[240px] text-base font-semibold"
+          >
             Répondre au Quizz
           </QuizzButton>
           <h3 className="mt-10 mb-10 max-w-[770px] text-center font-[Merriweather_Sans] text-xl font-light leading-[200%] text-white/80">
-            Répondez de façon <strong>anonyme</strong> au Quizz&nbsp;du&nbsp;Berger pour connaître le ou les candidats
-            <strong> de l'élection présidentielle de 2027</strong> qui se rapprochent le plus de vos idées, et
-            <strong> faites&nbsp;votre&nbsp;choix&nbsp;!</strong>
+            70% des électeurs demanderont l'avis <br />
+            d'une Intelligence Artificielle pour savoir quoi voter.
+            <br />
+            <strong>Pas vous</strong>.
           </h3>
-          <Link to="/login" className="mt-5 text-center font-[Merriweather_Sans] font-light leading-relaxed text-white/80">
+          <Link
+            to="/login"
+            className="mt-5 text-center font-[Merriweather_Sans] font-light leading-relaxed text-white/80"
+          >
             Vous avez enregistré vos résultats&nbsp;? <strong>Connectez&#8209;vous</strong>
           </Link>
         </div>
@@ -81,18 +91,24 @@ export default function Home() {
         <div className="mt-24 flex w-full items-center justify-evenly max-lg:flex-col max-lg:gap-4">
           <div className="flex shrink-0 basis-[40%] flex-col items-center text-center">
             <h3 className="flex flex-col items-center">
-              <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">1</span>
+              <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">
+                1
+              </span>
               Répondez aux questions que vous voulez
             </h3>
             <p className="mt-4 text-center">
               <small className="opacity-50">parmi</small>
-              <br /><br />
+              <br />
+              <br />
               <b>{themes.length} thèmes </b>
               <br />
               <b>{quizzQuestions.length} questions </b>
             </p>
           </div>
-          <div className="flex shrink-0 basis-[40%] cursor-pointer flex-wrap justify-center gap-4" onClick={() => navigate('/themes')}>
+          <div
+            className="flex shrink-0 basis-[40%] cursor-pointer flex-wrap justify-center gap-4"
+            onClick={() => navigate('/themes')}
+          >
             {themes.slice(0, 3).map((theme) => (
               <ThemeButton key={theme._id} theme={theme} onClick={() => navigate('/themes')} />
             ))}
@@ -103,21 +119,29 @@ export default function Home() {
         <div className="mt-24 flex w-full flex-row-reverse items-center justify-evenly max-lg:flex-col max-lg:gap-4">
           <div className="flex shrink-0 basis-[40%] flex-col items-center text-center">
             <h3 className="flex flex-col items-center">
-              <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">2</span>
-              Comparez votre pensée<br />à celle des candidats
+              <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">
+                2
+              </span>
+              Comparez la pensée des candidats
+              <br />à la vôtre
             </h3>
             <p className="mt-4 text-center">
               <b>Globalement et par thème</b>
-              <br /><br />
+              <br />
+              <br />
               <small className="inline max-w-[50ch] opacity-50">
-                Le classement général est une chose, celui thème par thème vous aidera à mieux choisir votre candidat,
-                celui ou celle qui sera le plus proche de votre pensée complexe, en fonction de vos thèmes favoris.
+                Le classement général est une chose, celui thème par thème vous aidera à mieux comprendre les
+                candidats, à trouver celui ou celle qui sera le plus proche de votre pensée complexe, en
+                fonction de vos thèmes favoris.
               </small>
             </p>
           </div>
           <div
             className="flex shrink-0 basis-[40%] cursor-pointer flex-col overflow-hidden rounded-2xl text-[10px] max-lg:basis-auto max-lg:w-full max-lg:overflow-visible max-lg:rounded-none"
-            style={{ borderColor: onboardingData?.user?.color, borderWidth: onboardingData?.user?.color ? 1 : 0 }}
+            style={{
+              borderColor: onboardingData?.user?.color,
+              borderWidth: onboardingData?.user?.color ? 1 : 0,
+            }}
             onClick={() => setRandom(Math.round(Math.random() * 15))}
           >
             <div className="relative h-[50vh] w-full overflow-y-visible max-lg:h-[65vw]">
@@ -136,14 +160,18 @@ export default function Home() {
         <div className="mt-24 flex w-full items-center justify-evenly max-lg:flex-col max-lg:gap-4">
           <div className="flex shrink-0 basis-[40%] flex-col items-center text-center">
             <h3 className="flex flex-col items-center">
-              <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">3</span>
-              Confrontez vos convictions<br />avec vos amis !
+              <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">
+                3
+              </span>
+              Confrontez vos convictions
+              <br />
+              avec vos amis !
             </h3>
             <p className="mt-4 text-center">
               <br />
               <small className="inline max-w-[50ch] opacity-50">
-                Vous pouvez <b>enregistrer vos résultats</b> sous un <b>pseudonyme</b> et ajouter le pseudo de vos amis
-                pour comparer vos convictions. Débat assuré, et de qualité !
+                Vous pouvez <b>enregistrer vos résultats</b> sous un <b>pseudonyme</b> et ajouter le pseudo de
+                vos amis pour comparer vos convictions. Débat assuré, et de qualité !
               </small>
             </p>
           </div>
@@ -162,7 +190,8 @@ export default function Home() {
       <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
           <b>{Intl.NumberFormat('fr').format(countUsers)}</b> quizz effectués
-          <br /><br />
+          <br />
+          <br />
           <b>{Intl.NumberFormat('fr').format(countAnswers)}</b> réponses données
         </h2>
       </section>
@@ -178,7 +207,9 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="mb-4 flex items-center justify-between">
               <h3 className="font-[Merriweather] text-xl font-bold">Les candidats</h3>
-              <Link to="/candidats" className="text-sm text-blue-600 no-underline hover:underline">Tous les {candidateSlugMap.length} →</Link>
+              <Link to="/candidats" className="text-sm text-blue-600 no-underline hover:underline">
+                Tous les {candidateSlugMap.length} →
+              </Link>
             </div>
             <ul className="flex flex-wrap gap-2">
               {candidateSlugMap.slice(0, 12).map((c) => (
@@ -187,7 +218,10 @@ export default function Home() {
                     to={`/candidat/${c.slug}`}
                     className="flex items-center gap-1.5 rounded-full border border-gray-200 px-3 py-1.5 text-xs text-quizz-dark no-underline hover:bg-gray-50"
                   >
-                    <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: c.color }} />
+                    <span
+                      className="inline-block h-2 w-2 rounded-full"
+                      style={{ backgroundColor: c.color }}
+                    />
                     {c.pseudo}
                   </Link>
                 </li>
@@ -199,7 +233,9 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="mb-4 flex items-center justify-between">
               <h3 className="font-[Merriweather] text-xl font-bold">Les sujets</h3>
-              <Link to="/sujets" className="text-sm text-blue-600 no-underline hover:underline">Tous les {themeSlugMap.length} →</Link>
+              <Link to="/sujets" className="text-sm text-blue-600 no-underline hover:underline">
+                Tous les {themeSlugMap.length} →
+              </Link>
             </div>
             <ul className="flex flex-wrap gap-2">
               {themeSlugMap.slice(0, 10).map((theme) => (
@@ -219,7 +255,9 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="mb-4 flex items-center justify-between">
               <h3 className="font-[Merriweather] text-xl font-bold">Comparer</h3>
-              <Link to="/comparer" className="text-sm text-blue-600 no-underline hover:underline">Toutes les {comparisonPairs.length} →</Link>
+              <Link to="/comparer" className="text-sm text-blue-600 no-underline hover:underline">
+                Toutes les {comparisonPairs.length} →
+              </Link>
             </div>
             <ul className="space-y-2">
               {comparisonPairs.slice(0, 6).map((pair) => (
@@ -240,7 +278,9 @@ export default function Home() {
         <div className="mt-12 w-full max-w-6xl">
           <div className="mb-4 flex items-center justify-between">
             <h3 className="font-[Merriweather] text-xl font-bold">Sujets brûlants</h3>
-            <Link to="/sujets" className="text-sm text-blue-600 no-underline hover:underline">Voir plus →</Link>
+            <Link to="/sujets" className="text-sm text-blue-600 no-underline hover:underline">
+              Voir plus →
+            </Link>
           </div>
           <ul className="grid gap-2 lg:grid-cols-2">
             {hotTopicQuestions.slice(0, 8).map((q) => (

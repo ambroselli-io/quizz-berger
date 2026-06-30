@@ -21,7 +21,7 @@ const ThemeButton = ({ theme, onPress, userAnswers = [] }: ThemeButtonProps) => 
   return (
     <Pressable
       onPress={onPress}
-      className="relative overflow-hidden rounded-lg border-2 bg-white px-4 py-3"
+      className="relative overflow-hidden rounded-lg border-2 bg-white"
       style={{ borderColor: backgroundColor, borderCurve: 'continuous' }}
     >
       {/* Progress fill */}
@@ -32,10 +32,12 @@ const ThemeButton = ({ theme, onPress, userAnswers = [] }: ThemeButtonProps) => 
           backgroundColor: `${backgroundColor}CC`,
         }}
       />
-      <Text className="relative text-sm font-medium text-quizz-dark">{fr}</Text>
-      <Text className="relative mt-0.5 text-right text-[10px] text-quizz-dark/60">
-        {progress ? `${userThemeAnswers} / ${questions.length}` : `${questions.length} questions`}
-      </Text>
+      <View className="px-4 py-3">
+        <Text className="relative text-sm font-medium text-quizz-dark">{fr}</Text>
+        <Text className="relative mt-0.5 text-right text-[10px] text-quizz-dark/60">
+          {progress ? `${userThemeAnswers} / ${questions.length}` : `${questions.length} questions`}
+        </Text>
+      </View>
     </Pressable>
   );
 };

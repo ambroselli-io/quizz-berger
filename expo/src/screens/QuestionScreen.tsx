@@ -49,7 +49,7 @@ export default function QuestionScreen() {
       const nextQuestionId = questions[questionIndex + 1]._id;
       navigation.setParams({ themeId, questionId: nextQuestionId });
     } else {
-      navigation.navigate('Themes');
+      navigation.popTo('Themes');
     }
   };
 
@@ -58,7 +58,7 @@ export default function QuestionScreen() {
       const prevQuestionId = questions[questionIndex - 1]._id;
       navigation.setParams({ themeId, questionId: prevQuestionId });
     } else {
-      navigation.navigate('Themes');
+      navigation.popTo('Themes');
     }
   };
 
@@ -79,10 +79,10 @@ export default function QuestionScreen() {
     <View className="flex-1 bg-white">
       {/* Theme header */}
       <View
-        className="flex-row items-center justify-between px-4 pb-3 pt-14"
+        className="flex-row items-center justify-between px-4 pb-3 pt-20"
         style={{ backgroundColor: `${theme.backgroundColor}CC` }}
       >
-        <Pressable onPress={() => navigation.navigate('Themes')}>
+        <Pressable onPress={() => navigation.popTo('Themes')}>
           <Text className="text-sm">‹ Thèmes</Text>
         </Pressable>
         <Text

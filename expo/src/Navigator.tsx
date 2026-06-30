@@ -7,7 +7,9 @@ import QuestionScreen from '~/screens/QuestionScreen';
 import ResultScreen from '~/screens/ResultScreen';
 import LoginScreen from '~/screens/LoginScreen';
 import AllQuestionsScreen from '~/screens/AllQuestionsScreen';
+import FilterCandidatesScreen from '~/screens/FilterCandidatesScreen';
 import ShareScreen from '~/screens/ShareScreen';
+import Header from '~/components/Header';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -16,9 +18,7 @@ export default function Navigator() {
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerStyle: { backgroundColor: '#111827' },
-        headerTintColor: '#ffffff',
-        headerTitleStyle: { fontFamily: 'Merriweather_700Bold' },
+        header: (props) => <Header {...props} />,
         contentStyle: { backgroundColor: '#ffffff' },
       }}
     >
@@ -30,7 +30,10 @@ export default function Navigator() {
       <Stack.Screen
         name="Themes"
         component={ThemesScreen}
-        options={{ title: 'Choisissez un thème' }}
+        options={{
+          title: 'Choisissez un thème',
+          headerBackTitle: 'Accueil',
+        }}
       />
       <Stack.Screen
         name="Question"
@@ -40,18 +43,33 @@ export default function Navigator() {
       <Stack.Screen
         name="Result"
         component={ResultScreen}
-        options={{ title: 'Résultats' }}
+        options={{
+          title: 'Résultats',
+          headerBackTitle: 'Thèmes',
+        }}
       />
       <Stack.Screen
         name="AllQuestions"
         component={AllQuestionsScreen}
-        options={{ title: 'Toutes les questions' }}
+        options={{
+          title: 'Toutes les questions',
+          headerBackTitle: 'Résultats',
+        }}
+      />
+      <Stack.Screen
+        name="FilterCandidates"
+        component={FilterCandidatesScreen}
+        options={{
+          title: 'Filtrer les candidats',
+          headerBackTitle: 'Résultats',
+        }}
       />
       <Stack.Screen
         name="Login"
         component={LoginScreen}
         options={{
           title: 'Connexion',
+          headerBackTitle: 'Fermer',
           presentation: 'modal',
         }}
       />
@@ -60,6 +78,7 @@ export default function Navigator() {
         component={ShareScreen}
         options={{
           title: 'Partager',
+          headerBackTitle: 'Fermer',
           presentation: 'modal',
         }}
       />

@@ -4,6 +4,7 @@ export type RootStackParamList = {
   Question: { themeId: string; questionId: string };
   Result: { userPseudo?: string } | undefined;
   AllQuestions: { candidatePseudo?: string } | undefined;
+  FilterCandidates: undefined;
   Login: undefined;
   Share: undefined;
 };
