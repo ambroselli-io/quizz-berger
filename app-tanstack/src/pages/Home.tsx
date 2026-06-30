@@ -167,9 +167,7 @@ export default function Home() {
               <span className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-yellow-400 text-quizz-dark">
                 3
               </span>
-              Confrontez vos convictions
-              <br />
-              avec vos amis !
+              Confrontez vos amis !
             </h3>
             <p className="mt-4 text-center">
               <br />
