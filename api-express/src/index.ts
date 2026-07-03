@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
+import compression from "compression";
 import helmet from "helmet";
 import logger from "morgan";
 import cookieParser from "cookie-parser";
@@ -23,6 +24,7 @@ dotenv.config({ path: ".env" });
 // Put together a schema
 const app = express();
 app.use(logger("tiny"));
+app.use(compression());
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
