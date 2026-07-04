@@ -12,6 +12,7 @@ import Header from '@app/components/Header';
 import BottomTabBar from '@app/components/BottomTabBar';
 import NotFound from '@app/components/NotFound';
 import UnexpectedError from '@app/components/UnexpectedError';
+import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME } from '@app/utils/seo';
 
 const DEFAULT_TITLE = 'Le Quizz du Berger | Quel est votre candidat idéal ?';
 const DEFAULT_DESCRIPTION =
@@ -27,6 +28,23 @@ const WEBAPP_JSONLD = {
     "Quiz politique pour l'élection présidentielle française 2027. Comparez vos idées avec 24 candidats sur 21 thèmes et 119 questions.",
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+  inLanguage: 'fr',
+  author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+  sameAs: [APP_STORE_URL],
+};
+
+const MOBILE_APP_JSONLD = {
+  '@context': 'https://schema.org',
+  '@type': 'MobileApplication',
+  name: APP_NAME,
+  url: 'https://www.quizz-du-berger.com',
+  downloadUrl: APP_STORE_URL,
+  installUrl: APP_STORE_URL,
+  description:
+    "Application iOS du Quizz du Berger : répondez aux questions que vous voulez et découvrez le candidat à la présidentielle 2027 qui pense comme vous.",
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'iOS',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   inLanguage: 'fr',
   author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
@@ -51,6 +69,12 @@ export const Route = createRootRoute({
       { name: 'twitter:title', content: DEFAULT_TITLE },
       { name: 'twitter:description', content: DEFAULT_DESCRIPTION },
       { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
+      // Safari iOS Smart App Banner (shown on top of the page, prompts to open/install the app)
+      { name: 'apple-itunes-app', content: `app-id=${APP_STORE_ID}` },
+      // Facebook / OG App Links: let social apps deep-link into the native iOS app
+      { property: 'al:ios:app_store_id', content: APP_STORE_ID },
+      { property: 'al:ios:app_name', content: APP_NAME },
+      { property: 'al:ios:url', content: `${APP_URL_SCHEME}://` },
     ],
     links: [
       { rel: 'stylesheet', href: appCss },
@@ -58,7 +82,10 @@ export const Route = createRootRoute({
       { rel: 'icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/logo192.png' },
     ],
-    scripts: [{ type: 'application/ld+json', children: JSON.stringify(WEBAPP_JSONLD) }],
+    scripts: [
+      { type: 'application/ld+json', children: JSON.stringify(WEBAPP_JSONLD) },
+      { type: 'application/ld+json', children: JSON.stringify(MOBILE_APP_JSONLD) },
+    ],
   }),
   component: RootComponent,
   errorComponent: RootErrorComponent,

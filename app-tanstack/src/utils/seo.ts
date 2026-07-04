@@ -4,6 +4,14 @@ import type { QuizzTheme, QuizzQuestion } from '@app/types/quizz';
 
 const quizz: QuizzTheme[] = rawQuizzData as QuizzTheme[];
 
+// --- Native app (App Store) ---
+
+export const APP_STORE_ID = '6786041827';
+export const APP_STORE_URL = `https://apps.apple.com/fr/app/quizz-du-berger-vote-2027/id${APP_STORE_ID}`;
+export const APP_NAME = 'Quizz du Berger – Vote 2027';
+/** Custom URL scheme declared in expo app.config.js (`scheme`). */
+export const APP_URL_SCHEME = 'quizz-du-berger';
+
 // --- Theme slug mappings ---
 
 function slugify(text: string): string {
