@@ -11,8 +11,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 96,
     "pseudos": [
-      "Jean-Luc Mélenchon",
       "Juan Branco",
+    ],
+  },
+  {
+    "percent": 96,
+    "pseudos": [
+      "Jean-Luc Mélenchon",
     ],
   },
   {
@@ -82,13 +87,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 48,
+    "percent": 49,
     "pseudos": [
       "François Bayrou",
     ],
   },
   {
-    "percent": 48,
+    "percent": 47,
     "pseudos": [
       "Patrick Sébastien",
     ],
@@ -112,7 +117,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 28,
+    "percent": 29,
     "pseudos": [
       "Gabriel Attal",
     ],
@@ -130,7 +135,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 19,
+    "percent": 20,
     "pseudos": [
       "Gérald Darmanin",
     ],

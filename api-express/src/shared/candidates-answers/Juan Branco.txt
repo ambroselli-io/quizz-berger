@@ -94,6 +94,9 @@ question-2027-corr-04: Pensez-vous que le système politique français est globa
 question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
 [0] Uniquement par de l'argent public, à parts égales pour tous les candidats : c'est le seul moyen d'avoir une vraie démocratie
 
+question-2027-corr-06: Un élu condamné pour atteinte à la probité (détournement de fonds, corruption...) doit-il être immédiatement inéligible ?
+[0] Oui, et il faudrait aller plus loin : inéligibilité à vie pour toute atteinte à la probité
+
 
 Culture:
 

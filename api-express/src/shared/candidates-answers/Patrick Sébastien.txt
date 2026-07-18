@@ -94,6 +94,9 @@ question-2027-corr-04: Pensez-vous que le système politique français est globa
 question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
 [1] Principalement par de l'argent public, avec un plafond très bas pour les dons privés
 
+question-2027-corr-06: Un élu condamné pour atteinte à la probité (détournement de fonds, corruption...) doit-il être immédiatement inéligible ?
+[3] Non : ce n'est pas aux juges d'écarter un élu, seuls les électeurs doivent en décider
+
 
 Culture:
 

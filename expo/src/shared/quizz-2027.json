@@ -1401,6 +1401,55 @@
             0
           ]
         ]
+      },
+      {
+        "_id": "question-2027-corr-06",
+        "fr": "Un élu condamné pour atteinte à la probité (détournement de fonds, corruption...) doit-il être immédiatement inéligible ?",
+        "help": "https://www.leclubdesjuristes.com/justice/affaire-le-pen-ineligibilite-et-execution-provisoire-ce-que-dit-vraiment-le-droit-7978/",
+        "answers": [
+          "Oui, et il faudrait aller plus loin : inéligibilité à vie pour toute atteinte à la probité",
+          "Oui : la loi doit s'appliquer aux élus comme à tout le monde, sans attendre la fin des recours",
+          "Non : l'inéligibilité ne devrait s'appliquer qu'après une condamnation définitive, une fois tous les recours épuisés",
+          "Non : ce n'est pas aux juges d'écarter un élu, seuls les électeurs doivent en décider",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [
+            5,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            5,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
       }
     ]
   },

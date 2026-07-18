@@ -20,7 +20,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Corruption et lobbying",
     "id": "theme-2027-corruption",
-    "questionCount": 5,
+    "questionCount": 6,
   },
   {
     "fr": "Culture",
