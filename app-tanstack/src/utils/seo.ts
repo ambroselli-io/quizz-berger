@@ -151,10 +151,10 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'RIC (Référendum d\'Initiative Citoyenne) : les candidats 2027',
     seoDescription: 'RIC : les candidats à la présidentielle 2027 sont-ils pour ou contre le référendum d\'initiative citoyenne ?',
   },
-  'question-2027-sante-03': {
+  'question-2027-soc-07': {
     slug: 'euthanasie-loi-france',
-    seoTitle: 'Euthanasie : les positions des candidats à la présidentielle 2027',
-    seoDescription: 'Fin de vie, euthanasie, suicide assisté : que proposent les candidats à la présidentielle 2027 ?',
+    seoTitle: 'Aide à mourir : les positions des candidats à la présidentielle 2027',
+    seoDescription: 'Fin de vie, euthanasie, suicide assisté : que proposent les candidats à la présidentielle 2027 sur la loi sur l\'aide à mourir ?',
   },
   'question-2027-sante-05': {
     slug: 'deserts-medicaux-france',
