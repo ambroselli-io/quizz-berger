@@ -15,7 +15,6 @@ import {
   questionSlugMap,
   hotTopicQuestions,
   comparisonPairs,
-  allComparisonPairs,
 } from '../src/utils/seo';
 import { articles } from '../src/content/articles';
 
@@ -62,11 +61,11 @@ function buildUrls(): SitemapUrl[] {
     urls.push({ loc: `/question-politique/${q.slug}`, priority, changefreq: 'monthly' });
   }
 
-  // Comparison pages — curated pairs get higher priority
-  const curatedSlugs = new Set(comparisonPairs.map((p) => p.slug));
-  for (const pair of allComparisonPairs) {
-    const priority = curatedSlugs.has(pair.slug) ? '0.7' : '0.5';
-    urls.push({ loc: `/comparer/${pair.slug}`, priority, changefreq: 'monthly' });
+  // Comparison pages — curated pairs only. The full pairwise tail (~300 pages)
+  // stays reachable on the site but is deliberately kept out of the sitemap:
+  // Google mass-demoted it to "Crawled - currently not indexed" (July 2026).
+  for (const pair of comparisonPairs) {
+    urls.push({ loc: `/comparer/${pair.slug}`, priority: '0.7', changefreq: 'monthly' });
   }
 
   // Blog articles

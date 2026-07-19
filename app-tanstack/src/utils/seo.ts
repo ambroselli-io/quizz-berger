@@ -111,42 +111,37 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Agriculture biologique : les positions des candidats 2027',
     seoDescription: `Quelle place pour le bio en France ? Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
-  'question-2027-climat-01': {
+  'question-2027-climat-02': {
     slug: 'nucleaire-france-avenir',
     seoTitle: 'Nucléaire en France : que proposent les candidats à la présidentielle 2027 ?',
     seoDescription: `Relancer le nucléaire ou en sortir ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
-  'question-2027-climat-03': {
+  'question-2027-climat-04': {
     slug: 'voiture-electrique-interdiction-thermique',
     seoTitle: 'Voiture électrique : les positions des candidats 2027',
-    seoDescription: 'Interdiction des voitures thermiques en 2035 : pour ou contre ? Les candidats à la présidentielle répondent.',
+    seoDescription: 'Voiture individuelle, électrique, fin du thermique : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-immigration-01': {
+  'question-2027-immi-01': {
     slug: 'immigration-france-2027',
     seoTitle: 'Immigration : les positions des candidats à la présidentielle 2027',
     seoDescription: `Immigration en France : régularisation, quotas ou immigration zéro ? Comparez les positions des ${candidatesCount} candidats.`,
   },
-  'question-2027-immigration-03': {
-    slug: 'droit-du-sol-nationalite',
-    seoTitle: 'Droit du sol : les positions des candidats à la présidentielle 2027',
-    seoDescription: 'Droit du sol, droit du sang, naturalisation : que proposent les candidats à la présidentielle 2027 ?',
-  },
-  'question-2027-depenses-01': {
+  'question-2027-dep-04': {
     slug: 'dette-publique-france',
     seoTitle: 'Dette publique : les propositions des candidats à la présidentielle 2027',
     seoDescription: 'Réduire la dette, austérité ou relance ? Comparez les positions des candidats à la présidentielle 2027.',
   },
-  'question-2027-fiscal-01': {
-    slug: 'impot-sur-le-revenu-reforme',
-    seoTitle: 'Impôt sur le revenu : les positions des candidats 2027',
-    seoDescription: 'Réforme fiscale, flat tax, ISF : que proposent les candidats à la présidentielle 2027 ?',
+  'question-2027-fisc-01': {
+    slug: 'impots-des-plus-riches',
+    seoTitle: 'Impôts des plus riches : les positions des candidats 2027',
+    seoDescription: 'Faut-il augmenter les impôts des plus riches ? ISF, taxation du capital : les candidats à la présidentielle 2027 répondent.',
   },
-  'question-2027-gouvernance-01': {
+  'question-2027-gouv-03': {
     slug: 'proportionnelle-elections',
     seoTitle: 'Proportionnelle : quel candidat est pour ? Présidentielle 2027',
     seoDescription: 'Scrutin proportionnel aux législatives : qui est pour, qui est contre ? Les positions des candidats 2027.',
   },
-  'question-2027-gouvernance-03': {
+  'question-2027-gouv-04': {
     slug: 'referendum-initiative-citoyenne-ric',
     seoTitle: 'RIC (Référendum d\'Initiative Citoyenne) : les candidats 2027',
     seoDescription: 'RIC : les candidats à la présidentielle 2027 sont-ils pour ou contre le référendum d\'initiative citoyenne ?',
@@ -156,52 +151,52 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Aide à mourir : les positions des candidats à la présidentielle 2027',
     seoDescription: 'Fin de vie, euthanasie, suicide assisté : que proposent les candidats à la présidentielle 2027 sur la loi sur l\'aide à mourir ?',
   },
-  'question-2027-sante-05': {
+  'question-2027-san-03': {
     slug: 'deserts-medicaux-france',
     seoTitle: 'Déserts médicaux : les propositions des candidats 2027',
     seoDescription: 'Déserts médicaux en France : contraindre les médecins, inciter, télémédecine ? Les candidats répondent.',
   },
-  'question-2027-societe-01': {
+  'question-2027-pol-07': {
     slug: 'legalisation-cannabis-france',
     seoTitle: 'Légalisation du cannabis : les positions des candidats 2027',
     seoDescription: 'Cannabis : légalisation, dépénalisation ou répression ? Comparez les positions des candidats à la présidentielle.',
   },
-  'question-2027-societe-03': {
+  'question-2027-soc-03': {
     slug: 'laicite-religion-france',
     seoTitle: 'Laïcité : les positions des candidats à la présidentielle 2027',
     seoDescription: 'Laïcité, port du voile, signes religieux : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-societe-07': {
+  'question-2027-soc-05': {
     slug: 'gpa-pma-france',
     seoTitle: 'GPA et PMA : les positions des candidats à la présidentielle 2027',
     seoDescription: 'GPA, PMA pour toutes : les candidats à la présidentielle 2027 sont-ils pour ou contre ?',
   },
-  'question-2027-police-01': {
+  'question-2027-pol-05': {
     slug: 'police-securite-france',
     seoTitle: 'Sécurité : les propositions des candidats à la présidentielle 2027',
-    seoDescription: 'Police, sécurité, vidéosurveillance : comparez les positions des candidats à la présidentielle 2027.',
+    seoDescription: 'Police, sécurité, lutte contre la délinquance : comparez les positions des candidats à la présidentielle 2027.',
   },
-  'question-2027-pouvoir-achat-01': {
+  'question-2027-trav-05': {
     slug: 'smic-augmentation-salaires',
     seoTitle: 'SMIC et salaires : les propositions des candidats 2027',
     seoDescription: 'Augmentation du SMIC, pouvoir d\'achat : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-logement-01': {
+  'question-2027-log-06': {
     slug: 'crise-logement-france',
     seoTitle: 'Crise du logement : les propositions des candidats 2027',
     seoDescription: 'Logement, loyers, construction : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-education-01': {
+  'question-2027-edu-01': {
     slug: 'ecole-education-reforme',
     seoTitle: 'Éducation : les propositions des candidats à la présidentielle 2027',
-    seoDescription: 'Réforme de l\'école, uniforme, programmes : comparez les positions des candidats 2027.',
+    seoDescription: 'Budget de l\'Éducation nationale, moyens pour l\'école : comparez les positions des candidats 2027.',
   },
-  'question-2027-numerique-01': {
+  'question-2027-num-01': {
     slug: 'intelligence-artificielle-regulation',
     seoTitle: 'Intelligence artificielle : les positions des candidats 2027',
-    seoDescription: 'Régulation de l\'IA, souveraineté numérique : que proposent les candidats à la présidentielle 2027 ?',
+    seoDescription: 'Impact et régulation de l\'IA, souveraineté numérique : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-economie-01': {
+  'question-2027-eco-02': {
     slug: 'reindustrialisation-france',
     seoTitle: 'Réindustrialisation : les propositions des candidats 2027',
     seoDescription: 'Relocalisation, industrie française : que proposent les candidats à la présidentielle 2027 ?',

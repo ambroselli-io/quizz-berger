@@ -1,0 +1,126 @@
+name: Google indexing for new articles
+
+# Runs when a push to main adds a blog article (articles.ts) or a hot-topic
+# question page (hotTopicSlugs in seo.ts). Waits for the VPS deploy to publish
+# the new URLs in the sitemap, then runs goenning/google-indexing-script, which
+# reads the sitemap from Search Console, skips everything already indexed and
+# requests indexing for the rest — i.e. the new pages.
+#
+# Required repo secret:
+#   GIS_SERVICE_ACCOUNT_JSON — full JSON key of a GCP service account that is
+#   an Owner of the Search Console property, with "Web Search Indexing API"
+#   and "Google Search Console API" enabled on its project.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app-tanstack/src/content/articles.ts"
+      - "app-tanstack/src/utils/seo.ts"
+
+concurrency:
+  group: google-indexing
+  cancel-in-progress: false
+
+env:
+  BASE_URL: https://www.quizz-du-berger.com
+  # Search Console property. Bare domain = "Domain" property (sc-domain).
+  # If the property is a URL-prefix one, set this to https://www.quizz-du-berger.com/
+  GSC_SITE: quizz-du-berger.com
+
+jobs:
+  index:
+    name: Submit new URLs to Google
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # need github.event.before to diff the push
+
+      - name: Extract slugs added by this push
+        id: slugs
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE="$(git rev-parse HEAD^)"
+          fi
+          added_slugs() {
+            git diff "$BEFORE" "${{ github.sha }}" -- "$1" \
+              | grep -E '^\+' | grep -oE "slug: '[^']+'" \
+              | sed "s/^slug: '//; s/'$//" || true
+          }
+          urls=""
+          for slug in $(added_slugs app-tanstack/src/content/articles.ts); do
+            urls="$urls $BASE_URL/blog/$slug"
+          done
+          # seo.ts also contains comparison-pair slugs; non-question matches are
+          # filtered out by the sitemap check in the next step.
+          for slug in $(added_slugs app-tanstack/src/utils/seo.ts); do
+            urls="$urls $BASE_URL/question-politique/$slug"
+          done
+          urls="$(echo "$urls" | xargs -n1 | sort -u | xargs || true)"
+          echo "urls=$urls" >> "$GITHUB_OUTPUT"
+          if [ -z "$urls" ]; then
+            echo "No new article/question slugs in this push — nothing to index."
+          else
+            echo "Candidate new URLs: $urls"
+          fi
+
+      - name: Wait for the deploy to publish the new URLs in the sitemap
+        if: steps.slugs.outputs.urls != ''
+        run: |
+          # The sitemap is rebuilt from this same commit during the VPS deploy,
+          # so as soon as one new URL appears, the deploy is done and every
+          # valid URL of this push is in it (leftover misses are false
+          # positives from the slug extraction, e.g. comparison pairs).
+          for i in $(seq 1 90); do
+            sitemap="$(curl -sf "$BASE_URL/sitemap.xml" || true)"
+            found=""
+            missing=""
+            for url in ${{ steps.slugs.outputs.urls }}; do
+              if echo "$sitemap" | grep -qF "<loc>$url</loc>"; then
+                found="$found $url"
+              else
+                missing="$missing $url"
+              fi
+            done
+            if [ -n "$found" ]; then
+              echo "Live in sitemap:$found"
+              [ -n "$missing" ] && echo "Not in sitemap (ignored):$missing"
+              exit 0
+            fi
+            echo "Deploy not live yet ($i/90), retrying in 20s..."
+            sleep 20
+          done
+          echo "Timed out: none of the new URLs appeared in the sitemap." >&2
+          exit 1
+
+      - uses: actions/setup-node@v4
+        if: steps.slugs.outputs.urls != ''
+        with:
+          node-version: "20"
+
+      - name: Restore indexing cache
+        if: steps.slugs.outputs.urls != ''
+        uses: actions/cache@v4
+        with:
+          # google-indexing-script caches per-URL inspection results here and
+          # skips already-indexed pages; persisting it keeps runs incremental.
+          path: .cache
+          key: google-indexing-cache-${{ github.run_id }}
+          restore-keys: |
+            google-indexing-cache-
+
+      - name: Run google-indexing-script
+        if: steps.slugs.outputs.urls != ''
+        env:
+          GIS_SERVICE_ACCOUNT_JSON: ${{ secrets.GIS_SERVICE_ACCOUNT_JSON }}
+          GIS_QUOTA_RPM_RETRY: "true"
+        run: |
+          if [ -z "$GIS_SERVICE_ACCOUNT_JSON" ]; then
+            echo "GIS_SERVICE_ACCOUNT_JSON secret is not set — see the header of this workflow file." >&2
+            exit 1
+          fi
+          printf '%s' "$GIS_SERVICE_ACCOUNT_JSON" > service_account.json
+          npx --yes google-indexing-script "$GSC_SITE" --path ./service_account.json
