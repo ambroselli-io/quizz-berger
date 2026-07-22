@@ -111,6 +111,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Agriculture biologique : les positions des candidats 2027',
     seoDescription: `Quelle place pour le bio en France ? Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-agri-02': {
+    slug: 'crise-eau-secheresse-france',
+    seoTitle: 'Crise de l\'eau et sécheresse : les positions des candidats à la présidentielle 2027',
+    seoDescription: `Bassines, restrictions, sobriété : comment gérer la sécheresse ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
   'question-2027-climat-02': {
     slug: 'nucleaire-france-avenir',
     seoTitle: 'Nucléaire en France : que proposent les candidats à la présidentielle 2027 ?',
