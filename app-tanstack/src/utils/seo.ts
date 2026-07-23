@@ -211,6 +211,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Inéligibilité immédiate des élus condamnés : les positions des candidats 2027',
     seoDescription: `Exécution provisoire, inéligibilité des élus condamnés : que pensent les ${candidatesCount} candidats à la présidentielle 2027 ?`,
   },
+  'question-2027-num-02': {
+    slug: 'interdiction-reseaux-sociaux-mineurs-15-ans',
+    seoTitle: 'Réseaux sociaux interdits aux mineurs de 15 ans : les positions des candidats 2027',
+    seoDescription: `Réseaux sociaux et écrans chez les jeunes : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions
