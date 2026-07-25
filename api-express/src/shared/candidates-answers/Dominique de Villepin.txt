@@ -135,14 +135,14 @@ question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant
 question-2027-immi-05: Faut-il régulariser les personnes étrangères en situation irrégulière ?
 [1] Oui, pour celles qui travaillent et sont installées depuis longtemps
 
-question-2027-immi-06: Que pensez-vous du traitement des familles de délinquants ?
-[1] Il y a déjà des dispositifs en place, pas besoin d'en rajouter
-
 question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
 [2] C'est un sujet complexe, mieux vaut en débattre sereinement que s'enfermer dans des positions
 
 question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes étrangères ?
 [2] Langue + connaissance des institutions et règles républicaines
+
+question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
+[3] Seulement dans des cas exceptionnels : la peine purgée doit suffire, comme pour un Français
 
 
 Dépenses et dette publiques:
@@ -286,7 +286,7 @@ question-2027-pol-03: Que pensez-vous de la justice en France ?
 question-2027-pol-04: Quelle doctrine pénale faut-il privilégier ?
 [3] Plutôt favoriser la réinsertion et les peines alternatives
 
-question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
+question-2027-pol-05: Comment lutter contre le terrorisme ?
 [2] Équilibre entre répression et prévention
 
 question-2027-pol-06: Que pensez-vous de la formation des policiers ?
@@ -294,6 +294,9 @@ question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 [1] Maintenir le cadre actuel
+
+question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
+[1] Il y a déjà des dispositifs en place, pas besoin d'en rajouter
 
 
 Politique fiscale:

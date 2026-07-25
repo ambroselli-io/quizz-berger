@@ -178,8 +178,13 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-pol-05': {
     slug: 'police-securite-france',
-    seoTitle: 'Sécurité : les propositions des candidats à la présidentielle 2027',
-    seoDescription: 'Police, sécurité, lutte contre la délinquance : comparez les positions des candidats à la présidentielle 2027.',
+    seoTitle: 'Terrorisme et sécurité : les propositions des candidats 2027',
+    seoDescription: 'Lutte contre le terrorisme : approche sécuritaire, renseignement ou prévention ? Comparez les positions des candidats à la présidentielle 2027.',
+  },
+  'question-2027-immi-09': {
+    slug: 'expulsion-etrangers-condamnes-double-peine',
+    seoTitle: 'Expulsion des étrangers condamnés : les candidats 2027',
+    seoDescription: `Double peine, OQTF, expulsion après une condamnation : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-trav-05': {
     slug: 'smic-augmentation-salaires',

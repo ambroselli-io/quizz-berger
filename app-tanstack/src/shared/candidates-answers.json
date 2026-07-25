@@ -196,11 +196,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 4
       },
@@ -393,6 +388,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -663,6 +663,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
       }
     ]
   },
@@ -863,11 +868,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -1060,6 +1060,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -1330,6 +1335,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 1
       }
     ]
   },
@@ -1530,11 +1540,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 3
       },
@@ -1727,6 +1732,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -1997,6 +2007,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 3
       }
     ]
   },
@@ -2197,11 +2212,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -2394,6 +2404,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -2664,6 +2679,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 1
       }
     ]
   },
@@ -2864,11 +2884,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -3061,6 +3076,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -3331,6 +3351,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 0
       }
     ]
   },
@@ -3531,11 +3556,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 3
       },
@@ -3728,6 +3748,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -3998,6 +4023,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 3
       }
     ]
   },
@@ -4198,11 +4228,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 0
       },
@@ -4395,6 +4420,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -4665,6 +4695,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 0
       }
     ]
   },
@@ -4865,11 +4900,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 2
       },
@@ -5062,6 +5092,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -5332,6 +5367,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
       }
     ]
   },
@@ -5532,11 +5572,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -5729,6 +5764,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -5999,6 +6039,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 0
       }
     ]
   },
@@ -6199,11 +6244,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 4
       },
@@ -6396,6 +6436,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -6666,6 +6711,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
       }
     ]
   },
@@ -6866,11 +6916,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 3
       },
@@ -7063,6 +7108,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -7333,6 +7383,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 3
       }
     ]
   },
@@ -7533,11 +7588,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 3
       },
@@ -7730,6 +7780,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -8000,6 +8055,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
       }
     ]
   },
@@ -8200,11 +8260,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -8397,6 +8452,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -8667,6 +8727,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 1
       }
     ]
   },
@@ -8867,11 +8932,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 2
       },
@@ -9064,6 +9124,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -9334,6 +9399,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
       }
     ]
   },
@@ -9534,11 +9604,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 2
       },
@@ -9730,6 +9795,11 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
         "answerIndex": 1
       },
       {
@@ -10000,6 +10070,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
         "answerIndex": 2
       }
     ]
@@ -10201,11 +10276,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 2
       },
@@ -10398,6 +10468,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -10668,6 +10743,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
       }
     ]
   },
@@ -10868,11 +10948,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -11065,6 +11140,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -11335,6 +11415,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 1
       }
     ]
   },
@@ -11535,11 +11620,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 3
       },
@@ -11732,6 +11812,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -12002,6 +12087,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 3
       }
     ]
   },
@@ -12202,11 +12292,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 3
       },
@@ -12399,6 +12484,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -12668,6 +12758,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
         "answerIndex": 2
       }
     ]
@@ -12869,11 +12964,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 4
       },
@@ -13066,6 +13156,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -13336,6 +13431,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
       }
     ]
   },
@@ -13536,11 +13636,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -13733,6 +13828,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -14003,6 +14103,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 0
       }
     ]
   },
@@ -14203,11 +14308,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 2
       },
@@ -14400,6 +14500,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -14670,6 +14775,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 3
       }
     ]
   },
@@ -14870,11 +14980,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 3
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 0
       },
@@ -15067,6 +15172,11 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -15337,6 +15447,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 0
       }
     ]
   },
@@ -15537,11 +15652,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 1
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 2
       },
@@ -15733,6 +15843,11 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
         "answerIndex": 1
       },
       {
@@ -16004,6 +16119,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 3
       }
     ]
   },
@@ -16204,11 +16324,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 0
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 4
       },
@@ -16608,6 +16723,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-01",
         "answerIndex": 1
@@ -16671,6 +16791,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
       }
     ]
   },
@@ -16871,11 +16996,6 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-06",
-        "answerIndex": 2
-      },
-      {
-        "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-07",
         "answerIndex": 1
       },
@@ -17170,6 +17290,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -17337,6 +17462,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
         "answerIndex": 2
       }
     ]

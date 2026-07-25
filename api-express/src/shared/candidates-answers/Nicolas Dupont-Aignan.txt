@@ -135,14 +135,14 @@ question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant
 question-2027-immi-05: Faut-il régulariser les personnes étrangères en situation irrégulière ?
 [2] Au cas par cas, avec critères stricts
 
-question-2027-immi-06: Que pensez-vous du traitement des familles de délinquants ?
-[2] Il faut responsabiliser les familles : suspendre les allocations si les enfants sont délinquants
-
 question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
 [1] Toute immigration n'est pas un enrichissement : il faut choisir celle qui est compatible avec nos valeurs
 
 question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes étrangères ?
 [3] Langue + institutions + adhésion aux valeurs (laïcité, égalité hommes-femmes)
+
+question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
+[0] Oui, systématiquement dès la première condamnation, y compris pour celles arrivées enfants ou nées en France
 
 
 Dépenses et dette publiques:
@@ -286,7 +286,7 @@ question-2027-pol-03: Que pensez-vous de la justice en France ?
 question-2027-pol-04: Quelle doctrine pénale faut-il privilégier ?
 [0] Tout-répressif : peines plus lourdes, plus de places de prison
 
-question-2027-pol-05: Comment lutter contre la délinquance et le terrorisme ?
+question-2027-pol-05: Comment lutter contre le terrorisme ?
 [0] Approche identitaire et répressive (expulsions, surveillance des milieux radicaux)
 
 question-2027-pol-06: Que pensez-vous de la formation des policiers ?
@@ -294,6 +294,9 @@ question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 [0] Renforcer la répression et les peines
+
+question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
+[2] Il faut responsabiliser les parents : suspendre les allocations familiales en cas de délinquance de leurs enfants
 
 
 Politique fiscale:

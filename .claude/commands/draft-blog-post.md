@@ -17,6 +17,7 @@ Read these files first:
 - `app-tanstack/src/shared/candidates-answers.json` — the candidates' quiz answers.
 - `app-tanstack/src/utils/seo.ts` — candidate slugs, theme slugs, hot-topic question slugs (for internal links).
 - `CLAUDE.md` at the repo root — especially the "Adding a question" section; follow it exactly if step 3 applies.
+- `.claude/skills/no-ai-slop/SKILL.md` + `french.md` + `eval.md` — the writing rules for this site. Non-negotiable: the article gets checked against them before the PR opens (step 6).
 
 ## 2. Scout for a topic
 
@@ -78,6 +79,17 @@ Add ONE new entry to the `articles` array in `app-tanstack/src/content/articles.
 
 All facts (dates, numbers, votes) must come from sources actually read this session. Tone: sober, factual, neutral — explain every side fairly, zero editorializing. French UI text.
 
+**Write it under the `no-ai-slop` rules, not as a cleanup pass afterwards.** The traps this format walks into, all documented with real examples in `.claude/skills/no-ai-slop/french.md`:
+
+- **The intro machine.** Do not open with a comma-spliced list of noun phrases, a colon, then "Voici ce qu'il faut savoir / Voici les éléments à connaître". Six articles opened that way before this rule existed and the series read as generated. Open on the single most concrete fact, in a plain sentence, and vary the shape from the last article.
+- **Prose em dashes: 2 per article, max.** The `Nom</a> (Parti) — description` separator in candidate bullets doesn't count; it's a list format. Everything else should be a comma, a parenthesis, or a second sentence.
+- **No "Fait notable :" / "Fait remarquable," / "Important :".** State the fact; if it's surprising, the reader will notice.
+- **No colon reveals** ("La peine : trois ans de prison"). Give it a verb.
+- **No recap paragraph before the CTA.** End on the links and `→ Faire le quiz`.
+- **Name every source, or cut the claim** — no "selon certains analystes". Honest hedges about disputed figures ("le bilan exact est disputé") are the opposite of weasel wording: keep those.
+
+Keep the section skeleton and the search-query headings — that's SEO and reader convention. Vary the sentences inside it.
+
 ## 6. Validate
 
 ```
@@ -85,6 +97,8 @@ cd app-tanstack && npm install && npm run typecheck
 ```
 
 Fix any errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square.
+
+Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French checks in `french.md` yourself, and fix what fails before opening the PR. Count the prose em dashes explicitly (total `—` minus one per candidate bullet) and confirm it lands at 0–2.
 
 ## 7. Open a draft PR
 
