@@ -75,7 +75,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 52,
+    "percent": 51,
     "pseudos": [
       "François Asselineau",
     ],
@@ -87,7 +87,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 49,
+    "percent": 48,
     "pseudos": [
       "François Bayrou",
     ],
@@ -99,7 +99,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 40,
+    "percent": 39,
     "pseudos": [
       "Marine Le Pen",
     ],
