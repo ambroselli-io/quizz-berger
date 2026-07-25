@@ -110,7 +110,7 @@ export const articles: Article[] = [
 <p>Voici les 10 thèmes qui vont structurer le débat de la présidentielle 2027, avec un lien direct vers la page du Quizz du Berger pour voir les positions des candidats sur chacun.</p>
 
 <h2>1. Immigration et identité</h2>
-<p>Sujet brûlant depuis des années, la question migratoire reste au cœur du débat. Régularisation, quotas, droit du sol — les ${candidatesCount} candidats ont des positions très variées.</p>
+<p>La question migratoire structure le débat depuis des années. Sur la régularisation, les quotas et le droit du sol, les ${candidatesCount} candidats ont des positions très variées.</p>
 <p><a href="/theme/demographie-et-question-migratoire">→ Les positions des candidats sur l'immigration</a></p>
 
 <h2>2. Pouvoir d'achat et vie quotidienne</h2>
@@ -122,15 +122,15 @@ export const articles: Article[] = [
 <p><a href="/theme/climat-energie-et-ecologie">→ Les positions des candidats sur le climat</a></p>
 
 <h2>4. Travail, chômage et retraites</h2>
-<p>L'abrogation de la retraite à 64 ans, le plein emploi, le temps de travail — des questions qui concernent tous les actifs.</p>
+<p>L'abrogation de la retraite à 64 ans, le plein emploi et le temps de travail concernent tous les actifs.</p>
 <p><a href="/theme/travail-chomage-retraite">→ Les positions des candidats sur le travail et la retraite</a></p>
 
 <h2>5. Sécurité et justice</h2>
-<p>Police, vidéosurveillance, peines planchers, délinquance : un thème qui cristallise les clivages.</p>
+<p>Police, vidéosurveillance, peines planchers, délinquance : l'un des thèmes les plus clivants de la campagne.</p>
 <p><a href="/theme/police-justice-et-securite">→ Les positions des candidats sur la sécurité</a></p>
 
 <h2>6. Santé</h2>
-<p>Déserts médicaux, euthanasie, hôpital public — le système de santé est au cœur des préoccupations.</p>
+<p>Déserts médicaux, euthanasie, avenir de l'hôpital public : le système de santé revient dans tous les programmes.</p>
 <p><a href="/theme/sante">→ Les positions des candidats sur la santé</a></p>
 
 <h2>7. Éducation et recherche</h2>
@@ -269,14 +269,14 @@ export const articles: Article[] = [
     date: '2026-02-27',
     tag: 'Analyse',
     content: `
-<p>Signature de l'accord UE-Mercosur fin 2024, mobilisation des agriculteurs, votes à l'Assemblée nationale, ratification européenne en janvier 2026 puis saisine de la Cour de justice de l'UE : le dossier Mercosur structure une partie du débat politique français depuis bientôt deux ans. Voici les éléments à connaître, et les positions des ${candidatesCount} candidats à la présidentielle 2027.</p>
+<p>L'accord UE-Mercosur a été signé le 17 janvier 2026, huit jours après que les États membres de l'UE l'ont validé malgré l'opposition de la France. Quatre jours plus tard, le Parlement européen saisissait la Cour de justice de l'UE, ce qui suspend la ratification. En novembre 2025, l'Assemblée nationale avait voté contre le texte par 244 voix contre 1. Sur les ${candidatesCount} candidats à la présidentielle 2027, aucun ne défend la ratification de l'accord en l'état.</p>
 
 <h2>Mercosur : c'est quoi, exactement ?</h2>
 <p>Le <strong>Mercosur</strong> (<em>Mercado Común del Sur</em>, « Marché commun du Sud ») est une union douanière créée en 1991 par le traité d'Asunción. Elle regroupe aujourd'hui <strong>quatre pays membres à part entière</strong> : l'Argentine, le Brésil, le Paraguay et l'Uruguay. La Bolivie est en cours d'adhésion, le Venezuela est suspendu depuis 2016, et plusieurs pays (Chili, Colombie, Pérou, Équateur, Guyana, Suriname) sont associés.</p>
-<p>Ensemble, les pays du Mercosur représentent environ <strong>270 millions d'habitants</strong> et la 5ᵉ économie mondiale si on les agrège. Leur spécialité : l'exportation de matières premières et de produits agricoles, en particulier le bœuf, le soja, le maïs, le sucre, la volaille et l'éthanol.</p>
+<p>Ensemble, les pays du Mercosur représentent environ <strong>270 millions d'habitants</strong> et la 5ᵉ économie mondiale si on les agrège. Ils exportent surtout des matières premières et des produits agricoles : bœuf, soja, maïs, sucre, volaille et éthanol.</p>
 
 <h2>L'accord UE-Mercosur : 25 ans de négociations</h2>
-<p>L'accord UE-Mercosur est un <strong>traité de libre-échange</strong> négocié entre l'Union européenne et les quatre pays du Mercosur. Son objectif : supprimer ou réduire les droits de douane sur l'essentiel des échanges commerciaux entre les deux blocs et ouvrir des quotas agricoles en Europe.</p>
+<p>L'accord UE-Mercosur est un <strong>traité de libre-échange</strong> négocié entre l'Union européenne et les quatre pays du Mercosur. Il supprime ou réduit les droits de douane sur l'essentiel des échanges commerciaux entre les deux blocs et ouvre des quotas agricoles en Europe.</p>
 <p>Chronologie :</p>
 <ul>
 <li><strong>1999</strong> : ouverture des négociations.</li>
@@ -298,7 +298,7 @@ export const articles: Article[] = [
 <p>Les syndicats agricoles français (FNSEA, Coordination Rurale, Confédération paysanne) sont unanimement opposés à l'accord. Leur argument principal : <strong>distorsion de concurrence</strong>. Le bœuf brésilien est produit avec des antibiotiques activateurs de croissance interdits en Europe, le soja argentin utilise des pesticides (atrazine, glyphosate à forte dose) bannis dans l'UE, et les normes de bien-être animal sont incomparables. Importer ces produits reviendrait, selon eux, à importer une concurrence déloyale et à condamner des pans entiers de l'élevage français.</p>
 
 <h3>2. Le climat et la déforestation</h3>
-<p>Les ONG environnementales pointent le risque d'accélération de la <strong>déforestation amazonienne</strong> : plus d'exportations agricoles = plus de terres cultivées = plus de forêt défrichée. L'accord prévoit bien des engagements sur l'Accord de Paris, mais les critiques jugent les mécanismes de contrôle insuffisants. Les ONG réclament des <strong>clauses miroirs</strong> — c'est-à-dire l'obligation pour les produits importés de respecter les mêmes normes sanitaires et environnementales que les produits européens.</p>
+<p>Les ONG environnementales pointent le risque d'accélération de la <strong>déforestation amazonienne</strong> : plus d'exportations agricoles = plus de terres cultivées = plus de forêt défrichée. L'accord prévoit bien des engagements sur l'Accord de Paris, mais les critiques jugent les mécanismes de contrôle insuffisants. Les ONG réclament des <strong>clauses miroirs</strong>, c'est-à-dire l'obligation pour les produits importés de respecter les mêmes normes sanitaires et environnementales que les produits européens.</p>
 
 <h3>3. L'industrie et les exportateurs</h3>
 <p>À l'inverse, l'industrie automobile allemande, le secteur du vin, des spiritueux, du luxe et de la chimie voient dans l'accord une <strong>opportunité de croissance</strong>. Le Medef, la CCI France International et les grands groupes exportateurs soutiennent la signature, arguant que refuser l'accord reviendrait à laisser le marché sud-américain à la Chine.</p>
@@ -309,7 +309,7 @@ export const articles: Article[] = [
 <h2>Le Mercosur à l'Assemblée nationale</h2>
 <p>Le <strong>26 novembre 2024</strong>, l'Assemblée nationale française a voté une première résolution rejetant l'accord UE-Mercosur en l'état, à une très large majorité transpartisane (<strong>484 voix pour, 70 contre</strong>). Ont voté contre l'accord : le Rassemblement National, La France Insoumise, le Parti Socialiste, Les Écologistes, le Parti Communiste, LR, les non-inscrits et une majorité du groupe Renaissance. Ce vote n'a pas de valeur juridique contraignante mais exprime la volonté politique de la représentation nationale.</p>
 <p>Côté Sénat, une résolution similaire avait été adoptée le <strong>5 novembre 2024</strong>. Fin 2024, le gouvernement français a réaffirmé officiellement son opposition à l'accord « en l'état ».</p>
-<p>En <strong>novembre 2025</strong>, à la veille des votes européens décisifs, l'Assemblée nationale a récidivé avec une <strong>seconde résolution à la quasi-unanimité</strong> (244 voix pour, 1 contre), appelant le gouvernement à adopter une « minorité de blocage » au Conseil de l'UE. Fait remarquable, <strong>le groupe macroniste est le seul à s'être abstenu</strong>, creusant un écart politique entre la majorité présidentielle et l'ensemble des autres groupes.</p>
+<p>En <strong>novembre 2025</strong>, à la veille des votes européens décisifs, l'Assemblée nationale a récidivé avec une <strong>seconde résolution à la quasi-unanimité</strong> (244 voix pour, 1 contre), appelant le gouvernement à adopter une « minorité de blocage » au Conseil de l'UE. <strong>Le groupe macroniste a été le seul à s'abstenir</strong>, face à tous les autres groupes.</p>
 <p>Malgré la pression parlementaire française, la France n'est pas parvenue à réunir une minorité de blocage suffisante au Conseil de l'UE le 9 janvier 2026. L'accord a donc été formellement signé le 17 janvier 2026 par Ursula von der Leyen, avant d'être partiellement suspendu par la saisine de la Cour de justice de l'UE le 21 janvier.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
@@ -412,10 +412,10 @@ export const articles: Article[] = [
     date: '2026-03-01',
     tag: 'Analyse',
     content: `
-<p>Réseau de trafic sexuel de mineures, clients milliardaires et chefs d'État, suicide contesté en prison, documents judiciaires massivement déclassifiés en janvier 2026, volet français en cours d'instruction : l'affaire Epstein touche aux élites mondiales, à la justice, à la presse et désormais à la politique française. Voici un point complet, et ce que les ${candidatesCount} candidats à la présidentielle 2027 disent des enjeux qu'elle soulève.</p>
+<p>Le 30 janvier 2026, le ministère de la Justice américain a publié plus de 3 millions de pages de documents sur Jeffrey Epstein. Trois semaines plus tard, le parquet de Paris rouvrait son enquête sur les associés français du financier, et le Parquet national financier ouvrait une procédure visant Jack Lang, cité 673 fois dans ces documents. L'affaire est américaine, mais elle a désormais un volet français, et elle touche à des sujets que les ${candidatesCount} candidats à la présidentielle 2027 traitent tous : impunité des puissants, protection des mineurs, indépendance de la justice, liberté de la presse.</p>
 
 <h2>Affaire Epstein : c'est quoi, en résumé ?</h2>
-<p>L'<strong>affaire Epstein</strong> désigne l'ensemble des enquêtes, procès et révélations autour du financier américain <strong>Jeffrey Epstein</strong> (1953-2019) et de sa complice <strong>Ghislaine Maxwell</strong>. Tous deux sont accusés — et condamnés, dans le cas de Maxwell — d'avoir organisé pendant plus de vingt ans un réseau de trafic sexuel de mineures, en recrutant, transportant et livrant des adolescentes à Epstein et à son cercle d'amis puissants, dans ses différentes résidences (Manhattan, Palm Beach, Nouveau-Mexique, et son île privée de Little Saint James).</p>
+<p>L'<strong>affaire Epstein</strong> désigne l'ensemble des enquêtes, procès et révélations autour du financier américain <strong>Jeffrey Epstein</strong> (1953-2019) et de sa complice <strong>Ghislaine Maxwell</strong>. Tous deux sont accusés d'avoir organisé pendant plus de vingt ans un réseau de trafic sexuel de mineures, en recrutant, transportant et livrant des adolescentes à Epstein et à son cercle d'amis puissants, dans ses différentes résidences (Manhattan, Palm Beach, Nouveau-Mexique, et son île privée de Little Saint James). Ghislaine Maxwell a été condamnée pour ces faits ; Epstein est mort avant son procès.</p>
 <p>L'affaire croise plusieurs sujets : justice pénale, violences sexuelles sur mineurs, transparence judiciaire, influence politique et financière, liberté de la presse.</p>
 
 <h2>Qui était Jeffrey Epstein ?</h2>
@@ -427,7 +427,7 @@ export const articles: Article[] = [
 <li><strong>2008</strong> : Epstein plaide coupable dans un accord controversé (« non-prosecution agreement ») négocié par le procureur Alexander Acosta. Il purge 13 mois avec permissions quotidiennes.</li>
 <li><strong>2018</strong> : le <em>Miami Herald</em>, via l'enquête de la journaliste <strong>Julie K. Brown</strong>, publie la série « Perversion of Justice » qui relance l'affaire.</li>
 <li><strong>6 juillet 2019</strong> : Epstein est arrêté à New York pour trafic sexuel de mineures.</li>
-<li><strong>10 août 2019</strong> : Epstein est retrouvé mort dans sa cellule du Metropolitan Correctional Center. Sa mort est officiellement classée « suicide par pendaison » — conclusion contestée par une partie de sa famille et de l'opinion publique.</li>
+<li><strong>10 août 2019</strong> : Epstein est retrouvé mort dans sa cellule du Metropolitan Correctional Center. Sa mort est officiellement classée « suicide par pendaison », une conclusion contestée par une partie de sa famille et de l'opinion publique.</li>
 <li><strong>Juillet 2020</strong> : Ghislaine Maxwell est arrêtée.</li>
 <li><strong>Décembre 2021</strong> : Maxwell est reconnue coupable de cinq chefs d'accusation, dont trafic sexuel de mineurs. Elle est condamnée à <strong>20 ans de prison</strong>.</li>
 <li><strong>Janvier 2024</strong> : la justice américaine rend publics <strong>plus de 900 pages</strong> de documents judiciaires dans l'affaire Giuffre v. Maxwell, contenant les noms de dizaines de personnalités associées à Epstein.</li>
@@ -444,7 +444,7 @@ export const articles: Article[] = [
 <li>Les <strong>documents judiciaires</strong> de l'affaire Virginia Giuffre v. Ghislaine Maxwell (déposés en 2015, descellés en 2024) : plus de 900 pages qui citent les noms de tiers mentionnés par les parties lors des dépositions.</li>
 <li>Les <strong>« Epstein files »</strong> déclassifiés par le Congrès américain et le DoJ en 2025-2026 : notes d'enquête, interrogatoires, pièces du FBI.</li>
 </ul>
-<p>Important : figurer dans l'un de ces documents ne vaut pas accusation. La présence d'un nom peut simplement signaler une relation professionnelle, mondaine ou une fréquentation ponctuelle.</p>
+<p>Figurer dans l'un de ces documents ne vaut pas accusation. La présence d'un nom peut simplement signaler une relation professionnelle, mondaine ou une fréquentation ponctuelle.</p>
 
 <h2>Les « Epstein files » : que révèlent les documents judiciaires ?</h2>
 <p>Les documents descellés en 2024, 2025 puis massivement en <strong>janvier 2026</strong> révèlent :</p>
@@ -452,7 +452,7 @@ export const articles: Article[] = [
 <li>L'ampleur du <strong>réseau de recrutement</strong> de victimes, souvent mineures, par Ghislaine Maxwell et d'autres complices.</li>
 <li>La <strong>complaisance de certaines autorités</strong> locales américaines, notamment lors de l'accord de 2008.</li>
 <li>Les <strong>liens entre Epstein et plusieurs institutions académiques et financières</strong> (Harvard, MIT, banques d'affaires).</li>
-<li>Des <strong>témoignages directs de victimes</strong> citant des hommes puissants, dont le prince Andrew d'York — qui a réglé à l'amiable une plainte civile pour 12 millions de livres en 2022, avant d'être finalement arrêté le <strong>18 février 2026</strong> au Royaume-Uni pour soupçons de partage de documents confidentiels avec Epstein.</li>
+<li>Des <strong>témoignages directs de victimes</strong> citant des hommes puissants, dont le prince Andrew d'York, qui a réglé à l'amiable une plainte civile pour 12 millions de livres en 2022, avant d'être arrêté le <strong>18 février 2026</strong> au Royaume-Uni pour soupçons de partage de documents confidentiels avec Epstein.</li>
 <li>De nouveaux noms internationaux rendus publics en 2026 : la future reine de Norvège Mette-Marit, l'ancien Premier ministre norvégien Thorbjørn Jagland, l'ancien ministre slovaque des Affaires étrangères Miroslav Lajčák, et plusieurs personnalités françaises (voir ci-dessous).</li>
 </ul>
 <p>Comme pour les précédentes vagues, figurer dans ces documents ne vaut pas accusation : il peut s'agir d'une fréquentation mondaine, d'un contact professionnel ou d'une mention faite par un tiers.</p>
@@ -494,7 +494,7 @@ export const articles: Article[] = [
 </ul>
 
 <h2>Les ${candidatesCount} candidats à la présidentielle 2027 et les enjeux soulevés par l'affaire Epstein</h2>
-<p>Peu de candidats ont commenté directement l'affaire Epstein — c'est une affaire essentiellement américaine. En revanche, les <strong>sujets qu'elle soulève</strong> — impunité des élites, protection des mineurs, indépendance de la justice, liberté de la presse — traversent tous les programmes. Voici comment les ${candidatesCount} candidats du Quizz du Berger se positionnent sur ces enjeux, en quatre axes.</p>
+<p>Peu de candidats ont commenté directement l'affaire Epstein, essentiellement américaine. En revanche, les <strong>sujets qu'elle soulève</strong> traversent tous les programmes : impunité des élites, protection des mineurs, indépendance de la justice, liberté de la presse. Les ${candidatesCount} candidats du Quizz du Berger se positionnent sur ces enjeux selon quatre axes.</p>
 
 <h3>1. Lutte contre la pédocriminalité et les violences sexuelles</h3>
 <p>Un consensus transpartisan existe sur le principe : il faut renforcer la lutte contre la pédocriminalité et les violences sexuelles. Les divergences portent sur les moyens (imprescriptibilité, formation des magistrats, budgets, victimologie).</p>
@@ -557,7 +557,7 @@ export const articles: Article[] = [
 </ul>
 
 <h2>Pour aller plus loin</h2>
-<p>L'affaire Epstein n'est pas un dossier que les candidats français commentent tous les jours, mais les sujets qu'elle soulève — protection des mineurs, impunité des puissants, indépendance de la justice, rôle de la presse — touchent plusieurs thèmes du Quizz du Berger. Les ${quizzQuestionsCount} questions vous permettent de comparer vos positions à celles des ${candidatesCount} candidats.</p>
+<p>Les ${quizzQuestionsCount} questions du Quizz du Berger vous permettent de comparer vos positions à celles des ${candidatesCount} candidats sur ces thèmes.</p>
 
 <p><a href="/themes">→ Faire le quiz</a></p>
 `,
@@ -586,7 +586,7 @@ export const articles: Article[] = [
     date: '2026-04-23',
     tag: 'Analyse',
     content: `
-<p>Massacres de manifestants en janvier, guerre ouverte avec Israël et les États-Unis à partir du 28 février, mort du Guide suprême, fermeture effective du <strong>détroit d'Ormuz</strong> début mars, baril au-dessus de 100 dollars : 2026 a fait basculer le Moyen-Orient et, avec lui, les prix de l'énergie en Europe. Voici ce qu'il faut savoir sur la <strong>guerre Iran-Israël-États-Unis</strong> et ce qu'en disent les ${candidatesCount} candidats à la présidentielle 2027.</p>
+<p>Le 2 mars 2026, l'Iran a fermé le <strong>détroit d'Ormuz</strong>, par où passe environ 20 % du pétrole mondial. Le Brent a franchi les 100 dollars dans la semaine, avec un pic proche de 120. Deux jours plus tôt, une opération américano-israélienne avait tué le Guide suprême Ali Khamenei ; en janvier, la répression des manifestations avait fait plusieurs milliers de morts. Cette <strong>guerre Iran-Israël-États-Unis</strong> pèse directement sur la facture énergétique des Français, et les ${candidatesCount} candidats à la présidentielle 2027 en tirent des conclusions opposées.</p>
 
 <h2>Le détroit d'Ormuz : c'est quoi ?</h2>
 <p>Le <strong>détroit d'Ormuz</strong> est un bras de mer de <strong>55 km de large</strong> (à son point le plus resserré, seulement 33 km) qui relie le golfe Persique au golfe d'Oman et à l'océan Indien. Il borde au nord l'Iran, au sud le sultanat d'Oman et les Émirats arabes unis.</p>
@@ -594,9 +594,9 @@ export const articles: Article[] = [
 <ul>
 <li><strong>Environ 20 % du pétrole mondial</strong> y transite chaque jour (soit près de <strong>20 millions de barils</strong>).</li>
 <li><strong>Près d'un tiers du gaz naturel liquéfié (GNL) mondial</strong> y passe, notamment depuis le Qatar.</li>
-<li>Les principaux fournisseurs du monde — Arabie saoudite, Iran, Irak, Koweït, Émirats, Qatar — exportent tous par ce seul couloir.</li>
+<li>Les principaux fournisseurs du monde (Arabie saoudite, Iran, Irak, Koweït, Émirats, Qatar) exportent tous par ce seul couloir.</li>
 </ul>
-<p>Toute fermeture — même partielle, même temporaire — ferait immédiatement exploser les cours mondiaux du pétrole et du gaz, avec un effet direct sur l'inflation en Europe et sur la facture énergétique des ménages français.</p>
+<p>Toute fermeture, même partielle et temporaire, fait immédiatement exploser les cours mondiaux du pétrole et du gaz, avec un effet direct sur l'inflation en Europe et sur la facture énergétique des ménages français.</p>
 
 <h2>Acte I : la guerre éclair de juin 2025 (« Douze Jours »)</h2>
 <p>Un premier conflit direct a éclaté à l'été 2025, prélude à la guerre ouverte de 2026. Rappel des dates :</p>
@@ -623,8 +623,8 @@ export const articles: Article[] = [
 <ul>
 <li><strong>25 janvier 2026</strong> : le groupe aéronaval de l'<strong>USS Abraham Lincoln</strong> est déployé vers le golfe Persique, accompagné de renforts aériens américains.</li>
 <li><strong>3 février 2026</strong> : six canonnières des Gardiens de la Révolution tentent d'arraisonner le pétrolier <strong>Stena Imperative</strong> dans le détroit d'Ormuz. Le navire poursuit sa route sous escorte du destroyer américain USS McFaul. La crise du détroit commence.</li>
-<li><strong>28 février 2026</strong> : les États-Unis et Israël lancent une opération conjointe massive contre l'Iran — frappes coordonnées sur des dizaines de sites militaires, les stocks de missiles, les lanceurs et les installations nucléaires. Le <strong>Guide suprême Ali Khamenei est tué</strong> pendant l'attaque ; un conseil provisoire prend le contrôle du régime. Donald Trump affirme publiquement que l'objectif inclut un <strong>changement de régime</strong>, en plus de l'arrêt du programme nucléaire.</li>
-<li><strong>1er mars 2026</strong> : le front libanais s'ouvre. Tsahal lance une campagne de bombardements contre le Hezbollah. Une frappe de missile iranien sur la ville de <strong>Beit Shemesh</strong> tue 9 civils israéliens — bilan le plus lourd côté civils en ce début de guerre.</li>
+<li><strong>28 février 2026</strong> : les États-Unis et Israël lancent une opération conjointe massive contre l'Iran : frappes coordonnées sur des dizaines de sites militaires, les stocks de missiles, les lanceurs et les installations nucléaires. Le <strong>Guide suprême Ali Khamenei est tué</strong> pendant l'attaque ; un conseil provisoire prend le contrôle du régime. Donald Trump affirme publiquement que l'objectif inclut un <strong>changement de régime</strong>, en plus de l'arrêt du programme nucléaire.</li>
+<li><strong>1er mars 2026</strong> : le front libanais s'ouvre. Tsahal lance une campagne de bombardements contre le Hezbollah. Une frappe de missile iranien sur la ville de <strong>Beit Shemesh</strong> tue 9 civils israéliens, le bilan le plus lourd côté civils depuis le début de la guerre.</li>
 <li><strong>2 mars 2026</strong> : un haut responsable des Gardiens de la Révolution annonce officiellement la <strong>fermeture du détroit d'Ormuz</strong>. Tout navire tentant la traversée est menacé d'interception.</li>
 <li><strong>Mars 2026</strong> : l'Iran tire plus de <strong>450 missiles balistiques</strong> sur Israël. Le Dôme de fer et la Fronde de David interceptent environ 92 % des projectiles visant des zones habitées.</li>
 <li><strong>21 mars 2026</strong> : nouvelle série de frappes américaines sur le site nucléaire enfoui de <strong>Natanz</strong>, à nouveau avec des bombes anti-bunker GBU-57. L'Iran suspend la coopération avec l'AIEA pour les sites bombardés.</li>
@@ -635,11 +635,11 @@ export const articles: Article[] = [
 <p>Officiellement, l'Iran a toujours défendu un programme nucléaire <strong>exclusivement civil</strong>. Dans les faits, plusieurs éléments expliquent la crise actuelle :</p>
 <ul>
 <li>L'Iran enrichissait fin 2025 de l'uranium à <strong>60 %</strong>, très au-delà des besoins civils (5 %) et à un pas technique du niveau militaire (90 %).</li>
-<li>Les sites de Fordo et Natanz sont enfouis à plus de 80 m sous la montagne, ce qui rend leur neutralisation très difficile sauf pour les bombes anti-bunker GBU-57 américaines — utilisées à nouveau le 21 mars 2026.</li>
+<li>Les sites de Fordo et Natanz sont enfouis à plus de 80 m sous la montagne, ce qui rend leur neutralisation très difficile sauf pour les bombes anti-bunker GBU-57 américaines, utilisées à nouveau le 21 mars 2026.</li>
 <li>Après les frappes conjointes de juin 2025 puis de février-mars 2026, le retard imposé au programme est estimé entre <strong>plusieurs mois et plusieurs années</strong>, selon les sources (Pentagone, AIEA, services israéliens). Les évaluations divergent largement.</li>
 <li>Depuis les frappes du 28 février 2026, Téhéran <strong>refuse à l'AIEA l'accès</strong> aux sites bombardés. Mohammad Eslami, chef de l'Organisation iranienne de l'énergie atomique, conditionne toute inspection à l'adoption de règles internationales sur les « installations attaquées militairement » et à une condamnation des frappes par l'Agence.</li>
 </ul>
-<p>Le dossier nucléaire n'est donc pas clos : il est <strong>en pleine recomposition</strong>. Les connaissances scientifiques n'ont pas été détruites, la volonté politique iranienne s'est peut-être durcie, et la communauté internationale reste divisée entre fermeté et retour à un cadre diplomatique de type JCPoA.</p>
+<p>Le dossier nucléaire n'est donc pas clos. Les connaissances scientifiques n'ont pas été détruites, la volonté politique iranienne s'est peut-être durcie, et la communauté internationale reste divisée entre fermeté et retour à un cadre diplomatique de type JCPoA.</p>
 
 <h2>La fermeture d'Ormuz fait exploser les prix de l'énergie</h2>
 <p>Contrairement à juin 2025, où la fermeture était restée une menace, Téhéran l'a <strong>effectivement mise en œuvre</strong> le 2 mars 2026 en réponse aux frappes du 28 février. Les conséquences sont immédiates et massives :</p>
@@ -648,7 +648,7 @@ export const articles: Article[] = [
 <li>Projections des analystes : environ 105 $ le baril après 1 mois, <strong>140 $ après 2 mois</strong>, autour de <strong>165 $ après 3 mois</strong> si la fermeture se prolonge.</li>
 <li>Flambée des prix à la pompe et de la facture d'électricité en Europe, retour brutal de l'inflation.</li>
 <li>Pression accrue sur la Banque centrale européenne et risque de remontée des taux, avec effet récessif.</li>
-<li>Tensions d'approvisionnement en Asie : Chine, Inde, Japon, Corée — plusieurs pays asiatiques signalent déjà des manques.</li>
+<li>Tensions d'approvisionnement en Asie : la Chine, l'Inde, le Japon et la Corée signalent déjà des manques.</li>
 <li>Recomposition accélérée des routes énergétiques : plus de GNL américain et qatari transitant par d'autres routes, plus d'hydrocarbures russes via l'Asie.</li>
 </ul>
 
@@ -815,7 +815,7 @@ export const articles: Article[] = [
     date: '2026-07-18',
     tag: 'Analyse',
     content: `
-<p>Trois lectures rejetées par le Sénat, une commission mixte paritaire sans accord, un ultime « dernier mot » donné à l'Assemblée nationale, et enfin une double saisine du Conseil constitutionnel : le <strong>15 juillet 2026</strong>, la France a définitivement légalisé l'aide à mourir. Voici ce que contient la loi, pourquoi elle continue de diviser, et les positions des ${candidatesCount} candidats à la présidentielle 2027.</p>
+<p>Le <strong>15 juillet 2026</strong>, les députés ont définitivement adopté le droit à l'aide à mourir par <strong>291 voix pour, 241 contre et 29 abstentions</strong>. Le Sénat avait rejeté le texte trois fois ; il a fallu la procédure du « dernier mot » pour le faire passer. Le Premier ministre Sébastien Lecornu et le président du Sénat Gérard Larcher ont chacun saisi le Conseil constitutionnel dans les jours qui ont suivi, si bien que la loi n'est toujours pas promulguée.</p>
 
 <h2>Que change la loi sur l'aide à mourir ?</h2>
 <p>Le texte crée un <strong>droit à l'aide à mourir</strong>, distinct du cadre existant de sédation profonde et continue jusqu'au décès. Pour y avoir accès, une personne doit cumuler plusieurs conditions strictes :</p>
@@ -825,7 +825,7 @@ export const articles: Article[] = [
 <li>Être en capacité d'exprimer sa volonté de façon <strong>libre et éclairée</strong>.</li>
 </ul>
 <p>Le texte instaure une <strong>clause de conscience</strong> pour les professionnels de santé impliqués dans l'examen des demandes ou l'administration de la substance létale : ceux qui refusent doivent orienter le patient vers un autre médecin. Les <strong>pharmaciens</strong>, en revanche, n'y sont pas soumis. Un <strong>délit d'entrave</strong> est créé, avec des sanctions doublées par rapport au texte initial, pour punir les actions visant à empêcher l'accès à l'aide à mourir ou à l'information sur ce droit.</p>
-<p>Ce texte est le second volet d'un diptyque légis­latif : la loi garantissant l'égal accès aux soins palliatifs, promulguée dès le <strong>26 mai 2026</strong>, avait fait l'objet d'un consensus bien plus large. C'est bien le volet « aide à mourir » qui a cristallisé les tensions.</p>
+<p>Ce texte est le second volet d'un diptyque législatif : la loi garantissant l'égal accès aux soins palliatifs, promulguée dès le <strong>26 mai 2026</strong>, avait fait l'objet d'un consensus bien plus large. C'est bien le volet « aide à mourir » qui a cristallisé les tensions.</p>
 
 <h2>Une navette parlementaire de plus de trois ans</h2>
 <ul>
@@ -844,13 +844,13 @@ export const articles: Article[] = [
 <h2>Pourquoi cette loi divise la France</h2>
 
 <h3>1. Dignité individuelle contre sacralité de la vie</h3>
-<p>Pour les partisans du texte, mourir dans la dignité et choisir le moment de sa mort relève d'une liberté individuelle fondamentale, en particulier pour des malades en fin de vie soumis à des souffrances jugées insupportables. Pour les opposants, la vie ne se négocie pas, et la médecine ne doit jamais avoir pour but de donner la mort — le cadre existant de sédation profonde et continue leur paraît suffisant.</p>
+<p>Pour les partisans du texte, mourir dans la dignité et choisir le moment de sa mort relève d'une liberté individuelle fondamentale, en particulier pour des malades en fin de vie soumis à des souffrances jugées insupportables. Pour les opposants, la vie ne se négocie pas, et la médecine ne doit jamais avoir pour but de donner la mort ; le cadre existant de sédation profonde et continue leur paraît suffisant.</p>
 
 <h3>2. Le rôle des soignants</h3>
 <p>La clause de conscience individuelle fait consensus, mais son absence pour les <strong>établissements</strong> de santé (une clinique ou un EHPAD ne peut refuser collectivement de pratiquer l'acte) inquiète une partie des professionnels et des opposants, qui y voient une obligation imposée à des structures parfois confessionnelles ou engagées dans les soins palliatifs.</p>
 
 <h3>3. Le délai de réflexion, au cœur de la saisine du Conseil constitutionnel</h3>
-<p>Le texte prévoit un délai d'au moins deux jours entre la notification de la décision du médecin et la confirmation de la demande par le patient. Les opposants, dont le Premier ministre lui-même dans sa saisine, jugent ce délai trop court pour garantir un consentement <strong>libre, éclairé et persistant</strong> — en particulier pour les <strong>majeurs protégés</strong> (sous tutelle ou curatelle), un point spécifiquement soulevé devant le Conseil constitutionnel.</p>
+<p>Le texte prévoit un délai d'au moins deux jours entre la notification de la décision du médecin et la confirmation de la demande par le patient. Les opposants, dont le Premier ministre lui-même dans sa saisine, jugent ce délai trop court pour garantir un consentement <strong>libre, éclairé et persistant</strong>, en particulier pour les <strong>majeurs protégés</strong> (sous tutelle ou curatelle), un point spécifiquement soulevé devant le Conseil constitutionnel.</p>
 
 <h3>4. Un accès aux soins palliatifs encore inégal</h3>
 <p>Une partie des critiques ne porte pas sur le principe de l'aide à mourir mais sur son séquençage : plusieurs départements restent dépourvus d'unités de soins palliatifs, ce qui fait craindre qu'un droit à mourir soit ouvert avant qu'un vrai droit à être soigné et accompagné jusqu'au bout ne soit garanti partout sur le territoire.</p>
@@ -859,7 +859,7 @@ export const articles: Article[] = [
 <p>La loi n'est pas encore promulguée : elle est actuellement examinée par le <strong>Conseil constitutionnel</strong>, saisi à la fois par le Premier ministre Sébastien Lecornu (14 juillet) et par le président du Sénat Gérard Larcher (16 juillet), rejoints par des sénateurs de la majorité sénatoriale de droite. Les saisines portent notamment sur la brièveté du délai de rétractation, la situation des majeurs protégés et l'absence de clause de conscience pour les établissements. Le Conseil peut valider le texte, le censurer partiellement, ou le renvoyer avec des réserves d'interprétation.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la question <a href="/question-politique/euthanasie-loi-france">« Que pensez-vous de la fin de vie et de l'euthanasie ? »</a> du Quizz du Berger, les ${candidatesCount} candidats se répartissent en trois familles. Fait notable : <strong>aucun</strong> ne rejette catégoriquement toute évolution du droit existant — l'option la plus restrictive du quiz (« la vie est sacrée, on ne doit jamais aider quelqu'un à mourir ») ne recueille aucune réponse.</p>
+<p>Sur la question <a href="/question-politique/euthanasie-loi-france">« Que pensez-vous de la fin de vie et de l'euthanasie ? »</a> du Quizz du Berger, les ${candidatesCount} candidats se répartissent en trois familles. <strong>Aucun</strong> ne rejette catégoriquement toute évolution du droit existant : l'option la plus restrictive du quiz (« la vie est sacrée, on ne doit jamais aider quelqu'un à mourir ») ne recueille aucune réponse.</p>
 
 <h3>Famille 1 — Le cadre actuel (sédation profonde) leur paraît suffisant</h3>
 <p>Ces candidats jugent que la loi de 2016 sur la sédation profonde et continue répond déjà à l'essentiel des situations de fin de vie, et se sont opposés ou montrés très réservés sur le nouveau texte.</p>
@@ -876,7 +876,7 @@ export const articles: Article[] = [
 </ul>
 
 <h3>Famille 2 — Favorables à une légalisation strictement encadrée : la ligne du texte adopté</h3>
-<p>Ces candidats défendent une aide à mourir ouverte, mais assortie de conditions médicales strictes — la ligne qui correspond le plus directement au texte définitivement adopté le 15 juillet.</p>
+<p>Ces candidats défendent une aide à mourir ouverte, mais assortie de conditions médicales strictes, soit la ligne du texte définitivement adopté le 15 juillet.</p>
 <ul>
 <li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Le groupe Ensemble pour la République a voté majoritairement pour (64 pour, 18 contre, 9 abstentions) ; soutien à une aide à mourir strictement encadrée.</li>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Le groupe Horizons s'est divisé (16 pour, 18 contre) ; position personnelle favorable à un encadrement strict des conditions d'accès.</li>
@@ -946,20 +946,20 @@ export const articles: Article[] = [
     date: '2026-07-18',
     tag: 'Analyse',
     content: `
-<p>Condamnée en appel le <strong>7 juillet 2026</strong> dans l'affaire des assistants d'eurodéputés, mais déclarée candidate dès le lendemain au 20 heures de TF1 : la situation de Marine Le Pen concentre tous les débats de l'été politique. Derrière le cas particulier, l'arrêt de la cour d'appel de Paris relance une question de fond qui divise durablement la classe politique : un élu condamné pour atteinte à la probité doit-il être <strong>immédiatement inéligible</strong>, avant même l'épuisement de ses recours ? Voici les faits, le droit, et les positions des ${candidatesCount} candidats à la présidentielle 2027.</p>
+<p>La cour d'appel de Paris a condamné Marine Le Pen le <strong>7 juillet 2026</strong> dans l'affaire des assistants d'eurodéputés, en réduisant sa peine d'inéligibilité au point qu'elle est de nouveau éligible. Le lendemain, au 20 heures de TF1, elle annonçait sa candidature. Derrière ce cas particulier, une question de fond divise la classe politique depuis mars 2025 : un élu condamné pour atteinte à la probité doit-il être <strong>immédiatement inéligible</strong>, avant même l'épuisement de ses recours ? Les ${candidatesCount} candidats à la présidentielle 2027 ne répondent pas la même chose.</p>
 
 <h2>Ce que la cour d'appel a décidé le 7 juillet</h2>
-<p>La cour d'appel de Paris a reconnu Marine Le Pen coupable de <strong>détournement de fonds publics</strong> dans l'affaire des assistants d'eurodéputés du Front national — des collaborateurs rémunérés par le Parlement européen mais employés au service du parti. La peine : <strong>trois ans de prison</strong>, dont deux avec sursis et un an aménagé sous bracelet électronique, <strong>100 000 euros d'amende</strong>, et <strong>45 mois d'inéligibilité dont 30 avec sursis</strong>.</p>
-<p>Le point décisif : les <strong>15 mois ferme</strong> d'inéligibilité sont considérés comme déjà purgés. L'exécution provisoire ordonnée en première instance le 31 mars 2025 avait rendu Marine Le Pen inéligible immédiatement ; ces 15 mois ont expiré le <strong>30 juin 2026</strong>. Elle est donc <strong>éligible pour la présidentielle 2027</strong> (prévue les 18 avril et 2 mai 2027).</p>
+<p>La cour d'appel de Paris a reconnu Marine Le Pen coupable de <strong>détournement de fonds publics</strong> dans l'affaire des assistants d'eurodéputés du Front national, des collaborateurs rémunérés par le Parlement européen mais employés au service du parti. Elle a prononcé <strong>trois ans de prison</strong>, dont deux avec sursis et un an aménagé sous bracelet électronique, <strong>100 000 euros d'amende</strong>, et <strong>45 mois d'inéligibilité dont 30 avec sursis</strong>.</p>
+<p>Les <strong>15 mois ferme</strong> d'inéligibilité sont considérés comme déjà purgés. L'exécution provisoire ordonnée en première instance le 31 mars 2025 avait rendu Marine Le Pen inéligible immédiatement ; ces 15 mois ont expiré le <strong>30 juin 2026</strong>. Elle est donc <strong>éligible pour la présidentielle 2027</strong> (prévue les 18 avril et 2 mai 2027).</p>
 <p>La peine est nettement réduite par rapport à la première instance, qui avait prononcé quatre ans de prison dont deux ferme, 100 000 euros d'amende et <strong>cinq ans d'inéligibilité avec exécution provisoire</strong>.</p>
 
 <h2>Chronologie</h2>
 <ul>
-<li><strong>31 mars 2025</strong> : condamnation en première instance, avec exécution provisoire de l'inéligibilité — Marine Le Pen est écartée de toute élection du jour au lendemain. Les critiques contre les juges sont telles que le Conseil supérieur de la magistrature appelle publiquement « à la mesure » et au respect de la séparation des pouvoirs.</li>
+<li><strong>31 mars 2025</strong> : condamnation en première instance, avec exécution provisoire de l'inéligibilité, qui écarte Marine Le Pen de toute élection du jour au lendemain. Les critiques contre les juges sont telles que le Conseil supérieur de la magistrature appelle publiquement « à la mesure » et au respect de la séparation des pouvoirs.</li>
 <li><strong>Avril 2025</strong> : premier débat entre juristes sur les effets d'un futur pourvoi en cassation, autour d'une jurisprudence de 1993.</li>
 <li><strong>26 juin 2025</strong> : l'Assemblée nationale examine la proposition de loi d'Éric Ciotti (UDR) visant à supprimer l'exécution provisoire des peines d'inéligibilité. Soutenue par le RN et LR, combattue par tous les autres groupes, elle est vidée de sa substance puis retirée par son auteur.</li>
 <li><strong>30 juin 2026</strong> : échéance des 15 mois d'inéligibilité ferme finalement retenus en appel, purgés depuis mars 2025.</li>
-<li><strong>7 juillet 2026</strong> : arrêt de la cour d'appel de Paris — culpabilité confirmée, peine réduite, éligibilité retrouvée.</li>
+<li><strong>7 juillet 2026</strong> : arrêt de la cour d'appel de Paris : culpabilité confirmée, peine réduite, éligibilité retrouvée.</li>
 <li><strong>8 juillet 2026</strong> : au 20 heures de TF1, Marine Le Pen annonce : « Ce soir, je suis candidate à l'élection présidentielle et je ne changerai pas d'avis », et confirme son pourvoi en cassation.</li>
 </ul>
 
@@ -969,10 +969,10 @@ export const articles: Article[] = [
 <p>Pour les partisans de l'exécution provisoire, un élu condamné pour détournement de fonds publics ne peut pas continuer à briguer des mandats comme si de rien n'était : c'est une question d'exemplarité et de confiance dans la vie publique, et la loi doit s'appliquer aux élus comme à tout justiciable. Pour ses adversaires, appliquer une peine avant qu'elle soit définitive contredit la présomption d'innocence : si la personne est relaxée en appel ou en cassation, l'élection manquée, elle, ne se rejoue pas.</p>
 
 <h3>2. « Gouvernement des juges » ou égalité devant la loi ?</h3>
-<p>La condamnation de mars 2025 a déclenché une controverse dépassant largement le cas Le Pen : des responsables de droite et d'extrême droite ont dénoncé une justice qui déciderait de l'offre électorale à la place des électeurs — Laurent Wauquiez jugeant par exemple qu'il n'est « pas sain en démocratie qu'un élu soit interdit de se présenter à une élection ». À gauche, on a répliqué que nul n'est au-dessus des lois, l'eurodéputée LFI Manon Aubry allant jusqu'à qualifier Marine Le Pen de « première candidate délinquante de France » après l'arrêt d'appel, tandis qu'Olivier Faure (PS) rappelait qu'elle a été « condamnée à deux reprises, en première instance puis en appel ». Au Rassemblement national, la députée Laure Lavalette a salué « un vent de démocratie » soufflant sur la cour d'appel.</p>
+<p>La condamnation de mars 2025 a déclenché une controverse dépassant largement le cas Le Pen : des responsables de droite et d'extrême droite ont dénoncé une justice qui déciderait de l'offre électorale à la place des électeurs. Laurent Wauquiez a par exemple jugé qu'il n'est « pas sain en démocratie qu'un élu soit interdit de se présenter à une élection ». À gauche, on a répliqué que nul n'est au-dessus des lois, l'eurodéputée LFI Manon Aubry allant jusqu'à qualifier Marine Le Pen de « première candidate délinquante de France » après l'arrêt d'appel, tandis qu'Olivier Faure (PS) rappelait qu'elle a été « condamnée à deux reprises, en première instance puis en appel ». Au Rassemblement national, la députée Laure Lavalette a salué « un vent de démocratie » soufflant sur la cour d'appel.</p>
 
 <h3>3. Une incertitude juridique persistante</h3>
-<p>Le pourvoi en cassation annoncé par Marine Le Pen rouvre un débat technique : certains juristes soutiennent, en s'appuyant sur une jurisprudence de 1993, que le pourvoi ferait « revivre » la peine de première instance — donc les cinq ans d'inéligibilité avec exécution provisoire. Le procureur général près la Cour de cassation a écarté cette lecture, affirmant que « le pourvoi en cassation suspend l'exécution de l'arrêt ». L'incertitude ne sera totalement levée qu'au fil des décisions à venir, sur fond de campagne présidentielle déjà lancée.</p>
+<p>Le pourvoi en cassation annoncé par Marine Le Pen rouvre un débat technique : certains juristes soutiennent, en s'appuyant sur une jurisprudence de 1993, que le pourvoi ferait « revivre » la peine de première instance, donc les cinq ans d'inéligibilité avec exécution provisoire. Le procureur général près la Cour de cassation a écarté cette lecture, affirmant que « le pourvoi en cassation suspend l'exécution de l'arrêt ». L'incertitude ne sera totalement levée qu'au fil des décisions à venir, sur fond de campagne présidentielle déjà lancée.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
 <p>Au-delà du cas Marine Le Pen, la vraie ligne de fracture porte sur le principe : l'inéligibilité immédiate des élus condamnés. C'est désormais <a href="/question-politique/ineligibilite-elus-condamnes">une question du Quizz du Berger</a>. Trois familles se dessinent.</p>
@@ -1011,7 +1011,7 @@ export const articles: Article[] = [
 <li><a href="/candidat/david-lisnard">David Lisnard</a> — Critique de l'extension du pouvoir des juges, il devrait privilégier la condamnation définitive.</li>
 </ul>
 
-<h3>Famille 3 — Ce n'est ni aux juges ni à la loi : c'est aux électeurs de trancher</h3>
+<h3>Famille 3 — C'est aux électeurs de trancher</h3>
 <p>Une troisième voie récuse les deux options précédentes : écarter un élu serait un acte politique qui ne devrait appartenir qu'au peuple.</p>
 <ul>
 <li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Dès mars 2025 : « La décision de destituer un élu devrait revenir au peuple. C'est à cela que servirait le référendum révocatoire ». Une position de principe qui n'empêche pas LFI de dénoncer sévèrement les faits reprochés à la candidate du RN.</li>
@@ -1025,7 +1025,7 @@ export const articles: Article[] = [
 <tr><td>Égalité devant la loi : un justiciable ordinaire subit aussi des effets de sa condamnation avant l'appel.</td><td>La présomption d'innocence vaut jusqu'à la condamnation définitive.</td></tr>
 <tr><td>Exemplarité : répondre à la défiance des citoyens envers leurs élus.</td><td>Une élection manquée ne se rejoue pas, même en cas de relaxe ultérieure.</td></tr>
 <tr><td>Éviter qu'un élu condamné pour détournement continue de briguer des mandats pendant des années de recours.</td><td>Le calendrier judiciaire peut de facto écarter un candidat majeur d'un scrutin.</td></tr>
-<tr><td>La peine reste individualisée et contrôlée par le juge — la cour d'appel l'a d'ailleurs réduite.</td><td>Le choix de qui peut gouverner devrait revenir aux électeurs, pas aux tribunaux.</td></tr>
+<tr><td>La peine reste individualisée et contrôlée par le juge, et la cour d'appel l'a d'ailleurs réduite.</td><td>Le choix de qui peut gouverner devrait revenir aux électeurs, pas aux tribunaux.</td></tr>
 </table>
 
 <h2>Pour aller plus loin</h2>
@@ -1064,7 +1064,7 @@ export const articles: Article[] = [
     date: '2026-07-20',
     tag: 'Analyse',
     content: `
-<p>Le printemps le plus chaud jamais mesuré, le mois de juin le plus chaud jamais enregistré, et désormais <strong>99 départements</strong> sous arrêté de restriction d'eau : la France traverse en 2026 une sécheresse plus sévère que celle de 2022, jusqu'ici année de référence. Ce <strong>20 juillet</strong>, l'Assemblée nationale vote solennellement la loi d'urgence agricole, qui prévoit de doubler d'ici 2035 les capacités de stockage d'eau pour l'agriculture — autrement dit, de faciliter la construction de bassines. Voici ce qu'il faut savoir, et les positions des ${candidatesCount} candidats à la présidentielle 2027.</p>
+<p>Au 17 juillet 2026, <strong>99 départements</strong> sont sous arrêté de restriction d'eau, dont <strong>48 en situation de crise</strong>. Après le printemps le plus chaud et le mois de juin le plus chaud jamais mesurés en France, la sécheresse de 2026 dépasse celle de 2022, jusqu'ici année de référence. Ce <strong>20 juillet</strong>, l'Assemblée nationale vote solennellement la loi d'urgence agricole, qui prévoit de doubler d'ici 2035 les capacités de stockage d'eau pour l'agriculture, et donc de faciliter la construction de bassines. C'est sur ce point que les ${candidatesCount} candidats à la présidentielle 2027 se séparent.</p>
 
 <h2>Une sécheresse hors norme</h2>
 <p>Chronologie d'une crise qui s'aggrave de mois en mois :</p>
@@ -1073,7 +1073,7 @@ export const articles: Article[] = [
 <li><strong>Fin mai 2026</strong> : un épisode de chaleur précoce et inhabituel touche le pays.</li>
 <li><strong>Juin 2026</strong> : le mois de juin le plus chaud jamais observé en France, avec une température moyenne de 22,75 °C (+3,8 °C par rapport aux normales), devançant le record de juin 2003.</li>
 <li><strong>1er juillet 2026</strong> : face à la canicule, la ministre de l'Agriculture Annie Genevard annonce un plan de mesures d'urgence (accélération des indemnisations d'assurance récolte, aides à l'équipement des élevages en brumisation et ventilation, soutien au transport de fourrage, fonds hydraulique agricole pour financer des retenues d'eau).</li>
-<li><strong>9 juillet 2026</strong> : 95 des 96 départements métropolitains sont concernés par au moins une mesure de restriction d'eau — seule la Haute-Corse est épargnée.</li>
+<li><strong>9 juillet 2026</strong> : 95 des 96 départements métropolitains sont concernés par au moins une mesure de restriction d'eau. Seule la Haute-Corse est épargnée.</li>
 <li><strong>16 juillet 2026</strong> : députés et sénateurs réunis en commission mixte paritaire (CMP) trouvent un compromis sur la loi d'urgence agricole, adopté par 8 voix (élus centristes, de droite et d'extrême droite) contre 4 (élus de gauche), avec 2 abstentions (macronistes).</li>
 <li><strong>17 juillet 2026</strong> : 99 départements sont désormais concernés par une restriction, dont <strong>48 en situation de crise</strong> (le niveau le plus grave) et 23 en alerte renforcée. 206 arrêtés préfectoraux sur l'eau sont en vigueur, un niveau inédit depuis au moins 2013. 93 % des points de suivi des nappes phréatiques affichent un niveau en baisse, 54 % sont sous les normales mensuelles.</li>
 <li><strong>20 juillet 2026</strong> : vote solennel du texte à l'Assemblée nationale.</li>
@@ -1085,14 +1085,14 @@ export const articles: Article[] = [
 <p>Le texte issu du compromis du 16 juillet prévoit notamment :</p>
 <ul>
 <li>Le <strong>doublement d'ici 2035</strong> des capacités de stockage d'eau agricole, avec une simplification des procédures de consultation publique pour la construction de retenues d'eau (bassines).</li>
-<li>Une <strong>dérogation ministérielle de trois ans maximum</strong>, sur avis de l'Anses, permettant l'usage de deux insecticides néonicotinoïdes interdits en France (flupyradifurone, acétamipride) sur les cultures de betterave, pomme, cerise et noisette — un point hérité du débat sur la <a href="https://fr.wikipedia.org/wiki/Loi_Duplomb">loi Duplomb</a>, promulguée le 12 août 2025 après une censure partielle du Conseil constitutionnel.</li>
-<li>Le retrait, par rapport à la version votée au Sénat, d'un principe de « non-régression agricole » qui aurait limité toute nouvelle contrainte sur les prélèvements d'eau agricoles — un recul salué par la FNSEA, dénoncé par les parlementaires de gauche.</li>
+<li>Une <strong>dérogation ministérielle de trois ans maximum</strong>, sur avis de l'Anses, permettant l'usage de deux insecticides néonicotinoïdes interdits en France (flupyradifurone, acétamipride) sur les cultures de betterave, pomme, cerise et noisette, un point hérité du débat sur la <a href="https://fr.wikipedia.org/wiki/Loi_Duplomb">loi Duplomb</a>, promulguée le 12 août 2025 après une censure partielle du Conseil constitutionnel.</li>
+<li>Le retrait, par rapport à la version votée au Sénat, d'un principe de « non-régression agricole » qui aurait limité toute nouvelle contrainte sur les prélèvements d'eau agricoles.</li>
 </ul>
 
 <h2>Pourquoi ce dossier divise</h2>
 
 <h3>1. Bassines et « guerre de l'eau »</h3>
-<p>Depuis les affrontements de <strong>Sainte-Soline</strong> en 2023, les bassines (ou retenues de substitution) cristallisent l'opposition entre agriculteurs irrigants et défenseurs de l'environnement. Le 28 mars 2026, la Coordination Rurale a manifesté devant la mégabassine de Sainte-Soline, tandis qu'un collectif « Bassines non merci » s'est constitué en Touraine contre un projet de retenue relancé en Indre-et-Loire. Plusieurs élus locaux, dont le représentant de France Urbaine Ludovic Brossard, ont mis en garde contre le risque d'une véritable « guerre de l'eau » entre usages agricoles, industriels et domestiques.</p>
+<p>Depuis les affrontements de <strong>Sainte-Soline</strong> en 2023, les bassines (ou retenues de substitution) opposent frontalement agriculteurs irrigants et défenseurs de l'environnement. Le 28 mars 2026, la Coordination Rurale a manifesté devant la mégabassine de Sainte-Soline, tandis qu'un collectif « Bassines non merci » s'est constitué en Touraine contre un projet de retenue relancé en Indre-et-Loire. Plusieurs élus locaux, dont le représentant de France Urbaine Ludovic Brossard, ont mis en garde contre le risque d'une véritable « guerre de l'eau » entre usages agricoles, industriels et domestiques.</p>
 
 <h3>2. S'adapter à la chaleur : climatiser ou sobriété ?</h3>
 <p>Le 19 juin 2026, en pleine canicule, un échange vif a opposé Marine Le Pen et Jean-Luc Mélenchon sur franceinfo. Marine Le Pen a annoncé vouloir mettre en place, si elle est élue, un « plan de climatisation massif », en priorité pour « les hôpitaux, les maisons de retraite, les écoles ». Jean-Luc Mélenchon a rétorqué : « Climatiser partout, ça veut dire augmenter les dégâts », en défendant plutôt son projet d'« écorégions » organisées autour des bassins versants pour « faire entrer l'eau dans le débat ».</p>
@@ -1101,7 +1101,7 @@ export const articles: Article[] = [
 <p>Pour une partie des candidats, la sécheresse impose de repenser en profondeur les cultures irriguées (maïs, notamment) et l'élevage intensif. Pour d'autres, la priorité est de sécuriser l'approvisionnement en eau des exploitations existantes, quitte à accélérer la construction d'infrastructures de stockage.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la question <a href="/question-politique/crise-eau-secheresse-france">« Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ? »</a> du Quizz du Berger, les ${candidatesCount} candidats se répartissent en trois familles nettes. Fait notable : <strong>aucun</strong> ne choisit l'option la plus légère du quiz (« on fait beaucoup de bruit pour pas grand-chose, la France ne manque pas d'eau »).</p>
+<p>Sur la question <a href="/question-politique/crise-eau-secheresse-france">« Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ? »</a> du Quizz du Berger, les ${candidatesCount} candidats se répartissent en trois familles nettes. <strong>Aucun</strong> ne choisit l'option la plus légère du quiz (« on fait beaucoup de bruit pour pas grand-chose, la France ne manque pas d'eau »).</p>
 
 <h3>Famille 1 — Changer radicalement le modèle agricole, priorité absolue</h3>
 <p>Ces candidats jugent que la crise de l'eau impose une transformation en profondeur du modèle agricole français, plutôt que des solutions techniques comme les bassines.</p>
@@ -1188,7 +1188,7 @@ export const articles: Article[] = [
     date: '2026-07-23',
     tag: 'Analyse',
     content: `
-<p>Après un an et demi de navette parlementaire, le Parlement français a définitivement adopté, le <strong>21 juillet 2026</strong>, une loi interdisant l'accès aux réseaux sociaux aux mineurs de moins de 15 ans. La France devient ainsi le premier pays de l'Union européenne à franchir ce cap. Le texte, porté depuis juin 2025 par Emmanuel Macron, a été voté à une large majorité (279 voix pour, 81 contre à l'Assemblée nationale), mais il continue de diviser sur son efficacité, sa constitutionnalité et son impact sur la vie privée. Voici ce qu'il faut savoir, et les positions des ${candidatesCount} candidats à la présidentielle 2027.</p>
+<p>Après un an et demi de navette parlementaire, le Parlement français a définitivement adopté, le <strong>21 juillet 2026</strong>, une loi interdisant l'accès aux réseaux sociaux aux mineurs de moins de 15 ans. La France devient ainsi le premier pays de l'Union européenne à franchir ce cap. Le texte, porté depuis juin 2025 par Emmanuel Macron, a été voté à une large majorité (279 voix pour, 81 contre à l'Assemblée nationale), mais il continue de diviser sur son efficacité, sa constitutionnalité et son impact sur la vie privée. Les ${candidatesCount} candidats à la présidentielle 2027 ne s'accordent ni sur l'âge, ni sur la méthode.</p>
 
 <h2>Que contient la loi sur les réseaux sociaux et les mineurs ?</h2>
 <p>Le texte instaure une <strong>interdiction générale d'accès aux réseaux sociaux</strong> (Instagram, TikTok, Facebook, Snapchat, etc.) pour les mineurs de moins de 15 ans. Des exceptions sont prévues pour les « encyclopédies en ligne » et les « projets numériques à vocation éducative ».</p>
@@ -1200,7 +1200,7 @@ export const articles: Article[] = [
 <li><strong>Premier semestre 2026</strong> : la proposition de loi fait la navette entre l'Assemblée nationale et le Sénat, qui la modifie notamment sur le mécanisme de vérification d'âge.</li>
 <li><strong>20 juillet 2026</strong> : députés et sénateurs s'accordent en commission mixte paritaire (CMP) sur une version commune du texte, avec un âge minimal fixé à 15 ans.</li>
 <li><strong>21 juillet 2026</strong> : adoption définitive par le Parlement. À l'Assemblée nationale, le vote rassemble la majorité présidentielle, la droite et le Rassemblement national (279 voix pour). Seul le groupe LFI vote contre ; les députés socialistes s'abstiennent tout en annonçant vouloir saisir le Conseil constitutionnel.</li>
-<li><strong>1er septembre 2026</strong> : entrée en vigueur pour les nouveaux comptes — plus aucune création de compte pour un mineur de moins de 15 ans.</li>
+<li><strong>1er septembre 2026</strong> : entrée en vigueur pour les nouveaux comptes : plus aucune création de compte pour un mineur de moins de 15 ans.</li>
 <li><strong>1er janvier 2027</strong> : début de la vérification des comptes déjà existants.</li>
 </ul>
 
@@ -1262,7 +1262,7 @@ export const articles: Article[] = [
 <li><a href="/candidat/david-lisnard">David Lisnard</a> — Ligne libérale assumée : l'encadrement du temps d'écran relève des parents, pas d'une interdiction décidée par l'État.</li>
 </ul>
 
-<h2>Ce que la loi interdit, et ce qu'elle ne change pas</h2>
+<h2>Arguments pour et arguments contre la loi</h2>
 <table>
 <tr><th>Arguments en faveur de la loi</th><th>Arguments contre, ou réservés</th></tr>
 <tr><td>Répond à une urgence de santé publique : addiction aux écrans, exposition précoce à des contenus violents ou pornographiques.</td><td>Facilement contournable : en Australie, moins de 20 % des mineurs concernés respectent une interdiction comparable.</td></tr>

@@ -17,7 +17,7 @@
     "prisma-reset-db": "rm -rf prisma/migrations && npx prisma migrate reset --force && npm run prisma-setup",
     "typecheck": "tsc -b",
     "format": "prettier --write . --ignore-unknown",
-    "get-all-translations": "tsx ./scripts/get-all-translations.ts",
+    "extract-all-answers": "node ./scripts/extract-all-answers.js",
     "start-backup-db": "tsx ./db-backup/cron.ts",
     "backup-db": "tsx ./db-backup/execute.ts",
     "download-backup": "tsx ./db-backup/download-backup.ts"

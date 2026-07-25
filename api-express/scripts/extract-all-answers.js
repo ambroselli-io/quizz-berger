@@ -1,49 +1,66 @@
-require("../src/mongo");
-require("dotenv").config({ path: ".env" });
-const mongoose = require("mongoose");
+/**
+ * Regenerates the human-readable candidate exports in src/shared/candidates-answers/*.txt
+ * from the two source-of-truth JSON files. No database involved: candidate answers live
+ * in candidates-answers.json, not in Postgres.
+ *
+ * The first line of each .txt carries a hand-written party/positioning label that exists
+ * nowhere else, so it is preserved as-is and only the body is regenerated.
+ *
+ * Usage: node api-express/scripts/extract-all-answers.js [--check]
+ *   --check  report files that would change, write nothing (for CI)
+ */
 const fs = require("fs");
 const path = require("path");
-const quizz = require("../../shared/quizz-2027.json");
-const UserObject = require("../src/models/user");
-const AnswerObject = require("../src/models/answer");
-const md5 = require("md5");
 
-const questions = quizz.reduce((questions, theme) => [...questions, ...theme.questions], []);
+const sharedDir = path.resolve(__dirname, "../src/shared");
+const outDir = path.join(sharedDir, "candidates-answers");
+const quizz = require(path.join(sharedDir, "quizz-2027.json"));
+const candidates = require(path.join(sharedDir, "candidates-answers.json"));
 
-(async () => {
-  const candidates = await UserObject.find({ isCandidate: true });
-  const candidatesAnswers = await AnswerObject.find({ user: candidates.map((c) => c._id) });
-  for (const candidate of candidates) {
-    const candidateQuizz = [];
-    for (const theme of quizz) {
-      const themeAnswers = {
-        theme: theme.fr,
-        answers: [],
-      };
-      for (const question of theme.questions) {
-        const answer = candidatesAnswers.find((a) => a.questionId === question._id && candidate._id.equals(a.user));
-        themeAnswers.answers.push({ question: question.fr, answer: question.answers[answer.answerIndex] });
-      }
-      candidateQuizz.push(themeAnswers);
-    }
-    // console.log(
-    //   `Réponses de ${candidate.pseudo}\n\n\n${candidateQuizz
-    //     .map(
-    //       (themeAnswers) =>
-    //         `\n\n${themeAnswers.theme}:\n\n\n${themeAnswers.answers.map(({ question, answer }) => `${question}\n${answer}`).join("\n\n")}`
-    //     )
-    //     .join("\n\n\n")}`
-    // );
-    console.log(candidate.pseudo);
+const checkOnly = process.argv.includes("--check");
 
-    fs.writeFileSync(
-      path.resolve(`../shared/candidates-answers/${candidate.pseudo}.txt`),
-      `Réponses de ${candidate.pseudo}\n\n\n${candidateQuizz
-        .map(
-          (themeAnswers) =>
-            `\n\n${themeAnswers.theme}:\n\n\n${themeAnswers.answers.map(({ question, answer }) => `${question}\n${answer}`).join("\n\n")}`,
-        )
-        .join("\n\n\n")}`,
-    );
+function buildBody(candidate) {
+  const answerFor = (questionId) => candidate.answers.find((a) => a.questionId === questionId);
+
+  return quizz
+    .map((theme) => {
+      const blocks = theme.questions
+        .map((question) => {
+          const answer = answerFor(question._id);
+          if (!answer) return null;
+          return `${question._id}: ${question.fr}\n[${answer.answerIndex}] ${question.answers[answer.answerIndex]}`;
+        })
+        .filter(Boolean);
+      if (!blocks.length) return null;
+      return `${theme.fr}:\n\n\n${blocks.join("\n\n")}`;
+    })
+    .filter(Boolean)
+    .join("\n\n\n");
+}
+
+const changed = [];
+const missing = [];
+
+for (const candidate of candidates) {
+  const file = path.join(outDir, `${candidate.pseudo}.txt`);
+  if (!fs.existsSync(file)) {
+    missing.push(candidate.pseudo);
+    continue;
   }
-})();
+  const previous = fs.readFileSync(file, "utf8");
+  const header = previous.split("\n")[0];
+  const next = `${header}\n\n\n${buildBody(candidate)}\n`;
+  if (next === previous) continue;
+  changed.push(candidate.pseudo);
+  if (!checkOnly) fs.writeFileSync(file, next);
+}
+
+if (missing.length) {
+  console.error(`Aucun .txt pour : ${missing.join(", ")} (en-tête à écrire à la main d'abord)`);
+}
+console.log(
+  changed.length
+    ? `${changed.length} fichier(s) ${checkOnly ? "à mettre à jour" : "mis à jour"} : ${changed.join(", ")}`
+    : "Tous les .txt sont à jour.",
+);
+process.exit(missing.length || (checkOnly && changed.length) ? 1 : 0);
