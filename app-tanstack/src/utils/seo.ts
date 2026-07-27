@@ -221,6 +221,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Réseaux sociaux interdits aux mineurs de 15 ans : les positions des candidats 2027',
     seoDescription: `Réseaux sociaux et écrans chez les jeunes : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-pol-09': {
+    slug: 'loi-ripost-securite-quotidien-france',
+    seoTitle: 'Loi Ripost et sécurité du quotidien : les positions des candidats 2027',
+    seoDescription: `Rodéos motorisés, free parties, protoxyde d'azote : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la loi Ripost.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions
