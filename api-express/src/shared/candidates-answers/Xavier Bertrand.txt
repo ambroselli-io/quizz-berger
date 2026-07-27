@@ -298,6 +298,9 @@ question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
 [2] Il faut responsabiliser les parents : suspendre les allocations familiales en cas de délinquance de leurs enfants
 
+question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos motorisés, free parties, protoxyde d'azote) ?
+[1] Soutenir la loi Ripost telle qu'adoptée : nouveaux délits et amendes plus lourdes contre les rodéos, les free parties et le protoxyde d'azote
+
 
 Politique fiscale:
 
