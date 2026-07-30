@@ -75,6 +75,9 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [1] C'est une bonne idée si c'est bien accompagné, avec des aides pour isoler les logements par exemple
 
+question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
+[4] Les incendies sont la conséquence du capitalisme productiviste : il faut une planification écologique et une rupture avec le système économique actuel, pas seulement plus de moyens
+
 
 Corruption et lobbying:
 

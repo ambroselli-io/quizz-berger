@@ -75,6 +75,9 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [2] On peut faire des économies intelligentes, mais pas question de revenir en arrière sur notre confort
 
+question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
+[0] Durcir les sanctions contre les incendies volontaires et responsabiliser les collectivités locales, sans augmenter significativement les moyens nationaux
+
 
 Corruption et lobbying:
 

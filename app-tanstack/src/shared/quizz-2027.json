@@ -423,6 +423,27 @@
           [0, 0, 3, 5, 0],
           [0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-climat-07",
+        "fr": "Comment adapter la sécurité civile et lutter contre les feux de forêt ?",
+        "help": "https://fr.wikipedia.org/wiki/Feux_de_for%C3%AAt_de_2026_en_Gironde_et_dans_les_Landes",
+        "answers": [
+          "Durcir les sanctions contre les incendies volontaires et responsabiliser les collectivités locales, sans augmenter significativement les moyens nationaux",
+          "Moderniser la sécurité civile par une loi-cadre (flotte aérienne, statut des pompiers volontaires), financée par une hausse ciblée de la taxe sur les assurances, en maîtrisant la dépense publique",
+          "Un plan d'investissement pluriannuel dans les moyens humains et aériens de la sécurité civile, financé par le budget général, avec une politique d'adaptation des forêts au changement climatique",
+          "Un « État-providence climatique » financé par une taxe sur les superprofits des compagnies pétrolières et gazières, avec un plan de reforestation résiliente",
+          "Les incendies sont la conséquence du capitalisme productiviste : il faut une planification écologique et une rupture avec le système économique actuel, pas seulement plus de moyens",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
