@@ -75,6 +75,9 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [3] C'est une arnaque pour nous faire accepter un appauvrissement : produisons plus d'énergie plutôt
 
+question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
+[1] Moderniser la sécurité civile par une loi-cadre (flotte aérienne, statut des pompiers volontaires), financée par une hausse ciblée de la taxe sur les assurances, en maîtrisant la dépense publique
+
 
 Corruption et lobbying:
 

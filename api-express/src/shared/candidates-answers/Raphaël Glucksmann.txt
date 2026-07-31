@@ -75,6 +75,9 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [0] C'est indispensable : il faut consommer moins, point final, même si ça change nos habitudes
 
+question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
+[2] Un plan d'investissement pluriannuel dans les moyens humains et aériens de la sécurité civile, financé par le budget général, avec une politique d'adaptation des forêts au changement climatique
+
 
 Corruption et lobbying:
 

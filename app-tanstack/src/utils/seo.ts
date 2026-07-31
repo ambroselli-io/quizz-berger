@@ -226,6 +226,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Loi Ripost et sécurité du quotidien : les positions des candidats 2027',
     seoDescription: `Rodéos motorisés, free parties, protoxyde d'azote : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la loi Ripost.`,
   },
+  'question-2027-climat-07': {
+    slug: 'feux-foret-securite-civile-france',
+    seoTitle: 'Feux de forêt et sécurité civile : les positions des candidats à la présidentielle 2027',
+    seoDescription: `Moyens des pompiers, flotte aérienne, adaptation des forêts au changement climatique : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions
