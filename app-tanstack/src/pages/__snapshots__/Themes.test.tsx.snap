@@ -15,7 +15,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Climat, Énergie et Écologie",
     "id": "theme-2027-climat",
-    "questionCount": 6,
+    "questionCount": 7,
   },
   {
     "fr": "Corruption et lobbying",
@@ -75,7 +75,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Police, Justice et Sécurité",
     "id": "theme-2027-police",
-    "questionCount": 8,
+    "questionCount": 9,
   },
   {
     "fr": "Pouvoir d'achat et vie quotidienne",
