@@ -39,6 +39,12 @@ Question shape: `{ _id, fr, help?, answers: string[], scores: number[][] }`. **I
 
 Type definitions are also duplicated, not shared: `api-express/src/types/quizz.ts`, `app-tanstack/src/types/quizz.ts`, `expo/src/types/quizz.ts`.
 
+**Any change to the question set breaks two snapshot tests on purpose** — they exist to force an explicit acknowledgement:
+- `app-tanstack/src/pages/__snapshots__/Themes.test.tsx.snap` — per-theme question counts.
+- `app-tanstack/src/pages/__snapshots__/Result.test.tsx.snap` — candidate percentages, recomputed over the new question set.
+
+CI (`.github/workflows/deploy.yml`) runs `npm test` before deploying, so stale snapshots block production. After any change below: `cd app-tanstack && npx vitest run -u`, then read the `.snap` diff and confirm it matches what you changed (one theme's count moved by the expected amount; percentages shifted a few points; the pinned candidate still at 100%). A larger diff means the data is wrong — usually a non-square `scores` matrix or a missing/incorrect candidate `answerIndex`. Commit the `.snap` files with the change.
+
 ## Adding a question
 
 1. Add the entry inside the right theme's `questions[]` in **all 3** `quizz-2027.json` files.

@@ -92,18 +92,40 @@ Keep the section skeleton and the search-query headings — that's SEO and reade
 
 ## 6. Validate
 
+The CI that runs on `main` (`.github/workflows/deploy.yml`) runs **type-check AND tests**, and a failing test blocks the production deploy. Run both here, in this order:
+
 ```
-cd app-tanstack && npm install && npm run typecheck
+cd app-tanstack && npm install && npm run typecheck && npm test
 ```
 
-Fix any errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square.
+Fix any type errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square.
+
+**Adding a question always breaks two snapshots — that is by design, and updating them is part of the job:**
+
+- `src/pages/__snapshots__/Themes.test.tsx.snap` — per-theme question counts (the new question's theme gains 1).
+- `src/pages/__snapshots__/Result.test.tsx.snap` — candidate percentages shift by a point or two, since the score is computed over one more question.
+
+When (and only when) the failures are exactly those two snapshots and the diff matches what you changed, accept them:
+
+```
+cd app-tanstack && npx vitest run -u && npm test
+```
+
+Then read `git diff` on both `.snap` files and sanity-check it before committing:
+
+- Themes: **exactly one** theme's `questionCount` went up by 1, and it's the theme you added to. Nothing else moved.
+- Result: percentages move by a few points at most, the pinned candidate stays at `100`, and no candidate disappears from the list.
+
+If the diff is bigger than that — a theme you didn't touch changed, a candidate vanished, a percentage swings wildly — you broke something (usually a non-square `scores` matrix, a wrong `answerIndex`, or a candidate missing the new question). Fix the data and re-run; do **not** paper over it with `-u`.
+
+Commit the updated `.snap` files in the same PR as the question. A PR that adds a question without them will fail CI on merge and block the deploy.
 
 Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French checks in `french.md` yourself, and fix what fails before opening the PR. Count the prose em dashes explicitly (total `—` minus one per candidate bullet) and confirm it lands at 0–2.
 
 ## 7. Open a draft PR
 
 - Create a branch `blog/<slug>` from main.
-- Commit all the files changed above (article, and quiz/answers/seo files if a question was added).
+- Commit all the files changed above (article, and quiz/answers/seo files + the two updated `.snap` files if a question was added).
 - Push the branch and open a **draft PR** to `main` (use `gh pr create --draft` if available; otherwise push and report the branch name).
 - PR title: `blog: <article title>` (add `+ new question` if step 3 applied).
 - PR body must include:
