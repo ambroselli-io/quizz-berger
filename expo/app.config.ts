@@ -1,10 +1,13 @@
 import { ExpoConfig, ConfigContext } from "expo/config";
 
+const version = "1.0.1";
+const buildNumber = "2";
+
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: "Quizz du Berger",
   slug: "quizz-du-berger",
-  version: "1.0.0",
+  version,
   orientation: "portrait",
   icon: "./assets/icon.png",
   scheme: "quizz-du-berger",
@@ -15,14 +18,16 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     bundleIdentifier: "com.ambroselli.quizzduberger",
     infoPlist: {
       ITSAppUsesNonExemptEncryption: false
-    }
+    },
+    buildNumber
   },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#F3CE49"
     },
-    package: "com.ambroselli.quizzduberger"
+    package: "com.ambroselli.quizzduberger",
+    versionCode: Number(buildNumber)
   },
   web: {
     favicon: "./assets/favicon.png"

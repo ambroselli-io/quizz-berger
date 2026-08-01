@@ -3,9 +3,9 @@ import { View, Text, FlatList, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '~/types/navigation';
-import { quizz, quizzForSearch } from '~/utils/quizz';
 import { normalizeWord } from '~/utils/diacritics';
 import getUserThemes from '~/utils/getUserThemes';
+import useQuizz from '~/hooks/useQuizz';
 import useUser from '~/hooks/useUser';
 import useUserAnswers from '~/hooks/useUserAnswers';
 import API from '~/services/api';
@@ -24,16 +24,17 @@ const filterBySearch =
 
 export default function ThemesScreen() {
   const navigation = useNavigation<Nav>();
+  const { quizz, quizzForSearch } = useQuizz();
   const { user, mutate } = useUser();
   const { userAnswers } = useUserAnswers();
   const [search, setSearch] = useState('');
 
-  const userThemes = useMemo(() => getUserThemes(userAnswers), [userAnswers]);
+  const userThemes = useMemo(() => getUserThemes(userAnswers, quizz), [userAnswers, quizz]);
 
   const quizzFiltered = useMemo(() => {
     if (!search) return quizz;
     return quizz.filter(filterBySearch(search, quizzForSearch));
-  }, [search]);
+  }, [search, quizz, quizzForSearch]);
 
   const shuffledQuizz = useMemo(() => {
     const hour = new Date().getHours();
@@ -76,7 +77,7 @@ export default function ThemesScreen() {
         onPress={() => goToQuizz(item._id)}
       />
     ),
-    [userAnswers],
+    [userAnswers, quizz],
   );
 
   return (

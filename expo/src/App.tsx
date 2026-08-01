@@ -15,6 +15,7 @@ import {
   MerriweatherSans_700Bold,
 } from '@expo-google-fonts/merriweather-sans';
 import Navigator from './Navigator';
+import useSyncQuizz from './hooks/useSyncQuizz';
 import storage from './utils/storage';
 
 SplashScreen.preventAutoHideAsync();
@@ -29,6 +30,8 @@ export default function App() {
     MerriweatherSans_400Regular,
     MerriweatherSans_700Bold,
   });
+
+  useSyncQuizz();
 
   useEffect(() => {
     storage.init().then(() => setStorageReady(true));

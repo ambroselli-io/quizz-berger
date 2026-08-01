@@ -3,8 +3,8 @@ import { View, Text, ScrollView, ActivityIndicator } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
 import type { RootStackParamList } from '~/types/navigation';
-import { quizz } from '~/utils/quizz';
 import getUserThemes from '~/utils/getUserThemes';
+import useQuizz from '~/hooks/useQuizz';
 import useUser from '~/hooks/useUser';
 import useUserAnswers from '~/hooks/useUserAnswers';
 import useCandidates from '~/hooks/useCandidates';
@@ -17,13 +17,14 @@ export default function AllQuestionsScreen() {
   const route = useRoute<Route>();
   const candidatePseudo = route.params?.candidatePseudo;
   const forCandidate = !!candidatePseudo;
+  const { quizz } = useQuizz();
   const { user } = useUser();
   const { userAnswers } = useUserAnswers();
   const { candidates } = useCandidates();
   const { friends } = useFriends();
 
   const [candidateAnswers, setCandidateAnswers] = useState<Candidate | null>(null);
-  const userThemes = useMemo(() => getUserThemes(userAnswers), [userAnswers]);
+  const userThemes = useMemo(() => getUserThemes(userAnswers, quizz), [userAnswers, quizz]);
   const isLoading = forCandidate && !candidateAnswers?.pseudo;
 
   useEffect(() => {

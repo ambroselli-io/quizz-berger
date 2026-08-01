@@ -4,8 +4,8 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RouteProp } from "@react-navigation/native";
 import type { RootStackParamList } from "~/types/navigation";
-import { quizz, quizzQuestions } from "~/utils/quizz";
 import getUserThemes from "~/utils/getUserThemes";
+import useQuizz from "~/hooks/useQuizz";
 import useUser from "~/hooks/useUser";
 import useUserAnswers from "~/hooks/useUserAnswers";
 import useCandidates from "~/hooks/useCandidates";
@@ -30,6 +30,7 @@ export default function ResultScreen() {
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
   const userPseudo = route.params?.userPseudo;
+  const { quizz, quizzQuestions } = useQuizz();
   const { user, mutate } = useUser();
   const { userAnswers } = useUserAnswers();
   const { candidates, isLoading: candidatesLoading } = useCandidates();
@@ -69,7 +70,7 @@ export default function ResultScreen() {
     return publicUser;
   }, [user, publicUser, publicPage, userPseudo]);
 
-  const selectedThemes = useMemo(() => getUserThemes(answersToShow), [answersToShow]);
+  const selectedThemes = useMemo(() => getUserThemes(answersToShow, quizz), [answersToShow, quizz]);
 
   const title = useMemo(() => {
     if (!publicPage && !userToShow?.pseudo) return "Voici vos résultats";
@@ -194,7 +195,7 @@ export default function ResultScreen() {
         })) as any,
         quizzQuestions
       ),
-    [answersToShow, selectedThemes, candidates]
+    [answersToShow, selectedThemes, candidates, quizzQuestions]
   );
 
   const friendsScorePerThemes = useMemo(
@@ -209,7 +210,7 @@ export default function ResultScreen() {
         })) as any,
         quizzQuestions
       ),
-    [answersToShow, selectedThemes, friends]
+    [answersToShow, selectedThemes, friends, quizzQuestions]
   );
 
   const filteredPersons: UserAnswerWithScorePerThemeAndMax[] = useMemo(

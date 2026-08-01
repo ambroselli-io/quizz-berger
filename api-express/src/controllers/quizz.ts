@@ -1,4 +1,5 @@
 import express from "express";
+import crypto from "crypto";
 import fs from "fs";
 import path from "path";
 import { catchErrors } from "~/utils/error";
@@ -7,10 +8,21 @@ import type { Theme } from "~/types/quizz";
 
 const router = express.Router();
 
+// Clients (the mobile app) poll /quizz/version and only re-download the whole
+// quizz when this changes, so they get new questions without a store release.
+const version = crypto.createHash("sha1").update(JSON.stringify(quizz)).digest("hex").slice(0, 12);
+
+router.get(
+  "/version",
+  catchErrors(async (req: express.Request, res: express.Response) => {
+    res.status(200).send({ ok: true, version });
+  }),
+);
+
 router.get(
   "/",
   catchErrors(async (req: express.Request, res: express.Response) => {
-    res.status(200).send({ ok: true, data: quizz });
+    res.status(200).send({ ok: true, version, data: quizz });
   }),
 );
 

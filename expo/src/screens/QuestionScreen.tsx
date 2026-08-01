@@ -4,7 +4,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RouteProp } from '@react-navigation/native';
 import type { RootStackParamList } from '~/types/navigation';
-import { quizz } from '~/utils/quizz';
+import useQuizz from '~/hooks/useQuizz';
 import useUser from '~/hooks/useUser';
 import useUserAnswers from '~/hooks/useUserAnswers';
 import ProgressBar from '~/components/ProgressBar';
@@ -16,12 +16,13 @@ export default function QuestionScreen() {
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
   const { themeId, questionId } = route.params;
+  const { quizz } = useQuizz();
   const { user } = useUser();
   const { userAnswers, setAnswer } = useUserAnswers();
 
   const theme = useMemo(
     () => quizz.find((t) => t._id === themeId) ?? { _id: '', fr: '', backgroundColor: '', questions: [] },
-    [themeId],
+    [themeId, quizz],
   );
   const questions = theme.questions;
   const questionIndex = useMemo(

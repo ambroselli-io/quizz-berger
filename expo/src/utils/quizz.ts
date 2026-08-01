@@ -1,15 +1,9 @@
-import rawQuizzData from '~/shared/quizz-2027.json';
+import bundledQuizzData from '~/shared/quizz-2027.json';
 import { normalizeWord } from './diacritics';
 import type { QuizzTheme, QuizzQuestion } from '~/types/quizz';
 
-const rawQuizz: QuizzTheme[] = rawQuizzData as QuizzTheme[];
-
-const formatQuizzForSearch = (quizzData: QuizzTheme[]) =>
-  quizzData.map((theme) => {
-    const questions = theme.questions.map((q) => q.fr).join(' ');
-    const answers = theme.questions.map((q) => q.answers.join(' ')).join(' ');
-    return normalizeWord(`${theme.fr} ${questions} ${answers}`.toLocaleLowerCase());
-  });
+/** Questions shipped with the binary — used until the API answers, and offline. */
+export const bundledThemes: QuizzTheme[] = bundledQuizzData as QuizzTheme[];
 
 const colors = [
   '#e6194B', '#3cb44b', '#ffe119', '#4363d8', '#f58231',
@@ -19,14 +13,44 @@ const colors = [
   '#ffffff', '#000000',
 ];
 
-const enrichedQuizz: QuizzTheme[] = rawQuizz.map((theme, index) => ({
-  ...theme,
-  backgroundColor: colors[index],
-}));
+export const enrichThemes = (themes: QuizzTheme[]): QuizzTheme[] =>
+  themes.map((theme, index) => ({
+    ...theme,
+    backgroundColor: colors[index % colors.length],
+  }));
 
-const quizzForSearch = formatQuizzForSearch(enrichedQuizz);
-const quizzQuestions: QuizzQuestion[] = rawQuizz.reduce<QuizzQuestion[]>((questions, theme) => {
-  return [...questions, ...theme.questions];
-}, []);
+export const formatQuizzForSearch = (themes: QuizzTheme[]): string[] =>
+  themes.map((theme) => {
+    const questions = theme.questions.map((q) => q.fr).join(' ');
+    const answers = theme.questions.map((q) => q.answers.join(' ')).join(' ');
+    return normalizeWord(`${theme.fr} ${questions} ${answers}`.toLocaleLowerCase());
+  });
 
-export { enrichedQuizz as quizz, quizzForSearch, quizzQuestions };
+export const flattenQuestions = (themes: QuizzTheme[]): QuizzQuestion[] =>
+  themes.reduce<QuizzQuestion[]>((questions, theme) => [...questions, ...theme.questions], []);
+
+// The scoring algorithm indexes question.scores[answerIndex][answerIndex], so a
+// non-square matrix would silently produce wrong podiums. Reject the whole
+// payload rather than store questions we cannot score.
+const isValidQuestion = (question: unknown): question is QuizzQuestion => {
+  const q = question as QuizzQuestion;
+  if (!q || typeof q._id !== 'string' || typeof q.fr !== 'string') return false;
+  if (!Array.isArray(q.answers) || !q.answers.length) return false;
+  if (!q.answers.every((answer) => typeof answer === 'string')) return false;
+  if (!Array.isArray(q.scores) || q.scores.length !== q.answers.length) return false;
+  return q.scores.every(
+    (scoreLine) =>
+      Array.isArray(scoreLine) &&
+      scoreLine.length === q.answers.length &&
+      scoreLine.every((score) => typeof score === 'number'),
+  );
+};
+
+const isValidTheme = (theme: unknown): theme is QuizzTheme => {
+  const t = theme as QuizzTheme;
+  if (!t || typeof t._id !== 'string' || typeof t.fr !== 'string') return false;
+  return Array.isArray(t.questions) && t.questions.length > 0 && t.questions.every(isValidQuestion);
+};
+
+export const isValidQuizz = (data: unknown): data is QuizzTheme[] =>
+  Array.isArray(data) && data.length > 0 && data.every(isValidTheme);
