@@ -8,7 +8,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 
 - **App**: `app-tanstack/` — React 19 + TanStack Start (TanStack Router, SSR) + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI. File-based routes in `src/routes/` (thin: `loader`/`head()`/`notFound()`); page components in `src/pages/`. Per-page SEO meta via each route's `head()` + the `seoHead()` helper in `src/utils/seo-head.ts`. Router API is accessed through the compat shim `src/lib/router.tsx` (`Link`/`useNavigate`/`useParams`). Prod is served by `server.mjs` (Express adapter over the `dist/server/server.js` web-fetch handler). `src/routeTree.gen.ts` is generated (gitignored) by the Vite plugin / `tsr generate`.
 - **API**: `api-express/` — Express, JWT cookies, CORS, Postgres via Prisma (user answers stored in `Answer` table, keyed by `themeId` + `questionId`)
-- **Mobile**: `expo/` — Expo / React Native version
+- **Mobile**: `expo/` — Expo / React Native version. Questions are **fetched from the API at launch** (`GET /quizz/version`, then `GET /quizz` when the hash changed) and cached in AsyncStorage, so a new question reaches installed apps without an App Store release. `expo/src/shared/quizz-2027.json` is still bundled as the first-launch and offline fallback, and `expo/src/shared/__tests__/shared-data.test.ts` fails if it drifts from the API copy.
 - **Shared code**: duplicated in `app-tanstack/src/shared/`, `api-express/src/shared/` AND `expo/src/shared/` (no sync script — manual copy-paste between the three)
 - **Candidates data**: `api-express/src/shared/candidates-answers.json` is the source of truth for candidate answers (static JSON, not DB). Text files in `api-express/src/shared/candidates-answers/*.txt` are human-readable versions. When updating candidates, edit the JSON and copy to `app-tanstack/src/shared/` and `expo/src/shared/`.
 - **Candidate pictures**: PNGs in `app-tanstack/public/candidates/{slug}.png`. To generate: fetch portrait from Wikipedia API (`action=query&prop=pageimages&pithumbsize=800`), remove background with `rembg` (`pip install "rembg[cpu]"`), resize to max 800px, save as PNG.
@@ -27,6 +27,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - API: `cd api-express && npm run dev` (port 5179)
 - Type check: `cd app-tanstack && npm run typecheck` (runs `tsr generate` then `tsc -b` — needed because `routeTree.gen.ts` is gitignored)
 - Build: `cd app-tanstack && npm run build` (generates sitemap, then `vite build` → `dist/`)
+- Mobile tests: `cd expo && npm test` (Jest + React Native Testing Library, no emulator needed) and `npm run ts:check`. `npm test` also gates the `build-*` / `build-and-upload:*` scripts.
 
 # Modifying a question
 
