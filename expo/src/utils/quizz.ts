@@ -46,10 +46,12 @@ const isValidQuestion = (question: unknown): question is QuizzQuestion => {
   );
 };
 
+// A theme is allowed to hold no question — `theme-et-si-un-autre-gagnait-2027`
+// ships empty on purpose — so only the shape of each question is enforced.
 const isValidTheme = (theme: unknown): theme is QuizzTheme => {
   const t = theme as QuizzTheme;
   if (!t || typeof t._id !== 'string' || typeof t.fr !== 'string') return false;
-  return Array.isArray(t.questions) && t.questions.length > 0 && t.questions.every(isValidQuestion);
+  return Array.isArray(t.questions) && t.questions.every(isValidQuestion);
 };
 
 export const isValidQuizz = (data: unknown): data is QuizzTheme[] =>
