@@ -304,6 +304,9 @@ question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des
 question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos motorisés, free parties, protoxyde d'azote) ?
 [0] Durcir encore les sanctions : peines de prison systématiques, confiscations immédiates, fermetures administratives
 
+question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
+[0] Il faut aller plus loin qu'une présomption : une irresponsabilité pénale totale dès lors qu'un policier ou un gendarme utilise son arme en service
+
 
 Politique fiscale:
 

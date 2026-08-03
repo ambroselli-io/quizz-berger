@@ -304,6 +304,9 @@ question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des
 question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos motorisés, free parties, protoxyde d'azote) ?
 [4] S'opposer à cette inflation pénale, jugée disproportionnée et inefficace face aux causes sociales du problème
 
+question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
+[4] Abroger ce texte, dénoncé comme un « permis de tuer » incompatible avec un État de droit
+
 
 Politique fiscale:
 
