@@ -304,6 +304,9 @@ question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des
 question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos motorisés, free parties, protoxyde d'azote) ?
 [2] Sanctionner ces nuisances tout en renforçant en parallèle la prévention et la médiation locale
 
+question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
+[3] S'opposer à la présomption : le droit commun doit s'appliquer à tous, y compris aux forces de l'ordre, pour éviter tout risque d'impunité
+
 
 Politique fiscale:
 

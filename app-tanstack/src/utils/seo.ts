@@ -231,6 +231,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Feux de forêt et sécurité civile : les positions des candidats à la présidentielle 2027',
     seoDescription: `Moyens des pompiers, flotte aérienne, adaptation des forêts au changement climatique : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-pol-10': {
+    slug: 'presomption-legitime-defense-policiers',
+    seoTitle: 'Présomption de légitime défense pour les policiers : les positions des candidats 2027',
+    seoDescription: `Loi sur la présomption de légitime défense pour les forces de l'ordre : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions

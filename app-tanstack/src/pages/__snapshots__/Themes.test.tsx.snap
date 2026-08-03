@@ -75,7 +75,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Police, Justice et Sécurité",
     "id": "theme-2027-police",
-    "questionCount": 9,
+    "questionCount": 10,
   },
   {
     "fr": "Pouvoir d'achat et vie quotidienne",
