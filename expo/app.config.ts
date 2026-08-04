@@ -1,7 +1,7 @@
 import { ExpoConfig, ConfigContext } from "expo/config";
 
-const version = "1.0.1";
-const buildNumber = "2";
+const version = "1.0.2";
+const buildNumber = "3";
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
@@ -17,7 +17,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     supportsTablet: true,
     bundleIdentifier: "com.ambroselli.quizzduberger",
     infoPlist: {
-      ITSAppUsesNonExemptEncryption: false
+      ITSAppUsesNonExemptEncryption: false,
+      CFBundleDevelopmentRegion: "fr",
+      CFBundleLocalizations: ["fr"]
     },
     buildNumber
   },
