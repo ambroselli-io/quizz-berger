@@ -1,5 +1,6 @@
 ---
 description: Draft a news-reactive SEO blog post about a hot French political topic, add it to the quiz if it's missing, and open a draft PR
+argument-hint: "[sujet imposé — laisser vide pour laisser l'agent choisir]"
 ---
 
 # Draft a hot-topic blog post (and grow the quiz)
@@ -21,7 +22,15 @@ Read these files first:
 
 ## 2. Scout for a topic
 
-Web-search French political news from the last 7 days (e.g. "actualité politique France", "présidentielle 2027", plus themes from the quiz). Build a shortlist of 3–5 topics, then pick one that is:
+**If a topic was passed as an argument (`$ARGUMENTS` is non-empty), use it — do not scout.** Run only the coverage check:
+
+1. Read `articles.ts` and compare against every existing article, by subject rather than by wording.
+2. **Already covered** → stop. Do not write, do not branch, do not open a PR. Report which article covers it (slug + title + date) and ask whether to proceed anyway with a genuinely new angle. Wait for the answer.
+3. **Not covered** → skip the hot/substantive tests below. The topic was chosen deliberately; a quiet or niche subject is a valid request, not a reason to refuse. Go to the theme-mapping check.
+
+Web-search the topic anyway to gather current facts and sources — steps 4–5 still need dated, sourced material.
+
+**If no argument was passed**, scout as usual. Web-search French political news from the last 7 days (e.g. "actualité politique France", "présidentielle 2027", plus themes from the quiz). Build a shortlist of 3–5 topics, then pick one that is:
 
 1. **Genuinely hot**: covered by several major French outlets (Le Monde, Le Figaro, France Info, Les Échos, Libération…) this week.
 2. **Not already covered**: no existing article in `articles.ts` covers it (a new major development on an old topic is acceptable only if the angle is genuinely new).
@@ -32,7 +41,7 @@ Then check whether the topic maps to an existing theme/question in `quizz-2027.j
 - **It maps** → write the article (steps 4–5), linking to the existing question pages.
 - **It doesn't map but it's a durable political question** → even better: **add it to the quiz as a new question** (step 3), then write the article around that new question. Growing the quiz with the news cycle is a goal, not a problem.
 
-Skip entirely (no PR, just a short report of rejected topics) only when nothing this week is hot + new + substantive. Skipping is a valid outcome, not a failure.
+Skip entirely (no PR, just a short report of rejected topics) only when nothing this week is hot + new + substantive. Skipping is a valid outcome, not a failure. This applies to the scouting path only — never skip a topic that was passed as an argument.
 
 ## 3. If the topic is missing: add a question to the quiz
 
