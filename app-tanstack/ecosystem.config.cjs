@@ -11,6 +11,9 @@ module.exports = {
       env: {
         PORT: '5178',
         NODE_ENV: 'production',
+        // Serves the IndexNow key file (/<key>.txt) for search-engine
+        // verification. Set INDEXNOW_KEY in the VPS .env; unset = feature off.
+        INDEXNOW_KEY: process.env.INDEXNOW_KEY,
       },
     },
   ],
