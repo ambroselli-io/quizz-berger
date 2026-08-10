@@ -236,6 +236,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Présomption de légitime défense pour les policiers : les positions des candidats 2027',
     seoDescription: `Loi sur la présomption de légitime défense pour les forces de l'ordre : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-gouv-07': {
+    slug: 'reduction-nombre-parlementaires',
+    seoTitle: 'Réduire le nombre de parlementaires : les positions des candidats à la présidentielle 2027',
+    seoDescription: `Réduire le nombre de députés et de sénateurs : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions

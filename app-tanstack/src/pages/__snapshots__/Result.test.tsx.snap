@@ -117,7 +117,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 29,
+    "percent": 28,
     "pseudos": [
       "Gabriel Attal",
     ],
@@ -147,7 +147,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 16,
+    "percent": 15,
     "pseudos": [
       "David Lisnard",
     ],
