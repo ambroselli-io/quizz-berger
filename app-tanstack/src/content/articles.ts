@@ -1708,7 +1708,7 @@ export const articles: Article[] = [
 <li><a href="/candidat/david-lisnard">David Lisnard</a> — Libéral partisan d'un État plus resserré, sa ligne le porte vers une baisse sensible du nombre d'élus.</li>
 </ul>
 
-<h3>Famille 3 — Réduction modérée, avec une dose de proportionnelle et la protection des territoires</h3>
+<h3>Famille 3 — Réduction modérée, avec la protection des territoires</h3>
 <ul>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — En tant que Premier ministre, il avait présenté en 2018 le projet de réduction de 25 % des parlementaires, associé à une dose de proportionnelle et à un plafonnement des mandats successifs.</li>
 <li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Défenseur historique de la proportionnelle, sa ligne centriste laisse penser qu'il soutiendrait une réduction mesurée assortie d'une réforme du mode de scrutin.</li>
