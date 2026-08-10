@@ -229,6 +229,9 @@ question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration
 question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 [0] L'État est beaucoup trop autoritaire, on vit dans une société de surveillance
 
+question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
+[4] Non : réduire le nombre d'élus affaiblit le Parlement face à l'exécutif, c'est de la démagogie anti-parlementaire
+
 
 Logement:
 

@@ -55,7 +55,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Gouvernance et République",
     "id": "theme-2027-gouvernance",
-    "questionCount": 6,
+    "questionCount": 7,
   },
   {
     "fr": "Démographie et question migratoire",

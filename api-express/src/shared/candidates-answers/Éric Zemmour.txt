@@ -229,6 +229,9 @@ question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration
 question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 [3] L'État n'est pas assez ferme, il faut plus d'autorité pour que les lois soient respectées
 
+question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
+[0] Oui, une réduction drastique : diviser par deux le nombre d'élus, pour faire des économies et en finir avec la surreprésentation politique
+
 
 Logement:
 

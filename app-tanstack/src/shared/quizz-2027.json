@@ -1289,6 +1289,27 @@
           [0, 0, 3, 5, 0],
           [0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-gouv-07",
+        "fr": "Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?",
+        "help": "https://fr.wikipedia.org/wiki/Projet_de_r%C3%A9vision_constitutionnelle_fran%C3%A7aise_de_2018",
+        "answers": [
+          "Oui, une réduction drastique : diviser par deux le nombre d'élus, pour faire des économies et en finir avec la surreprésentation politique",
+          "Oui, une réduction significative, dans le cadre d'une réforme institutionnelle plus large pour un Parlement plus efficace",
+          "Une réduction modérée est possible, mais elle doit s'accompagner d'une dose de proportionnelle et protéger la représentation des territoires",
+          "Le nombre actuel se justifie pour représenter correctement tous les territoires, ruraux et ultramarins compris",
+          "Non : réduire le nombre d'élus affaiblit le Parlement face à l'exécutif, c'est de la démagogie anti-parlementaire",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

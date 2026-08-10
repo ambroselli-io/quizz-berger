@@ -229,6 +229,9 @@ question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration
 question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 [1] L'État empiète trop sur nos libertés individuelles, il faut le remettre à sa place
 
+question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
+[1] Oui, une réduction significative, dans le cadre d'une réforme institutionnelle plus large pour un Parlement plus efficace
+
 
 Logement:
 
