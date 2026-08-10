@@ -19,6 +19,8 @@ interface SeoInput {
   ogType?: string;
   /** One or more JSON-LD objects rendered as <script type="application/ld+json">. */
   jsonLd?: object | object[];
+  /** e.g. "noindex, follow". Omit to stay indexable (no robots meta emitted). */
+  robots?: string;
 }
 
 export function canonicalUrl(path: string): string {
@@ -26,11 +28,20 @@ export function canonicalUrl(path: string): string {
   return `${BASE_URL}${path === '/' ? '' : path}`;
 }
 
-export function seoHead({ title, description, canonicalPath, ogImage, ogType = 'website', jsonLd }: SeoInput) {
+export function seoHead({
+  title,
+  description,
+  canonicalPath,
+  ogImage,
+  ogType = 'website',
+  jsonLd,
+  robots,
+}: SeoInput) {
   const canonical = canonicalPath ? canonicalUrl(canonicalPath) : undefined;
   const image = ogImage || DEFAULT_OG_IMAGE;
 
   const meta: MetaTag[] = [{ title }];
+  if (robots) meta.push({ name: 'robots', content: robots });
   if (description) meta.push({ name: 'description', content: description });
   meta.push({ property: 'og:type', content: ogType });
   meta.push({ property: 'og:title', content: title });
