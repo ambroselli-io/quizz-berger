@@ -5,7 +5,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Affaires étrangères",
     "id": "theme-2027-affaires-etrangeres",
-    "questionCount": 10,
+    "questionCount": 12,
   },
   {
     "fr": "Agriculture et alimentation",

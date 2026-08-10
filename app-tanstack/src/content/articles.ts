@@ -1659,4 +1659,566 @@ export const articles: Article[] = [
       ],
     },
   },
+  {
+    slug: 'intervention-americaine-venezuela-maduro-france-candidats-2027',
+    title: `Capture de Maduro par les États-Unis : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+    excerpt:
+      "Le 3 janvier 2026, des forces spéciales américaines ont capturé le président vénézuélien Nicolás Maduro à Caracas. Droit international, non-ingérence, alignement sur Washington : où se situent les candidats à la présidentielle 2027 ?",
+    date: '2026-08-10',
+    tag: 'Analyse',
+    content: `
+<p>Le 3 janvier 2026, avant l'aube, des forces spéciales américaines ont capturé le président vénézuélien <strong>Nicolás Maduro</strong> et son épouse Cilia Flores à Caracas, puis les ont transférés à New York, où Maduro a été inculpé de narcotrafic. L'opération, menée sans mandat de l'ONU, a coupé la classe politique française en deux : entre ceux qui retiennent la chute d'un régime accusé de trafic de drogue et ceux qui condamnent l'usage de la force contre un État souverain. Sur les ${candidatesCount} candidats à la présidentielle 2027, la ligne de partage passe par le rapport au droit international et à la puissance américaine.</p>
+
+<h2>Que s'est-il passé au Venezuela ?</h2>
+<p>Depuis l'été 2025, les États-Unis avaient massé dans les Caraïbes une force navale importante (porte-avions, navires d'assaut amphibie, sous-marin lance-missiles, chasseurs F-35 à Porto Rico) dans le cadre d'une opération baptisée « Southern Spear ». À partir de septembre 2025, l'armée américaine a frappé des embarcations présentées comme des « bateaux de la drogue ». Selon les décomptes de <em>Military.com</em> et de recensements indépendants, ces frappes avaient tué environ 87 personnes en 22 attaques mi-décembre 2025, et plus de 207 personnes en une soixantaine de frappes début juin 2026, sans preuve publique du caractère de « narcotrafiquants » des victimes.</p>
+<p>Chronologie du dénouement :</p>
+<ul>
+<li><strong>19 décembre 2025</strong> : Donald Trump ordonne un blocus pétrolier du Venezuela et de nouvelles frappes.</li>
+<li><strong>3 janvier 2026</strong> : les forces spéciales américaines s'emparent de Nicolás Maduro et de Cilia Flores à Caracas et les acheminent vers un navire de guerre, puis vers New York.</li>
+<li><strong>3 janvier 2026</strong> : le parquet fédéral de New York (Southern District of New York) rend public l'acte d'accusation. La procureure générale Pam Bondi énumère les chefs retenus : complot de narco-terrorisme, complot d'importation de cocaïne, détention d'armes automatiques et d'engins destructeurs.</li>
+<li><strong>5 janvier 2026</strong> : la vice-présidente <strong>Delcy Rodríguez</strong> prête serment comme présidente par intérim devant l'Assemblée nationale vénézuélienne.</li>
+<li><strong>3 janvier 2026</strong> : Trump annonce que des compagnies pétrolières américaines vont investir au Venezuela et évoque la remise de 30 à 50 millions de barils aux États-Unis.</li>
+</ul>
+<p>Le bilan humain du raid reste disputé : l'armée vénézuélienne a fait état de 24 soldats tués, un autre décompte évoque une centaine de morts, et Cuba a confirmé la mort de 32 de ses ressortissants engagés aux côtés des forces vénézuéliennes. Du côté américain, sept militaires ont été blessés.</p>
+
+<h2>Ce que dit le droit international</h2>
+<p>Le cœur du débat juridique tient au <strong>principe de non-recours à la force</strong> inscrit dans la Charte des Nations unies : un État ne peut employer la force armée contre un autre que dans deux cas, la légitime défense ou une autorisation du Conseil de sécurité. Aucune de ces conditions n'était réunie. Le 4 janvier 2026, une déclaration de l'Union européenne soutenue par 26 des 27 États membres (tous sauf la Hongrie) a rappelé que « les principes du droit international et la Charte des Nations unies doivent être respectés en toutes circonstances » et appelé au « calme et à la retenue ». La haute représentante Kaja Kallas avait, la veille, demandé de la « retenue » après un échange avec le secrétaire d'État américain Marco Rubio. L'UE considère par ailleurs de longue date que Maduro n'a pas de légitimité démocratique, après la présidentielle contestée de 2024.</p>
+
+<h2>Pourquoi l'affaire divise la France</h2>
+
+<h3>1. La fin ou les moyens</h3>
+<p>Peu de responsables français regrettent Maduro, dont le régime est accusé de dérive autoritaire et de fraude électorale. Le désaccord porte sur la méthode : un enlèvement d'un chef d'État par une puissance étrangère, sans base légale internationale, crée-t-il un précédent dangereux ? Des alliés comme des adversaires de Washington ont mis en garde contre ce précédent.</p>
+
+<h3>2. L'ombre du pétrole</h3>
+<p>L'annonce quasi immédiate d'un accord pétrolier, après la révocation en 2025 de la licence d'exportation de Chevron et le blocus de décembre, a nourri la lecture d'une opération d'abord économique. C'est l'argument central de la gauche anti-impérialiste, qui parle d'une guerre pour le pétrole déguisée en lutte anti-drogue.</p>
+
+<h3>3. Suivre ou non les États-Unis</h3>
+<p>L'affaire rouvre le débat sur l'autonomie de la diplomatie européenne face à un allié américain qui agit seul. Faut-il s'aligner, se taire, ou condamner un partenaire ?</p>
+
+<h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
+<p>Sur la question <a href="/question-politique/intervention-americaine-venezuela-maduro-france">« Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ? »</a> du <a href="/theme/affaires-etrangeres">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en quatre familles.</p>
+
+<h3>Famille 1 — Une bonne nouvelle : soutien à la chute de Maduro</h3>
+<p>Ce camp juge que débarrasser le continent d'un régime accusé de narcotrafic prime sur les objections juridiques.</p>
+<ul>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Ligne assumée par son mouvement : l'eurodéputée Sarah Knafo a défendu l'opération, refusant de protéger « un droit international qui protège les tyrans contre les peuples ». Zemmour, fidèle à cette ligne, devrait saluer la chute de Maduro.</li>
+</ul>
+
+<h3>Famille 2 — Le résultat oui, la méthode non</h3>
+<p>Ces candidats ne pleurent pas Maduro mais refusent d'entériner une opération militaire menée sans cadre légal. C'est la ligne du gouvernement.</p>
+<ul>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Ligne gouvernementale portée par le ministre des Affaires étrangères Jean-Noël Barrot : Maduro « a confisqué le pouvoir au peuple vénézuélien », mais l'opération « contrevient au principe de non-recours à la force ».</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Membre du gouvernement au moment des faits, aligné sur la position officielle française.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Sa ligne atlantiste et pragmatique laisse penser qu'il approuverait la fin du régime tout en s'inquiétant du précédent.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Attaché au multilatéralisme, il devrait saluer le départ de Maduro sans cautionner l'usage unilatéral de la force.</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Le président du RN Jordan Bardella a reconnu que le régime de Maduro « mérite de nombreuses critiques légitimes sur le plan démocratique », tout en insistant sur le respect du droit international.</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Sa ligne conservatrice et anticommuniste laisse penser à un soulagement devant la chute du régime, assorti de réserves sur la méthode.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Position proche de celle de sa famille politique : approbation du résultat, prudence sur le procédé.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Ligne de droite atlantiste comparable.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Libéral hostile aux régimes autoritaires, sa ligne laisse penser à une approbation nuancée.</li>
+</ul>
+
+<h3>Famille 3 — Une violation du droit international à condamner</h3>
+<p>Ces candidats condamnent l'atteinte à la souveraineté d'un État et le précédent créé, sans pour autant défendre Maduro.</p>
+<ul>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Auteur du discours de 2003 à l'ONU contre la guerre en Irak, il incarne la défense du droit international et devrait condamner une opération de force sans mandat.</li>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Hostile aux régimes autoritaires mais attaché au droit international, dans la continuité de sa condamnation de l'agression russe en Ukraine.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Ligne socialiste : condamnation de la méthode et de l'atteinte à la souveraineté.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Ancien Premier ministre attaché à la légalité internationale, critique de l'unilatéralisme.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — Ligne proche du PS, défense du cadre onusien.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Condamnation de la violation du droit international, sans indulgence pour Maduro.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste proche, attachée au multilatéralisme.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Souverainiste gaulliste, hostile aux ingérences dans les affaires d'un État souverain.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Critique de l'interventionnisme américain, sans défense du régime vénézuélien.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Sa ligne anti-establishment laisse penser à une dénonciation de l'opération menée par Washington.</li>
+</ul>
+
+<h3>Famille 4 — Un impérialisme américain à dénoncer</h3>
+<p>Ce camp qualifie l'opération d'acte impérialiste et met en avant le principe de non-ingérence, quitte à défendre la souveraineté vénézuélienne.</p>
+<ul>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — A manifesté place de la République le 3 janvier, dénoncé « l'impérialisme américain », vu dans l'opération une main-mise sur le pétrole et réclamé la libération de Maduro.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Alignée sur la dénonciation de l'ingérence américaine.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Opposition frontale à l'hégémonie américaine et à l'atteinte à la souveraineté.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Le PCF défend de longue date la souveraineté vénézuélienne face aux États-Unis.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Dénonce un impérialisme au service des intérêts pétroliers américains.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Ligne anti-hégémonie américaine constante ; dénonciation d'une atteinte à la souveraineté d'un État.</li>
+</ul>
+
+<h2>Arguments pour et arguments contre l'intervention</h2>
+<table>
+<tr><th>Arguments en faveur de l'opération</th><th>Arguments contre l'opération</th></tr>
+<tr><td>Renverse un régime accusé de fraude électorale et de liens avec le narcotrafic.</td><td>Menée sans mandat de l'ONU ni légitime défense, elle viole le principe de non-recours à la force.</td></tr>
+<tr><td>Répond à un acte d'accusation américain visant un trafic de cocaïne de longue date.</td><td>Aucune preuve publique n'a été produite pour les frappes sur les embarcations, qui ont fait plus de 200 morts.</td></tr>
+<tr><td>Une majorité d'États de l'UE reconnaissaient déjà l'illégitimité démocratique de Maduro.</td><td>La capture d'un chef d'État par une puissance étrangère crée un précédent dénoncé par alliés et adversaires.</td></tr>
+<tr><td>Perspective d'une transition et d'investissements pour relancer l'économie vénézuélienne.</td><td>L'accord pétrolier immédiat nourrit le soupçon d'une opération d'abord économique.</td></tr>
+</table>
+
+<h2>Pour aller plus loin</h2>
+<p>La capture de Maduro touche à des questions de fond du Quizz du Berger sur la place de la France dans le monde :</p>
+<ul>
+<li><a href="/question-politique/intervention-americaine-venezuela-maduro-france">Intervention américaine au Venezuela</a> — la question complète et les réponses des ${candidatesCount} candidats.</li>
+<li><a href="/question-politique/france-rivalite-etats-unis-chine-taiwan">France, États-Unis et Chine</a> — s'aligner sur Washington ou défendre une autonomie stratégique ?</li>
+<li><a href="/question-politique/france-otan-alliance">France et OTAN</a> — le cadre de l'alliance avec les États-Unis.</li>
+<li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — l'ensemble des questions de politique internationale.</li>
+</ul>
+
+<p><a href="/themes">→ Faire le quiz</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `Capture de Maduro par les États-Unis : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+      description: `Intervention militaire américaine au Venezuela et capture de Nicolás Maduro le 3 janvier 2026 : chronologie, enjeux de droit international et positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-08-10',
+      about: [
+        { '@type': 'Thing', name: 'Nicolás Maduro' },
+        { '@type': 'Thing', name: 'Venezuela' },
+        { '@type': 'Thing', name: 'Droit international' },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
+  {
+    slug: 'plan-paix-ukraine-negociations-france-candidats-2027',
+    title: `Plan de paix en Ukraine : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+    excerpt:
+      "Plan américain en 28 points, pourparlers de Genève et d'Abou Dhabi, force de réassurance européenne : quatre ans après l'invasion russe, où en sont les négociations et que proposent les candidats à la présidentielle 2027 ?",
+    date: '2026-08-10',
+    tag: 'Analyse',
+    content: `
+<p>Le 18 février 2026, à Genève, la troisième session de pourparlers directs entre Kiev et Moscou depuis le début de la guerre s'est achevée en moins de vingt-quatre heures, sans accord sur le tracé des frontières. Quatre ans après l'invasion russe de l'Ukraine, un plan de paix poussé par Washington est sur la table, et la France se bat pour peser dessus. Sur les ${candidatesCount} candidats à la présidentielle 2027, le soutien à Kiev reste une ligne de fracture majeure.</p>
+
+<h2>Le plan de paix américain : de quoi parle-t-on ?</h2>
+<p>Le 20 novembre 2025, l'administration Trump a dévoilé un <strong>plan en 28 points</strong>, rédigé par l'émissaire Steve Witkoff avec Marco Rubio et Jared Kushner. Sa version initiale prévoyait la reconnaissance de fait de la Crimée, de Louhansk et de la totalité du Donetsk comme russes (y compris la partie encore tenue par Kiev), un gel des lignes de front dans les régions de Kherson et Zaporijjia, un plafonnement de l'armée ukrainienne à 600 000 hommes, et l'inscription dans la Constitution ukrainienne de la non-adhésion à l'OTAN. En garantie, une « réponse militaire coordonnée » et le rétablissement des sanctions en cas de nouvelle invasion russe.</p>
+<p>Chronologie des négociations :</p>
+<ul>
+<li><strong>20 novembre 2025</strong> : présentation du plan américain en 28 points.</li>
+<li><strong>23 novembre 2025</strong> : à Genève, Américains et Ukrainiens ramènent le texte à 19 points ; le plafond de 600 000 hommes et la clause « jamais dans l'OTAN » en sont retirés, les questions les plus sensibles étant renvoyées à une discussion entre présidents. Les Européens présentent de leur côté un contre-plan en 24 points (« aucune frontière modifiée par la force »).</li>
+<li><strong>6 janvier 2026</strong> : la « coalition des volontaires » (35 pays) se réunit à l'Élysée. La déclaration de Paris pose des garanties de sécurité et un mécanisme de surveillance d'un cessez-le-feu.</li>
+<li><strong>23-24 janvier 2026</strong> : à Abou Dhabi, premières discussions trilatérales États-Unis - Ukraine - Russie depuis le début de la guerre. Pas de percée.</li>
+<li><strong>17-18 février 2026</strong> : à Genève, la question des territoires est mise sur la table pour la première fois. Blocage sur le Donbass et sur la centrale nucléaire de Zaporijjia.</li>
+<li><strong>11 avril 2026</strong> : trêve de Pâques orthodoxe de 32 heures, violée selon les deux camps.</li>
+<li><strong>4 juin 2026</strong> : dans une lettre ouverte à Vladimir Poutine, Volodymyr Zelensky propose une rencontre en tête-à-tête et un « cessez-le-feu complet » pendant les négociations.</li>
+</ul>
+<p>Mi-2026, aucun règlement d'ensemble n'a été trouvé. Les pourparlers ont fait converger les parties sur la <strong>surveillance</strong> d'un futur cessez-le-feu, mais butent sur les <strong>territoires</strong> (Moscou exige le retrait ukrainien des zones du Donetsk encore tenues par Kiev) et sur les garanties de sécurité.</p>
+
+<h2>La France dans la négociation</h2>
+<p>La ligne d'Emmanuel Macron tient en trois points : la paix ne peut pas être une capitulation ukrainienne, aucune frontière ne doit être modifiée par la force, et les Européens doivent être « à la table » de toute négociation touchant à la sécurité du continent. La France a accueilli le sommet de la coalition des volontaires le 6 janvier 2026 et défend une <strong>force de réassurance</strong> : des troupes déployées après un cessez-le-feu, en arrière du front, pour dissuader une reprise de l'agression, et non pour s'interposer. Pour 2026, l'aide militaire française à l'Ukraine est chiffrée autour de 2 milliards d'euros, avec la livraison de deux Mirage 2000-5F supplémentaires.</p>
+<p>L'opinion française reste réticente à un engagement direct : selon les enquêtes (Ifop, JDD, Institut Montaigne, dates et formulations variables), une large majorité s'oppose à l'envoi de troupes combattantes, mais une courte majorité accepterait un rôle militaire français pour faire respecter un accord de paix.</p>
+
+<h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
+<p>Sur la question <a href="/question-politique/guerre-ukraine-france">« Que devrait faire la France face à la guerre en Ukraine ? »</a> du <a href="/theme/affaires-etrangeres">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en trois familles.</p>
+
+<h3>Famille 1 — Maintenir un soutien militaire fort à Kiev</h3>
+<p>Ces candidats veulent continuer d'armer l'Ukraine et de maintenir les sanctions contre la Russie, certains allant jusqu'à envisager une présence militaire française.</p>
+<ul>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Le plus ferme à gauche : il a qualifié le plan américain en 28 points de « plan de capitulation » et n'exclut pas l'envoi de troupes françaises si nécessaire.</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Ligne de la majorité présidentielle : soutien militaire, sanctions, garanties de sécurité.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Soutien atlantiste affirmé à l'Ukraine.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Ligne gouvernementale de fermeté face à Moscou.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Soutien à Kiev dans le cadre de la majorité.</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Premier déplacement de candidat en Ukraine en mai 2026 ; soutien affirmé, réserves sur l'adhésion à l'OTAN et à l'UE.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Soutien à l'Ukraine dans la ligne des Républicains.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Ligne atlantiste de soutien à Kiev.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Défense d'un soutien ferme à l'Ukraine.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Soutien à l'Ukraine assorti d'une exigence de crédibilité européenne.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Ligne socialiste de soutien à Kiev et de sanctions.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — Défense d'un soutien continu à l'Ukraine.</li>
+</ul>
+
+<h3>Famille 2 — Soutenir l'Ukraine mais pousser activement pour la paix</h3>
+<p>Ces candidats maintiennent une aide à Kiev tout en faisant de la négociation la priorité.</p>
+<ul>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Ligne diplomatique : privilégier la voie de la négociation.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Soutien à l'Ukraine et aux sanctions, avec une recherche de sortie négociée.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste proche.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Soutien au peuple ukrainien assorti d'un appel à la désescalade.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — A écrit à Emmanuel Macron en janvier 2026 pour une initiative de paix : neutralité de l'Ukraine garantie par l'ONU contre renoncement à l'OTAN, retrait russe des gains postérieurs à février 2022.</li>
+</ul>
+
+<h3>Famille 3 — Réduire ou cesser le soutien, négocier avec la Russie</h3>
+<p>Ce camp réunit des souverainistes de droite et une partie de la gauche autour du refus de la « guerre par procuration » et de l'envoi d'argent ou de troupes.</p>
+<ul>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Le RN veut négocier « le plus vite possible », refuse l'envoi de troupes et a voté contre le prêt européen de 90 milliards d'euros à l'Ukraine en février 2026.</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Dénonce le rôle de l'OTAN, plaide pour l'arrêt de la logique de guerre et une négociation.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Prône une conférence de paix et un rapprochement avec la Russie.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Souverainiste hostile à l'engagement de la France, favorable à une négociation rapide.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Anti-OTAN, partisan d'un arrêt du soutien et d'une médiation.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Ligne de la gauche pacifiste, priorité à la négociation.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Hostile à l'alignement atlantiste.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Dénonce une guerre entre puissances impérialistes et refuse le soutien aux livraisons d'armes.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Sa ligne laisse penser à une réticence à l'engagement français dans le conflit.</li>
+</ul>
+
+<h2>Arguments pour et arguments contre la poursuite du soutien à l'Ukraine</h2>
+<table>
+<tr><th>Arguments pour la poursuite du soutien</th><th>Arguments pour une désescalade rapide</th></tr>
+<tr><td>Aider l'Ukraine à ne pas négocier en position de faiblesse face à Moscou.</td><td>Quatre ans de guerre d'usure sans issue militaire claire ; le coût humain et budgétaire s'accumule.</td></tr>
+<tr><td>Une paix imposée qui récompense l'agression créerait un précédent pour d'autres frontières européennes.</td><td>Le plan américain avance ; s'y opposer risquerait d'isoler les Européens de Washington.</td></tr>
+<tr><td>Des garanties de sécurité crédibles supposent un engagement européen, y compris une force de réassurance.</td><td>Une large majorité de Français s'oppose à l'envoi de troupes combattantes.</td></tr>
+<tr><td>Les sanctions pèsent sur l'économie de guerre russe.</td><td>Le prêt de 90 milliards d'euros et l'aide continue engagent des finances publiques déjà tendues.</td></tr>
+</table>
+
+<h2>Pour aller plus loin</h2>
+<p>La guerre en Ukraine et sa sortie recoupent plusieurs questions du Quizz du Berger :</p>
+<ul>
+<li><a href="/question-politique/guerre-ukraine-france">Guerre en Ukraine</a> — la question complète et les réponses des ${candidatesCount} candidats.</li>
+<li><a href="/question-politique/france-otan-alliance">France et OTAN</a> — rester, sortir du commandement intégré ou renforcer l'alliance ?</li>
+<li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — l'ensemble des questions de politique internationale.</li>
+</ul>
+
+<p><a href="/themes">→ Faire le quiz</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `Plan de paix en Ukraine : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+      description: `Plan de paix américain, pourparlers de Genève et d'Abou Dhabi, force de réassurance européenne : l'état des négociations sur l'Ukraine en 2026 et les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-08-10',
+      about: [
+        { '@type': 'Thing', name: 'Guerre en Ukraine' },
+        { '@type': 'Thing', name: 'Plan de paix' },
+        { '@type': 'Thing', name: 'OTAN' },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
+  {
+    slug: 'guerre-soudan-armes-france-emirats-candidats-2027',
+    title: `Guerre au Soudan : tout comprendre, les armes françaises et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+    excerpt:
+      "El Fasher est tombée, la famine s'étend, les Émirats arabes unis arment les paramilitaires : la plus grande crise humanitaire du monde interroge les ventes d'armes et la politique africaine de la France. Où se situent les candidats à 2027 ?",
+    date: '2026-08-10',
+    tag: 'Analyse',
+    content: `
+<p>Le 26 octobre 2025, après un siège de près de dix-huit mois, les <strong>Forces de soutien rapide</strong> (RSF), une milice paramilitaire, ont pris El Fasher, la dernière grande ville du Darfour tenue par l'armée soudanaise. La guerre du Soudan a fait, selon des estimations qui varient largement, entre 40 000 et 150 000 morts et déplacé environ douze millions de personnes, ce qui en fait la plus grande crise de déplacement au monde. La France en parle peu, alors qu'elle vend des armes à un pays au cœur du conflit. Le sujet touche à deux questions du Quizz du Berger : la politique africaine et l'éthique des exportations d'armement.</p>
+
+<h2>La guerre du Soudan : qui combat qui ?</h2>
+<p>Depuis le <strong>15 avril 2023</strong>, deux généraux s'affrontent pour le pouvoir. D'un côté l'<strong>armée régulière</strong> (SAF), dirigée par le général Abdel Fattah al-Burhan. De l'autre les <strong>Forces de soutien rapide</strong> (RSF) du général Mohamed Hamdan Dagalo, dit « Hemedti », héritières des milices Janjawids du Darfour. Le conflit est né de leur désaccord sur l'intégration des RSF dans l'armée nationale.</p>
+<ul>
+<li><strong>15 avril 2023</strong> : les combats éclatent à Khartoum et s'étendent au Darfour.</li>
+<li><strong>1er août 2024</strong> : le comité d'examen de la famine (IPC) confirme une famine dans le camp de déplacés de Zamzam, près d'El Fasher, la première du conflit.</li>
+<li><strong>Juillet 2025</strong> : les RSF et leurs alliés proclament un gouvernement parallèle depuis Nyala, au Darfour.</li>
+<li><strong>26 octobre 2025</strong> : chute d'El Fasher. Les RSF contrôlent désormais les cinq capitales du Darfour. Human Rights Watch et Amnesty International documentent des exécutions de masse, des viols et un nettoyage ethnique.</li>
+<li><strong>19 février 2026</strong> : la mission d'enquête de l'ONU sur le Soudan estime que les attaques des RSF présentent « les caractéristiques d'un génocide ».</li>
+<li><strong>12 juillet 2026</strong> : un tribunal de Port-Soudan condamne Hemedti à mort par contumace pour crimes de guerre, crimes contre l'humanité et génocide.</li>
+</ul>
+<p>Sur le plan humanitaire, l'ONU recense environ 24,6 millions de personnes en insécurité alimentaire aiguë et une famine confirmée dans une dizaine de zones. Le décompte des morts n'est pas unifié : les chiffres officiels de l'ONU évoquent plus de 40 000 morts, d'autres estimations approchent 150 000, et les organisations humanitaires jugent le vrai bilan bien supérieur.</p>
+
+<h2>Le rôle des puissances étrangères, et la gêne française</h2>
+<p>Le conflit est alimenté de l'extérieur. Les <strong>Émirats arabes unis</strong> soutiennent les RSF, ce qu'ils démentent officiellement. En mai 2025, Amnesty International a documenté la présence, entre les mains des RSF, d'armement chinois de type Norinco réexporté par les Émirats, en violation de l'embargo de l'ONU sur le Darfour ; l'Égypte et l'Iran appuient de leur côté l'armée régulière. En janvier 2025, les États-Unis ont qualifié de génocide les exactions des RSF et sanctionné Hemedti, avant de sanctionner aussi le général Burhan.</p>
+<p>La gêne française tient à ceci : la France est le deuxième fournisseur d'armes des Émirats arabes unis, avec notamment un contrat de 80 Rafale signé en 2021. Des composants français ont été repérés sur du matériel militaire aux mains des RSF, selon Amnesty. La France a organisé, le 15 avril 2024, une conférence humanitaire pour le Soudan à Paris, qui a mobilisé plus de 2 milliards d'euros de promesses de dons, dont plus de 150 millions d'euros d'aide française, mais elle a appelé à cesser « les ingérences étrangères » sans jamais nommer les Émirats. En juillet 2026, Human Rights Watch a dénoncé « le silence troublant de la France » sur le rôle émirati.</p>
+
+<h2>Pourquoi le Soudan est un sujet politique pour la France</h2>
+
+<h3>1. L'éthique des ventes d'armes</h3>
+<p>La France a signé le Traité sur le commerce des armes, qui interdit d'exporter des armes susceptibles de servir à des crimes de guerre. Vendre pour des milliards d'euros aux Émirats, dont les Nations unies et Amnesty documentent le soutien à une milice accusée de génocide, place cet engagement en contradiction directe avec les intérêts commerciaux.</p>
+
+<h3>2. La politique africaine de la France</h3>
+<p>Le Soudan s'inscrit dans le repli de la présence française en Afrique. Après le départ des bases du Sahel, la dernière ayant été rétrocédée au Tchad le 30 janvier 2025, la France a perdu une grande partie de son influence sur le continent. La doctrine affichée, « moins de bases, plus d'écoles », reste à prouver.</p>
+
+<h3>3. Deux poids, deux mesures ?</h3>
+<p>La mobilisation massive pour l'Ukraine et l'intensité du débat sur Gaza contrastent avec l'indifférence relative à la plus grande catastrophe humanitaire du monde, souvent qualifiée de « guerre oubliée ». Cette hiérarchie de l'attention est un reproche récurrent.</p>
+
+<h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
+<p>Le Soudan n'a pas encore sa propre question au Quizz du Berger, et peu de candidats se sont exprimés en détail. Leurs lignes sur la politique africaine et les ventes d'armes permettent de dégager trois familles, à considérer comme des estimations tant qu'ils ne se prononcent pas explicitement.</p>
+
+<h3>Famille 1 — Conditionner ou suspendre les ventes d'armes, agir sur l'humanitaire</h3>
+<p>À gauche et chez les écologistes, la ligne dominante lie l'aide humanitaire à une remise en cause des exportations d'armes vers les Émirats.</p>
+<ul>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Critique constante des ventes d'armes françaises ; devrait réclamer leur suspension et pointer la responsabilité émiratie.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Ligne d'opposition aux exportations d'armes vers les belligérants.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Sensible aux causes humanitaires, devrait dénoncer l'incohérence des ventes d'armes.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Devrait réclamer un contrôle strict des exportations et une action humanitaire renforcée.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste proche.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Opposition aux ventes d'armes alimentant les conflits.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Dénonce le commerce des armes au service des intérêts impérialistes.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Devrait mettre en cause la responsabilité française et émiratie.</li>
+</ul>
+
+<h3>Famille 2 — Aide humanitaire, mais maintien du partenariat stratégique émirati</h3>
+<p>Au centre et à droite, la ligne concilie l'aide au Soudan et la préservation d'une relation stratégique et commerciale avec les Émirats, dans la continuité de la diplomatie actuelle.</p>
+<ul>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Ligne gouvernementale : conférence humanitaire de Paris, aide financière, sans rupture avec les Émirats.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Membre du gouvernement, aligné sur cette diplomatie.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Devrait privilégier la stabilité des partenariats stratégiques.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Sensible à l'humanitaire, sans remettre en cause l'alliance émiratie.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Ligne diplomatique classique, aide humanitaire et prudence stratégique.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — Devrait soutenir une action multilatérale sans rupture bilatérale.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Aide humanitaire et contrôle des exportations, sans doctrine de rupture.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Devrait défendre la relation avec les Émirats tout en soutenant l'aide.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Ligne de préservation des intérêts stratégiques français.</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Devrait maintenir le partenariat émirati.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Ligne libérale attachée aux débouchés économiques et aux partenariats.</li>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Devrait plaider pour une médiation diplomatique et le respect du droit international.</li>
+</ul>
+
+<h3>Famille 3 — Non-intervention et priorité aux frontières</h3>
+<p>Chez les souverainistes, le Soudan relève d'abord de la question migratoire et du refus d'un engagement extérieur coûteux.</p>
+<ul>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Devrait lier la crise soudanaise à la pression migratoire et écarter tout engagement militaire.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Ligne centrée sur le contrôle des frontières face aux déplacements de population.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Souverainiste hostile à un engagement extérieur.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Devrait dénoncer les ingérences étrangères sans engagement français.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Ligne sensible à la question migratoire, sans doctrine internationale tranchée.</li>
+</ul>
+
+<h2>Arguments pour et arguments contre une remise en cause des ventes d'armes aux Émirats</h2>
+<table>
+<tr><th>Arguments pour conditionner les ventes d'armes</th><th>Arguments pour maintenir le partenariat</th></tr>
+<tr><td>La France a signé le Traité sur le commerce des armes, qui interdit d'exporter vers un risque de crimes de guerre.</td><td>Les Émirats sont un partenaire stratégique et un client majeur (contrat de 80 Rafale).</td></tr>
+<tr><td>Des composants français ont été repérés sur du matériel aux mains des RSF, selon Amnesty.</td><td>Suspendre les ventes n'arrêterait pas une guerre alimentée par plusieurs puissances.</td></tr>
+<tr><td>La cohérence entre le discours humanitaire de Paris et ses actes est en jeu.</td><td>Rompre exposerait la France à perdre des marchés au profit d'autres fournisseurs.</td></tr>
+<tr><td>Nommer le soutien émirati donnerait du poids à la médiation internationale.</td><td>La diplomatie française privilégie le dialogue discret à la dénonciation publique.</td></tr>
+</table>
+
+<h2>Pour aller plus loin</h2>
+<p>Le Soudan touche à la place de la France en Afrique et à sa diplomatie de puissance :</p>
+<ul>
+<li><a href="/question-politique/quelle-presence-militaire-francaise-en-afrique">Présence militaire française en Afrique</a> — renforcer, maintenir ou retirer ?</li>
+<li><a href="/question-politique/quel-role-economique-la-france-doit-elle-jouer-en-afrique">Rôle économique de la France en Afrique</a> — sortir de la Françafrique ou renforcer l'influence ?</li>
+<li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — l'ensemble des questions de politique internationale.</li>
+</ul>
+
+<p><a href="/themes">→ Faire le quiz</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `Guerre au Soudan : tout comprendre, les armes françaises et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+      description: `Guerre au Soudan, chute d'El Fasher, famine, soutien émirati aux RSF et ventes d'armes françaises : les enjeux pour la France et les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-08-10',
+      about: [
+        { '@type': 'Thing', name: 'Guerre du Soudan' },
+        { '@type': 'Thing', name: 'Forces de soutien rapide' },
+        { '@type': 'Thing', name: "Ventes d'armes" },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
+  {
+    slug: 'rivalite-etats-unis-chine-taiwan-france-candidats-2027',
+    title: `États-Unis, Chine, Taïwan : la place de la France et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+    excerpt:
+      "Guerre commerciale, terres rares, sommet Trump-Xi à Pékin et tensions sur Taïwan : entre Washington et Pékin, la France doit-elle s'aligner, rester autonome ou se rapprocher ? Les positions des candidats à 2027.",
+    date: '2026-08-10',
+    tag: 'Analyse',
+    content: `
+<p>Les 14 et 15 mai 2026, Donald Trump s'est rendu à Pékin, première visite d'un président américain en exercice en Chine depuis près de dix ans. Xi Jinping l'y a averti que Taïwan restait « la question la plus importante » et que la mal gérer exposerait les deux pays à « des affrontements, voire des conflits ». Entre les deux premières puissances mondiales, la France cherche sa place. Sur les ${candidatesCount} candidats à la présidentielle 2027, la question de l'alignement partage la classe politique.</p>
+
+<h2>La rivalité sino-américaine en 2026</h2>
+<p>Depuis le retour de Donald Trump, la relation a oscillé entre affrontement et trêve :</p>
+<ul>
+<li><strong>Avril 2025</strong> : Washington et Pékin s'infligent des droits de douane réciproques dépassant 100 % (jusqu'à 145 % côté américain, 125 % côté chinois).</li>
+<li><strong>Mai 2025</strong> : une trêve à Genève ramène les tarifs autour de 30 % et 10 %.</li>
+<li><strong>9 octobre 2025</strong> : la Chine élargit son contrôle sur l'exportation des terres rares, avec des effets extraterritoriaux ; Washington menace de 100 % de droits supplémentaires.</li>
+<li><strong>30 octobre 2025</strong> : au sommet de l'APEC en Corée du Sud, Trump et Xi concluent une trêve commerciale d'un an.</li>
+<li><strong>14-15 mai 2026</strong> : sommet de Pékin. Trêve prolongée, ouverture de ventes de puces avancées Nvidia H200 contre reversement d'une part des revenus, avertissement de Xi sur Taïwan. Les analystes de Brookings et du CFR estiment que Pékin en a tiré le meilleur parti.</li>
+</ul>
+<p>Sur <strong>Taïwan</strong>, la pression militaire chinoise reste soutenue (incursions aériennes quasi quotidiennes), mais mesurée pendant le sommet. À partir du 1er juin 2026, les garde-côtes chinois ont commencé des patrouilles « de maintien de l'ordre » dans des eaux disputées, une première.</p>
+
+<h2>La France et l'Europe entre les deux géants</h2>
+<p>La doctrine d'Emmanuel Macron, résumée après sa visite à Pékin en 2023, tient en une formule : « Être allié ne veut pas dire être vassal. » La France défend une <strong>autonomie stratégique</strong> européenne et le statu quo à Taïwan, sans suivre automatiquement Washington. Mais les intérêts économiques pèsent lourd : lors de sa visite d'État en décembre 2025, Macron n'a pas obtenu la validation de la commande géante d'Airbus attendue, et il a réclamé un « rééquilibrage » d'un commerce marqué par un déficit français de 47 milliards d'euros avec la Chine en 2024.</p>
+<p>À l'échelle européenne, la ligne est le « de-risking » (réduction des dépendances) plutôt que le découplage. En octobre 2024, l'UE a imposé des droits de douane de 17 % à 35 % sur les voitures électriques chinoises, une mesure que la France a soutenue et que l'Allemagne a combattue.</p>
+
+<h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
+<p>Sur la question <a href="/question-politique/france-rivalite-etats-unis-chine-taiwan">« Face à la rivalité entre les États-Unis et la Chine, quelle doit être la position de la France ? »</a> du <a href="/theme/affaires-etrangeres">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en trois familles.</p>
+
+<h3>Famille 1 — Rester dans le camp occidental, avec une marge d'autonomie</h3>
+<p>Ces candidats ancrent la France du côté des démocraties et se montrent fermes envers Pékin, notamment sur les droits humains, sans pour autant réclamer un alignement militaire sur Washington.</p>
+<ul>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Militant de longue date contre la répression des Ouïghours, sanctionné par Pékin en 2021 ; attaque la complaisance de LFI envers la Chine.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Appelle à « sortir de la fascination pour la Chine » et dénonce la répression au Xinjiang, au Tibet et à Hong Kong.</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ligne atlantiste et ferme envers Pékin.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Position comparable au sein des Républicains.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Ligne de fermeté commerciale et politique envers la Chine.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Libéral partisan du camp occidental et de la réduction des dépendances.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Ligne socialiste attachée aux droits humains et à l'ancrage européen.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Ligne pro-européenne et prudente envers Pékin.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — Défense de l'ancrage occidental avec un pilier européen.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Positionnement civilisationnel occidental, tout en défendant la souveraineté française.</li>
+</ul>
+
+<h3>Famille 2 — Autonomie stratégique : ne pas suivre Washington</h3>
+<p>C'est la famille la plus nombreuse, réunie autour de l'idée gaullienne d'une France qui refuse de choisir un camp et défend son indépendance.</p>
+<ul>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Ligne macronienne de l'autonomie stratégique et du statu quo à Taïwan.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Ligne gouvernementale d'indépendance diplomatique.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Défense d'une autonomie européenne sans rupture avec les alliés.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Ligne européenne d'équilibre entre les deux puissances.</li>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Héritier du non-alignement gaulliste, hostile à un suivisme atlantiste.</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Souverainiste, cherche une « juste distance » avec Washington comme avec Pékin, sans engagement sur Taïwan.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Souverainiste hostile à l'alignement sur les États-Unis.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Anti-OTAN, partisan d'une France hors des blocs.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Protectionniste, critique des dépendances envers la Chine comme du suivisme américain.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Anti-OTAN, partisan d'une autonomie française hors des blocs.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste d'indépendance stratégique.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Refus des deux blocs impérialistes, américain comme chinois.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Ligne souverainiste de non-alignement.</li>
+</ul>
+
+<h3>Famille 3 — Se rapprocher de la Chine, défendre un monde multipolaire</h3>
+<p>Ces candidats voient dans la Chine un pôle de stabilité et refusent l'alignement de l'Europe sur la stratégie américaine.</p>
+<ul>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — « Taïwan, c'est la Chine » ; estime que la France a parfois plus d'intérêts communs avec Pékin qu'avec ses partenaires européens, et refuse toute logique de guerre avec la Chine.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Ligne de non-alignement proche de LFI, critique de la confrontation avec Pékin.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Défense d'un monde multipolaire face à l'hégémonie américaine.</li>
+</ul>
+
+<h2>Arguments pour et arguments contre un alignement sur les États-Unis</h2>
+<table>
+<tr><th>Arguments pour rester dans le camp américain</th><th>Arguments pour l'autonomie ou le rapprochement avec Pékin</th></tr>
+<tr><td>Les États-Unis restent le principal allié militaire de la France, via l'OTAN.</td><td>Suivre Washington sur Taïwan exposerait la France à un conflit qui n'est pas le sien.</td></tr>
+<tr><td>La Chine est une rivale systémique sur les droits humains et le commerce.</td><td>La dépendance commerciale et industrielle rend une rupture avec Pékin coûteuse.</td></tr>
+<tr><td>Un front occidental uni pèse davantage face à Pékin.</td><td>L'autonomie stratégique européenne évite de subir les revirements de la politique américaine.</td></tr>
+<tr><td>Le « de-risking » réduit les dépendances sans rompre les échanges.</td><td>Un monde multipolaire offrirait à la France une marge de manœuvre diplomatique.</td></tr>
+</table>
+
+<h2>Pour aller plus loin</h2>
+<p>La rivalité sino-américaine recoupe plusieurs questions du Quizz du Berger :</p>
+<ul>
+<li><a href="/question-politique/france-rivalite-etats-unis-chine-taiwan">France, États-Unis et Chine</a> — la question complète et les réponses des ${candidatesCount} candidats.</li>
+<li><a href="/question-politique/face-a-la-montee-en-puissance-de-la-chine-que-doit-faire-la-france">La France face à la Chine</a> — rompre, réduire la dépendance ou renforcer les échanges ?</li>
+<li><a href="/question-politique/intervention-americaine-venezuela-maduro-france">Intervention américaine au Venezuela</a> — le rapport à la puissance américaine.</li>
+<li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — l'ensemble des questions de politique internationale.</li>
+</ul>
+
+<p><a href="/themes">→ Faire le quiz</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `États-Unis, Chine, Taïwan : la place de la France et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+      description: `Guerre commerciale, terres rares, sommet Trump-Xi et tensions sur Taïwan : la place de la France entre Washington et Pékin et les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-08-10',
+      about: [
+        { '@type': 'Thing', name: 'Relations entre la Chine et les États-Unis' },
+        { '@type': 'Thing', name: 'Taïwan' },
+        { '@type': 'Thing', name: 'Autonomie stratégique européenne' },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
+  {
+    slug: 'guerre-gaza-reconnaissance-palestine-france-candidats-2027',
+    title: `Guerre à Gaza et reconnaissance de la Palestine : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+    excerpt:
+      "Reconnaissance de l'État de Palestine par la France, famine déclarée à Gaza, mandat d'arrêt de la CPI contre Nétanyahou, cessez-le-feu de 2025 : le décryptage et les positions de chaque candidat à 2027.",
+    date: '2026-08-10',
+    tag: 'Analyse',
+    content: `
+<p>Le 22 septembre 2025, à la tribune de l'Assemblée générale des Nations unies, Emmanuel Macron a reconnu l'État de Palestine, faisant de la France le premier pays du G7 à franchir ce pas. La décision a été saluée à gauche et dénoncée à droite et à l'extrême droite. Deux ans de guerre à Gaza, une famine déclarée et un mandat d'arrêt international contre le Premier ministre israélien forment l'arrière-plan de ce geste. Le Quizz du Berger comptait déjà trois questions sur le conflit israélo-palestinien ; la reconnaissance en déplace l'enjeu, et les ${candidatesCount} candidats ne s'accordent pas sur sa légitimité.</p>
+
+<h2>Gaza : où en est la guerre ?</h2>
+<p>Déclenchée après l'attaque du Hamas du 7 octobre 2023, la guerre à Gaza a connu en 2025 et 2026 plusieurs tournants :</p>
+<ul>
+<li><strong>21 novembre 2024</strong> : la Cour pénale internationale émet des mandats d'arrêt contre le Premier ministre Benyamin Nétanyahou et l'ancien ministre de la Défense Yoav Gallant, notamment pour « la famine comme méthode de guerre ». Les quelque 124 États membres de la CPI sont tenus de les arrêter sur leur territoire.</li>
+<li><strong>22 août 2025</strong> : l'IPC déclare une famine dans la ville de Gaza, la première jamais reconnue au Proche-Orient. Israël rejette fermement ce constat, qu'il juge faux et politisé.</li>
+<li><strong>9-10 octobre 2025</strong> : un accord de cessez-le-feu, adossé au plan en 20 points de Donald Trump, entre en vigueur. Les 20 otages vivants sont libérés en trois jours ; Israël libère 250 prisonniers condamnés à perpétuité et 1 700 Gazaouis détenus depuis le 7 octobre.</li>
+<li><strong>16 janvier 2026</strong> : Trump nomme les membres fondateurs d'un « Conseil de la paix » chargé de la reconstruction, dont Tony Blair et Jared Kushner. La Banque mondiale évalue le coût de la reconstruction à plus de 70 milliards de dollars.</li>
+</ul>
+<p>Le bilan humain est lourd et contesté. Le ministère de la Santé de Gaza fait état d'environ 70 000 à 75 000 morts ; l'armée israélienne juge cet ordre de grandeur « largement exact » tout en contestant la part de civils et de combattants ; une étude indépendante publiée dans <em>The Lancet Global Health</em> estime le nombre de morts violentes supérieur d'environ un tiers aux registres officiels. Le cessez-le-feu tient début 2026, mais reste fragile.</p>
+
+<h2>La reconnaissance de la Palestine par la France</h2>
+<p>Le 24 juillet 2025, Emmanuel Macron avait annoncé, dans une lettre au président de l'Autorité palestinienne Mahmoud Abbas, que la France reconnaîtrait l'État de Palestine. Il assortissait cette reconnaissance de conditions : cessez-le-feu immédiat, libération de tous les otages, aide humanitaire massive, démilitarisation du Hamas et exclusion de ce dernier de toute gouvernance. La reconnaissance formelle est intervenue le <strong>22 septembre 2025</strong> à l'ONU, lors d'une conférence coprésidée avec l'Arabie saoudite.</p>
+<p>La France s'inscrivait dans une vague : la veille, le Royaume-Uni, le Canada, l'Australie et le Portugal avaient reconnu la Palestine ; le même jour, la Belgique, le Luxembourg, Malte, Monaco et Andorre suivaient. Israël a réagi durement : Benyamin Nétanyahou a affirmé qu'« un État palestinien ne sera pas créé », son ministre des Finances Bezalel Smotrich a proposé d'annexer 82 % de la Cisjordanie, et l'ambassadeur israélien à Paris a qualifié la France d'« agent déstabilisateur ».</p>
+
+<h2>Pourquoi le sujet divise la France</h2>
+
+<h3>1. Reconnaître maintenant, ou après un accord ?</h3>
+<p>Pour ses partisans, la reconnaissance maintient vivante la solution à deux États et refuse d'attendre indéfiniment. Pour ses opposants, reconnaître un État palestinien pendant que le Hamas détient encore des otages revient à « récompenser le terrorisme ».</p>
+
+<h3>2. Les drapeaux sur les mairies</h3>
+<p>Le 22 septembre 2025, plus de cent maires ont hissé le drapeau palestinien au fronton de leur mairie, malgré une consigne d'interdiction du ministre de l'Intérieur Bruno Retailleau au nom de la neutralité du service public. Plusieurs tribunaux administratifs ont ordonné leur retrait.</p>
+
+<h3>3. L'« importation du conflit » et l'antisémitisme</h3>
+<p>Le débat se double d'une inquiétude sur l'antisémitisme. Selon le Service de protection de la communauté juive, la France a recensé 1 676 actes antisémites en 2023, 1 570 en 2024 et 1 320 en 2025, contre 436 en 2022. La droite et le gouvernement accusent LFI d'« importer le conflit » ; LFI rejette cette accusation et dénonce une confusion entre antisionisme et antisémitisme.</p>
+
+<h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
+<p>Sur la question <a href="/question-politique/la-france-doit-elle-reconnaitre-l-etat-de-palestine">« La France doit-elle reconnaître l'État de Palestine ? »</a> du <a href="/theme/affaires-etrangeres">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en quatre familles.</p>
+
+<h3>Famille 1 — Oui, immédiatement et sans condition</h3>
+<p>La gauche et une partie des voix gaullistes défendent une reconnaissance pleine et entière comme droit du peuple palestinien.</p>
+<ul>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — A salué une « victoire irréversible » de la lutte populaire, tout en jugeant les conditions de Macron « alambiquées » ; LFI réclame un embargo sur les armes et des sanctions contre Israël.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Reconnaissance sans condition et dénonciation de la politique israélienne à Gaza.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Soutien à une reconnaissance immédiate.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — A appelé les maires à hisser le drapeau palestinien : « Un drapeau sur une façade de mairie n'a jamais tué personne. »</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste favorable à la reconnaissance.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — « Cette reconnaissance va dans le bon sens mais arrive très tard. »</li>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Partisan de la reconnaissance et de la solution à deux États, sur une ligne distincte de LFI sur le 7 octobre et l'antisémitisme.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Soutien à la cause palestinienne face à la politique israélienne.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Engagé pour la reconnaissance et contre la politique israélienne à Gaza.</li>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Défenseur d'une reconnaissance et d'une relance de la solution à deux États.</li>
+</ul>
+
+<h3>Famille 2 — Oui, mais dans le cadre d'un accord négocié</h3>
+<p>Le centre et une partie du PS soutiennent la reconnaissance en l'inscrivant dans un processus de paix, comme l'a fait le gouvernement.</p>
+<ul>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Ligne présidentielle : reconnaissance conditionnée au cessez-le-feu, à la libération des otages et à l'exclusion du Hamas.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Membre du gouvernement, aligné sur la reconnaissance conditionnée.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Favorable à une reconnaissance dans un cadre négocié.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Soutien à la ligne gouvernementale.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Reconnaissance adossée à un processus de paix.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — Favorable à une reconnaissance négociée et à la solution à deux États.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Ligne socialiste de reconnaissance dans un cadre de paix.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Favorable à une reconnaissance conditionnée à la libération des otages.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Reconnaissance envisagée dans un processus négocié.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Favorable à une reconnaissance dans le respect du droit international.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Ligne favorable à une reconnaissance encadrée.</li>
+</ul>
+
+<h3>Famille 3 — Pas maintenant</h3>
+<p>Ces candidats jugent la reconnaissance prématurée tant que les otages ne sont pas libérés et que le Hamas n'est pas écarté.</p>
+<ul>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — A qualifié la décision de Macron de « faute grave » et fait de la libération des otages un préalable, accusant le président de reconnaître le « Hamastan ».</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Juge la reconnaissance prématurée dans le contexte actuel.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Opposé à une reconnaissance immédiate, jugée hors de propos tant que le Hamas n'est pas neutralisé.</li>
+</ul>
+
+<h3>Famille 4 — Non, une reconnaissance qui fragilise Israël</h3>
+<p>À droite et à l'extrême droite, ce camp refuse la reconnaissance, perçue comme une récompense au terrorisme.</p>
+<ul>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ministre de l'Intérieur, il a interdit les drapeaux palestiniens sur les mairies et jugé que la reconnaissance « offre une victoire au Hamas ».</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Fermement pro-israélien, opposé à une reconnaissance qu'il présente comme une prime au terrorisme.</li>
+</ul>
+
+<h2>Arguments pour et arguments contre la reconnaissance de la Palestine</h2>
+<table>
+<tr><th>Arguments en faveur de la reconnaissance</th><th>Arguments contre la reconnaissance</th></tr>
+<tr><td>Maintient vivante la solution à deux États face à la colonisation.</td><td>Reconnaître pendant la détention d'otages reviendrait à récompenser le Hamas.</td></tr>
+<tr><td>Répond à un droit du peuple palestinien à disposer d'un État.</td><td>Une reconnaissance sans accord ne changerait rien sur le terrain.</td></tr>
+<tr><td>Inscrit la France dans une dynamique internationale (Royaume-Uni, Canada, Belgique).</td><td>Fragiliserait Israël et tendrait la relation bilatérale.</td></tr>
+<tr><td>Pèse en faveur d'un règlement politique plutôt que militaire.</td><td>Alimenterait, selon ses opposants, l'importation du conflit en France.</td></tr>
+</table>
+
+<h2>Pour aller plus loin</h2>
+<p>La guerre à Gaza et la reconnaissance de la Palestine recoupent trois questions du Quizz du Berger :</p>
+<ul>
+<li><a href="/question-politique/la-france-doit-elle-reconnaitre-l-etat-de-palestine">Reconnaître l'État de Palestine</a> — la question complète et les réponses des ${candidatesCount} candidats.</li>
+<li><a href="/question-politique/dans-le-conflit-israel-palestine-ou-vous-situez-vous">Israël / Palestine : où vous situez-vous ?</a> — le positionnement de chaque candidat.</li>
+<li><a href="/question-politique/que-devrait-faire-la-france-face-au-conflit-israel-palestine">Que devrait faire la France ?</a> — médiation, pression ou soutien.</li>
+</ul>
+
+<p><a href="/themes">→ Faire le quiz</a></p>
+`,
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `Guerre à Gaza et reconnaissance de la Palestine : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+      description: `Reconnaissance de l'État de Palestine par la France, famine à Gaza, mandat d'arrêt de la CPI contre Nétanyahou et cessez-le-feu de 2025 : les enjeux et les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+      author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+      datePublished: '2026-08-10',
+      about: [
+        { '@type': 'Thing', name: 'Guerre à Gaza' },
+        { '@type': 'Thing', name: 'État de Palestine' },
+        { '@type': 'Thing', name: 'Solution à deux États' },
+        { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+      ],
+    },
+  },
 ];

@@ -34,6 +34,12 @@ question-2027-ae-09: Que devrait faire la France face au conflit Israël / Pales
 question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
 [0] Oui, immédiatement et sans condition : c'est un droit du peuple palestinien
 
+question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
+[4] Dénoncer fermement un impérialisme américain et défendre le principe de non-ingérence
+
+question-2027-ae-12: Face à la rivalité entre les États-Unis et la Chine (notamment autour de Taïwan), quelle doit être la position de la France ?
+[3] Se rapprocher de la Chine et défendre un monde multipolaire face aux États-Unis
+
 
 Agriculture et alimentation:
 
