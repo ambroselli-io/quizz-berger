@@ -34,6 +34,9 @@ question-2027-ae-09: Que devrait faire la France face au conflit Israël / Pales
 question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
 [1] Oui, mais dans le cadre d'un accord de paix négocié
 
+question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
+[1] Approuver le résultat, mais regretter une intervention menée sans mandat international
+
 
 Agriculture et alimentation:
 
@@ -230,7 +233,7 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 [3] L'État n'est pas assez ferme, il faut plus d'autorité pour que les lois soient respectées
 
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
-[2] Une réduction modérée est possible, mais elle doit s'accompagner d'une dose de proportionnelle et protéger la représentation des territoires
+[2] Une réduction modérée est possible, mais elle doit protéger la représentation des territoires
 
 
 Logement:

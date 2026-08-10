@@ -45,7 +45,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 70,
+    "percent": 71,
     "pseudos": [
       "Fabien Roussel",
     ],
