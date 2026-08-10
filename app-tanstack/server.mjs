@@ -31,6 +31,19 @@ app.get('/healthz', (_req, res) => {
   });
 });
 
+// IndexNow key verification. Search engines (Bing, Yandex, Seznam, Naver…)
+// fetch https://<host>/<key>.txt to confirm we own the key that the IndexNow
+// workflow submits URLs with. Served from INDEXNOW_KEY so the key stays out of
+// the repo. If the env var is unset the route isn't registered — the request
+// falls through to the normal 404 and IndexNow submissions simply go
+// unverified. Nothing breaks.
+const indexNowKey = process.env.INDEXNOW_KEY;
+if (indexNowKey && /^[A-Za-z0-9-]{8,128}$/.test(indexNowKey)) {
+  app.get(`/${indexNowKey}.txt`, (_req, res) => {
+    res.type('text/plain').send(indexNowKey);
+  });
+}
+
 // Hashed assets never change → cache forever.
 app.use('/assets', express.static(join(clientDir, 'assets'), { immutable: true, maxAge: '1y' }));
 // Other static files (favicon, candidate images, pdfs…). index:false so `/` hits SSR, not index.html.

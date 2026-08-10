@@ -1,0 +1,150 @@
+name: IndexNow ping for new articles
+
+# Companion to google-indexing.yml. Runs when a push to main adds a blog
+# article (articles.ts) or a hot-topic question page (hotTopicSlugs in seo.ts),
+# waits for the VPS deploy to publish the new URLs in the sitemap, then pings
+# IndexNow (Bing, Yandex, Seznam, Naver…) with only the URLs added by this push.
+# Same "new pages only, don't re-ping the whole sitemap" logic as the Google job.
+#
+# Unlike Google indexing, IndexNow authenticates by a KEY FILE hosted on the
+# domain: search engines fetch https://www.quizz-du-berger.com/<key>.txt and
+# check it contains the key. server.mjs serves that file from the INDEXNOW_KEY
+# env var, so the key must be set in TWO places (same value):
+#   - repo secret INDEXNOW_KEY   — so this workflow can submit.
+#   - VPS .env  INDEXNOW_KEY=...  — so /<key>.txt is served for verification.
+#
+# If the INDEXNOW_KEY secret is absent, this workflow is a no-op: every step is
+# skipped and the job succeeds. Nothing to configure = nothing happens, no red X.
+#
+# Generate a key with:  openssl rand -hex 16
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app-tanstack/src/content/articles.ts"
+      - "app-tanstack/src/utils/seo.ts"
+
+concurrency:
+  group: indexnow-ping
+  cancel-in-progress: false
+
+env:
+  BASE_URL: https://www.quizz-du-berger.com
+  HOST: www.quizz-du-berger.com
+
+jobs:
+  ping:
+    name: Ping IndexNow with new URLs
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check that an IndexNow key is configured
+        id: gate
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "INDEXNOW_KEY secret is not set — skipping IndexNow ping (nothing to do)."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          fetch-depth: 0 # need github.event.before to diff the push
+
+      - name: Extract slugs added by this push
+        id: slugs
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE="$(git rev-parse HEAD^)"
+          fi
+          added_slugs() {
+            git diff "$BEFORE" "${{ github.sha }}" -- "$1" \
+              | grep -E '^\+' | grep -oE "slug: '[^']+'" \
+              | sed "s/^slug: '//; s/'$//" || true
+          }
+          urls=""
+          for slug in $(added_slugs app-tanstack/src/content/articles.ts); do
+            urls="$urls $BASE_URL/blog/$slug"
+          done
+          # seo.ts also contains comparison-pair slugs; non-question matches are
+          # filtered out by the sitemap check in the next step.
+          for slug in $(added_slugs app-tanstack/src/utils/seo.ts); do
+            urls="$urls $BASE_URL/question-politique/$slug"
+          done
+          urls="$(echo "$urls" | xargs -n1 | sort -u | xargs || true)"
+          echo "urls=$urls" >> "$GITHUB_OUTPUT"
+          if [ -z "$urls" ]; then
+            echo "No new article/question slugs in this push — nothing to ping."
+          else
+            echo "Candidate new URLs: $urls"
+          fi
+
+      - name: Wait for the deploy to publish the new URLs in the sitemap
+        id: live
+        if: steps.gate.outputs.enabled == 'true' && steps.slugs.outputs.urls != ''
+        run: |
+          # The sitemap is rebuilt from this same commit during the VPS deploy,
+          # so as soon as one new URL appears, the deploy is done and every
+          # valid URL of this push is in it (leftover misses are false
+          # positives from the slug extraction, e.g. comparison pairs).
+          # Only sitemap-confirmed URLs are passed on for indexing.
+          for i in $(seq 1 90); do
+            sitemap="$(curl -sf "$BASE_URL/sitemap.xml" || true)"
+            found=""
+            missing=""
+            for url in ${{ steps.slugs.outputs.urls }}; do
+              if echo "$sitemap" | grep -qF "<loc>$url</loc>"; then
+                found="$found $url"
+              else
+                missing="$missing $url"
+              fi
+            done
+            if [ -n "$found" ]; then
+              echo "Live in sitemap:$found"
+              [ -n "$missing" ] && echo "Not in sitemap (ignored):$missing"
+              echo "urls=$(echo "$found" | xargs | tr ' ' ',')" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Deploy not live yet ($i/90), retrying in 20s..."
+            sleep 20
+          done
+          echo "Timed out: none of the new URLs appeared in the sitemap." >&2
+          exit 1
+
+      - name: Ping IndexNow with the new URLs only
+        if: steps.gate.outputs.enabled == 'true' && steps.live.outputs.urls != ''
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          NEW_URLS: ${{ steps.live.outputs.urls }}
+        run: |
+          url_list="$(printf '%s' "$NEW_URLS" | tr ',' '\n' | jq -R . | jq -sc .)"
+          payload="$(jq -nc \
+            --arg host "$HOST" \
+            --arg key "$INDEXNOW_KEY" \
+            --arg loc "$BASE_URL/$INDEXNOW_KEY.txt" \
+            --argjson urls "$url_list" \
+            '{host: $host, key: $key, keyLocation: $loc, urlList: $urls}')"
+          echo "Submitting to IndexNow:"
+          echo "$url_list" | jq .
+          code="$(curl -sS -o /tmp/indexnow-resp.txt -w '%{http_code}' \
+            -X POST 'https://api.indexnow.org/indexnow' \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data "$payload")"
+          echo "IndexNow HTTP $code"
+          cat /tmp/indexnow-resp.txt || true
+          echo
+          # 200 = accepted, 202 = accepted, validation pending. Anything else is
+          # a real problem worth surfacing (e.g. 403 = the /<key>.txt file isn't
+          # served on the VPS: check INDEXNOW_KEY in the VPS .env).
+          case "$code" in
+            200|202) echo "IndexNow accepted the URLs." ;;
+            403) echo "IndexNow returned 403 — the key file $BASE_URL/$INDEXNOW_KEY.txt is missing or doesn't match. Set INDEXNOW_KEY in the VPS .env to the same value as this secret." >&2; exit 1 ;;
+            *) echo "IndexNow returned an unexpected status." >&2; exit 1 ;;
+          esac
