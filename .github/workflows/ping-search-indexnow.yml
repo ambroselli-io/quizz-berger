@@ -148,3 +148,28 @@ jobs:
             403) echo "IndexNow returned 403 — the key file $BASE_URL/$INDEXNOW_KEY.txt is missing or doesn't match. Set INDEXNOW_KEY in the VPS .env to the same value as this secret." >&2; exit 1 ;;
             *) echo "IndexNow returned an unexpected status." >&2; exit 1 ;;
           esac
+
+  notify-failure:
+    name: Notify Slack on failure
+    needs: [ping]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post failure to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          REPO: ${{ github.repository }}
+          REF: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL secret is not set; skipping notification."
+            exit 0
+          fi
+          SHORT_SHA="${SHA:0:7}"
+          PAYLOAD=$(jq -nc \
+            --arg text ":x: *Quizz du Berger* — IndexNow ping failed on \`$REF\` (commit \`$SHORT_SHA\` by $ACTOR)\n<$RUN_URL|See workflow run>" \
+            '{text: $text}')
+          curl -sS -X POST -H 'Content-Type: application/json' --data "$PAYLOAD" "$SLACK_WEBHOOK_URL"
