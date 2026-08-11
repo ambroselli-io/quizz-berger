@@ -5,6 +5,7 @@ import { article as articleGuerreSoudanArmesFranceEmiratsCandidats2027 } from '.
 import { article as articleInterventionAmericaineVenezuelaMaduroFranceCandidats2027 } from './intervention-americaine-venezuela-maduro-france-candidats-2027';
 import { article as articlePlanPaixUkraineNegociationsFranceCandidats2027 } from './plan-paix-ukraine-negociations-france-candidats-2027';
 import { article as articleReductionNombreParlementairesFranceCandidats2027 } from './reduction-nombre-parlementaires-france-candidats-2027';
+import { article as articleRivaliteEtatsUnisChineTaiwanFranceCandidats2027 } from './rivalite-etats-unis-chine-taiwan-france-candidats-2027';
 import { article as articlePresomptionLegitimeDefensePoliciersFranceCandidats2027 } from './presomption-legitime-defense-policiers-france-candidats-2027';
 import { article as articleFeuxForetSecuriteCivileFranceCandidats2027 } from './feux-foret-securite-civile-france-candidats-2027';
 import { article as articleLoiRipostSecuriteQuotidienFranceCandidats2027 } from './loi-ripost-securite-quotidien-france-candidats-2027';
@@ -32,6 +33,7 @@ export const articles: Article[] = [
   articleInterventionAmericaineVenezuelaMaduroFranceCandidats2027,
   articlePlanPaixUkraineNegociationsFranceCandidats2027,
   articleReductionNombreParlementairesFranceCandidats2027,
+  articleRivaliteEtatsUnisChineTaiwanFranceCandidats2027,
   articlePresomptionLegitimeDefensePoliciersFranceCandidats2027,
   articleFeuxForetSecuriteCivileFranceCandidats2027,
   articleLoiRipostSecuriteQuotidienFranceCandidats2027,

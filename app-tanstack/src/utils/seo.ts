@@ -101,6 +101,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Capture de Maduro : que pensent les candidats à la présidentielle 2027 ?',
     seoDescription: `Intervention américaine au Venezuela et capture de Maduro : soutien, neutralité ou condamnation ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-ae-12': {
+    slug: 'france-rivalite-etats-unis-chine-taiwan',
+    seoTitle: 'États-Unis, Chine, Taïwan : quelle position pour la France en 2027 ?',
+    seoDescription: `S'aligner sur Washington, rester autonome ou se rapprocher de Pékin ? Les positions des ${candidatesCount} candidats à la présidentielle 2027 face à la rivalité sino-américaine.`,
+  },
   'question-2027-ae-04': {
     slug: 'construction-europeenne-avenir',
     seoTitle: 'Construction européenne : que proposent les candidats 2027 ?',
