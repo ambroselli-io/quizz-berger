@@ -96,6 +96,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'OTAN : les positions des candidats à la présidentielle 2027',
     seoDescription: 'France et OTAN : sortir, rester, renforcer ? Comparez les positions des candidats à la présidentielle 2027.',
   },
+  'question-2027-ae-11': {
+    slug: 'intervention-americaine-venezuela-maduro-france',
+    seoTitle: 'Capture de Maduro : que pensent les candidats à la présidentielle 2027 ?',
+    seoDescription: `Intervention américaine au Venezuela et capture de Maduro : soutien, neutralité ou condamnation ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
   'question-2027-ae-04': {
     slug: 'construction-europeenne-avenir',
     seoTitle: 'Construction européenne : que proposent les candidats 2027 ?',

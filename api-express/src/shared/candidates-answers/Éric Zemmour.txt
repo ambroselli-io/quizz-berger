@@ -34,6 +34,9 @@ question-2027-ae-09: Que devrait faire la France face au conflit Israël / Pales
 question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
 [3] Non, ce serait récompenser le terrorisme et fragiliser Israël
 
+question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
+[0] Soutenir les États-Unis : Maduro était un dictateur et un narcotrafiquant, sa chute est une bonne nouvelle
+
 
 Agriculture et alimentation:
 
