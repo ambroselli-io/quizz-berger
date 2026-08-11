@@ -12,11 +12,11 @@ import Header from '@app/components/Header';
 import BottomTabBar from '@app/components/BottomTabBar';
 import NotFound from '@app/components/NotFound';
 import UnexpectedError from '@app/components/UnexpectedError';
-import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME } from '@app/utils/seo';
+import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME, candidatesCount } from '@app/utils/seo';
+import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 
 const DEFAULT_TITLE = 'Le Quizz du Berger | Quel est votre candidat idéal ?';
-const DEFAULT_DESCRIPTION =
-  'Présidentielle 2027 - Répondez aux questions que vous voulez pour connaître le candidat qui pense comme vous. 21 thèmes, 119 questions, 24 candidats.';
+const DEFAULT_DESCRIPTION = `Présidentielle 2027 - Répondez aux questions que vous voulez pour connaître le candidat qui pense comme vous. ${quizzThemesCount} thèmes, ${quizzQuestionsCount} questions, ${candidatesCount} candidats.`;
 const DEFAULT_OG_IMAGE = 'https://www.quizz-du-berger.com/og_1200_630.png';
 
 const WEBAPP_JSONLD = {
@@ -24,8 +24,7 @@ const WEBAPP_JSONLD = {
   '@type': 'WebApplication',
   name: 'Le Quizz du Berger',
   url: 'https://www.quizz-du-berger.com',
-  description:
-    "Quiz politique pour l'élection présidentielle française 2027. Comparez vos idées avec 24 candidats sur 21 thèmes et 119 questions.",
+  description: `Quiz politique pour l'élection présidentielle française 2027. Comparez vos idées avec ${candidatesCount} candidats sur ${quizzThemesCount} thèmes et ${quizzQuestionsCount} questions.`,
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Any',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
