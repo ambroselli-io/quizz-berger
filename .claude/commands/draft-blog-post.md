@@ -13,7 +13,7 @@ You are drafting a blog article for quizz-du-berger.com, a neutral French politi
 
 Read these files first:
 
-- `app-tanstack/src/content/articles.ts` — existing articles (slugs, format, tone). The Mercosur article (`accord-ue-mercosur-france-candidats-2027`) is the reference template.
+- `app-tanstack/src/content/articles/` — one file per article, named `{slug}.ts`, all listed in `index.ts`. Read `index.ts` for the existing slugs, then `accord-ue-mercosur-france-candidats-2027.ts` as the reference template (format, tone).
 - `app-tanstack/src/shared/quizz-2027.json` — quiz themes and questions.
 - `app-tanstack/src/shared/candidates-answers.json` — the candidates' quiz answers.
 - `app-tanstack/src/utils/seo.ts` — candidate slugs, theme slugs, hot-topic question slugs (for internal links).
@@ -24,7 +24,7 @@ Read these files first:
 
 **If a topic was passed as an argument (`$ARGUMENTS` is non-empty), use it — do not scout.** Run only the coverage check:
 
-1. Read `articles.ts` and compare against every existing article, by subject rather than by wording.
+1. Read `app-tanstack/src/content/articles/index.ts` and compare against every existing article, by subject rather than by wording.
 2. **Already covered** → stop. Do not write, do not branch, do not open a PR. Report which article covers it (slug + title + date) and ask whether to proceed anyway with a genuinely new angle. Wait for the answer.
 3. **Not covered** → skip the hot/substantive tests below. The topic was chosen deliberately; a quiet or niche subject is a valid request, not a reason to refuse. Go to the theme-mapping check.
 
@@ -33,7 +33,7 @@ Web-search the topic anyway to gather current facts and sources — steps 4–5 
 **If no argument was passed**, scout as usual. Web-search French political news from the last 7 days (e.g. "actualité politique France", "présidentielle 2027", plus themes from the quiz). Build a shortlist of 3–5 topics, then pick one that is:
 
 1. **Genuinely hot**: covered by several major French outlets (Le Monde, Le Figaro, France Info, Les Échos, Libération…) this week.
-2. **Not already covered**: no existing article in `articles.ts` covers it (a new major development on an old topic is acceptable only if the angle is genuinely new).
+2. **Not already covered**: no existing article in `app-tanstack/src/content/articles/` covers it (a new major development on an old topic is acceptable only if the angle is genuinely new).
 3. **Politically substantive**: a real dividing line between candidates — not a pure fait divers, poll horse-race, or personality story with no policy content.
 
 Then check whether the topic maps to an existing theme/question in `quizz-2027.json`:
@@ -70,7 +70,20 @@ Group candidates into 2–4 "familles" of positions like the Mercosur article, e
 
 ## 5. Write the article
 
-Add ONE new entry to the `articles` array in `app-tanstack/src/content/articles.ts`, matching the existing shape exactly:
+Create ONE new file `app-tanstack/src/content/articles/{slug}.ts`, then register it in `app-tanstack/src/content/articles/index.ts` (one `import { article as article{SlugInPascalCase} } from './{slug}';` line plus one entry at the top of the `articles` array — the array is sorted newest first).
+
+The new file exports a single `article` object, matching the existing shape exactly:
+
+```ts
+import type { Article } from '~/types/article';
+import { candidatesCount } from '~/utils/seo';
+
+export const article: Article = { … };
+```
+
+Import `quizzQuestionsCount` / `quizzThemesCount` from `~/utils/quizz` only if the text uses them — `noUnusedLocals` is on and an unused import fails the type-check.
+
+Fields:
 
 - `slug`: kebab-case, descriptive, ending in `-france-candidats-2027` when it fits (e.g. `taxe-zucman-france-candidats-2027`).
 - `title`: French, includes `${candidatesCount}` (template variable, do not hard-code the number) — e.g. `` `Taxe Zucman : tout comprendre et les positions des ${candidatesCount} candidats à la présidentielle 2027` ``.

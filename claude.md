@@ -29,6 +29,12 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - Build: `cd app-tanstack && npm run build` (generates sitemap, then `vite build` → `dist/`)
 - Mobile tests: `cd expo && npm test` (Jest + React Native Testing Library, no emulator needed) and `npm run ts:check`. `npm test` also gates the `build-*` / `build-and-upload:*` scripts.
 
+# Blog articles
+
+One file per article in `app-tanstack/src/content/articles/{slug}.ts`, each exporting `article: Article` (type in `app-tanstack/src/types/article.ts`). `articles/index.ts` imports them all and exports the `articles` array, newest first.
+
+To add one: create `{slug}.ts`, then add the import line and the array entry in `index.ts`. The file name must equal the `slug` field — it is the `/blog/{slug}` URL, and the sitemap is generated from the array. `.claude/commands/draft-blog-post.md` holds the full editorial process.
+
 # Modifying a question
 
 Quiz questions live in `quizz-2027.json`, **duplicated in 3 places** (no sync script):

@@ -1,6 +1,6 @@
 # No AI slop — French addendum
 
-`SKILL.md` lists English words and patterns. This repo publishes in French. Same principles, French triggers. Examples below are real lines from `app-tanstack/src/content/articles.ts`, kept as the reference for what to catch.
+`SKILL.md` lists English words and patterns. This repo publishes in French. Same principles, French triggers. Examples below are real lines from `app-tanstack/src/content/articles/`, kept as the reference for what to catch.
 
 ## The house intro machine (worst offender here)
 

@@ -1,7 +1,8 @@
 name: IndexNow ping for new articles
 
 # Companion to google-indexing.yml. Runs when a push to main adds a blog
-# article (articles.ts) or a hot-topic question page (hotTopicSlugs in seo.ts),
+# article (a file in src/content/articles/) or a hot-topic question page
+# (hotTopicSlugs in seo.ts),
 # waits for the VPS deploy to publish the new URLs in the sitemap, then pings
 # IndexNow (Bing, Yandex, Seznam, Naver…) with only the URLs added by this push.
 # Same "new pages only, don't re-ping the whole sitemap" logic as the Google job.
@@ -22,7 +23,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "app-tanstack/src/content/articles.ts"
+      - "app-tanstack/src/content/articles/**"
       - "app-tanstack/src/utils/seo.ts"
 
 concurrency:
@@ -69,8 +70,16 @@ jobs:
               | grep -E '^\+' | grep -oE "slug: '[^']+'" \
               | sed "s/^slug: '//; s/'$//" || true
           }
+          # One file per article, named {slug}.ts — the added file names ARE the
+          # new blog slugs.
+          added_article_slugs() {
+            git diff --name-only --diff-filter=A "$BEFORE" "${{ github.sha }}" \
+              -- 'app-tanstack/src/content/articles/*.ts' \
+              | grep -v '/index\.ts$' \
+              | sed 's#.*/##; s#\.ts$##' || true
+          }
           urls=""
-          for slug in $(added_slugs app-tanstack/src/content/articles.ts); do
+          for slug in $(added_article_slugs); do
             urls="$urls $BASE_URL/blog/$slug"
           done
           # seo.ts also contains comparison-pair slugs; non-question matches are
