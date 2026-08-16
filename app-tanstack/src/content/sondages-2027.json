@@ -1,0 +1,1855 @@
+{
+  "fetchedAt": "2026-08-16",
+  "source": {
+    "name": "MieuxVoter / presidentielle2027",
+    "url": "https://github.com/MieuxVoter/presidentielle2027",
+    "licence": "MIT"
+  },
+  "pollCount": 136,
+  "lastPollDate": "2026-07-10",
+  "months": [
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07"
+  ],
+  "candidates": [
+    {
+      "candidat": "Jordan Bardella",
+      "parti": "Rassemblement National",
+      "slug": null,
+      "appearances": 79,
+      "latest": 35.4,
+      "latestMonth": "2026-06",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 35.5,
+          "polls": 2
+        },
+        {
+          "month": "2025-04",
+          "value": 32.9,
+          "polls": 10
+        },
+        {
+          "month": "2025-05",
+          "value": 30.7,
+          "polls": 3
+        },
+        {
+          "month": "2025-09",
+          "value": 34.2,
+          "polls": 5
+        },
+        {
+          "month": "2025-10",
+          "value": 33.9,
+          "polls": 9
+        },
+        {
+          "month": "2025-11",
+          "value": 35.8,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 35.6,
+          "polls": 9
+        },
+        {
+          "month": "2026-03",
+          "value": 36.5,
+          "polls": 8
+        },
+        {
+          "month": "2026-04",
+          "value": 34.5,
+          "polls": 2
+        },
+        {
+          "month": "2026-05",
+          "value": 34.1,
+          "polls": 19
+        },
+        {
+          "month": "2026-06",
+          "value": 35.4,
+          "polls": 9
+        }
+      ]
+    },
+    {
+      "candidat": "Marine Le Pen",
+      "parti": "Rassemblement National",
+      "slug": "marine-le-pen",
+      "appearances": 57,
+      "latest": 34.9,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 35.5,
+          "polls": 4
+        },
+        {
+          "month": "2025-04",
+          "value": 33.3,
+          "polls": 6
+        },
+        {
+          "month": "2025-05",
+          "value": 31,
+          "polls": 3
+        },
+        {
+          "month": "2025-09",
+          "value": 33,
+          "polls": 1
+        },
+        {
+          "month": "2025-10",
+          "value": 33.1,
+          "polls": 4
+        },
+        {
+          "month": "2026-02",
+          "value": 34.5,
+          "polls": 2
+        },
+        {
+          "month": "2026-03",
+          "value": 32.8,
+          "polls": 2
+        },
+        {
+          "month": "2026-04",
+          "value": 32.5,
+          "polls": 2
+        },
+        {
+          "month": "2026-05",
+          "value": 31.8,
+          "polls": 6
+        },
+        {
+          "month": "2026-06",
+          "value": 33.2,
+          "polls": 5
+        },
+        {
+          "month": "2026-07",
+          "value": 34.9,
+          "polls": 18
+        }
+      ]
+    },
+    {
+      "candidat": "Édouard Philippe",
+      "parti": "Horizon",
+      "slug": "edouard-philippe",
+      "appearances": 91,
+      "latest": 17.6,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 22.8,
+          "polls": 5
+        },
+        {
+          "month": "2025-04",
+          "value": 21.9,
+          "polls": 13
+        },
+        {
+          "month": "2025-05",
+          "value": 21,
+          "polls": 4
+        },
+        {
+          "month": "2025-09",
+          "value": 17,
+          "polls": 3
+        },
+        {
+          "month": "2025-10",
+          "value": 17.4,
+          "polls": 8
+        },
+        {
+          "month": "2025-11",
+          "value": 17,
+          "polls": 2
+        },
+        {
+          "month": "2026-02",
+          "value": 16.7,
+          "polls": 6
+        },
+        {
+          "month": "2026-03",
+          "value": 22,
+          "polls": 6
+        },
+        {
+          "month": "2026-04",
+          "value": 19,
+          "polls": 2
+        },
+        {
+          "month": "2026-05",
+          "value": 17.4,
+          "polls": 18
+        },
+        {
+          "month": "2026-06",
+          "value": 18.9,
+          "polls": 10
+        },
+        {
+          "month": "2026-07",
+          "value": 17.6,
+          "polls": 12
+        }
+      ]
+    },
+    {
+      "candidat": "Jean-Luc Mélenchon",
+      "parti": "La France Insoumise",
+      "slug": "jean-luc-melenchon",
+      "appearances": 136,
+      "latest": 15.3,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 12.8,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 10.7,
+          "polls": 16
+        },
+        {
+          "month": "2025-05",
+          "value": 13.9,
+          "polls": 6
+        },
+        {
+          "month": "2025-09",
+          "value": 12.7,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 13.6,
+          "polls": 13
+        },
+        {
+          "month": "2025-11",
+          "value": 11.7,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 12.1,
+          "polls": 11
+        },
+        {
+          "month": "2026-03",
+          "value": 11.7,
+          "polls": 10
+        },
+        {
+          "month": "2026-04",
+          "value": 12.3,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 13.7,
+          "polls": 25
+        },
+        {
+          "month": "2026-06",
+          "value": 13.6,
+          "polls": 14
+        },
+        {
+          "month": "2026-07",
+          "value": 15.3,
+          "polls": 18
+        }
+      ]
+    },
+    {
+      "candidat": "Gabriel Attal",
+      "parti": "La République En Marche",
+      "slug": "gabriel-attal",
+      "appearances": 51,
+      "latest": 11.7,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 20,
+          "polls": 1
+        },
+        {
+          "month": "2025-04",
+          "value": 14.5,
+          "polls": 4
+        },
+        {
+          "month": "2025-05",
+          "value": 15,
+          "polls": 2
+        },
+        {
+          "month": "2025-09",
+          "value": 10,
+          "polls": 1
+        },
+        {
+          "month": "2025-10",
+          "value": 12.1,
+          "polls": 4
+        },
+        {
+          "month": "2025-11",
+          "value": 11,
+          "polls": 1
+        },
+        {
+          "month": "2026-02",
+          "value": 10,
+          "polls": 3
+        },
+        {
+          "month": "2026-03",
+          "value": 12.3,
+          "polls": 2
+        },
+        {
+          "month": "2026-04",
+          "value": 14,
+          "polls": 2
+        },
+        {
+          "month": "2026-05",
+          "value": 12.7,
+          "polls": 13
+        },
+        {
+          "month": "2026-06",
+          "value": 13.2,
+          "polls": 5
+        },
+        {
+          "month": "2026-07",
+          "value": 11.7,
+          "polls": 11
+        }
+      ]
+    },
+    {
+      "candidat": "Raphaël Glucksmann",
+      "parti": "Place Publique",
+      "slug": "raphael-glucksmann",
+      "appearances": 99,
+      "latest": 10,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 11,
+          "polls": 1
+        },
+        {
+          "month": "2025-04",
+          "value": 10.9,
+          "polls": 11
+        },
+        {
+          "month": "2025-05",
+          "value": 10.5,
+          "polls": 4
+        },
+        {
+          "month": "2025-09",
+          "value": 15.2,
+          "polls": 5
+        },
+        {
+          "month": "2025-10",
+          "value": 13.1,
+          "polls": 9
+        },
+        {
+          "month": "2025-11",
+          "value": 13.7,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 12,
+          "polls": 9
+        },
+        {
+          "month": "2026-03",
+          "value": 11.9,
+          "polls": 8
+        },
+        {
+          "month": "2026-04",
+          "value": 11.5,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 11,
+          "polls": 17
+        },
+        {
+          "month": "2026-06",
+          "value": 11.9,
+          "polls": 13
+        },
+        {
+          "month": "2026-07",
+          "value": 10,
+          "polls": 13
+        }
+      ]
+    },
+    {
+      "candidat": "Bruno Retailleau",
+      "parti": "Les Républicains",
+      "slug": "bruno-retailleau",
+      "appearances": 119,
+      "latest": 8.7,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 9,
+          "polls": 2
+        },
+        {
+          "month": "2025-04",
+          "value": 9.4,
+          "polls": 12
+        },
+        {
+          "month": "2025-05",
+          "value": 15,
+          "polls": 6
+        },
+        {
+          "month": "2025-09",
+          "value": 11,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 10.7,
+          "polls": 11
+        },
+        {
+          "month": "2025-11",
+          "value": 8.5,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 11.3,
+          "polls": 10
+        },
+        {
+          "month": "2026-03",
+          "value": 8.6,
+          "polls": 8
+        },
+        {
+          "month": "2026-04",
+          "value": 11,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 9.3,
+          "polls": 25
+        },
+        {
+          "month": "2026-06",
+          "value": 9.6,
+          "polls": 14
+        },
+        {
+          "month": "2026-07",
+          "value": 8.7,
+          "polls": 18
+        }
+      ]
+    },
+    {
+      "candidat": "Gérald Darmanin",
+      "parti": null,
+      "slug": "gerald-darmanin",
+      "appearances": 4,
+      "latest": 8,
+      "latestMonth": "2026-03",
+      "series": [
+        {
+          "month": "2025-09",
+          "value": 7,
+          "polls": 1
+        },
+        {
+          "month": "2025-10",
+          "value": 7,
+          "polls": 1
+        },
+        {
+          "month": "2026-02",
+          "value": 8,
+          "polls": 1
+        },
+        {
+          "month": "2026-03",
+          "value": 8,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "François Hollande",
+      "parti": "Parti Socialiste",
+      "slug": "francois-hollande",
+      "appearances": 19,
+      "latest": 7.2,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-04",
+          "value": 5.8,
+          "polls": 2
+        },
+        {
+          "month": "2025-10",
+          "value": 6.5,
+          "polls": 1
+        },
+        {
+          "month": "2026-02",
+          "value": 8,
+          "polls": 1
+        },
+        {
+          "month": "2026-03",
+          "value": 8.5,
+          "polls": 1
+        },
+        {
+          "month": "2026-05",
+          "value": 8.1,
+          "polls": 7
+        },
+        {
+          "month": "2026-06",
+          "value": 9,
+          "polls": 1
+        },
+        {
+          "month": "2026-07",
+          "value": 7.2,
+          "polls": 6
+        }
+      ]
+    },
+    {
+      "candidat": "Sébastien Lecornu",
+      "parti": "Les Républicains",
+      "slug": null,
+      "appearances": 2,
+      "latest": 6.5,
+      "latestMonth": "2026-03",
+      "series": [
+        {
+          "month": "2026-02",
+          "value": 6,
+          "polls": 1
+        },
+        {
+          "month": "2026-03",
+          "value": 6.5,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "Xavier Bertrand",
+      "parti": "Les Républicains",
+      "slug": "xavier-bertrand",
+      "appearances": 1,
+      "latest": 5.5,
+      "latestMonth": "2025-10",
+      "series": [
+        {
+          "month": "2025-10",
+          "value": 5.5,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "François Ruffin",
+      "parti": "La France Insoumise",
+      "slug": "francois-ruffin",
+      "appearances": 13,
+      "latest": 5.3,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-04",
+          "value": 5.7,
+          "polls": 7
+        },
+        {
+          "month": "2026-02",
+          "value": 2,
+          "polls": 1
+        },
+        {
+          "month": "2026-03",
+          "value": 8,
+          "polls": 1
+        },
+        {
+          "month": "2026-05",
+          "value": 3,
+          "polls": 1
+        },
+        {
+          "month": "2026-07",
+          "value": 5.3,
+          "polls": 3
+        }
+      ]
+    },
+    {
+      "candidat": "Sarah Knafo",
+      "parti": null,
+      "slug": null,
+      "appearances": 7,
+      "latest": 4.5,
+      "latestMonth": "2026-03",
+      "series": [
+        {
+          "month": "2025-10",
+          "value": 6.3,
+          "polls": 2
+        },
+        {
+          "month": "2026-03",
+          "value": 4.5,
+          "polls": 5
+        }
+      ]
+    },
+    {
+      "candidat": "Philippe de Villiers",
+      "parti": null,
+      "slug": null,
+      "appearances": 1,
+      "latest": 4.5,
+      "latestMonth": "2025-10",
+      "series": [
+        {
+          "month": "2025-10",
+          "value": 4.5,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "David Lisnard",
+      "parti": "Les Républicains",
+      "slug": "david-lisnard",
+      "appearances": 2,
+      "latest": 4.1,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2026-06",
+          "value": 2,
+          "polls": 1
+        },
+        {
+          "month": "2026-07",
+          "value": 4.1,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "Marine Tondelier",
+      "parti": "Europe Écologie Les Verts",
+      "slug": "marine-tondelier",
+      "appearances": 115,
+      "latest": 3.7,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 3.3,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 3.8,
+          "polls": 14
+        },
+        {
+          "month": "2025-05",
+          "value": 3.6,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 4.5,
+          "polls": 10
+        },
+        {
+          "month": "2025-11",
+          "value": 5.8,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 4.6,
+          "polls": 11
+        },
+        {
+          "month": "2026-03",
+          "value": 4.6,
+          "polls": 9
+        },
+        {
+          "month": "2026-04",
+          "value": 4,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 3.9,
+          "polls": 23
+        },
+        {
+          "month": "2026-06",
+          "value": 3.8,
+          "polls": 10
+        },
+        {
+          "month": "2026-07",
+          "value": 3.7,
+          "polls": 15
+        }
+      ]
+    },
+    {
+      "candidat": "Éric Zemmour",
+      "parti": "Reconquête",
+      "slug": "eric-zemmour",
+      "appearances": 128,
+      "latest": 3.5,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 5.2,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 3.8,
+          "polls": 16
+        },
+        {
+          "month": "2025-05",
+          "value": 4.4,
+          "polls": 6
+        },
+        {
+          "month": "2025-09",
+          "value": 4.5,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 5.7,
+          "polls": 10
+        },
+        {
+          "month": "2025-11",
+          "value": 3.5,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 4,
+          "polls": 11
+        },
+        {
+          "month": "2026-03",
+          "value": 4,
+          "polls": 5
+        },
+        {
+          "month": "2026-04",
+          "value": 5.3,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 4.3,
+          "polls": 25
+        },
+        {
+          "month": "2026-06",
+          "value": 4,
+          "polls": 14
+        },
+        {
+          "month": "2026-07",
+          "value": 3.5,
+          "polls": 18
+        }
+      ]
+    },
+    {
+      "candidat": "Dominique de Villepin",
+      "parti": null,
+      "slug": "dominique-de-villepin",
+      "appearances": 35,
+      "latest": 3.3,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-04",
+          "value": 3.2,
+          "polls": 3
+        },
+        {
+          "month": "2025-09",
+          "value": 4.8,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 4,
+          "polls": 5
+        },
+        {
+          "month": "2026-02",
+          "value": 4.3,
+          "polls": 7
+        },
+        {
+          "month": "2026-03",
+          "value": 4.2,
+          "polls": 6
+        },
+        {
+          "month": "2026-05",
+          "value": 2.6,
+          "polls": 4
+        },
+        {
+          "month": "2026-07",
+          "value": 3.3,
+          "polls": 4
+        }
+      ]
+    },
+    {
+      "candidat": "Laurent Wauquiez",
+      "parti": "Les Républicains",
+      "slug": "laurent-wauquiez",
+      "appearances": 13,
+      "latest": 3,
+      "latestMonth": "2025-10",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 5.5,
+          "polls": 4
+        },
+        {
+          "month": "2025-04",
+          "value": 4,
+          "polls": 4
+        },
+        {
+          "month": "2025-10",
+          "value": 3,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "François Bayrou",
+      "parti": "Mouvement Démocrate",
+      "slug": "francois-bayrou",
+      "appearances": 1,
+      "latest": 3,
+      "latestMonth": "2025-09",
+      "series": [
+        {
+          "month": "2025-09",
+          "value": 3,
+          "polls": 1
+        }
+      ]
+    },
+    {
+      "candidat": "Fabien Roussel",
+      "parti": "Parti Communiste Français",
+      "slug": "fabien-roussel",
+      "appearances": 127,
+      "latest": 2.4,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 3.5,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 3.6,
+          "polls": 14
+        },
+        {
+          "month": "2025-05",
+          "value": 3.1,
+          "polls": 6
+        },
+        {
+          "month": "2025-09",
+          "value": 3.9,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 3.3,
+          "polls": 13
+        },
+        {
+          "month": "2025-11",
+          "value": 3,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 2.5,
+          "polls": 11
+        },
+        {
+          "month": "2026-03",
+          "value": 2.9,
+          "polls": 10
+        },
+        {
+          "month": "2026-04",
+          "value": 3.8,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 3.4,
+          "polls": 23
+        },
+        {
+          "month": "2026-06",
+          "value": 3.1,
+          "polls": 10
+        },
+        {
+          "month": "2026-07",
+          "value": 2.4,
+          "polls": 17
+        }
+      ]
+    },
+    {
+      "candidat": "Philippe Poutou",
+      "parti": "Nouveau Parti Anticapitaliste",
+      "slug": null,
+      "appearances": 18,
+      "latest": 1.8,
+      "latestMonth": "2025-04",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 1,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 1.8,
+          "polls": 8
+        }
+      ]
+    },
+    {
+      "candidat": "Nicolas Dupont-Aignan",
+      "parti": null,
+      "slug": "nicolas-dupont-aignan",
+      "appearances": 127,
+      "latest": 1.5,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 2.8,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 2.5,
+          "polls": 16
+        },
+        {
+          "month": "2025-05",
+          "value": 2,
+          "polls": 2
+        },
+        {
+          "month": "2025-09",
+          "value": 2.3,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 2.4,
+          "polls": 13
+        },
+        {
+          "month": "2025-11",
+          "value": 2.3,
+          "polls": 3
+        },
+        {
+          "month": "2026-02",
+          "value": 2.5,
+          "polls": 11
+        },
+        {
+          "month": "2026-03",
+          "value": 2.4,
+          "polls": 10
+        },
+        {
+          "month": "2026-04",
+          "value": 1.3,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 1.9,
+          "polls": 25
+        },
+        {
+          "month": "2026-06",
+          "value": 2.2,
+          "polls": 14
+        },
+        {
+          "month": "2026-07",
+          "value": 1.5,
+          "polls": 13
+        }
+      ]
+    },
+    {
+      "candidat": "Nathalie Arthaud",
+      "parti": "Lutte Ouvrière",
+      "slug": "nathalie-arthaud",
+      "appearances": 133,
+      "latest": 1.1,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 1,
+          "polls": 6
+        },
+        {
+          "month": "2025-04",
+          "value": 1.1,
+          "polls": 16
+        },
+        {
+          "month": "2025-05",
+          "value": 1,
+          "polls": 6
+        },
+        {
+          "month": "2025-09",
+          "value": 1.3,
+          "polls": 6
+        },
+        {
+          "month": "2025-10",
+          "value": 1.2,
+          "polls": 13
+        },
+        {
+          "month": "2025-11",
+          "value": 1,
+          "polls": 2
+        },
+        {
+          "month": "2026-02",
+          "value": 1.7,
+          "polls": 11
+        },
+        {
+          "month": "2026-03",
+          "value": 0.9,
+          "polls": 10
+        },
+        {
+          "month": "2026-04",
+          "value": 1,
+          "polls": 4
+        },
+        {
+          "month": "2026-05",
+          "value": 0.8,
+          "polls": 25
+        },
+        {
+          "month": "2026-06",
+          "value": 1,
+          "polls": 14
+        },
+        {
+          "month": "2026-07",
+          "value": 1.1,
+          "polls": 16
+        }
+      ]
+    },
+    {
+      "candidat": "Olivier Faure",
+      "parti": "Parti Socialiste",
+      "slug": null,
+      "appearances": 18,
+      "latest": 0.9,
+      "latestMonth": "2026-07",
+      "series": [
+        {
+          "month": "2025-03",
+          "value": 4.8,
+          "polls": 5
+        },
+        {
+          "month": "2025-04",
+          "value": 4.5,
+          "polls": 2
+        },
+        {
+          "month": "2025-05",
+          "value": 4.5,
+          "polls": 2
+        },
+        {
+          "month": "2025-09",
+          "value": 7,
+          "polls": 1
+        },
+        {
+          "month": "2025-10",
+          "value": 6.8,
+          "polls": 2
+        },
+        {
+          "month": "2026-02",
+          "value": 5,
+          "polls": 1
+        },
+        {
+          "month": "2026-03",
+          "value": 4.5,
+          "polls": 1
+        },
+        {
+          "month": "2026-05",
+          "value": 4,
+          "polls": 1
+        },
+        {
+          "month": "2026-07",
+          "value": 0.9,
+          "polls": 1
+        }
+      ]
+    }
+  ],
+  "notPolled": [
+    {
+      "pseudo": "François Asselineau",
+      "slug": "francois-asselineau"
+    },
+    {
+      "pseudo": "Delphine Batho",
+      "slug": "delphine-batho"
+    },
+    {
+      "pseudo": "Jérôme Guedj",
+      "slug": "jerome-guedj"
+    },
+    {
+      "pseudo": "Clémentine Autain",
+      "slug": "clementine-autain"
+    },
+    {
+      "pseudo": "Bernard Cazeneuve",
+      "slug": "bernard-cazeneuve"
+    },
+    {
+      "pseudo": "Juan Branco",
+      "slug": "juan-branco"
+    },
+    {
+      "pseudo": "Patrick Sébastien",
+      "slug": "patrick-sebastien"
+    }
+  ],
+  "latestPolls": [
+    {
+      "institut": "ELABE",
+      "commanditaire": "BFMTV, La Tribune Dimanche",
+      "debut": "2026-07-09",
+      "fin": "2026-07-10",
+      "echantillon": 1503,
+      "hypothese": "H58",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 34.5
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 18
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 15
+        },
+        {
+          "candidat": "François Hollande",
+          "intentions": 8
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 8
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 4
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 3
+        },
+        {
+          "candidat": "Dominique de Villepin",
+          "intentions": 3
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 1.5
+        }
+      ]
+    },
+    {
+      "institut": "ELABE",
+      "commanditaire": "BFMTV, La Tribune Dimanche",
+      "debut": "2026-07-09",
+      "fin": "2026-07-10",
+      "echantillon": 1503,
+      "hypothese": "H67",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 35
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 14.5
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 14
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 8.5
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 8.5
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 7.5
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 4
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2.5
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 1.5
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1
+        }
+      ]
+    },
+    {
+      "institut": "ELABE",
+      "commanditaire": "BFMTV, La Tribune Dimanche",
+      "debut": "2026-07-09",
+      "fin": "2026-07-10",
+      "echantillon": 1503,
+      "hypothese": "H74",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 35.5
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 15.5
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 15
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 11
+        },
+        {
+          "candidat": "François Hollande",
+          "intentions": 8
+        },
+        {
+          "candidat": "François Ruffin",
+          "intentions": 6
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3.5
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2.5
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1.5
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 1.5
+        }
+      ]
+    },
+    {
+      "institut": "ELABE",
+      "commanditaire": "BFMTV, La Tribune Dimanche",
+      "debut": "2026-07-09",
+      "fin": "2026-07-10",
+      "echantillon": 1503,
+      "hypothese": "H73",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 35
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 19
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 14.5
+        },
+        {
+          "candidat": "François Hollande",
+          "intentions": 9
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 9
+        },
+        {
+          "candidat": "François Ruffin",
+          "intentions": 6
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 2.5
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1.5
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 1.5
+        }
+      ]
+    },
+    {
+      "institut": "ELABE",
+      "commanditaire": "BFMTV, La Tribune Dimanche",
+      "debut": "2026-07-09",
+      "fin": "2026-07-10",
+      "echantillon": 1503,
+      "hypothese": "H52",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 34
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 14.5
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 13.5
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 11
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 11
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 3.5
+        },
+        {
+          "candidat": "Dominique de Villepin",
+          "intentions": 3.5
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3.5
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2.5
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1.5
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 1.5
+        }
+      ]
+    },
+    {
+      "institut": "ELABE",
+      "commanditaire": "BFMTV, La Tribune Dimanche",
+      "debut": "2026-07-09",
+      "fin": "2026-07-10",
+      "echantillon": 1503,
+      "hypothese": "H50",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 35
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 16.5
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 16
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 10.5
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 8
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 3.5
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2.5
+        },
+        {
+          "candidat": "Dominique de Villepin",
+          "intentions": 2.5
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 1.5
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1
+        }
+      ]
+    },
+    {
+      "institut": "Verian",
+      "commanditaire": "L'Hémicycle",
+      "debut": "2026-07-08",
+      "fin": "2026-07-10",
+      "echantillon": 1047,
+      "hypothese": "H72",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 37
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 17
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 15
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 11
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 8
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 7
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2
+        }
+      ]
+    },
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "Les Echos, Radio Classique",
+      "debut": "2026-07-08",
+      "fin": "2026-07-09",
+      "echantillon": 1042,
+      "hypothese": "H26",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 34
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 22
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 15
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 9
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 9
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 4
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 4
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1
+        }
+      ]
+    },
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "Les Echos, Radio Classique",
+      "debut": "2026-07-08",
+      "fin": "2026-07-09",
+      "echantillon": 1042,
+      "hypothese": "H28",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 36
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 16
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 15
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 12
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 10
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 5
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 1
+        }
+      ]
+    },
+    {
+      "institut": "OpinionWay",
+      "commanditaire": "Les Echos, Radio Classique",
+      "debut": "2026-07-08",
+      "fin": "2026-07-09",
+      "echantillon": 1042,
+      "hypothese": "H77",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 35
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 18
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 13
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 9
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 8
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 7
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 5
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 0.5
+        }
+      ]
+    },
+    {
+      "institut": "Cluster17",
+      "commanditaire": "Le Point",
+      "debut": "2026-07-08",
+      "fin": "2026-07-09",
+      "echantillon": 1837,
+      "hypothese": "H78",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 29.6
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 17
+        },
+        {
+          "candidat": "Édouard Philippe",
+          "intentions": 13.6
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 7.7
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 6.3
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 6.3
+        },
+        {
+          "candidat": "Dominique de Villepin",
+          "intentions": 4.3
+        },
+        {
+          "candidat": "David Lisnard",
+          "intentions": 4.1
+        },
+        {
+          "candidat": "François Ruffin",
+          "intentions": 4
+        },
+        {
+          "candidat": "François Hollande",
+          "intentions": 2.4
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 2.2
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 1.6
+        },
+        {
+          "candidat": "Olivier Faure",
+          "intentions": 0.9
+        }
+      ]
+    },
+    {
+      "institut": "IFOP",
+      "commanditaire": "LCI, Le Figaro",
+      "debut": "2026-07-07",
+      "fin": "2026-07-08",
+      "echantillon": 1075,
+      "hypothese": "H44",
+      "resultats": [
+        {
+          "candidat": "Marine Le Pen",
+          "intentions": 36
+        },
+        {
+          "candidat": "Jean-Luc Mélenchon",
+          "intentions": 15
+        },
+        {
+          "candidat": "Gabriel Attal",
+          "intentions": 15
+        },
+        {
+          "candidat": "Raphaël Glucksmann",
+          "intentions": 12
+        },
+        {
+          "candidat": "Bruno Retailleau",
+          "intentions": 10
+        },
+        {
+          "candidat": "Marine Tondelier",
+          "intentions": 4
+        },
+        {
+          "candidat": "Éric Zemmour",
+          "intentions": 3.5
+        },
+        {
+          "candidat": "Fabien Roussel",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nicolas Dupont-Aignan",
+          "intentions": 2
+        },
+        {
+          "candidat": "Nathalie Arthaud",
+          "intentions": 0.5
+        }
+      ]
+    }
+  ]
+}

@@ -10,6 +10,7 @@
     "typecheck": "tsr generate && tsc -b",
     "dev": "vite dev --port 5178 --host",
     "generate-sitemap": "tsx --tsconfig ./tsconfig.app.json scripts/generate-sitemap.ts",
+    "fetch-sondages": "tsx --tsconfig ./tsconfig.app.json scripts/fetch-sondages.ts",
     "build": "tsx --tsconfig ./tsconfig.app.json scripts/generate-sitemap.ts && vite build",
     "test": "vitest run",
     "test:watch": "vitest",

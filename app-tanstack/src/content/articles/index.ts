@@ -24,11 +24,21 @@ import { article as articleCandidatsPresidentielles2027 } from './candidats-pres
 import { article as articleCommentFonctionneLeQuizzDuBerger } from './comment-fonctionne-le-quizz-du-berger';
 import { article as articleComparatifQuizPolitiques2027 } from './comparatif-quiz-politiques-2027';
 import { article as articleQuizzDuBergerVsBoussolePresidentielle } from './quizz-du-berger-vs-boussole-presidentielle';
+import { article as articleFrancoisAsselineauDroiteOuGauche } from './francois-asselineau-droite-ou-gauche';
+import { article as articleXavierBertrandDroiteOuGauche } from './xavier-bertrand-droite-ou-gauche';
+import { article as articleJuanBrancoDroiteOuGauche } from './juan-branco-droite-ou-gauche';
+import { article as articleNicolasDupontAignanDroiteOuGauche } from './nicolas-dupont-aignan-droite-ou-gauche';
+import { article as articleEdouardPhilippeDroiteOuGauche } from './edouard-philippe-droite-ou-gauche';
 
 export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
+  articleFrancoisAsselineauDroiteOuGauche,
+  articleXavierBertrandDroiteOuGauche,
+  articleJuanBrancoDroiteOuGauche,
+  articleEdouardPhilippeDroiteOuGauche,
+  articleNicolasDupontAignanDroiteOuGauche,
   articleHausseChomageFranceCandidats2027,
   articleGuerreGazaReconnaissancePalestineFranceCandidats2027,
   articleGuerreSoudanArmesFranceEmiratsCandidats2027,

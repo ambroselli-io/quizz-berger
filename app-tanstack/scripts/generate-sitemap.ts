@@ -43,6 +43,8 @@ function buildUrls(): SitemapUrl[] {
   urls.push({ loc: '/candidats', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/sujets', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/comparer', priority: '0.9', changefreq: 'weekly' });
+  urls.push({ loc: '/comparateur-programmes-2027', priority: '0.9', changefreq: 'weekly' });
+  urls.push({ loc: '/sondages-presidentielle-2027', priority: '0.9', changefreq: 'weekly' });
 
   // Theme pages
   for (const theme of themeSlugMap) {

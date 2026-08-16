@@ -14,8 +14,8 @@ export const Route = createFileRoute('/candidat/$candidateSlug')({
     const candidate = loaderData?.candidate;
     if (!candidate) return {};
     return seoHead({
-      title: `${candidate.pseudo} — Positions politiques 2027 | Le Quizz du Berger`,
-      description: `Découvrez les positions politiques de ${candidate.pseudo} sur les ${quizzThemesCount} thèmes de l'élection présidentielle 2027. Comparez avec les autres candidats.`,
+      title: `${candidate.pseudo} : programme et positions 2027 | Le Quizz du Berger`,
+      description: `Le programme de ${candidate.pseudo} pour la présidentielle 2027, sur les ${quizzThemesCount} thèmes du quiz, et les candidats les plus proches de ${candidate.pseudo}.`,
       canonicalPath: `/candidat/${candidate.slug}`,
       jsonLd: {
         '@context': 'https://schema.org',

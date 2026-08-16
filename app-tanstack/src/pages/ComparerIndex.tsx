@@ -32,6 +32,13 @@ export default function ComparerIndex() {
             <p className="text-lg text-white/80">
               Choisissez deux candidats parmi les {candidateSlugMap.length} pour voir où ils s'accordent et où ils s'opposent, thème par thème.
             </p>
+            <p className="mt-4 text-sm text-white/70">
+              Vous voulez comparer plus de deux candidats à la fois ?{' '}
+              <Link to="/comparateur-programmes-2027" className="text-yellow-400 underline">
+                Ouvrez le comparateur de programmes 2027
+              </Link>
+              .
+            </p>
           </div>
         </section>
 

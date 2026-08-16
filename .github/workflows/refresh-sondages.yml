@@ -1,0 +1,93 @@
+name: Weekly poll refresh
+
+# Rebuilds app-tanstack/src/content/sondages-2027.json from the MieuxVoter open
+# dataset (https://github.com/MieuxVoter/presidentielle2027, MIT) and opens a PR
+# when the figures moved. Feeds /sondages-presidentielle-2027 and the "dans les
+# sondages" block of every /candidat page.
+#
+# A PR rather than a push to main: a push to main deploys, and poll data is
+# editorial content — the diff is worth a glance before it goes live.
+#
+# Needs "Allow GitHub Actions to create and approve pull requests" enabled in
+# Settings > Actions > General. No secret required, the source is public.
+
+on:
+  schedule:
+    # Monday 06:00 UTC. Instituts publish across the week; Monday catches the weekend batch.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-sondages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    name: Refresh the poll dataset
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: app-tanstack/package-lock.json
+
+      - name: Install dependencies
+        working-directory: app-tanstack
+        run: npm ci
+
+      - name: Fetch the latest polls
+        working-directory: app-tanstack
+        run: npm run fetch-sondages
+
+      - name: Stop here when only the fetch date changed
+        id: diff
+        run: |
+          file=app-tanstack/src/content/sondages-2027.json
+          if git diff --quiet -- "$file"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change at all in the dataset."
+            exit 0
+          fi
+          # "fetchedAt" moves on every run. If it is the only changed line, there
+          # is no new poll and a PR would be noise.
+          substantive="$(git diff -U0 -- "$file" | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -vc '"fetchedAt"' || true)"
+          if [ "$substantive" = "0" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Only fetchedAt moved — no new poll this week."
+            git checkout -- "$file"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "$substantive changed lines beyond fetchedAt."
+          fi
+
+      - name: Check the app still builds with the new data
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: app-tanstack
+        run: npm run typecheck && npm test
+
+      - name: Open the pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/refresh-sondages
+          base: main
+          commit-message: "chore(sondages): refresh the 2027 poll dataset"
+          title: "Sondages 2027 : mise à jour hebdomadaire"
+          body: |
+            Automatic weekly refresh of `app-tanstack/src/content/sondages-2027.json`
+            from [MieuxVoter/presidentielle2027](https://github.com/MieuxVoter/presidentielle2027) (MIT).
+
+            Check the diff before merging: new polls change the curve on
+            `/sondages-presidentielle-2027` and the figure shown on every
+            `/candidat/{slug}` page. Merging deploys to production.
+          delete-branch: true
+          add-paths: |
+            app-tanstack/src/content/sondages-2027.json

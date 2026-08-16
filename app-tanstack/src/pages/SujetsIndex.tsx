@@ -14,6 +14,12 @@ export default function SujetsIndex() {
             <p className="text-lg text-white/80">
               {themeSlugMap.length} thèmes politiques, des centaines de questions, {candidatesCount} candidats.
             </p>
+            <Link
+              to="/comparateur-programmes-2027"
+              className="mt-6 inline-block text-sm text-yellow-400 no-underline hover:underline"
+            >
+              Tout voir d'un coup dans le comparateur de programmes 2027 →
+            </Link>
           </div>
         </section>
 

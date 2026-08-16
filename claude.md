@@ -29,6 +29,16 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - Build: `cd app-tanstack && npm run build` (generates sitemap, then `vite build` → `dist/`)
 - Mobile tests: `cd expo && npm test` (Jest + React Native Testing Library, no emulator needed) and `npm run ts:check`. `npm test` also gates the `build-*` / `build-and-upload:*` scripts.
 
+# Polls (sondages)
+
+`app-tanstack/src/content/sondages-2027.json` is **generated**, not hand-written. `npm run fetch-sondages` (`scripts/fetch-sondages.ts`) downloads the MieuxVoter open dataset (`github.com/MieuxVoter/presidentielle2027`, MIT), keeps the first-round entries, and writes monthly averages per candidate plus the last 12 polls. `.github/workflows/refresh-sondages.yml` runs it every Monday and opens a PR when a new poll actually landed (a `fetchedAt`-only diff is discarded).
+
+It feeds `/sondages-presidentielle-2027` (SVG timeline, no chart library) and the "dans les sondages" block on every `/candidat/{slug}`. Candidates the institutes never test are listed explicitly — that is deliberate, it answers the "sondage {candidat}" searches for Branco, Asselineau and the others.
+
+# Candidate proximity
+
+`app-tanstack/src/utils/proximity.ts` ranks every candidate against every other one, reusing `question.scores`. The matrix is asymmetric on purpose (it is authored as "user answer" × "candidate answer"), so a pair averages both directions to stay symmetric. Powers the "candidats les plus proches" section of `/candidat/{slug}` and the figures quoted in the `{candidat}-droite-ou-gauche` articles. **If you change a scores matrix or a candidate answer, those article figures go stale** — they are hard-coded prose, not computed.
+
 # Blog articles
 
 One file per article in `app-tanstack/src/content/articles/{slug}.ts`, each exporting `article: Article` (type in `app-tanstack/src/types/article.ts`). `articles/index.ts` imports them all and exports the `articles` array, newest first.

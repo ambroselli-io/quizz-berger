@@ -9,6 +9,7 @@ import {
   getQuestionsByThemeId,
   comparisonPairs,
 } from '@app/utils/seo';
+import { quizzQuestionsCount } from '@app/utils/quizz';
 import Footer from '@app/components/Footer';
 
 export default function QuestionPolitiquePage() {
@@ -259,7 +260,8 @@ export default function QuestionPolitiquePage() {
         <section className="w-full bg-quizz-dark px-5 py-16 text-center text-white">
           <h2 className="mb-4 font-[Merriweather] text-2xl font-bold">Et vous, qu'en pensez-vous ?</h2>
           <p className="mb-8 text-white/80">
-            Répondez à cette question et à 118 autres pour découvrir quel candidat pense comme vous.
+            Répondez à cette question et aux {quizzQuestionsCount - 1} autres pour découvrir quel candidat
+            pense comme vous.
           </p>
           <Link
             to="/themes"
