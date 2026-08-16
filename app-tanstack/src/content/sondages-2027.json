@@ -7,6 +7,26 @@
   },
   "pollCount": 136,
   "lastPollDate": "2026-07-10",
+  "instituts": [
+    "Cluster17",
+    "ELABE",
+    "Harris Interactive",
+    "IFOP",
+    "Ipsos BVA",
+    "ODOXA",
+    "OpinionWay",
+    "Verian"
+  ],
+  "hypothesesCount": 77,
+  "spreadExample": {
+    "institut": "ELABE",
+    "debut": "2026-07-09",
+    "fin": "2026-07-10",
+    "hypotheses": 6,
+    "candidat": "Gabriel Attal",
+    "low": 7.5,
+    "high": 15.5
+  },
   "months": [
     "2025-03",
     "2025-04",

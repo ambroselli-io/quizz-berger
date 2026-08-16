@@ -12,7 +12,7 @@ import {
 } from '@app/utils/seo';
 import { quizzQuestionsCount } from '@app/utils/quizz';
 import { getCandidateProximityRanking } from '@app/utils/proximity';
-import { getPollingForCandidate, formatMonthLong, sondagesData } from '@app/utils/sondages';
+import { getPollingForCandidate, formatMonthLong, formatPercent, sondagesData } from '@app/utils/sondages';
 import { articles } from '@app/content/articles';
 import Footer from '@app/components/Footer';
 
@@ -174,7 +174,7 @@ export default function CandidatePage() {
             <p className="text-sm leading-relaxed text-gray-600">
               Les instituts ont testé {candidate.pseudo} dans {polling.appearances} hypothèses de premier
               tour. Sa dernière moyenne mensuelle est de{' '}
-              <strong className="text-quizz-dark">{polling.latest}%</strong> en{' '}
+              <strong className="text-quizz-dark">{formatPercent(polling.latest as number)} %</strong> en{' '}
               {polling.latestMonth ? formatMonthLong(polling.latestMonth) : '—'}.{' '}
               <Link to="/sondages-presidentielle-2027" className="text-blue-600 no-underline hover:underline">
                 Voir la courbe complète des sondages 2027 →
@@ -191,7 +191,16 @@ export default function CandidatePage() {
             </p>
           )}
           <p className="mt-2 text-xs text-gray-500">
-            Sondages mis à jour le {sondagesData.fetchedAt}, source {sondagesData.source.name}.
+            Sondages mis à jour le {sondagesData.fetchedAt}, source{' '}
+            <a
+              href={sondagesData.source.url}
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              {sondagesData.source.name}
+            </a>
+            .
           </p>
         </section>
 

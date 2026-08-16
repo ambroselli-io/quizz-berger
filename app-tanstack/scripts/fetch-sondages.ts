@@ -142,12 +142,60 @@ async function main() {
 
   const months = [...new Set(candidates.flatMap((c) => c.series.map((p) => p.month)))].sort();
 
+  // Institutes test several candidate line-ups ("hypothèses") in the same survey, and a
+  // candidate's score moves with the line-up. The widest such gap, taken from the most
+  // recent survey that tested more than one, is the honest way to show it.
+  const surveys = new Map<string, RawPoll[]>();
+  for (const poll of firstRound) {
+    const key = `${poll.institut}|${poll.debut_enquete}|${poll.fin_enquete}`;
+    surveys.set(key, [...(surveys.get(key) || []), poll]);
+  }
+  let spreadExample = null;
+  for (const polls of surveys.values()) {
+    if (polls.length < 2) continue;
+    const scores = new Map<string, number[]>();
+    for (const poll of polls) {
+      for (const candidate of poll.candidats) {
+        if (candidate.intentions == null) continue;
+        scores.set(candidate.candidat, [...(scores.get(candidate.candidat) || []), candidate.intentions]);
+      }
+    }
+    for (const [name, values] of scores) {
+      if (values.length < 2) continue;
+      const low = Math.min(...values);
+      const high = Math.max(...values);
+      const candidate = {
+        institut: polls[0].institut,
+        debut: polls[0].debut_enquete,
+        fin: polls[0].fin_enquete,
+        hypotheses: polls.length,
+        candidat: name,
+        low,
+        high,
+      };
+      // Later surveys win ties, so the example stays current as the campaign moves.
+      if (
+        !spreadExample ||
+        candidate.fin > spreadExample.fin ||
+        (candidate.fin === spreadExample.fin && high - low > spreadExample.high - spreadExample.low)
+      ) {
+        spreadExample = candidate;
+      }
+    }
+  }
+
+  const instituts = [...new Set(firstRound.map((poll) => poll.institut))].sort();
+  const hypothesesCount = new Set(firstRound.map((poll) => poll.hypothese)).size;
+
   const output = {
     // Date of the run, not of the data: lastPollDate is the one that matters editorially.
     fetchedAt: new Date().toISOString().slice(0, 10),
     source: { name: 'MieuxVoter / presidentielle2027', url: SOURCE_REPO, licence: 'MIT' },
     pollCount: firstRound.length,
     lastPollDate,
+    instituts,
+    hypothesesCount,
+    spreadExample,
     months,
     candidates,
     notPolled,

@@ -27,3 +27,8 @@ export function formatMonthLong(month: string): string {
   const [year, monthNumber] = month.split('-');
   return `${MONTH_LABELS[Number(monthNumber) - 1]} ${year}`;
 }
+
+/** French decimal separator: the dataset stores 7.5, France writes 7,5. */
+export function formatPercent(value: number): string {
+  return String(value).replace('.', ',');
+}

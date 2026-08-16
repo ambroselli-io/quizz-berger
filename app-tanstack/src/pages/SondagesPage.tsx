@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { Link } from '@app/lib/router';
 import { candidateSlugMap, candidatesCount } from '@app/utils/seo';
+import { formatPercent } from '@app/utils/sondages';
 import { quizzQuestionsCount } from '@app/utils/quizz';
 import sondages from '@app/content/sondages-2027.json';
 import Footer from '@app/components/Footer';
@@ -35,7 +36,18 @@ function formatDate(date: string): string {
 const colorBySlug = new Map(candidateSlugMap.map((c) => [c.slug, c.color]));
 
 export default function SondagesPage() {
-  const { months, candidates, notPolled, latestPolls, lastPollDate, pollCount, source } = sondages;
+  const {
+    months,
+    candidates,
+    notPolled,
+    latestPolls,
+    lastPollDate,
+    pollCount,
+    source,
+    instituts,
+    hypothesesCount,
+    spreadExample,
+  } = sondages;
 
   const lastMonth = months[months.length - 1];
   const recentThreshold = months[Math.max(0, months.length - RECENT_MONTHS)];
@@ -167,7 +179,7 @@ export default function SondagesPage() {
                         r={3}
                         fill={candidate.color}
                       >
-                        <title>{`${candidate.candidat} — ${formatMonth(p.month)} : ${p.value}% (${p.polls} sondages)`}</title>
+                        <title>{`${candidate.candidat} — ${formatMonth(p.month)} : ${formatPercent(p.value)} % (${p.polls} sondages)`}</title>
                       </circle>
                     ))}
                   </g>
@@ -203,18 +215,19 @@ export default function SondagesPage() {
                   )}
                 </span>
                 <span className="shrink-0 text-lg font-bold" style={{ color: candidate.color }}>
-                  {candidate.latest}%
+                  {formatPercent(candidate.latest as number)} %
                 </span>
               </li>
             ))}
           </ul>
 
           <p className="mt-4 text-xs text-gray-500">
-            Source des sondages : {source.name} (licence {source.licence}),{' '}
+            Source des sondages :{' '}
             <a href={source.url} target="_blank" rel="noreferrer" className="underline">
-              jeu de données ouvert
+              {source.name}
             </a>
-            . Compilation des sondages déposés auprès de la Commission des sondages.
+            , jeu de données ouvert sous licence {source.licence}. Compilation des sondages déposés
+            auprès de la Commission des sondages.
           </p>
         </section>
 
@@ -270,7 +283,8 @@ export default function SondagesPage() {
                           <span className="font-medium text-quizz-dark">{candidate.candidat}</span>
                         )}
                         <span className="block text-xs text-gray-500">
-                          {candidate.latest}% en {candidate.latestMonth ? formatMonth(candidate.latestMonth) : '—'}
+                          {formatPercent(candidate.latest as number)} % en{' '}
+                          {candidate.latestMonth ? formatMonth(candidate.latestMonth) : '—'}
                           {' · '}
                           {candidate.appearances} apparitions
                         </span>
@@ -314,7 +328,7 @@ export default function SondagesPage() {
                       key={result.candidat}
                       className="rounded-full border border-gray-200 px-3 py-1 text-xs text-quizz-dark"
                     >
-                      {result.candidat} <span className="font-semibold">{result.intentions}%</span>
+                      {result.candidat} <span className="font-semibold">{formatPercent(result.intentions)} %</span>
                     </li>
                   ))}
                 </ul>
@@ -335,9 +349,13 @@ export default function SondagesPage() {
                   D'où viennent ces chiffres ?
                 </summary>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Du jeu de données ouvert {source.name}, qui compile les sondages déposés auprès de la
-                  Commission des sondages. Nous n'ajoutons rien : nous calculons une moyenne mensuelle
-                  par candidat, et nous la mettons à jour chaque semaine.
+                  Du jeu de données ouvert{' '}
+                  <a href={source.url} target="_blank" rel="noreferrer" className="underline">
+                    {source.name}
+                  </a>
+                  , qui compile les sondages déposés auprès de la Commission des sondages. Nous
+                  n'ajoutons rien : nous calculons une moyenne mensuelle par candidat, et nous la
+                  mettons à jour chaque semaine.
                 </p>
               </details>
               <details className="rounded-lg border border-gray-200 bg-white p-5">
@@ -352,12 +370,25 @@ export default function SondagesPage() {
               </details>
               <details className="rounded-lg border border-gray-200 bg-white p-5">
                 <summary className="cursor-pointer font-medium text-quizz-dark">
-                  Faut-il voter pour celui qui est en tête ?
+                  Pourquoi deux sondages donnent-ils des chiffres différents ?
                 </summary>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  C'est votre choix, pas le nôtre. Mais un sondage vous dit ce que pensent les autres, pas
-                  ce que vous pensez. Le quiz, lui, compare vos {quizzQuestionsCount} réponses à celles des{' '}
-                  {candidatesCount} candidats, et le résultat surprend souvent.
+                  Souvent parce qu'ils ne testent pas la même liste de noms. Un institut soumet
+                  plusieurs « hypothèses » de candidatures dans la même enquête, et le score d'un
+                  candidat bouge selon ceux qui figurent à côté de lui. Le jeu de données en compte{' '}
+                  {hypothesesCount} depuis le début de la campagne.
+                  {spreadExample && (
+                    <>
+                      {' '}Dans son enquête du {formatDate(spreadExample.debut)} au{' '}
+                      {formatDate(spreadExample.fin)}, {spreadExample.institut} a testé{' '}
+                      {spreadExample.hypotheses} hypothèses. {spreadExample.candidat} y obtient entre{' '}
+                      {formatPercent(spreadExample.low)} % et {formatPercent(spreadExample.high)} %, avec les mêmes sondés et les mêmes
+                      jours de terrain.
+                    </>
+                  )}{' '}
+                  S'y ajoutent la marge d'erreur, la taille de l'échantillon et la méthode de
+                  redressement, qui varient d'un institut à l'autre. {instituts.length} instituts
+                  figurent dans ce jeu de données : {instituts.join(', ')}.
                 </p>
               </details>
             </div>
@@ -368,8 +399,8 @@ export default function SondagesPage() {
         <section className="w-full bg-quizz-dark px-5 py-16 text-center text-white">
           <h2 className="mb-4 font-[Merriweather] text-2xl font-bold">Alors vous en pensez quoi ?</h2>
           <p className="mb-8 text-white/80">
-            Les sondages disent qui est populaire. Le quiz dit qui vous ressemble. Ce n'est pas la même
-            chose.
+            Vous avez vu les courbes. Répondez maintenant aux {quizzQuestionsCount} questions du quiz,
+            et regardez lequel des {candidatesCount} candidats répond comme vous.
           </p>
           <Link
             to="/themes"
