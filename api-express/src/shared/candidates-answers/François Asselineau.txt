@@ -316,6 +316,9 @@ question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos moto
 question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
 [2] Un juste milieu : mieux protéger juridiquement et matériellement les forces de l'ordre, sans renverser la charge de la preuve
 
+question-2027-pol-11: Face à la crise de recrutement et de financement des services d'incendie et de secours (Sdis), quelle réponse privilégier ?
+[3] Fidéliser les pompiers volontaires par des mesures ciblées (retraite, indemnités, disponibilité des employeurs), sans nouvelle dépense publique nationale : le financement doit rester d'abord local
+
 
 Politique fiscale:
 

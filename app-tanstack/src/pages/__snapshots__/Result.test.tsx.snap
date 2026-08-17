@@ -27,7 +27,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 80,
+    "percent": 81,
     "pseudos": [
       "François Ruffin",
     ],
@@ -57,7 +57,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 66,
+    "percent": 65,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -75,7 +75,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 51,
+    "percent": 50,
     "pseudos": [
       "François Asselineau",
     ],

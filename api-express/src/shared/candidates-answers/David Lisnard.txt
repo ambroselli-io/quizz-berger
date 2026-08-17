@@ -316,6 +316,9 @@ question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos moto
 question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
 [1] Soutenir la loi telle qu'adoptée : elle protège des policiers qui risquent leur vie, c'est à l'accusation de prouver qu'il n'y a pas eu légitime défense
 
+question-2027-pol-11: Face à la crise de recrutement et de financement des services d'incendie et de secours (Sdis), quelle réponse privilégier ?
+[2] Un équilibre : sécuriser le financement des Sdis par une fiscalité ciblée (taxe sur les conventions d'assurance) tout en consolidant le modèle du volontariat
+
 
 Politique fiscale:
 

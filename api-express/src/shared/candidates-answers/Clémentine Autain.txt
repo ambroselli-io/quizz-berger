@@ -316,6 +316,9 @@ question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos moto
 question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
 [4] Abroger ce texte, dénoncé comme un « permis de tuer » incompatible avec un État de droit
 
+question-2027-pol-11: Face à la crise de recrutement et de financement des services d'incendie et de secours (Sdis), quelle réponse privilégier ?
+[0] Un grand plan national de recrutement statutaire de pompiers professionnels, financé par une fiscalité dédiée (taxe sur les superprofits ou les grandes fortunes)
+
 
 Politique fiscale:
 

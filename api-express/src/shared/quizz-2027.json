@@ -1798,6 +1798,27 @@
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-pol-11",
+        "fr": "Face à la crise de recrutement et de financement des services d'incendie et de secours (Sdis), quelle réponse privilégier ?",
+        "help": "https://fr.wikipedia.org/wiki/Sapeurs-pompiers_(France)",
+        "answers": [
+          "Un grand plan national de recrutement statutaire de pompiers professionnels, financé par une fiscalité dédiée (taxe sur les superprofits ou les grandes fortunes)",
+          "Une hausse pérenne du financement national des Sdis et des effectifs professionnels, financée par le budget général, sans impôt nouveau dédié",
+          "Un équilibre : sécuriser le financement des Sdis par une fiscalité ciblée (taxe sur les conventions d'assurance) tout en consolidant le modèle du volontariat",
+          "Fidéliser les pompiers volontaires par des mesures ciblées (retraite, indemnités, disponibilité des employeurs), sans nouvelle dépense publique nationale : le financement doit rester d'abord local",
+          "Ne pas faire de ce sujet une priorité budgétaire nationale : le système doit continuer à s'adapter à moyens constants",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
