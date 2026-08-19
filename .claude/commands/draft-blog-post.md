@@ -17,7 +17,7 @@ Read these files first:
 - `app-tanstack/src/shared/quizz-2027.json` — quiz themes and questions.
 - `app-tanstack/src/shared/candidates-answers.json` — the candidates' quiz answers.
 - `app-tanstack/src/utils/seo.ts` — candidate slugs, theme slugs, hot-topic question slugs (for internal links).
-- `CLAUDE.md` at the repo root — especially the "Adding a question" section; follow it exactly if step 3 applies.
+- `CLAUDE.md` at the repo root — especially the "Adding a question" and "Candidate proximity" sections; follow them exactly if step 3 applies.
 - `.claude/skills/no-ai-slop/SKILL.md` + `french.md` + `eval.md` — the writing rules for this site. Non-negotiable: the article gets checked against them before the PR opens (step 6).
 
 ## 2. Scout for a topic
@@ -57,6 +57,7 @@ Follow `CLAUDE.md` → "Adding a question" precisely:
 6. Regenerate the human-readable exports: `node api-express/scripts/extract-all-answers.js`.
 7. Add the question to `hotTopicSlugs` in `app-tanstack/src/utils/seo.ts` (`_id` → `{ slug, seoTitle }`) so it gets its own SEO page — it's a hot topic by definition.
 8. Do NOT regenerate the sitemap (built at deploy time). Do NOT touch the DB or Prisma.
+9. **Adding a question silently invalidates the `{candidat}-droite-ou-gauche` articles.** They quote proximity percentages and identical-answer counts as prose, computed over the whole question set, so one more question moves all of them. Nothing conflicts textually and git reports nothing. Step 6 has the repair procedure; it is not optional.
 
 ## 4. Establish candidate positions
 
@@ -126,12 +127,13 @@ cd app-tanstack && npm install && npm run typecheck && npm test
 
 Fix any type errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square. Also re-read the `answers[]` you just wrote and confirm out loud (in your PR body) what single axis they measure — if two answers differ on more than that one axis, rewrite before moving on.
 
-**Adding a question always breaks two snapshots — that is by design, and updating them is part of the job:**
+**Adding a question always breaks three things — that is by design, and repairing them is part of the job.** Two are snapshots you accept, one needs real edits:
 
 - `src/pages/__snapshots__/Themes.test.tsx.snap` — per-theme question counts (the new question's theme gains 1).
 - `src/pages/__snapshots__/Result.test.tsx.snap` — candidate percentages shift by a point or two, since the score is computed over one more question.
+- `src/content/articles/proximity-figures.test.ts` — **not a snapshot, never fix it with `-u`.** See "Repair the positioning articles" below, and do that first so the two snapshot diffs are the only thing left.
 
-When (and only when) the failures are exactly those two snapshots and the diff matches what you changed, accept them:
+When (and only when) the remaining failures are exactly those two snapshots and the diff matches what you changed, accept them:
 
 ```
 cd app-tanstack && npx vitest run -u && npm test
@@ -146,6 +148,31 @@ If the diff is bigger than that — a theme you didn't touch changed, a candidat
 
 Commit the updated `.snap` files in the same PR as the question. A PR that adds a question without them will fail CI on merge and block the deploy.
 
+### Repair the positioning articles (only if you added a question)
+
+`app-tanstack/src/content/articles/{candidat}-droite-ou-gauche.ts` quote figures produced by `src/utils/proximity.ts`: "Darmanin — 91 % de proximité, 108 réponses identiques", "il n'en partage que 63, soit 77 %". Every one of them is computed over the full question set, so your new question moves them. This has shipped wrong twice.
+
+```
+cd app-tanstack && npm run fix-proximity-figures
+```
+
+It rewrites the two machine-readable shapes, values **and order** (a new question can reorder a ranking, not just renumber it):
+
+- the ranking list, `<li><a href="/candidat/x">Nom</a> (Parti) — NN %…, MM réponses identiques.</li>`
+- inline mentions, `<a href="/candidat/x">Nom</a> (NN %)`
+
+Then it prints what it cannot fix: bare figures inside sentences, split into "Suspect" (the value matches nothing in that candidate's live ranking, so it is stale or it deliberately quotes a different candidate's ranking) and "verify". **Read every line it prints and edit the prose by hand.** A figure carries an argument in those sentences, so a blind substitution can invert the point being made: check that the sentence still says something true, not just that the number is current.
+
+Also re-check any claim counted over a theme, since your question landed in one of them. Grep the positioning articles for phrasings like "sur les dix questions de sécurité, huit de ses réponses" and recount. The test does not cover those.
+
+Finish with:
+
+```
+npx vitest run src/content/articles/proximity-figures.test.ts
+```
+
+Green means the lists and the inline mentions match the data. It does not mean the prose is right; that part is your read.
+
 Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French checks in `french.md` yourself, and fix what fails before opening the PR. Count the prose em dashes explicitly (total `—` minus one per candidate bullet) and confirm it lands at 0–2.
 
 ## 7. Open a draft PR
@@ -158,6 +185,7 @@ Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French
   - why this topic was chosen, and which topics were rejected;
   - all sources consulted, with URLs — this list is a convenience for the reviewer, it does **not** replace the inline citations required in the article body itself (see step 5);
   - if a question was added: the full question, answers, scores matrix and which theme it joined;
-  - a per-candidate table: chosen position, and whether it's backed by **quiz data**, a **linked public statement**, or an **estimate** (with one line of reasoning) — so the reviewer can fact-check or veto each estimate fast.
+  - a per-candidate table: chosen position, and whether it's backed by **quiz data**, a **linked public statement**, or an **estimate** (with one line of reasoning) — so the reviewer can fact-check or veto each estimate fast;
+  - if a question was added: confirmation that `npm run fix-proximity-figures` was run, which positioning articles changed, and which bare prose figures you edited by hand.
 
 **NEVER push to `main` directly — pushing to main deploys production.** The human reviews and merges the PR.

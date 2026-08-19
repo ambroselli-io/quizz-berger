@@ -7,6 +7,7 @@ import {
   getQuestionSlugById,
 } from '@app/utils/seo';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
+import { partyList, partiesCount, partyColor } from '@app/utils/parties';
 import Footer from '@app/components/Footer';
 
 const MAX_SELECTED = 4;
@@ -51,9 +52,10 @@ export default function ComparateurProgrammes() {
               Comparateur des programmes de la présidentielle 2027
             </h1>
             <p className="text-lg leading-relaxed text-white/80">
-              Les {candidatesCount} candidats, {quizzQuestionsCount} questions, {quizzThemesCount} thèmes,
-              sur une seule page. Choisissez jusqu'à {MAX_SELECTED} candidats pour les comparer côte à côte,
-              ou lisez qui défend quoi, question par question.
+              Les {candidatesCount} candidats et leurs partis, {quizzQuestionsCount} questions,{' '}
+              {quizzThemesCount} thèmes, sur une seule page. Choisissez jusqu'à {MAX_SELECTED}{' '}
+              candidats pour les comparer côte à côte, ou lisez qui défend quoi, question par
+              question.
             </p>
             <Link
               to="/themes"
@@ -234,6 +236,41 @@ export default function ComparateurProgrammes() {
           </div>
         </section>
 
+        {/* Compare by party */}
+        <section className="w-full border-t border-gray-200 bg-white px-5 py-12">
+          <div className="mx-auto max-w-5xl">
+            <h2 className="mb-2 font-[Merriweather] text-xl font-bold text-quizz-dark">
+              Comparer les programmes par parti politique
+            </h2>
+            <p className="mb-6 text-sm text-gray-600">
+              Vous cherchez le programme d'un parti plutôt que celui d'une personne ? Les{' '}
+              {partiesCount} partis représentés dans le quiz ont chacun leur page, avec les réponses
+              de leurs candidats et les partis dont ils sont les plus proches.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {partyList.map((party) => (
+                <Link
+                  key={party.slug}
+                  to={`/parti/${party.slug}`}
+                  className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-quizz-dark no-underline hover:bg-gray-50"
+                >
+                  <span
+                    className="inline-block h-2.5 w-2.5 rounded-full"
+                    style={{ backgroundColor: partyColor(party) }}
+                  />
+                  {party.name}
+                </Link>
+              ))}
+              <Link
+                to="/partis"
+                className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-blue-600 no-underline hover:bg-gray-50"
+              >
+                Tous les partis →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Other ways to compare */}
         <section className="w-full bg-gray-50 px-5 py-12">
           <div className="mx-auto max-w-5xl">
@@ -241,6 +278,19 @@ export default function ComparateurProgrammes() {
               D'autres façons de comparer
             </h2>
             <ul className="grid gap-3 lg:grid-cols-3 sm:grid-cols-2">
+              <li>
+                <Link
+                  to="/partis"
+                  className="block h-full rounded-lg border border-gray-200 bg-white p-4 no-underline hover:shadow-sm"
+                >
+                  <p className="text-sm font-semibold text-quizz-dark">
+                    Les {partiesCount} partis politiques
+                  </p>
+                  <p className="mt-1 text-xs text-gray-500">
+                    Le programme de chaque parti, et le test « quel parti me correspond ».
+                  </p>
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/comparer"
@@ -290,6 +340,20 @@ export default function ComparateurProgrammes() {
                 Les candidats n'ont pas rempli le quiz eux-mêmes. Chaque réponse vient de leurs programmes
                 officiels, de leurs déclarations publiques et de leurs votes passés. Une position peut donc
                 évoluer, et nous mettons les réponses à jour au fil de la campagne.
+              </p>
+            </details>
+            <details className="rounded-lg border border-gray-200 p-5">
+              <summary className="cursor-pointer font-medium text-quizz-dark">
+                Quel parti politique me correspond ?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                C'est exactement ce que le quiz calcule. Répondez aux questions, et vos réponses
+                sont comparées à celles des {candidatesCount} personnalités et des {partiesCount}{' '}
+                partis auxquels elles appartiennent. Le test est gratuit, sans compte, et le
+                résultat vous surprendra peut-être : c'est un peu le but.{' '}
+                <Link to="/partis" className="text-blue-600 no-underline hover:underline">
+                  Voir les programmes parti par parti →
+                </Link>
               </p>
             </details>
             <details className="rounded-lg border border-gray-200 p-5">

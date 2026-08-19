@@ -8,7 +8,7 @@ export default function Confidentialite() {
           <p>
             Le Quizz du Berger est un projet associatif et <b>open-source</b>. Nous attachons une grande importance à
             votre vie privée&nbsp;: nous collectons le strict minimum, nous ne vendons aucune donnée et nous n'utilisons
-            aucun outil publicitaire ni aucun traceur marketing. Cette politique s'applique au site{' '}
+            aucun outil publicitaire. Cette politique s'applique au site{' '}
             <b>quizz-du-berger.com</b> ainsi qu'à nos applications mobiles iOS et Android.
           </p>
 
@@ -50,7 +50,9 @@ export default function Confidentialite() {
             Lorsque vous vous connectez, nous déposons un seul cookie d'authentification (<code>jwt</code>), sécurisé et
             inaccessible au JavaScript (<i>httpOnly</i>), qui sert uniquement à vous maintenir connecté. Votre profil est
             aussi conservé localement dans votre navigateur (<i>localStorage</i>) pour vous éviter de vous reconnecter.
-            Nous n'utilisons <b>aucun cookie publicitaire ni de suivi</b>.
+            Nous utilisons aussi <b>DataFast</b>, un outil de mesure d'audience&nbsp;: il dépose un cookie et enregistre
+            votre adresse IP pour compter les visites et les pages consultées. Nous n'utilisons{' '}
+            <b>aucun cookie publicitaire</b>.
           </p>
 
           <h2 className="font-[Merriweather] text-2xl font-bold text-quizz-dark">Sous-traitants et hébergement</h2>
@@ -64,13 +66,18 @@ export default function Confidentialite() {
               corriger les bugs&nbsp;;
             </li>
             <li>
+              <b>DataFast</b> — outil de mesure d'audience du site (nombre de visites, pages consultées, site d'où vous
+              venez), qui utilise un cookie et votre adresse IP&nbsp;;
+            </li>
+            <li>
               <b>Tipimail</b> — utilisé uniquement pour nous transmettre les messages que vous nous envoyez via le
               formulaire de contact.
             </li>
           </ul>
           <p>
-            Nous n'utilisons <b>aucun service d'analyse d'audience</b> (pas de Google Analytics, Plausible, Matomo,
-            etc.).
+            Nous n'utilisons <b>ni Google Analytics, ni aucune régie publicitaire</b>. Notre seul outil de mesure
+            d'audience est <b>DataFast</b>, et ces données servent uniquement à savoir combien de personnes visitent le
+            site.
           </p>
 
           <h2 className="font-[Merriweather] text-2xl font-bold text-quizz-dark">Durée de conservation</h2>
@@ -90,7 +97,7 @@ export default function Confidentialite() {
           <h2 className="font-[Merriweather] text-2xl font-bold text-quizz-dark">Modifications</h2>
           <p>
             Cette politique peut être mise à jour pour refléter des évolutions du service. Toute modification importante
-            sera signalée sur cette page. Dernière mise à jour&nbsp;: 1<sup>er</sup> juillet 2026.
+            sera signalée sur cette page. Dernière mise à jour&nbsp;: 19 août 2026.
           </p>
         </main>
       </div>

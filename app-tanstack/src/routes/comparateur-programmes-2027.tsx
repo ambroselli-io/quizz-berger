@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { candidatesCount } from '@app/utils/seo';
+import { partiesCount } from '@app/utils/parties';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import { seoHead } from '@app/utils/seo-head';
 import ComparateurProgrammes from '@app/pages/ComparateurProgrammes';
@@ -8,7 +9,7 @@ export const Route = createFileRoute('/comparateur-programmes-2027')({
   head: () =>
     seoHead({
       title: `Comparateur de programmes — Présidentielle 2027 | Le Quizz du Berger`,
-      description: `Comparez les programmes des ${candidatesCount} candidats à la présidentielle 2027 sur ${quizzQuestionsCount} questions et ${quizzThemesCount} thèmes. Choisissez vos candidats et voyez leurs réponses côte à côte.`,
+      description: `Comparez les programmes des ${candidatesCount} candidats et des ${partiesCount} partis politiques pour la présidentielle 2027, sur ${quizzQuestionsCount} questions et ${quizzThemesCount} thèmes. Choisissez vos candidats et voyez leurs réponses côte à côte.`,
       canonicalPath: '/comparateur-programmes-2027',
       jsonLd: {
         '@context': 'https://schema.org',

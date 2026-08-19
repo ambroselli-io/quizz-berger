@@ -25,6 +25,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Explorer</p>
             <Link to="/candidats" className="text-sm text-gray-300 hover:text-white">Tous les candidats</Link>
+            <Link to="/partis" className="text-sm text-gray-300 hover:text-white">Tous les partis</Link>
             <Link to="/sujets" className="text-sm text-gray-300 hover:text-white">Tous les sujets</Link>
             <Link to="/comparer" className="text-sm text-gray-300 hover:text-white">Comparer les candidats</Link>
             <Link to="/comparateur-programmes-2027" className="text-sm text-gray-300 hover:text-white">Comparateur de programmes</Link>

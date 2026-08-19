@@ -32,11 +32,11 @@ export const article: Article = {
 <h2>De quels candidats Nicolas Dupont-Aignan est-il le plus proche ?</h2>
 <ul>
 <li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — 89 % de proximité, 104 réponses identiques.</li>
+<li><a href="/candidat/jordan-bardella">Jordan Bardella</a> — 88 %, 99 réponses identiques.</li>
 <li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — 77 %, 76 réponses identiques.</li>
 <li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — 77 %, 75 réponses identiques.</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — 74 %, 68 réponses identiques.</li>
 <li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — 65 %, 52 réponses identiques.</li>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 64 %, 55 réponses identiques.</li>
 </ul>
 <p>Les plus éloignés : <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (39 %), <a href="/candidat/clementine-autain">Clémentine Autain</a> (39 %), <a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (41 %). Son écart avec la gauche radicale reste plus faible que celui de Xavier Bertrand, dont la proximité avec Nathalie Arthaud tombe à 25 %, effet direct de ses positions économiques.</p>
 

@@ -12,6 +12,7 @@ import {
 } from '@app/utils/seo';
 import { quizzQuestionsCount } from '@app/utils/quizz';
 import { getCandidateProximityRanking } from '@app/utils/proximity';
+import { getPartyForCandidate } from '@app/utils/parties';
 import { getPollingForCandidate, formatMonthLong, formatPercent, sondagesData } from '@app/utils/sondages';
 import { articles } from '@app/content/articles';
 import Footer from '@app/components/Footer';
@@ -49,6 +50,8 @@ export default function CandidatePage() {
 
   const polling = useMemo(() => getPollingForCandidate(candidate.slug), [candidate.slug]);
 
+  const party = useMemo(() => getPartyForCandidate(candidate.slug), [candidate.slug]);
+
   const positioningArticle = useMemo(
     () => articles.find((a) => a.slug === `${candidate.slug}-droite-ou-gauche`),
     [candidate.slug],
@@ -77,6 +80,13 @@ export default function CandidatePage() {
               </h1>
             </div>
             <p className="text-xl text-white/80">Positions politiques — Présidentielle 2027</p>
+            {party && (
+              <p className="mt-3 text-sm text-white/70">
+                <Link to={`/parti/${party.slug}`} className="text-white/90 underline">
+                  Voir le programme {party.ofName}
+                </Link>
+              </p>
+            )}
             <Link
               to="/themes"
               className="mt-8 inline-block rounded-full bg-yellow-400 px-8 py-3 font-semibold text-black no-underline hover:bg-yellow-300"
@@ -334,6 +344,12 @@ export default function CandidatePage() {
                 className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-blue-600 no-underline hover:bg-gray-50"
               >
                 Tous les candidats →
+              </Link>
+              <Link
+                to="/partis"
+                className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-blue-600 no-underline hover:bg-gray-50"
+              >
+                Tous les partis →
               </Link>
             </div>
           </div>

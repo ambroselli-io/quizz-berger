@@ -111,6 +111,12 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
+    "percent": 36,
+    "pseudos": [
+      "Jordan Bardella",
+    ],
+  },
+  {
     "percent": 29,
     "pseudos": [
       "Édouard Philippe",

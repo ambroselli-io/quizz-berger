@@ -16,6 +16,7 @@ import {
   hotTopicQuestions,
   comparisonPairs,
 } from '../src/utils/seo';
+import { partyList, partyThemePages } from '../src/utils/parties';
 import { articles } from '../src/content/articles';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -41,6 +42,7 @@ function buildUrls(): SitemapUrl[] {
 
   // SEO hub pages
   urls.push({ loc: '/candidats', priority: '0.9', changefreq: 'weekly' });
+  urls.push({ loc: '/partis', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/sujets', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/comparer', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/comparateur-programmes-2027', priority: '0.9', changefreq: 'weekly' });
@@ -54,6 +56,14 @@ function buildUrls(): SitemapUrl[] {
   // Candidate pages
   for (const candidate of candidateSlugMap) {
     urls.push({ loc: `/candidat/${candidate.slug}`, priority: '0.8', changefreq: 'monthly' });
+  }
+
+  // Party pages, and the curated party x theme couples ("programme RN 2027 retraite")
+  for (const party of partyList) {
+    urls.push({ loc: `/parti/${party.slug}`, priority: '0.8', changefreq: 'monthly' });
+  }
+  for (const { party, theme } of partyThemePages) {
+    urls.push({ loc: `/parti/${party.slug}/${theme.slug}`, priority: '0.7', changefreq: 'monthly' });
   }
 
   // Question pages — hot topics get higher priority

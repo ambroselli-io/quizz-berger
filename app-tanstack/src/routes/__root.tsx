@@ -84,6 +84,12 @@ export const Route = createRootRoute({
     scripts: [
       { type: 'application/ld+json', children: JSON.stringify(WEBAPP_JSONLD) },
       { type: 'application/ld+json', children: JSON.stringify(MOBILE_APP_JSONLD) },
+      {
+        src: 'https://datafa.st/js/script.js',
+        defer: true,
+        'data-website-id': 'dfid_UHklLXAsoVa6Bef5p8F8N',
+        'data-domain': 'www.quizz-du-berger.com',
+      } as React.JSX.IntrinsicElements['script'],
     ],
   }),
   component: RootComponent,
