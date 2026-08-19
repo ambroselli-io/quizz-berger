@@ -10,7 +10,7 @@ export const article: Article = {
   date: '2026-08-16',
   tag: 'Analyse',
   content: `
-<p>Nicolas Dupont-Aignan et Marine Le Pen donnent la même réponse à 102 des ${quizzQuestionsCount} questions du Quizz du Berger, soit 89 % de proximité. C'est le score le plus élevé du président de Debout la France, devant Patrick Sébastien et François Asselineau à 77 %, puis Éric Zemmour à 74 %. Cette hiérarchie dit déjà quelque chose : il est plus proche de Marine Le Pen que d'Éric Zemmour, et l'écart se joue sur l'économie.</p>
+<p>Nicolas Dupont-Aignan et Marine Le Pen donnent la même réponse à 104 des ${quizzQuestionsCount} questions du Quizz du Berger, soit 89 % de proximité. C'est le score le plus élevé du président de Debout la France, devant Patrick Sébastien et François Asselineau à 77 %, puis Éric Zemmour à 74 %. Cette hiérarchie dit déjà quelque chose : il est plus proche de Marine Le Pen que d'Éric Zemmour, et l'écart se joue sur l'économie.</p>
 
 <h2>Sur l'économie, un étatisme que la droite libérale refuse</h2>
 <p>Interrogé sur les entreprises publiques, Nicolas Dupont-Aignan répond qu'il faut renationaliser les entreprises stratégiques bradées, EDF et les autoroutes en tête. Sur le rôle de l'État dans l'industrie, il veut que l'État investisse, soit actionnaire et pilote les industries stratégiques. Sur la <a href="/question-politique/reindustrialisation-france">réindustrialisation</a>, il accepte les barrières douanières. Sur les chaînes d'approvisionnement, il parle de survie nationale.</p>
@@ -31,14 +31,14 @@ export const article: Article = {
 
 <h2>De quels candidats Nicolas Dupont-Aignan est-il le plus proche ?</h2>
 <ul>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — 89 % de proximité, 102 réponses identiques.</li>
-<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — 77 %, 74 réponses identiques.</li>
-<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — 77 %, 73 réponses identiques.</li>
-<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — 74 %, 67 réponses identiques.</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — 89 % de proximité, 104 réponses identiques.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — 77 %, 76 réponses identiques.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — 77 %, 75 réponses identiques.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — 74 %, 68 réponses identiques.</li>
 <li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — 65 %, 52 réponses identiques.</li>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 64 %, 54 réponses identiques.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 64 %, 55 réponses identiques.</li>
 </ul>
-<p>Les plus éloignés : <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (39 %), <a href="/candidat/clementine-autain">Clémentine Autain</a> (39 %), <a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (41 %). Son écart avec la gauche radicale reste plus faible que celui de Xavier Bertrand, dont la proximité avec Nathalie Arthaud tombe à 24 %, effet direct de ses positions économiques.</p>
+<p>Les plus éloignés : <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (39 %), <a href="/candidat/clementine-autain">Clémentine Autain</a> (39 %), <a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (41 %). Son écart avec la gauche radicale reste plus faible que celui de Xavier Bertrand, dont la proximité avec Nathalie Arthaud tombe à 25 %, effet direct de ses positions économiques.</p>
 
 <h2>Alors, droite ou gauche ?</h2>
 <p>À droite sur l'immigration, la sécurité et les questions de société, où il est le plus conservateur des candidats souverainistes du quiz. Plutôt à gauche sur le rôle de l'État dans l'économie, les nationalisations et l'âge de départ à la retraite. Cette combinaison porte un nom déjà ancien en France, le gaullisme social, et elle explique pourquoi il tient à la fois 89 % avec Marine Le Pen et 55 % avec Fabien Roussel.</p>

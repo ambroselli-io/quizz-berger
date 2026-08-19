@@ -10,7 +10,7 @@ export const article: Article = {
   date: '2026-08-16',
   tag: 'Analyse',
   content: `
-<p>Sur les ${quizzQuestionsCount} questions du Quizz du Berger, Édouard Philippe partage 75 réponses avec François Hollande, soit 73 % de proximité. Avec Bruno Retailleau, patron des Républicains et donc de sa famille politique d'origine, il n'en partage que 40, soit 66 %. Un ancien député LR plus proche d'un président socialiste que du président de son ancien parti : le classement gauche-droite mérite une inspection question par question.</p>
+<p>Sur les ${quizzQuestionsCount} questions du Quizz du Berger, Édouard Philippe partage 76 réponses avec François Hollande, soit 73 % de proximité. Avec Bruno Retailleau, patron des Républicains et donc de sa famille politique d'origine, il n'en partage que 40, soit 66 %. Un ancien député LR plus proche d'un président socialiste que du président de son ancien parti : le classement gauche-droite mérite une inspection question par question.</p>
 
 <h2>Sur l'économie, il est franchement à droite</h2>
 <p>Aucune ambiguïté sur ce bloc. Baisser un peu les impôts sur les plus riches pour rester compétitif. Refuser le rétablissement de l'ISF. Continuer à baisser les impôts des entreprises. Renvoyer l'évasion fiscale et la taxe sur les transactions financières à un accord international plutôt qu'à une décision française.</p>
@@ -30,14 +30,14 @@ export const article: Article = {
 
 <h2>De quels candidats Édouard Philippe est-il le plus proche ?</h2>
 <ul>
-<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — 93 % de proximité, 112 réponses identiques.</li>
-<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — 88 %, 102 réponses identiques.</li>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 83 %, 84 réponses identiques.</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — 93 % de proximité, 114 réponses identiques.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — 87 %, 102 réponses identiques.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 83 %, 85 réponses identiques.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — 78 %, 76 réponses identiques.</li>
 <li><a href="/candidat/david-lisnard">David Lisnard</a> (LR) — 74 %, 63 réponses identiques.</li>
-<li><a href="/candidat/francois-hollande">François Hollande</a> (PS) — 73 %, 75 réponses identiques.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> (PS) — 73 %, 76 réponses identiques.</li>
 </ul>
-<p>Bruno Retailleau n'arrive qu'en huitième position, à 66 %. Les plus éloignés sont <a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (30 %), <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (30 %) et <a href="/candidat/juan-branco">Juan Branco</a> (31 %). Les duels détaillés : <a href="/comparer/edouard-philippe-vs-gabriel-attal">Philippe contre Attal</a>, <a href="/comparer/edouard-philippe-vs-laurent-wauquiez">Philippe contre Wauquiez</a>, <a href="/comparer/bruno-retailleau-vs-edouard-philippe">Philippe contre Retailleau</a>.</p>
+<p>Bruno Retailleau n'arrive qu'en huitième position, à 66 %. Les plus éloignés sont <a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (30 %), <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (31 %) et <a href="/candidat/juan-branco">Juan Branco</a> (31 %). Les duels détaillés : <a href="/comparer/edouard-philippe-vs-gabriel-attal">Philippe contre Attal</a>, <a href="/comparer/edouard-philippe-vs-laurent-wauquiez">Philippe contre Wauquiez</a>, <a href="/comparer/bruno-retailleau-vs-edouard-philippe">Philippe contre Retailleau</a>.</p>
 
 <h2>Alors, droite ou gauche ?</h2>
 <p>À droite sur l'argent, le travail et la sécurité. Au centre ou au centre-gauche sur la laïcité, la fin de vie, le climat et la régularisation des travailleurs sans papiers. Le podium Attal-Bertrand-Darmanin décrit exactement cet espace, et la sixième place de François Hollande confirme que les 73 % ne sont pas un accident de calcul : les deux hommes se rejoignent sur les questions de société et sur l'Europe.</p>

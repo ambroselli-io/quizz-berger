@@ -37,7 +37,7 @@ It feeds `/sondages-presidentielle-2027` (SVG timeline, no chart library) and th
 
 # Candidate proximity
 
-`app-tanstack/src/utils/proximity.ts` ranks every candidate against every other one, reusing `question.scores`. The matrix is asymmetric on purpose (it is authored as "user answer" × "candidate answer"), so a pair averages both directions to stay symmetric. Powers the "candidats les plus proches" section of `/candidat/{slug}` and the figures quoted in the `{candidat}-droite-ou-gauche` articles. **If you change a scores matrix or a candidate answer, those article figures go stale** — they are hard-coded prose, not computed.
+`app-tanstack/src/utils/proximity.ts` ranks every candidate against every other one, reusing `question.scores`. The matrix is asymmetric on purpose (it is authored as "user answer" × "candidate answer"), so a pair averages both directions to stay symmetric. Powers the "candidats les plus proches" section of `/candidat/{slug}` and the figures quoted in the `{candidat}-droite-ou-gauche` articles. **If you change a scores matrix or a candidate answer, those article figures go stale** — they are hard-coded prose, not computed. `src/content/articles/proximity-figures.test.ts` parses each article's ranking list and fails when the percentages, the identical-answer counts or the ORDER stop matching the live computation. Recompute and rewrite the article; never relax the test. Counts quoted from a single question ("14 des 26 répondent que...") should use `getAnswerDistribution(questionId)` from `utils/seo.ts` instead of a literal.
 
 # Blog articles
 

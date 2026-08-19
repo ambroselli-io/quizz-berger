@@ -6,8 +6,8 @@ import AllQuestions from '@app/pages/AllQuestions';
 export const Route = createFileRoute('/all-questions/')({
   head: () =>
     seoHead({
-      title: 'Toutes les questions | Le Quizz du Berger',
-      description: `Les ${quizzQuestionsCount} questions du Quizz du Berger, réparties en ${quizzThemesCount} thèmes de la présidentielle 2027, avec toutes les réponses possibles.`,
+      title: `${quizzQuestionsCount} questions pour 2027 | Le Quizz du Berger`,
+      description: `La liste complète des ${quizzQuestionsCount} questions posées aux candidats à la présidentielle 2027, réparties en ${quizzThemesCount} thèmes, avec toutes les réponses possibles.`,
       canonicalPath: '/all-questions',
     }),
   component: AllQuestions,

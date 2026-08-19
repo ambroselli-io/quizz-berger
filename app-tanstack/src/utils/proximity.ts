@@ -106,5 +106,12 @@ export function getCandidateProximityRanking(candidateSlug: string): CandidatePr
         pairSlug: pairSlugByCandidates.get(key) || `${candidate.slug}-vs-${other.slug}`,
       };
     })
-    .sort((a, b) => b.percent - a.percent);
+    .sort(
+      (a, b) =>
+        // Equal percentages are common, and file order is a meaningless tiebreak:
+        // more identical answers means closer, then alphabetical for full determinism.
+        b.percent - a.percent ||
+        b.sameAnswers - a.sameAnswers ||
+        a.pseudo.localeCompare(b.pseudo, 'fr'),
+    );
 }

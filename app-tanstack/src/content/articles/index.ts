@@ -31,12 +31,14 @@ import { article as articleXavierBertrandDroiteOuGauche } from './xavier-bertran
 import { article as articleJuanBrancoDroiteOuGauche } from './juan-branco-droite-ou-gauche';
 import { article as articleNicolasDupontAignanDroiteOuGauche } from './nicolas-dupont-aignan-droite-ou-gauche';
 import { article as articleEdouardPhilippeDroiteOuGauche } from './edouard-philippe-droite-ou-gauche';
+import { article as articleSalairePatrimoineElusFrance } from './salaire-patrimoine-elus-france';
 
 export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
   articlePrimaireAntiExtremesExtremeNotionRelative,
+  articleSalairePatrimoineElusFrance,
   articleCrisePompiersFinancementRecrutementFranceCandidats2027,
   articleFrancoisAsselineauDroiteOuGauche,
   articleXavierBertrandDroiteOuGauche,

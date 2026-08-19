@@ -4,7 +4,7 @@ import Loader from '@app/components/Loader';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@app/components/ui/accordion';
 import getUserThemes from '@app/utils/getUserThemes';
 import useUser from '@app/hooks/useUser';
-import { quizz, quizzDownload } from '@app/utils/quizz';
+import { quizz, quizzDownload, quizzQuestionsCount } from '@app/utils/quizz';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import useCandidates from '@app/hooks/useCandidates';
 import useFriends from '@app/hooks/useFriends';
@@ -52,12 +52,17 @@ export default function AllQuestions() {
     setIsLoading(forCandidate && !candidateAnswers?.pseudo);
   }, [forCandidate, candidateAnswers?.pseudo]);
 
+  // The candidate view is noindex; only the plain list targets "N questions pour 2027".
+  const heading = forCandidate
+    ? `Les ${quizzQuestionsCount} questions vues par ${candidateAnswers?.pseudo || candidatePseudo}`
+    : `${quizzQuestionsCount} questions pour 2027`;
+
   return (
     <>
       {/* Mobile: accordion view */}
       <div className="flex flex-col bg-white px-3 py-6 lg:hidden">
         <h1 className="mb-4 text-center font-[Merriweather] text-xl font-bold text-quizz-dark">
-          Toutes les questions
+          {heading}
         </h1>
         {forCandidate && candidateAnswers?.pseudo && (
           <p className="mb-4 text-center text-sm text-gray-600">
@@ -124,7 +129,7 @@ export default function AllQuestions() {
       <div className="hidden min-h-[600px] justify-center overflow-y-scroll bg-white px-2.5 py-10 lg:flex lg:h-[calc(100vh-80px)] [&_details]:mb-5 [&_details]:w-[1024px] [&_h2]:mt-4 [&_h2]:mb-4 [&_h3]:mt-2.5 [&_h3]:mb-2.5 [&_h3]:ml-2.5 [&_li]:ml-[30px] [&_li]:mb-1 [&_ol]:ml-[30px] [&_ol]:mb-1 [&_ol]:list-none [&_ol]:text-[15px] [&_summary]:mb-5">
         <div className="flex max-w-[1200px] flex-col items-center bg-white">
           <h1 className="mb-5 text-center font-[Merriweather] text-2xl font-bold text-quizz-dark">
-            Toutes les questions
+            {heading}
           </h1>
           <h3 className="mb-10 text-center text-base font-normal text-quizz-dark [&_a]:cursor-pointer [&_a]:underline [&_span]:cursor-pointer [&_span]:underline">
             {!forCandidate ? (

@@ -10,7 +10,7 @@ export const article: Article = {
   date: '2026-08-16',
   tag: 'Analyse',
   content: `
-<p>Juan Branco partage 121 réponses sur ${quizzQuestionsCount} avec Nathalie Arthaud, candidate de Lutte ouvrière, et 121 également avec Jean-Luc Mélenchon. Sa proximité avec Nathalie Arthaud atteint 97 %, le score le plus élevé entre deux personnalités de tout le site, et 96 % avec Jean-Luc Mélenchon. À l'autre bout, il tombe à 13 % avec Bruno Retailleau. Sur l'axe gauche-droite classique, le cas Branco se règle en trois secondes. Ce qui est intéressant vient après.</p>
+<p>Juan Branco partage 122 réponses sur ${quizzQuestionsCount} avec Nathalie Arthaud, candidate de Lutte ouvrière, et 123 avec Jean-Luc Mélenchon. Sa proximité avec Nathalie Arthaud atteint 97 %, le score le plus élevé entre deux personnalités de tout le site, et 96 % avec Jean-Luc Mélenchon. À l'autre bout, il tombe à 13 % avec Bruno Retailleau. Sur l'axe gauche-droite classique, le cas Branco se règle en trois secondes. Ce qui est intéressant vient après.</p>
 
 <h2>Sur l'argent, la position la plus à gauche du quiz</h2>
 <p>Sur les huit questions de politique fiscale, Juan Branco coche presque systématiquement la réponse la plus radicale disponible. Augmenter beaucoup les impôts sur les plus riches. Supprimer ceux des plus modestes et augmenter les aides. <a href="/question-politique/impots-des-plus-riches">Rétablir l'ISF et l'élargir</a> pour financer les services publics. Bloquer la circulation des capitaux pour empêcher l'évasion. Créer un ISF climatique visant les jets privés et les yachts.</p>
@@ -35,12 +35,12 @@ export const article: Article = {
 
 <h2>De quels candidats Juan Branco est-il le plus proche ?</h2>
 <ul>
-<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — 97 % de proximité, 121 réponses identiques.</li>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — 96 %, 121 réponses identiques.</li>
-<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — 93 %, 108 réponses identiques.</li>
-<li><a href="/candidat/francois-ruffin">François Ruffin</a> — 85 %, 76 réponses identiques.</li>
-<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — 81 %, 62 réponses identiques.</li>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — 79 %, 52 réponses identiques.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — 97 % de proximité, 122 réponses identiques.</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — 96 %, 123 réponses identiques.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — 93 %, 110 réponses identiques.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — 84 %, 77 réponses identiques.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — 81 %, 63 réponses identiques.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — 79 %, 53 réponses identiques.</li>
 </ul>
 <p>Les plus éloignés : <a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (13 %), <a href="/candidat/david-lisnard">David Lisnard</a> (17 %), <a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (18 %). Curiosité du classement, il est plus proche de Marine Le Pen (41 %) que d'Éric Zemmour (22 %), écart qui tient à l'économie et à la politique étrangère. Les duels : <a href="/comparer/jean-luc-melenchon-vs-juan-branco">Branco contre Mélenchon</a>, <a href="/comparer/francois-hollande-vs-juan-branco">Branco contre Hollande</a>, <a href="/comparer/francois-asselineau-vs-juan-branco">Branco contre Asselineau</a>.</p>
 
