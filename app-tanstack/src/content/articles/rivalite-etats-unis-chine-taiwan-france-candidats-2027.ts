@@ -14,16 +14,16 @@ export const article: Article = {
 <h2>La rivalité sino-américaine en 2026</h2>
 <p>Depuis le retour de Donald Trump, la relation a oscillé entre affrontement et trêve :</p>
 <ul>
-<li><strong>Avril 2025</strong> : Washington et Pékin s'infligent des droits de douane réciproques dépassant 100 % (jusqu'à 145 % côté américain, 125 % côté chinois).</li>
-<li><strong>Mai 2025</strong> : une trêve à Genève ramène les tarifs autour de 30 % et 10 %.</li>
-<li><strong>9 octobre 2025</strong> : la Chine élargit son contrôle sur l'exportation des terres rares, avec des effets extraterritoriaux ; Washington menace de 100 % de droits supplémentaires.</li>
-<li><strong>30 octobre 2025</strong> : au sommet de l'APEC en Corée du Sud, Trump et Xi concluent une trêve commerciale d'un an.</li>
-<li><strong>14-15 mai 2026</strong> : sommet de Pékin. Trêve prolongée, ouverture de ventes de puces avancées Nvidia H200 contre reversement d'une part des revenus, avertissement de Xi sur Taïwan. Les analystes de Brookings et du CFR estiment que Pékin en a tiré le meilleur parti.</li>
+<li><strong>Avril 2025</strong> : <a href="https://www.cnbc.com/2025/04/11/china-strikes-back-with-125percent-tariffs-on-us-goods-starting-april-12.html" target="_blank" rel="noopener noreferrer">Washington et Pékin s'infligent des droits de douane réciproques dépassant 100 % (jusqu'à 145 % côté américain, 125 % côté chinois)</a>.</li>
+<li><strong>Mai 2025</strong> : <a href="https://www.cnbc.com/2025/05/12/us-and-china-agree-to-slash-tariffs-for-90-days.html" target="_blank" rel="noopener noreferrer">une trêve à Genève ramène les tarifs autour de 30 % et 10 %</a>.</li>
+<li><strong>9 octobre 2025</strong> : <a href="https://foreignpolicy.com/2025/10/10/china-rare-earth-trump-us-trade-tariff-export-control/" target="_blank" rel="noopener noreferrer">la Chine élargit son contrôle sur l'exportation des terres rares, avec des effets extraterritoriaux ; Washington menace de 100 % de droits supplémentaires</a>.</li>
+<li><strong>30 octobre 2025</strong> : <a href="https://www.cnbc.com/2025/10/30/trump-xi-south-korea-rare-earth-tariff-trade-war-nvidia.html" target="_blank" rel="noopener noreferrer">au sommet de l'APEC en Corée du Sud, Trump et Xi concluent une trêve commerciale d'un an</a>.</li>
+<li><strong>14-15 mai 2026</strong> : <a href="https://www.cfr.org/articles/trump-wraps-china-visit" target="_blank" rel="noopener noreferrer">sommet de Pékin. Trêve prolongée, ouverture de ventes de puces avancées Nvidia H200 contre reversement d'une part des revenus, avertissement de Xi sur Taïwan</a>. Les analystes de <a href="https://www.brookings.edu/articles/what-beijing-got-from-the-trump-xi-summit/" target="_blank" rel="noopener noreferrer">Brookings</a> et du <a href="https://www.cfr.org/articles/at-the-trump-xi-summit-china-will-have-the-upper-hand" target="_blank" rel="noopener noreferrer">CFR</a> estiment que Pékin en a tiré le meilleur parti.</li>
 </ul>
 <p>Sur <strong>Taïwan</strong>, la pression militaire chinoise reste soutenue (incursions aériennes quasi quotidiennes), mais mesurée pendant le sommet. À partir du 1er juin 2026, les garde-côtes chinois ont commencé des patrouilles « de maintien de l'ordre » dans des eaux disputées, une première.</p>
 
 <h2>La France et l'Europe entre les deux géants</h2>
-<p>La doctrine d'Emmanuel Macron, résumée après sa visite à Pékin en 2023, tient en une formule : « Être allié ne veut pas dire être vassal. » La France défend une <strong>autonomie stratégique</strong> européenne et le statu quo à Taïwan, sans suivre automatiquement Washington. Mais les intérêts économiques pèsent lourd : lors de sa visite d'État en décembre 2025, Macron n'a pas obtenu la validation de la commande géante d'Airbus attendue, et il a réclamé un « rééquilibrage » d'un commerce marqué par un déficit français de 47 milliards d'euros avec la Chine en 2024.</p>
+<p>La doctrine d'Emmanuel Macron, résumée après sa visite à Pékin en 2023, tient en une formule : <a href="https://www.manilatimes.net/2023/04/13/news/world/macron-insists-wont-be-us-vassal-on-taiwan/1886929" target="_blank" rel="noopener noreferrer">« Être allié ne veut pas dire être vassal. »</a> La France défend une <strong>autonomie stratégique</strong> européenne et le statu quo à Taïwan, sans suivre automatiquement Washington. Mais les intérêts économiques pèsent lourd : <a href="https://www.france24.com/fr/asie-pacifique/20251205-ce-qu-il-faut-retenir-de-la-visite-d-emmanuel-macron-en-chine" target="_blank" rel="noopener noreferrer">lors de sa visite d'État en décembre 2025, Macron n'a pas obtenu la validation de la commande géante d'Airbus attendue, et il a réclamé un « rééquilibrage » d'un commerce marqué par un déficit français de 47 milliards d'euros avec la Chine en 2024</a>.</p>
 <p>À l'échelle européenne, la ligne est le « de-risking » (réduction des dépendances) plutôt que le découplage. En octobre 2024, l'UE a imposé des droits de douane de 17 % à 35 % sur les voitures électriques chinoises, une mesure que la France a soutenue et que l'Allemagne a combattue.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
@@ -33,7 +33,7 @@ export const article: Article = {
 <p>Ces candidats ancrent la France du côté des démocraties et se montrent fermes envers Pékin, notamment sur les droits humains, sans pour autant réclamer un alignement militaire sur Washington.</p>
 <ul>
 <li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Militant de longue date contre la répression des Ouïghours, sanctionné par Pékin en 2021 ; attaque la complaisance de LFI envers la Chine.</li>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Appelle à « sortir de la fascination pour la Chine » et dénonce la répression au Xinjiang, au Tibet et à Hong Kong.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Appelle à <a href="https://marinetondelier.fr/blog/sortir-fascination-chine" target="_blank" rel="noopener noreferrer">« sortir de la fascination pour la Chine »</a> et dénonce la répression au Xinjiang, au Tibet et à Hong Kong.</li>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ligne atlantiste et ferme envers Pékin.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Position comparable au sein des Républicains.</li>
 <li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Ligne de fermeté commerciale et politique envers la Chine.</li>
@@ -65,7 +65,7 @@ export const article: Article = {
 <h3>Famille 3 — Se rapprocher de la Chine, défendre un monde multipolaire</h3>
 <p>Ces candidats voient dans la Chine un pôle de stabilité et refusent l'alignement de l'Europe sur la stratégie américaine.</p>
 <ul>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — « Taïwan, c'est la Chine » ; estime que la France a parfois plus d'intérêts communs avec Pékin qu'avec ses partenaires européens, et refuse toute logique de guerre avec la Chine.</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — <a href="https://www.lejdd.fr/International/cest-la-chine-jean-luc-melenchon-assume-sa-doctrine-sur-taiwan-173499" target="_blank" rel="noopener noreferrer">« Taïwan, c'est la Chine »</a> ; estime que la France a parfois plus d'intérêts communs avec Pékin qu'avec ses partenaires européens, et refuse toute logique de guerre avec la Chine.</li>
 <li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Ligne de non-alignement proche de LFI, critique de la confrontation avec Pékin.</li>
 <li><a href="/candidat/juan-branco">Juan Branco</a> — Défense d'un monde multipolaire face à l'hégémonie américaine.</li>
 </ul>
