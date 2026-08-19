@@ -42,12 +42,12 @@ export const article: Article = {
 <h3>Famille 1 — Oui, immédiatement et sans condition</h3>
 <p>La gauche et une partie des voix gaullistes défendent une reconnaissance pleine et entière comme droit du peuple palestinien.</p>
 <ul>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — A salué une « victoire irréversible » de la lutte populaire, tout en jugeant les conditions de Macron « alambiquées » ; LFI réclame un embargo sur les armes et des sanctions contre Israël.</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — A salué <a href="https://www.france24.com/fr/moyen-orient/20250922-une-d%C3%A9cision-historique-les-r%C3%A9actions-apr%C3%A8s-la-reconnaissance-de-la-palestine-par-la-france" target="_blank" rel="noopener noreferrer">une « victoire irréversible » de la lutte populaire</a>, tout en jugeant les conditions de Macron <a href="https://www.france24.com/fr/moyen-orient/20250922-une-d%C3%A9cision-historique-les-r%C3%A9actions-apr%C3%A8s-la-reconnaissance-de-la-palestine-par-la-france" target="_blank" rel="noopener noreferrer">« alambiquées »</a> ; LFI réclame un embargo sur les armes et des sanctions contre Israël.</li>
 <li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Reconnaissance sans condition et dénonciation de la politique israélienne à Gaza.</li>
 <li><a href="/candidat/francois-ruffin">François Ruffin</a> — Soutien à une reconnaissance immédiate.</li>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — A appelé les maires à hisser le drapeau palestinien : « Un drapeau sur une façade de mairie n'a jamais tué personne. »</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — A appelé les maires à hisser le drapeau palestinien : <a href="https://fr.timesofisrael.com/drapeaux-palestiniens-sur-les-mairies-les-politiques-saffrontent/" target="_blank" rel="noopener noreferrer">« Un drapeau sur une façade de mairie n'a jamais tué personne. »</a></li>
 <li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste favorable à la reconnaissance.</li>
-<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — « Cette reconnaissance va dans le bon sens mais arrive très tard. »</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — <a href="https://www.franceinfo.fr/monde/palestine/cette-reconnaissance-va-dans-le-bon-sens-mais-elle-arrive-bien-tardivement-fabien-roussel-patron-du-parti-communiste-salue-la-decision-d-emmanuel-macron-de-reconnaitre-un-etat-de-palestine_7505443.html" target="_blank" rel="noopener noreferrer">« Cette reconnaissance va dans le bon sens mais arrive très tard. »</a></li>
 <li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Partisan de la reconnaissance et de la solution à deux États, sur une ligne distincte de LFI sur le 7 octobre et l'antisémitisme.</li>
 <li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Soutien à la cause palestinienne face à la politique israélienne.</li>
 <li><a href="/candidat/juan-branco">Juan Branco</a> — Engagé pour la reconnaissance et contre la politique israélienne à Gaza.</li>
@@ -73,7 +73,7 @@ export const article: Article = {
 <h3>Famille 3 — Pas maintenant</h3>
 <p>Ces candidats jugent la reconnaissance prématurée tant que les otages ne sont pas libérés et que le Hamas n'est pas écarté.</p>
 <ul>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — A qualifié la décision de Macron de « faute grave » et fait de la libération des otages un préalable, accusant le président de reconnaître le « Hamastan ».</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — A qualifié la décision de Macron de <a href="https://actu.orange.fr/videos/politique/marine-le-pen-la-reconnaissance-de-la-palestine-aujourd-hui-est-une-faute-extremement-grave-notamment-a-l-egard-des-nations-qui-luttent-contre-le-terrorisme-islamiste-CNT000002kO24Z.html" target="_blank" rel="noopener noreferrer">« faute grave »</a> et fait de la libération des otages un préalable, accusant le président de reconnaître le <a href="https://x.com/MLP_officiel/status/1970017257829929216" target="_blank" rel="noopener noreferrer">« Hamastan »</a>.</li>
 <li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Juge la reconnaissance prématurée dans le contexte actuel.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Opposé à une reconnaissance immédiate, jugée hors de propos tant que le Hamas n'est pas neutralisé.</li>
 </ul>
@@ -81,7 +81,7 @@ export const article: Article = {
 <h3>Famille 4 — Non, une reconnaissance qui fragilise Israël</h3>
 <p>À droite et à l'extrême droite, ce camp refuse la reconnaissance, perçue comme une récompense au terrorisme.</p>
 <ul>
-<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ministre de l'Intérieur, il a interdit les drapeaux palestiniens sur les mairies et jugé que la reconnaissance « offre une victoire au Hamas ».</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ministre de l'Intérieur, <a href="https://www.publicsenat.fr/actualites/international/drapeaux-palestiniens-au-fronton-des-mairies-que-dit-le-droit" target="_blank" rel="noopener noreferrer">il a interdit les drapeaux palestiniens sur les mairies</a> et jugé que la reconnaissance « offre une victoire au Hamas ».</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Fermement pro-israélien, opposé à une reconnaissance qu'il présente comme une prime au terrorisme.</li>
 </ul>
 
