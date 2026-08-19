@@ -9,24 +9,24 @@ export const article: Article = {
   date: '2026-08-10',
   tag: 'Analyse',
   content: `
-<p>Gabriel Attal veut ramener l'Assemblée nationale à 350 députés et le Sénat à 200 sénateurs, contre 577 et 348 aujourd'hui. L'annonce du 2 août 2026, présentée comme « la plus grande réforme institutionnelle depuis 1958 », relance un débat vieux de vingt ans qu'aucun gouvernement n'a réussi à faire aboutir. Sur ce sujet précis, les ${candidatesCount} candidats à la présidentielle 2027 ne se répartissent pas selon le clivage gauche-droite habituel.</p>
+<p>Gabriel Attal veut ramener l'Assemblée nationale à <a href="https://www.journaldunet.com/business/action-publique/1553335-gabriel-attal-promet-la-plus-grande-reforme-institutionnelle-depuis-1958-s-il-est-elu-president/" target="_blank" rel="noopener noreferrer">350 députés et le Sénat à 200 sénateurs</a>, contre 577 et 348 aujourd'hui. L'annonce du 2 août 2026, présentée comme <a href="https://www.cnews.fr/france/2026-08-02/decentralisation-justice-immigration-gabriel-attal-promet-la-plus-grande-reforme" target="_blank" rel="noopener noreferrer">« la plus grande réforme institutionnelle depuis 1958 »</a>, relance un débat vieux de vingt ans qu'aucun gouvernement n'a réussi à faire aboutir. Sur ce sujet précis, les ${candidatesCount} candidats à la présidentielle 2027 ne se répartissent pas selon le clivage gauche-droite habituel.</p>
 
 <h2>Réduire le nombre de parlementaires : de quoi parle-t-on ?</h2>
-<p>La France compte aujourd'hui <strong>577 députés</strong> à l'Assemblée nationale et <strong>348 sénateurs</strong>, soit 925 parlementaires au total. Un député français représente en moyenne 73 000 habitants, contre environ 100 000 pour un député allemand. Réduire ce nombre suppose une révision constitutionnelle (article 89), donc un vote au Congrès à la majorité des trois cinquièmes ou un référendum. C'est ce verrou qui a bloqué toutes les tentatives précédentes.</p>
+<p>La France compte aujourd'hui <strong>577 députés</strong> à l'Assemblée nationale et <strong>348 sénateurs</strong>, soit 925 parlementaires au total. <a href="https://www.europe1.fr/emissions/Le-vrai-faux-de-l-info2/apres-la-reforme-le-nombre-de-parlementaires-sera-t-il-le-meme-quen-allemagne-3664403" target="_blank" rel="noopener noreferrer">Un député français représente en moyenne 73 000 habitants, contre environ 100 000 pour un député allemand</a>. Réduire ce nombre suppose une révision constitutionnelle (article 89), donc un vote au Congrès à la majorité des trois cinquièmes ou un référendum. C'est ce verrou qui a bloqué toutes les tentatives précédentes.</p>
 
 <h2>Un débat qui a déjà échoué deux fois</h2>
 <ul>
 <li><strong>2017</strong> : Emmanuel Macron promet pendant sa campagne présidentielle de réduire d'un tiers le nombre de parlementaires.</li>
-<li><strong>Été 2018</strong> : le Premier ministre Édouard Philippe présente un projet de réforme institutionnelle avec trois mesures fortes : une baisse de 25 % du nombre de parlementaires (433 députés, 261 sénateurs), une dose de 15 % de proportionnelle aux législatives et un plafonnement à trois mandats consécutifs.</li>
+<li><strong>Été 2018</strong> : le Premier ministre Édouard Philippe présente <a href="https://fr.wikipedia.org/wiki/Projet_de_r%C3%A9vision_constitutionnelle_fran%C3%A7aise_de_2018" target="_blank" rel="noopener noreferrer">un projet de réforme institutionnelle avec trois mesures fortes : une baisse de 25 % du nombre de parlementaires (433 députés, 261 sénateurs), une dose de 15 % de proportionnelle aux législatives et un plafonnement à trois mandats consécutifs</a>.</li>
 <li><strong>Été 2018</strong> : dans la foulée de l'affaire Benalla, l'opposition parlementaire multiplie les manœuvres d'obstruction. Le texte ne peut pas être examiné dans les temps et le gouvernement le retire.</li>
-<li><strong>28 août 2019</strong> : Matignon relance une version proche du projet, avec la même baisse de 25 % et la même dose de proportionnelle. Il ne sera jamais examiné jusqu'au bout.</li>
+<li><strong>28 août 2019</strong> : <a href="https://www.france24.com/fr/20190828-france-reforme-institutions-nombre-parlementaires-dose-proportionnelle-macron" target="_blank" rel="noopener noreferrer">Matignon relance une version proche du projet, avec la même baisse de 25 % et la même dose de proportionnelle</a>. Il ne sera jamais examiné jusqu'au bout.</li>
 <li><strong>2 août 2026</strong> : Gabriel Attal annonce vouloir aller plus loin que le projet Macron-Philippe s'il est élu président, avec 350 députés, 200 sénateurs et un référendum organisé chaque année.</li>
 </ul>
 
 <h2>Pourquoi le sujet revient dans le débat</h2>
 
 <h3>L'argument budgétaire et l'efficacité</h3>
-<p>La Fondation IFRAP, think tank libéral, chiffrait l'économie du projet de 2018 à environ 160 millions d'euros par an. Les partisans d'une réduction ajoutent un argument d'efficacité : moins d'élus, ce sont des débats plus resserrés et des votes plus rapides, sur le modèle du Bundestag allemand souvent cité en comparaison.</p>
+<p>La Fondation IFRAP, think tank libéral, <a href="https://www.ifrap.org/fonction-publique-et-administration/reduction-du-nombre-de-parlementaires-oui-une-economie-de-160-millions-deuros" target="_blank" rel="noopener noreferrer">chiffrait l'économie du projet de 2018 à environ 160 millions d'euros par an</a>. Les partisans d'une réduction ajoutent un argument d'efficacité : moins d'élus, ce sont des débats plus resserrés et des votes plus rapides, sur le modèle du Bundestag allemand souvent cité en comparaison.</p>
 
 <h3>L'argument démocratique</h3>
 <p>En 2019, le président du Sénat Gérard Larcher dénonçait une tentative de « contourner le seul contre-pouvoir démocratique qui existe ». Les opposants à la réduction redoutent des circonscriptions élargies, qui éloigneraient les élus des zones rurales et ultramarines déjà les moins représentées, et un Parlement affaibli face à un exécutif qui, lui, ne rétrécit pas.</p>
@@ -36,7 +36,7 @@ export const article: Article = {
 
 <h3>Famille 1 — Réduction drastique, au nom des économies et du rejet de la « classe politique »</h3>
 <ul>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Propose de longue date de ramener le Parlement à 300 députés et 200 sénateurs, soit presque moitié moins que les effectifs actuels.</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — <a href="https://www.publicsenat.fr/actualites/non-classe/marine-le-pen-veut-reduire-le-nombre-de-deputes-et-un-senat-allege-52359" target="_blank" rel="noopener noreferrer">Propose de longue date de ramener le Parlement à 300 députés et 200 sénateurs</a>, soit presque moitié moins que les effectifs actuels.</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Sa critique récurrente du coût et du nombre des élus laisse penser qu'il rejoindrait une réduction de grande ampleur.</li>
 <li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Souverainiste porté sur la dénonciation du « système », sa ligne penche vers une réduction franche du nombre d'élus.</li>
 <li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Sa critique constante des « professionnels de la politique » suggère une position favorable à une coupe importante.</li>
@@ -62,10 +62,10 @@ export const article: Article = {
 <h3>Famille 4 — Opposés à toute réduction</h3>
 <p>Deux raisons distinctes s'y retrouvent : la défense de la représentation des territoires pour les uns, le refus d'affaiblir le Parlement face à l'exécutif pour les autres.</p>
 <ul>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — a averti : « Vous n'avez pas trop de députés. Méfiez-vous de la démagogie anti-parlementaire. »</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — a averti : <a href="https://www.publicsenat.fr/actualites/politique/la-reduction-du-nombre-de-parlementaires-divise-les-interesses" target="_blank" rel="noopener noreferrer">« Vous n'avez pas trop de députés. Méfiez-vous de la démagogie anti-parlementaire. »</a></li>
 <li><a href="/candidat/francois-ruffin">François Ruffin</a> — Attaché à un Parlement fort face à l'exécutif, il devrait rejoindre l'opposition à toute réduction.</li>
 <li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Sa ligne institutionnelle, proche de celle de LFI, la porte à défendre le nombre actuel d'élus.</li>
-<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Le PCF avait dénoncé le projet Macron de 2018 comme un moyen de « souffler sur le populisme ».</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Le PCF avait <a href="https://www.publicsenat.fr/actualites/non-classe/reduction-du-nombre-de-parlementaires-emmanuel-macron-souffle-sur-le-populisme" target="_blank" rel="noopener noreferrer">dénoncé le projet Macron de 2018 comme un moyen de « souffler sur le populisme »</a>.</li>
 <li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Sa défense constante de la représentation populaire va dans le sens d'un refus de la réduction.</li>
 <li><a href="/candidat/juan-branco">Juan Branco</a> — Sa dénonciation de la concentration du pouvoir laisse penser qu'il verrait dans la réduction un nouvel éloignement démocratique.</li>
 <li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Défend une représentation adéquate des territoires, notamment ruraux.</li>
