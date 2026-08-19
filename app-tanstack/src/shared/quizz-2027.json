@@ -1798,6 +1798,27 @@
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-pol-11",
+        "fr": "Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?",
+        "help": "https://fr.wikipedia.org/wiki/Sapeurs-pompiers_(France)",
+        "answers": [
+          "Un plan de grande ampleur : recrutement massif de pompiers professionnels et volontaires, forte hausse des moyens matériels",
+          "Une hausse significative et pérenne des effectifs et des moyens",
+          "Une hausse ciblée sur les besoins les plus urgents (casernes en tension, matériel vieillissant), sans grand plan national",
+          "Stabiliser les effectifs et les moyens actuels, en misant sur l'organisation plutôt que sur la dépense",
+          "Pas d'augmentation des effectifs ni des moyens : le système doit fonctionner à budget constant",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

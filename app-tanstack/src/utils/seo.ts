@@ -251,6 +251,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Réduire le nombre de parlementaires : les positions des candidats à la présidentielle 2027',
     seoDescription: `Réduire le nombre de députés et de sénateurs : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-pol-11': {
+    slug: 'crise-pompiers-financement-recrutement-france',
+    seoTitle: 'Crise des pompiers : faut-il plus d\'effectifs et de moyens ? Les positions des candidats 2027',
+    seoDescription: `Effectifs, moyens matériels et recrutement des Sdis : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions
