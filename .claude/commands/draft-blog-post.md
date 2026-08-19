@@ -49,6 +49,8 @@ Follow `CLAUDE.md` → "Adding a question" precisely:
 
 1. Choose the most fitting existing theme in `quizz-2027.json`. New `_id` follows the pattern of that theme's questions (e.g. `question-2027-ae-07` — theme initials + next number).
 2. Write the question in French with 4–6 answer options spanning the whole political spectrum, nuanced like existing questions (read several for tone). Add a `help` URL (Wikipedia or a solid explainer) when useful.
+
+   **One axis per question — this has been gotten wrong repeatedly and Arnaud has called it out more than once.** A question must let the reader move along a single dimension (e.g. "how much should effectifs/moyens increase, from a lot to not at all"). Do NOT build the answer list by combining several independent choices — a financing mechanism (which tax), a status/legal question (volunteer vs statutory), AND a quantity (how much) are three separate axes, and mashing them into one 6-way list makes every answer describe a different, unrelated decision, so no reader or candidate mapping is coherent. Before finalizing the answers, write down in one sentence what the *single* thing the answer index is meant to measure. If you can't state that in one sentence without "and", split it or drop the secondary axis — never fold it in as extra clauses inside each answer option ("financé par X, sans nouvelle mesure Y, tout en préservant Z"). When in doubt, cut it down to the axis the news hook is actually about and leave the rest as scene-setting prose in the article, not as answer-differentiating content.
 3. Build the `scores` matrix. **Invariant: `scores.length === answers.length` and every row has `answers.length` entries.** Model it on a similar existing question: 5 on the diagonal (exact match), decreasing values for ideologically closer answers, 0 for nothing in common. The matrix should be symmetric unless there's a good reason.
 4. Add the entry to the theme's `questions[]` in **all 3** copies: `api-express/src/shared/quizz-2027.json`, `app-tanstack/src/shared/quizz-2027.json`, `expo/src/shared/quizz-2027.json` (they must stay identical).
 5. For **every** candidate in **all 3** `candidates-answers.json` files, add `{ themeId, questionId, answerIndex }` — see step 4 below for how to choose each `answerIndex`.
@@ -120,7 +122,7 @@ The CI that runs on `main` (`.github/workflows/deploy.yml`) runs **type-check AN
 cd app-tanstack && npm install && npm run typecheck && npm test
 ```
 
-Fix any type errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square.
+Fix any type errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square. Also re-read the `answers[]` you just wrote and confirm out loud (in your PR body) what single axis they measure — if two answers differ on more than that one axis, rewrite before moving on.
 
 **Adding a question always breaks two snapshots — that is by design, and updating them is part of the job:**
 

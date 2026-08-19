@@ -64,6 +64,8 @@ CI (`.github/workflows/deploy.yml`) runs `npm test` before deploying, so stale s
 
 ## Adding a question
 
+**One axis per question.** Before writing the `answers[]`, write down in one sentence what single thing the answer index measures (e.g. "how much to increase effectifs/moyens"). If a candidate's real-world position varies independently along a second dimension — which financing mechanism, a legal/status question, an organizational choice — that's a different axis and does not belong in the same answer list. Folding several axes into one question (e.g. "financing technique" + "volunteer status" + "how much") produces answer options that aren't comparable to each other and a candidate mapping nobody can follow. This has gone wrong more than once on this repo — treat it as a hard requirement, not a style preference.
+
 1. Add the entry inside the right theme's `questions[]` in **all 3** `quizz-2027.json` files.
 2. For each candidate in **all 3** `candidates-answers.json` files: add `{ themeId, questionId, answerIndex }` to their `answers[]` (otherwise the candidate is considered as not having answered).
 3. Regenerate `api-express/src/shared/candidates-answers/*.txt` via `node api-express/scripts/extract-all-answers.js` (human-readable export, optional but keep it in sync).
