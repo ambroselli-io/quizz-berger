@@ -103,6 +103,8 @@ Fields:
 
 All facts (dates, numbers, votes) must come from sources actually read this session. Tone: sober, factual, neutral — explain every side fairly, zero editorializing. French UI text.
 
+**Cite inline, in the body text — not only in the PR description.** This has been flagged more than once: listing sources in the PR body is not enough, the reader of the published article never sees the PR. Every dated fact, quote, or statistic that comes from a specific source must be a hyperlink at the point it's stated, `<a href="{source URL}" target="_blank" rel="noopener noreferrer">{the fact or quote itself, or a few words of it}</a>` — wrap the claim, not a generic "source" or "ici" link. Aim for most of the URLs gathered during research to end up linked somewhere in the article body; if a research URL never became an inline citation, that's a sign either the claim it supported got cut or the citation got forgotten — check before opening the PR. Internal links (`/candidat/…`, `/theme/…`, `/question-politique/…`) stay as before and don't need `target="_blank"`.
+
 **Write it under the `no-ai-slop` rules, not as a cleanup pass afterwards.** The traps this format walks into, all documented with real examples in `.claude/skills/no-ai-slop/french.md`:
 
 - **The intro machine.** Do not open with a comma-spliced list of noun phrases, a colon, then "Voici ce qu'il faut savoir / Voici les éléments à connaître". Six articles opened that way before this rule existed and the series read as generated. Open on the single most concrete fact, in a plain sentence, and vary the shape from the last article.
@@ -154,7 +156,7 @@ Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French
 - PR title: `blog: <article title>` (add `+ new question` if step 3 applied).
 - PR body must include:
   - why this topic was chosen, and which topics were rejected;
-  - all sources consulted, with URLs;
+  - all sources consulted, with URLs — this list is a convenience for the reviewer, it does **not** replace the inline citations required in the article body itself (see step 5);
   - if a question was added: the full question, answers, scores matrix and which theme it joined;
   - a per-candidate table: chosen position, and whether it's backed by **quiz data**, a **linked public statement**, or an **estimate** (with one line of reasoning) — so the reviewer can fact-check or veto each estimate fast.
 
