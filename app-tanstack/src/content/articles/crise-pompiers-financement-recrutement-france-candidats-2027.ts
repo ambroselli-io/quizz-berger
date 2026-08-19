@@ -9,7 +9,7 @@ export const article: Article = {
   date: '2026-08-17',
   tag: 'Analyse',
   content: `
-<p>Le 9 juillet 2026, le Conseil d'État a jugé que les sapeurs-pompiers volontaires sont des « travailleurs » au sens du droit européen, sans remettre en cause l'essentiel du régime dérogatoire français. Cinq semaines plus tard, le 13 août, neuf syndicats de la profession ont appelé à une grève nationale pour réclamer plus de moyens et de recrutements, avant de ressortir « très déçus » de leur rencontre avec le ministre de l'Intérieur Laurent Nuñez. Sur les ${candidatesCount} candidats à la présidentielle 2027, aucun ne conteste la nécessité de renforcer le système, mais leurs réponses sur son financement et son organisation divergent nettement.</p>
+<p>Le 9 juillet 2026, le Conseil d'État a jugé que les sapeurs-pompiers volontaires sont des « travailleurs » au sens du droit européen, sans remettre en cause l'essentiel du régime dérogatoire français. Cinq semaines plus tard, le 13 août, neuf syndicats de la profession ont appelé à une grève nationale pour réclamer plus de moyens et de recrutements, avant de ressortir « très déçus » de leur rencontre avec le ministre de l'Intérieur Laurent Nuñez. Sur les ${candidatesCount} candidats à la présidentielle 2027, aucun ne conteste la nécessité de renforcer le système, mais leurs réponses sur l'ampleur de l'effort à fournir en effectifs et en moyens divergent nettement.</p>
 
 <h2>Chronologie de la crise des pompiers</h2>
 <ul>
@@ -35,67 +35,67 @@ export const article: Article = {
 <p>Lors de leur mobilisation du 13 août, les syndicats ont aussi mis en avant la santé au travail. Selon leurs chiffres, environ 4 % des sapeurs-pompiers professionnels, soit près de 2 200 personnes sur 50 000, seraient touchés par des cancers liés à l'exposition à des polluants en intervention. Ils réclament que la prévention des risques professionnels, des expositions toxiques et des agressions devienne une priorité nationale, au même titre que le financement des effectifs.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la question <a href="/question-politique/crise-pompiers-financement-recrutement-france">« Face à la crise de recrutement et de financement des services d'incendie et de secours, quelle réponse privilégier ? »</a> du <a href="/theme/police-justice-et-securite">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en quatre familles.</p>
+<p>Sur la question <a href="/question-politique/crise-pompiers-financement-recrutement-france">« Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours ? »</a> du <a href="/theme/police-justice-et-securite">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en quatre familles, selon l'ampleur de la hausse qu'ils défendent.</p>
 
-<h3>Famille 1 — Un grand plan national de recrutement statutaire, financé par une fiscalité dédiée</h3>
-<p>Ces candidats veulent professionnaliser davantage le système et le financer par une taxation ciblée des plus hauts patrimoines ou des superprofits.</p>
+<h3>Famille 1 — Un plan de grande ampleur : recrutement massif et forte hausse des moyens</h3>
+<p>Ces candidats veulent un recrutement massif de pompiers professionnels et volontaires, accompagné d'une forte hausse des moyens matériels.</p>
 <ul>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Sa ligne de planification des services publics laisse penser qu'il défendrait un recrutement statutaire massif financé par une fiscalité du capital.</li>
-<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Proche de Mélenchon sur la défense des services publics de proximité, il devrait porter la même exigence de statutarisation.</li>
-<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Ligne écologiste de gauche, favorable à un investissement public fort dans les services de secours.</li>
-<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Dans ses vœux 2026, appelait déjà à donner des moyens à la sécurité civile pour l'adapter aux risques climatiques ; sa ligne laisse penser à un soutien à un plan national financé par l'impôt sur les grandes fortunes.</li>
-<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Ligne trotskiste, favorable à un financement massif des services publics par une taxation du capital.</li>
-<li><a href="/candidat/juan-branco">Juan Branco</a> — Ligne radicale proche de celle de LFI sur le financement des services publics par la fiscalité des plus riches.</li>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Réclame un « État-providence climatique » financé par une taxe sur les superprofits, un cadre qu'elle devrait étendre au financement des Sdis.</li>
-<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste proche de celle de Tondelier sur le financement des services publics par la fiscalité verte.</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Sa ligne de planification des services publics laisse penser qu'il défendrait un recrutement massif et un investissement fort dans le matériel.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Proche de Mélenchon sur la défense des services publics de proximité, il devrait porter la même exigence de moyens renforcés.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Ligne écologiste de gauche, favorable à un investissement massif dans les services de secours.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Dans ses vœux 2026, appelait déjà à donner des moyens à la sécurité civile pour l'adapter aux risques climatiques ; sa ligne laisse penser à un soutien à un plan de recrutement de grande ampleur.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Ligne trotskiste, favorable à un renforcement massif des services publics.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Ligne radicale proche de celle de LFI sur le renforcement des services publics.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Réclame un « État-providence climatique » ; appliqué aux pompiers, ce cadre laisse penser à un soutien à un plan de grande ampleur.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Ligne écologiste proche de celle de Tondelier sur le renforcement des services publics.</li>
 </ul>
 
-<h3>Famille 2 — Une hausse du financement national, sans impôt nouveau dédié</h3>
-<p>Ces candidats défendent un effort budgétaire national accru, porté par le budget général plutôt que par une taxe spécifique.</p>
+<h3>Famille 2 — Une hausse significative et pérenne des effectifs et des moyens</h3>
+<p>Ces candidats défendent un effort budgétaire national soutenu et durable, sans nécessairement parler de « grand plan ».</p>
 <ul>
-<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Son camp gouvernemental a porté le budget de la sécurité civile de 450 à 800 millions d'euros depuis 2017 ; sa ligne devrait privilégier la poursuite de cet effort par le budget général.</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Son camp gouvernemental a déjà porté le budget de la sécurité civile de 450 à 800 millions d'euros depuis 2017 ; sa ligne devrait privilégier la poursuite de cette trajectoire.</li>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Ligne centriste proche de la majorité gouvernementale sur l'investissement dans les services de secours.</li>
-<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Ancien ministre de l'Intérieur, sa ligne laisse penser à un soutien à un effort budgétaire national piloté par l'État plutôt qu'à une taxe dédiée.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> — Ancien ministre de l'Intérieur, sa ligne laisse penser à un soutien à un effort budgétaire national soutenu.</li>
 <li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Ligne gaulliste favorable à un État stratège qui investit directement dans ses services régaliens.</li>
 <li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Ligne social-démocrate européenne, favorable à un investissement public accru dans les services de secours.</li>
 <li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Ligne proche de celle de Glucksmann au sein du bloc socialiste.</li>
-<li><a href="/candidat/francois-hollande">François Hollande</a> — Ligne PS similaire, favorable à un effort budgétaire national plutôt qu'à une fiscalité dédiée nouvelle.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> — Ligne PS similaire, favorable à un effort budgétaire national soutenu.</li>
 </ul>
 
-<h3>Famille 3 — Un équilibre entre fiscalité ciblée et consolidation du volontariat</h3>
-<p>Ces candidats soutiennent le financement des Sdis par une fiscalité ciblée déjà votée (taxe sur les conventions d'assurance) tout en misant sur la fidélisation des volontaires plutôt que sur une professionnalisation massive.</p>
+<h3>Famille 3 — Une hausse ciblée sur les besoins les plus urgents, sans grand plan national</h3>
+<p>Ces candidats soutiennent des renforts ciblés (casernes en tension, matériel vieillissant, fidélisation des volontaires) plutôt qu'un grand plan national.</p>
 <ul>
-<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ancien ministre de l'Intérieur, il avait annoncé les trimestres de retraite supplémentaires pour les volontaires et une revalorisation de leurs indemnités, tout en portant le Beauvau de la sécurité civile.</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Ancien ministre de l'Intérieur, il avait annoncé des mesures ciblées pour les volontaires (trimestres de retraite supplémentaires, revalorisation des indemnités) et un plan d'action, sans grand plan de recrutement statutaire.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Ligne proche de celle de Retailleau au sein du groupe LR.</li>
-<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Ligne LR similaire, favorable à une consolidation du volontariat financée par une fiscalité ciblée plutôt que par un nouvel effort budgétaire général.</li>
-<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Ligne centriste, sa position laisse penser à un soutien à la hausse ciblée de la taxe sur les assurances votée au Sénat.</li>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Garde des Sceaux, sa ligne sécuritaire laisse penser à un soutien à la fois à la modernisation des moyens et à la consolidation du modèle du volontariat.</li>
-<li><a href="/candidat/david-lisnard">David Lisnard</a> — Président de l'Association des maires de France, sa ligne de gestionnaire local laisse penser à un soutien à un financement ciblé des Sdis plutôt qu'à un grand plan national.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Ligne LR similaire, favorable à des renforts ciblés plutôt qu'à un grand plan national.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Ligne centriste, sa position laisse penser à un soutien à des renforts ciblés sur les besoins les plus urgents.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Garde des Sceaux, sa ligne sécuritaire laisse penser à un soutien à des moyens supplémentaires ciblés plutôt qu'à un grand plan national.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Président de l'Association des maires de France, sa ligne de gestionnaire local laisse penser à un soutien à des renforts ciblés plutôt qu'à un grand plan national.</li>
 </ul>
 
-<h3>Famille 4 — Fidéliser le volontariat sans nouvelle dépense publique nationale</h3>
-<p>Ces candidats privilégient des mesures ciblées de fidélisation des volontaires (retraite, indemnités, disponibilité des employeurs) et estiment que le financement doit rester d'abord local, sans nouvel effort budgétaire national ni contrainte venue du droit européen.</p>
+<h3>Famille 4 — Stabiliser les effectifs et les moyens actuels</h3>
+<p>Ces candidats misent sur l'organisation et la fidélisation plutôt que sur un nouvel effort budgétaire national.</p>
 <ul>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Ses députés ont voté contre l'amendement relevant la taxe sur les assurances pour financer les Sdis en novembre 2025 ; sa ligne souverainiste laisse penser qu'elle rejetterait aussi les conséquences de la décision du Conseil d'État sur le temps de travail des volontaires.</li>
-<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Sa ligne sécuritaire et souverainiste laisse penser à un accent mis sur la fidélisation locale plutôt que sur un nouvel effort budgétaire national.</li>
-<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Ligne souverainiste proche du RN, sa position laisse penser à une défense du modèle du volontariat sans nouvelle dépense nationale.</li>
-<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Frexiteur historique, son euroscepticisme laisse penser qu'il dénoncerait la décision du Conseil d'État comme une ingérence du droit européen dans le modèle pompier français, sans réclamer pour autant un grand plan de dépense nouvelle.</li>
-<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Sa ligne populiste sur les questions de sécurité du quotidien laisse penser à un soutien à la fidélisation locale plutôt qu'à un nouvel effort budgétaire national.</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Ses députés se sont opposés à la hausse de la taxe sur les assurances destinée à financer les Sdis en novembre 2025 ; sur le seul enjeu des effectifs et des moyens, sa ligne souverainiste et budgétairement prudente laisse penser qu'elle privilégierait la stabilisation plutôt qu'un nouvel effort national.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Sa ligne sécuritaire et souverainiste laisse penser à un accent mis sur l'organisation plutôt que sur un nouvel effort budgétaire national.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Ligne souverainiste proche du RN, sa position laisse penser à une préférence pour la stabilisation des moyens actuels.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Frexiteur historique, son euroscepticisme laisse penser qu'il dénoncerait la décision du Conseil d'État comme une ingérence du droit européen, sans réclamer pour autant un grand plan de dépense nouvelle.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — Sa ligne populiste sur les questions de sécurité du quotidien laisse penser à une préférence pour la stabilisation plutôt que pour un nouvel effort budgétaire national.</li>
 </ul>
 
-<h2>Arguments pour un grand plan national et arguments pour la fidélisation locale</h2>
+<h2>Arguments pour un plan de grande ampleur et arguments pour la stabilisation</h2>
 <table>
-<tr><th>Arguments pour un grand plan de financement national</th><th>Arguments pour la fidélisation locale du volontariat</th></tr>
-<tr><td>78 % des effectifs opérationnels reposent sur des volontaires dont la disponibilité recule, sans nouveaux effectifs professionnels statutaires en nombre suffisant.</td><td>Le volontariat reste le socle historique et le moins coûteux du modèle français de sécurité civile.</td></tr>
-<tr><td>La NPFR des volontaires est financée à hauteur de 24,9 millions d'euros par l'État, loin des 175 à 180 millions estimés nécessaires par la fédération professionnelle.</td><td>Les mesures ciblées déjà engagées (trimestres de retraite, revalorisation des indemnités) répondent à une partie des attentes sans bouleverser le modèle.</td></tr>
-<tr><td>La reconnaissance du statut de « travailleur » par le Conseil d'État fragilise un modèle reposant sur la disponibilité gratuite des volontaires et de leurs employeurs.</td><td>Les dérogations françaises au droit du temps de travail ont été validées par le Conseil d'État : le cadre juridique actuel n'impose pas de rupture immédiate.</td></tr>
-<tr><td>Le financement des Sdis à 60 % par une fiscalité départementale aux recettes peu dynamiques fragilise leur capacité d'investissement à long terme.</td><td>Un transfert massif vers le budget général ou une fiscalité nationale nouvelle pèserait sur les finances publiques ou sur les assurés, dans un contexte de déficit déjà élevé.</td></tr>
+<tr><th>Arguments pour un plan de grande ampleur</th><th>Arguments pour la stabilisation à moyens constants</th></tr>
+<tr><td>78 % des effectifs opérationnels reposent sur des volontaires dont la disponibilité recule, sans effectifs professionnels supplémentaires en nombre suffisant.</td><td>Le volontariat reste le socle historique et le moins coûteux du modèle français de sécurité civile.</td></tr>
+<tr><td>La nouvelle prestation de fidélisation des volontaires (NPFR) est financée par l'État à hauteur de 24,9 millions d'euros, loin des 175 à 180 millions estimés nécessaires par la fédération professionnelle.</td><td>Les mesures déjà engagées (trimestres de retraite, revalorisation des indemnités) répondent à une partie des attentes sans nécessiter un grand plan national.</td></tr>
+<tr><td>La reconnaissance du statut de « travailleur » par le Conseil d'État pourrait peser sur la disponibilité des volontaires si les effectifs professionnels ne sont pas renforcés en parallèle.</td><td>Les dérogations françaises au droit du temps de travail ont été validées par le Conseil d'État : le cadre juridique actuel n'impose pas de rupture immédiate.</td></tr>
+<tr><td>Sans effort supplémentaire, le système continuera de s'appuyer sur des effectifs sous tension face à une hausse des interventions liée au changement climatique.</td><td>Un doublement rapide des effectifs et des moyens serait difficile à absorber en recrutement, formation et encadrement, et pèserait sur des finances publiques déjà tendues.</td></tr>
 </table>
 
 <h2>Pour aller plus loin</h2>
 <p>La crise des pompiers s'inscrit dans un débat plus large sur le financement des services publics de proximité et l'adaptation de la France aux risques climatiques. Sur le Quizz du Berger, les thèmes et questions qui touchent à ces sujets :</p>
 <ul>
-<li><a href="/theme/police-justice-et-securite">Police, Justice et Sécurité</a> — la question complète sur le financement et le recrutement des services d'incendie et de secours.</li>
+<li><a href="/theme/police-justice-et-securite">Police, Justice et Sécurité</a> — la question complète sur les effectifs et les moyens des services d'incendie et de secours.</li>
 <li><a href="/theme/climat-energie-et-ecologie">Climat, Énergie et Écologie</a> — l'adaptation de la sécurité civile au changement climatique.</li>
 <li><a href="/question-politique/feux-foret-securite-civile-france">Feux de forêt et sécurité civile</a> — la crise des incendies de l'été 2026 qui a précédé cette mobilisation.</li>
 </ul>

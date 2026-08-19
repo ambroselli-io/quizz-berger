@@ -316,8 +316,8 @@ question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos moto
 question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
 [0] Il faut aller plus loin qu'une présomption : une irresponsabilité pénale totale dès lors qu'un policier ou un gendarme utilise son arme en service
 
-question-2027-pol-11: Face à la crise de recrutement et de financement des services d'incendie et de secours (Sdis), quelle réponse privilégier ?
-[3] Fidéliser les pompiers volontaires par des mesures ciblées (retraite, indemnités, disponibilité des employeurs), sans nouvelle dépense publique nationale : le financement doit rester d'abord local
+question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
+[3] Stabiliser les effectifs et les moyens actuels, en misant sur l'organisation plutôt que sur la dépense
 
 
 Politique fiscale:

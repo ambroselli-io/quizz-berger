@@ -1801,14 +1801,14 @@
       },
       {
         "_id": "question-2027-pol-11",
-        "fr": "Face à la crise de recrutement et de financement des services d'incendie et de secours (Sdis), quelle réponse privilégier ?",
+        "fr": "Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?",
         "help": "https://fr.wikipedia.org/wiki/Sapeurs-pompiers_(France)",
         "answers": [
-          "Un grand plan national de recrutement statutaire de pompiers professionnels, financé par une fiscalité dédiée (taxe sur les superprofits ou les grandes fortunes)",
-          "Une hausse pérenne du financement national des Sdis et des effectifs professionnels, financée par le budget général, sans impôt nouveau dédié",
-          "Un équilibre : sécuriser le financement des Sdis par une fiscalité ciblée (taxe sur les conventions d'assurance) tout en consolidant le modèle du volontariat",
-          "Fidéliser les pompiers volontaires par des mesures ciblées (retraite, indemnités, disponibilité des employeurs), sans nouvelle dépense publique nationale : le financement doit rester d'abord local",
-          "Ne pas faire de ce sujet une priorité budgétaire nationale : le système doit continuer à s'adapter à moyens constants",
+          "Un plan de grande ampleur : recrutement massif de pompiers professionnels et volontaires, forte hausse des moyens matériels",
+          "Une hausse significative et pérenne des effectifs et des moyens",
+          "Une hausse ciblée sur les besoins les plus urgents (casernes en tension, matériel vieillissant), sans grand plan national",
+          "Stabiliser les effectifs et les moyens actuels, en misant sur l'organisation plutôt que sur la dépense",
+          "Pas d'augmentation des effectifs ni des moyens : le système doit fonctionner à budget constant",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

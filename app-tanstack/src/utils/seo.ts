@@ -253,8 +253,8 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-pol-11': {
     slug: 'crise-pompiers-financement-recrutement-france',
-    seoTitle: 'Crise des pompiers : les positions des candidats à la présidentielle 2027',
-    seoDescription: `Recrutement, financement des Sdis, statut des pompiers volontaires : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+    seoTitle: 'Crise des pompiers : faut-il plus d\'effectifs et de moyens ? Les positions des candidats 2027',
+    seoDescription: `Effectifs, moyens matériels et recrutement des Sdis : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
 };
 
