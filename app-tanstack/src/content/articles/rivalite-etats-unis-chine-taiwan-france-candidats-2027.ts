@@ -9,7 +9,7 @@ export const article: Article = {
   date: '2026-08-10',
   tag: 'Analyse',
   content: `
-<p>Les 14 et 15 mai 2026, Donald Trump s'est rendu à Pékin, première visite d'un président américain en exercice en Chine depuis près de dix ans. Xi Jinping l'y a averti que Taïwan restait « la question la plus importante » et que la mal gérer exposerait les deux pays à « des affrontements, voire des conflits ». Entre les deux premières puissances mondiales, la France cherche sa place. Sur les ${candidatesCount} candidats à la présidentielle 2027, la question de l'alignement partage la classe politique.</p>
+<p>Les 14 et 15 mai 2026, <a href="https://www.cnbc.com/2026/05/14/trump-xi-beijing-summit-trade-taiwan-ai-iran-rare-earths-tariffs.html" target="_blank" rel="noopener noreferrer">Donald Trump s'est rendu à Pékin, première visite d'un président américain en exercice en Chine depuis près de dix ans</a>. Xi Jinping l'y a averti que <a href="https://www.npr.org/2026/05/14/nx-s1-5822168/trump-xi-summit" target="_blank" rel="noopener noreferrer">Taïwan restait « la question la plus importante » et que la mal gérer exposerait les deux pays à « des affrontements, voire des conflits »</a>. Entre les deux premières puissances mondiales, la France cherche sa place. Sur les ${candidatesCount} candidats à la présidentielle 2027, la question de l'alignement partage la classe politique.</p>
 
 <h2>La rivalité sino-américaine en 2026</h2>
 <p>Depuis le retour de Donald Trump, la relation a oscillé entre affrontement et trêve :</p>

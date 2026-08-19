@@ -37,10 +37,10 @@ export const article: Article = {
 <h2>Pourquoi la loi Ripost divise</h2>
 
 <h3>1. Choc d'autorité ou inflation pénale ?</h3>
-<p>Pour ses défenseurs, la loi Ripost répond à une demande sociale réelle sur des nuisances qui dégradent le quotidien de nombreux quartiers et zones rurales. Le Syndicat de la magistrature y voit au contraire un texte « liberticide », « répressif » et « gestionnaire », qui multiplie les délits sans s'attaquer aux causes des troubles à l'ordre public.</p>
+<p>Pour ses défenseurs, la loi Ripost répond à une demande sociale réelle sur des nuisances qui dégradent le quotidien de nombreux quartiers et zones rurales. Le Syndicat de la magistrature y voit au contraire un texte <a href="https://www.lejdd.fr/politique/legitime-defense-des-policiers-le-syndicat-de-la-magistrature-denonce-la-loi-lors-dune-conference-avec-lfi-179271" target="_blank" rel="noopener noreferrer">« liberticide », « répressif » et « gestionnaire »</a>, qui multiplie les délits sans s'attaquer aux causes des troubles à l'ordre public.</p>
 
 <h3>2. Une alliance qui a fait des vagues</h3>
-<p>La conférence de presse commune du 16 juillet entre le Syndicat de la magistrature, La France insoumise, Amnesty International et Assa Traoré a provoqué une vive réaction à droite. Le député LFI Thomas Portes a qualifié le texte de sorti « du programme de Jean-Marie Le Pen ». Bruno Retailleau a dénoncé une connivence entre magistrats et extrême gauche, tandis que la Ligue des libertés et l'Institut pour la justice ont demandé une saisine visant le syndicat.</p>
+<p>La conférence de presse commune du 16 juillet entre le Syndicat de la magistrature, La France insoumise, Amnesty International et Assa Traoré a provoqué une vive réaction à droite. Le député LFI Thomas Portes a qualifié le texte de sorti « du programme de Jean-Marie Le Pen ». Bruno Retailleau a dénoncé une connivence entre magistrats et extrême gauche, tandis que <a href="https://www.lejdd.fr/Societe/info-jdd-conference-avec-lfi-la-ligue-des-libertes-attaque-le-syndicat-de-la-magistrature-et-interpelle-darmanin-179451" target="_blank" rel="noopener noreferrer">la Ligue des libertés et l'Institut pour la justice ont demandé une saisine visant le syndicat</a>.</p>
 
 <h3>3. Un texte freiné par le droit européen</h3>
 <p>L'interdiction de vente de protoxyde d'azote aux particuliers ne peut entrer en vigueur avant le 1ᵉʳ février 2027, le temps de respecter les procédures de notification à la Commission européenne. En attendant cette date, seule la détention ou le transport d'une quantité dépassant un certain seuil est sanctionné.</p>
@@ -55,7 +55,7 @@ export const article: Article = {
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Sa ligne sécuritaire constante laisse penser qu'il jugerait la loi Ripost insuffisante face aux nuisances du quotidien.</li>
 <li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Ligne souverainiste proche du RN sur la sécurité, favorable à une fermeté accrue.</li>
 <li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Ligne sécuritaire souverainiste, favorable à un durcissement des sanctions.</li>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Le RN a voté pour la loi Ripost, en première lecture comme à l'adoption définitive.</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Le RN a voté pour la loi Ripost, <a href="https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/vote-solennel-sur-le-projet-de-loi-visant-a-offrir-des-reponses-immediates-aux-phenomenes-troublant-l-ordre-public-la-securite-et-la-tranquillite" target="_blank" rel="noopener noreferrer">en première lecture</a> comme à <a href="https://lcp.fr/actualites/protoxyde-d-azote-rodeos-urbains-free-parties-le-parlement-adopte-definitivement-le" target="_blank" rel="noopener noreferrer">l'adoption définitive</a>.</li>
 <li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Le texte a été porté par le gouvernement dont son parti est le pilier, avec le vote de la majorité présidentielle.</li>
 <li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Issu de la majorité qui a porté le texte défendu par le ministre de l'Intérieur Laurent Nuñez.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Le groupe LR a voté pour la loi Ripost à l'Assemblée nationale.</li>
@@ -76,7 +76,7 @@ export const article: Article = {
 <h3>Famille 3 — Prévention prioritaire, contre le texte tel qu'adopté</h3>
 <p>Ces candidats ou leurs partis ont voté contre la loi Ripost au sein du bloc de gauche uni, en défendant une priorité à la prévention plutôt qu'à de nouveaux délits.</p>
 <ul>
-<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Le groupe socialiste a voté contre la loi Ripost.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — <a href="https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/vote-solennel-sur-le-projet-de-loi-visant-a-offrir-des-reponses-immediates-aux-phenomenes-troublant-l-ordre-public-la-securite-et-la-tranquillite" target="_blank" rel="noopener noreferrer">Le groupe socialiste a voté contre la loi Ripost</a>.</li>
 <li><a href="/candidat/francois-hollande">François Hollande</a> — Ligne proche du PS, dont le groupe a voté contre le texte.</li>
 <li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place Publique) — Sa famille politique a voté contre la loi Ripost au sein du bloc de gauche uni.</li>
 <li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — Le groupe communiste a voté contre le texte.</li>
@@ -85,7 +85,7 @@ export const article: Article = {
 <h3>Famille 4 — Opposition frontale à l'inflation pénale</h3>
 <p>Ces candidats jugent la loi Ripost disproportionnée et inefficace face aux causes sociales des troubles à l'ordre public, une ligne proche de celle du Syndicat de la magistrature.</p>
 <ul>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Son groupe a voté contre le texte ; le député LFI Thomas Portes l'a qualifié de sorti « du programme de Jean-Marie Le Pen ».</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — <a href="https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/vote-solennel-sur-le-projet-de-loi-visant-a-offrir-des-reponses-immediates-aux-phenomenes-troublant-l-ordre-public-la-securite-et-la-tranquillite" target="_blank" rel="noopener noreferrer">Son groupe a voté contre le texte</a> ; le député LFI Thomas Portes l'a qualifié de sorti « du programme de Jean-Marie Le Pen ».</li>
 <li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Alignée sur la ligne LFI, y compris le vote contre le texte.</li>
 <li><a href="/candidat/francois-ruffin">François Ruffin</a> — Proche de la ligne LFI d'opposition à ce texte.</li>
 <li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Le groupe écologiste a voté contre la loi Ripost au sein du bloc de gauche uni.</li>
