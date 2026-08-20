@@ -50,6 +50,9 @@ export default function Home() {
       <section className="relative flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <div className="flex max-w-[770px] shrink-0 flex-col items-center">
           <h1 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
+            <span className="mb-2 block font-[Merriweather_Sans] text-xl font-light tracking-wide text-white/80 max-lg:text-base">
+              Test politique présidentielle&nbsp;2027
+            </span>
             QUI est mon candidat&nbsp;idéal&nbsp;?
           </h1>
           <QuizzButton

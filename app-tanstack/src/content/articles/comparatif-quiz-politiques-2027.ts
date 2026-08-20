@@ -1,18 +1,20 @@
 import type { Article } from '~/types/article';
 import { quizzQuestionsCount, quizzThemesCount } from '~/utils/quizz';
+import { candidatesCount } from '~/utils/seo';
 
 export const article: Article = {
   slug: 'comparatif-quiz-politiques-2027',
-  title: 'Les quiz politiques de la présidentielle 2027 : tour d\'horizon',
-  excerpt:
-    'Quizz du Berger, Elyze, Boussole Présidentielle, MonVote2027 : quatre approches différentes pour se positionner. Voici les différences, à vous de choisir.',
+  title: 'Quel test politique faire pour la présidentielle 2027 ?',
+  excerpt: `Quatre tests existent : le Quizz du Berger (${quizzQuestionsCount} questions, ${quizzThemesCount} thèmes, ${candidatesCount} candidats), Elyze, la Boussole Présidentielle et MonVote2027. Voici lequel choisir selon ce que vous cherchez.`,
   date: '2026-02-11',
   tag: 'Comparatif',
   content: `
-<p>Plusieurs quiz politiques existent en ligne pour la présidentielle 2027. Chacun a sa philosophie. Voici un tour d'horizon.</p>
+<p><strong>Réponse courte :</strong> quatre tests politiques sérieux existent pour la présidentielle 2027. Le <a href="/">Quizz du Berger</a> est le plus détaillé (${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes, ${candidatesCount} candidats, résultats thème par thème, open-source). <a href="https://elyze.app">Elyze</a> est le plus rapide (swipe façon Tinder). La <a href="https://www.laboussolepresidentielle.fr">Boussole Présidentielle</a> vous situe sur deux axes gauche-droite et libéral-autoritaire. <a href="https://monvote2027.fr">MonVote2027</a> propose 20 ou 100 affirmations à noter. Ils sont gratuits et sans inscription.</p>
+
+<p>Chacun a sa philosophie. Voici le détail.</p>
 
 <h3>Le Quizz du Berger</h3>
-<p><strong>Format :</strong> ${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes, 3 à 6 réponses concrètes par question, résultats par thème, comparaison avec amis, open-source.</p>
+<p><strong>Format :</strong> ${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes, 3 à 6 réponses concrètes par question, ${candidatesCount} candidats, résultats par thème, comparaison avec amis, open-source.</p>
 <p><strong>Approche :</strong> chaque question propose plusieurs réponses substantielles, chacune étant une position cohérente. Plus long à remplir, mais on peut ne répondre qu'aux thèmes qui nous intéressent.</p>
 
 <h3>Elyze</h3>
@@ -32,4 +34,34 @@ export const article: Article = {
 
 <p><a href="/themes">→ Essayer le Quizz du Berger</a></p>
 `,
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Quel test politique faire pour la présidentielle 2027 ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Quatre tests politiques gratuits existent pour la présidentielle 2027 : le Quizz du Berger (${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes, ${candidatesCount} candidats, résultats thème par thème), Elyze (swipe rapide), la Boussole Présidentielle de Sciences Po (positionnement sur deux axes) et MonVote2027 (20 ou 100 affirmations à noter).`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Quel est le test politique 2027 le plus détaillé ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Le Quizz du Berger : ${quizzQuestionsCount} questions réparties sur ${quizzThemesCount} thèmes, avec 3 à 6 réponses concrètes par question et un classement des ${candidatesCount} candidats thème par thème. On peut ne répondre qu'aux thèmes qui nous intéressent.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Ces tests politiques 2027 sont-ils gratuits ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Oui. Le Quizz du Berger, Elyze, la Boussole Présidentielle et MonVote2027 sont gratuits et ne demandent pas de créer un compte pour voir son résultat.',
+        },
+      },
+    ],
+  },
 };
