@@ -1,21 +1,33 @@
-name: IndexNow ping for new articles
+name: IndexNow ping
 
-# Companion to google-indexing.yml. Runs when a push to main adds a blog
-# article (a file in src/content/articles/) or a hot-topic question page
-# (hotTopicSlugs in seo.ts),
-# waits for the VPS deploy to publish the new URLs in the sitemap, then pings
-# IndexNow (Bing, Yandex, Seznam, Naver…) with only the URLs added by this push.
-# Same "new pages only, don't re-ping the whole sitemap" logic as the Google job.
+# Companion to index-new-articles.yml (Google). Tells the IndexNow engines
+# (Bing, Yandex, Seznam, Naver… — the index that most AI answer engines read
+# from) that a page changed.
 #
-# Unlike Google indexing, IndexNow authenticates by a KEY FILE hosted on the
-# domain: search engines fetch https://www.quizz-du-berger.com/<key>.txt and
-# check it contains the key. server.mjs serves that file from the INDEXNOW_KEY
-# env var, so the key must be set in TWO places (same value):
+# Three entry points, because "a page changed" happens in three different ways:
+#
+#   1. new-pages    — a push adds a blog article or a hot-topic question page.
+#                     Waits for the new URL to appear in the sitemap, then pings
+#                     only the URLs this push created.
+#   2. refresh-core — a deploy succeeded and that deploy touched shared data or
+#                     page components. The evergreen pages (home, candidates,
+#                     themes, hubs) keep the same URL, so nothing new shows up in
+#                     the sitemap and job 1 never fires for them. Without this,
+#                     the search index keeps serving a year-old copy of the
+#                     homepage — which is how AI answers ended up quoting an old
+#                     question and candidate count.
+#   3. resubmit-all — manual. Pings every URL of the sitemap. Use it once after
+#                     a large redesign or to repair a stale index.
+#
+# IndexNow authenticates by a KEY FILE hosted on the domain: search engines
+# fetch https://www.quizz-du-berger.com/<key>.txt and check it contains the key.
+# server.mjs serves that file from the INDEXNOW_KEY env var, so the key must be
+# set in TWO places (same value):
 #   - repo secret INDEXNOW_KEY   — so this workflow can submit.
 #   - VPS .env  INDEXNOW_KEY=...  — so /<key>.txt is served for verification.
 #
-# If the INDEXNOW_KEY secret is absent, this workflow is a no-op: every step is
-# skipped and the job succeeds. Nothing to configure = nothing happens, no red X.
+# If the INDEXNOW_KEY secret is absent, every job is a no-op and succeeds.
+# Nothing to configure = nothing happens, no red X.
 #
 # Generate a key with:  openssl rand -hex 16
 
@@ -25,6 +37,19 @@ on:
     paths:
       - "app-tanstack/src/content/articles/**"
       - "app-tanstack/src/utils/seo.ts"
+  workflow_run:
+    workflows: ["Quizz du Berger Deploy"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "What to resubmit"
+        required: true
+        default: core
+        type: choice
+        options:
+          - core
+          - all
 
 concurrency:
   group: indexnow-ping
@@ -35,8 +60,12 @@ env:
   HOST: www.quizz-du-berger.com
 
 jobs:
-  ping:
+  # ---------------------------------------------------------------------------
+  # 1. URLs created by this push (blog articles, hot-topic question pages)
+  # ---------------------------------------------------------------------------
+  new-pages:
     name: Ping IndexNow with new URLs
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -118,7 +147,7 @@ jobs:
             if [ -n "$found" ]; then
               echo "Live in sitemap:$found"
               [ -n "$missing" ] && echo "Not in sitemap (ignored):$missing"
-              echo "urls=$(echo "$found" | xargs | tr ' ' ',')" >> "$GITHUB_OUTPUT"
+              echo "urls=$(echo "$found" | xargs)" >> "$GITHUB_OUTPUT"
               exit 0
             fi
             echo "Deploy not live yet ($i/90), retrying in 20s..."
@@ -131,36 +160,134 @@ jobs:
         if: steps.gate.outputs.enabled == 'true' && steps.live.outputs.urls != ''
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
-          NEW_URLS: ${{ steps.live.outputs.urls }}
+        run: bash .github/scripts/indexnow-submit.sh ${{ steps.live.outputs.urls }}
+
+  # ---------------------------------------------------------------------------
+  # 2. Evergreen pages, after a deploy that touched the data behind them
+  # ---------------------------------------------------------------------------
+  refresh-core:
+    name: Refresh evergreen pages after a deploy
+    if: >-
+      github.event_name == 'workflow_run'
+      && github.event.workflow_run.conclusion == 'success'
+      && github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check that an IndexNow key is configured
+        id: gate
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
-          url_list="$(printf '%s' "$NEW_URLS" | tr ',' '\n' | jq -R . | jq -sc .)"
-          payload="$(jq -nc \
-            --arg host "$HOST" \
-            --arg key "$INDEXNOW_KEY" \
-            --arg loc "$BASE_URL/$INDEXNOW_KEY.txt" \
-            --argjson urls "$url_list" \
-            '{host: $host, key: $key, keyLocation: $loc, urlList: $urls}')"
-          echo "Submitting to IndexNow:"
-          echo "$url_list" | jq .
-          code="$(curl -sS -o /tmp/indexnow-resp.txt -w '%{http_code}' \
-            -X POST 'https://api.indexnow.org/indexnow' \
-            -H 'Content-Type: application/json; charset=utf-8' \
-            --data "$payload")"
-          echo "IndexNow HTTP $code"
-          cat /tmp/indexnow-resp.txt || true
-          echo
-          # 200 = accepted, 202 = accepted, validation pending. Anything else is
-          # a real problem worth surfacing (e.g. 403 = the /<key>.txt file isn't
-          # served on the VPS: check INDEXNOW_KEY in the VPS .env).
-          case "$code" in
-            200|202) echo "IndexNow accepted the URLs." ;;
-            403) echo "IndexNow returned 403 — the key file $BASE_URL/$INDEXNOW_KEY.txt is missing or doesn't match. Set INDEXNOW_KEY in the VPS .env to the same value as this secret." >&2; exit 1 ;;
-            *) echo "IndexNow returned an unexpected status." >&2; exit 1 ;;
-          esac
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "INDEXNOW_KEY secret is not set — skipping IndexNow ping (nothing to do)."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 2 # enough to diff the deployed commit against its parent
+
+      - name: Did this deploy touch anything the evergreen pages render?
+        id: touched
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          # A deploy runs on every push to main, but most pushes change nothing
+          # the candidate/theme/hub pages display. IndexNow asks for changed
+          # URLs only, so filter on the diff of the deployed commit.
+          # A push of several commits at once only exposes the last one here;
+          # the miss is harmless, the next data change pings the same pages.
+          if ! changed="$(git diff --name-only HEAD^ HEAD 2>/dev/null)"; then
+            echo "Cannot diff (first commit or shallow history) — refreshing anyway."
+            echo "refresh=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Changed files:"
+          echo "$changed" | sed 's/^/  /'
+          if echo "$changed" | grep -qE '^app-tanstack/src/(shared|content|pages|components|utils)/'; then
+            echo "refresh=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Nothing that changes an evergreen page — skipping."
+            echo "refresh=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build the evergreen URL list from the live sitemap
+        id: urls
+        if: steps.gate.outputs.enabled == 'true' && steps.touched.outputs.refresh == 'true'
+        run: |
+          # The sitemap is rebuilt during the deploy that just succeeded, so it
+          # already reflects this commit. Take the hubs plus every candidate,
+          # theme and party page from it — those are the pages whose content
+          # changes while their URL stays the same.
+          sitemap="$(curl -sf "$BASE_URL/sitemap.xml")"
+          all="$(echo "$sitemap" | grep -oE '<loc>[^<]+</loc>' | sed 's#</\?loc>##g')"
+          hubs="$BASE_URL/
+          $BASE_URL/themes
+          $BASE_URL/all-questions
+          $BASE_URL/candidats
+          $BASE_URL/partis
+          $BASE_URL/sujets
+          $BASE_URL/comparer
+          $BASE_URL/comparateur-programmes-2027
+          $BASE_URL/sondages-presidentielle-2027
+          $BASE_URL/qui-est-candidat-2027
+          $BASE_URL/blog"
+          detail="$(echo "$all" | grep -E '/(candidat|theme|parti|candidature)/' || true)"
+          printf '%s\n%s\n' "$hubs" "$detail" | tr -d ' ' | sed '/^$/d' | sort -u > /tmp/indexnow-core.txt
+          echo "$(wc -l < /tmp/indexnow-core.txt | tr -d ' ') evergreen URLs to refresh."
+
+      - name: Ping IndexNow
+        if: steps.gate.outputs.enabled == 'true' && steps.touched.outputs.refresh == 'true'
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: bash .github/scripts/indexnow-submit.sh < /tmp/indexnow-core.txt
+
+  # ---------------------------------------------------------------------------
+  # 3. Manual resubmission — repair a stale index
+  # ---------------------------------------------------------------------------
+  resubmit:
+    name: Resubmit ${{ inputs.scope }} URLs
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check that an IndexNow key is configured
+        id: gate
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          if [ -z "$INDEXNOW_KEY" ]; then
+            echo "INDEXNOW_KEY secret is not set — nothing to submit." >&2
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - name: Collect URLs from the live sitemap
+        run: |
+          sitemap="$(curl -sf "$BASE_URL/sitemap.xml")"
+          all="$(echo "$sitemap" | grep -oE '<loc>[^<]+</loc>' | sed 's#</\?loc>##g')"
+          if [ "${{ inputs.scope }}" = "all" ]; then
+            echo "$all" > /tmp/indexnow-manual.txt
+          else
+            printf '%s\n' "$BASE_URL/" > /tmp/indexnow-manual.txt
+            echo "$all" | grep -E '/(candidat|theme|parti|candidature)/|/(themes|all-questions|candidats|partis|sujets|comparer|blog|comparateur-programmes-2027|sondages-presidentielle-2027|qui-est-candidat-2027)$' >> /tmp/indexnow-manual.txt
+          fi
+          sort -u -o /tmp/indexnow-manual.txt /tmp/indexnow-manual.txt
+          echo "$(wc -l < /tmp/indexnow-manual.txt | tr -d ' ') URLs selected for scope '${{ inputs.scope }}'."
+
+      - name: Ping IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: bash .github/scripts/indexnow-submit.sh < /tmp/indexnow-manual.txt
 
   notify-failure:
     name: Notify Slack on failure
-    needs: [ping]
+    needs: [new-pages, refresh-core, resubmit]
     if: failure()
     runs-on: ubuntu-latest
     steps:

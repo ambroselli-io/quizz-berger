@@ -6368,6 +6368,8 @@
     "picture": "candidates/laurent-wauquiez.png",
     "color": "#0055A4",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-07-01",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
@@ -7075,6 +7077,8 @@
     "picture": "candidates/clementine-autain.png",
     "color": "#FF6B6B",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-07-11",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
@@ -10610,6 +10614,8 @@
     "picture": "candidates/francois-bayrou.png",
     "color": "#FF8C00",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-06-10",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
@@ -12024,6 +12030,8 @@
     "picture": "candidates/gerald-darmanin.png",
     "color": "#6A5ACD",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-08-17",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
@@ -19085,6 +19093,7076 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "candidate-francis-lalanne",
+    "pseudo": "Francis Lalanne",
+    "picture": "candidates/francis-lalanne.png",
+    "color": "#D4A017",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "candidate-florian-philippot",
+    "pseudo": "Florian Philippot",
+    "picture": "candidates/florian-philippot.png",
+    "color": "#0F766E",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "candidate-karim-bouamrane",
+    "pseudo": "Karim Bouamrane",
+    "picture": "",
+    "color": "#9D174D",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "candidate-segolene-royal",
+    "pseudo": "Ségolène Royal",
+    "picture": "candidates/segolene-royal.png",
+    "color": "#DB2777",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "candidate-philippe-brun",
+    "pseudo": "Philippe Brun",
+    "picture": "candidates/philippe-brun.png",
+    "color": "#7E22CE",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "candidate-anasse-kazib",
+    "pseudo": "Anasse Kazib",
+    "picture": "candidates/anasse-kazib.png",
+    "color": "#B91C1C",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "candidate-selma-labib",
+    "pseudo": "Selma Labib",
+    "picture": "",
+    "color": "#EA580C",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "candidate-clara-egger",
+    "pseudo": "Clara Egger",
+    "picture": "candidates/clara-egger.png",
+    "color": "#6D4C41",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "candidate-antoine-mikolajczak",
+    "pseudo": "Antoine Mikolajczak",
+    "picture": "",
+    "color": "#15803D",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "candidate-lydie-massard",
+    "pseudo": "Lydie Massard",
+    "picture": "candidates/lydie-massard.png",
+    "color": "#4338CA",
+    "isCandidate": true,
+    "themes": [
+      "theme-2027-affaires-etrangeres",
+      "theme-2027-agriculture",
+      "theme-2027-climat",
+      "theme-2027-corruption",
+      "theme-2027-culture",
+      "theme-2027-immigration",
+      "theme-2027-depenses",
+      "theme-2027-economie",
+      "theme-2027-finance",
+      "theme-2027-gouvernance",
+      "theme-2027-logement",
+      "theme-2027-numerique",
+      "theme-2027-police",
+      "theme-2027-fiscal",
+      "theme-2027-pouvoir-achat",
+      "theme-2027-education",
+      "theme-2027-sante",
+      "theme-2027-societe",
+      "theme-travail-chomage-retraite-2027",
+      "theme-union-europeenne-2027",
+      "theme-et-si-un-autre-gagnait-2027"
+    ],
+    "answers": [
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-agriculture",
+        "questionId": "question-2027-agri-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-01",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-02",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-03",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-04",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-corruption",
+        "questionId": "question-2027-corr-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-economie",
+        "questionId": "question-2027-eco-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-01",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-numerique",
+        "questionId": "question-2027-num-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-02",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-03",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-03",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-04",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-05",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-01",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-02",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-03",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-04",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-societe",
+        "questionId": "question-2027-soc-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-01",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-02",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-03",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-06",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-01",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-02",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-04",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-union-europeenne-2027",
+        "questionId": "question-2027-ue-06",
+        "answerIndex": 1
       }
     ]
   }

@@ -39,6 +39,10 @@ export interface Candidate {
   color?: string;
   answers: Answer[];
   isCandidate?: boolean;
+  /** True once the candidate gave up the race. Their answers stay in the quiz. */
+  withdrawn?: boolean;
+  /** ISO day of the withdrawal, e.g. "2026-08-17". */
+  withdrawnAt?: string;
 }
 
 export interface ScorePerTheme {
@@ -82,6 +86,8 @@ export interface CandidateAnswer {
   picture: string;
   color: string;
   isCandidate: boolean;
+  withdrawn?: boolean;
+  withdrawnAt?: string;
   themes: string[];
   answers: StaticAnswer[];
 }

@@ -3,8 +3,10 @@ import type { ImageSourcePropType } from 'react-native';
 // Map candidate slugs to their bundled images
 // These images are resized to 100px from the web app's public/candidates/ folder
 export const candidateImages: Record<string, ImageSourcePropType> = {
+  'anasse-kazib': require('../../assets/candidates/anasse-kazib.png'),
   'bernard-cazeneuve': require('../../assets/candidates/bernard-cazeneuve.png'),
   'bruno-retailleau': require('../../assets/candidates/bruno-retailleau.png'),
+  'clara-egger': require('../../assets/candidates/clara-egger.png'),
   'clementine-autain': require('../../assets/candidates/clementine-autain.png'),
   'david-lisnard': require('../../assets/candidates/david-lisnard.png'),
   'delphine-batho': require('../../assets/candidates/delphine-batho.png'),
@@ -12,6 +14,8 @@ export const candidateImages: Record<string, ImageSourcePropType> = {
   'edouard-philippe': require('../../assets/candidates/edouard-philippe.png'),
   'eric-zemmour': require('../../assets/candidates/eric-zemmour.png'),
   'fabien-roussel': require('../../assets/candidates/fabien-roussel.png'),
+  'florian-philippot': require('../../assets/candidates/florian-philippot.png'),
+  'francis-lalanne': require('../../assets/candidates/francis-lalanne.png'),
   'francois-asselineau': require('../../assets/candidates/francois-asselineau.png'),
   'francois-bayrou': require('../../assets/candidates/francois-bayrou.png'),
   'francois-hollande': require('../../assets/candidates/francois-hollande.png'),
@@ -22,11 +26,14 @@ export const candidateImages: Record<string, ImageSourcePropType> = {
   'jerome-guedj': require('../../assets/candidates/jerome-guedj.png'),
   'juan-branco': require('../../assets/candidates/juan-branco.png'),
   'laurent-wauquiez': require('../../assets/candidates/laurent-wauquiez.png'),
+  'lydie-massard': require('../../assets/candidates/lydie-massard.png'),
   'marine-le-pen': require('../../assets/candidates/marine-le-pen.png'),
   'marine-tondelier': require('../../assets/candidates/marine-tondelier.png'),
   'nathalie-arthaud': require('../../assets/candidates/nathalie-arthaud.png'),
   'nicolas-dupont-aignan': require('../../assets/candidates/nicolas-dupont-aignan.png'),
   'patrick-sebastien': require('../../assets/candidates/patrick-sebastien.png'),
+  'philippe-brun': require('../../assets/candidates/philippe-brun.png'),
   'raphael-glucksmann': require('../../assets/candidates/raphael-glucksmann.png'),
+  'segolene-royal': require('../../assets/candidates/segolene-royal.png'),
   'xavier-bertrand': require('../../assets/candidates/xavier-bertrand.png'),
 };

@@ -11,7 +11,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - **Mobile**: `expo/` — Expo / React Native version. Questions are **fetched from the API at launch** (`GET /quizz/version`, then `GET /quizz` when the hash changed) and cached in AsyncStorage, so a new question reaches installed apps without an App Store release. `expo/src/shared/quizz-2027.json` is still bundled as the first-launch and offline fallback, and `expo/src/shared/__tests__/shared-data.test.ts` fails if it drifts from the API copy.
 - **Shared code**: duplicated in `app-tanstack/src/shared/`, `api-express/src/shared/` AND `expo/src/shared/` (no sync script — manual copy-paste between the three)
 - **Candidates data**: `api-express/src/shared/candidates-answers.json` is the source of truth for candidate answers (static JSON, not DB). Text files in `api-express/src/shared/candidates-answers/*.txt` are human-readable versions. When updating candidates, edit the JSON and copy to `app-tanstack/src/shared/` and `expo/src/shared/`.
-- **Candidate pictures**: PNGs in `app-tanstack/public/candidates/{slug}.png`. To generate: fetch portrait from Wikipedia API (`action=query&prop=pageimages&pithumbsize=800`), remove background with `rembg` (`pip install "rembg[cpu]"`), resize to max 800px, save as PNG.
+- **Candidate pictures**: PNGs in `app-tanstack/public/candidates/{slug}.png`, plus a 100px copy in `expo/assets/candidates/` registered in `expo/src/utils/candidateImages.ts`. When no free portrait exists (Commons has none), leave `picture: ""` in the JSON — the UI falls back to the candidate's colour dot rather than showing someone else's face. To generate: fetch portrait from Wikipedia API (`action=query&prop=pageimages&pithumbsize=800`), remove background with `rembg` (`pip install "rembg[cpu]"`), resize to max 800px, save as PNG.
 
 # Conventions
 
@@ -44,6 +44,36 @@ It powers the "candidats les plus proches" section of `/candidat/{slug}` **and t
 **Never write a proximity figure as a literal in an article** — `src/content/articles/proximity-figures.test.ts` fails if one appears. Party labels next to a name come from `getCandidateParty()` in `utils/seo.ts`; add new candidates there, leaving the value empty when the affiliation is unclear.
 
 What still needs a human when the question set changes: sentences that count over a theme ("sur les onze questions de sécurité, neuf réponses identiques"), and prose whose argument depends on a figure. Grep the positioning articles for those and recount.
+
+# Who is a candidate (in / out)
+
+`app-tanstack/src/content/candidacies.ts` is the tracker of the race itself: one entry per person
+of the roster, with a status (`declared` / `withdrawn` / `potential`), the dated events that got
+them there, a quote and **at least one press link per event** — the test refuses an undated or
+unsourced event. `utils/candidacies.ts` derives the month-by-month timeline, the counts and the
+join with `candidateSlugMap`.
+
+Pages: `/qui-est-candidat-2027` (vertical timeline by month, one dot per entry and per exit) and
+`/candidature/{slug}` (the history of one candidacy, with its sources). Deliberately outside
+`/blog`: these pages get updated in place as the campaign moves, articles do not.
+
+`candidates-answers.json` carries only `withdrawn` / `withdrawnAt` (the three apps share it); the
+editorial detail stays in the app. **The two must agree** — `utils/candidacies.test.ts` compares
+them, and also fails when a candidate of the quiz has no entry in the tracker. Someone who gave up
+keeps their answers in the quiz: comparing yourself to them is still useful, they just get an
+"OUT" tag.
+
+French forces `feminine: true` on the entry ("candidate", "elle a renoncé"): a first name does not
+tell you, so it is authored.
+
+## Adding a candidate
+
+1. One entry in **all 3** `candidates-answers.json`, with an `answerIndex` for **every** question — a missing answer counts as "did not answer" and drags the score down silently.
+2. A picture (see Architecture), or `picture: ""` when no free portrait exists.
+3. A party label in `partyBySlug` (`utils/seo.ts`), and their slug in the right party of `content/parties.ts` when it has an entry there.
+4. An entry in `content/candidacies.ts` — `utils/candidacies.test.ts` fails without it.
+5. The `.txt` export: write the first line by hand (party + factual role), then `node api-express/scripts/extract-all-answers.js`.
+6. `npx vitest run -u`, then read the `Result.test.tsx.snap` diff: the newcomer should land where their answers say, and everyone else should move by a point or two at most.
 
 # Blog articles
 

@@ -22,6 +22,8 @@ export type CandidateAnswer = {
   picture: string;
   color: string;
   isCandidate: boolean;
+  withdrawn?: boolean;
+  withdrawnAt?: string;
   themes: Array<string>;
   answers: Array<StaticAnswer>;
 };
