@@ -107,7 +107,13 @@ export const parties: Party[] = [
     intro:
       "Le Parti socialiste est fondé en 1969 et prend sa forme actuelle au congrès d'Épinay en 1971. Il a donné deux présidents de la République à la France : François Mitterrand en 1981 et François Hollande en 2012.",
     officialSite: 'https://parti-socialiste.fr',
-    candidateSlugs: ['francois-hollande', 'jerome-guedj'],
+    candidateSlugs: [
+      'francois-hollande',
+      'jerome-guedj',
+      'karim-bouamrane',
+      'segolene-royal',
+      'philippe-brun',
+    ],
     hasThemePages: true,
   },
   {
@@ -251,5 +257,20 @@ export const parties: Party[] = [
       "Lutte ouvrière porte ce nom depuis 1968, après avoir existé sous le nom Voix ouvrière. Nathalie Arthaud en est la porte-parole depuis 2008 et a porté ses couleurs aux présidentielles de 2012, 2017 et 2022.",
     officialSite: 'https://www.lutte-ouvriere.org',
     candidateSlugs: ['nathalie-arthaud'],
+  },
+  {
+    slug: 'les-patriotes',
+    name: 'Les Patriotes',
+    shortName: 'Les Patriotes',
+    theName: 'Les Patriotes',
+    theShort: 'les Patriotes',
+    ofName: 'des Patriotes',
+    ofShort: 'des Patriotes',
+    plural: true,
+    foundedYear: 2017,
+    intro:
+      "Les Patriotes sont fondés en septembre 2017 par Florian Philippot, après son départ du Front national dont il avait été vice-président. Le parti met la sortie de l'Union européenne, de l'euro et de l'OTAN au centre de son programme.",
+    officialSite: 'https://les-patriotes.fr',
+    candidateSlugs: ['florian-philippot'],
   },
 ];

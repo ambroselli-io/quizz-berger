@@ -1,6 +1,8 @@
 import { Link } from '@app/lib/router';
 import { candidateSlugMap, candidatesCount } from '@app/utils/seo';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
+import { getCandidacyStatus, declaredCount, withdrawnCount } from '@app/utils/candidacies';
+import CandidacyTag, { STATUS_TAG } from '@app/components/CandidacyTag';
 import Footer from '@app/components/Footer';
 
 export default function CandidatesIndex() {
@@ -14,6 +16,12 @@ export default function CandidatesIndex() {
             </h1>
             <p className="text-lg text-white/80">
               Découvrez les positions des {candidatesCount} candidats sur les {quizzThemesCount} thèmes de l'élection.
+            </p>
+            <p className="mt-4 text-sm text-white/70">
+              {declaredCount} ont déclaré leur candidature, {withdrawnCount} y ont renoncé.{' '}
+              <Link to="/qui-est-candidat-2027" className="text-white underline">
+                Voir la chronologie des candidatures →
+              </Link>
             </p>
           </div>
         </section>
@@ -30,7 +38,8 @@ export default function CandidatesIndex() {
                     className="inline-block h-3 w-3 shrink-0 rounded-full"
                     style={{ backgroundColor: c.color }}
                   />
-                  <span className="text-sm font-medium text-quizz-dark">{c.pseudo}</span>
+                  <span className="flex-1 text-sm font-medium text-quizz-dark">{c.pseudo}</span>
+                  {getCandidacyStatus(c.slug) === 'withdrawn' && <CandidacyTag tag={STATUS_TAG.withdrawn} />}
                 </Link>
               </li>
             ))}

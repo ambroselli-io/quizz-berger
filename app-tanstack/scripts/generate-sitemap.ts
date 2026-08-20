@@ -17,6 +17,7 @@ import {
   comparisonPairs,
 } from '../src/utils/seo';
 import { partyList, partyThemePages } from '../src/utils/parties';
+import { candidacyList } from '../src/utils/candidacies';
 import { articles } from '../src/content/articles';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -47,6 +48,7 @@ function buildUrls(): SitemapUrl[] {
   urls.push({ loc: '/comparer', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/comparateur-programmes-2027', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/sondages-presidentielle-2027', priority: '0.9', changefreq: 'weekly' });
+  urls.push({ loc: '/qui-est-candidat-2027', priority: '0.9', changefreq: 'daily' });
 
   // Theme pages
   for (const theme of themeSlugMap) {
@@ -56,6 +58,11 @@ function buildUrls(): SitemapUrl[] {
   // Candidate pages
   for (const candidate of candidateSlugMap) {
     urls.push({ loc: `/candidat/${candidate.slug}`, priority: '0.8', changefreq: 'monthly' });
+  }
+
+  // One page per candidacy: who declared, who gave up, when, with the press links
+  for (const candidacy of candidacyList) {
+    urls.push({ loc: `/candidature/${candidacy.slug}`, priority: '0.7', changefreq: 'weekly' });
   }
 
   // Party pages, and the curated party x theme couples ("programme RN 2027 retraite")

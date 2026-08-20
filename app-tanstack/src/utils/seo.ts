@@ -446,6 +446,16 @@ const partyBySlug: Record<string, string> = {
   'dominique-de-villepin': '',
   'juan-branco': '',
   'patrick-sebastien': '',
+  'francis-lalanne': 'France Libre',
+  'florian-philippot': 'Les Patriotes',
+  'karim-bouamrane': 'PS',
+  'segolene-royal': 'PS',
+  'philippe-brun': 'PS',
+  'anasse-kazib': 'Révolution permanente',
+  'selma-labib': 'NPA-R',
+  'clara-egger': 'Solution démocratique',
+  'antoine-mikolajczak': 'Équinoxe',
+  'lydie-massard': 'UDB',
 };
 
 export function getCandidateParty(slug: string): string {

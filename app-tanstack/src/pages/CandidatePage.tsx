@@ -13,6 +13,8 @@ import {
 import { quizzQuestionsCount } from '@app/utils/quizz';
 import { getCandidateProximityRanking } from '@app/utils/proximity';
 import { getPartyForCandidate } from '@app/utils/parties';
+import { getCandidacyBySlug, formatEventDate } from '@app/utils/candidacies';
+import CandidacyTag, { STATUS_TAG } from '@app/components/CandidacyTag';
 import { getPollingForCandidate, formatMonthLong, formatPercent, sondagesData } from '@app/utils/sondages';
 import { articles } from '@app/content/articles';
 import Footer from '@app/components/Footer';
@@ -52,6 +54,8 @@ export default function CandidatePage() {
 
   const party = useMemo(() => getPartyForCandidate(candidate.slug), [candidate.slug]);
 
+  const candidacy = useMemo(() => getCandidacyBySlug(candidate.slug), [candidate.slug]);
+
   const positioningArticle = useMemo(
     () => articles.find((a) => a.slug === `${candidate.slug}-droite-ou-gauche`),
     [candidate.slug],
@@ -80,6 +84,18 @@ export default function CandidatePage() {
               </h1>
             </div>
             <p className="text-xl text-white/80">Positions politiques — Présidentielle 2027</p>
+            {candidacy && (
+              <p className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-white/70">
+                <CandidacyTag tag={STATUS_TAG[candidacy.status]} />
+                <Link to={`/candidature/${candidacy.slug}`} className="text-white/90 underline">
+                  {candidacy.status === 'withdrawn' && candidacy.lastEvent
+                    ? `A renoncé le ${formatEventDate(candidacy.lastEvent.date)} — lire pourquoi`
+                    : candidacy.status === 'declared' && candidacy.events[0]
+                      ? `Candidat depuis le ${formatEventDate(candidacy.events[0].date)} — l'historique`
+                      : "Pas encore de déclaration — l'historique"}
+                </Link>
+              </p>
+            )}
             {party && (
               <p className="mt-3 text-sm text-white/70">
                 <Link to={`/parti/${party.slug}`} className="text-white/90 underline">

@@ -30,6 +30,7 @@ const Footer = () => {
             <Link to="/comparer" className="text-sm text-gray-300 hover:text-white">Comparer les candidats</Link>
             <Link to="/comparateur-programmes-2027" className="text-sm text-gray-300 hover:text-white">Comparateur de programmes</Link>
             <Link to="/sondages-presidentielle-2027" className="text-sm text-gray-300 hover:text-white">Sondages 2027</Link>
+            <Link to="/qui-est-candidat-2027" className="text-sm text-gray-300 hover:text-white">Qui est candidat ?</Link>
             <Link to="/blog" className="text-sm text-gray-300 hover:text-white">Blog</Link>
           </div>
 
