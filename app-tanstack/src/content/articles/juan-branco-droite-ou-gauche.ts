@@ -1,6 +1,7 @@
 import type { Article } from '~/types/article';
 import { candidatesCount } from '~/utils/seo';
 import { quizzQuestionsCount } from '~/utils/quizz';
+import { proximityListHtml, furthestLinksHtml, proximityPercent, proximitySameAnswers } from '~/utils/proximity';
 
 export const article: Article = {
   slug: 'juan-branco-droite-ou-gauche',
@@ -10,7 +11,7 @@ export const article: Article = {
   date: '2026-08-16',
   tag: 'Analyse',
   content: `
-<p>Juan Branco partage 122 réponses sur ${quizzQuestionsCount} avec Nathalie Arthaud, candidate de Lutte ouvrière, et 123 avec Jean-Luc Mélenchon. Sa proximité avec Nathalie Arthaud atteint 97 %, le score le plus élevé entre deux personnalités de tout le site, et 96 % avec Jean-Luc Mélenchon. À l'autre bout, il tombe à 13 % avec Bruno Retailleau. Sur l'axe gauche-droite classique, le cas Branco se règle en trois secondes. Ce qui est intéressant vient après.</p>
+<p>Juan Branco partage ${proximitySameAnswers('juan-branco', 'nathalie-arthaud')} réponses sur ${quizzQuestionsCount} avec Nathalie Arthaud, candidate de Lutte ouvrière, et ${proximitySameAnswers('juan-branco', 'jean-luc-melenchon')} avec Jean-Luc Mélenchon. Sa proximité avec Nathalie Arthaud atteint ${proximityPercent('juan-branco', 'nathalie-arthaud')} %, le score le plus élevé entre deux personnalités de tout le site, et ${proximityPercent('juan-branco', 'jean-luc-melenchon')} % avec Jean-Luc Mélenchon. À l'autre bout, il tombe à ${proximityPercent('juan-branco', 'bruno-retailleau')} % avec Bruno Retailleau. Sur l'axe gauche-droite classique, le cas Branco se règle en trois secondes. Ce qui est intéressant vient après.</p>
 
 <h2>Sur l'argent, la position la plus à gauche du quiz</h2>
 <p>Sur les huit questions de politique fiscale, Juan Branco coche presque systématiquement la réponse la plus radicale disponible. Augmenter beaucoup les impôts sur les plus riches. Supprimer ceux des plus modestes et augmenter les aides. <a href="/question-politique/impots-des-plus-riches">Rétablir l'ISF et l'élargir</a> pour financer les services publics. Bloquer la circulation des capitaux pour empêcher l'évasion. Créer un ISF climatique visant les jets privés et les yachts.</p>
@@ -30,19 +31,12 @@ export const article: Article = {
 <li><strong>Lobbying européen</strong> : l'UE est corrompue jusqu'à la moelle, les lobbies dirigent tout.</li>
 <li><a href="/blog/intervention-americaine-venezuela-maduro-france-candidats-2027"><strong>Venezuela</strong></a> : dénoncer l'impérialisme américain et défendre la non-ingérence.</li>
 </ul>
-<p>Sur les institutions, même croisement. Il demande <a href="/question-politique/referendum-initiative-citoyenne-ric">le référendum d'initiative citoyenne, y compris révocatoire</a>, et <a href="/question-politique/proportionnelle-elections">la proportionnelle intégrale</a>. Ce sont aussi les réponses de François Asselineau et de Nicolas Dupont-Aignan. Résultat mesuré par le quiz : Juan Branco est à 55 % de François Asselineau, contre 31 % d'Édouard Philippe et 25 % de Xavier Bertrand.</p>
+<p>Sur les institutions, même croisement. Il demande <a href="/question-politique/referendum-initiative-citoyenne-ric">le référendum d'initiative citoyenne, y compris révocatoire</a>, et <a href="/question-politique/proportionnelle-elections">la proportionnelle intégrale</a>. Ce sont aussi les réponses de François Asselineau et de Nicolas Dupont-Aignan. Résultat mesuré par le quiz : Juan Branco est à ${proximityPercent('juan-branco', 'francois-asselineau')} % de François Asselineau, contre ${proximityPercent('juan-branco', 'edouard-philippe')} % d'Édouard Philippe et ${proximityPercent('juan-branco', 'xavier-bertrand')} % de Xavier Bertrand.</p>
 <p>Deux différences majeures l'en séparent malgré tout. Il refuse le Frexit et la sortie de l'euro, jugeant la sortie trop risquée et préférant réformer la zone euro. Et sur l'immigration, ils sont aux deux extrémités exactes du quiz.</p>
 
 <h2>De quels candidats Juan Branco est-il le plus proche ?</h2>
-<ul>
-<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — 97 % de proximité, 122 réponses identiques.</li>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — 96 %, 123 réponses identiques.</li>
-<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — 93 %, 110 réponses identiques.</li>
-<li><a href="/candidat/francois-ruffin">François Ruffin</a> — 84 %, 77 réponses identiques.</li>
-<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — 81 %, 63 réponses identiques.</li>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — 79 %, 53 réponses identiques.</li>
-</ul>
-<p>Les plus éloignés : <a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (13 %), <a href="/candidat/david-lisnard">David Lisnard</a> (17 %), <a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (18 %). Curiosité du classement, il est plus proche de Marine Le Pen (41 %) que d'Éric Zemmour (22 %), écart qui tient à l'économie et à la politique étrangère. Les duels : <a href="/comparer/jean-luc-melenchon-vs-juan-branco">Branco contre Mélenchon</a>, <a href="/comparer/francois-hollande-vs-juan-branco">Branco contre Hollande</a>, <a href="/comparer/francois-asselineau-vs-juan-branco">Branco contre Asselineau</a>.</p>
+${proximityListHtml('juan-branco')}
+<p>Les plus éloignés : ${furthestLinksHtml('juan-branco')}. Curiosité du classement, il est plus proche de Marine Le Pen (${proximityPercent('juan-branco', 'marine-le-pen')} %) que d'Éric Zemmour (${proximityPercent('juan-branco', 'eric-zemmour')} %), écart qui tient à l'économie et à la politique étrangère. Les duels : <a href="/comparer/jean-luc-melenchon-vs-juan-branco">Branco contre Mélenchon</a>, <a href="/comparer/francois-hollande-vs-juan-branco">Branco contre Hollande</a>, <a href="/comparer/francois-asselineau-vs-juan-branco">Branco contre Asselineau</a>.</p>
 
 <h2>Alors, droite ou gauche ?</h2>
 <p>À gauche, et à l'extrémité de cette gauche sur le plan économique et social. La nuance utile porte ailleurs : sur la souveraineté militaire et la défiance envers les institutions, ses réponses croisent celles de candidats classés à droite, ce qui est cohérent avec sa position d'avocat anti-système plutôt qu'avec un logiciel de parti.</p>

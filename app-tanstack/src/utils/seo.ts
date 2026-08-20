@@ -410,6 +410,48 @@ export function getComparisonPairsForCandidate(candidateSlug: string): Compariso
   );
 }
 
+// --- Candidate party labels ---
+
+/**
+ * Party label per candidate slug, for display next to a name. Factual party names
+ * only, never a positioning label. An empty string means the affiliation is unclear
+ * or disputed (someone who left a party without joining another): nothing is shown
+ * rather than something wrong.
+ */
+const partyBySlug: Record<string, string> = {
+  'nathalie-arthaud': 'LO',
+  'francois-asselineau': 'UPR',
+  'delphine-batho': 'Génération Écologie',
+  'xavier-bertrand': 'LR',
+  'nicolas-dupont-aignan': 'DLF',
+  'jerome-guedj': 'PS',
+  'marine-le-pen': 'RN',
+  'jordan-bardella': 'RN',
+  'edouard-philippe': 'Horizons',
+  'laurent-wauquiez': 'LR',
+  'clementine-autain': '',
+  'francois-ruffin': '',
+  'marine-tondelier': 'Les Écologistes',
+  'david-lisnard': 'Nouvelle Énergie',
+  'gabriel-attal': 'Renaissance',
+  'francois-bayrou': 'MoDem',
+  'bernard-cazeneuve': 'La Convention',
+  'gerald-darmanin': 'Renaissance',
+  'raphael-glucksmann': 'Place publique',
+  'francois-hollande': 'PS',
+  'jean-luc-melenchon': 'LFI',
+  'bruno-retailleau': 'LR',
+  'fabien-roussel': 'PCF',
+  'eric-zemmour': 'Reconquête',
+  'dominique-de-villepin': '',
+  'juan-branco': '',
+  'patrick-sebastien': '',
+};
+
+export function getCandidateParty(slug: string): string {
+  return partyBySlug[slug] || '';
+}
+
 // --- Helper: how many candidates picked each answer of a question ---
 
 /**

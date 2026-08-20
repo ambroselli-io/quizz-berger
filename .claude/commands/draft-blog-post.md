@@ -131,7 +131,7 @@ Fix any type errors. If a question was added, double-check: the 3 `quizz-2027.js
 
 - `src/pages/__snapshots__/Themes.test.tsx.snap` — per-theme question counts (the new question's theme gains 1).
 - `src/pages/__snapshots__/Result.test.tsx.snap` — candidate percentages shift by a point or two, since the score is computed over one more question.
-- `src/content/articles/proximity-figures.test.ts` — **not a snapshot, never fix it with `-u`.** See "Repair the positioning articles" below, and do that first so the two snapshot diffs are the only thing left.
+- `src/content/articles/proximity-figures.test.ts` — **not a snapshot, never fix it with `-u`.** It only fails if an article hard-codes a proximity figure; see "Check the positioning articles" below.
 
 When (and only when) the remaining failures are exactly those two snapshots and the diff matches what you changed, accept them:
 
@@ -148,30 +148,18 @@ If the diff is bigger than that — a theme you didn't touch changed, a candidat
 
 Commit the updated `.snap` files in the same PR as the question. A PR that adds a question without them will fail CI on merge and block the deploy.
 
-### Repair the positioning articles (only if you added a question)
+### Check the positioning articles (only if you added a question)
 
-`app-tanstack/src/content/articles/{candidat}-droite-ou-gauche.ts` quote figures produced by `src/utils/proximity.ts`: "Darmanin — 91 % de proximité, 108 réponses identiques", "il n'en partage que 63, soit 77 %". Every one of them is computed over the full question set, so your new question moves them. This has shipped wrong twice.
+The `{candidat}-droite-ou-gauche` articles quote proximity figures, and those figures **update themselves**: the articles call `proximityListHtml()`, `proximityPercent()`, `proximityRank()` and friends from `src/utils/proximity.ts` inside their template strings. Your new question changes the numbers with no edit from you, and `proximity-figures.test.ts` fails if anyone ever pastes a literal back in.
 
-```
-cd app-tanstack && npm run fix-proximity-figures
-```
+Two things the renderers cannot do, so read for them:
 
-It rewrites the two machine-readable shapes, values **and order** (a new question can reorder a ranking, not just renumber it):
-
-- the ranking list, `<li><a href="/candidat/x">Nom</a> (Parti) — NN %…, MM réponses identiques.</li>`
-- inline mentions, `<a href="/candidat/x">Nom</a> (NN %)`
-
-Then it prints what it cannot fix: bare figures inside sentences, split into "Suspect" (the value matches nothing in that candidate's live ranking, so it is stale or it deliberately quotes a different candidate's ranking) and "verify". **Read every line it prints and edit the prose by hand.** A figure carries an argument in those sentences, so a blind substitution can invert the point being made: check that the sentence still says something true, not just that the number is current.
-
-Also re-check any claim counted over a theme, since your question landed in one of them. Grep the positioning articles for phrasings like "sur les dix questions de sécurité, huit de ses réponses" and recount. The test does not cover those.
-
-Finish with:
+1. **Counts scoped to a theme.** Your question landed in one, and sentences like "sur les dix questions de sécurité, huit de ses réponses sont identiques à celles de Laurent Wauquiez" are plain prose. Grep the positioning articles for that shape and recount by hand.
+2. **Sentences whose argument depends on the ranking.** "Le patron de son parti d'origine n'arrive qu'en 6e position" stays true only while he does. Adding a candidate can insert someone into a top-6 and make a "devant X, puis Y" sentence skip a name. Render the articles and read the intro paragraphs:
 
 ```
-npx vitest run src/content/articles/proximity-figures.test.ts
+cd app-tanstack && npx tsx --tsconfig ./tsconfig.app.json -e "import('./src/content/articles/index.ts').then(m => m.articles.filter(a => a.slug.endsWith('-droite-ou-gauche')).forEach(a => console.log(a.slug, '\n', a.content.replace(/<[^>]+>/g, '').slice(0, 700))))"
 ```
-
-Green means the lists and the inline mentions match the data. It does not mean the prose is right; that part is your read.
 
 Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French checks in `french.md` yourself, and fix what fails before opening the PR. Count the prose em dashes explicitly (total `—` minus one per candidate bullet) and confirm it lands at 0–2.
 
@@ -186,6 +174,6 @@ Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French
   - all sources consulted, with URLs — this list is a convenience for the reviewer, it does **not** replace the inline citations required in the article body itself (see step 5);
   - if a question was added: the full question, answers, scores matrix and which theme it joined;
   - a per-candidate table: chosen position, and whether it's backed by **quiz data**, a **linked public statement**, or an **estimate** (with one line of reasoning) — so the reviewer can fact-check or veto each estimate fast;
-  - if a question was added: confirmation that `npm run fix-proximity-figures` was run, which positioning articles changed, and which bare prose figures you edited by hand.
+  - if a question was added: confirmation that you re-read the positioning articles for theme-scoped counts and ranking-dependent sentences (the figures themselves update on their own).
 
 **NEVER push to `main` directly — pushing to main deploys production.** The human reviews and merges the PR.

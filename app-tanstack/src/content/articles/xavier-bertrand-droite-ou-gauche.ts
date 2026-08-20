@@ -1,6 +1,7 @@
 import type { Article } from '~/types/article';
 import { candidatesCount } from '~/utils/seo';
 import { quizzQuestionsCount } from '~/utils/quizz';
+import { proximityListHtml, proximityLinkHtml, furthestLinksHtml, proximityPercent, proximitySameAnswers, proximityRank } from '~/utils/proximity';
 
 export const article: Article = {
   slug: 'xavier-bertrand-droite-ou-gauche',
@@ -10,7 +11,7 @@ export const article: Article = {
   date: '2026-08-16',
   tag: 'Analyse',
   content: `
-<p>Xavier Bertrand partage 108 réponses sur ${quizzQuestionsCount} avec Gérald Darmanin, soit 91 % de proximité, son score le plus élevé parmi les ${candidatesCount} personnalités du Quizz du Berger. Avec Gabriel Attal, il en partage 90, soit 83 %. Avec Bruno Retailleau, patron des Républicains, le parti dont il vient, il n'en partage que 63, soit 77 %. Le patron de son parti d'origine n'arrive qu'en sixième position.</p>
+<p>Xavier Bertrand partage ${proximitySameAnswers('xavier-bertrand', 'gerald-darmanin')} réponses sur ${quizzQuestionsCount} avec Gérald Darmanin, soit ${proximityPercent('xavier-bertrand', 'gerald-darmanin')} % de proximité, son score le plus élevé parmi les ${candidatesCount} personnalités du Quizz du Berger. Avec Gabriel Attal, il en partage ${proximitySameAnswers('xavier-bertrand', 'gabriel-attal')}, soit ${proximityPercent('xavier-bertrand', 'gabriel-attal')} %. Avec Bruno Retailleau, patron des Républicains, le parti dont il vient, il n'en partage que ${proximitySameAnswers('xavier-bertrand', 'bruno-retailleau')}, soit ${proximityPercent('xavier-bertrand', 'bruno-retailleau')} %. Le patron de son parti d'origine n'arrive qu'en ${proximityRank('xavier-bertrand', 'bruno-retailleau')} position.</p>
 
 <h2>Sur l'économie et le travail, une droite libérale classique</h2>
 <p>Aucune ambiguïté ici. Xavier Bertrand veut baisser un peu les impôts sur les plus riches pour rester compétitif, refuse le rétablissement de l'ISF au motif qu'il faisait fuir les riches, et veut continuer à baisser les impôts des entreprises pour la compétitivité et l'emploi. Sur l'évasion fiscale des multinationales, il renvoie à un accord international plutôt qu'à des sanctions unilatérales.</p>
@@ -28,19 +29,12 @@ export const article: Article = {
 
 <h2>De quels candidats Xavier Bertrand est-il le plus proche ?</h2>
 <p>Le classement, calculé sur ses ${quizzQuestionsCount} réponses avec l'algorithme du quiz.</p>
-<ul>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 91 % de proximité, 108 réponses identiques.</li>
-<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — 88 %, 99 réponses identiques.</li>
-<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — 87 %, 102 réponses identiques.</li>
-<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — 83 %, 90 réponses identiques.</li>
-<li><a href="/candidat/david-lisnard">David Lisnard</a> (LR) — 80 %, 76 réponses identiques.</li>
-<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — 77 %, 63 réponses identiques.</li>
-</ul>
-<p>Plus loin viennent <a href="/candidat/eric-zemmour">Éric Zemmour</a> (69 %) et <a href="/candidat/marine-le-pen">Marine Le Pen</a> (65 %). Tout en bas, <a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (25 %), <a href="/candidat/juan-branco">Juan Branco</a> (25 %) et <a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (26 %). Les duels détaillés sont ici : <a href="/comparer/raphael-glucksmann-vs-xavier-bertrand">Bertrand contre Glucksmann</a>, <a href="/comparer/juan-branco-vs-xavier-bertrand">Bertrand contre Branco</a>.</p>
+${proximityListHtml('xavier-bertrand')}
+<p>Plus loin viennent ${proximityLinkHtml('xavier-bertrand', 'eric-zemmour')} et ${proximityLinkHtml('xavier-bertrand', 'marine-le-pen')}. Tout en bas, ${furthestLinksHtml('xavier-bertrand')}. Les duels détaillés sont ici : <a href="/comparer/raphael-glucksmann-vs-xavier-bertrand">Bertrand contre Glucksmann</a>, <a href="/comparer/juan-branco-vs-xavier-bertrand">Bertrand contre Branco</a>.</p>
 
 <h2>Alors, droite ou gauche ?</h2>
 <p>À droite, sans hésitation, sur l'impôt, le travail, l'immigration et la sécurité. Mais une droite pro-européenne et atlantiste, qui ne rouvre pas les lois sociétales. Cette combinaison est exactement celle du bloc central macroniste sur les questions institutionnelles, ce qui explique le podium Darmanin-Wauquiez-Philippe et le score plus faible face à Bruno Retailleau, dont la ligne est plus conservatrice sur la société.</p>
-<p>Pour situer précisément : Xavier Bertrand est à 77 % du patron de LR, à 83 % de Gabriel Attal, et à 65 % de Marine Le Pen. Le classement gauche-droite en un seul axe rend mal ces trois chiffres à la fois.</p>
+<p>Pour situer précisément : Xavier Bertrand est à ${proximityPercent('xavier-bertrand', 'bruno-retailleau')} % du patron de LR, à ${proximityPercent('xavier-bertrand', 'gabriel-attal')} % de Gabriel Attal, et à ${proximityPercent('xavier-bertrand', 'marine-le-pen')} % de Marine Le Pen. Le classement gauche-droite en un seul axe rend mal ces trois chiffres à la fois.</p>
 <p>Comme pour tous les candidats du site, ces réponses ne viennent pas de lui. Elles ont été estimées à partir de ses déclarations publiques, de son bilan régional et de ses prises de position parlementaires. La page <a href="/candidat/xavier-bertrand">Xavier Bertrand</a> les liste toutes, thème par thème.</p>
 
 <h2>Alors vous en pensez quoi ?</h2>

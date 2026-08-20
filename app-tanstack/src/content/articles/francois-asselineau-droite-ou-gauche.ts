@@ -1,6 +1,7 @@
 import type { Article } from '~/types/article';
 import { candidatesCount } from '~/utils/seo';
 import { quizzQuestionsCount } from '~/utils/quizz';
+import { proximityListHtml, furthestLinksHtml, proximityPercent } from '~/utils/proximity';
 
 export const article: Article = {
   slug: 'francois-asselineau-droite-ou-gauche',
@@ -10,7 +11,7 @@ export const article: Article = {
   date: '2026-08-16',
   tag: 'Analyse',
   content: `
-<p>Sur les ${candidatesCount} personnalités du Quizz du Berger, celle dont François Asselineau est le plus proche après Patrick Sébastien s'appelle Marine Le Pen (77 % de proximité). Un peu plus loin, à 71 %, arrive Fabien Roussel, secrétaire national du Parti communiste français. Les deux candidats dont il est le plus <em>éloigné</em> sont Bruno Retailleau (43 %) et David Lisnard (47 %), c'est-à-dire la droite classique. Un candidat plus distant de la droite républicaine que du Parti communiste résiste mal au classement habituel.</p>
+<p>Sur les ${candidatesCount} personnalités du Quizz du Berger, celle dont François Asselineau est le plus proche après Patrick Sébastien s'appelle Marine Le Pen (${proximityPercent('francois-asselineau', 'marine-le-pen')} % de proximité). Un peu plus loin, à ${proximityPercent('francois-asselineau', 'fabien-roussel')} %, arrive Fabien Roussel, secrétaire national du Parti communiste français. Les deux candidats dont il est le plus <em>éloigné</em> sont Bruno Retailleau (${proximityPercent('francois-asselineau', 'bruno-retailleau')} %) et David Lisnard (${proximityPercent('francois-asselineau', 'david-lisnard')} %), c'est-à-dire la droite classique. Un candidat plus distant de la droite républicaine que du Parti communiste résiste mal au classement habituel.</p>
 
 <h2>Sur l'argent, ses réponses sont celles de la gauche</h2>
 <p>Le Quizz du Berger pose huit questions de politique fiscale. Sur cinq d'entre elles, la position attribuée à François Asselineau est exactement celle de Fabien Roussel ou de Jean-Luc Mélenchon.</p>
@@ -39,15 +40,8 @@ export const article: Article = {
 
 <h2>De quels candidats François Asselineau est-il le plus proche ?</h2>
 <p>Voici le classement complet des six candidats les plus proches, calculé sur ses ${quizzQuestionsCount} réponses avec l'algorithme du quiz.</p>
-<ul>
-<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> — 82 % de proximité, 84 réponses identiques.</li>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — 77 %, 76 réponses identiques.</li>
-<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — 77 %, 75 réponses identiques.</li>
-<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — 75 %, 71 réponses identiques.</li>
-<li><a href="/candidat/jordan-bardella">Jordan Bardella</a> — 74 %, 68 réponses identiques.</li>
-<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — 71 %, 67 réponses identiques.</li>
-</ul>
-<p>Et les plus éloignés : <a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (43 %), <a href="/candidat/david-lisnard">David Lisnard</a> (47 %), <a href="/candidat/gabriel-attal">Gabriel Attal</a> (50 %). Vous pouvez ouvrir chaque duel : <a href="/comparer/david-lisnard-vs-francois-asselineau">Asselineau contre Lisnard</a>, <a href="/comparer/francois-asselineau-vs-jean-luc-melenchon">Asselineau contre Mélenchon</a>, <a href="/comparer/dominique-de-villepin-vs-francois-asselineau">Asselineau contre Villepin</a>.</p>
+${proximityListHtml('francois-asselineau')}
+<p>Et les plus éloignés : ${furthestLinksHtml('francois-asselineau')}. Vous pouvez ouvrir chaque duel : <a href="/comparer/david-lisnard-vs-francois-asselineau">Asselineau contre Lisnard</a>, <a href="/comparer/francois-asselineau-vs-jean-luc-melenchon">Asselineau contre Mélenchon</a>, <a href="/comparer/dominique-de-villepin-vs-francois-asselineau">Asselineau contre Villepin</a>.</p>
 
 <h2>Alors, droite ou gauche ?</h2>
 <p>Ses réponses économiques sont à gauche. Ses réponses sur l'immigration et la sécurité sont à droite. Ses réponses sur la souveraineté ne sont ni l'une ni l'autre, et ce sont celles qui gouvernent toutes les autres. François Asselineau occupe donc une case que l'axe gauche-droite ne sait pas nommer, ce qu'il revendique lui-même depuis la fondation de l'UPR en 2007.</p>

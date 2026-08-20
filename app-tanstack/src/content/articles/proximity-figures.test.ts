@@ -1,73 +1,61 @@
 /**
- * The "{candidat}-droite-ou-gauche" articles quote proximity figures as hand-written
- * prose. Adding a question or changing a candidate answer moves those numbers, and
- * nothing else in the build would notice.
+ * The "{candidat}-droite-ou-gauche" articles used to quote proximity figures as
+ * hand-written prose. Adding one question or one candidate silently falsified all of
+ * them, twice in production, because nothing conflicts textually and git reports
+ * nothing. They now render from `utils/proximity.ts` instead.
  *
- * This parses the ranking list of each article and checks every percentage, every
- * identical-answer count and the ORDER against the live computation. A failure means
- * the data moved: recompute and rewrite the figures in the article, do not relax it.
+ * This guards that decision: it fails if a literal figure creeps back in.
  */
 
 import { describe, expect, it } from 'vitest';
 import { articles } from './index';
-import { getCandidateProximityRanking } from '@app/utils/proximity';
+import {
+  getCandidateProximityRanking,
+  proximityListHtml,
+  proximityLinkHtml,
+} from '@app/utils/proximity';
+import { candidateSlugMap } from '@app/utils/seo';
 
-/** <li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — 91 % de proximité, 107 réponses identiques.</li> */
-const BULLET =
-  /<li><a href="\/candidat\/([a-z0-9-]+)">[^<]+<\/a>[^—]*— (\d+) %(?:[^,]*), (\d+) réponses identiques\./g;
-
-/** Inline prose mention: <a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (43 %). */
-const INLINE = /<a href="\/candidat\/([a-z0-9-]+)">[^<]+<\/a> \((\d+) %\)/g;
+/** A ranking bullet written by hand instead of rendered. */
+const HARD_CODED_BULLET =
+  /<li><a href="\/candidat\/[a-z0-9-]+">[^<]+<\/a>[^—]*— \d+ %[^,]*, \d+ réponses identiques\./;
+/** An inline mention written by hand: <a href="/candidat/x">Nom</a> (43 %). */
+const HARD_CODED_INLINE = /<a href="\/candidat\/[a-z0-9-]+">[^<]+<\/a> \(\d+ %\)/;
 
 const positioningArticles = articles.filter((a) => a.slug.endsWith('-droite-ou-gauche'));
 
-describe('proximity figures quoted in the "droite ou gauche" articles', () => {
-  it('has at least one such article', () => {
+describe('positioning articles render their proximity figures', () => {
+  it('there is at least one such article', () => {
     expect(positioningArticles.length).toBeGreaterThan(0);
   });
 
   for (const article of positioningArticles) {
     const subjectSlug = article.slug.replace(/-droite-ou-gauche$/, '');
 
-    it(`${article.slug} matches the live ranking`, () => {
-      const ranking = getCandidateProximityRanking(subjectSlug);
-      expect(ranking.length).toBeGreaterThan(0);
-
-      const quoted = [...article.content.matchAll(BULLET)].map((m) => ({
-        slug: m[1],
-        percent: Number(m[2]),
-        sameAnswers: Number(m[3]),
-      }));
-      expect(quoted.length).toBeGreaterThan(0);
-
-      const expected = ranking.slice(0, quoted.length).map((c) => ({
-        slug: c.slug,
-        percent: c.percent,
-        sameAnswers: c.sameAnswers,
-      }));
-
-      // Compared as arrays so the order is checked too, not only the values.
-      expect(quoted).toEqual(expected);
+    it(`${article.slug} targets a real candidate`, () => {
+      expect(candidateSlugMap.map((c) => c.slug)).toContain(subjectSlug);
     });
 
-    it(`${article.slug} quotes correct percentages in its prose links`, () => {
-      const bySlug = new Map(
-        getCandidateProximityRanking(subjectSlug).map((c) => [c.slug, c.percent]),
-      );
+    it(`${article.slug} renders its ranking rather than hard-coding it`, () => {
+      // The rendered list is present verbatim, so the article really calls the helper.
+      expect(article.content).toContain(proximityListHtml(subjectSlug));
 
-      // Inline mentions outside the ranking list: <a href="/candidat/x">Nom</a> (43 %).
-      // These sit in the "les plus éloignés" sentences and drift just as easily.
-      const inline = [...article.content.matchAll(INLINE)].map((m) => ({
-        slug: m[1],
-        percent: Number(m[2]),
-      }));
+      // And nothing outside it looks like a hand-written bullet.
+      const outsideList = article.content.replace(proximityListHtml(subjectSlug), '');
+      expect(HARD_CODED_BULLET.test(outsideList)).toBe(false);
+    });
 
-      for (const mention of inline) {
-        expect(
-          { slug: mention.slug, percent: mention.percent },
-          `inline mention of ${mention.slug} in ${article.slug}`,
-        ).toEqual({ slug: mention.slug, percent: bySlug.get(mention.slug) });
+    it(`${article.slug} renders its inline mentions rather than hard-coding them`, () => {
+      const ranking = getCandidateProximityRanking(subjectSlug);
+      let remaining = article.content;
+      for (const other of ranking) {
+        remaining = remaining.split(proximityLinkHtml(subjectSlug, other.slug)).join('');
       }
+      // Cross-references to another candidate's ranking are legitimate, so any leftover
+      // is only a failure when it matches this article's subject.
+      expect(HARD_CODED_INLINE.test(remaining.replace(proximityListHtml(subjectSlug), ''))).toBe(
+        false,
+      );
     });
   }
 });

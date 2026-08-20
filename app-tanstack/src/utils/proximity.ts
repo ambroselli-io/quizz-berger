@@ -11,6 +11,7 @@
 import {
   allComparisonPairs,
   candidateSlugMap,
+  getCandidateParty,
   themeSlugMap,
   type CandidateSlugEntry,
 } from '@app/utils/seo';
@@ -114,4 +115,61 @@ export function getCandidateProximityRanking(candidateSlug: string): CandidatePr
         b.sameAnswers - a.sameAnswers ||
         a.pseudo.localeCompare(b.pseudo, 'fr'),
     );
+}
+
+// --- HTML renderers for the blog articles ---
+//
+// The "{candidat}-droite-ou-gauche" articles used to hard-code these figures as prose.
+// Every added question or candidate silently falsified them, twice in production, so
+// they are rendered from the data instead. Article template strings call these directly.
+
+/**
+ * The ranked list of the closest candidates, as an HTML <ul>.
+ * Order, percentages and counts always reflect the current data.
+ */
+export function proximityListHtml(candidateSlug: string, count = 6): string {
+  const items = getCandidateProximityRanking(candidateSlug)
+    .slice(0, count)
+    .map((other, index) => {
+      const party = getCandidateParty(other.slug);
+      const label = party ? ` (${party})` : '';
+      // "de proximité" spells out the unit once, then the column reads as a list.
+      const unit = index === 0 ? ' de proximité' : '';
+      return `<li><a href="/candidat/${other.slug}">${other.pseudo}</a>${label} — ${other.percent} %${unit}, ${other.sameAnswers} réponses identiques.</li>`;
+    })
+    .join('\n');
+  return `<ul>\n${items}\n</ul>`;
+}
+
+/** A single inline mention: <a href="/candidat/x">Nom</a> (43 %). */
+export function proximityLinkHtml(candidateSlug: string, otherSlug: string): string {
+  const other = getCandidateProximityRanking(candidateSlug).find((c) => c.slug === otherSlug);
+  if (!other) return '';
+  return `<a href="/candidat/${other.slug}">${other.pseudo}</a> (${other.percent} %)`;
+}
+
+/** The N most distant candidates, closest-of-the-far first, as inline mentions. */
+export function furthestLinksHtml(candidateSlug: string, count = 3): string {
+  return getCandidateProximityRanking(candidateSlug)
+    .slice(-count)
+    .reverse()
+    .map((other) => proximityLinkHtml(candidateSlug, other.slug))
+    .join(', ');
+}
+
+/** Percentage between two candidates, for a sentence that needs the bare number. */
+export function proximityPercent(candidateSlug: string, otherSlug: string): number {
+  return getCandidateProximityRanking(candidateSlug).find((c) => c.slug === otherSlug)?.percent ?? 0;
+}
+
+/** Identical answers between two candidates. */
+export function proximitySameAnswers(candidateSlug: string, otherSlug: string): number {
+  return getCandidateProximityRanking(candidateSlug).find((c) => c.slug === otherSlug)?.sameAnswers ?? 0;
+}
+
+/** 1-based position of `otherSlug` in `candidateSlug`'s ranking, rendered "1er" / "8e". */
+export function proximityRank(candidateSlug: string, otherSlug: string): string {
+  const index = getCandidateProximityRanking(candidateSlug).findIndex((c) => c.slug === otherSlug);
+  if (index < 0) return '';
+  return index === 0 ? '1er' : `${index + 1}e`;
 }
