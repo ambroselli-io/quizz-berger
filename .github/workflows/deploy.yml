@@ -4,6 +4,16 @@ on:
   push:
     branches: [main] # Or the name of your main branch
 
+# The VPS deploy runs `npm ci` in a single shared directory, and `npm ci` wipes
+# node_modules before installing. Two deploys at once therefore erase each
+# other's install and leave the server unable to resolve express / dotenv /
+# @sentry — a 500 on every page until someone redeploys. Queue them instead.
+# cancel-in-progress stays false on purpose: killing a deploy mid-`npm ci`
+# produces the same broken tree.
+concurrency:
+  group: deploy-vps
+  cancel-in-progress: false
+
 jobs:
   test:
     name: Tests + type-check
