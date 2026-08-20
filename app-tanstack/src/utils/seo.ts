@@ -256,6 +256,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Crise des pompiers : faut-il plus d\'effectifs et de moyens ? Les positions des candidats 2027',
     seoDescription: `Effectifs, moyens matériels et recrutement des Sdis : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-trav-01': {
+    slug: 'age-depart-retraite-62-64-ans',
+    seoTitle: 'Retraite à 62 ou 64 ans : les positions des candidats à la présidentielle 2027',
+    seoDescription: `Suspension de la réforme de 2023, retour à 62 ou 60 ans, maintien à 64 : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Also auto-generate slugs for all remaining questions
