@@ -19,6 +19,11 @@ export const enrichThemes = (themes: QuizzTheme[]): QuizzTheme[] =>
     backgroundColor: colors[index % colors.length],
   }));
 
+// A theme without any question (`theme-et-si-un-autre-gagnait-2027`) is a placeholder:
+// the payload may carry it, the UI must never list nor count it.
+export const withQuestions = (themes: QuizzTheme[]): QuizzTheme[] =>
+  themes.filter((theme) => theme.questions.length > 0);
+
 export const formatQuizzForSearch = (themes: QuizzTheme[]): string[] =>
   themes.map((theme) => {
     const questions = theme.questions.map((q) => q.fr).join(' ');

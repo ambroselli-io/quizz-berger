@@ -2,7 +2,9 @@ import rawQuizzData from '~/shared/quizz-2027.json';
 import { normalizeWord } from './diacritics';
 import type { QuizzTheme, QuizzQuestion } from '@app/types/quizz';
 
-const rawQuizz: QuizzTheme[] = rawQuizzData as QuizzTheme[];
+// A theme without any question is a placeholder in the JSON (`theme-et-si-un-autre-gagnait-2027`).
+// It must never be listed nor counted, otherwise the theme count disagrees from one page to the next.
+const rawQuizz: QuizzTheme[] = (rawQuizzData as QuizzTheme[]).filter((theme) => theme.questions.length > 0);
 
 const formatQuizzForSearch = (quizzData: QuizzTheme[]) =>
   quizzData.map((theme) => {

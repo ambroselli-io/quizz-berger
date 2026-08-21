@@ -1,5 +1,6 @@
 import { Link } from '@app/lib/router';
 import { themeSlugMap, hotTopicQuestions, candidatesCount } from '@app/utils/seo';
+import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import Footer from '@app/components/Footer';
 
 export default function SujetsIndex() {
@@ -12,7 +13,7 @@ export default function SujetsIndex() {
               Tous les sujets de la présidentielle 2027
             </h1>
             <p className="text-lg text-white/80">
-              {themeSlugMap.length} thèmes politiques, des centaines de questions, {candidatesCount} candidats.
+              {quizzThemesCount} thèmes politiques, {quizzQuestionsCount} questions, {candidatesCount} candidats.
             </p>
             <Link
               to="/comparateur-programmes-2027"

@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 import API from '~/services/api';
 import useSyncQuizz from '~/hooks/useSyncQuizz';
 import useQuizzStore from '~/zustand/quizz';
-import { bundledThemes } from '~/utils/quizz';
+import { bundledThemes, withQuestions } from '~/utils/quizz';
 import type { QuizzTheme } from '~/types/quizz';
 
 jest.mock('~/services/api', () => ({
@@ -135,7 +135,7 @@ describe('useSyncQuizz', () => {
     await waitFor(() => {
       expect(apiGet).toHaveBeenCalledWith({ path: '/quizz' });
     });
-    expect(useQuizzStore.getState().quizz).toHaveLength(bundledThemes.length);
+    expect(useQuizzStore.getState().quizz).toHaveLength(withQuestions(bundledThemes).length);
     expect(useQuizzStore.getState().version).toBeNull();
   });
 
@@ -151,6 +151,6 @@ describe('useSyncQuizz', () => {
       expect(apiGet).toHaveBeenCalledWith({ path: '/quizz/version' });
     });
     expect(apiGet).not.toHaveBeenCalledWith({ path: '/quizz' });
-    expect(useQuizzStore.getState().quizz).toHaveLength(bundledThemes.length);
+    expect(useQuizzStore.getState().quizz).toHaveLength(withQuestions(bundledThemes).length);
   });
 });

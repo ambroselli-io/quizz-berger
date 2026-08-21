@@ -7,6 +7,7 @@ import {
   flattenQuestions,
   formatQuizzForSearch,
   isValidQuizz,
+  withQuestions,
 } from '~/utils/quizz';
 import type { QuizzTheme, QuizzQuestion } from '~/types/quizz';
 
@@ -25,11 +26,16 @@ interface Actions {
   setQuizz: (rawThemes: QuizzTheme[], version: string | null) => void;
 }
 
-const derive = (rawThemes: QuizzTheme[]): Derived => ({
-  quizz: enrichThemes(rawThemes),
-  quizzForSearch: formatQuizzForSearch(rawThemes),
-  quizzQuestions: flattenQuestions(rawThemes),
-});
+// `quizzForSearch` is indexed by the position of `quizz`, so the three derived
+// fields must all be built from the very same list of themes.
+const derive = (rawThemes: QuizzTheme[]): Derived => {
+  const themes = withQuestions(rawThemes);
+  return {
+    quizz: enrichThemes(themes),
+    quizzForSearch: formatQuizzForSearch(themes),
+    quizzQuestions: flattenQuestions(themes),
+  };
+};
 
 const useQuizzStore = create<State & Actions>()(
   persist(

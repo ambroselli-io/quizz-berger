@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import useQuizzStore from '~/zustand/quizz';
-import { bundledThemes } from '~/utils/quizz';
+import { bundledThemes, withQuestions } from '~/utils/quizz';
 import type { QuizzTheme } from '~/types/quizz';
 
 const STORAGE_KEY = 'quizz-du-berger-quizz';
@@ -33,7 +33,7 @@ beforeEach(async () => {
 
 describe('quizz store', () => {
   it('starts on the questions bundled with the app', () => {
-    expect(useQuizzStore.getState().quizz).toHaveLength(bundledThemes.length);
+    expect(useQuizzStore.getState().quizz).toHaveLength(withQuestions(bundledThemes).length);
     expect(useQuizzStore.getState().version).toBeNull();
   });
 
@@ -79,13 +79,13 @@ describe('quizz store', () => {
     await useQuizzStore.persist.rehydrate();
 
     const state = useQuizzStore.getState();
-    expect(state.quizz).toHaveLength(bundledThemes.length);
+    expect(state.quizz).toHaveLength(withQuestions(bundledThemes).length);
     expect(state.version).toBeNull();
   });
 
   it('falls back to the bundled questions when nothing is stored', async () => {
     await useQuizzStore.persist.rehydrate();
 
-    expect(useQuizzStore.getState().quizz).toHaveLength(bundledThemes.length);
+    expect(useQuizzStore.getState().quizz).toHaveLength(withQuestions(bundledThemes).length);
   });
 });

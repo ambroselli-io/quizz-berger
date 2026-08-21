@@ -9,7 +9,7 @@ https://www.quizz-du-berger.com/confidentialite
 Quizz du Berger : Vote 2027
 
 ## Description courte (max 80)
-Pour qui voter en 2027 ? Comparez vos idées à 26 candidats. Le test politique.
+Pour qui voter en 2027 ? Comparez vos idées à 37 candidats. Le test politique.
 
 ## Description complète (max 4000)
 QUI est votre candidat idéal pour la présidentielle 2027 ?
@@ -21,7 +21,7 @@ Répondez aux questions qui vous intéressent — vous seul décidez lesquelles 
 ➡️ COMMENT ÇA MARCHE ?
 
 1. Répondez aux questions que vous voulez
-Parmi 21 thèmes et 126 questions : économie, immigration, écologie, santé, fiscalité, retraites, sécurité, agriculture, Europe, international… Aucune obligation de tout faire : 1 question suffit pour commencer.
+Parmi 20 thèmes et 135 questions : économie, immigration, écologie, santé, fiscalité, retraites, sécurité, agriculture, Europe, international… Aucune obligation de tout faire : 1 question suffit pour commencer.
 
 2. Comparez la pensée des candidats à la vôtre
 Un classement global ET un classement thème par thème. Parce qu'on n'est jamais d'accord à 100 % avec quelqu'un, le détail par sujet vous aide à trouver le candidat le plus proche de votre pensée, sur les thèmes qui comptent VRAIMENT pour vous.
@@ -29,7 +29,7 @@ Un classement global ET un classement thème par thème. Parce qu'on n'est jamai
 3. Confrontez vos amis !
 Enregistrez vos résultats sous un pseudo, ajoutez vos amis et comparez vos convictions. Débat assuré… et de qualité !
 
-➡️ 26 CANDIDATS À LA PRÉSIDENTIELLE 2027
+➡️ 37 CANDIDATS À LA PRÉSIDENTIELLE 2027
 
 Mélenchon, Le Pen, Zemmour, Philippe, Glucksmann, Bayrou, Attal, Darmanin, Retailleau, Wauquiez, Bertrand, Tondelier, Ruffin, Autain, Roussel, Hollande, Cazeneuve, de Villepin, Asselineau, Branco, Dupont-Aignan, Batho, Guedj, Arthaud, Lisnard… et d'autres. Leurs réponses ont été renseignées à partir de leurs programmes et déclarations publiques.
 
