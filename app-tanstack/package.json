@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@af-utils/scrollend-polyfill": "^0.0.14",
+    "@datafast/ai-crawl": "^1.0.9",
     "@e965/xlsx": "^0.20.3",
     "@heroicons/react": "^2.1.1",
     "@nivo/bar": "^0.99.0",

@@ -11,6 +11,7 @@
  */
 import express from 'express';
 import compression from 'compression';
+import { createExpressAICrawlerMiddleware } from '@datafast/ai-crawl';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import handler from './dist/server/server.js';
@@ -48,6 +49,22 @@ if (indexNowKey && /^[A-Za-z0-9-]{8,128}$/.test(indexNowKey)) {
 app.use('/assets', express.static(join(clientDir, 'assets'), { immutable: true, maxAge: '1y' }));
 // Other static files (favicon, candidate images, pdfs…). index:false so `/` hits SSR, not index.html.
 app.use(express.static(clientDir, { index: false }));
+
+// DataFast "Bot traffic": reports AI and search crawler hits (ChatGPT-User,
+// ClaudeBot, GPTBot, Googlebot…) to https://datafa.st/api/ai-crawls. It reads the
+// user-agent, calls next() straight away and posts on the `finish` event, so it
+// never delays a response. Registered after the static handlers, so only page
+// requests are counted. nginx terminates TLS, so `req.protocol` is http in here:
+// publicOrigin rebuilds the href the crawler really asked for.
+app.use(
+  createExpressAICrawlerMiddleware({
+    websiteId: 'dfid_UHklLXAsoVa6Bef5p8F8N',
+    publicOrigin: process.env.PUBLIC_ORIGIN || 'https://www.quizz-du-berger.com',
+    // Optional dfbot_… token from the DataFast dashboard. Without it the endpoint
+    // still accepts the calls, it just cannot tell them from a spoofed one.
+    authToken: process.env.DATAFAST_BOT_TOKEN,
+  }),
+);
 
 // Everything else → SSR handler.
 app.use(async (req, res) => {
