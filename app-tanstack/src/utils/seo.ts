@@ -88,7 +88,7 @@ export interface QuestionSlugEntry {
 const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescription: string }> = {
   'question-2027-ae-01': {
     slug: 'guerre-ukraine-france',
-    seoTitle: 'Guerre en Ukraine : que pensent les candidats à la présidentielle 2027 ?',
+    seoTitle: 'Guerre en Ukraine : que pensent les candidats 2027 ?',
     seoDescription: `Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la guerre en Ukraine et le rôle de la France.`,
   },
   'question-2027-ae-02': {
@@ -98,12 +98,12 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-ae-11': {
     slug: 'intervention-americaine-venezuela-maduro-france',
-    seoTitle: 'Capture de Maduro : que pensent les candidats à la présidentielle 2027 ?',
+    seoTitle: 'Capture de Maduro : que pensent les candidats 2027 ?',
     seoDescription: `Intervention américaine au Venezuela et capture de Maduro : soutien, neutralité ou condamnation ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-ae-12': {
     slug: 'france-rivalite-etats-unis-chine-taiwan',
-    seoTitle: 'États-Unis, Chine, Taïwan : quelle position pour la France en 2027 ?',
+    seoTitle: 'États-Unis, Chine, Taïwan : la France en 2027',
     seoDescription: `S'aligner sur Washington, rester autonome ou se rapprocher de Pékin ? Les positions des ${candidatesCount} candidats à la présidentielle 2027 face à la rivalité sino-américaine.`,
   },
   'question-2027-ae-04': {
@@ -113,7 +113,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-agri-01': {
     slug: 'pesticides-agriculture-france',
-    seoTitle: 'Pesticides : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Pesticides : les positions des candidats 2027',
     seoDescription: 'Interdiction des pesticides, agriculture raisonnée ou laisser-faire ? Les candidats répondent.',
   },
   'question-2027-agri-03': {
@@ -123,12 +123,12 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-agri-02': {
     slug: 'crise-eau-secheresse-france',
-    seoTitle: 'Crise de l\'eau et sécheresse : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Crise de l\'eau et sécheresse : les candidats 2027',
     seoDescription: `Bassines, restrictions, sobriété : comment gérer la sécheresse ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-climat-02': {
     slug: 'nucleaire-france-avenir',
-    seoTitle: 'Nucléaire en France : que proposent les candidats à la présidentielle 2027 ?',
+    seoTitle: 'Nucléaire : que proposent les candidats 2027 ?',
     seoDescription: `Relancer le nucléaire ou en sortir ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-climat-04': {
@@ -138,12 +138,12 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-immi-01': {
     slug: 'immigration-france-2027',
-    seoTitle: 'Immigration : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Immigration : les positions des candidats 2027',
     seoDescription: `Immigration en France : régularisation, quotas ou immigration zéro ? Comparez les positions des ${candidatesCount} candidats.`,
   },
   'question-2027-dep-04': {
     slug: 'dette-publique-france',
-    seoTitle: 'Dette publique : les propositions des candidats à la présidentielle 2027',
+    seoTitle: 'Dette publique : les propositions des candidats 2027',
     seoDescription: 'Réduire la dette, austérité ou relance ? Comparez les positions des candidats à la présidentielle 2027.',
   },
   'question-2027-fisc-01': {
@@ -153,7 +153,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-gouv-03': {
     slug: 'proportionnelle-elections',
-    seoTitle: 'Proportionnelle : quel candidat est pour ? Présidentielle 2027',
+    seoTitle: 'Proportionnelle : quel candidat est pour ? 2027',
     seoDescription: 'Scrutin proportionnel aux législatives : qui est pour, qui est contre ? Les positions des candidats 2027.',
   },
   'question-2027-gouv-04': {
@@ -163,7 +163,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-soc-07': {
     slug: 'euthanasie-loi-france',
-    seoTitle: 'Aide à mourir : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Aide à mourir : les positions des candidats 2027',
     seoDescription: 'Fin de vie, euthanasie, suicide assisté : que proposent les candidats à la présidentielle 2027 sur la loi sur l\'aide à mourir ?',
   },
   'question-2027-san-03': {
@@ -178,12 +178,12 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-soc-03': {
     slug: 'laicite-religion-france',
-    seoTitle: 'Laïcité : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Laïcité : les positions des candidats 2027',
     seoDescription: 'Laïcité, port du voile, signes religieux : que proposent les candidats à la présidentielle 2027 ?',
   },
   'question-2027-soc-05': {
     slug: 'gpa-pma-france',
-    seoTitle: 'GPA et PMA : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'GPA : les positions des candidats 2027',
     seoDescription: 'GPA, PMA pour toutes : les candidats à la présidentielle 2027 sont-ils pour ou contre ?',
   },
   'question-2027-pol-05': {
@@ -208,7 +208,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-edu-01': {
     slug: 'ecole-education-reforme',
-    seoTitle: 'Éducation : les propositions des candidats à la présidentielle 2027',
+    seoTitle: 'Budget de l\'Éducation nationale : les candidats 2027',
     seoDescription: 'Budget de l\'Éducation nationale, moyens pour l\'école : comparez les positions des candidats 2027.',
   },
   'question-2027-num-01': {
@@ -223,44 +223,83 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-corr-06': {
     slug: 'ineligibilite-elus-condamnes',
-    seoTitle: 'Inéligibilité immédiate des élus condamnés : les positions des candidats 2027',
+    seoTitle: 'Inéligibilité des élus condamnés : les candidats 2027',
     seoDescription: `Exécution provisoire, inéligibilité des élus condamnés : que pensent les ${candidatesCount} candidats à la présidentielle 2027 ?`,
   },
   'question-2027-num-02': {
     slug: 'interdiction-reseaux-sociaux-mineurs-15-ans',
-    seoTitle: 'Réseaux sociaux interdits aux mineurs de 15 ans : les positions des candidats 2027',
+    seoTitle: 'Réseaux sociaux et mineurs : les candidats 2027',
     seoDescription: `Réseaux sociaux et écrans chez les jeunes : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-pol-09': {
     slug: 'loi-ripost-securite-quotidien-france',
-    seoTitle: 'Loi Ripost et sécurité du quotidien : les positions des candidats 2027',
+    seoTitle: 'Loi Ripost et sécurité du quotidien : candidats 2027',
     seoDescription: `Rodéos motorisés, free parties, protoxyde d'azote : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la loi Ripost.`,
   },
   'question-2027-climat-07': {
     slug: 'feux-foret-securite-civile-france',
-    seoTitle: 'Feux de forêt et sécurité civile : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Feux de forêt et sécurité civile : les candidats 2027',
     seoDescription: `Moyens des pompiers, flotte aérienne, adaptation des forêts au changement climatique : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-pol-10': {
     slug: 'presomption-legitime-defense-policiers',
-    seoTitle: 'Présomption de légitime défense pour les policiers : les positions des candidats 2027',
+    seoTitle: 'Légitime défense des policiers : les candidats 2027',
     seoDescription: `Loi sur la présomption de légitime défense pour les forces de l'ordre : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-gouv-07': {
     slug: 'reduction-nombre-parlementaires',
-    seoTitle: 'Réduire le nombre de parlementaires : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Réduire le nombre de parlementaires : les candidats 2027',
     seoDescription: `Réduire le nombre de députés et de sénateurs : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-pol-11': {
     slug: 'crise-pompiers-financement-recrutement-france',
-    seoTitle: 'Crise des pompiers : faut-il plus d\'effectifs et de moyens ? Les positions des candidats 2027',
+    seoTitle: 'Crise des pompiers et Sdis : les candidats 2027',
     seoDescription: `Effectifs, moyens matériels et recrutement des Sdis : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-trav-01': {
     slug: 'age-depart-retraite-62-64-ans',
-    seoTitle: 'Retraite à 62 ou 64 ans : les positions des candidats à la présidentielle 2027',
+    seoTitle: 'Retraite à 62 ou 64 ans : les candidats 2027',
     seoDescription: `Suspension de la réforme de 2023, retour à 62 ou 60 ans, maintien à 64 : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+};
+
+// Questions that already collect impressions in Search Console but kept an auto-generated
+// slug. Google cuts a title around 60 characters, so a title built as "<question text> — Les
+// candidats ... répondent" never showed the promise: the whole suffix fell past the cut.
+// These titles lead with the searched topic and keep the promise inside the budget.
+// Everything else falls back to the raw question text (see buildQuestionSlugMap).
+const searchedQuestionTitles: Record<string, string> = {
+  'question-2027-fin-05': 'Droits de succession : les positions des candidats 2027',
+  'question-2027-climat-05': 'Efforts pour le climat : qui doit payer ? Candidats 2027',
+  'question-2027-trav-02': 'Temps de travail légal : les positions des candidats 2027',
+  'question-2027-edu-05': 'Parcoursup : les positions des candidats 2027',
+  'question-2027-cult-03': 'Pass Culture : les positions des candidats 2027',
+  'question-2027-agri-04': 'Indépendance alimentaire : les candidats 2027',
+  'question-2027-fisc-07': 'Fiscalité verte : les propositions des candidats 2027',
+  'question-2027-agri-05': 'Élevage et viande : les positions des candidats 2027',
+  'question-2027-gouv-05': 'Bureaucratie : les propositions des candidats 2027',
+  'question-2027-san-06': 'Santé mentale des jeunes : les candidats 2027',
+  'question-2027-ae-09': 'Israël-Palestine : que doit faire la France ? 2027',
+  'question-2027-log-08': 'Réquisition des logements vacants : les candidats 2027',
+  'question-2027-eco-05': 'Attractivité économique : les candidats 2027',
+  'question-2027-immi-08': 'Intégration des étrangers : les candidats 2027',
+  'question-2027-ae-03': 'Armée française en Afrique : les candidats 2027',
+  'question-2027-log-03': 'Airbnb et locations touristiques : les candidats 2027',
+  'question-2027-pa-05': 'Pouvoir d\'achat : les propositions des candidats 2027',
+  'question-2027-ae-06': 'Face à la Chine : les positions des candidats 2027',
+  'question-2027-immi-05': 'Régularisation des sans-papiers : les candidats 2027',
+  'question-2027-fin-03': 'Patrimoine des candidats : faut-il le publier ? 2027',
+  'question-2027-soc-02': 'Droits LGBT+ : les positions des candidats 2027',
+  'question-2027-fisc-02': 'Impôts de la classe moyenne : les candidats 2027',
+  'question-2027-pol-01': 'Violences policières : les positions des candidats 2027',
+  'question-2027-san-05': 'Remboursement des soins : les positions des candidats 2027',
+  'question-2027-edu-03': 'Écrans et IA à l\'école : les positions des candidats 2027',
+  'question-2027-log-04': 'Zones rurales : les propositions des candidats 2027',
+  'question-2027-ae-08': 'Conflit Israël-Palestine : où sont les candidats 2027 ?',
+  'question-2027-ae-10': 'Reconnaissance de la Palestine : les candidats 2027',
+  'question-2027-san-07': 'Prévention ou soins : les positions des candidats 2027',
+  'question-2027-soc-04': 'PMA : les positions des candidats 2027',
+  'question-2027-pol-04': 'Doctrine pénale : fermeté ou réinsertion ? Candidats 2027',
 };
 
 // Also auto-generate slugs for all remaining questions
@@ -279,7 +318,7 @@ function buildQuestionSlugMap(): QuestionSlugEntry[] {
         answers: question.answers,
         scores: question.scores,
         help: question.help,
-        seoTitle: hotTopic?.seoTitle || `${question.fr} — Les candidats à la présidentielle 2027 répondent`,
+        seoTitle: hotTopic?.seoTitle || searchedQuestionTitles[question._id] || question.fr,
         seoDescription: hotTopic?.seoDescription || `Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027 : ${question.fr}`,
       });
     }

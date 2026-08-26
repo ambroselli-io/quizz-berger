@@ -14,7 +14,7 @@ export const Route = createFileRoute('/question/$themeId/$questionId')({
     // description instead of falling back to the site-wide default on ~100 pages.
     const seoTwin = questionSlugMap.find((q) => q.questionId === question._id);
     return seoHead({
-      title: `${question.fr} - ${theme.fr} | Le Quizz du Berger`,
+      title: seoTwin?.seoTitle || `${question.fr} - ${theme.fr}`,
       description: seoTwin?.seoDescription,
       canonicalPath: seoTwin
         ? `/question-politique/${seoTwin.slug}`

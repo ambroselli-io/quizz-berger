@@ -50,7 +50,9 @@ export const Route = createFileRoute('/question-politique/$questionSlug')({
     if (!loaderData) return {};
     const { question, faqSchema } = loaderData;
     return seoHead({
-      title: `${question.seoTitle} | Le Quizz du Berger`,
+      // No brand suffix: Google cuts around 60 characters and " | Le Quizz du Berger"
+      // would eat 21 of them without ever being shown.
+      title: question.seoTitle,
       description: question.seoDescription,
       canonicalPath: `/question-politique/${question.slug}`,
       jsonLd: faqSchema,
