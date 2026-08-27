@@ -95,7 +95,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Travail, Chômage, Retraite",
     "id": "theme-travail-chomage-retraite-2027",
-    "questionCount": 6,
+    "questionCount": 7,
   },
   {
     "fr": "Union Européenne",
