@@ -466,6 +466,9 @@ question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
 question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
 [3] L'ubérisation et l'auto-entrepreneuriat sont l'avenir — chacun doit pouvoir travailler comme il veut, sans cadre rigide
 
+question-2027-trav-07: Le budget 2027 envisage de ne plus revaloriser certaines pensions de retraite au même rythme que l'inflation. Qu'en pensez-vous ?
+[2] Sous-indexer légèrement l'ensemble des pensions, y compris les plus modestes, pour partager l'effort budgétaire
+
 
 Union Européenne:
 

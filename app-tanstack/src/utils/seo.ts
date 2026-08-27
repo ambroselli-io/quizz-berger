@@ -261,6 +261,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Retraite à 62 ou 64 ans : les candidats 2027',
     seoDescription: `Suspension de la réforme de 2023, retour à 62 ou 60 ans, maintien à 64 : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-trav-07': {
+    slug: 'desindexation-pensions-retraite-inflation',
+    seoTitle: 'Désindexation des retraites : les candidats 2027',
+    seoDescription: `Gel ou sous-indexation des pensions sur l'inflation dans le budget 2027 : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

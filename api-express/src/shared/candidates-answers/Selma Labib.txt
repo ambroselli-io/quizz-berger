@@ -466,6 +466,9 @@ question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
 question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
 [0] Le télétravail devrait être un droit pour tous les métiers qui le permettent — c'est une question de liberté
 
+question-2027-trav-07: Le budget 2027 envisage de ne plus revaloriser certaines pensions de retraite au même rythme que l'inflation. Qu'en pensez-vous ?
+[0] Indexer toutes les pensions sur l'inflation, sans aucune exception, même les plus élevées
+
 
 Union Européenne:
 
