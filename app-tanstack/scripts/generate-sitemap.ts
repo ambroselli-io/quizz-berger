@@ -55,6 +55,7 @@ function buildUrls(): SitemapUrl[] {
   urls.push({ loc: '/comparateur-programmes-2027', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/sondages-presidentielle-2027', priority: '0.9', changefreq: 'weekly' });
   urls.push({ loc: '/qui-est-candidat-2027', priority: '0.9', changefreq: 'daily' });
+  urls.push({ loc: '/pour-qui-voter-2027', priority: '0.9', changefreq: 'monthly' });
 
   // Theme pages
   for (const theme of themeSlugMap) {
@@ -134,6 +135,7 @@ function generateLlmsTxt(): string {
     '',
     '## Commencer',
     link('/', `Test politique présidentielle 2027`, `page d'accueil, ${quizzQuestionsCount} questions sur ${quizzThemesCount} thèmes, ${candidatesCount} candidats`),
+    link('/pour-qui-voter-2027', 'Pour qui voter en 2027', 'la réponse courte, la méthode du test et les questions fréquentes'),
     link('/themes', 'Choisir un thème', 'répondre thème par thème, dans l\'ordre que l\'on veut'),
     link('/all-questions', `Les ${quizzQuestionsCount} questions`, 'la liste complète des questions et de leurs réponses possibles'),
     link('/comparer', 'Comparer deux candidats', 'accords et désaccords entre deux candidats, thème par thème'),

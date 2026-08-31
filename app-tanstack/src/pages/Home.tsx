@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from '@app/lib/router';
 import ThemeButton from '@app/components/ThemeButton';
-import { quizz, quizzQuestions } from '@app/utils/quizz';
+import { quizz, quizzQuestions, quizzQuestionsCount } from '@app/utils/quizz';
 import { colors, temoignages } from '@app/utils/temoignages';
 import Podium from '@app/components/Podium';
 import Loader from '@app/components/Loader';
 import Footer from '@app/components/Footer';
 import QuizzButton from '@app/components/QuizzButton';
 import API from '@app/services/api';
-import { candidateSlugMap, themeSlugMap, comparisonPairs, hotTopicQuestions } from '@app/utils/seo';
+import { candidateSlugMap, themeSlugMap, comparisonPairs, hotTopicQuestions, candidatesCount } from '@app/utils/seo';
 import type { PodiumStep } from '@app/types/quizz';
 
 export default function Home() {
@@ -55,6 +55,13 @@ export default function Home() {
             </span>
             QUI est mon candidat&nbsp;idéal&nbsp;?
           </h1>
+          <p className="mb-8 max-w-[620px] text-center font-[Merriweather_Sans] font-light leading-relaxed text-white/80">
+            <Link to="/pour-qui-voter-2027" className="text-white/80">
+              Pour qui voter en 2027&nbsp;?
+            </Link>{' '}
+            Faites le test&nbsp;: répondez aux questions que vous voulez parmi {quizzQuestionsCount},
+            et découvrez lequel des {candidatesCount} candidats à la présidentielle pense comme vous.
+          </p>
           <QuizzButton
             onClick={() => navigate('/themes')}
             className="h-[65px] w-[240px] text-base font-semibold"

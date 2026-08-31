@@ -18,7 +18,7 @@ Read these files first:
 - `app-tanstack/src/shared/candidates-answers.json` — the candidates' quiz answers.
 - `app-tanstack/src/utils/seo.ts` — candidate slugs, theme slugs, hot-topic question slugs (for internal links).
 - `CLAUDE.md` at the repo root — especially the "Adding a question" and "Candidate proximity" sections; follow them exactly if step 3 applies.
-- `.claude/skills/no-ai-slop/SKILL.md` + `french.md` + `eval.md` — the writing rules for this site. Non-negotiable: the article gets checked against them before the PR opens (step 6).
+- `~/.claude/skills/no-ai-slop/SKILL.md` + `french.md` + `eval.md` — the writing rules for this site. Non-negotiable: the article gets checked against them before the PR opens (step 6).
 
 ## 2. Scout for a topic
 
@@ -106,7 +106,7 @@ All facts (dates, numbers, votes) must come from sources actually read this sess
 
 **Cite inline, in the body text — not only in the PR description.** This has been flagged more than once: listing sources in the PR body is not enough, the reader of the published article never sees the PR. Every dated fact, quote, or statistic that comes from a specific source must be a hyperlink at the point it's stated, `<a href="{source URL}" target="_blank" rel="noopener noreferrer">{the fact or quote itself, or a few words of it}</a>` — wrap the claim, not a generic "source" or "ici" link. Aim for most of the URLs gathered during research to end up linked somewhere in the article body; if a research URL never became an inline citation, that's a sign either the claim it supported got cut or the citation got forgotten — check before opening the PR. Internal links (`/candidat/…`, `/theme/…`, `/question-politique/…`) stay as before and don't need `target="_blank"`.
 
-**Write it under the `no-ai-slop` rules, not as a cleanup pass afterwards.** The traps this format walks into, all documented with real examples in `.claude/skills/no-ai-slop/french.md`:
+**Write it under the `no-ai-slop` rules, not as a cleanup pass afterwards.** The traps this format walks into, all documented with real examples in `~/.claude/skills/no-ai-slop/french.md`:
 
 - **The intro machine.** Do not open with a comma-spliced list of noun phrases, a colon, then "Voici ce qu'il faut savoir / Voici les éléments à connaître". Six articles opened that way before this rule existed and the series read as generated. Open on the single most concrete fact, in a plain sentence, and vary the shape from the last article.
 - **Prose em dashes: 2 per article, max.** The `Nom</a> (Parti) — description` separator in candidate bullets doesn't count; it's a list format. Everything else should be a comma, a parenthesis, or a second sentence.
@@ -161,7 +161,7 @@ Two things the renderers cannot do, so read for them:
 cd app-tanstack && npx tsx --tsconfig ./tsconfig.app.json -e "import('./src/content/articles/index.ts').then(m => m.articles.filter(a => a.slug.endsWith('-droite-ou-gauche')).forEach(a => console.log(a.slug, '\n', a.content.replace(/<[^>]+>/g, '').slice(0, 700))))"
 ```
 
-Then run the article through `.claude/skills/no-ai-slop/eval.md` plus the French checks in `french.md` yourself, and fix what fails before opening the PR. Count the prose em dashes explicitly (total `—` minus one per candidate bullet) and confirm it lands at 0–2.
+Then run the article through `~/.claude/skills/no-ai-slop/eval.md` plus the French checks in `french.md` yourself, and fix what fails before opening the PR. Count the prose em dashes explicitly (total `—` minus one per candidate bullet) and confirm it lands at 0–2.
 
 ## 7. Open a draft PR
 
