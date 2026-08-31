@@ -469,6 +469,9 @@ question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles
 question-2027-trav-07: Le budget 2027 envisage de ne plus revaloriser certaines pensions de retraite au même rythme que l'inflation. Qu'en pensez-vous ?
 [0] Indexer toutes les pensions sur l'inflation, sans aucune exception, même les plus élevées
 
+question-2027-trav-08: Faut-il durcir les jours de carence pour les arrêts maladie ?
+[2] Aligner le public sur le privé, avec 3 jours de carence dans les deux secteurs
+
 
 Union Européenne:
 
