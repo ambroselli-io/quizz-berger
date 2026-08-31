@@ -1,5 +1,6 @@
 import type { Article } from '~/types/article';
 
+import { article as articleJoursDeCarenceArretsMaladieFranceCandidats2027 } from './jours-de-carence-arrets-maladie-france-candidats-2027';
 import { article as articleDesindexationRetraitesFranceCandidats2027 } from './desindexation-retraites-france-candidats-2027';
 import { article as articleDettePubliqueTauxRecordFranceCandidats2027 } from './dette-publique-taux-record-france-candidats-2027';
 import { article as articleAgeDepartRetraiteFranceCandidats2027 } from './age-depart-retraite-france-candidats-2027';
@@ -40,6 +41,7 @@ export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
+  articleJoursDeCarenceArretsMaladieFranceCandidats2027,
   articleDesindexationRetraitesFranceCandidats2027,
   articleDettePubliqueTauxRecordFranceCandidats2027,
   articleAgeDepartRetraiteFranceCandidats2027,
