@@ -21,6 +21,7 @@ interface ChartData {
   countAnswers: number;
   answersPerUser: { name: string; totalUsers: number }[];
   answersPerUserAverage: number;
+  answersPerUserMedian: number;
   answersPerUserPerDay: unknown[];
   answersPerTheme: { name: string; value: number }[];
   usersPerHour: { _id: string; count: number; cumulative: number; today: number }[];
@@ -112,7 +113,7 @@ export default function Stats() {
       </div>
 
       <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">
-        Nombre moyen de réponses par utilisateur {data.answersPerUserAverage}
+        Nombre de réponses par utilisateur : moyenne {data.answersPerUserAverage}, médiane {data.answersPerUserMedian}
       </h2>
       <div className="h-[80vh] w-full p-12 max-lg:mt-4 max-lg:h-[50vh] max-lg:p-0">
         <ResponsiveContainer width="100%" height="100%">

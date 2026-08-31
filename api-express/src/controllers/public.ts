@@ -78,6 +78,16 @@ router.get(
       answersPerUserRaw.reduce((sum, userGroup) => sum + Math.min(userGroup.count, quizzQuestions.length), 0) / answersPerUserRaw.length,
     );
 
+    // Rows are sorted by count, so the median is the middle capped value.
+    const cappedCounts = answersPerUserRaw.map((userGroup) => Math.min(userGroup.count, quizzQuestions.length));
+    const middle = Math.floor(cappedCounts.length / 2);
+    const answersPerUserMedian =
+      cappedCounts.length === 0
+        ? 0
+        : cappedCounts.length % 2 === 1
+          ? cappedCounts[middle]
+          : Math.round((cappedCounts[middle - 1] + cappedCounts[middle]) / 2);
+
     const answersPerUser = answersPerUserRaw.reduce(
       (averages, newItem) => {
         const newItemCount = Math.ceil(Math.min(quizzQuestions.length, newItem.count) / 10) * 10;
@@ -173,6 +183,7 @@ router.get(
         answersPerUser,
         maxUsersOnADay,
         answersPerUserAverage,
+        answersPerUserMedian,
         answersPerUserPerDay,
         answersPerTheme,
         usersPerHour,
