@@ -19,8 +19,8 @@ export const enrichThemes = (themes: QuizzTheme[]): QuizzTheme[] =>
     backgroundColor: colors[index % colors.length],
   }));
 
-// A theme without any question (`theme-et-si-un-autre-gagnait-2027`) is a placeholder:
-// the payload may carry it, the UI must never list nor count it.
+// A theme without any question is a placeholder (`theme-et-si-un-autre-gagnait-2027` shipped
+// empty for months): the payload may carry it, the UI must never list nor count it.
 export const withQuestions = (themes: QuizzTheme[]): QuizzTheme[] =>
   themes.filter((theme) => theme.questions.length > 0);
 
@@ -51,8 +51,8 @@ const isValidQuestion = (question: unknown): question is QuizzQuestion => {
   );
 };
 
-// A theme is allowed to hold no question — `theme-et-si-un-autre-gagnait-2027`
-// ships empty on purpose — so only the shape of each question is enforced.
+// A theme is allowed to hold no question (`theme-et-si-un-autre-gagnait-2027`
+// shipped empty for months), so only the shape of each question is enforced.
 const isValidTheme = (theme: unknown): theme is QuizzTheme => {
   const t = theme as QuizzTheme;
   if (!t || typeof t._id !== 'string' || typeof t.fr !== 'string') return false;

@@ -45,6 +45,14 @@ It powers the "candidats les plus proches" section of `/candidat/{slug}` **and t
 
 What still needs a human when the question set changes: sentences that count over a theme ("sur les onze questions de sécurité, neuf réponses identiques"), and prose whose argument depends on a figure. Grep the positioning articles for those and recount.
 
+# "Et si un(e) autre gagnait..." theme
+
+`theme-et-si-un-autre-gagnait-2027` is **generated**, not hand-written: `cd app-tanstack && npm run generate-gagnait-theme` (`scripts/generate-gagnait-theme.ts`) rewrites the theme in the 3 `quizz-2027.json`, the matching answers of every candidate in the 3 `candidates-answers.json`, then the `.txt` exports. Do not edit those questions or answers by hand — the next run overwrites them.
+
+One question per candidate who has not withdrawn ("Si X était élu(e), quel serait votre sentiment ?", `_id` = `question-2027-gagnait-{slug}`, feminine form from `content/candidacies.ts`), six identical answers from "Très content(e)" to "Ça ne m'intéresse pas". A withdrawn candidate loses their question but keeps answering the others'.
+
+Candidate answers are estimated from `utils/proximity.ts`: "Très content(e)" for their own victory, then plutôt content ≥ 85 %, neutre ≥ 65 %, plutôt mécontent ≥ 45 %, très mécontent below. Proximity itself **excludes this theme** (`gagnaitThemeId` in `utils/quizz.ts`), otherwise the output would feed its own input. Re-run the script after a candidate joins or withdraws, and after any change to the other themes (proximity moves, so do these answers), then `npx vitest run -u` as for any question change.
+
 # Who is a candidate (in / out)
 
 `app-tanstack/src/content/candidacies.ts` is the tracker of the race itself: one entry per person

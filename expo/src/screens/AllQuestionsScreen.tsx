@@ -59,7 +59,7 @@ export default function AllQuestionsScreen() {
               style={{ backgroundColor: theme.backgroundColor }}
             />
             <Text className="text-base font-bold text-quizz-dark">
-              {'ABCDEFGHIJKLMNOPQRST'[themeIndex]} - {theme.fr}
+              {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]} - {theme.fr}
             </Text>
           </View>
 
@@ -69,7 +69,7 @@ export default function AllQuestionsScreen() {
                 className="mb-1 text-sm font-medium text-quizz-dark"
                 style={{ borderLeftWidth: 3, borderLeftColor: theme.backgroundColor, paddingLeft: 8 }}
               >
-                {'ABCDEFGHIJKLMNOPQRST'[themeIndex]}{questionIndex + 1} - {question.fr}
+                {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]}{questionIndex + 1} - {question.fr}
               </Text>
               <View className="ml-4 gap-1">
                 {question.answers.map((answer, answerIndex) => {

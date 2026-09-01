@@ -31,12 +31,12 @@ const formatAnswers = (answers: string[]) => answers.map((answer, answerIndex) =
 const formatQuestions = (themeIndex: number, questions: Theme["questions"]) =>
   questions
     .map(
-      (question, questionIndex) => `  ${"ABCDEFGHIJKLMNOPQRST"[themeIndex]}${questionIndex + 1} - ${question.fr}\n${formatAnswers(question.answers)}`,
+      (question, questionIndex) => `  ${"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[themeIndex]}${questionIndex + 1} - ${question.fr}\n${formatAnswers(question.answers)}`,
     )
     .join("\n\n");
 
 const formatQuizzText = (quizz: Theme[]) =>
-  quizz.map((theme, index) => `${"ABCDEFGHIJKLMNOPQRST"[index]} - ${theme.fr}\n\n  ${formatQuestions(index, theme.questions)}`).join("\n\n\n");
+  quizz.map((theme, index) => `${"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[index]} - ${theme.fr}\n\n  ${formatQuestions(index, theme.questions)}`).join("\n\n\n");
 
 router.get(
   "/download",

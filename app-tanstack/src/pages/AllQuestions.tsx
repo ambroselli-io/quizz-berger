@@ -79,7 +79,7 @@ export default function AllQuestions() {
               <AccordionTrigger className="px-2 py-3 text-left text-base font-semibold">
                 <span className="flex items-center gap-2 text-left">
                   <span className="inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: theme.backgroundColor }} />
-                  {'ABCDEFGHIJKLMNOPQRST'[themeIndex]} - {theme.fr}
+                  {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]} - {theme.fr}
                 </span>
               </AccordionTrigger>
               <AccordionContent className="px-0">
@@ -90,7 +90,7 @@ export default function AllQuestions() {
                   {theme.questions.map((question, questionIndex) => (
                     <AccordionItem key={question._id} value={question._id} className="border-b-0">
                       <AccordionTrigger className="py-2 pl-4 pr-2 text-left text-sm font-medium" style={{ borderLeftWidth: 3, borderLeftColor: theme.backgroundColor }}>
-                        {'ABCDEFGHIJKLMNOPQRST'[themeIndex]}{questionIndex + 1} - {question.fr}
+                        {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]}{questionIndex + 1} - {question.fr}
                       </AccordionTrigger>
                       <AccordionContent className="pl-5 pr-2">
                         <ol className="list-none space-y-1.5 text-sm">
@@ -165,7 +165,7 @@ export default function AllQuestions() {
             >
               <summary className="cursor-pointer">
                 <h3 className="relative inline text-xl font-bold">
-                  {'ABCDEFGHIJKLMNOPQRST'[index]} - {theme.fr}
+                  {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index]} - {theme.fr}
                   <span
                     className="absolute inset-x-0 -bottom-[7px] h-2.5 -skew-x-[18deg]"
                     style={{ backgroundColor: `${theme.backgroundColor}aa` }}
@@ -180,7 +180,7 @@ export default function AllQuestions() {
                   >
                     <summary className="ml-5 cursor-pointer">
                       <h4 className="relative inline text-base">
-                        {'ABCDEFGHIJKLMNOPQRST'[index]}
+                        {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index]}
                         {questionIndex + 1} - {question.fr}
                         <span
                           className="absolute inset-x-0 -bottom-[3px] h-[5px] skew-x-[18deg]"

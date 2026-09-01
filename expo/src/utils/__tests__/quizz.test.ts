@@ -34,9 +34,9 @@ describe('isValidQuizz', () => {
     expect(isValidQuizz(bundledThemes)).toBe(true);
   });
 
-  // `theme-et-si-un-autre-gagnait-2027` ships with no question. Rejecting it
-  // would make the validator refuse every real payload, so the app would never
-  // pick up a new question.
+  // `theme-et-si-un-autre-gagnait-2027` shipped with no question for months.
+  // Rejecting such a theme would make the validator refuse the whole payload,
+  // so the app would never pick up a new question.
   it('accepts a theme that holds no question', () => {
     expect(isValidQuizz([makeTheme({ questions: [] })])).toBe(true);
   });

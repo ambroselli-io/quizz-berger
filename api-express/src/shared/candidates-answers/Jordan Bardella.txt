@@ -490,3 +490,106 @@ question-2027-ue-05: Que pensez-vous de l'euro ?
 
 question-2027-ue-06: Que pensez-vous de la politique migratoire européenne ?
 [3] Chaque pays reprend le contrôle total de ses frontières
+
+
+Et si un(e) autre gagnait...:
+
+
+question-2027-gagnait-nathalie-arthaud: Si Nathalie Arthaud était élue, quel serait votre sentiment ?
+[4] Très mécontent(e)
+
+question-2027-gagnait-francois-asselineau: Si François Asselineau était élu, quel serait votre sentiment ?
+[2] Neutre
+
+question-2027-gagnait-delphine-batho: Si Delphine Batho était élue, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-xavier-bertrand: Si Xavier Bertrand était élu, quel serait votre sentiment ?
+[2] Neutre
+
+question-2027-gagnait-nicolas-dupont-aignan: Si Nicolas Dupont-Aignan était élu, quel serait votre sentiment ?
+[1] Plutôt content(e)
+
+question-2027-gagnait-jerome-guedj: Si Jérôme Guedj était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-marine-le-pen: Si Marine Le Pen était élue, quel serait votre sentiment ?
+[1] Plutôt content(e)
+
+question-2027-gagnait-jordan-bardella: Si Jordan Bardella était élu, quel serait votre sentiment ?
+[0] Très content(e)
+
+question-2027-gagnait-edouard-philippe: Si Édouard Philippe était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-francois-ruffin: Si François Ruffin était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-marine-tondelier: Si Marine Tondelier était élue, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-david-lisnard: Si David Lisnard était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-gabriel-attal: Si Gabriel Attal était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-bernard-cazeneuve: Si Bernard Cazeneuve était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-raphael-glucksmann: Si Raphaël Glucksmann était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-francois-hollande: Si François Hollande était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-jean-luc-melenchon: Si Jean-Luc Mélenchon était élu, quel serait votre sentiment ?
+[4] Très mécontent(e)
+
+question-2027-gagnait-bruno-retailleau: Si Bruno Retailleau était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-fabien-roussel: Si Fabien Roussel était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait votre sentiment ?
+[2] Neutre
+
+question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
+[4] Très mécontent(e)
+
+question-2027-gagnait-patrick-sebastien: Si Patrick Sébastien était élu, quel serait votre sentiment ?
+[2] Neutre
+
+question-2027-gagnait-francis-lalanne: Si Francis Lalanne était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-florian-philippot: Si Florian Philippot était élu, quel serait votre sentiment ?
+[2] Neutre
+
+question-2027-gagnait-karim-bouamrane: Si Karim Bouamrane était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-segolene-royal: Si Ségolène Royal était élue, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-philippe-brun: Si Philippe Brun était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-anasse-kazib: Si Anasse Kazib était élu, quel serait votre sentiment ?
+[4] Très mécontent(e)
+
+question-2027-gagnait-selma-labib: Si Selma Labib était élue, quel serait votre sentiment ?
+[4] Très mécontent(e)
+
+question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-lydie-massard: Si Lydie Massard était élue, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)

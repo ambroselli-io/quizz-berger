@@ -2790,6 +2790,700 @@
   {
     "fr": "Et si un(e) autre gagnait...",
     "_id": "theme-et-si-un-autre-gagnait-2027",
-    "questions": []
+    "questions": [
+      {
+        "_id": "question-2027-gagnait-nathalie-arthaud",
+        "fr": "Si Nathalie Arthaud était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/nathalie-arthaud",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-francois-asselineau",
+        "fr": "Si François Asselineau était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/francois-asselineau",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-delphine-batho",
+        "fr": "Si Delphine Batho était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/delphine-batho",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-xavier-bertrand",
+        "fr": "Si Xavier Bertrand était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/xavier-bertrand",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-nicolas-dupont-aignan",
+        "fr": "Si Nicolas Dupont-Aignan était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/nicolas-dupont-aignan",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-jerome-guedj",
+        "fr": "Si Jérôme Guedj était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/jerome-guedj",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-marine-le-pen",
+        "fr": "Si Marine Le Pen était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/marine-le-pen",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-jordan-bardella",
+        "fr": "Si Jordan Bardella était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/jordan-bardella",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-edouard-philippe",
+        "fr": "Si Édouard Philippe était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/edouard-philippe",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-francois-ruffin",
+        "fr": "Si François Ruffin était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/francois-ruffin",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-marine-tondelier",
+        "fr": "Si Marine Tondelier était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/marine-tondelier",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-david-lisnard",
+        "fr": "Si David Lisnard était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/david-lisnard",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-gabriel-attal",
+        "fr": "Si Gabriel Attal était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/gabriel-attal",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-bernard-cazeneuve",
+        "fr": "Si Bernard Cazeneuve était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/bernard-cazeneuve",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-raphael-glucksmann",
+        "fr": "Si Raphaël Glucksmann était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/raphael-glucksmann",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-francois-hollande",
+        "fr": "Si François Hollande était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/francois-hollande",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-jean-luc-melenchon",
+        "fr": "Si Jean-Luc Mélenchon était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/jean-luc-melenchon",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-bruno-retailleau",
+        "fr": "Si Bruno Retailleau était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/bruno-retailleau",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-fabien-roussel",
+        "fr": "Si Fabien Roussel était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/fabien-roussel",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-eric-zemmour",
+        "fr": "Si Éric Zemmour était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/eric-zemmour",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-dominique-de-villepin",
+        "fr": "Si Dominique de Villepin était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/dominique-de-villepin",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-juan-branco",
+        "fr": "Si Juan Branco était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/juan-branco",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-patrick-sebastien",
+        "fr": "Si Patrick Sébastien était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/patrick-sebastien",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-francis-lalanne",
+        "fr": "Si Francis Lalanne était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/francis-lalanne",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-florian-philippot",
+        "fr": "Si Florian Philippot était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/florian-philippot",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-karim-bouamrane",
+        "fr": "Si Karim Bouamrane était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/karim-bouamrane",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-segolene-royal",
+        "fr": "Si Ségolène Royal était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/segolene-royal",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-philippe-brun",
+        "fr": "Si Philippe Brun était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/philippe-brun",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-anasse-kazib",
+        "fr": "Si Anasse Kazib était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/anasse-kazib",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-selma-labib",
+        "fr": "Si Selma Labib était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/selma-labib",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-clara-egger",
+        "fr": "Si Clara Egger était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/clara-egger",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-antoine-mikolajczak",
+        "fr": "Si Antoine Mikolajczak était élu, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/antoine-mikolajczak",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-gagnait-lydie-massard",
+        "fr": "Si Lydie Massard était élue, quel serait votre sentiment ?",
+        "help": "https://www.quizz-du-berger.com/candidat/lydie-massard",
+        "answers": [
+          "Très content(e)",
+          "Plutôt content(e)",
+          "Neutre",
+          "Plutôt mécontent(e)",
+          "Très mécontent(e)",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      }
+    ]
   }
 ]

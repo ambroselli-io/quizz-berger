@@ -15,11 +15,16 @@ import {
   themeSlugMap,
   type CandidateSlugEntry,
 } from '@app/utils/seo';
+import { gagnaitThemeId } from '@app/utils/quizz';
 import type { QuizzQuestion } from '@app/types/quizz';
 
 const MAX_SCORE_PER_QUESTION = 5;
 
-const allQuestions: QuizzQuestion[] = themeSlugMap.flatMap((theme) => theme.questions);
+// The "gagnait" answers of a candidate are generated from this very proximity, so counting them
+// would feed the result back into its own input.
+const allQuestions: QuizzQuestion[] = themeSlugMap
+  .filter((theme) => theme.themeId !== gagnaitThemeId)
+  .flatMap((theme) => theme.questions);
 
 // Curated pairs are not always alphabetical, so the /comparer slug is looked up
 // instead of rebuilt, otherwise the link 404s.

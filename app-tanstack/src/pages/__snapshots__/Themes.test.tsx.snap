@@ -93,6 +93,11 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
     "questionCount": 8,
   },
   {
+    "fr": "Et si un(e) autre gagnait...",
+    "id": "theme-et-si-un-autre-gagnait-2027",
+    "questionCount": 33,
+  },
+  {
     "fr": "Travail, Chômage, Retraite",
     "id": "theme-travail-chomage-retraite-2027",
     "questionCount": 8,

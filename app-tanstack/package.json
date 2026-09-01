@@ -11,6 +11,7 @@
     "dev": "vite dev --port 5178 --host",
     "generate-sitemap": "tsx --tsconfig ./tsconfig.app.json scripts/generate-sitemap.ts",
     "fetch-sondages": "tsx --tsconfig ./tsconfig.app.json scripts/fetch-sondages.ts",
+    "generate-gagnait-theme": "tsx --tsconfig ./tsconfig.app.json scripts/generate-gagnait-theme.ts && node ../api-express/scripts/extract-all-answers.js",
     "build": "tsx --tsconfig ./tsconfig.app.json scripts/generate-sitemap.ts && vite build",
     "test": "vitest run",
     "test:watch": "vitest",
