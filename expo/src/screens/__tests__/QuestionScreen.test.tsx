@@ -1,6 +1,9 @@
 import React from 'react';
-import { render, screen, userEvent } from '@testing-library/react-native';
-import QuestionScreen from '~/screens/QuestionScreen';
+import { render, screen, userEvent, waitFor } from '@testing-library/react-native';
+import * as StoreReview from 'expo-store-review';
+import QuestionScreen, { FEEDBACK_HINT_SEEN_KEY } from '~/screens/QuestionScreen';
+import storage from '~/utils/storage';
+import { REVIEW_REQUESTED_KEY } from '~/utils/appReview';
 import useQuizzStore from '~/zustand/quizz';
 import useStore from '~/zustand/store';
 import { bundledThemes } from '~/utils/quizz';
@@ -73,6 +76,8 @@ beforeEach(() => {
   });
   useStore.setState({ user: { _id: 'user-1', pseudo: 'toto' }, userAnswers: [] });
   useQuizzStore.getState().setQuizz(bundledThemes, null);
+  storage.delete(FEEDBACK_HINT_SEEN_KEY);
+  storage.delete(REVIEW_REQUESTED_KEY);
   mockRoute = { params: { themeId: 'theme-2027-police', questionId: 'question-2027-pol-01' } };
 });
 
@@ -150,5 +155,81 @@ describe('QuestionScreen', () => {
     await render(<QuestionScreen />);
 
     expect(screen.queryByText('Faut-il plus de policiers ?')).not.toBeOnTheScreen();
+  });
+
+  describe('feedback on a question', () => {
+    const HINT = /donner votre avis sur chaque question/;
+
+    it('links every question to the feedback form', async () => {
+      await render(<QuestionScreen />);
+
+      await userEvent.setup().press(screen.getByText('Un avis sur cette question ?'));
+
+      expect(mockNavigation.navigate).toHaveBeenCalledWith('Feedback', {
+        kind: 'question',
+        themeId: 'theme-2027-police',
+        questionId: 'question-2027-pol-01',
+      });
+    });
+
+    it('does not explain the feedback link on the first question', async () => {
+      await render(<QuestionScreen />);
+
+      expect(screen.queryByText(HINT)).not.toBeOnTheScreen();
+    });
+
+    it('explains the feedback link on the second question, once per install', async () => {
+      mockRoute = { params: { themeId: 'theme-2027-police', questionId: NEW_QUESTION_ID } };
+      const first = await render(<QuestionScreen />);
+      expect(screen.getByText(HINT)).toBeOnTheScreen();
+      await first.unmount();
+
+      await render(<QuestionScreen />);
+      expect(screen.queryByText(HINT)).not.toBeOnTheScreen();
+    });
+  });
+
+  describe('app store review', () => {
+    it('asks for a review once the first theme is fully answered', async () => {
+      (StoreReview.hasAction as jest.Mock).mockResolvedValue(true);
+      savedAnswers = [
+        { userId: 'user-1', themeId: 'theme-2027-police', questionId: 'question-2027-pol-01', answerIndex: 0 },
+      ];
+      mockRoute = { params: { themeId: 'theme-2027-police', questionId: NEW_QUESTION_ID } };
+      await render(<QuestionScreen />);
+      await screen.findByText('Plus de sanctions');
+
+      await userEvent.setup().press(screen.getByText('Plus de sanctions'));
+
+      await waitFor(() => expect(StoreReview.requestReview).toHaveBeenCalledTimes(1), { timeout: 3000 });
+      expect(storage.getString(REVIEW_REQUESTED_KEY)).toBe('1');
+    });
+
+    it('does not ask while the theme still has unanswered questions', async () => {
+      (StoreReview.hasAction as jest.Mock).mockResolvedValue(true);
+      mockRoute = { params: { themeId: 'theme-2027-police', questionId: NEW_QUESTION_ID } };
+      await render(<QuestionScreen />);
+
+      await userEvent.setup().press(screen.getByText('Plus de sanctions'));
+
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      expect(StoreReview.requestReview).not.toHaveBeenCalled();
+    });
+
+    it('never asks twice', async () => {
+      (StoreReview.hasAction as jest.Mock).mockResolvedValue(true);
+      storage.set(REVIEW_REQUESTED_KEY, '1');
+      savedAnswers = [
+        { userId: 'user-1', themeId: 'theme-2027-police', questionId: 'question-2027-pol-01', answerIndex: 0 },
+      ];
+      mockRoute = { params: { themeId: 'theme-2027-police', questionId: NEW_QUESTION_ID } };
+      await render(<QuestionScreen />);
+      await screen.findByText('Plus de sanctions');
+
+      await userEvent.setup().press(screen.getByText('Plus de sanctions'));
+
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      expect(StoreReview.requestReview).not.toHaveBeenCalled();
+    });
   });
 });

@@ -9,19 +9,19 @@ https://www.quizz-du-berger.com/confidentialite
 Quizz du Berger : Vote 2027
 
 ## Description courte (max 80)
-Pour qui voter en 2027 ? Comparez vos idées à 37 candidats. Le test politique.
+Quiz politique 2027 : pour qui voter ? Comparez vos idées à 37 candidats.
 
 ## Description complète (max 4000)
-QUI est votre candidat idéal pour la présidentielle 2027 ?
+QUI est votre candidat idéal pour la présidentielle 2027 ? Faites le quiz.
 
-70 % des électeurs demanderont à une intelligence artificielle pour qui voter. Pas vous. Le Quizz du Berger vous laisse vous faire VOTRE propre opinion.
+70 % des électeurs demanderont à une intelligence artificielle pour qui voter. Pas vous. Le Quizz du Berger, le quiz politique créé pour la présidentielle 2022, vous laisse vous faire VOTRE propre opinion.
 
 Répondez aux questions qui vous intéressent — vous seul décidez lesquelles — et découvrez, chiffres à l'appui, le candidat qui pense vraiment comme vous.
 
 ➡️ COMMENT ÇA MARCHE ?
 
 1. Répondez aux questions que vous voulez
-Parmi 20 thèmes et 135 questions : économie, immigration, écologie, santé, fiscalité, retraites, sécurité, agriculture, Europe, international… Aucune obligation de tout faire : 1 question suffit pour commencer.
+Parmi 21 thèmes et 137 questions : économie, immigration, écologie, santé, fiscalité, retraites, sécurité, agriculture, Europe, international… Aucune obligation de tout faire : 1 question suffit pour commencer.
 
 2. Comparez la pensée des candidats à la vôtre
 Un classement global ET un classement thème par thème. Parce qu'on n'est jamais d'accord à 100 % avec quelqu'un, le détail par sujet vous aide à trouver le candidat le plus proche de votre pensée, sur les thèmes qui comptent VRAIMENT pour vous.
@@ -44,6 +44,6 @@ Plus de 200 000 quizz déjà réalisés et près de 10 millions de réponses don
 L'objectif ? Vous montrer que la politique n'est pas toute noire ou toute blanche. Conforter ou remettre en question vos idées. Vous détendre, et vous faire réfléchir.
 
 Alors, pour qui allez-vous voter en 2027 ?
-Répondez au Quizz. 🐑
+Répondez au quiz. 🐑
 
-Test politique présidentielle 2027 • Pour qui voter en 2027 • Mon candidat 2027 • Boussole présidentielle • Alternative à Elyze et monvote2027 • Quiz vote élection
+Quiz politique présidentielle 2027 • Test pour qui voter en 2027 • Mon candidat 2027 • Comparateur de programmes • Alternative à Elyze et monvote2027 • Quiz vote élection • Questionnaire candidat 2027

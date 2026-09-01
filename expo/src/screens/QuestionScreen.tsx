@@ -8,6 +8,10 @@ import useQuizz from '~/hooks/useQuizz';
 import useUser from '~/hooks/useUser';
 import useUserAnswers from '~/hooks/useUserAnswers';
 import ProgressBar from '~/components/ProgressBar';
+import storage from '~/utils/storage';
+import { requestAppReviewOnce } from '~/utils/appReview';
+
+export const FEEDBACK_HINT_SEEN_KEY = 'question-feedback-hint-seen';
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, 'Question'>;
@@ -45,6 +49,19 @@ export default function QuestionScreen() {
   );
   const showResultsButton = userThemes.length > 0;
 
+  // The hint about per-question feedback shows on the second question only,
+  // once per install: the first question is for getting the hang of the quiz.
+  const [showFeedbackHint, setShowFeedbackHint] = useState(false);
+  useEffect(() => {
+    if (questionIndex !== 1) {
+      setShowFeedbackHint(false);
+      return;
+    }
+    if (storage.getString(FEEDBACK_HINT_SEEN_KEY)) return;
+    storage.set(FEEDBACK_HINT_SEEN_KEY, '1');
+    setShowFeedbackHint(true);
+  }, [questionIndex]);
+
   const goToNextQuestion = () => {
     if (questionIndex < questions.length - 1) {
       const nextQuestionId = questions[questionIndex + 1]._id;
@@ -65,6 +82,9 @@ export default function QuestionScreen() {
 
   const sendAnswer = async (answerIndex: number) => {
     setCurrentAnswerIndex(answerIndex);
+    const finishesTheme =
+      questionIndex === questions.length - 1 &&
+      questions.every((q) => q._id === questionId || userAnswers.some((a) => a.questionId === q._id));
     await setAnswer({
       userId: user?._id ?? '',
       themeId: theme._id,
@@ -72,7 +92,11 @@ export default function QuestionScreen() {
       answerIndex,
     });
     goToNextQuestion();
+    // Let the themes list settle before the OS overlays its review sheet.
+    if (finishesTheme) setTimeout(requestAppReviewOnce, 800);
   };
+
+  const openFeedback = () => navigation.navigate('Feedback', { kind: 'question', themeId, questionId });
 
   if (!question) return null;
 
@@ -107,6 +131,15 @@ export default function QuestionScreen() {
         className="flex-1"
         contentContainerStyle={{ padding: 20, paddingBottom: 100 }}
       >
+        {showFeedbackHint && (
+          <View className="mb-6 rounded-lg border border-yellow-300 bg-yellow-50 px-3 py-2">
+            <Text className="text-xs text-yellow-900">
+              Une question vous semble mal posée, ou il manque une réponse ? Vous pouvez donner votre avis sur
+              chaque question, avec le lien sous les réponses.
+            </Text>
+          </View>
+        )}
+
         <Text className="mb-8 text-center text-xl font-bold text-quizz-dark">
           {question.fr}
         </Text>
@@ -133,6 +166,10 @@ export default function QuestionScreen() {
             );
           })}
         </View>
+
+        <Pressable onPress={openFeedback} hitSlop={8} className="mt-6 items-center">
+          <Text className="text-xs text-gray-500 underline">Un avis sur cette question ?</Text>
+        </Pressable>
       </ScrollView>
 
       {/* Bottom navigation bar */}

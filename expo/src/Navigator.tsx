@@ -9,6 +9,7 @@ import LoginScreen from '~/screens/LoginScreen';
 import AllQuestionsScreen from '~/screens/AllQuestionsScreen';
 import FilterCandidatesScreen from '~/screens/FilterCandidatesScreen';
 import ShareScreen from '~/screens/ShareScreen';
+import FeedbackScreen from '~/screens/FeedbackScreen';
 import Header from '~/components/Header';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -78,6 +79,15 @@ export default function Navigator() {
         component={ShareScreen}
         options={{
           title: 'Partager',
+          headerBackTitle: 'Fermer',
+          presentation: 'modal',
+        }}
+      />
+      <Stack.Screen
+        name="Feedback"
+        component={FeedbackScreen}
+        options={{
+          title: 'Votre avis',
           headerBackTitle: 'Fermer',
           presentation: 'modal',
         }}

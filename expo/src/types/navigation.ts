@@ -1,3 +1,5 @@
+export type FeedbackKind = 'question' | 'testimony';
+
 export type RootStackParamList = {
   Home: undefined;
   Themes: undefined;
@@ -7,6 +9,7 @@ export type RootStackParamList = {
   FilterCandidates: undefined;
   Login: undefined;
   Share: undefined;
+  Feedback: { kind: FeedbackKind; themeId?: string; questionId?: string };
 };
 
 declare global {

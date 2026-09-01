@@ -18,10 +18,9 @@ import QuizzButton from "~/components/QuizzButton";
 import useStore from "~/zustand/store";
 import API from "~/services/api";
 import storage from "~/utils/storage";
-import * as StoreReview from "expo-store-review";
 import type { Answer, UserAnswerWithScorePerThemeAndMax } from "~/types/quizz";
 
-const REVIEW_REQUESTED_KEY = "app-review-requested";
+export const TESTIMONY_ASKED_KEY = "testimony-asked";
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, "Result">;
@@ -98,25 +97,16 @@ export default function ResultScreen() {
     });
   }, [navigation, candidates.length, shownCandidatesCount]);
 
-  // Ask for an app store review once the user has reached their results, at most
-  // once per install (the OS throttles further and may show nothing).
-  const reviewAsked = useRef(false);
+  // Ask for a testimony the first time the user reaches their own results,
+  // once per install. The card stays until dismissed or the screen is left.
+  const ownResults = !userPseudo || userPseudo === user?.pseudo;
+  const [showTestimony, setShowTestimony] = useState(false);
   useEffect(() => {
-    if (reviewAsked.current) return;
-    if (!answersToShow.length || candidatesLoading) return;
-    if (storage.getString(REVIEW_REQUESTED_KEY)) return;
-    reviewAsked.current = true;
-    const timeout = setTimeout(async () => {
-      try {
-        if (!(await StoreReview.hasAction())) return;
-        await StoreReview.requestReview();
-        storage.set(REVIEW_REQUESTED_KEY, "1");
-      } catch {
-        // never block the UI on a review prompt
-      }
-    }, 2500);
-    return () => clearTimeout(timeout);
-  }, [answersToShow.length, candidatesLoading]);
+    if (!ownResults || !answersToShow.length) return;
+    if (storage.getString(TESTIMONY_ASKED_KEY)) return;
+    storage.set(TESTIMONY_ASKED_KEY, "1");
+    setShowTestimony(true);
+  }, [ownResults, answersToShow.length]);
 
   const allFriendPseudos = useMemo(() => friends.map((f) => f.pseudo), [friends]);
   const [selectedFriends, setSelectedFriends] = useState<string[]>([]);
@@ -297,6 +287,26 @@ export default function ResultScreen() {
               Comparer avec mes amis
             </Text>
           </Pressable>
+        </View>
+      )}
+
+      {showTestimony && (
+        <View className="mx-4 mt-6 rounded-lg border border-yellow-300 bg-yellow-50 px-4 py-3">
+          <Text className="text-base font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
+            Un mot sur le Quizz ?
+          </Text>
+          <Text className="mt-1 text-sm text-quizz-dark/80">
+            Surpris par vos résultats ? Dites-nous en deux lignes ce que le quiz vous a apporté : votre témoignage
+            pourra être publié sur le site.
+          </Text>
+          <View className="mt-3 flex-row items-center gap-4">
+            <QuizzButton onPress={() => navigation.navigate("Feedback", { kind: "testimony" })}>
+              Laisser un témoignage
+            </QuizzButton>
+            <Pressable onPress={() => setShowTestimony(false)} hitSlop={8}>
+              <Text className="text-sm text-gray-500 underline">Non merci</Text>
+            </Pressable>
+          </View>
         </View>
       )}
 
