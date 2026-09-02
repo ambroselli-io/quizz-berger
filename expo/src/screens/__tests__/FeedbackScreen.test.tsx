@@ -103,6 +103,19 @@ describe('FeedbackScreen', () => {
     expect(mockNavigation.goBack).not.toHaveBeenCalled();
   });
 
+  it('disables the send button after a successful send', async () => {
+    mockRoute = { params: { kind: 'testimony' } };
+    await render(<FeedbackScreen />);
+
+    const user = userEvent.setup();
+    await user.type(screen.getByPlaceholderText(/Deux ou trois phrases/), 'Super quizz');
+    const button = screen.getByText('Envoyer mon témoignage');
+    await user.press(button);
+
+    expect(Alert.alert).toHaveBeenCalledWith('Merci !', expect.any(String));
+    expect(button).toBeDisabled();
+  });
+
   it('keeps the form open when the API fails', async () => {
     mockRoute = { params: { kind: 'testimony' } };
     (API.post as jest.Mock).mockImplementation(({ path }: { path: string }) => {

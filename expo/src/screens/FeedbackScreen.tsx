@@ -50,6 +50,7 @@ export default function FeedbackScreen() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
 
   const texts = copy[kind];
 
@@ -71,7 +72,7 @@ export default function FeedbackScreen() {
     };
   }, [kind, quizz, themeId, questionId, userAnswers]);
 
-  const canSend = message.trim().length > 0 && !isLoading;
+  const canSend = message.trim().length > 0 && !isLoading && !isSent;
 
   const send = async () => {
     if (!canSend) return;
@@ -102,6 +103,7 @@ export default function FeedbackScreen() {
       Alert.alert('Erreur', response?.error || "Le message n'est pas parti, réessayez dans un instant.");
       return;
     }
+    setIsSent(true);
     Alert.alert('Merci !', 'Votre message est bien envoyé.');
     navigation.goBack();
   };
