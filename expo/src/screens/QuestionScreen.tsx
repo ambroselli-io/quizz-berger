@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { View, Text, ScrollView, Pressable } from 'react-native';
+import { View, Text, ScrollView, Pressable, Linking } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RouteProp } from '@react-navigation/native';
@@ -143,6 +143,18 @@ export default function QuestionScreen() {
         <Text className="mb-8 text-center text-xl font-bold text-quizz-dark">
           {question.fr}
         </Text>
+
+        {question.help && (
+          <Pressable
+            onPress={() => Linking.openURL(question.help!)}
+            hitSlop={8}
+            className="-mt-4 mb-8 items-center"
+          >
+            <Text className="text-center text-xs text-gray-500">
+              Cliquez <Text className="underline">ici</Text> pour en savoir plus
+            </Text>
+          </Pressable>
+        )}
 
         <View className="gap-3">
           {question.answers.map((answer, index) => {
