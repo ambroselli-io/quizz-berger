@@ -3,6 +3,7 @@ import { useParams, useNavigate } from '@app/lib/router';
 import { quizz } from '@app/utils/quizz';
 import useUser from '@app/hooks/useUser';
 import useUserAnswers from '@app/hooks/useUserAnswers';
+import ModalQuestionFeedback from '@app/components/modals/ModalQuestionFeedback';
 
 export default function Question() {
   useUser({ redirectOnLoggedOut: '/' });
@@ -34,6 +35,8 @@ export default function Question() {
   useEffect(() => {
     setShowHelp(!!question?.help);
   }, [question]);
+
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
 
   const userThemes = useMemo(
     () => [
@@ -135,6 +138,14 @@ export default function Question() {
           ))}
         </div>
 
+        <button
+          type="button"
+          onClick={() => setShowFeedbackModal(true)}
+          className="mt-6 cursor-pointer border-none bg-transparent text-xs text-gray-500 underline"
+        >
+          Un avis sur cette question ?
+        </button>
+
         {/* Progress bar */}
         <div className="fixed bottom-0 left-0 flex h-20 w-screen items-center justify-center bg-white shadow-[0px_-2px_3px_#ddddddcc] max-lg:h-[11vh] max-lg:max-h-20 max-lg:min-h-[50px]">
           <div className="flex h-full w-full max-w-[1024px] items-center justify-between max-lg:px-2.5">
@@ -155,6 +166,16 @@ export default function Question() {
           </div>
         </div>
       </div>
+
+      {question && (
+        <ModalQuestionFeedback
+          isActive={showFeedbackModal}
+          onClose={() => setShowFeedbackModal(false)}
+          question={question}
+          theme={theme}
+          userAnswerIndex={currentAnswerIndex}
+        />
+      )}
     </>
   );
 }
