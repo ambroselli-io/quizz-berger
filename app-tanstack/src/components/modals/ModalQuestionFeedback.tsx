@@ -57,9 +57,13 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
 
   return (
     <QuizzModal title="Votre avis sur la question" isActive={isActive} onClose={onClose}>
-      <p className="mb-4 text-sm text-gray-600">
-        Une formulation ambiguë, une réponse qui manque, une position mal résumée ? Dites-le nous, nous relisons chaque
-        message.
+      <p className="mb-3 text-sm text-gray-600">
+        Ce formulaire sert uniquement à améliorer le quizz : formulation ambiguë, réponse qui manque, position d'un
+        candidat mal résumée.
+      </p>
+      <p className="mb-4 rounded-lg border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+        Inutile de nous donner votre opinion politique : elle ne compte pas dans votre résultat. Si vous pensez que
+        votre opinion n'est pas bien représentée ici, dites-nous ce que vous auriez attendu !
       </p>
       <div className="mb-4 rounded-lg bg-gray-100 px-3 py-2">
         <p className="text-xs text-gray-500">{theme.fr}</p>

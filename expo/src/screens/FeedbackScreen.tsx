@@ -25,7 +25,9 @@ const copy = {
   question: {
     title: 'Votre avis sur la question',
     intro:
-      "Une formulation ambiguë, une réponse qui manque, une position mal résumée ? Dites-le nous, nous relisons chaque message.",
+      "Ce formulaire sert uniquement à améliorer le quizz : formulation ambiguë, réponse qui manque, position d'un candidat mal résumée.",
+    warning:
+      "Inutile de nous donner votre opinion politique : elle ne compte pas dans votre résultat. Si vous pensez que votre opinion n'est pas bien représentée ici, dites-nous ce que vous auriez attendu !",
     placeholder: 'Ce qui ne va pas, ce qui manque, ce que vous proposez…',
     button: 'Envoyer mon avis',
   },
@@ -33,6 +35,7 @@ const copy = {
     title: 'Votre témoignage',
     intro:
       "Qu'est-ce que le Quizz du Berger vous a appris, ou fait découvrir ? Votre témoignage pourra être publié sur le site, avec votre pseudo.",
+    warning: null,
     placeholder: 'Deux ou trois phrases suffisent…',
     button: 'Envoyer mon témoignage',
   },
@@ -114,6 +117,14 @@ export default function FeedbackScreen() {
         <Text className="text-sm text-quizz-dark/80" style={{ fontFamily: 'MerriweatherSans_400Regular' }}>
           {texts.intro}
         </Text>
+
+        {texts.warning && (
+          <View className="rounded-lg border border-amber-300 bg-amber-50 px-3 py-2">
+            <Text className="text-sm text-amber-900" style={{ fontFamily: 'MerriweatherSans_400Regular' }}>
+              {texts.warning}
+            </Text>
+          </View>
+        )}
 
         {question && (
           <View className="rounded-lg bg-gray-100 px-3 py-2">
