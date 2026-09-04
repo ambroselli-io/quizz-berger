@@ -232,9 +232,9 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoDescription: `Réseaux sociaux et écrans chez les jeunes : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-pol-09': {
-    slug: 'loi-ripost-securite-quotidien-france',
-    seoTitle: 'Loi Ripost et sécurité du quotidien : candidats 2027',
-    seoDescription: `Rodéos motorisés, free parties, protoxyde d'azote : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la loi Ripost.`,
+    slug: 'rodeos-motorises-sanctions-france',
+    seoTitle: 'Rodéos motorisés : sanctions ou prévention ? Candidats 2027',
+    seoDescription: `Rodéos motorisés : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 entre répression et prévention.`,
   },
   'question-2027-climat-07': {
     slug: 'feux-foret-securite-civile-france',

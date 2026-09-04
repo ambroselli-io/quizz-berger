@@ -310,8 +310,8 @@ question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
 [0] Il faut accompagner et aider les familles pour prévenir la récidive
 
-question-2027-pol-09: Comment répondre aux nuisances du quotidien (rodéos motorisés, free parties, protoxyde d'azote) ?
-[3] Privilégier la prévention et les moyens humains (éducateurs, police de proximité) plutôt que de nouveaux délits
+question-2027-pol-09: Que faire face aux rodéos motorisés ?
+[3] Privilégier la prévention et les moyens humains (éducateurs, police de proximité) plutôt que de nouvelles sanctions
 
 question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime défense pour les forces de l'ordre, adoptée en juillet 2026 ?
 [3] S'opposer à la présomption : le droit commun doit s'appliquer à tous, y compris aux forces de l'ordre, pour éviter tout risque d'impunité
