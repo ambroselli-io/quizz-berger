@@ -17,4 +17,5 @@ export const temoignages = [
   { blockquote: "J'ai découvert un nouveau candidat, je n'aurais jamais soupçonné que nos pensées étaient aussi proches. Coup de foudre", figcaption: 'Christophe' },
   { blockquote: "Pour moi ce qui compte, c'est la culture. Et la politique, je m'en fous j'y connais rien, mais je sais que c'est important. Donc merci au Quizz du Berger : je ne réfléchis pas, je vote pour le premier !", figcaption: 'Thomas' },
   { blockquote: 'Bien foutu ce quiz ! Ça fait réfléchir...', figcaption: 'Nacim' },
+  { blockquote: "Merci pour la conception de ce test particulièrement utile à l'approche des élections de 2027.", figcaption: 'Corentin' },
 ];
