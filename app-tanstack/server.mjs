@@ -51,6 +51,13 @@ app.use('/assets', express.static(join(clientDir, 'assets'), { immutable: true, 
 // Other static files (favicon, candidate images, pdfs…). index:false so `/` hits SSR, not index.html.
 app.use(express.static(clientDir, { index: false }));
 
+// Trust-anchor redirects. AI agents check /about, /contact, /privacy to
+// verify legitimacy. /contact already exists as a route; the other two map
+// to the French equivalents. 301 so agents (and search engines) learn the
+// canonical path.
+app.get('/about', (_req, res) => res.redirect(301, '/qui-sommes-nous'));
+app.get('/privacy', (_req, res) => res.redirect(301, '/confidentialite'));
+
 // Markdown content negotiation (acceptmarkdown.com). When a client sends
 // Accept: text/markdown, serve llms.txt for the homepage instead of HTML.
 let llmsTxtContent = '';
@@ -59,12 +66,31 @@ try {
 } catch {
   // llms.txt may not exist in dev; fall through to SSR.
 }
+
+const NOT_FOUND_MD = `# 404 — Page non trouvée
+
+La page demandée n'existe pas sur le Quizz du Berger.
+
+## Où chercher
+
+- [Page d'accueil](https://www.quizz-du-berger.com/) — commencer le test politique
+- [Tous les candidats](https://www.quizz-du-berger.com/candidats) — les 40 candidats et leurs positions
+- [Sujets brûlants](https://www.quizz-du-berger.com/sujets) — les questions d'actualité
+- [Comparer deux candidats](https://www.quizz-du-berger.com/comparer) — accords et désaccords
+- [Blog](https://www.quizz-du-berger.com/blog) — articles d'analyse politique
+- [Qui sommes-nous](https://www.quizz-du-berger.com/qui-sommes-nous) — méthode et auteurs
+- [Plan du site](https://www.quizz-du-berger.com/sitemap.xml)
+- [llms.txt](https://www.quizz-du-berger.com/llms.txt) — index structuré pour agents IA
+`;
+
 app.use((req, res, next) => {
   res.vary('Accept');
   const accept = req.headers.accept || '';
-  if (accept.includes('text/markdown') && req.path === '/' && llmsTxtContent) {
-    res.type('text/markdown; charset=utf-8').send(llmsTxtContent);
-    return;
+  if (accept.includes('text/markdown')) {
+    if (req.path === '/' && llmsTxtContent) {
+      res.type('text/markdown; charset=utf-8').send(llmsTxtContent);
+      return;
+    }
   }
   next();
 });
@@ -98,6 +124,12 @@ app.use(async (req, res) => {
     const controller = new AbortController();
     res.on('close', () => controller.abort());
 
+    // The SSR handler rejects non-HTML Accept headers. When the client sends
+    // Accept: text/markdown, tell the SSR handler it's HTML so it renders the
+    // page normally — we check the status code afterwards.
+    const wantsMarkdown = (req.headers.accept || '').includes('text/markdown');
+    if (wantsMarkdown) headers.set('accept', 'text/html');
+
     const init = { method: req.method, headers, signal: controller.signal };
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       init.body = req;
@@ -105,6 +137,14 @@ app.use(async (req, res) => {
     }
 
     const response = await handler.fetch(new Request(url, init));
+
+    // Agent-friendly 404: when the SSR handler returns 404 and the client
+    // accepts text/markdown, serve a short markdown body with recovery links
+    // instead of the full HTML app shell.
+    if (response.status === 404 && wantsMarkdown) {
+      res.status(404).type('text/markdown; charset=utf-8').send(NOT_FOUND_MD);
+      return;
+    }
 
     res.statusCode = response.status;
     response.headers.forEach((value, key) => res.setHeader(key, value));
