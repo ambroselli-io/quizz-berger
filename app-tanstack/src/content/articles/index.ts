@@ -1,5 +1,6 @@
 import type { Article } from '~/types/article';
 
+import { article as articleAccordMigratoireRoyaumeUniMancheFranceCandidats2027 } from './accord-migratoire-royaume-uni-manche-france-candidats-2027';
 import { article as articleVoileEspacePublicReferendumFranceCandidats2027 } from './voile-espace-public-referendum-france-candidats-2027';
 import { article as articleDebatMedef27Aout2026FranceCandidats2027 } from './debat-medef-27-aout-2026-france-candidats-2027';
 import { article as articleJoursDeCarenceArretsMaladieFranceCandidats2027 } from './jours-de-carence-arrets-maladie-france-candidats-2027';
@@ -43,6 +44,7 @@ export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
+  articleAccordMigratoireRoyaumeUniMancheFranceCandidats2027,
   articleVoileEspacePublicReferendumFranceCandidats2027,
   articleDebatMedef27Aout2026FranceCandidats2027,
   articleJoursDeCarenceArretsMaladieFranceCandidats2027,
