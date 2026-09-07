@@ -14,6 +14,7 @@ import compression from 'compression';
 import { createExpressAICrawlerMiddleware } from '@datafast/ai-crawl';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { readFileSync } from 'node:fs';
 import handler from './dist/server/server.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -49,6 +50,24 @@ if (indexNowKey && /^[A-Za-z0-9-]{8,128}$/.test(indexNowKey)) {
 app.use('/assets', express.static(join(clientDir, 'assets'), { immutable: true, maxAge: '1y' }));
 // Other static files (favicon, candidate images, pdfs…). index:false so `/` hits SSR, not index.html.
 app.use(express.static(clientDir, { index: false }));
+
+// Markdown content negotiation (acceptmarkdown.com). When a client sends
+// Accept: text/markdown, serve llms.txt for the homepage instead of HTML.
+let llmsTxtContent = '';
+try {
+  llmsTxtContent = readFileSync(join(clientDir, 'llms.txt'), 'utf-8');
+} catch {
+  // llms.txt may not exist in dev; fall through to SSR.
+}
+app.use((req, res, next) => {
+  res.vary('Accept');
+  const accept = req.headers.accept || '';
+  if (accept.includes('text/markdown') && req.path === '/' && llmsTxtContent) {
+    res.type('text/markdown; charset=utf-8').send(llmsTxtContent);
+    return;
+  }
+  next();
+});
 
 // DataFast "Bot traffic": reports AI and search crawler hits (ChatGPT-User,
 // ClaudeBot, GPTBot, Googlebot…) to https://datafa.st/api/ai-crawls. It reads the

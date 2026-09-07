@@ -68,12 +68,12 @@ export default function Home() {
           >
             Répondre au Quizz
           </QuizzButton>
-          <h3 className="mt-10 mb-10 max-w-[770px] text-center font-[Merriweather_Sans] text-xl font-light leading-[200%] text-white/80">
+          <p className="mt-10 mb-10 max-w-[770px] text-center font-[Merriweather_Sans] text-xl font-light leading-[200%] text-white/80">
             70% des électeurs demanderont l'avis <br />
             d'une Intelligence Artificielle pour savoir quoi voter.
             <br />
             <strong>Pas vous</strong>.
-          </h3>
+          </p>
           <Link
             to="/login"
             className="mt-5 text-center font-[Merriweather_Sans] font-light leading-relaxed text-white/80"

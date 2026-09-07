@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { Link } from '@app/lib/router';
 import Logo from './Logo';
-import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
 
 const Footer = () => {
   const [showLegalModal, setShowLegalModal] = useState(false);
-  const [showContactModal, setShowContactModal] = useState(false);
 
   return (
     <div className="hidden w-full bg-quizz-dark px-10 py-10 text-white lg:block">
@@ -38,7 +36,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">À propos</p>
             <Link to="/qui-sommes-nous" className="text-sm text-gray-300 hover:text-white">Qui sommes-nous ?</Link>
-            <button onClick={() => setShowContactModal(true)} className="cursor-pointer border-none bg-transparent p-0 text-left text-sm text-gray-300 hover:text-white">Nous contacter</button>
+            <Link to="/contact" className="text-sm text-gray-300 hover:text-white">Nous contacter</Link>
             <button onClick={() => setShowLegalModal(true)} className="cursor-pointer border-none bg-transparent p-0 text-left text-sm text-gray-300 hover:text-white">Mentions légales</button>
             <Link to="/confidentialite" className="text-sm text-gray-300 hover:text-white">Confidentialité</Link>
             <a target="_blank" rel="noreferrer" href="https://github.com/ambroselli-io/quizz-berger" className="text-sm text-gray-300 hover:text-white">Open-source</a>
@@ -47,7 +45,6 @@ const Footer = () => {
       </div>
 
       <ModalLegal isActive={showLegalModal} onClose={() => setShowLegalModal(false)} />
-      <ModalContact isActive={showContactModal} onClose={() => setShowContactModal(false)} />
     </div>
   );
 };

@@ -23,14 +23,22 @@ const WEBAPP_JSONLD = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
   name: 'Le Quizz du Berger',
+  alternateName: [
+    'Quiz politique présidentielle 2027',
+    'Test politique 2027',
+    'Boussole politique 2027',
+    'Compas politique France',
+    'Boussole électorale présidentielle',
+  ],
   url: 'https://www.quizz-du-berger.com',
-  description: `Quiz politique pour l'élection présidentielle française 2027. Comparez vos idées avec ${candidatesCount} candidats sur ${quizzThemesCount} thèmes et ${quizzQuestionsCount} questions.`,
+  description: `Quiz politique gratuit pour l'élection présidentielle française 2027. Répondez aux questions que vous voulez et découvrez quel candidat pense comme vous. Comparez vos idées avec ${candidatesCount} candidats sur ${quizzThemesCount} thèmes et ${quizzQuestionsCount} questions.`,
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'Any',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   inLanguage: 'fr',
   author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
   sameAs: [APP_STORE_URL],
+  keywords: 'quiz politique, test politique, boussole politique, compas politique, présidentielle 2027, pour qui voter, quel candidat, comparateur programmes',
 };
 
 const MOBILE_APP_JSONLD = {
