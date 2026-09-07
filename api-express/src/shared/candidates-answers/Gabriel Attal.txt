@@ -596,3 +596,12 @@ question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, q
 
 question-2027-gagnait-lydie-massard: Si Lydie Massard était élue, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
+
+question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-emmanuel-maurel: Si Emmanuel Maurel était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-fabien-verdier: Si Fabien Verdier était élu, quel serait votre sentiment ?
+[2] Neutre

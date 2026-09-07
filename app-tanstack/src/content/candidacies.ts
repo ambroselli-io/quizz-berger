@@ -80,7 +80,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Nous France',
     summary:
-      "Xavier Bertrand a annoncé sa candidature le 3 février 2024 dans un entretien à Ouest-France, sans attendre la désignation des Républicains. Il porte depuis son propre mouvement, Nous France.",
+      "Xavier Bertrand a annoncé sa candidature le 3 février 2024 dans un entretien à Ouest-France, sans attendre la désignation des Républicains. Il a confirmé sa candidature à la rentrée de MEDEF le 27 août 2026, en refusant toute primaire à droite.",
     quote: {
       text: "J'ai bien l'intention d'être candidat en 2027.",
       source: {
@@ -99,6 +99,23 @@ export const candidacies: Candidacy[] = [
             label: 'Ouest-France',
             url: 'https://www.ouest-france.fr/elections/presidentielle/entretien-xavier-bertrand-a-ouest-france-jai-bien-lintention-detre-candidat-en-2027-d8f5b8a0-c29d-11ee-af40-0572f37cda9b',
             date: '2024-02-03',
+          },
+        ],
+      },
+      {
+        date: '2026-08-27',
+        type: 'step',
+        label: 'Il confirme sa candidature à la rentrée du MEDEF, en refusant toute primaire à droite.',
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election',
+            date: '2026-08-27',
+          },
+          {
+            label: 'La Libre',
+            url: 'https://www.lalibre.be/international/europe/2026/08/27/un-pretendant-de-plus-a-la-presidence-de-la-republique-francaise-xavier-bertrand-lr-confirme-quil-sera-bien-candidat-a-lelection-presidentielle-SBDWBEGIIFCP7O3WCK3VVHAAZQ/',
+            date: '2026-08-27',
           },
         ],
       },
@@ -325,13 +342,19 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Parti socialiste',
     summary:
-      "Jérôme Guedj a annoncé sa candidature le 5 février 2026 sur France Inter, en excluant de passer par la primaire de la gauche.",
+      "Jérôme Guedj a annoncé sa candidature le 5 février 2026 sur France Inter, d'abord hors primaire. Il a rejoint la primaire socialiste et démocratique d'octobre 2026.",
     events: [
       {
         date: '2026-02-05',
         type: 'declaration',
         label:
           "Il annonce sa candidature sur France Inter, hors primaire de la gauche unitaire.",
+        sources: [WIKI],
+      },
+      {
+        date: '2026-08-23',
+        type: 'step',
+        label: "Il rejoint la primaire socialiste et démocratique d'octobre.",
         sources: [WIKI],
       },
     ],
@@ -571,7 +594,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Parti socialiste',
     summary:
-      "Karim Bouamrane, maire de Saint-Ouen-sur-Seine, a annoncé sa candidature le 9 juin 2026 sur France Inter, en dehors du processus de désignation du Parti socialiste. Il a refusé de participer à la primaire socialiste d'octobre.",
+      "Karim Bouamrane, maire de Saint-Ouen-sur-Seine, a annoncé sa candidature le 9 juin 2026 sur France Inter. Il a confirmé le 26 août qu'il ne participera pas à la primaire socialiste, qu'il juge trop fermée.",
     quote: {
       text: "Je suis candidat parce que depuis que je suis en responsabilité, j'ai pris conscience de notre force.",
       source: {
@@ -595,6 +618,22 @@ export const candidacies: Candidacy[] = [
             label: 'CNEWS',
             url: 'https://www.cnews.fr/france/2026-06-09/karim-bouamrane-maire-ps-de-saint-ouen-annonce-sa-candidature-lelection',
             date: '2026-06-09',
+          },
+        ],
+      },
+      {
+        date: '2026-08-26',
+        type: 'step',
+        label: "Il confirme qu'il ne participera pas à la primaire socialiste, qu'il juge trop fermée.",
+        sources: [
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-08-26/presidentielle-2027-karim-bouamrane-ne-participera-pas-la-primaire-socialiste',
+            date: '2026-08-26',
+          },
+          {
+            label: 'Europe 1',
+            url: 'https://www.europe1.fr/politique/elle-ne-mobilise-pas-toute-la-famille-sociale-democrate-karim-bouamrane-explique-pourquoi-il-ne-participera-pas-a-la-primaire-de-la-gauche-1060409',
           },
         ],
       },
@@ -779,6 +818,141 @@ export const candidacies: Candidacy[] = [
       },
     ],
   },
+  {
+    slug: 'raphael-glucksmann',
+    status: 'declared',
+    movement: 'Place publique',
+    summary:
+      "Raphaël Glucksmann a annoncé sa candidature le 23 août 2026 au journal de 20 heures de TF1. Il accepte de passer par la primaire socialiste et démocratique d'octobre. Le sénateur Yannick Jadot l'a rallié dès le lendemain.",
+    events: [
+      {
+        date: '2026-08-23',
+        type: 'declaration',
+        label: 'Il annonce sa candidature au journal de 20 heures de TF1.',
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260823-rapha%C3%ABl-glucksmann-annonce-sa-candidature-%C3%A0-la-pr%C3%A9sidentielle-de-2027',
+            date: '2026-08-23',
+          },
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/politique/raphael-glucksmann/soutiens-sondages-programme-sur-quoi-s-appuie-la-candidature-de-raphael-glucksmann-qui-lance-sa-campagne-pour-la-presidentielle-2027_8153303.html',
+            date: '2026-08-23',
+          },
+        ],
+      },
+      {
+        date: '2026-08-24',
+        type: 'step',
+        label: 'Yannick Jadot annonce le soutenir « sans hésitation ».',
+        sources: [
+          {
+            label: 'Le JDD',
+            url: 'https://www.lejdd.fr/politique/sans-hesitation-yannick-jadot-annonce-soutenir-raphael-glucksmann-a-la-presidentielle-181650',
+          },
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-senateur-ecologiste-yannick-jadot-soutient-raphael-glucksmann-sans-hesitation-estimant-qu-il-peut-gagner-cette-election_8159192.html',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'fabien-roussel',
+    status: 'declared',
+    movement: 'Parti communiste français',
+    summary:
+      "Fabien Roussel a officialisé sa candidature le 6 septembre 2026 au journal de 20 heures de TF1, après un vote des adhérents du PCF qui l'a validée à 72 %. C'est sa deuxième campagne présidentielle, après 2022.",
+    events: [
+      {
+        date: '2026-09-06',
+        type: 'declaration',
+        label: 'Il officialise sa candidature après un vote des adhérents du PCF à 72 %.',
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf',
+            date: '2026-09-06',
+          },
+          {
+            label: 'La Libre',
+            url: 'https://www.lalibre.be/international/europe/2026/09/06/election-presidentielle-en-france-fabien-roussel-secretaire-national-du-parti-communiste-officialise-sa-candidature-UEXXRNCWEZCF5OBDGAPWYZWRDE/',
+            date: '2026-09-06',
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: 'olivier-faure',
+    status: 'declared',
+    movement: 'Parti socialiste',
+    summary:
+      "Olivier Faure, premier secrétaire du Parti socialiste depuis 2018, a annoncé sa candidature le 30 août 2026 au journal de 20 heures de TF1, pour la primaire socialiste et démocratique d'octobre. C'est la première fois qu'il brigue l'Élysée.",
+    events: [
+      {
+        date: '2026-08-30',
+        type: 'declaration',
+        label: "Il annonce sa candidature à la primaire socialiste au journal de 20 heures de TF1.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260830-pr%C3%A9sidentielle-2027-olivier-faure-annonce-sa-candidature-%C3%A0-la-primaire-de-la-gauche',
+            date: '2026-08-30',
+          },
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/le-chef-du-parti-socialiste-olivier-faure-confirme-sa-candidature-a-la-primaire-de-son-camp-en-vue-de-l-election-presidentielle_8169896.html',
+            date: '2026-08-30',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'fabien-verdier',
+    status: 'declared',
+    movement: 'Parti socialiste',
+    summary:
+      "Fabien Verdier, ancien maire de Châteaudun et directeur d'hôpital, a annoncé sa candidature le 3 septembre 2026 pour la primaire socialiste et démocratique. Il défend la « justice territoriale » et porte la voix de la France rurale.",
+    events: [
+      {
+        date: '2026-09-03',
+        type: 'declaration',
+        label: "Il annonce sa candidature à la primaire socialiste, pour la « justice territoriale ».",
+        sources: [WIKI],
+      },
+    ],
+  },
+  {
+    slug: 'emmanuel-maurel',
+    status: 'declared',
+    movement: 'Gauche républicaine et socialiste',
+    summary:
+      "Emmanuel Maurel, député et dirigeant de la Gauche républicaine et socialiste (GRS), a annoncé sa candidature le 4 septembre 2026 pour la primaire socialiste et démocratique. Il porte une ligne souverainiste de gauche, critique de la construction européenne.",
+    events: [
+      {
+        date: '2026-09-04',
+        type: 'declaration',
+        label: 'Il annonce sa candidature à la primaire socialiste pour la GRS.',
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/politique/ps/primaire-socialiste/le-depute-emmanuel-maurel-annonce-sa-candidature-a-la-primaire-socialiste-pour-l-election-presidentielle_8176532.html',
+            date: '2026-09-04',
+          },
+          {
+            label: 'La Libre',
+            url: 'https://www.lalibre.be/international/europe/2026/09/04/le-depute-emmanuel-maurel-annonce-quil-participera-a-la-primaire-de-la-gauche-OAREJDBN2VHTPDUPKU243GL7HM/',
+            date: '2026-09-04',
+          },
+        ],
+      },
+    ],
+  },
 
   // --- Ils ont renoncé ---
   {
@@ -911,16 +1085,21 @@ export const candidacies: Candidacy[] = [
     status: 'potential',
     movement: 'Reconquête',
     summary:
-      "Éric Zemmour, candidat en 2022, prépare un programme et dit avoir « tout son temps » pour se déclarer. À la mi-août 2026, il n'a pas officialisé sa candidature. Sarah Knafo, sa proche collaboratrice, a dit souhaiter qu'il soit le candidat de Reconquête.",
-    events: [],
-  },
-  {
-    slug: 'fabien-roussel',
-    status: 'potential',
-    movement: 'Parti communiste français',
-    summary:
-      "Fabien Roussel s'est dit prêt le 11 mai 2026 à « consacrer toute son énergie » à une candidature communiste. Le Parti communiste français, qui refuse la primaire, doit officialiser son choix début septembre 2026.",
-    events: [],
+      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Sarah Knafo, vice-présidente de Reconquête, souhaite qu'il soit le candidat du parti.",
+    events: [
+      {
+        date: '2026-09-03',
+        type: 'step',
+        label: "Il indique qu'il annoncera sa candidature « avant décembre ».",
+        sources: [
+          {
+            label: 'Orange Actualités / AFP',
+            url: 'https://actu.orange.fr/politique/presidentielle-zemmour-prevoit-d-annoncer-sa-candidature-quot-avant-decembre-quot-CNT000002rHPUN.html',
+            date: '2026-09-03',
+          },
+        ],
+      },
+    ],
   },
   {
     slug: 'dominique-de-villepin',
@@ -938,20 +1117,25 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
-    slug: 'raphael-glucksmann',
-    status: 'potential',
-    movement: 'Place publique',
-    summary:
-      "Raphaël Glucksmann arrive en tête des sondages à gauche mais n'a pas déclaré sa candidature. Il a refusé la primaire de la gauche. Une désignation à gauche est évoquée pour décembre 2026.",
-    events: [],
-  },
-  {
     slug: 'francois-hollande',
     status: 'potential',
     movement: 'Parti socialiste',
     summary:
-      "François Hollande, président de la République de 2012 à 2017, refuse le format de la primaire socialiste, qu'il juge trop étroit. Il n'a pas déclaré sa candidature et se tient prêt si la gauche ne trouve pas son candidat.",
-    events: [],
+      "François Hollande, président de la République de 2012 à 2017, ne participe pas à la primaire socialiste d'octobre. Il a publié le livre Unir et fixe sa décision au mois de décembre, en assurant qu'il « n'y aura qu'une seule candidature de la gauche sociale-démocrate ».",
+    events: [
+      {
+        date: '2026-09-02',
+        type: 'step',
+        label: "Il assure qu'il n'y aura qu'une seule candidature sociale-démocrate, et renvoie sa décision à décembre.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/il-n-y-aura-qu-une-seule-candidature-de-la-gauche-social-democrate-a-la-presidentielle-2027-assure-francois-hollande_8173478.html',
+            date: '2026-09-02',
+          },
+        ],
+      },
+    ],
   },
   {
     slug: 'jordan-bardella',

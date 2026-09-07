@@ -63,9 +63,21 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 72,
+    "percent": 73,
+    "pseudos": [
+      "Emmanuel Maurel",
+    ],
+  },
+  {
+    "percent": 73,
     "pseudos": [
       "Francis Lalanne",
+    ],
+  },
+  {
+    "percent": 71,
+    "pseudos": [
+      "Olivier Faure",
     ],
   },
   {
@@ -75,7 +87,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 67,
+    "percent": 68,
     "pseudos": [
       "Raphaël Glucksmann",
     ],
@@ -117,13 +129,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 54,
+    "percent": 56,
+    "pseudos": [
+      "Fabien Verdier",
+    ],
+  },
+  {
+    "percent": 55,
     "pseudos": [
       "Karim Bouamrane",
     ],
   },
   {
-    "percent": 53,
+    "percent": 54,
     "pseudos": [
       "François Hollande",
     ],
@@ -135,13 +153,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 52,
+    "percent": 53,
     "pseudos": [
       "Florian Philippot",
     ],
   },
   {
-    "percent": 50,
+    "percent": 51,
     "pseudos": [
       "François Bayrou",
     ],
@@ -153,13 +171,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 43,
+    "percent": 44,
     "pseudos": [
       "Clara Egger",
     ],
   },
   {
-    "percent": 40,
+    "percent": 41,
     "pseudos": [
       "Marine Le Pen",
     ],
@@ -171,13 +189,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 38,
+    "percent": 39,
     "pseudos": [
       "Jordan Bardella",
     ],
   },
   {
-    "percent": 33,
+    "percent": 34,
     "pseudos": [
       "Gabriel Attal",
     ],
@@ -201,13 +219,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 25,
+    "percent": 26,
     "pseudos": [
       "Gérald Darmanin",
     ],
   },
   {
-    "percent": 23,
+    "percent": 24,
     "pseudos": [
       "Laurent Wauquiez",
     ],

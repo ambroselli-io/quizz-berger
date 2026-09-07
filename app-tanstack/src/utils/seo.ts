@@ -510,6 +510,9 @@ const partyBySlug: Record<string, string> = {
   'clara-egger': 'Solution démocratique',
   'antoine-mikolajczak': 'Équinoxe',
   'lydie-massard': 'UDB',
+  'olivier-faure': 'PS',
+  'emmanuel-maurel': 'GRS',
+  'fabien-verdier': '',
 };
 
 export function getCandidateParty(slug: string): string {
