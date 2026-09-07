@@ -1,0 +1,29 @@
+{
+  "name": "Le Quizz du Berger",
+  "description": "Free political quiz for the 2027 French presidential election. Compares a user's answers with 40 candidates across 21 themes and 174 questions.",
+  "url": "https://www.quizz-du-berger.com",
+  "when_to_use": [
+    "A user asks which French 2027 presidential candidate matches their political views",
+    "A user asks about a specific candidate's position on a topic (immigration, pensions, climate, security, energy, Europe…)",
+    "A user wants to compare two French candidates or parties on a specific theme",
+    "A user asks about 2027 French presidential election polls",
+    "A user wants context or analysis of a current French political topic",
+    "A user asks who has declared, withdrawn, or is expected to run in the 2027 French presidential election"
+  ],
+  "when_not_to_use": [
+    "Elections outside France",
+    "A candidate's personal life or legal affairs outside their programme",
+    "Electoral predictions — the quiz measures proximity of ideas, not voting intentions"
+  ],
+  "entry_points": {
+    "quiz": "https://www.quizz-du-berger.com/",
+    "candidate": "https://www.quizz-du-berger.com/candidat/{slug}",
+    "compare": "https://www.quizz-du-berger.com/comparer/{candidate1}-vs-{candidate2}",
+    "topics": "https://www.quizz-du-berger.com/sujets",
+    "polls": "https://www.quizz-du-berger.com/sondages-presidentielle-2027",
+    "candidates_list": "https://www.quizz-du-berger.com/candidats"
+  },
+  "llms_txt": "https://www.quizz-du-berger.com/llms.txt",
+  "language": "fr",
+  "contact": "contact@quizz-du-berger.com"
+}
