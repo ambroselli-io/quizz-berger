@@ -60,7 +60,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Démographie et question migratoire",
     "id": "theme-2027-immigration",
-    "questionCount": 8,
+    "questionCount": 9,
   },
   {
     "fr": "Logement",

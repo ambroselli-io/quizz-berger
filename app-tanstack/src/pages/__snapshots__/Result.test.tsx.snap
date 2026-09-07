@@ -129,7 +129,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 53,
+    "percent": 52,
     "pseudos": [
       "François Asselineau",
     ],
@@ -165,7 +165,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 40,
+    "percent": 39,
     "pseudos": [
       "Nicolas Dupont-Aignan",
     ],

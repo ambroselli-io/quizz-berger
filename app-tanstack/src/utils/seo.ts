@@ -271,6 +271,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Jours de carence et arrêts maladie : les candidats 2027',
     seoDescription: `Faut-il durcir les jours de carence pour les arrêts maladie ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-immi-10': {
+    slug: 'accord-migratoire-royaume-uni-manche-france',
+    seoTitle: 'Migrants et Royaume-Uni : les positions des candidats 2027',
+    seoDescription: `Accords de réadmission avec Londres, traversées de la Manche : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

@@ -153,6 +153,9 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
 [1] Oui pour tout crime ou délit grave, en supprimant les protections qui l'empêchent aujourd'hui
 
+question-2027-immi-10: Faut-il des accords de réadmission plus stricts avec le Royaume-Uni pour les migrants qui traversent la Manche ?
+[0] Il faut fermer unilatéralement la frontière côté français, sans chercher d'accord avec Londres
+
 
 Dépenses et dette publiques:
 

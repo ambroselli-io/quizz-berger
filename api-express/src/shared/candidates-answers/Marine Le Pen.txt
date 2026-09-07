@@ -153,6 +153,9 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
 [0] Oui, systématiquement dès la première condamnation, y compris pour celles arrivées enfants ou nées en France
 
+question-2027-immi-10: Faut-il des accords de réadmission plus stricts avec le Royaume-Uni pour les migrants qui traversent la Manche ?
+[1] Il faut des accords de réadmission plus stricts et plus rapides avec le Royaume-Uni, en limitant les recours qui bloquent les renvois
+
 
 Dépenses et dette publiques:
 
