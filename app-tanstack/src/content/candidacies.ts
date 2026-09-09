@@ -1106,13 +1106,31 @@ export const candidacies: Candidacy[] = [
     status: 'potential',
     movement: 'La France humaniste',
     summary:
-      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Il n'a pas officialisé sa candidature et cherche des parrainages.",
+      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Il n'a pas officialisé sa candidature.",
     events: [
       {
         date: '2026-04-10',
         type: 'step',
         label: "Il indique vouloir être « un candidat du rassemblement », sans se déclarer.",
         sources: [WIKI],
+      },
+      {
+        date: '2026-08-30',
+        type: 'step',
+        label:
+          "Il affirme se battre pour être candidat et revendique plusieurs centaines de parrainages d'élus, insuffisants pour l'instant.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-me-bats-pour-etre-candidat-declare-dominique-de-villepin-qui-revendique-plusieurs-centaines-de-parrainages_8169629.html',
+            date: '2026-08-30',
+          },
+          {
+            label: 'Orange Actualités',
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-declare-vouloir-etre-candidat-magic-CNT000002rCnAy.html',
+            date: '2026-08-30',
+          },
+        ],
       },
     ],
   },
