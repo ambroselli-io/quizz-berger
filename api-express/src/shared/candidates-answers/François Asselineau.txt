@@ -153,7 +153,7 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
 [1] Oui pour tout crime ou délit grave, en supprimant les protections qui l'empêchent aujourd'hui
 
-question-2027-immi-10: Faut-il des accords de réadmission plus stricts avec le Royaume-Uni pour les migrants qui traversent la Manche ?
+question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [0] Il faut fermer unilatéralement la frontière côté français, sans chercher d'accord avec Londres
 
 
@@ -163,8 +163,8 @@ Dépenses et dette publiques:
 question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
 [1] Il faut augmenter les remboursements, trop de gens renoncent à se soigner
 
-question-2027-dep-02: Que devrait faire l'État avec ses dépenses publiques ?
-[3] Il faut investir davantage dans les services publics, même si ça creuse le déficit à court terme
+question-2027-dep-02: Que devrait faire l'État avec ses dépenses de fonctionnement (salaires des fonctionnaires, aides sociales, budget des ministères) ?
+[3] Il faut augmenter les moyens : les services publics sont sous-financés, ça se voit au quotidien
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
 [3] L'État doit reprendre la main sur l'économie, renationaliser des secteurs clés
@@ -174,6 +174,9 @@ question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'
 
 question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
 [1] On peut être en déficit tant que c'est raisonnable et que ça finance des investissements utiles
+
+question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?
+[3] Il faut investir davantage, même si ça creuse la dette, car ça prépare l'avenir
 
 
 Économie et Industrie:

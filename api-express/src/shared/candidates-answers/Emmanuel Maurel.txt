@@ -160,8 +160,8 @@ Dépenses et dette publiques:
 question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
 [1] Il faut augmenter les remboursements, trop de gens renoncent à se soigner
 
-question-2027-dep-02: Que devrait faire l'État avec ses dépenses publiques ?
-[3] Il faut investir davantage dans les services publics, même si ça creuse le déficit à court terme
+question-2027-dep-02: Que devrait faire l'État avec ses dépenses de fonctionnement (salaires des fonctionnaires, aides sociales, budget des ministères) ?
+[3] Il faut augmenter les moyens : les services publics sont sous-financés, ça se voit au quotidien
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
 [4] Il faut que l'État contrôle les secteurs essentiels : énergie, transports, santé, logement
@@ -171,6 +171,9 @@ question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'
 
 question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
 [0] Il faut dépenser selon les besoins, l'équilibre budgétaire est une obsession inutile
+
+question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?
+[3] Il faut investir davantage, même si ça creuse la dette, car ça prépare l'avenir
 
 
 Économie et Industrie:

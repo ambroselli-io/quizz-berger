@@ -153,7 +153,7 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
 [0] Oui, systématiquement dès la première condamnation, y compris pour celles arrivées enfants ou nées en France
 
-question-2027-immi-10: Faut-il des accords de réadmission plus stricts avec le Royaume-Uni pour les migrants qui traversent la Manche ?
+question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [0] Il faut fermer unilatéralement la frontière côté français, sans chercher d'accord avec Londres
 
 
@@ -163,8 +163,8 @@ Dépenses et dette publiques:
 question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
 [2] L'équilibre actuel est correct, il ne faut pas creuser davantage le déficit
 
-question-2027-dep-02: Que devrait faire l'État avec ses dépenses publiques ?
-[1] Il faut réduire les dépenses pour rétablir l'équilibre budgétaire, c'est urgent
+question-2027-dep-02: Que devrait faire l'État avec ses dépenses de fonctionnement (salaires des fonctionnaires, aides sociales, budget des ministères) ?
+[1] Il faut faire des économies ciblées et supprimer les postes et dispositifs inutiles
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
 [2] L'État joue un rôle suffisant, il faut garder cet équilibre entre régulation et liberté
@@ -174,6 +174,9 @@ question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'
 
 question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
 [2] Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine
+
+question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?
+[2] Le niveau d'investissement actuel est correct
 
 
 Économie et Industrie:

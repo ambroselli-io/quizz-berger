@@ -925,14 +925,14 @@
       },
       {
         "_id": "question-2027-dep-02",
-        "fr": "Que devrait faire l'État avec ses dépenses publiques ?",
+        "fr": "Que devrait faire l'État avec ses dépenses de fonctionnement (salaires des fonctionnaires, aides sociales, budget des ministères) ?",
         "help": "https://fr.wikipedia.org/wiki/Finances_publiques_en_France",
         "answers": [
-          "Il faut une rigueur budgétaire stricte : la dépense publique menace notre économie",
-          "Il faut réduire les dépenses pour rétablir l'équilibre budgétaire, c'est urgent",
-          "Il faut stabiliser les dépenses au niveau actuel, ni plus ni moins",
-          "Il faut investir davantage dans les services publics, même si ça creuse le déficit à court terme",
-          "Il faut augmenter massivement les dépenses pour répondre aux urgences sociales et écologiques",
+          "Il faut les réduire fortement : l'État est trop gros, trop de fonctionnaires, trop de bureaucratie",
+          "Il faut faire des économies ciblées et supprimer les postes et dispositifs inutiles",
+          "Il faut maintenir le niveau actuel, on dépense ce qu'il faut",
+          "Il faut augmenter les moyens : les services publics sont sous-financés, ça se voit au quotidien",
+          "Il faut une hausse massive : hôpital, école, justice, tout est à bout de souffle",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1002,6 +1002,27 @@
           [2, 3, 5, 3, 0],
           [0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-dep-06",
+        "fr": "Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?",
+        "help": "https://fr.wikipedia.org/wiki/Investissement_public",
+        "answers": [
+          "L'État investit trop : il faut laisser le secteur privé porter les grands projets",
+          "Il faut recentrer les investissements publics sur quelques priorités et arrêter de tout financer",
+          "Le niveau d'investissement actuel est correct",
+          "Il faut investir davantage, même si ça creuse la dette, car ça prépare l'avenir",
+          "Il faut un plan d'investissement massif : climat, transports, énergie, on a une génération de retard",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]

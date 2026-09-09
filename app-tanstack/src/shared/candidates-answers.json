@@ -720,6 +720,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 0
@@ -1622,6 +1627,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -2016,7 +2026,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-depenses",
@@ -2522,6 +2532,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -3423,6 +3438,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
         "answerIndex": 2
       },
       {
@@ -4328,6 +4348,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -5230,6 +5255,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -5624,7 +5654,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -6130,6 +6160,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -7034,6 +7069,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -7934,6 +7974,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -8840,6 +8885,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -9744,6 +9794,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -10138,7 +10193,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-depenses",
@@ -10646,6 +10701,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -10753,7 +10813,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-juan-branco",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -11546,6 +11606,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -12450,6 +12515,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -13349,6 +13419,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
         "answerIndex": 2
       },
       {
@@ -14256,6 +14331,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -14650,7 +14730,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -15158,6 +15238,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -15230,7 +15315,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-raphael-glucksmann",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16059,6 +16144,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
         "answerIndex": 2
       },
       {
@@ -16964,6 +17054,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -17031,7 +17126,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -17864,6 +17959,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -18768,6 +18868,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -19670,6 +19775,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -20064,7 +20174,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-depenses",
@@ -20570,6 +20680,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -21474,6 +21589,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -21868,7 +21988,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -22374,6 +22494,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -23278,6 +23403,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -23325,7 +23455,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-ruffin",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -23672,7 +23802,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -24178,6 +24308,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -25082,6 +25217,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -25521,7 +25661,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -25984,6 +26124,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -26121,7 +26266,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-philippe-brun",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -26884,6 +27029,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -27788,6 +27938,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -28690,6 +28845,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -28812,7 +28972,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-florian-philippot",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -29590,6 +29750,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30494,6 +30659,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -31393,6 +31563,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
         "answerIndex": 2
       },
       {
@@ -32298,6 +32473,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -33200,6 +33380,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -34095,6 +34280,11 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34994,6 +35184,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -35889,6 +36084,11 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

@@ -30,7 +30,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Dépenses et dette publiques",
     "id": "theme-2027-depenses",
-    "questionCount": 5,
+    "questionCount": 6,
   },
   {
     "fr": "Économie et Industrie",
