@@ -354,8 +354,8 @@ question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 Pouvoir d'achat et vie quotidienne:
 
 
-question-2027-pa-01: L'inflation et la hausse des prix, c'est la faute de qui ?
-[0] C'est la faute des entreprises qui augmentent leurs marges sur le dos des consommateurs
+question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
+[0] Encadrer les marges des entreprises et plafonner les prix des produits essentiels
 
 question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
 [3] Il faut renationaliser l'énergie : l'électricité et le gaz ne devraient pas être des marchandises

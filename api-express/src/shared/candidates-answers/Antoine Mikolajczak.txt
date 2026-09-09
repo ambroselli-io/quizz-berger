@@ -357,8 +357,8 @@ question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 Pouvoir d'achat et vie quotidienne:
 
 
-question-2027-pa-01: L'inflation et la hausse des prix, c'est la faute de qui ?
-[1] C'est un problème mondial lié aux crises (Covid, Ukraine, énergie), personne n'y peut grand-chose
+question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
+[1] Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose
 
 question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
 [1] L'État peut donner un coup de pouce temporaire aux ménages les plus modestes

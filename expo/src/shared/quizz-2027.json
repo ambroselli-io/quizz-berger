@@ -2035,13 +2035,13 @@
     "questions": [
       {
         "_id": "question-2027-pa-01",
-        "fr": "L'inflation et la hausse des prix, c'est la faute de qui ?",
+        "fr": "Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?",
         "help": "https://fr.wikipedia.org/wiki/Inflation_en_France",
         "answers": [
-          "C'est la faute des entreprises qui augmentent leurs marges sur le dos des consommateurs",
-          "C'est un problème mondial lié aux crises (Covid, Ukraine, énergie), personne n'y peut grand-chose",
-          "C'est la faute de l'État qui dépense trop et fait tourner la planche à billets",
-          "C'est la faute de l'Union européenne et de l'euro, on serait mieux avec le franc",
+          "Encadrer les marges des entreprises et plafonner les prix des produits essentiels",
+          "Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose",
+          "Réduire les dépenses publiques et le déficit pour assainir les finances de l'État",
+          "Sortir de l'euro et retrouver notre souveraineté monétaire",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
