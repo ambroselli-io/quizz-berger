@@ -2243,6 +2243,25 @@
           [0, 3, 5, 0],
           [0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-edu-07",
+        "fr": "Faut-il regrouper les élèves de collège par niveau en français et en maths ?",
+        "help": "https://www.lejdd.fr/societe/quest-ce-que-le-choc-des-savoirs-151620",
+        "answers": [
+          "Oui, généraliser des groupes de niveau stricts et permanents en français et en maths, réévalués selon les résultats",
+          "Oui, mais seulement des groupes de besoins ponctuels et ciblés, sans figer les élèves dans un niveau",
+          "Non, laisser chaque collège libre d'organiser l'accompagnement comme il le juge utile, sans obligation nationale",
+          "Non, classes hétérogènes partout : la mixité sociale et scolaire prime, avec plus de moyens pour le soutien individualisé",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 2, 1, 0],
+          [1, 2, 5, 2, 0],
+          [0, 1, 2, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

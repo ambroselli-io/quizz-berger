@@ -57,7 +57,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 74,
+    "percent": 75,
     "pseudos": [
       "Marine Tondelier",
     ],
@@ -69,7 +69,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 73,
+    "percent": 72,
     "pseudos": [
       "Francis Lalanne",
     ],
@@ -99,14 +99,9 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 63,
-    "pseudos": [
-      "Antoine Mikolajczak",
-    ],
-  },
-  {
     "percent": 62,
     "pseudos": [
+      "Antoine Mikolajczak",
       "Philippe Brun",
       "Ségolène Royal",
     ],
@@ -148,7 +143,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 53,
+    "percent": 52,
     "pseudos": [
       "Florian Philippot",
     ],

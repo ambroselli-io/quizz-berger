@@ -40,7 +40,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Recherche et éducation",
     "id": "theme-2027-education",
-    "questionCount": 6,
+    "questionCount": 7,
   },
   {
     "fr": "Finance",

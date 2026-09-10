@@ -276,6 +276,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Migrants et Royaume-Uni : les positions des candidats 2027',
     seoDescription: `Accords de réadmission avec Londres, traversées de la Manche : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-edu-07': {
+    slug: 'groupes-de-niveau-college-france',
+    seoTitle: 'Groupes de niveau au collège : les candidats 2027',
+    seoDescription: `Groupes de niveau en français et en maths, mixité sociale au collège : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated
