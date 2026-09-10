@@ -510,6 +510,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 4
@@ -1414,6 +1419,11 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
         "answerIndex": 1
       },
       {
@@ -2324,6 +2334,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -3229,6 +3244,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -4138,6 +4158,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -5043,6 +5068,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -5952,6 +5982,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -6859,6 +6894,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -7764,6 +7804,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -8675,6 +8720,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 1
@@ -9584,6 +9634,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -10489,6 +10544,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -11398,6 +11458,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -12305,6 +12370,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 1
@@ -13210,6 +13280,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -14121,6 +14196,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -15026,6 +15106,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -15937,6 +16022,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -16842,6 +16932,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -17751,6 +17846,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -18658,6 +18758,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 4
@@ -19562,6 +19667,11 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
         "answerIndex": 2
       },
       {
@@ -20472,6 +20582,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -21377,6 +21492,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-sante",
@@ -22286,6 +22406,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -23061,6 +23186,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -23968,6 +24098,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -25072,6 +25207,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -25977,6 +26117,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-sante",
@@ -26886,6 +27031,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -27791,6 +27941,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -28700,6 +28855,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -29605,6 +29765,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -30514,6 +30679,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 4
@@ -31419,6 +31589,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -32328,6 +32503,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -33235,6 +33415,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -34135,6 +34320,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -35039,6 +35229,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 3
@@ -35939,6 +36134,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",

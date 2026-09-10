@@ -394,6 +394,9 @@ question-2027-edu-05: Que pensez-vous de Parcoursup et de l'accès à l'enseigne
 question-2027-edu-06: Que pensez-vous de la laïcité et des signes religieux à l'école ?
 [2] Il faut aller plus loin : uniforme scolaire pour tout le monde, ça évite les discriminations
 
+question-2027-edu-07: Faut-il regrouper les élèves de collège par niveau en français et en maths ?
+[1] Oui, mais seulement des groupes de besoins ponctuels et ciblés, sans figer les élèves dans un niveau
+
 
 Santé:
 
@@ -411,7 +414,7 @@ question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
 [1] Les gens devraient être encouragés à se vacciner, mais jamais forcés
 
 question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
-[3] Trop de soins restent payants : lunettes, dentaire, psy... il faut élargir le 100% Santé
+[3] Diminuer le prix de soins du quotidien trop chers aujourd'hui: lunettes, dentaire, psy...
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
