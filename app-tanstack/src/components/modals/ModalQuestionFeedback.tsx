@@ -45,6 +45,7 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
       body: {
         text: lines.join('\n'),
         subject: `[Web] Avis sur la question ${question._id}`,
+        email: state.email.trim() || undefined,
       },
     });
     setIsLoading(false);

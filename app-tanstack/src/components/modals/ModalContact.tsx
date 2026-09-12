@@ -27,7 +27,7 @@ const ModalContact = ({ isActive, onClose }: ModalContactProps) => {
     const text = `De: ${state.pseudo}\nEmail: ${state.email}\nMessage: ${state.message}\nURL: ${window.location.pathname}\nuser: ${JSON.stringify(user, null, 2)}`;
     const response = await API.post({
       path: '/feedback',
-      body: { text, subject: `Une requête du Quizz du Berger par ${state.pseudo || '(anonyme)'}` },
+      body: { text, subject: `Une requête du Quizz du Berger par ${state.pseudo || '(anonyme)'}`, email: state.email.trim() || undefined },
     });
     if (!response.ok) {
       setIsLoading(false);

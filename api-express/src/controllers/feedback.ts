@@ -7,7 +7,18 @@ import { capture } from "../utils/sentry";
 router.post(
   "/",
   catchErrors(async (req: express.Request, res: express.Response) => {
-    const { text, subject } = req.body;
+    const { text, subject, email } = req.body;
+    const msg: Record<string, unknown> = {
+      from: {
+        address: "contact@quizz-du-berger.com",
+        personalName: "Le Quizz du Berger",
+      },
+      subject,
+      text,
+    };
+    if (email && typeof email === "string" && email.includes("@")) {
+      msg.replyTo = { address: email.trim() };
+    }
     const response = await fetch("https://api.tipimail.com/v1/messages/send", {
       method: "POST",
       headers: {
@@ -25,14 +36,7 @@ router.post(
             address: EMAIL_2,
           },
         ],
-        msg: {
-          from: {
-            address: "contact@quizz-du-berger.com",
-            personalName: "Le Quizz du Berger",
-          },
-          subject,
-          text,
-        },
+        msg,
       }),
     }).catch((err) => capture(err, { extra: { text, subject } }));
     res.status(200).send({ ok: !!response?.ok });

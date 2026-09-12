@@ -117,7 +117,7 @@ export default function FeedbackScreen() {
       kind === 'question'
         ? `[App] Avis sur la question ${questionId}`
         : `[App] Témoignage de ${pseudo || 'un utilisateur'}`;
-    const response = await API.post({ path: '/feedback', body: { text: lines.join('\n'), subject } });
+    const response = await API.post({ path: '/feedback', body: { text: lines.join('\n'), subject, email: email.trim() || undefined } });
     setIsLoading(false);
     if (!response?.ok) {
       Alert.alert('Erreur', response?.error || "Le message n'est pas parti, réessayez dans un instant.");
