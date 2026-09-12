@@ -50,15 +50,15 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       }
     ]
   ],
+  updates: {
+    url: "https://u.expo.dev/3df55bb5-7cc9-47ab-838b-0529193778fc"
+  },
+  runtimeVersion: {
+    policy: "appVersion"
+  },
   extra: {
     eas: {
       projectId: "3df55bb5-7cc9-47ab-838b-0529193778fc"
-    },
-    updates: {
-      url: "https://u.expo.dev/3df55bb5-7cc9-47ab-838b-0529193778fc"
-    },
-    runtimeVersion: {
-      policy: "appVersion"
     }
   }
 });
