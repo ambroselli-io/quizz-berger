@@ -57,19 +57,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 75,
+    "percent": 74,
     "pseudos": [
       "Lydie Massard",
     ],
   },
   {
-    "percent": 74,
+    "percent": 73,
     "pseudos": [
       "Emmanuel Maurel",
     ],
   },
   {
-    "percent": 73,
+    "percent": 72,
     "pseudos": [
       "Francis Lalanne",
     ],
@@ -117,20 +117,20 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 63,
+    "percent": 62,
     "pseudos": [
       "Antoine Mikolajczak",
       "Philippe Brun",
     ],
   },
   {
-    "percent": 59,
+    "percent": 58,
     "pseudos": [
       "Dominique de Villepin",
     ],
   },
   {
-    "percent": 58,
+    "percent": 57,
     "pseudos": [
       "Bernard Cazeneuve",
     ],
@@ -142,7 +142,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 56,
+    "percent": 55,
     "pseudos": [
       "Karim Bouamrane",
     ],
@@ -160,7 +160,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 52,
+    "percent": 53,
     "pseudos": [
       "Florian Philippot",
     ],
@@ -190,7 +190,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 40,
+    "percent": 41,
     "pseudos": [
       "Nicolas Dupont-Aignan",
     ],
@@ -208,7 +208,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 34,
+    "percent": 33,
     "pseudos": [
       "Édouard Philippe",
     ],
@@ -238,7 +238,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 22,
+    "percent": 23,
     "pseudos": [
       "David Lisnard",
     ],

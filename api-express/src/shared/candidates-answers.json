@@ -212,7 +212,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-depenses",
@@ -728,6 +728,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -1134,7 +1144,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -1649,6 +1659,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -2056,7 +2076,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -2572,6 +2592,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -2978,7 +3008,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -3494,6 +3524,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -3900,7 +3940,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-depenses",
@@ -4416,6 +4456,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -4822,7 +4872,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -5337,6 +5387,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -6262,6 +6322,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -7184,6 +7254,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -7588,7 +7668,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -8106,6 +8186,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -8173,7 +8263,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -8512,7 +8602,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -9027,6 +9117,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 1
       },
       {
@@ -9436,7 +9536,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -9954,6 +10054,16 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -10116,7 +10226,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-lydie-massard",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -10358,7 +10468,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-depenses",
@@ -10873,6 +10983,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 4
       },
       {
@@ -11280,7 +11400,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -11796,6 +11916,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -12202,7 +12332,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -12720,6 +12850,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -12822,7 +12962,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -13124,7 +13264,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -13640,6 +13780,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14048,7 +14198,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -14563,6 +14713,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 2
       },
       {
@@ -15488,6 +15648,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -15530,7 +15700,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-edouard-philippe",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16412,6 +16582,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -16816,7 +16996,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -17332,6 +17512,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -18256,6 +18446,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -18660,7 +18860,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -19175,6 +19375,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 4
       },
       {
@@ -19582,7 +19792,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -20097,6 +20307,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 1
       },
       {
@@ -20504,7 +20724,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -21020,6 +21240,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -21944,6 +22174,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -22866,6 +23106,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -22923,7 +23173,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-david-lisnard",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -23270,7 +23520,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-depenses",
@@ -23785,6 +24035,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 4
       },
       {
@@ -24710,6 +24970,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -25159,7 +25429,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -25629,6 +25899,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -26081,7 +26361,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -26554,6 +26834,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -26686,7 +26976,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -27003,7 +27293,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -27473,6 +27763,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -27925,7 +28225,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -28398,6 +28698,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -28520,7 +28830,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-florian-philippot",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -28847,7 +29157,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -29317,6 +29627,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -29769,7 +30089,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-depenses",
@@ -30239,6 +30559,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 4
       },
       {
@@ -30691,7 +31021,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 4
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -31161,6 +31491,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 4
       },
       {
@@ -31613,7 +31953,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -32083,6 +32423,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 2
       },
       {
@@ -32535,7 +32885,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -33005,6 +33355,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -33457,7 +33817,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -33928,6 +34288,16 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34374,7 +34744,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -34844,6 +35214,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -35291,7 +35671,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -35761,6 +36141,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -36208,7 +36598,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -36678,6 +37068,16 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-06",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
         "answerIndex": 3
       },
       {
@@ -37130,7 +37530,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -37596,6 +37996,16 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -38047,7 +38457,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-02",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -38513,6 +38923,16 @@
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-06",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

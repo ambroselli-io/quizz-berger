@@ -163,8 +163,8 @@ Dépenses et dette publiques:
 question-2027-dep-01: Que pensez-vous de la Sécurité Sociale et de son financement ?
 [0] La Sécu devrait tout rembourser à 100%, c'est un droit fondamental
 
-question-2027-dep-02: Que devrait faire l'État avec ses dépenses de fonctionnement (salaires des fonctionnaires, aides sociales, budget des ministères) ?
-[4] Il faut une hausse massive : hôpital, école, justice, tout est à bout de souffle
+question-2027-dep-02: Que penser des frais de fonctionnement de l'État (voitures officielles, frais de représentation, train de vie des ministères) ?
+[1] Il faut supprimer les dépenses somptuaires et garder le strict nécessaire
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
 [4] Il faut que l'État contrôle les secteurs essentiels : énergie, transports, santé, logement
@@ -177,6 +177,12 @@ question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
 
 question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?
 [4] Il faut un plan d'investissement massif : climat, transports, énergie, on a une génération de retard
+
+question-2027-dep-07: Que devrait faire l'État avec les aides sociales (RSA, allocations familiales, aides au logement, minima sociaux) ?
+[4] Il faut une hausse massive et créer de nouveaux droits sociaux pour que personne ne vive dans la précarité
+
+question-2027-dep-08: Comment faire évoluer les salaires des fonctionnaires ?
+[4] Il faut une revalorisation massive : les salaires sont trop bas, la fonction publique n'attire plus
 
 
 Économie et Industrie:
