@@ -17,6 +17,7 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
   const { user } = useUser();
   const [state, setState] = useState({ pseudo: user?.pseudo || '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
+  const [showEmailConfirm, setShowEmailConfirm] = useState(false);
   const emailRef = useRef<HTMLInputElement>(null);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -24,6 +25,7 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
   };
 
   const sendForm = async () => {
+    setShowEmailConfirm(false);
     setIsLoading(true);
     const lines = [
       `De: ${state.pseudo || '(anonyme)'}`,
@@ -58,69 +60,91 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
   const onFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!state.email.trim()) {
-      const confirmed = window.confirm(
-        'Êtes-vous sûr de ne pas mettre votre email ? Nous aimerions beaucoup vous répondre !',
-      );
-      if (!confirmed) {
-        emailRef.current?.focus();
-        return;
-      }
+      setShowEmailConfirm(true);
+      return;
     }
     sendForm();
   };
 
   return (
     <QuizzModal title="Votre avis sur la question" isActive={isActive} onClose={onClose}>
-      <p className="mb-3 text-sm text-gray-600">
-        Ce formulaire sert uniquement à améliorer le quizz : formulation ambiguë, réponse qui manque, position d'un
-        candidat mal résumée.
-      </p>
-      <p className="mb-4 rounded-lg border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900">
-        Inutile de nous donner votre opinion politique : elle ne compte pas dans votre résultat. Si vous pensez que
-        votre opinion n'est pas bien représentée ici, dites-nous ce que vous auriez attendu !
-      </p>
-      <div className="mb-4 rounded-lg bg-gray-100 px-3 py-2">
-        <p className="text-xs text-gray-500">{theme.fr}</p>
-        <p className="mt-1 text-sm font-semibold">{question.fr}</p>
-      </div>
-      <form onSubmit={onFormSubmit} className="flex flex-col gap-3">
-        <label className="text-sm font-medium">Votre message *</label>
-        <textarea
-          name="message"
-          autoComplete="off"
-          onChange={onChange}
-          value={state.message}
-          placeholder="Ce qui ne va pas, ce qui manque, ce que vous proposez…"
-          required
-          className="min-h-[100px] rounded-md border border-gray-300 px-3 py-2"
-        />
-        <label className="text-sm font-medium">Nom / pseudo</label>
-        <input
-          type="text"
-          name="pseudo"
-          autoComplete="name"
-          placeholder="Votre nom ou pseudo"
-          onChange={onChange}
-          value={state.pseudo}
-          className="rounded-md border border-gray-300 px-3 py-2"
-        />
-        <label className="text-sm font-medium">Email (si vous souhaitez une réponse)</label>
-        <input
-          ref={emailRef}
-          type="email"
-          name="email"
-          autoComplete="email"
-          placeholder="Votre email"
-          onChange={onChange}
-          value={state.email}
-          className="rounded-md border border-gray-300 px-3 py-2"
-        />
-        <div className="mt-2 flex justify-center">
-          <QuizzButton type="submit" disabled={isLoading || !state.message.trim()}>
-            {isLoading ? 'Envoi…' : 'Envoyer mon avis'}
-          </QuizzButton>
+      {showEmailConfirm ? (
+        <div className="flex flex-col items-center gap-4 py-4 text-center">
+          <p className="text-base font-medium">
+            Êtes-vous sûr de ne pas mettre votre email&nbsp;?
+          </p>
+          <p className="text-sm text-gray-600">Nous aimerions beaucoup vous répondre&nbsp;!</p>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <QuizzButton
+              onClick={() => {
+                setShowEmailConfirm(false);
+                setTimeout(() => emailRef.current?.focus(), 100);
+              }}
+            >
+              Ajouter mon email
+            </QuizzButton>
+            <button
+              onClick={sendForm}
+              className="cursor-pointer rounded-full border border-gray-300 bg-white px-6 py-2.5 font-[Merriweather_Sans] text-gray-600 hover:bg-gray-50"
+            >
+              Envoyer sans email
+            </button>
+          </div>
         </div>
-      </form>
+      ) : (
+        <>
+          <p className="mb-3 text-sm text-gray-600">
+            Ce formulaire sert uniquement à améliorer le quizz : formulation ambiguë, réponse qui manque, position d'un
+            candidat mal résumée.
+          </p>
+          <p className="mb-4 rounded-lg border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+            Inutile de nous donner votre opinion politique : elle ne compte pas dans votre résultat. Si vous pensez que
+            votre opinion n'est pas bien représentée ici, dites-nous ce que vous auriez attendu !
+          </p>
+          <div className="mb-4 rounded-lg bg-gray-100 px-3 py-2">
+            <p className="text-xs text-gray-500">{theme.fr}</p>
+            <p className="mt-1 text-sm font-semibold">{question.fr}</p>
+          </div>
+          <form onSubmit={onFormSubmit} className="flex flex-col gap-3">
+            <label className="text-sm font-medium">Votre message *</label>
+            <textarea
+              name="message"
+              autoComplete="off"
+              onChange={onChange}
+              value={state.message}
+              placeholder="Ce qui ne va pas, ce qui manque, ce que vous proposez…"
+              required
+              className="min-h-[100px] rounded-md border border-gray-300 px-3 py-2"
+            />
+            <label className="text-sm font-medium">Nom / pseudo</label>
+            <input
+              type="text"
+              name="pseudo"
+              autoComplete="name"
+              placeholder="Votre nom ou pseudo"
+              onChange={onChange}
+              value={state.pseudo}
+              className="rounded-md border border-gray-300 px-3 py-2"
+            />
+            <label className="text-sm font-medium">Email (si vous souhaitez une réponse)</label>
+            <input
+              ref={emailRef}
+              type="email"
+              name="email"
+              autoComplete="email"
+              placeholder="Votre email"
+              onChange={onChange}
+              value={state.email}
+              className="rounded-md border border-gray-300 px-3 py-2"
+            />
+            <div className="mt-2 flex justify-center">
+              <QuizzButton type="submit" disabled={isLoading || !state.message.trim()}>
+                {isLoading ? 'Envoi…' : 'Envoyer mon avis'}
+              </QuizzButton>
+            </div>
+          </form>
+        </>
+      )}
     </QuizzModal>
   );
 };
