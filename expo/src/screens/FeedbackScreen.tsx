@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useMemo, useState } from 'react';
+import React, { useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -54,6 +54,7 @@ export default function FeedbackScreen() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isSent, setIsSent] = useState(false);
+  const emailRef = useRef<TextInput>(null);
 
   const texts = copy[kind];
 
@@ -76,6 +77,22 @@ export default function FeedbackScreen() {
   }, [kind, quizz, themeId, questionId, userAnswers]);
 
   const canSend = message.trim().length > 0 && !isLoading && !isSent;
+
+  const onPressSend = () => {
+    if (!canSend) return;
+    if (!email.trim()) {
+      Alert.alert(
+        'Pas d\'email ?',
+        'Êtes-vous sûr de ne pas mettre votre email ? Nous aimerions beaucoup vous répondre !',
+        [
+          { text: 'Ajouter mon email', style: 'cancel', onPress: () => emailRef.current?.focus() },
+          { text: 'Envoyer sans email', onPress: send },
+        ],
+      );
+      return;
+    }
+    send();
+  };
 
   const send = async () => {
     if (!canSend) return;
@@ -156,6 +173,7 @@ export default function FeedbackScreen() {
 
         <Text className="text-sm font-medium text-quizz-dark">Email (si vous souhaitez une réponse)</Text>
         <TextInput
+          ref={emailRef}
           className="rounded-lg border border-gray-300 px-3 py-2.5 text-base"
           placeholder="Votre email"
           value={email}
@@ -166,7 +184,7 @@ export default function FeedbackScreen() {
         />
 
         <View className="mt-4 items-center">
-          <QuizzButton onPress={send} disabled={!canSend}>
+          <QuizzButton onPress={onPressSend} disabled={!canSend}>
             {isLoading ? 'Envoi…' : texts.button}
           </QuizzButton>
         </View>

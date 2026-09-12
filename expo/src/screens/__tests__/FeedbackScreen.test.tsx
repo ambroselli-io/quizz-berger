@@ -43,6 +43,15 @@ const userAnswers = [
   { userId: 'user-1', themeId: 'theme-2027-police', questionId: 'question-2027-pol-01', answerIndex: 1 },
 ];
 
+function confirmSendWithoutEmail() {
+  const calls = (Alert.alert as jest.Mock).mock.calls;
+  const confirmCall = calls.find(([title]: [string]) => title === "Pas d'email ?");
+  if (!confirmCall) throw new Error('No email confirmation alert found');
+  const buttons = confirmCall[2] as Array<{ text: string; onPress?: () => void }>;
+  const sendBtn = buttons.find((b) => b.text === 'Envoyer sans email');
+  sendBtn?.onPress?.();
+}
+
 beforeEach(() => {
   jest.clearAllMocks();
   jest.spyOn(Alert, 'alert').mockImplementation(() => {});
@@ -67,7 +76,9 @@ describe('FeedbackScreen', () => {
     const user = userEvent.setup();
     await user.type(screen.getByPlaceholderText(/Ce qui ne va pas/), 'Il manque une réponse nuancée');
     await user.press(screen.getByText('Envoyer mon avis'));
+    confirmSendWithoutEmail();
 
+    await screen.findByText('Envoyer mon avis');
     const feedbackCall = (API.post as jest.Mock).mock.calls.find(([args]) => args.path === '/feedback')?.[0];
     expect(feedbackCall.body.subject).toBe('[App] Avis sur la question question-2027-pol-01');
     expect(feedbackCall.body.text).toContain('De: toto');
@@ -86,7 +97,9 @@ describe('FeedbackScreen', () => {
     const user = userEvent.setup();
     await user.type(screen.getByPlaceholderText(/Deux ou trois phrases/), "J'ai découvert un candidat proche de moi");
     await user.press(screen.getByText('Envoyer mon témoignage'));
+    confirmSendWithoutEmail();
 
+    await screen.findByText('Envoyer mon témoignage');
     const feedbackCall = (API.post as jest.Mock).mock.calls.find(([args]) => args.path === '/feedback')?.[0];
     expect(feedbackCall.body.subject).toBe('[App] Témoignage de toto');
     expect(feedbackCall.body.text).toContain("J'ai découvert un candidat proche de moi");
@@ -111,7 +124,9 @@ describe('FeedbackScreen', () => {
     await user.type(screen.getByPlaceholderText(/Deux ou trois phrases/), 'Super quizz');
     const button = screen.getByText('Envoyer mon témoignage');
     await user.press(button);
+    confirmSendWithoutEmail();
 
+    await screen.findByText('Envoyer mon témoignage');
     expect(Alert.alert).toHaveBeenCalledWith('Merci !', expect.any(String));
     expect(button).toBeDisabled();
   });
@@ -127,7 +142,9 @@ describe('FeedbackScreen', () => {
     const user = userEvent.setup();
     await user.type(screen.getByPlaceholderText(/Deux ou trois phrases/), 'Bravo');
     await user.press(screen.getByText('Envoyer mon témoignage'));
+    confirmSendWithoutEmail();
 
+    await screen.findByText('Envoyer mon témoignage');
     expect(Alert.alert).toHaveBeenCalledWith('Erreur', 'Boom');
     expect(mockNavigation.goBack).not.toHaveBeenCalled();
   });
