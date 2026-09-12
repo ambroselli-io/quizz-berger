@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import API from '@app/services/api';
 import useUser from '@app/hooks/useUser';
 import QuizzModal from '../QuizzModal';
@@ -14,13 +14,13 @@ const ModalContact = ({ isActive, onClose }: ModalContactProps) => {
 
   const [state, setState] = useState({ pseudo: user?.pseudo || '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
+  const emailRef = useRef<HTMLInputElement>(null);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const onFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const sendForm = async () => {
     setIsLoading(true);
     const text = `De: ${state.pseudo}\nEmail: ${state.email}\nMessage: ${state.message}\nURL: ${window.location.pathname}\nuser: ${JSON.stringify(user, null, 2)}`;
     const response = await API.post({
@@ -36,6 +36,20 @@ const ModalContact = ({ isActive, onClose }: ModalContactProps) => {
     onClose();
   };
 
+  const onFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!state.email.trim()) {
+      const confirmed = window.confirm(
+        'Êtes-vous sûr de ne pas mettre votre email ? Nous aimerions beaucoup vous répondre !',
+      );
+      if (!confirmed) {
+        emailRef.current?.focus();
+        return;
+      }
+    }
+    sendForm();
+  };
+
   return (
     <QuizzModal title="Nous contacter" isActive={isActive} onClose={onClose}>
       <form onSubmit={onFormSubmit} className="flex flex-col gap-3">
@@ -47,6 +61,7 @@ const ModalContact = ({ isActive, onClose }: ModalContactProps) => {
         />
         <label className="text-sm font-medium">Email</label>
         <input
+          ref={emailRef}
           type="email" name="email" autoComplete="email" placeholder="Votre email"
           onChange={onChange} value={state.email}
           className="rounded-md border border-gray-300 px-3 py-2"

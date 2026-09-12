@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import API from '@app/services/api';
 import useUser from '@app/hooks/useUser';
 import QuizzModal from '../QuizzModal';
@@ -17,13 +17,13 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
   const { user } = useUser();
   const [state, setState] = useState({ pseudo: user?.pseudo || '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
+  const emailRef = useRef<HTMLInputElement>(null);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const onFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const sendForm = async () => {
     setIsLoading(true);
     const lines = [
       `De: ${state.pseudo || '(anonyme)'}`,
@@ -53,6 +53,20 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
     alert('Merci ! Votre message est bien envoyé.');
     setState((prev) => ({ ...prev, message: '' }));
     onClose();
+  };
+
+  const onFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!state.email.trim()) {
+      const confirmed = window.confirm(
+        'Êtes-vous sûr de ne pas mettre votre email ? Nous aimerions beaucoup vous répondre !',
+      );
+      if (!confirmed) {
+        emailRef.current?.focus();
+        return;
+      }
+    }
+    sendForm();
   };
 
   return (
@@ -92,6 +106,7 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
         />
         <label className="text-sm font-medium">Email (si vous souhaitez une réponse)</label>
         <input
+          ref={emailRef}
           type="email"
           name="email"
           autoComplete="email"
