@@ -53,29 +53,29 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 75,
     "pseudos": [
-      "Lydie Massard",
+      "Marine Tondelier",
     ],
   },
   {
     "percent": 75,
     "pseudos": [
-      "Marine Tondelier",
+      "Lydie Massard",
     ],
   },
   {
-    "percent": 73,
+    "percent": 74,
     "pseudos": [
       "Emmanuel Maurel",
     ],
   },
   {
-    "percent": 72,
+    "percent": 73,
     "pseudos": [
       "Francis Lalanne",
     ],
   },
   {
-    "percent": 71,
+    "percent": 72,
     "pseudos": [
       "Fabien Roussel",
     ],
@@ -99,39 +99,56 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 62,
+    "percent": 66,
     "pseudos": [
-      "Antoine Mikolajczak",
-      "Philippe Brun",
+      "Parti pirate",
+    ],
+  },
+  {
+    "percent": 64,
+    "pseudos": [
+      "Parti animaliste",
+    ],
+  },
+  {
+    "percent": 63,
+    "pseudos": [
       "Ségolène Royal",
     ],
   },
   {
-    "percent": 58,
+    "percent": 63,
+    "pseudos": [
+      "Antoine Mikolajczak",
+      "Philippe Brun",
+    ],
+  },
+  {
+    "percent": 59,
     "pseudos": [
       "Dominique de Villepin",
     ],
   },
   {
-    "percent": 57,
+    "percent": 58,
     "pseudos": [
       "Bernard Cazeneuve",
     ],
   },
   {
-    "percent": 56,
+    "percent": 57,
     "pseudos": [
       "Fabien Verdier",
     ],
   },
   {
-    "percent": 55,
+    "percent": 56,
     "pseudos": [
       "Karim Bouamrane",
     ],
   },
   {
-    "percent": 54,
+    "percent": 55,
     "pseudos": [
       "François Hollande",
     ],
@@ -185,19 +202,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 33,
+    "percent": 34,
     "pseudos": [
       "Gabriel Attal",
     ],
   },
   {
-    "percent": 33,
+    "percent": 34,
     "pseudos": [
       "Édouard Philippe",
     ],
   },
   {
-    "percent": 28,
+    "percent": 29,
     "pseudos": [
       "Xavier Bertrand",
     ],
@@ -227,7 +244,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 20,
+    "percent": 21,
     "pseudos": [
       "Bruno Retailleau",
     ],

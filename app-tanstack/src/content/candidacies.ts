@@ -1199,4 +1199,44 @@ export const candidacies: Candidacy[] = [
     },
     events: [],
   },
+  {
+    slug: 'parti-animaliste',
+    status: 'declared',
+    movement: 'Parti animaliste',
+    summary:
+      "Le Parti animaliste est un parti fondé en 2016 autour de la cause animale. Il présente des listes aux élections européennes et législatives. Ses positions sont intégrées au quiz pour représenter cette sensibilité politique.",
+    events: [
+      {
+        date: '2016-11-14',
+        type: 'declaration',
+        label: 'Le Parti animaliste est officiellement fondé.',
+        sources: [
+          {
+            label: 'Wikipédia — Parti animaliste',
+            url: 'https://fr.wikipedia.org/wiki/Parti_animaliste',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'parti-pirate',
+    status: 'declared',
+    movement: 'Parti pirate',
+    summary:
+      "Le Parti pirate est un parti fondé en 2006, membre du mouvement international des partis pirates. Il défend les libertés numériques, la transparence et la démocratie directe.",
+    events: [
+      {
+        date: '2006-06-21',
+        type: 'declaration',
+        label: 'Le Parti pirate français est officiellement fondé.',
+        sources: [
+          {
+            label: 'Wikipédia — Parti pirate (France)',
+            url: 'https://fr.wikipedia.org/wiki/Parti_pirate_(France)',
+          },
+        ],
+      },
+    ],
+  },
 ];

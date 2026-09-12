@@ -611,3 +611,9 @@ question-2027-gagnait-emmanuel-maurel: Si Emmanuel Maurel était élu, quel sera
 
 question-2027-gagnait-fabien-verdier: Si Fabien Verdier était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
+
+question-2027-gagnait-parti-animaliste: Si Parti animaliste était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
+
+question-2027-gagnait-parti-pirate: Si Parti pirate était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)

@@ -565,7 +565,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [4] Très mécontent(e)
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
@@ -611,3 +611,9 @@ question-2027-gagnait-emmanuel-maurel: Si Emmanuel Maurel était élu, quel sera
 
 question-2027-gagnait-fabien-verdier: Si Fabien Verdier était élu, quel serait votre sentiment ?
 [1] Plutôt content(e)
+
+question-2027-gagnait-parti-animaliste: Si Parti animaliste était élu, quel serait votre sentiment ?
+[2] Neutre
+
+question-2027-gagnait-parti-pirate: Si Parti pirate était élu, quel serait votre sentiment ?
+[2] Neutre

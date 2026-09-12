@@ -273,4 +273,32 @@ export const parties: Party[] = [
     officialSite: 'https://les-patriotes.fr',
     candidateSlugs: ['florian-philippot'],
   },
+  {
+    slug: 'parti-animaliste',
+    name: 'Parti animaliste',
+    shortName: 'PA',
+    theName: 'le Parti animaliste',
+    theShort: 'le PA',
+    ofName: 'du Parti animaliste',
+    ofShort: 'du PA',
+    foundedYear: 2016,
+    intro:
+      "Le Parti animaliste est fondé en novembre 2016 autour de la défense de la cause animale. Il présente des listes aux élections européennes et législatives et obtient 2,16 % des voix aux européennes de 2019.",
+    officialSite: 'https://parti-animaliste.fr',
+    candidateSlugs: ['parti-animaliste'],
+  },
+  {
+    slug: 'parti-pirate',
+    name: 'Parti pirate',
+    shortName: 'PP',
+    theName: 'le Parti pirate',
+    theShort: 'le PP',
+    ofName: 'du Parti pirate',
+    ofShort: 'du PP',
+    foundedYear: 2006,
+    intro:
+      "Le Parti pirate français est fondé en juin 2006 dans la lignée du Piratpartiet suédois. Il défend les libertés numériques, la transparence politique et la démocratie directe. Il fait partie du mouvement international des partis pirates.",
+    officialSite: 'https://partipirate.org',
+    candidateSlugs: ['parti-pirate'],
+  },
 ];

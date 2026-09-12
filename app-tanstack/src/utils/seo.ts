@@ -518,6 +518,8 @@ const partyBySlug: Record<string, string> = {
   'olivier-faure': 'PS',
   'emmanuel-maurel': 'GRS',
   'fabien-verdier': '',
+  'parti-animaliste': 'PA',
+  'parti-pirate': 'PP',
 };
 
 export function getCandidateParty(slug: string): string {
