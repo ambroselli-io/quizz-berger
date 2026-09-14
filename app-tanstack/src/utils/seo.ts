@@ -281,6 +281,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Groupes de niveau au collège : les candidats 2027',
     seoDescription: `Groupes de niveau en français et en maths, mixité sociale au collège : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-cult-06': {
+    slug: 'pluralisme-extremes-audiovisuel-public-france',
+    seoTitle: 'Affaire Sapin sur France Inter : candidats 2027',
+    seoDescription: `Affaire Charles Sapin sur France Inter : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur le pluralisme politique dans l'audiovisuel public.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

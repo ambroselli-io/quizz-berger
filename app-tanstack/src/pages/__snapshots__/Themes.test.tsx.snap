@@ -25,7 +25,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Culture",
     "id": "theme-2027-culture",
-    "questionCount": 5,
+    "questionCount": 6,
   },
   {
     "fr": "Dépenses et dette publiques",
