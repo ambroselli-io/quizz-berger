@@ -125,6 +125,9 @@ question-2027-cult-04: Y a-t-il des inégalités d'accès à la culture en Franc
 question-2027-cult-05: Quelle est votre vision du rôle de l'État dans la culture ?
 [1] L'État doit financer la culture en complément du privé
 
+question-2027-cult-06: Le service public audiovisuel doit-il confier une chronique régulière à des commentateurs venus de médias ou partis classés à l'extrême droite ou à l'extrême gauche ?
+[3] Non, aucune chronique régulière ne doit être confiée à une personnalité issue de médias ou de partis classés extrémistes, quel que soit le bord
+
 
 Démographie et question migratoire:
 

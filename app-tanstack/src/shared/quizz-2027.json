@@ -708,6 +708,25 @@
           [0, 2, 5, 0],
           [0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-cult-06",
+        "fr": "Le service public audiovisuel doit-il confier une chronique régulière à des commentateurs venus de médias ou partis classés à l'extrême droite ou à l'extrême gauche ?",
+        "help": "https://www.france24.com/fr/france/20260912-deux-jours-de-gr%C3%A8ve-%C3%A0-radio-france-pour-contrer-l-arriv%C3%A9e-d-un-responsable-de-valeurs-actuelles",
+        "answers": [
+          "Oui, sans aucune restriction : le pluralisme doit couvrir toutes les sensibilités politiques légales, extrêmes comprises, à égalité de temps de parole",
+          "Oui, mais seulement si un temps de parole équivalent est garanti au camp opposé pour assurer le contradictoire",
+          "Seulement de façon ponctuelle (interview, débat électoral), jamais sous la forme d'une chronique récurrente attitrée",
+          "Non, aucune chronique régulière ne doit être confiée à une personnalité issue de médias ou de partis classés extrémistes, quel que soit le bord",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

@@ -175,6 +175,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 4
@@ -1105,6 +1110,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-immigration",
@@ -2039,6 +2049,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -2968,6 +2983,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 1
       },
       {
@@ -3903,6 +3923,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 1
@@ -4833,6 +4858,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -5767,6 +5797,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 0
@@ -6699,6 +6734,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 0
@@ -7628,6 +7668,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 1
       },
       {
@@ -8565,6 +8610,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 1
@@ -9499,6 +9549,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -10429,6 +10484,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -11363,6 +11423,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -12292,6 +12357,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 1
       },
       {
@@ -13225,6 +13295,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -14161,6 +14236,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 2
@@ -15091,6 +15171,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -16027,6 +16112,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 1
@@ -16957,6 +17047,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -17891,6 +17986,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 2
@@ -18821,6 +18921,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -19755,6 +19860,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 1
@@ -20685,6 +20795,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -21619,6 +21734,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 0
@@ -22548,6 +22668,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 2
       },
       {
@@ -23483,6 +23608,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -24412,6 +24542,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 1
       },
       {
@@ -25377,6 +25512,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 1
@@ -26307,6 +26447,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-immigration",
@@ -27241,6 +27386,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 2
@@ -28170,6 +28320,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 2
       },
       {
@@ -29105,6 +29260,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 2
@@ -30035,6 +30195,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -30969,6 +31134,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 4
@@ -31901,6 +32071,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 2
@@ -32830,6 +33005,11 @@
       {
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
         "answerIndex": 2
       },
       {
@@ -33765,6 +33945,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -34697,6 +34882,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -35622,6 +35812,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-immigration",
@@ -36551,6 +36746,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 2
@@ -37478,6 +37678,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-01",
         "answerIndex": 3
@@ -38403,6 +38608,11 @@
         "themeId": "theme-2027-culture",
         "questionId": "question-2027-cult-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-culture",
+        "questionId": "question-2027-cult-06",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-immigration",
