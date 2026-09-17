@@ -181,12 +181,12 @@
       },
       {
         "_id": "question-2027-ae-10",
-        "fr": "La France doit-elle reconnaître l'État de Palestine ?",
+        "fr": "La France a-t-elle bien fait de reconnaître l'État de Palestine ?",
         "answers": [
-          "Oui, immédiatement et sans condition : c'est un droit du peuple palestinien",
-          "Oui, mais dans le cadre d'un accord de paix négocié",
-          "Pas pour l'instant, ce n'est pas le bon moment",
-          "Non, ce serait récompenser le terrorisme et fragiliser Israël",
+          "Oui, c'est un droit du peuple palestinien, elle aurait dû le faire plus tôt",
+          "Oui, mais elle aurait dû attendre un accord de paix négocié",
+          "Non, ce n'était pas le bon moment",
+          "Non, c'est récompenser le terrorisme et fragiliser Israël",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

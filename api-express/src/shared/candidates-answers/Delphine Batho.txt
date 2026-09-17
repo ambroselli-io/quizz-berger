@@ -31,8 +31,8 @@ question-2027-ae-08: Dans le conflit Israël / Palestine, où vous situez-vous ?
 question-2027-ae-09: Que devrait faire la France face au conflit Israël / Palestine ?
 [3] Faire pression sur Israël (sanctions, embargo militaire, résolutions ONU)
 
-question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
-[0] Oui, immédiatement et sans condition : c'est un droit du peuple palestinien
+question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Palestine ?
+[0] Oui, c'est un droit du peuple palestinien, elle aurait dû le faire plus tôt
 
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [3] Condamner une violation du droit international et de la souveraineté d'un État

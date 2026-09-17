@@ -31,8 +31,8 @@ question-2027-ae-08: Dans le conflit Israël / Palestine, où vous situez-vous ?
 question-2027-ae-09: Que devrait faire la France face au conflit Israël / Palestine ?
 [2] Jouer un rôle de médiation diplomatique neutre
 
-question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
-[1] Oui, mais dans le cadre d'un accord de paix négocié
+question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Palestine ?
+[1] Oui, mais elle aurait dû attendre un accord de paix négocié
 
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [1] Approuver le résultat, mais regretter une intervention menée sans mandat international

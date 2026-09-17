@@ -31,8 +31,8 @@ question-2027-ae-08: Dans le conflit Israël / Palestine, où vous situez-vous ?
 question-2027-ae-09: Que devrait faire la France face au conflit Israël / Palestine ?
 [0] Soutenir activement Israël (matériel, diplomatique)
 
-question-2027-ae-10: La France doit-elle reconnaître l'État de Palestine ?
-[3] Non, ce serait récompenser le terrorisme et fragiliser Israël
+question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Palestine ?
+[3] Non, c'est récompenser le terrorisme et fragiliser Israël
 
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [0] Soutenir les États-Unis : Maduro était un dictateur et un narcotrafiquant, sa chute est une bonne nouvelle
