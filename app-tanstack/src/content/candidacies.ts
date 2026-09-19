@@ -342,7 +342,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Parti socialiste',
     summary:
-      "Jérôme Guedj a annoncé sa candidature le 5 février 2026 sur France Inter, d'abord hors primaire. Il a rejoint la primaire socialiste et démocratique d'octobre 2026.",
+      "Jérôme Guedj a annoncé sa candidature le 5 février 2026 sur France Inter, d'abord hors primaire. Il a rejoint la primaire socialiste et démocratique d'octobre 2026, et fait partie des cinq candidats retenus pour cette primaire « Choisir 2027 » le 16 septembre 2026.",
     events: [
       {
         date: '2026-02-05',
@@ -356,6 +356,24 @@ export const candidacies: Candidacy[] = [
         type: 'step',
         label: "Il rejoint la primaire socialiste et démocratique d'octobre.",
         sources: [WIKI],
+      },
+      {
+        date: '2026-09-16',
+        type: 'step',
+        label:
+          "La primaire « Choisir 2027 » valide la liste définitive des cinq candidats en lice, après l'exclusion de Philippe Brun et l'échec de Fabien Verdier à réunir assez de soutiens.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260916-france-primaire-socialiste-2027-dates-debats-television-candidats-raphael-glucksmann-olivier-faure-segolene-royal',
+            date: '2026-09-16',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
+            date: '2026-09-16',
+          },
+        ],
       },
     ],
   },
@@ -687,27 +705,6 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
-    slug: 'philippe-brun',
-    status: 'declared',
-    movement: 'Parti socialiste',
-    summary:
-      "Philippe Brun, député de l'Eure et spécialiste des questions budgétaires au Parti socialiste, s'est déclaré le 30 juin 2026 pour la primaire socialiste, sous le mot d'ordre « le candidat des salaires ».",
-    events: [
-      {
-        date: '2026-06-30',
-        type: 'declaration',
-        label: 'Il annonce sa candidature à la primaire socialiste.',
-        sources: [
-          {
-            label: 'CNEWS',
-            url: 'https://www.cnews.fr/france/2026-08-19/presidentielle-2027-philippe-brun-loutsider-de-la-primaire-du-ps-devoile-son',
-            date: '2026-08-19',
-          },
-        ],
-      },
-    ],
-  },
-  {
     slug: 'marine-le-pen',
     feminine: true,
     status: 'declared',
@@ -756,7 +753,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Parti socialiste',
     summary:
-      "Ségolène Royal est entrée dans la course le 10 juillet 2026, pour la primaire socialiste, sous le slogan « La France tranquille et l'ordre juste ». Elle avait été la candidate du Parti socialiste en 2007.",
+      "Ségolène Royal est entrée dans la course le 10 juillet 2026, pour la primaire socialiste, sous le slogan « La France tranquille et l'ordre juste ». Elle avait été la candidate du Parti socialiste en 2007. Elle fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026.",
     events: [
       {
         date: '2026-07-10',
@@ -772,6 +769,24 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/presidentielle-2027-segolene-royal-annonce-sa-candidature-a-la-primaire-socialiste',
             date: '2026-07-10',
+          },
+        ],
+      },
+      {
+        date: '2026-09-16',
+        type: 'step',
+        label:
+          "La primaire « Choisir 2027 » valide la liste définitive des cinq candidats en lice, après l'exclusion de Philippe Brun et l'échec de Fabien Verdier à réunir assez de soutiens.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260916-france-primaire-socialiste-2027-dates-debats-television-candidats-raphael-glucksmann-olivier-faure-segolene-royal',
+            date: '2026-09-16',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
+            date: '2026-09-16',
           },
         ],
       },
@@ -823,7 +838,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Place publique',
     summary:
-      "Raphaël Glucksmann a annoncé sa candidature le 23 août 2026 au journal de 20 heures de TF1. Il accepte de passer par la primaire socialiste et démocratique d'octobre. Le sénateur Yannick Jadot l'a rallié dès le lendemain.",
+      "Raphaël Glucksmann a annoncé sa candidature le 23 août 2026 au journal de 20 heures de TF1. Il accepte de passer par la primaire socialiste et démocratique d'octobre. Le sénateur Yannick Jadot l'a rallié dès le lendemain. Il fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026.",
     events: [
       {
         date: '2026-08-23',
@@ -854,6 +869,24 @@ export const candidacies: Candidacy[] = [
           {
             label: 'franceinfo',
             url: 'https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-senateur-ecologiste-yannick-jadot-soutient-raphael-glucksmann-sans-hesitation-estimant-qu-il-peut-gagner-cette-election_8159192.html',
+          },
+        ],
+      },
+      {
+        date: '2026-09-16',
+        type: 'step',
+        label:
+          "La primaire « Choisir 2027 » valide la liste définitive des cinq candidats en lice, après l'exclusion de Philippe Brun et l'échec de Fabien Verdier à réunir assez de soutiens.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260916-france-primaire-socialiste-2027-dates-debats-television-candidats-raphael-glucksmann-olivier-faure-segolene-royal',
+            date: '2026-09-16',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
+            date: '2026-09-16',
           },
         ],
       },
@@ -891,7 +924,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Parti socialiste',
     summary:
-      "Olivier Faure, premier secrétaire du Parti socialiste depuis 2018, a annoncé sa candidature le 30 août 2026 au journal de 20 heures de TF1, pour la primaire socialiste et démocratique d'octobre. C'est la première fois qu'il brigue l'Élysée.",
+      "Olivier Faure, premier secrétaire du Parti socialiste depuis 2018, a annoncé sa candidature le 30 août 2026 au journal de 20 heures de TF1, pour la primaire socialiste et démocratique d'octobre. C'est la première fois qu'il brigue l'Élysée. Il fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026.",
     events: [
       {
         date: '2026-08-30',
@@ -910,20 +943,23 @@ export const candidacies: Candidacy[] = [
           },
         ],
       },
-    ],
-  },
-  {
-    slug: 'fabien-verdier',
-    status: 'declared',
-    movement: 'Parti socialiste',
-    summary:
-      "Fabien Verdier, ancien maire de Châteaudun et directeur d'hôpital, a annoncé sa candidature le 3 septembre 2026 pour la primaire socialiste et démocratique. Il défend la « justice territoriale » et porte la voix de la France rurale.",
-    events: [
       {
-        date: '2026-09-03',
-        type: 'declaration',
-        label: "Il annonce sa candidature à la primaire socialiste, pour la « justice territoriale ».",
-        sources: [WIKI],
+        date: '2026-09-16',
+        type: 'step',
+        label:
+          "La primaire « Choisir 2027 » valide la liste définitive des cinq candidats en lice, après l'exclusion de Philippe Brun et l'échec de Fabien Verdier à réunir assez de soutiens.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260916-france-primaire-socialiste-2027-dates-debats-television-candidats-raphael-glucksmann-olivier-faure-segolene-royal',
+            date: '2026-09-16',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
+            date: '2026-09-16',
+          },
+        ],
       },
     ],
   },
@@ -932,7 +968,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Gauche républicaine et socialiste',
     summary:
-      "Emmanuel Maurel, député et dirigeant de la Gauche républicaine et socialiste (GRS), a annoncé sa candidature le 4 septembre 2026 pour la primaire socialiste et démocratique. Il porte une ligne souverainiste de gauche, critique de la construction européenne.",
+      "Emmanuel Maurel, député et dirigeant de la Gauche républicaine et socialiste (GRS), a annoncé sa candidature le 4 septembre 2026 pour la primaire socialiste et démocratique. Il porte une ligne souverainiste de gauche, critique de la construction européenne. Il fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026.",
     events: [
       {
         date: '2026-09-04',
@@ -948,6 +984,24 @@ export const candidacies: Candidacy[] = [
             label: 'La Libre',
             url: 'https://www.lalibre.be/international/europe/2026/09/04/le-depute-emmanuel-maurel-annonce-quil-participera-a-la-primaire-de-la-gauche-OAREJDBN2VHTPDUPKU243GL7HM/',
             date: '2026-09-04',
+          },
+        ],
+      },
+      {
+        date: '2026-09-16',
+        type: 'step',
+        label:
+          "La primaire « Choisir 2027 » valide la liste définitive des cinq candidats en lice, après l'exclusion de Philippe Brun et l'échec de Fabien Verdier à réunir assez de soutiens.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260916-france-primaire-socialiste-2027-dates-debats-television-candidats-raphael-glucksmann-olivier-faure-segolene-royal',
+            date: '2026-09-16',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
+            date: '2026-09-16',
           },
         ],
       },
@@ -1079,13 +1133,84 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
+  {
+    slug: 'philippe-brun',
+    status: 'withdrawn',
+    movement: 'Parti socialiste',
+    summary:
+      "Philippe Brun, député de l'Eure, s'était déclaré le 30 juin 2026 pour la primaire socialiste, sous le mot d'ordre « le candidat des salaires ». Il a été suspendu à titre conservatoire du Parti socialiste et exclu de la primaire le 16 septembre 2026, après des accusations de violences qu'il conteste.",
+    events: [
+      {
+        date: '2026-06-30',
+        type: 'declaration',
+        label: 'Il annonce sa candidature à la primaire socialiste.',
+        sources: [
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-08-19/presidentielle-2027-philippe-brun-loutsider-de-la-primaire-du-ps-devoile-son',
+            date: '2026-08-19',
+          },
+        ],
+      },
+      {
+        date: '2026-09-16',
+        type: 'withdrawal',
+        label:
+          "Il est suspendu à titre conservatoire du Parti socialiste et exclu de la primaire de la gauche, après des accusations de violences qu'il conteste ; il annonce porter plainte pour dénonciation calomnieuse.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/societe/justice/exclu-du-parti-socialiste-et-de-la-primaire-pour-la-presidentielle-philippe-brun-denonce-des-fausses-accusations-de-violences-et-annonce-deposer-plainte_8194358.html',
+            date: '2026-09-16',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
+            date: '2026-09-16',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'fabien-verdier',
+    status: 'withdrawn',
+    movement: 'Parti socialiste',
+    summary:
+      "Fabien Verdier, ancien maire de Châteaudun et directeur d'hôpital, avait annoncé sa candidature le 3 septembre 2026 pour la primaire socialiste et démocratique, défendant la « justice territoriale ». Sa candidature a été écartée de la primaire le 16 septembre 2026, faute d'avoir réuni assez de soutiens.",
+    events: [
+      {
+        date: '2026-09-03',
+        type: 'declaration',
+        label: "Il annonce sa candidature à la primaire socialiste, pour la « justice territoriale ».",
+        sources: [WIKI],
+      },
+      {
+        date: '2026-09-16',
+        type: 'withdrawal',
+        label: "Sa candidature est écartée de la primaire de la gauche, faute d'avoir réuni assez de soutiens.",
+        sources: [
+          {
+            label: 'Mag Centre',
+            url: 'https://www.magcentre.fr/377292-fabien-verdier-ecarte-de-la-primaire-de-la-gauche/',
+            date: '2026-09-16',
+          },
+          {
+            label: 'Radio Intensité',
+            url: 'https://www.intensite.net/primaire-ps-place-publique-l-ex-maire-de-chateaudun-fabien-verdier-encore-prive-de-scrutin',
+          },
+        ],
+      },
+    ],
+  },
+
   // --- Pas encore candidats ---
   {
     slug: 'eric-zemmour',
     status: 'potential',
     movement: 'Reconquête',
     summary:
-      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Sarah Knafo, vice-présidente de Reconquête, souhaite qu'il soit le candidat du parti.",
+      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Le 17 septembre 2026, il a affirmé sur BFMTV qu'il sera candidat, tout en renvoyant sa déclaration officielle à l'automne. Sarah Knafo, vice-présidente de Reconquête, souhaite qu'il soit le candidat du parti.",
     events: [
       {
         date: '2026-09-03',
@@ -1096,6 +1221,24 @@ export const candidacies: Candidacy[] = [
             label: 'Orange Actualités / AFP',
             url: 'https://actu.orange.fr/politique/presidentielle-zemmour-prevoit-d-annoncer-sa-candidature-quot-avant-decembre-quot-CNT000002rHPUN.html',
             date: '2026-09-03',
+          },
+        ],
+      },
+      {
+        date: '2026-09-17',
+        type: 'step',
+        label:
+          "Il affirme sur BFMTV qu'il sera candidat ; son entourage indique que la déclaration officielle est attendue à l'automne, probablement en octobre.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
+            date: '2026-09-17',
+          },
+          {
+            label: 'Paris Match Belgique',
+            url: 'https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/',
+            date: '2026-09-18',
           },
         ],
       },
