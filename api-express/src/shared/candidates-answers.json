@@ -29060,6 +29060,8 @@
     "picture": "candidates/philippe-brun.png",
     "color": "#7E22CE",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-09-16",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
@@ -36546,6 +36548,8 @@
     "picture": "",
     "color": "#FF6B6B",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-09-16",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
