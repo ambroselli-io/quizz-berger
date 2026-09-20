@@ -205,7 +205,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Debout !',
     summary:
-      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. La primaire a été abandonnée en juillet 2026 ; il a maintenu sa candidature et continue de plaider pour une candidature commune.",
+      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. Après l'abandon de la primaire unitaire en juillet 2026, il a demandé à rejoindre la primaire socialiste et démocratique ; Raphaël Glucksmann le lui a refusé le 8 septembre, et il a renoncé à cette option à la Fête de l'Humanité, poursuivant seul sa campagne tout en appelant à l'union.",
     events: [
       {
         date: '2025-04-01',
@@ -222,6 +222,32 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Public Sénat',
             url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-a-la-bellevilloise-faure-tondelier-ruffindans-les-sables-mouvants-de-la-primaire',
+          },
+        ],
+      },
+      {
+        date: '2026-09-08',
+        type: 'step',
+        label:
+          "Raphaël Glucksmann refuse d'ouvrir la primaire socialiste et démocratique à sa candidature, au nom de règles déjà validées par les militants.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/on-ne-change-pas-les-regles-en-cours-de-jeu-glucksmann-ferme-la-porte-a-ruffin-et',
+            date: '2026-09-08',
+          },
+        ],
+      },
+      {
+        date: '2026-09-12',
+        type: 'step',
+        label:
+          "Il renonce à rejoindre la primaire socialiste et lance, à la Fête de l'Humanité, un appel à l'union par-delà les partis.",
+        sources: [
+          {
+            label: 'Orange Actualités',
+            url: 'https://actu.orange.fr/videos/actu-locale/a-la-fete-de-l-huma-francois-ruffin-abandonne-l-idee-de-participer-a-la-primaire-socialiste-CNT000002rRCyO.html',
+            date: '2026-09-12',
           },
         ],
       },
@@ -372,6 +398,46 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
             date: '2026-09-16',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'benoit-mathieu',
+    status: 'declared',
+    movement: 'Sans étiquette',
+    summary:
+      "Benoît Mathieu, ingénieur agronome de 27 ans devenu professeur de mathématiques contractuel, a quitté Chauffailles (Saône-et-Loire) à vélo le 30 mars 2026 pour sillonner la France à la rencontre des maires ruraux et réunir les 500 parrainages nécessaires à sa candidature. Sans étiquette, il finance seul sa campagne et refuse tout soutien de parti ou de lobby. Son programme porte sur la démocratie directe : référendum d'initiative citoyenne, conventions citoyennes tirées au sort et assemblée constituante citoyenne pour réécrire la Constitution.",
+    quote: {
+      text: 'Soit je deviens aigri, soit je fais quelque chose.',
+      source: {
+        label: 'France 3 Bourgogne-Franche-Comté',
+        url: 'https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/je-vais-continuer-jusqu-au-bout-candidat-a-la-presidentielle-2027-il-parcourt-10-000-kilometres-a-velo-pour-recolter-les-parrainages-3338204.html',
+      },
+    },
+    events: [
+      {
+        date: '2026-03-30',
+        type: 'declaration',
+        label:
+          "Il quitte Chauffailles à vélo pour sillonner la France et réunir les 500 parrainages nécessaires à sa candidature.",
+        sources: [
+          {
+            label: 'France 3 Bourgogne-Franche-Comté',
+            url: 'https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/je-vais-continuer-jusqu-au-bout-candidat-a-la-presidentielle-2027-il-parcourt-10-000-kilometres-a-velo-pour-recolter-les-parrainages-3338204.html',
+            date: '2026-03-30',
+          },
+        ],
+      },
+      {
+        date: '2026-08',
+        type: 'step',
+        label: "Après avoir rencontré environ 150 maires, il a réuni une trentaine de parrainages.",
+        sources: [
+          {
+            label: 'France 3 / franceinfo régions',
+            url: 'https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/je-vais-continuer-jusqu-au-bout-candidat-a-la-presidentielle-2027-il-parcourt-10-000-kilometres-a-velo-pour-recolter-les-parrainages-3338204.html',
           },
         ],
       },
@@ -834,6 +900,39 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
+    slug: 'sylvain-durif',
+    status: 'declared',
+    movement: 'Sans étiquette',
+    summary:
+      "Sylvain Durif, informaticien et entrepreneur, a annoncé sa candidature le 23 août 2026 par une vidéo publiée sur Instagram, dans laquelle il se présente comme « le grand monarque, le Christ cosmique, le Messie, le roi et le pape Pierre, le président de la gouvernance pacifique planétaire et cosmique Elvita ». Il avait déjà tenté de se présenter en 2017, sans réunir les 500 parrainages nécessaires.",
+    quote: {
+      text: 'Je suis contre les frontières.',
+      source: {
+        label: 'Le Tribunal du Net',
+        url: 'https://www.letribunaldunet.fr/politique/sylvain-durif-grand-monarque-candidat-presidentielle-2027.html',
+      },
+    },
+    events: [
+      {
+        date: '2026-08-23',
+        type: 'declaration',
+        label:
+          "Il annonce sa candidature par une vidéo sur Instagram, en se présentant comme « le grand monarque, le Christ cosmique » et président de son projet de gouvernance planétaire Elvita.",
+        sources: [
+          {
+            label: 'MSN / AFP',
+            url: 'https://www.msn.com/fr-fr/actualite/other/grand-monarque-et-doux-cingl%C3%A9-complotiste-sylvain-durif-annonce-sa-candidature-%C3%A0-la-pr%C3%A9sidentielle-2027/ar-AA2aTt6S',
+            date: '2026-08-23',
+          },
+          {
+            label: 'Le Tribunal du Net',
+            url: 'https://www.letribunaldunet.fr/politique/sylvain-durif-grand-monarque-candidat-presidentielle-2027.html',
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: 'raphael-glucksmann',
     status: 'declared',
     movement: 'Place publique',
@@ -1002,6 +1101,59 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
             date: '2026-09-16',
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: 'eric-zemmour',
+    status: 'declared',
+    movement: 'Reconquête',
+    summary:
+      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Il a finalement annoncé sa candidature le 17 septembre 2026 sur BFMTV, en durcissant à cette occasion son discours sur l'immigration. Un lancement de campagne plus formel reste attendu à l'automne, probablement en octobre.",
+    quote: {
+      text: 'Je suis candidat à la présidence de la République, je serai candidat à l’élection présidentielle.',
+      source: {
+        label: 'franceinfo',
+        url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
+        date: '2026-09-17',
+      },
+    },
+    events: [
+      {
+        date: '2026-09-03',
+        type: 'step',
+        label: "Il indique qu'il annoncera sa candidature « avant décembre ».",
+        sources: [
+          {
+            label: 'Orange Actualités / AFP',
+            url: 'https://actu.orange.fr/politique/presidentielle-zemmour-prevoit-d-annoncer-sa-candidature-quot-avant-decembre-quot-CNT000002rHPUN.html',
+            date: '2026-09-03',
+          },
+        ],
+      },
+      {
+        date: '2026-09-17',
+        type: 'declaration',
+        label:
+          "Il annonce sa candidature sur BFMTV (« Je suis candidat à la présidence de la République ») et durcit son discours sur l'immigration, en prônant l'expulsion des étrangers en situation régulière après un an de chômage et de tous les détenus étrangers.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
+            date: '2026-09-17',
+          },
+          {
+            label: 'Paris Match Belgique',
+            url: 'https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/',
+            date: '2026-09-18',
+          },
+          {
+            label: 'Le Figaro',
+            url: 'https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-eric-zemmour-confirme-qu-il-sera-candidat-durcit-encore-son-discours-sur-l-immigration-20260918',
+            date: '2026-09-18',
           },
         ],
       },
@@ -1205,45 +1357,6 @@ export const candidacies: Candidacy[] = [
   },
 
   // --- Pas encore candidats ---
-  {
-    slug: 'eric-zemmour',
-    status: 'potential',
-    movement: 'Reconquête',
-    summary:
-      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Le 17 septembre 2026, il a affirmé sur BFMTV qu'il sera candidat, tout en renvoyant sa déclaration officielle à l'automne. Sarah Knafo, vice-présidente de Reconquête, souhaite qu'il soit le candidat du parti.",
-    events: [
-      {
-        date: '2026-09-03',
-        type: 'step',
-        label: "Il indique qu'il annoncera sa candidature « avant décembre ».",
-        sources: [
-          {
-            label: 'Orange Actualités / AFP',
-            url: 'https://actu.orange.fr/politique/presidentielle-zemmour-prevoit-d-annoncer-sa-candidature-quot-avant-decembre-quot-CNT000002rHPUN.html',
-            date: '2026-09-03',
-          },
-        ],
-      },
-      {
-        date: '2026-09-17',
-        type: 'step',
-        label:
-          "Il affirme sur BFMTV qu'il sera candidat ; son entourage indique que la déclaration officielle est attendue à l'automne, probablement en octobre.",
-        sources: [
-          {
-            label: 'franceinfo',
-            url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
-            date: '2026-09-17',
-          },
-          {
-            label: 'Paris Match Belgique',
-            url: 'https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/',
-            date: '2026-09-18',
-          },
-        ],
-      },
-    ],
-  },
   {
     slug: 'dominique-de-villepin',
     status: 'potential',

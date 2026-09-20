@@ -530,6 +530,8 @@ const partyBySlug: Record<string, string> = {
   'fabien-verdier': '',
   'parti-animaliste': 'PA',
   'parti-pirate': 'PP',
+  'sylvain-durif': '',
+  'benoit-mathieu': '',
 };
 
 export function getCandidateParty(slug: string): string {
