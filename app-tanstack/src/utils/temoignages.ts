@@ -19,4 +19,5 @@ export const temoignages = [
   { blockquote: 'Bien foutu ce quiz ! Ça fait réfléchir...', figcaption: 'Nacim' },
   { blockquote: "Merci pour la conception de ce test particulièrement utile à l'approche des élections de 2027.", figcaption: 'Corentin' },
   { blockquote: "Je l'ai trouvé très bien, votre questionnaire : questions nombreuses, beaucoup de réponses possibles — et ni les questions ni les réponses ne sont caricaturales.", figcaption: 'Benoît' },
+  { blockquote: "Le quizz en général est très bien fait, cela m'aide vraiment à me positionner d'autant plus que je n'ai pas trop le temps de lire les programmes entiers des candidats. Je vous remercie énormément !", figcaption: 'Sylvain' },
 ];
