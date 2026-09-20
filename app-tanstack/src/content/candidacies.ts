@@ -1034,6 +1034,59 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
+  {
+    slug: 'eric-zemmour',
+    status: 'declared',
+    movement: 'Reconquête',
+    summary:
+      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Il a finalement annoncé sa candidature le 17 septembre 2026 sur BFMTV, en durcissant à cette occasion son discours sur l'immigration. Un lancement de campagne plus formel reste attendu à l'automne, probablement en octobre.",
+    quote: {
+      text: 'Je suis candidat à la présidence de la République, je serai candidat à l’élection présidentielle.',
+      source: {
+        label: 'franceinfo',
+        url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
+        date: '2026-09-17',
+      },
+    },
+    events: [
+      {
+        date: '2026-09-03',
+        type: 'step',
+        label: "Il indique qu'il annoncera sa candidature « avant décembre ».",
+        sources: [
+          {
+            label: 'Orange Actualités / AFP',
+            url: 'https://actu.orange.fr/politique/presidentielle-zemmour-prevoit-d-annoncer-sa-candidature-quot-avant-decembre-quot-CNT000002rHPUN.html',
+            date: '2026-09-03',
+          },
+        ],
+      },
+      {
+        date: '2026-09-17',
+        type: 'declaration',
+        label:
+          "Il annonce sa candidature sur BFMTV (« Je suis candidat à la présidence de la République ») et durcit son discours sur l'immigration, en prônant l'expulsion des étrangers en situation régulière après un an de chômage et de tous les détenus étrangers.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
+            date: '2026-09-17',
+          },
+          {
+            label: 'Paris Match Belgique',
+            url: 'https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/',
+            date: '2026-09-18',
+          },
+          {
+            label: 'Le Figaro',
+            url: 'https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-eric-zemmour-confirme-qu-il-sera-candidat-durcit-encore-son-discours-sur-l-immigration-20260918',
+            date: '2026-09-18',
+          },
+        ],
+      },
+    ],
+  },
+
   // --- Ils ont renoncé ---
   {
     slug: 'clementine-autain',
@@ -1231,50 +1284,6 @@ export const candidacies: Candidacy[] = [
   },
 
   // --- Pas encore candidats ---
-  {
-    slug: 'eric-zemmour',
-    status: 'potential',
-    movement: 'Reconquête',
-    summary:
-      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Le 17 septembre 2026, il a affirmé sur BFMTV qu'il sera candidat, tout en renvoyant sa déclaration officielle à l'automne. Sarah Knafo, vice-présidente de Reconquête, souhaite qu'il soit le candidat du parti.",
-    events: [
-      {
-        date: '2026-09-03',
-        type: 'step',
-        label: "Il indique qu'il annoncera sa candidature « avant décembre ».",
-        sources: [
-          {
-            label: 'Orange Actualités / AFP',
-            url: 'https://actu.orange.fr/politique/presidentielle-zemmour-prevoit-d-annoncer-sa-candidature-quot-avant-decembre-quot-CNT000002rHPUN.html',
-            date: '2026-09-03',
-          },
-        ],
-      },
-      {
-        date: '2026-09-17',
-        type: 'step',
-        label:
-          "Il affirme sur BFMTV qu'il sera candidat ; son entourage indique que la déclaration officielle est attendue à l'automne, probablement en octobre. Il durcit à cette occasion son discours sur l'immigration, en prônant l'expulsion des étrangers en situation régulière après un an de chômage et de tous les détenus étrangers.",
-        sources: [
-          {
-            label: 'franceinfo',
-            url: 'https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-president-du-parti-d-extreme-droite-reconquete-annonce-sa-candidature-a-l-election-presidentielle_8198141.html',
-            date: '2026-09-17',
-          },
-          {
-            label: 'Paris Match Belgique',
-            url: 'https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/',
-            date: '2026-09-18',
-          },
-          {
-            label: 'Le Figaro',
-            url: 'https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-eric-zemmour-confirme-qu-il-sera-candidat-durcit-encore-son-discours-sur-l-immigration-20260918',
-            date: '2026-09-18',
-          },
-        ],
-      },
-    ],
-  },
   {
     slug: 'dominique-de-villepin',
     status: 'potential',
