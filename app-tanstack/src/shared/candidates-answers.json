@@ -933,6 +933,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -1869,6 +1874,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 3
       }
     ]
@@ -2807,6 +2817,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -3744,6 +3759,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -4680,6 +4700,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 3
       }
     ]
@@ -5618,6 +5643,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -6555,6 +6585,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -7492,6 +7527,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -8429,6 +8469,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -9368,6 +9413,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -10307,6 +10357,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -11243,6 +11298,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 2
       }
     ]
@@ -12181,6 +12241,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -13118,6 +13183,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -14055,6 +14125,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -14994,6 +15069,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -15931,6 +16011,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -16870,6 +16955,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -17807,6 +17897,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -18743,6 +18838,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 2
       }
     ]
@@ -19681,6 +19781,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -20618,6 +20723,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -21554,6 +21664,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 2
       }
     ]
@@ -22492,6 +22607,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -23428,6 +23548,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 2
       }
     ]
@@ -24366,6 +24491,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -25303,6 +25433,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -26240,6 +26375,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -27176,6 +27316,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 3
       }
     ]
@@ -28114,6 +28259,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -29050,6 +29200,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 2
       }
     ]
@@ -29990,6 +30145,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -30927,6 +31087,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -31864,6 +32029,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -32801,6 +32971,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -33738,6 +33913,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -34675,6 +34855,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -35607,6 +35792,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -36538,6 +36728,11 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
         "answerIndex": 2
       }
     ]
@@ -37473,6 +37668,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -38405,6 +38605,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -39337,6 +39542,11 @@
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-pirate",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-13",
+        "answerIndex": 2
       }
     ]
   }

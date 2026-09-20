@@ -40,6 +40,9 @@ question-2027-ae-11: Comment la France doit-elle réagir à l'intervention milit
 question-2027-ae-12: Face à la rivalité entre les États-Unis et la Chine (notamment autour de Taïwan), quelle doit être la position de la France ?
 [1] Rester dans le camp occidental, tout en gardant une marge d'autonomie
 
+question-2027-ae-13: Comment la France devrait-elle réagir face aux attaques hybrides russes (cyber, drones, sabotage) visant ses infrastructures ?
+[2] Combiner un renforcement défensif avec un dialogue diplomatique pour désamorcer les tensions
+
 
 Agriculture et alimentation:
 
