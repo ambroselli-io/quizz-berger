@@ -1254,7 +1254,7 @@ export const candidacies: Candidacy[] = [
         date: '2026-09-17',
         type: 'step',
         label:
-          "Il affirme sur BFMTV qu'il sera candidat ; son entourage indique que la déclaration officielle est attendue à l'automne, probablement en octobre.",
+          "Il affirme sur BFMTV qu'il sera candidat ; son entourage indique que la déclaration officielle est attendue à l'automne, probablement en octobre. Il durcit à cette occasion son discours sur l'immigration, en prônant l'expulsion des étrangers en situation régulière après un an de chômage et de tous les détenus étrangers.",
         sources: [
           {
             label: 'franceinfo',
@@ -1264,6 +1264,11 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Paris Match Belgique',
             url: 'https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/',
+            date: '2026-09-18',
+          },
+          {
+            label: 'Le Figaro',
+            url: 'https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-eric-zemmour-confirme-qu-il-sera-candidat-durcit-encore-son-discours-sur-l-immigration-20260918',
             date: '2026-09-18',
           },
         ],
