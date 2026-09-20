@@ -404,6 +404,46 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
+    slug: 'benoit-mathieu',
+    status: 'declared',
+    movement: 'Sans étiquette',
+    summary:
+      "Benoît Mathieu, ingénieur agronome de 27 ans devenu professeur de mathématiques contractuel, a quitté Chauffailles (Saône-et-Loire) à vélo le 30 mars 2026 pour sillonner la France à la rencontre des maires ruraux et réunir les 500 parrainages nécessaires à sa candidature. Sans étiquette, il finance seul sa campagne et refuse tout soutien de parti ou de lobby. Son programme porte sur la démocratie directe : référendum d'initiative citoyenne, conventions citoyennes tirées au sort et assemblée constituante citoyenne pour réécrire la Constitution.",
+    quote: {
+      text: 'Soit je deviens aigri, soit je fais quelque chose.',
+      source: {
+        label: 'France 3 Bourgogne-Franche-Comté',
+        url: 'https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/je-vais-continuer-jusqu-au-bout-candidat-a-la-presidentielle-2027-il-parcourt-10-000-kilometres-a-velo-pour-recolter-les-parrainages-3338204.html',
+      },
+    },
+    events: [
+      {
+        date: '2026-03-30',
+        type: 'declaration',
+        label:
+          "Il quitte Chauffailles à vélo pour sillonner la France et réunir les 500 parrainages nécessaires à sa candidature.",
+        sources: [
+          {
+            label: 'France 3 Bourgogne-Franche-Comté',
+            url: 'https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/je-vais-continuer-jusqu-au-bout-candidat-a-la-presidentielle-2027-il-parcourt-10-000-kilometres-a-velo-pour-recolter-les-parrainages-3338204.html',
+            date: '2026-03-30',
+          },
+        ],
+      },
+      {
+        date: '2026-08',
+        type: 'step',
+        label: "Après avoir rencontré environ 150 maires, il a réuni une trentaine de parrainages.",
+        sources: [
+          {
+            label: 'France 3 / franceinfo régions',
+            url: 'https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/je-vais-continuer-jusqu-au-bout-candidat-a-la-presidentielle-2027-il-parcourt-10-000-kilometres-a-velo-pour-recolter-les-parrainages-3338204.html',
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: 'david-lisnard',
     status: 'declared',
     movement: 'Nouvelle Énergie',
@@ -854,6 +894,39 @@ export const candidacies: Candidacy[] = [
             label: 'CNEWS',
             url: 'https://www.cnews.fr/france/2026-08-19/presidentielle-2027-francis-lalanne-se-porte-officiellement-candidat-1906812',
             date: '2026-08-19',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'sylvain-durif',
+    status: 'declared',
+    movement: 'Sans étiquette',
+    summary:
+      "Sylvain Durif, informaticien et entrepreneur, a annoncé sa candidature le 23 août 2026 par une vidéo publiée sur Instagram, dans laquelle il se présente comme « le grand monarque, le Christ cosmique, le Messie, le roi et le pape Pierre, le président de la gouvernance pacifique planétaire et cosmique Elvita ». Il avait déjà tenté de se présenter en 2017, sans réunir les 500 parrainages nécessaires.",
+    quote: {
+      text: 'Je suis contre les frontières.',
+      source: {
+        label: 'Le Tribunal du Net',
+        url: 'https://www.letribunaldunet.fr/politique/sylvain-durif-grand-monarque-candidat-presidentielle-2027.html',
+      },
+    },
+    events: [
+      {
+        date: '2026-08-23',
+        type: 'declaration',
+        label:
+          "Il annonce sa candidature par une vidéo sur Instagram, en se présentant comme « le grand monarque, le Christ cosmique » et président de son projet de gouvernance planétaire Elvita.",
+        sources: [
+          {
+            label: 'MSN / AFP',
+            url: 'https://www.msn.com/fr-fr/actualite/other/grand-monarque-et-doux-cingl%C3%A9-complotiste-sylvain-durif-annonce-sa-candidature-%C3%A0-la-pr%C3%A9sidentielle-2027/ar-AA2aTt6S',
+            date: '2026-08-23',
+          },
+          {
+            label: 'Le Tribunal du Net',
+            url: 'https://www.letribunaldunet.fr/politique/sylvain-durif-grand-monarque-candidat-presidentielle-2027.html',
           },
         ],
       },
