@@ -205,7 +205,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Debout !',
     summary:
-      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. La primaire a été abandonnée en juillet 2026 ; il a maintenu sa candidature et continue de plaider pour une candidature commune.",
+      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. Après l'abandon de la primaire unitaire en juillet 2026, il a demandé à rejoindre la primaire socialiste et démocratique ; Raphaël Glucksmann le lui a refusé le 8 septembre, et il a renoncé à cette option à la Fête de l'Humanité, poursuivant seul sa campagne tout en appelant à l'union.",
     events: [
       {
         date: '2025-04-01',
@@ -222,6 +222,32 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Public Sénat',
             url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-a-la-bellevilloise-faure-tondelier-ruffindans-les-sables-mouvants-de-la-primaire',
+          },
+        ],
+      },
+      {
+        date: '2026-09-08',
+        type: 'step',
+        label:
+          "Raphaël Glucksmann refuse d'ouvrir la primaire socialiste et démocratique à sa candidature, au nom de règles déjà validées par les militants.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/on-ne-change-pas-les-regles-en-cours-de-jeu-glucksmann-ferme-la-porte-a-ruffin-et',
+            date: '2026-09-08',
+          },
+        ],
+      },
+      {
+        date: '2026-09-12',
+        type: 'step',
+        label:
+          "Il renonce à rejoindre la primaire socialiste et lance, à la Fête de l'Humanité, un appel à l'union par-delà les partis.",
+        sources: [
+          {
+            label: 'Orange Actualités',
+            url: 'https://actu.orange.fr/videos/actu-locale/a-la-fete-de-l-huma-francois-ruffin-abandonne-l-idee-de-participer-a-la-primaire-socialiste-CNT000002rRCyO.html',
+            date: '2026-09-12',
           },
         ],
       },
