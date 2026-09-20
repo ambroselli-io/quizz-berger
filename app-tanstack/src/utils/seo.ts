@@ -286,6 +286,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Affaire Sapin sur France Inter : candidats 2027',
     seoDescription: `Affaire Charles Sapin sur France Inter : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur le pluralisme politique dans l'audiovisuel public.`,
   },
+  'question-2027-ae-13': {
+    slug: 'attaques-hybrides-cyber-drones-infrastructure-france',
+    seoTitle: 'Attaques hybrides contre la France : candidats 2027',
+    seoDescription: `Cyber, drones, sabotage : comment réagir aux attaques hybrides visant la France ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated
