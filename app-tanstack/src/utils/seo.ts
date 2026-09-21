@@ -291,6 +291,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Attaques hybrides contre la France : candidats 2027',
     seoDescription: `Cyber, drones, sabotage : comment réagir aux attaques hybrides visant la France ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-dep-08': {
+    slug: 'salaires-fonctionnaires-point-indice-france',
+    seoTitle: 'Salaires des fonctionnaires : les candidats 2027',
+    seoDescription: `Gel du point d'indice, rattrapage ou revalorisation massive : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les salaires de la fonction publique.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated
