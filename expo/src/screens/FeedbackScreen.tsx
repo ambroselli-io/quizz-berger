@@ -115,8 +115,8 @@ export default function FeedbackScreen() {
     lines.push('', message.trim());
     const subject =
       kind === 'question'
-        ? `[App] Avis sur la question ${questionId}`
-        : `[App] Témoignage de ${pseudo || 'un utilisateur'}`;
+        ? `Quizz du Berger : votre avis sur une question${question ? ` (${question.theme})` : ''}`
+        : `Quizz du Berger : votre témoignage${pseudo ? ` (${pseudo})` : ''}`;
     const response = await API.post({ path: '/feedback', body: { text: lines.join('\n'), subject, email: email.trim() || undefined } });
     setIsLoading(false);
     if (!response?.ok) {

@@ -44,7 +44,7 @@ const ModalQuestionFeedback = ({ isActive, onClose, question, theme, userAnswerI
       path: '/feedback',
       body: {
         text: lines.join('\n'),
-        subject: `[Web] Avis sur la question ${question._id}`,
+        subject: `Quizz du Berger : votre avis sur une question (${theme.fr})`,
         email: state.email.trim() || undefined,
       },
     });

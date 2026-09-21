@@ -80,7 +80,7 @@ describe('FeedbackScreen', () => {
 
     await screen.findByText('Envoyer mon avis');
     const feedbackCall = (API.post as jest.Mock).mock.calls.find(([args]) => args.path === '/feedback')?.[0];
-    expect(feedbackCall.body.subject).toBe('[App] Avis sur la question question-2027-pol-01');
+    expect(feedbackCall.body.subject).toBe('Quizz du Berger : votre avis sur une question (Police et sécurité)');
     expect(feedbackCall.body.text).toContain('De: toto');
     expect(feedbackCall.body.text).toContain('Intitulé: Faut-il plus de policiers ?');
     expect(feedbackCall.body.text).toContain("Réponse de l'utilisateur: Non");
@@ -101,7 +101,7 @@ describe('FeedbackScreen', () => {
 
     await screen.findByText('Envoyer mon témoignage');
     const feedbackCall = (API.post as jest.Mock).mock.calls.find(([args]) => args.path === '/feedback')?.[0];
-    expect(feedbackCall.body.subject).toBe('[App] Témoignage de toto');
+    expect(feedbackCall.body.subject).toBe('Quizz du Berger : votre témoignage (toto)');
     expect(feedbackCall.body.text).toContain("J'ai découvert un candidat proche de moi");
     expect(mockNavigation.goBack).toHaveBeenCalled();
   });
