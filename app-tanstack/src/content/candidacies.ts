@@ -179,7 +179,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Debout la France',
     summary:
-      "Nicolas Dupont-Aignan a annoncé sa candidature le 8 mars 2025, devant les militants de Debout la France réunis à Yerres. C'est sa quatrième campagne présidentielle, après 2012, 2017 et 2022.",
+      "Nicolas Dupont-Aignan a annoncé sa candidature le 8 mars 2025, devant les militants de Debout la France réunis à Yerres. C'est sa quatrième campagne présidentielle, après 2012, 2017 et 2022. Il a officialisé sa candidature le 19 septembre 2026 lors de la Fête de la Liberté à Yerres, avec un discours centré sur la sortie de l'Union européenne (Frexit).",
     events: [
       {
         date: '2025-03-08',
@@ -195,6 +195,24 @@ export const candidacies: Candidacy[] = [
             label: 'franceinfo',
             url: 'https://www.francetvinfo.fr/politique/nicolas-dupont-aignan/le-souverainiste-nicolas-dupont-aignan-se-lance-pour-la-4e-fois-dans-la-course-a-l-elysee_7118136.html',
             date: '2025-03-08',
+          },
+        ],
+      },
+      {
+        date: '2026-09-19',
+        type: 'step',
+        label:
+          "Il officialise sa candidature lors de la Fête de la Liberté à Yerres, avec un discours centré sur la sortie de l'Union européenne (Frexit).",
+        sources: [
+          {
+            label: 'Le JDD',
+            url: 'https://www.lejdd.fr/politique/presidentielle-nicolas-dupont-aignan-officialise-sa-candidature-et-fait-le-pari-du-frexit-183876',
+            date: '2026-09-19',
+          },
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/politique/nicolas-dupont-aignan/je-serai-le-seul-candidat-qui-propose-de-sortir-de-l-union-europeenne-dit-nicolas-dupont-aignan-qui-se-lance-dans-sa-quatrieme-campagne-presidentielle_8201024.html',
+            date: '2026-09-19',
           },
         ],
       },
