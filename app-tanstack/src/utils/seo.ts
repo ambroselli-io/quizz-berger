@@ -271,6 +271,21 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Jours de carence et arrêts maladie : les candidats 2027',
     seoDescription: `Faut-il durcir les jours de carence pour les arrêts maladie ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-trav-09': {
+    slug: 'assurance-chomage-indemnisation-france',
+    seoTitle: 'Assurance chômage : les positions des candidats 2027',
+    seoDescription: `Élargir, maintenir ou durcir l'indemnisation du chômage : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
+  'question-2027-trav-10': {
+    slug: 'emplois-publics-emploi-garanti-france',
+    seoTitle: 'Emploi garanti par l\'État : les candidats 2027',
+    seoDescription: `Garantie d'emploi, embauches publiques, contrats aidés ou rien du tout : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
+  'question-2027-trav-11': {
+    slug: 'baisse-cotisations-patronales-embauche-france',
+    seoTitle: 'Baisse des cotisations patronales : candidats 2027',
+    seoDescription: `Faut-il baisser les cotisations des entreprises pour favoriser l'embauche ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
   'question-2027-immi-10': {
     slug: 'accord-migratoire-royaume-uni-manche-france',
     seoTitle: 'Migrants et Royaume-Uni : les positions des candidats 2027',

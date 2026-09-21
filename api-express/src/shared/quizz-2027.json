@@ -2713,21 +2713,65 @@
         ]
       },
       {
-        "_id": "question-2027-trav-03",
-        "fr": "Comment réduire le chômage en France ?",
+        "_id": "question-2027-trav-09",
+        "fr": "Que pensez-vous de l'assurance chômage ?",
+        "help": "https://fr.wikipedia.org/wiki/Assurance_ch%C3%B4mage_en_France",
         "answers": [
-          "L'État doit créer des emplois publics et garantir un emploi à tous",
-          "Former les chômeurs et investir dans les filières porteuses",
-          "Baisser les charges sur les entreprises pour qu'elles embauchent",
-          "Durcir les conditions d'indemnisation pour inciter au retour à l'emploi",
+          "Il faut l'élargir : indemniser plus longtemps, mieux, et plus de monde (jeunes, démissionnaires, précaires)",
+          "Il faut revenir sur les réformes récentes et rétablir les droits d'avant",
+          "Le système actuel est un équilibre correct",
+          "Il faut la durcir : durée plus courte ou allocation dégressive, pour inciter au retour à l'emploi",
+          "Il faut la réduire au minimum : une indemnisation courte et faible, chacun complète s'il le souhaite",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 0, 0, 0],
-          [3, 5, 3, 0, 0],
-          [0, 3, 5, 3, 0],
-          [0, 0, 4, 5, 0],
-          [0, 0, 0, 0, 0]
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 0, 0, 0],
+          [2, 3, 5, 3, 1, 0],
+          [0, 0, 3, 5, 4, 0],
+          [0, 0, 1, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-10",
+        "fr": "Jusqu'où l'État doit-il aller pour créer des emplois ?",
+        "answers": [
+          "L'État doit garantir un emploi à toute personne qui en cherche un, comme un droit",
+          "L'État doit embaucher massivement dans les secteurs utiles (santé, école, écologie) pour faire baisser le chômage",
+          "L'État doit financer des dispositifs ciblés (contrats aidés, Territoires zéro chômeur de longue durée)",
+          "Ce n'est pas son rôle : il doit seulement lever les freins à l'embauche dans le privé",
+          "L'emploi public est déjà trop lourd, le réduire libérerait l'emploi privé",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 0, 0, 0],
+          [2, 3, 5, 2, 0, 0],
+          [0, 0, 2, 5, 4, 0],
+          [0, 0, 0, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-11",
+        "fr": "Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?",
+        "help": "https://fr.wikipedia.org/wiki/Cotisations_sociales_en_France",
+        "answers": [
+          "Non, il faut les augmenter : elles financent la sécurité sociale et les retraites",
+          "Non, et il faut supprimer les exonérations actuelles : elles coûtent cher et créent peu d'emplois",
+          "Garder le niveau actuel, avec les allègements ciblés sur les bas salaires",
+          "Oui, les baisser davantage : c'est le coût du travail qui freine l'embauche",
+          "Oui, les baisser massivement, c'est le principal levier contre le chômage",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 2, 0, 0, 0],
+          [1, 2, 5, 3, 1, 0],
+          [0, 0, 3, 5, 4, 0],
+          [0, 0, 1, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {

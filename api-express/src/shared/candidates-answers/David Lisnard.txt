@@ -475,8 +475,14 @@ question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
 question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 [3] Revenir à 39 heures ou augmenter la durée légale
 
-question-2027-trav-03: Comment réduire le chômage en France ?
-[2] Baisser les charges sur les entreprises pour qu'elles embauchent
+question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
+[4] Il faut la réduire au minimum : une indemnisation courte et faible, chacun complète s'il le souhaite
+
+question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
+[4] L'emploi public est déjà trop lourd, le réduire libérerait l'emploi privé
+
+question-2027-trav-11: Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?
+[4] Oui, les baisser massivement, c'est le principal levier contre le chômage
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
 [3] Le RSA est devenu une trappe à inactivité, il faut le conditionner fortement ou le supprimer
@@ -577,7 +583,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [2] Neutre
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[4] Très mécontent(e)
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)

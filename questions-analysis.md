@@ -32,7 +32,7 @@ Principe : chaque réponse à une question doit porter **une seule position**. T
 | Éducation / Recherche | ✅ | 🟧 edu-03 reformulée |
 | Santé | ✅ | 🟧 san-03 + san-07 reformulées |
 | Société | ✅ | 🟧 soc-02 reformulée |
-| Travail / Chômage / Retraite | ✅ | ✅ (trav-02 refondue, trav-01/03/05 reformulées) |
+| Travail / Chômage / Retraite | ✅ | ✅ (trav-02 refondue, trav-01/05 reformulées) |
 | Union Européenne | ✅ | 🟧 ue-03 supprimée (doublon), ue-06 reformulée |
 
 ## Travaux effectués
@@ -59,8 +59,8 @@ Principe : chaque réponse à une question doit porter **une seule position**. T
 - `ae-10` — Reconnaissance de l'État de Palestine
 - `immi-08` — Niveau d'exigence d'intégration (split d'`immi-05`)
 
-**Reformulations de libellés** (17, indexes candidats inchangés)
-- `ae-02`, `ae-06`, `agri-05`, `climat-04`, `eco-01`, `pol-01`, `pol-03`, `pol-05`, `pol-07`, `trav-01`, `trav-03`, `trav-05`, `edu-03`, `san-03`, `san-07`, `soc-02`, `ue-06`
+**Reformulations de libellés** (16, indexes candidats inchangés)
+- `ae-02`, `ae-06`, `agri-05`, `climat-04`, `eco-01`, `pol-01`, `pol-03`, `pol-05`, `pol-07`, `trav-01`, `trav-05`, `edu-03`, `san-03`, `san-07`, `soc-02`, `ue-06`
 
 **Total : 123 → 126 questions** (−2 supprimées, +5 nouvelles, log-01 déjà refait en début de session).
 
@@ -896,14 +896,6 @@ Toutes 🟧 (axe). **Verdict** : OK.
 
 **Verdict** : 3/4 problématiques. ⚠️ **Doublon avec `eco-06`** — supprimer l'une.
 
-### `trav-03` — Réduire le chômage
-1. 🟥 « emplois publics + garantir un emploi »
-2. 🟥 « former chômeurs + investir filières »
-3. 🟧
-4. 🟥 « payés à rien faire + durcir indemnisation »
-
-**Verdict** : 3/4 problématiques.
-
 ### `trav-04` — RSA conditionné
 1. 🟥 « travail forcé humiliant + revenu universel » — critique + alternative très distincte
 2. 🟧
@@ -996,7 +988,7 @@ Plus prioritaires que le reste, axes globalement bons mais libellés à reformul
 - `edu-01`, `edu-03`, `edu-05`
 - `san-03`, `san-06`, `san-07`
 - `soc-01`, `soc-02`
-- `trav-01`, `trav-03`, `trav-05`, `trav-06`
+- `trav-01`, `trav-05`, `trav-06`
 - `ue-06`
 
 ## Questions globalement OK (axe propre, libellés peu ou pas problématiques)

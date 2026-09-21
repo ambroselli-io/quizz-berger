@@ -58,6 +58,14 @@ app.use(express.static(clientDir, { index: false }));
 app.get('/about', (_req, res) => res.redirect(301, '/qui-sommes-nous'));
 app.get('/privacy', (_req, res) => res.redirect(301, '/confidentialite'));
 
+// The "Comment réduire le chômage en France ?" question was split into three
+// single-axis questions (unemployment benefit, State as employer, employer
+// contributions). Its old SEO URL kept impressions, so it points at the article
+// that now covers the three angles.
+app.get('/question-politique/comment-reduire-le-chomage-en-france', (_req, res) =>
+  res.redirect(301, '/blog/hausse-chomage-france-candidats-2027'),
+);
+
 // Markdown content negotiation (acceptmarkdown.com). When a client sends
 // Accept: text/markdown, serve llms.txt for the homepage instead of HTML.
 let llmsTxtContent = '';

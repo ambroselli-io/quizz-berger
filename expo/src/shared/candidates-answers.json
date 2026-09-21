@@ -611,7 +611,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -1553,8 +1563,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -2495,8 +2515,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 0
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -3437,8 +3467,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 2
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -4379,8 +4419,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 1
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -5321,7 +5371,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -6263,8 +6323,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -7205,8 +7275,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -8147,8 +8227,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 2
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -8338,7 +8428,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-tondelier",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -8443,7 +8533,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-lydie-massard",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -9091,8 +9181,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 2
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -10035,7 +10135,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -10226,7 +10336,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-tondelier",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -10241,7 +10351,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -10276,7 +10386,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -10977,8 +11087,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -11919,7 +12039,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -12100,7 +12230,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-edouard-philippe",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -12861,8 +12991,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 2
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -13102,7 +13242,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -13803,8 +13943,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 2
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -14009,7 +14159,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14034,7 +14184,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-fabien-roussel",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14747,8 +14897,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 1
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -15689,7 +15849,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -15890,7 +16060,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-gabriel-attal",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -15945,7 +16115,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francis-lalanne",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16633,8 +16803,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 2
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -17575,7 +17755,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -18517,8 +18707,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -19459,7 +19659,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -20401,8 +20611,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -21343,7 +21563,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -21544,7 +21774,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-gabriel-attal",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -21604,7 +21834,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-florian-philippot",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -22285,7 +22515,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 3
       },
       {
@@ -23227,8 +23467,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 1
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -23423,7 +23673,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-david-lisnard",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24039,7 +24289,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -25111,7 +25371,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -26118,7 +26388,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -26259,7 +26539,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -27060,8 +27340,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -27226,7 +27516,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-fabien-roussel",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -28002,7 +28292,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -28944,7 +29244,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -29888,7 +30198,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -30830,7 +31150,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -31772,7 +32102,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -31993,7 +32333,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -32714,8 +33054,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 1
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -32930,7 +33280,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-selma-labib",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -33656,7 +34006,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -34598,7 +34958,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -34714,7 +35084,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-edouard-philippe",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -35535,7 +35905,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -36472,7 +36852,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 0
       },
       {
@@ -37411,8 +37801,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -37492,7 +37892,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -38353,7 +38753,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -39290,7 +39700,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {
@@ -40247,8 +40667,18 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
-        "answerIndex": 1
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -41189,7 +41619,17 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-03",
+        "questionId": "question-2027-trav-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-11",
         "answerIndex": 1
       },
       {

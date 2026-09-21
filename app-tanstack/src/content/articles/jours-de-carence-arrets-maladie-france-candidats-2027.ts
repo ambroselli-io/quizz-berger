@@ -113,7 +113,7 @@ export const article: Article = {
 <ul>
 <li><a href="/question-politique/jours-de-carence-arrets-maladie-france">Jours de carence et arrêts maladie</a> — la question complète du Quizz du Berger et le détail des réponses candidat par candidat.</li>
 <li><a href="/theme/travail-chomage-retraite">Travail, Chômage, Retraite</a> — le thème complet, avec le chômage, le RSA conditionné et la retraite à 64 ans.</li>
-<li><a href="/question-politique/comment-reduire-le-chomage-en-france">Comment réduire le chômage en France</a> — l'autre volet du programme d'Édouard Philippe, sur l'indemnisation chômage.</li>
+<li><a href="/question-politique/assurance-chomage-indemnisation-france">Assurance chômage : faut-il l'élargir ou la durcir</a> — l'autre volet du programme d'Édouard Philippe, sur l'indemnisation chômage.</li>
 </ul>
 
 <p><a href="/themes">→ Faire le quiz</a></p>

@@ -475,8 +475,14 @@ question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
 question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 [2] Assouplir les 35 heures avec accords par secteur ou par entreprise
 
-question-2027-trav-03: Comment réduire le chômage en France ?
-[2] Baisser les charges sur les entreprises pour qu'elles embauchent
+question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
+[3] Il faut la durcir : durée plus courte ou allocation dégressive, pour inciter au retour à l'emploi
+
+question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
+[3] Ce n'est pas son rôle : il doit seulement lever les freins à l'embauche dans le privé
+
+question-2027-trav-11: Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?
+[3] Oui, les baisser davantage : c'est le coût du travail qui freine l'embauche
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
 [2] Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer
