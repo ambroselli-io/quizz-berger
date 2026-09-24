@@ -37,7 +37,7 @@ export const article: Article = {
 <p>Chez Les Républicains, Laurent Wauquiez avait fixé comme ligne rouge le refus que les retraités deviennent <a href="https://www.publicsenat.fr/actualites/politique/gel-des-pensions-abattement-de-10-les-lr-font-ils-leur-mue-sur-la-participation-des-retraites-a-leffort-budgetaire" target="_blank" rel="noopener noreferrer">« la variable d'ajustement » d'un gouvernement incapable de faire des économies ailleurs</a>, quand Bruno Retailleau concentre plutôt ses exigences sur <a href="https://www.publicsenat.fr/actualites/politique/budget-bruno-retailleau-demande-au-gouvernement-le-retour-de-la-reforme-des-retraites" target="_blank" rel="noopener noreferrer">le retour, dans le budget, de la réforme des retraites de 2023</a>. Édouard Philippe assume à l'inverse une ligne plus dure : <a href="https://www.dailymotion.com/video/xalmg2a" target="_blank" rel="noopener noreferrer">« j'assume de dire aux retraités qu'il faudra contribuer » au financement du système social</a>.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Le Quizz du Berger pose la question aux utilisateurs dans le thème <a href="/theme/politique-fiscale">Politique fiscale</a>, aux côtés de la <a href="/question-politique/desindexation-pensions-retraite-inflation">désindexation des pensions sur l'inflation</a> et de l'<a href="/question-politique/age-depart-retraite-62-64-ans">âge de départ à la retraite</a>, deux autres mesures du même budget qui visent les retraités. Voici comment se répartissent les ${candidatesCount} candidats, des plus protecteurs de l'abattement aux plus favorables à sa réduction.</p>
+<p>L'abattement rejoint deux autres mesures du même budget qui visent les retraités et que le Quizz du Berger permet déjà de comparer, la <a href="/question-politique/desindexation-pensions-retraite-inflation">désindexation des pensions sur l'inflation</a> et l'<a href="/question-politique/age-depart-retraite-62-64-ans">âge de départ à la retraite</a>. Voici comment se répartissent les ${candidatesCount} candidats sur l'abattement lui-même, des plus protecteurs aux plus favorables à sa réduction.</p>
 
 <h3>Famille 1 — Augmenter l'abattement, voire créer un avantage supplémentaire</h3>
 <p>Ces candidats, situés à la gauche de la gauche, veulent aller à rebours du débat budgétaire actuel et renforcer le soutien fiscal aux retraités plutôt que le réduire.</p>
@@ -114,7 +114,6 @@ export const article: Article = {
 
 <h2>Pour aller plus loin</h2>
 <ul>
-<li><a href="/question-politique/abattement-fiscal-retraites-10-pourcent">Abattement fiscal des retraités</a> — la question complète du Quizz du Berger et les réponses détaillées de chaque candidat.</li>
 <li><a href="/theme/politique-fiscale">Politique fiscale</a> — impôts sur les riches, la classe moyenne, les entreprises et l'évasion fiscale.</li>
 <li><a href="/theme/travail-chomage-retraite">Travail, Chômage, Retraite</a> — âge de départ, indexation des pensions et réforme de 2023.</li>
 <li><a href="/question-politique/desindexation-pensions-retraite-inflation">Désindexation des pensions sur l'inflation</a> — l'autre mesure du budget 2027 qui vise les retraités.</li>
