@@ -50,7 +50,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Politique fiscale",
     "id": "theme-2027-fiscal",
-    "questionCount": 8,
+    "questionCount": 9,
   },
   {
     "fr": "Gouvernance et République",

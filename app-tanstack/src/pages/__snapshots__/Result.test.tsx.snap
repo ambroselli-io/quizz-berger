@@ -204,11 +204,6 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     "percent": 41,
     "pseudos": [
       "Marine Le Pen",
-    ],
-  },
-  {
-    "percent": 41,
-    "pseudos": [
       "Nicolas Dupont-Aignan",
     ],
   },
@@ -225,7 +220,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 33,
+    "percent": 32,
     "pseudos": [
       "Édouard Philippe",
     ],

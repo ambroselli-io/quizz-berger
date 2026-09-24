@@ -365,6 +365,9 @@ question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [1] Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales
 
+question-2027-fisc-09: Le budget 2027 envisage de réduire l'abattement fiscal de 10 % dont bénéficient les retraités sur leurs pensions. Qu'en pensez-vous ?
+[3] Abaisser le plafond pour l'ensemble des retraités, comme l'envisage le budget 2027 (de 4 439 à 3 000 euros)
+
 
 Pouvoir d'achat et vie quotidienne:
 

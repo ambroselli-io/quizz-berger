@@ -311,6 +311,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Salaires des fonctionnaires : les candidats 2027',
     seoDescription: `Gel du point d'indice, rattrapage ou revalorisation massive : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les salaires de la fonction publique.`,
   },
+  'question-2027-fisc-09': {
+    slug: 'abattement-fiscal-retraites-10-pourcent',
+    seoTitle: 'Abattement fiscal des retraités : les candidats 2027',
+    seoDescription: `Réduire ou supprimer l'abattement de 10 % sur les pensions dans le budget 2027 : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

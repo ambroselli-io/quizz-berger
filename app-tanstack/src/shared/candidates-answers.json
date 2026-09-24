@@ -460,6 +460,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -1409,6 +1414,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -2364,6 +2374,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -3316,6 +3331,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
@@ -4265,6 +4285,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -5220,6 +5245,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -6170,6 +6200,11 @@
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -7124,6 +7159,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
@@ -8073,6 +8113,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 3
       },
       {
@@ -9030,6 +9075,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
@@ -9981,6 +10031,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 0
       },
       {
@@ -10936,6 +10991,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -11885,6 +11945,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -12840,6 +12905,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
@@ -13789,6 +13859,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 3
       },
       {
@@ -14746,6 +14821,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
@@ -15695,6 +15775,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -16652,6 +16737,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
@@ -17601,6 +17691,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -18556,6 +18651,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
@@ -19506,6 +19606,11 @@
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -20460,6 +20565,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
@@ -21409,6 +21519,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -22364,6 +22479,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
@@ -23316,6 +23436,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -24135,6 +24260,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 0
       },
       {
@@ -25087,6 +25217,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -26237,6 +26372,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 3
@@ -27186,6 +27326,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -28141,6 +28286,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -29090,6 +29240,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -30047,6 +30202,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -30996,6 +31156,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 0
       },
       {
@@ -31951,6 +32116,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -32903,6 +33073,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
@@ -33852,6 +34027,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -34807,6 +34987,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -35751,6 +35936,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -36701,6 +36891,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -37647,6 +37842,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -38607,6 +38807,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -39551,6 +39756,11 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
         "answerIndex": 1
       },
       {
@@ -40516,6 +40726,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
@@ -41466,6 +41681,11 @@
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",

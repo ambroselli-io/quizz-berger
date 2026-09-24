@@ -2104,6 +2104,27 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-fisc-09",
+        "fr": "Le budget 2027 envisage de réduire l'abattement fiscal de 10 % dont bénéficient les retraités sur leurs pensions. Qu'en pensez-vous ?",
+        "help": "https://www.moneyvox.fr/impot/actualites/110260/impot-sur-le-revenu-supprimer-abattement-des-retraites-de-10-une-des-options-pour-le-budget-2027",
+        "answers": [
+          "Augmenter l'abattement ou créer un avantage supplémentaire, pour redonner du pouvoir d'achat aux retraités",
+          "Maintenir l'abattement de 10 % tel qu'il est aujourd'hui, sans y toucher",
+          "Réduire son plafond uniquement pour les pensions élevées, en épargnant les petites et moyennes retraites",
+          "Abaisser le plafond pour l'ensemble des retraités, comme l'envisage le budget 2027 (de 4 439 à 3 000 euros)",
+          "Supprimer entièrement l'abattement de 10 %, quel que soit le niveau de pension",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
