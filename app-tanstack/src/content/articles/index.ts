@@ -1,5 +1,6 @@
 import type { Article } from '~/types/article';
 
+import { article as articleAbattementFiscalRetraitesFranceCandidats2027 } from './abattement-fiscal-retraites-france-candidats-2027';
 import { article as articleGelPointIndiceFonctionnairesFranceCandidats2027 } from './gel-point-indice-fonctionnaires-france-candidats-2027';
 import { article as articleReunionElyseeMacronSecuriteEnergieFranceCandidats2027 } from './reunion-elysee-macron-securite-energie-france-candidats-2027';
 import { article as articleCriseMigratoireCeutaFranceCandidats2027 } from './crise-migratoire-ceuta-france-candidats-2027';
@@ -50,6 +51,7 @@ export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
+  articleAbattementFiscalRetraitesFranceCandidats2027,
   articleGelPointIndiceFonctionnairesFranceCandidats2027,
   articleReunionElyseeMacronSecuriteEnergieFranceCandidats2027,
   articleCriseMigratoireCeutaFranceCandidats2027,
