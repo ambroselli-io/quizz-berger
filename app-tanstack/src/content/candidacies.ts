@@ -1178,6 +1178,41 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
+  {
+    slug: 'olivier-becht',
+    status: 'declared',
+    movement: 'Le Projet France',
+    summary:
+      "Olivier Becht, député du Haut-Rhin et ancien ministre délégué au Commerce extérieur du gouvernement Borne, a annoncé sa candidature le 24 septembre 2026 à Rixheim, la commune dont il a été maire de 2008 à 2017. Il se présente comme un candidat indépendant, sans étiquette de parti.",
+    quote: {
+      text: "Quand on n'a aucune chance, il faut la saisir.",
+      source: {
+        label: 'Le JDD',
+        url: 'https://www.lejdd.fr/politique/quand-on-na-aucune-chance-il-faut-la-saisir-lancien-ministre-olivier-becht-annonce-sa-candidature-a-la-presidentielle-184281',
+        date: '2026-09-24',
+      },
+    },
+    events: [
+      {
+        date: '2026-09-24',
+        type: 'declaration',
+        label: "Il annonce sa candidature lors d'un déplacement à Rixheim, la commune dont il a été maire.",
+        sources: [
+          {
+            label: 'Le JDD',
+            url: 'https://www.lejdd.fr/politique/quand-on-na-aucune-chance-il-faut-la-saisir-lancien-ministre-olivier-becht-annonce-sa-candidature-a-la-presidentielle-184281',
+            date: '2026-09-24',
+          },
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-09-24/presidentielle-2027-camarade-de-promo-demmanuel-macron-lena-lancien-ministre',
+            date: '2026-09-24',
+          },
+        ],
+      },
+    ],
+  },
+
   // --- Ils ont renoncé ---
   {
     slug: 'clementine-autain',

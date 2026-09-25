@@ -635,3 +635,6 @@ question-2027-gagnait-sylvain-durif: Si Sylvain Durif était élu, quel serait v
 
 question-2027-gagnait-benoit-mathieu: Si Benoît Mathieu était élu, quel serait votre sentiment ?
 [2] Neutre
+
+question-2027-gagnait-olivier-becht: Si Olivier Becht était élu, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)

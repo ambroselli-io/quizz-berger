@@ -552,6 +552,7 @@ const partyBySlug: Record<string, string> = {
   'parti-pirate': 'PP',
   'sylvain-durif': '',
   'benoit-mathieu': '',
+  'olivier-becht': '',
 };
 
 export function getCandidateParty(slug: string): string {
