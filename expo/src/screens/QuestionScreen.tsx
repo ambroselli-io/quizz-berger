@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { View, Text, ScrollView, Pressable, Linking } from 'react-native';
+import { View, Text, ScrollView, Pressable, Linking, Alert } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RouteProp } from '@react-navigation/native';
@@ -85,12 +85,20 @@ export default function QuestionScreen() {
     const finishesTheme =
       questionIndex === questions.length - 1 &&
       questions.every((q) => q._id === questionId || userAnswers.some((a) => a.questionId === q._id));
-    await setAnswer({
+    const saved = await setAnswer({
       userId: user?._id ?? '',
       themeId: theme._id,
       questionId,
       answerIndex,
     });
+    if (!saved) {
+      setCurrentAnswerIndex(userAnswers.find((a) => a.questionId === questionId)?.answerIndex);
+      Alert.alert(
+        "Réponse non enregistrée",
+        "Votre réponse n'a pas pu être enregistrée. Vérifiez votre connexion internet et réessayez.",
+      );
+      return;
+    }
     goToNextQuestion();
     // Let the themes list settle before the OS overlays its review sheet.
     if (finishesTheme) setTimeout(requestAppReviewOnce, 800);

@@ -36,13 +36,19 @@ const notFound = (req: express.Request | RequestWithUser, _res: express.Response
 */
 const sendError = (err: CustomError, req: express.Request | RequestWithUser, res: express.Response, _next: express.NextFunction) => {
   const { body, query, params, route, method, originalUrl, headers } = req;
-  const { auth, appversion, appbuild, appdevice } = headers;
+  const { appversion, appbuild, appdevice } = headers;
   if (err.status === 401) {
     console.log(err.status, "Unauthorized");
   } else {
+    // Never send credentials to Sentry or to the logs: no password, no cookie, no bearer token.
+    const safeBody =
+      body && typeof body === "object"
+        ? Object.fromEntries(Object.entries(body).map(([key, value]) => [key, /password/i.test(key) ? "******" : value]))
+        : body;
+    const { cookie: _cookie, authorization: _authorization, auth: _auth, ...safeHeaders } = headers;
     capture(err, {
       extra: {
-        body,
+        body: safeBody,
         query,
         params,
         route,
@@ -51,10 +57,9 @@ const sendError = (err: CustomError, req: express.Request | RequestWithUser, res
         appversion,
         appbuild,
         appdevice,
-        auth,
-        headers,
+        headers: safeHeaders,
       },
-      user: (req as RequestWithUser).user,
+      user: (req as RequestWithUser).user ? { id: (req as RequestWithUser).user.id } : undefined,
     });
   }
 

@@ -33480,7 +33480,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -35669,6 +35669,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-10",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -36619,6 +36624,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-09",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-10",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-depenses",
@@ -37575,6 +37585,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-10",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -38087,7 +38102,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -38862,6 +38877,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-01",
         "answerIndex": 2
@@ -39179,7 +39199,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -39812,6 +39832,11 @@
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-06",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-education",
+        "questionId": "question-2027-edu-07",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",

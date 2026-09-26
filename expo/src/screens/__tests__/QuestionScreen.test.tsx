@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-native';
 import { render, screen, userEvent, waitFor } from '@testing-library/react-native';
 import * as StoreReview from 'expo-store-review';
 import QuestionScreen, { FEEDBACK_HINT_SEEN_KEY } from '~/screens/QuestionScreen';
@@ -122,6 +123,19 @@ describe('QuestionScreen', () => {
       themeId: 'theme-2027-police',
       questionId: NEW_QUESTION_ID,
     });
+  });
+
+  it('warns and stays on the question when the answer could not be saved', async () => {
+    const alertSpy = jest.spyOn(Alert, 'alert').mockImplementation(() => {});
+    (API.post as jest.Mock).mockResolvedValue({ ok: false });
+    await render(<QuestionScreen />);
+
+    await userEvent.setup().press(screen.getByText('Non'));
+
+    expect(alertSpy).toHaveBeenCalledWith('Réponse non enregistrée', expect.any(String));
+    expect(mockNavigation.setParams).not.toHaveBeenCalled();
+    expect(screen.getByText('Non')).toHaveStyle({ color: '#000000' });
+    alertSpy.mockRestore();
   });
 
   it('goes back to the themes list after the last question', async () => {

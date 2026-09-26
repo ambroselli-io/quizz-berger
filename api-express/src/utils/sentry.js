@@ -6,9 +6,8 @@ if (process.env.NODE_ENV === "production") {
 
   Sentry.init({
     dsn: "https://c1e9413d48d056873c3ff7d7e9b9fe3a@o117731.ingest.us.sentry.io/4511240810987520",
-    // Setting this option to true will send default PII data to Sentry.
-    // For example, automatic IP address collection on events
-    sendDefaultPii: true,
+    // Off: with it on, the request handler attaches cookies (the jwt) and IPs to every event.
+    sendDefaultPii: false,
     environment: `api-express-${ENVIRONMENT}`,
   });
 }

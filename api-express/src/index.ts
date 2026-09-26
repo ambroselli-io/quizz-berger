@@ -23,6 +23,8 @@ dotenv.config({ path: ".env" });
 
 // Put together a schema
 const app = express();
+// nginx runs on the same machine: trust its X-Forwarded-For so rate limits see the real client IP.
+app.set("trust proxy", "loopback");
 app.use(logger("tiny"));
 app.use(compression());
 

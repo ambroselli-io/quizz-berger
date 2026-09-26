@@ -159,6 +159,9 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
 [2] Oui pour les crimes graves, mais au cas par cas et sous le contrôle du juge
 
+question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
+[2] Le dispositif actuel (« un pour un ») est un compromis raisonnable, il faut le maintenir tel quel
+
 
 Dépenses et dette publiques:
 
@@ -523,7 +526,7 @@ question-2027-gagnait-nathalie-arthaud: Si Nathalie Arthaud était élue, quel s
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-francois-asselineau: Si François Asselineau était élu, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-delphine-batho: Si Delphine Batho était élue, quel serait votre sentiment ?
 [2] Neutre

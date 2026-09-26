@@ -6,7 +6,7 @@ export const getMaxPersons = (podiumised: Array<PodiumDataWithPercentAndHeightAn
 export const getPicName = (podiumised: Array<PodiumDataWithPercentAndHeightAndHighest>) =>
   podiumised
     .filter((_, i) => i < 6)
-    .map((data) => `${data.percent}${data.pictures.map((pic: any) => pic.slice(0, 2)).join("")}`)
+    .map((data) => `${data.percent}${data.pseudos.join(",")}`)
     .join("");
 
 export const getPodium = (

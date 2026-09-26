@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { View, Text, FlatList, TextInput } from 'react-native';
+import { View, Text, FlatList, TextInput, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '~/types/navigation';
@@ -47,14 +47,22 @@ export default function ThemesScreen() {
     });
   }, [quizzFiltered]);
 
-  const initNewUser = async () => {
-    if (user?._id) return;
+  const initNewUser = async (): Promise<boolean> => {
+    if (user?._id) return true;
     const response = await API.post({ path: '/user' });
-    if (response.ok) mutate(response.data);
+    if (!response.ok) return false;
+    mutate(response.data);
+    return true;
   };
 
   const goToQuizz = async (themeId: string) => {
-    await initNewUser();
+    if (!(await initNewUser())) {
+      Alert.alert(
+        'Connexion impossible',
+        "Le quiz a besoin d'internet pour enregistrer vos réponses. Vérifiez votre connexion et réessayez.",
+      );
+      return;
+    }
     if (!themeId) return;
     const firstQuestionId = quizz.find((t) => t._id === themeId)?.questions[0]?._id;
     if (firstQuestionId) {

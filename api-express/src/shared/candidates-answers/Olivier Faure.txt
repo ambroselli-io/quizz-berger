@@ -159,6 +159,9 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
 [3] Seulement dans des cas exceptionnels : la peine purgée doit suffire, comme pour un Français
 
+question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
+[3] Il faut élargir les voies légales vers le Royaume-Uni et réduire les renvois forcés
+
 
 Dépenses et dette publiques:
 

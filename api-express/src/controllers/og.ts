@@ -20,26 +20,13 @@ const quizzQuestionsIds = quizzQuestions.map((q) => q._id);
 
 const candidatesAnswers = candidatesAnswersData as Array<CandidateAnswer>;
 
-const CDN_BASE = "https://quizz-du-berger-og.cellar-c2.services.clever-cloud.com";
-
 router.post(
   "/generate",
   catchErrors(async (req: express.Request, res: express.Response) => {
     const { pseudo } = req.body;
-    if (!pseudo) {
+    if (!pseudo || typeof pseudo !== "string") {
       res.status(400).send({ ok: false, error: "pseudo is required" });
       return;
-    }
-
-    // Check if og/{pseudo}.png already exists on CDN
-    try {
-      const existing = await fetch(`${CDN_BASE}/og/${encodeURIComponent(pseudo)}.png`, { method: "HEAD" });
-      if (existing.ok) {
-        res.status(200).send({ ok: true, cached: true });
-        return;
-      }
-    } catch {
-      // CDN check failed, continue with generation
     }
 
     // Fetch user from DB
@@ -70,7 +57,7 @@ router.post(
     const podiumData = getPodium(personsScore, true).filter((_, i) => i < 6);
     const picName = getPicName(podiumData);
 
-    // Skip if user already has this picName
+    // The podium did not move since the last generation: the image on the CDN is still right.
     if (user.ogPicName === picName) {
       res.status(200).send({ ok: true, cached: true });
       return;

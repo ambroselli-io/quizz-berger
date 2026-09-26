@@ -8,6 +8,7 @@ import prisma from "~/prisma";
 import { ENVIRONMENT, SECRET } from "~/config";
 import type { User } from "@prisma/client";
 import { RequestWithUser } from "~/types/request";
+import { anonymousUserLimiter, loginLimiter, signupLimiter } from "~/utils/rate-limit";
 
 const router = express.Router();
 
@@ -31,15 +32,22 @@ function logoutCookieOptions() {
   }
 }
 
+const getFriendIds = async (userId: string): Promise<string[]> => {
+  const user = await prisma.user.findUnique({ where: { id: userId }, select: { friends: { select: { id: true } } } });
+  return user?.friends.map((friend) => friend.id) ?? [];
+};
+
 const setCookie = (req: express.Request, res: express.Response, user: User): string => {
   const maxAge = user?.pseudo ? JWT_MAX_AGE : JWT_MIN_AGE;
-  const token = jwt.sign({ _id: user.id }, SECRET, { expiresIn: maxAge });
+  // jsonwebtoken reads a numeric expiresIn as seconds, the cookie maxAge is in ms
+  const token = jwt.sign({ _id: user.id }, SECRET, { expiresIn: Math.floor(maxAge / 1000) });
   res.cookie("jwt", token, cookieOptions(user));
   return token;
 };
 
 router.post(
   "/",
+  anonymousUserLimiter,
   catchErrors(async (req: express.Request, res: express.Response) => {
     console.log("CREATE");
     const user = await prisma.user.create({
@@ -54,6 +62,7 @@ router.post(
 
 router.post(
   "/signup",
+  signupLimiter,
   catchErrors(async (req: express.Request, res: express.Response) => {
     if (!req.body.pseudo) {
       res.status(400).send({ ok: false, error: "Veuillez fournir un pseudo" });
@@ -102,6 +111,7 @@ router.post(
 
 router.post(
   "/login",
+  loginLimiter,
   catchErrors(async (req: express.Request, res: express.Response) => {
     if (!req.body.pseudo) {
       res.status(400).send({ ok: false, error: "Veuillez fournir un pseudo" });
@@ -142,7 +152,7 @@ router.get(
       where: { id: user.id },
       data: { lastLoginAt: new Date() },
     });
-    res.send({ ok: true, user: sanitizeUser(user) });
+    res.send({ ok: true, user: sanitizeUser(user, await getFriendIds(user.id)) });
   }),
 );
 
@@ -195,16 +205,22 @@ router.put(
 
     console.log(JSON.stringify({ userUpdate }));
 
-    // Handle friends separately using Prisma relations
+    // Friends are only ever added (clients send the new id, older app builds send it alone),
+    // and only people who chose to share their results can be added.
     let updatedUser: User;
     if (req.body.hasOwnProperty("friends") && Array.isArray(req.body.friends)) {
+      const newFriends = await prisma.user.findMany({
+        where: {
+          id: { in: req.body.friends.filter((friendId: unknown) => typeof friendId === "string"), not: user.id },
+          OR: [{ isPublic: true }, { isCandidate: true }],
+        },
+        select: { id: true },
+      });
       updatedUser = await prisma.user.update({
         where: { id: user.id },
         data: {
           ...userUpdate,
-          friends: {
-            set: req.body.friends.map((friendId: string) => ({ id: friendId })),
-          },
+          friends: { connect: newFriends },
         },
       });
     } else {
@@ -214,7 +230,7 @@ router.put(
       });
     }
 
-    res.status(200).send({ ok: true, data: sanitizeUser(updatedUser) });
+    res.status(200).send({ ok: true, data: sanitizeUser(updatedUser, await getFriendIds(user.id)) });
   }),
 );
 
@@ -223,7 +239,7 @@ router.post(
   passport.authenticate("user", { session: false }),
   catchErrors(async (req: RequestWithUser, res: express.Response) => {
     const user = req.user!;
-    res.status(200).send({ ok: true, user: sanitizeUser(user) });
+    res.status(200).send({ ok: true, user: sanitizeUser(user, await getFriendIds(user.id)) });
     await prisma.user.update({
       where: { id: user.id },
       data: { lastLoginAt: new Date() },
@@ -266,10 +282,8 @@ router.get(
       return;
     }
     if (!(user.isPublic || user.isCandidate)) {
-      if (req.query.ssr !== "true") {
-        res.status(404).send({ ok: false });
-        return;
-      }
+      res.status(404).send({ ok: false });
+      return;
     }
 
     res.status(200).send({ ok: true, data: sanitizeUser(user) });

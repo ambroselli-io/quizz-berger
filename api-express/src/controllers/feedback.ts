@@ -3,9 +3,11 @@ const router = express.Router();
 import { TIPIMAIL_API_KEY, TIPIMAIL_API_USER, EMAIL_1, EMAIL_2 } from "../config";
 import { catchErrors } from "../utils/error";
 import { capture } from "../utils/sentry";
+import { feedbackLimiter } from "../utils/rate-limit";
 
 router.post(
   "/",
+  feedbackLimiter,
   catchErrors(async (req: express.Request, res: express.Response) => {
     const { text, subject, email } = req.body;
     const msg: Record<string, unknown> = {

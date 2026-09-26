@@ -21,12 +21,14 @@ const useUserAnswers = () => {
   }, [setUserAnswers]);
 
   const setAnswer = useCallback(
-    async (newAnswer: Answer) => {
+    async (newAnswer: Answer): Promise<boolean> => {
       const response = await API.post({
         path: '/answer',
         body: newAnswer as unknown as Record<string, unknown>,
       });
-      if (response?.ok) upsertAnswer(response.data);
+      if (!response?.ok) return false;
+      upsertAnswer(response.data);
+      return true;
     },
     [upsertAnswer],
   );

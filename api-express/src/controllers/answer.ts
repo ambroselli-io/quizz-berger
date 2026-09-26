@@ -52,16 +52,16 @@ router.post(
     }
 
     const answerContent = {
-      userId: req.body.userId,
+      userId: req.user.id,
       themeId: req.body.themeId,
       questionId: req.body.questionId,
     };
 
-    let answer = await prisma.answer.findFirst({ where: answerContent });
+    const existingAnswer = await prisma.answer.findFirst({ where: answerContent });
 
-    if (!answer) answer = await prisma.answer.create({ data: { ...answerContent, answerIndex: req.body.answerIndex } });
-
-    await prisma.answer.update({ where: { id: answer.id }, data: { answerIndex: req.body.answerIndex } });
+    const answer = existingAnswer
+      ? await prisma.answer.update({ where: { id: existingAnswer.id }, data: { answerIndex: req.body.answerIndex } })
+      : await prisma.answer.create({ data: { ...answerContent, answerIndex: req.body.answerIndex } });
 
     const user = req.user!;
     if (!user.themes.includes(req.body.themeId)) {
@@ -93,6 +93,7 @@ router.get(
         where: { id: req.user.id },
         include: {
           friends: {
+            where: { OR: [{ isPublic: true }, { isCandidate: true }] },
             include: {
               answers: {
                 where: { questionId: { in: quizzQuestionsIds } },
