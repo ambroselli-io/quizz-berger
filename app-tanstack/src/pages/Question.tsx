@@ -101,7 +101,15 @@ export default function Question() {
             Voir les résultats ›
           </button>
         </div>
-        <h2 className="text-center font-[Merriweather] text-lg font-bold lg:hidden">{theme.fr}</h2>
+        <div className="flex w-full items-center justify-between lg:hidden">
+          <button
+            onClick={goToPreviousQuestion}
+            aria-label="Question précédente"
+            className="h-[17px] min-w-[19px] cursor-pointer border-none bg-transparent bg-[url('/left-arrow.svg')] bg-cover bg-no-repeat"
+          />
+          <h2 className="text-center font-[Merriweather] text-lg font-bold">{theme.fr}</h2>
+          <span className="min-w-[19px]" />
+        </div>
       </div>
 
       {/* Question */}
