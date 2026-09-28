@@ -485,6 +485,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 0
@@ -1440,6 +1445,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -2399,6 +2409,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -3354,6 +3369,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -4313,6 +4333,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -5268,6 +5293,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -6227,6 +6257,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 2
@@ -7184,6 +7219,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 2
@@ -8139,6 +8179,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -9100,6 +9145,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 2
@@ -10056,6 +10106,11 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
         "answerIndex": 4
       },
       {
@@ -11016,6 +11071,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 0
@@ -11971,6 +12031,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -12930,6 +12995,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 2
@@ -13885,6 +13955,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -14846,6 +14921,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -15801,6 +15881,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -16762,6 +16847,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 2
@@ -17719,6 +17809,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -18673,6 +18768,11 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
         "answerIndex": 1
       },
       {
@@ -19633,6 +19733,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 0
@@ -20588,6 +20693,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -21547,6 +21657,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -22502,6 +22617,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-education",
@@ -23461,6 +23581,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -24285,6 +24410,11 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
         "answerIndex": 4
       },
       {
@@ -25243,6 +25373,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -26397,6 +26532,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -27352,6 +27492,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -28311,6 +28456,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -29266,6 +29416,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -30227,6 +30382,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -31181,6 +31341,11 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
         "answerIndex": 4
       },
       {
@@ -32141,6 +32306,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 0
@@ -33096,6 +33266,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -34055,6 +34230,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -35010,6 +35190,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -35969,6 +36154,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -36924,6 +37114,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -37883,6 +38078,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-education",
@@ -38847,6 +39047,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -39802,6 +40007,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-education",
@@ -40776,6 +40986,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 0
@@ -41733,6 +41948,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
         "answerIndex": 1
@@ -42603,6 +42823,11 @@
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-pouvoir-achat",
+        "questionId": "question-2027-pa-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",

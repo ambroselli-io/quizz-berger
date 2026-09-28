@@ -99,7 +99,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 66,
+    "percent": 67,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -165,7 +165,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 54,
     "pseudos": [
       "François Hollande",
     ],
@@ -203,13 +203,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 41,
     "pseudos": [
-      "Marine Le Pen",
+      "Nicolas Dupont-Aignan",
     ],
   },
   {
     "percent": 41,
     "pseudos": [
-      "Nicolas Dupont-Aignan",
+      "Marine Le Pen",
     ],
   },
   {
@@ -231,7 +231,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 32,
+    "percent": 33,
     "pseudos": [
       "Édouard Philippe",
     ],
@@ -255,7 +255,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 23,
+    "percent": 24,
     "pseudos": [
       "Laurent Wauquiez",
     ],
@@ -267,7 +267,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 20,
+    "percent": 21,
     "pseudos": [
       "Bruno Retailleau",
     ],

@@ -80,7 +80,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Pouvoir d'achat et vie quotidienne",
     "id": "theme-2027-pouvoir-achat",
-    "questionCount": 5,
+    "questionCount": 6,
   },
   {
     "fr": "Santé",

@@ -384,6 +384,9 @@ question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
 question-2027-pa-05: Quel levier prioritaire pour améliorer le pouvoir d'achat ?
 [2] Encadrer les prix de l'essentiel (énergie, alimentation, logement)
 
+question-2027-pa-06: Face à la flambée des prix des carburants, quel levier privilégier ?
+[3] Baisser fortement et durablement la TICPE et la TVA sur les carburants
+
 
 Recherche et éducation:
 
