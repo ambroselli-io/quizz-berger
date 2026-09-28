@@ -112,7 +112,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: steps.live.outputs.urls != ''
         with:
-          node-version: "20"
+          node-version: "lts/*"
 
       - name: Run google-indexing-script on the new URLs only
         if: steps.live.outputs.urls != ''

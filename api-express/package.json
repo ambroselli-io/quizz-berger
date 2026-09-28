@@ -20,7 +20,8 @@
     "extract-all-answers": "node ./scripts/extract-all-answers.js",
     "start-backup-db": "tsx ./db-backup/cron.ts",
     "backup-db": "tsx ./db-backup/execute.ts",
-    "download-backup": "tsx ./db-backup/download-backup.ts"
+    "download-backup": "tsx ./db-backup/download-backup.ts",
+    "test": "vitest run"
   },
   "author": "",
   "license": "ISC",
@@ -86,6 +87,7 @@
     "@types/passport": "^1.0.17",
     "@types/passport-jwt": "^4.0.1",
     "@types/react": "^19.2.14",
+    "@types/supertest": "^7.2.1",
     "@types/web-push": "^3.6.4",
     "cli-progress": "^3.8.2",
     "cross-env": "^7.0.3",
@@ -94,8 +96,10 @@
     "prettier": "^3.6.2",
     "prettier-plugin-prisma": "^5.0.0",
     "prisma": "^6.17.0",
+    "supertest": "^7.3.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.2"
   }
 }

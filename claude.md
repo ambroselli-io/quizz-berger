@@ -27,6 +27,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 - API: `cd api-express && npm run dev` (port 5179)
 - Type check: `cd app-tanstack && npm run typecheck` (runs `tsr generate` then `tsc -b` — needed because `routeTree.gen.ts` is gitignored)
 - Build: `cd app-tanstack && npm run build` (generates sitemap, then `vite build` → `dist/`)
+- API tests: `cd api-express && npm test` (vitest + supertest against a real local Postgres `quizz_du_berger_test`, truncated before each test; the setup refuses any `DATABASE_URL` not ending in `_test`). New DB: `createdb quizz_du_berger_test && DATABASE_URL=postgresql://postgres@localhost/quizz_du_berger_test npx prisma migrate deploy`. CI runs them against a Postgres service before deploying. The Express app lives in `src/app.ts`; `src/index.ts` only starts it.
 - Mobile tests: `cd expo && npm test` (Jest + React Native Testing Library, no emulator needed) and `npm run ts:check`. `npm test` also gates the `build-*` / `build-and-upload:*` scripts.
 
 # Polls (sondages)
