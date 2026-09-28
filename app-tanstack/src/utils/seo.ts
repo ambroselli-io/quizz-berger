@@ -311,6 +311,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Salaires des fonctionnaires : les candidats 2027',
     seoDescription: `Gel du point d'indice, rattrapage ou revalorisation massive : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les salaires de la fonction publique.`,
   },
+  'question-2027-pa-06': {
+    slug: 'fiscalite-carburants-prix-pompe-france',
+    seoTitle: 'Prix des carburants : baisser les taxes ? Candidats 2027',
+    seoDescription: `Baisse de la TICPE et de la TVA, blocage des prix ou reversement des surplus : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 face à la flambée des prix à la pompe.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

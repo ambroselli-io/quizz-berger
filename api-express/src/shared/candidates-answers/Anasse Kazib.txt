@@ -384,6 +384,9 @@ question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
 question-2027-pa-05: Quel levier prioritaire pour améliorer le pouvoir d'achat ?
 [4] Le vrai problème n'est pas le pouvoir d'achat mais la répartition des richesses
 
+question-2027-pa-06: Face à la flambée des prix des carburants, quel levier privilégier ?
+[4] Plafonner par la loi le prix du carburant à la pompe
+
 
 Recherche et éducation:
 

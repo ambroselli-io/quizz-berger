@@ -2204,6 +2204,27 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-pa-06",
+        "fr": "Face à la flambée des prix des carburants, quel levier privilégier ?",
+        "help": "https://fr.wikipedia.org/wiki/Taxe_int%C3%A9rieure_de_consommation_sur_les_produits_%C3%A9nerg%C3%A9tiques",
+        "answers": [
+          "Ne pas intervenir : c'est un signal-prix nécessaire, il ne faut ni baisser les taxes ni bloquer les prix",
+          "Aider ponctuellement les ménages modestes les plus dépendants de la voiture, sans toucher à la fiscalité ni aux prix",
+          "Ne pas baisser les taxes, mais reverser aux ménages le surplus de recettes généré par la hausse des prix (TVA, TICPE)",
+          "Baisser fortement et durablement la TICPE et la TVA sur les carburants",
+          "Plafonner par la loi le prix du carburant à la pompe",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
