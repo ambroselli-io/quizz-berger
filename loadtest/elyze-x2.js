@@ -101,7 +101,12 @@ export default function ({ assets }) {
   sleep(2 + Math.random() * 6);
   if (Math.random() > QUIZ_START_RATE) return;
 
-  const created = http.post(`${API}/user`, null, api(null, 'POST /user'));
+  // The 300/h per-IP limit answers 429 once k6 has created 300 users: expected, so it does not trip the abort.
+  const created = http.post(
+    `${API}/user`,
+    null,
+    Object.assign(api(null, 'POST /user'), { responseCallback: http.expectedStatuses(200, 429) }),
+  );
   if (!check(created, { 'anonymous user created': (r) => r.status === 200 })) return;
   const token = created.json('token');
 
