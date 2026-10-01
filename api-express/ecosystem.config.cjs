@@ -4,8 +4,12 @@ module.exports = {
   apps: [
     {
       name: "quizz-du-berger-api-express",
-      script: "npm",
-      args: "run start-pm2",
+      // Cluster mode needs a node script, not `npm run`: prisma generate + migrate deploy now run in the deploy.
+      // 2 instances, as for the app: Postgres and ~20 other apps share the 4 cores.
+      script: "./src/index.ts",
+      interpreter_args: "--import tsx",
+      exec_mode: "cluster",
+      instances: 2,
       time: true,
       env: {
         NODE_ENV: "production",
