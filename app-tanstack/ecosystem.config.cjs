@@ -5,10 +5,11 @@ module.exports = {
   apps: [
     {
       name: 'quizz-du-berger-app-tanstack',
-      // Cluster mode: one SSR process per core. pm2 can only cluster a Node file, not `npm run`.
+      // Cluster mode (pm2 can only cluster a Node file, not `npm run`). 2 of the VPS's 4 cores:
+      // the API process and Postgres run on the same machine and need the other two.
       script: './server.mjs',
       exec_mode: 'cluster',
-      instances: 'max',
+      instances: 2,
       time: true,
       env: {
         PORT: '5178',
