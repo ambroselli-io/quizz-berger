@@ -6,8 +6,10 @@ module.exports = {
       name: "quizz-du-berger-api-express",
       // Cluster mode needs a node script, not `npm run`: prisma generate + migrate deploy now run in the deploy.
       // 2 instances, as for the app: Postgres and ~20 other apps share the 4 cores.
+      // Absolute path: cluster workers resolve --import from the pm2 daemon's directory, where tsx is not installed.
       script: "./src/index.ts",
-      interpreter_args: "--import tsx",
+      cwd: __dirname,
+      interpreter_args: `--import ${require.resolve("tsx")}`,
       exec_mode: "cluster",
       instances: 2,
       time: true,
