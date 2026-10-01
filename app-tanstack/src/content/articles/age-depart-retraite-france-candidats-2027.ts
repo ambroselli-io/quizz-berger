@@ -69,20 +69,20 @@ export const article: Article = {
 <ul>
 <li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> — Défend le maintien de la réforme de 2023, jugée nécessaire à l'équilibre du système.</li>
 <li><a href="/candidat/jordan-bardella">Jordan Bardella</a> (RN) — Défend le maintien à 64 ans, une position qui tranche avec celle de Marine Le Pen au sein du même parti.</li>
-<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Défend le maintien de la réforme de 2023 comme condition de la trajectoire des comptes publics.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Défend le maintien à 64 ans.</li>
-<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Poursuit la ligne du camp présidentiel, maintien de la réforme de 2023.</li>
 <li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Défend le maintien de la réforme qu'il a lui-même négociée comme Premier ministre.</li>
 <li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> — Défend le maintien de la réforme de 2023.</li>
 <li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Défend le maintien du texte de 2023 au nom de la trajectoire des finances publiques.</li>
 </ul>
 
-<h3>Famille 4 — Repousser à 65-66 ans</h3>
-<p>La famille la plus restrictive juge la réforme de 2023 encore insuffisante face au vieillissement démographique.</p>
+<h3>Famille 4 — Repousser à 65-66 ans, voire changer de système</h3>
+<p>La famille la plus restrictive juge la réforme de 2023 encore insuffisante face au vieillissement démographique. Elle s'est élargie le <a href="/blog/reforme-retraites-65-ans-capitalisation-france-candidats-2027">29 septembre 2026</a> avec l'entrée d'Édouard Philippe.</p>
 <ul>
 <li><a href="/candidat/david-lisnard">David Lisnard</a> — Défend un nouveau report de l'âge légal, au-delà de 64 ans.</li>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> — Défend un report supplémentaire de l'âge de départ.</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Défend un report à 65-66 ans, couplé à une réforme plus large du financement des retraites.</li>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — A annoncé le 29 septembre 2026 vouloir porter l'âge légal à 65 ans et la durée de cotisation à 45 annuités, avec un complément de capitalisation.</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Va plus loin : son projet, présenté en mai 2026, supprime l'âge légal au profit de la seule durée de cotisation, avec une part de capitalisation intégrée au système.</li>
 </ul>
 
 <h2>Arguments pour et arguments contre la réforme de 2023</h2>

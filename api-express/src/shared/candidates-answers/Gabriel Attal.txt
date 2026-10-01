@@ -479,7 +479,7 @@ Travail, Chômage, Retraite:
 
 
 question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
-[2] Maintenir à 64 ans
+[4] Changer de système (passer à la capitalisation)
 
 question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 [2] Assouplir les 35 heures avec accords par secteur ou par entreprise

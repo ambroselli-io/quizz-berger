@@ -39,7 +39,7 @@ export const article: Article = {
 <p>Le chiffrage de 30 milliards d'euros avancé par Édouard Philippe n'est pas documenté dans le détail à ce stade, et la part de capitalisation soulève une question clé : s'agit-il d'un complément facultatif, comme le PER existant, ou d'un pilier appelé à monter en charge avec le temps. Les syndicats, mobilisés le 29 septembre contre le gel du point d'indice des fonctionnaires, n'ont pas encore réagi formellement à ce volet du projet.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la <a href="/question-politique/age-depart-retraite-62-64-ans">question posée dans le Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en quatre familles. Ces réponses ont été enregistrées avant l'annonce du 29 septembre : deux candidats, Édouard Philippe et Gabriel Attal, ont depuis rendu publique une position plus précise que leur réponse actuelle dans le quiz, signalée ci-dessous.</p>
+<p>Sur la <a href="/question-politique/age-depart-retraite-62-64-ans">question posée dans le Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en cinq familles. Les réponses d'Édouard Philippe et de Gabriel Attal ont été mises à jour pour refléter leurs annonces les plus récentes : 65 ans et 45 annuités pour le premier, suppression de l'âge légal au profit d'un système à capitalisation pour le second.</p>
 
 <h3>Famille 1 — Revenir à 60 ans ou moins (${retraiteDistribution[0]} candidats)</h3>
 <p>Cette famille rejette la réforme de 2023 dans son principe et veut abaisser l'âge légal sous son niveau d'avant 2023.</p>
@@ -86,8 +86,6 @@ export const article: Article = {
 <h3>Famille 3 — Maintenir à 64 ans (${retraiteDistribution[2]} candidats)</h3>
 <p>Cette famille défend la réforme de 2023 telle qu'elle a été votée, sans aller plus loin.</p>
 <ul>
-<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Sa réponse enregistrée dans le quiz est « Maintenir à 64 ans », mais il a annoncé le 29 septembre 2026 vouloir aller plus loin : 65 ans, 45 annuités, et un volet de capitalisation. C'est le sujet de cet article.</li>
-<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Sa réponse enregistrée est « Maintenir à 64 ans », mais son propre projet, présenté en mai 2026, va au-delà : <a href="https://placement.meilleurtaux.com/retraite/actualites/2026-mai/plan-de-gabriel-attal-retraites-supprimer-age-legal-instaurer-place-modele-hybride.html" target="_blank" rel="noopener noreferrer">suppression de l'âge légal au profit de la seule durée de cotisation</a>, complétée par une part de capitalisation.</li>
 <li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> (LR) — Défend le maintien de la réforme de 2023 à 64 ans.</li>
 <li><a href="/candidat/jordan-bardella">Jordan Bardella</a> (RN) — Même ligne que Marine Le Pen sur les retraites en général, mais sa réponse enregistrée est le maintien à 64 ans.</li>
 <li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Défend le maintien de la réforme de 2023, et a depuis apporté son soutien politique à Édouard Philippe.</li>
@@ -99,11 +97,18 @@ export const article: Article = {
 </ul>
 
 <h3>Famille 4 — Repousser à 65-66 ans (${retraiteDistribution[3]} candidats)</h3>
-<p>Cette famille, jusqu'ici la plus petite, défend une hausse de l'âge légal au-delà de 64 ans. L'annonce d'Édouard Philippe l'y rapproche sans l'y inscrire formellement, sa réponse quiz n'ayant pas encore été mise à jour.</p>
+<p>Cette famille défend une hausse de l'âge légal au-delà de 64 ans. Édouard Philippe l'a rejointe le 29 septembre 2026.</p>
 <ul>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — A dévoilé le 29 septembre 2026 son projet pour 65 ans et 45 annuités, complété d'un volet de capitalisation. C'est le sujet de cet article.</li>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Défend de longue date un départ à 65 ans, position sur laquelle Édouard Philippe vient de s'aligner.</li>
 <li><a href="/candidat/david-lisnard">David Lisnard</a> (Nouvelle Énergie) — Libéral assumé, favorable à un départ à 65 ans.</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Défend un départ à 65-66 ans, combiné à une politique nataliste.</li>
+</ul>
+
+<h3>Famille 5 — Changer de système, vers la capitalisation (${retraiteDistribution[4]} candidats)</h3>
+<p>Cette famille ne se contente pas de déplacer le curseur de l'âge légal : elle veut restructurer le système lui-même.</p>
+<ul>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Son projet, présenté en mai 2026, va plus loin que celui d'Édouard Philippe : <a href="https://placement.meilleurtaux.com/retraite/actualites/2026-mai/plan-de-gabriel-attal-retraites-supprimer-age-legal-instaurer-place-modele-hybride.html" target="_blank" rel="noopener noreferrer">suppression de l'âge légal au profit de la seule durée de cotisation</a>, avec une part de capitalisation intégrée au système, et non en simple complément.</li>
 </ul>
 
 <h2>Arguments pour et arguments contre le projet d'Édouard Philippe</h2>
