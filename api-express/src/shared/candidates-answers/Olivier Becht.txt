@@ -468,8 +468,11 @@ question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en 
 question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
 [2] Il faut aller vers une légalisation très encadrée de l'aide à mourir pour les malades en fin de vie
 
-question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?
-[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et la dignité de ces personnes
+question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées ?
+[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et l'autonomie des personnes handicapées
+
+question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
+[2] Il faut beaucoup plus de moyens : personnel en EHPAD, aide à domicile, soutien aux aidants
 
 
 Travail, Chômage, Retraite:
@@ -589,7 +592,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
@@ -598,7 +601,7 @@ question-2027-gagnait-patrick-sebastien: Si Patrick Sébastien était élu, quel
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-francis-lalanne: Si Francis Lalanne était élu, quel serait votre sentiment ?
-[4] Très mécontent(e)
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-florian-philippot: Si Florian Philippot était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)

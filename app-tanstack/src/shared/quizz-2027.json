@@ -2689,12 +2689,30 @@
       },
       {
         "_id": "question-2027-soc-08",
-        "fr": "Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?",
+        "fr": "Que pensez-vous de la politique envers les personnes handicapées ?",
         "answers": [
           "On en fait assez, il y a d'autres priorités budgétaires",
           "Des progrès ont été faits, il faut continuer sans en faire beaucoup plus",
-          "Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et la dignité de ces personnes",
+          "Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et l'autonomie des personnes handicapées",
           "C'est une honte nationale : il faut en faire un sujet prioritaire avec un plan massif",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-soc-09",
+        "fr": "Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?",
+        "answers": [
+          "On en fait assez, il y a d'autres priorités budgétaires",
+          "Il faut mieux contrôler les EHPAD et améliorer l'existant, sans grosse dépense nouvelle",
+          "Il faut beaucoup plus de moyens : personnel en EHPAD, aide à domicile, soutien aux aidants",
+          "C'est une urgence nationale : il faut une grande loi Grand âge avec un plan massif",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

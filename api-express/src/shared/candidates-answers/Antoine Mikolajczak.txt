@@ -468,8 +468,11 @@ question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en 
 question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
 [2] Il faut aller vers une légalisation très encadrée de l'aide à mourir pour les malades en fin de vie
 
-question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?
-[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et la dignité de ces personnes
+question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées ?
+[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et l'autonomie des personnes handicapées
+
+question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
+[2] Il faut beaucoup plus de moyens : personnel en EHPAD, aide à domicile, soutien aux aidants
 
 
 Travail, Chômage, Retraite:
@@ -529,7 +532,7 @@ Et si un(e) autre gagnait...:
 
 
 question-2027-gagnait-nathalie-arthaud: Si Nathalie Arthaud était élue, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-francois-asselineau: Si François Asselineau était élu, quel serait votre sentiment ?
 [2] Neutre
@@ -571,7 +574,7 @@ question-2027-gagnait-bernard-cazeneuve: Si Bernard Cazeneuve était élu, quel 
 [1] Plutôt content(e)
 
 question-2027-gagnait-raphael-glucksmann: Si Raphaël Glucksmann était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-francois-hollande: Si François Hollande était élu, quel serait votre sentiment ?
 [2] Neutre

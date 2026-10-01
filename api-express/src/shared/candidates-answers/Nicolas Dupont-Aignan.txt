@@ -468,8 +468,11 @@ question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en 
 question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
 [1] Le cadre actuel (sédation profonde) est suffisant, pas besoin d'aller vers l'euthanasie
 
-question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?
-[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et la dignité de ces personnes
+question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées ?
+[2] Il faut faire beaucoup plus pour l'accessibilité, l'accompagnement et l'autonomie des personnes handicapées
+
+question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
+[2] Il faut beaucoup plus de moyens : personnel en EHPAD, aide à domicile, soutien aux aidants
 
 
 Travail, Chômage, Retraite:

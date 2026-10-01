@@ -9,19 +9,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 98,
-    "pseudos": [
-      "Selma Labib",
-    ],
-  },
-  {
     "percent": 97,
     "pseudos": [
       "Anasse Kazib",
     ],
   },
   {
-    "percent": 96,
+    "percent": 97,
+    "pseudos": [
+      "Selma Labib",
+    ],
+  },
+  {
+    "percent": 97,
     "pseudos": [
       "Juan Branco",
     ],
@@ -33,7 +33,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 93,
+    "percent": 92,
     "pseudos": [
       "Clémentine Autain",
     ],
@@ -51,7 +51,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 75,
+    "percent": 76,
     "pseudos": [
       "Delphine Batho",
     ],
@@ -99,7 +99,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 67,
+    "percent": 66,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -129,7 +129,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 62,
+    "percent": 61,
     "pseudos": [
       "Antoine Mikolajczak",
     ],
@@ -153,7 +153,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 57,
+    "percent": 56,
     "pseudos": [
       "Fabien Verdier",
     ],
@@ -177,7 +177,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 52,
+    "percent": 53,
     "pseudos": [
       "Florian Philippot",
     ],
@@ -203,17 +203,17 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 41,
     "pseudos": [
-      "Nicolas Dupont-Aignan",
+      "Marine Le Pen",
     ],
   },
   {
     "percent": 41,
     "pseudos": [
-      "Marine Le Pen",
+      "Nicolas Dupont-Aignan",
     ],
   },
   {
-    "percent": 39,
+    "percent": 40,
     "pseudos": [
       "Jordan Bardella",
     ],
@@ -249,7 +249,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 25,
+    "percent": 26,
     "pseudos": [
       "Gérald Darmanin",
     ],

@@ -90,7 +90,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Société",
     "id": "theme-2027-societe",
-    "questionCount": 8,
+    "questionCount": 9,
   },
   {
     "fr": "Et si un(e) autre gagnait...",

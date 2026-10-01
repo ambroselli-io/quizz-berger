@@ -468,8 +468,11 @@ question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en 
 question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
 [2] Il faut aller vers une légalisation très encadrée de l'aide à mourir pour les malades en fin de vie
 
-question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées et les personnes âgées ?
+question-2027-soc-08: Que pensez-vous de la politique envers les personnes handicapées ?
 [3] C'est une honte nationale : il faut en faire un sujet prioritaire avec un plan massif
+
+question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
+[3] C'est une urgence nationale : il faut une grande loi Grand âge avec un plan massif
 
 
 Travail, Chômage, Retraite:
@@ -643,4 +646,4 @@ question-2027-gagnait-benoit-mathieu: Si Benoît Mathieu était élu, quel serai
 [2] Neutre
 
 question-2027-gagnait-olivier-becht: Si Olivier Becht était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
