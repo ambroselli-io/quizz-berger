@@ -12,6 +12,9 @@ import { Counter } from 'k6/metrics';
 const APP = __ENV.APP_URL || 'http://localhost:5178';
 const API = __ENV.API_URL || 'http://localhost:5179';
 const SCALE = Number(__ENV.SCALE || 1);
+// Same value as LOAD_TEST_TOKEN in the API .env: flags the users for deletion and keeps errors out of Sentry.
+const LOAD_TEST_TOKEN = __ENV.LOAD_TEST_TOKEN;
+if (!LOAD_TEST_TOKEN) throw new Error('LOAD_TEST_TOKEN is required: without it the test users cannot be cleaned up.');
 
 // Average answers per user measured on the prod DB (314k answers / 5k users, Sept 2026).
 const ANSWERS_PER_USER = 62;
@@ -46,7 +49,8 @@ export const options = {
     },
   },
   thresholds: {
-    http_req_failed: ['rate<0.01'],
+    // Stops by itself after 1 min above 5 % errors, so real users are not left with a dead site.
+    http_req_failed: ['rate<0.01', { threshold: 'rate<0.05', abortOnFail: true, delayAbortEval: '1m' }],
     'http_req_duration{kind:api}': ['p(95)<500', 'p(99)<1500'],
     'http_req_duration{kind:ssr}': ['p(95)<1000', 'p(99)<3000'],
     'http_req_duration{kind:asset}': ['p(95)<500'],
@@ -65,7 +69,9 @@ const ssr = { tags: { kind: 'ssr' }, headers: { 'Accept-Encoding': 'gzip, br' } 
 const asset = { tags: { kind: 'asset' }, headers: { 'Accept-Encoding': 'gzip, br' } };
 const api = (token, name) => ({
   tags: { kind: 'api', name },
-  headers: token ? { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` } : { 'Content-Type': 'application/json' },
+  headers: token
+    ? { 'Content-Type': 'application/json', 'x-load-test': LOAD_TEST_TOKEN, Authorization: `Bearer ${token}` }
+    : { 'Content-Type': 'application/json', 'x-load-test': LOAD_TEST_TOKEN },
 });
 
 export default function ({ assets }) {

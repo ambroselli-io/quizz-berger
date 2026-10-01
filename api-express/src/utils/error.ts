@@ -2,6 +2,7 @@ import { type CustomError } from "~/types/error";
 import { capture } from "../third-parties/sentry.js";
 import type express from "express";
 import type { RequestWithUser } from "~/types/request";
+import { isLoadTest } from "~/utils/load-test";
 /*
   Catch Errors Handler
 
@@ -39,6 +40,8 @@ const sendError = (err: CustomError, req: express.Request | RequestWithUser, res
   const { appversion, appbuild, appdevice } = headers;
   if (err.status === 401) {
     console.log(err.status, "Unauthorized");
+  } else if (isLoadTest(req)) {
+    console.log("load test error", err.message);
   } else {
     // Never send credentials to Sentry or to the logs: no password, no cookie, no bearer token.
     const safeBody =

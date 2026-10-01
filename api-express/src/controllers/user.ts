@@ -9,6 +9,7 @@ import { ENVIRONMENT, SECRET } from "~/config";
 import type { User } from "@prisma/client";
 import { RequestWithUser } from "~/types/request";
 import { anonymousUserLimiter, loginLimiter, signupLimiter } from "~/utils/rate-limit";
+import { isLoadTest } from "~/utils/load-test";
 
 const router = express.Router();
 
@@ -51,7 +52,7 @@ router.post(
   catchErrors(async (req: express.Request, res: express.Response) => {
     console.log("CREATE");
     const user = await prisma.user.create({
-      data: { password: "" },
+      data: { password: "", isLoadTest: isLoadTest(req) },
     });
 
     const token = setCookie(req, res, user);

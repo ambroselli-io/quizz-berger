@@ -24,6 +24,7 @@ model User {
   isCandidate Boolean   @default(false)
   lastLoginAt DateTime?
   ogPicName   String?
+  isLoadTest  Boolean   @default(false)
 
   // Relations
   answers  Answer[]

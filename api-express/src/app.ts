@@ -17,6 +17,7 @@ import feedbackRoutes from "./controllers/feedback";
 import publicRoutes from "./controllers/public";
 import ogRoutes from "./controllers/og";
 import configurePassport from "./passport";
+import { isLoadTest } from "./utils/load-test";
 
 dotenv.config({ path: ".env" });
 
@@ -72,7 +73,10 @@ app.use("/robots.txt", (req, res) => {
   res.type("text/plain");
   res.send(`User-agent: *\nDisallow: /`);
 });
-app.use(Sentry.Handlers.errorHandler());
+const sentryErrorHandler = Sentry.Handlers.errorHandler();
+app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) =>
+  isLoadTest(req) ? next(err) : sentryErrorHandler(err, req, res, next),
+);
 app.use(sendError);
 
 export default app;

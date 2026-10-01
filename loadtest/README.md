@@ -55,9 +55,13 @@ a laptop on Wi-Fi (the laptop becomes the bottleneck).
 
 ## Before running
 
-- **Never against prod**: every run creates ~100 k users and ~6 M answers that would then stay in the
-  prod `Answer` table and in the public counters. Use a clone of the VPS (same size) with its own Postgres.
-- **Rate limiter**: `POST /user` is limited to 300/h per IP (`api-express/src/utils/rate-limit.ts`).
-  k6 comes from one IP, so the limiter has to be off on the test server.
+- Put the same random `LOAD_TEST_TOKEN` in the API `.env` on the VPS (`openssl rand -hex 32`) and pass it to k6
+  (`-e LOAD_TEST_TOKEN=…`). Users created with it get `isLoadTest = true`, and their errors skip Sentry.
+- Afterwards: `cd api-express && npx tsx scripts/delete-load-test-users.ts` (dry run), then `--confirm`.
+  Remove `LOAD_TEST_TOKEN` from the `.env` once done.
+
+- Run it at night: the goal is to find the breaking point, so the site goes down for real visitors too.
+- **Rate limiter**: `POST /user` is limited to 300/h per IP (`api-express/src/utils/rate-limit.ts`) and the
+  load test does not bypass it. From a single IP, every visitor after the 300th gets a 429.
 - Watch the server during the run: `htop`, `pm2 monit`, and in Postgres
   `select count(*), state from pg_stat_activity group by state;`.
