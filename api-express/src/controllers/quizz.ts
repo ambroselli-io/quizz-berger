@@ -31,7 +31,8 @@ const formatAnswers = (answers: string[]) => answers.map((answer, answerIndex) =
 const formatQuestions = (themeIndex: number, questions: Theme["questions"]) =>
   questions
     .map(
-      (question, questionIndex) => `  ${"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[themeIndex]}${questionIndex + 1} - ${question.fr}\n${formatAnswers(question.answers)}`,
+      (question, questionIndex) =>
+        `  ${"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[themeIndex]}${questionIndex + 1} - ${question.fr}\n${formatAnswers(question.answers)}`,
     )
     .join("\n\n");
 

@@ -16,7 +16,10 @@ describe("private profiles", () => {
     const me = await signup("moi-meme");
     const hidden = await signup("hidden");
 
-    await api().put("/user").set(bearer(me.token)).send({ friends: [hidden.id] });
+    await api()
+      .put("/user")
+      .set(bearer(me.token))
+      .send({ friends: [hidden.id] });
 
     const stored = await prisma.user.findUniqueOrThrow({ where: { id: me.id }, include: { friends: true } });
     expect(stored.friends).toEqual([]);
@@ -26,7 +29,10 @@ describe("private profiles", () => {
     const me = await signup("moi-meme");
     const friend = await signup("friend", { isPublic: true });
     await answer(friend.token, "question-2027-immi-01", 2);
-    await api().put("/user").set(bearer(me.token)).send({ friends: [friend.id] });
+    await api()
+      .put("/user")
+      .set(bearer(me.token))
+      .send({ friends: [friend.id] });
     expect((await api().get("/answer/friends").set(bearer(me.token))).body.data).toHaveLength(1);
 
     await prisma.user.update({ where: { id: friend.id }, data: { isPublic: false } });
@@ -41,8 +47,14 @@ describe("friends", () => {
     const first = await signup("first", { isPublic: true });
     const second = await signup("second", { isPublic: true });
 
-    await api().put("/user").set(bearer(me.token)).send({ friends: [first.id] });
-    const res = await api().put("/user").set(bearer(me.token)).send({ friends: [second.id] });
+    await api()
+      .put("/user")
+      .set(bearer(me.token))
+      .send({ friends: [first.id] });
+    const res = await api()
+      .put("/user")
+      .set(bearer(me.token))
+      .send({ friends: [second.id] });
 
     expect(res.body.data.friends.sort()).toEqual([first.id, second.id].sort());
   });
@@ -50,7 +62,10 @@ describe("friends", () => {
   it("returns the friend ids with the logged-in user", async () => {
     const me = await signup("moi-meme");
     const friend = await signup("friend", { isPublic: true });
-    await api().put("/user").set(bearer(me.token)).send({ friends: [friend.id] });
+    await api()
+      .put("/user")
+      .set(bearer(me.token))
+      .send({ friends: [friend.id] });
 
     const res = await api().post("/user/me").set(bearer(me.token));
 
@@ -60,7 +75,10 @@ describe("friends", () => {
   it("never exposes friend ids on a public profile", async () => {
     const me = await signup("moi-meme", { isPublic: true });
     const friend = await signup("friend", { isPublic: true });
-    await api().put("/user").set(bearer(me.token)).send({ friends: [friend.id] });
+    await api()
+      .put("/user")
+      .set(bearer(me.token))
+      .send({ friends: [friend.id] });
 
     const res = await api().get("/user/moi-meme");
 

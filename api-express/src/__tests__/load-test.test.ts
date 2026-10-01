@@ -37,11 +37,16 @@ describe("load test requests", () => {
   it("keeps their errors out of Sentry", async () => {
     capture.mockClear();
     // An object pseudo makes Prisma throw, which goes through sendError.
-    const loadTest = await api().post("/user/login").set("x-load-test", TOKEN).send({ pseudo: { unknownPrismaFilter: "x" }, password: "x" });
+    const loadTest = await api()
+      .post("/user/login")
+      .set("x-load-test", TOKEN)
+      .send({ pseudo: { unknownPrismaFilter: "x" }, password: "x" });
     expect(loadTest.status).toBe(500);
     expect(capture).not.toHaveBeenCalled();
 
-    const real = await api().post("/user/login").send({ pseudo: { unknownPrismaFilter: "x" }, password: "x" });
+    const real = await api()
+      .post("/user/login")
+      .send({ pseudo: { unknownPrismaFilter: "x" }, password: "x" });
     expect(real.status).toBe(500);
     expect(capture).toHaveBeenCalledTimes(1);
   });
