@@ -31,15 +31,11 @@ export default function HomeScreen() {
       }
     ]);
   };
-  const [countUsers, setCountUsers] = useState(207569);
-  const [countAnswers, setCountAnswers] = useState(9721827);
+  const [counts, setCounts] = useState<{ countUsers: number; countAnswers: number } | null>(null);
 
   useEffect(() => {
     API.get({ path: "/public/count" }).then((res) => {
-      if (res.data) {
-        setCountUsers((res.data.countUsers || 0) + 207569);
-        setCountAnswers((res.data.countAnswers || 0) + 9721827);
-      }
+      if (res.ok && res.data) setCounts({ countUsers: res.data.countUsers || 0, countAnswers: res.data.countAnswers || 0 });
     });
   }, []);
 
@@ -83,12 +79,16 @@ export default function HomeScreen() {
 
       {/* Stats */}
       <View className="items-center bg-quizz-dark px-5">
-        <Text className="text-center text-2xl font-bold text-white" style={{ fontFamily: "Merriweather_700Bold" }}>
-          {Intl.NumberFormat("fr").format(countUsers)} quizz effectués
-        </Text>
-        <Text className="mt-4 text-center text-2xl font-bold text-white" style={{ fontFamily: "Merriweather_700Bold" }}>
-          {Intl.NumberFormat("fr").format(countAnswers)} réponses données
-        </Text>
+        {counts && (
+          <>
+            <Text className="text-center text-2xl font-bold text-white" style={{ fontFamily: "Merriweather_700Bold" }}>
+              {Intl.NumberFormat("fr").format(counts.countUsers)} quizz effectués
+            </Text>
+            <Text className="mt-4 text-center text-2xl font-bold text-white" style={{ fontFamily: "Merriweather_700Bold" }}>
+              {Intl.NumberFormat("fr").format(counts.countAnswers)} réponses données
+            </Text>
+          </>
+        )}
       </View>
 
       {/* Restart */}

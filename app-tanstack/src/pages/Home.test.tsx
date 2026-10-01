@@ -41,9 +41,9 @@ describe('Home', () => {
     expect(screen.getByText('100%')).toBeInTheDocument();
     expect(screen.getByText('60%')).toBeInTheDocument();
 
-    // Stats — counts are baseline + API-returned delta, formatted in French
-    const expectedUsers = new Intl.NumberFormat('fr').format(207569 + 100);
-    const expectedAnswers = new Intl.NumberFormat('fr').format(9721827 + 1000);
+    // Stats — the real API counts, formatted in French
+    const expectedUsers = new Intl.NumberFormat('fr').format(100);
+    const expectedAnswers = new Intl.NumberFormat('fr').format(1000);
     await waitFor(() => {
       expect(document.body.textContent).toContain(expectedUsers);
       expect(document.body.textContent).toContain(expectedAnswers);

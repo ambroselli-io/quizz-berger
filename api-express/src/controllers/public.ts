@@ -11,19 +11,11 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, [] as Array<Question>);
 
-// temporary cheating to make people more want even more to do the test...
-// sorry for this, but no other choice yet !
-const appealingFactor = (number: number, force = false) => {
-  if (!force) return number;
-  number = Number(number);
-  return number * 10 + [...String(number)].reduce((sum, chiffre) => sum + Number(chiffre), 0);
-};
-
 router.get(
   "/count",
   catchErrors(async (req: express.Request, res: express.Response<CountResponse>, next: express.NextFunction) => {
-    const countUsers = appealingFactor(await prisma.user.count({ where: { isCandidate: false } }), true);
-    const countAnswers = appealingFactor(await prisma.answer.count(), true);
+    const countUsers = await prisma.user.count({ where: { isCandidate: false } });
+    const countAnswers = await prisma.answer.count();
 
     res.status(200).send({ ok: true, data: { countUsers, countAnswers } });
   }),
@@ -43,8 +35,8 @@ router.get(
 
     let globalUsers = 0;
     const cumulativeUsers = usersByDateRaw.map((doc) => {
-      globalUsers += appealingFactor(doc.count);
-      return { _id: doc._id, count: appealingFactor(doc.count), cumulative: globalUsers };
+      globalUsers += doc.count;
+      return { _id: doc._id, count: doc.count, cumulative: globalUsers };
     });
 
     // Answers by date
@@ -58,12 +50,12 @@ router.get(
     let globalAnswers = 0;
     const answers = answersRaw.map((doc) => {
       globalAnswers += doc.count;
-      return { _id: doc._id, count: doc.count, cumulative: appealingFactor(globalAnswers) };
+      return { _id: doc._id, count: doc.count, cumulative: globalAnswers };
     });
 
     // Count totals
-    const countUsers = appealingFactor(await prisma.user.count({ where: { isCandidate: false } }));
-    const countAnswers = appealingFactor(await prisma.answer.count());
+    const countUsers = await prisma.user.count({ where: { isCandidate: false } });
+    const countAnswers = await prisma.answer.count();
 
     // Answers per user (for users after 2022-02-24)
     const answersPerUserRaw = await prisma.$queryRaw<Array<{ _id: string; count: number }>>`

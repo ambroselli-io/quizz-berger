@@ -26,8 +26,7 @@ export default function Home() {
     data: PodiumStep[];
     user: { pseudo?: string; color?: string } | null;
   }>({ data: [], user: null });
-  const [countUsers, setCountUsers] = useState(207569);
-  const [countAnswers, setCountAnswers] = useState(9721827);
+  const [counts, setCounts] = useState<{ countUsers: number; countAnswers: number } | null>(null);
 
   useEffect(() => {
     API.get({ path: '/answer/random/for-onboarding', query: { random: String(random) } }).then((res) => {
@@ -37,10 +36,7 @@ export default function Home() {
 
   useEffect(() => {
     API.get({ path: '/public/count' }).then((res) => {
-      if (res.data) {
-        setCountUsers((res.data.countUsers || 0) + 207569);
-        setCountAnswers((res.data.countAnswers || 0) + 9721827);
-      }
+      if (res.ok && res.data) setCounts({ countUsers: res.data.countUsers || 0, countAnswers: res.data.countAnswers || 0 });
     });
   }, []);
 
@@ -201,10 +197,14 @@ export default function Home() {
       {/* Stats counter - dark */}
       <section className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center bg-quizz-dark px-5 py-10 text-white max-lg:min-h-[calc(100vh-60px-var(--bottom-bar-height))]">
         <h2 className="mb-5 text-center font-[Merriweather] text-[3rem] font-bold leading-[150%] max-lg:text-[34px]">
-          <b>{Intl.NumberFormat('fr').format(countUsers)}</b> quizz effectués
-          <br />
-          <br />
-          <b>{Intl.NumberFormat('fr').format(countAnswers)}</b> réponses données
+          {counts && (
+            <>
+              <b>{Intl.NumberFormat('fr').format(counts.countUsers)}</b> quizz effectués
+              <br />
+              <br />
+              <b>{Intl.NumberFormat('fr').format(counts.countAnswers)}</b> réponses données
+            </>
+          )}
         </h2>
       </section>
 
