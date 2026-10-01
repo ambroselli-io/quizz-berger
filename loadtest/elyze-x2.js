@@ -2,6 +2,7 @@
 //
 //   k6 run -e APP_URL=https://staging.example -e API_URL=https://api.staging.example loadtest/elyze-x2.js
 //   k6 run -e SCALE=0.05 loadtest/elyze-x2.js      # 5 % smoke run against localhost
+//   k6 run -e PROFILE=short …                      # 12 min instead of 35, to climb the SCALE ladder
 //
 // SCALE=1 is the full x2 target. Every rate and VU budget is multiplied by it.
 import http from 'k6/http';
@@ -31,21 +32,36 @@ const quizzesCompleted = new Counter('quizzes_completed');
 
 const rate = (perSecond) => Math.max(1, Math.round(perSecond * SCALE));
 
+const PROFILES = {
+  // The plateaus last longer than one session (≈ 3 min), so each one reaches a steady state.
+  short: [
+    { duration: '2m', target: rate(18) },
+    { duration: '5m', target: rate(18) },
+    { duration: '1m', target: rate(55) },
+    { duration: '3m', target: rate(55) },
+    { duration: '1m', target: 0 },
+  ],
+  long: [
+    { duration: '5m', target: rate(18) }, // ramp to 65k visitors/h (≈ 50k quiz takers/h)
+    { duration: '20m', target: rate(18) }, // sustained evening peak
+    { duration: '1m', target: rate(55) }, // TV / viral spike: 3x in one minute
+    { duration: '5m', target: rate(55) },
+    { duration: '4m', target: 0 },
+  ],
+};
+const stages = PROFILES[__ENV.PROFILE || 'long'];
+if (!stages) throw new Error(`PROFILE must be one of: ${Object.keys(PROFILES).join(', ')}`);
+
 export const options = {
   scenarios: {
     visitors: {
       executor: 'ramping-arrival-rate',
       startRate: 0,
       timeUnit: '1s',
-      preAllocatedVUs: rate(1500),
+      // Generous: a VU created mid-test takes time to start, and k6 drops the visitors that arrive meanwhile.
+      preAllocatedVUs: rate(3000),
       maxVUs: rate(9000),
-      stages: [
-        { duration: '5m', target: rate(18) }, // ramp to 65k visitors/h (≈ 50k quiz takers/h)
-        { duration: '20m', target: rate(18) }, // sustained evening peak
-        { duration: '1m', target: rate(55) }, // TV / viral spike: 3x in one minute
-        { duration: '5m', target: rate(55) },
-        { duration: '4m', target: 0 },
-      ],
+      stages,
     },
   },
   thresholds: {

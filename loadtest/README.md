@@ -47,7 +47,8 @@ k6 run -e SCALE=0.05 loadtest/elyze-x2.js
 k6 run -e APP_URL=… -e API_URL=… loadtest/elyze-x2.js
 ```
 
-Ladder: `SCALE=0.1`, `0.25`, `0.5`, `1`. Stop at the first failing step: that is the capacity, and the
+Ladder, with `-e PROFILE=short` (12 min: 2 min ramp, 5 min plateau, 1 min jump, 3 min spike, 1 min down):
+`SCALE=0.1`, `0.25`, `0.5`, `1`. Then one 35 min run (default profile) at the highest scale that held. Stop at the first failing step: that is the capacity, and the
 next step is pointless until the bottleneck is fixed.
 
 The full run needs ≈ 9 000 VUs: run k6 from a machine with 8+ vCPU / 16 GB in the same region, not from
