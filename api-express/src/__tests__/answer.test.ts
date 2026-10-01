@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import prisma from "~/prisma";
+import candidatesAnswers from "~/shared/candidates-answers.json";
 import { answer, answersOf, api, bearer, signup } from "./helpers";
 
 describe("POST /answer", () => {
@@ -76,5 +77,20 @@ describe("POST /answer", () => {
   it("rejects anonymous calls", async () => {
     const res = await api().post("/answer").send({ themeId: "theme-2027-immigration", questionId: "question-2027-immi-01", answerIndex: 0 });
     expect(res.status).toBe(401);
+  });
+});
+
+describe("GET /answer/candidates", () => {
+  it("serves every candidate's answers, gzipped or not", async () => {
+    const gzipped = await api().get("/answer/candidates").set("Accept-Encoding", "gzip");
+    const plain = await api().get("/answer/candidates").set("Accept-Encoding", "identity");
+
+    expect(gzipped.headers["content-encoding"]).toBe("gzip");
+    expect(plain.headers["content-encoding"]).toBeUndefined();
+    for (const res of [gzipped, plain]) {
+      expect(res.status).toBe(200);
+      expect(res.headers["content-type"]).toMatch(/application\/json/);
+      expect(res.body).toEqual({ ok: true, data: candidatesAnswers });
+    }
   });
 });

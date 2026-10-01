@@ -1,5 +1,6 @@
 import express from "express";
 import passport from "passport";
+import { gzipSync } from "node:zlib";
 import { catchErrors } from "~/utils/error";
 import { getPodium } from "~/shared/utils/podium";
 import { getCandidatesScorePerThemes } from "~/shared/utils/score";
@@ -88,10 +89,25 @@ const candidatesAnswers = candidatesAnswersData as Array<CandidateAnswer>;
 
 const getCandidatesAnswers = (): Array<CandidateAnswer> => candidatesAnswers;
 
+// Every quiz fetches these same 826 kB of JSON: serialising then gzipping them cost ~40 ms of CPU per call, a large
+// share of the API under load. Both are done once, at startup.
+const candidatesResponseJson = JSON.stringify({ ok: true, data: candidatesAnswers } satisfies CandidatesAnswersResponse);
+const candidatesResponseGzip = gzipSync(candidatesResponseJson);
+
 router.get(
   "/candidates",
-  catchErrors(async (req: express.Request, res: express.Response<CandidatesAnswersResponse>, next: express.NextFunction) => {
-    res.status(200).send({ ok: true, data: getCandidatesAnswers() });
+  catchErrors(async (req: express.Request, res: express.Response, next: express.NextFunction) => {
+    res.type("json");
+    res.vary("Accept-Encoding");
+    // The data only changes with a deploy.
+    res.set("Cache-Control", "public, max-age=600");
+    if (req.acceptsEncodings("gzip")) {
+      // The compression middleware leaves a body that is already encoded alone.
+      res.set("Content-Encoding", "gzip");
+      res.send(candidatesResponseGzip);
+    } else {
+      res.send(candidatesResponseJson);
+    }
   }),
 );
 

@@ -11,13 +11,29 @@ const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
 }, [] as Array<Question>);
 
+// Every home page view asks for these totals, and counting the whole Answer table each time grew into a large share
+// of the Postgres CPU under load. A figure up to a minute old is fine on the home page. The in-flight promise is
+// shared, so an expiry under load triggers one count, not one per waiting request.
+const COUNT_TTL_MS = 60_000;
+let countCache: { at: number; promise: Promise<{ countUsers: number; countAnswers: number }> } | null = null;
+
+const getCounts = () => {
+  if (!countCache || Date.now() - countCache.at > COUNT_TTL_MS) {
+    const promise = Promise.all([prisma.user.count({ where: { isCandidate: false } }), prisma.answer.count()]).then(
+      ([countUsers, countAnswers]) => ({ countUsers, countAnswers }),
+    );
+    countCache = { at: Date.now(), promise };
+    promise.catch(() => {
+      if (countCache?.promise === promise) countCache = null;
+    });
+  }
+  return countCache.promise;
+};
+
 router.get(
   "/count",
   catchErrors(async (req: express.Request, res: express.Response<CountResponse>, next: express.NextFunction) => {
-    const countUsers = await prisma.user.count({ where: { isCandidate: false } });
-    const countAnswers = await prisma.answer.count();
-
-    res.status(200).send({ ok: true, data: { countUsers, countAnswers } });
+    res.status(200).send({ ok: true, data: await getCounts() });
   }),
 );
 
