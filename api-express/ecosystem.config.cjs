@@ -10,6 +10,8 @@ module.exports = {
       // (the `~/` alias) would be found.
       script: "./src/index.ts",
       cwd: __dirname,
+      // pm2 6 runs .ts files with bun by default.
+      interpreter: "node",
       interpreter_args: `--import ${require.resolve("tsx")}`,
       exec_mode: "cluster",
       instances: 2,
