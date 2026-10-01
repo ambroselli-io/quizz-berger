@@ -85,7 +85,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Santé",
     "id": "theme-2027-sante",
-    "questionCount": 8,
+    "questionCount": 9,
   },
   {
     "fr": "Société",

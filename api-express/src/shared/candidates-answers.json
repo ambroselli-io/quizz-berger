@@ -551,6 +551,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -1510,6 +1515,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -2475,6 +2485,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -3434,6 +3449,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -4399,6 +4419,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -5358,6 +5383,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -6323,6 +6353,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -7285,6 +7320,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -8244,6 +8284,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -9211,6 +9256,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 2
       },
@@ -10175,6 +10225,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -11133,6 +11188,11 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
         "answerIndex": 3
       },
       {
@@ -12099,6 +12159,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -13061,6 +13126,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 2
       },
@@ -14020,6 +14090,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -14987,6 +15062,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -15218,7 +15298,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-xavier-bertrand",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -15946,6 +16026,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -16913,6 +16998,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -17872,6 +17962,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -18837,6 +18932,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -19799,6 +19899,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -20757,6 +20862,11 @@
       {
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
         "answerIndex": 1
       },
       {
@@ -21723,6 +21833,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -22094,7 +22209,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-lydie-massard",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -22682,6 +22797,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-sante",
@@ -23647,6 +23767,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -24053,7 +24178,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-becht",
-        "answerIndex": 2
+        "answerIndex": 3
       }
     ]
   },
@@ -24476,6 +24601,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -25438,6 +25568,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -26598,6 +26733,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -27560,6 +27700,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -27841,7 +27986,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -28522,6 +28667,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -28818,7 +28968,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -29484,6 +29634,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -29755,7 +29910,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-florian-philippot",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30445,6 +30600,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -31410,6 +31570,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -32369,6 +32534,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -33334,6 +33504,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -33610,7 +33785,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-karim-bouamrane",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34293,6 +34468,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -35258,6 +35438,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -35499,7 +35684,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-fabien-roussel",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -36217,6 +36402,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -37179,6 +37369,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -38146,6 +38341,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -38302,7 +38502,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -39110,6 +39310,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -40072,6 +40277,11 @@
         "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -41052,6 +41262,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 0
       },
@@ -42014,6 +42229,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -42891,6 +43111,11 @@
       },
       {
         "themeId": "theme-2027-sante",
+        "questionId": "question-2027-san-09",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-sante",
         "questionId": "question-2027-san-06",
         "answerIndex": 1
       },
@@ -43207,7 +43432,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

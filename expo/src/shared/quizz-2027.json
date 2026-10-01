@@ -2456,7 +2456,7 @@
           "Tous les soins devraient demander une contribution du patient, y compris les urgences",
           "Certains soins aujourd'hui gratuits pourraient être payants pour responsabiliser les patients",
           "L'équilibre actuel entre gratuit et payant est correct",
-          "Diminuer le prix de soins du quotidien trop chers aujourd'hui: lunettes, dentaire, psy...",
+          "Il faudrait réduire ce qui reste à la charge des patients, sans aller jusqu'à la gratuité totale",
           "Tous les soins devraient être entièrement gratuits, sans exception",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
@@ -2467,6 +2467,25 @@
           [0, 1, 3, 5, 4, 0],
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-san-09",
+        "fr": "Lunettes, soins dentaires, appareils auditifs, psychologue : ces soins restent chers pour beaucoup. Faut-il mieux les rembourser ?",
+        "help": "https://fr.wikipedia.org/wiki/Reste_%C3%A0_charge",
+        "answers": [
+          "Non, c'est le rôle des mutuelles et de chacun : la Sécurité sociale doit se concentrer sur les soins lourds",
+          "Le dispositif actuel (« 100 % santé », séances de psy remboursées) va déjà assez loin",
+          "Il faut les rembourser nettement mieux qu'aujourd'hui",
+          "La Sécurité sociale devrait les prendre entièrement en charge, sans passer par les mutuelles",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 2, 1, 0],
+          [1, 2, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       },
       {

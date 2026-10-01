@@ -429,7 +429,10 @@ question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
 [0] La vaccination devrait être un choix totalement libre, l'État n'a pas à imposer quoi que ce soit dans nos corps
 
 question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
-[3] Diminuer le prix de soins du quotidien trop chers aujourd'hui: lunettes, dentaire, psy...
+[3] Il faudrait réduire ce qui reste à la charge des patients, sans aller jusqu'à la gratuité totale
+
+question-2027-san-09: Lunettes, soins dentaires, appareils auditifs, psychologue : ces soins restent chers pour beaucoup. Faut-il mieux les rembourser ?
+[2] Il faut les rembourser nettement mieux qu'aujourd'hui
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
@@ -604,7 +607,7 @@ question-2027-gagnait-karim-bouamrane: Si Karim Bouamrane était élu, quel sera
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-segolene-royal: Si Ségolène Royal était élue, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-anasse-kazib: Si Anasse Kazib était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)

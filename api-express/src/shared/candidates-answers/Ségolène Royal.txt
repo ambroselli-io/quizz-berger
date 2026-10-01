@@ -429,7 +429,10 @@ question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
 [2] Certains vaccins essentiels doivent rester obligatoires, c'est une question de santé publique
 
 question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
-[3] Diminuer le prix de soins du quotidien trop chers aujourd'hui: lunettes, dentaire, psy...
+[3] Il faudrait réduire ce qui reste à la charge des patients, sans aller jusqu'à la gratuité totale
+
+question-2027-san-09: Lunettes, soins dentaires, appareils auditifs, psychologue : ces soins restent chers pour beaucoup. Faut-il mieux les rembourser ?
+[2] Il faut les rembourser nettement mieux qu'aujourd'hui
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [0] C'est une urgence nationale : il faut des psychologues gratuits et accessibles partout
@@ -598,7 +601,7 @@ question-2027-gagnait-francis-lalanne: Si Francis Lalanne était élu, quel sera
 [2] Neutre
 
 question-2027-gagnait-florian-philippot: Si Florian Philippot était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-karim-bouamrane: Si Karim Bouamrane était élu, quel serait votre sentiment ?
 [1] Plutôt content(e)

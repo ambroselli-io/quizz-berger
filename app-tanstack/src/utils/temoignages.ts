@@ -22,4 +22,5 @@ export const temoignages = [
   { blockquote: "Le quizz en général est très bien fait, cela m'aide vraiment à me positionner d'autant plus que je n'ai pas trop le temps de lire les programmes entiers des candidats. Je vous remercie énormément !", figcaption: 'Sylvain' },
   { blockquote: "Je trouve intéressant de partir de nos idées/convictions et de voir vers quelles personnalités/parti politique on se rapproche. Cela permet de s'intéresser plus aux propositions qu'aux personnages politiques.", figcaption: 'Benjamin' },
   { blockquote: "J'ai trouvé votre site vraiment hyper utile, parfait pour quelqu'un qui veut pas aller chercher programme par programme !", figcaption: 'Matthieu' },
+  { blockquote: "C'est une excellente base de travail. Ça m'oblige à me poser plein de questions que je ne me suis pas posées. C'est un outil précieux, merci à vous de l'avoir développé.", figcaption: 'Maloé' },
 ];

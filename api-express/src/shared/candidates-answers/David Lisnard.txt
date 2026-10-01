@@ -431,6 +431,9 @@ question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
 question-2027-san-05: Que pensez-vous du remboursement des soins médicaux ?
 [1] Certains soins aujourd'hui gratuits pourraient être payants pour responsabiliser les patients
 
+question-2027-san-09: Lunettes, soins dentaires, appareils auditifs, psychologue : ces soins restent chers pour beaucoup. Faut-il mieux les rembourser ?
+[0] Non, c'est le rôle des mutuelles et de chacun : la Sécurité sociale doit se concentrer sur les soins lourds
+
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [2] C'est un sujet parmi d'autres, pas plus prioritaire que le reste
 

@@ -51,7 +51,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 76,
+    "percent": 75,
     "pseudos": [
       "Delphine Batho",
     ],
@@ -249,7 +249,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 26,
+    "percent": 25,
     "pseudos": [
       "Gérald Darmanin",
     ],
