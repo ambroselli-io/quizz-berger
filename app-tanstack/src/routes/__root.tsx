@@ -12,7 +12,7 @@ import Header from '@app/components/Header';
 import BottomTabBar from '@app/components/BottomTabBar';
 import NotFound from '@app/components/NotFound';
 import UnexpectedError from '@app/components/UnexpectedError';
-import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME, candidatesCount } from '@app/utils/seo';
+import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME, candidatesCount } from '@app/utils/seo-light';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 
 const DEFAULT_TITLE = 'Le Quizz du Berger | Quel est votre candidat idéal ?';

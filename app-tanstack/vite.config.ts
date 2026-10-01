@@ -12,7 +12,15 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     // tanstackStart must come before the React plugin.
-    tanstackStart(),
+    tanstackStart({
+      router: {
+        // Loaders are split out with their component (the default keeps them in the main bundle): otherwise
+        // whatever a loader imports, like every blog article for /blog/$slug, ships with the home page.
+        codeSplittingOptions: {
+          defaultBehavior: [['loader', 'component'], ['pendingComponent'], ['errorComponent'], ['notFoundComponent']],
+        },
+      },
+    }),
     viteReact(),
   ],
   resolve: {

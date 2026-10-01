@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { candidatesCount } from '@app/utils/seo';
+import { candidatesCount } from '@app/utils/seo-light';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import { seoHead } from '@app/utils/seo-head';
 import PourQuiVoterPage from '@app/pages/PourQuiVoterPage';

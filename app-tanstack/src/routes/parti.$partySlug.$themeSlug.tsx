@@ -5,7 +5,7 @@ import {
   themeSeoLabel,
   themeProseLabel,
 } from '@app/utils/parties';
-import { getThemeBySlug, candidatesCount } from '@app/utils/seo';
+import { getThemeBySlug, candidatesCount } from '@app/utils/seo-light';
 import { seoHead } from '@app/utils/seo-head';
 import PartyThemePage from '@app/pages/PartyThemePage';
 
@@ -16,14 +16,12 @@ export const Route = createFileRoute('/parti/$partySlug/$themeSlug')({
     // Only the curated party x theme couples exist: everything else is a 404, not a
     // near-empty page Google would file under "Crawled - currently not indexed".
     if (!party || !theme || !partyHasThemePage(party, theme.slug)) throw notFound();
-    return { party, theme };
+    // Built here rather than in head(): utils/parties stays out of the main bundle.
+    return { party, theme, seoLabel: themeSeoLabel(theme), proseLabel: themeProseLabel(theme) };
   },
   head: ({ loaderData }) => {
-    const party = loaderData?.party;
-    const theme = loaderData?.theme;
-    if (!party || !theme) return {};
-    const seoLabel = themeSeoLabel(theme);
-    const proseLabel = themeProseLabel(theme);
+    if (!loaderData) return {};
+    const { party, theme, seoLabel, proseLabel } = loaderData;
     return seoHead({
       title: `Programme ${party.name} 2027 : ${seoLabel} | Le Quizz du Berger`,
       description: `Ce que ${party.theName} ${party.plural ? 'proposent' : 'propose'} sur ${proseLabel} pour 2027 : ses réponses aux ${theme.questions.length} questions du thème, et qui d'autre répond pareil parmi les ${candidatesCount} personnalités du quiz.`,

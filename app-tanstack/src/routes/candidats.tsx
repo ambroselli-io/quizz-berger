@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { candidatesCount } from '@app/utils/seo';
+import { candidatesCount } from '@app/utils/seo-light';
 import { seoHead } from '@app/utils/seo-head';
 import CandidatesIndex from '@app/pages/CandidatesIndex';
 

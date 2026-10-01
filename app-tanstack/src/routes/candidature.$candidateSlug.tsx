@@ -15,17 +15,17 @@ export const Route = createFileRoute('/candidature/$candidateSlug')({
   loader: ({ params }) => {
     const candidacy = getCandidacyBySlug(params.candidateSlug);
     if (!candidacy) throw notFound();
-    return { candidacy };
-  },
-  head: ({ loaderData }) => {
-    const candidacy = loaderData?.candidacy;
-    if (!candidacy) return {};
-    const name = candidacy.candidate.pseudo;
-    const title = pageTitle(candidacy);
     const dated = candidacy.events.find(
       (e) => e.type === (candidacy.status === 'withdrawn' ? 'withdrawal' : 'declaration'),
     );
-    const when = dated ? ` (${formatEventDate(dated.date)})` : '';
+    // Formatted here rather than in head(): utils/candidacies stays out of the main bundle.
+    return { candidacy, dated, when: dated ? ` (${formatEventDate(dated.date)})` : '' };
+  },
+  head: ({ loaderData }) => {
+    if (!loaderData) return {};
+    const { candidacy, dated, when } = loaderData;
+    const name = candidacy.candidate.pseudo;
+    const title = pageTitle(candidacy);
     return seoHead({
       title: `${title} | Le Quizz du Berger`,
       description: `${candidacy.summary.slice(0, 200)}`,

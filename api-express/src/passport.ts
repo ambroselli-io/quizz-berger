@@ -61,6 +61,21 @@ export default (app: Application) => {
       },
     ),
   );
+  // For POST /answer, called ~60 times per quiz: the signed token is trusted without reading the user row.
+  // A deleted user is caught by the Answer → User foreign key instead.
+  passport.use(
+    "user-id",
+    new JwtStrategy(
+      {
+        jwtFromRequest: cookieExtractor,
+        secretOrKey: config.SECRET,
+      },
+      function (jwtPayload, done) {
+        if (typeof jwtPayload._id === "string") return done(null, { id: jwtPayload._id });
+        return done(null, false);
+      },
+    ),
+  );
 
   app.use(passport.initialize());
 };

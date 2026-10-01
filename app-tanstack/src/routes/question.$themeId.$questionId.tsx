@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { quizz } from '@app/utils/quizz';
-import { questionSlugMap } from '@app/utils/seo';
+import { questionSlugMap } from '@app/utils/seo-light';
 import { seoHead } from '@app/utils/seo-head';
 import Question from '@app/pages/Question';
 

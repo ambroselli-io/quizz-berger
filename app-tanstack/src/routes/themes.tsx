@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { quizzThemesCount, quizzQuestionsCount } from '@app/utils/quizz';
-import { candidatesCount } from '@app/utils/seo';
+import { candidatesCount } from '@app/utils/seo-light';
 import { seoHead } from '@app/utils/seo-head';
 import Themes from '@app/pages/Themes';
 

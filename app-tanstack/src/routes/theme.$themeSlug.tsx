@@ -1,5 +1,5 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
-import { getThemeBySlug, candidatesCount } from '@app/utils/seo';
+import { getThemeBySlug, candidatesCount } from '@app/utils/seo-light';
 import { seoHead } from '@app/utils/seo-head';
 import ThemePage from '@app/pages/ThemePage';
 

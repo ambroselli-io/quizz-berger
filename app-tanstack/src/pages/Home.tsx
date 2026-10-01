@@ -8,7 +8,7 @@ import Loader from '@app/components/Loader';
 import Footer from '@app/components/Footer';
 import QuizzButton from '@app/components/QuizzButton';
 import API from '@app/services/api';
-import { candidateSlugMap, themeSlugMap, comparisonPairs, hotTopicQuestions, candidatesCount } from '@app/utils/seo';
+import { candidateSlugMap, themeSlugMap, comparisonPairs, hotTopicQuestions, candidatesCount } from '@app/utils/seo-light';
 import type { PodiumStep } from '@app/types/quizz';
 
 export default function Home() {

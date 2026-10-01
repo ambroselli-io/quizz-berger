@@ -7,8 +7,8 @@ import quizz from "~/shared/quizz-2027.json";
 import candidatesAnswersData from "~/shared/candidates-answers.json";
 import prisma from "~/prisma";
 import type { Question, Theme } from "~/types/quizz";
-import { RequestWithUser } from "~/types/request";
-import type { Answer } from "@prisma/client";
+import { RequestWithUser, RequestWithUserId } from "~/types/request";
+import { Prisma, type Answer } from "@prisma/client";
 import { CandidateAnswer } from "~/types/answer";
 import {
   CandidatesAnswersResponse,
@@ -32,43 +32,54 @@ const quizzQuestionsIds = quizz
 
 router.post(
   "/",
-  passport.authenticate("user", { session: false }),
-  catchErrors(async (req: RequestWithUser, res: express.Response, next: express.NextFunction) => {
-    if (!req.body.themeId) {
+  passport.authenticate("user-id", { session: false }),
+  catchErrors(async (req: RequestWithUserId, res: express.Response, next: express.NextFunction) => {
+    const { themeId, questionId, answerIndex } = req.body;
+    // Raw SQL below: Prisma no longer checks the types, so they are checked here.
+    if (typeof themeId !== "string" || !themeId) {
       res.status(409).send({ ok: false, error: "themeId is not provided" });
       return;
     }
-    if (!req.body.hasOwnProperty("themeId")) {
+    if (typeof questionId !== "string") {
       res.status(409).send({ ok: false, error: "questionId is not provided" });
       return;
     }
-    if (!req.body.hasOwnProperty("questionId")) {
-      res.status(409).send({ ok: false, error: "questionId is not provided" });
-      return;
-    }
-    if (!req.body.hasOwnProperty("answerIndex")) {
+    if (!Number.isInteger(answerIndex)) {
       res.status(409).send({ ok: false, error: "answer index is not provided" });
       return;
     }
+    const userId = req.user.id;
 
-    const answerContent = {
-      userId: req.user.id,
-      themeId: req.body.themeId,
-      questionId: req.body.questionId,
-    };
-
-    const existingAnswer = await prisma.answer.findFirst({ where: answerContent });
-
-    const answer = existingAnswer
-      ? await prisma.answer.update({ where: { id: existingAnswer.id }, data: { answerIndex: req.body.answerIndex } })
-      : await prisma.answer.create({ data: { ...answerContent, answerIndex: req.body.answerIndex } });
-
-    const user = req.user!;
-    if (!user.themes.includes(req.body.themeId)) {
-      await prisma.user.update({ where: { id: user.id }, data: { themes: [...user.themes, req.body.themeId] } });
+    // The hottest route under load, so one round trip instead of four (user lookup, findFirst, create or update,
+    // themes update). Answer has no unique (userId, questionId) index, hence update, then insert if nothing matched.
+    // Timestamps are written in UTC, as Prisma does.
+    let answers: Array<Answer>;
+    try {
+      answers = await prisma.$queryRaw<Array<Answer>>`
+        WITH updated AS (
+          UPDATE "Answer" SET "answerIndex" = ${answerIndex}, "updatedAt" = timezone('UTC', now())
+          WHERE "userId" = ${userId} AND "themeId" = ${themeId} AND "questionId" = ${questionId}
+          RETURNING *
+        ), inserted AS (
+          INSERT INTO "Answer" ("id", "createdAt", "updatedAt", "themeId", "questionId", "answerIndex", "userId")
+          SELECT gen_random_uuid()::text, timezone('UTC', now()), timezone('UTC', now()), ${themeId}, ${questionId}, ${answerIndex}, ${userId}
+          WHERE NOT EXISTS (SELECT 1 FROM updated)
+          RETURNING *
+        ), themes AS (
+          UPDATE "User" SET "themes" = array_append("themes", ${themeId}), "updatedAt" = timezone('UTC', now())
+          WHERE "id" = ${userId} AND NOT COALESCE(${themeId} = ANY("themes"), false)
+        )
+        SELECT * FROM updated UNION ALL SELECT * FROM inserted`;
+    } catch (error) {
+      // Valid token of a deleted user: the insert breaks the Answer → User foreign key.
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.meta?.code === "23503") {
+        res.sendStatus(401);
+        return;
+      }
+      throw error;
     }
 
-    res.status(200).send({ ok: true, data: answer });
+    res.status(200).send({ ok: true, data: answers[0] });
     return;
   }),
 );

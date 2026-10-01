@@ -7,6 +7,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 # Architecture
 
 - **App**: `app-tanstack/` — React 19 + TanStack Start (TanStack Router, SSR) + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI. File-based routes in `src/routes/` (thin: `loader`/`head()`/`notFound()`); page components in `src/pages/`. Per-page SEO meta via each route's `head()` + the `seoHead()` helper in `src/utils/seo-head.ts`. Router API is accessed through the compat shim `src/lib/router.tsx` (`Link`/`useNavigate`/`useParams`). Prod is served by `server.mjs` (Express adapter over the `dist/server/server.js` web-fetch handler). `src/routeTree.gen.ts` is generated (gitignored) by the Vite plugin / `tsr generate`.
+- **Main bundle**: every route's `head()`, the root layout and the Home page ship in the main JS bundle of every page; loaders and page components are split per route (`codeSplittingOptions` in `vite.config.ts`). Keep `head()` light: it may import `utils/seo-light.ts`, `utils/quizz.ts` and `utils/seo-head.ts` only, anything heavier (`utils/seo.ts`, which carries every candidate's answers, `utils/parties`, `utils/candidacies`, content JSON, articles) is computed in the loader and read from `loaderData`. `utils/seo-light.ts` holds everything of `utils/seo.ts` except the answers, from `src/content/candidates-light.json` (generated, see Adding a candidate); `utils/seo.ts` re-exports it and adds the answers back. JS/CSS assets get a `.gz` twin at build time (`scripts/precompress-assets.ts`) that nginx serves with `gzip_static on`.
 - **API**: `api-express/` — Express, JWT cookies, CORS, Postgres via Prisma (user answers stored in `Answer` table, keyed by `themeId` + `questionId`)
 - **Mobile**: `expo/` — Expo / React Native version. Questions are **fetched from the API at launch** (`GET /quizz/version`, then `GET /quizz` when the hash changed) and cached in AsyncStorage, so a new question reaches installed apps without an App Store release. `expo/src/shared/quizz-2027.json` is still bundled as the first-launch and offline fallback, and `expo/src/shared/__tests__/shared-data.test.ts` fails if it drifts from the API copy.
 - **Shared code**: duplicated in `app-tanstack/src/shared/`, `api-express/src/shared/` AND `expo/src/shared/` (no sync script — manual copy-paste between the three)
@@ -42,7 +43,7 @@ It feeds `/sondages-presidentielle-2027` (SVG timeline, no chart library) and th
 
 It powers the "candidats les plus proches" section of `/candidat/{slug}` **and the figures inside the `{candidat}-droite-ou-gauche` blog articles**, which call `proximityListHtml()`, `proximityLinkHtml()`, `furthestLinksHtml()`, `proximityPercent()`, `proximitySameAnswers()` and `proximityRank()` from their template strings. Adding a question or a candidate therefore updates those articles by itself.
 
-**Never write a proximity figure as a literal in an article** — `src/content/articles/proximity-figures.test.ts` fails if one appears. Party labels next to a name come from `getCandidateParty()` in `utils/seo.ts`; add new candidates there, leaving the value empty when the affiliation is unclear.
+**Never write a proximity figure as a literal in an article** — `src/content/articles/proximity-figures.test.ts` fails if one appears. Party labels next to a name come from `getCandidateParty()` in `utils/seo-light.ts`; add new candidates there, leaving the value empty when the affiliation is unclear.
 
 What still needs a human when the question set changes: sentences that count over a theme ("sur les onze questions de sécurité, neuf réponses identiques"), and prose whose argument depends on a figure. Grep the positioning articles for those and recount.
 
@@ -79,10 +80,11 @@ tell you, so it is authored.
 
 1. One entry in **all 3** `candidates-answers.json`, with an `answerIndex` for **every** question — a missing answer counts as "did not answer" and drags the score down silently.
 2. A picture (see Architecture), or `picture: ""` when no free portrait exists.
-3. A party label in `partyBySlug` (`utils/seo.ts`), and their slug in the right party of `content/parties.ts` when it has an entry there.
+3. A party label in `partyBySlug` (`utils/seo-light.ts`), and their slug in the right party of `content/parties.ts` when it has an entry there.
 4. An entry in `content/candidacies.ts` — `utils/candidacies.test.ts` fails without it.
 5. The `.txt` export: write the first line by hand (party + factual role), then `node api-express/scripts/extract-all-answers.js`.
-6. `npx vitest run -u`, then read the `Result.test.tsx.snap` diff: the newcomer should land where their answers say, and everyone else should move by a point or two at most.
+6. `cd app-tanstack && npm run generate-candidates-light` (name, picture and colour without the answers, for the main bundle) — `utils/seo-light.test.ts` fails when it is stale.
+7. `npx vitest run -u`, then read the `Result.test.tsx.snap` diff: the newcomer should land where their answers say, and everyone else should move by a point or two at most.
 
 # Blog articles
 
@@ -114,16 +116,16 @@ CI (`.github/workflows/deploy.yml`) runs `npm test` before deploying, so stale s
 1. Add the entry inside the right theme's `questions[]` in **all 3** `quizz-2027.json` files.
 2. For each candidate in **all 3** `candidates-answers.json` files: add `{ themeId, questionId, answerIndex }` to their `answers[]` (otherwise the candidate is considered as not having answered).
 3. Regenerate `api-express/src/shared/candidates-answers/*.txt` via `node api-express/scripts/extract-all-answers.js` (human-readable export, optional but keep it in sync).
-4. If it's a "hot topic" question that should have its own SEO page: add an entry in `hotTopicSlugs` in `app-tanstack/src/utils/seo.ts` (maps `_id` → `{ slug, seoTitle }`).
+4. If it's a "hot topic" question that should have its own SEO page: add an entry in `hotTopicSlugs` in `app-tanstack/src/utils/seo-light.ts` (maps `_id` → `{ slug, seoTitle }`).
 5. Regenerate the sitemap: `npx tsx app-tanstack/scripts/generate-sitemap.ts`.
-6. Question/theme/candidate counts shown in marketing copy are derived dynamically: `quizzQuestionsCount` and `quizzThemesCount` from `app-tanstack/src/utils/quizz.ts`, `candidatesCount` from `app-tanstack/src/utils/seo.ts`. Use those when adding new copy — don't hard-code numbers.
+6. Question/theme/candidate counts shown in marketing copy are derived dynamically: `quizzQuestionsCount` and `quizzThemesCount` from `app-tanstack/src/utils/quizz.ts`, `candidatesCount` from `app-tanstack/src/utils/seo-light.ts` (also re-exported by `utils/seo.ts`). Use those when adding new copy — don't hard-code numbers.
 
 ## Removing a question
 
 1. Delete the entry in **all 3** `quizz-2027.json`.
 2. Delete the matching `{ questionId }` entries in **all 3** `candidates-answers.json` for every candidate.
 3. Regenerate the `.txt` candidate files.
-4. Remove the `_id` from `hotTopicSlugs` in `app-tanstack/src/utils/seo.ts` if it was there.
+4. Remove the `_id` from `hotTopicSlugs` in `app-tanstack/src/utils/seo-light.ts` if it was there.
 5. Regenerate sitemap.
 6. Orphaned user answers remain in the Prisma `Answer` table (keyed by `questionId`) — harmless but consider a cleanup script if the volume matters.
 7. The URL `/question/{themeId}/{questionId}` (app route) and the slug-based `/question-politique/{slug}` (SEO) become 404 — acceptable for old shares.
@@ -134,7 +136,7 @@ Treat this as **remove + add** with the same `fr`/`answers`/`scores`. The `_id` 
 - URL routing (`/question/{themeId}/{questionId}`)
 - Candidate answers (`candidates-answers.json` `questionId` field)
 - User answers in DB (`Answer.questionId`)
-- SEO slug mapping (`hotTopicSlugs` key in `seo.ts`)
+- SEO slug mapping (`hotTopicSlugs` key in `seo-light.ts`)
 
 Find/replace the old `_id` everywhere above. User answers in DB referencing the old `_id` become orphaned.
 

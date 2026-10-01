@@ -8,12 +8,12 @@ export const Route = createFileRoute('/parti/$partySlug/')({
   loader: ({ params }) => {
     const party = getPartyBySlug(params.partySlug);
     if (!party) throw notFound();
-    return { party };
+    // Built here rather than in head(): utils/parties stays out of the main bundle.
+    return { party, names: deNameList(party.candidates.map((c) => c.pseudo)) };
   },
   head: ({ loaderData }) => {
-    const party = loaderData?.party;
-    if (!party) return {};
-    const names = deNameList(party.candidates.map((c) => c.pseudo));
+    if (!loaderData) return {};
+    const { party, names } = loaderData;
     // "Renaissance (Renaissance)" reads as a bug: only repeat the acronym when it differs.
     const acronym = party.shortName === party.name ? '' : ` (${party.shortName})`;
     return seoHead({

@@ -16,7 +16,7 @@ Read these files first:
 - `app-tanstack/src/content/articles/` — one file per article, named `{slug}.ts`, all listed in `index.ts`. Read `index.ts` for the existing slugs, then `accord-ue-mercosur-france-candidats-2027.ts` as the reference template (format, tone).
 - `app-tanstack/src/shared/quizz-2027.json` — quiz themes and questions.
 - `app-tanstack/src/shared/candidates-answers.json` — the candidates' quiz answers.
-- `app-tanstack/src/utils/seo.ts` — candidate slugs, theme slugs, hot-topic question slugs (for internal links).
+- `app-tanstack/src/utils/seo-light.ts` — candidate slugs, theme slugs, hot-topic question slugs (for internal links). `utils/seo.ts` re-exports them with the candidates' answers.
 - `CLAUDE.md` at the repo root — especially the "Adding a question" and "Candidate proximity" sections; follow them exactly if step 3 applies.
 - `~/.claude/skills/no-ai-slop/SKILL.md` + `french.md` + `eval.md` — the writing rules for this site. Non-negotiable: the article gets checked against them before the PR opens (step 6).
 
@@ -55,7 +55,7 @@ Follow `CLAUDE.md` → "Adding a question" precisely:
 4. Add the entry to the theme's `questions[]` in **all 3** copies: `api-express/src/shared/quizz-2027.json`, `app-tanstack/src/shared/quizz-2027.json`, `expo/src/shared/quizz-2027.json` (they must stay identical).
 5. For **every** candidate in **all 3** `candidates-answers.json` files, add `{ themeId, questionId, answerIndex }` — see step 4 below for how to choose each `answerIndex`.
 6. Regenerate the human-readable exports: `node api-express/scripts/extract-all-answers.js`.
-7. Add the question to `hotTopicSlugs` in `app-tanstack/src/utils/seo.ts` (`_id` → `{ slug, seoTitle }`) so it gets its own SEO page — it's a hot topic by definition.
+7. Add the question to `hotTopicSlugs` in `app-tanstack/src/utils/seo-light.ts` (`_id` → `{ slug, seoTitle }`) so it gets its own SEO page — it's a hot topic by definition.
 8. Do NOT regenerate the sitemap (built at deploy time). Do NOT touch the DB or Prisma.
 9. **Adding a question silently invalidates the `{candidat}-droite-ou-gauche` articles.** They quote proximity percentages and identical-answer counts as prose, computed over the whole question set, so one more question moves all of them. Nothing conflicts textually and git reports nothing. Step 6 has the repair procedure; it is not optional.
 

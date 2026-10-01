@@ -1,0 +1,272 @@
+[
+  {
+    "id": "candidate-nathalie-arthaud",
+    "pseudo": "Nathalie Arthaud",
+    "picture": "candidates/nathalie-arthaud.png",
+    "color": "#8B0000"
+  },
+  {
+    "id": "candidate-francois-asselineau",
+    "pseudo": "François Asselineau",
+    "picture": "candidates/francois-asselineau.png",
+    "color": "#003366"
+  },
+  {
+    "id": "candidate-delphine-batho",
+    "pseudo": "Delphine Batho",
+    "picture": "candidates/delphine-batho.png",
+    "color": "#2E8B57"
+  },
+  {
+    "id": "candidate-xavier-bertrand",
+    "pseudo": "Xavier Bertrand",
+    "picture": "candidates/xavier-bertrand.png",
+    "color": "#4169E1"
+  },
+  {
+    "id": "candidate-nicolas-dupont-aignan",
+    "pseudo": "Nicolas Dupont-Aignan",
+    "picture": "candidates/nicolas-dupont-aignan.png",
+    "color": "#1C3A5F"
+  },
+  {
+    "id": "candidate-jerome-guedj",
+    "pseudo": "Jérôme Guedj",
+    "picture": "candidates/jerome-guedj.png",
+    "color": "#E75480"
+  },
+  {
+    "id": "candidate-marine-le-pen",
+    "pseudo": "Marine Le Pen",
+    "picture": "candidates/marine-le-pen.png",
+    "color": "#0D1B2A"
+  },
+  {
+    "id": "candidate-jordan-bardella",
+    "pseudo": "Jordan Bardella",
+    "picture": "candidates/jordan-bardella.png",
+    "color": "#1D5D8C"
+  },
+  {
+    "id": "candidate-edouard-philippe",
+    "pseudo": "Édouard Philippe",
+    "picture": "candidates/edouard-philippe.png",
+    "color": "#4a90d9"
+  },
+  {
+    "id": "candidate-laurent-wauquiez",
+    "pseudo": "Laurent Wauquiez",
+    "picture": "candidates/laurent-wauquiez.png",
+    "color": "#0055A4"
+  },
+  {
+    "id": "candidate-clementine-autain",
+    "pseudo": "Clémentine Autain",
+    "picture": "candidates/clementine-autain.png",
+    "color": "#FF6B6B"
+  },
+  {
+    "id": "candidate-francois-ruffin",
+    "pseudo": "François Ruffin",
+    "picture": "candidates/francois-ruffin.png",
+    "color": "#c9462c"
+  },
+  {
+    "id": "candidate-marine-tondelier",
+    "pseudo": "Marine Tondelier",
+    "picture": "candidates/marine-tondelier.png",
+    "color": "#00A86B"
+  },
+  {
+    "id": "candidate-david-lisnard",
+    "pseudo": "David Lisnard",
+    "picture": "candidates/david-lisnard.png",
+    "color": "#87CEEB"
+  },
+  {
+    "id": "candidate-gabriel-attal",
+    "pseudo": "Gabriel Attal",
+    "picture": "candidates/gabriel-attal.png",
+    "color": "#FFD700"
+  },
+  {
+    "id": "candidate-francois-bayrou",
+    "pseudo": "François Bayrou",
+    "picture": "candidates/francois-bayrou.png",
+    "color": "#FF8C00"
+  },
+  {
+    "id": "candidate-bernard-cazeneuve",
+    "pseudo": "Bernard Cazeneuve",
+    "picture": "candidates/bernard-cazeneuve.png",
+    "color": "#B22222"
+  },
+  {
+    "id": "candidate-gerald-darmanin",
+    "pseudo": "Gérald Darmanin",
+    "picture": "candidates/gerald-darmanin.png",
+    "color": "#6A5ACD"
+  },
+  {
+    "id": "candidate-raphael-glucksmann",
+    "pseudo": "Raphaël Glucksmann",
+    "picture": "candidates/raphael-glucksmann.png",
+    "color": "#FF69B4"
+  },
+  {
+    "id": "candidate-francois-hollande",
+    "pseudo": "François Hollande",
+    "picture": "candidates/francois-hollande.png",
+    "color": "#DC143C"
+  },
+  {
+    "id": "candidate-jean-luc-melenchon",
+    "pseudo": "Jean-Luc Mélenchon",
+    "picture": "candidates/jean-luc-melenchon.png",
+    "color": "#CC0000"
+  },
+  {
+    "id": "candidate-bruno-retailleau",
+    "pseudo": "Bruno Retailleau",
+    "picture": "candidates/bruno-retailleau.png",
+    "color": "#2F4F4F"
+  },
+  {
+    "id": "candidate-fabien-roussel",
+    "pseudo": "Fabien Roussel",
+    "picture": "candidates/fabien-roussel.png",
+    "color": "#FF0000"
+  },
+  {
+    "id": "candidate-eric-zemmour",
+    "pseudo": "Éric Zemmour",
+    "picture": "candidates/eric-zemmour.png",
+    "color": "#0a1c3f"
+  },
+  {
+    "id": "candidate-dominique-de-villepin",
+    "pseudo": "Dominique de Villepin",
+    "picture": "candidates/dominique-de-villepin.png",
+    "color": "#708090"
+  },
+  {
+    "id": "candidate-juan-branco",
+    "pseudo": "Juan Branco",
+    "picture": "candidates/juan-branco.png",
+    "color": "#2C003E"
+  },
+  {
+    "id": "candidate-patrick-sebastien",
+    "pseudo": "Patrick Sébastien",
+    "picture": "candidates/patrick-sebastien.png",
+    "color": "#FF6B35"
+  },
+  {
+    "id": "candidate-francis-lalanne",
+    "pseudo": "Francis Lalanne",
+    "picture": "candidates/francis-lalanne.png",
+    "color": "#D4A017"
+  },
+  {
+    "id": "candidate-florian-philippot",
+    "pseudo": "Florian Philippot",
+    "picture": "candidates/florian-philippot.png",
+    "color": "#0F766E"
+  },
+  {
+    "id": "candidate-karim-bouamrane",
+    "pseudo": "Karim Bouamrane",
+    "picture": "",
+    "color": "#9D174D"
+  },
+  {
+    "id": "candidate-segolene-royal",
+    "pseudo": "Ségolène Royal",
+    "picture": "candidates/segolene-royal.png",
+    "color": "#DB2777"
+  },
+  {
+    "id": "candidate-philippe-brun",
+    "pseudo": "Philippe Brun",
+    "picture": "candidates/philippe-brun.png",
+    "color": "#7E22CE"
+  },
+  {
+    "id": "candidate-anasse-kazib",
+    "pseudo": "Anasse Kazib",
+    "picture": "candidates/anasse-kazib.png",
+    "color": "#B91C1C"
+  },
+  {
+    "id": "candidate-selma-labib",
+    "pseudo": "Selma Labib",
+    "picture": "",
+    "color": "#EA580C"
+  },
+  {
+    "id": "candidate-clara-egger",
+    "pseudo": "Clara Egger",
+    "picture": "candidates/clara-egger.png",
+    "color": "#6D4C41"
+  },
+  {
+    "id": "candidate-antoine-mikolajczak",
+    "pseudo": "Antoine Mikolajczak",
+    "picture": "",
+    "color": "#15803D"
+  },
+  {
+    "id": "candidate-lydie-massard",
+    "pseudo": "Lydie Massard",
+    "picture": "candidates/lydie-massard.png",
+    "color": "#4338CA"
+  },
+  {
+    "id": "candidate-olivier-faure",
+    "pseudo": "Olivier Faure",
+    "picture": "",
+    "color": "#E4003B"
+  },
+  {
+    "id": "candidate-emmanuel-maurel",
+    "pseudo": "Emmanuel Maurel",
+    "picture": "",
+    "color": "#C41E3A"
+  },
+  {
+    "id": "candidate-fabien-verdier",
+    "pseudo": "Fabien Verdier",
+    "picture": "",
+    "color": "#FF6B6B"
+  },
+  {
+    "id": "candidate-parti-animaliste",
+    "pseudo": "Parti animaliste",
+    "picture": "",
+    "color": "#283593"
+  },
+  {
+    "id": "candidate-parti-pirate",
+    "pseudo": "Parti pirate",
+    "picture": "",
+    "color": "#6A1B9A"
+  },
+  {
+    "id": "candidate-sylvain-durif",
+    "pseudo": "Sylvain Durif",
+    "picture": "",
+    "color": "#7B2CBF"
+  },
+  {
+    "id": "candidate-benoit-mathieu",
+    "pseudo": "Benoît Mathieu",
+    "picture": "",
+    "color": "#558B2F"
+  },
+  {
+    "id": "candidate-olivier-becht",
+    "pseudo": "Olivier Becht",
+    "picture": "",
+    "color": "#5B8C85"
+  }
+]

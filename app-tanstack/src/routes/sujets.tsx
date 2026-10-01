@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { themeSlugMap } from '@app/utils/seo';
+import { themeSlugMap } from '@app/utils/seo-light';
 import { seoHead } from '@app/utils/seo-head';
 import SujetsIndex from '@app/pages/SujetsIndex';
 

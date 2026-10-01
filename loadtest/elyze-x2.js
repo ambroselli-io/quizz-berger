@@ -55,6 +55,9 @@ const stages = PROFILES[__ENV.PROFILE || 'long'];
 if (!stages) throw new Error(`PROFILE must be one of: ${Object.keys(PROFILES).join(', ')}`);
 
 export const options = {
+  // k6 needs ≈ 650 kB per VU (OOM-killed at 4 600 VUs, 3 GB): keeping every JS bundle and JSON reply in memory
+  // only made it worse. The two requests whose body is read ask for it with responseType.
+  discardResponseBodies: true,
   scenarios: {
     visitors: {
       executor: 'ramping-arrival-rate',
@@ -77,7 +80,7 @@ export const options = {
 };
 
 export function setup() {
-  const home = http.get(`${APP}/`);
+  const home = http.get(`${APP}/`, { responseType: 'text' });
   const assets = [...new Set([...home.body.matchAll(/(?:src|href)="(\/assets\/[^"]+\.(?:js|css))"/g)].map((m) => m[1]))];
   if (!assets.length) console.warn('No /assets/*.js|css found in the home page: assets will not be loaded.');
   return { assets };
@@ -103,7 +106,7 @@ export default function ({ assets }) {
   if (Math.random() > QUIZ_START_RATE) return;
 
   // The API skips its rate limits for requests carrying LOAD_TEST_TOKEN.
-  const created = http.post(`${API}/user`, null, api(null, 'POST /user'));
+  const created = http.post(`${API}/user`, null, Object.assign(api(null, 'POST /user'), { responseType: 'text' }));
   if (!check(created, { 'anonymous user created': (r) => r.status === 200 })) return;
   const token = created.json('token');
 
