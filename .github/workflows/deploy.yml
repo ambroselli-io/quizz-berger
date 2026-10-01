@@ -74,6 +74,11 @@ jobs:
         working-directory: api-express
         run: npm run typecheck
 
+      - name: Bundle api
+        # Same command as the VPS deploy: catch a broken bundle before it reaches pm2.
+        working-directory: api-express
+        run: npm run build
+
       - name: Run api tests
         working-directory: api-express
         env:
@@ -124,6 +129,9 @@ jobs:
             # Install dependencies
             npm ci --include=dev
             npm run prisma-setup
+
+            # Bundle src/ into dist/index.js: pm2 cannot run the .ts sources in cluster mode
+            npm run build
 
             # Restart or start the application using PM2
             pm2 restart quizz-du-berger-api-express || pm2 start ecosystem.config.cjs
