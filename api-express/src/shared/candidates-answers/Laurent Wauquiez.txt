@@ -624,9 +624,6 @@ question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votr
 question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
 
-question-2027-gagnait-lydie-massard: Si Lydie Massard était élue, quel serait votre sentiment ?
-[4] Très mécontent(e)
-
 question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
 

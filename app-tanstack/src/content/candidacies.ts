@@ -489,33 +489,6 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
-    slug: 'lydie-massard',
-    feminine: true,
-    status: 'declared',
-    movement: 'Union démocratique bretonne',
-    summary:
-      "Lydie Massard, ancienne députée européenne, s'est déclarée le 2 avril 2026 pour la primaire de la gauche, sur une ligne de République fédérale. La primaire a été abandonnée en juillet 2026.",
-    events: [
-      {
-        date: '2026-04-02',
-        type: 'declaration',
-        label: "Elle annonce sa candidature à la primaire de la gauche pour l'UDB.",
-        sources: [
-          {
-            label: 'UDB',
-            url: 'https://www.udb.bzh/non-classifiee/lydie-massard-candidate-aux-primaires-de-la-gauche/',
-          },
-        ],
-      },
-      {
-        date: '2026-07-09',
-        type: 'step',
-        label: "La primaire de la gauche est abandonnée après le vote du Parti socialiste.",
-        sources: [WIKI],
-      },
-    ],
-  },
-  {
     slug: 'bruno-retailleau',
     status: 'declared',
     movement: 'Les Républicains',
@@ -1403,6 +1376,47 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Radio Intensité',
             url: 'https://www.intensite.net/primaire-ps-place-publique-l-ex-maire-de-chateaudun-fabien-verdier-encore-prive-de-scrutin',
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: 'lydie-massard',
+    feminine: true,
+    status: 'withdrawn',
+    movement: 'Union démocratique bretonne',
+    summary:
+      "Lydie Massard, ancienne députée européenne, s'était déclarée le 2 avril 2026 pour la primaire de la gauche, sur une ligne de République fédérale. Après l'abandon de cette primaire en juillet puis son recentrage par le Parti socialiste et Place publique sur leurs propres partis, elle a retiré sa candidature le 9 septembre 2026, dénonçant un manque de diversité sociale parmi les candidats.",
+    events: [
+      {
+        date: '2026-04-02',
+        type: 'declaration',
+        label: "Elle annonce sa candidature à la primaire de la gauche pour l'UDB.",
+        sources: [
+          {
+            label: 'UDB',
+            url: 'https://www.udb.bzh/non-classifiee/lydie-massard-candidate-aux-primaires-de-la-gauche/',
+          },
+        ],
+      },
+      {
+        date: '2026-07-09',
+        type: 'step',
+        label: "La primaire de la gauche est abandonnée après le vote du Parti socialiste.",
+        sources: [WIKI],
+      },
+      {
+        date: '2026-09-09',
+        type: 'withdrawal',
+        label:
+          "Elle retire sa candidature après le recentrage de la primaire de la gauche par le Parti socialiste et Place publique sur leurs propres partis, dénonçant un manque de diversité sociale parmi les candidats.",
+        sources: [
+          {
+            label: 'Le Télégramme',
+            url: 'https://www.titrespresse.com/20671392603/ps-place-lydie',
+            date: '2026-09-09',
           },
         ],
       },
