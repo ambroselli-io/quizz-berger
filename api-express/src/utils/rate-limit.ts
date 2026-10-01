@@ -1,4 +1,5 @@
 import rateLimit from "express-rate-limit";
+import { isLoadTest } from "./load-test";
 
 const limiter = (windowMinutes: number, limit: number) =>
   rateLimit({
@@ -6,6 +7,8 @@ const limiter = (windowMinutes: number, limit: number) =>
     limit,
     standardHeaders: "draft-7",
     legacyHeaders: false,
+    // loadtest/elyze-x2.js creates thousands of users from one IP.
+    skip: isLoadTest,
     message: { ok: false, code: "TOO_MANY_REQUESTS", error: "Trop de tentatives, veuillez réessayer dans quelques minutes." },
   });
 

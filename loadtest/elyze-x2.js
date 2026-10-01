@@ -14,7 +14,8 @@ import { Counter } from 'k6/metrics';
 const APP = __ENV.APP_URL || 'https://www.quizz-du-berger.com';
 const API = __ENV.API_URL || 'https://api.quizz-du-berger.com';
 const SCALE = Number(__ENV.SCALE || 1);
-// Same value as LOAD_TEST_TOKEN in the API .env: flags the users for deletion and keeps errors out of Sentry.
+// Same value as LOAD_TEST_TOKEN in the API .env: flags the users for deletion, keeps errors out of Sentry
+// and skips the per-IP rate limits.
 const LOAD_TEST_TOKEN = __ENV.LOAD_TEST_TOKEN;
 if (!LOAD_TEST_TOKEN) throw new Error('LOAD_TEST_TOKEN is required: without it the test users cannot be cleaned up.');
 
@@ -101,12 +102,8 @@ export default function ({ assets }) {
   sleep(2 + Math.random() * 6);
   if (Math.random() > QUIZ_START_RATE) return;
 
-  // The 300/h per-IP limit answers 429 once k6 has created 300 users: expected, so it does not trip the abort.
-  const created = http.post(
-    `${API}/user`,
-    null,
-    Object.assign(api(null, 'POST /user'), { responseCallback: http.expectedStatuses(200, 429) }),
-  );
+  // The API skips its rate limits for requests carrying LOAD_TEST_TOKEN.
+  const created = http.post(`${API}/user`, null, api(null, 'POST /user'));
   if (!check(created, { 'anonymous user created': (r) => r.status === 200 })) return;
   const token = created.json('token');
 

@@ -1,5 +1,7 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from "vitest";
+import request from "supertest";
 import { api } from "./helpers";
+import app from "~/app";
 import prisma from "~/prisma";
 
 const capture = vi.hoisted(() => vi.fn());
@@ -33,6 +35,20 @@ describe("load test requests", () => {
     expect((await prisma.user.findUniqueOrThrow({ where: { id: res.body.data._id } })).isLoadTest).toBe(false);
     process.env.LOAD_TEST_TOKEN = TOKEN;
   });
+
+  it("are not rate limited, unlike everyone else", async () => {
+    // One server for the 600 requests: api() opens a new one per request, which runs out of sockets here.
+    const server = app.listen(0);
+    const post = () => request(server).post("/user");
+    for (let i = 0; i < 301; i++) {
+      expect((await post().set("x-load-test", TOKEN)).status).toBe(200);
+    }
+    // The other tests already spent part of this IP's 300/h budget.
+    let status = 200;
+    for (let i = 0; i < 301 && status === 200; i++) status = (await post()).status;
+    expect(status).toBe(429);
+    server.close();
+  }, 60_000);
 
   it("keeps their errors out of Sentry", async () => {
     capture.mockClear();
