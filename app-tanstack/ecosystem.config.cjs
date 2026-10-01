@@ -5,8 +5,10 @@ module.exports = {
   apps: [
     {
       name: 'quizz-du-berger-app-tanstack',
-      script: 'npm',
-      args: 'run start-pm2',
+      // Cluster mode: one SSR process per core. pm2 can only cluster a Node file, not `npm run`.
+      script: './server.mjs',
+      exec_mode: 'cluster',
+      instances: 'max',
       time: true,
       env: {
         PORT: '5178',

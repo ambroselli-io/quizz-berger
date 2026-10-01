@@ -1,8 +1,8 @@
 // Load test sized on twice Elyze's 2022 launch (see loadtest/README.md for the maths).
 //
-//   k6 run -e APP_URL=https://staging.example -e API_URL=https://api.staging.example loadtest/elyze-x2.js
-//   k6 run -e SCALE=0.05 loadtest/elyze-x2.js      # 5 % smoke run against localhost
-//   k6 run -e PROFILE=short …                      # 12 min instead of 35, to climb the SCALE ladder
+//   k6 run -e LOAD_TEST_TOKEN=… -e PROFILE=short -e SCALE=0.1 loadtest/elyze-x2.js   # prod, 12 min, 10 %
+//   k6 run -e LOAD_TEST_TOKEN=… loadtest/elyze-x2.js                                  # prod, 35 min, full x2
+//   k6 run -e APP_URL=http://localhost:5178 -e API_URL=http://localhost:5179 …        # local stack
 //
 // SCALE=1 is the full x2 target. Every rate and VU budget is multiplied by it.
 import http from 'k6/http';
@@ -10,8 +10,9 @@ import { check, sleep } from 'k6';
 import { SharedArray } from 'k6/data';
 import { Counter } from 'k6/metrics';
 
-const APP = __ENV.APP_URL || 'http://localhost:5178';
-const API = __ENV.API_URL || 'http://localhost:5179';
+// www is the canonical host: the bare domain only redirects, which would double every page request.
+const APP = __ENV.APP_URL || 'https://www.quizz-du-berger.com';
+const API = __ENV.API_URL || 'https://api.quizz-du-berger.com';
 const SCALE = Number(__ENV.SCALE || 1);
 // Same value as LOAD_TEST_TOKEN in the API .env: flags the users for deletion and keeps errors out of Sentry.
 const LOAD_TEST_TOKEN = __ENV.LOAD_TEST_TOKEN;

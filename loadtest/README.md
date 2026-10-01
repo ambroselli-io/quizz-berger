@@ -41,10 +41,10 @@ Pass criteria: < 1 % errors, API p95 < 500 ms, SSR p95 < 1 s.
 
 ```sh
 brew upgrade k6
-# smoke, 5 %, against a local stack
-k6 run -e SCALE=0.05 loadtest/elyze-x2.js
-# full run
-k6 run -e APP_URL=… -e API_URL=… loadtest/elyze-x2.js
+# prod by default (www + api); APP_URL / API_URL override it, e.g. for a local stack
+k6 run -e LOAD_TEST_TOKEN=… -e PROFILE=short -e SCALE=0.1 loadtest/elyze-x2.js
+# full run, 35 min
+k6 run -e LOAD_TEST_TOKEN=… loadtest/elyze-x2.js
 ```
 
 Ladder, with `-e PROFILE=short` (12 min: 2 min ramp, 5 min plateau, 1 min jump, 3 min spike, 1 min down):
