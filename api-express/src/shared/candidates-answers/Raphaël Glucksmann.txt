@@ -79,7 +79,7 @@ question-2027-climat-04: Que pensez-vous de la voiture individuelle ?
 [1] Transition vers l'électrique, avec accompagnement social
 
 question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
-[0] Les grands groupes industriels et les milliardaires, pas les citoyens ordinaires
+[0] Pas les citoyens : c'est à l'État d'imposer des règles et aux grands pollueurs de payer
 
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [0] C'est indispensable : il faut consommer moins, point final, même si ça change nos habitudes
