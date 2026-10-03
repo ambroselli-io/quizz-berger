@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [0] Oui, une réduction drastique : diviser par deux le nombre d'élus, pour faire des économies et en finir avec la surreprésentation politique
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[0] Non : la volonté populaire est régulièrement contournée (référendum de 2005, promesses enterrées, 49.3), les citoyens n'ont plus de vrai moyen de se faire entendre
+
 
 Logement:
 
@@ -337,11 +340,14 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [3] Stabiliser les effectifs et les moyens actuels, en misant sur l'organisation plutôt que sur la dépense
 
-question-2027-pol-12: Que faire face aux violences et aux dégradations commises lors des manifestations ?
-[2] Durcir les peines contre les casseurs et interdire de manifestation les personnes déjà condamnées
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[3] Elle est injustifiable en toutes circonstances : aucun contexte ne l'excuse
 
-question-2027-pol-13: Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?
-[2] Garder les moyens actuels, mieux encadrés et mieux contrôlés
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[2] Durcir les peines encourues pour les violences et dégradations commises en manifestation
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[2] Garder l'arsenal et les règles d'usage actuels
 
 
 Politique fiscale:
@@ -631,7 +637,7 @@ question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, q
 [2] Neutre
 
 question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-emmanuel-maurel: Si Emmanuel Maurel était élu, quel serait votre sentiment ?
 [2] Neutre

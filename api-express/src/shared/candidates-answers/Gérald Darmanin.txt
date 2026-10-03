@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [1] Oui, une réduction significative, dans le cadre d'une réforme institutionnelle plus large pour un Parlement plus efficace
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[2] Globalement oui, avec des entorses ponctuelles
+
 
 Logement:
 
@@ -337,11 +340,14 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [2] Une hausse ciblée sur les besoins les plus urgents (casernes en tension, matériel vieillissant), sans grand plan national
 
-question-2027-pol-12: Que faire face aux violences et aux dégradations commises lors des manifestations ?
-[3] Tolérance zéro : comparution immédiate et peines planchers pour tout casseur, interdictions préventives de manifester
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[3] Elle est injustifiable en toutes circonstances : aucun contexte ne l'excuse
 
-question-2027-pol-13: Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?
-[3] Donner plus de moyens et plus de latitude aux forces de l'ordre pour disperser les manifestations violentes
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[3] Comparution immédiate systématique et peines planchers pour tout auteur de violences ou de dégradations
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[3] Élargir l'arsenal et la latitude des forces de l'ordre
 
 
 Politique fiscale:

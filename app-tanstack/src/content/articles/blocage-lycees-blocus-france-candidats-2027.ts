@@ -42,76 +42,83 @@ export const article: Article = {
 <h3>4. Le budget 2027 de l'Éducation nationale</h3>
 <p>Le budget de l'enseignement scolaire augmente de <a href="https://publicsenat.fr/actualites/economie/mobilisation-des-lyceens-et-des-etudiants-ce-que-prevoit-le-budget-2027-sur-leducation" target="_blank" rel="noopener noreferrer">1,1 milliard d'euros</a>, mais 1 588 postes d'enseignants disparaissent, dont 836 dans le second degré public. Le ministère avance que 180 000 élèves de moins sont attendus et qu'une stricte proportionnalité aurait supprimé 9 600 postes. « Le gouvernement ne fait pas d'économies sur la jeunesse », assure Édouard Geffray. Pour Clément Poullet, secrétaire général de FO enseignement, il faut au contraire <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/mobilisation-des-lyceens-que-le-gouvernement-renonce-a-ce-plan-d-economies-le-pire-de-l-histoire-de-la-ve-republique-dit-fo-enseignement_8220403.html" target="_blank" rel="noopener noreferrer">« que le gouvernement renonce à ce plan d'économies, le pire de l'histoire de la Ve République »</a>.</p>
 
-<h2>Les positions des ${candidatesCount} candidats sur le blocage des lycées</h2>
-<p>Le blocus des lycées pose deux questions qui dépassent l'école : que faire des violences commises en marge d'un mouvement social, et quels moyens laisser à la police pour maintenir l'ordre. Le quiz pose désormais <a href="/question-politique/violences-casseurs-manifestations-france">la première</a> et <a href="/question-politique/maintien-ordre-lbd-manifestations-france">la seconde</a> à part. Les familles ci-dessous suivent la réponse aux violences, de l'écoute de la colère à la tolérance zéro. Quand un candidat ne s'est pas exprimé, sa position est estimée à partir de ses réponses sur les <a href="/theme/police-justice-et-securite">questions de sécurité</a> du quiz, et l'article le signale au conditionnel.</p>
+<h3>5. La violence est-elle légitime quand les autres voies semblent fermées ?</h3>
+<p>Le 29 janvier 2019, en pleine crise des gilets jaunes, l'écrivain François Bégaudeau soutenait sur le plateau de <a href="https://www.youtube.com/watch?v=EduR-tk_5EM" target="_blank" rel="noopener noreferrer">C à vous</a> que <a href="https://www.lelivrescolaire.fr/page/7751562" target="_blank" rel="noopener noreferrer">« la violence en politique… sa légitimité et sa justesse s'évaluent à sa cause »</a>. Il prenait l'exemple de violences contre le régime de Bachar el-Assad : « je suis sûr que tous ici on dirait : "c'est normal, leur cause est juste" ». Pour lui, l'évaluation de la violence « doit être toujours articulée à la cause pour laquelle on se met à perpétrer ce genre de violences ». On objecte d'ordinaire qu'en France, le vote, la grève et la manifestation pacifique offrent d'autres moyens de se faire entendre. Ceux qui comprennent la violence estiment que ces moyens ont perdu leur crédit, et citent le <a href="https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rendum_fran%C3%A7ais_sur_le_trait%C3%A9_%C3%A9tablissant_une_Constitution_pour_l%27Europe" target="_blank" rel="noopener noreferrer">référendum de 2005 sur la Constitution européenne</a>, dont le traité de Lisbonne a repris l'essentiel, ou l'usage répété du 49.3. Le quiz pose désormais la question à part : <a href="/question-politique/respect-volonte-electeurs-democratie-france">la démocratie française respecte-t-elle la volonté des électeurs ?</a></p>
 
-<h3>Famille 1 : entendre la colère avant de punir</h3>
-<p>Ces candidats voient dans les violences une réponse à la violence sociale et policière, et mettent d'abord en cause l'État.</p>
+<h2>Les positions des ${candidatesCount} candidats sur les violences en manifestation</h2>
+<p>Le blocus des lycées mêle trois débats que les candidats ne tranchent pas toujours de la même façon. Le premier porte sur la violence elle-même : peut-elle être légitime, se comprendre, ou rien ne l'excuse-t-il ? Le deuxième porte sur la justice, une fois les actes commis. Le troisième porte sur la manière dont la police encadre une manifestation. On peut comprendre la colère, refuser la violence et demander que ses auteurs soient jugés. Le quiz pose donc trois questions séparées : <a href="/question-politique/violences-en-manifestation-france">le jugement sur la violence</a>, <a href="/question-politique/violences-casseurs-manifestations-france">la réponse de la justice</a> et <a href="/question-politique/maintien-ordre-lbd-manifestations-france">le maintien de l'ordre</a>.</p>
+<p>Les familles ci-dessous suivent le premier débat. Quand un candidat ne s'est pas exprimé, sa position est estimée à partir de ses réponses sur les <a href="/theme/police-justice-et-securite">questions de sécurité</a> du quiz, et l'article le signale au conditionnel.</p>
+
+<h3>Famille 1 : une violence parfois légitime</h3>
+<p>Pour ces candidats, quand le pouvoir n'écoute pas et que la police frappe, la violence peut devenir un moyen de se faire entendre.</p>
 <ul>
-<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — <a href="https://www.franceinfo.fr/societe/education/scolarite/guide-parents/lycee/blocus-des-lycees-jean-luc-melenchon-denonce-la-repression-du-gouvernement-sebastien-lecornu-regrette-une-surenchere-irresponsable-de-lfi_8213258.html" target="_blank" rel="noopener noreferrer">Dénonce la « répression » du gouvernement</a> et a appelé les élus insoumis à s'interposer devant les lycées.</li>
-<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Fidèle à son soutien aux luttes sociales, elle devrait défendre le mouvement sans réserve.</li>
-<li><a href="/candidat/anasse-kazib">Anasse Kazib</a> (Révolution permanente) — Sa ligne laisse penser qu'il soutient les blocages et rejette toute intervention policière.</li>
-<li><a href="/candidat/selma-labib">Selma Labib</a> (NPA-R) — Le NPA figure parmi les <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">organisations qui soutiennent le mouvement</a>.</li>
-<li><a href="/candidat/juan-branco">Juan Branco</a> — Très critique des forces de l'ordre, il devrait défendre les bloqueurs.</li>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Fidèle à la tradition révolutionnaire de son parti, elle ne devrait pas condamner par principe la violence des manifestants.</li>
+<li><a href="/candidat/anasse-kazib">Anasse Kazib</a> (Révolution permanente) — Sa ligne laisse penser qu'il voit dans cette violence une riposte légitime à celle de l'État.</li>
+<li><a href="/candidat/selma-labib">Selma Labib</a> (NPA-R) — Le NPA figure parmi les <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">organisations qui soutiennent le mouvement</a>. Sa ligne laisse penser qu'elle juge cette violence légitime face à la répression.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Très critique des forces de l'ordre, il devrait refuser de renvoyer dos à dos manifestants et policiers.</li>
 </ul>
 
-<h3>Famille 2 : poursuivre les violents au cas par cas, sans loi nouvelle</h3>
-<p>Ces candidats jugent les demandes des lycéens légitimes. Ils veulent que les auteurs de violences soient poursuivis avec les lois actuelles, et condamnent aussi les violences policières.</p>
+<h3>Famille 2 : pas souhaitable, mais compréhensible</h3>
+<p>Ces candidats défendent la non-violence. Ils expliquent pourtant la violence par des revendications ignorées et par un maintien de l'ordre qui fait monter la tension, et ils mettent d'abord en cause le gouvernement.</p>
 <ul>
-<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Proche de la gauche radicale sur les questions de police, elle devrait se ranger du côté des lycéens.</li>
-<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Son discours sur l'école et les services publics laisse penser qu'il soutient les revendications et le mode d'action.</li>
-<li><a href="/candidat/francis-lalanne">Francis Lalanne</a> (France Libre) — Sa ligne contestataire laisse penser qu'il soutient le mouvement.</li>
-<li><a href="/candidat/sylvain-durif">Sylvain Durif</a> — Proche des positions de la gauche radicale sur la police dans le quiz, il devrait soutenir les lycéens.</li>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Répète que <a href="https://x.com/JLMelenchon/status/2105649544180416884" target="_blank" rel="noopener noreferrer">« nous sommes pour les méthodes de lutte non-violentes »</a>, tout en se disant « très inquiet des violences policières contre les jeunes gens ». Il <a href="https://www.franceinfo.fr/societe/education/scolarite/guide-parents/lycee/blocus-des-lycees-jean-luc-melenchon-denonce-la-repression-du-gouvernement-sebastien-lecornu-regrette-une-surenchere-irresponsable-de-lfi_8213258.html" target="_blank" rel="noopener noreferrer">dénonce la « répression » du gouvernement</a> et a appelé les élus insoumis à s'interposer entre lycéens et policiers.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Proche de la gauche radicale sur les questions de police, elle devrait tenir la même ligne.</li>
+<li><a href="/candidat/francis-lalanne">Francis Lalanne</a> (France Libre) — Sa ligne contestataire laisse penser qu'il impute d'abord la violence au pouvoir.</li>
+<li><a href="/candidat/sylvain-durif">Sylvain Durif</a> — Proche de la gauche radicale sur la police dans le quiz, il devrait partager cette lecture.</li>
+</ul>
+
+<h3>Famille 3 : condamnable, même si le contexte l'explique en partie</h3>
+<p>Ces candidats condamnent la violence d'où qu'elle vienne, celle des casseurs comme celle des policiers, sans nier la colère qui la nourrit.</p>
+<ul>
 <li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place publique) — <a href="https://www.titrespresse.com/23300692603/glucksmann-attal-lfi" target="_blank" rel="noopener noreferrer">« Comprend la colère »</a> des lycéens mais « condamne toute forme de violence », et ajoute qu'« il faut aussi condamner la violence des forces de l'ordre ».</li>
-<li><a href="/candidat/olivier-faure">Olivier Faure</a> (PS) — Sur la ligne du PS, il devrait soutenir les revendications tout en condamnant les violences.</li>
-<li><a href="/candidat/segolene-royal">Ségolène Royal</a> (PS) — Sa position publique laisse penser qu'elle défend le dialogue avec les lycéens.</li>
-<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Attaché aux moyens de l'école, il devrait soutenir les demandes et rejeter la seule réponse policière.</li>
-<li><a href="/candidat/karim-bouamrane">Karim Bouamrane</a> (PS) — Maire de Saint-Ouen, sa ligne laisse penser qu'il privilégie le dialogue.</li>
-<li><a href="/candidat/francois-hollande">François Hollande</a> (PS) — Sa ligne social-démocrate laisse penser qu'il défend le droit de manifester dans le calme.</li>
-<li><a href="/candidat/philippe-brun">Philippe Brun</a> (PS) — Sur la ligne socialiste, il devrait soutenir les revendications.</li>
-<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Critique des pratiques policières dans le quiz, elle devrait défendre les lycéens mobilisés.</li>
-<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Sa ligne laisse penser qu'elle soutient les demandes de moyens.</li>
-<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — La Jeunesse communiste <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">soutient le mouvement</a>. Il devrait défendre les revendications, en restant attentif à l'ordre public.</li>
-<li><a href="/candidat/emmanuel-maurel">Emmanuel Maurel</a> (GRS) — Sa ligne républicaine de gauche laisse penser qu'il soutient les demandes de moyens.</li>
-<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Il devrait plaider pour l'apaisement et le dialogue plutôt que pour la fermeté.</li>
-<li><a href="/candidat/lydie-massard">Lydie Massard</a> (UDB) — Sa ligne régionaliste de gauche laisse penser qu'elle soutient les revendications.</li>
-<li><a href="/candidat/fabien-verdier">Fabien Verdier</a> — Ancien socialiste, il devrait défendre le dialogue.</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Attaché aux revendications sociales mais éloigné de LFI, il devrait condamner la violence tout en défendant les lycéens.</li>
+<li><a href="/candidat/olivier-faure">Olivier Faure</a> (PS) — Sur la ligne du PS, il devrait condamner les violences des deux côtés.</li>
+<li><a href="/candidat/segolene-royal">Ségolène Royal</a> (PS) — Sa position publique laisse penser qu'elle condamne les violences en défendant le dialogue.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Attaché aux moyens de l'école, il devrait soutenir les demandes et condamner les violences.</li>
+<li><a href="/candidat/karim-bouamrane">Karim Bouamrane</a> (PS) — Maire de Saint-Ouen, sa ligne laisse penser qu'il condamne les violences sans oublier les causes sociales.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> (PS) — Sa ligne social-démocrate laisse penser qu'il condamne les violences et défend le droit de manifester.</li>
+<li><a href="/candidat/philippe-brun">Philippe Brun</a> (PS) — Sur la ligne socialiste, il devrait condamner les violences et soutenir les revendications.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Critique des pratiques policières dans le quiz, elle devrait condamner les violences des deux côtés.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Sa ligne laisse penser qu'elle condamne les violences tout en soutenant les demandes de moyens.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — La Jeunesse communiste <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">soutient le mouvement</a>. Attentif à l'ordre public, il devrait condamner les violences.</li>
+<li><a href="/candidat/emmanuel-maurel">Emmanuel Maurel</a> (GRS) — Sa ligne républicaine de gauche laisse penser qu'il condamne les violences sans nier la colère.</li>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Il devrait condamner les violences et plaider pour l'apaisement.</li>
+<li><a href="/candidat/lydie-massard">Lydie Massard</a> (UDB) — Sa ligne régionaliste de gauche laisse penser qu'elle tient la même position que la gauche modérée.</li>
+<li><a href="/candidat/fabien-verdier">Fabien Verdier</a> — Ancien socialiste, il devrait condamner les violences et défendre le dialogue.</li>
 <li><a href="/candidat/parti-animaliste">Parti animaliste</a> (PA) — Sa position estimée suit celle de la gauche modérée sur la police.</li>
-<li><a href="/candidat/parti-pirate">Parti pirate</a> (PP) — Attaché aux libertés publiques, il devrait défendre le droit de manifester.</li>
+<li><a href="/candidat/parti-pirate">Parti pirate</a> (PP) — Attaché aux libertés publiques, il devrait condamner les violences des deux côtés.</li>
 <li><a href="/candidat/benoit-mathieu">Benoît Mathieu</a> — Sa position estimée suit ses réponses modérées sur la police.</li>
 </ul>
 
-<h3>Famille 3 : durcir les peines contre les casseurs</h3>
-<p>Ces candidats veulent rétablir les cours rapidement et punir plus sévèrement les casseurs, sans aller jusqu'aux interdictions préventives. Plusieurs accusent LFI d'avoir manipulé les jeunes.</p>
+<h3>Famille 4 : injustifiable en toutes circonstances</h3>
+<p>Pour ces candidats, aucun contexte n'excuse la violence. Beaucoup accusent LFI d'avoir encouragé ou manipulé les lycéens.</p>
 <ul>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Appelle à <a href="https://www.cnews.fr/france/2026-10-01/blocus-des-lycees-il-faut-eviter-un-drame-et-revenir-au-calme-appelle-edouard" target="_blank" rel="noopener noreferrer">« éviter un drame et revenir au calme »</a>, et estime qu'<a href="https://www.titrespresse.com/23525952603/blocages-edouard-philippe" target="_blank" rel="noopener noreferrer">« une partie de la jeunesse a été manipulée par LFI et sa stratégie de tout conflictualiser »</a>.</li>
 <li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Estime que <a href="https://www.cnews.fr/france/2026-09-30/blocus-des-lycees-lfi-met-les-jeunes-en-danger-en-les-encourageant-participer-ces" target="_blank" rel="noopener noreferrer">« LFI met les jeunes en danger en les encourageant à participer à ces violences »</a> et l'accuse de les utiliser comme <a href="https://www.titrespresse.com/23300692603/glucksmann-attal-lfi" target="_blank" rel="noopener noreferrer">« chair à canon »</a>.</li>
-<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Sa ligne centriste laisse penser qu'il veut rétablir les cours en ménageant le dialogue.</li>
-<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> (La Convention) — Ancien ministre de l'Intérieur, il devrait défendre le maintien de l'ordre et le dialogue avec les lycéens.</li>
-<li><a href="/candidat/olivier-becht">Olivier Becht</a> — Ancien ministre, proche de la majorité sortante, il devrait suivre la ligne du gouvernement.</li>
-<li><a href="/candidat/antoine-mikolajczak">Antoine Mikolajczak</a> (Équinoxe) — Sa position estimée suit ses réponses modérées sur la sécurité.</li>
-<li><a href="/candidat/clara-egger">Clara Egger</a> (Solution démocratique) — Sa ligne laisse penser qu'elle privilégie le retour en cours sans sanctions collectives.</li>
-<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> (Les Oubliés) — Sa position estimée suit ses réponses sur la police dans le quiz.</li>
-<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Sa ligne laisse penser qu'il veut la levée des blocages, sans réclamer de tolérance zéro.</li>
-</ul>
-
-<h3>Famille 4 : tolérance zéro</h3>
-<p>Ces candidats veulent la comparution immédiate des casseurs, des peines planchers et des interdictions préventives de manifester. Plusieurs mettent en cause LFI, jusqu'à évoquer son interdiction.</p>
-<ul>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Accuse LFI d'être <a href="https://www.publicsenat.fr/actualites/politique/colere-lyceenne-bruno-retailleau-suggere-de-dissoudre-lfi-est-ce-possible" target="_blank" rel="noopener noreferrer">« un parti qui est fasciné par la violence, qui appelle à la sédition et même qui essaie d'organiser l'insurrection »</a>, et lance le débat sur son interdiction tout en reconnaissant que c'est « difficile en droit ».</li>
-<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Écrit que <a href="https://x.com/ZemmourEric/status/2105710698273636611" target="_blank" rel="noopener noreferrer">« l'impunité est le carburant de l'émeute »</a> et demande à la justice de frapper les auteurs de violences « au portefeuille » et par la prison.</li>
-<li><a href="/candidat/jordan-bardella">Jordan Bardella</a> (RN) — <a href="https://x.com/J_Bardella/status/2105258350095089723" target="_blank" rel="noopener noreferrer">Accuse Jean-Luc Mélenchon d'instrumentaliser les lycéens</a>, lui qui « se rêve en révolutionnaire montant sur la barricade ». Sa ligne sur l'autorité à l'école laisse penser qu'il défend une levée immédiate des blocages.</li>
-<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Sur la ligne de Jordan Bardella, elle devrait défendre la fermeté.</li>
-<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Sa ligne sur la sécurité laisse penser qu'il soutient une réponse très ferme.</li>
-<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> (Renaissance) — Ancien ministre de l'Intérieur, il devrait défendre l'intervention systématique des forces de l'ordre.</li>
-<li><a href="/candidat/david-lisnard">David Lisnard</a> (Nouvelle Énergie) — Sa ligne d'autorité laisse penser qu'il réclame des sanctions contre les bloqueurs.</li>
-<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> (LR) — Président de la région Hauts-de-France, qui gère les lycées, il devrait défendre la fermeté face aux dégradations.</li>
-<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Sa ligne sécuritaire laisse penser qu'il soutient la tolérance zéro.</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Voit dans <a href="https://x.com/ZemmourEric/status/2105710698273636611" target="_blank" rel="noopener noreferrer">« les violences autour des lycées »</a> un « avant-goût du chaos que l'alliance entre l'extrême gauche et la racaille prépare en France ».</li>
+<li><a href="/candidat/jordan-bardella">Jordan Bardella</a> (RN) — <a href="https://x.com/J_Bardella/status/2105258350095089723" target="_blank" rel="noopener noreferrer">Accuse Jean-Luc Mélenchon d'instrumentaliser les lycéens</a>, lui qui « se rêve en révolutionnaire montant sur la barricade ».</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Sur la ligne de Jordan Bardella, elle devrait refuser toute excuse aux violences.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Sa ligne sur la sécurité laisse penser qu'il ne voit aucune circonstance atténuante.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> (Renaissance) — Ancien ministre de l'Intérieur, il devrait condamner les violences sans réserve.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> (Nouvelle Énergie) — Sa ligne d'autorité laisse penser qu'il rejette toute justification.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> (LR) — Président de la région Hauts-de-France, qui gère les lycées, il devrait condamner sans réserve les dégradations.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Sa ligne sécuritaire laisse penser qu'il rejette toute justification.</li>
 <li><a href="/candidat/florian-philippot">Florian Philippot</a> (Les Patriotes) — Sa position estimée suit ses réponses fermes sur la doctrine pénale.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Sa ligne centriste laisse penser qu'il condamne les violences sans circonstance atténuante.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> (La Convention) — Ancien ministre de l'Intérieur, il devrait condamner les violences sans réserve.</li>
+<li><a href="/candidat/olivier-becht">Olivier Becht</a> — Proche de la majorité sortante, il devrait suivre la ligne du gouvernement.</li>
+<li><a href="/candidat/antoine-mikolajczak">Antoine Mikolajczak</a> (Équinoxe) — Sa position estimée suit ses réponses sur la sécurité.</li>
+<li><a href="/candidat/clara-egger">Clara Egger</a> (Solution démocratique) — Sa position estimée suit ses réponses sur la sécurité.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> (Les Oubliés) — Sa position estimée suit ses réponses sur la police dans le quiz.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Sa ligne d'ordre républicain laisse penser qu'il rejette toute justification.</li>
 </ul>
 
-<h3>LBD, grenades, nasses : les moyens de la police</h3>
-<p>Sur le maintien de l'ordre, les lignes se déplacent un peu. Jean-Luc Mélenchon, Nathalie Arthaud, Anasse Kazib, Selma Labib, Juan Branco et Clémentine Autain veulent retirer à la police LBD, grenades et nasses. Raphaël Glucksmann, Olivier Faure, Marine Tondelier, Fabien Roussel et Bernard Cazeneuve devraient plutôt demander l'interdiction du LBD et des grenades les plus dangereuses, comme le réclame <a href="https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/" target="_blank" rel="noopener noreferrer">Amnesty International</a>. Une partie du PS (François Hollande, Ségolène Royal, Karim Bouamrane, Philippe Brun) rejoint le centre et Dominique de Villepin sur le maintien des moyens actuels, mieux encadrés. La droite et le RN veulent au contraire donner plus de latitude aux forces de l'ordre.</p>
+<h3>Après les actes : quelle réponse de la justice ?</h3>
+<p>Le jugement sur la violence ne dit pas ce qu'il faut faire de ses auteurs. Seules les candidatures d'extrême gauche (Nathalie Arthaud, Anasse Kazib, Selma Labib) et Juan Branco devraient défendre une amnistie des faits commis lors des mouvements sociaux, hors violences contre les personnes. Jean-Luc Mélenchon et toute la gauche, de LFI au PS, veulent que les auteurs soient poursuivis au cas par cas, avec les lois actuelles. Pour eux, comprendre la violence ne revient pas à la laisser impunie. Le centre, d'Édouard Philippe à François Bayrou, devrait vouloir durcir les peines. La droite et le RN réclament la comparution immédiate et des peines planchers. Éric Zemmour demande que la justice frappe <a href="https://x.com/ZemmourEric/status/2105710698273636611" target="_blank" rel="noopener noreferrer">« au portefeuille et en mettant ceux qui détruisent et tabassent en prison »</a>.</p>
+
+<h3>LBD, grenades, gaz lacrymogène : comment encadrer une manifestation ?</h3>
+<p>Sur le maintien de l'ordre, les lignes se déplacent encore. Jean-Luc Mélenchon, Nathalie Arthaud, Anasse Kazib, Selma Labib, Juan Branco et Clémentine Autain veulent retirer ses armes au maintien de l'ordre, gaz lacrymogène compris. Raphaël Glucksmann, Olivier Faure, Marine Tondelier, Fabien Roussel et Bernard Cazeneuve devraient plutôt défendre l'interdiction du LBD et des grenades, en gardant le gaz lacrymogène et les canons à eau en dernier recours, comme le réclame <a href="https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/" target="_blank" rel="noopener noreferrer">Amnesty International</a>. Une partie du PS (François Hollande, Ségolène Royal, Karim Bouamrane, Philippe Brun) rejoint le centre et Dominique de Villepin pour garder l'arsenal et les règles d'usage actuels. La droite et le RN veulent élargir l'arsenal et la latitude des forces de l'ordre.</p>
 
 <h2>Blocage des lycées : les arguments pour et contre la fermeté</h2>
 <table>
@@ -124,8 +131,10 @@ export const article: Article = {
 
 <h2>Pour aller plus loin</h2>
 <ul>
-<li><a href="/question-politique/violences-casseurs-manifestations-france">Que faire face aux violences commises lors des manifestations ?</a> La question ajoutée au quiz à l'occasion de ce mouvement.</li>
-<li><a href="/question-politique/maintien-ordre-lbd-manifestations-france">Quels moyens pour la police en manifestation ?</a> LBD, grenades et nasses, l'autre question ajoutée.</li>
+<li><a href="/question-politique/violences-en-manifestation-france">Que pensez-vous de la violence de certains manifestants ?</a> Légitime, compréhensible, condamnable ou injustifiable.</li>
+<li><a href="/question-politique/violences-casseurs-manifestations-france">Quelle réponse de la justice après des violences en manifestation ?</a> De l'amnistie aux peines planchers.</li>
+<li><a href="/question-politique/maintien-ordre-lbd-manifestations-france">Comment la police doit-elle encadrer les manifestations ?</a> LBD, grenades, gaz lacrymogène.</li>
+<li><a href="/question-politique/respect-volonte-electeurs-democratie-france">La démocratie française respecte-t-elle la volonté des électeurs ?</a> Le contexte de la colère.</li>
 <li><a href="/question-politique/ecole-education-reforme">Budget de l'Éducation nationale</a> : faut-il plus de moyens, ou mieux dépenser ceux qui existent ?</li>
 <li><a href="/question-politique/que-pensez-vous-de-parcoursup-et-de-l-acces-a-l-enseignement-superieur">Parcoursup et l'accès à l'enseignement supérieur</a>, l'une des revendications des lycéens.</li>
 <li><a href="/question-politique/que-pensez-vous-des-violences-policieres">Violences policières</a> : problème systémique ou cas isolés ?</li>

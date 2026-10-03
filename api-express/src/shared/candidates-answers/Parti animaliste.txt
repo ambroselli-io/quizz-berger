@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [3] Le nombre actuel se justifie pour représenter correctement tous les territoires, ruraux et ultramarins compris
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[1] Pas assez : trop de décisions se prennent contre l'avis des électeurs
+
 
 Logement:
 
@@ -337,11 +340,14 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [1] Une hausse significative et pérenne des effectifs et des moyens
 
-question-2027-pol-12: Que faire face aux violences et aux dégradations commises lors des manifestations ?
-[1] Poursuivre les auteurs de violences au cas par cas, avec les lois actuelles
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[2] Elle est condamnable, même si la colère sociale et les tensions avec la police peuvent l'expliquer en partie
 
-question-2027-pol-13: Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?
-[1] Interdire le LBD et les grenades les plus dangereuses, et privilégier la désescalade
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[1] Poursuivre les auteurs au cas par cas, avec les lois actuelles
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[1] Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours
 
 
 Politique fiscale:
@@ -568,7 +574,7 @@ question-2027-gagnait-francois-ruffin: Si François Ruffin était élu, quel ser
 [2] Neutre
 
 question-2027-gagnait-marine-tondelier: Si Marine Tondelier était élue, quel serait votre sentiment ?
-[2] Neutre
+[1] Plutôt content(e)
 
 question-2027-gagnait-david-lisnard: Si David Lisnard était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
@@ -616,7 +622,7 @@ question-2027-gagnait-karim-bouamrane: Si Karim Bouamrane était élu, quel sera
 [2] Neutre
 
 question-2027-gagnait-segolene-royal: Si Ségolène Royal était élue, quel serait votre sentiment ?
-[2] Neutre
+[1] Plutôt content(e)
 
 question-2027-gagnait-anasse-kazib: Si Anasse Kazib était élu, quel serait votre sentiment ?
 [2] Neutre

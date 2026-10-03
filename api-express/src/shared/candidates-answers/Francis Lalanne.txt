@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [0] Oui, une réduction drastique : diviser par deux le nombre d'élus, pour faire des économies et en finir avec la surreprésentation politique
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[0] Non : la volonté populaire est régulièrement contournée (référendum de 2005, promesses enterrées, 49.3), les citoyens n'ont plus de vrai moyen de se faire entendre
+
 
 Logement:
 
@@ -337,11 +340,14 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [0] Un plan de grande ampleur : recrutement massif de pompiers professionnels et volontaires, forte hausse des moyens matériels
 
-question-2027-pol-12: Que faire face aux violences et aux dégradations commises lors des manifestations ?
-[1] Poursuivre les auteurs de violences au cas par cas, avec les lois actuelles
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[1] Elle n'est pas souhaitable, mais elle se comprend : elle naît de revendications ignorées et d'un maintien de l'ordre qui fait monter la tension
 
-question-2027-pol-13: Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?
-[1] Interdire le LBD et les grenades les plus dangereuses, et privilégier la désescalade
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[1] Poursuivre les auteurs au cas par cas, avec les lois actuelles
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[1] Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours
 
 
 Politique fiscale:
@@ -577,7 +583,7 @@ question-2027-gagnait-gabriel-attal: Si Gabriel Attal était élu, quel serait v
 [4] Très mécontent(e)
 
 question-2027-gagnait-bernard-cazeneuve: Si Bernard Cazeneuve était élu, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-raphael-glucksmann: Si Raphaël Glucksmann était élu, quel serait votre sentiment ?
 [2] Neutre
@@ -649,4 +655,4 @@ question-2027-gagnait-benoit-mathieu: Si Benoît Mathieu était élu, quel serai
 [2] Neutre
 
 question-2027-gagnait-olivier-becht: Si Olivier Becht était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[4] Très mécontent(e)
