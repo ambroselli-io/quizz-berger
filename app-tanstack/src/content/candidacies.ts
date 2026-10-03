@@ -667,9 +667,9 @@ export const candidacies: Candidacy[] = [
   {
     slug: 'karim-bouamrane',
     status: 'declared',
-    movement: 'Parti socialiste',
+    movement: 'La France humaine et forte',
     summary:
-      "Karim Bouamrane, maire de Saint-Ouen-sur-Seine, a annoncé sa candidature le 9 juin 2026 sur France Inter. Il a confirmé le 26 août qu'il ne participera pas à la primaire socialiste, qu'il juge trop fermée.",
+      "Karim Bouamrane, maire de Saint-Ouen-sur-Seine, a annoncé sa candidature le 9 juin 2026 sur France Inter, portée par son mouvement La France humaine et forte. Il a confirmé le 26 août qu'il ne participera pas à la primaire socialiste, qu'il juge trop fermée.",
     quote: {
       text: "Je suis candidat parce que depuis que je suis en responsabilité, j'ai pris conscience de notre force.",
       source: {
