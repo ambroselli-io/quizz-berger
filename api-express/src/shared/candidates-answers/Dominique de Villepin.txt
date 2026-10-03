@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [3] Le nombre actuel se justifie pour représenter correctement tous les territoires, ruraux et ultramarins compris
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[1] Pas assez : trop de décisions se prennent contre l'avis des électeurs
+
 
 Logement:
 
@@ -336,6 +339,15 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [1] Une hausse significative et pérenne des effectifs et des moyens
+
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[2] Elle est condamnable, même si la colère sociale et les tensions avec la police peuvent l'expliquer en partie
+
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[1] Poursuivre les auteurs au cas par cas, avec les lois actuelles
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[2] Garder l'arsenal et les règles d'usage actuels
 
 
 Politique fiscale:
@@ -571,7 +583,7 @@ question-2027-gagnait-gabriel-attal: Si Gabriel Attal était élu, quel serait v
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-bernard-cazeneuve: Si Bernard Cazeneuve était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-raphael-glucksmann: Si Raphaël Glucksmann était élu, quel serait votre sentiment ?
 [2] Neutre

@@ -1,0 +1,160 @@
+import type { Article } from '~/types/article';
+import { candidatesCount } from '~/utils/seo';
+
+export const article: Article = {
+  slug: 'blocage-lycees-blocus-france-candidats-2027',
+  title: `Blocage des lycées : pourquoi les lycéens bloquent, et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+  excerpt:
+    "1 949 interpellations en une seule journée, le 1er octobre. Parti d'un lycée de Créteil, le blocus s'est étendu à tout le pays. Faut-il dialoguer, tolérer ou lever les blocages ? Ce que disent les candidats.",
+  date: '2026-10-03',
+  tag: 'Analyse',
+  content: `
+<p>Le jeudi 1er octobre, la police a procédé à <a href="https://www.france24.com/fr/france/20261001-blocus-des-lyc%C3%A9es-en-france-des-campus-universitaires-rejoignent-la-contestation-sociale" target="_blank" rel="noopener noreferrer">1 949 interpellations</a> autour des lycées bloqués en France. Deux semaines plus tôt, le mouvement tenait dans une poignée d'établissements. Le même jour, le gouvernement présentait un budget de l'Éducation nationale qui supprime <a href="https://publicsenat.fr/actualites/economie/mobilisation-des-lyceens-et-des-etudiants-ce-que-prevoit-le-budget-2027-sur-leducation" target="_blank" rel="noopener noreferrer">1 588 postes d'enseignants</a>. Les syndicats enseignants appellent à la grève le 6 octobre.</p>
+
+<h2>Blocage des lycées : que réclament les lycéens ?</h2>
+<p>Les revendications partent de problèmes concrets, souvent locaux. Les élèves dénoncent <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-mobilisation-a-pris-une-ampleur-inattendue-comment-le-mouvement-de-blocage-des-lycees-s-est-propage-en-france_8216054.html" target="_blank" rel="noopener noreferrer">le manque de professeurs, les classes surchargées, les bâtiments délabrés et les emplois du temps trop lourds</a>. Un lycéen cité par <a href="https://www.cafepedagogique.net/2026/10/01/lyceens-mobilises-ce-quils-disent-ce-quon-leur-repond/" target="_blank" rel="noopener noreferrer">Le Café pédagogique</a> résume la situation : pendant plusieurs mois, sa classe de terminale n'a pas eu de professeur de français. S'y ajoutent la pression de Parcoursup et le manque d'infirmières et d'assistantes sociales.</p>
+<p>Ces plaintes s'appuient sur des chiffres connus. En 2024-2025, <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">10 % des heures de cours n'ont pas été assurées dans les lycées</a>, et en juillet 2026, 163 372 candidats n'avaient reçu aucune proposition sur Parcoursup.</p>
+
+<h2>Chronologie du blocus des lycées 2026</h2>
+<ul>
+<li><strong>Mi-septembre</strong> : premiers blocages dans quelques lycées, au Rheu près de Rennes, puis le <strong>15 septembre</strong> à Villeneuve-d'Ascq et à Caen, selon <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-mobilisation-a-pris-une-ampleur-inattendue-comment-le-mouvement-de-blocage-des-lycees-s-est-propage-en-france_8216054.html" target="_blank" rel="noopener noreferrer">franceinfo</a>.</li>
+<li><strong>17 septembre</strong> : après une grève de leurs professeurs, les élèves du lycée Saint-Exupéry de Créteil bloquent leur établissement. Il devient le point de départ du mouvement en Île-de-France.</li>
+<li><strong>21 septembre</strong> : les députés LFI Louis Boyard et Clémence Guetté se rendent devant le lycée. La publication de Louis Boyard dépasse 520 000 vues.</li>
+<li><strong>24 septembre</strong> : une vidéo du média Booska-P atteint 1,5 million de vues sur TikTok. Les blocages se propagent par les réseaux sociaux.</li>
+<li><strong>28 septembre</strong> : le mouvement devient national. Le ministre de l'Intérieur Laurent Nuñez compte <a href="https://www.franceinfo.fr/societe/education/scolarite/guide-parents/lycee/blocus-des-lycees-jean-luc-melenchon-denonce-la-repression-du-gouvernement-sebastien-lecornu-regrette-une-surenchere-irresponsable-de-lfi_8213258.html" target="_blank" rel="noopener noreferrer">environ 180 établissements touchés et 164 interpellations</a>.</li>
+<li><strong>29 septembre</strong> : l'Union syndicale lycéenne appelle à une mobilisation nationale. Le ministère recense <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">338 établissements perturbés, dont 45 bloqués</a>.</li>
+<li><strong>1er octobre</strong> : selon le ministre de l'Éducation Édouard Geffray, près de 1 000 lycées sont bloqués ou perturbés, et une trentaine de campus universitaires rejoignent le mouvement. Le Premier ministre Sébastien Lecornu <a href="https://www.france24.com/fr/france/20261001-blocus-des-lyc%C3%A9es-en-france-des-campus-universitaires-rejoignent-la-contestation-sociale" target="_blank" rel="noopener noreferrer">réunit une cellule interministérielle de crise</a>. Le même jour, le projet de budget 2027 de l'Éducation nationale est présenté.</li>
+<li><strong>2 octobre</strong> : <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/blocage-des-lycees-plusieurs-etablissements-fermes-vendredi-apres-une-nouvelle-journee-de-mobilisation_8218720.html" target="_blank" rel="noopener noreferrer">environ 400 établissements restent fermés</a>, et les préfets interdisent les manifestations à leurs abords.</li>
+<li><strong>6 octobre</strong> : nouvelle journée de mobilisation, avec un <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/mobilisation-des-lyceens-que-le-gouvernement-renonce-a-ce-plan-d-economies-le-pire-de-l-histoire-de-la-ve-republique-dit-fo-enseignement_8220403.html" target="_blank" rel="noopener noreferrer">appel à la grève de FO enseignement</a>.</li>
+</ul>
+
+<h2>Pourquoi le blocage des lycées divise</h2>
+
+<h3>1. Un droit de manifester, ou un droit d'étudier ?</h3>
+<p>Les lycéens ont le droit de manifester, y compris quand ils sont mineurs. Le blocage d'un établissement empêche aussi les élèves qui veulent aller en cours d'y entrer. Le ministre Édouard Geffray a tracé sa ligne ainsi : <a href="https://www.cafepedagogique.net/2026/10/01/lyceens-mobilises-ce-quils-disent-ce-quon-leur-repond/" target="_blank" rel="noopener noreferrer">porter des revendications est un droit, menacer, brûler ou empêcher les autres d'étudier n'en est pas un</a>. Il reconnaît des revendications « légitimes » et propose de passer par les conseils de la vie lycéenne.</p>
+
+<h3>2. Violences des casseurs ou violences policières</h3>
+<p>Les dégradations ont un coût élevé. La région Auvergne-Rhône-Alpes l'estime <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">entre 25 et 30 millions d'euros</a>, et l'Île-de-France à 7 millions. Des proviseurs ont été agressés, et un incendie a ravagé plusieurs salles du lycée Nelson-Mandela de Nantes. Dans l'autre sens, Amnesty International a documenté <a href="https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/" target="_blank" rel="noopener noreferrer">des blessures graves chez des mineurs</a>, dont un adolescent de 14 ans touché au visage par un tir de grenade dans le Val-d'Oise. L'ONG demande la suspension du LBD dans les manifestations. Le nombre exact de blessés varie selon les sources et les dates.</p>
+
+<h3>3. Le rôle de La France insoumise</h3>
+<p>Le gouvernement accuse LFI d'avoir attisé le mouvement. Sébastien Lecornu a dénoncé une <a href="https://www.franceinfo.fr/societe/education/scolarite/guide-parents/lycee/blocus-des-lycees-jean-luc-melenchon-denonce-la-repression-du-gouvernement-sebastien-lecornu-regrette-une-surenchere-irresponsable-de-lfi_8213258.html" target="_blank" rel="noopener noreferrer">« surenchère irresponsable de LFI »</a>, après que Jean-Luc Mélenchon a parlé d'une répression aux connotations racistes. Le coordinateur de LFI Manuel Bompard répond en dénonçant du <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-mobilisation-a-pris-une-ampleur-inattendue-comment-le-mouvement-de-blocage-des-lycees-s-est-propage-en-france_8216054.html" target="_blank" rel="noopener noreferrer">« complotisme »</a>.</p>
+
+<h3>4. Le budget 2027 de l'Éducation nationale</h3>
+<p>Le budget de l'enseignement scolaire augmente de <a href="https://publicsenat.fr/actualites/economie/mobilisation-des-lyceens-et-des-etudiants-ce-que-prevoit-le-budget-2027-sur-leducation" target="_blank" rel="noopener noreferrer">1,1 milliard d'euros</a>, mais 1 588 postes d'enseignants disparaissent, dont 836 dans le second degré public. Le ministère avance que 180 000 élèves de moins sont attendus et qu'une stricte proportionnalité aurait supprimé 9 600 postes. « Le gouvernement ne fait pas d'économies sur la jeunesse », assure Édouard Geffray. Pour Clément Poullet, secrétaire général de FO enseignement, il faut au contraire <a href="https://www.franceinfo.fr/societe/education/blocage-des-lycees/mobilisation-des-lyceens-que-le-gouvernement-renonce-a-ce-plan-d-economies-le-pire-de-l-histoire-de-la-ve-republique-dit-fo-enseignement_8220403.html" target="_blank" rel="noopener noreferrer">« que le gouvernement renonce à ce plan d'économies, le pire de l'histoire de la Ve République »</a>.</p>
+
+<h3>5. La violence est-elle légitime quand les autres voies semblent fermées ?</h3>
+<p>Le 29 janvier 2019, en pleine crise des gilets jaunes, l'écrivain François Bégaudeau soutenait sur le plateau de <a href="https://www.youtube.com/watch?v=EduR-tk_5EM" target="_blank" rel="noopener noreferrer">C à vous</a> que <a href="https://www.lelivrescolaire.fr/page/7751562" target="_blank" rel="noopener noreferrer">« la violence en politique… sa légitimité et sa justesse s'évaluent à sa cause »</a>. Il prenait l'exemple de violences contre le régime de Bachar el-Assad : « je suis sûr que tous ici on dirait : "c'est normal, leur cause est juste" ». Pour lui, l'évaluation de la violence « doit être toujours articulée à la cause pour laquelle on se met à perpétrer ce genre de violences ». On objecte d'ordinaire qu'en France, le vote, la grève et la manifestation pacifique offrent d'autres moyens de se faire entendre. Ceux qui comprennent la violence estiment que ces moyens ont perdu leur crédit, et citent le <a href="https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rendum_fran%C3%A7ais_sur_le_trait%C3%A9_%C3%A9tablissant_une_Constitution_pour_l%27Europe" target="_blank" rel="noopener noreferrer">référendum de 2005 sur la Constitution européenne</a>, dont le traité de Lisbonne a repris l'essentiel, ou l'usage répété du 49.3. Le quiz pose désormais la question à part : <a href="/question-politique/respect-volonte-electeurs-democratie-france">la démocratie française respecte-t-elle la volonté des électeurs ?</a></p>
+
+<h2>Les positions des ${candidatesCount} candidats sur les violences en manifestation</h2>
+<p>Le blocus des lycées mêle trois débats que les candidats ne tranchent pas toujours de la même façon. Le premier porte sur la violence elle-même : peut-elle être légitime, se comprendre, ou rien ne l'excuse-t-il ? Le deuxième porte sur la justice, une fois les actes commis. Le troisième porte sur la manière dont la police encadre une manifestation. On peut comprendre la colère, refuser la violence et demander que ses auteurs soient jugés. Le quiz pose donc trois questions séparées : <a href="/question-politique/violences-en-manifestation-france">le jugement sur la violence</a>, <a href="/question-politique/violences-casseurs-manifestations-france">la réponse de la justice</a> et <a href="/question-politique/maintien-ordre-lbd-manifestations-france">le maintien de l'ordre</a>.</p>
+<p>Les familles ci-dessous suivent le premier débat. Quand un candidat ne s'est pas exprimé, sa position est estimée à partir de ses réponses sur les <a href="/theme/police-justice-et-securite">questions de sécurité</a> du quiz, et l'article le signale au conditionnel.</p>
+
+<h3>Famille 1 : une violence parfois légitime</h3>
+<p>Pour ces candidats, quand le pouvoir n'écoute pas et que la police frappe, la violence peut devenir un moyen de se faire entendre.</p>
+<ul>
+<li><a href="/candidat/nathalie-arthaud">Nathalie Arthaud</a> (LO) — Fidèle à la tradition révolutionnaire de son parti, elle ne devrait pas condamner par principe la violence des manifestants.</li>
+<li><a href="/candidat/anasse-kazib">Anasse Kazib</a> (Révolution permanente) — Sa ligne laisse penser qu'il voit dans cette violence une riposte légitime à celle de l'État.</li>
+<li><a href="/candidat/selma-labib">Selma Labib</a> (NPA-R) — Le NPA figure parmi les <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">organisations qui soutiennent le mouvement</a>. Sa ligne laisse penser qu'elle juge cette violence légitime face à la répression.</li>
+<li><a href="/candidat/juan-branco">Juan Branco</a> — Très critique des forces de l'ordre, il devrait refuser de renvoyer dos à dos manifestants et policiers.</li>
+</ul>
+
+<h3>Famille 2 : pas souhaitable, mais compréhensible</h3>
+<p>Ces candidats défendent la non-violence. Ils expliquent pourtant la violence par des revendications ignorées et par un maintien de l'ordre qui fait monter la tension, et ils mettent d'abord en cause le gouvernement.</p>
+<ul>
+<li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> (LFI) — Répète que <a href="https://x.com/JLMelenchon/status/2105649544180416884" target="_blank" rel="noopener noreferrer">« nous sommes pour les méthodes de lutte non-violentes »</a>, tout en se disant « très inquiet des violences policières contre les jeunes gens ». Il <a href="https://www.franceinfo.fr/societe/education/scolarite/guide-parents/lycee/blocus-des-lycees-jean-luc-melenchon-denonce-la-repression-du-gouvernement-sebastien-lecornu-regrette-une-surenchere-irresponsable-de-lfi_8213258.html" target="_blank" rel="noopener noreferrer">dénonce la « répression » du gouvernement</a> et a appelé les élus insoumis à s'interposer entre lycéens et policiers.</li>
+<li><a href="/candidat/clementine-autain">Clémentine Autain</a> — Proche de la gauche radicale sur les questions de police, elle devrait tenir la même ligne.</li>
+<li><a href="/candidat/francis-lalanne">Francis Lalanne</a> (France Libre) — Sa ligne contestataire laisse penser qu'il impute d'abord la violence au pouvoir.</li>
+<li><a href="/candidat/sylvain-durif">Sylvain Durif</a> — Proche de la gauche radicale sur la police dans le quiz, il devrait partager cette lecture.</li>
+</ul>
+
+<h3>Famille 3 : condamnable, même si le contexte l'explique en partie</h3>
+<p>Ces candidats condamnent la violence d'où qu'elle vienne, celle des casseurs comme celle des policiers, sans nier la colère qui la nourrit.</p>
+<ul>
+<li><a href="/candidat/raphael-glucksmann">Raphaël Glucksmann</a> (Place publique) — <a href="https://www.titrespresse.com/23300692603/glucksmann-attal-lfi" target="_blank" rel="noopener noreferrer">« Comprend la colère »</a> des lycéens mais « condamne toute forme de violence », et ajoute qu'« il faut aussi condamner la violence des forces de l'ordre ».</li>
+<li><a href="/candidat/francois-ruffin">François Ruffin</a> — Attaché aux revendications sociales mais éloigné de LFI, il devrait condamner la violence tout en défendant les lycéens.</li>
+<li><a href="/candidat/olivier-faure">Olivier Faure</a> (PS) — Sur la ligne du PS, il devrait condamner les violences des deux côtés.</li>
+<li><a href="/candidat/segolene-royal">Ségolène Royal</a> (PS) — Sa position publique laisse penser qu'elle condamne les violences en défendant le dialogue.</li>
+<li><a href="/candidat/jerome-guedj">Jérôme Guedj</a> (PS) — Attaché aux moyens de l'école, il devrait soutenir les demandes et condamner les violences.</li>
+<li><a href="/candidat/karim-bouamrane">Karim Bouamrane</a> (PS) — Maire de Saint-Ouen, sa ligne laisse penser qu'il condamne les violences sans oublier les causes sociales.</li>
+<li><a href="/candidat/francois-hollande">François Hollande</a> (PS) — Sa ligne social-démocrate laisse penser qu'il condamne les violences et défend le droit de manifester.</li>
+<li><a href="/candidat/philippe-brun">Philippe Brun</a> (PS) — Sur la ligne socialiste, il devrait condamner les violences et soutenir les revendications.</li>
+<li><a href="/candidat/marine-tondelier">Marine Tondelier</a> (Les Écologistes) — Critique des pratiques policières dans le quiz, elle devrait condamner les violences des deux côtés.</li>
+<li><a href="/candidat/delphine-batho">Delphine Batho</a> (Génération Écologie) — Sa ligne laisse penser qu'elle condamne les violences tout en soutenant les demandes de moyens.</li>
+<li><a href="/candidat/fabien-roussel">Fabien Roussel</a> (PCF) — La Jeunesse communiste <a href="https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France" target="_blank" rel="noopener noreferrer">soutient le mouvement</a>. Attentif à l'ordre public, il devrait condamner les violences.</li>
+<li><a href="/candidat/emmanuel-maurel">Emmanuel Maurel</a> (GRS) — Sa ligne républicaine de gauche laisse penser qu'il condamne les violences sans nier la colère.</li>
+<li><a href="/candidat/dominique-de-villepin">Dominique de Villepin</a> — Il devrait condamner les violences et plaider pour l'apaisement.</li>
+<li><a href="/candidat/lydie-massard">Lydie Massard</a> (UDB) — Sa ligne régionaliste de gauche laisse penser qu'elle tient la même position que la gauche modérée.</li>
+<li><a href="/candidat/fabien-verdier">Fabien Verdier</a> — Ancien socialiste, il devrait condamner les violences et défendre le dialogue.</li>
+<li><a href="/candidat/parti-animaliste">Parti animaliste</a> (PA) — Sa position estimée suit celle de la gauche modérée sur la police.</li>
+<li><a href="/candidat/parti-pirate">Parti pirate</a> (PP) — Attaché aux libertés publiques, il devrait condamner les violences des deux côtés.</li>
+<li><a href="/candidat/benoit-mathieu">Benoît Mathieu</a> — Sa position estimée suit ses réponses modérées sur la police.</li>
+</ul>
+
+<h3>Famille 4 : injustifiable en toutes circonstances</h3>
+<p>Pour ces candidats, aucun contexte n'excuse la violence. Beaucoup accusent LFI d'avoir encouragé ou manipulé les lycéens.</p>
+<ul>
+<li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — Appelle à <a href="https://www.cnews.fr/france/2026-10-01/blocus-des-lycees-il-faut-eviter-un-drame-et-revenir-au-calme-appelle-edouard" target="_blank" rel="noopener noreferrer">« éviter un drame et revenir au calme »</a>, et estime qu'<a href="https://www.titrespresse.com/23525952603/blocages-edouard-philippe" target="_blank" rel="noopener noreferrer">« une partie de la jeunesse a été manipulée par LFI et sa stratégie de tout conflictualiser »</a>.</li>
+<li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Estime que <a href="https://www.cnews.fr/france/2026-09-30/blocus-des-lycees-lfi-met-les-jeunes-en-danger-en-les-encourageant-participer-ces" target="_blank" rel="noopener noreferrer">« LFI met les jeunes en danger en les encourageant à participer à ces violences »</a> et l'accuse de les utiliser comme <a href="https://www.titrespresse.com/23300692603/glucksmann-attal-lfi" target="_blank" rel="noopener noreferrer">« chair à canon »</a>.</li>
+<li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Accuse LFI d'être <a href="https://www.publicsenat.fr/actualites/politique/colere-lyceenne-bruno-retailleau-suggere-de-dissoudre-lfi-est-ce-possible" target="_blank" rel="noopener noreferrer">« un parti qui est fasciné par la violence, qui appelle à la sédition et même qui essaie d'organiser l'insurrection »</a>, et lance le débat sur son interdiction tout en reconnaissant que c'est « difficile en droit ».</li>
+<li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Voit dans <a href="https://x.com/ZemmourEric/status/2105710698273636611" target="_blank" rel="noopener noreferrer">« les violences autour des lycées »</a> un « avant-goût du chaos que l'alliance entre l'extrême gauche et la racaille prépare en France ».</li>
+<li><a href="/candidat/jordan-bardella">Jordan Bardella</a> (RN) — <a href="https://x.com/J_Bardella/status/2105258350095089723" target="_blank" rel="noopener noreferrer">Accuse Jean-Luc Mélenchon d'instrumentaliser les lycéens</a>, lui qui « se rêve en révolutionnaire montant sur la barricade ».</li>
+<li><a href="/candidat/marine-le-pen">Marine Le Pen</a> (RN) — Sur la ligne de Jordan Bardella, elle devrait refuser toute excuse aux violences.</li>
+<li><a href="/candidat/laurent-wauquiez">Laurent Wauquiez</a> (LR) — Sa ligne sur la sécurité laisse penser qu'il ne voit aucune circonstance atténuante.</li>
+<li><a href="/candidat/gerald-darmanin">Gérald Darmanin</a> (Renaissance) — Ancien ministre de l'Intérieur, il devrait condamner les violences sans réserve.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> (Nouvelle Énergie) — Sa ligne d'autorité laisse penser qu'il rejette toute justification.</li>
+<li><a href="/candidat/xavier-bertrand">Xavier Bertrand</a> (LR) — Président de la région Hauts-de-France, qui gère les lycées, il devrait condamner sans réserve les dégradations.</li>
+<li><a href="/candidat/nicolas-dupont-aignan">Nicolas Dupont-Aignan</a> (DLF) — Sa ligne sécuritaire laisse penser qu'il rejette toute justification.</li>
+<li><a href="/candidat/florian-philippot">Florian Philippot</a> (Les Patriotes) — Sa position estimée suit ses réponses fermes sur la doctrine pénale.</li>
+<li><a href="/candidat/francois-bayrou">François Bayrou</a> (MoDem) — Sa ligne centriste laisse penser qu'il condamne les violences sans circonstance atténuante.</li>
+<li><a href="/candidat/bernard-cazeneuve">Bernard Cazeneuve</a> (La Convention) — Ancien ministre de l'Intérieur, il devrait condamner les violences sans réserve.</li>
+<li><a href="/candidat/olivier-becht">Olivier Becht</a> — Proche de la majorité sortante, il devrait suivre la ligne du gouvernement.</li>
+<li><a href="/candidat/antoine-mikolajczak">Antoine Mikolajczak</a> (Équinoxe) — Sa position estimée suit ses réponses sur la sécurité.</li>
+<li><a href="/candidat/clara-egger">Clara Egger</a> (Solution démocratique) — Sa position estimée suit ses réponses sur la sécurité.</li>
+<li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a> (Les Oubliés) — Sa position estimée suit ses réponses sur la police dans le quiz.</li>
+<li><a href="/candidat/francois-asselineau">François Asselineau</a> (UPR) — Sa ligne d'ordre républicain laisse penser qu'il rejette toute justification.</li>
+</ul>
+
+<h3>Après les actes : quelle réponse de la justice ?</h3>
+<p>Le jugement sur la violence ne dit pas ce qu'il faut faire de ses auteurs. Seules les candidatures d'extrême gauche (Nathalie Arthaud, Anasse Kazib, Selma Labib) et Juan Branco devraient défendre une amnistie des faits commis lors des mouvements sociaux, hors violences contre les personnes. Jean-Luc Mélenchon et toute la gauche, de LFI au PS, veulent que les auteurs soient poursuivis au cas par cas, avec les lois actuelles. Pour eux, comprendre la violence ne revient pas à la laisser impunie. Le centre, d'Édouard Philippe à François Bayrou, devrait vouloir durcir les peines. La droite et le RN réclament la comparution immédiate et des peines planchers. Éric Zemmour demande que la justice frappe <a href="https://x.com/ZemmourEric/status/2105710698273636611" target="_blank" rel="noopener noreferrer">« au portefeuille et en mettant ceux qui détruisent et tabassent en prison »</a>.</p>
+
+<h3>LBD, grenades, gaz lacrymogène : comment encadrer une manifestation ?</h3>
+<p>Sur le maintien de l'ordre, les lignes se déplacent encore. Jean-Luc Mélenchon, Nathalie Arthaud, Anasse Kazib, Selma Labib, Juan Branco et Clémentine Autain veulent retirer ses armes au maintien de l'ordre, gaz lacrymogène compris. Raphaël Glucksmann, Olivier Faure, Marine Tondelier, Fabien Roussel et Bernard Cazeneuve devraient plutôt défendre l'interdiction du LBD et des grenades, en gardant le gaz lacrymogène et les canons à eau en dernier recours, comme le réclame <a href="https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/" target="_blank" rel="noopener noreferrer">Amnesty International</a>. Une partie du PS (François Hollande, Ségolène Royal, Karim Bouamrane, Philippe Brun) rejoint le centre et Dominique de Villepin pour garder l'arsenal et les règles d'usage actuels. La droite et le RN veulent élargir l'arsenal et la latitude des forces de l'ordre.</p>
+
+<h2>Blocage des lycées : les arguments pour et contre la fermeté</h2>
+<table>
+<tr><th>Arguments pour une réponse ferme</th><th>Arguments pour le dialogue</th></tr>
+<tr><td>Le blocage prive de cours les élèves qui veulent étudier, parfois à quelques mois du bac.</td><td>Les revendications portent sur des manques mesurés : heures non remplacées, classes surchargées, bâtiments vétustes.</td></tr>
+<tr><td>Les dégradations coûtent des dizaines de millions d'euros aux régions, qui financent les lycées.</td><td>Des mineurs ont été gravement blessés lors d'interventions policières, selon Amnesty International.</td></tr>
+<tr><td>Des personnes extérieures aux lycées, parfois masquées, participent aux violences.</td><td>Les lycéens ont peu d'autres moyens d'être entendus, et les conseils de la vie lycéenne pèsent peu.</td></tr>
+<tr><td>Laisser faire encourage la reproduction des blocages à chaque mobilisation.</td><td>Une réponse surtout policière peut durcir le mouvement au lieu de l'apaiser.</td></tr>
+</table>
+
+<h2>Pour aller plus loin</h2>
+<ul>
+<li><a href="/question-politique/violences-en-manifestation-france">Que pensez-vous de la violence de certains manifestants ?</a> Légitime, compréhensible, condamnable ou injustifiable.</li>
+<li><a href="/question-politique/violences-casseurs-manifestations-france">Quelle réponse de la justice après des violences en manifestation ?</a> De l'amnistie aux peines planchers.</li>
+<li><a href="/question-politique/maintien-ordre-lbd-manifestations-france">Comment la police doit-elle encadrer les manifestations ?</a> LBD, grenades, gaz lacrymogène.</li>
+<li><a href="/question-politique/respect-volonte-electeurs-democratie-france">La démocratie française respecte-t-elle la volonté des électeurs ?</a> Le contexte de la colère.</li>
+<li><a href="/question-politique/ecole-education-reforme">Budget de l'Éducation nationale</a> : faut-il plus de moyens, ou mieux dépenser ceux qui existent ?</li>
+<li><a href="/question-politique/que-pensez-vous-de-parcoursup-et-de-l-acces-a-l-enseignement-superieur">Parcoursup et l'accès à l'enseignement supérieur</a>, l'une des revendications des lycéens.</li>
+<li><a href="/question-politique/que-pensez-vous-des-violences-policieres">Violences policières</a> : problème systémique ou cas isolés ?</li>
+<li><a href="/theme/recherche-et-education">Recherche et éducation</a>, toutes les questions du quiz sur l'école.</li>
+</ul>
+
+<p><a href="/themes">→ Faire le quiz</a></p>
+`,
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `Blocage des lycées : pourquoi les lycéens bloquent, et les positions des ${candidatesCount} candidats à la présidentielle 2027`,
+    description:
+      "Blocus des lycées de septembre-octobre 2026 : chronologie, revendications, budget 2027 de l'Éducation nationale et positions de chaque candidat à la présidentielle 2027 sur la réponse de l'État.",
+    author: { '@type': 'Person', name: 'Arnaud Ambroselli' },
+    datePublished: '2026-10-03',
+    about: [
+      { '@type': 'Thing', name: 'Mouvement lycéen et blocus de 2026 en France' },
+      { '@type': 'Thing', name: 'Éducation nationale' },
+      { '@type': 'Thing', name: 'Élection présidentielle française de 2027' },
+    ],
+  },
+};

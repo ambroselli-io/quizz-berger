@@ -1470,6 +1470,25 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-gouv-08",
+        "fr": "La démocratie française respecte-t-elle la volonté des électeurs ?",
+        "help": "https://fr.wikipedia.org/wiki/R%C3%A9f%C3%A9rendum_fran%C3%A7ais_sur_le_trait%C3%A9_%C3%A9tablissant_une_Constitution_pour_l%27Europe",
+        "answers": [
+          "Non : la volonté populaire est régulièrement contournée (référendum de 2005, promesses enterrées, 49.3), les citoyens n'ont plus de vrai moyen de se faire entendre",
+          "Pas assez : trop de décisions se prennent contre l'avis des électeurs",
+          "Globalement oui, avec des entorses ponctuelles",
+          "Oui : les élections ont lieu et les élus appliquent leur mandat, c'est le fonctionnement normal d'une démocratie représentative",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -1938,6 +1957,63 @@
           [0, 1, 3, 5, 3, 0],
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-12",
+        "fr": "Que pensez-vous de la violence de certains manifestants ?",
+        "help": "https://fr.wikipedia.org/wiki/Mouvement_lyc%C3%A9en_et_blocus_de_2026_en_France",
+        "answers": [
+          "Elle peut être légitime : face à un pouvoir qui n'écoute pas et à une police violente, c'est parfois le seul moyen de se faire entendre",
+          "Elle n'est pas souhaitable, mais elle se comprend : elle naît de revendications ignorées et d'un maintien de l'ordre qui fait monter la tension",
+          "Elle est condamnable, même si la colère sociale et les tensions avec la police peuvent l'expliquer en partie",
+          "Elle est injustifiable en toutes circonstances : aucun contexte ne l'excuse",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-13",
+        "fr": "Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?",
+        "help": "https://fr.wikipedia.org/wiki/Black_bloc",
+        "answers": [
+          "Amnistier les faits commis lors des mouvements sociaux, hors violences contre les personnes",
+          "Poursuivre les auteurs au cas par cas, avec les lois actuelles",
+          "Durcir les peines encourues pour les violences et dégradations commises en manifestation",
+          "Comparution immédiate systématique et peines planchers pour tout auteur de violences ou de dégradations",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-14",
+        "fr": "Comment la police doit-elle encadrer les manifestations ?",
+        "help": "https://fr.wikipedia.org/wiki/Maintien_de_l%27ordre_en_France",
+        "answers": [
+          "Retirer toutes les armes du maintien de l'ordre : LBD, grenades et gaz lacrymogène",
+          "Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours",
+          "Garder l'arsenal et les règles d'usage actuels",
+          "Élargir l'arsenal et la latitude des forces de l'ordre",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]

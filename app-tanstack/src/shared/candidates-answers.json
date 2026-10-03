@@ -420,6 +420,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -743,6 +758,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -1387,6 +1407,21 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -1712,6 +1747,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -1899,7 +1939,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-faure",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -2354,6 +2394,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -2677,6 +2732,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -3321,6 +3381,21 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -3643,6 +3718,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
         "answerIndex": 2
       },
       {
@@ -4288,6 +4368,21 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -4610,6 +4705,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
         "answerIndex": 0
       },
       {
@@ -5255,6 +5355,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -5578,6 +5693,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -6222,6 +6342,21 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -6544,6 +6679,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
         "answerIndex": 0
       },
       {
@@ -7189,6 +7329,21 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -7511,6 +7666,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
         "answerIndex": 0
       },
       {
@@ -8156,6 +8316,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -8479,6 +8654,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -9125,6 +9305,21 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -9448,6 +9643,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -10094,6 +10294,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -10419,6 +10634,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -10516,7 +10736,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -11061,6 +11281,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -11386,6 +11621,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -11523,7 +11763,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-juan-branco",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -11558,7 +11798,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-selma-labib",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -12028,6 +12268,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -12353,6 +12608,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -12550,7 +12810,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -12995,6 +13255,21 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 0
@@ -13317,6 +13592,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
         "answerIndex": 1
       },
       {
@@ -13962,6 +14242,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -14285,6 +14580,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -14931,6 +15231,21 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -15256,6 +15571,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -15303,7 +15623,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-xavier-bertrand",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -15898,6 +16218,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -16223,6 +16558,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -16355,7 +16695,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16370,7 +16710,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francis-lalanne",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16405,7 +16745,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-antoine-mikolajczak",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16867,6 +17207,21 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -17192,6 +17547,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -17244,7 +17604,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nicolas-dupont-aignan",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -17374,7 +17734,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-antoine-mikolajczak",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -17834,6 +18194,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -18157,6 +18532,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -18801,6 +19181,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -19123,6 +19518,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
         "answerIndex": 3
       },
       {
@@ -19768,6 +20168,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -20091,6 +20506,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -20735,6 +21155,21 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -21058,6 +21493,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -21702,6 +22142,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -22025,6 +22480,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -22669,6 +23129,21 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -22992,6 +23467,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -23636,6 +24116,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -23961,6 +24456,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -24058,7 +24558,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24838,6 +25338,21 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-01",
         "answerIndex": 1
@@ -24928,6 +25443,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -25005,7 +25525,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-ruffin",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -25690,6 +26210,21 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -25895,6 +26430,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -26072,7 +26612,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -26487,6 +27027,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -26600,6 +27145,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -26959,7 +27519,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -27079,7 +27639,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-becht",
-        "answerIndex": 3
+        "answerIndex": 4
       }
     ]
   },
@@ -27454,6 +28014,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -27567,6 +28132,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -28421,6 +29001,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -28534,6 +29119,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -29388,6 +29988,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -29501,6 +30106,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -29960,7 +30580,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30357,6 +30977,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -30470,6 +31095,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -31324,6 +31964,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -31436,6 +32081,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 0
       },
       {
@@ -32291,6 +32951,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -32403,6 +33068,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 0
       },
       {
@@ -32743,7 +33423,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-ruffin",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -32848,7 +33528,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-antoine-mikolajczak",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -33258,6 +33938,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
@@ -33370,6 +34055,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 2
       },
       {
@@ -33775,7 +34475,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-patrick-sebastien",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34225,6 +34925,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -34338,6 +35043,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -34697,7 +35417,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34772,7 +35492,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-selma-labib",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -35194,6 +35914,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -35307,6 +36032,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -35766,7 +36506,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -36161,6 +36901,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -36273,6 +37018,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 1
       },
       {
@@ -36573,7 +37333,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -37128,6 +37888,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -37240,6 +38005,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 1
       },
       {
@@ -38097,6 +38877,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -38210,6 +38995,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -38569,7 +39369,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -39069,6 +39869,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -39181,6 +39986,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 1
       },
       {
@@ -39521,7 +40341,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-tondelier",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -39601,7 +40421,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -40036,6 +40856,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -40148,6 +40973,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 1
       },
       {
@@ -41018,6 +41858,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -41131,6 +41976,21 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -41985,6 +42845,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -42097,6 +42962,21 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
         "answerIndex": 1
       },
       {
@@ -42982,6 +43862,21 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -43307,6 +44202,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -43454,7 +44354,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francis-lalanne",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

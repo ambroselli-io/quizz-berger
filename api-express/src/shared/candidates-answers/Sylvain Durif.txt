@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [0] Oui, une réduction drastique : diviser par deux le nombre d'élus, pour faire des économies et en finir avec la surreprésentation politique
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[0] Non : la volonté populaire est régulièrement contournée (référendum de 2005, promesses enterrées, 49.3), les citoyens n'ont plus de vrai moyen de se faire entendre
+
 
 Logement:
 
@@ -336,6 +339,15 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [0] Un plan de grande ampleur : recrutement massif de pompiers professionnels et volontaires, forte hausse des moyens matériels
+
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[1] Elle n'est pas souhaitable, mais elle se comprend : elle naît de revendications ignorées et d'un maintien de l'ordre qui fait monter la tension
+
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[1] Poursuivre les auteurs au cas par cas, avec les lois actuelles
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[1] Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours
 
 
 Politique fiscale:

@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [4] Non : réduire le nombre d'élus affaiblit le Parlement face à l'exécutif, c'est de la démagogie anti-parlementaire
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[0] Non : la volonté populaire est régulièrement contournée (référendum de 2005, promesses enterrées, 49.3), les citoyens n'ont plus de vrai moyen de se faire entendre
+
 
 Logement:
 
@@ -336,6 +339,15 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [0] Un plan de grande ampleur : recrutement massif de pompiers professionnels et volontaires, forte hausse des moyens matériels
+
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[0] Elle peut être légitime : face à un pouvoir qui n'écoute pas et à une police violente, c'est parfois le seul moyen de se faire entendre
+
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[0] Amnistier les faits commis lors des mouvements sociaux, hors violences contre les personnes
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[0] Retirer toutes les armes du maintien de l'ordre : LBD, grenades et gaz lacrymogène
 
 
 Politique fiscale:
@@ -559,7 +571,7 @@ question-2027-gagnait-edouard-philippe: Si Édouard Philippe était élu, quel s
 [4] Très mécontent(e)
 
 question-2027-gagnait-francois-ruffin: Si François Ruffin était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-marine-tondelier: Si Marine Tondelier était élue, quel serait votre sentiment ?
 [2] Neutre
@@ -622,7 +634,7 @@ question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votr
 [4] Très mécontent(e)
 
 question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
 [2] Neutre

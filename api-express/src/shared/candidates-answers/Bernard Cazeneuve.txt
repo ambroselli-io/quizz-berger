@@ -256,6 +256,9 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
 [3] Le nombre actuel se justifie pour représenter correctement tous les territoires, ruraux et ultramarins compris
 
+question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
+[3] Oui : les élections ont lieu et les élus appliquent leur mandat, c'est le fonctionnement normal d'une démocratie représentative
+
 
 Logement:
 
@@ -336,6 +339,15 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [1] Une hausse significative et pérenne des effectifs et des moyens
+
+question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
+[3] Elle est injustifiable en toutes circonstances : aucun contexte ne l'excuse
+
+question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
+[2] Durcir les peines encourues pour les violences et dégradations commises en manifestation
+
+question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+[1] Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours
 
 
 Politique fiscale:
@@ -592,7 +604,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [4] Très mécontent(e)
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
@@ -601,7 +613,7 @@ question-2027-gagnait-patrick-sebastien: Si Patrick Sébastien était élu, quel
 [2] Neutre
 
 question-2027-gagnait-francis-lalanne: Si Francis Lalanne était élu, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-florian-philippot: Si Florian Philippot était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
@@ -622,7 +634,7 @@ question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votr
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
 [2] Neutre
