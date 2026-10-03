@@ -337,6 +337,12 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [0] Un plan de grande ampleur : recrutement massif de pompiers professionnels et volontaires, forte hausse des moyens matériels
 
+question-2027-pol-12: Que faire face aux violences et aux dégradations commises lors des manifestations ?
+[0] Elles répondent à la violence sociale et policière : la priorité est d'entendre la colère, pas de punir
+
+question-2027-pol-13: Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?
+[0] Désarmer le maintien de l'ordre : interdire LBD, grenades et nasses
+
 
 Politique fiscale:
 
@@ -559,7 +565,7 @@ question-2027-gagnait-edouard-philippe: Si Édouard Philippe était élu, quel s
 [4] Très mécontent(e)
 
 question-2027-gagnait-francois-ruffin: Si François Ruffin était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-marine-tondelier: Si Marine Tondelier était élue, quel serait votre sentiment ?
 [2] Neutre
@@ -622,7 +628,7 @@ question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votr
 [4] Très mécontent(e)
 
 question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
-[2] Neutre
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
 [2] Neutre

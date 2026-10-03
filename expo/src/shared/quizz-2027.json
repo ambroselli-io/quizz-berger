@@ -1939,6 +1939,44 @@
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-pol-12",
+        "fr": "Que faire face aux violences et aux dégradations commises lors des manifestations ?",
+        "help": "https://fr.wikipedia.org/wiki/Black_bloc",
+        "answers": [
+          "Elles répondent à la violence sociale et policière : la priorité est d'entendre la colère, pas de punir",
+          "Poursuivre les auteurs de violences au cas par cas, avec les lois actuelles",
+          "Durcir les peines contre les casseurs et interdire de manifestation les personnes déjà condamnées",
+          "Tolérance zéro : comparution immédiate et peines planchers pour tout casseur, interdictions préventives de manifester",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-13",
+        "fr": "Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?",
+        "help": "https://fr.wikipedia.org/wiki/Maintien_de_l%27ordre_en_France",
+        "answers": [
+          "Désarmer le maintien de l'ordre : interdire LBD, grenades et nasses",
+          "Interdire le LBD et les grenades les plus dangereuses, et privilégier la désescalade",
+          "Garder les moyens actuels, mieux encadrés et mieux contrôlés",
+          "Donner plus de moyens et plus de latitude aux forces de l'ordre pour disperser les manifestations violentes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

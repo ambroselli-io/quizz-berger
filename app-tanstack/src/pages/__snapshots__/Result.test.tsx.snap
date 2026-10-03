@@ -9,15 +9,15 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 97,
+    "percent": 98,
     "pseudos": [
-      "Anasse Kazib",
+      "Selma Labib",
     ],
   },
   {
     "percent": 97,
     "pseudos": [
-      "Selma Labib",
+      "Anasse Kazib",
     ],
   },
   {
@@ -41,30 +41,30 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 81,
     "pseudos": [
-      "François Ruffin",
       "Sylvain Durif",
     ],
   },
   {
-    "percent": 76,
+    "percent": 81,
+    "pseudos": [
+      "François Ruffin",
+    ],
+  },
+  {
+    "percent": 75,
     "pseudos": [
       "Delphine Batho",
     ],
   },
   {
-    "percent": 75,
+    "percent": 74,
     "pseudos": [
       "Lydie Massard",
-    ],
-  },
-  {
-    "percent": 75,
-    "pseudos": [
       "Marine Tondelier",
     ],
   },
   {
-    "percent": 74,
+    "percent": 73,
     "pseudos": [
       "Emmanuel Maurel",
     ],
@@ -94,7 +94,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 67,
+    "percent": 66,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -154,7 +154,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 56,
+    "percent": 55,
     "pseudos": [
       "Karim Bouamrane",
     ],
@@ -166,13 +166,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 53,
+    "percent": 52,
     "pseudos": [
       "François Asselineau",
     ],
   },
   {
-    "percent": 53,
+    "percent": 52,
     "pseudos": [
       "Florian Philippot",
     ],
@@ -190,7 +190,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 44,
+    "percent": 43,
     "pseudos": [
       "Clara Egger",
     ],
@@ -208,7 +208,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 40,
+    "percent": 39,
     "pseudos": [
       "Jordan Bardella",
     ],
@@ -226,7 +226,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 33,
+    "percent": 32,
     "pseudos": [
       "Édouard Philippe",
     ],
@@ -244,13 +244,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 26,
+    "percent": 25,
     "pseudos": [
       "Gérald Darmanin",
     ],
   },
   {
-    "percent": 24,
+    "percent": 23,
     "pseudos": [
       "Laurent Wauquiez",
     ],

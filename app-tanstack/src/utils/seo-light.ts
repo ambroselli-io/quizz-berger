@@ -299,6 +299,16 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Groupes de niveau au collège : les candidats 2027',
     seoDescription: `Groupes de niveau en français et en maths, mixité sociale au collège : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-pol-12': {
+    slug: 'violences-casseurs-manifestations-france',
+    seoTitle: 'Casseurs et violences en manifestation : candidats 2027',
+    seoDescription: `Casseurs, dégradations, peines planchers : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les violences en manifestation.`,
+  },
+  'question-2027-pol-13': {
+    slug: 'maintien-ordre-lbd-manifestations-france',
+    seoTitle: 'LBD et maintien de l\'ordre : les candidats 2027',
+    seoDescription: `LBD, grenades, nasses : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les moyens de la police en manifestation.`,
+  },
   'question-2027-cult-06': {
     slug: 'pluralisme-extremes-audiovisuel-public-france',
     seoTitle: 'Affaire Sapin sur France Inter : candidats 2027',

@@ -337,6 +337,12 @@ question-2027-pol-10: Que pensez-vous de la loi sur la présomption de légitime
 question-2027-pol-11: Face à la crise des pompiers, faut-il augmenter les effectifs et les moyens des services d'incendie et de secours (Sdis) ?
 [3] Stabiliser les effectifs et les moyens actuels, en misant sur l'organisation plutôt que sur la dépense
 
+question-2027-pol-12: Que faire face aux violences et aux dégradations commises lors des manifestations ?
+[2] Durcir les peines contre les casseurs et interdire de manifestation les personnes déjà condamnées
+
+question-2027-pol-13: Quels moyens la police doit-elle pouvoir utiliser pour maintenir l'ordre en manifestation ?
+[2] Garder les moyens actuels, mieux encadrés et mieux contrôlés
+
 
 Politique fiscale:
 
@@ -619,7 +625,7 @@ question-2027-gagnait-selma-labib: Si Selma Labib était élue, quel serait votr
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
 [2] Neutre
