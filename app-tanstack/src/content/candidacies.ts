@@ -1527,7 +1527,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Parti animaliste',
     summary:
-      "Le Parti animaliste est un parti fondé en 2016 autour de la cause animale. Il présente des listes aux élections européennes et législatives. Ses positions sont intégrées au quiz pour représenter cette sensibilité politique.",
+      "Le Parti animaliste est un parti fondé en 2016 autour de la cause animale. Il présente des listes aux élections européennes et législatives. Le 2 octobre 2026, il a annoncé que sa cofondatrice Mira Markovic porterait sa candidature à la présidentielle. Ses positions sont intégrées au quiz pour représenter cette sensibilité politique.",
     events: [
       {
         date: '2016-11-14',
@@ -1537,6 +1537,23 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Wikipédia — Parti animaliste',
             url: 'https://fr.wikipedia.org/wiki/Parti_animaliste',
+          },
+        ],
+      },
+      {
+        date: '2026-10-02',
+        type: 'step',
+        label: 'Il annonce que sa cofondatrice Mira Markovic portera sa candidature à la présidentielle.',
+        sources: [
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-10-02/presidentielle-2027-si-nous-ne-sommes-pas-la-personne-ne-parle-des-animaux',
+            date: '2026-10-02',
+          },
+          {
+            label: 'Parti animaliste',
+            url: 'https://parti-animaliste.fr/news/communique-de-presse/mira-markovic-representera-le-parti-animaliste-a-la-presidentielle',
+            date: '2026-10-02',
           },
         ],
       },
