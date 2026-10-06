@@ -28633,7 +28633,7 @@
   {
     "id": "candidate-karim-bouamrane",
     "pseudo": "Karim Bouamrane",
-    "picture": "",
+    "picture": "candidates/karim-bouamrane.png",
     "color": "#9D174D",
     "isCandidate": true,
     "themes": [
@@ -36533,7 +36533,7 @@
   {
     "id": "candidate-olivier-faure",
     "pseudo": "Olivier Faure",
-    "picture": "",
+    "picture": "candidates/olivier-faure.png",
     "color": "#E4003B",
     "isCandidate": true,
     "themes": [
@@ -37520,7 +37520,7 @@
   {
     "id": "candidate-emmanuel-maurel",
     "pseudo": "Emmanuel Maurel",
-    "picture": "",
+    "picture": "candidates/emmanuel-maurel.png",
     "color": "#C41E3A",
     "isCandidate": true,
     "themes": [
@@ -38507,7 +38507,7 @@
   {
     "id": "candidate-fabien-verdier",
     "pseudo": "Fabien Verdier",
-    "picture": "",
+    "picture": "candidates/fabien-verdier.png",
     "color": "#FF6B6B",
     "isCandidate": true,
     "withdrawn": true,
@@ -41470,7 +41470,7 @@
   {
     "id": "candidate-sylvain-durif",
     "pseudo": "Sylvain Durif",
-    "picture": "",
+    "picture": "candidates/sylvain-durif.png",
     "color": "#7B2CBF",
     "isCandidate": true,
     "themes": [
@@ -43444,7 +43444,7 @@
   {
     "id": "candidate-olivier-becht",
     "pseudo": "Olivier Becht",
-    "picture": "",
+    "picture": "candidates/olivier-becht.png",
     "color": "#5B8C85",
     "isCandidate": true,
     "themes": [
