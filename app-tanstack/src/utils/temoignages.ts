@@ -23,4 +23,5 @@ export const temoignages = [
   { blockquote: "Je trouve intéressant de partir de nos idées/convictions et de voir vers quelles personnalités/parti politique on se rapproche. Cela permet de s'intéresser plus aux propositions qu'aux personnages politiques.", figcaption: 'Benjamin' },
   { blockquote: "J'ai trouvé votre site vraiment hyper utile, parfait pour quelqu'un qui veut pas aller chercher programme par programme !", figcaption: 'Matthieu' },
   { blockquote: "C'est une excellente base de travail. Ça m'oblige à me poser plein de questions que je ne me suis pas posées. C'est un outil précieux, merci à vous de l'avoir développé.", figcaption: 'Maloé' },
+  { blockquote: 'Je suis très satisfait du contenu : il couvre de nombreux sujets essentiels pour les Français.', figcaption: 'Alexandre' },
 ];
