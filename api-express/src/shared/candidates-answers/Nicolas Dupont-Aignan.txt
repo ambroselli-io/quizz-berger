@@ -391,7 +391,7 @@ question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 [1] Il faut baisser le prix des transports en commun, surtout pour les plus modestes
 
 question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
-[2] Les prix augmentent trop et les marges des distributeurs sont scandaleuses, il faut les encadrer
+[2] Les prix augmentent trop et les marges des grands groupes (industriels et/ou distributeurs) sont scandaleuses, il faut les encadrer
 
 question-2027-pa-05: Quel levier prioritaire pour améliorer le pouvoir d'achat ?
 [0] Baisser les impôts et charges sur les ménages
