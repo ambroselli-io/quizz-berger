@@ -89,6 +89,11 @@ export interface QuestionSlugEntry {
 
 // Manually curated hot-topic question slugs with SEO-optimized titles
 const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescription: string }> = {
+  'question-2027-soc-10': {
+    slug: 'loi-integrale-violences-sexistes-sexuelles-france',
+    seoTitle: 'Loi intégrale contre les VSS : les candidats 2027',
+    seoDescription: `Loi « intégrale » contre les violences sexistes et sexuelles : contenu, moyens budgétaires, et les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
   'question-2027-ae-01': {
     slug: 'guerre-ukraine-france',
     seoTitle: 'Guerre en Ukraine : que pensent les candidats 2027 ?',

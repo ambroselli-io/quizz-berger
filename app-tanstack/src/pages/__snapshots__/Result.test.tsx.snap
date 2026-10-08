@@ -15,7 +15,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 97,
+    "percent": 98,
     "pseudos": [
       "Anasse Kazib",
     ],
@@ -214,7 +214,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 34,
+    "percent": 35,
     "pseudos": [
       "Olivier Becht",
     ],
