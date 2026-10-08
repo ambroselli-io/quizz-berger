@@ -2798,6 +2798,25 @@
           [0, 0, 3, 5, 0],
           [0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-soc-10",
+        "fr": "Que pensez-vous de la loi « intégrale » contre les violences sexistes et sexuelles, examinée à l'Assemblée depuis octobre 2026 ?",
+        "help": "https://www.france24.com/fr/info-en-continu/20261001-violences-sexuelles-et-sexistes-les-grandes-lignes-de-la-loi-int%C3%A9grale",
+        "answers": [
+          "Le texte va trop loin : il crée de nouvelles lourdeurs judiciaires et administratives sans garantie d'efficacité, il faut s'en tenir au droit existant",
+          "Il faut voter le texte, mais sans financement nouveau : miser sur une meilleure organisation des moyens déjà alloués",
+          "Il faut voter le texte et dégager des moyens renforcés, au moins pour les dispositifs les plus urgents (unités spécialisées, juges dédiés)",
+          "Il faut voter l'intégralité du texte avec un budget garanti à la hauteur des besoins chiffrés par les associations",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

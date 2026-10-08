@@ -486,6 +486,9 @@ question-2027-soc-08: Que pensez-vous de la politique envers les personnes handi
 question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
 [3] C'est une urgence nationale : il faut une grande loi Grand âge avec un plan massif
 
+question-2027-soc-10: Que pensez-vous de la loi « intégrale » contre les violences sexistes et sexuelles, examinée à l'Assemblée depuis octobre 2026 ?
+[2] Il faut voter le texte et dégager des moyens renforcés, au moins pour les dispositifs les plus urgents (unités spécialisées, juges dédiés)
+
 
 Travail, Chômage, Retraite:
 

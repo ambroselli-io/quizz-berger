@@ -486,6 +486,9 @@ question-2027-soc-08: Que pensez-vous de la politique envers les personnes handi
 question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
 [1] Il faut mieux contrôler les EHPAD et améliorer l'existant, sans grosse dépense nouvelle
 
+question-2027-soc-10: Que pensez-vous de la loi « intégrale » contre les violences sexistes et sexuelles, examinée à l'Assemblée depuis octobre 2026 ?
+[1] Il faut voter le texte, mais sans financement nouveau : miser sur une meilleure organisation des moyens déjà alloués
+
 
 Travail, Chômage, Retraite:
 
