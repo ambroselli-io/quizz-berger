@@ -97,6 +97,17 @@ export default function Home() {
           Comment ça marche&nbsp;?
         </h2>
 
+        <div className="mt-10 aspect-video w-full max-w-4xl overflow-hidden rounded-2xl shadow-lg">
+          <iframe
+            className="h-full w-full"
+            src="https://www.youtube-nocookie.com/embed/LrEI6e2ZLfo?autoplay=1&mute=1&loop=1&playlist=LrEI6e2ZLfo&playsinline=1&rel=0&modestbranding=1"
+            title="Le Quizz du Berger en motion design"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+          />
+        </div>
+
         {/* Demo 1 */}
         <div className="mt-24 flex w-full items-center justify-evenly max-lg:flex-col max-lg:gap-4">
           <div className="flex shrink-0 basis-[40%] flex-col items-center text-center">
