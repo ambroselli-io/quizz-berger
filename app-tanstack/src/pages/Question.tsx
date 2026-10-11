@@ -4,10 +4,11 @@ import { quizz } from '@app/utils/quizz';
 import useUser from '@app/hooks/useUser';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import ModalQuestionFeedback from '@app/components/modals/ModalQuestionFeedback';
+import { Star } from 'lucide-react';
 
 export default function Question() {
   useUser({ redirectOnLoggedOut: '/' });
-  const { userAnswers, setAnswer } = useUserAnswers();
+  const { userAnswers, setAnswer, setImportant } = useUserAnswers();
   const navigate = useNavigate();
   const { themeId, questionId } = useParams<{ themeId: string; questionId: string }>();
 
@@ -30,6 +31,18 @@ export default function Question() {
   useEffect(() => {
     setCurrentAnswerIndex(userAnswers.find((a) => a.questionId === questionId)?.answerIndex);
   }, [questionId, userAnswers]);
+
+  const currentAnswer = userAnswers.find((a) => a.questionId === questionId);
+  // Before the question is answered, the flag waits here and goes out with the answer.
+  const [pendingImportant, setPendingImportant] = useState(false);
+  useEffect(() => {
+    setPendingImportant(false);
+  }, [questionId]);
+  const isImportant = currentAnswer ? Boolean(currentAnswer.isImportant) : pendingImportant;
+  const toggleImportant = () => {
+    if (currentAnswer) return setImportant(currentAnswer.questionId, !isImportant);
+    setPendingImportant(!isImportant);
+  };
 
   const [showHelp, setShowHelp] = useState(!!question?.help);
   useEffect(() => {
@@ -73,6 +86,7 @@ export default function Question() {
       themeId: theme._id,
       questionId: questionId ?? '',
       answerIndex,
+      ...(currentAnswer ? {} : { isImportant: pendingImportant }),
     });
     goToNextQuestion();
   };
@@ -128,6 +142,15 @@ export default function Question() {
             Cliquez <strong className="underline">ici</strong> pour en savoir plus
           </a>
         )}
+        <button
+          type="button"
+          onClick={toggleImportant}
+          aria-pressed={isImportant}
+          className={`mb-8 inline-flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-sm ${isImportant ? 'border-yellow-400 bg-yellow-400 font-semibold text-black' : 'border-gray-300 bg-white text-gray-700'}`}
+        >
+          <Star size={16} fill={isImportant ? 'currentColor' : 'none'} />
+          {isImportant ? 'Question importante pour moi' : 'Marquer comme importante pour moi'}
+        </button>
         <div className="flex max-w-[1020px] flex-col items-center gap-4 font-sans">
           {question?.answers.map((answer, index) => (
             <button
