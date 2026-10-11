@@ -13,7 +13,7 @@ import type { QuizzTheme } from '~/types/quizz';
 
 jest.mock('~/services/api', () => ({
   __esModule: true,
-  default: { get: jest.fn(), post: jest.fn() },
+  default: { get: jest.fn(), post: jest.fn(), put: jest.fn() },
 }));
 
 type StoredAnswer = { userId: string; themeId: string; questionId: string; answerIndex: number };
@@ -117,6 +117,7 @@ describe('QuestionScreen', () => {
         themeId: 'theme-2027-police',
         questionId: 'question-2027-pol-01',
         answerIndex: 1,
+        isImportant: false,
       },
     });
     expect(mockNavigation.setParams).toHaveBeenCalledWith({
@@ -169,6 +170,41 @@ describe('QuestionScreen', () => {
     await render(<QuestionScreen />);
 
     expect(screen.queryByText('Faut-il plus de policiers ?')).not.toBeOnTheScreen();
+  });
+
+  describe('question importante pour moi', () => {
+    it('sends the star with the answer when set before answering', async () => {
+      await render(<QuestionScreen />);
+      const user = userEvent.setup();
+
+      await user.press(screen.getByText('Marquer comme importante pour moi'));
+      expect(screen.getByText('Question importante pour moi')).toBeOnTheScreen();
+      await user.press(screen.getByText('Non'));
+
+      expect(API.put).not.toHaveBeenCalled();
+      expect(API.post).toHaveBeenCalledWith({
+        path: '/answer',
+        body: expect.objectContaining({ questionId: 'question-2027-pol-01', answerIndex: 1, isImportant: true }),
+      });
+    });
+
+    it('stars an answered question without changing the answer', async () => {
+      savedAnswers = [
+        { userId: 'user-1', themeId: 'theme-2027-police', questionId: 'question-2027-pol-01', answerIndex: 1 },
+      ];
+      (API.put as jest.Mock).mockResolvedValue({ ok: true, data: { ...savedAnswers[0], isImportant: true } });
+      await render(<QuestionScreen />);
+      await screen.findByText('Non');
+
+      await userEvent.setup().press(screen.getByText('Marquer comme importante pour moi'));
+
+      expect(API.put).toHaveBeenCalledWith({
+        path: '/answer/important',
+        body: { questionId: 'question-2027-pol-01', isImportant: true },
+      });
+      expect(await screen.findByText('Question importante pour moi')).toBeOnTheScreen();
+      expect(API.post).not.toHaveBeenCalledWith(expect.objectContaining({ path: '/answer' }));
+    });
   });
 
   describe('feedback on a question', () => {

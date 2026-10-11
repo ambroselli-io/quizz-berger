@@ -22,7 +22,7 @@ export default function QuestionScreen() {
   const { themeId, questionId } = route.params;
   const { quizz } = useQuizz();
   const { user } = useUser();
-  const { userAnswers, setAnswer } = useUserAnswers();
+  const { userAnswers, setAnswer, setImportant } = useUserAnswers();
 
   const theme = useMemo(
     () => quizz.find((t) => t._id === themeId) ?? { _id: '', fr: '', backgroundColor: '', questions: [] },
@@ -42,6 +42,19 @@ export default function QuestionScreen() {
   useEffect(() => {
     setCurrentAnswerIndex(userAnswers.find((a) => a.questionId === questionId)?.answerIndex);
   }, [questionId, userAnswers]);
+
+  const currentAnswer = userAnswers.find((a) => a.questionId === questionId);
+  // Before the question is answered, the flag waits here and goes out with the answer.
+  const [pendingImportant, setPendingImportant] = useState(false);
+  useEffect(() => {
+    setPendingImportant(false);
+  }, [questionId]);
+  const isImportant = currentAnswer ? Boolean(currentAnswer.isImportant) : pendingImportant;
+  const toggleImportant = async () => {
+    if (!currentAnswer) return setPendingImportant(!isImportant);
+    const saved = await setImportant(currentAnswer.questionId, !isImportant);
+    if (!saved) Alert.alert("Non enregistré", "Vérifiez votre connexion internet et réessayez.");
+  };
 
   const userThemes = useMemo(
     () => [...userAnswers.reduce((themes: Set<string>, answer) => themes.add(answer.themeId), new Set<string>())],
@@ -90,6 +103,7 @@ export default function QuestionScreen() {
       themeId: theme._id,
       questionId,
       answerIndex,
+      ...(currentAnswer ? {} : { isImportant: pendingImportant }),
     });
     if (!saved) {
       setCurrentAnswerIndex(userAnswers.find((a) => a.questionId === questionId)?.answerIndex);
@@ -163,6 +177,27 @@ export default function QuestionScreen() {
             </Text>
           </Pressable>
         )}
+
+        <Pressable
+          onPress={toggleImportant}
+          accessibilityRole="button"
+          accessibilityState={{ selected: isImportant }}
+          className="mb-6 flex-row items-center self-center rounded-full border px-4 py-2"
+          style={{
+            backgroundColor: isImportant ? '#facc15' : '#ffffff',
+            borderColor: isImportant ? '#facc15' : '#d1d5db',
+          }}
+        >
+          <Text className="mr-2 text-base" style={{ color: isImportant ? '#000000' : '#374151' }}>
+            {isImportant ? '★' : '☆'}
+          </Text>
+          <Text
+            className={`text-sm ${isImportant ? 'font-semibold' : ''}`}
+            style={{ color: isImportant ? '#000000' : '#374151' }}
+          >
+            {isImportant ? 'Question importante pour moi' : 'Marquer comme importante pour moi'}
+          </Text>
+        </Pressable>
 
         <View className="gap-3">
           {question.answers.map((answer, index) => {

@@ -211,6 +211,25 @@ export default function ResultScreen() {
     [candidatesScorePerThemes, friendsScorePerThemes, hiddenCandidates, selectedFriends]
   );
 
+  // "Questions importantes pour moi": same scoring, restricted to the questions the user starred.
+  const importantAnswers = useMemo(
+    () => answersToShow.filter((a) => a.isImportant && selectedThemes.includes(a.themeId)),
+    [answersToShow, selectedThemes]
+  );
+  const importantPersons: UserAnswerWithScorePerThemeAndMax[] = useMemo(() => {
+    if (!importantAnswers.length) return [];
+    const score = (persons: Array<{ _id?: string; answers: Answer[] }>) =>
+      getCandidatesScorePerThemes(
+        importantAnswers,
+        persons.map((p) => ({ ...p, _id: (p as any).id ?? p._id, id: (p as any).id ?? p._id })) as any,
+        quizzQuestions
+      );
+    return [
+      ...score(candidates).filter((c) => !hiddenCandidates.includes(c.pseudo)),
+      ...score(friends).filter((f) => selectedFriends.includes(f.pseudo))
+    ];
+  }, [importantAnswers, candidates, friends, hiddenCandidates, selectedFriends, quizzQuestions]);
+
   const podiumsPerTheme = useMemo(
     () =>
       selectedThemes.map((themeId) => ({
@@ -353,6 +372,34 @@ export default function ResultScreen() {
             <Text className="mt-2 text-xs text-gray-500">
               N'oubliez pas de cliquer sur « Partager » pour permettre à vos amis de faire la même chose avec vous !
             </Text>
+          )}
+        </View>
+      )}
+
+      {/* Podium over the starred questions only */}
+      <View className="mt-8 px-4">
+        <Text className="mb-1 text-2xl font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
+          <Text style={{ color: "#facc15" }}>★ </Text>
+          Questions importantes pour moi
+        </Text>
+        <Text className="text-sm text-gray-600">
+          {importantAnswers.length === 0
+            ? publicPage
+              ? "Aucune question marquée comme importante."
+              : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."
+            : `Résultats calculés uniquement sur ${
+                importantAnswers.length === 1 ? "la question" : `les ${importantAnswers.length} questions`
+              } ${publicPage ? "marquée" : "que vous avez marquée"}${importantAnswers.length > 1 ? "s" : ""} comme importante${
+                importantAnswers.length > 1 ? "s" : ""
+              }.`}
+        </Text>
+      </View>
+      {importantAnswers.length > 0 && (
+        <View style={{ height: 300 }}>
+          {podiumLoading ? (
+            <PodiumSkeleton maxBarHeight={240} />
+          ) : (
+            <Podium podiumised={getPodium(importantPersons)} />
           )}
         </View>
       )}

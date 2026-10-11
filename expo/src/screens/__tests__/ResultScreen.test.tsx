@@ -100,3 +100,27 @@ describe('ResultScreen testimony', () => {
     expect(storage.getString(TESTIMONY_ASKED_KEY)).toBeUndefined();
   });
 });
+
+describe('ResultScreen questions importantes', () => {
+  it('explains how to star questions when none is starred', async () => {
+    await render(<ResultScreen />);
+
+    expect(await screen.findByText(/Questions importantes pour moi/)).toBeOnTheScreen();
+    expect(screen.getByText(/Marquer comme importante pour moi/)).toBeOnTheScreen();
+  });
+
+  it('shows a podium over the starred questions only', async () => {
+    useStore.setState({ userAnswers: [{ ...answers[0], isImportant: true }] });
+    (API.get as jest.Mock).mockImplementation(({ path }: { path: string }) => {
+      if (path === '/answer') return Promise.resolve({ ok: true, data: [{ ...answers[0], isImportant: true }] });
+      if (path === '/answer/candidates') return Promise.resolve({ ok: true, data: candidates });
+      return Promise.resolve({ ok: true, data: [] });
+    });
+
+    await render(<ResultScreen />);
+
+    expect(
+      await screen.findByText('Résultats calculés uniquement sur la question que vous avez marquée comme importante.'),
+    ).toBeOnTheScreen();
+  });
+});
