@@ -419,6 +419,24 @@ export const candidacies: Candidacy[] = [
           },
         ],
       },
+      {
+        date: '2026-10-09',
+        type: 'step',
+        label:
+          "Le vote de la primaire est prolongé jusqu'au dimanche 11 octobre 18 heures après une cyberattaque visant la plateforme de vote.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/la-plateforme-de-vote-pour-la-primaire-socialiste-victime-d-une-cyberattaque-depuis-son-ouverture-annonce-la-commission-d-organisation_8229811.html',
+            date: '2026-10-09',
+          },
+          {
+            label: 'Clubic',
+            url: 'https://www.clubic.com/actualite-633586-primaire-a-gauche-cyberattaque-oblige-a-prolonger-le-vote-jusqu-a-dimanche.html',
+            date: '2026-10-09',
+          },
+        ],
+      },
     ],
   },
   {
@@ -847,6 +865,24 @@ export const candidacies: Candidacy[] = [
           },
         ],
       },
+      {
+        date: '2026-10-09',
+        type: 'step',
+        label:
+          "Le vote de la primaire est prolongé jusqu'au dimanche 11 octobre 18 heures après une cyberattaque visant la plateforme de vote.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/la-plateforme-de-vote-pour-la-primaire-socialiste-victime-d-une-cyberattaque-depuis-son-ouverture-annonce-la-commission-d-organisation_8229811.html',
+            date: '2026-10-09',
+          },
+          {
+            label: 'Clubic',
+            url: 'https://www.clubic.com/actualite-633586-primaire-a-gauche-cyberattaque-oblige-a-prolonger-le-vote-jusqu-a-dimanche.html',
+            date: '2026-10-09',
+          },
+        ],
+      },
     ],
   },
   {
@@ -980,6 +1016,24 @@ export const candidacies: Candidacy[] = [
           },
         ],
       },
+      {
+        date: '2026-10-09',
+        type: 'step',
+        label:
+          "Le vote de la primaire est prolongé jusqu'au dimanche 11 octobre 18 heures après une cyberattaque visant la plateforme de vote.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/la-plateforme-de-vote-pour-la-primaire-socialiste-victime-d-une-cyberattaque-depuis-son-ouverture-annonce-la-commission-d-organisation_8229811.html',
+            date: '2026-10-09',
+          },
+          {
+            label: 'Clubic',
+            url: 'https://www.clubic.com/actualite-633586-primaire-a-gauche-cyberattaque-oblige-a-prolonger-le-vote-jusqu-a-dimanche.html',
+            date: '2026-10-09',
+          },
+        ],
+      },
     ],
   },
   {
@@ -1051,6 +1105,24 @@ export const candidacies: Candidacy[] = [
           },
         ],
       },
+      {
+        date: '2026-10-09',
+        type: 'step',
+        label:
+          "Le vote de la primaire est prolongé jusqu'au dimanche 11 octobre 18 heures après une cyberattaque visant la plateforme de vote.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/la-plateforme-de-vote-pour-la-primaire-socialiste-victime-d-une-cyberattaque-depuis-son-ouverture-annonce-la-commission-d-organisation_8229811.html',
+            date: '2026-10-09',
+          },
+          {
+            label: 'Clubic',
+            url: 'https://www.clubic.com/actualite-633586-primaire-a-gauche-cyberattaque-oblige-a-prolonger-le-vote-jusqu-a-dimanche.html',
+            date: '2026-10-09',
+          },
+        ],
+      },
     ],
   },
   {
@@ -1092,6 +1164,24 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/suspendu-du-ps-pour-des-accusations-de-violence-le-depute-philippe-brun-ne-participera',
             date: '2026-09-16',
+          },
+        ],
+      },
+      {
+        date: '2026-10-09',
+        type: 'step',
+        label:
+          "Le vote de la primaire est prolongé jusqu'au dimanche 11 octobre 18 heures après une cyberattaque visant la plateforme de vote.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/la-plateforme-de-vote-pour-la-primaire-socialiste-victime-d-une-cyberattaque-depuis-son-ouverture-annonce-la-commission-d-organisation_8229811.html',
+            date: '2026-10-09',
+          },
+          {
+            label: 'Clubic',
+            url: 'https://www.clubic.com/actualite-633586-primaire-a-gauche-cyberattaque-oblige-a-prolonger-le-vote-jusqu-a-dimanche.html',
+            date: '2026-10-09',
           },
         ],
       },
