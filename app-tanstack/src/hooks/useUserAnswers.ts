@@ -28,7 +28,14 @@ const useUserAnswers = () => {
     }
   }, []);
 
-  return { userAnswers, setAnswer };
+  const setImportant = useCallback(async (questionId: string, isImportant: boolean) => {
+    const response = await API.put({ path: '/answer/important', body: { questionId, isImportant } });
+    if (response?.ok) {
+      setUserAnswers((prev) => prev.map((a) => (a.questionId === questionId ? response.data : a)));
+    }
+  }, []);
+
+  return { userAnswers, setAnswer, setImportant };
 };
 
 export default useUserAnswers;

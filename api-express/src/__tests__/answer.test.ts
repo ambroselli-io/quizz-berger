@@ -74,6 +74,18 @@ describe("POST /answer", () => {
     expect(res.status).toBe(401);
   });
 
+  it("keeps the important flag when the answer changes without it", async () => {
+    const user = await signup("keeper");
+    await api()
+      .post("/answer")
+      .set(bearer(user.token))
+      .send({ themeId: "theme-2027-immigration", questionId: "question-2027-immi-01", answerIndex: 1, isImportant: true });
+
+    const res = await answer(user.token, "question-2027-immi-01", 2);
+
+    expect(res.body.data).toMatchObject({ answerIndex: 2, isImportant: true });
+  });
+
   it("rejects anonymous calls", async () => {
     const res = await api().post("/answer").send({ themeId: "theme-2027-immigration", questionId: "question-2027-immi-01", answerIndex: 0 });
     expect(res.status).toBe(401);
@@ -92,5 +104,32 @@ describe("GET /answer/candidates", () => {
       expect(res.headers["content-type"]).toMatch(/application\/json/);
       expect(res.body).toEqual({ ok: true, data: candidatesAnswers });
     }
+  });
+});
+
+describe("PUT /answer/important", () => {
+  it("flags and unflags an answered question, without touching the answer", async () => {
+    const user = await signup("flagger");
+    await answer(user.token, "question-2027-immi-01", 3);
+
+    const flagged = await api().put("/answer/important").set(bearer(user.token)).send({ questionId: "question-2027-immi-01", isImportant: true });
+    expect(flagged.status).toBe(200);
+    expect(flagged.body.data).toMatchObject({ answerIndex: 3, isImportant: true });
+
+    await api().put("/answer/important").set(bearer(user.token)).send({ questionId: "question-2027-immi-01", isImportant: false });
+    expect(await answersOf(user.id)).toMatchObject([{ answerIndex: 3, isImportant: false }]);
+  });
+
+  it("refuses a question not answered yet", async () => {
+    const user = await signup("hasty");
+    const res = await api().put("/answer/important").set(bearer(user.token)).send({ questionId: "question-2027-immi-01", isImportant: true });
+    expect(res.status).toBe(404);
+  });
+
+  it("rejects a malformed flag", async () => {
+    const user = await signup("sloppyflag");
+    await answer(user.token, "question-2027-immi-01", 0);
+    const res = await api().put("/answer/important").set(bearer(user.token)).send({ questionId: "question-2027-immi-01", isImportant: "yes" });
+    expect(res.status).toBe(409);
   });
 });

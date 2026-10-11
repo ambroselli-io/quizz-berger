@@ -18,6 +18,8 @@ export interface Answer {
   themeId: string;
   questionId: string;
   answerIndex: number;
+  /** "Question importante pour moi": gets its own podium on the results screen. */
+  isImportant?: boolean;
 }
 
 export interface User {

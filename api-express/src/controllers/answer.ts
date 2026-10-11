@@ -35,7 +35,7 @@ router.post(
   "/",
   passport.authenticate("user-id", { session: false }),
   catchErrors(async (req: RequestWithUserId, res: express.Response, next: express.NextFunction) => {
-    const { themeId, questionId, answerIndex } = req.body;
+    const { themeId, questionId, answerIndex, isImportant } = req.body;
     // Raw SQL below: Prisma no longer checks the types, so they are checked here.
     if (typeof themeId !== "string" || !themeId) {
       res.status(409).send({ ok: false, error: "themeId is not provided" });
@@ -49,6 +49,12 @@ router.post(
       res.status(409).send({ ok: false, error: "answer index is not provided" });
       return;
     }
+    if (isImportant !== undefined && typeof isImportant !== "boolean") {
+      res.status(409).send({ ok: false, error: "isImportant must be a boolean" });
+      return;
+    }
+    // Absent: an existing answer keeps its flag.
+    const importantFlag = isImportant ?? null;
     const userId = req.user.id;
 
     // The hottest route under load, so one round trip instead of four (user lookup, findFirst, create or update,
@@ -58,12 +64,12 @@ router.post(
     try {
       answers = await prisma.$queryRaw<Array<Answer>>`
         WITH updated AS (
-          UPDATE "Answer" SET "answerIndex" = ${answerIndex}, "updatedAt" = timezone('UTC', now())
+          UPDATE "Answer" SET "answerIndex" = ${answerIndex}, "isImportant" = COALESCE(${importantFlag}::boolean, "isImportant"), "updatedAt" = timezone('UTC', now())
           WHERE "userId" = ${userId} AND "themeId" = ${themeId} AND "questionId" = ${questionId}
           RETURNING *
         ), inserted AS (
-          INSERT INTO "Answer" ("id", "createdAt", "updatedAt", "themeId", "questionId", "answerIndex", "userId")
-          SELECT gen_random_uuid()::text, timezone('UTC', now()), timezone('UTC', now()), ${themeId}, ${questionId}, ${answerIndex}, ${userId}
+          INSERT INTO "Answer" ("id", "createdAt", "updatedAt", "themeId", "questionId", "answerIndex", "isImportant", "userId")
+          SELECT gen_random_uuid()::text, timezone('UTC', now()), timezone('UTC', now()), ${themeId}, ${questionId}, ${answerIndex}, COALESCE(${importantFlag}::boolean, false), ${userId}
           WHERE NOT EXISTS (SELECT 1 FROM updated)
           RETURNING *
         ), themes AS (
@@ -82,6 +88,30 @@ router.post(
 
     res.status(200).send({ ok: true, data: answers[0] });
     return;
+  }),
+);
+
+// "Question importante pour moi": only flags a question already answered, the answer itself is untouched.
+router.put(
+  "/important",
+  passport.authenticate("user-id", { session: false }),
+  catchErrors(async (req: RequestWithUserId, res: express.Response, next: express.NextFunction) => {
+    const { questionId, isImportant } = req.body;
+    if (typeof questionId !== "string" || !questionId) {
+      res.status(409).send({ ok: false, error: "questionId is not provided" });
+      return;
+    }
+    if (typeof isImportant !== "boolean") {
+      res.status(409).send({ ok: false, error: "isImportant must be a boolean" });
+      return;
+    }
+    const answer = await prisma.answer.findFirst({ where: { userId: req.user.id, questionId } });
+    if (!answer) {
+      res.status(404).send({ ok: false, error: "answer the question first" });
+      return;
+    }
+    const updated = await prisma.answer.update({ where: { id: answer.id }, data: { isImportant } });
+    res.status(200).send({ ok: true, data: updated });
   }),
 );
 

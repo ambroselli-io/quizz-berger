@@ -33,7 +33,17 @@ const useUserAnswers = () => {
     [upsertAnswer],
   );
 
-  return { userAnswers, setAnswer };
+  const setImportant = useCallback(
+    async (questionId: string, isImportant: boolean): Promise<boolean> => {
+      const response = await API.put({ path: '/answer/important', body: { questionId, isImportant } });
+      if (!response?.ok) return false;
+      upsertAnswer(response.data);
+      return true;
+    },
+    [upsertAnswer],
+  );
+
+  return { userAnswers, setAnswer, setImportant };
 };
 
 export default useUserAnswers;

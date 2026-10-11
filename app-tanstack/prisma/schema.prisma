@@ -39,6 +39,7 @@ model Answer {
   themeId     String
   questionId  String
   answerIndex Int
+  isImportant Boolean  @default(false)
 
   // Relations
   user   User   @relation(fields: [userId], references: [id])

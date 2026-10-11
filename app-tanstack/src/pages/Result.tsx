@@ -19,7 +19,7 @@ import Loader from '@app/components/Loader';
 import Podium from '@app/components/Podium';
 import Filter from '@app/components/Filter';
 import type { Answer } from '@app/types/quizz';
-import { Share2, Users, Save } from 'lucide-react';
+import { Share2, Users, Save, Star } from 'lucide-react';
 
 import { getCandidatesScorePerThemes } from '~/shared/utils/score';
 import { getPodium } from '~/shared/utils/podium';
@@ -225,6 +225,25 @@ export default function Result() {
     [candidatesScorePerThemes, friendsScorePerThemes, selectedCandidates, selectedFriends],
   );
 
+  // "Questions importantes pour moi": same scoring, restricted to the questions the user starred.
+  const importantAnswers = useMemo(
+    () => answersToShow.filter((a) => a.isImportant && selectedThemes.includes(a.themeId)),
+    [answersToShow, selectedThemes],
+  );
+  const importantPersons = useMemo(() => {
+    if (!importantAnswers.length) return [];
+    const score = (persons: typeof candidates | typeof friends) =>
+      getCandidatesScorePerThemes(
+        importantAnswers as Parameters<typeof getCandidatesScorePerThemes>[0],
+        persons as unknown as Parameters<typeof getCandidatesScorePerThemes>[1],
+        quizzQuestions,
+      );
+    return [
+      ...score(candidates).filter((candidate) => selectedCandidates.includes(candidate?.pseudo)),
+      ...score(friends).filter((friend) => selectedFriends.includes(friend?.pseudo)),
+    ];
+  }, [importantAnswers, candidates, friends, selectedCandidates, selectedFriends]);
+
   const podiumsPerTheme = useMemo(
     () =>
       selectedThemes.map((themeId) => ({
@@ -342,6 +361,30 @@ export default function Result() {
             </div>
           )}
         </div>
+        <section className="mx-auto mb-[5vh] max-w-[1024px]">
+          <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">
+            <Star size={24} className="mr-2 inline align-[-2px] text-yellow-400" fill="currentColor" />
+            Questions importantes pour moi
+          </h2>
+          {importantPersons.length > 0 ? (
+            <>
+              <p className="text-sm text-gray-600">
+                Résultats calculés uniquement sur {importantAnswers.length === 1 ? 'la question' : `les ${importantAnswers.length} questions`}{' '}
+                {publicPage ? 'marquée' : 'que vous avez marquée'}
+                {importantAnswers.length > 1 ? 's' : ''} comme importante{importantAnswers.length > 1 ? 's' : ''}.
+              </p>
+              <div className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
+                <Podium podiumised={getPodium(importantPersons)} />
+              </div>
+            </>
+          ) : (
+            <p className="text-sm text-gray-600">
+              {publicPage
+                ? "Aucune question marquée comme importante."
+                : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."}
+            </p>
+          )}
+        </section>
         <div className="mx-auto mb-[2vh] max-w-[1024px]">
           <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">Thème par thème</h2>
           <Filter toggle={setShowCandidates} isActive={showCandidates} title="Afficher/masquer des candidats">
