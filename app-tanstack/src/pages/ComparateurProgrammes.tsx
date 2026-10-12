@@ -9,6 +9,7 @@ import {
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import { partyList, partiesCount, partyColor } from '@app/utils/parties';
 import Footer from '@app/components/Footer';
+import { readableTextColor } from '@app/utils/contrast';
 
 const MAX_SELECTED = 4;
 
@@ -90,16 +91,16 @@ export default function ComparateurProgrammes() {
                     aria-pressed={isSelected}
                     className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition ${
                       isSelected
-                        ? 'border-transparent text-white'
+                        ? 'border-transparent'
                         : isFull
                           ? 'cursor-not-allowed border-gray-200 bg-white text-gray-300'
                           : 'border-gray-200 bg-white text-quizz-dark hover:shadow-sm'
                     }`}
-                    style={isSelected ? { backgroundColor: candidate.color } : undefined}
+                    style={isSelected ? { backgroundColor: candidate.color, color: readableTextColor(candidate.color) } : undefined}
                   >
                     <span
                       className="inline-block h-2.5 w-2.5 rounded-full"
-                      style={{ backgroundColor: isSelected ? '#fff' : candidate.color }}
+                      style={{ backgroundColor: isSelected ? 'currentColor' : candidate.color }}
                     />
                     {candidate.pseudo}
                   </button>

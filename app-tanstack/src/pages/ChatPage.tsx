@@ -4,6 +4,7 @@ import API from '@app/services/api';
 import useUser from '@app/hooks/useUser';
 import Loader from '@app/components/Loader';
 import LoginContainer from '@app/components/LoginContainer';
+import QuizzModal from '@app/components/QuizzModal';
 import ModalDonation from '@app/components/modals/ModalDonation';
 import { candidateSlugMap, type CandidateSlugEntry } from '@app/utils/seo-light';
 import {
@@ -49,6 +50,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
   const [candidateId, setCandidateId] = useState<string | null>(initialChat?.candidateId ?? null);
   const [chat, setChat] = useState<Chat | null>(initialChat ?? null);
   const [showDonation, setShowDonation] = useState(false);
+  const [showLogin, setShowLogin] = useState(true);
   const [error, setError] = useState('');
   const [input, setInput] = useState('');
   const [isSending, setIsSending] = useState(false);
@@ -148,7 +150,18 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
             <p className="text-center leading-relaxed">
               Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
             </p>
-            <LoginContainer showSignup onSuccess={() => {}} />
+            <button
+              onClick={() => setShowLogin(true)}
+              className="cursor-pointer rounded-xl bg-quizz-yellow px-5 py-3 font-bold text-quizz-dark"
+            >
+              Se connecter ou s'inscrire
+            </button>
+            <QuizzModal title="Connexion" isActive={showLogin} onClose={() => setShowLogin(false)}>
+              <p className="mb-6 text-center leading-relaxed">
+                Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
+              </p>
+              <LoginContainer showSignup onSuccess={() => setShowLogin(false)} />
+            </QuizzModal>
           </div>
         ) : isConvaincre && !candidateId ? (
           <CandidatePicker onPick={setCandidateId} />

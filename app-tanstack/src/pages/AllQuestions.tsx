@@ -9,6 +9,7 @@ import useUserAnswers from '@app/hooks/useUserAnswers';
 import useCandidates from '@app/hooks/useCandidates';
 import useFriends from '@app/hooks/useFriends';
 import type { Candidate } from '@app/types/quizz';
+import { readableTextColor } from '@app/utils/contrast';
 
 const API_URL = import.meta.env.DEV ? 'http://localhost:5179' : 'https://api.quizz-du-berger.com';
 
@@ -168,7 +169,7 @@ export default function AllQuestions() {
                   {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index]} - {theme.fr}
                   <span
                     className="absolute inset-x-0 -bottom-[7px] h-2.5 -skew-x-[18deg]"
-                    style={{ backgroundColor: `${theme.backgroundColor}aa` }}
+                    style={{ backgroundColor: `${theme.backgroundColor}${readableTextColor(theme.backgroundColor ?? '', 0.67) === '#000000' ? 'aa' : '40'}` }}
                   />
                 </h3>
               </summary>
@@ -184,7 +185,7 @@ export default function AllQuestions() {
                         {questionIndex + 1} - {question.fr}
                         <span
                           className="absolute inset-x-0 -bottom-[3px] h-[5px] skew-x-[18deg]"
-                          style={{ backgroundColor: `${theme.backgroundColor}aa` }}
+                          style={{ backgroundColor: `${theme.backgroundColor}${readableTextColor(theme.backgroundColor ?? '', 0.67) === '#000000' ? 'aa' : '40'}` }}
                         />
                       </h4>
                     </summary>

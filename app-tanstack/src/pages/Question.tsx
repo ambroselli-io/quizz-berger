@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate } from '@app/lib/router';
 import { quizz } from '@app/utils/quizz';
+import { readableTextColor } from '@app/utils/contrast';
 import useUser from '@app/hooks/useUser';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import ModalQuestionFeedback from '@app/components/modals/ModalQuestionFeedback';
@@ -17,6 +18,7 @@ export default function Question() {
     [themeId],
   );
   const questions = theme.questions;
+  const headerTextColor = readableTextColor(theme.backgroundColor ?? '', 0.8);
 
   const questionIndex = useMemo(
     () => questions.findIndex((q) => q._id === questionId),
@@ -100,15 +102,15 @@ export default function Question() {
       {/* Theme header */}
       <div
         className="flex h-20 items-center justify-center px-5 max-lg:h-auto max-lg:min-h-[90px] max-lg:flex-col max-lg:justify-evenly max-lg:px-4"
-        style={{ backgroundColor: `${theme.backgroundColor}CC` }}
+        style={{ backgroundColor: `${theme.backgroundColor}CC`, color: headerTextColor }}
       >
         <div className="flex w-full max-w-[1024px] items-center justify-between">
-          <button className="cursor-pointer border-none bg-transparent text-sm" onClick={goToThemes}>
+          <button className="cursor-pointer border-none bg-transparent text-sm text-inherit" onClick={goToThemes}>
             ‹ Retour aux thèmes
           </button>
           <h2 className="text-center font-[Merriweather] text-xl font-bold max-lg:hidden">{theme.fr}</h2>
           <button
-            className="cursor-pointer border-none bg-transparent text-sm"
+            className="cursor-pointer border-none bg-transparent text-sm text-inherit"
             onClick={goToResults}
             style={{ opacity: showResultsButton ? 1 : 0 }}
           >
@@ -119,7 +121,7 @@ export default function Question() {
           <button
             onClick={goToPreviousQuestion}
             aria-label="Question précédente"
-            className="h-[17px] min-w-[19px] cursor-pointer border-none bg-transparent bg-[url('/left-arrow.svg')] bg-cover bg-no-repeat"
+            className={`h-[17px] min-w-[19px] cursor-pointer border-none bg-transparent bg-[url('/left-arrow.svg')] bg-cover bg-no-repeat ${headerTextColor === '#ffffff' ? 'invert' : ''}`}
           />
           <h2 className="text-center font-[Merriweather] text-lg font-bold">{theme.fr}</h2>
           <span className="min-w-[19px]" />

@@ -1,5 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import type { QuizzTheme, Answer } from '@app/types/quizz';
+import { readableTextColor } from '@app/utils/contrast';
 
 interface ThemeButtonProps {
   theme: QuizzTheme;
@@ -16,6 +17,8 @@ const ThemeButton = ({ theme, onClick, userAnswers = [] }: ThemeButtonProps) => 
   );
 
   const [progress, setProgress] = useState(0);
+  // The label stays black over a partial fill, so a dark theme colour gets a lighter fill.
+  const fillAlpha = readableTextColor(backgroundColor ?? '', 0.8) === '#000000' ? 'CC' : '40';
 
   useEffect(() => {
     setProgress(userThemeAnswers / questions.length);
@@ -30,7 +33,7 @@ const ThemeButton = ({ theme, onClick, userAnswers = [] }: ThemeButtonProps) => 
     >
       <div
         className="absolute left-0 top-0 h-full"
-        style={{ width: `${Math.round(progress * 100)}%`, backgroundColor: `${backgroundColor}CC` }}
+        style={{ width: `${Math.round(progress * 100)}%`, backgroundColor: `${backgroundColor}${fillAlpha}` }}
       />
       <span className="relative z-10">{fr}</span>
       <span className="relative z-10 mt-1 ml-auto text-[0.65em] text-black">

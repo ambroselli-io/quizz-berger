@@ -3,6 +3,7 @@ import { Link, useNavigate } from '@app/lib/router';
 import ThemeButton from '@app/components/ThemeButton';
 import { quizz, quizzQuestions, quizzQuestionsCount } from '@app/utils/quizz';
 import { colors, temoignages } from '@app/utils/temoignages';
+import { readableTextColor } from '@app/utils/contrast';
 import Podium from '@app/components/Podium';
 import Loader from '@app/components/Loader';
 import Footer from '@app/components/Footer';
@@ -333,8 +334,8 @@ export default function Home() {
             >
               <div className="mb-4 flex items-center gap-3">
                 <div
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
-                  style={{ backgroundColor: colors[index] }}
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 text-sm font-semibold"
+                  style={{ backgroundColor: colors[index], color: readableTextColor(colors[index]) }}
                 >
                   {figcaption.charAt(0)}
                 </div>
