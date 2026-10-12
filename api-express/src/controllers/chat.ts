@@ -16,10 +16,10 @@ const router = express.Router();
 // Cost guards: every message resends the whole conversation (and, for a candidate, all their answers) to the model.
 export const MAX_USER_MESSAGES_PER_CHAT = 30;
 export const MAX_MESSAGE_LENGTH = 2000;
-export const MAX_CHATS_PER_DAY = 10;
+export const MAX_CHATS_PER_DAY = 50;
 // Users who made a donation (controllers/supporter.ts).
 export const SUPPORTER_MAX_USER_MESSAGES_PER_CHAT = 60;
-export const SUPPORTER_MAX_CHATS_PER_DAY = 30;
+export const SUPPORTER_MAX_CHATS_PER_DAY = 150;
 // Large 4 reasons before answering, and the reasoning counts as output: ~1,000-3,000 tokens before a 150-word reply.
 const MAX_OUTPUT_TOKENS = 6000;
 
