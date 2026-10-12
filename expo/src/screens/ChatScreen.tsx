@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -10,108 +10,101 @@ import {
   Modal,
   Linking,
   ActivityIndicator,
-  Alert,
-} from 'react-native';
-import { useNavigation, useRoute } from '@react-navigation/native';
-import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import type { RouteProp } from '@react-navigation/native';
-import type { RootStackParamList } from '~/types/navigation';
-import API from '~/services/api';
-import useUser from '~/hooks/useUser';
-import QuizzButton from '~/components/QuizzButton';
-import CandidateAvatar from '~/components/CandidateAvatar';
-import candidatesAnswers from '~/shared/candidates-answers.json';
-import { sendChatMessage, type Chat } from '~/services/chat';
-import {
-  AI_DISCLAIMER,
-  CANDIDATE_DISCLAIMER,
-  DONATION_URL,
-  SUPPORT_PAGE_URL,
-  getChatMode,
-} from '~/utils/chatModes';
+  Alert
+} from "react-native";
+import { useNavigation, useRoute } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import type { RouteProp } from "@react-navigation/native";
+import type { RootStackParamList } from "~/types/navigation";
+import API from "~/services/api";
+import useUser from "~/hooks/useUser";
+import QuizzButton from "~/components/QuizzButton";
+import CandidateAvatar from "~/components/CandidateAvatar";
+import candidatesAnswers from "~/shared/candidates-answers.json";
+import { sendChatMessage, type Chat } from "~/services/chat";
+import { AI_DISCLAIMER, CANDIDATE_DISCLAIMER, DONATION_URL, SUPPORT_PAGE_URL, getChatMode } from "~/utils/chatModes";
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
-type Route = RouteProp<RootStackParamList, 'Chat'>;
+type Route = RouteProp<RootStackParamList, "Chat">;
 
 const font = (name: string) => ({ fontFamily: name });
 
-const DonationModal = ({
-  isVisible,
-  onClose,
-}: {
-  isVisible: boolean;
-  onClose: () => void;
-}) => {
-  const [step, setStep] = useState<'ask' | 'claim' | 'sent'>('ask');
-  const [tipeeePseudo, setTipeeePseudo] = useState('');
-  const [amount, setAmount] = useState('');
+const DonationModal = ({ isVisible, onClose }: { isVisible: boolean; onClose: () => void }) => {
+  const [step, setStep] = useState<"ask" | "claim" | "sent">("ask");
+  const [tipeeePseudo, setTipeeePseudo] = useState("");
+  const [amount, setAmount] = useState("");
   const [isSending, setIsSending] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const close = () => {
-    setStep('ask');
-    setError('');
+    setStep("ask");
+    setError("");
     onClose();
   };
 
   const submit = async () => {
     if (!tipeeePseudo.trim() || !amount.trim()) {
-      setError('Indique ton pseudo Tipeee et le montant de ton don.');
+      setError("Indique ton pseudo Tipeee et le montant de ton don.");
       return;
     }
     setIsSending(true);
-    setError('');
-    const res = await API.post({ path: '/supporter/claim', body: { tipeeePseudo, amount } });
+    setError("");
+    const res = await API.post({ path: "/supporter/claim", body: { tipeeePseudo, amount } });
     setIsSending(false);
     if (!res?.ok) {
       setError(res?.error ?? "Ta déclaration n'a pas pu être envoyée, réessaie dans quelques instants.");
       return;
     }
-    setStep('sent');
+    setStep("sent");
   };
 
   const paragraph = (text: string) => (
-    <Text className="text-base leading-6" style={font('MerriweatherSans_400Regular')}>
+    <Text className="text-base leading-6" style={font("MerriweatherSans_400Regular")}>
       {text}
     </Text>
   );
 
   return (
     <Modal visible={isVisible} transparent animationType="slide" onRequestClose={close}>
-      <KeyboardAvoidingView className="flex-1" behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+      <KeyboardAvoidingView className="flex-1" behavior={Platform.OS === "ios" ? "padding" : undefined}>
         <View className="flex-1 justify-end bg-black/60">
           <View className="gap-4 rounded-t-3xl bg-white p-6 pb-10">
-            <Text className="text-center text-xl text-quizz-dark" style={font('Merriweather_700Bold')}>
+            <Text className="text-center text-xl text-quizz-dark" style={font("Merriweather_700Bold")}>
               Un petit coup de main ?
             </Text>
-            {step === 'ask' && (
+            {step === "ask" && (
               <>
-                {paragraph('Je fais le Quizz du Berger tout seul. Il est gratuit, sans publicité, et il le restera.')}
                 {paragraph(
-                  "Ton don finance cette IA et les prochains outils du site. Et c'est toi qui choisis lesquels : propose tes idées et vote pour celles des autres.",
+                  "Le Quizz du Berger est gratuit, sans publicité, et il le restera. Le chat avec l'IA Mistral n'est pas gratuit, et nous acceptons volontiers les dons pour financer ce service ainsi que les développements du site."
+                )}
+                {paragraph(
+                  "En échange d'un don, tu peux proposer tes idées de développement du Quizz, et voter pour celles des autres. Tout don est réinvesti dans le site."
                 )}
                 {paragraph("Certains donnent, d'autres non, et c'est très bien comme ça.")}
                 <Pressable onPress={() => Linking.openURL(SUPPORT_PAGE_URL)} hitSlop={8}>
-                  <Text className="text-center text-base underline" style={font('MerriweatherSans_400Regular')}>
+                  <Text className="text-center text-base underline" style={font("MerriweatherSans_400Regular")}>
                     Voir où va l'argent et proposer une idée
                   </Text>
                 </Pressable>
                 {!!DONATION_URL && (
                   <QuizzButton onPress={() => Linking.openURL(DONATION_URL)}>Faire un don sur Tipeee</QuizzButton>
                 )}
-                <Pressable onPress={() => setStep('claim')} className="items-center rounded-full border-2 border-quizz-yellow px-6 py-3">
-                  <Text className="text-base" style={font('MerriweatherSans_700Bold')}>
+                <Pressable
+                  onPress={() => setStep("claim")}
+                  className="items-center rounded-full border-2 border-quizz-yellow px-6 py-3"
+                >
+                  <Text className="text-base" style={font("MerriweatherSans_700Bold")}>
                     J'ai fait un don
                   </Text>
                 </Pressable>
                 <Pressable onPress={close} className="items-center rounded-full border-2 border-gray-200 px-6 py-3">
-                  <Text className="text-base" style={font('MerriweatherSans_700Bold')}>
+                  <Text className="text-base" style={font("MerriweatherSans_700Bold")}>
                     Continuer sans donner
                   </Text>
                 </Pressable>
               </>
             )}
-            {step === 'claim' && (
+            {step === "claim" && (
               <>
                 {paragraph("Dis-moi sous quel pseudo tu as donné sur Tipeee : je vérifie, puis j'active ton accès.")}
                 <TextInput
@@ -135,10 +128,10 @@ const DonationModal = ({
                 </QuizzButton>
               </>
             )}
-            {step === 'sent' && (
+            {step === "sent" && (
               <>
                 {paragraph(
-                  "Merci beaucoup ! Je vérifie ton don sur Tipeee et j'active ton accès dans les prochains jours. Tu n'as rien d'autre à faire.",
+                  "Merci beaucoup ! Je vérifie ton don sur Tipeee et j'active ton accès dans les prochains jours. Tu n'as rien d'autre à faire."
                 )}
                 <QuizzButton onPress={close}>Continuer la discussion</QuizzButton>
               </>
@@ -154,15 +147,15 @@ export default function ChatScreen() {
   const navigation = useNavigation<Nav>();
   const { params } = useRoute<Route>();
   const chatMode = getChatMode(params.mode);
-  const isConvaincre = chatMode.mode === 'convaincre';
+  const isConvaincre = chatMode.mode === "convaincre";
   const { user, isLoading } = useUser();
   const hasAccount = !!user.isLoggedIn && !!user.pseudo;
 
   const [candidateId, setCandidateId] = useState<string | null>(null);
   const [chat, setChat] = useState<Chat | null>(null);
   const [showDonation, setShowDonation] = useState(false);
-  const [error, setError] = useState('');
-  const [input, setInput] = useState('');
+  const [error, setError] = useState("");
+  const [input, setInput] = useState("");
   const [isSending, setIsSending] = useState(false);
   // chatId: an existing conversation picked up again from the list.
   const [isResuming, setIsResuming] = useState(!!params.chatId);
@@ -182,7 +175,7 @@ export default function ChatScreen() {
         setChat(res.data);
         setCandidateId(res.data.candidateId);
       } else {
-        setError(res?.error ?? 'Discussion introuvable');
+        setError(res?.error ?? "Discussion introuvable");
       }
       setIsResuming(false);
     });
@@ -190,26 +183,26 @@ export default function ChatScreen() {
 
   const remove = () => {
     if (!chat) return;
-    Alert.alert('Supprimer', 'Supprimer définitivement cette discussion ?', [
-      { text: 'Annuler', style: 'cancel' },
+    Alert.alert("Supprimer", "Supprimer définitivement cette discussion ?", [
+      { text: "Annuler", style: "cancel" },
       {
-        text: 'Supprimer',
-        style: 'destructive',
+        text: "Supprimer",
+        style: "destructive",
         onPress: async () => {
           const res = await API.delete({ path: `/chat/${chat.id}` });
           if (res?.ok) navigation.goBack();
           else setError(res?.error ?? "La discussion n'a pas pu être supprimée.");
-        },
-      },
+        }
+      }
     ]);
   };
 
   const startChat = async () => {
-    setError('');
+    setError("");
     setChat(null);
-    const res = await API.post({ path: '/chat', body: { mode: chatMode.mode, candidateId } });
+    const res = await API.post({ path: "/chat", body: { mode: chatMode.mode, candidateId } });
     if (!res?.ok) {
-      setError(res?.error ?? 'Impossible de lancer la discussion, réessaie dans quelques instants.');
+      setError(res?.error ?? "Impossible de lancer la discussion, réessaie dans quelques instants.");
       return;
     }
     setChat(res.data);
@@ -225,7 +218,7 @@ export default function ChatScreen() {
 
   const restart = (resetCandidate: boolean) => {
     setChat(null);
-    setError('');
+    setError("");
     if (resetCandidate) {
       // The effect starts the next chat once a candidate is picked.
       startedRef.current = false;
@@ -239,13 +232,13 @@ export default function ChatScreen() {
     const text = input.trim();
     if (!text || isSending || !chat) return;
     const before = chat.messages;
-    const withUser = [...before, { role: 'user' as const, content: text }];
-    setInput('');
-    setError('');
+    const withUser = [...before, { role: "user" as const, content: text }];
+    setInput("");
+    setError("");
     setIsSending(true);
-    setChat((c) => c && { ...c, messages: [...withUser, { role: 'assistant', content: '' }] });
+    setChat((c) => c && { ...c, messages: [...withUser, { role: "assistant", content: "" }] });
     const res = await sendChatMessage(chat.id, text, (reply) =>
-      setChat((c) => c && { ...c, messages: [...withUser, { role: 'assistant', content: reply }] }),
+      setChat((c) => c && { ...c, messages: [...withUser, { role: "assistant", content: reply }] })
     );
     if (!res.ok) {
       setChat((c) => c && { ...c, messages: before });
@@ -256,7 +249,10 @@ export default function ChatScreen() {
   };
 
   const disclaimer = (
-    <Text className="rounded-lg bg-yellow-50 p-3 text-sm leading-5 text-gray-800" style={font('MerriweatherSans_400Regular')}>
+    <Text
+      className="rounded-lg bg-yellow-50 p-3 text-sm leading-5 text-gray-800"
+      style={font("MerriweatherSans_400Regular")}
+    >
       {AI_DISCLAIMER}
       {isConvaincre && ` ${CANDIDATE_DISCLAIMER}`}
     </Text>
@@ -273,14 +269,14 @@ export default function ChatScreen() {
   if (!hasAccount) {
     return (
       <ScrollView className="flex-1 bg-white" contentContainerStyle={{ padding: 20, gap: 16 }}>
-        <Text className="text-base leading-6" style={font('MerriweatherSans_400Regular')}>
+        <Text className="text-base leading-6" style={font("MerriweatherSans_400Regular")}>
           {chatMode.description}
         </Text>
         {disclaimer}
-        <Text className="text-base leading-6" style={font('MerriweatherSans_400Regular')}>
+        <Text className="text-base leading-6" style={font("MerriweatherSans_400Regular")}>
           Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
         </Text>
-        <QuizzButton onPress={() => navigation.navigate('Login')}>Créer un compte ou se connecter</QuizzButton>
+        <QuizzButton onPress={() => navigation.navigate("Login")}>Créer un compte ou se connecter</QuizzButton>
       </ScrollView>
     );
   }
@@ -288,7 +284,7 @@ export default function ChatScreen() {
   if (isConvaincre && !candidateId && !isResuming) {
     return (
       <ScrollView className="flex-1 bg-white" contentContainerStyle={{ padding: 20, gap: 12 }}>
-        <Text className="text-xl text-quizz-dark" style={font('Merriweather_700Bold')}>
+        <Text className="text-xl text-quizz-dark" style={font("Merriweather_700Bold")}>
           Quel candidat veux-tu convaincre ?
         </Text>
         {disclaimer}
@@ -299,7 +295,7 @@ export default function ChatScreen() {
             className="flex-row items-center gap-3 rounded-xl border-2 border-gray-200 p-2 active:border-quizz-yellow"
           >
             <CandidateAvatar picture={c.picture} color={c.color} size={40} />
-            <Text className="text-base" style={font('MerriweatherSans_400Regular')}>
+            <Text className="text-base" style={font("MerriweatherSans_400Regular")}>
               {c.pseudo}
             </Text>
           </Pressable>
@@ -308,13 +304,13 @@ export default function ChatScreen() {
     );
   }
 
-  const userMessagesCount = chat?.messages.filter((m) => m.role === 'user').length ?? 0;
+  const userMessagesCount = chat?.messages.filter((m) => m.role === "user").length ?? 0;
 
   return (
     <KeyboardAvoidingView
       className="flex-1 bg-white"
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-      keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      keyboardVerticalOffset={Platform.OS === "ios" ? 100 : 0}
     >
       <ScrollView
         ref={scrollRef}
@@ -325,19 +321,16 @@ export default function ChatScreen() {
       >
         {disclaimer}
         {chat?.messages.map((message, index) => (
-          <View
-            key={index}
-            className={`flex-row items-end gap-2 ${message.role === 'user' ? 'flex-row-reverse' : ''}`}
-          >
-            {message.role === 'assistant' && candidate && (
+          <View key={index} className={`flex-row items-end gap-2 ${message.role === "user" ? "flex-row-reverse" : ""}`}>
+            {message.role === "assistant" && candidate && (
               <CandidateAvatar picture={candidate.picture} color={candidate.color} size={28} />
             )}
             <View
-              className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${message.role === 'user' ? 'bg-quizz-dark' : 'bg-gray-100'}`}
+              className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${message.role === "user" ? "bg-quizz-dark" : "bg-gray-100"}`}
             >
               <Text
-                className={`text-base leading-6 ${message.role === 'user' ? 'text-white' : 'text-gray-900'}`}
-                style={font('MerriweatherSans_400Regular')}
+                className={`text-base leading-6 ${message.role === "user" ? "text-white" : "text-gray-900"}`}
+                style={font("MerriweatherSans_400Regular")}
               >
                 {message.content || "L'IA réfléchit, ça peut prendre une vingtaine de secondes…"}
               </Text>
@@ -346,7 +339,7 @@ export default function ChatScreen() {
         ))}
         {!chat && !error && <ActivityIndicator />}
         {!!error && (
-          <Text className="text-center text-sm text-red-600" style={font('MerriweatherSans_400Regular')}>
+          <Text className="text-center text-sm text-red-600" style={font("MerriweatherSans_400Regular")}>
             {error}
           </Text>
         )}
@@ -387,9 +380,9 @@ export default function ChatScreen() {
           <Pressable
             onPress={send}
             disabled={isSending || !input.trim()}
-            className={`rounded-xl bg-quizz-yellow px-4 py-3 ${isSending || !input.trim() ? 'opacity-50' : ''}`}
+            className={`rounded-xl bg-quizz-yellow px-4 py-3 ${isSending || !input.trim() ? "opacity-50" : ""}`}
           >
-            <Text className="text-base text-quizz-dark" style={font('MerriweatherSans_700Bold')}>
+            <Text className="text-base text-quizz-dark" style={font("MerriweatherSans_700Bold")}>
               Envoyer
             </Text>
           </Pressable>

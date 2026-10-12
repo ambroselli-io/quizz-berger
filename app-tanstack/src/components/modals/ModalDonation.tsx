@@ -71,10 +71,14 @@ const ModalDonation = ({ isActive, onClose }: ModalDonationProps) => {
       <div className="flex flex-col gap-4 leading-relaxed">
         {step === 'ask' && (
           <>
-            <p>Je fais le Quizz du Berger tout seul. Il est gratuit, sans publicité, et il le restera.</p>
             <p>
-              Ton don finance cette IA et les prochains outils du site. Et c'est toi qui choisis lesquels : propose tes
-              idées et vote pour celles des autres.
+              Le Quizz du Berger est gratuit, sans publicité, et il le restera. Le chat avec l'IA Mistral
+              n'est pas gratuit, et nous acceptons volontiers les dons pour financer ce service ainsi que les
+              développements du site.
+            </p>
+            <p>
+              En échange d'un don, tu peux proposer tes idées de développement du Quizz, et voter pour celles
+              des autres. Tout don est réinvesti dans le site.
             </p>
             <p>Certains donnent, d'autres non, et c'est très bien comme ça.</p>
             <Link to="/soutenir" onClick={close} className="text-center underline">
@@ -97,7 +101,10 @@ const ModalDonation = ({ isActive, onClose }: ModalDonationProps) => {
               >
                 J'ai fait un don
               </button>
-              <button onClick={close} className="cursor-pointer rounded-xl border-2 border-gray-200 bg-white px-5 py-3">
+              <button
+                onClick={close}
+                className="cursor-pointer rounded-xl border-2 border-gray-200 bg-white px-5 py-3"
+              >
                 Continuer sans donner
               </button>
             </div>
@@ -107,10 +114,13 @@ const ModalDonation = ({ isActive, onClose }: ModalDonationProps) => {
         {step === 'sent' && (
           <>
             <p>
-              Merci beaucoup ! Je vérifie ton don sur Tipeee et j'active ton accès dans les prochains jours. Tu n'as rien
-              d'autre à faire.
+              Merci beaucoup ! Je vérifie ton don sur Tipeee et j'active ton accès dans les prochains jours.
+              Tu n'as rien d'autre à faire.
             </p>
-            <button onClick={close} className="cursor-pointer rounded-xl bg-quizz-yellow px-5 py-3 font-bold text-quizz-dark">
+            <button
+              onClick={close}
+              className="cursor-pointer rounded-xl bg-quizz-yellow px-5 py-3 font-bold text-quizz-dark"
+            >
               Continuer la discussion
             </button>
           </>

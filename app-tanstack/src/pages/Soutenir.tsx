@@ -304,13 +304,13 @@ export default function Soutenir() {
           Soutenir le Quizz du Berger
         </h1>
         <p className="mb-3 leading-relaxed">
-          Je fais le Quizz du Berger tout seul. Il est gratuit, sans publicité, et il le restera. Les dons
-          financent l'IA du site et les prochains outils.
+          Le Quizz du Berger est gratuit, sans publicité, et il le restera. Le chat avec l'IA Mistral n'est
+          pas gratuit, et nous acceptons volontiers les dons pour financer ce service ainsi que les
+          développements du site.
         </p>
         <p className="mb-6 leading-relaxed">
-          Et c'est toi qui choisis lesquels : propose tes idées, vote pour celles des autres. Tout ce qui
-          entre et tout ce qui sort est affiché ici. Si un jour il reste de l'argent, il sera réinvesti dans
-          le site.
+          En échange d'un don, tu peux proposer tes idées de développement du Quizz, et voter pour celles des
+          autres. Tout don est réinvesti dans le site.
         </p>
         <div className="mb-12 flex flex-wrap justify-center gap-3">
           {DONATION_URL && (
