@@ -14,7 +14,7 @@ Allow: /
 # already allows them, but several of these bots only look for their own
 # user-agent block, and some operators read an explicit Allow as a signal that
 # the site wants to be quoted. /login and /result stay out: they are personal
-# result pages, not public content. /audience is an internal dashboard.
+# result pages, not public content. /stats and /audience are dashboards with nothing to rank for.
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
@@ -35,12 +35,14 @@ User-agent: CCBot
 Allow: /
 Disallow: /login
 Disallow: /result
+Disallow: /stats
 Disallow: /audience
 
 User-agent: *
 Allow: /
 Disallow: /login
 Disallow: /result
+Disallow: /stats
 Disallow: /audience
 
 Sitemap: https://www.quizz-du-berger.com/sitemap.xml
