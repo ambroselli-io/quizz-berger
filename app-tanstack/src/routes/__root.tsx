@@ -4,6 +4,7 @@ import {
   HeadContent,
   Outlet,
   Scripts,
+  useRouterState,
   type ErrorComponentProps,
 } from '@tanstack/react-router';
 import appCss from '@app/tailwind.css?url';
@@ -104,12 +105,22 @@ export const Route = createRootRoute({
   ),
 });
 
+// A conversation (/ia/{mode}, /ia/discussion/{id}) is full-screen on mobile, like a chat app:
+// it brings its own top bar with a back arrow, so the global header and tab bar step aside.
+const isFullScreenChat = (pathname: string) => /^\/ia\/[^/]+/.test(pathname);
+
 function Layout({ children }: { children: ReactNode }) {
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+  const fullScreenChat = isFullScreenChat(pathname);
   return (
     <div className="flex h-full flex-col bg-white">
-      <Header />
-      <main className="box-border flex grow flex-col max-lg:pb-16">{children}</main>
-      <BottomTabBar />
+      <div className={fullScreenChat ? 'max-lg:hidden' : undefined}>
+        <Header />
+      </div>
+      <main className={`box-border flex grow flex-col ${fullScreenChat ? '' : 'max-lg:pb-16'}`}>{children}</main>
+      <div className={fullScreenChat ? 'max-lg:hidden' : undefined}>
+        <BottomTabBar />
+      </div>
     </div>
   );
 }

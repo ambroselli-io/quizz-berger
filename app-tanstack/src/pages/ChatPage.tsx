@@ -16,6 +16,10 @@ import {
   type ChatModeEntry,
 } from '@app/content/chat-modes';
 import { sendChatMessage, type Chat } from '@app/services/chat';
+import { ArrowLeft, ArrowUp, MoreHorizontal } from 'lucide-react';
+import { Sheet, SheetContent, SheetTitle } from '@app/components/ui/sheet';
+
+const isTouchDevice = () => typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches;
 
 const CandidateAvatar = ({ candidate, size }: { candidate: CandidateSlugEntry; size: number }) =>
   candidate.picture ? (
@@ -101,6 +105,8 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
   const [isSending, setIsSending] = useState(false);
   const startedRef = useRef(!!initialChat);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const [showActions, setShowActions] = useState(false);
 
   const isConvaincre = chatMode.mode === 'convaincre';
   const candidate = candidateSlugMap.find((c) => c.id === candidateId);
@@ -172,124 +178,183 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
 
   const userMessagesCount = chat?.messages.filter((m) => m.role === 'user').length ?? 0;
 
-  return (
-    <div className="flex flex-col items-center bg-white px-4 py-6">
-      <main className="flex w-full max-w-[65ch] flex-col">
-        <Link to="/ia" className="mb-2 text-sm text-gray-500 underline">
-          ← Les autres façons de discuter
-        </Link>
-        <h1 className="mb-2 font-[Merriweather] text-2xl font-bold text-quizz-dark">
-          {chatMode.title}
-          {candidate && ` : ${candidate.pseudo}`}
-        </h1>
-        <p className="mb-3 text-sm leading-relaxed text-gray-700">{chatMode.description}</p>
-        <p className="mb-6 rounded-lg bg-yellow-50 p-3 text-sm leading-relaxed text-gray-800">
-          ⚠️ {AI_DISCLAIMER}
-          {isConvaincre && <> {CANDIDATE_DISCLAIMER}</>}
-        </p>
+  // Same actions in the desktop footer row and in the mobile "⋯" sheet.
+  const actions = [
+    { label: 'Faire un don', onClick: () => setShowDonation(true) },
+    ...(isConvaincre ? [{ label: 'Changer de candidat', onClick: () => restart(true) }] : []),
+    { label: 'Nouvelle discussion', onClick: () => restart(false) },
+    ...(userMessagesCount > 0 ? [{ label: 'Supprimer', onClick: remove }] : []),
+  ];
 
-        {isLoading ? (
-          <Loader isLoading />
-        ) : !hasAccount ? (
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-center leading-relaxed">
-              Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
-            </p>
-            <button
-              onClick={() => setShowLogin(true)}
-              className="cursor-pointer rounded-xl bg-quizz-yellow px-5 py-3 font-bold text-quizz-dark"
-            >
-              Se connecter ou s'inscrire
-            </button>
-            <QuizzModal title="Connexion" isActive={showLogin} onClose={() => setShowLogin(false)}>
-              <p className="mb-6 text-center leading-relaxed">
+  // The textarea grows with its content, up to ~6 lines, like ChatGPT's.
+  useEffect(() => {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+    textarea.style.height = 'auto';
+    textarea.style.height = `${Math.min(textarea.scrollHeight, 160)}px`;
+  }, [input]);
+
+  return (
+    // Mobile: a full-screen chat (the root layout hides the header and the tab bar on these routes),
+    // top bar + scrolling messages + composer pinned at the bottom. Desktop keeps the regular page flow.
+    <div className="flex flex-col items-center bg-white max-lg:h-dvh">
+      <header className="flex h-14 w-full shrink-0 items-center gap-1 border-b border-gray-100 bg-white px-2 pt-[env(safe-area-inset-top)] lg:hidden">
+        <Link
+          to="/ia"
+          aria-label="Retour aux autres façons de discuter"
+          className="flex size-10 shrink-0 items-center justify-center rounded-full text-quizz-dark active:bg-gray-100"
+        >
+          <ArrowLeft size={22} />
+        </Link>
+        {candidate && <CandidateAvatar candidate={candidate} size={28} />}
+        <p className="min-w-0 flex-1 truncate px-1 font-[Merriweather] text-base font-bold text-quizz-dark">
+          {candidate ? candidate.pseudo : chatMode.title}
+        </p>
+        {chat && (
+          <button
+            onClick={() => setShowActions(true)}
+            aria-label="Plus d'options"
+            className="flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full border-none bg-transparent text-quizz-dark active:bg-gray-100"
+          >
+            <MoreHorizontal size={22} />
+          </button>
+        )}
+      </header>
+
+      <div className="flex w-full flex-col items-center px-4 py-6 max-lg:min-h-0 max-lg:flex-1 max-lg:overflow-y-auto max-lg:py-4">
+        <main className="flex w-full max-w-[65ch] flex-col">
+          <Link to="/ia" className="mb-2 text-sm text-gray-500 underline max-lg:hidden">
+            ← Les autres façons de discuter
+          </Link>
+          <h1 className="mb-2 font-[Merriweather] text-2xl font-bold text-quizz-dark max-lg:sr-only">
+            {chatMode.title}
+            {candidate && ` : ${candidate.pseudo}`}
+          </h1>
+          <p className="mb-3 text-sm leading-relaxed text-gray-700">{chatMode.description}</p>
+          <p className="mb-6 rounded-lg bg-yellow-50 p-3 text-sm leading-relaxed text-gray-800 max-lg:text-xs">
+            ⚠️ {AI_DISCLAIMER}
+            {isConvaincre && <> {CANDIDATE_DISCLAIMER}</>}
+          </p>
+
+          {isLoading ? (
+            <Loader isLoading />
+          ) : !hasAccount ? (
+            <div className="flex flex-col items-center gap-4">
+              <p className="text-center leading-relaxed">
                 Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
               </p>
-              <LoginContainer showSignup onSuccess={() => setShowLogin(false)} />
-            </QuizzModal>
-          </div>
-        ) : isConvaincre && !candidateId ? (
-          <CandidatePicker onPick={setCandidateId} />
-        ) : (
-          <>
-            <ol className="flex flex-col gap-3">
-              {chat?.messages.map((message, index) => (
-                <li
-                  key={index}
-                  className={`flex items-end gap-2 ${message.role === 'user' ? 'flex-row-reverse' : ''}`}
-                >
-                  {message.role === 'assistant' && candidate && <CandidateAvatar candidate={candidate} size={28} />}
-                  <div
-                    className={`max-w-[85%] rounded-2xl px-4 py-2.5 leading-relaxed whitespace-pre-wrap ${
-                      message.role === 'user' ? 'bg-quizz-dark text-white' : 'bg-gray-100 text-gray-900'
-                    }`}
+              <button
+                onClick={() => setShowLogin(true)}
+                className="cursor-pointer rounded-xl bg-quizz-yellow px-5 py-3 font-bold text-quizz-dark"
+              >
+                Se connecter ou s'inscrire
+              </button>
+              <QuizzModal title="Connexion" isActive={showLogin} onClose={() => setShowLogin(false)}>
+                <p className="mb-6 text-center leading-relaxed">
+                  Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
+                </p>
+                <LoginContainer showSignup onSuccess={() => setShowLogin(false)} />
+              </QuizzModal>
+            </div>
+          ) : isConvaincre && !candidateId ? (
+            <CandidatePicker onPick={setCandidateId} />
+          ) : (
+            <>
+              <ol className="flex flex-col gap-3">
+                {chat?.messages.map((message, index) => (
+                  <li
+                    key={index}
+                    className={`flex items-end gap-2 ${message.role === 'user' ? 'flex-row-reverse' : ''}`}
                   >
-                    {message.content || <span className="animate-pulse text-gray-400">L'IA réfléchit, ça peut prendre une vingtaine de secondes…</span>}
-                  </div>
-                </li>
-              ))}
-            </ol>
-            {!chat && !error && <Loader isLoading />}
-            {error && <p className="mt-4 text-center text-sm text-red-600">{error}</p>}
-            <div ref={bottomRef} />
+                    {message.role === 'assistant' && candidate && <CandidateAvatar candidate={candidate} size={28} />}
+                    <div
+                      className={`max-w-[85%] rounded-2xl px-4 py-2.5 leading-relaxed whitespace-pre-wrap ${
+                        message.role === 'user' ? 'bg-quizz-dark text-white' : 'bg-gray-100 text-gray-900'
+                      }`}
+                    >
+                      {message.content || <span className="animate-pulse text-gray-400">L'IA réfléchit, ça peut prendre une vingtaine de secondes…</span>}
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              {!chat && !error && <Loader isLoading />}
+              {error && <p className="mt-4 text-center text-sm text-red-600">{error}</p>}
+              <div ref={bottomRef} />
+            </>
+          )}
+        </main>
+      </div>
 
-            {chat && (
-              <form
-                className="sticky bottom-0 mt-4 flex items-end gap-2 bg-white py-3 max-lg:bottom-16"
-                onSubmit={(e) => {
+      {hasAccount && chat && (
+        <div className="flex w-full shrink-0 flex-col items-center bg-white px-4 lg:sticky lg:bottom-0 max-lg:px-3 max-lg:pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+          <form
+            className="flex w-full max-w-[65ch] items-end gap-2 rounded-3xl border border-gray-200 bg-white py-1.5 pr-1.5 pl-4 shadow-sm focus-within:border-gray-300"
+            onSubmit={(e) => {
+              e.preventDefault();
+              send();
+            }}
+          >
+            <textarea
+              ref={textareaRef}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                // On touch keyboards Enter inserts a new line; the arrow button sends.
+                if (e.key === 'Enter' && !e.shiftKey && !isTouchDevice()) {
                   e.preventDefault();
                   send();
-                }}
-              >
-                <textarea
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' && !e.shiftKey) {
-                      e.preventDefault();
-                      send();
-                    }
-                  }}
-                  maxLength={2000}
-                  rows={2}
-                  placeholder="Écris ton message…"
-                  className="flex-1 resize-none rounded-xl border-2 border-gray-200 px-3 py-2 focus:border-quizz-yellow focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  disabled={isSending || !input.trim()}
-                  className="cursor-pointer rounded-xl bg-quizz-yellow px-4 py-3 font-bold text-quizz-dark disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  Envoyer
-                </button>
-              </form>
-            )}
+                }
+              }}
+              maxLength={2000}
+              rows={1}
+              placeholder="Écris ton message…"
+              className="max-h-40 flex-1 resize-none self-center bg-transparent py-1.5 text-base leading-6 focus:outline-none"
+            />
+            <button
+              type="submit"
+              aria-label="Envoyer"
+              disabled={isSending || !input.trim()}
+              className="flex size-9 shrink-0 cursor-pointer items-center justify-center rounded-full bg-quizz-dark text-white disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400"
+            >
+              <ArrowUp size={20} strokeWidth={2.5} />
+            </button>
+          </form>
+          <p className="py-1.5 text-center text-[11px] text-gray-400 lg:hidden">L'IA peut se tromper. Vérifie les infos importantes.</p>
+          <div className="flex w-full max-w-[65ch] justify-end gap-3 py-2 max-lg:hidden">
+            {actions.map(({ label, onClick }) => (
+              <button key={label} className="cursor-pointer text-xs text-gray-500 underline" onClick={onClick}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
-            {chat && (
-              <div className="flex flex-wrap items-center justify-end gap-2 text-xs text-gray-500">
-                <span className="flex gap-3">
-                  <button className="cursor-pointer underline" onClick={() => setShowDonation(true)}>
-                    Faire un don
-                  </button>
-                  {isConvaincre && (
-                    <button className="cursor-pointer underline" onClick={() => restart(true)}>
-                      Changer de candidat
-                    </button>
-                  )}
-                  <button className="cursor-pointer underline" onClick={() => restart(false)}>
-                    Nouvelle discussion
-                  </button>
-                  {userMessagesCount > 0 && (
-                    <button className="cursor-pointer underline" onClick={remove}>
-                      Supprimer
-                    </button>
-                  )}
-                </span>
-              </div>
-            )}
-          </>
-        )}
-      </main>
+      <Sheet open={showActions} onOpenChange={setShowActions}>
+        <SheetContent
+          side="bottom"
+          overlayClassName="z-[100]"
+          className="z-[100] rounded-t-2xl bg-white pb-[env(safe-area-inset-bottom)] [&>button:last-child]:p-2 [&>button:last-child>svg]:size-6"
+        >
+          <SheetTitle className="sr-only">Options de la discussion</SheetTitle>
+          <nav className="flex flex-col gap-1 py-2">
+            {actions.map(({ label, onClick }) => (
+              <button
+                key={label}
+                onClick={() => {
+                  setShowActions(false);
+                  onClick();
+                }}
+                className={`cursor-pointer rounded-lg border-none bg-transparent px-4 py-3 text-left text-base active:bg-gray-100 ${
+                  label === 'Supprimer' ? 'text-red-600' : 'text-gray-700'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
+        </SheetContent>
+      </Sheet>
       <ModalDonation isActive={showDonation} onClose={() => setShowDonation(false)} />
     </div>
   );
