@@ -84,13 +84,13 @@ describe('Une candidature (/candidature/{slug})', () => {
   });
 
   it('agrees in gender for a declared candidate', async () => {
-    expect(declaredCandidacies.find((c) => c.slug === 'segolene-royal')?.feminine).toBe(true);
+    expect(declaredCandidacies.find((c) => c.slug === 'marine-tondelier')?.feminine).toBe(true);
 
-    params.candidateSlug = 'segolene-royal';
-    renderWithRouter(<CandidacyPage />, { path: '/candidature/segolene-royal' });
+    params.candidateSlug = 'marine-tondelier';
+    renderWithRouter(<CandidacyPage />, { path: '/candidature/marine-tondelier' });
 
     expect(
-      await screen.findByRole('heading', { level: 1, name: /ségolène royal, candidate en 2027/i }),
+      await screen.findByRole('heading', { level: 1, name: /marine tondelier, candidate en 2027/i }),
     ).toBeInTheDocument();
     expect(
       screen.getByText(/est candidate à l'élection présidentielle de 2027/),

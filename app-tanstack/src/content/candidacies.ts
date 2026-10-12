@@ -383,7 +383,7 @@ export const candidacies: Candidacy[] = [
   },
   {
     slug: 'jerome-guedj',
-    status: 'declared',
+    status: 'withdrawn',
     movement: 'Parti socialiste',
     summary:
       "Jérôme Guedj a annoncé sa candidature le 5 février 2026 sur France Inter, d'abord hors primaire. Il a rejoint la primaire socialiste et démocratique d'octobre 2026, et fait partie des cinq candidats retenus pour cette primaire « Choisir 2027 » le 16 septembre 2026. Il y arrive cinquième et dernier le 11 octobre, avec 5,83 % des voix, la primaire étant remportée dès le premier tour par Raphaël Glucksmann.",
@@ -451,6 +451,24 @@ export const candidacies: Candidacy[] = [
           {
             label: 'CNEWS',
             url: 'https://www.cnews.fr/france/2026-10-11/presidentielle-2027-resultats-du-premier-tour-de-la-primaire-socialiste-meeting',
+            date: '2026-10-11',
+          },
+        ],
+      },
+      {
+        date: '2026-10-11',
+        type: 'withdrawal',
+        label:
+          "Il arrive cinquième de la primaire, remportée dès le premier tour par Raphaël Glucksmann, et dit qu'il continuera sa campagne « à la place » que le vainqueur « jugera utile ».",
+        sources: [
+          {
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66',
+            date: '2026-10-11',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/victoire-de-raphael-glucksmann-a-la-primaire-socialiste-premieres-reactions-des',
             date: '2026-10-11',
           },
         ],
@@ -843,7 +861,7 @@ export const candidacies: Candidacy[] = [
   {
     slug: 'segolene-royal',
     feminine: true,
-    status: 'declared',
+    status: 'withdrawn',
     movement: 'Parti socialiste',
     summary:
       "Ségolène Royal est entrée dans la course le 10 juillet 2026, pour la primaire socialiste, sous le slogan « La France tranquille et l'ordre juste ». Elle avait été la candidate du Parti socialiste en 2007. Elle fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026. Elle y arrive troisième le 11 octobre, avec 7,62 % des voix, la primaire étant remportée dès le premier tour par Raphaël Glucksmann.",
@@ -915,6 +933,24 @@ export const candidacies: Candidacy[] = [
           {
             label: 'CNEWS',
             url: 'https://www.cnews.fr/france/2026-10-11/presidentielle-2027-resultats-du-premier-tour-de-la-primaire-socialiste-meeting',
+            date: '2026-10-11',
+          },
+        ],
+      },
+      {
+        date: '2026-10-11',
+        type: 'withdrawal',
+        label:
+          "Elle arrive troisième de la primaire, remportée dès le premier tour par Raphaël Glucksmann, et dit qu'elle soutiendra le vainqueur, comme le prévoit la charte des candidats.",
+        sources: [
+          {
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66',
+            date: '2026-10-11',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/victoire-de-raphael-glucksmann-a-la-primaire-socialiste-premieres-reactions-des',
             date: '2026-10-11',
           },
         ],
@@ -1119,7 +1155,7 @@ export const candidacies: Candidacy[] = [
 
   {
     slug: 'olivier-faure',
-    status: 'declared',
+    status: 'withdrawn',
     movement: 'Parti socialiste',
     summary:
       "Olivier Faure, premier secrétaire du Parti socialiste depuis 2018, a annoncé sa candidature le 30 août 2026 au journal de 20 heures de TF1, pour la primaire socialiste et démocratique d'octobre. C'est la première fois qu'il brigue l'Élysée. Il fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026. Il y arrive deuxième le 11 octobre, avec 14,48 % des voix, loin derrière Raphaël Glucksmann, qui l'emporte dès le premier tour.",
@@ -1195,11 +1231,29 @@ export const candidacies: Candidacy[] = [
           },
         ],
       },
+      {
+        date: '2026-10-11',
+        type: 'withdrawal',
+        label:
+          "Il arrive deuxième de la primaire, remportée dès le premier tour par Raphaël Glucksmann : « Nous avons désormais un candidat ».",
+        sources: [
+          {
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66',
+            date: '2026-10-11',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/victoire-de-raphael-glucksmann-a-la-primaire-socialiste-premieres-reactions-des',
+            date: '2026-10-11',
+          },
+        ],
+      },
     ],
   },
   {
     slug: 'emmanuel-maurel',
-    status: 'declared',
+    status: 'withdrawn',
     movement: 'Gauche républicaine et socialiste',
     summary:
       "Emmanuel Maurel, député et dirigeant de la Gauche républicaine et socialiste (GRS), a annoncé sa candidature le 4 septembre 2026 pour la primaire socialiste et démocratique. Il porte une ligne souverainiste de gauche, critique de la construction européenne. Il fait partie des cinq candidats retenus pour la primaire « Choisir 2027 » le 16 septembre 2026. Il y arrive quatrième le 11 octobre, avec 5,92 % des voix, la primaire étant remportée dès le premier tour par Raphaël Glucksmann.",
@@ -1271,6 +1325,24 @@ export const candidacies: Candidacy[] = [
           {
             label: 'CNEWS',
             url: 'https://www.cnews.fr/france/2026-10-11/presidentielle-2027-resultats-du-premier-tour-de-la-primaire-socialiste-meeting',
+            date: '2026-10-11',
+          },
+        ],
+      },
+      {
+        date: '2026-10-11',
+        type: 'withdrawal',
+        label:
+          "Il arrive quatrième de la primaire, remportée dès le premier tour par Raphaël Glucksmann, et lui promet un soutien « loyal et exigeant ».",
+        sources: [
+          {
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66',
+            date: '2026-10-11',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/victoire-de-raphael-glucksmann-a-la-primaire-socialiste-premieres-reactions-des',
             date: '2026-10-11',
           },
         ],

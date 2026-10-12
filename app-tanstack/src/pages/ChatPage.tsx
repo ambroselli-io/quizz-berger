@@ -7,6 +7,7 @@ import LoginContainer from '@app/components/LoginContainer';
 import QuizzModal from '@app/components/QuizzModal';
 import ModalDonation from '@app/components/modals/ModalDonation';
 import { candidateSlugMap, type CandidateSlugEntry } from '@app/utils/seo-light';
+import { getCandidacyStatus } from '@app/utils/candidacies';
 import {
   AI_DISCLAIMER,
   CANDIDATE_DISCLAIMER,
@@ -18,27 +19,71 @@ import { sendChatMessage, type Chat } from '@app/services/chat';
 
 const CandidateAvatar = ({ candidate, size }: { candidate: CandidateSlugEntry; size: number }) =>
   candidate.picture ? (
-    <img src={`/${candidate.picture}`} alt="" width={size} height={size} className="shrink-0 rounded-full bg-gray-100 object-cover" />
+    <img
+      src={`/${candidate.picture}`}
+      alt=""
+      width={size}
+      height={size}
+      style={{ width: size, height: size }}
+      className="shrink-0 rounded-full bg-gray-100 object-cover object-top"
+    />
   ) : (
-    <span className="shrink-0 rounded-full" style={{ width: size, height: size, backgroundColor: candidate.color }} />
+    <span
+      className="flex shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+      style={{ width: size, height: size, backgroundColor: candidate.color }}
+    >
+      {candidate.pseudo
+        .split(/[\s-]+/)
+        .map((word) => word[0])
+        .join('')
+        .slice(0, 2)
+        .toUpperCase()}
+    </span>
   );
+
+const CandidateButton = ({ candidate, isOut, onPick }: { candidate: CandidateSlugEntry; isOut?: boolean; onPick: (candidateId: string) => void }) => (
+  <li>
+    <button
+      onClick={() => onPick(candidate.id)}
+      className={`group relative flex w-full cursor-pointer items-center gap-2 rounded-xl border-2 bg-white p-2 text-left text-sm hover:border-quizz-yellow ${
+        isOut ? 'border-dashed border-gray-300 text-gray-500 hover:text-quizz-dark' : 'border-gray-200'
+      }`}
+    >
+      <span className={isOut ? 'grayscale transition group-hover:grayscale-0' : undefined}>
+        <CandidateAvatar candidate={candidate} size={36} />
+      </span>
+      <span>{candidate.pseudo}</span>
+      {isOut && (
+        <span className="absolute -top-2 -right-2 -rotate-12 rounded border-2 border-red-600 bg-white px-1.5 text-[10px] font-black tracking-widest text-red-600 shadow-sm transition group-hover:rotate-0">
+          OUT
+        </span>
+      )}
+    </button>
+  </li>
+);
+
+const runningCandidates = candidateSlugMap.filter((c) => getCandidacyStatus(c.slug) !== 'withdrawn');
+const withdrawnCandidates = candidateSlugMap.filter((c) => getCandidacyStatus(c.slug) === 'withdrawn');
 
 const CandidatePicker = ({ onPick }: { onPick: (candidateId: string) => void }) => (
   <div>
     <h2 className="mb-4 text-center font-[Merriweather] text-xl font-bold text-quizz-dark">Quel candidat veux-tu convaincre ?</h2>
     <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-      {candidateSlugMap.map((candidate) => (
-        <li key={candidate.id}>
-          <button
-            onClick={() => onPick(candidate.id)}
-            className="flex w-full cursor-pointer items-center gap-2 rounded-xl border-2 border-gray-200 bg-white p-2 text-left text-sm hover:border-quizz-yellow"
-          >
-            <CandidateAvatar candidate={candidate} size={36} />
-            <span>{candidate.pseudo}</span>
-          </button>
-        </li>
+      {runningCandidates.map((candidate) => (
+        <CandidateButton key={candidate.id} candidate={candidate} onPick={onPick} />
       ))}
     </ul>
+    {withdrawnCandidates.length > 0 && (
+      <>
+        <h3 className="mt-10 text-center font-[Merriweather] text-lg font-bold text-quizz-dark">Ils ont jeté l'éponge 🧽</h3>
+        <p className="mb-4 text-center text-sm text-gray-500">Sortis de la course, mais pas de tes griffes : convaincs-les de revenir.</p>
+        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {withdrawnCandidates.map((candidate) => (
+            <CandidateButton key={candidate.id} candidate={candidate} isOut onPick={onPick} />
+          ))}
+        </ul>
+      </>
+    )}
   </div>
 );
 

@@ -77,9 +77,7 @@ export default function Result() {
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [showFriends, setShowFriends] = useState(() =>
-    Boolean(getFromLocalStorage('selectedFriends', false) || getFromSessionStorage('selectedFriends', false)),
-  );
+  const [showFriends, setShowFriends] = useState(false);
 
   const showSaveButton = useMemo(() => !publicPage && !userToShow?.pseudo, [publicPage, userToShow]);
   const [hideSaveTip, setHideSaveTip] = useState(() => getFromSessionStorage('hideSaveTip', false));
@@ -324,42 +322,66 @@ export default function Result() {
           </p>
         </div>
         <main className="mx-0 mb-[5vh] h-[50vh] overflow-y-visible max-lg:h-[40vh]">
-          <Podium podiumised={getPodium(filteredPersons)} />
+          <Podium podiumised={getPodium(filteredPersons, true)} />
         </main>
         <div className="mx-auto mb-[5vh] -mt-[5vh] max-w-[1024px]">
-          {!publicPage && (
-            <div className="flex flex-wrap gap-2">
-              {showSaveButton && (
+          <div className="flex flex-wrap gap-2">
+            {!publicPage && (
+              <>
+                {showSaveButton && (
+                  <button
+                    type="button"
+                    onClick={() => setShowLoginModal(true)}
+                    className="inline-flex animate-pulse items-center gap-2 rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black"
+                  >
+                    <Save size={16} />
+                    Enregistrer
+                  </button>
+                )}
                 <button
                   type="button"
-                  onClick={() => setShowLoginModal(true)}
-                  className="inline-flex animate-pulse items-center gap-2 rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black"
+                  onClick={() => {
+                    if (!userToShow?.pseudo) setShowLoginModal(true);
+                    setShowShareModal(true);
+                  }}
+                  className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.isPublic ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
                 >
-                  <Save size={16} />
-                  Enregistrer
+                  <Share2 size={16} />
+                  Partager
                 </button>
-              )}
-              <button
-                type="button"
-                onClick={() => {
-                  if (!userToShow?.pseudo) setShowLoginModal(true);
-                  setShowShareModal(true);
-                }}
-                className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.isPublic ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
-              >
-                <Share2 size={16} />
-                Partager
-              </button>
-              <button
-                type="button"
-                onClick={() => setShowFriends(true)}
-                className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.friends?.length ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
-              >
-                <Users size={16} />
-                Comparer avec mes amis
-              </button>
-            </div>
-          )}
+                <button
+                  type="button"
+                  onClick={() => setShowFriends(true)}
+                  className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.friends?.length ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
+                >
+                  <Users size={16} />
+                  Comparer avec mes amis
+                </button>
+              </>
+            )}
+            <Filter
+              toggle={setShowCandidates}
+              isActive={showCandidates}
+              title="Afficher/masquer des candidats"
+              buttonClassName="inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5 text-sm font-medium text-gray-800"
+            >
+              {candidatesScorePerThemes.map((candidate) => (
+                <button
+                  key={candidate?.pseudo}
+                  data-pseudo={candidate?.pseudo}
+                  onClick={onSelectCandidates}
+                  className="max-h-[55px] cursor-pointer rounded-lg border px-4 py-2 text-sm"
+                  style={{
+                    backgroundColor: selectedCandidates.includes(candidate?.pseudo) ? '#111827' : 'white',
+                    color: selectedCandidates.includes(candidate?.pseudo) ? 'white' : '#111827',
+                    borderColor: '#111827',
+                  }}
+                >
+                  {candidate?.pseudo}
+                </button>
+              ))}
+            </Filter>
+          </div>
         </div>
         <section className="mx-auto mb-[5vh] max-w-[1024px]">
           <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">
@@ -369,41 +391,26 @@ export default function Result() {
           {importantPersons.length > 0 ? (
             <>
               <p className="text-sm text-gray-600">
-                Résultats calculés uniquement sur {importantAnswers.length === 1 ? 'la question' : `les ${importantAnswers.length} questions`}{' '}
+                Résultats calculés uniquement sur{' '}
+                {importantAnswers.length === 1 ? 'la question' : `les ${importantAnswers.length} questions`}{' '}
                 {publicPage ? 'marquée' : 'que vous avez marquée'}
-                {importantAnswers.length > 1 ? 's' : ''} comme importante{importantAnswers.length > 1 ? 's' : ''}.
+                {importantAnswers.length > 1 ? 's' : ''} comme importante
+                {importantAnswers.length > 1 ? 's' : ''}.
               </p>
               <div className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
-                <Podium podiumised={getPodium(importantPersons)} />
+                <Podium podiumised={getPodium(importantPersons, true)} />
               </div>
             </>
           ) : (
             <p className="text-sm text-gray-600">
               {publicPage
-                ? "Aucune question marquée comme importante."
+                ? 'Aucune question marquée comme importante.'
                 : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."}
             </p>
           )}
         </section>
         <div className="mx-auto mb-[2vh] max-w-[1024px]">
           <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">Thème par thème</h2>
-          <Filter toggle={setShowCandidates} isActive={showCandidates} title="Afficher/masquer des candidats">
-            {candidatesScorePerThemes.map((candidate) => (
-              <button
-                key={candidate?.pseudo}
-                data-pseudo={candidate?.pseudo}
-                onClick={onSelectCandidates}
-                className="max-h-[55px] cursor-pointer rounded-lg border px-4 py-2 text-sm"
-                style={{
-                  backgroundColor: selectedCandidates.includes(candidate?.pseudo) ? '#111827' : 'white',
-                  color: selectedCandidates.includes(candidate?.pseudo) ? 'white' : '#111827',
-                  borderColor: '#111827',
-                }}
-              >
-                {candidate?.pseudo}
-              </button>
-            ))}
-          </Filter>
           <Filter toggle={setShowFriends} isActive={showFriends} title="Se comparer à mes amis" hideTitle>
             {friendsScorePerThemes.map((friend) => (
               <button

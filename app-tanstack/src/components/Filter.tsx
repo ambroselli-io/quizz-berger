@@ -6,17 +6,18 @@ interface FilterProps {
   isActive: boolean;
   title: string;
   hideTitle?: boolean;
+  buttonClassName?: string;
   children: React.ReactNode;
 }
 
-const Filter = ({ toggle, isActive, children, title, hideTitle }: FilterProps) => (
+const Filter = ({ toggle, isActive, children, title, hideTitle, buttonClassName }: FilterProps) => (
   <>
     {!hideTitle && (
       <button
         onClick={() => toggle((show) => !show)}
-        className="inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 active:bg-gray-100"
+        className={`cursor-pointer active:bg-gray-100 ${buttonClassName ?? 'inline-flex items-center gap-1.5 rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700'}`}
       >
-        <SlidersHorizontal size={14} />
+        <SlidersHorizontal size={buttonClassName ? 16 : 14} />
         {title}
       </button>
     )}

@@ -570,9 +570,6 @@ question-2027-gagnait-xavier-bertrand: Si Xavier Bertrand était élu, quel sera
 question-2027-gagnait-nicolas-dupont-aignan: Si Nicolas Dupont-Aignan était élu, quel serait votre sentiment ?
 [1] Plutôt content(e)
 
-question-2027-gagnait-jerome-guedj: Si Jérôme Guedj était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
-
 question-2027-gagnait-marine-le-pen: Si Marine Le Pen était élue, quel serait votre sentiment ?
 [0] Très content(e)
 
@@ -633,9 +630,6 @@ question-2027-gagnait-florian-philippot: Si Florian Philippot était élu, quel 
 question-2027-gagnait-karim-bouamrane: Si Karim Bouamrane était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
 
-question-2027-gagnait-segolene-royal: Si Ségolène Royal était élue, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
-
 question-2027-gagnait-anasse-kazib: Si Anasse Kazib était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
 
@@ -646,12 +640,6 @@ question-2027-gagnait-clara-egger: Si Clara Egger était élue, quel serait votr
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
-
-question-2027-gagnait-olivier-faure: Si Olivier Faure était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
-
-question-2027-gagnait-emmanuel-maurel: Si Emmanuel Maurel était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-parti-animaliste: Si Parti animaliste était élu, quel serait votre sentiment ?
