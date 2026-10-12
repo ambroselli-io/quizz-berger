@@ -22,7 +22,7 @@ export default function QuiSommesNous() {
         <p>
           Le Quizz du Berger a été designé par <b>Clint</b> et développé par <b>Roméo Vincent</b> et{' '}
           <b>Arnaud Ambroselli</b>, dans le but d'encourager les gens à conforter ou remettre en question
-          leurs idées politiques. Le projet est <b>associatif</b> et n'a aucun but lucratif.
+          leurs idées politiques. Le projet est <b>indépendant</b> et n'a aucun but lucratif.
         </p>
 
         <h2 className="font-[Merriweather] text-2xl font-bold text-quizz-dark">Comment sont rédigées les questions</h2>

@@ -6,7 +6,7 @@ export default function Confidentialite() {
           <h1 className="font-[Merriweather] text-3xl font-bold text-quizz-dark">Politique de confidentialité</h1>
 
           <p>
-            Le Quizz du Berger est un projet associatif et <b>open-source</b>. Nous attachons une grande importance à
+            Le Quizz du Berger est un projet indépendant et <b>open-source</b>. Nous attachons une grande importance à
             votre vie privée&nbsp;: nous collectons le strict minimum, nous ne vendons aucune donnée et nous n'utilisons
             aucun outil publicitaire. Cette politique s'applique au site{' '}
             <b>quizz-du-berger.com</b> ainsi qu'à nos applications mobiles iOS et Android.

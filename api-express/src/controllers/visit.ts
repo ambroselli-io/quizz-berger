@@ -115,60 +115,48 @@ router.get(
       from === to ? Prisma.sql`to_char(date_trunc('hour', ${local}), 'YYYY-MM-DD HH24:00')` : Prisma.sql`to_char(${local}, 'YYYY-MM-DD')`;
 
     type Row = Record<string, string | number | null>;
-    const [
-      [totals],
-      timeline,
-      sources,
-      referrers,
-      campaigns,
-      entryPages,
-      pages,
-      devices,
-      botCategories,
-      bots,
-      botTimeline,
-      botPages,
-    ] = await Promise.all([
-      prisma.$queryRaw<Row[]>`
+    const [[totals], timeline, sources, referrers, campaigns, entryPages, pages, devices, botCategories, bots, botTimeline, botPages] =
+      await Promise.all([
+        prisma.$queryRaw<Row[]>`
         SELECT COUNT(*)::int AS "pageviews", (COUNT(*) FILTER (WHERE "isEntry"))::int AS "visits",
           COUNT(DISTINCT "visitorId")::int AS "visitors"
         FROM "PageView" WHERE ${where}`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT ${bucket} AS "bucket", COUNT(*)::int AS "pageviews", (COUNT(*) FILTER (WHERE "isEntry"))::int AS "visits",
           COUNT(DISTINCT "visitorId")::int AS "visitors"
         FROM "PageView" WHERE ${where} GROUP BY 1 ORDER BY 1`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT COALESCE("source", 'Direct') AS "name", COUNT(*)::int AS "count"
         FROM "PageView" WHERE ${where} AND "isEntry" GROUP BY 1 ORDER BY 2 DESC LIMIT 50`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "referrer" AS "name", COUNT(*)::int AS "count"
         FROM "PageView" WHERE ${where} AND "isEntry" AND "referrer" IS NOT NULL GROUP BY 1 ORDER BY 2 DESC LIMIT 100`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT CONCAT_WS(' / ', "utmSource", "utmMedium", "utmCampaign") AS "name", COUNT(*)::int AS "count"
         FROM "PageView" WHERE ${where} AND "isEntry" AND ("utmSource" IS NOT NULL OR "utmCampaign" IS NOT NULL)
         GROUP BY 1 ORDER BY 2 DESC LIMIT 50`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "path" AS "name", COUNT(*)::int AS "count"
         FROM "PageView" WHERE ${where} AND "isEntry" GROUP BY 1 ORDER BY 2 DESC LIMIT 50`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "path" AS "name", COUNT(*)::int AS "count"
         FROM "PageView" WHERE ${where} GROUP BY 1 ORDER BY 2 DESC LIMIT 50`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "device" AS "name", COUNT(*)::int AS "count"
         FROM "PageView" WHERE ${where} AND "isEntry" GROUP BY 1 ORDER BY 2 DESC`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "category" AS "name", COUNT(*)::int AS "count"
         FROM "BotHit" WHERE ${botWhere} GROUP BY 1 ORDER BY 2 DESC`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "bot" AS "name", MIN("category") AS "category", COUNT(*)::int AS "count"
         FROM "BotHit" WHERE ${botWhere} GROUP BY 1 ORDER BY 3 DESC LIMIT 50`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT ${bucket} AS "bucket", "category", COUNT(*)::int AS "count"
         FROM "BotHit" WHERE ${botWhere} GROUP BY 1, 2 ORDER BY 1`,
-      prisma.$queryRaw<Row[]>`
+        prisma.$queryRaw<Row[]>`
         SELECT "path" AS "name", COUNT(*)::int AS "count"
         FROM "BotHit" WHERE ${botWhere} GROUP BY 1 ORDER BY 2 DESC LIMIT 50`,
-    ]);
+      ]);
 
     res.status(200).send({
       ok: true,

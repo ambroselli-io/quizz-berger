@@ -8,26 +8,29 @@ datasource db {
 }
 
 model User {
-  id          String    @id @default(uuid())
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  pseudo      String?   @unique
-  password    String
-  themes      String[]  @default([])
-  picture     String?
-  color       String?
-  isPublic    Boolean   @default(false)
-  isAdmin     Boolean   @default(false)
-  firstName   String?
-  lastName    String?
-  partyName   String?
-  isCandidate Boolean   @default(false)
-  lastLoginAt DateTime?
-  ogPicName   String?
-  isLoadTest  Boolean   @default(false)
+  id             String    @id @default(uuid())
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  pseudo         String?   @unique
+  password       String
+  themes         String[]  @default([])
+  picture        String?
+  color          String?
+  isPublic       Boolean   @default(false)
+  isAdmin        Boolean   @default(false)
+  firstName      String?
+  lastName       String?
+  partyName      String?
+  isCandidate    Boolean   @default(false)
+  lastLoginAt    DateTime?
+  ogPicName      String?
+  isLoadTest     Boolean   @default(false)
+  // Set by hand from the donation e-mail (controllers/chat.ts): raises the AI chat limits until that date.
+  supporterUntil DateTime?
 
   // Relations
   answers  Answer[]
+  chats    Chat[]
   friends  User[]   @relation("UserFriends")
   friendOf User[]   @relation("UserFriends")
 }
@@ -40,6 +43,31 @@ model Answer {
   questionId  String
   answerIndex Int
   isImportant Boolean  @default(false)
+
+  // Relations
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  @@index([userId])
+}
+
+// One conversation with the AI. messages holds the whole history ({ role, content }[]), written by the API only:
+// clients send the new user message, never the history, so they cannot put words in the assistant's mouth.
+model Chat {
+  id           String    @id @default(uuid())
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  // "president" | "convaincre" | "contre-moi-meme"
+  mode         String
+  // candidate id from candidates-answers.json, "convaincre" mode only
+  candidateId  String?
+  messages     Json      @default("[]")
+  model        String
+  inputTokens  Int       @default(0)
+  outputTokens Int       @default(0)
+  costEur      Float     @default(0)
+  // Deleted by the user: messages are emptied, the row stays so tokens, cost and daily limits still count.
+  deletedAt    DateTime?
 
   // Relations
   user   User   @relation(fields: [userId], references: [id])

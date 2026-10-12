@@ -19,3 +19,6 @@ export const anonymousUserLimiter = limiter(60, 300);
 export const feedbackLimiter = limiter(60, 10);
 // One call per page seen; a classroom behind one IP browses a lot, a script posting in a loop does not get through.
 export const visitLimiter = limiter(1, 120);
+// Each message costs real money (LLM tokens). Per-user caps live in controllers/chat.ts.
+export const chatLimiter = limiter(60, 100);
+export const supporterClaimLimiter = limiter(60, 10);

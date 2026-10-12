@@ -8,26 +8,29 @@ datasource db {
 }
 
 model User {
-  id          String    @id @default(uuid())
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  pseudo      String?   @unique
-  password    String
-  themes      String[]  @default([])
-  picture     String?
-  color       String?
-  isPublic    Boolean   @default(false)
-  isAdmin     Boolean   @default(false)
-  firstName   String?
-  lastName    String?
-  partyName   String?
-  isCandidate Boolean   @default(false)
-  lastLoginAt DateTime?
-  ogPicName   String?
-  isLoadTest  Boolean   @default(false)
+  id             String    @id @default(uuid())
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  pseudo         String?   @unique
+  password       String
+  themes         String[]  @default([])
+  picture        String?
+  color          String?
+  isPublic       Boolean   @default(false)
+  isAdmin        Boolean   @default(false)
+  firstName      String?
+  lastName       String?
+  partyName      String?
+  isCandidate    Boolean   @default(false)
+  lastLoginAt    DateTime?
+  ogPicName      String?
+  isLoadTest     Boolean   @default(false)
+  // Set by hand from the donation e-mail (controllers/chat.ts): raises the AI chat limits until that date.
+  supporterUntil DateTime?
 
   // Relations
   answers  Answer[]
+  chats    Chat[]
   friends  User[]   @relation("UserFriends")
   friendOf User[]   @relation("UserFriends")
 }
@@ -46,4 +49,63 @@ model Answer {
   userId String
 
   @@index([userId])
+}
+
+// One conversation with the AI. messages holds the whole history ({ role, content }[]), written by the API only:
+// clients send the new user message, never the history, so they cannot put words in the assistant's mouth.
+model Chat {
+  id           String    @id @default(uuid())
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  // "president" | "convaincre" | "contre-moi-meme"
+  mode         String
+  // candidate id from candidates-answers.json, "convaincre" mode only
+  candidateId  String?
+  messages     Json      @default("[]")
+  model        String
+  inputTokens  Int       @default(0)
+  outputTokens Int       @default(0)
+  costEur      Float     @default(0)
+  // Deleted by the user: messages are emptied, the row stays so tokens, cost and daily limits still count.
+  deletedAt    DateTime?
+
+  // Relations
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  @@index([userId])
+}
+
+// One row per page seen by a human visitor, sent by the site's own tracking script (no cookie).
+// visitorId is a hash of IP + user-agent salted with the day: it counts unique visitors per day and
+// cannot follow anyone from one day to the next.
+model PageView {
+  id          BigInt   @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  path        String
+  isEntry     Boolean  @default(false)
+  // Normalized origin of the visit ("Google", "Instagram", "hardware.fr"…), null = direct.
+  // Repeated on every page of the visit, so pages can be filtered by source.
+  source      String?
+  referrer    String?
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  device      String
+  visitorId   String
+
+  @@index([createdAt])
+}
+
+// One row per page request from a known crawler (Googlebot, ChatGPT-User, GPTBot…), sent in batches by app-tanstack/server.mjs.
+model BotHit {
+  id        BigInt   @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  bot       String
+  // "ai-answer" | "indexing" | "training" | "preview" | "other"
+  category  String
+  path      String
+  status    Int
+
+  @@index([createdAt])
 }

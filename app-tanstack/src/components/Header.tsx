@@ -33,6 +33,7 @@ const Header = () => {
             <NavItem href="/" exact>Accueil</NavItem>
             {import.meta.env.DEV && <NavItem href="/stats">Stats</NavItem>}
             <NavItem href="/all-questions">Voir toutes les questions</NavItem>
+            <NavItem href="/ia">Discuter avec l'IA</NavItem>
             <NavItem href="/themes"><QuizzButton>Quizz</QuizzButton></NavItem>
             {user?.isLoggedIn && <NavItem href="/result">Résultats</NavItem>}
             <li className="flex h-20 cursor-pointer items-center text-gray-400"><span onClick={() => setShowContactModal(true)}>Nous contacter</span></li>

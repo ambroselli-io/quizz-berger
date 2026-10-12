@@ -10,6 +10,8 @@ import AllQuestionsScreen from '~/screens/AllQuestionsScreen';
 import FilterCandidatesScreen from '~/screens/FilterCandidatesScreen';
 import ShareScreen from '~/screens/ShareScreen';
 import FeedbackScreen from '~/screens/FeedbackScreen';
+import ChatModesScreen from '~/screens/ChatModesScreen';
+import ChatScreen from '~/screens/ChatScreen';
 import Header from '~/components/Header';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -63,6 +65,21 @@ export default function Navigator() {
         options={{
           title: 'Filtrer les candidats',
           headerBackTitle: 'Résultats',
+        }}
+      />
+      <Stack.Screen
+        name="ChatModes"
+        component={ChatModesScreen}
+        options={{
+          title: "Discuter avec l'IA",
+          headerBackTitle: 'Accueil',
+        }}
+      />
+      <Stack.Screen
+        name="Chat"
+        component={ChatScreen}
+        options={{
+          headerBackTitle: 'Retour',
         }}
       />
       <Stack.Screen

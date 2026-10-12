@@ -12,6 +12,7 @@
 import { writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
+import { chatModes } from '../src/content/chat-modes';
 
 import {
   themeSlugMap,
@@ -48,6 +49,10 @@ function buildUrls(): SitemapUrl[] {
   urls.push({ loc: '/confidentialite', priority: '0.2', changefreq: 'yearly' });
   urls.push({ loc: '/qui-sommes-nous', priority: '0.3', changefreq: 'yearly' });
   urls.push({ loc: '/contact', priority: '0.3', changefreq: 'yearly' });
+  urls.push({ loc: '/ia', priority: '0.6', changefreq: 'monthly' });
+  for (const chatMode of chatModes) {
+    urls.push({ loc: `/ia/${chatMode.slug}`, priority: '0.5', changefreq: 'monthly' });
+  }
 
   // SEO hub pages
   urls.push({ loc: '/candidats', priority: '0.9', changefreq: 'weekly' });

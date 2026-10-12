@@ -1,3 +1,5 @@
+import type { ChatMode } from '~/utils/chatModes';
+
 export type FeedbackKind = 'question' | 'testimony';
 
 export type RootStackParamList = {
@@ -9,6 +11,8 @@ export type RootStackParamList = {
   FilterCandidates: undefined;
   Login: undefined;
   Share: undefined;
+  ChatModes: undefined;
+  Chat: { mode: ChatMode; chatId?: string };
   Feedback: { kind: FeedbackKind; themeId?: string; questionId?: string };
 };
 

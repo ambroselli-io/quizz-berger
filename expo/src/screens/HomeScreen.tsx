@@ -52,6 +52,18 @@ export default function HomeScreen() {
 
         <QuizzButton onPress={() => navigation.navigate("Themes")}>Répondre au Quizz</QuizzButton>
 
+        <Pressable
+          className="mt-4 rounded-full border-2 border-white/80 px-6 py-3"
+          onPress={() => navigation.navigate("ChatModes")}
+        >
+          <Text
+            className="text-center text-base font-bold text-white"
+            style={{ fontFamily: "MerriweatherSans_700Bold" }}
+          >
+            Discuter avec l'IA
+          </Text>
+        </Pressable>
+
         {hasResults && (
           <Pressable
             className="mt-4 rounded-full border-2 border-white/80 px-6 py-3"

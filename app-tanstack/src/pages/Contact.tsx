@@ -7,7 +7,7 @@ export default function Contact() {
         <h1 className="font-[Merriweather] text-3xl font-bold text-quizz-dark">Nous contacter</h1>
 
         <p>
-          Le Quizz du Berger est un projet <b>associatif</b>, <b>gratuit</b> et{' '}
+          Le Quizz du Berger est un projet <b>indépendant</b>, <b>gratuit</b> et{' '}
           <a href="https://github.com/ambroselli-io/quizz-berger" target="_blank" rel="noreferrer">
             open-source
           </a>

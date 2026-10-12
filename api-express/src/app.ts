@@ -17,6 +17,8 @@ import feedbackRoutes from "./controllers/feedback";
 import publicRoutes from "./controllers/public";
 import ogRoutes from "./controllers/og";
 import visitRoutes from "./controllers/visit";
+import chatRoutes from "./controllers/chat";
+import supporterRoutes from "./controllers/supporter";
 import configurePassport from "./passport";
 import { isLoadTest } from "./utils/load-test";
 
@@ -27,7 +29,8 @@ const app = express();
 // nginx runs on the same machine: trust its X-Forwarded-For so rate limits see the real client IP.
 app.set("trust proxy", "loopback");
 app.use(logger("tiny"));
-app.use(compression());
+// Not on /chat: compression buffers the response, and AI replies are streamed word by word.
+app.use(compression({ filter: (req, res) => !req.path.startsWith("/chat") && compression.filter(req, res) }));
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
@@ -61,6 +64,8 @@ app.use("/feedback", feedbackRoutes);
 app.use("/public", publicRoutes);
 app.use("/og", ogRoutes);
 app.use("/visit", visitRoutes);
+app.use("/chat", chatRoutes);
+app.use("/supporter", supporterRoutes);
 
 const now = new Date().toISOString();
 

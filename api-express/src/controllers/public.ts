@@ -19,9 +19,10 @@ let countCache: { at: number; promise: Promise<{ countUsers: number; countAnswer
 
 const getCounts = () => {
   if (!countCache || Date.now() - countCache.at > COUNT_TTL_MS) {
-    const promise = Promise.all([prisma.user.count({ where: { isCandidate: false } }), prisma.answer.count()]).then(
-      ([countUsers, countAnswers]) => ({ countUsers, countAnswers }),
-    );
+    const promise = Promise.all([prisma.user.count({ where: { isCandidate: false } }), prisma.answer.count()]).then(([countUsers, countAnswers]) => ({
+      countUsers,
+      countAnswers,
+    }));
     countCache = { at: Date.now(), promise };
     promise.catch(() => {
       if (countCache?.promise === promise) countCache = null;

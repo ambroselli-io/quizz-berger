@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import { TIPIMAIL_API_KEY, TIPIMAIL_API_USER, EMAIL_1, EMAIL_2 } from "../config";
+import { TIPIMAIL_API_KEY, TIPIMAIL_API_USER, EMAIL_1 } from "../config";
 import { catchErrors } from "../utils/error";
 import { capture } from "../utils/sentry";
 import { feedbackLimiter } from "../utils/rate-limit";
@@ -33,9 +33,6 @@ router.post(
         to: [
           {
             address: EMAIL_1,
-          },
-          {
-            address: EMAIL_2,
           },
         ],
         msg,
