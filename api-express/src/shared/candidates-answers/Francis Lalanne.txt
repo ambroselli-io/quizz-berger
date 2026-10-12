@@ -84,8 +84,8 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [1] C'est une bonne idée si c'est bien accompagné, avec des aides pour isoler les logements par exemple
 
-question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
-[3] Un « État-providence climatique » financé par une taxe sur les superprofits des compagnies pétrolières et gazières, avec un plan de reforestation résiliente
+question-2027-climat-07b: Face aux feux de forêt, faut-il augmenter les moyens nationaux de la sécurité civile (pompiers, avions bombardiers d'eau) ?
+[3] Augmenter massivement et rapidement les moyens humains et aériens, quel qu'en soit le coût
 
 
 Corruption et lobbying:
@@ -377,6 +377,9 @@ question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [1] Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales
 
+question-2027-fisc-09: Faut-il taxer les superprofits des grandes entreprises ?
+[2] Oui, avec une taxe permanente sur les profits exceptionnels de toutes les grandes entreprises
+
 
 Pouvoir d'achat et vie quotidienne:
 
@@ -384,8 +387,8 @@ Pouvoir d'achat et vie quotidienne:
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
 [3] Sortir de l'euro et retrouver notre souveraineté monétaire
 
-question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
-[3] Il faut renationaliser l'énergie : l'électricité et le gaz ne devraient pas être des marchandises
+question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
+[3] Bloquer les prix par la loi et imposer des tarifs plafonnés aux fournisseurs
 
 question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 [1] Il faut baisser le prix des transports en commun, surtout pour les plus modestes
@@ -658,4 +661,4 @@ question-2027-gagnait-benoit-mathieu: Si Benoît Mathieu était élu, quel serai
 [2] Neutre
 
 question-2027-gagnait-olivier-becht: Si Olivier Becht était élu, quel serait votre sentiment ?
-[4] Très mécontent(e)
+[3] Plutôt mécontent(e)

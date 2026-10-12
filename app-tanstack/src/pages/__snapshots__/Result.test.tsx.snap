@@ -33,7 +33,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 92,
+    "percent": 93,
     "pseudos": [
       "Clémentine Autain",
     ],
@@ -57,13 +57,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 74,
+    "percent": 75,
     "pseudos": [
       "Lydie Massard",
     ],
   },
   {
-    "percent": 74,
+    "percent": 75,
     "pseudos": [
       "Marine Tondelier",
     ],
@@ -87,7 +87,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 71,
+    "percent": 72,
     "pseudos": [
       "Olivier Faure",
     ],
@@ -117,7 +117,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 62,
+    "percent": 63,
     "pseudos": [
       "Ségolène Royal",
     ],
@@ -131,8 +131,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 61,
     "pseudos": [
-      "Antoine Mikolajczak",
       "Benoît Mathieu",
+    ],
+  },
+  {
+    "percent": 61,
+    "pseudos": [
+      "Antoine Mikolajczak",
     ],
   },
   {
@@ -166,7 +171,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 52,
+    "percent": 53,
     "pseudos": [
       "François Asselineau",
     ],
@@ -178,7 +183,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 49,
+    "percent": 50,
     "pseudos": [
       "François Bayrou",
     ],
@@ -198,13 +203,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 41,
     "pseudos": [
-      "Marine Le Pen",
+      "Nicolas Dupont-Aignan",
     ],
   },
   {
     "percent": 41,
     "pseudos": [
-      "Nicolas Dupont-Aignan",
+      "Marine Le Pen",
     ],
   },
   {
@@ -244,13 +249,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 25,
+    "percent": 26,
     "pseudos": [
       "Gérald Darmanin",
     ],
   },
   {
-    "percent": 23,
+    "percent": 24,
     "pseudos": [
       "Laurent Wauquiez",
     ],

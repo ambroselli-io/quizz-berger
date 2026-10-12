@@ -84,8 +84,8 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [2] On peut faire des économies intelligentes, mais pas question de revenir en arrière sur notre confort
 
-question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
-[2] Un plan d'investissement pluriannuel dans les moyens humains et aériens de la sécurité civile, financé par le budget général, avec une politique d'adaptation des forêts au changement climatique
+question-2027-climat-07b: Face aux feux de forêt, faut-il augmenter les moyens nationaux de la sécurité civile (pompiers, avions bombardiers d'eau) ?
+[2] Augmenter progressivement les moyens humains et aériens, dans une loi de programmation
 
 
 Corruption et lobbying:
@@ -377,6 +377,9 @@ question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [2] Le niveau actuel est un bon compromis
 
+question-2027-fisc-09: Faut-il taxer les superprofits des grandes entreprises ?
+[1] Seulement en cas de crise, de façon temporaire et ciblée sur les secteurs qui en profitent (énergie, transport maritime...)
+
 
 Pouvoir d'achat et vie quotidienne:
 
@@ -384,8 +387,8 @@ Pouvoir d'achat et vie quotidienne:
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
 [1] Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose
 
-question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
-[1] L'État peut donner un coup de pouce temporaire aux ménages les plus modestes
+question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
+[1] Aider temporairement les ménages modestes (chèque énergie), sans toucher aux prix ni aux taxes
 
 question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 [2] Les prix actuels sont raisonnables, pas besoin de changer
@@ -622,7 +625,7 @@ question-2027-gagnait-florian-philippot: Si Florian Philippot était élu, quel 
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-karim-bouamrane: Si Karim Bouamrane était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-segolene-royal: Si Ségolène Royal était élue, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
@@ -646,7 +649,7 @@ question-2027-gagnait-emmanuel-maurel: Si Emmanuel Maurel était élu, quel sera
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-parti-animaliste: Si Parti animaliste était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-parti-pirate: Si Parti pirate était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)

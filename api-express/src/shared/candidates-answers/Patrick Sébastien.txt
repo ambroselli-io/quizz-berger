@@ -84,8 +84,8 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [2] On peut faire des économies intelligentes, mais pas question de revenir en arrière sur notre confort
 
-question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
-[0] Durcir les sanctions contre les incendies volontaires et responsabiliser les collectivités locales, sans augmenter significativement les moyens nationaux
+question-2027-climat-07b: Face aux feux de forêt, faut-il augmenter les moyens nationaux de la sécurité civile (pompiers, avions bombardiers d'eau) ?
+[0] Non, les moyens actuels suffisent : il ne faut pas dépenser davantage
 
 
 Corruption et lobbying:
@@ -377,6 +377,9 @@ question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [1] Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales
 
+question-2027-fisc-09: Faut-il taxer les superprofits des grandes entreprises ?
+[2] Oui, avec une taxe permanente sur les profits exceptionnels de toutes les grandes entreprises
+
 
 Pouvoir d'achat et vie quotidienne:
 
@@ -384,8 +387,8 @@ Pouvoir d'achat et vie quotidienne:
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
 [0] Encadrer les marges des entreprises et plafonner les prix des produits essentiels
 
-question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
-[2] Il faut bloquer les prix de l'énergie et taxer les superprofits des énergéticiens
+question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
+[2] Baisser durablement les taxes sur l'électricité et le gaz (TVA, accise)
 
 question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 [1] Il faut baisser le prix des transports en commun, surtout pour les plus modestes

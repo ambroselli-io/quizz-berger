@@ -84,8 +84,8 @@ question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consommer moins d'énergie) ?
 [1] C'est une bonne idée si c'est bien accompagné, avec des aides pour isoler les logements par exemple
 
-question-2027-climat-07: Comment adapter la sécurité civile et lutter contre les feux de forêt ?
-[2] Un plan d'investissement pluriannuel dans les moyens humains et aériens de la sécurité civile, financé par le budget général, avec une politique d'adaptation des forêts au changement climatique
+question-2027-climat-07b: Face aux feux de forêt, faut-il augmenter les moyens nationaux de la sécurité civile (pompiers, avions bombardiers d'eau) ?
+[2] Augmenter progressivement les moyens humains et aériens, dans une loi de programmation
 
 
 Corruption et lobbying:
@@ -377,6 +377,9 @@ question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [1] Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales
 
+question-2027-fisc-09: Faut-il taxer les superprofits des grandes entreprises ?
+[1] Seulement en cas de crise, de façon temporaire et ciblée sur les secteurs qui en profitent (énergie, transport maritime...)
+
 
 Pouvoir d'achat et vie quotidienne:
 
@@ -384,8 +387,8 @@ Pouvoir d'achat et vie quotidienne:
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
 [0] Encadrer les marges des entreprises et plafonner les prix des produits essentiels
 
-question-2027-pa-02: Que devrait faire l'État face à la hausse des prix de l'énergie ?
-[1] L'État peut donner un coup de pouce temporaire aux ménages les plus modestes
+question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
+[1] Aider temporairement les ménages modestes (chèque énergie), sans toucher aux prix ni aux taxes
 
 question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 [1] Il faut baisser le prix des transports en commun, surtout pour les plus modestes
@@ -586,7 +589,7 @@ question-2027-gagnait-gabriel-attal: Si Gabriel Attal était élu, quel serait v
 [2] Neutre
 
 question-2027-gagnait-bernard-cazeneuve: Si Bernard Cazeneuve était élu, quel serait votre sentiment ?
-[2] Neutre
+[1] Plutôt content(e)
 
 question-2027-gagnait-raphael-glucksmann: Si Raphaël Glucksmann était élu, quel serait votre sentiment ?
 [2] Neutre

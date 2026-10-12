@@ -116,8 +116,8 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
-        "answerIndex": 4
+        "questionId": "question-2027-climat-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-corruption",
@@ -475,13 +475,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -1108,7 +1113,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -1467,13 +1472,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -1949,7 +1959,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-faure",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -2100,7 +2110,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -2459,13 +2469,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -3092,7 +3107,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -3451,14 +3466,19 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 1
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -4084,7 +4104,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 0
       },
       {
@@ -4443,14 +4463,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -5076,7 +5101,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -5435,14 +5460,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -6068,7 +6098,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 0
       },
       {
@@ -6427,13 +6457,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 2
       },
       {
@@ -7060,7 +7095,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 0
       },
       {
@@ -7419,13 +7454,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 2
       },
       {
@@ -7831,7 +7871,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bruno-retailleau",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -8052,7 +8092,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -8411,13 +8451,18 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -8803,7 +8848,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -9046,7 +9091,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -9405,14 +9450,19 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 1
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -10040,7 +10090,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -10399,13 +10449,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -11032,8 +11087,8 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
-        "answerIndex": 4
+        "questionId": "question-2027-climat-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-corruption",
@@ -11391,13 +11446,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -12024,7 +12084,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -12383,14 +12443,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -12875,7 +12940,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -13016,7 +13081,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -13375,13 +13440,18 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 0
       },
       {
@@ -13802,7 +13872,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14008,7 +14078,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -14367,13 +14437,18 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -14759,7 +14834,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14784,7 +14859,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-fabien-roussel",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -15002,7 +15077,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -15361,13 +15436,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -15994,7 +16074,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -16353,14 +16433,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -16720,7 +16805,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-edouard-philippe",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16740,7 +16825,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-gabriel-attal",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16810,7 +16895,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16830,7 +16915,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-antoine-mikolajczak",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -16865,7 +16950,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-becht",
-        "answerIndex": 3
+        "answerIndex": 2
       }
     ]
   },
@@ -16988,7 +17073,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -17347,13 +17432,18 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -17694,7 +17784,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nicolas-dupont-aignan",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -17980,7 +18070,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -18339,14 +18429,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -18972,7 +19067,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -19331,13 +19426,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -19964,8 +20064,8 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
-        "answerIndex": 4
+        "questionId": "question-2027-climat-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-corruption",
@@ -20323,13 +20423,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -20956,7 +21061,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 1
       },
       {
@@ -21315,13 +21420,18 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 0
       },
       {
@@ -21677,7 +21787,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-jordan-bardella",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -21948,7 +22058,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -22307,13 +22417,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -22694,7 +22809,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-gabriel-attal",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -22940,7 +23055,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 0
       },
       {
@@ -23299,14 +23414,19 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 1
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -23932,7 +24052,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -24291,13 +24411,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 2
       },
       {
@@ -24673,7 +24798,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-david-lisnard",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24924,8 +25049,8 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
-        "answerIndex": 4
+        "questionId": "question-2027-climat-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-corruption",
@@ -25138,13 +25263,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -25916,7 +26046,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 0
       },
       {
@@ -26130,13 +26260,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 2
       },
       {
@@ -26938,7 +27073,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -27337,13 +27472,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -27779,7 +27919,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-becht",
-        "answerIndex": 4
+        "answerIndex": 3
       }
     ]
   },
@@ -27930,7 +28070,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -28329,13 +28469,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -28922,7 +29067,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -29321,14 +29466,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -29723,7 +29873,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -29914,7 +30064,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -30313,14 +30463,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -30635,7 +30790,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30720,7 +30875,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-antoine-mikolajczak",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30735,7 +30890,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30908,7 +31063,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -31307,13 +31462,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -31900,8 +32060,8 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
-        "answerIndex": 4
+        "questionId": "question-2027-climat-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-corruption",
@@ -32299,13 +32459,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -32892,8 +33057,8 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
-        "answerIndex": 4
+        "questionId": "question-2027-climat-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-corruption",
@@ -33291,13 +33456,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -33884,7 +34054,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -34283,13 +34453,18 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -34665,7 +34840,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-karim-bouamrane",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34705,7 +34880,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -34876,7 +35051,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -35275,13 +35450,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -35597,7 +35777,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -35662,7 +35842,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -35870,7 +36050,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -36269,14 +36449,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -36691,7 +36876,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -36862,7 +37047,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -37261,14 +37446,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -37523,7 +37713,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -37854,7 +38044,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -38253,13 +38443,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -38848,7 +39043,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -39247,13 +39442,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -39569,7 +39769,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -39840,7 +40040,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -40244,14 +40444,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -40546,7 +40751,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-tondelier",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -40626,7 +40831,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -40641,7 +40846,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -40832,7 +41037,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -41236,14 +41441,19 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
-        "answerIndex": 2
+        "questionId": "question-2027-pa-02b",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -41829,7 +42039,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 3
       },
       {
@@ -42243,13 +42453,18 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -42821,7 +43036,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -43235,13 +43450,18 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 3
       },
       {
@@ -43778,7 +43998,7 @@
       },
       {
         "themeId": "theme-2027-climat",
-        "questionId": "question-2027-climat-07",
+        "questionId": "question-2027-climat-07b",
         "answerIndex": 2
       },
       {
@@ -44137,13 +44357,18 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
         "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
-        "questionId": "question-2027-pa-02",
+        "questionId": "question-2027-pa-02b",
         "answerIndex": 1
       },
       {
@@ -44529,7 +44754,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -44579,7 +44804,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francis-lalanne",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

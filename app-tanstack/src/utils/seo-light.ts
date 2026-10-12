@@ -244,10 +244,15 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Rodéos motorisés : sanctions ou prévention ? Candidats 2027',
     seoDescription: `Rodéos motorisés : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 entre répression et prévention.`,
   },
-  'question-2027-climat-07': {
+  'question-2027-climat-07b': {
     slug: 'feux-foret-securite-civile-france',
     seoTitle: 'Feux de forêt et sécurité civile : les candidats 2027',
-    seoDescription: `Moyens des pompiers, flotte aérienne, adaptation des forêts au changement climatique : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+    seoDescription: `Effectifs des pompiers, flotte aérienne : faut-il plus de moyens contre les feux de forêt ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
+  'question-2027-fisc-09': {
+    slug: 'taxe-superprofits-france',
+    seoTitle: 'Taxer les superprofits : les candidats 2027',
+    seoDescription: `Taxe sur les superprofits des grandes entreprises : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-pol-10': {
     slug: 'presomption-legitime-defense-policiers',
