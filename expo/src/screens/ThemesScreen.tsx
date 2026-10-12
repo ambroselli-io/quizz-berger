@@ -95,6 +95,9 @@ export default function ThemesScreen() {
         keyExtractor={(item) => item._id}
         renderItem={renderTheme}
         contentContainerStyle={{ padding: 16, gap: 12 }}
+        keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
+        automaticallyAdjustKeyboardInsets
         ListHeaderComponent={
           <View className="mb-4">
             <Text
@@ -112,6 +115,8 @@ export default function ThemesScreen() {
               value={search}
               onChangeText={setSearch}
               clearButtonMode="while-editing"
+              autoCorrect={false}
+              returnKeyType="search"
             />
           </View>
         }

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, createNavigationContainerRef } from '@react-navigation/native';
+import { View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
@@ -15,13 +16,19 @@ import {
   MerriweatherSans_700Bold,
 } from '@expo-google-fonts/merriweather-sans';
 import Navigator from './Navigator';
+import BottomTabBar from './components/BottomTabBar';
+import type { RootStackParamList } from './types/navigation';
 import useSyncQuizz from './hooks/useSyncQuizz';
 import storage from './utils/storage';
 
 SplashScreen.preventAutoHideAsync();
 
+const navigationRef = createNavigationContainerRef<RootStackParamList>();
+
 export default function App() {
   const [storageReady, setStorageReady] = useState(false);
+  const [routeName, setRouteName] = useState<keyof RootStackParamList>();
+  const syncRouteName = () => setRouteName(navigationRef.getCurrentRoute()?.name);
   const [fontsLoaded] = useFonts({
     Merriweather_300Light,
     Merriweather_400Regular,
@@ -49,8 +56,11 @@ export default function App() {
 
   return (
     <SafeAreaProvider onLayout={onLayoutRootView}>
-      <NavigationContainer>
-        <Navigator />
+      <NavigationContainer ref={navigationRef} onReady={syncRouteName} onStateChange={syncRouteName}>
+        <View style={{ flex: 1 }}>
+          <Navigator />
+          <BottomTabBar navigation={navigationRef} routeName={routeName} />
+        </View>
       </NavigationContainer>
       <StatusBar style="light" />
     </SafeAreaProvider>

@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { View, Text, Pressable } from 'react-native';
 import type { QuizzTheme, Answer } from '~/types/quizz';
+import { readableTextColor } from '~/utils/contrast';
 
 interface ThemeButtonProps {
   theme: QuizzTheme;
@@ -17,6 +18,8 @@ const ThemeButton = ({ theme, onPress, userAnswers = [] }: ThemeButtonProps) => 
   );
 
   const progress = questions.length > 0 ? userThemeAnswers / questions.length : 0;
+  // The label stays dark over a partial fill, so a dark theme colour gets a lighter fill.
+  const fillAlpha = readableTextColor(backgroundColor ?? '', 0.8) === '#000000' ? 'CC' : '40';
 
   return (
     <Pressable
@@ -29,7 +32,7 @@ const ThemeButton = ({ theme, onPress, userAnswers = [] }: ThemeButtonProps) => 
         className="absolute left-0 top-0 bottom-0"
         style={{
           width: `${Math.round(progress * 100)}%`,
-          backgroundColor: `${backgroundColor}CC`,
+          backgroundColor: `${backgroundColor}${fillAlpha}`,
         }}
       />
       <View className="px-4 py-3">

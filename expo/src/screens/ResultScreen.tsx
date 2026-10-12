@@ -259,7 +259,13 @@ export default function ResultScreen() {
   }
 
   return (
-    <ScrollView className="flex-1 bg-white" contentContainerStyle={{ paddingBottom: 40 }}>
+    <ScrollView
+      className="flex-1 bg-white"
+      contentContainerStyle={{ paddingBottom: 40 }}
+      keyboardShouldPersistTaps="handled"
+      keyboardDismissMode="on-drag"
+      automaticallyAdjustKeyboardInsets
+    >
       <View className="px-4 pt-4">
         <Text className="mb-2 text-2xl font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
           {title}

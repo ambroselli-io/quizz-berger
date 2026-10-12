@@ -1,6 +1,6 @@
 import type { ChatMode } from '~/utils/chatModes';
 
-export type FeedbackKind = 'question' | 'testimony';
+export type FeedbackKind = 'question' | 'testimony' | 'contact';
 
 export type RootStackParamList = {
   Home: undefined;

@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { View, Text, ScrollView, Pressable, Linking, Alert } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { readableTextColor } from '~/utils/contrast';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RouteProp } from '@react-navigation/native';
@@ -122,26 +124,29 @@ export default function QuestionScreen() {
 
   if (!question) return null;
 
+  const headerTextColor = readableTextColor(theme.backgroundColor ?? '', 0.8);
+
   return (
     <View className="flex-1 bg-white">
+      <StatusBar style={headerTextColor === '#ffffff' ? 'light' : 'dark'} />
       {/* Theme header */}
       <View
         className="flex-row items-center justify-between px-4 pb-3 pt-20"
         style={{ backgroundColor: `${theme.backgroundColor}CC` }}
       >
         <Pressable onPress={() => navigation.popTo('Themes')}>
-          <Text className="text-sm">‹ Thèmes</Text>
+          <Text className="text-sm" style={{ color: headerTextColor }}>‹ Thèmes</Text>
         </Pressable>
         <Text
           className="flex-1 text-center text-base font-bold"
-          style={{ fontFamily: 'Merriweather_700Bold' }}
+          style={{ fontFamily: 'Merriweather_700Bold', color: headerTextColor }}
           numberOfLines={1}
         >
           {theme.fr}
         </Text>
         {showResultsButton ? (
           <Pressable onPress={() => navigation.navigate('Result', undefined)}>
-            <Text className="text-sm">Résultats ›</Text>
+            <Text className="text-sm" style={{ color: headerTextColor }}>Résultats ›</Text>
           </Pressable>
         ) : (
           <View className="w-16" />

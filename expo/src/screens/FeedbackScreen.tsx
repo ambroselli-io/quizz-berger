@@ -39,6 +39,13 @@ const copy = {
     placeholder: 'Deux ou trois phrases suffisent…',
     button: 'Envoyer mon témoignage',
   },
+  contact: {
+    title: 'Nous contacter',
+    intro: 'Une question, une remarque, une idée ? Écrivez-nous, nous lisons tous les messages.',
+    warning: null,
+    placeholder: 'Votre message…',
+    button: 'Envoyer mon message',
+  },
 } as const;
 
 export default function FeedbackScreen() {
@@ -116,7 +123,9 @@ export default function FeedbackScreen() {
     const subject =
       kind === 'question'
         ? `Quizz du Berger : votre avis sur une question${question ? ` (${question.theme})` : ''}`
-        : `Quizz du Berger : votre témoignage${pseudo ? ` (${pseudo})` : ''}`;
+        : kind === 'testimony'
+          ? `Quizz du Berger : votre témoignage${pseudo ? ` (${pseudo})` : ''}`
+          : `Quizz du Berger : votre message${pseudo ? ` (${pseudo})` : ''}`;
     const response = await API.post({ path: '/feedback', body: { text: lines.join('\n'), subject, email: email.trim() || undefined } });
     setIsLoading(false);
     if (!response?.ok) {
@@ -129,8 +138,12 @@ export default function FeedbackScreen() {
   };
 
   return (
-    <KeyboardAvoidingView className="flex-1 bg-white" behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 12 }} keyboardShouldPersistTaps="handled">
+    <KeyboardAvoidingView className="flex-1 bg-white" behavior={Platform.OS === 'ios' ? undefined : 'height'}>
+      <ScrollView
+        contentContainerStyle={{ padding: 24, gap: 12 }}
+        keyboardShouldPersistTaps="handled"
+        automaticallyAdjustKeyboardInsets
+      >
         <Text className="text-sm text-quizz-dark/80" style={{ fontFamily: 'MerriweatherSans_400Regular' }}>
           {texts.intro}
         </Text>
@@ -169,6 +182,9 @@ export default function FeedbackScreen() {
           onChangeText={setPseudo}
           autoCapitalize="none"
           autoComplete="name"
+          returnKeyType="next"
+          submitBehavior="submit"
+          onSubmitEditing={() => emailRef.current?.focus()}
         />
 
         <Text className="text-sm font-medium text-quizz-dark">Email (si vous souhaitez une réponse)</Text>
@@ -181,6 +197,8 @@ export default function FeedbackScreen() {
           autoCapitalize="none"
           autoComplete="email"
           keyboardType="email-address"
+          returnKeyType="send"
+          onSubmitEditing={onPressSend}
         />
 
         <View className="mt-4 items-center">

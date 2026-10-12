@@ -13,6 +13,7 @@ import {
   Alert
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RouteProp } from "@react-navigation/native";
 import type { RootStackParamList } from "~/types/navigation";
@@ -161,6 +162,7 @@ export default function ChatScreen() {
   const [isResuming, setIsResuming] = useState(!!params.chatId);
   const startedRef = useRef(!!params.chatId);
   const scrollRef = useRef<ScrollView>(null);
+  const insets = useSafeAreaInsets();
 
   const candidate = candidatesAnswers.find((c) => c.id === candidateId);
 
@@ -310,13 +312,15 @@ export default function ChatScreen() {
     <KeyboardAvoidingView
       className="flex-1 bg-white"
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      keyboardVerticalOffset={Platform.OS === "ios" ? 100 : 0}
+      // The custom header (components/Header.tsx) is the safe-area inset plus a 48px bar.
+      keyboardVerticalOffset={Platform.OS === "ios" ? insets.top + 48 : 0}
     >
       <ScrollView
         ref={scrollRef}
         className="flex-1"
         contentContainerStyle={{ padding: 16, gap: 12 }}
         keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="interactive"
         onContentSizeChange={() => scrollRef.current?.scrollToEnd({ animated: true })}
       >
         {disclaimer}
@@ -367,7 +371,7 @@ export default function ChatScreen() {
         )}
       </ScrollView>
       {chat && (
-        <View className="flex-row items-end gap-2 border-t border-gray-200 bg-white p-3 pb-8">
+        <View className="flex-row items-end gap-2 border-t border-gray-200 bg-white p-3">
           <TextInput
             className="max-h-32 flex-1 rounded-xl border border-gray-300 px-3 py-2.5 text-base"
             placeholder="Écris ton message…"

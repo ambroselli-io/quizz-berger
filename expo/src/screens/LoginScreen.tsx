@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { View, Text, TextInput, ScrollView, Pressable, Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -18,6 +18,8 @@ export default function LoginScreen() {
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [isPublic, setIsPublic] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const passwordRef = useRef<TextInput>(null);
+  const passwordConfirmRef = useRef<TextInput>(null);
 
   const handleLogin = async () => {
     setIsLoading(true);
@@ -49,9 +51,13 @@ export default function LoginScreen() {
   return (
     <KeyboardAvoidingView
       className="flex-1 bg-white"
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      behavior={Platform.OS === 'ios' ? undefined : 'height'}
     >
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 16 }}>
+      <ScrollView
+        contentContainerStyle={{ padding: 24, gap: 16 }}
+        keyboardShouldPersistTaps="handled"
+        automaticallyAdjustKeyboardInsets
+      >
         {/* Toggle */}
         <View className="mb-4 flex-row rounded-lg bg-gray-100 p-1">
           <Pressable
@@ -78,8 +84,12 @@ export default function LoginScreen() {
           placeholder="Votre pseudo"
           autoCapitalize="none"
           autoComplete="username"
+          autoCorrect={false}
           value={pseudo}
           onChangeText={setPseudo}
+          returnKeyType="next"
+          submitBehavior="submit"
+          onSubmitEditing={() => passwordRef.current?.focus()}
         />
 
         <Text className="text-sm font-medium text-quizz-dark">Mot de passe</Text>
@@ -87,9 +97,13 @@ export default function LoginScreen() {
           className="rounded-lg border border-gray-300 px-3 py-2.5 text-base"
           placeholder="Votre mot de passe"
           secureTextEntry
+          ref={passwordRef}
           autoComplete={isSignUp ? 'new-password' : 'password'}
           value={password}
           onChangeText={setPassword}
+          returnKeyType={isSignUp ? 'next' : 'go'}
+          submitBehavior={isSignUp ? 'submit' : 'blurAndSubmit'}
+          onSubmitEditing={() => (isSignUp ? passwordConfirmRef.current?.focus() : handleLogin())}
         />
 
         {isSignUp && (
@@ -99,9 +113,12 @@ export default function LoginScreen() {
               className="rounded-lg border border-gray-300 px-3 py-2.5 text-base"
               placeholder="Confirmez votre mot de passe"
               secureTextEntry
+              ref={passwordConfirmRef}
               autoComplete="new-password"
               value={passwordConfirm}
               onChangeText={setPasswordConfirm}
+              returnKeyType="go"
+              onSubmitEditing={handleSignUp}
             />
             <Pressable
               className="flex-row items-center gap-2"
