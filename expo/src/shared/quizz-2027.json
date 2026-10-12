@@ -2746,6 +2746,7 @@
         "fr": "L'IVG est désormais inscrite dans la Constitution. Qu'en pensez-vous ?",
         "help": "https://fr.wikipedia.org/wiki/Interruption_volontaire_de_grossesse_en_France",
         "answers": [
+          "Ce n'est pas suffisant, il faut renforcer ce droit et garantir un vrai accès à l'IVG partout en France",
           "C'est une excellente chose, il fallait protéger ce droit fondamental dans la Constitution",
           "C'était bien de le constitutionnaliser, mais la loi suffit, c'est avant tout symbolique",
           "C'est aller trop loin, l'IVG n'avait pas besoin d'être dans la Constitution",
@@ -2753,11 +2754,12 @@
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 0, 0, 0],
-          [4, 5, 1, 0, 0],
-          [0, 1, 5, 4, 0],
-          [0, 0, 3, 5, 0],
-          [0, 0, 0, 0, 0]
+          [5, 4, 2, 0, 0, 0],
+          [4, 5, 3, 0, 0, 0],
+          [2, 4, 5, 1, 0, 0],
+          [0, 0, 1, 5, 4, 0],
+          [0, 0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       },
       {

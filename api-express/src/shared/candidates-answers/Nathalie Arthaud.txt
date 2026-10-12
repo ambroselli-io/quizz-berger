@@ -478,7 +478,7 @@ question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
 [2] C'est une exploitation du corps des femmes, il faut que ça reste interdit
 
 question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en pensez-vous ?
-[0] C'est une excellente chose, il fallait protéger ce droit fondamental dans la Constitution
+[0] Ce n'est pas suffisant, il faut renforcer ce droit et garantir un vrai accès à l'IVG partout en France
 
 question-2027-soc-07: Que pensez-vous de la fin de vie et de l'euthanasie ?
 [3] Mourir dans la dignité est un droit fondamental, il faut légaliser l'euthanasie et le suicide assisté
