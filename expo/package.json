@@ -11,6 +11,7 @@
     "ts:check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
+    "bump": "node scripts/bump.js",
     "kill-gradle": "(test -d android && (cd android && ./gradlew --stop)) ; pkill -9 -f GradleDaemon ; echo 'Gradle daemons stopped'",
     "build-eas:ios": "npm run test && eas build -p ios",
     "build-eas-then-submit:ios": "npm run test && eas build -p ios && eas submit -p ios --latest",
