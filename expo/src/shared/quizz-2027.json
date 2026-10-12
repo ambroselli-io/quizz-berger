@@ -1570,22 +1570,23 @@
         ]
       },
       {
-        "_id": "question-2027-log-06",
-        "fr": "Quel rôle l'État devrait-il jouer dans le logement ?",
+        "_id": "question-2027-log-09",
+        "fr": "Quelle place pour le logement social (HLM) ?",
+        "help": "Environ un logement sur six est aujourd'hui un logement social en France. La loi SRU impose à la plupart des communes urbaines d'en avoir 20 à 25 %.",
         "answers": [
-          "Aucun : le logement doit être laissé au marché",
-          "Minimal : l'État se limite à aider les plus précaires (hébergement d'urgence)",
-          "Modéré : l'État régule et accompagne (aides, normes), sans contrôler les prix ni la propriété",
-          "Fort : l'État doit pouvoir imposer (prix, quotas, normes contraignantes)",
-          "Total : le logement est un service public, l'État doit construire et gérer",
+          "Aucune : l'État doit sortir du logement social et vendre progressivement le parc HLM",
+          "Réduite : le logement social doit être réservé à l'urgence et aux plus précaires",
+          "Stable : il faut garder à peu près la part actuelle et les quotas de la loi SRU",
+          "Renforcée : il faut construire massivement des logements sociaux et relever les quotas SRU",
+          "Majoritaire : la plupart des logements devraient être publics ou sociaux, comme à Vienne en Autriche",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
-          [5, 3, 2, 0, 0, 0],
-          [4, 5, 3, 1, 0, 0],
-          [2, 3, 5, 3, 2, 0],
-          [0, 1, 3, 5, 4, 0],
-          [0, 0, 2, 3, 5, 0],
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
       },
@@ -1625,6 +1626,47 @@
           [0, 1, 5, 4, 0],
           [0, 0, 3, 5, 0],
           [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-10",
+        "fr": "Faut-il assouplir les règles pour construire plus de logements ?",
+        "help": "Normes de construction, délais des permis de construire, objectif « zéro artificialisation nette » (ZAN) qui limite la construction sur des terres naturelles ou agricoles.",
+        "answers": [
+          "Oui, radicalement : il faut supprimer l'objectif ZAN et la plupart des normes de construction",
+          "Oui : il faut simplifier les permis et alléger les normes pour construire plus vite",
+          "Un peu : on peut accélérer les procédures, mais en gardant les normes et la protection des sols",
+          "Non : les règles actuelles protègent les sols et la qualité des logements, il faut les garder",
+          "Non, il faut les durcir : bétonner moins et exiger des normes écologiques plus strictes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-11",
+        "fr": "Que faire des aides au logement pour les ménages (APL, prêt à taux zéro) ?",
+        "answers": [
+          "Les supprimer en grande partie : elles font monter les loyers et les prix",
+          "Les réduire et les réserver à ceux qui en ont vraiment besoin",
+          "Les maintenir au niveau actuel",
+          "Les augmenter : revaloriser les APL et élargir le prêt à taux zéro",
+          "Les augmenter fortement : personne ne devrait consacrer plus d'un quart de ses revenus à se loger",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
         ]
       }
     ]

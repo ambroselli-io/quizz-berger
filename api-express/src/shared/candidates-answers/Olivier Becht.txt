@@ -275,14 +275,20 @@ question-2027-log-04: Équilibre territorial : que doit faire l'État pour les z
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
 [1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
 
-question-2027-log-06: Quel rôle l'État devrait-il jouer dans le logement ?
-[2] Modéré : l'État régule et accompagne (aides, normes), sans contrôler les prix ni la propriété
+question-2027-log-09: Quelle place pour le logement social (HLM) ?
+[2] Stable : il faut garder à peu près la part actuelle et les quotas de la loi SRU
 
 question-2027-log-07: Que pensez-vous du niveau actuel des prix du logement ?
 [2] Les prix sont trop élevés, ça commence à devenir un problème
 
 question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
 [2] La réquisition n'est pas la bonne solution, mieux vaut inciter ou taxer la vacance
+
+question-2027-log-10: Faut-il assouplir les règles pour construire plus de logements ?
+[1] Oui : il faut simplifier les permis et alléger les normes pour construire plus vite
+
+question-2027-log-11: Que faire des aides au logement pour les ménages (APL, prêt à taux zéro) ?
+[2] Les maintenir au niveau actuel
 
 
 Numérique et IA:
@@ -577,7 +583,7 @@ question-2027-gagnait-edouard-philippe: Si Édouard Philippe était élu, quel s
 [1] Plutôt content(e)
 
 question-2027-gagnait-francois-ruffin: Si François Ruffin était élu, quel serait votre sentiment ?
-[4] Très mécontent(e)
+[3] Plutôt mécontent(e)
 
 question-2027-gagnait-marine-tondelier: Si Marine Tondelier était élue, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)

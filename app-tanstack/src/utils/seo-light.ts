@@ -209,10 +209,15 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'SMIC et salaires : les propositions des candidats 2027',
     seoDescription: 'Augmentation du SMIC, pouvoir d\'achat : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-log-06': {
+  'question-2027-log-10': {
     slug: 'crise-logement-france',
     seoTitle: 'Crise du logement : les propositions des candidats 2027',
-    seoDescription: 'Logement, loyers, construction : que proposent les candidats à la présidentielle 2027 ?',
+    seoDescription: 'Construire plus, normes, permis, objectif ZAN : que proposent les candidats à la présidentielle 2027 face à la crise du logement ?',
+  },
+  'question-2027-log-09': {
+    slug: 'logement-social-hlm-loi-sru',
+    seoTitle: 'Logement social et loi SRU : les candidats 2027',
+    seoDescription: `HLM, quotas de la loi SRU : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur le logement social.`,
   },
   'question-2027-edu-01': {
     slug: 'ecole-education-reforme',

@@ -706,7 +706,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 4
       },
       {
@@ -718,6 +718,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -1703,8 +1713,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -1715,6 +1725,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -1889,7 +1909,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bruno-retailleau",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -2700,7 +2720,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -2712,6 +2732,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -3697,7 +3727,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -3708,6 +3738,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -4694,8 +4734,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -4706,6 +4746,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -5691,7 +5741,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -5703,6 +5753,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -6688,8 +6748,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -6699,6 +6759,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -7685,8 +7755,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -7696,6 +7766,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -8682,7 +8762,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -8694,6 +8774,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -9681,7 +9771,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 1
       },
       {
@@ -9693,6 +9783,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -9812,7 +9912,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-le-pen",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -10680,8 +10780,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 4
+        "questionId": "question-2027-log-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",
@@ -10692,6 +10792,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -11677,8 +11787,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 4
+        "questionId": "question-2027-log-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",
@@ -11689,6 +11799,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -11963,7 +12083,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-olivier-becht",
-        "answerIndex": 4
+        "answerIndex": 3
       }
     ]
   },
@@ -12674,7 +12794,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -12686,6 +12806,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -13671,8 +13801,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 2
+        "questionId": "question-2027-log-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-logement",
@@ -13683,6 +13813,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -13872,7 +14012,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14668,7 +14808,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -14679,6 +14819,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -15667,7 +15817,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -15679,6 +15829,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -16664,7 +16824,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -16676,6 +16836,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -16910,7 +17080,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-clara-egger",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -17663,7 +17833,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -17674,6 +17844,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -17784,7 +17964,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nicolas-dupont-aignan",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -18660,7 +18840,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -18672,6 +18852,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -19657,7 +19847,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -19669,6 +19859,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -20654,8 +20854,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 4
+        "questionId": "question-2027-log-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",
@@ -20666,6 +20866,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -21651,7 +21861,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 1
       },
       {
@@ -21663,6 +21873,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -21757,7 +21977,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -22648,8 +22868,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 4
+        "questionId": "question-2027-log-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",
@@ -22660,6 +22880,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -23645,7 +23875,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 1
       },
       {
@@ -23657,6 +23887,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -23846,7 +24086,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24642,8 +24882,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -24654,6 +24894,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -24798,7 +25048,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-david-lisnard",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24838,7 +25088,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-eric-zemmour",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24873,7 +25123,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-segolene-royal",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -25639,7 +25889,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 4
       },
       {
@@ -25651,6 +25901,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -26636,7 +26896,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -26648,6 +26908,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -27323,7 +27593,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -27335,6 +27605,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -28320,8 +28600,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -28332,6 +28612,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -29317,7 +29607,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -29329,6 +29619,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -30314,7 +30614,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -30326,6 +30626,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -30825,7 +31135,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -31313,7 +31623,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -31325,6 +31635,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -32310,7 +32630,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 4
       },
       {
@@ -32322,6 +32642,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-numerique",
@@ -33307,7 +33637,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 4
       },
       {
@@ -33319,6 +33649,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-numerique",
@@ -34304,7 +34644,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -34315,6 +34655,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -34780,7 +35130,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -35301,7 +35651,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -35313,6 +35663,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -36300,7 +36660,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -36312,6 +36672,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -37297,7 +37667,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -37309,6 +37679,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -38294,7 +38674,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -38306,6 +38686,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -39293,7 +39683,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -39305,6 +39695,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -39769,7 +40169,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bernard-cazeneuve",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -40295,8 +40695,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -40307,6 +40707,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -41292,7 +41702,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 3
       },
       {
@@ -41304,6 +41714,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -42304,8 +42724,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 4
+        "questionId": "question-2027-log-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",
@@ -42316,6 +42736,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -43301,8 +43731,8 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
-        "answerIndex": 3
+        "questionId": "question-2027-log-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -43313,6 +43743,16 @@
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-numerique",
@@ -44588,7 +45028,7 @@
       },
       {
         "themeId": "theme-2027-logement",
-        "questionId": "question-2027-log-06",
+        "questionId": "question-2027-log-09",
         "answerIndex": 2
       },
       {
@@ -44599,6 +45039,16 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-11",
         "answerIndex": 2
       },
       {
@@ -44734,7 +45184,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-ruffin",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

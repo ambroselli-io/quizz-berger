@@ -275,14 +275,20 @@ question-2027-log-04: Équilibre territorial : que doit faire l'État pour les z
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
 [1] Il faut des incitations fiscales pour encourager la rénovation, mais sans contraindre
 
-question-2027-log-06: Quel rôle l'État devrait-il jouer dans le logement ?
-[2] Modéré : l'État régule et accompagne (aides, normes), sans contrôler les prix ni la propriété
+question-2027-log-09: Quelle place pour le logement social (HLM) ?
+[1] Réduite : le logement social doit être réservé à l'urgence et aux plus précaires
 
 question-2027-log-07: Que pensez-vous du niveau actuel des prix du logement ?
 [2] Les prix sont trop élevés, ça commence à devenir un problème
 
 question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
 [2] La réquisition n'est pas la bonne solution, mieux vaut inciter ou taxer la vacance
+
+question-2027-log-10: Faut-il assouplir les règles pour construire plus de logements ?
+[0] Oui, radicalement : il faut supprimer l'objectif ZAN et la plupart des normes de construction
+
+question-2027-log-11: Que faire des aides au logement pour les ménages (APL, prêt à taux zéro) ?
+[1] Les réduire et les réserver à ceux qui en ont vraiment besoin
 
 
 Numérique et IA:
@@ -610,7 +616,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [2] Neutre
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[4] Très mécontent(e)
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)

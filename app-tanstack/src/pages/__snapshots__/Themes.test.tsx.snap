@@ -65,7 +65,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Logement",
     "id": "theme-2027-logement",
-    "questionCount": 7,
+    "questionCount": 9,
   },
   {
     "fr": "Numérique et IA",
