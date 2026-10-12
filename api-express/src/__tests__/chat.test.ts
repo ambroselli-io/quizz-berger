@@ -76,7 +76,7 @@ describe("POST /chat", () => {
     const res = await startChat(user.token, { mode: "president" });
 
     expect(res.body.data.messages).toEqual([{ role: "assistant", content: "Alors, tu ferais quoi si t'étais président ?" }]);
-    expect(res.body.donation).toEqual({ previousChatsCount: 0, previousCostEur: 0 });
+    expect(res.body.donation).toEqual({ previousChatsCount: 0 });
   });
 
   it("needs a known candidate to convince", async () => {
@@ -89,7 +89,7 @@ describe("POST /chat", () => {
     );
   });
 
-  it("reports the previous conversations and what they cost, for the donation prompt", async () => {
+  it("counts the previous conversations, for the donation prompt", async () => {
     const user = await signup("berger");
     const first = await startChat(user.token, { mode: "contre-moi-meme" });
     await send(user.token, first.body.data.id, "Il faut tout nationaliser");
@@ -98,7 +98,7 @@ describe("POST /chat", () => {
 
     const res = await startChat(user.token, { mode: "president" });
 
-    expect(res.body.donation).toEqual({ previousChatsCount: 1, previousCostEur: 0.12 });
+    expect(res.body.donation).toEqual({ previousChatsCount: 1 });
   });
 
   it(`stops at ${MAX_CHATS_PER_DAY} conversations a day`, async () => {

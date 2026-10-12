@@ -39,11 +39,4 @@ export const CANDIDATE_DISCLAIMER =
 // The creator's Tipeee page. Empty: the "Faire un don sur Tipeee" button is hidden.
 export const DONATION_URL = 'https://fr.tipeee.com/quizz-du-berger/';
 
-// Mirrors SUPPORTER_* in api-express/src/controllers/chat.ts and SUPPORTER_DAYS in utils/supporter.ts.
-export const SUPPORTER_PERKS =
-  "pendant 3 mois, 30 discussions par jour au lieu de 10, deux fois plus de messages par discussion, et plus jamais ce message.";
-
-export const formatCost = (eur: number) => {
-  if (eur < 0.01) return "moins d'un centime";
-  return eur.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 });
-};
+export const SUPPORT_PAGE_URL = 'https://www.quizz-du-berger.com/soutenir';

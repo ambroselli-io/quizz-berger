@@ -11,7 +11,6 @@ export interface Chat {
   mode: ChatMode;
   candidateId: string | null;
   messages: ChatMessage[];
-  costEur: number;
 }
 
 export interface ChatSummary {
@@ -21,11 +20,6 @@ export interface ChatSummary {
   preview: string;
   messagesCount: number;
   updatedAt: string;
-}
-
-export interface DonationInfo {
-  previousChatsCount: number;
-  previousCostEur: number;
 }
 
 const NO_REPLY = "L'IA n'a pas répondu, réessaie dans quelques instants.";
@@ -61,9 +55,4 @@ export const sendChatMessage = async (
   } catch {
     return { ok: false, error: NO_REPLY };
   }
-};
-
-export const formatCost = (eur: number) => {
-  if (eur < 0.01) return "moins d'un centime";
-  return eur.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };

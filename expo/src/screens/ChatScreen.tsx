@@ -21,13 +21,12 @@ import useUser from '~/hooks/useUser';
 import QuizzButton from '~/components/QuizzButton';
 import CandidateAvatar from '~/components/CandidateAvatar';
 import candidatesAnswers from '~/shared/candidates-answers.json';
-import { sendChatMessage, type Chat, type DonationInfo } from '~/services/chat';
+import { sendChatMessage, type Chat } from '~/services/chat';
 import {
   AI_DISCLAIMER,
   CANDIDATE_DISCLAIMER,
   DONATION_URL,
-  SUPPORTER_PERKS,
-  formatCost,
+  SUPPORT_PAGE_URL,
   getChatMode,
 } from '~/utils/chatModes';
 
@@ -38,11 +37,9 @@ const font = (name: string) => ({ fontFamily: name });
 
 const DonationModal = ({
   isVisible,
-  donation,
   onClose,
 }: {
   isVisible: boolean;
-  donation: DonationInfo | null;
   onClose: () => void;
 }) => {
   const [step, setStep] = useState<'ask' | 'claim' | 'sent'>('ask');
@@ -89,18 +86,16 @@ const DonationModal = ({
             </Text>
             {step === 'ask' && (
               <>
-                {donation &&
-                  paragraph(
-                    donation.previousChatsCount === 1
-                      ? `Ta première discussion avec l'IA m'a coûté ${formatCost(donation.previousCostEur)}.`
-                      : `Tes ${donation.previousChatsCount} discussions avec l'IA m'ont coûté ${formatCost(donation.previousCostEur)} en tout.`,
-                  )}
+                {paragraph('Je fais le Quizz du Berger tout seul. Il est gratuit, sans publicité, et il le restera.')}
                 {paragraph(
-                  "Je fais le Quizz du Berger tout seul. Il est gratuit et sans publicité, mais chaque message envoyé à l'IA m'est facturé.",
+                  "Ton don finance cette IA et les prochains outils du site. Et c'est toi qui choisis lesquels : propose tes idées et vote pour celles des autres.",
                 )}
-                {paragraph(
-                  `Certains donnent, d'autres non, et c'est très bien comme ça. Mais si tu en as les moyens, un don sur Tipeee m'aiderait à rentrer dans mes frais. En échange : ${SUPPORTER_PERKS}`,
-                )}
+                {paragraph("Certains donnent, d'autres non, et c'est très bien comme ça.")}
+                <Pressable onPress={() => Linking.openURL(SUPPORT_PAGE_URL)} hitSlop={8}>
+                  <Text className="text-center text-base underline" style={font('MerriweatherSans_400Regular')}>
+                    Voir où va l'argent et proposer une idée
+                  </Text>
+                </Pressable>
                 {!!DONATION_URL && (
                   <QuizzButton onPress={() => Linking.openURL(DONATION_URL)}>Faire un don sur Tipeee</QuizzButton>
                 )}
@@ -165,7 +160,6 @@ export default function ChatScreen() {
 
   const [candidateId, setCandidateId] = useState<string | null>(null);
   const [chat, setChat] = useState<Chat | null>(null);
-  const [donation, setDonation] = useState<DonationInfo | null>(null);
   const [showDonation, setShowDonation] = useState(false);
   const [error, setError] = useState('');
   const [input, setInput] = useState('');
@@ -219,10 +213,7 @@ export default function ChatScreen() {
       return;
     }
     setChat(res.data);
-    if (res.donation?.previousChatsCount > 0) {
-      setDonation(res.donation);
-      setShowDonation(true);
-    }
+    if (res.donation?.previousChatsCount > 0) setShowDonation(true);
   };
 
   useEffect(() => {
@@ -256,10 +247,7 @@ export default function ChatScreen() {
     const res = await sendChatMessage(chat.id, text, (reply) =>
       setChat((c) => c && { ...c, messages: [...withUser, { role: 'assistant', content: reply }] }),
     );
-    if (res.ok) {
-      const fresh = await API.get({ path: `/chat/${chat.id}` });
-      if (fresh?.ok) setChat((c) => c && { ...c, costEur: fresh.data.costEur });
-    } else {
+    if (!res.ok) {
       setChat((c) => c && { ...c, messages: before });
       setInput(text);
       setError(res.error);
@@ -290,8 +278,7 @@ export default function ChatScreen() {
         </Text>
         {disclaimer}
         <Text className="text-base leading-6" style={font('MerriweatherSans_400Regular')}>
-          Chaque message envoyé à l'IA nous coûte de l'argent : pour discuter, il te faut un compte. Un pseudo et un mot
-          de passe suffisent.
+          Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
         </Text>
         <QuizzButton onPress={() => navigation.navigate('Login')}>Créer un compte ou se connecter</QuizzButton>
       </ScrollView>
@@ -352,7 +339,7 @@ export default function ChatScreen() {
                 className={`text-base leading-6 ${message.role === 'user' ? 'text-white' : 'text-gray-900'}`}
                 style={font('MerriweatherSans_400Regular')}
               >
-                {message.content || '…'}
+                {message.content || "L'IA réfléchit, ça peut prendre une vingtaine de secondes…"}
               </Text>
             </View>
           </View>
@@ -365,11 +352,6 @@ export default function ChatScreen() {
         )}
         {chat && (
           <View className="gap-2">
-            {userMessagesCount > 0 && (
-              <Text className="text-xs text-gray-500" style={font('MerriweatherSans_400Regular')}>
-                Cette discussion a coûté {formatCost(chat.costEur)} au Quizz du Berger.
-              </Text>
-            )}
             <View className="flex-row gap-4">
               <Pressable onPress={() => setShowDonation(true)} hitSlop={8}>
                 <Text className="text-xs text-gray-500 underline">Faire un don</Text>
@@ -413,7 +395,7 @@ export default function ChatScreen() {
           </Pressable>
         </View>
       )}
-      <DonationModal isVisible={showDonation} donation={donation} onClose={() => setShowDonation(false)} />
+      <DonationModal isVisible={showDonation} onClose={() => setShowDonation(false)} />
     </KeyboardAvoidingView>
   );
 }

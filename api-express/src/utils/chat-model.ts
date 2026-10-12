@@ -1,11 +1,13 @@
 import { mistral } from "@ai-sdk/mistral";
 
-// Mistral Medium 3.5 at the time of writing: Mistral's frontier model, 256k context. Reads MISTRAL_API_KEY.
-export const CHAT_MODEL = process.env.MISTRAL_MODEL || "mistral-medium-latest";
+// Mistral Large 4: Mistral's largest model, 1M context, still a public preview in October 2026.
+// Not behind the mistral-large-latest alias yet (that one is Large 3). Reads MISTRAL_API_KEY.
+export const CHAT_MODEL = process.env.MISTRAL_MODEL || "mistral-large-4";
 
-// Euros per million tokens, Mistral Medium 3.5 list price. Only used to tell users what their conversation cost.
-const INPUT_EUR_PER_MTOK = Number(process.env.MISTRAL_INPUT_EUR_PER_MTOK) || 1.5;
-const OUTPUT_EUR_PER_MTOK = Number(process.env.MISTRAL_OUTPUT_EUR_PER_MTOK) || 7.5;
+// Euros per million tokens, Mistral Large 4 list price (the preview is sold at half that for now).
+// Only used to tell users what their conversation cost.
+const INPUT_EUR_PER_MTOK = Number(process.env.MISTRAL_INPUT_EUR_PER_MTOK) || 1.36;
+const OUTPUT_EUR_PER_MTOK = Number(process.env.MISTRAL_OUTPUT_EUR_PER_MTOK) || 4.18;
 
 export const getChatModel = () => mistral(CHAT_MODEL);
 

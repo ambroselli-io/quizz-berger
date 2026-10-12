@@ -19,6 +19,8 @@ import ogRoutes from "./controllers/og";
 import visitRoutes from "./controllers/visit";
 import chatRoutes from "./controllers/chat";
 import supporterRoutes from "./controllers/supporter";
+import fundingRoutes from "./controllers/funding";
+import ideasRoutes from "./controllers/ideas";
 import configurePassport from "./passport";
 import { isLoadTest } from "./utils/load-test";
 
@@ -66,6 +68,8 @@ app.use("/og", ogRoutes);
 app.use("/visit", visitRoutes);
 app.use("/chat", chatRoutes);
 app.use("/supporter", supporterRoutes);
+app.use("/funding", fundingRoutes);
+app.use("/ideas", ideasRoutes);
 
 const now = new Date().toISOString();
 

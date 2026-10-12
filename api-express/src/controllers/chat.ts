@@ -20,7 +20,8 @@ export const MAX_CHATS_PER_DAY = 10;
 // Users who made a donation (controllers/supporter.ts).
 export const SUPPORTER_MAX_USER_MESSAGES_PER_CHAT = 60;
 export const SUPPORTER_MAX_CHATS_PER_DAY = 30;
-const MAX_OUTPUT_TOKENS = 800;
+// Large 4 reasons before answering, and the reasoning counts as output: ~1,000-3,000 tokens before a 150-word reply.
+const MAX_OUTPUT_TOKENS = 6000;
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
@@ -29,7 +30,6 @@ const serializeChat = (chat: Chat) => ({
   mode: chat.mode,
   candidateId: chat.candidateId,
   messages: chat.messages as Array<ChatMessage>,
-  costEur: chat.costEur,
   createdAt: chat.createdAt,
 });
 
@@ -65,11 +65,7 @@ router.post(
       return;
     }
     // Only conversations where the model actually answered cost something.
-    const previous = await prisma.chat.aggregate({
-      where: { userId, outputTokens: { gt: 0 } },
-      _count: true,
-      _sum: { costEur: true },
-    });
+    const previous = await prisma.chat.count({ where: { userId, outputTokens: { gt: 0 } } });
     const chat = await prisma.chat.create({
       data: {
         userId,
@@ -83,7 +79,7 @@ router.post(
       ok: true,
       data: serializeChat(chat),
       // No donation prompt for someone who already gave.
-      donation: supporter ? null : { previousChatsCount: previous._count, previousCostEur: previous._sum.costEur ?? 0 },
+      donation: supporter ? null : { previousChatsCount: previous },
     });
   }),
 );

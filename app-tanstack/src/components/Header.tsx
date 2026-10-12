@@ -30,12 +30,8 @@ const Header = () => {
             <Link to="/" className="ml-2.5 font-[Merriweather] text-xl font-bold text-white max-lg:hidden">Le Quizz du Berger</Link>
           </div>
           <ul className="flex h-full items-center gap-10 text-[0.8rem] font-medium text-white max-lg:hidden">
-            <NavItem href="/" exact>Accueil</NavItem>
-            {import.meta.env.DEV && <NavItem href="/stats">Stats</NavItem>}
-            <NavItem href="/all-questions">Voir toutes les questions</NavItem>
             <NavItem href="/ia">Discuter avec l'IA</NavItem>
             <NavItem href="/themes"><QuizzButton>Quizz</QuizzButton></NavItem>
-            {user?.isLoggedIn && <NavItem href="/result">Résultats</NavItem>}
             <li className="flex h-20 cursor-pointer items-center text-gray-400"><span onClick={() => setShowContactModal(true)}>Nous contacter</span></li>
             {user?.isLoggedIn ? (
               <li className="flex h-20 cursor-pointer items-center text-gray-400" onClick={logout}><span>{user?.pseudo ? 'Se déconnecter' : 'Recommencer'}</span></li>

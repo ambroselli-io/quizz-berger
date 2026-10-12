@@ -12,7 +12,6 @@ export interface Chat {
   mode: ChatMode;
   candidateId: string | null;
   messages: ChatMessage[];
-  costEur: number;
 }
 
 export interface ChatSummary {
@@ -22,11 +21,6 @@ export interface ChatSummary {
   preview: string;
   messagesCount: number;
   updatedAt: string;
-}
-
-export interface DonationInfo {
-  previousChatsCount: number;
-  previousCostEur: number;
 }
 
 const NO_REPLY = "L'IA n'a pas répondu, réessaie dans quelques instants.";

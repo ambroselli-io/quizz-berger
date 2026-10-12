@@ -29,10 +29,12 @@ model User {
   supporterUntil DateTime?
 
   // Relations
-  answers  Answer[]
-  chats    Chat[]
-  friends  User[]   @relation("UserFriends")
-  friendOf User[]   @relation("UserFriends")
+  answers   Answer[]
+  chats     Chat[]
+  ideas     Idea[]
+  ideaVotes IdeaVote[]
+  friends   User[]     @relation("UserFriends")
+  friendOf  User[]     @relation("UserFriends")
 }
 
 model Answer {
@@ -74,6 +76,52 @@ model Chat {
   userId String
 
   @@index([userId])
+}
+
+// Money in and out, entered by the admin on /soutenir (or when validating a Tipeee donation).
+// The AI cost is not here: it is summed live from Chat.costEur.
+model LedgerEntry {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  date      DateTime
+  // "donation" | "expense"
+  kind      String
+  amountEur Float
+  // Shown publicly for expenses only: donations appear as a total, never by donor.
+  label     String
+  // "tipeee-claim:<userId>:<claim date>" for a validated donation, so validating the same claim twice records it once.
+  source    String?  @unique
+}
+
+// Ideas board on /soutenir: what the donations should fund next.
+model Idea {
+  id          String   @id @default(uuid())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  title       String
+  description String   @default("")
+  // "pending" (waits for the admin, only its author sees it) | "open" | "planned" | "in-progress" | "done" | "rejected"
+  status      String   @default("pending")
+
+  // Relations
+  author   User       @relation(fields: [authorId], references: [id])
+  authorId String
+  votes    IdeaVote[]
+
+  @@index([status])
+}
+
+model IdeaVote {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+
+  // Relations
+  idea   Idea   @relation(fields: [ideaId], references: [id], onDelete: Cascade)
+  ideaId String
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  @@unique([ideaId, userId])
 }
 
 // One row per page seen by a human visitor, sent by the site's own tracking script (no cookie).

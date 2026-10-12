@@ -3,12 +3,13 @@ import { seoHead } from '@app/utils/seo-head';
 import Stats from '@app/pages/Stats';
 
 export const Route = createFileRoute('/stats')({
-  // Internal dashboard: reachable by URL, but kept out of the index, the sitemap and robots.txt.
   head: () =>
     seoHead({
       title: 'Statistiques | Le Quizz du Berger',
-      description: "Tableau de bord interne du Quizz du Berger : nombre d'utilisateurs et de réponses par jour.",
-      robots: 'noindex, nofollow',
+      description: "Les chiffres du Quizz du Berger, sans rien cacher : nombre d'utilisateurs et de réponses par jour.",
+      // Public on purpose (linked from the footer), but a page of charts has nothing to rank for.
+      // noindex rather than a robots.txt Disallow: a blocked page is never read, so its noindex would never be seen.
+      robots: 'noindex, follow',
     }),
   component: Stats,
 });

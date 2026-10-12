@@ -22,3 +22,4 @@ export const visitLimiter = limiter(1, 120);
 // Each message costs real money (LLM tokens). Per-user caps live in controllers/chat.ts.
 export const chatLimiter = limiter(60, 100);
 export const supporterClaimLimiter = limiter(60, 10);
+export const ideaLimiter = limiter(60, 10);

@@ -50,6 +50,7 @@ function buildUrls(): SitemapUrl[] {
   urls.push({ loc: '/qui-sommes-nous', priority: '0.3', changefreq: 'yearly' });
   urls.push({ loc: '/contact', priority: '0.3', changefreq: 'yearly' });
   urls.push({ loc: '/ia', priority: '0.6', changefreq: 'monthly' });
+  urls.push({ loc: '/soutenir', priority: '0.4', changefreq: 'weekly' });
   for (const chatMode of chatModes) {
     urls.push({ loc: `/ia/${chatMode.slug}`, priority: '0.5', changefreq: 'monthly' });
   }

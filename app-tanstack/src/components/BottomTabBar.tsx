@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from '@app/lib/router';
-import { Home, Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail, Scale, Users, Github, BookOpen, UserSquare2, Layers, ArrowLeftRight, MessageCircle } from 'lucide-react';
+import { Home, Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail, Scale, Users, Github, BookOpen, UserSquare2, Layers, ArrowLeftRight, MessageCircle, Heart, LineChart } from 'lucide-react';
 import { Sheet, SheetContent, SheetTitle } from '@app/components/ui/sheet';
 import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
@@ -66,6 +66,14 @@ const BottomTabBar = () => {
             <Link to="/ia" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
               <MessageCircle size={20} />
               Discuter avec l'IA
+            </Link>
+            <Link to="/soutenir" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+              <Heart size={20} />
+              Soutenir le projet
+            </Link>
+            <Link to="/stats" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+              <LineChart size={20} />
+              Statistiques
             </Link>
             <Link to="/candidats" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
               <UserSquare2 size={20} />

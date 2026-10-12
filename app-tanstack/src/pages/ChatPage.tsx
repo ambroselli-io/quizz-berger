@@ -13,7 +13,7 @@ import {
   getChatModeBySlug,
   type ChatModeEntry,
 } from '@app/content/chat-modes';
-import { formatCost, sendChatMessage, type Chat, type DonationInfo } from '@app/services/chat';
+import { sendChatMessage, type Chat } from '@app/services/chat';
 
 const CandidateAvatar = ({ candidate, size }: { candidate: CandidateSlugEntry; size: number }) =>
   candidate.picture ? (
@@ -48,7 +48,6 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
   const hasAccount = !!user.isLoggedIn && !!user.pseudo;
   const [candidateId, setCandidateId] = useState<string | null>(initialChat?.candidateId ?? null);
   const [chat, setChat] = useState<Chat | null>(initialChat ?? null);
-  const [donation, setDonation] = useState<DonationInfo | null>(null);
   const [showDonation, setShowDonation] = useState(false);
   const [error, setError] = useState('');
   const [input, setInput] = useState('');
@@ -68,10 +67,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
       return;
     }
     setChat(res.data);
-    if (res.donation?.previousChatsCount > 0) {
-      setDonation(res.donation);
-      setShowDonation(true);
-    }
+    if (res.donation?.previousChatsCount > 0) setShowDonation(true);
   };
 
   useEffect(() => {
@@ -119,10 +115,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
     const res = await sendChatMessage(chat.id, text, (reply) =>
       setChat((c) => c && { ...c, messages: [...withUser, { role: 'assistant', content: reply }] }),
     );
-    if (res.ok) {
-      const fresh = await API.get({ path: `/chat/${chat.id}` });
-      if (fresh?.ok) setChat((c) => c && { ...c, costEur: fresh.data.costEur });
-    } else {
+    if (!res.ok) {
       setChat((c) => c && { ...c, messages: before });
       setInput(text);
       setError(res.error);
@@ -153,8 +146,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
         ) : !hasAccount ? (
           <div className="flex flex-col items-center gap-4">
             <p className="text-center leading-relaxed">
-              Chaque message envoyé à l'IA nous coûte de l'argent : pour discuter, il te faut un compte. Un pseudo et un
-              mot de passe suffisent.
+              Pour discuter avec l'IA, il te faut un compte. Un pseudo et un mot de passe suffisent.
             </p>
             <LoginContainer showSignup onSuccess={() => {}} />
           </div>
@@ -174,7 +166,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
                       message.role === 'user' ? 'bg-quizz-dark text-white' : 'bg-gray-100 text-gray-900'
                     }`}
                   >
-                    {message.content || <span className="animate-pulse text-gray-400">…</span>}
+                    {message.content || <span className="animate-pulse text-gray-400">L'IA réfléchit, ça peut prendre une vingtaine de secondes…</span>}
                   </div>
                 </li>
               ))}
@@ -216,10 +208,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
             )}
 
             {chat && (
-              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-gray-500">
-                <span>
-                  {userMessagesCount > 0 && `Cette discussion a coûté ${formatCost(chat.costEur)} au Quizz du Berger.`}
-                </span>
+              <div className="flex flex-wrap items-center justify-end gap-2 text-xs text-gray-500">
                 <span className="flex gap-3">
                   <button className="cursor-pointer underline" onClick={() => setShowDonation(true)}>
                     Faire un don
@@ -243,7 +232,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
           </>
         )}
       </main>
-      <ModalDonation isActive={showDonation} donation={donation} onClose={() => setShowDonation(false)} />
+      <ModalDonation isActive={showDonation} onClose={() => setShowDonation(false)} />
     </div>
   );
 };

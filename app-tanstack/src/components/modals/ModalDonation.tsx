@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import QuizzModal from '../QuizzModal';
 import API from '@app/services/api';
-import { DONATION_URL, SUPPORTER_PERKS } from '@app/content/chat-modes';
-import { formatCost, type DonationInfo } from '@app/services/chat';
+import { DONATION_URL } from '@app/content/chat-modes';
+import { Link } from '@app/lib/router';
 
 interface ModalDonationProps {
   isActive: boolean;
-  // Absent when the user opens the modal themselves, without a conversation to bill.
-  donation?: DonationInfo | null;
   onClose: () => void;
 }
 
@@ -61,7 +59,7 @@ const ClaimForm = ({ onDone }: { onDone: () => void }) => {
   );
 };
 
-const ModalDonation = ({ isActive, donation, onClose }: ModalDonationProps) => {
+const ModalDonation = ({ isActive, onClose }: ModalDonationProps) => {
   const [step, setStep] = useState<'ask' | 'claim' | 'sent'>('ask');
   const close = () => {
     setStep('ask');
@@ -73,21 +71,15 @@ const ModalDonation = ({ isActive, donation, onClose }: ModalDonationProps) => {
       <div className="flex flex-col gap-4 leading-relaxed">
         {step === 'ask' && (
           <>
-            {donation && (
-              <p>
-                {donation.previousChatsCount === 1
-                  ? `Ta première discussion avec l'IA m'a coûté ${formatCost(donation.previousCostEur)}.`
-                  : `Tes ${donation.previousChatsCount} discussions avec l'IA m'ont coûté ${formatCost(donation.previousCostEur)} en tout.`}
-              </p>
-            )}
+            <p>Je fais le Quizz du Berger tout seul. Il est gratuit, sans publicité, et il le restera.</p>
             <p>
-              Je fais le Quizz du Berger tout seul. Il est gratuit et sans publicité, mais chaque message envoyé à l'IA
-              m'est facturé.
+              Ton don finance cette IA et les prochains outils du site. Et c'est toi qui choisis lesquels : propose tes
+              idées et vote pour celles des autres.
             </p>
-            <p>
-              Certains donnent, d'autres non, et c'est très bien comme ça. Mais si tu en as les moyens, un don sur Tipeee
-              m'aiderait à rentrer dans mes frais. En échange : {SUPPORTER_PERKS}
-            </p>
+            <p>Certains donnent, d'autres non, et c'est très bien comme ça.</p>
+            <Link to="/soutenir" onClick={close} className="text-center underline">
+              Voir où va l'argent et proposer une idée
+            </Link>
             <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
               {DONATION_URL && (
                 <a

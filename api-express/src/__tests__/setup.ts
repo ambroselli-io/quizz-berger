@@ -9,7 +9,9 @@ if (!/_test(\?|$)/.test(process.env.DATABASE_URL ?? "")) {
 }
 
 beforeEach(async () => {
-  await prisma.$executeRawUnsafe(`TRUNCATE "Answer", "Chat", "_UserFriends", "User", "PageView", "BotHit" CASCADE`);
+  await prisma.$executeRawUnsafe(
+    `TRUNCATE "Answer", "Chat", "IdeaVote", "Idea", "LedgerEntry", "_UserFriends", "User", "PageView", "BotHit" CASCADE`,
+  );
 });
 
 afterAll(async () => {

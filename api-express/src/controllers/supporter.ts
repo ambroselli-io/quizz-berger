@@ -2,9 +2,9 @@ import express from "express";
 import passport from "passport";
 import jwt from "jsonwebtoken";
 import prisma from "~/prisma";
-import { API_URL, EMAIL_1, SECRET, TIPIMAIL_API_KEY, TIPIMAIL_API_USER } from "~/config";
+import { API_URL, SECRET } from "~/config";
 import { catchErrors } from "~/utils/error";
-import { capture } from "~/utils/sentry";
+import { sendAdminEmail } from "~/utils/admin-email";
 import { supporterClaimLimiter } from "~/utils/rate-limit";
 import { SUPPORTER_DAYS } from "~/utils/supporter";
 import type { RequestWithUser } from "~/types/request";
@@ -16,7 +16,8 @@ const router = express.Router();
 const PURPOSE = "supporter-claim";
 const CLAIM_VALIDITY_DAYS = 30;
 
-type ClaimPayload = { purpose: typeof PURPOSE; userId: string; pseudo: string; tipeeePseudo: string; amount: string };
+// iat is added by jwt.sign: it identifies the claim, so the same claim is recorded once in the ledger.
+type ClaimPayload = { purpose: typeof PURPOSE; userId: string; pseudo: string; tipeeePseudo: string; amount: string; iat?: number };
 
 const escapeHtml = (text: string) => text.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -30,6 +31,12 @@ const readClaim = (token: unknown): ClaimPayload | null => {
   } catch {
     return null;
   }
+};
+
+// "5 €", "2,50€ par mois" → 5, 2.5. Only a suggestion: the admin types the amount actually received.
+const parseAmount = (text: string) => {
+  const match = text.replace(",", ".").match(/\d+(\.\d+)?/);
+  return match ? Number(match[0]) : null;
 };
 
 const page = (title: string, body: string) =>
@@ -65,22 +72,8 @@ router.post(
       `Lien valable ${CLAIM_VALIDITY_DAYS} jours.`,
     ].join("\n");
 
-    const response = await fetch("https://api.tipimail.com/v1/messages/send", {
-      method: "POST",
-      headers: { "X-Tipimail-ApiUser": TIPIMAIL_API_USER!, "X-Tipimail-ApiKey": TIPIMAIL_API_KEY!, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        apiKey: TIPIMAIL_API_KEY,
-        to: [{ address: EMAIL_1 }],
-        msg: {
-          from: { address: "contact@quizz-du-berger.com", personalName: "Le Quizz du Berger" },
-          subject: `Don Tipeee déclaré par ${req.user.pseudo} (${amount})`,
-          text,
-        },
-        // Click tracking would rewrite the validation link.
-        headers: { "X-TM-TRACKING": { html: { open: 0, click: 0, text: { click: 0 } } } },
-      }),
-    }).catch((err) => capture(err, { extra: { userId: req.user.id } }));
-    if (!response?.ok) {
+    const sent = await sendAdminEmail(`Don Tipeee déclaré par ${req.user.pseudo} (${amount})`, text);
+    if (!sent) {
       res.status(502).send({ ok: false, error: "Ta déclaration n'a pas pu être envoyée, réessaie dans quelques instants." });
       return;
     }
@@ -101,6 +94,8 @@ router.get("/validate", (req: express.Request, res: express.Response) => {
       `<p><b>${escapeHtml(claim.pseudo)}</b> déclare un don de <b>${escapeHtml(claim.amount)}</b> sous le pseudo Tipeee <b>${escapeHtml(claim.tipeeePseudo)}</b>.</p>` +
         `<p>Vérifie-le sur Tipeee avant de valider : ${SUPPORTER_DAYS} jours d'accès étendu à l'IA.</p>` +
         `<form method="post" action="/supporter/validate"><input type="hidden" name="token" value="${escapeHtml(req.query.token as string)}">` +
+        `<p><label>Montant reçu, en euros (compté dans les dons de /soutenir, laisser vide pour ne rien compter) :<br>` +
+        `<input name="amountEur" type="number" step="0.01" min="0" value="${parseAmount(claim.amount) ?? ""}" style="font-size:1rem;padding:.4rem"></label></p>` +
         `<button type="submit" style="font-size:1rem;padding:.6rem 1.2rem">Valider le don</button></form>`,
     ),
   );
@@ -123,6 +118,15 @@ router.post(
     const until = new Date(Date.now() + SUPPORTER_DAYS * 24 * 3600 * 1000);
     const supporterUntil = user.supporterUntil && user.supporterUntil > until ? user.supporterUntil : until;
     await prisma.user.update({ where: { id: user.id }, data: { supporterUntil } });
+    const amountEur = Number(req.body.amountEur);
+    if (amountEur > 0) {
+      const source = `tipeee-claim:${claim.userId}:${claim.iat}`;
+      await prisma.ledgerEntry.upsert({
+        where: { source },
+        create: { source, kind: "donation", amountEur, date: new Date(), label: `Don Tipeee (${claim.tipeeePseudo})` },
+        update: { amountEur },
+      });
+    }
     res.send(
       page(
         "Don validé",
