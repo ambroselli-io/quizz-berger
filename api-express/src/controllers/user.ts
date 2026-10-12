@@ -33,6 +33,8 @@ function logoutCookieOptions() {
   }
 }
 
+const PASSWORD_RESET = "reset";
+
 const getFriendIds = async (userId: string): Promise<string[]> => {
   const user = await prisma.user.findUnique({ where: { id: userId }, select: { friends: { select: { id: true } } } });
   return user?.friends.map((friend) => friend.id) ?? [];
@@ -133,6 +135,15 @@ router.post(
       return;
     }
 
+    // Set by hand in the DB when someone asks to recover their account (no email to send a link to):
+    // the next login on this pseudo picks the new password.
+    if (user.password === PASSWORD_RESET) {
+      const updatedUser = await prisma.user.update({ where: { id: user.id }, data: { password: md5(req.body.password) } });
+      const token = setCookie(req, res, updatedUser);
+      res.status(200).send({ ok: true, data: sanitizeUser(updatedUser), token });
+      return;
+    }
+
     if (md5(req.body.password) !== user.password) {
       res.status(400).send({ ok: false, error: "Le pseudo et/ou le mot-de-passe sont incorrects" });
       return;
@@ -195,7 +206,17 @@ router.put(
         userUpdate.pseudo = req.body.pseudo;
       }
     }
-    if (req.body.hasOwnProperty("password")) userUpdate.password = md5(req.body.password);
+    if (req.body.hasOwnProperty("password")) {
+      if (!req.body.password) {
+        res.status(400).send({ ok: false, error: "Veuillez fournir un mot-de-passe" });
+        return;
+      }
+      userUpdate.password = md5(req.body.password);
+    }
+    if (userUpdate.pseudo && !user.pseudo && !userUpdate.password) {
+      res.status(400).send({ ok: false, error: "Veuillez fournir un mot-de-passe" });
+      return;
+    }
     // not activated automatically, manual change only
     // if (req.body.hasOwnProperty("isCandidate")) userUpdate.isCandidate = req.body.isCandidate;
     if (req.body.hasOwnProperty("isPublic")) userUpdate.isPublic = req.body.isPublic;
