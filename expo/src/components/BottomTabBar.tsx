@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Pressable, Modal, ScrollView, Linking, Alert, Keyboard } from 'react-native';
+import { View, Text, Pressable, Modal, ScrollView, Linking, Alert, Keyboard, Platform } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import type { NavigationContainerRefWithCurrent } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -47,7 +47,11 @@ export default function BottomTabBar({
   const [moreOpen, setMoreOpen] = useState(false);
   const [keyboardShown, setKeyboardShown] = useState(false);
 
+  // Android resizes the window (adjustResize), which would lift the bar above the keyboard. On iOS the
+  // keyboard simply covers it: hiding it there would resize the screen under a KeyboardAvoidingView
+  // after it has computed its padding, leaving a gap above the keyboard.
   useEffect(() => {
+    if (Platform.OS !== 'android') return;
     const show = Keyboard.addListener('keyboardDidShow', () => setKeyboardShown(true));
     const hide = Keyboard.addListener('keyboardDidHide', () => setKeyboardShown(false));
     return () => {

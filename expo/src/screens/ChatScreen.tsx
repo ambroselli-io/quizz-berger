@@ -1,9 +1,10 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   View,
   Text,
   TextInput,
   ScrollView,
+  FlatList,
   Pressable,
   KeyboardAvoidingView,
   Platform,
@@ -13,7 +14,6 @@ import {
   Alert
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RouteProp } from "@react-navigation/native";
 import type { RootStackParamList } from "~/types/navigation";
@@ -161,10 +161,12 @@ export default function ChatScreen() {
   // chatId: an existing conversation picked up again from the list.
   const [isResuming, setIsResuming] = useState(!!params.chatId);
   const startedRef = useRef(!!params.chatId);
-  const scrollRef = useRef<ScrollView>(null);
-  const insets = useSafeAreaInsets();
+  const containerRef = useRef<View>(null);
+  const [kbOffset, setKbOffset] = useState(0);
+  const minInputHeight = useRef<number | null>(null);
 
   const candidate = candidatesAnswers.find((c) => c.id === candidateId);
+  const messages = useMemo(() => [...(chat?.messages ?? [])].reverse(), [chat?.messages]);
 
   useLayoutEffect(() => {
     navigation.setOptions({ title: candidate ? candidate.pseudo : chatMode.title });
@@ -307,92 +309,119 @@ export default function ChatScreen() {
   }
 
   const userMessagesCount = chat?.messages.filter((m) => m.role === "user").length ?? 0;
+  const isEmptyInput = !input;
 
   return (
-    <KeyboardAvoidingView
-      className="flex-1 bg-white"
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-      // The custom header (components/Header.tsx) is the safe-area inset plus a 48px bar.
-      keyboardVerticalOffset={Platform.OS === "ios" ? insets.top + 48 : 0}
-    >
-      <ScrollView
-        ref={scrollRef}
-        className="flex-1"
-        contentContainerStyle={{ padding: 16, gap: 12 }}
-        keyboardShouldPersistTaps="handled"
-        keyboardDismissMode="interactive"
-        onContentSizeChange={() => scrollRef.current?.scrollToEnd({ animated: true })}
+    <>
+      <View
+        ref={containerRef}
+        className="flex-1 bg-white"
+        onLayout={() =>
+          // RN's KeyboardAvoidingView compares its parent-relative frame to the keyboard's window y:
+          // the offset must be this view's window y (the KAV sits at y = 0 inside it).
+          containerRef.current?.measureInWindow((_x, windowY) => setKbOffset(windowY))
+        }
       >
-        {disclaimer}
-        {chat?.messages.map((message, index) => (
-          <View key={index} className={`flex-row items-end gap-2 ${message.role === "user" ? "flex-row-reverse" : ""}`}>
-            {message.role === "assistant" && candidate && (
-              <CandidateAvatar picture={candidate.picture} color={candidate.color} size={28} />
+        <KeyboardAvoidingView
+          style={{ flex: 1 }}
+          behavior={Platform.OS === "ios" ? "padding" : undefined}
+          keyboardVerticalOffset={kbOffset}
+        >
+          <FlatList
+            style={{ flex: 1 }}
+            inverted
+            data={messages}
+            keyExtractor={(_message, index) => String(messages.length - index)}
+            contentContainerStyle={{ padding: 16, gap: 12 }}
+            keyboardShouldPersistTaps="handled"
+            keyboardDismissMode="interactive"
+            renderItem={({ item: message }) => (
+              <View className={`flex-row items-end gap-2 ${message.role === "user" ? "flex-row-reverse" : ""}`}>
+                {message.role === "assistant" && candidate && (
+                  <CandidateAvatar picture={candidate.picture} color={candidate.color} size={28} />
+                )}
+                <View
+                  className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${message.role === "user" ? "bg-quizz-dark" : "bg-gray-100"}`}
+                >
+                  <Text
+                    className={`text-base leading-6 ${message.role === "user" ? "text-white" : "text-gray-900"}`}
+                    style={font("MerriweatherSans_400Regular")}
+                  >
+                    {message.content || "L'IA réfléchit, ça peut prendre une vingtaine de secondes…"}
+                  </Text>
+                </View>
+              </View>
             )}
-            <View
-              className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${message.role === "user" ? "bg-quizz-dark" : "bg-gray-100"}`}
-            >
-              <Text
-                className={`text-base leading-6 ${message.role === "user" ? "text-white" : "text-gray-900"}`}
-                style={font("MerriweatherSans_400Regular")}
-              >
-                {message.content || "L'IA réfléchit, ça peut prendre une vingtaine de secondes…"}
-              </Text>
-            </View>
-          </View>
-        ))}
-        {!chat && !error && <ActivityIndicator />}
-        {!!error && (
-          <Text className="text-center text-sm text-red-600" style={font("MerriweatherSans_400Regular")}>
-            {error}
-          </Text>
-        )}
-        {chat && (
-          <View className="gap-2">
-            <View className="flex-row gap-4">
-              <Pressable onPress={() => setShowDonation(true)} hitSlop={8}>
-                <Text className="text-xs text-gray-500 underline">Faire un don</Text>
-              </Pressable>
-              {isConvaincre && (
-                <Pressable onPress={() => restart(true)} hitSlop={8}>
-                  <Text className="text-xs text-gray-500 underline">Changer de candidat</Text>
-                </Pressable>
-              )}
-              <Pressable onPress={() => restart(false)} hitSlop={8}>
-                <Text className="text-xs text-gray-500 underline">Nouvelle discussion</Text>
-              </Pressable>
-              {userMessagesCount > 0 && (
-                <Pressable onPress={remove} hitSlop={8}>
-                  <Text className="text-xs text-gray-500 underline">Supprimer</Text>
-                </Pressable>
-              )}
-            </View>
-          </View>
-        )}
-      </ScrollView>
-      {chat && (
-        <View className="flex-row items-end gap-2 border-t border-gray-200 bg-white p-3">
-          <TextInput
-            className="max-h-32 flex-1 rounded-xl border border-gray-300 px-3 py-2.5 text-base"
-            placeholder="Écris ton message…"
-            value={input}
-            onChangeText={setInput}
-            maxLength={2000}
-            multiline
-            textAlignVertical="top"
+            // Inverted: the footer is drawn at the top, the header right above the input bar.
+            ListFooterComponent={disclaimer}
+            ListHeaderComponent={
+              <View className="gap-3">
+                {!chat && !error && <ActivityIndicator />}
+                {!!error && (
+                  <Text className="text-center text-sm text-red-600" style={font("MerriweatherSans_400Regular")}>
+                    {error}
+                  </Text>
+                )}
+                {chat && (
+                  <View className="flex-row flex-wrap gap-4">
+                    <Pressable onPress={() => setShowDonation(true)} hitSlop={8}>
+                      <Text className="text-xs text-gray-500 underline">Faire un don</Text>
+                    </Pressable>
+                    {isConvaincre && (
+                      <Pressable onPress={() => restart(true)} hitSlop={8}>
+                        <Text className="text-xs text-gray-500 underline">Changer de candidat</Text>
+                      </Pressable>
+                    )}
+                    <Pressable onPress={() => restart(false)} hitSlop={8}>
+                      <Text className="text-xs text-gray-500 underline">Nouvelle discussion</Text>
+                    </Pressable>
+                    {userMessagesCount > 0 && (
+                      <Pressable onPress={remove} hitSlop={8}>
+                        <Text className="text-xs text-gray-500 underline">Supprimer</Text>
+                      </Pressable>
+                    )}
+                  </View>
+                )}
+              </View>
+            }
           />
-          <Pressable
-            onPress={send}
-            disabled={isSending || !input.trim()}
-            className={`rounded-xl bg-quizz-yellow px-4 py-3 ${isSending || !input.trim() ? "opacity-50" : ""}`}
-          >
-            <Text className="text-base text-quizz-dark" style={font("MerriweatherSans_700Bold")}>
-              Envoyer
-            </Text>
-          </Pressable>
-        </View>
-      )}
+          {chat && (
+            <View className="flex-row gap-2 border-t border-gray-200 bg-white p-3" style={{ alignItems: "flex-end" }}>
+              <View className="flex-1 rounded-xl border border-gray-300 px-3 py-2.5">
+                <TextInput
+                  className="text-base"
+                  style={[
+                    { maxHeight: 100 },
+                    Platform.OS === "ios" && { paddingTop: 0, paddingBottom: 0 },
+                    // A cleared native multiline input can keep its grown height: shrink it back, only when empty.
+                    isEmptyInput && minInputHeight.current ? { height: minInputHeight.current } : null
+                  ]}
+                  placeholder="Écris ton message…"
+                  value={input}
+                  onChangeText={setInput}
+                  onContentSizeChange={(e) => {
+                    const height = e.nativeEvent.contentSize.height;
+                    if (!minInputHeight.current || height < minInputHeight.current) minInputHeight.current = height;
+                  }}
+                  maxLength={2000}
+                  multiline
+                  textAlignVertical="top"
+                />
+              </View>
+              <Pressable
+                onPress={send}
+                disabled={isSending || !input.trim()}
+                className={`rounded-xl bg-quizz-yellow px-4 py-3 ${isSending || !input.trim() ? "opacity-50" : ""}`}
+              >
+                <Text className="text-base text-quizz-dark" style={font("MerriweatherSans_700Bold")}>
+                  Envoyer
+                </Text>
+              </Pressable>
+            </View>
+          )}
+        </KeyboardAvoidingView>
+      </View>
       <DonationModal isVisible={showDonation} onClose={() => setShowDonation(false)} />
-    </KeyboardAvoidingView>
+    </>
   );
 }

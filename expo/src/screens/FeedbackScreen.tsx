@@ -5,7 +5,6 @@ import {
   TextInput,
   ScrollView,
   Alert,
-  KeyboardAvoidingView,
   Platform,
 } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
@@ -138,7 +137,7 @@ export default function FeedbackScreen() {
   };
 
   return (
-    <KeyboardAvoidingView className="flex-1 bg-white" behavior={Platform.OS === 'ios' ? undefined : 'height'}>
+    <View className="flex-1 bg-white">
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 12 }}
         keyboardShouldPersistTaps="handled"
@@ -207,6 +206,6 @@ export default function FeedbackScreen() {
           </QuizzButton>
         </View>
       </ScrollView>
-    </KeyboardAvoidingView>
+    </View>
   );
 }

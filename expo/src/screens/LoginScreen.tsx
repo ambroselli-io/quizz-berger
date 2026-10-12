@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { View, Text, TextInput, ScrollView, Pressable, Alert, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, Text, TextInput, ScrollView, Pressable, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '~/types/navigation';
@@ -49,10 +49,7 @@ export default function LoginScreen() {
   };
 
   return (
-    <KeyboardAvoidingView
-      className="flex-1 bg-white"
-      behavior={Platform.OS === 'ios' ? undefined : 'height'}
-    >
+    <View className="flex-1 bg-white">
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 16 }}
         keyboardShouldPersistTaps="handled"
@@ -147,6 +144,6 @@ export default function LoginScreen() {
             : isSignUp ? "S'inscrire" : 'Se connecter'}
         </QuizzButton>
       </ScrollView>
-    </KeyboardAvoidingView>
+    </View>
   );
 }
