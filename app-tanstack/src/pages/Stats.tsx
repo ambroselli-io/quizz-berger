@@ -28,7 +28,17 @@ interface ChartData {
   today: number;
   projection: number;
   maxUsersOnADay: number;
+  usersPerPlatform: { name: string; count: number }[];
+  platformSince: string | null;
 }
+
+const PLATFORMS: Record<string, string> = {
+  ios: 'App iOS',
+  android: 'App Android',
+  'web-mobile': 'Web mobile',
+  'web-desktop': 'Web ordinateur',
+  'web-tablet': 'Web tablette',
+};
 
 const CustomizedAxisTick = ({ x, y, payload }: { x?: number; y?: number; payload?: { value: string } }) => (
   <g transform={`translate(${x},${y}) scale(0.7)`}>
@@ -69,6 +79,28 @@ export default function Stats() {
           </ComposedChart>
         </ResponsiveContainer>
       </div>
+
+      {data.platformSince && (
+        <>
+          <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">
+            Utilisateurs par plateforme (depuis le {new Date(data.platformSince).toLocaleDateString('fr-FR')})
+          </h2>
+          <div className="h-[50vh] w-full p-12 max-lg:mt-4 max-lg:h-[40vh] max-lg:p-0">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart
+                data={data.usersPerPlatform.map((p) => ({ ...p, name: PLATFORMS[p.name] ?? p.name }))}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Bar dataKey="count" name="Utilisateurs" stroke="#111827" fill="#facc15" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </>
+      )}
 
       <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">Utilisateurs par heure</h2>
       <div className="h-[80vh] w-full p-12 max-lg:mt-4 max-lg:h-[50vh] max-lg:p-0">

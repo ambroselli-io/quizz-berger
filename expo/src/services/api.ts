@@ -1,3 +1,4 @@
+import { Platform } from 'react-native';
 import { API_HOST } from '~/config';
 import storage from '~/utils/storage';
 
@@ -52,6 +53,7 @@ class ApiService {
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
+          'X-Client-Platform': Platform.OS,
           ...(token ? { Authorization: `Bearer ${token}` } : {}),
           ...headers,
         },

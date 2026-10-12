@@ -25,6 +25,8 @@ model User {
   lastLoginAt    DateTime?
   ogPicName      String?
   isLoadTest     Boolean   @default(false)
+  // "ios" / "android" (native app) or "web-mobile" / "web-desktop" / "web-tablet", see utils/visit-source.ts. Null before Oct 2026.
+  platform       String?
   // Set by hand from the donation e-mail (controllers/chat.ts): raises the AI chat limits until that date.
   supporterUntil DateTime?
 

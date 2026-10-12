@@ -160,6 +160,19 @@ router.get(
       ORDER BY "_id"
     `;
 
+    const usersPerPlatform = await prisma.$queryRaw<Array<{ name: string; count: number }>>`
+      SELECT "platform" as "name", COUNT(*)::int as "count"
+      FROM "User"
+      WHERE "platform" IS NOT NULL AND "isCandidate" = false
+      GROUP BY "platform"
+      ORDER BY "count" DESC
+    `;
+    const platformSince = await prisma.user.findFirst({
+      where: { platform: { not: null } },
+      orderBy: { createdAt: "asc" },
+      select: { createdAt: true },
+    });
+
     const maxUsersOnADay = Math.max(...cumulativeUsers.map((c) => c.count));
 
     const totalUsersForTheDay = usersPerHourAggregation.reduce((sum, agg) => sum + agg.count, 0);
@@ -198,6 +211,8 @@ router.get(
         usersPerHour,
         projection,
         today,
+        usersPerPlatform,
+        platformSince: platformSince?.createdAt ?? null,
       },
     });
   }),

@@ -10,6 +10,7 @@ import type { User } from "@prisma/client";
 import { RequestWithUser } from "~/types/request";
 import { anonymousUserLimiter, loginLimiter, signupLimiter } from "~/utils/rate-limit";
 import { isLoadTest } from "~/utils/load-test";
+import { platformOf } from "~/utils/visit-source";
 
 const router = express.Router();
 
@@ -54,7 +55,7 @@ router.post(
   catchErrors(async (req: express.Request, res: express.Response) => {
     console.log("CREATE");
     const user = await prisma.user.create({
-      data: { password: "", isLoadTest: isLoadTest(req) },
+      data: { password: "", isLoadTest: isLoadTest(req), platform: platformOf(req.get("x-client-platform"), req.get("user-agent") ?? "") },
     });
 
     const token = setCookie(req, res, user);
@@ -103,6 +104,7 @@ router.post(
         pseudo: req.body.pseudo,
         isPublic: req.body.isPublic ?? false,
         password: md5(req.body.password),
+        platform: platformOf(req.get("x-client-platform"), req.get("user-agent") ?? ""),
       },
     });
 

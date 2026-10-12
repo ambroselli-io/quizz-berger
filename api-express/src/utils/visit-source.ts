@@ -66,6 +66,14 @@ export const deviceOf = (userAgent: string) => {
   return "desktop";
 };
 
+/** The Expo app sends X-Client-Platform; builds released before it fall back on the native HTTP stack's user agent. */
+export const platformOf = (clientPlatform: string | undefined, userAgent: string) => {
+  if (clientPlatform === "ios" || clientPlatform === "android") return clientPlatform;
+  if (/^okhttp\//i.test(userAgent)) return "android";
+  if (/CFNetwork|Darwin\//.test(userAgent) && !/Mozilla/.test(userAgent)) return "ios";
+  return `web-${deviceOf(userAgent)}`;
+};
+
 export const looksLikeBot = (userAgent: string) =>
   !userAgent || /bot|crawl|spider|slurp|preview|headless|lighthouse|python|curl|wget|httpclient|fetch/i.test(userAgent);
 

@@ -20,6 +20,21 @@ describe("JWT lifetime", () => {
   });
 });
 
+describe("platform", () => {
+  it("records the native app from its header, and the web device from the user agent", async () => {
+    const app = await api().post("/user").set("X-Client-Platform", "android");
+    const web = await api()
+      .post("/user")
+      .set("User-Agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148");
+    const oldApp = await api().post("/user").set("User-Agent", "QuizzDuBerger/12 CFNetwork/1568.100.1 Darwin/24.0.0");
+
+    const platformOf = async (id: string) => (await prisma.user.findUnique({ where: { id } }))?.platform;
+    expect(await platformOf(app.body.data._id)).toBe("android");
+    expect(await platformOf(web.body.data._id)).toBe("web-mobile");
+    expect(await platformOf(oldApp.body.data._id)).toBe("ios");
+  });
+});
+
 describe("password reset", () => {
   it("lets the next login choose a new password once the account is marked for reset", async () => {
     const { id } = await signup("forgetful");
