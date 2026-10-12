@@ -47,3 +47,37 @@ model Answer {
 
   @@index([userId])
 }
+
+// One row per page seen by a human visitor, sent by the site's own tracking script (no cookie).
+// visitorId is a hash of IP + user-agent salted with the day: it counts unique visitors per day and
+// cannot follow anyone from one day to the next.
+model PageView {
+  id          BigInt   @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  path        String
+  isEntry     Boolean  @default(false)
+  // Normalized origin of the visit ("Google", "Instagram", "hardware.fr"…), null = direct.
+  // Repeated on every page of the visit, so pages can be filtered by source.
+  source      String?
+  referrer    String?
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  device      String
+  visitorId   String
+
+  @@index([createdAt])
+}
+
+// One row per page request from a known crawler (Googlebot, ChatGPT-User, GPTBot…), sent in batches by app-tanstack/server.mjs.
+model BotHit {
+  id        BigInt   @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  bot       String
+  // "ai-answer" | "indexing" | "training" | "preview" | "other"
+  category  String
+  path      String
+  status    Int
+
+  @@index([createdAt])
+}

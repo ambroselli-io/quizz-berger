@@ -24,6 +24,8 @@ module.exports = {
         TIPIMAIL_API_KEY: process.env.TIPIMAIL_API_KEY,
         TIPIMAIL_API_USER: process.env.TIPIMAIL_API_USER,
         WHITE_LIST_DOMAINS: process.env.WHITE_LIST_DOMAINS,
+        // Shared with app-tanstack: authenticates the crawler batches posted by server.mjs to POST /visit/bots.
+        ANALYTICS_BOT_TOKEN: process.env.ANALYTICS_BOT_TOKEN,
         PORT: "5179",
       },
     },

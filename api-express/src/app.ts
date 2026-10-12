@@ -16,6 +16,7 @@ import quizzRoutes from "./controllers/quizz";
 import feedbackRoutes from "./controllers/feedback";
 import publicRoutes from "./controllers/public";
 import ogRoutes from "./controllers/og";
+import visitRoutes from "./controllers/visit";
 import configurePassport from "./passport";
 import { isLoadTest } from "./utils/load-test";
 
@@ -59,6 +60,7 @@ app.use("/quizz", quizzRoutes);
 app.use("/feedback", feedbackRoutes);
 app.use("/public", publicRoutes);
 app.use("/og", ogRoutes);
+app.use("/visit", visitRoutes);
 
 const now = new Date().toISOString();
 

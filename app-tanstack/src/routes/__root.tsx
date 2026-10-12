@@ -12,6 +12,7 @@ import Header from '@app/components/Header';
 import BottomTabBar from '@app/components/BottomTabBar';
 import NotFound from '@app/components/NotFound';
 import UnexpectedError from '@app/components/UnexpectedError';
+import PageViewTracker from '@app/components/PageViewTracker';
 import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME, candidatesCount } from '@app/utils/seo-light';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 
@@ -92,12 +93,6 @@ export const Route = createRootRoute({
     scripts: [
       { type: 'application/ld+json', children: JSON.stringify(WEBAPP_JSONLD) },
       { type: 'application/ld+json', children: JSON.stringify(MOBILE_APP_JSONLD) },
-      {
-        src: 'https://datafa.st/js/script.js',
-        defer: true,
-        'data-website-id': 'dfid_UHklLXAsoVa6Bef5p8F8N',
-        'data-domain': 'www.quizz-du-berger.com',
-      } as React.JSX.IntrinsicElements['script'],
     ],
   }),
   component: RootComponent,
@@ -147,6 +142,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       </head>
       <body className="h-full">
         {children}
+        <PageViewTracker />
         <Scripts />
       </body>
     </html>

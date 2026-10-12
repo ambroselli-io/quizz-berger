@@ -11,11 +11,11 @@
  */
 import express from 'express';
 import compression from 'compression';
-import { createExpressAICrawlerMiddleware } from '@datafast/ai-crawl';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { readFileSync } from 'node:fs';
 import handler from './dist/server/server.js';
+import { classifyBot } from './src/utils/bots.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const clientDir = join(__dirname, 'dist', 'client');
@@ -43,6 +43,39 @@ const indexNowKey = process.env.INDEXNOW_KEY;
 if (indexNowKey && /^[A-Za-z0-9-]{8,128}$/.test(indexNowKey)) {
   app.get(`/${indexNowKey}.txt`, (_req, res) => {
     res.type('text/plain').send(indexNowKey);
+  });
+}
+
+// Crawler traffic (Googlebot, ChatGPT-User, GPTBot…) for the /audience page. Registered before the static
+// handlers so robots.txt, llms.txt and sitemap.xml are counted too; hashed assets and images are not.
+// Hits are buffered and posted in batches to the API (POST /visit/bots), never delaying a response.
+// ANALYTICS_BOT_TOKEN unset (dev) = nothing is recorded.
+const analyticsBotToken = process.env.ANALYTICS_BOT_TOKEN;
+if (analyticsBotToken) {
+  const apiUrl = process.env.ANALYTICS_API_URL || 'http://localhost:5179';
+  let botHits = [];
+  const flushBotHits = () => {
+    if (!botHits.length) return;
+    const hits = botHits;
+    botHits = [];
+    fetch(`${apiUrl}/visit/bots`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-analytics-token': analyticsBotToken },
+      body: JSON.stringify({ hits }),
+    }).catch((err) => console.error('bot hits not sent:', err.message));
+  };
+  setInterval(flushBotHits, 10_000).unref();
+
+  app.use((req, res, next) => {
+    if (req.path.startsWith('/assets/') || /\.(png|jpe?g|webp|svg|ico|gif|css|js|woff2?|pdf)$/i.test(req.path)) return next();
+    const bot = classifyBot(req.headers['user-agent']);
+    if (bot) {
+      res.on('finish', () => {
+        botHits.push({ at: Date.now(), bot: bot.name, category: bot.category, path: req.path, status: res.statusCode });
+        if (botHits.length >= 500) flushBotHits();
+      });
+    }
+    next();
   });
 }
 
@@ -102,22 +135,6 @@ app.use((req, res, next) => {
   }
   next();
 });
-
-// DataFast "Bot traffic": reports AI and search crawler hits (ChatGPT-User,
-// ClaudeBot, GPTBot, Googlebot…) to https://datafa.st/api/ai-crawls. It reads the
-// user-agent, calls next() straight away and posts on the `finish` event, so it
-// never delays a response. Registered after the static handlers, so only page
-// requests are counted. nginx terminates TLS, so `req.protocol` is http in here:
-// publicOrigin rebuilds the href the crawler really asked for.
-app.use(
-  createExpressAICrawlerMiddleware({
-    websiteId: 'dfid_UHklLXAsoVa6Bef5p8F8N',
-    publicOrigin: process.env.PUBLIC_ORIGIN || 'https://www.quizz-du-berger.com',
-    // Optional dfbot_… token from the DataFast dashboard. Without it the endpoint
-    // still accepts the calls, it just cannot tell them from a spoofed one.
-    authToken: process.env.DATAFAST_BOT_TOKEN,
-  }),
-);
 
 // Everything else → SSR handler.
 app.use(async (req, res) => {

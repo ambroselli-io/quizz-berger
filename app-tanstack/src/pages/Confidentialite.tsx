@@ -50,8 +50,7 @@ export default function Confidentialite() {
             Lorsque vous vous connectez, nous déposons un seul cookie d'authentification (<code>jwt</code>), sécurisé et
             inaccessible au JavaScript (<i>httpOnly</i>), qui sert uniquement à vous maintenir connecté. Votre profil est
             aussi conservé localement dans votre navigateur (<i>localStorage</i>) pour vous éviter de vous reconnecter.
-            Nous utilisons aussi <b>DataFast</b>, un outil de mesure d'audience&nbsp;: il dépose un cookie et enregistre
-            votre adresse IP pour compter les visites et les pages consultées. Nous n'utilisons{' '}
+            La mesure d'audience ne dépose <b>aucun cookie</b> et n'écrit rien dans votre navigateur. Nous n'utilisons{' '}
             <b>aucun cookie publicitaire</b>.
           </p>
 
@@ -66,18 +65,16 @@ export default function Confidentialite() {
               corriger les bugs&nbsp;;
             </li>
             <li>
-              <b>DataFast</b> — outil de mesure d'audience du site (nombre de visites, pages consultées, site d'où vous
-              venez), qui utilise un cookie et votre adresse IP&nbsp;;
-            </li>
-            <li>
               <b>Tipimail</b> — utilisé uniquement pour nous transmettre les messages que vous nous envoyez via le
               formulaire de contact.
             </li>
           </ul>
           <p>
-            Nous n'utilisons <b>ni Google Analytics, ni aucune régie publicitaire</b>. Notre seul outil de mesure
-            d'audience est <b>DataFast</b>, et ces données servent uniquement à savoir combien de personnes visitent le
-            site.
+            Nous n'utilisons <b>ni Google Analytics, ni aucune régie publicitaire</b>. Nous mesurons l'audience nous-mêmes,
+            sur nos serveurs&nbsp;: pour chaque page vue, nous enregistrons la page, le site d'où vous venez et le type
+            d'appareil. Votre adresse IP n'est pas conservée&nbsp;: elle sert seulement à calculer un identifiant anonyme
+            qui change chaque jour, pour compter les visiteurs sans pouvoir les suivre d'un jour à l'autre. Ces données
+            servent uniquement à savoir combien de personnes visitent le site et comment elles l'ont trouvé.
           </p>
 
           <h2 className="font-[Merriweather] text-2xl font-bold text-quizz-dark">Durée de conservation</h2>

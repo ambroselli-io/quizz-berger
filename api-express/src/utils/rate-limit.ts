@@ -17,3 +17,5 @@ export const loginLimiter = limiter(15, 30);
 export const signupLimiter = limiter(60, 30);
 export const anonymousUserLimiter = limiter(60, 300);
 export const feedbackLimiter = limiter(60, 10);
+// One call per page seen; a classroom behind one IP browses a lot, a script posting in a loop does not get through.
+export const visitLimiter = limiter(1, 120);
