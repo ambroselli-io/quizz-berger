@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from '@app/lib/router';
-import { Home, Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail, Scale, Users, Github, BookOpen, UserSquare2, Layers, ArrowLeftRight, MessageCircle, Heart, LineChart } from 'lucide-react';
+import { Play, ListChecks, BarChart3, MoreHorizontal, LogIn, LogOut, Mail, Scale, Users, Github, BookOpen, UserSquare2, Layers, ArrowLeftRight, MessageCircle, Heart, LineChart } from 'lucide-react';
 import { Sheet, SheetContent, SheetTitle } from '@app/components/ui/sheet';
 import ModalContact from './modals/ModalContact';
 import ModalLegal from './modals/ModalLegal';
@@ -14,59 +14,63 @@ const BottomTabBar = () => {
   const [showLegalModal, setShowLegalModal] = useState(false);
 
   const tabs = [
-    { label: 'Accueil', icon: Home, href: '/', exact: true },
+    { label: 'IA', icon: MessageCircle, href: '/ia' },
     { label: 'Quizz', icon: Play, href: '/themes' },
-    { label: 'Questions', icon: ListChecks, href: '/all-questions' },
-    ...(user?.isLoggedIn ? [{ label: 'Resultats', icon: BarChart3, href: '/result' }] : []),
   ];
 
-  const isActive = (href: string, exact?: boolean) =>
-    exact ? location.pathname === href : location.pathname.startsWith(href);
+  const tabClassName = (active: boolean) =>
+    `flex flex-1 cursor-pointer flex-col items-center gap-0.5 border-none bg-transparent pt-1.5 text-[0.6rem] ${active ? 'text-yellow-500' : 'text-gray-500'}`;
+
+  const isActive = (href: string) => location.pathname.startsWith(href);
 
   return (
     <>
       <div className="fixed bottom-0 left-0 right-0 z-40 flex h-16 items-center justify-around border-t border-gray-200 bg-white pb-[env(safe-area-inset-bottom)] lg:hidden">
-        {tabs.map(({ label, icon: Icon, href, exact }) => (
-          <Link
-            key={href}
-            to={href}
-            className={`flex flex-1 flex-col items-center gap-0.5 pt-1.5 text-[0.6rem] ${isActive(href, exact) ? 'text-yellow-500' : 'text-gray-500'}`}
-          >
+        {tabs.map(({ label, icon: Icon, href }) => (
+          <Link key={href} to={href} className={tabClassName(isActive(href))}>
             <Icon size={22} />
             <span>{label}</span>
           </Link>
         ))}
-        <button
-          onClick={() => setMoreOpen(true)}
-          className={`flex flex-1 cursor-pointer flex-col items-center gap-0.5 border-none bg-transparent pt-1.5 text-[0.6rem] ${moreOpen ? 'text-yellow-500' : 'text-gray-500'}`}
-        >
+        <button onClick={() => setShowContactModal(true)} className={tabClassName(showContactModal)}>
+          <Mail size={22} />
+          <span>Contact</span>
+        </button>
+        {user?.isLoggedIn ? (
+          <button onClick={logout} className={tabClassName(false)}>
+            <LogOut size={22} />
+            <span>{user?.pseudo ? 'Déconnexion' : 'Recommencer'}</span>
+          </button>
+        ) : (
+          <Link to="/login" className={tabClassName(isActive('/login'))}>
+            <LogIn size={22} />
+            <span>Connexion</span>
+          </Link>
+        )}
+        <button onClick={() => setMoreOpen(true)} className={tabClassName(moreOpen)}>
           <MoreHorizontal size={22} />
           <span>Plus</span>
         </button>
       </div>
 
       <Sheet open={moreOpen} onOpenChange={setMoreOpen}>
-        <SheetContent side="bottom" className="z-[60] rounded-t-2xl bg-white pb-[env(safe-area-inset-bottom)]">
+        <SheetContent
+          side="bottom"
+          overlayClassName="z-[100]"
+          className="z-[100] max-h-[85dvh] overflow-y-auto rounded-t-2xl bg-white pb-[env(safe-area-inset-bottom)] [&>button:last-child]:p-2 [&>button:last-child>svg]:size-6"
+        >
           <SheetTitle className="sr-only">Plus</SheetTitle>
           <nav className="flex flex-col gap-1 py-2">
-            {user?.isLoggedIn ? (
-              <button
-                onClick={() => { logout(); setMoreOpen(false); }}
-                className="flex cursor-pointer items-center gap-3 rounded-lg border-none bg-transparent px-4 py-3 text-left text-base text-gray-700 active:bg-gray-100"
-              >
-                <LogOut size={20} />
-                {user?.pseudo ? 'Se deconnecter' : 'Recommencer'}
-              </button>
-            ) : (
-              <Link to="/login" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
-                <LogIn size={20} />
-                Se connecter
+            <Link to="/all-questions" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+              <ListChecks size={20} />
+              Toutes les questions
+            </Link>
+            {user?.isLoggedIn && (
+              <Link to="/result" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
+                <BarChart3 size={20} />
+                Mes résultats
               </Link>
             )}
-            <Link to="/ia" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
-              <MessageCircle size={20} />
-              Discuter avec l'IA
-            </Link>
             <Link to="/soutenir" onClick={() => setMoreOpen(false)} className="flex items-center gap-3 rounded-lg px-4 py-3 text-base text-gray-700 active:bg-gray-100">
               <Heart size={20} />
               Soutenir le projet
@@ -91,13 +95,6 @@ const BottomTabBar = () => {
               <BookOpen size={20} />
               Blog
             </Link>
-            <button
-              onClick={() => { setShowContactModal(true); setMoreOpen(false); }}
-              className="flex cursor-pointer items-center gap-3 rounded-lg border-none bg-transparent px-4 py-3 text-left text-base text-gray-700 active:bg-gray-100"
-            >
-              <Mail size={20} />
-              Nous contacter
-            </button>
             <button
               onClick={() => { setShowLegalModal(true); setMoreOpen(false); }}
               className="flex cursor-pointer items-center gap-3 rounded-lg border-none bg-transparent px-4 py-3 text-left text-base text-gray-700 active:bg-gray-100"

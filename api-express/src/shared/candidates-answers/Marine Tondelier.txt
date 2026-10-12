@@ -573,9 +573,6 @@ question-2027-gagnait-nicolas-dupont-aignan: Si Nicolas Dupont-Aignan était él
 question-2027-gagnait-marine-le-pen: Si Marine Le Pen était élue, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
 
-question-2027-gagnait-jordan-bardella: Si Jordan Bardella était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
-
 question-2027-gagnait-edouard-philippe: Si Édouard Philippe était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
 
@@ -590,9 +587,6 @@ question-2027-gagnait-david-lisnard: Si David Lisnard était élu, quel serait v
 
 question-2027-gagnait-gabriel-attal: Si Gabriel Attal était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
-
-question-2027-gagnait-bernard-cazeneuve: Si Bernard Cazeneuve était élu, quel serait votre sentiment ?
-[2] Neutre
 
 question-2027-gagnait-raphael-glucksmann: Si Raphaël Glucksmann était élu, quel serait votre sentiment ?
 [1] Plutôt content(e)

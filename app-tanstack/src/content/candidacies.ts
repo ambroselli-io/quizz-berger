@@ -958,21 +958,6 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
-    slug: 'bernard-cazeneuve',
-    status: 'declared',
-    movement: 'La Convention',
-    summary:
-      "Bernard Cazeneuve a annoncé sa candidature le 16 juillet 2026 dans un entretien au Parisien, sans passer par la primaire socialiste. Il porte son mouvement, La Convention.",
-    events: [
-      {
-        date: '2026-07-16',
-        type: 'declaration',
-        label: "Il annonce sa candidature dans un entretien au Parisien, hors primaire.",
-        sources: [WIKI],
-      },
-    ],
-  },
-  {
     slug: 'francis-lalanne',
     status: 'declared',
     movement: 'France Libre',
@@ -1675,6 +1660,73 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
+  {
+    slug: 'jordan-bardella',
+    status: 'withdrawn',
+    movement: 'Rassemblement national',
+    summary:
+      "Jordan Bardella, président du Rassemblement national, a préparé une candidature tant que l'inéligibilité de Marine Le Pen n'était pas levée. Depuis l'arrêt d'appel du 7 juillet 2026, il soutient sa candidature et n'est pas candidat.",
+    quote: {
+      text: "Je me réjouis de la candidature de Marine Le Pen. Elle est notre candidate naturelle.",
+      source: {
+        label: 'France 24',
+        url: 'https://www.france24.com/fr/france/20260708-jordan-bardella-se-r%C3%A9jouit-marine-le-pen-pr%C3%A9sidentielle-2027-extreme-droite-rassemblement-national-campagne',
+        date: '2026-07-08',
+      },
+    },
+    events: [
+      {
+        date: '2026-07-08',
+        type: 'withdrawal',
+        label: 'Il renonce à être candidat et apporte son soutien à Marine Le Pen.',
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20260708-jordan-bardella-se-r%C3%A9jouit-marine-le-pen-pr%C3%A9sidentielle-2027-extreme-droite-rassemblement-national-campagne',
+            date: '2026-07-08',
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: 'bernard-cazeneuve',
+    status: 'withdrawn',
+    movement: 'La Convention',
+    summary:
+      "Bernard Cazeneuve avait annoncé sa candidature le 16 juillet 2026 dans un entretien au Parisien, sans passer par la primaire socialiste. Le 12 octobre 2026, au lendemain de la victoire de Raphaël Glucksmann à cette primaire, il le félicite et appelle à rassembler largement autour de lui.",
+    quote: {
+      text: "Il importe désormais de rassembler largement autour d'un projet pour la Nation.",
+      source: {
+        label: 'X (Bernard Cazeneuve)',
+        url: 'https://x.com/BCazeneuve/status/2109555265859109197',
+        date: '2026-10-12',
+      },
+    },
+    events: [
+      {
+        date: '2026-07-16',
+        type: 'declaration',
+        label: "Il annonce sa candidature dans un entretien au Parisien, hors primaire.",
+        sources: [WIKI],
+      },
+      {
+        date: '2026-10-12',
+        type: 'withdrawal',
+        label:
+          "Il félicite Raphaël Glucksmann pour sa victoire à la primaire et appelle à rassembler largement : il se range derrière lui.",
+        sources: [
+          {
+            label: 'X (Bernard Cazeneuve)',
+            url: 'https://x.com/BCazeneuve/status/2109555265859109197',
+            date: '2026-10-12',
+          },
+        ],
+      },
+    ],
+  },
+
   // --- Pas encore candidats ---
   {
     slug: 'dominique-de-villepin',
@@ -1725,35 +1777,6 @@ export const candidacies: Candidacy[] = [
             label: 'franceinfo',
             url: 'https://www.franceinfo.fr/elections/presidentielle/il-n-y-aura-qu-une-seule-candidature-de-la-gauche-social-democrate-a-la-presidentielle-2027-assure-francois-hollande_8173478.html',
             date: '2026-09-02',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    slug: 'jordan-bardella',
-    status: 'potential',
-    movement: 'Rassemblement national',
-    summary:
-      "Jordan Bardella, président du Rassemblement national, a préparé une candidature tant que l'inéligibilité de Marine Le Pen n'était pas levée. Depuis l'arrêt d'appel du 7 juillet 2026, il soutient sa candidature et n'est pas candidat.",
-    quote: {
-      text: "Je me réjouis de la candidature de Marine Le Pen. Elle est notre candidate naturelle.",
-      source: {
-        label: 'France 24',
-        url: 'https://www.france24.com/fr/france/20260708-jordan-bardella-se-r%C3%A9jouit-marine-le-pen-pr%C3%A9sidentielle-2027-extreme-droite-rassemblement-national-campagne',
-        date: '2026-07-08',
-      },
-    },
-    events: [
-      {
-        date: '2026-07-08',
-        type: 'step',
-        label: 'Il apporte son soutien à la candidature de Marine Le Pen.',
-        sources: [
-          {
-            label: 'France 24',
-            url: 'https://www.france24.com/fr/france/20260708-jordan-bardella-se-r%C3%A9jouit-marine-le-pen-pr%C3%A9sidentielle-2027-extreme-droite-rassemblement-national-campagne',
-            date: '2026-07-08',
           },
         ],
       },
