@@ -1,19 +1,27 @@
 import express from "express";
 import passport from "passport";
-import { streamText } from "ai";
+import { stepCountIs, streamText } from "ai";
 import type { Chat } from "@prisma/client";
 import prisma from "~/prisma";
 import { catchErrors } from "~/utils/error";
 import { capture } from "~/utils/sentry";
 import { chatLimiter } from "~/utils/rate-limit";
 import { CHAT_MODEL, chatCostEur, getChatModel } from "~/utils/chat-model";
-import { candidateNameOf, chatModes, getOpeningMessage, getSystemPrompt, type ChatMode } from "~/utils/chat-prompts";
+import {
+  candidateNameOf,
+  chatModes,
+  getOpeningMessage,
+  getSystemPrompt,
+  QUIZZ_ANSWERS_TOOL,
+  quizzAnswersTool,
+  type ChatMode,
+} from "~/utils/chat-prompts";
 import type { RequestWithUser } from "~/types/request";
 import { isSupporter } from "~/utils/supporter";
 
 const router = express.Router();
 
-// Cost guards: every message resends the whole conversation (and, for a candidate, all their answers) to the model.
+// Cost guards: every message resends the whole conversation (and, for a candidate, the answers of the themes consulted so far) to the model.
 export const MAX_USER_MESSAGES_PER_CHAT = 30;
 export const MAX_MESSAGE_LENGTH = 2000;
 export const MAX_CHATS_PER_DAY = 50;
@@ -24,13 +32,15 @@ export const SUPPORTER_MAX_CHATS_PER_DAY = 150;
 // and sent back an empty reply. A 150-word reply is ~300 tokens.
 const MAX_OUTPUT_TOKENS = 1500;
 
-type ChatMessage = { role: "user" | "assistant"; content: string };
+// themeIds: the quiz themes the candidate looked up to write this reply, sent back in the system prompt of the next messages
+// so the model does not call the tool again for them. Never shown to the client.
+type ChatMessage = { role: "user" | "assistant"; content: string; themeIds?: Array<string> };
 
 const serializeChat = (chat: Chat) => ({
   id: chat.id,
   mode: chat.mode,
   candidateId: chat.candidateId,
-  messages: chat.messages as Array<ChatMessage>,
+  messages: (chat.messages as Array<ChatMessage>).map(({ role, content }) => ({ role, content })),
   createdAt: chat.createdAt,
 });
 
@@ -170,19 +180,31 @@ router.post(
       });
       return;
     }
-    const system = getSystemPrompt(chat.mode as ChatMode, chat.candidateId);
+    const consultedThemeIds = [...new Set(messages.flatMap((m) => m.themeIds ?? []))];
+    const system = getSystemPrompt(chat.mode as ChatMode, chat.candidateId, consultedThemeIds);
     if (!system) {
       res.status(409).send({ ok: false, error: "Cette discussion ne peut plus continuer" });
       return;
     }
 
     const history: Array<ChatMessage> = [...messages, { role: "user", content: text }];
+    const newThemeIds = new Set<string>();
     const startedAt = Date.now();
     let streamError: unknown = null;
     const result = streamText({
       model: getChatModel(),
       system,
-      messages: history,
+      messages: history.map(({ role, content }) => ({ role, content })),
+      ...(chat.mode === "convaincre" && chat.candidateId
+        ? {
+            tools: {
+              [QUIZZ_ANSWERS_TOOL]: quizzAnswersTool(chat.candidateId, (themeIds) => themeIds.forEach((id) => newThemeIds.add(id))),
+            },
+            // Two rounds of lookups at most; the last step must answer, or the user would get an empty reply.
+            stopWhen: stepCountIs(3),
+            prepareStep: ({ stepNumber }: { stepNumber: number }) => (stepNumber === 2 ? { toolChoice: "none" as const } : {}),
+          }
+        : {}),
       maxOutputTokens: MAX_OUTPUT_TOKENS,
       providerOptions: { mistral: { reasoningEffort: "none" } },
       onError: ({ error }) => {
@@ -211,7 +233,7 @@ router.post(
         await prisma.chat.update({
           where: { id: chat.id },
           data: {
-            messages: [...history, { role: "assistant", content: reply }],
+            messages: [...history, { role: "assistant", content: reply, ...(newThemeIds.size ? { themeIds: [...newThemeIds] } : {}) }],
             inputTokens: { increment: inputTokens },
             outputTokens: { increment: outputTokens },
             costEur: { increment: chatCostEur(inputTokens, outputTokens) },
@@ -239,6 +261,7 @@ router.post(
       reasoningChars: reasoning?.length ?? 0,
       inputTokens: usage?.inputTokens,
       outputTokens: usage?.outputTokens,
+      themeIds: [...newThemeIds],
       responseId: response?.id,
       clientClosed: res.writableEnded || res.destroyed,
       error: streamError ? String(streamError) : null,

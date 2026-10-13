@@ -1,5 +1,7 @@
 import quizz from "~/shared/quizz-2027.json";
 import candidatesAnswers from "~/shared/candidates-answers.json";
+import { tool } from "ai";
+import { z } from "zod";
 import type { Theme } from "~/types/quizz";
 
 export const chatModes = ["president", "convaincre", "contre-moi-meme"] as const;
@@ -37,13 +39,21 @@ L'utilisateur te donne son opinion. Ton rôle : le pousser dans ses retranchemen
 - Ta question cherche le point faible du raisonnement : un cas limite, une conséquence non envisagée, une contradiction, une hypothèse implicite, le point de vue de quelqu'un qui pense l'inverse.
 - Que l'opinion te paraisse solide ou fragile, tu poses le même genre de questions exigeantes.`;
 
-const formatCandidateAnswers = (candidateId: string) => {
+const answerThemes = (quizz as Array<Theme>).filter((theme) => theme._id !== gagnaitThemeId);
+const answerThemeIds = answerThemes.map((theme) => theme._id) as [string, ...Array<string>];
+
+// Only the question titles: the answers themselves are fetched theme by theme through the tool, to keep each message cheap.
+const THEMES_INDEX = answerThemes
+  .map((theme) => `- ${theme._id} (${theme.fr}) : ${theme.questions.map((q) => q.fr).join(" | ")}`)
+  .join("\n");
+
+const formatThemeAnswers = (candidateId: string, themeIds: Array<string>) => {
   const candidate = candidatesAnswers.find((c) => c.id === candidateId);
-  if (!candidate) return null;
+  if (!candidate) return "";
   const answerOf = new Map(candidate.answers.map((a) => [a.questionId, a.answerIndex]));
   const lines: Array<string> = [];
-  for (const theme of quizz as Array<Theme>) {
-    if (theme._id === gagnaitThemeId) continue;
+  for (const theme of answerThemes) {
+    if (!themeIds.includes(theme._id)) continue;
     lines.push(`\n## ${theme.fr}`);
     for (const question of theme.questions) {
       const answerIndex = answerOf.get(question._id);
@@ -52,18 +62,31 @@ const formatCandidateAnswers = (candidateId: string) => {
       lines.push(`- Question : ${question.fr}\n  Réponses possibles : ${options}\n  TA RÉPONSE : ${chosen}`);
     }
   }
-  return { name: candidate.pseudo, answers: lines.join("\n") };
+  return lines.join("\n");
 };
 
-const convaincre = (candidateId: string) => {
-  const candidate = formatCandidateAnswers(candidateId);
-  if (!candidate) return null;
+export const QUIZZ_ANSWERS_TOOL = "reponsesDuQuizz";
+
+export const quizzAnswersTool = (candidateId: string, onConsulted: (themeIds: Array<string>) => void) =>
+  tool({
+    description: "Donne tes réponses au quizz pour un ou plusieurs thèmes, avec les réponses possibles de chaque question.",
+    inputSchema: z.object({ themeIds: z.array(z.enum(answerThemeIds)).min(1) }),
+    execute: async ({ themeIds }) => {
+      onConsulted(themeIds);
+      return formatThemeAnswers(candidateId, themeIds);
+    },
+  });
+
+const convaincre = (candidateId: string, consultedThemeIds: Array<string>) => {
+  const name = candidateNameOf(candidateId);
+  if (!name) return null;
+  const consulted = formatThemeAnswers(candidateId, consultedThemeIds);
   return `${COMMON}
 
 Mode « Je veux convaincre un candidat ».
-Tu joues le rôle de ${candidate.name}. L'utilisateur va essayer de te faire changer d'avis. On est au Quizz du Berger : ici, ce sont les électeurs qui mènent les candidats, pas l'inverse.
+Tu joues le rôle de ${name}. L'utilisateur va essayer de te faire changer d'avis. On est au Quizz du Berger : ici, ce sont les électeurs qui mènent les candidats, pas l'inverse.
 
-Ce que tu sais de ${candidate.name} se limite STRICTEMENT à ses réponses au quizz, listées plus bas. C'est ta seule source :
+Ce que tu sais de ${name} se limite STRICTEMENT à ses réponses au quizz. C'est ta seule source :
 - Tu n'utilises rien d'autre : ni ce que tu crois savoir de sa personnalité, de son parti, de son passé, de ses déclarations, ni sa place supposée sur l'échiquier politique. Pas de préjugé, pas d'imitation de sa façon de parler.
 - Tu défends les positions de ces réponses avec des arguments de fond, comme le ferait quelqu'un qui y croit sincèrement.
 - Si l'utilisateur aborde un sujet que le quizz ne couvre pas, tu le dis franchement : « Le quizz ne dit pas ce que je pense là-dessus » et tu proposes de revenir à un sujet couvert.
@@ -72,16 +95,22 @@ Ce que tu sais de ${candidate.name} se limite STRICTEMENT à ses réponses au qu
 - Quand tu peux, et dès que tu peux, termine ton argumentation par une question qui fait réfléchir l'utilisateur sur son propre argument.
 - Les règles sur l'absence d'avis concernent tes jugements d'IA ; dans ce rôle, tu exprimes les positions du candidat telles que le quizz les donne, sans en rajouter.
 
-Les réponses de ${candidate.name} au quizz :
-${candidate.answers}`;
+Tes réponses ne sont pas toutes écrites ici. Tu les obtiens thème par thème avec l'outil ${QUIZZ_ANSWERS_TOOL} :
+- Avant de répondre sur un sujet, appelle l'outil pour chaque thème qui le touche, sauf si ses réponses figurent déjà plus bas. Dans le doute, consulte le thème plutôt que de deviner.
+- N'écris rien avant l'appel à l'outil : ta réponse vient après.
+- Ne dis jamais que le quizz ne couvre pas un sujet sans avoir consulté le ou les thèmes les plus proches.
+
+Les thèmes du quizz et leurs questions :
+${THEMES_INDEX}
+${consulted ? `\nTes réponses déjà consultées :\n${consulted}` : ""}`;
 };
 
 export const candidateNameOf = (candidateId: string) => candidatesAnswers.find((c) => c.id === candidateId)?.pseudo ?? null;
 
-export const getSystemPrompt = (mode: ChatMode, candidateId?: string | null): string | null => {
+export const getSystemPrompt = (mode: ChatMode, candidateId?: string | null, consultedThemeIds: Array<string> = []): string | null => {
   if (mode === "president") return PRESIDENT;
   if (mode === "contre-moi-meme") return CONTRE_MOI_MEME;
-  if (mode === "convaincre" && candidateId) return convaincre(candidateId);
+  if (mode === "convaincre" && candidateId) return convaincre(candidateId, consultedThemeIds);
   return null;
 };
 

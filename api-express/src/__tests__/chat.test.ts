@@ -47,6 +47,34 @@ const replyWith = (words: Array<string>) => {
   return mock;
 };
 
+// The candidate first looks up a theme with the quiz-answers tool, then replies.
+const lookUpThenReply = (themeIds: Array<string>, reply: string) => {
+  const finish = (finishReason: "stop" | "tool-calls") => ({
+    type: "finish" as const,
+    finishReason,
+    usage: { inputTokens: 100, outputTokens: 20, totalTokens: 120 },
+  });
+  let calls = 0;
+  const mock = mockModel(async () => ({
+    stream: simulateReadableStream<unknown>({
+      chunks:
+        calls++ === 0
+          ? [
+              { type: "tool-call" as const, toolCallId: "call-1", toolName: "reponsesDuQuizz", input: JSON.stringify({ themeIds }) },
+              finish("tool-calls"),
+            ]
+          : [
+              { type: "text-start" as const, id: "t" },
+              { type: "text-delta" as const, id: "t", delta: reply },
+              { type: "text-end" as const, id: "t" },
+              finish("stop"),
+            ],
+    }),
+  }));
+  model.current = mock;
+  return mock;
+};
+
 const failing = () => {
   model.current = mockModel(async () => {
     throw new Error("Mistral is down");
@@ -144,6 +172,35 @@ describe("POST /chat/:id/message", () => {
     expect(prompt.slice(1).map((m) => m.role)).toEqual(["assistant", "user"]);
   });
 
+  it("lets the candidate look up a theme, then keeps it in the system prompt of the next messages", async () => {
+    const user = await signup("berger");
+    const chat = await startChat(user.token, { mode: "convaincre", candidateId: "candidate-nathalie-arthaud" });
+    const mock = lookUpThenReply(["theme-2027-logement"], "Je maintiens.");
+
+    const res = await send(user.token, chat.body.data.id, "Et les loyers ?");
+
+    expect(res.text).toBe("Je maintiens.");
+    const toolResult = JSON.stringify(mock.doStreamCalls[1].prompt.at(-1));
+    expect(toolResult).toContain("TA RÉPONSE");
+    expect(toolResult).toContain("Logement");
+    const stored = await prisma.chat.findUniqueOrThrow({ where: { id: chat.body.data.id } });
+    expect((stored.messages as Array<unknown>).at(-1)).toEqual({ role: "assistant", content: "Je maintiens.", themeIds: ["theme-2027-logement"] });
+    expect(stored).toMatchObject({ inputTokens: 200, outputTokens: 40 });
+    const fetched = await api().get(`/chat/${chat.body.data.id}`).set(bearer(user.token));
+    expect(fetched.body.data.messages.at(-1)).toEqual({ role: "assistant", content: "Je maintiens." });
+
+    const next = replyWith(["Toujours pas."]);
+    await send(user.token, chat.body.data.id, "Vraiment ?");
+
+    const system = next.doStreamCalls[0].prompt[0];
+    expect(system).toEqual({
+      role: "system",
+      content: getSystemPrompt("convaincre", "candidate-nathalie-arthaud", ["theme-2027-logement"]),
+    });
+    expect(system.content).toContain("Tes réponses déjà consultées");
+    expect(next.doStreamCalls[0].prompt.slice(1).every((m) => m.role !== "tool")).toBe(true);
+  });
+
   it("does not let a user write in someone else's conversation", async () => {
     const owner = await signup("owner");
     const intruder = await signup("intruder");
@@ -191,12 +248,21 @@ describe("POST /chat/:id/message", () => {
 });
 
 describe("system prompts", () => {
-  it("gives the candidate their quiz answers only, without the estimated 'et si un autre gagnait' theme", () => {
+  it("lists the quiz themes for the candidate, without the estimated 'et si un autre gagnait' theme or any answer", () => {
     const prompt = getSystemPrompt("convaincre", "candidate-nathalie-arthaud")!;
 
     expect(prompt).toContain("Tu joues le rôle de Nathalie Arthaud");
+    expect(prompt).toContain("theme-2027-logement (Logement)");
+    expect(prompt).not.toContain("TA RÉPONSE");
+    expect(prompt).not.toContain("theme-et-si-un-autre-gagnait-2027");
+  });
+
+  it("adds the answers of the themes already consulted", () => {
+    const prompt = getSystemPrompt("convaincre", "candidate-nathalie-arthaud", ["theme-2027-logement"])!;
+
     expect(prompt).toContain("TA RÉPONSE");
-    expect(prompt).not.toContain("Si Nathalie Arthaud était élue");
+    expect(prompt).toContain("## Logement");
+    expect(prompt).not.toContain("## Santé");
     expect(prompt).not.toContain("(pas de réponse connue)");
   });
 });
