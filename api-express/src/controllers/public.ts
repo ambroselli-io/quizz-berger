@@ -173,6 +173,37 @@ router.get(
       select: { createdAt: true },
     });
 
+    type ChatTotals = { name: string; chats: number; costEur: number };
+    const [[chatsTotal], chatsPerModeRaw, chatsPerDayRaw] = await Promise.all([
+      prisma.$queryRaw<ChatTotals[]>`
+        SELECT COUNT(*)::int AS "chats",
+          COALESCE(SUM("costEur"), 0)::float AS "costEur"
+        FROM "Chat"
+      `,
+      prisma.$queryRaw<ChatTotals[]>`
+        SELECT "mode" AS "name", COUNT(*)::int AS "chats",
+          COALESCE(SUM("costEur"), 0)::float AS "costEur"
+        FROM "Chat"
+        GROUP BY "mode"
+        ORDER BY "chats" DESC
+      `,
+      prisma.$queryRaw<Array<{ _id: string; mode: string; count: number }>>`
+        SELECT DATE("createdAt")::text AS "_id", "mode", COUNT(*)::int AS "count"
+        FROM "Chat"
+        GROUP BY 1, 2
+        ORDER BY 1
+      `,
+    ]);
+    const chatsPerDay = chatsPerDayRaw.reduce(
+      (days, row) => {
+        const last = days[days.length - 1];
+        if (last?._id === row._id) last[row.mode] = row.count;
+        else days.push({ _id: row._id, [row.mode]: row.count });
+        return days;
+      },
+      [] as Array<Record<string, string | number>>,
+    );
+
     const maxUsersOnADay = Math.max(...cumulativeUsers.map((c) => c.count));
 
     const totalUsersForTheDay = usersPerHourAggregation.reduce((sum, agg) => sum + agg.count, 0);
@@ -213,6 +244,7 @@ router.get(
         today,
         usersPerPlatform,
         platformSince: platformSince?.createdAt ?? null,
+        chats: { total: chatsTotal, perMode: chatsPerModeRaw, perDay: chatsPerDay },
       },
     });
   }),

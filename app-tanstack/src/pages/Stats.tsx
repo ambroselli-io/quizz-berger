@@ -13,6 +13,7 @@ import {
   Line,
 } from 'recharts';
 import API from '@app/services/api';
+import { chatModes } from '@app/content/chat-modes';
 
 interface ChartData {
   cumulativeUsers: { _id: string; cumulative: number; count: number }[];
@@ -30,7 +31,27 @@ interface ChartData {
   maxUsersOnADay: number;
   usersPerPlatform: { name: string; count: number }[];
   platformSince: string | null;
+  chats: {
+    total: ChatTotals;
+    perMode: (ChatTotals & { name: string })[];
+    perDay: ({ _id: string } & Record<string, number | string>)[];
+  };
 }
+
+interface ChatTotals {
+  chats: number;
+  costEur: number;
+}
+
+const CHAT_MODE_COLORS: Record<string, string> = {
+  president: '#facc15',
+  convaincre: '#6faea6',
+  'contre-moi-meme': '#111827',
+};
+
+const chatModeTitle = (mode: string) => chatModes.find((m) => m.mode === mode)?.title ?? mode;
+
+const formatEur = (value: number) => value.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
 
 const PLATFORMS: Record<string, string> = {
   ios: 'App iOS',
@@ -140,6 +161,42 @@ export default function Stats() {
             <YAxis />
             <Tooltip />
             <Bar dataKey="value" stroke="#111827" fill="#facc15" />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+
+      <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">Conversations avec l'IA : {data.chats.total.chats}</h2>
+      <span className="mx-12 max-lg:block max-lg:mx-4">Coût : {formatEur(data.chats.total.costEur)}</span>
+      <div className="mx-12 mt-6 overflow-x-auto max-lg:mx-4">
+        <table className="w-full text-left text-sm">
+          <thead>
+            <tr className="border-b border-gray-300">
+              <th className="py-2 pr-4">Type de conversation</th>
+              <th className="py-2 pr-4 text-right">Conversations</th>
+              <th className="py-2 text-right">Coût</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.chats.perMode.map((m) => (
+              <tr key={m.name} className="border-b border-gray-100">
+                <td className="py-2 pr-4">{chatModeTitle(m.name)}</td>
+                <td className="py-2 pr-4 text-right">{m.chats}</td>
+                <td className="py-2 text-right">{formatEur(m.costEur)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="h-[50vh] w-full p-12 max-lg:mt-4 max-lg:h-[40vh] max-lg:p-0">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data.chats.perDay} margin={{ top: 5, right: 30, left: 20, bottom: 30 }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
+            <YAxis allowDecimals={false} />
+            <Tooltip />
+            {chatModes.map((m) => (
+              <Bar key={m.mode} dataKey={m.mode} name={m.title} stackId="chats" fill={CHAT_MODE_COLORS[m.mode]} />
+            ))}
           </BarChart>
         </ResponsiveContainer>
       </div>
