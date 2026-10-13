@@ -1,10 +1,11 @@
-// Usage: npm run bump -- <major|minor|patch>
+// Usage: npm run bump -- <major|minor|patch|bump>
+// "bump" only increments buildNumber, version stays the same
 const fs = require("fs");
 const path = require("path");
 
 const level = process.argv[2];
-if (!["major", "minor", "patch"].includes(level)) {
-  console.error("Usage: npm run bump -- <major|minor|patch>");
+if (!["major", "minor", "patch", "bump"].includes(level)) {
+  console.error("Usage: npm run bump -- <major|minor|patch|bump>");
   process.exit(1);
 }
 
