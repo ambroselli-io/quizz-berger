@@ -277,7 +277,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Les Écologistes',
     summary:
-      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte.",
+      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes.",
     events: [
       {
         date: '2025-10-22',
@@ -294,6 +294,19 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Public Sénat',
             url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-a-la-bellevilloise-faure-tondelier-ruffindans-les-sables-mouvants-de-la-primaire',
+          },
+        ],
+      },
+      {
+        date: '2026-10-11',
+        type: 'step',
+        label:
+          "Elle réagit à la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique en lui reprochant d'avoir fait « le choix du repli » en refusant toute primaire élargie à l'ensemble de la gauche et des écologistes.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/victoire-de-raphael-glucksmann-a-la-primaire-socialiste-premieres-reactions-des',
+            date: '2026-10-11',
           },
         ],
       },
