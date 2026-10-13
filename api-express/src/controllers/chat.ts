@@ -222,7 +222,14 @@ router.post(
     });
     let reply = "";
     try {
-      for await (const delta of result.textStream) {
+      // The candidate sometimes writes a sentence before looking up its answers: without a break, the next step's text
+      // would be glued to it ("...pour qu'on parte de faits.Voilà mes positions").
+      let newStep = false;
+      for await (const part of result.fullStream) {
+        if (part.type === "start-step") newStep = Boolean(reply);
+        if (part.type !== "text-delta") continue;
+        const delta = newStep ? `\n\n${part.text}` : part.text;
+        newStep = false;
         reply += delta;
         res.write(delta);
       }

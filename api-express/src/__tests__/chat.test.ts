@@ -47,8 +47,8 @@ const replyWith = (words: Array<string>) => {
   return mock;
 };
 
-// The candidate first looks up a theme with the quiz-answers tool, then replies.
-const lookUpThenReply = (themeIds: Array<string>, reply: string) => {
+// The candidate first looks up a theme with the quiz-answers tool (sometimes announcing it), then replies.
+const lookUpThenReply = (themeIds: Array<string>, reply: string, announce?: string) => {
   const finish = (finishReason: "stop" | "tool-calls") => ({
     type: "finish" as const,
     finishReason,
@@ -60,6 +60,13 @@ const lookUpThenReply = (themeIds: Array<string>, reply: string) => {
       chunks:
         calls++ === 0
           ? [
+              ...(announce
+                ? [
+                    { type: "text-start" as const, id: "a" },
+                    { type: "text-delta" as const, id: "a", delta: announce },
+                    { type: "text-end" as const, id: "a" },
+                  ]
+                : []),
               { type: "tool-call" as const, toolCallId: "call-1", toolName: "reponsesDuQuizz", input: JSON.stringify({ themeIds }) },
               finish("tool-calls"),
             ]
@@ -199,6 +206,18 @@ describe("POST /chat/:id/message", () => {
     });
     expect(system.content).toContain("Tes réponses déjà consultées");
     expect(next.doStreamCalls[0].prompt.slice(1).every((m) => m.role !== "tool")).toBe(true);
+  });
+
+  it("separates the text written before the lookup from the reply", async () => {
+    const user = await signup("berger");
+    const chat = await startChat(user.token, { mode: "convaincre", candidateId: "candidate-nathalie-arthaud" });
+    lookUpThenReply(["theme-2027-logement"], "Je maintiens.", "Je vérifie mes réponses.");
+
+    const res = await send(user.token, chat.body.data.id, "Et les loyers ?");
+
+    expect(res.text).toBe("Je vérifie mes réponses.\n\nJe maintiens.");
+    const stored = await prisma.chat.findUniqueOrThrow({ where: { id: chat.body.data.id } });
+    expect((stored.messages as Array<{ content: string }>).at(-1)?.content).toBe("Je vérifie mes réponses.\n\nJe maintiens.");
   });
 
   it("does not let a user write in someone else's conversation", async () => {
