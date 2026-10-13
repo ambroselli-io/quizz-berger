@@ -33,8 +33,10 @@ interface ChartData {
   platformSince: string | null;
   chats: {
     total: ChatTotals;
+    users: number;
     perMode: (ChatTotals & { name: string })[];
-    perDay: ({ _id: string } & Record<string, number | string>)[];
+    perDay: { _id: string; count: Record<string, number>; cumulative: Record<string, number> }[];
+    usersPerDay: { _id: string; count: number; cumulative: number }[];
   };
 }
 
@@ -187,17 +189,57 @@ export default function Stats() {
           </tbody>
         </table>
       </div>
-      <div className="h-[50vh] w-full p-12 max-lg:mt-4 max-lg:h-[40vh] max-lg:p-0">
+
+      <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">Utilisateurs de l'IA : {data.chats.users}</h2>
+      <div className="h-[80vh] w-full p-12 max-lg:mt-4 max-lg:h-[50vh] max-lg:p-0">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data.chats.perDay} margin={{ top: 5, right: 30, left: 20, bottom: 30 }}>
+          <ComposedChart data={data.chats.usersPerDay} margin={{ top: 10, right: 30, left: 30, bottom: 30 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
-            <YAxis allowDecimals={false} />
+            <YAxis yAxisId="left" allowDecimals={false} />
+            <YAxis yAxisId="right" orientation="right" allowDecimals={false} />
+            <Tooltip />
+            <Area type="monotone" yAxisId="left" dataKey="cumulative" name="Cumulé" stroke="#111827" fill="#facc15" />
+            <Line type="monotone" yAxisId="right" dataKey="count" name="Par jour" stroke="#111827" />
+          </ComposedChart>
+        </ResponsiveContainer>
+      </div>
+
+      <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">Conversations par jour et par type</h2>
+      <div className="h-[80vh] w-full p-12 max-lg:mt-4 max-lg:h-[50vh] max-lg:p-0">
+        <ResponsiveContainer width="100%" height="100%">
+          <ComposedChart data={data.chats.perDay} margin={{ top: 10, right: 30, left: 30, bottom: 30 }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
+            <YAxis yAxisId="left" allowDecimals={false} />
+            <YAxis yAxisId="right" orientation="right" allowDecimals={false} />
             <Tooltip />
             {chatModes.map((m) => (
-              <Bar key={m.mode} dataKey={m.mode} name={m.title} stackId="chats" fill={CHAT_MODE_COLORS[m.mode]} />
+              <Area
+                key={`cumulative-${m.mode}`}
+                type="monotone"
+                yAxisId="left"
+                stackId="cumulative"
+                dataKey={`cumulative.${m.mode}`}
+                name={`${m.title} (cumulé)`}
+                stroke={CHAT_MODE_COLORS[m.mode]}
+                fill={CHAT_MODE_COLORS[m.mode]}
+                fillOpacity={0.3}
+              />
             ))}
-          </BarChart>
+            {chatModes.map((m) => (
+              <Line
+                key={`count-${m.mode}`}
+                type="monotone"
+                yAxisId="right"
+                dataKey={`count.${m.mode}`}
+                name={`${m.title} (par jour)`}
+                stroke={CHAT_MODE_COLORS[m.mode]}
+                strokeWidth={2}
+                dot={false}
+              />
+            ))}
+          </ComposedChart>
         </ResponsiveContainer>
       </div>
 

@@ -174,7 +174,7 @@ router.get(
     });
 
     type ChatTotals = { name: string; chats: number; costEur: number };
-    const [[chatsTotal], chatsPerModeRaw, chatsPerDayRaw] = await Promise.all([
+    const [[chatsTotal], chatsPerModeRaw, chatsPerDayRaw, chatUsersPerDayRaw, newChatUsersPerDayRaw] = await Promise.all([
       prisma.$queryRaw<ChatTotals[]>`
         SELECT COUNT(*)::int AS "chats",
           COALESCE(SUM("costEur"), 0)::float AS "costEur"
@@ -193,16 +193,39 @@ router.get(
         GROUP BY 1, 2
         ORDER BY 1
       `,
+      prisma.$queryRaw<Array<{ _id: string; count: number }>>`
+        SELECT DATE("createdAt")::text AS "_id", COUNT(DISTINCT "userId")::int AS "count"
+        FROM "Chat"
+        GROUP BY 1
+        ORDER BY 1
+      `,
+      // The cumulative counts each user once, on the day of their first chat.
+      prisma.$queryRaw<Array<{ _id: string; count: number }>>`
+        SELECT "firstDay"::text AS "_id", COUNT(*)::int AS "count"
+        FROM (SELECT MIN(DATE("createdAt")) AS "firstDay" FROM "Chat" GROUP BY "userId") AS "firstChats"
+        GROUP BY 1
+      `,
     ]);
-    const chatsPerDay = chatsPerDayRaw.reduce(
-      (days, row) => {
-        const last = days[days.length - 1];
-        if (last?._id === row._id) last[row.mode] = row.count;
-        else days.push({ _id: row._id, [row.mode]: row.count });
-        return days;
-      },
-      [] as Array<Record<string, string | number>>,
-    );
+
+    const chatModes = chatsPerModeRaw.map((m) => m.name);
+    const zeroPerMode = () => Object.fromEntries(chatModes.map((mode) => [mode, 0])) as Record<string, number>;
+    const runningChats = zeroPerMode();
+    const chatsPerDay: Array<{ _id: string; count: Record<string, number>; cumulative: Record<string, number> }> = [];
+    for (const row of chatsPerDayRaw) {
+      if (chatsPerDay[chatsPerDay.length - 1]?._id !== row._id) {
+        chatsPerDay.push({ _id: row._id, count: zeroPerMode(), cumulative: {} });
+      }
+      const day = chatsPerDay[chatsPerDay.length - 1];
+      day.count[row.mode] = row.count;
+      runningChats[row.mode] += row.count;
+      day.cumulative = { ...runningChats };
+    }
+
+    let globalChatUsers = 0;
+    const chatUsersPerDay = chatUsersPerDayRaw.map((day) => {
+      globalChatUsers += newChatUsersPerDayRaw.find((d) => d._id === day._id)?.count ?? 0;
+      return { _id: day._id, count: day.count, cumulative: globalChatUsers };
+    });
 
     const maxUsersOnADay = Math.max(...cumulativeUsers.map((c) => c.count));
 
@@ -244,7 +267,7 @@ router.get(
         today,
         usersPerPlatform,
         platformSince: platformSince?.createdAt ?? null,
-        chats: { total: chatsTotal, perMode: chatsPerModeRaw, perDay: chatsPerDay },
+        chats: { total: chatsTotal, users: globalChatUsers, perMode: chatsPerModeRaw, perDay: chatsPerDay, usersPerDay: chatUsersPerDay },
       },
     });
   }),
