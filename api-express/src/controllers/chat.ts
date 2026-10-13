@@ -20,8 +20,9 @@ export const MAX_CHATS_PER_DAY = 50;
 // Users who made a donation (controllers/supporter.ts).
 export const SUPPORTER_MAX_USER_MESSAGES_PER_CHAT = 60;
 export const SUPPORTER_MAX_CHATS_PER_DAY = 150;
-// Large 4 reasons before answering, and the reasoning counts as output: ~1,000-3,000 tokens before a 150-word reply.
-const MAX_OUTPUT_TOKENS = 6000;
+// Reasoning is off (reasoningEffort "none"): with it on, Large 4 sometimes spent the whole budget thinking
+// and sent back an empty reply. A 150-word reply is ~300 tokens.
+const MAX_OUTPUT_TOKENS = 1500;
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
@@ -176,12 +177,19 @@ router.post(
     }
 
     const history: Array<ChatMessage> = [...messages, { role: "user", content: text }];
+    const startedAt = Date.now();
+    let streamError: unknown = null;
     const result = streamText({
       model: getChatModel(),
       system,
       messages: history,
       maxOutputTokens: MAX_OUTPUT_TOKENS,
-      onError: ({ error }) => capture(error, { extra: { chatId: chat.id, mode: chat.mode } }),
+      providerOptions: { mistral: { reasoningEffort: "none" } },
+      onError: ({ error }) => {
+        streamError = error;
+        console.error(`[chat] ${chat.id} stream error`, error);
+        capture(error, { extra: { chatId: chat.id, mode: chat.mode } });
+      },
     });
 
     res.writeHead(200, {
@@ -211,8 +219,32 @@ router.post(
         });
       }
     } catch (error) {
+      console.error(`[chat] ${chat.id} failed`, error);
       capture(error, { extra: { chatId: chat.id, mode: chat.mode } });
     }
+    // These promises reject when the stream failed: the log must not throw in turn.
+    const [finishReason, usage, reasoning, response] = await Promise.all([
+      Promise.resolve(result.finishReason).catch(() => null),
+      Promise.resolve(result.totalUsage).catch(() => null),
+      Promise.resolve(result.reasoningText).catch(() => null),
+      Promise.resolve(result.response).catch(() => null),
+    ]);
+    const summary = {
+      chatId: chat.id,
+      mode: chat.mode,
+      model: CHAT_MODEL,
+      ms: Date.now() - startedAt,
+      finishReason,
+      replyChars: reply.length,
+      reasoningChars: reasoning?.length ?? 0,
+      inputTokens: usage?.inputTokens,
+      outputTokens: usage?.outputTokens,
+      responseId: response?.id,
+      clientClosed: res.writableEnded || res.destroyed,
+      error: streamError ? String(streamError) : null,
+    };
+    console.log(`[chat] ${JSON.stringify(summary)}`);
+    if (!reply) capture("Chat reply empty", { extra: summary });
     // An empty body tells the client the model failed; the user message is not kept, so it can be sent again.
     res.end();
   }),
