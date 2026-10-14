@@ -200,7 +200,7 @@
   {
     "id": "candidate-selma-labib",
     "pseudo": "Selma Labib",
-    "picture": "",
+    "picture": "candidates/selma-labib.png",
     "color": "#EA580C"
   },
   {
@@ -212,7 +212,7 @@
   {
     "id": "candidate-antoine-mikolajczak",
     "pseudo": "Antoine Mikolajczak",
-    "picture": "",
+    "picture": "candidates/antoine-mikolajczak.png",
     "color": "#15803D"
   },
   {
@@ -242,13 +242,13 @@
   {
     "id": "candidate-parti-animaliste",
     "pseudo": "Parti animaliste",
-    "picture": "",
+    "picture": "candidates/parti-animaliste.png",
     "color": "#283593"
   },
   {
     "id": "candidate-parti-pirate",
     "pseudo": "Parti pirate",
-    "picture": "",
+    "picture": "candidates/parti-pirate.png",
     "color": "#6A1B9A"
   },
   {
@@ -260,7 +260,7 @@
   {
     "id": "candidate-benoit-mathieu",
     "pseudo": "Benoît Mathieu",
-    "picture": "",
+    "picture": "candidates/benoit-mathieu.png",
     "color": "#558B2F"
   },
   {
@@ -268,5 +268,11 @@
     "pseudo": "Olivier Becht",
     "picture": "candidates/olivier-becht.png",
     "color": "#5B8C85"
+  },
+  {
+    "id": "candidate-natacha-polony",
+    "pseudo": "Natacha Polony",
+    "picture": "candidates/natacha-polony.png",
+    "color": "#0E7490"
   }
 ]

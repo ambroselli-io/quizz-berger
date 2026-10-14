@@ -4,6 +4,8 @@ import type { ImageSourcePropType } from 'react-native';
 // These images are resized to 100px from the web app's public/candidates/ folder
 export const candidateImages: Record<string, ImageSourcePropType> = {
   'anasse-kazib': require('../../assets/candidates/anasse-kazib.png'),
+  'antoine-mikolajczak': require('../../assets/candidates/antoine-mikolajczak.png'),
+  'benoit-mathieu': require('../../assets/candidates/benoit-mathieu.png'),
   'bernard-cazeneuve': require('../../assets/candidates/bernard-cazeneuve.png'),
   'bruno-retailleau': require('../../assets/candidates/bruno-retailleau.png'),
   'clara-egger': require('../../assets/candidates/clara-egger.png'),
@@ -32,14 +34,18 @@ export const candidateImages: Record<string, ImageSourcePropType> = {
   'lydie-massard': require('../../assets/candidates/lydie-massard.png'),
   'marine-le-pen': require('../../assets/candidates/marine-le-pen.png'),
   'marine-tondelier': require('../../assets/candidates/marine-tondelier.png'),
+  'natacha-polony': require('../../assets/candidates/natacha-polony.png'),
   'nathalie-arthaud': require('../../assets/candidates/nathalie-arthaud.png'),
   'nicolas-dupont-aignan': require('../../assets/candidates/nicolas-dupont-aignan.png'),
   'olivier-becht': require('../../assets/candidates/olivier-becht.png'),
   'olivier-faure': require('../../assets/candidates/olivier-faure.png'),
+  'parti-animaliste': require('../../assets/candidates/parti-animaliste.png'),
+  'parti-pirate': require('../../assets/candidates/parti-pirate.png'),
   'patrick-sebastien': require('../../assets/candidates/patrick-sebastien.png'),
   'philippe-brun': require('../../assets/candidates/philippe-brun.png'),
   'raphael-glucksmann': require('../../assets/candidates/raphael-glucksmann.png'),
   'segolene-royal': require('../../assets/candidates/segolene-royal.png'),
+  'selma-labib': require('../../assets/candidates/selma-labib.png'),
   'sylvain-durif': require('../../assets/candidates/sylvain-durif.png'),
   'xavier-bertrand': require('../../assets/candidates/xavier-bertrand.png'),
 };

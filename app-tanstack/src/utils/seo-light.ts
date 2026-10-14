@@ -601,6 +601,7 @@ const partyBySlug: Record<string, string> = {
   'sylvain-durif': '',
   'benoit-mathieu': '',
   'olivier-becht': '',
+  'natacha-polony': 'Nous sommes la France',
 };
 
 export function getCandidateParty(slug: string): string {

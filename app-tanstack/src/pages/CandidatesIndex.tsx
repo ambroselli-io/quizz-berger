@@ -34,10 +34,21 @@ export default function CandidatesIndex() {
                   to={`/candidat/${c.slug}`}
                   className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-4 no-underline transition hover:shadow-sm"
                 >
-                  <span
-                    className="inline-block h-3 w-3 shrink-0 rounded-full"
-                    style={{ backgroundColor: c.color }}
-                  />
+                  {c.picture ? (
+                    <img
+                      src={`/${c.picture}`}
+                      alt={c.pseudo}
+                      width={56}
+                      height={56}
+                      loading="lazy"
+                      className="h-14 w-14 shrink-0 rounded-full bg-gray-100 object-cover object-top"
+                    />
+                  ) : (
+                    <span
+                      className="inline-block h-14 w-14 shrink-0 rounded-full"
+                      style={{ backgroundColor: c.color }}
+                    />
+                  )}
                   <span className="flex-1 text-sm font-medium text-quizz-dark">{c.pseudo}</span>
                   {getCandidacyStatus(c.slug) === 'withdrawn' && <CandidacyTag tag={STATUS_TAG.withdrawn} />}
                 </Link>

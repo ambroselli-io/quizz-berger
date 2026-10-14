@@ -1436,6 +1436,59 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
+  {
+    slug: 'natacha-polony',
+    feminine: true,
+    status: 'declared',
+    movement: 'Nous sommes la France',
+    summary:
+      "Natacha Polony, essayiste et directrice de la revue L'Audace, a annoncé sa candidature le 14 octobre 2026 sur France Inter. Elle avait lancé en septembre son mouvement, « Nous sommes la France », après avoir dit fin août vouloir cesser de « commenter le désastre ».",
+    quote: {
+      text: "Je ne peux pas continuer à regarder mon pays s'effondrer.",
+      source: {
+        label: "L'Express via Orange",
+        url: 'https://actu.orange.fr/politique/presidentielle-2027-la-journaliste-natacha-polony-se-lance-dans-la-course-a-l-elysee-l-express-via-6medias-CNT000002sMNDt.html',
+        date: '2026-10-14',
+      },
+    },
+    events: [
+      {
+        date: '2026-08-28',
+        type: 'step',
+        label: "Dans un entretien au Parisien, elle annonce son entrée en politique et « n'exclut rien » pour 2027.",
+        sources: [
+          {
+            label: "L'Express via Orange",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-la-journaliste-natacha-polony-se-lance-dans-la-course-a-l-elysee-l-express-via-6medias-CNT000002sMNDt.html',
+            date: '2026-10-14',
+          },
+        ],
+      },
+      {
+        date: '2026-10-14',
+        type: 'declaration',
+        label: "Elle annonce sa candidature au micro de France Inter.",
+        sources: [
+          {
+            label: "L'Express via Orange",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-la-journaliste-natacha-polony-se-lance-dans-la-course-a-l-elysee-l-express-via-6medias-CNT000002sMNDt.html',
+            date: '2026-10-14',
+          },
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-10-14/presidentielle-2027-lessayiste-natacha-polony-annonce-sa-candidature-1934782',
+            date: '2026-10-14',
+          },
+          {
+            label: 'Euronews',
+            url: 'https://fr.euronews.com/2026/10/14/france-natacha-polony-officialise-sa-candidature-a-la-presidentielle',
+            date: '2026-10-14',
+          },
+        ],
+      },
+    ],
+  },
+
   // --- Ils ont renoncé ---
   {
     slug: 'clementine-autain',

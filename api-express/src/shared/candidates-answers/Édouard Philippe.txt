@@ -653,3 +653,6 @@ question-2027-gagnait-benoit-mathieu: Si Benoît Mathieu était élu, quel serai
 
 question-2027-gagnait-olivier-becht: Si Olivier Becht était élu, quel serait votre sentiment ?
 [1] Plutôt content(e)
+
+question-2027-gagnait-natacha-polony: Si Natacha Polony était élue, quel serait votre sentiment ?
+[3] Plutôt mécontent(e)
