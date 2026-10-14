@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Area, AreaChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, CartesianGrid, ComposedChart, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import API from '@app/services/api';
 
 interface Row {
@@ -145,131 +145,137 @@ export default function Audience() {
   const botCount = (category: string) => data.bots.categories.find((c) => c.name === category)?.count ?? 0;
 
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-8 max-lg:p-4">
-      <header className="flex flex-col gap-3">
-        <h1 className="font-[Merriweather] text-2xl font-bold">Audience</h1>
-        <div className="flex flex-wrap items-center gap-2 text-sm">
-          {PRESETS.map((preset) => (
-            <button
-              key={preset.label}
-              type="button"
-              onClick={() => {
-                setFrom(daysAgo(preset.days));
-                setTo(daysAgo(preset.single ? preset.days : 0));
-              }}
-              className="rounded-full border border-gray-200 px-3 py-1 hover:bg-gray-100"
-            >
-              {preset.label}
-            </button>
-          ))}
-          <input type="date" value={from} max={to} onChange={(e) => e.target.value && setFrom(e.target.value)} className="rounded border border-gray-200 px-2 py-1" />
-          <span>→</span>
-          <input type="date" value={to} min={from} onChange={(e) => e.target.value && setTo(e.target.value)} className="rounded border border-gray-200 px-2 py-1" />
-        </div>
-        {(source || path) && (
-          <div className="flex flex-wrap gap-2 text-sm">
-            {source && (
-              <button type="button" onClick={() => setSource(null)} className="rounded-full bg-quizz-yellow px-3 py-1">
-                Source : {source} ✕
+    // The root layout is h-full: without its own background, whatever overflows it shows the dark <html>.
+    <div className="w-full bg-white">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-8 max-lg:p-4">
+        <header className="flex flex-col gap-3">
+          <h1 className="font-[Merriweather] text-2xl font-bold">Audience</h1>
+          <div className="flex flex-wrap items-center gap-2 text-sm">
+            {PRESETS.map((preset) => (
+              <button
+                key={preset.label}
+                type="button"
+                onClick={() => {
+                  setFrom(daysAgo(preset.days));
+                  setTo(daysAgo(preset.single ? preset.days : 0));
+                }}
+                className="rounded-full border border-gray-200 px-3 py-1 hover:bg-gray-100"
+              >
+                {preset.label}
               </button>
-            )}
-            {path && (
-              <button type="button" onClick={() => setPath(null)} className="rounded-full bg-quizz-yellow px-3 py-1">
-                Page : {path} ✕
-              </button>
-            )}
-          </div>
-        )}
-      </header>
-
-      <div className="grid grid-cols-3 gap-3 max-lg:grid-cols-1">
-        <Tile label="Visiteurs" value={data.totals.visitors} />
-        <Tile label="Visites" value={data.totals.visits} />
-        <Tile label="Pages vues" value={data.totals.pageviews} />
-      </div>
-
-      <div className="h-72 w-full">
-        <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={data.timeline} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="bucket" tick={{ fontSize: 12 }} />
-            <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
-            <Tooltip />
-            <Area type="monotone" dataKey="visitors" name="Visiteurs" stroke="#111827" fill="#facc15" />
-            <Area type="monotone" dataKey="pageviews" name="Pages vues" stroke="#9ca3af" fill="transparent" />
-          </AreaChart>
-        </ResponsiveContainer>
-      </div>
-
-      <div className="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-        <Card tabs={{ sources: 'Sources', referrers: 'Referrers', campaigns: 'Campagnes' }}>
-          {(tab) =>
-            tab === 'sources' ? (
-              <RankedList rows={data.sources} onPick={setSource} />
-            ) : tab === 'referrers' ? (
-              <RankedList
-                rows={data.referrers}
-                render={(url) => (
-                  <a href={url} target="_blank" rel="noreferrer noopener" onClick={(e) => e.stopPropagation()}>
-                    {url}
-                  </a>
-                )}
-              />
-            ) : (
-              <RankedList rows={data.campaigns} />
-            )
-          }
-        </Card>
-        <Card tabs={{ entry: "Pages d'entrée", pages: 'Pages', devices: 'Appareils' }}>
-          {(tab) =>
-            tab === 'entry' ? (
-              <RankedList rows={data.entryPages} onPick={setPath} />
-            ) : tab === 'pages' ? (
-              <RankedList rows={data.pages} onPick={setPath} />
-            ) : (
-              <RankedList rows={data.devices} render={(name) => DEVICES[name] ?? name} />
-            )
-          }
-        </Card>
-      </div>
-
-      <h2 className="mt-6 font-[Merriweather] text-xl font-bold">Robots</h2>
-      <div className="grid grid-cols-5 gap-3 max-lg:grid-cols-2">
-        {Object.entries(BOT_CATEGORIES).map(([key, { label, color }]) => (
-          <Tile key={key} label={label} value={botCount(key)} color={color} />
-        ))}
-      </div>
-      <div className="h-72 w-full">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={botTimeline} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis dataKey="bucket" tick={{ fontSize: 12 }} />
-            <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
-            <Tooltip />
-            {Object.entries(BOT_CATEGORIES).map(([key, { label, color }]) => (
-              <Line key={key} type="monotone" dataKey={key} name={label} stroke={color} dot={false} connectNulls />
             ))}
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-      <div className="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-        <Card tabs={{ bots: 'Robots' }}>
-          {() => (
-            <RankedList
-              rows={data.bots.bots}
-              render={(name) => {
-                const category = data.bots.bots.find((b) => b.name === name)?.category ?? 'other';
-                return (
-                  <span className="flex items-center gap-2">
-                    <span className="size-2.5 shrink-0 rounded-full" style={{ background: BOT_CATEGORIES[category]?.color }} />
-                    {name}
-                  </span>
-                );
-              }}
-            />
+            <input type="date" value={from} max={to} onChange={(e) => e.target.value && setFrom(e.target.value)} className="rounded border border-gray-200 px-2 py-1" />
+            <span>→</span>
+            <input type="date" value={to} min={from} onChange={(e) => e.target.value && setTo(e.target.value)} className="rounded border border-gray-200 px-2 py-1" />
+          </div>
+          {(source || path) && (
+            <div className="flex flex-wrap gap-2 text-sm">
+              {source && (
+                <button type="button" onClick={() => setSource(null)} className="rounded-full bg-quizz-yellow px-3 py-1">
+                  Source : {source} ✕
+                </button>
+              )}
+              {path && (
+                <button type="button" onClick={() => setPath(null)} className="rounded-full bg-quizz-yellow px-3 py-1">
+                  Page : {path} ✕
+                </button>
+              )}
+            </div>
           )}
-        </Card>
-        <Card tabs={{ pages: 'Pages visitées par les robots' }}>{() => <RankedList rows={data.bots.pages} onPick={setPath} />}</Card>
+        </header>
+
+        <div className="grid grid-cols-3 gap-3 max-lg:grid-cols-1">
+          <Tile label="Visiteurs" value={data.totals.visitors} />
+          <Tile label="Visites" value={data.totals.visits} />
+          <Tile label="Pages vues" value={data.totals.pageviews} />
+        </div>
+
+        <div className="h-72 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            {/* Page views run ~20× visitors: each gets its own axis, otherwise visitors flatten at zero. */}
+            <ComposedChart data={data.timeline} margin={{ top: 10, right: 0, left: -10, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" vertical={false} />
+              <XAxis dataKey="bucket" tick={{ fontSize: 12 }} />
+              <YAxis yAxisId="visitors" allowDecimals={false} tick={{ fontSize: 12, fill: '#111827' }} />
+              <YAxis yAxisId="pageviews" orientation="right" allowDecimals={false} tick={{ fontSize: 12, fill: '#6b7280' }} />
+              <Tooltip />
+              <Legend />
+              <Area yAxisId="visitors" type="monotone" dataKey="visitors" name="Visiteurs (axe gauche)" stroke="#111827" fill="#facc15" fillOpacity={0.5} />
+              <Line yAxisId="pageviews" type="monotone" dataKey="pageviews" name="Pages vues (axe droit)" stroke="#6b7280" strokeDasharray="4 3" dot={false} />
+            </ComposedChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div className="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
+          <Card tabs={{ sources: 'Sources', referrers: 'Referrers', campaigns: 'Campagnes' }}>
+            {(tab) =>
+              tab === 'sources' ? (
+                <RankedList rows={data.sources} onPick={setSource} />
+              ) : tab === 'referrers' ? (
+                <RankedList
+                  rows={data.referrers}
+                  render={(url) => (
+                    <a href={url} target="_blank" rel="noreferrer noopener" onClick={(e) => e.stopPropagation()}>
+                      {url}
+                    </a>
+                  )}
+                />
+              ) : (
+                <RankedList rows={data.campaigns} />
+              )
+            }
+          </Card>
+          <Card tabs={{ entry: "Pages d'entrée", pages: 'Pages', devices: 'Appareils' }}>
+            {(tab) =>
+              tab === 'entry' ? (
+                <RankedList rows={data.entryPages} onPick={setPath} />
+              ) : tab === 'pages' ? (
+                <RankedList rows={data.pages} onPick={setPath} />
+              ) : (
+                <RankedList rows={data.devices} render={(name) => DEVICES[name] ?? name} />
+              )
+            }
+          </Card>
+        </div>
+
+        <h2 className="mt-6 font-[Merriweather] text-xl font-bold">Robots</h2>
+        <div className="grid grid-cols-5 gap-3 max-lg:grid-cols-2">
+          {Object.entries(BOT_CATEGORIES).map(([key, { label, color }]) => (
+            <Tile key={key} label={label} value={botCount(key)} color={color} />
+          ))}
+        </div>
+        <div className="h-72 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={botTimeline} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" vertical={false} />
+              <XAxis dataKey="bucket" tick={{ fontSize: 12 }} />
+              <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
+              <Tooltip />
+              {Object.entries(BOT_CATEGORIES).map(([key, { label, color }]) => (
+                <Line key={key} type="monotone" dataKey={key} name={label} stroke={color} dot={false} connectNulls />
+              ))}
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
+          <Card tabs={{ bots: 'Robots' }}>
+            {() => (
+              <RankedList
+                rows={data.bots.bots}
+                render={(name) => {
+                  const category = data.bots.bots.find((b) => b.name === name)?.category ?? 'other';
+                  return (
+                    <span className="flex items-center gap-2">
+                      <span className="size-2.5 shrink-0 rounded-full" style={{ background: BOT_CATEGORIES[category]?.color }} />
+                      {name}
+                    </span>
+                  );
+                }}
+              />
+            )}
+          </Card>
+          <Card tabs={{ pages: 'Pages visitées par les robots' }}>{() => <RankedList rows={data.bots.pages} onPick={setPath} />}</Card>
+        </div>
       </div>
     </div>
   );

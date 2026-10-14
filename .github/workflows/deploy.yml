@@ -120,8 +120,9 @@ jobs:
             # Build the application (generates sitemap + vite build → dist/)
             npm run build
 
-            # Restart or start the application using PM2
-            pm2 restart quizz-du-berger-app-tanstack || pm2 start ecosystem.config.cjs
+            # Restart or start the application using PM2. --update-env re-reads ecosystem.config.cjs:
+            # a plain `pm2 restart <name>` keeps the env of the first start, so new .env keys never arrive.
+            pm2 startOrRestart ecosystem.config.cjs --update-env
 
             # Navigate to the api directory
             cd ../api-express
@@ -133,8 +134,9 @@ jobs:
             # Bundle src/ into dist/index.js: pm2 cannot run the .ts sources in cluster mode
             npm run build
 
-            # Restart or start the application using PM2
-            pm2 restart quizz-du-berger-api-express || pm2 start ecosystem.config.cjs
+            # Restart or start the application using PM2. --update-env re-reads ecosystem.config.cjs:
+            # a plain `pm2 restart <name>` keeps the env of the first start, so new .env keys never arrive.
+            pm2 startOrRestart ecosystem.config.cjs --update-env
 
             # Wait for the apps to start
             sleep 10
