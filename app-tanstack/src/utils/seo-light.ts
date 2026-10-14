@@ -111,8 +111,13 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-ae-12': {
     slug: 'france-rivalite-etats-unis-chine-taiwan',
-    seoTitle: 'États-Unis, Chine, Taïwan : la France en 2027',
+    seoTitle: 'États-Unis ou Chine : la position de la France en 2027',
     seoDescription: `S'aligner sur Washington, rester autonome ou se rapprocher de Pékin ? Les positions des ${candidatesCount} candidats à la présidentielle 2027 face à la rivalité sino-américaine.`,
+  },
+  'question-2027-ae-14': {
+    slug: 'france-position-taiwan-chine',
+    seoTitle: 'Taïwan et la Chine : la position de la France en 2027',
+    seoDescription: `Reconnaître Taïwan, la soutenir, défendre le statu quo ou laisser faire Pékin ? Les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-ae-04': {
     slug: 'construction-europeenne-avenir',

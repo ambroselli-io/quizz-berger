@@ -27,7 +27,8 @@ export const article: Article = {
 <p>À l'échelle européenne, la ligne est le « de-risking » (réduction des dépendances) plutôt que le découplage. En octobre 2024, l'UE a imposé des droits de douane de 17 % à 35 % sur les voitures électriques chinoises, une mesure que la France a soutenue et que l'Allemagne a combattue.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la question <a href="/question-politique/france-rivalite-etats-unis-chine-taiwan">« Face à la rivalité entre les États-Unis et la Chine, quelle doit être la position de la France ? »</a> du <a href="/theme/affaires-etrangeres">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en trois familles.</p>
+<p>Sur la question <a href="/question-politique/france-rivalite-etats-unis-chine-taiwan">« Face à la rivalité stratégique et commerciale entre les États-Unis et la Chine, quelle doit être la position de la France ? »</a> du <a href="/theme/affaires-etrangeres">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en trois familles.</p>
+<p>Cette question porte sur l'alignement entre Washington et Pékin, pas sur Taïwan : on peut vouloir défendre Taïwan sans suivre les États-Unis, ou l'inverse. Le sort de l'île fait donc l'objet d'une <a href="/question-politique/france-position-taiwan-chine">question à part</a>, de la reconnaissance officielle de Taïwan à la non-ingérence dans ce que Pékin considère comme une affaire intérieure.</p>
 
 <h3>Famille 1 — Rester dans le camp occidental, avec une marge d'autonomie</h3>
 <p>Ces candidats ancrent la France du côté des démocraties et se montrent fermes envers Pékin, notamment sur les droits humains, sans pour autant réclamer un alignement militaire sur Washington.</p>
@@ -83,6 +84,7 @@ export const article: Article = {
 <p>La rivalité sino-américaine recoupe plusieurs questions du Quizz du Berger :</p>
 <ul>
 <li><a href="/question-politique/france-rivalite-etats-unis-chine-taiwan">France, États-Unis et Chine</a> — la question complète et les réponses des ${candidatesCount} candidats.</li>
+<li><a href="/question-politique/france-position-taiwan-chine">Taïwan et la Chine</a> — reconnaître Taïwan, la soutenir, défendre le statu quo ou ne pas s'en mêler ?</li>
 <li><a href="/question-politique/face-a-la-montee-en-puissance-de-la-chine-que-doit-faire-la-france">La France face à la Chine</a> — rompre, réduire la dépendance ou renforcer les échanges ?</li>
 <li><a href="/theme/affaires-etrangeres">Affaires étrangères</a> — l'ensemble des questions de politique internationale.</li>
 </ul>

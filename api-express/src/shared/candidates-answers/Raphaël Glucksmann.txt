@@ -37,11 +37,14 @@ question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Pal
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [3] Condamner une violation du droit international et de la souveraineté d'un État
 
-question-2027-ae-12: Face à la rivalité entre les États-Unis et la Chine (notamment autour de Taïwan), quelle doit être la position de la France ?
+question-2027-ae-12: Face à la rivalité stratégique et commerciale entre les États-Unis et la Chine, quelle doit être la position de la France ?
 [1] Rester dans le camp occidental, tout en gardant une marge d'autonomie
 
 question-2027-ae-13: Comment la France devrait-elle réagir face aux attaques hybrides russes (cyber, drones, sabotage) visant ses infrastructures ?
 [0] Riposter offensivement : lancer des contre-attaques cyber et envisager des frappes ciblées contre les responsables
+
+question-2027-ae-14: Taïwan se gouverne de façon autonome, mais la Chine la revendique comme une partie de son territoire. Quelle doit être la position de la France ?
+[1] Soutenir activement Taïwan face aux pressions chinoises, sans la reconnaître officiellement
 
 
 Agriculture et alimentation:
@@ -637,7 +640,7 @@ question-2027-gagnait-antoine-mikolajczak: Si Antoine Mikolajczak était élu, q
 [2] Neutre
 
 question-2027-gagnait-parti-animaliste: Si Parti animaliste était élu, quel serait votre sentiment ?
-[1] Plutôt content(e)
+[2] Neutre
 
 question-2027-gagnait-parti-pirate: Si Parti pirate était élu, quel serait votre sentiment ?
 [1] Plutôt content(e)

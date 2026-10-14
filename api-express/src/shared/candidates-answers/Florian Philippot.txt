@@ -37,11 +37,14 @@ question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Pal
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [4] Dénoncer fermement un impérialisme américain et défendre le principe de non-ingérence
 
-question-2027-ae-12: Face à la rivalité entre les États-Unis et la Chine (notamment autour de Taïwan), quelle doit être la position de la France ?
+question-2027-ae-12: Face à la rivalité stratégique et commerciale entre les États-Unis et la Chine, quelle doit être la position de la France ?
 [3] Se rapprocher de la Chine et défendre un monde multipolaire face aux États-Unis
 
 question-2027-ae-13: Comment la France devrait-elle réagir face aux attaques hybrides russes (cyber, drones, sabotage) visant ses infrastructures ?
 [3] Privilégier la désescalade : ces attaques sont une conséquence de notre politique étrangère, il faut revoir nos positions
+
+question-2027-ae-14: Taïwan se gouverne de façon autonome, mais la Chine la revendique comme une partie de son territoire. Quelle doit être la position de la France ?
+[3] Considérer Taïwan comme une affaire intérieure chinoise et ne pas s'en mêler
 
 
 Agriculture et alimentation:
@@ -601,7 +604,7 @@ question-2027-gagnait-bruno-retailleau: Si Bruno Retailleau était élu, quel se
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-fabien-roussel: Si Fabien Roussel était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)

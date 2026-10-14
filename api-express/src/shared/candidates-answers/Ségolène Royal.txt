@@ -37,11 +37,14 @@ question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Pal
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [3] Condamner une violation du droit international et de la souveraineté d'un État
 
-question-2027-ae-12: Face à la rivalité entre les États-Unis et la Chine (notamment autour de Taïwan), quelle doit être la position de la France ?
+question-2027-ae-12: Face à la rivalité stratégique et commerciale entre les États-Unis et la Chine, quelle doit être la position de la France ?
 [2] Défendre une autonomie stratégique européenne et ne pas suivre Washington
 
 question-2027-ae-13: Comment la France devrait-elle réagir face aux attaques hybrides russes (cyber, drones, sabotage) visant ses infrastructures ?
 [2] Combiner un renforcement défensif avec un dialogue diplomatique pour désamorcer les tensions
+
+question-2027-ae-14: Taïwan se gouverne de façon autonome, mais la Chine la revendique comme une partie de son territoire. Quelle doit être la position de la France ?
+[2] Défendre le statu quo : ni indépendance proclamée, ni réunification imposée par la force
 
 
 Agriculture et alimentation:
@@ -607,7 +610,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [4] Très mécontent(e)
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[2] Neutre
+[1] Plutôt content(e)
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [2] Neutre

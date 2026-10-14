@@ -815,6 +815,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 0
@@ -1792,6 +1797,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -1864,7 +1874,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-bruno-retailleau",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -2767,6 +2777,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -3746,6 +3761,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -4721,6 +4741,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -5702,6 +5727,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -6676,6 +6706,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -7658,6 +7693,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -8633,6 +8673,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -9611,6 +9656,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 1
       },
       {
@@ -10593,6 +10643,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -11567,6 +11622,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -12547,6 +12607,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -13524,6 +13589,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -13611,7 +13681,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -14499,6 +14569,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -15477,6 +15552,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -16459,6 +16539,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -17438,6 +17523,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -18415,6 +18505,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -18552,7 +18647,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-parti-animaliste",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -19389,6 +19484,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -20369,6 +20469,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -21346,6 +21451,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 4
@@ -21353,7 +21463,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-francois-asselineau",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -22323,6 +22433,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -22430,7 +22545,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-florian-philippot",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -23297,6 +23412,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -24277,6 +24397,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -24324,7 +24449,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-david-lisnard",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -25251,6 +25376,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 3
       },
       {
@@ -26231,6 +26361,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -27205,6 +27340,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 3
       },
       {
@@ -28185,6 +28325,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -28262,7 +28407,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-fabien-roussel",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -29160,6 +29305,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -30141,6 +30291,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -30228,7 +30383,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -31118,6 +31273,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -32097,6 +32257,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -33074,6 +33239,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 1
@@ -34048,6 +34218,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -35028,6 +35203,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -36004,6 +36184,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -36986,6 +37171,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -37962,6 +38152,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -38944,6 +39139,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 3
@@ -39921,6 +40121,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -39978,7 +40183,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-raphael-glucksmann",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -40898,6 +41103,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-nathalie-arthaud",
         "answerIndex": 2
@@ -41153,6 +41363,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -42129,6 +42344,11 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
         "answerIndex": 2
       },
       {
@@ -43827,6 +44047,11 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-14",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
