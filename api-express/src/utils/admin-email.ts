@@ -11,7 +11,7 @@ export const sendAdminEmail = async (subject: string, text: string) => {
       to: [{ address: EMAIL_1 }],
       msg: { from: { address: "contact@quizz-du-berger.com", personalName: "Le Quizz du Berger" }, subject, text },
       // Click tracking would rewrite the links (validation links must stay intact).
-      headers: { "X-TM-TRACKING": { html: { open: 0, click: 0, text: { click: 0 } } } },
+      headers: { "X-TM-TRACKING": { html: { open: 0, click: 0 }, text: { click: 0 } } },
     }),
   }).catch((err) => capture(err, { extra: { subject } }));
   return !!response?.ok;

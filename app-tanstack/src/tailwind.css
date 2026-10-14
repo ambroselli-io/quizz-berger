@@ -114,6 +114,10 @@
   * {
     @apply border-border;
   }
+  html {
+    /* overscroll (rubber-band) area above the dark header */
+    background-color: #111827;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: 'Merriweather Sans', sans-serif;

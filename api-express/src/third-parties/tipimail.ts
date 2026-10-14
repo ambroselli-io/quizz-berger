@@ -31,7 +31,7 @@ export async function sendEmail({ emails = ["arnaud@ambroselli.io"], text, html,
         html,
       },
       headers: {
-        "X-TM-TRACKING": { html: { open: 0, click: 0, text: { click: 0 } } },
+        "X-TM-TRACKING": { html: { open: 0, click: 0 }, text: { click: 0 } },
       },
     }),
   })
