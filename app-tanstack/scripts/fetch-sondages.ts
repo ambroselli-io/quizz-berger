@@ -42,6 +42,7 @@ interface RawPoll {
   fin_enquete: string;
   echantillon: number | null;
   hypothese: string | null;
+  population?: string;
   tour: string;
   candidats: RawCandidate[];
 }
@@ -64,9 +65,13 @@ async function main() {
   if (!response.ok) {
     throw new Error(`Could not download the poll dataset: HTTP ${response.status}`);
   }
-  const raw = (await response.json()) as RawPoll[];
+  // The dataset moved from a bare array to { source, usage_guidelines, hypotheses, polls } in September 2026.
+  const json = (await response.json()) as RawPoll[] | { polls: RawPoll[] };
+  const raw = Array.isArray(json) ? json : json.polls;
+  if (!Array.isArray(raw)) throw new Error('Unexpected dataset shape: no polls array.');
   const firstRound = raw
-    .filter((poll) => poll.tour === '1er Tour')
+    // Polls of a specific population (e.g. an LGBTQIA+ sample) would distort a national average.
+    .filter((poll) => poll.tour === '1er Tour' && (!poll.population || poll.population.startsWith('représentatif')))
     .sort((a, b) => a.fin_enquete.localeCompare(b.fin_enquete));
 
   if (firstRound.length === 0) throw new Error('The dataset holds no first-round poll.');
