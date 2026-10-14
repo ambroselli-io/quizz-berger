@@ -1,15 +1,11 @@
-import { useMemo } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { Link } from '@app/lib/router';
 import { candidateSlugMap, candidatesCount } from '@app/utils/seo';
 import { formatPercent } from '@app/utils/sondages';
+import { getCandidacyStatus } from '@app/utils/candidacies';
 import { quizzQuestionsCount } from '@app/utils/quizz';
 import sondages from '@app/content/sondages-2027.json';
 import Footer from '@app/components/Footer';
-
-/** Candidates polled in one of the last N months are shown in the chart. */
-const RECENT_MONTHS = 3;
-const MIN_APPEARANCES = 5;
-const CHARTED_CANDIDATES = 8;
 
 const CHART_WIDTH = 820;
 const CHART_HEIGHT = 380;
@@ -50,31 +46,31 @@ export default function SondagesPage() {
   } = sondages;
 
   const lastMonth = months[months.length - 1];
-  const recentThreshold = months[Math.max(0, months.length - RECENT_MONTHS)];
 
+  // Every polled candidate of the quiz who is still in the race, however rarely tested.
   const charted = useMemo(() => {
     return candidates
       .filter(
         (c) =>
-          c.appearances >= MIN_APPEARANCES &&
-          c.latestMonth !== null &&
-          c.latestMonth >= recentThreshold,
+          c.slug !== null &&
+          c.latest !== null &&
+          getCandidacyStatus(c.slug) !== undefined &&
+          getCandidacyStatus(c.slug) !== 'withdrawn',
       )
-      .slice(0, CHARTED_CANDIDATES)
       .map((candidate, idx) => ({
         ...candidate,
         color:
           (candidate.slug ? colorBySlug.get(candidate.slug) : undefined) ||
           FALLBACK_COLORS[idx % FALLBACK_COLORS.length],
       }));
-  }, [candidates, recentThreshold]);
+  }, [candidates]);
 
   const occasional = useMemo(
     () =>
       candidates.filter(
-        (c) => !charted.some((charted) => charted.candidat === c.candidat) && c.latest !== null,
+        (c) => c.slug === null && c.latest !== null,
       ),
-    [candidates, charted],
+    [candidates],
   );
 
   const yMax = useMemo(() => {
@@ -89,6 +85,35 @@ export default function SondagesPage() {
   const yOf = (value: number) => PADDING.top + (1 - value / yMax) * plotHeight;
 
   const yTicks = Array.from({ length: yMax / 5 + 1 }, (_, i) => i * 5);
+
+  const svgRef = useRef<SVGSVGElement>(null);
+  const [highlighted, setHighlighted] = useState<string | null>(null);
+  const [hoverPoint, setHoverPoint] = useState<{ candidat: string; month: string } | null>(null);
+
+  // Snaps the tooltip to the point of the hovered line closest to the pointer, horizontally.
+  const onLinePointer = (candidate: (typeof charted)[number], event: React.PointerEvent) => {
+    const rect = svgRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const x = ((event.clientX - rect.left) / rect.width) * CHART_WIDTH;
+    const nearest = candidate.series.reduce((best, p) =>
+      Math.abs(xOf(p.month) - x) < Math.abs(xOf(best.month) - x) ? p : best,
+    );
+    setHighlighted(candidate.candidat);
+    setHoverPoint({ candidat: candidate.candidat, month: nearest.month });
+  };
+
+  const clearHover = () => {
+    setHighlighted(null);
+    setHoverPoint(null);
+  };
+
+  const tooltip = (() => {
+    if (!hoverPoint) return null;
+    const candidate = charted.find((c) => c.candidat === hoverPoint.candidat);
+    const point = candidate?.series.find((p) => p.month === hoverPoint.month);
+    if (!candidate || !point) return null;
+    return { candidate, point, x: xOf(point.month), y: yOf(point.value) };
+  })();
 
   return (
     <>
@@ -122,70 +147,127 @@ export default function SondagesPage() {
           </p>
 
           <div className="overflow-x-auto">
-            <svg
-              viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`}
-              className="h-auto w-full min-w-[640px]"
-              role="img"
-              aria-label={`Évolution des intentions de vote au premier tour de la présidentielle 2027, de ${formatMonth(months[0])} à ${formatMonth(lastMonth)}`}
-            >
-              {yTicks.map((tick) => (
-                <g key={tick}>
-                  <line
-                    x1={PADDING.left}
-                    x2={CHART_WIDTH - PADDING.right}
-                    y1={yOf(tick)}
-                    y2={yOf(tick)}
-                    stroke="#e5e7eb"
-                    strokeWidth={1}
-                  />
-                  <text x={0} y={yOf(tick) + 4} fontSize={11} fill="#9ca3af">
-                    {tick}%
-                  </text>
-                </g>
-              ))}
-
-              {months.map((month, idx) =>
-                idx % 2 === 0 || idx === months.length - 1 ? (
-                  <text
-                    key={month}
-                    x={xOf(month)}
-                    y={CHART_HEIGHT - 12}
-                    fontSize={11}
-                    fill="#9ca3af"
-                    textAnchor="middle"
-                  >
-                    {formatMonth(month)}
-                  </text>
-                ) : null,
-              )}
-
-              {charted.map((candidate) => {
-                const points = candidate.series.map((p) => `${xOf(p.month)},${yOf(p.value)}`);
-                return (
-                  <g key={candidate.candidat}>
-                    <polyline
-                      points={points.join(' ')}
-                      fill="none"
-                      stroke={candidate.color}
-                      strokeWidth={2.5}
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
+            <div className="relative min-w-[640px]" onPointerLeave={clearHover}>
+              <svg
+                ref={svgRef}
+                viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`}
+                className="h-auto w-full"
+                role="img"
+                aria-label={`Évolution des intentions de vote au premier tour de la présidentielle 2027, de ${formatMonth(months[0])} à ${formatMonth(lastMonth)}`}
+              >
+                {yTicks.map((tick) => (
+                  <g key={tick}>
+                    <line
+                      x1={PADDING.left}
+                      x2={CHART_WIDTH - PADDING.right}
+                      y1={yOf(tick)}
+                      y2={yOf(tick)}
+                      stroke="#e5e7eb"
+                      strokeWidth={1}
                     />
-                    {candidate.series.map((p) => (
-                      <circle
-                        key={p.month}
-                        cx={xOf(p.month)}
-                        cy={yOf(p.value)}
-                        r={3}
-                        fill={candidate.color}
-                      >
-                        <title>{`${candidate.candidat} — ${formatMonth(p.month)} : ${formatPercent(p.value)} % (${p.polls} sondages)`}</title>
-                      </circle>
-                    ))}
+                    <text x={0} y={yOf(tick) + 4} fontSize={11} fill="#9ca3af">
+                      {tick}%
+                    </text>
                   </g>
-                );
-              })}
-            </svg>
+                ))}
+
+                {months.map((month, idx) =>
+                  idx % 2 === 0 || idx === months.length - 1 ? (
+                    <text
+                      key={month}
+                      x={xOf(month)}
+                      y={CHART_HEIGHT - 12}
+                      fontSize={11}
+                      fill="#9ca3af"
+                      textAnchor="middle"
+                    >
+                      {formatMonth(month)}
+                    </text>
+                  ) : null,
+                )}
+
+                {charted.map((candidate) => {
+                  const points = candidate.series.map((p) => `${xOf(p.month)},${yOf(p.value)}`);
+                  const dimmed = highlighted !== null && highlighted !== candidate.candidat;
+                  return (
+                    <g
+                      key={candidate.candidat}
+                      opacity={dimmed ? 0.15 : 1}
+                      className="transition-opacity"
+                    >
+                      <polyline
+                        points={points.join(' ')}
+                        fill="none"
+                        stroke={candidate.color}
+                        strokeWidth={highlighted === candidate.candidat ? 4 : 2.5}
+                        strokeLinejoin="round"
+                        strokeLinecap="round"
+                      />
+                      {candidate.series.map((p) => (
+                        <circle
+                          key={p.month}
+                          cx={xOf(p.month)}
+                          cy={yOf(p.value)}
+                          r={3}
+                          fill={candidate.color}
+                        />
+                      ))}
+                    </g>
+                  );
+                })}
+
+                {/* Wide transparent strokes on top, so a line is easy to hover */}
+                {charted.map((candidate) => (
+                  <polyline
+                    key={candidate.candidat}
+                    points={candidate.series.map((p) => `${xOf(p.month)},${yOf(p.value)}`).join(' ')}
+                    fill="none"
+                    stroke="transparent"
+                    strokeWidth={14}
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                    pointerEvents="stroke"
+                    className="cursor-pointer"
+                    onPointerEnter={(event) => onLinePointer(candidate, event)}
+                    onPointerMove={(event) => onLinePointer(candidate, event)}
+                  />
+                ))}
+
+                {tooltip && (
+                  <circle
+                    cx={tooltip.x}
+                    cy={tooltip.y}
+                    r={6}
+                    fill="white"
+                    stroke={tooltip.candidate.color}
+                    strokeWidth={3}
+                    pointerEvents="none"
+                  />
+                )}
+              </svg>
+
+              {tooltip && (
+                <div
+                  className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs whitespace-nowrap shadow-lg"
+                  style={{
+                    left: `${(tooltip.x / CHART_WIDTH) * 100}%`,
+                    top: `calc(${(tooltip.y / CHART_HEIGHT) * 100}% - 12px)`,
+                  }}
+                >
+                  <span className="flex items-center gap-2 font-semibold text-quizz-dark">
+                    <span
+                      className="inline-block h-2.5 w-2.5 rounded-full"
+                      style={{ backgroundColor: tooltip.candidate.color }}
+                    />
+                    {tooltip.candidate.candidat}
+                  </span>
+                  <span className="block text-gray-600">
+                    {formatMonth(tooltip.point.month)} : {formatPercent(tooltip.point.value)} % (
+                    {tooltip.point.polls} sondage{tooltip.point.polls > 1 ? 's' : ''})
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Legend, doubles as the "who is where today" table */}
@@ -193,7 +275,11 @@ export default function SondagesPage() {
             {charted.map((candidate) => (
               <li
                 key={candidate.candidat}
-                className="flex items-center gap-3 rounded-lg border border-gray-200 p-3"
+                className={`flex items-center gap-3 rounded-lg border p-3 transition-colors ${
+                  highlighted === candidate.candidat ? 'border-quizz-dark' : 'border-gray-200'
+                }`}
+                onPointerEnter={() => setHighlighted(candidate.candidat)}
+                onPointerLeave={() => setHighlighted(null)}
               >
                 <span
                   className="inline-block h-3 w-3 shrink-0 rounded-full"
