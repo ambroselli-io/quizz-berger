@@ -22,7 +22,7 @@ interface AudienceData {
     categories: Row[];
     bots: (Row & { category: string })[];
     timeline: { bucket: string; category: string; count: number }[];
-    pages: Row[];
+    pages: (Row & { missing: boolean })[];
   };
 }
 
@@ -49,6 +49,18 @@ const PRESETS = [
 ];
 
 const formatCount = (n: number) => n.toLocaleString('fr-FR');
+
+const decodePath = (path: string) => {
+  try {
+    return decodeURIComponent(path);
+  } catch {
+    return path;
+  }
+};
+
+// Crawlers spend much of their time on URLs nobody reads: 404s and /all-questions/{pseudo}, whose
+// pseudo is often a spam search query (the page is noindex).
+const isNoisePath = (row: { name: string; missing: boolean }) => row.missing || /^\/all-questions\/./.test(row.name);
 
 function RankedList({ rows, onPick, render }: { rows: Row[]; onPick?: (name: string) => void; render?: (name: string) => React.ReactNode }) {
   if (!rows.length) return <p className="py-6 text-center text-sm text-gray-400">Aucune donnée</p>;
@@ -110,6 +122,7 @@ export default function Audience() {
   const [to, setTo] = useState(daysAgo(0));
   const [source, setSource] = useState<string | null>(null);
   const [path, setPath] = useState<string | null>(null);
+  const [hideBotNoise, setHideBotNoise] = useState(true);
   const [data, setData] = useState<AudienceData | null>(null);
   const [status, setStatus] = useState<'loading' | 'ok' | 'forbidden'>('loading');
 
@@ -228,9 +241,9 @@ export default function Audience() {
           <Card tabs={{ entry: "Pages d'entrée", pages: 'Pages', devices: 'Appareils' }}>
             {(tab) =>
               tab === 'entry' ? (
-                <RankedList rows={data.entryPages} onPick={setPath} />
+                <RankedList rows={data.entryPages} onPick={setPath} render={decodePath} />
               ) : tab === 'pages' ? (
-                <RankedList rows={data.pages} onPick={setPath} />
+                <RankedList rows={data.pages} onPick={setPath} render={decodePath} />
               ) : (
                 <RankedList rows={data.devices} render={(name) => DEVICES[name] ?? name} />
               )
@@ -274,7 +287,21 @@ export default function Audience() {
               />
             )}
           </Card>
-          <Card tabs={{ pages: 'Pages visitées par les robots' }}>{() => <RankedList rows={data.bots.pages} onPick={setPath} />}</Card>
+          <Card tabs={{ pages: 'Pages visitées par les robots' }}>
+            {() => (
+              <>
+                <label className="mb-2 flex items-center gap-2 text-sm text-gray-500">
+                  <input type="checkbox" checked={hideBotNoise} onChange={(e) => setHideBotNoise(e.target.checked)} />
+                  Masquer les 404 et les pages /all-questions/{'{pseudo}'}
+                </label>
+                <RankedList
+                  rows={(hideBotNoise ? data.bots.pages.filter((row) => !isNoisePath(row)) : data.bots.pages).slice(0, 50)}
+                  onPick={setPath}
+                  render={decodePath}
+                />
+              </>
+            )}
+          </Card>
         </div>
       </div>
     </div>

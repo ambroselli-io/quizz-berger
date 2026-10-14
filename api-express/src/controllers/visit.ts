@@ -154,8 +154,8 @@ router.get(
         SELECT ${bucket} AS "bucket", "category", COUNT(*)::int AS "count"
         FROM "BotHit" WHERE ${botWhere} GROUP BY 1, 2 ORDER BY 1`,
         prisma.$queryRaw<Row[]>`
-        SELECT "path" AS "name", COUNT(*)::int AS "count"
-        FROM "BotHit" WHERE ${botWhere} GROUP BY 1 ORDER BY 2 DESC LIMIT 50`,
+        SELECT "path" AS "name", COUNT(*)::int AS "count", bool_and("status" >= 400) AS "missing"
+        FROM "BotHit" WHERE ${botWhere} GROUP BY 1 ORDER BY 2 DESC LIMIT 200`,
       ]);
 
     res.status(200).send({
