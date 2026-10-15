@@ -359,6 +359,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Prix des carburants : baisser les taxes ? Candidats 2027',
     seoDescription: `Baisse de la TICPE et de la TVA, blocage des prix ou reversement des surplus : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 face à la flambée des prix à la pompe.`,
   },
+  'question-2027-immi-11': {
+    slug: 'droit-du-sol-nationalite-france',
+    seoTitle: 'Droit du sol : les positions des candidats 2027',
+    seoDescription: `Maintenir, durcir ou supprimer le droit du sol ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur l'acquisition de la nationalité française par la naissance.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

@@ -165,6 +165,9 @@ question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées p
 question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [3] Il faut élargir les voies légales vers le Royaume-Uni et réduire les renvois forcés
 
+question-2027-immi-11: Faut-il revoir le droit du sol (l'acquisition de la nationalité française par la naissance en France) ?
+[1] Il faut maintenir le droit du sol tel qu'il existe aujourd'hui en métropole
+
 
 Dépenses et dette publiques:
 

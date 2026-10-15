@@ -165,6 +165,9 @@ question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées p
 question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [0] Il faut fermer unilatéralement la frontière côté français, sans chercher d'accord avec Londres
 
+question-2027-immi-11: Faut-il revoir le droit du sol (l'acquisition de la nationalité française par la naissance en France) ?
+[3] Il faut le réserver aux enfants dont un parent est déjà né en France ; pour les autres, seules la filiation ou la naturalisation classique doivent donner la nationalité
+
 
 Dépenses et dette publiques:
 
