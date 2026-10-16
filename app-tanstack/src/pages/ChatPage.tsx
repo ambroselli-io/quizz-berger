@@ -106,6 +106,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
   const startedRef = useRef(!!initialChat);
   const bottomRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const composerRef = useRef<HTMLDivElement>(null);
   const [showActions, setShowActions] = useState(false);
 
   const isConvaincre = chatMode.mode === 'convaincre';
@@ -131,7 +132,11 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
   }, [hasAccount, candidateId]);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    const bottom = bottomRef.current;
+    if (!bottom) return;
+    // On desktop the composer is sticky over the page: stop the scroll above it, not under it.
+    bottom.style.scrollMarginBottom = `${composerRef.current?.offsetHeight ?? 0}px`;
+    bottom.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [chat?.messages]);
 
   const restart = (resetCandidate: boolean) => {
@@ -286,7 +291,9 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
       </div>
 
       {hasAccount && chat && (
-        <div className="flex w-full shrink-0 flex-col items-center bg-white px-4 lg:sticky lg:bottom-0 max-lg:px-3 max-lg:pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+        <div
+          ref={composerRef}
+          className="flex w-full shrink-0 flex-col items-center bg-white px-4 lg:sticky lg:bottom-0 max-lg:px-3 max-lg:pb-[max(0.5rem,env(safe-area-inset-bottom))]">
           <form
             className="flex w-full max-w-[65ch] items-end gap-2 rounded-3xl border border-gray-200 bg-white py-1.5 pr-1.5 pl-4 shadow-sm focus-within:border-gray-300"
             onSubmit={(e) => {
