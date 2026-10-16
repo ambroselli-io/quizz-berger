@@ -5956,7 +5956,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-01",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -5986,7 +5986,7 @@
       {
         "themeId": "theme-2027-agriculture",
         "questionId": "question-2027-agri-01",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -6016,7 +6016,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-02",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-climat",
@@ -6211,7 +6211,7 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -6231,7 +6231,7 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-04",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -6676,7 +6676,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-11",
-        "answerIndex": 1
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -7962,7 +7962,7 @@
       {
         "themeId": "theme-2027-agriculture",
         "questionId": "question-2027-agri-01",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -8132,7 +8132,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-05",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-economie",
@@ -8412,7 +8412,7 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-01",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-education",
@@ -8677,7 +8677,7 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -9736,7 +9736,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-le-pen",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -19786,7 +19786,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-01",
-        "answerIndex": 4
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -20803,7 +20803,7 @@
       {
         "themeId": "theme-2027-agriculture",
         "questionId": "question-2027-agri-01",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -20973,7 +20973,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-05",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-economie",
@@ -21028,7 +21028,7 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -21463,7 +21463,7 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-10",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-logement",

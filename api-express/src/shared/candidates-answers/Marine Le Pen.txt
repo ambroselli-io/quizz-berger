@@ -5,7 +5,7 @@ Affaires étrangères:
 
 
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
-[4] Cesser tout soutien à l'Ukraine et jouer un rôle de médiation avec la Russie
+[3] Réduire notre soutien, ce conflit n'est pas le nôtre
 
 question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
 [1] Sortir du commandement intégré de l'OTAN, garder le reste
@@ -35,7 +35,7 @@ question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Pal
 [2] Non, ce n'était pas le bon moment
 
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
-[1] Approuver le résultat, mais regretter une intervention menée sans mandat international
+[3] Condamner une violation du droit international et de la souveraineté d'un État
 
 question-2027-ae-12: Face à la rivalité stratégique et commerciale entre les États-Unis et la Chine, quelle doit être la position de la France ?
 [2] Défendre une autonomie stratégique européenne et ne pas suivre Washington
@@ -51,7 +51,7 @@ Agriculture et alimentation:
 
 
 question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
-[2] Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative
+[3] Les pesticides sont indispensables pour nourrir la population, il faut arrêter de les diaboliser
 
 question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
 [2] Il faut construire des retenues d'eau et des bassines pour que les agriculteurs puissent continuer à travailler
@@ -73,7 +73,7 @@ question-2027-climat-01: Comment vous positionnez-vous face au changement climat
 [1] Le climat change, mais les mesures écologistes pénalisent les gens modestes pour pas grand-chose
 
 question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
-[1] Maintenir et développer modérément le parc existant
+[0] Construire massivement de nouvelles centrales nucléaires
 
 question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
 [1] C'est pas la priorité, il y a des solutions plus efficaces comme le nucléaire
@@ -232,7 +232,7 @@ question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rende
 [0] C'est la preuve que le monde est dirigé par une oligarchie financière : ces gens décident pour nous
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
-[0] Il faut supprimer les droits de succession : ce que les parents ont gagné appartient à leurs enfants
+[1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
 
 
 Gouvernance et République:
@@ -248,7 +248,7 @@ question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les électi
 [0] Oui, la proportionnelle intégrale : chaque voix doit compter, c'est ça la vraie démocratie
 
 question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
-[0] Il faut un référendum d'initiative citoyenne (RIC) sur tous les sujets, y compris pour révoquer un élu
+[1] Il faudrait organiser des référendums plus souvent, au moins un ou deux par quinquennat
 
 question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
 [0] Le système est paralysé par la bureaucratie, c'est devenu invivable

@@ -5,7 +5,7 @@ Affaires étrangères:
 
 
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
-[4] Cesser tout soutien à l'Ukraine et jouer un rôle de médiation avec la Russie
+[2] Soutenir l'Ukraine mais pousser activement pour des négociations de paix
 
 question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
 [0] Sortir de l'OTAN et de la plupart des alliances militaires
