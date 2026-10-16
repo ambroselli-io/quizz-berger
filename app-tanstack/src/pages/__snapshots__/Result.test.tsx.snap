@@ -42,6 +42,11 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     "percent": 80,
     "pseudos": [
       "François Ruffin",
+    ],
+  },
+  {
+    "percent": 80,
+    "pseudos": [
       "Sylvain Durif",
     ],
   },
@@ -64,7 +69,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 74,
+    "percent": 73,
     "pseudos": [
       "Emmanuel Maurel",
     ],
@@ -94,7 +99,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 67,
+    "percent": 66,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -124,7 +129,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 61,
+    "percent": 60,
     "pseudos": [
       "Antoine Mikolajczak",
     ],
@@ -160,7 +165,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 54,
     "pseudos": [
       "Karim Bouamrane",
     ],
@@ -184,7 +189,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 49,
+    "percent": 48,
     "pseudos": [
       "François Bayrou",
     ],
@@ -220,13 +225,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 35,
+    "percent": 34,
     "pseudos": [
       "Olivier Becht",
     ],
   },
   {
-    "percent": 33,
+    "percent": 32,
     "pseudos": [
       "Gabriel Attal",
     ],
@@ -238,7 +243,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 28,
+    "percent": 27,
     "pseudos": [
       "Xavier Bertrand",
     ],
