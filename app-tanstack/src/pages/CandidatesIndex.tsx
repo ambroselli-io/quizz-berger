@@ -1,5 +1,5 @@
 import { Link } from '@app/lib/router';
-import { candidateSlugMap, candidatesCount } from '@app/utils/seo';
+import { candidateSlugMap, candidatesCount, candidateThumb } from '@app/utils/seo';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import { getCandidacyStatus, declaredCount, withdrawnCount } from '@app/utils/candidacies';
 import CandidacyTag, { STATUS_TAG } from '@app/components/CandidacyTag';
@@ -36,7 +36,7 @@ export default function CandidatesIndex() {
                 >
                   {c.picture ? (
                     <img
-                      src={`/${c.picture}`}
+                      src={candidateThumb(c.picture)}
                       alt={c.pseudo}
                       width={56}
                       height={56}

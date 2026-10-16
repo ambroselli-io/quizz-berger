@@ -79,7 +79,7 @@ tell you, so it is authored.
 ## Adding a candidate
 
 1. One entry in **all 3** `candidates-answers.json`, with an `answerIndex` for **every** question — a missing answer counts as "did not answer" and drags the score down silently.
-2. A picture (see Architecture), or `picture: ""` when no free portrait exists.
+2. A picture (see Architecture), or `picture: ""` when no free portrait exists, then `cd app-tanstack && npm run generate-candidate-thumbs` (112px WebP in `public/candidates/thumbs/`, used by every avatar list; the PNG is up to 800 KB) — `utils/seo-light.test.ts` fails without it.
 3. A party label in `partyBySlug` (`utils/seo-light.ts`), and their slug in the right party of `content/parties.ts` when it has an entry there.
 4. An entry in `content/candidacies.ts` — `utils/candidacies.test.ts` fails without it.
 5. The `.txt` export: write the first line by hand (party + factual role), then `node api-express/scripts/extract-all-answers.js`.

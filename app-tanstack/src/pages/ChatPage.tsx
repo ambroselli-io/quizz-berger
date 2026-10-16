@@ -6,7 +6,7 @@ import Loader from '@app/components/Loader';
 import LoginContainer from '@app/components/LoginContainer';
 import QuizzModal from '@app/components/QuizzModal';
 import ModalDonation from '@app/components/modals/ModalDonation';
-import { candidateSlugMap, type CandidateSlugEntry } from '@app/utils/seo-light';
+import { candidateSlugMap, candidateThumb, type CandidateSlugEntry } from '@app/utils/seo-light';
 import { getCandidacyStatus } from '@app/utils/candidacies';
 import {
   AI_DISCLAIMER,
@@ -24,7 +24,7 @@ const isTouchDevice = () => typeof window !== 'undefined' && window.matchMedia('
 const CandidateAvatar = ({ candidate, size }: { candidate: CandidateSlugEntry; size: number }) =>
   candidate.picture ? (
     <img
-      src={`/${candidate.picture}`}
+      src={candidateThumb(candidate.picture)}
       alt=""
       width={size}
       height={size}
