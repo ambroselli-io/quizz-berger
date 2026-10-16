@@ -6006,7 +6006,7 @@
       {
         "themeId": "theme-2027-agriculture",
         "questionId": "question-2027-agri-05",
-        "answerIndex": 3
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-climat",
@@ -6116,7 +6116,7 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-03",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-immigration",
@@ -6226,7 +6226,7 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-03",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -6291,7 +6291,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-01",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-police",
@@ -6381,7 +6381,7 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-05",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -6406,7 +6406,7 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-01",
-        "answerIndex": 4
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -6616,7 +6616,7 @@
       {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-04",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-union-europeenne-2027",
@@ -6656,7 +6656,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-07",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -6831,7 +6831,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-dominique-de-villepin",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -6896,7 +6896,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-benoit-mathieu",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -24549,7 +24549,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-le-pen",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
@@ -43314,7 +43314,7 @@
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",
         "questionId": "question-2027-gagnait-marine-le-pen",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-et-si-un-autre-gagnait-2027",

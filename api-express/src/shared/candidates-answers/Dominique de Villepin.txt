@@ -574,7 +574,7 @@ question-2027-gagnait-nicolas-dupont-aignan: Si Nicolas Dupont-Aignan était él
 [3] Plutôt mécontent(e)
 
 question-2027-gagnait-marine-le-pen: Si Marine Le Pen était élue, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-edouard-philippe: Si Édouard Philippe était élu, quel serait votre sentiment ?
 [2] Neutre
