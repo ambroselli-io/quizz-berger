@@ -165,6 +165,9 @@ question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées p
 question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [4] Il ne faut aucun accord de ce type : chacun doit pouvoir demander l'asile où il le souhaite
 
+question-2027-immi-11: Faut-il revoir le droit du sol (l'acquisition de la nationalité française par la naissance en France) ?
+[0] Il faut en élargir l'accès : la naissance en France devrait suffire, sans conditions de résidence des parents
+
 
 Dépenses et dette publiques:
 
