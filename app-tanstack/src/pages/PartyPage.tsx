@@ -11,7 +11,7 @@ import {
   themeProseLabel,
   capitalize,
 } from '@app/utils/parties';
-import { themeSlugMap, candidatesCount } from '@app/utils/seo';
+import { themeSlugMap, candidatesCount, candidateThumb } from '@app/utils/seo';
 import { quizzQuestionsCount } from '@app/utils/quizz';
 import { getPollingForCandidate, formatMonthLong, formatPercent, sondagesData } from '@app/utils/sondages';
 import Footer from '@app/components/Footer';
@@ -119,7 +119,7 @@ export default function PartyPage() {
                 >
                   {candidate.picture ? (
                     <img
-                      src={`/${candidate.picture}`}
+                      src={candidateThumb(candidate.picture)}
                       alt={candidate.pseudo}
                       width={56}
                       height={56}

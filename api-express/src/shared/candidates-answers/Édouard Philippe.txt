@@ -51,7 +51,7 @@ Agriculture et alimentation:
 
 
 question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
-[1] Il faut en sortir progressivement, sans mettre en danger la production alimentaire
+[2] Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative
 
 question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
 [1] Il faut mieux partager l'eau entre agriculture, industrie et particuliers, avec des restrictions en période de sécheresse
@@ -185,7 +185,7 @@ question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'
 [1] C'est préoccupant, il faut la réduire progressivement par des économies
 
 question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
-[2] Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine
+[1] On peut être en déficit tant que c'est raisonnable et que ça finance des investissements utiles
 
 question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?
 [2] Le niveau d'investissement actuel est correct
@@ -260,7 +260,7 @@ question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 [3] L'État n'est pas assez ferme, il faut plus d'autorité pour que les lois soient respectées
 
 question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
-[2] Une réduction modérée est possible, mais elle doit protéger la représentation des territoires
+[1] Oui, une réduction significative, dans le cadre d'une réforme institutionnelle plus large pour un Parlement plus efficace
 
 question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
 [3] Oui : les élections ont lieu et les élus appliquent leur mandat, c'est le fonctionnement normal d'une démocratie représentative
@@ -397,7 +397,7 @@ Pouvoir d'achat et vie quotidienne:
 
 
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
-[1] Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose
+[2] Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose
 
 question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
 [1] Aider temporairement les ménages modestes (chèque énergie), sans toucher aux prix ni aux taxes
@@ -419,7 +419,7 @@ Recherche et éducation:
 
 
 question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
-[2] Le budget est suffisant, il faut surtout mieux dépenser l'argent existant
+[1] Il faut investir davantage dans l'éducation, c'est l'investissement le plus rentable pour une société
 
 question-2027-edu-02: L'école permet-elle vraiment de s'élever socialement ?
 [2] L'école reste un formidable ascenseur social, la méritocratie républicaine fonctionne

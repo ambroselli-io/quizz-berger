@@ -51,7 +51,7 @@ Agriculture et alimentation:
 
 
 question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
-[2] Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative
+[3] Les pesticides sont indispensables pour nourrir la population, il faut arrêter de les diaboliser
 
 question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
 [2] Il faut construire des retenues d'eau et des bassines pour que les agriculteurs puissent continuer à travailler
@@ -185,7 +185,7 @@ question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'
 [0] C'est une catastrophe, il faut un plan de rigueur pour rembourser cette dette
 
 question-2027-dep-05: La France devrait-elle viser un budget à l'équilibre ?
-[3] Il faut être en excédent pour rembourser la dette et préparer l'avenir
+[2] Il faudrait viser l'équilibre budgétaire, c'est la base d'une gestion saine
 
 question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissement (infrastructures, transition écologique, recherche, numérique) ?
 [1] Il faut recentrer les investissements publics sur quelques priorités et arrêter de tout financer
@@ -235,7 +235,7 @@ question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rende
 [3] Ce sont des lieux essentiels où la France doit montrer sa compétitivité et son attractivité
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
-[0] Il faut supprimer les droits de succession : ce que les parents ont gagné appartient à leurs enfants
+[1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
 
 
 Gouvernance et République:
@@ -291,7 +291,7 @@ question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
 [3] C'est une atteinte au droit de propriété qu'on ne devrait jamais autoriser
 
 question-2027-log-10: Faut-il assouplir les règles pour construire plus de logements ?
-[1] Oui : il faut simplifier les permis et alléger les normes pour construire plus vite
+[0] Oui, radicalement : il faut supprimer l'objectif ZAN et la plupart des normes de construction
 
 question-2027-log-11: Que faire des aides au logement pour les ménages (APL, prêt à taux zéro) ?
 [1] Les réduire et les réserver à ceux qui en ont vraiment besoin
@@ -397,7 +397,7 @@ Pouvoir d'achat et vie quotidienne:
 
 
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
-[2] Réduire les dépenses publiques et le déficit pour assainir les finances de l'État
+[3] Réduire les dépenses publiques et le déficit pour assainir les finances de l'État
 
 question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
 [0] Ne pas intervenir : c'est le marché qui fixe les prix

@@ -5,7 +5,7 @@ Affaires étrangères:
 
 
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
-[4] Cesser tout soutien à l'Ukraine et jouer un rôle de médiation avec la Russie
+[2] Soutenir l'Ukraine mais pousser activement pour des négociations de paix
 
 question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
 [0] Sortir de l'OTAN et de la plupart des alliances militaires
@@ -397,7 +397,7 @@ Pouvoir d'achat et vie quotidienne:
 
 
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
-[0] Encadrer les marges des entreprises et plafonner les prix des produits essentiels
+[1] Indexer les salaires sur l'inflation
 
 question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
 [3] Bloquer les prix par la loi et imposer des tarifs plafonnés aux fournisseurs

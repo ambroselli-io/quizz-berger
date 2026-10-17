@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, it, expect } from 'vitest';
 import candidatesData from '@app/shared/candidates-answers.json';
 import candidatesLight from '@app/content/candidates-light.json';
@@ -13,5 +15,12 @@ describe('seo-light', () => {
     expect(seo.candidateSlugMap.map(({ answers: _answers, ...light }) => light)).toEqual(seoLight.candidateSlugMap);
     expect(seo.candidateSlugMap.every((c) => c.answers.length > 0)).toBe(true);
     expect(seo.candidatesCount).toBe(candidatesData.length);
+  });
+
+  it('every candidate picture has its avatar thumbnail (run `npm run generate-candidate-thumbs`)', () => {
+    const missing = seoLight.candidateSlugMap
+      .filter((c) => c.picture && !existsSync(join(import.meta.dirname, '../../public', seoLight.candidateThumb(c.picture))))
+      .map((c) => c.pseudo);
+    expect(missing).toEqual([]);
   });
 });

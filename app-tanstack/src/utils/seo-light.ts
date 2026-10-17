@@ -68,6 +68,9 @@ export const candidateSlugMap: CandidateSlugEntry[] = candidatesLight.map((c) =>
 
 export const candidatesCount = candidateSlugMap.length;
 
+// 112px WebP from scripts/generate-candidate-thumbs.ts, for avatars (the source PNGs weigh up to 800 KB).
+export const candidateThumb = (picture: string) => `/${picture.replace(/^candidates\/(.+)\.png$/, 'candidates/thumbs/$1.webp')}`;
+
 export function getCandidateBySlug(slug: string): CandidateSlugEntry | undefined {
   return candidateSlugMap.find((c) => c.slug === slug);
 }

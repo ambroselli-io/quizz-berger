@@ -397,7 +397,7 @@ Pouvoir d'achat et vie quotidienne:
 
 
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
-[1] Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose
+[2] Rien, c'est un problème mondial lié aux crises, on n'y peut pas grand-chose
 
 question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
 [2] Baisser durablement les taxes sur l'électricité et le gaz (TVA, accise)

@@ -5,7 +5,7 @@ Affaires étrangères:
 
 
 question-2027-ae-01: Que devrait faire la France face à la guerre en Ukraine ?
-[4] Cesser tout soutien à l'Ukraine et jouer un rôle de médiation avec la Russie
+[3] Réduire notre soutien, sans le couper complètement
 
 question-2027-ae-02: Quel avenir pour la relation entre la France et l'OTAN ?
 [1] Sortir du commandement intégré de l'OTAN, garder le reste
@@ -23,7 +23,7 @@ question-2027-ae-06: Face à la montée en puissance de la Chine, que doit faire
 [2] Relations pragmatiques : commerce maintenu, distance politique
 
 question-2027-ae-07: Quel rôle économique la France doit-elle jouer en Afrique ?
-[3] Réduire fortement notre engagement économique
+[2] Repenser les partenariats sur une base égalitaire (sortir de la Françafrique)
 
 question-2027-ae-08: Dans le conflit Israël / Palestine, où vous situez-vous ?
 [1] Plutôt du côté d'Israël, tout en regrettant les pertes civiles palestiniennes
@@ -35,7 +35,7 @@ question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Pal
 [2] Non, ce n'était pas le bon moment
 
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
-[1] Approuver le résultat, mais regretter une intervention menée sans mandat international
+[3] Condamner une violation du droit international et de la souveraineté d'un État
 
 question-2027-ae-12: Face à la rivalité stratégique et commerciale entre les États-Unis et la Chine, quelle doit être la position de la France ?
 [2] Défendre une autonomie stratégique européenne et ne pas suivre Washington
@@ -51,7 +51,7 @@ Agriculture et alimentation:
 
 
 question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
-[2] Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative
+[3] Les pesticides sont indispensables pour nourrir la population, il faut arrêter de les diaboliser
 
 question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
 [2] Il faut construire des retenues d'eau et des bassines pour que les agriculteurs puissent continuer à travailler
@@ -63,7 +63,7 @@ question-2027-agri-04: La France devrait-elle viser l'indépendance alimentaire 
 [3] C'est aussi stratégique que la défense nationale : la France doit pouvoir nourrir sa population sans dépendre de personne
 
 question-2027-agri-05: Quel rapport devrions-nous avoir avec l'élevage et la consommation de viande ?
-[3] Maintenir le cadre actuel
+[4] Cesser de stigmatiser l'élevage et la consommation de viande
 
 
 Climat, Énergie et Écologie:
@@ -73,7 +73,7 @@ question-2027-climat-01: Comment vous positionnez-vous face au changement climat
 [1] Le climat change, mais les mesures écologistes pénalisent les gens modestes pour pas grand-chose
 
 question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
-[1] Maintenir et développer modérément le parc existant
+[0] Construire massivement de nouvelles centrales nucléaires
 
 question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
 [1] C'est pas la priorité, il y a des solutions plus efficaces comme le nucléaire
@@ -145,7 +145,7 @@ question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la
 [0] L'immigration est un danger pour notre identité et notre culture, on risque de ne plus se reconnaître chez nous
 
 question-2027-immi-03: Que pensez-vous de la politique migratoire européenne (Schengen) ?
-[0] La France doit reprendre le contrôle total de ses frontières et sortir de Schengen
+[1] Il faut renforcer drastiquement les contrôles aux frontières de l'Europe et remettre des contrôles dans Schengen
 
 question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant en France ?
 [0] Voter c'est pour les Français, point. Si tu veux voter, tu deviens français
@@ -235,7 +235,7 @@ question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rende
 [0] C'est la preuve que le monde est dirigé par une oligarchie financière : ces gens décident pour nous
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
-[0] Il faut supprimer les droits de succession : ce que les parents ont gagné appartient à leurs enfants
+[1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
 
 
 Gouvernance et République:
@@ -248,10 +248,10 @@ question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationa
 [0] C'était irresponsable et antidémocratique, il faut limiter ce pouvoir du Président
 
 question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
-[0] Oui, la proportionnelle intégrale : chaque voix doit compter, c'est ça la vraie démocratie
+[1] Oui, au moins une dose de proportionnelle pour que les petits partis soient représentés
 
 question-2027-gouv-04: Que pensez-vous du référendum et de la démocratie directe ?
-[0] Il faut un référendum d'initiative citoyenne (RIC) sur tous les sujets, y compris pour révoquer un élu
+[1] Il faudrait organiser des référendums plus souvent, au moins un ou deux par quinquennat
 
 question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration française ?
 [0] Le système est paralysé par la bureaucratie, c'est devenu invivable
@@ -320,7 +320,7 @@ Police, Justice et Sécurité:
 
 
 question-2027-pol-01: Que pensez-vous des violences policières ?
-[0] Il n'existe pas de violences policières
+[1] Quelques dérapages, mais rien de structurel
 
 question-2027-pol-02: La France est-elle un pays sûr ?
 [0] On n'est plus en sécurité nulle part, l'État a complètement failli
@@ -378,7 +378,7 @@ question-2027-fisc-04: Que pensez-vous de l'évasion fiscale des multinationales
 [1] Il faut sanctionner durement les entreprises qui trichent, avec de grosses amendes
 
 question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la Fortune) ?
-[3] Non, l'ISF faisait fuir les riches et détruisait de la richesse
+[1] Oui, il faut rétablir un ISF, éventuellement avec un volet climatique
 
 question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
 [1] Une petite taxe pourrait rapporter gros sans gêner les marchés, pourquoi s'en priver ?
@@ -397,7 +397,7 @@ Pouvoir d'achat et vie quotidienne:
 
 
 question-2027-pa-01: Pour lutter contre l'inflation et la hausse des prix, quelle serait la première chose à faire ?
-[3] Sortir de l'euro et retrouver notre souveraineté monétaire
+[0] Encadrer les marges des entreprises et plafonner les prix des produits essentiels
 
 question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, que devrait faire l'État ?
 [2] Baisser durablement les taxes sur l'électricité et le gaz (TVA, accise)
@@ -549,7 +549,7 @@ question-2027-ue-02: Que pensez-vous du pouvoir de la Commission européenne par
 [0] Les parlements nationaux doivent reprendre le pouvoir — la Commission a trop d'influence non élue
 
 question-2027-ue-04: Que pensez-vous du lobbying et de la corruption au niveau européen ?
-[0] L'UE est corrompue jusqu'à la moelle, c'est une des raisons de sortir — les lobbies dirigent tout
+[1] Il y a un vrai problème de lobbying à Bruxelles, il faut des règles beaucoup plus strictes
 
 question-2027-ue-05: Que pensez-vous de l'euro ?
 [1] L'euro pose des problèmes structurels mais en sortir serait trop risqué — il faut réformer la zone euro
@@ -613,7 +613,7 @@ question-2027-gagnait-eric-zemmour: Si Éric Zemmour était élu, quel serait vo
 [2] Neutre
 
 question-2027-gagnait-dominique-de-villepin: Si Dominique de Villepin était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-juan-branco: Si Juan Branco était élu, quel serait votre sentiment ?
 [4] Très mécontent(e)
@@ -652,7 +652,7 @@ question-2027-gagnait-sylvain-durif: Si Sylvain Durif était élu, quel serait v
 [4] Très mécontent(e)
 
 question-2027-gagnait-benoit-mathieu: Si Benoît Mathieu était élu, quel serait votre sentiment ?
-[3] Plutôt mécontent(e)
+[2] Neutre
 
 question-2027-gagnait-olivier-becht: Si Olivier Becht était élu, quel serait votre sentiment ?
 [3] Plutôt mécontent(e)
