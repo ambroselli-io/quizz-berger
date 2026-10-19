@@ -355,7 +355,7 @@ question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
 question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
 [2] Durcir les peines encourues pour les violences et dégradations commises en manifestation
 
-question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
 [2] Garder l'arsenal et les règles d'usage actuels
 
 

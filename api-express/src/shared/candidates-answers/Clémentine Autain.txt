@@ -355,7 +355,7 @@ question-2027-pol-12: Que pensez-vous de la violence de certains manifestants ?
 question-2027-pol-13: Une fois des violences ou des dégradations commises en manifestation, quelle réponse de la justice ?
 [1] Poursuivre les auteurs au cas par cas, avec les lois actuelles
 
-question-2027-pol-14: Comment la police doit-elle encadrer les manifestations ?
+question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
 [0] Retirer toutes les armes du maintien de l'ordre : LBD, grenades et gaz lacrymogène
 
 
