@@ -405,7 +405,10 @@ export default function ResultScreen() {
           {podiumLoading ? (
             <PodiumSkeleton maxBarHeight={240} />
           ) : (
-            <Podium podiumised={getPodium(importantPersons)} />
+            <Podium
+              podiumised={getPodium(importantPersons)}
+              linkParams={publicPage ? undefined : { importantOnly: true }}
+            />
           )}
         </View>
       )}
@@ -424,7 +427,11 @@ export default function ResultScreen() {
           ))
         : podiumsPerTheme.map(({ personsScore, themeId }) => (
             <View key={themeId} className="h-[300px]">
-              <Podium podiumised={getPodium(personsScore)} title={quizz.find((t) => t._id === themeId)?.fr} />
+              <Podium
+                podiumised={getPodium(personsScore)}
+                title={quizz.find((t) => t._id === themeId)?.fr}
+                linkParams={{ themeId }}
+              />
             </View>
           ))}
     </ScrollView>

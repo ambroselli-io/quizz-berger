@@ -12,9 +12,10 @@ type Nav = NativeStackNavigationProp<RootStackParamList>;
 interface PodiumProps {
   podiumised: PodiumDataWithPercentAndHeightAndHighest[];
   title?: string;
+  linkParams?: { themeId?: string; importantOnly?: boolean };
 }
 
-const Podium = ({ podiumised, title }: PodiumProps) => {
+const Podium = ({ podiumised, title, linkParams }: PodiumProps) => {
   const navigation = useNavigation<Nav>();
   const { width } = useWindowDimensions();
   const maxPersons = useMemo(() => getMaxPersons(podiumised), [podiumised]);
@@ -84,7 +85,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
                 {pseudos.map((pseudo) => (
                   <Pressable
                     key={pseudo}
-                    onPress={() => navigation.navigate("AllQuestions", { candidatePseudo: pseudo })}
+                    onPress={() => navigation.navigate("AllQuestions", { candidatePseudo: pseudo, ...linkParams })}
                   >
                     <Text className="text-center text-[10px] text-blue-700 underline" numberOfLines={1}>
                       {pseudo}

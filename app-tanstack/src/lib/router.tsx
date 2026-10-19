@@ -17,7 +17,7 @@ import {
 } from '@tanstack/react-router';
 
 type AnyProps = Record<string, unknown>;
-type LinkProps = { to: string } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>;
+type LinkProps = { to: string; search?: AnyProps } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>;
 
 /** Link accepting a plain string `to` (e.g. `/candidat/marine-le-pen`). */
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link({ to, ...rest }, ref) {

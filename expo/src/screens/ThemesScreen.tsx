@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { View, Text, FlatList, TextInput, Alert } from 'react-native';
+import { View, Text, FlatList, TextInput, Alert, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '~/types/navigation';
@@ -70,6 +70,14 @@ export default function ThemesScreen() {
     }
   };
 
+  const importantAnswers = useMemo(() => userAnswers.filter((a) => a.isImportant), [userAnswers]);
+  const goToImportantQuestions = () => {
+    const first = quizz
+      .flatMap((t) => t.questions.map((q) => ({ themeId: t._id, questionId: q._id })))
+      .find((q) => importantAnswers.some((a) => a.questionId === q.questionId));
+    if (first) navigation.navigate('Question', { ...first, importantOnly: true });
+  };
+
   const goToResults = () => {
     if (!userThemes.length) return;
     navigation.navigate('Result', undefined);
@@ -118,6 +126,19 @@ export default function ThemesScreen() {
               autoCorrect={false}
               returnKeyType="search"
             />
+            {importantAnswers.length > 0 && (
+              <Pressable
+                onPress={goToImportantQuestions}
+                accessibilityRole="button"
+                className="mt-4 items-center rounded-lg border-2 px-6 py-4"
+                style={{ borderColor: '#facc15', backgroundColor: '#fef9c3', borderCurve: 'continuous' }}
+              >
+                <Text className="text-sm text-black">★ Questions importantes pour moi</Text>
+                <Text className="mt-1 self-end text-[10px] text-black">
+                  {importantAnswers.length} question{importantAnswers.length > 1 ? 's' : ''}
+                </Text>
+              </Pressable>
+            )}
           </View>
         }
         ListFooterComponent={

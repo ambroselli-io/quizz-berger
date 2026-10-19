@@ -398,7 +398,10 @@ export default function Result() {
                 {importantAnswers.length > 1 ? 's' : ''}.
               </p>
               <div className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
-                <Podium podiumised={getPodium(importantPersons, true)} />
+                <Podium
+                  podiumised={getPodium(importantPersons, true)}
+                  linkSearch={publicPage ? undefined : { importantes: 1 }}
+                />
               </div>
             </>
           ) : (
@@ -453,7 +456,11 @@ export default function Result() {
         <aside className="mx-0">
           {podiumsPerTheme.map(({ personsScore, themeId }) => (
             <div key={themeId} className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
-              <Podium podiumised={getPodium(personsScore)} title={quizz.find((t) => t._id === themeId)?.fr} />
+              <Podium
+                podiumised={getPodium(personsScore)}
+                title={quizz.find((t) => t._id === themeId)?.fr}
+                linkSearch={{ theme: themeId }}
+              />
             </div>
           ))}
         </aside>

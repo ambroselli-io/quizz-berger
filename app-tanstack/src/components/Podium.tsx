@@ -24,9 +24,11 @@ interface PodiumProps {
     percent: number;
   }>;
   title?: string;
+  /** Query string of the candidate links, so /all-questions shows the questions this podium was computed on. */
+  linkSearch?: Record<string, string | number>;
 }
 
-const Podium = ({ podiumised, title }: PodiumProps) => {
+const Podium = ({ podiumised, title, linkSearch }: PodiumProps) => {
   const maxPersons = useMemo(
     () => podiumised.reduce((max, step) => Math.max(step.pseudos?.length ?? 0, max), 0),
     [podiumised],
@@ -92,6 +94,7 @@ const Podium = ({ podiumised, title }: PodiumProps) => {
                 <span key={pseudo}>
                   <Link
                     to={`/all-questions/${pseudo}`}
+                    search={linkSearch}
                     className="cursor-pointer text-[0.65rem] text-blue-700 underline hover:font-bold max-lg:text-[0.55rem]"
                   >
                     {pseudo}

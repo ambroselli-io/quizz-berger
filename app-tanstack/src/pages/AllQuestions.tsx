@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Link, useParams } from '@app/lib/router';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useLocation, useParams } from '@app/lib/router';
 import Loader from '@app/components/Loader';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@app/components/ui/accordion';
 import getUserThemes from '@app/utils/getUserThemes';
@@ -8,10 +8,32 @@ import { quizz, quizzDownload, quizzQuestionsCount } from '@app/utils/quizz';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import useCandidates from '@app/hooks/useCandidates';
 import useFriends from '@app/hooks/useFriends';
-import type { Candidate } from '@app/types/quizz';
+import type { Candidate, QuizzQuestion, QuizzTheme } from '@app/types/quizz';
 import { readableTextColor } from '@app/utils/contrast';
 
 const API_URL = import.meta.env.DEV ? 'http://localhost:5179' : 'https://api.quizz-du-berger.com';
+
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const IMPORTANT_SECTION_ID = 'importantes';
+const IMPORTANT_COLOR = '#facc15';
+
+interface Section {
+  id: string;
+  title: string;
+  color?: string;
+  questions: { question: QuizzQuestion; theme: QuizzTheme; label: string }[];
+}
+
+const themeSections: Section[] = quizz.map((theme, index) => ({
+  id: theme._id,
+  title: `${LETTERS[index]} - ${theme.fr}`,
+  color: theme.backgroundColor,
+  questions: theme.questions.map((question, questionIndex) => ({
+    question,
+    theme,
+    label: `${LETTERS[index]}${questionIndex + 1}`,
+  })),
+}));
 
 export default function AllQuestions() {
   const { candidatePseudo } = useParams<{ candidatePseudo?: string }>();
@@ -20,6 +42,10 @@ export default function AllQuestions() {
   const { userAnswers } = useUserAnswers();
   const { candidates } = useCandidates();
   const { friends } = useFriends();
+  // Podium links from /result: ?theme={themeId} for a theme podium, ?importantes=1 for the starred one.
+  const search = useLocation().search as { theme?: string; importantes?: unknown };
+  const themeFilter = themeSections.find((s) => s.id === search?.theme);
+  const importantOnly = !themeFilter && Boolean(search?.importantes);
 
   const [candidateAnswers, setCandidatesAnswers] = useState<Candidate | null>(null);
   const [userThemes, setUserThemes] = useState<string[]>([]);
@@ -53,10 +79,42 @@ export default function AllQuestions() {
     setIsLoading(forCandidate && !candidateAnswers?.pseudo);
   }, [forCandidate, candidateAnswers?.pseudo]);
 
+  const importantIds = userAnswers.filter((a) => a.isImportant).map((a) => a.questionId).join(',');
+  const sections = useMemo(() => {
+    if (themeFilter) return [themeFilter];
+    const ids = importantIds.split(',');
+    const importantSection: Section = {
+      id: IMPORTANT_SECTION_ID,
+      title: 'Questions importantes pour moi',
+      color: IMPORTANT_COLOR,
+      questions: themeSections.flatMap((s) => s.questions).filter((q) => ids.includes(q.question._id)),
+    };
+    if (importantOnly) return [importantSection];
+    return importantSection.questions.length ? [importantSection, ...themeSections] : themeSections;
+  }, [themeFilter, importantOnly, importantIds]);
+  const isFiltered = !!themeFilter || importantOnly;
+  const isSectionOpen = (section: Section) =>
+    forCandidate && (isFiltered || section.id === IMPORTANT_SECTION_ID || !userThemes.length || userThemes.includes(section.id));
+  const isQuestionOpen = (question: QuizzQuestion) =>
+    forCandidate && (!userAnswersId.length || userAnswersId.includes(question._id));
+
   // The candidate view is noindex; only the plain list targets "N questions pour 2027".
-  const heading = forCandidate
-    ? `Les ${quizzQuestionsCount} questions vues par ${candidateAnswers?.pseudo || candidatePseudo}`
-    : `${quizzQuestionsCount} questions pour 2027`;
+  const candidateName = candidateAnswers?.pseudo || candidatePseudo;
+  const heading = !forCandidate
+    ? `${quizzQuestionsCount} questions pour 2027`
+    : themeFilter
+      ? `${quizz.find((t) => t._id === themeFilter.id)?.fr} : les réponses de ${candidateName}`
+      : importantOnly
+        ? `Vos questions importantes : les réponses de ${candidateName}`
+        : `Les ${quizzQuestionsCount} questions vues par ${candidateName}`;
+  const seeAllLink = forCandidate && isFiltered && (
+    <Link to={`/all-questions/${candidatePseudo}`} className="underline">
+      Voir toutes les questions
+    </Link>
+  );
+  const emptyImportant = importantOnly && !sections[0].questions.length && (
+    <p className="mb-6 text-center text-sm text-gray-600">Vous n'avez marqué aucune question comme importante.</p>
+  );
 
   return (
     <>
@@ -71,27 +129,30 @@ export default function AllQuestions() {
             {user?._id ? ', encadré : vos réponses.' : '.'}
           </p>
         )}
+        {seeAllLink && <p className="mb-4 text-center text-sm">{seeAllLink}</p>}
+        {emptyImportant}
         <Accordion
+          key={`${sections.map((section) => section.id).join()}-${userThemes.length}`}
           type="multiple"
-          defaultValue={forCandidate ? quizz.filter((t) => !userThemes.length || userThemes.includes(t._id)).map((t) => t._id) : []}
+          defaultValue={sections.filter(isSectionOpen).map((section) => section.id)}
         >
-          {quizz.map((theme, themeIndex) => (
-            <AccordionItem key={theme._id} value={theme._id}>
+          {sections.map((section) => (
+            <AccordionItem key={section.id} value={section.id}>
               <AccordionTrigger className="px-2 py-3 text-left text-base font-semibold">
                 <span className="flex items-center gap-2 text-left">
-                  <span className="inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: theme.backgroundColor }} />
-                  {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]} - {theme.fr}
+                  <span className="inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: section.color }} />
+                  {section.title}
                 </span>
               </AccordionTrigger>
               <AccordionContent className="px-0">
                 <Accordion
                   type="multiple"
-                  defaultValue={forCandidate ? theme.questions.filter((q) => !userAnswersId.length || userAnswersId.includes(q._id)).map((q) => q._id) : []}
+                  defaultValue={section.questions.filter(({ question }) => isQuestionOpen(question)).map(({ question }) => question._id)}
                 >
-                  {theme.questions.map((question, questionIndex) => (
+                  {section.questions.map(({ question, theme, label }) => (
                     <AccordionItem key={question._id} value={question._id} className="border-b-0">
                       <AccordionTrigger className="py-2 pl-4 pr-2 text-left text-sm font-medium" style={{ borderLeftWidth: 3, borderLeftColor: theme.backgroundColor }}>
-                        {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]}{questionIndex + 1} - {question.fr}
+                        {label} - {question.fr}
                       </AccordionTrigger>
                       <AccordionContent className="pl-5 pr-2">
                         <ol className="list-none space-y-1.5 text-sm">
@@ -149,6 +210,12 @@ export default function AllQuestions() {
                   <Link to={`/result/${candidateAnswers?.pseudo}`}>ici</Link>
                 </b>{' '}
                 pour voir le graphique des ses résultats.
+                {seeAllLink && (
+                  <>
+                    <br />
+                    {seeAllLink}
+                  </>
+                )}
               </>
             )}
             <br /><br />
@@ -159,30 +226,24 @@ export default function AllQuestions() {
               en cliquant ici
             </a>
           </h3>
-          {quizz.map((theme, index) => (
-            <details
-              open={forCandidate && (!userThemes.length || userThemes.includes(theme._id))}
-              key={theme._id}
-            >
+          {emptyImportant}
+          {sections.map((section) => (
+            <details open={isSectionOpen(section)} key={section.id}>
               <summary className="cursor-pointer">
                 <h3 className="relative inline text-xl font-bold">
-                  {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index]} - {theme.fr}
+                  {section.title}
                   <span
                     className="absolute inset-x-0 -bottom-[7px] h-2.5 -skew-x-[18deg]"
-                    style={{ backgroundColor: `${theme.backgroundColor}${readableTextColor(theme.backgroundColor ?? '', 0.67) === '#000000' ? 'aa' : '40'}` }}
+                    style={{ backgroundColor: `${section.color}${readableTextColor(section.color ?? '', 0.67) === '#000000' ? 'aa' : '40'}` }}
                   />
                 </h3>
               </summary>
               <div>
-                {theme.questions.map((question, questionIndex) => (
-                  <details
-                    open={forCandidate && (!userAnswersId.length || userAnswersId.includes(question._id))}
-                    key={question._id}
-                  >
+                {section.questions.map(({ question, theme, label }) => (
+                  <details open={isQuestionOpen(question)} key={question._id}>
                     <summary className="ml-5 cursor-pointer">
                       <h4 className="relative inline text-base">
-                        {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[index]}
-                        {questionIndex + 1} - {question.fr}
+                        {label} - {question.fr}
                         <span
                           className="absolute inset-x-0 -bottom-[3px] h-[5px] skew-x-[18deg]"
                           style={{ backgroundColor: `${theme.backgroundColor}${readableTextColor(theme.backgroundColor ?? '', 0.67) === '#000000' ? 'aa' : '40'}` }}

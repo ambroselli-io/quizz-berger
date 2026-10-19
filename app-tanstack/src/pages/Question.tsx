@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
-import { useParams, useNavigate } from '@app/lib/router';
+import { useParams, useNavigate, useLocation } from '@app/lib/router';
 import { quizz } from '@app/utils/quizz';
 import { readableTextColor } from '@app/utils/contrast';
 import useUser from '@app/hooks/useUser';
@@ -17,6 +17,19 @@ export default function Question() {
     () => quizz.find((t) => t._id === themeId) ?? { _id: '', fr: '', backgroundColor: '', questions: [] },
     [themeId],
   );
+  // Coming from "Questions importantes pour moi" on /themes: next/previous walk the starred questions
+  // across themes. The current one stays in the list even once unstarred, so the walk doesn't lose its place.
+  const importantMode = Boolean((useLocation().search as { importantes?: unknown })?.importantes);
+  const path = useMemo(() => {
+    if (!importantMode) return theme.questions.map((q) => ({ themeId: theme._id, questionId: q._id }));
+    const importantIds = userAnswers.filter((a) => a.isImportant).map((a) => a.questionId);
+    return quizz.flatMap((t) =>
+      t.questions
+        .filter((q) => q._id === questionId || importantIds.includes(q._id))
+        .map((q) => ({ themeId: t._id, questionId: q._id })),
+    );
+  }, [importantMode, theme, userAnswers, questionId]);
+  const pathIndex = path.findIndex((q) => q.questionId === questionId);
   const questions = theme.questions;
   const headerTextColor = readableTextColor(theme.backgroundColor ?? '', 0.8);
 
@@ -61,21 +74,16 @@ export default function Question() {
   );
   const showResultsButton = userThemes.length > 0;
 
-  const goToNextQuestion = () => {
-    if (questionIndex < questions.length - 1) {
-      const nextQuestionId = questions[questionIndex + 1]._id;
-      return navigate(`/question/${themeId}/${nextQuestionId}`);
-    }
-    return navigate('/themes');
+  const goToPathQuestion = (index: number) => {
+    const target = path[index];
+    if (!target) return navigate('/themes');
+    return navigate({
+      to: `/question/${target.themeId}/${target.questionId}`,
+      search: importantMode ? { importantes: 1 } : {},
+    });
   };
-
-  const goToPreviousQuestion = () => {
-    if (questionIndex > 0) {
-      const previousQuestionId = questions[questionIndex - 1]._id;
-      return navigate(`/question/${themeId}/${previousQuestionId}`);
-    }
-    return navigate('/themes');
-  };
+  const goToNextQuestion = () => goToPathQuestion(pathIndex + 1);
+  const goToPreviousQuestion = () => goToPathQuestion(pathIndex - 1);
 
   const goToResults = () => navigate('/result');
   const goToThemes = () => navigate('/themes');
@@ -189,7 +197,7 @@ export default function Question() {
             <div className="mx-1 h-1 w-full rounded-lg bg-gray-100">
               <div
                 className="h-1 rounded-lg bg-quizz-dark"
-                style={{ width: `${(questionIndex / questions.length) * 100}%` }}
+                style={{ width: `${(pathIndex / path.length) * 100}%` }}
               />
             </div>
             <button
