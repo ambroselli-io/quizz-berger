@@ -113,7 +113,7 @@ function Layout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const fullScreenChat = isFullScreenChat(pathname);
   return (
-    <div className="flex h-full flex-col bg-white">
+    <div className="flex min-h-full flex-col bg-white">
       <div className={fullScreenChat ? 'max-lg:hidden' : undefined}>
         <Header />
       </div>
