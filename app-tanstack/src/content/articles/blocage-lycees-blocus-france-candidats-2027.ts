@@ -139,7 +139,7 @@ export const article: Article = {
 <ul>
 <li><a href="/question-politique/violences-en-manifestation-france">Que pensez-vous de la violence de certains manifestants ?</a> Légitime, compréhensible, condamnable ou injustifiable.</li>
 <li><a href="/question-politique/violences-casseurs-manifestations-france">Quelle réponse de la justice après des violences en manifestation ?</a> De l'amnistie aux peines planchers.</li>
-<li><a href="/question-politique/maintien-ordre-lbd-manifestations-france">Comment la police doit-elle encadrer les manifestations ?</a> LBD, grenades, gaz lacrymogène.</li>
+<li><a href="/question-politique/maintien-ordre-lbd-manifestations-france">Quelles armes la police doit-elle pouvoir utiliser en manifestation ?</a> LBD, grenades, gaz lacrymogène.</li>
 <li><a href="/question-politique/respect-volonte-electeurs-democratie-france">La démocratie française respecte-t-elle la volonté des électeurs ?</a> Le contexte de la colère.</li>
 <li><a href="/question-politique/ecole-education-reforme">Budget de l'Éducation nationale</a> : faut-il plus de moyens, ou mieux dépenser ceux qui existent ?</li>
 <li><a href="/question-politique/que-pensez-vous-de-parcoursup-et-de-l-acces-a-l-enseignement-superieur">Parcoursup et l'accès à l'enseignement supérieur</a>, l'une des revendications des lycéens.</li>

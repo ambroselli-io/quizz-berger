@@ -21,7 +21,7 @@ type Route = RouteProp<RootStackParamList, 'Question'>;
 export default function QuestionScreen() {
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
-  const { themeId, questionId } = route.params;
+  const { themeId, questionId, importantOnly } = route.params;
   const { quizz } = useQuizz();
   const { user } = useUser();
   const { userAnswers, setAnswer, setImportant } = useUserAnswers();
@@ -36,6 +36,18 @@ export default function QuestionScreen() {
     [questions, questionId],
   );
   const question = questions[questionIndex];
+
+  // The current question stays in the walk even once unstarred, so it doesn't lose its place.
+  const path = useMemo(() => {
+    if (!importantOnly) return questions.map((q) => ({ themeId, questionId: q._id }));
+    const importantIds = userAnswers.filter((a) => a.isImportant).map((a) => a.questionId);
+    return quizz.flatMap((t) =>
+      t.questions
+        .filter((q) => q._id === questionId || importantIds.includes(q._id))
+        .map((q) => ({ themeId: t._id, questionId: q._id })),
+    );
+  }, [importantOnly, questions, themeId, quizz, userAnswers, questionId]);
+  const pathIndex = path.findIndex((q) => q.questionId === questionId);
 
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState<number | undefined>(
     userAnswers.find((a) => a.questionId === questionId)?.answerIndex,
@@ -77,27 +89,18 @@ export default function QuestionScreen() {
     setShowFeedbackHint(true);
   }, [questionIndex]);
 
-  const goToNextQuestion = () => {
-    if (questionIndex < questions.length - 1) {
-      const nextQuestionId = questions[questionIndex + 1]._id;
-      navigation.setParams({ themeId, questionId: nextQuestionId });
-    } else {
-      navigation.popTo('Themes');
-    }
+  const goToPathQuestion = (index: number) => {
+    const target = path[index];
+    if (target) navigation.setParams({ ...target, importantOnly });
+    else navigation.popTo('Themes');
   };
-
-  const goToPreviousQuestion = () => {
-    if (questionIndex > 0) {
-      const prevQuestionId = questions[questionIndex - 1]._id;
-      navigation.setParams({ themeId, questionId: prevQuestionId });
-    } else {
-      navigation.popTo('Themes');
-    }
-  };
+  const goToNextQuestion = () => goToPathQuestion(pathIndex + 1);
+  const goToPreviousQuestion = () => goToPathQuestion(pathIndex - 1);
 
   const sendAnswer = async (answerIndex: number) => {
     setCurrentAnswerIndex(answerIndex);
     const finishesTheme =
+      !importantOnly &&
       questionIndex === questions.length - 1 &&
       questions.every((q) => q._id === questionId || userAnswers.some((a) => a.questionId === q._id));
     const saved = await setAnswer({
@@ -241,7 +244,7 @@ export default function QuestionScreen() {
           <Text className="text-2xl text-quizz-dark">‹</Text>
         </Pressable>
         <View className="mx-2 flex-1">
-          <ProgressBar progress={(questionIndex + 1) / questions.length} />
+          <ProgressBar progress={(pathIndex + 1) / path.length} />
         </View>
         <Pressable onPress={goToNextQuestion} className="px-4 py-2">
           <Text className="text-2xl text-quizz-dark">›</Text>

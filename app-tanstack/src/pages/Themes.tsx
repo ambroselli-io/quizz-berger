@@ -10,6 +10,7 @@ import QuizzButton from '@app/components/QuizzButton';
 import ModalFirstThemeSelection from '@app/components/modals/ModalFirstThemeSelection';
 import ModalAccessToResults from '@app/components/modals/ModalAccessToResults';
 import useUserAnswers from '@app/hooks/useUserAnswers';
+import { Star } from 'lucide-react';
 
 const filterBySearch = (search: string, searchIndex: string[]) => (_theme: unknown, index: number) => {
   if (!search) return true;
@@ -93,6 +94,14 @@ export default function ThemeSelect() {
     if (firstQuestionId) navigate(`/question/${themeId}/${firstQuestionId}`);
   };
 
+  const importantAnswers = userAnswers.filter((a) => a.isImportant);
+  const goToImportantQuestions = () => {
+    const first = quizz
+      .flatMap((t) => t.questions.map((q) => ({ themeId: t._id, questionId: q._id })))
+      .find((q) => importantAnswers.some((a) => a.questionId === q.questionId));
+    if (first) navigate({ to: `/question/${first.themeId}/${first.questionId}`, search: { importantes: 1 } });
+  };
+
   const alertTimeouts = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -147,6 +156,21 @@ export default function ThemeSelect() {
               vous le voulez. Vos réponses et résultats sont <strong>anonymes</strong>.
             </small>
           </h3>
+          {importantAnswers.length > 0 && (
+            <button
+              type="button"
+              onClick={goToImportantQuestions}
+              className="mb-5 flex w-[250px] cursor-pointer flex-col items-center rounded-lg border-2 border-yellow-400 bg-yellow-100 px-6 py-4 text-sm"
+            >
+              <span className="inline-flex items-center gap-1.5">
+                <Star size={14} className="text-yellow-500" fill="currentColor" />
+                Questions importantes pour moi
+              </span>
+              <span className="mt-1 ml-auto text-[0.65em] text-black">
+                {importantAnswers.length} question{importantAnswers.length > 1 ? 's' : ''}
+              </span>
+            </button>
+          )}
           <div className="mb-10 grid grid-cols-1 gap-5 lg:grid-cols-3">
             {shuffledQuizz
               .filter((t) => t._id !== 'theme-6211242a3f15af68d035215d')

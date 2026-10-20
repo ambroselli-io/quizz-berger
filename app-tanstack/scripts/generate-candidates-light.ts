@@ -1,6 +1,6 @@
 /**
  * Writes src/content/candidates-light.json: every candidate of candidates-answers.json, without the answers.
- * Run: npm run generate-candidates-light (also chained after generate-gagnait-theme).
+ * Run: npm run generate-candidates-light.
  *
  * The home page, the root layout and the route heads only need names, pictures and colours. Getting them from
  * candidates-answers.json shipped every candidate's answers (~800 kB) in the main bundle of every page.

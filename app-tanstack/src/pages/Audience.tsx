@@ -158,8 +158,7 @@ export default function Audience() {
   const botCount = (category: string) => data.bots.categories.find((c) => c.name === category)?.count ?? 0;
 
   return (
-    // The root layout is h-full: without its own background, whatever overflows it shows the dark <html>.
-    <div className="w-full bg-white">
+    <div className="w-full">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 p-8 max-lg:p-4">
         <header className="flex flex-col gap-3">
           <h1 className="font-[Merriweather] text-2xl font-bold">Audience</h1>

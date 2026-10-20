@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Text, ScrollView, ActivityIndicator } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import { View, Text, ScrollView, ActivityIndicator, Pressable } from 'react-native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '~/types/navigation';
 import getUserThemes from '~/utils/getUserThemes';
 import useQuizz from '~/hooks/useQuizz';
@@ -9,13 +10,25 @@ import useUser from '~/hooks/useUser';
 import useUserAnswers from '~/hooks/useUserAnswers';
 import useCandidates from '~/hooks/useCandidates';
 import useFriends from '~/hooks/useFriends';
-import type { Candidate } from '~/types/quizz';
+import type { Candidate, QuizzQuestion, QuizzTheme } from '~/types/quizz';
 
 type Route = RouteProp<RootStackParamList, 'AllQuestions'>;
 
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+interface Section {
+  id: string;
+  title: string;
+  color?: string;
+  questions: { question: QuizzQuestion; theme: QuizzTheme; label: string }[];
+}
+
 export default function AllQuestionsScreen() {
   const route = useRoute<Route>();
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, 'AllQuestions'>>();
   const candidatePseudo = route.params?.candidatePseudo;
+  const themeFilterId = route.params?.themeId;
+  const importantOnly = !themeFilterId && !!route.params?.importantOnly;
   const forCandidate = !!candidatePseudo;
   const { quizz } = useQuizz();
   const { user } = useUser();
@@ -34,6 +47,40 @@ export default function AllQuestionsScreen() {
     }
   }, [candidates, friends, candidatePseudo]);
 
+  const sections = useMemo(() => {
+    const themeSections: Section[] = quizz.map((theme, index) => ({
+      id: theme._id,
+      title: `${LETTERS[index]} - ${theme.fr}`,
+      color: theme.backgroundColor,
+      questions: theme.questions.map((question, questionIndex) => ({
+        question,
+        theme,
+        label: `${LETTERS[index]}${questionIndex + 1}`,
+      })),
+    }));
+    const themeSection = themeSections.find((section) => section.id === themeFilterId);
+    if (themeSection) return [themeSection];
+    const importantIds = userAnswers.filter((a) => a.isImportant).map((a) => a.questionId);
+    const importantSection: Section = {
+      id: 'importantes',
+      title: '★ Questions importantes pour moi',
+      color: '#facc15',
+      questions: themeSections.flatMap((section) => section.questions).filter((q) => importantIds.includes(q.question._id)),
+    };
+    if (importantOnly) return [importantSection];
+    return importantSection.questions.length ? [importantSection, ...themeSections] : themeSections;
+  }, [quizz, userAnswers, themeFilterId, importantOnly]);
+  const isFiltered = sections.length === 1;
+
+  const filterTitle = themeFilterId
+    ? quizz.find((t) => t._id === themeFilterId)?.fr
+    : importantOnly
+      ? 'Vos questions importantes'
+      : 'Toutes les questions';
+  useEffect(() => {
+    navigation.setOptions({ title: filterTitle });
+  }, [navigation, filterTitle]);
+
   if (isLoading) {
     return (
       <View className="flex-1 items-center justify-center bg-white">
@@ -51,25 +98,39 @@ export default function AllQuestionsScreen() {
         </Text>
       )}
 
-      {quizz.map((theme, themeIndex) => (
-        <View key={theme._id} className="mb-6">
+      {forCandidate && isFiltered && (
+        <Pressable
+          onPress={() => navigation.setParams({ themeId: undefined, importantOnly: undefined })}
+          hitSlop={8}
+          className="mb-4 items-center"
+        >
+          <Text className="text-sm text-blue-700 underline">Voir toutes les questions</Text>
+        </Pressable>
+      )}
+
+      {importantOnly && !sections[0].questions.length && (
+        <Text className="mb-4 text-center text-sm text-gray-600">
+          Vous n'avez marqué aucune question comme importante.
+        </Text>
+      )}
+
+      {sections.map((section) => (
+        <View key={section.id} className="mb-6">
           <View className="mb-2 flex-row items-center gap-2">
             <View
               className="h-3 w-3 rounded-full"
-              style={{ backgroundColor: theme.backgroundColor }}
+              style={{ backgroundColor: section.color }}
             />
-            <Text className="text-base font-bold text-quizz-dark">
-              {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]} - {theme.fr}
-            </Text>
+            <Text className="text-base font-bold text-quizz-dark">{section.title}</Text>
           </View>
 
-          {theme.questions.map((question, questionIndex) => (
+          {section.questions.map(({ question, theme, label }) => (
             <View key={question._id} className="mb-3 ml-4">
               <Text
                 className="mb-1 text-sm font-medium text-quizz-dark"
                 style={{ borderLeftWidth: 3, borderLeftColor: theme.backgroundColor, paddingLeft: 8 }}
               >
-                {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[themeIndex]}{questionIndex + 1} - {question.fr}
+                {label} - {question.fr}
               </Text>
               <View className="ml-4 gap-1">
                 {question.answers.map((answer, answerIndex) => {

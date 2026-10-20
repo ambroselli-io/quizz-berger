@@ -29,5 +29,4 @@ export type ThemeFr =
   | "Santé"
   | "Société"
   | "Travail, Chômage, Retraite"
-  | "Union Européenne"
-  | "Et si un(e) autre gagnait...";
+  | "Union Européenne";

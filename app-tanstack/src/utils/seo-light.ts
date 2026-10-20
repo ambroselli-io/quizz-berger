@@ -340,7 +340,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   'question-2027-pol-14': {
     slug: 'maintien-ordre-lbd-manifestations-france',
     seoTitle: 'LBD et maintien de l\'ordre : les candidats 2027',
-    seoDescription: `LBD, grenades, gaz lacrymogène : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur l'encadrement policier des manifestations.`,
+    seoDescription: `LBD, grenades, gaz lacrymogène : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les armes de la police en manifestation.`,
   },
   'question-2027-cult-06': {
     slug: 'pluralisme-extremes-audiovisuel-public-france',

@@ -15,7 +15,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 98,
+    "percent": 97,
     "pseudos": [
       "Anasse Kazib",
     ],
@@ -27,7 +27,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 95,
+    "percent": 94,
     "pseudos": [
       "Jean-Luc Mélenchon",
     ],
@@ -39,13 +39,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 80,
+    "percent": 81,
     "pseudos": [
       "François Ruffin",
     ],
   },
   {
-    "percent": 80,
+    "percent": 78,
     "pseudos": [
       "Sylvain Durif",
     ],
@@ -57,7 +57,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 74,
+    "percent": 75,
     "pseudos": [
       "Lydie Massard",
     ],
@@ -87,13 +87,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 71,
+    "percent": 69,
     "pseudos": [
       "Francis Lalanne",
     ],
   },
   {
-    "percent": 68,
+    "percent": 67,
     "pseudos": [
       "Raphaël Glucksmann",
     ],
@@ -105,13 +105,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 65,
-    "pseudos": [
-      "Parti pirate",
-    ],
-  },
-  {
-    "percent": 64,
+    "percent": 63,
     "pseudos": [
       "Parti animaliste",
     ],
@@ -119,17 +113,23 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 63,
     "pseudos": [
-      "Ségolène Royal",
+      "Parti pirate",
     ],
   },
   {
     "percent": 62,
     "pseudos": [
+      "Ségolène Royal",
+    ],
+  },
+  {
+    "percent": 61,
+    "pseudos": [
       "Philippe Brun",
     ],
   },
   {
-    "percent": 60,
+    "percent": 59,
     "pseudos": [
       "Antoine Mikolajczak",
     ],
@@ -141,139 +141,129 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 57,
+    "percent": 56,
     "pseudos": [
       "Dominique de Villepin",
     ],
   },
   {
-    "percent": 56,
-    "pseudos": [
-      "Natacha Polony",
-    ],
-  },
-  {
-    "percent": 56,
-    "pseudos": [
-      "Bernard Cazeneuve",
-    ],
-  },
-  {
     "percent": 55,
     "pseudos": [
-      "Fabien Verdier",
+      "Bernard Cazeneuve",
+      "Natacha Polony",
     ],
   },
   {
     "percent": 54,
     "pseudos": [
-      "Karim Bouamrane",
+      "Fabien Verdier",
     ],
   },
   {
     "percent": 53,
     "pseudos": [
-      "François Hollande",
-    ],
-  },
-  {
-    "percent": 52,
-    "pseudos": [
-      "Florian Philippot",
+      "Karim Bouamrane",
     ],
   },
   {
     "percent": 51,
     "pseudos": [
+      "François Hollande",
+    ],
+  },
+  {
+    "percent": 51,
+    "pseudos": [
+      "Florian Philippot",
+    ],
+  },
+  {
+    "percent": 50,
+    "pseudos": [
       "François Asselineau",
     ],
   },
   {
-    "percent": 48,
-    "pseudos": [
-      "François Bayrou",
-    ],
-  },
-  {
-    "percent": 48,
+    "percent": 46,
     "pseudos": [
       "Patrick Sébastien",
     ],
   },
   {
-    "percent": 43,
+    "percent": 46,
     "pseudos": [
-      "Clara Egger",
+      "François Bayrou",
     ],
   },
   {
     "percent": 41,
     "pseudos": [
-      "Nicolas Dupont-Aignan",
-    ],
-  },
-  {
-    "percent": 39,
-    "pseudos": [
-      "Marine Le Pen",
+      "Clara Egger",
     ],
   },
   {
     "percent": 38,
     "pseudos": [
+      "Nicolas Dupont-Aignan",
+    ],
+  },
+  {
+    "percent": 37,
+    "pseudos": [
+      "Marine Le Pen",
+    ],
+  },
+  {
+    "percent": 36,
+    "pseudos": [
       "Jordan Bardella",
     ],
   },
   {
-    "percent": 34,
+    "percent": 31,
     "pseudos": [
       "Olivier Becht",
     ],
   },
   {
-    "percent": 32,
+    "percent": 29,
     "pseudos": [
       "Gabriel Attal",
-    ],
-  },
-  {
-    "percent": 32,
-    "pseudos": [
       "Édouard Philippe",
     ],
   },
   {
-    "percent": 28,
+    "percent": 24,
     "pseudos": [
       "Xavier Bertrand",
     ],
   },
   {
-    "percent": 26,
+    "percent": 21,
     "pseudos": [
       "Éric Zemmour",
     ],
   },
   {
-    "percent": 25,
+    "percent": 20,
     "pseudos": [
       "Gérald Darmanin",
     ],
   },
   {
-    "percent": 23,
+    "percent": 17,
     "pseudos": [
       "Laurent Wauquiez",
     ],
   },
   {
-    "percent": 22,
+    "percent": 16,
     "pseudos": [
       "David Lisnard",
     ],
   },
   {
-    "percent": 20,
+    "percent": 15,
     "pseudos": [
       "Bruno Retailleau",
     ],
