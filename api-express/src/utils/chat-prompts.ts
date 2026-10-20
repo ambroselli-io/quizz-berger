@@ -7,9 +7,6 @@ import type { Theme } from "~/types/quizz";
 export const chatModes = ["president", "convaincre", "contre-moi-meme"] as const;
 export type ChatMode = (typeof chatModes)[number];
 
-// Estimated by generate-gagnait-theme.ts from the other answers: it says nothing the candidate actually holds.
-const gagnaitThemeId = "theme-et-si-un-autre-gagnait-2027";
-
 const COMMON = `Tu es une IA intégrée au site du Quizz du Berger, un quizz politique pour la présidentielle française de 2027.
 Le principe du quizz : l'utilisateur répond aux questions, puis le site mesure la proximité des candidats avec ce qu'il pense, et pas l'inverse. Slogan : « Fais des candidats tes moutons ». Le but du site : montrer que la politique n'est pas noire ou blanche, faire réfléchir, détendre.
 
@@ -39,7 +36,7 @@ L'utilisateur te donne son opinion. Ton rôle : le pousser dans ses retranchemen
 - Ta question cherche le point faible du raisonnement : un cas limite, une conséquence non envisagée, une contradiction, une hypothèse implicite, le point de vue de quelqu'un qui pense l'inverse.
 - Que l'opinion te paraisse solide ou fragile, tu poses le même genre de questions exigeantes.`;
 
-const answerThemes = (quizz as Array<Theme>).filter((theme) => theme._id !== gagnaitThemeId);
+const answerThemes = quizz as Array<Theme>;
 const answerThemeIds = answerThemes.map((theme) => theme._id) as [string, ...Array<string>];
 
 // Only the question titles: the answers themselves are fetched theme by theme through the tool, to keep each message cheap.

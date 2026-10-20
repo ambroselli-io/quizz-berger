@@ -267,13 +267,12 @@ describe("POST /chat/:id/message", () => {
 });
 
 describe("system prompts", () => {
-  it("lists the quiz themes for the candidate, without the estimated 'et si un autre gagnait' theme or any answer", () => {
+  it("lists the quiz themes for the candidate, without any answer", () => {
     const prompt = getSystemPrompt("convaincre", "candidate-nathalie-arthaud")!;
 
     expect(prompt).toContain("Tu joues le rôle de Nathalie Arthaud");
     expect(prompt).toContain("theme-2027-logement (Logement)");
     expect(prompt).not.toContain("TA RÉPONSE");
-    expect(prompt).not.toContain("theme-et-si-un-autre-gagnait-2027");
   });
 
   it("adds the answers of the themes already consulted", () => {
