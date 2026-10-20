@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
-import { View, Text, ScrollView, Pressable, ActivityIndicator, TextInput, Alert } from "react-native";
+import { View, Text, ScrollView, Pressable, ActivityIndicator, TextInput, Alert, Share } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RouteProp } from "@react-navigation/native";
@@ -68,6 +68,25 @@ export default function ResultScreen() {
     if (userPseudo === user?.pseudo) return user;
     return publicUser;
   }, [user, publicUser, publicPage, userPseudo]);
+
+  // Same text as the web's "Télécharger mes réponses" file; the native share sheet saves or sends it.
+  const downloadAnswers = () => {
+    const answersByQuestion = new Map(answersToShow.map((a) => [a.questionId, a]));
+    const text = quizz
+      .map((theme) => {
+        const lines = theme.questions
+          .filter((question) => answersByQuestion.has(question._id))
+          .map((question) => {
+            const answer = answersByQuestion.get(question._id)!;
+            const answerText = question.answers[answer.answerIndex] ?? "Pas de réponse";
+            return `${question.fr}${answer.isImportant ? " (question importante pour moi)" : ""}\n→ ${answerText}`;
+          });
+        return lines.length ? `${theme.fr.toUpperCase()}\n\n${lines.join("\n\n")}` : "";
+      })
+      .filter(Boolean)
+      .join("\n\n\n");
+    Share.share({ message: text, title: "Mes réponses au Quizz du Berger" });
+  };
 
   const selectedThemes = useMemo(() => getUserThemes(answersToShow, quizz), [answersToShow, quizz]);
 
@@ -312,6 +331,14 @@ export default function ResultScreen() {
               Comparer avec mes amis
             </Text>
           </Pressable>
+          {answersToShow.length > 0 && (
+            <Pressable
+              onPress={downloadAnswers}
+              className="flex-row items-center rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5"
+            >
+              <Text className="text-sm font-medium text-gray-800">Télécharger mes réponses</Text>
+            </Pressable>
+          )}
         </View>
       )}
 

@@ -11,7 +11,8 @@ import {
   Modal,
   Linking,
   ActivityIndicator,
-  Alert
+  Alert,
+  Share
 } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -201,6 +202,19 @@ export default function ChatScreen() {
     ]);
   };
 
+  // No clipboard module in the app: the share sheet offers "Copier" and the AI apps (ChatGPT, Le Chat…).
+  const copyPrompt = async () => {
+    const res = await API.get({
+      path: "/chat/prompt",
+      query: { mode: chatMode.mode, ...(candidateId ? { candidateId } : {}) }
+    });
+    if (!res?.ok) {
+      setError(res?.error ?? "Le prompt n'a pas pu être récupéré.");
+      return;
+    }
+    Share.share({ message: res.data });
+  };
+
   const startChat = async () => {
     setError("");
     setChat(null);
@@ -374,6 +388,9 @@ export default function ChatScreen() {
                     )}
                     <Pressable onPress={() => restart(false)} hitSlop={8}>
                       <Text className="text-xs text-gray-500 underline">Nouvelle discussion</Text>
+                    </Pressable>
+                    <Pressable onPress={copyPrompt} hitSlop={8}>
+                      <Text className="text-xs text-gray-500 underline">Copier le prompt</Text>
                     </Pressable>
                     {userMessagesCount > 0 && (
                       <Pressable onPress={remove} hitSlop={8}>
