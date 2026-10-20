@@ -108,17 +108,20 @@ export const Route = createRootRoute({
 // A conversation (/ia/{mode}, /ia/discussion/{id}) is full-screen on mobile, like a chat app:
 // it brings its own top bar with a back arrow, so the global header and tab bar step aside.
 const isFullScreenChat = (pathname: string) => /^\/ia\/[^/]+/.test(pathname);
+// A quiz question has its own progress bar fixed at the bottom, which the tab bar would cover.
+const isQuestion = (pathname: string) => pathname.startsWith('/question/');
 
 function Layout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const fullScreenChat = isFullScreenChat(pathname);
+  const question = isQuestion(pathname);
   return (
     <div className="flex min-h-full flex-col bg-white">
       <div className={fullScreenChat ? 'max-lg:hidden' : undefined}>
         <Header />
       </div>
-      <main className={`box-border flex grow flex-col ${fullScreenChat ? '' : 'max-lg:pb-16'}`}>{children}</main>
-      <div className={fullScreenChat ? 'max-lg:hidden' : undefined}>
+      <main className={`box-border flex grow flex-col ${fullScreenChat || question ? '' : 'max-lg:pb-16'}`}>{children}</main>
+      <div className={fullScreenChat || question ? 'max-lg:hidden' : undefined}>
         <BottomTabBar />
       </div>
     </div>

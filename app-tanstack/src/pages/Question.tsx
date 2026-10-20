@@ -109,30 +109,23 @@ export default function Question() {
     <>
       {/* Theme header */}
       <div
-        className="flex h-20 items-center justify-center px-5 max-lg:h-auto max-lg:min-h-[90px] max-lg:flex-col max-lg:justify-evenly max-lg:px-4"
+        className="flex h-20 items-center justify-center px-5 max-lg:h-auto max-lg:min-h-[70px] max-lg:px-3"
         style={{ backgroundColor: `${theme.backgroundColor}CC`, color: headerTextColor }}
       >
-        <div className="flex w-full max-w-[1024px] items-center justify-between">
-          <button className="cursor-pointer border-none bg-transparent text-sm text-inherit" onClick={goToThemes}>
-            ‹ Retour aux thèmes
+        <div className="flex w-full max-w-[1024px] items-center justify-between gap-2">
+          <button className="shrink-0 cursor-pointer border-none bg-transparent text-sm text-inherit" onClick={goToThemes}>
+            ‹ <span className="max-lg:hidden">Retour aux thèmes</span>
+            <span className="lg:hidden">Thèmes</span>
           </button>
-          <h2 className="text-center font-[Merriweather] text-xl font-bold max-lg:hidden">{theme.fr}</h2>
+          <h2 className="text-center font-[Merriweather] text-xl font-bold max-lg:text-base">{theme.fr}</h2>
           <button
-            className="cursor-pointer border-none bg-transparent text-sm text-inherit"
+            className="shrink-0 cursor-pointer border-none bg-transparent text-sm text-inherit"
             onClick={goToResults}
             style={{ opacity: showResultsButton ? 1 : 0 }}
           >
-            Voir les résultats ›
+            <span className="max-lg:hidden">Voir les résultats</span>
+            <span className="lg:hidden">Résultats</span> ›
           </button>
-        </div>
-        <div className="flex w-full items-center justify-between lg:hidden">
-          <button
-            onClick={goToPreviousQuestion}
-            aria-label="Question précédente"
-            className={`h-[17px] min-w-[19px] cursor-pointer border-none bg-transparent bg-[url('/left-arrow.svg')] bg-cover bg-no-repeat ${headerTextColor === '#ffffff' ? 'invert' : ''}`}
-          />
-          <h2 className="text-center font-[Merriweather] text-lg font-bold">{theme.fr}</h2>
-          <span className="min-w-[19px]" />
         </div>
       </div>
 
