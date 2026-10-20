@@ -511,6 +511,9 @@ Travail, Chômage, Retraite:
 question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
 [0] Revenir à 60 ans (ou moins)
 
+question-2027-trav-12: Comment financer les retraites ?
+[0] Tout par répartition, comme aujourd'hui, et renforcer le système
+
 question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 [0] Le réduire à 32 heures par semaine (ou 4 jours)
 

@@ -2,6 +2,7 @@ import type { Article } from '~/types/article';
 import { candidatesCount, getAnswerDistribution } from '~/utils/seo';
 
 const retraiteDistribution = getAnswerDistribution('question-2027-trav-01');
+const financementDistribution = getAnswerDistribution('question-2027-trav-12');
 
 export const article: Article = {
   slug: 'reforme-retraites-65-ans-capitalisation-france-candidats-2027',
@@ -39,7 +40,7 @@ export const article: Article = {
 <p>Le chiffrage de 30 milliards d'euros avancé par Édouard Philippe n'est pas documenté dans le détail à ce stade, et la part de capitalisation soulève une question clé : s'agit-il d'un complément facultatif, comme le PER existant, ou d'un pilier appelé à monter en charge avec le temps. Les syndicats, mobilisés le 29 septembre contre le gel du point d'indice des fonctionnaires, n'ont pas encore réagi formellement à ce volet du projet.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la <a href="/question-politique/age-depart-retraite-62-64-ans">question posée dans le Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en cinq familles. Les réponses d'Édouard Philippe et de Gabriel Attal ont été mises à jour pour refléter leurs annonces les plus récentes : 65 ans et 45 annuités pour le premier, suppression de l'âge légal au profit d'un système à capitalisation pour le second.</p>
+<p>Sur la <a href="/question-politique/age-depart-retraite-62-64-ans">question posée dans le Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en cinq familles. Les réponses d'Édouard Philippe et de Gabriel Attal ont été mises à jour pour refléter leurs annonces les plus récentes : 65 ans et 45 annuités pour le premier, suppression de l'âge légal pour le second. La capitalisation fait l'objet d'une <a href="#financement">question à part</a>, plus bas.</p>
 
 <h3>Famille 1 — Revenir à 60 ans ou moins (${retraiteDistribution[0]} candidats)</h3>
 <p>Cette famille rejette la réforme de 2023 dans son principe et veut abaisser l'âge légal sous son niveau d'avant 2023.</p>
@@ -101,15 +102,24 @@ export const article: Article = {
 <ul>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — A dévoilé le 29 septembre 2026 son projet pour 65 ans et 45 annuités, complété d'un volet de capitalisation. C'est le sujet de cet article.</li>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> (LR) — Défend de longue date un départ à 65 ans, position sur laquelle Édouard Philippe vient de s'aligner.</li>
-<li><a href="/candidat/david-lisnard">David Lisnard</a> (Nouvelle Énergie) — Libéral assumé, favorable à un départ à 65 ans.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> (Nouvelle Énergie) — Libéral assumé, favorable à un départ à 65 ans, avec un socle par répartition et le reste des régimes basculé vers la capitalisation.</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Défend un départ à 65-66 ans, combiné à une politique nataliste.</li>
 </ul>
 
-<h3>Famille 5 — Changer de système, vers la capitalisation (${retraiteDistribution[4]} candidats)</h3>
-<p>Cette famille ne se contente pas de déplacer le curseur de l'âge légal : elle veut restructurer le système lui-même.</p>
+<h3>Famille 5 — Repousser à 67 ans ou plus, ou supprimer l'âge légal (${retraiteDistribution[4]} candidats)</h3>
+<p>Cette famille ne se contente pas de déplacer le curseur : elle veut supprimer la borne de l'âge légal elle-même.</p>
 <ul>
 <li><a href="/candidat/gabriel-attal">Gabriel Attal</a> (Renaissance) — Son projet, présenté en mai 2026, va plus loin que celui d'Édouard Philippe : <a href="https://placement.meilleurtaux.com/retraite/actualites/2026-mai/plan-de-gabriel-attal-retraites-supprimer-age-legal-instaurer-place-modele-hybride.html" target="_blank" rel="noopener noreferrer">suppression de l'âge légal au profit de la seule durée de cotisation</a>, avec une part de capitalisation intégrée au système, et non en simple complément.</li>
 </ul>
+
+<h2 id="financement">Répartition ou capitalisation : une autre question</h2>
+<p>L'âge de départ et le mode de financement sont deux débats distincts. On peut défendre la capitalisation avec un départ à 62 ans, ou 65 ans avec une répartition intégrale. Le Quizz du Berger pose donc une <a href="/question/theme-travail-chomage-retraite-2027/question-2027-trav-12">question dédiée au financement</a>.</p>
+<ul>
+<li><strong>Tout par répartition</strong> : ${financementDistribution[0]} candidats, de la gauche au RN de Jordan Bardella.</li>
+<li><strong>Répartition, avec un fonds collectif placé</strong> : ${financementDistribution[1]} candidats, dont Marine Le Pen, François Bayrou et Xavier Bertrand.</li>
+<li><strong>Un socle par répartition, le reste par capitalisation</strong> : ${financementDistribution[2]} candidats, dont Édouard Philippe, Gabriel Attal, David Lisnard et Bruno Retailleau.</li>
+</ul>
+<p>Aucun candidat ne défend une capitalisation intégrale.</p>
 
 <h2>Arguments pour et arguments contre le projet d'Édouard Philippe</h2>
 

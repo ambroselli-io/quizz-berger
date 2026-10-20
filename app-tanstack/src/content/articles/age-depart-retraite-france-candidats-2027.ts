@@ -78,7 +78,7 @@ export const article: Article = {
 <h3>Famille 4 — Repousser à 65-66 ans, voire changer de système</h3>
 <p>La famille la plus restrictive juge la réforme de 2023 encore insuffisante face au vieillissement démographique. Elle s'est élargie le <a href="/blog/reforme-retraites-65-ans-capitalisation-france-candidats-2027">29 septembre 2026</a> avec l'entrée d'Édouard Philippe.</p>
 <ul>
-<li><a href="/candidat/david-lisnard">David Lisnard</a> — Défend un nouveau report de l'âge légal, au-delà de 64 ans.</li>
+<li><a href="/candidat/david-lisnard">David Lisnard</a> — Défend un départ à 65 ans, avec un socle par répartition et le reste des régimes basculé vers la capitalisation.</li>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a> — Défend un report supplémentaire de l'âge de départ.</li>
 <li><a href="/candidat/eric-zemmour">Éric Zemmour</a> (Reconquête) — Défend un report à 65-66 ans, couplé à une réforme plus large du financement des retraites.</li>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> (Horizons) — A annoncé le 29 septembre 2026 vouloir porter l'âge légal à 65 ans et la durée de cotisation à 45 annuités, avec un complément de capitalisation.</li>
