@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from '@app/lib/router';
+import { candidateThumb } from '@app/utils/seo-light';
 
 function useIsSmallScreen() {
   const [isSmall, setIsSmall] = useState(false);
@@ -13,7 +14,6 @@ function useIsSmallScreen() {
   return isSmall;
 }
 
-const IMAGE_BASE_URL = '/';
 
 interface PodiumProps {
   podiumised: Array<{
@@ -57,9 +57,11 @@ const Podium = ({ podiumised, title, linkSearch }: PodiumProps) => {
                 {pictures.filter(Boolean).map((pic, i) => (
                   <img
                     key={pic}
-                    src={`${IMAGE_BASE_URL}${pic}`}
+                    src={candidateThumb(pic)}
+                    width={40}
+                    height={40}
                     alt=""
-                    className="h-10 w-10 rounded-full border-2 object-cover max-lg:h-7 max-lg:w-7 [&:not(:last-of-type)]:-mr-4"
+                    className="aspect-square h-10 w-10 shrink-0 rounded-full border-2 object-cover object-top max-lg:h-7 max-lg:w-7 [&:not(:last-of-type)]:-mr-4"
                     style={{ borderColor: colors[i] ?? undefined, backgroundColor: colors[i] ?? undefined }}
                   />
                 ))}

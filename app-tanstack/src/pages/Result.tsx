@@ -19,7 +19,7 @@ import Loader from '@app/components/Loader';
 import Podium from '@app/components/Podium';
 import Filter from '@app/components/Filter';
 import type { Answer } from '@app/types/quizz';
-import { Share2, Users, Save, Star } from 'lucide-react';
+import { Share2, Users, Save, Star, Download } from 'lucide-react';
 
 import { getCandidatesScorePerThemes } from '~/shared/utils/score';
 import { getPodium } from '~/shared/utils/podium';
@@ -67,6 +67,29 @@ export default function Result() {
     if (publicPage) return publicUserAnswers;
     return userAnswers;
   }, [publicUserAnswers, publicPage, userAnswers, userPseudo, user?.pseudo]);
+
+  const downloadAnswers = () => {
+    const answersByQuestion = new Map(answersToShow.map((a) => [a.questionId, a]));
+    const text = quizz
+      .map((theme) => {
+        const lines = theme.questions
+          .filter((question) => answersByQuestion.has(question._id))
+          .map((question) => {
+            const answer = answersByQuestion.get(question._id)!;
+            const answerText = question.answers[answer.answerIndex] ?? 'Pas de réponse';
+            return `${question.fr}${answer.isImportant ? ' (question importante pour moi)' : ''}\n→ ${answerText}`;
+          });
+        return lines.length ? `${theme.fr.toUpperCase()}\n\n${lines.join('\n\n')}` : '';
+      })
+      .filter(Boolean)
+      .join('\n\n\n');
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    downloadAnchorNode.setAttribute('download', 'quizz-du-berger_mes-reponses.txt');
+    document.body.appendChild(downloadAnchorNode);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+  };
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -357,6 +380,16 @@ export default function Result() {
                   <Users size={16} />
                   Comparer avec mes amis
                 </button>
+                {answersToShow.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={downloadAnswers}
+                    className="inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5 text-sm font-medium text-gray-800"
+                  >
+                    <Download size={16} />
+                    Télécharger mes réponses
+                  </button>
+                )}
               </>
             )}
             <Filter
