@@ -165,6 +165,9 @@ question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées p
 question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [1] Il faut des accords de réadmission plus stricts et plus rapides avec le Royaume-Uni, en limitant les recours qui bloquent les renvois
 
+question-2027-immi-11: Faut-il revoir le droit du sol (l'acquisition de la nationalité française par la naissance en France) ?
+[2] Il faut durcir les conditions de résidence des parents, comme cela a été fait à Mayotte, sans le supprimer
+
 
 Dépenses et dette publiques:
 

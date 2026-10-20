@@ -774,6 +774,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 4
@@ -1593,6 +1598,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -2416,6 +2426,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
@@ -3237,6 +3252,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
@@ -4056,6 +4076,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -4881,6 +4906,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
@@ -5700,6 +5730,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -6525,6 +6560,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 0
@@ -7343,6 +7383,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
         "answerIndex": 1
       },
       {
@@ -8169,6 +8214,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
@@ -8992,6 +9042,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 4
@@ -9811,6 +9866,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -10634,6 +10694,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
@@ -11453,6 +11518,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -12276,6 +12346,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 1
@@ -13096,6 +13171,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
         "answerIndex": 2
       },
       {
@@ -13922,6 +14002,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
@@ -14745,6 +14830,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 1
@@ -15564,6 +15654,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -16387,6 +16482,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 3
@@ -17206,6 +17306,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -18029,6 +18134,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
@@ -18848,6 +18958,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -19671,6 +19786,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 0
@@ -20490,6 +20610,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -21313,6 +21438,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 4
@@ -22134,6 +22264,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 0
@@ -22433,6 +22568,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -23256,6 +23396,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -24074,6 +24219,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
         "answerIndex": 1
       },
       {
@@ -24900,6 +25050,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -25723,6 +25878,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -26542,6 +26702,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-depenses",
@@ -27365,6 +27530,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 0
@@ -28183,6 +28353,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
         "answerIndex": 2
       },
       {
@@ -29005,6 +29180,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-depenses",
@@ -29830,6 +30010,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -30651,6 +30836,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -31476,6 +31666,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -32299,6 +32494,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -33120,6 +33320,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 1
@@ -33939,6 +34144,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -34772,6 +34982,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-01",
         "answerIndex": 0
@@ -35590,6 +35805,11 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
         "answerIndex": 2
       },
       {
@@ -36924,6 +37144,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-07",
         "answerIndex": 2
@@ -37233,6 +37458,11 @@
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-immigration",
+        "questionId": "question-2027-immi-11",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-depenses",
