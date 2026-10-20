@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { simulateReadableStream } from "ai";
 import prisma from "~/prisma";
-import { getSystemPrompt } from "~/utils/chat-prompts";
+import { getSystemPrompt, QUIZZ_ANSWERS_TOOL } from "~/utils/chat-prompts";
 import { MAX_CHATS_PER_DAY, MAX_USER_MESSAGES_PER_CHAT } from "~/controllers/chat";
 import { api, bearer, signup } from "./helpers";
 
@@ -282,6 +282,23 @@ describe("system prompts", () => {
     expect(prompt).toContain("## Logement");
     expect(prompt).not.toContain("## Santé");
     expect(prompt).not.toContain("(pas de réponse connue)");
+  });
+});
+
+describe("GET /chat/prompt", () => {
+  it("gives the candidate's prompt with the link to their answers, without an account", async () => {
+    const res = await api().get("/chat/prompt").query({ mode: "convaincre", candidateId: "candidate-nathalie-arthaud" });
+
+    expect(res.status).toBe(200);
+    expect(res.body.data).toContain("Tu joues le rôle de Nathalie Arthaud");
+    expect(res.body.data).toContain("https://quizz-du-berger.com/candidat/nathalie-arthaud");
+    expect(res.body.data).not.toContain(QUIZZ_ANSWERS_TOOL);
+    expect(res.body.data).toContain("« Je joue Nathalie Arthaud");
+  });
+
+  it("refuses an unknown mode or candidate", async () => {
+    expect((await api().get("/chat/prompt").query({ mode: "nope" })).status).toBe(400);
+    expect((await api().get("/chat/prompt").query({ mode: "convaincre", candidateId: "nope" })).status).toBe(400);
   });
 });
 

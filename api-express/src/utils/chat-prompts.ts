@@ -74,11 +74,7 @@ export const quizzAnswersTool = (candidateId: string, onConsulted: (themeIds: Ar
     },
   });
 
-const convaincre = (candidateId: string, consultedThemeIds: Array<string>) => {
-  const name = candidateNameOf(candidateId);
-  if (!name) return null;
-  const consulted = formatThemeAnswers(candidateId, consultedThemeIds);
-  return `${COMMON}
+const convaincreRole = (name: string) => `${COMMON}
 
 Mode « Je veux convaincre un candidat ».
 Tu joues le rôle de ${name}. L'utilisateur va essayer de te faire changer d'avis. On est au Quizz du Berger : ici, ce sont les électeurs qui mènent les candidats, pas l'inverse.
@@ -90,7 +86,13 @@ Ce que tu sais de ${name} se limite STRICTEMENT à ses réponses au quizz. C'est
 - Tu ne changes pas de position, mais tu restes honnête : quand l'utilisateur soulève un argument auquel tu n'as pas de vraie réponse, tu le reconnais (« tu marques un point ») au lieu d'esquiver.
 - Tu ne demandes jamais à l'utilisateur de voter pour toi. La règle sur le vote s'applique aussi dans ce rôle.
 - Quand tu peux, et dès que tu peux, termine ton argumentation par une question qui fait réfléchir l'utilisateur sur son propre argument.
-- Les règles sur l'absence d'avis concernent tes jugements d'IA ; dans ce rôle, tu exprimes les positions du candidat telles que le quizz les donne, sans en rajouter.
+- Les règles sur l'absence d'avis concernent tes jugements d'IA ; dans ce rôle, tu exprimes les positions du candidat telles que le quizz les donne, sans en rajouter.`;
+
+const convaincre = (candidateId: string, consultedThemeIds: Array<string>) => {
+  const name = candidateNameOf(candidateId);
+  if (!name) return null;
+  const consulted = formatThemeAnswers(candidateId, consultedThemeIds);
+  return `${convaincreRole(name)}
 
 Tes réponses ne sont pas toutes écrites ici. Tu les obtiens thème par thème avec l'outil ${QUIZZ_ANSWERS_TOOL} :
 - Avant de répondre sur un sujet, appelle l'outil pour chaque thème qui le touche, sauf si ses réponses figurent déjà plus bas. Dans le doute, consulte le thème plutôt que de deviner.
@@ -119,4 +121,29 @@ export const getOpeningMessage = (mode: ChatMode, candidateId?: string | null): 
     return `Je joue ${candidateNameOf(candidateId ?? "")}, en ne me basant que sur ses réponses au Quizz du Berger. Vas-y, essaie de me convaincre : sur quel sujet veux-tu me faire changer d'avis ?`;
   }
   return "Dis-moi ce que tu penses, sur le sujet de ton choix. Je ne te dirai pas si tu as raison ou tort : je vais seulement te poser des questions.";
+};
+
+// Same as slugify() in app-tanstack/src/utils/seo-light.ts: /candidat/{slug} lists every answer of the candidate.
+const candidatePageUrl = (name: string) =>
+  `https://quizz-du-berger.com/candidat/${name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")}`;
+
+// "Copier le prompt", for the user's own AI: no tool there, so the candidate's answers are read from their page on the site.
+export const getExportPrompt = (mode: ChatMode, candidateId?: string | null): string | null => {
+  let system = getSystemPrompt(mode);
+  if (mode === "convaincre") {
+    const name = candidateNameOf(candidateId ?? "");
+    if (!name) return null;
+    system = `${convaincreRole(name)}
+
+Les réponses de ${name} au quizz sont sur cette page : ${candidatePageUrl(name)}
+Lis-la avant de répondre. Si tu ne peux pas l'ouvrir, dis-le à l'utilisateur au lieu de deviner.`;
+  }
+  return `${system}
+
+Commence la conversation par ce message, mot pour mot : « ${getOpeningMessage(mode, candidateId)} »`;
 };

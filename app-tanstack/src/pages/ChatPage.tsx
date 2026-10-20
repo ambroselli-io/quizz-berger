@@ -108,6 +108,8 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const composerRef = useRef<HTMLDivElement>(null);
   const [showActions, setShowActions] = useState(false);
+  const [exportPrompt, setExportPrompt] = useState('');
+  const [promptCopied, setPromptCopied] = useState(false);
 
   const isConvaincre = chatMode.mode === 'convaincre';
   const candidate = candidateSlugMap.find((c) => c.id === candidateId);
@@ -130,6 +132,24 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
     startChat();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasAccount, candidateId]);
+
+  // Fetched ahead: Safari only lets the clipboard be written right in the click, not after a request.
+  useEffect(() => {
+    if (!chat) return;
+    API.get({ path: '/chat/prompt', query: { mode: chatMode.mode, ...(candidateId ? { candidateId } : {}) } }).then((res) => {
+      if (res?.ok) setExportPrompt(res.data);
+    });
+  }, [chat?.id, chatMode.mode, candidateId]);
+
+  const copyPrompt = async () => {
+    try {
+      await navigator.clipboard.writeText(exportPrompt);
+      setPromptCopied(true);
+      setTimeout(() => setPromptCopied(false), 2000);
+    } catch {
+      setError("Le prompt n'a pas pu être copié.");
+    }
+  };
 
   useEffect(() => {
     const bottom = bottomRef.current;
@@ -188,6 +208,7 @@ const Conversation = ({ chatMode, initialChat }: { chatMode: ChatModeEntry; init
     { label: 'Faire un don', onClick: () => setShowDonation(true) },
     ...(isConvaincre ? [{ label: 'Changer de candidat', onClick: () => restart(true) }] : []),
     { label: 'Nouvelle discussion', onClick: () => restart(false) },
+    ...(exportPrompt ? [{ label: promptCopied ? 'Prompt copié !' : 'Copier le prompt', onClick: copyPrompt }] : []),
     ...(userMessagesCount > 0 ? [{ label: 'Supprimer', onClick: remove }] : []),
   ];
 

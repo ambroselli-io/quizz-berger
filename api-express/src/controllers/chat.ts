@@ -10,6 +10,7 @@ import { CHAT_MODEL, chatCostEur, getChatModel } from "~/utils/chat-model";
 import {
   candidateNameOf,
   chatModes,
+  getExportPrompt,
   getOpeningMessage,
   getSystemPrompt,
   QUIZZ_ANSWERS_TOOL,
@@ -134,6 +135,20 @@ router.delete(
       return;
     }
     res.status(200).send({ ok: true });
+  }),
+);
+
+// "Copier le prompt": the same conversation, to start in the user's own AI. No account needed.
+router.get(
+  "/prompt",
+  catchErrors(async (req: express.Request, res: express.Response) => {
+    const mode = req.query.mode as ChatMode;
+    const prompt = chatModes.includes(mode) ? getExportPrompt(mode, req.query.candidateId as string | undefined) : null;
+    if (!prompt) {
+      res.status(400).send({ ok: false, error: "Mode de discussion ou candidat inconnu" });
+      return;
+    }
+    res.status(200).send({ ok: true, data: prompt });
   }),
 );
 
