@@ -7,7 +7,7 @@
  * (loaders, head(), notFound) use the real `@tanstack/react-router` API directly;
  * presentational components import from here.
  */
-import { forwardRef, type AnchorHTMLAttributes } from 'react';
+import { forwardRef, useCallback, type AnchorHTMLAttributes } from 'react';
 import {
   Link as TanstackLink,
   Navigate as TanstackNavigate,
@@ -28,14 +28,19 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link({ to,
 /** useNavigate returning a function that accepts a string path or an options object. */
 export function useNavigate() {
   const navigate = useTanstackNavigate();
-  return (to: string | AnyProps, opts?: { replace?: boolean }) => {
-    if (typeof to === 'string') {
+  // Stable identity: callers list it in effect deps (useUser's redirect), and a fresh function
+  // on every render re-fired navigate('/') during the pending transition, looping until React bailed.
+  return useCallback(
+    (to: string | AnyProps, opts?: { replace?: boolean }) => {
+      if (typeof to === 'string') {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        return navigate({ to, replace: opts?.replace } as any);
+      }
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      return navigate({ to, replace: opts?.replace } as any);
-    }
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return navigate(to as any);
-  };
+      return navigate(to as any);
+    },
+    [navigate],
+  );
 }
 
 /** useParams returning all params loosely (matches react-router's untyped usage). */
