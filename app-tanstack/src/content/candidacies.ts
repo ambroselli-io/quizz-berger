@@ -277,7 +277,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Les Écologistes',
     summary:
-      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes.",
+      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Le conseil fédéral du parti a cependant reporté le choix final au 13 décembre 2026 : un vote des adhérents tranchera alors entre sa candidature autonome et un soutien à un candidat extérieur au parti. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes.",
     events: [
       {
         date: '2025-10-22',
@@ -294,6 +294,24 @@ export const candidacies: Candidacy[] = [
           {
             label: 'Public Sénat',
             url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-a-la-bellevilloise-faure-tondelier-ruffindans-les-sables-mouvants-de-la-primaire',
+          },
+        ],
+      },
+      {
+        date: '2026-09-21',
+        type: 'step',
+        label:
+          "Le conseil fédéral du parti adopte à 69,44 % une motion reportant au 13 décembre le choix entre sa candidature autonome et un soutien à un candidat extérieur ; elle reste investie jusqu'à ce vote.",
+        sources: [
+          {
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-les-ecologistes-reportent-lheure-du-choix-a-decembre-marine-tondelier-toujours-en-lice',
+            date: '2026-09-21',
+          },
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/candidature-a-la-presidentielle-pas-de-choix-definitif-des-ecologistes-avant-la-mi',
+            date: '2026-09-21',
           },
         ],
       },
