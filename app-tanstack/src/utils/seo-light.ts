@@ -310,7 +310,12 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   'question-2027-trav-11': {
     slug: 'baisse-cotisations-patronales-embauche-france',
     seoTitle: 'Baisse des cotisations patronales : candidats 2027',
-    seoDescription: `Faut-il baisser les cotisations des entreprises pour favoriser l'embauche ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+    seoDescription: `Faut-il baisser les cotisations des grandes entreprises pour favoriser l'embauche ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
+  'question-2027-trav-13': {
+    slug: 'baisse-cotisations-pme-embauche-france',
+    seoTitle: 'Baisse des cotisations des PME : candidats 2027',
+    seoDescription: `Faut-il baisser les cotisations des petites et moyennes entreprises pour favoriser l'embauche ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-immi-10': {
     slug: 'accord-migratoire-royaume-uni-manche-france',

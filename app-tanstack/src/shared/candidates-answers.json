@@ -670,6 +670,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 0
       },
@@ -1498,6 +1503,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -2332,6 +2342,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -3159,6 +3174,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 3
       },
       {
@@ -3991,6 +4011,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -4827,6 +4852,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -5655,6 +5685,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -6491,6 +6526,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -7318,6 +7358,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 3
       },
       {
@@ -8155,6 +8200,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 3
       },
@@ -8985,6 +9035,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -9819,6 +9874,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -10647,6 +10707,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -11481,6 +11546,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 3
       },
@@ -12308,6 +12378,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 3
       },
       {
@@ -13145,6 +13220,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -13975,6 +14055,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -14811,6 +14896,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -15642,6 +15732,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -16469,6 +16564,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 2
       },
       {
@@ -17304,6 +17404,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 0
       },
@@ -18131,6 +18236,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 4
       },
       {
@@ -18966,6 +19076,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -19794,6 +19909,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -20628,6 +20748,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -21310,6 +21435,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 0
       },
       {
@@ -22290,6 +22420,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -23206,6 +23341,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -24037,6 +24177,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -24865,6 +25010,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -25701,6 +25851,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 2
       },
@@ -26534,6 +26689,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -27361,6 +27521,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 0
       },
       {
@@ -28196,6 +28361,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 0
       },
@@ -29023,6 +29193,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 2
       },
       {
@@ -29855,6 +30030,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -30691,6 +30871,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -31521,6 +31706,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -32357,6 +32547,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -33187,6 +33382,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -34026,6 +34226,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -34854,6 +35059,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -35708,6 +35918,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 0
       },
@@ -36539,6 +36754,11 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
         "answerIndex": 1
       },
@@ -37256,6 +37476,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
         "answerIndex": 3
       },
       {
@@ -38198,6 +38423,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-13",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",

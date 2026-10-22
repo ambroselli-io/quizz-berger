@@ -523,8 +523,11 @@ question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
 [4] L'emploi public est déjà trop lourd, le réduire libérerait l'emploi privé
 
-question-2027-trav-11: Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?
-[4] Oui, les baisser massivement, c'est le principal levier contre le chômage
+question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
+[4] Oui, il faut les baisser massivement : c'est le principal levier contre le chômage
+
+question-2027-trav-13: Faut-il baisser les cotisations payées par les petites et moyennes entreprises (PME) pour favoriser l'embauche ?
+[4] Oui, il faut les baisser massivement : c'est le principal levier contre le chômage
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
 [3] Le RSA est devenu une trappe à inactivité, il faut le conditionner fortement ou le supprimer

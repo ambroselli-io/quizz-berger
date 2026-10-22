@@ -523,8 +523,11 @@ question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
 [3] Ce n'est pas son rôle : il doit seulement lever les freins à l'embauche dans le privé
 
-question-2027-trav-11: Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?
-[3] Oui, les baisser davantage : c'est le coût du travail qui freine l'embauche
+question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
+[3] Oui, il faut les baisser un peu : c'est le coût du travail qui freine l'embauche
+
+question-2027-trav-13: Faut-il baisser les cotisations payées par les petites et moyennes entreprises (PME) pour favoriser l'embauche ?
+[3] Oui, il faut les baisser un peu : c'est le coût du travail qui freine l'embauche
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
 [2] Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer

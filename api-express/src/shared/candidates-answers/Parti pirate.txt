@@ -523,8 +523,11 @@ question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
 [2] L'État doit financer des dispositifs ciblés (contrats aidés, Territoires zéro chômeur de longue durée)
 
-question-2027-trav-11: Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?
-[1] Non, et il faut supprimer les exonérations actuelles : elles coûtent cher et créent peu d'emplois
+question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
+[1] Non, il faut garder le niveau actuel, sans les allègements sur les bas salaires : ils n'aident pas l'embauche et bloquent la progression des salaires
+
+question-2027-trav-13: Faut-il baisser les cotisations payées par les petites et moyennes entreprises (PME) pour favoriser l'embauche ?
+[2] Il faut garder le niveau actuel, avec les allègements ciblés sur les bas salaires pour favoriser l'embauche
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
 [0] Conditionner le RSA à du travail forcé, c'est humiliant et dangereux — il faut aller vers un revenu universel

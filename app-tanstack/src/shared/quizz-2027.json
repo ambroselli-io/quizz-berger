@@ -3029,14 +3029,35 @@
       },
       {
         "_id": "question-2027-trav-11",
-        "fr": "Faut-il baisser les cotisations payées par les entreprises pour favoriser l'embauche ?",
+        "fr": "Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?",
         "help": "https://fr.wikipedia.org/wiki/Cotisations_sociales_en_France",
         "answers": [
-          "Non, il faut les augmenter : elles financent la sécurité sociale et les retraites",
-          "Non, et il faut supprimer les exonérations actuelles : elles coûtent cher et créent peu d'emplois",
-          "Garder le niveau actuel, avec les allègements ciblés sur les bas salaires",
-          "Oui, les baisser davantage : c'est le coût du travail qui freine l'embauche",
-          "Oui, les baisser massivement, c'est le principal levier contre le chômage",
+          "Non, il faut les augmenter : elles financent la sécurité sociale et les retraites, qui en ont besoin, peu importe l'impact sur l'embauche",
+          "Non, il faut garder le niveau actuel, sans les allègements sur les bas salaires : ils n'aident pas l'embauche et bloquent la progression des salaires",
+          "Il faut garder le niveau actuel, avec les allègements ciblés sur les bas salaires pour favoriser l'embauche",
+          "Oui, il faut les baisser un peu : c'est le coût du travail qui freine l'embauche",
+          "Oui, il faut les baisser massivement : c'est le principal levier contre le chômage",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 2, 0, 0, 0],
+          [1, 2, 5, 3, 1, 0],
+          [0, 0, 3, 5, 4, 0],
+          [0, 0, 1, 4, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-13",
+        "fr": "Faut-il baisser les cotisations payées par les petites et moyennes entreprises (PME) pour favoriser l'embauche ?",
+        "help": "https://fr.wikipedia.org/wiki/Cotisations_sociales_en_France",
+        "answers": [
+          "Non, il faut les augmenter : elles financent la sécurité sociale et les retraites, qui en ont besoin, peu importe l'impact sur l'embauche",
+          "Non, il faut garder le niveau actuel, sans les allègements sur les bas salaires : ils n'aident pas l'embauche et bloquent la progression des salaires",
+          "Il faut garder le niveau actuel, avec les allègements ciblés sur les bas salaires pour favoriser l'embauche",
+          "Oui, il faut les baisser un peu : c'est le coût du travail qui freine l'embauche",
+          "Oui, il faut les baisser massivement : c'est le principal levier contre le chômage",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
