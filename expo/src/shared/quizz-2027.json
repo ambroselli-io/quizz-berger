@@ -2095,6 +2095,25 @@
           [0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-pol-15",
+        "fr": "Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?",
+        "help": "https://fr.wikipedia.org/wiki/%C3%89tat_d%27urgence_en_France",
+        "answers": [
+          "Décréter l'état d'urgence : couvre-feux généralisés et pouvoirs renforcés pour les préfets sur tout le territoire concerné",
+          "Des couvre-feux ciblés décidés au cas par cas par les préfets, sans aller jusqu'à l'état d'urgence",
+          "S'en tenir au droit commun et renforcer les effectifs de police sur le terrain, sans mesure d'exception",
+          "Les couvre-feux et l'état d'urgence sont disproportionnés et menacent les libertés publiques : il faut privilégier le dialogue social et s'attaquer aux causes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

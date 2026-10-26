@@ -361,6 +361,9 @@ question-2027-pol-13: Une fois des violences ou des dégradations commises en ma
 question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
 [1] Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours
 
+question-2027-pol-15: Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?
+[3] Les couvre-feux et l'état d'urgence sont disproportionnés et menacent les libertés publiques : il faut privilégier le dialogue social et s'attaquer aux causes
+
 
 Politique fiscale:
 
