@@ -107,13 +107,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 63,
     "pseudos": [
-      "Parti animaliste",
+      "Parti pirate",
     ],
   },
   {
     "percent": 63,
     "pseudos": [
-      "Parti pirate",
+      "Parti animaliste",
     ],
   },
   {
@@ -153,7 +153,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 54,
     "pseudos": [
       "Bernard Cazeneuve",
     ],
@@ -233,12 +233,17 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 28,
     "pseudos": [
-      "Gabriel Attal",
       "Édouard Philippe",
     ],
   },
   {
-    "percent": 24,
+    "percent": 28,
+    "pseudos": [
+      "Gabriel Attal",
+    ],
+  },
+  {
+    "percent": 23,
     "pseudos": [
       "Xavier Bertrand",
     ],

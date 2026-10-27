@@ -292,10 +292,10 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Désindexation des retraites : les candidats 2027',
     seoDescription: `Gel ou sous-indexation des pensions sur l'inflation dans le budget 2027 : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
-  'question-2027-trav-08': {
+  'question-2027-trav-08b': {
     slug: 'jours-de-carence-arrets-maladie-france',
     seoTitle: 'Jours de carence et arrêts maladie : les candidats 2027',
-    seoDescription: `Faut-il durcir les jours de carence pour les arrêts maladie ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+    seoDescription: `Combien de jours de carence pour les arrêts maladie, dans le public et dans le privé ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-trav-09': {
     slug: 'assurance-chomage-indemnisation-france',
