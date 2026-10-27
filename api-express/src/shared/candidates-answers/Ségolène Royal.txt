@@ -406,7 +406,7 @@ question-2027-pa-02b: Face à la hausse des factures d'électricité et de gaz, 
 [3] Bloquer les prix par la loi et imposer des tarifs plafonnés aux fournisseurs
 
 question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
-[1] Il faut baisser le prix des transports en commun, surtout pour les plus modestes
+[1] Il faut baisser le prix des transports en commun
 
 question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
 [3] Il faut un contrôle des prix sur les produits de première nécessité : alimentation, hygiène, etc.
