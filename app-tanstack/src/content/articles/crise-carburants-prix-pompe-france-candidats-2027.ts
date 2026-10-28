@@ -119,7 +119,7 @@ export const article: Article = {
 
 <h2>Pour aller plus loin</h2>
 <ul>
-<li><a href="/question-politique/fiscalite-carburants-prix-pompe-france">Face à la flambée des prix des carburants, quel levier privilégier ?</a> — la nouvelle question du Quizz du Berger sur ce sujet.</li>
+<li><a href="/question-politique/fiscalite-carburants-prix-pompe-france">Les prix de l'essence et du diesel s'envolent : que doit faire l'État ?</a> — la nouvelle question du Quizz du Berger sur ce sujet.</li>
 <li><a href="/theme/pouvoir-d-achat-et-vie-quotidienne">Pouvoir d'achat et vie quotidienne</a> — inflation, prix de l'énergie, coût des transports.</li>
 <li><a href="/theme/climat-energie-et-ecologie">Climat, énergie et écologie</a> — sobriété énergétique et fiscalité verte.</li>
 <li><a href="/blog/guerre-iran-detroit-ormuz-france-candidats-2027">Guerre Iran-Israël et détroit d'Ormuz</a> — l'origine géopolitique de la flambée des prix du pétrole.</li>

@@ -24,4 +24,5 @@ export const temoignages = [
   { blockquote: "J'ai trouvé votre site vraiment hyper utile, parfait pour quelqu'un qui veut pas aller chercher programme par programme !", figcaption: 'Matthieu' },
   { blockquote: "C'est une excellente base de travail. Ça m'oblige à me poser plein de questions que je ne me suis pas posées. C'est un outil précieux, merci à vous de l'avoir développé.", figcaption: 'Maloé' },
   { blockquote: 'Je suis très satisfait du contenu : il couvre de nombreux sujets essentiels pour les Français.', figcaption: 'Alexandre' },
+  { blockquote: "Je suis une personne qui a du mal a s'intéresser a la politique pour diverses raisons et j'apprécie qu'une plateforme telle que la votre puisse permettre de mettre de l'ordre dans mes idées et celles des candidats.", figcaption: 'Nicolas' },
 ];
