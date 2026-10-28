@@ -2524,11 +2524,27 @@
       },
       {
         "_id": "question-2027-edu-06",
-        "fr": "Que pensez-vous de la laïcité et des signes religieux à l'école ?",
+        "fr": "Que pensez-vous des signes religieux à l'école ?",
         "answers": [
-          "Les élèves sont libres de porter ce qu'ils veulent, la France est un pays libre",
-          "Pas de signe religieux ostentatoire à l'école, c'est la loi et c'est bien comme ça",
-          "Il faut aller plus loin : uniforme scolaire pour tout le monde, ça évite les discriminations",
+          "Les élèves sont libres de porter les signes religieux qu'ils veulent",
+          "Les signes discrets (petite croix, médaille) sont tolérés, les signes visibles (voile, kippa, grande croix) sont interdits : c'est la loi de 2004 et c'est bien comme ça",
+          "Aucun signe religieux à l'école, même discret",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0],
+          [3, 5, 3, 0],
+          [0, 3, 5, 0],
+          [0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-edu-08",
+        "fr": "Faut-il un uniforme à l'école ?",
+        "answers": [
+          "Non, chaque élève s'habille comme il veut",
+          "Oui, recommandé pour toutes les écoles, mais chaque chef d'établissement décide",
+          "Oui, imposé à toutes les écoles, publiques et privées",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

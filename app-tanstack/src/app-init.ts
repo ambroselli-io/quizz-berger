@@ -30,6 +30,8 @@ if (import.meta.env.PROD && typeof window !== 'undefined') {
       'AbortError: The operation was aborted',
       'TypeError: cancelled',
       'TypeError: annulé',
+      "Can't find variable: DarkReader",
+      "Can't find variable: __firefox__",
     ],
   });
 }
