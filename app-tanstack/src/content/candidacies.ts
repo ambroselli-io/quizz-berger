@@ -277,7 +277,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Les Écologistes',
     summary:
-      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Le conseil fédéral du parti a cependant reporté le choix final au 13 décembre 2026 : un vote des adhérents tranchera alors entre sa candidature autonome et un soutien à un candidat extérieur au parti. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes.",
+      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Le conseil fédéral du parti a cependant reporté le choix final au 13 décembre 2026 : un vote des adhérents tranchera alors entre sa candidature autonome et un soutien à un candidat extérieur au parti. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes. Le 26 octobre 2026, elle a néanmoins ouvert la porte à un retrait en sa faveur « s'il y a un chemin de victoire » à gauche, à quatre conditions.",
     events: [
       {
         date: '2025-10-22',
@@ -325,6 +325,24 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/victoire-de-raphael-glucksmann-a-la-primaire-socialiste-premieres-reactions-des',
             date: '2026-10-11',
+          },
+        ],
+      },
+      {
+        date: '2026-10-26',
+        type: 'step',
+        label:
+          "Elle n'exclut plus de retirer sa candidature au profit d'un autre candidat de gauche « s'il y a un chemin de victoire », posant quatre conditions : un accord de gouvernement, un accord aux législatives, un accord programmatique et un accord sur le dispositif de campagne.",
+        sources: [
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-10-26/presidentielle-2027-marine-tondelier-evoque-son-retrait-sil-y-un-chemin-de',
+            date: '2026-10-26',
+          },
+          {
+            label: "L'Express via Orange",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-marine-tondelier-evoque-la-possibilite-de-retirer-sa-candidature-l-express-via-6medias-CNT000002tosYK.html',
+            date: '2026-10-26',
           },
         ],
       },
@@ -1817,7 +1835,7 @@ export const candidacies: Candidacy[] = [
     status: 'potential',
     movement: 'La France humaniste',
     summary:
-      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Il n'a pas officialisé sa candidature.",
+      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Le 22 octobre 2026, il a annoncé avoir dépassé la barre des 300 signatures, en disant vouloir trancher dans les semaines à venir. Il n'a pas officialisé sa candidature.",
     events: [
       {
         date: '2026-04-10',
@@ -1840,6 +1858,19 @@ export const candidacies: Candidacy[] = [
             label: 'Orange Actualités',
             url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-declare-vouloir-etre-candidat-magic-CNT000002rCnAy.html',
             date: '2026-08-30',
+          },
+        ],
+      },
+      {
+        date: '2026-10-22',
+        type: 'step',
+        label:
+          "Il annonce sur BFMTV avoir dépassé la barre des 300 signatures d'élus, et dit vouloir trancher dans les semaines à venir.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/presidentielle-dominique-de-villepin-annonce-avoir-depasse-la-barre-des-300-signatures',
+            date: '2026-10-22',
           },
         ],
       },
