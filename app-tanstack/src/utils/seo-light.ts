@@ -377,6 +377,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'État d\'urgence ou couvre-feu : les candidats 2027',
     seoDescription: `Après les violences du 17 octobre 2026, état d'urgence, couvre-feux ciblés ou droit commun ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-gouv-09': {
+    slug: 'autonomie-corse-france',
+    seoTitle: 'Autonomie de la Corse : les positions des candidats 2027',
+    seoDescription: `Après le rejet du statut d'autonomie par le Sénat le 27 octobre 2026, large autonomie, statut adapté ou maintien du droit commun ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated

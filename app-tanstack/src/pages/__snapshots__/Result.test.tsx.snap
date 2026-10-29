@@ -9,7 +9,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 98,
+    "percent": 97,
     "pseudos": [
       "Selma Labib",
     ],
@@ -21,19 +21,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 96,
+    "percent": 95,
     "pseudos": [
       "Juan Branco",
     ],
   },
   {
-    "percent": 94,
+    "percent": 93,
     "pseudos": [
       "Jean-Luc Mélenchon",
     ],
   },
   {
-    "percent": 92,
+    "percent": 91,
     "pseudos": [
       "Clémentine Autain",
     ],
@@ -57,7 +57,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 75,
+    "percent": 74,
     "pseudos": [
       "Lydie Massard",
     ],
@@ -65,17 +65,12 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 74,
     "pseudos": [
+      "Emmanuel Maurel",
       "Marine Tondelier",
     ],
   },
   {
-    "percent": 74,
-    "pseudos": [
-      "Emmanuel Maurel",
-    ],
-  },
-  {
-    "percent": 73,
+    "percent": 72,
     "pseudos": [
       "Olivier Faure",
     ],
@@ -99,7 +94,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 66,
+    "percent": 65,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -141,7 +136,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 56,
     "pseudos": [
       "Dominique de Villepin",
     ],
@@ -165,13 +160,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 53,
+    "percent": 52,
     "pseudos": [
       "Karim Bouamrane",
     ],
   },
   {
-    "percent": 51,
+    "percent": 50,
     "pseudos": [
       "François Hollande",
     ],
@@ -220,7 +215,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 32,
+    "percent": 31,
     "pseudos": [
       "Olivier Becht",
     ],
@@ -262,7 +257,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 16,
+    "percent": 17,
     "pseudos": [
       "David Lisnard",
     ],

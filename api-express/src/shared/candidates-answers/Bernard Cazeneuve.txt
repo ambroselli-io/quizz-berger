@@ -265,6 +265,9 @@ question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés e
 question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
 [3] Oui : les élections ont lieu et les élus appliquent leur mandat, c'est le fonctionnement normal d'une démocratie représentative
 
+question-2027-gouv-09: Faut-il donner un statut d'autonomie à la Corse, avec reconnaissance constitutionnelle et pouvoir normatif ?
+[1] Oui, un statut d'autonomie adapté à la Corse, avec un pouvoir normatif sur certains sujets, mais sans aller jusqu'au pouvoir législatif
+
 
 Logement:
 
