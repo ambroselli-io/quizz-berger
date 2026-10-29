@@ -1527,6 +1527,27 @@
           [0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-gouv-09",
+        "fr": "Faut-il donner un statut d'autonomie à la Corse, avec reconnaissance constitutionnelle et pouvoir normatif ?",
+        "help": "https://www.publicsenat.fr/actualites/politique/statut-de-la-corse-le-senat-rejette-la-reforme-le-camp-autonomiste-claque-la-porte",
+        "answers": [
+          "Oui, une autonomie large avec un vrai pouvoir législatif pour la Corse, et plus largement une France qui reconnaît ses diversités régionales",
+          "Oui, un statut d'autonomie adapté à la Corse, avec un pouvoir normatif sur certains sujets, mais sans aller jusqu'au pouvoir législatif",
+          "Des adaptations ponctuelles sont possibles, mais sans reconnaissance d'une « communauté » distincte dans la Constitution",
+          "Non, la Corse doit rester une collectivité comme les autres, sans statut constitutionnel particulier",
+          "Non, fermement : toute reconnaissance d'une spécificité corse menace l'unité et l'indivisibilité de la République",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 2, 0, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 2, 0],
+          [0, 1, 3, 5, 4, 0],
+          [0, 0, 2, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

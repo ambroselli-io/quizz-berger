@@ -804,6 +804,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -1650,6 +1655,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -2493,6 +2503,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
         "answerIndex": 1
       },
       {
@@ -3342,6 +3357,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -4186,6 +4206,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -5036,6 +5061,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -5880,6 +5910,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -6730,6 +6765,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -7574,6 +7614,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -8424,6 +8469,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -9269,6 +9319,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
         "answerIndex": 0
       },
       {
@@ -10118,6 +10173,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -10961,6 +11021,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
         "answerIndex": 1
       },
       {
@@ -11810,6 +11875,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 2
@@ -12654,6 +12724,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -13504,6 +13579,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -14350,6 +14430,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -15200,6 +15285,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -16044,6 +16134,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -16892,6 +16987,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -17735,6 +17835,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
         "answerIndex": 0
       },
       {
@@ -18584,6 +18689,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -19428,6 +19538,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -20276,6 +20391,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -21122,6 +21242,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 1
@@ -21965,6 +22090,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
         "answerIndex": 0
       },
       {
@@ -22814,6 +22944,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -23233,6 +23368,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -24081,6 +24221,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -24925,6 +25070,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-logement",
@@ -25772,6 +25922,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
         "answerIndex": 1
       },
       {
@@ -26623,6 +26778,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -27467,6 +27627,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-logement",
@@ -28315,6 +28480,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -29161,6 +29331,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 2
@@ -30005,6 +30180,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -30855,6 +31035,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -31701,6 +31886,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-logement",
@@ -32551,6 +32741,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 0
@@ -33397,6 +33592,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-logement",
@@ -34250,6 +34450,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 5
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -35094,6 +35299,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-logement",
@@ -35962,6 +36172,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-02",
         "answerIndex": 1
@@ -36806,6 +37021,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-logement",
@@ -38054,6 +38274,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-07",
         "answerIndex": 0
@@ -38498,6 +38723,11 @@
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-08",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-gouvernance",
+        "questionId": "question-2027-gouv-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",

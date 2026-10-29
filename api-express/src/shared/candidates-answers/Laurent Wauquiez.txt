@@ -265,6 +265,9 @@ question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés e
 question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
 [1] Pas assez : trop de décisions se prennent contre l'avis des électeurs
 
+question-2027-gouv-09: Faut-il donner un statut d'autonomie à la Corse, avec reconnaissance constitutionnelle et pouvoir normatif ?
+[3] Non, la Corse doit rester une collectivité comme les autres, sans statut constitutionnel particulier
+
 
 Logement:
 
