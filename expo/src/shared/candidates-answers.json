@@ -119,6 +119,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -465,7 +470,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -965,6 +980,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -1311,7 +1331,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -1811,6 +1841,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -2157,8 +2192,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -2657,6 +2702,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -3003,8 +3053,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -3503,6 +3563,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -3849,7 +3914,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 0
       },
       {
@@ -4351,6 +4426,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -4697,8 +4777,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
-        "answerIndex": 3
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -5197,6 +5287,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -5543,7 +5638,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -6045,6 +6150,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -6391,8 +6501,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -6891,6 +7011,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -7237,8 +7362,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -7739,6 +7874,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -8085,8 +8225,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -8587,6 +8737,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -8933,7 +9088,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -9433,6 +9598,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -9779,7 +9949,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -10279,6 +10459,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -10625,8 +10810,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -11125,6 +11320,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -11471,8 +11671,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -11971,6 +12181,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -12317,7 +12532,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -12819,6 +13044,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -13165,8 +13395,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -13667,6 +13907,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -14013,7 +14258,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 2
       },
       {
@@ -14515,6 +14770,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -14861,8 +15121,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -15361,6 +15631,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -15707,8 +15982,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -16207,6 +16492,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -16553,7 +16843,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 2
       },
       {
@@ -17053,6 +17353,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -17399,8 +17704,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
-        "answerIndex": 3
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -17899,6 +18214,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -18245,7 +18565,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 0
       },
       {
@@ -18745,6 +19075,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -19091,8 +19426,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -19591,6 +19936,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -19937,7 +20287,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 0
       },
       {
@@ -20437,6 +20797,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -20783,7 +21148,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -21283,6 +21658,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -21484,8 +21864,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
-        "answerIndex": 3
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -22129,6 +22519,11 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -22330,7 +22725,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -23005,6 +23410,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -23406,8 +23816,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -23851,6 +24271,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -24252,8 +24677,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -24697,6 +25132,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -25098,8 +25538,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -25545,6 +25995,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -25946,7 +26401,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -26393,6 +26858,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -26794,8 +27264,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -27239,6 +27719,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -27640,8 +28125,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -28085,6 +28580,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -28486,8 +28986,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -28931,6 +29441,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -29332,7 +29847,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -29777,6 +30302,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -30178,7 +30708,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 2
       },
       {
@@ -30625,6 +31165,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -31026,7 +31571,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -31473,6 +32028,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -31874,7 +32434,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -32321,6 +32891,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -32722,7 +33297,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 3
       },
       {
@@ -33169,6 +33754,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -33570,7 +34160,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 2
       },
       {
@@ -34015,6 +34615,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -34421,8 +35026,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -34861,6 +35476,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -35267,7 +35887,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 2
       },
       {
@@ -35717,6 +36347,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 3
@@ -36133,8 +36768,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -36563,6 +37208,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -36979,7 +37629,17 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
         "answerIndex": 1
       },
       {
@@ -37369,6 +38029,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 1
@@ -37715,8 +38380,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -38255,6 +38930,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-climat",
+        "questionId": "question-2027-climat-08",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-corruption",
         "questionId": "question-2027-corr-01",
         "answerIndex": 2
@@ -38671,8 +39351,18 @@
       },
       {
         "themeId": "theme-2027-fiscal",
-        "questionId": "question-2027-fisc-07",
+        "questionId": "question-2027-fisc-10",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-11",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-fiscal",
+        "questionId": "question-2027-fisc-12",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",

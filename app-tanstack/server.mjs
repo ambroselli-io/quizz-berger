@@ -99,6 +99,12 @@ app.get('/question-politique/comment-reduire-le-chomage-en-france', (_req, res) 
   res.redirect(301, '/blog/hausse-chomage-france-candidats-2027'),
 );
 
+// "Comment rendre la fiscalité plus verte ?" was split into single-axis questions.
+// Its SEO slug stays on fisc-10 (see hotTopicSlugs); only the id-based route moved.
+app.get('/question/theme-2027-fiscal/question-2027-fisc-07', (_req, res) =>
+  res.redirect(301, '/question/theme-2027-fiscal/question-2027-fisc-10'),
+);
+
 // Markdown content negotiation (acceptmarkdown.com). When a client sends
 // Accept: text/markdown, serve llms.txt for the homepage instead of HTML.
 let llmsTxtContent = '';

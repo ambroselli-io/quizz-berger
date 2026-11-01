@@ -90,6 +90,9 @@ question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consomm
 question-2027-climat-07b: Face aux feux de forêt, faut-il augmenter les moyens nationaux de la sécurité civile (pompiers, avions bombardiers d'eau) ?
 [1] Mieux utiliser les moyens existants, sans hausse du budget
 
+question-2027-climat-08: Celui qui abîme la nature (eau, sols, forêts...) doit-il payer pour la réparer ?
+[1] Seulement en cas de pollution illégale ou d'accident
+
 
 Corruption et lobbying:
 
@@ -386,8 +389,14 @@ question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la For
 question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
 [3] Ça tuerait l'efficacité des marchés et donc la croissance : surtout pas
 
-question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
-[1] Baisser la TVA sur les produits verts et l'énergie pour redonner du pouvoir d'achat
+question-2027-fisc-10: Que faire des taxes sur ce qui pollue (carburants, plastique, pesticides, billets d'avion...) ?
+[1] Il faut les baisser, elles pèsent trop sur le budget des gens
+
+question-2027-fisc-11: Faut-il baisser la TVA sur ce qui est bon pour l'environnement (train, rénovation énergétique, réparation, produits bio...) ?
+[1] Seulement pour quelques achats ciblés, comme la rénovation énergétique
+
+question-2027-fisc-12: Faut-il une taxe spéciale sur les consommations de luxe très polluantes (jets privés, yachts...) ?
+[0] Non, chacun dépense son argent comme il veut
 
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [3] Il faut continuer à baisser les impôts des entreprises pour la compétitivité et l'emploi

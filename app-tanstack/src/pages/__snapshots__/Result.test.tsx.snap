@@ -21,19 +21,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 96,
+    "percent": 95,
     "pseudos": [
       "Juan Branco",
     ],
   },
   {
-    "percent": 94,
+    "percent": 93,
     "pseudos": [
       "Jean-Luc Mélenchon",
     ],
   },
   {
-    "percent": 92,
+    "percent": 91,
     "pseudos": [
       "Clémentine Autain",
     ],
@@ -54,18 +54,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     "percent": 75,
     "pseudos": [
       "Delphine Batho",
-    ],
-  },
-  {
-    "percent": 75,
-    "pseudos": [
       "Lydie Massard",
-    ],
-  },
-  {
-    "percent": 74,
-    "pseudos": [
-      "Marine Tondelier",
     ],
   },
   {
@@ -77,7 +66,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 73,
     "pseudos": [
-      "Olivier Faure",
+      "Marine Tondelier",
     ],
   },
   {
@@ -87,7 +76,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 69,
+    "percent": 72,
+    "pseudos": [
+      "Olivier Faure",
+    ],
+  },
+  {
+    "percent": 70,
     "pseudos": [
       "Francis Lalanne",
     ],
@@ -99,15 +94,9 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 66,
+    "percent": 65,
     "pseudos": [
       "Jérôme Guedj",
-    ],
-  },
-  {
-    "percent": 63,
-    "pseudos": [
-      "Parti pirate",
     ],
   },
   {
@@ -117,13 +106,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 61,
+    "percent": 63,
+    "pseudos": [
+      "Parti pirate",
+    ],
+  },
+  {
+    "percent": 62,
     "pseudos": [
       "Ségolène Royal",
     ],
   },
   {
-    "percent": 60,
+    "percent": 61,
     "pseudos": [
       "Philippe Brun",
     ],
@@ -141,15 +136,15 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 56,
     "pseudos": [
-      "Dominique de Villepin",
+      "Natacha Polony",
     ],
   },
   {
     "percent": 55,
     "pseudos": [
-      "Natacha Polony",
+      "Dominique de Villepin",
     ],
   },
   {
@@ -179,8 +174,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 50,
     "pseudos": [
-      "Florian Philippot",
       "François Asselineau",
+    ],
+  },
+  {
+    "percent": 50,
+    "pseudos": [
+      "Florian Philippot",
     ],
   },
   {
@@ -196,7 +196,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 41,
+    "percent": 42,
     "pseudos": [
       "Clara Egger",
     ],
@@ -250,7 +250,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 20,
+    "percent": 21,
     "pseudos": [
       "Gérald Darmanin",
     ],
@@ -262,7 +262,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 16,
+    "percent": 17,
     "pseudos": [
       "David Lisnard",
     ],
