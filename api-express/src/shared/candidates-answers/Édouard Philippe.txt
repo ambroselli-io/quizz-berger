@@ -196,7 +196,7 @@ question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissem
 question-2027-dep-07: Que devrait faire l'État avec les aides sociales (RSA, allocations familiales, aides au logement, minima sociaux) ?
 [1] Il faut mieux les cibler : garder l'essentiel, supprimer les abus et les doublons
 
-question-2027-dep-08: Comment faire évoluer les salaires des fonctionnaires ?
+question-2027-dep-08: Comment faire évoluer le salaire de la plupart des fonctionnaires (enseignants, infirmiers, policiers, agents administratifs…) ?
 [1] Il faut geler les salaires pour maîtriser la dépense publique
 
 
@@ -228,8 +228,8 @@ Finance:
 question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
 [2] La finance est utile mais il faut la réguler correctement pour éviter les crises
 
-question-2027-fin-02: Que pensez-vous de la spéculation financière ?
-[2] C'est un mal nécessaire pour les investissements, à condition de contrôler les dérives
+question-2027-fin-02: La spéculation financière consiste à parier sur la hausse ou la baisse d'un prix (action, devise, matière première) pour gagner de l'argent sur cette variation, plutôt que sur les revenus de l'actif. Faut-il l'encadrer davantage ?
+[2] Un peu : elle rend les marchés plus liquides, ce qui aide à financer l'investissement, mais il faut contrôler les dérives
 
 question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine financier ?
 [1] Il faut des déclarations régulières et vérifiables, c'est un minimum en démocratie
@@ -239,6 +239,9 @@ question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rende
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
 [1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
+
+question-2027-fin-06: Une entreprise qui entre en bourse lève des fonds en vendant des actions. Ensuite, ces actions s'échangent entre investisseurs : l'entreprise ne reçoit rien de plus, mais chacun peut revendre quand il veut. Que pensez-vous de la bourse ?
+[3] Elle est indispensable : elle permet aux entreprises de lever des fonds et à chacun d'investir
 
 
 Gouvernance et République:

@@ -60,7 +60,7 @@ export default function FeedbackScreen() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isSent, setIsSent] = useState(false);
-  const emailRef = useRef<TextInput>(null);
+  const emailRef = useRef<React.ComponentRef<typeof TextInput>>(null);
 
   const texts = copy[kind];
 

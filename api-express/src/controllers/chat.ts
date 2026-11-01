@@ -29,9 +29,9 @@ export const MAX_CHATS_PER_DAY = 50;
 // Users who made a donation (controllers/supporter.ts).
 export const SUPPORTER_MAX_USER_MESSAGES_PER_CHAT = 60;
 export const SUPPORTER_MAX_CHATS_PER_DAY = 150;
-// Reasoning is off (reasoningEffort "none"): with it on, Large 4 sometimes spent the whole budget thinking
-// and sent back an empty reply. A 150-word reply is ~300 tokens.
-const MAX_OUTPUT_TOKENS = 1500;
+// Reasoning stays low (utils/chat-model.ts): a reply usually takes ~500 tokens, thinking included, but the thinking
+// alone sometimes went past 1500 and left the reply empty.
+const MAX_OUTPUT_TOKENS = 3000;
 
 // themeIds: the quiz themes the candidate looked up to write this reply, sent back in the system prompt of the next messages
 // so the model does not call the tool again for them. Never shown to the client.
@@ -221,7 +221,6 @@ router.post(
           }
         : {}),
       maxOutputTokens: MAX_OUTPUT_TOKENS,
-      providerOptions: { mistral: { reasoningEffort: "none" } },
       onError: ({ error }) => {
         streamError = error;
         console.error(`[chat] ${chat.id} stream error`, error);

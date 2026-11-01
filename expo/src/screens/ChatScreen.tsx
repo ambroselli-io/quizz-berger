@@ -162,7 +162,7 @@ export default function ChatScreen() {
   // chatId: an existing conversation picked up again from the list.
   const [isResuming, setIsResuming] = useState(!!params.chatId);
   const startedRef = useRef(!!params.chatId);
-  const containerRef = useRef<View>(null);
+  const containerRef = useRef<React.ComponentRef<typeof View>>(null);
   const [kbOffset, setKbOffset] = useState(0);
   const minInputHeight = useRef<number | null>(null);
 

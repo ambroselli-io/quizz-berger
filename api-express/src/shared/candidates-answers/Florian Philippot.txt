@@ -196,7 +196,7 @@ question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissem
 question-2027-dep-07: Que devrait faire l'État avec les aides sociales (RSA, allocations familiales, aides au logement, minima sociaux) ?
 [3] Il faut les augmenter : trop de gens vivent encore sous le seuil de pauvreté
 
-question-2027-dep-08: Comment faire évoluer les salaires des fonctionnaires ?
+question-2027-dep-08: Comment faire évoluer le salaire de la plupart des fonctionnaires (enseignants, infirmiers, policiers, agents administratifs…) ?
 [3] Il faut les augmenter au-delà de l'inflation : les fonctionnaires ont perdu du pouvoir d'achat
 
 
@@ -228,8 +228,8 @@ Finance:
 question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
 [3] La finance a pris trop de pouvoir dans nos sociétés, il faut sérieusement la recadrer
 
-question-2027-fin-02: Que pensez-vous de la spéculation financière ?
-[1] C'est dangereux pour la stabilité financière, il faut l'encadrer le plus strictement possible
+question-2027-fin-02: La spéculation financière consiste à parier sur la hausse ou la baisse d'un prix (action, devise, matière première) pour gagner de l'argent sur cette variation, plutôt que sur les revenus de l'actif. Faut-il l'encadrer davantage ?
+[1] Oui, avec l'encadrement le plus strict possible
 
 question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine financier ?
 [1] Il faut des déclarations régulières et vérifiables, c'est un minimum en démocratie
@@ -239,6 +239,9 @@ question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rende
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
 [1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
+
+question-2027-fin-06: Une entreprise qui entre en bourse lève des fonds en vendant des actions. Ensuite, ces actions s'échangent entre investisseurs : l'entreprise ne reçoit rien de plus, mais chacun peut revendre quand il veut. Que pensez-vous de la bourse ?
+[2] Elle est utile, à condition d'être bien surveillée
 
 
 Gouvernance et République:

@@ -1141,7 +1141,7 @@
       },
       {
         "_id": "question-2027-dep-08",
-        "fr": "Comment faire évoluer les salaires des fonctionnaires ?",
+        "fr": "Comment faire évoluer le salaire de la plupart des fonctionnaires (enseignants, infirmiers, policiers, agents administratifs…) ?",
         "answers": [
           "Il faut baisser les salaires des fonctionnaires : ils sont trop payés par rapport au privé",
           "Il faut geler les salaires pour maîtriser la dépense publique",
@@ -1311,13 +1311,13 @@
       },
       {
         "_id": "question-2027-fin-02",
-        "fr": "Que pensez-vous de la spéculation financière ?",
+        "fr": "La spéculation financière consiste à parier sur la hausse ou la baisse d'un prix (action, devise, matière première) pour gagner de l'argent sur cette variation, plutôt que sur les revenus de l'actif. Faut-il l'encadrer davantage ?",
         "help": "https://fr.wikipedia.org/wiki/Spéculation",
         "answers": [
-          "C'est une aberration déconnectée de l'économie réelle, il faut l'interdire sur les produits dérivés",
-          "C'est dangereux pour la stabilité financière, il faut l'encadrer le plus strictement possible",
-          "C'est un mal nécessaire pour les investissements, à condition de contrôler les dérives",
-          "C'est le fondement de notre système économique, ça récompense l'intelligence et la prise de risque",
+          "Oui, jusqu'à l'interdire sur les produits dérivés",
+          "Oui, avec l'encadrement le plus strict possible",
+          "Un peu : elle rend les marchés plus liquides, ce qui aide à financer l'investissement, mais il faut contrôler les dérives",
+          "Non : c'est une prise de risque légitime, qu'il faut laisser libre",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
@@ -1375,6 +1375,24 @@
           "Il faut les alléger, surtout pour les patrimoines modestes et moyens",
           "Le système actuel est un bon compromis, il n'y a pas besoin de le changer",
           "Il faut les alourdir pour réduire les inégalités de naissance et redistribuer les richesses",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 0, 0, 0],
+          [4, 5, 1, 0, 0],
+          [0, 1, 5, 4, 0],
+          [0, 0, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-fin-06",
+        "fr": "Une entreprise qui entre en bourse lève des fonds en vendant des actions. Ensuite, ces actions s'échangent entre investisseurs : l'entreprise ne reçoit rien de plus, mais chacun peut revendre quand il veut. Que pensez-vous de la bourse ?",
+        "answers": [
+          "Elle nuit à l'économie : elle pousse les entreprises à servir d'abord leurs actionnaires",
+          "Elle a son utilité, mais ses inconvénients pèsent plus lourd",
+          "Elle est utile, à condition d'être bien surveillée",
+          "Elle est indispensable : elle permet aux entreprises de lever des fonds et à chacun d'investir",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

@@ -174,7 +174,7 @@ export default function QuestionScreen() {
           {question.fr}
         </Text>
 
-        {question.help && (
+        {question.help?.startsWith('http') && (
           <Pressable
             onPress={() => Linking.openURL(question.help!)}
             hitSlop={8}

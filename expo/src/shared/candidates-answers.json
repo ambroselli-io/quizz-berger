@@ -294,6 +294,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -1152,6 +1157,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 2
       },
       {
@@ -2016,6 +2026,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -2877,6 +2892,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 3
@@ -3736,6 +3756,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -4601,6 +4626,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -5460,6 +5490,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -6325,6 +6360,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 3
@@ -7184,6 +7224,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -8049,6 +8094,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 3
@@ -8912,6 +8962,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -9771,6 +9826,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -10634,6 +10694,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -11493,6 +11558,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -12356,6 +12426,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 2
@@ -13216,6 +13291,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 2
       },
       {
@@ -14082,6 +14162,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -14945,6 +15030,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 3
@@ -15806,6 +15896,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -16664,6 +16759,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 2
       },
       {
@@ -17528,6 +17628,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -18387,6 +18492,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -19250,6 +19360,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -20111,6 +20226,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 3
@@ -20969,6 +21089,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 2
       },
       {
@@ -21833,6 +21958,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -22691,6 +22821,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 1
       },
       {
@@ -23605,6 +23740,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -24466,6 +24606,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -25325,6 +25470,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -26190,6 +26340,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -27053,6 +27208,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -27912,6 +28072,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -28775,6 +28940,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -29633,6 +29803,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 2
       },
       {
@@ -30495,6 +30670,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -31360,6 +31540,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -32221,6 +32406,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -33086,6 +33276,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -33946,6 +34141,11 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
         "answerIndex": 2
       },
       {
@@ -34815,6 +35015,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 1
@@ -35674,6 +35879,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -36557,6 +36767,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -37418,6 +37633,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
         "answerIndex": 0
@@ -38202,6 +38422,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -39138,6 +39363,11 @@
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-finance",
+        "questionId": "question-2027-fin-06",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",

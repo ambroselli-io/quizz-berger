@@ -38,7 +38,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     "expo-font",
     "expo-image",
     "expo-status-bar",
-    "@vonovak/react-native-theme-control",
     // Source maps / dSYM upload at build time; the token comes from SENTRY_AUTH_TOKEN or ~/.sentryclirc.
     ["@sentry/react-native", { organization: "arnaud-ambroselli", project: "quizz-du-berger-expo" }],
     [
