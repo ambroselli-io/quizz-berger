@@ -293,7 +293,7 @@ question-2027-ia-04: Faut-il freiner ou accélérer le remplacement des salarié
 question-2027-ia-05: Une société où l'on travaillerait beaucoup moins, ça vous fait envie ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
-question-2027-ia-06: Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes par rapport à aujourd'hui ?
+question-2027-ia-06: Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes sur le marché du travail par rapport à aujourd'hui ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 question-2027-ia-07: Si l'IA supprime beaucoup d'emplois, quel revenu verser à tout le monde, sans condition ?
@@ -367,7 +367,7 @@ question-2027-log-11: Que faire des aides au logement pour les ménages (APL, pr
 [2] Les maintenir au niveau actuel
 
 
-Numérique et IA:
+Numérique:
 
 
 question-2027-num-01: Comment voyez-vous l'impact de l'IA sur la société ?

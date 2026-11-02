@@ -1596,7 +1596,7 @@
         "fr": "Quand l'IA sera-t-elle plus intelligente que n'importe quel humain, dans tous les domaines ?",
         "help": "https://fr.wikipedia.org/wiki/Intelligence_artificielle_générale",
         "answers": [
-          "C'est déjà le cas",
+          "C'est déjà (presque) le cas",
           "D'ici 5 ans",
           "D'ici 20 ans",
           "Dans plus de 50 ans",
@@ -1696,7 +1696,7 @@
       },
       {
         "_id": "question-2027-ia-06",
-        "fr": "Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes par rapport à aujourd'hui ?",
+        "fr": "Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes sur le marché du travail par rapport à aujourd'hui ?",
         "answers": [
           "Plus aucune",
           "Beaucoup moins",
@@ -2152,7 +2152,7 @@
   },
   {
     "_id": "theme-2027-numerique",
-    "fr": "Numérique et IA",
+    "fr": "Numérique",
     "questions": [
       {
         "_id": "question-2027-num-01",

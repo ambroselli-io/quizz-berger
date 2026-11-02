@@ -40,7 +40,7 @@ export const article: Article = {
 <p>Les députés socialistes, qui se sont abstenus lors du vote final, ont annoncé vouloir saisir le Conseil constitutionnel : une interdiction générale et absolue pourrait être jugée disproportionnée par rapport à l'objectif de protection des mineurs, certains estimant que seules certaines fonctionnalités des plateformes (recommandation algorithmique, notifications, messagerie) posent réellement problème. Par ailleurs, <a href="https://droit.developpez.com/actu/385387/Le-Parlement-francais-enterine-l-interdiction-des-reseaux-sociaux-aux-moins-de-15-ans-mais-le-texte-porte-par-Emmanuel-Macron-se-heurte-a-des-obstacles-techniques-majeurs-et-au-droit-europeen/" target="_blank" rel="noopener noreferrer">la plupart des grandes plateformes sont enregistrées en Irlande et relèvent donc, pour une partie de leur régulation, du droit européen</a> : <a href="https://www.touteleurope.eu/societe/les-deputes-et-senateurs-francais-approuvent-l-interdiction-de-l-acces-aux-reseaux-sociaux-pour-les-moins-de-15-ans-une-premiere-en-europe/" target="_blank" rel="noopener noreferrer">l'application extraterritoriale de la loi française reste un point d'incertitude juridique</a>.</p>
 
 <h2>Les positions des ${candidatesCount} candidats à la présidentielle 2027</h2>
-<p>Sur la question <a href="/question-politique/interdiction-reseaux-sociaux-mineurs-15-ans">« Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ? »</a> du <a href="/theme/numerique-et-ia">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en trois familles.</p>
+<p>Sur la question <a href="/question-politique/interdiction-reseaux-sociaux-mineurs-15-ans">« Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ? »</a> du <a href="/theme/numerique">Quizz du Berger</a>, les ${candidatesCount} candidats se répartissent en trois familles.</p>
 
 <h3>Famille 1 — Interdiction stricte, dans l'esprit de la loi (voire plus loin)</h3>
 <p>Ces candidats jugent les réseaux sociaux comme le problème numéro un de la jeunesse actuelle et défendent une interdiction pure et simple avant 16 ans, une position plus stricte encore que la loi votée le 21 juillet (15 ans). Sans surprise, la plupart de ces candidats ou de leurs partis <a href="https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/proposition-de-loi-visant-a-proteger-les-mineurs-des-risques-auxquels-les-expose-l-utilisation-des-reseaux-sociaux-adoption" target="_blank" rel="noopener noreferrer">ont voté en faveur du texte le 21 juillet</a>.</p>
@@ -95,7 +95,7 @@ export const article: Article = {
 <h2>Pour aller plus loin</h2>
 <p>Cette loi s'inscrit dans un débat plus large sur le numérique, l'intelligence artificielle et la protection de la vie privée. Sur le Quizz du Berger, les thèmes et questions qui touchent à ces sujets :</p>
 <ul>
-<li><a href="/theme/numerique-et-ia">Numérique et IA</a> — IA, souveraineté numérique, surveillance, dématérialisation.</li>
+<li><a href="/theme/numerique">Numérique</a> — IA, souveraineté numérique, surveillance, dématérialisation.</li>
 <li><a href="/question-politique/interdiction-reseaux-sociaux-mineurs-15-ans">Réseaux sociaux et écrans chez les jeunes</a> — la question complète et les réponses détaillées des ${candidatesCount} candidats.</li>
 <li><a href="/question-politique/intelligence-artificielle-regulation">Intelligence artificielle</a> — comment les candidats voient la régulation de l'IA.</li>
 </ul>

@@ -105,6 +105,9 @@ app.get('/question/theme-2027-fiscal/question-2027-fisc-07', (_req, res) =>
   res.redirect(301, '/question/theme-2027-fiscal/question-2027-fisc-10'),
 );
 
+// "Numérique et IA" became "Numérique" when the "IA et robotisation" theme was added.
+app.get('/theme/numerique-et-ia', (_req, res) => res.redirect(301, '/theme/numerique'));
+
 // Markdown content negotiation (acceptmarkdown.com). When a client sends
 // Accept: text/markdown, serve llms.txt for the homepage instead of HTML.
 let llmsTxtContent = '';

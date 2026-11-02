@@ -73,7 +73,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
     "questionCount": 9,
   },
   {
-    "fr": "Numérique et IA",
+    "fr": "Numérique",
     "id": "theme-2027-numerique",
     "questionCount": 5,
   },
