@@ -2,7 +2,7 @@ name: Google indexing for new articles
 
 # Runs when a push to main adds a blog article (a file in src/content/articles/)
 # or a hot-topic
-# question page (hotTopicSlugs in seo.ts). Waits for the VPS deploy to publish
+# question page (hotTopicSlugs in seo-light.ts). Waits for the VPS deploy to publish
 # the new URLs in the sitemap, then runs goenning/google-indexing-script with
 # --urls limited to the URLs added by this push. Deliberately NOT a full
 # sitemap sweep: pages Google already crawled and chose not to index are left
@@ -18,7 +18,7 @@ on:
     branches: [main]
     paths:
       - "app-tanstack/src/content/articles/**"
-      - "app-tanstack/src/utils/seo.ts"
+      - "app-tanstack/src/utils/seo-light.ts"
 
 concurrency:
   group: google-indexing
@@ -64,9 +64,9 @@ jobs:
           for slug in $(added_article_slugs); do
             urls="$urls $BASE_URL/blog/$slug"
           done
-          # seo.ts also contains comparison-pair slugs; non-question matches are
+          # seo-light.ts also contains comparison-pair slugs; non-question matches are
           # filtered out by the sitemap check in the next step.
-          for slug in $(added_slugs app-tanstack/src/utils/seo.ts); do
+          for slug in $(added_slugs app-tanstack/src/utils/seo-light.ts); do
             urls="$urls $BASE_URL/question-politique/$slug"
           done
           urls="$(echo "$urls" | xargs -n1 | sort -u | xargs || true)"

@@ -36,7 +36,7 @@ on:
     branches: [main]
     paths:
       - "app-tanstack/src/content/articles/**"
-      - "app-tanstack/src/utils/seo.ts"
+      - "app-tanstack/src/utils/seo-light.ts"
   workflow_run:
     workflows: ["Quizz du Berger Deploy"]
     types: [completed]
@@ -111,9 +111,9 @@ jobs:
           for slug in $(added_article_slugs); do
             urls="$urls $BASE_URL/blog/$slug"
           done
-          # seo.ts also contains comparison-pair slugs; non-question matches are
+          # seo-light.ts also contains comparison-pair slugs; non-question matches are
           # filtered out by the sitemap check in the next step.
-          for slug in $(added_slugs app-tanstack/src/utils/seo.ts); do
+          for slug in $(added_slugs app-tanstack/src/utils/seo-light.ts); do
             urls="$urls $BASE_URL/question-politique/$slug"
           done
           urls="$(echo "$urls" | xargs -n1 | sort -u | xargs || true)"
