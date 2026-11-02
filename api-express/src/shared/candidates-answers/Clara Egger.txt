@@ -278,14 +278,14 @@ question-2027-gouv-09: Faut-il donner un statut d'autonomie à la Corse, avec re
 IA et robotisation:
 
 
+question-2027-ia-03: Dans combien de temps pensez-vous que le travail humain aura disparu à cause de l'IA et de la robotisation ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
 question-2027-ia-01: Quand l'IA sera-t-elle plus intelligente que n'importe quel humain, dans tous les domaines ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 question-2027-ia-02: Jusqu'où autoriser les implants cérébraux ?
 [4] Ça ne m'intéresse pas / Je n'ai pas d'avis
-
-question-2027-ia-03: Dans combien de temps pensez-vous que le travail humain aura disparu à cause de l'IA et de la robotisation ?
-[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 question-2027-ia-04: Faut-il freiner ou accélérer le remplacement des salariés par l'IA et les robots ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
