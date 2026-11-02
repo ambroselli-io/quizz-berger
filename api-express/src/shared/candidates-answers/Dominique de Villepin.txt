@@ -275,6 +275,67 @@ question-2027-gouv-09: Faut-il donner un statut d'autonomie à la Corse, avec re
 [3] Non, la Corse doit rester une collectivité comme les autres, sans statut constitutionnel particulier
 
 
+IA et robotisation:
+
+
+question-2027-ia-01: Quand l'IA sera-t-elle plus intelligente que n'importe quel humain, dans tous les domaines ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-02: Jusqu'où autoriser les implants cérébraux ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-03: Dans combien de temps pensez-vous que le travail humain aura disparu à cause de l'IA et de la robotisation ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-04: Faut-il freiner ou accélérer le remplacement des salariés par l'IA et les robots ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-05: Une société où l'on travaillerait beaucoup moins, ça vous fait envie ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-06: Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes par rapport à aujourd'hui ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-07: Si l'IA supprime beaucoup d'emplois, quel revenu verser à tout le monde, sans condition ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-08: Quel sera l'effet de l'IA sur les inégalités ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-09: Quel sera l'effet de l'IA sur la croissance française ?
+[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-10: Combien d'argent public faut-il mettre dans l'IA et la robotique françaises ?
+[4] Beaucoup plus
+
+question-2027-ia-11: Combien de data centers pour l'IA faut-il en France ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-12: À quel point faut-il encadrer le développement de l'IA ?
+[3] Plus de règles
+
+question-2027-ia-13: Quelle part de l'État au capital des entreprises qui créent les IA les plus puissantes ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-14: Si une IA obtient de meilleurs résultats qu'un médecin, qui doit décider du soin ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-15: Qui doit rendre les décisions de justice ?
+[2] Le juge, assisté par l'IA
+
+question-2027-ia-16: Qui doit prendre les décisions de l'administration (aides sociales, contrôles fiscaux) ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-17: Une arme peut-elle décider seule de tirer ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-18: Que faut-il autoriser pour les deepfakes (fausses vidéos de personnes réelles) ?
+[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+
+question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiques et les articles existants ?
+[2] Seulement avec l'accord de l'auteur
+
+
 Logement:
 
 

@@ -38,7 +38,7 @@ export interface CandidateProximity {
   percent: number;
   /** Number of questions where both picked the exact same answer. */
   sameAnswers: number;
-  /** Number of questions counted (both answered, and not a mutual "no opinion"). */
+  /** Number of questions counted (both took a position). */
   comparedQuestions: number;
   /** Canonical /comparer slug for the pair, alphabetical like allComparisonPairs. */
   pairSlug: string;
@@ -71,8 +71,8 @@ export function getProximityBetween(
     const line2 = question.scores[index2];
     if (!line1 || !line2) continue;
 
-    // Both answered "ça ne m'intéresse pas": no political information, skip it.
-    if (index1 === index2 && !line1.some(Boolean)) continue;
+    // "No opinion" on either side carries no political information: neither agreement nor gap.
+    if (!line1.some(Boolean) || !line2.some(Boolean)) continue;
 
     score += (line1[index2] + line2[index1]) / 2;
     maxScore += MAX_SCORE_PER_QUESTION;

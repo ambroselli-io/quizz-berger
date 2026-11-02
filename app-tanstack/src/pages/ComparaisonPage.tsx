@@ -4,6 +4,7 @@ import {
   getCandidateBySlug,
   themeSlugMap,
   getCandidateAnswerForQuestion,
+  isNoOpinionAnswer,
   comparisonPairs,
 } from '@app/utils/seo';
 import Footer from '@app/components/Footer';
@@ -29,11 +30,12 @@ export default function ComparaisonPage() {
         const a2 = getCandidateAnswerForQuestion(candidate2.answers, q._id, q.answers);
         const idx1 = candidate1.answers.find((a) => a.questionId === q._id)?.answerIndex ?? -1;
         const idx2 = candidate2.answers.find((a) => a.questionId === q._id)?.answerIndex ?? -1;
-        const agree = idx1 !== -1 && idx2 !== -1 && idx1 === idx2;
-        return { questionFr: q.fr, answer1: a1, answer2: a2, agree };
+        const bothHavePosition = Boolean(a1 && a2) && !isNoOpinionAnswer(a1!) && !isNoOpinionAnswer(a2!);
+        const agree = bothHavePosition && idx1 === idx2;
+        return { questionFr: q.fr, answer1: a1, answer2: a2, agree, bothHavePosition };
       });
       const agreements = questions.filter((q) => q.agree).length;
-      const total = questions.filter((q) => q.answer1 && q.answer2).length;
+      const total = questions.filter((q) => q.bothHavePosition).length;
       return { ...theme, questions, agreements, total };
     });
   }, [candidate1, candidate2]);

@@ -5,6 +5,7 @@ import {
   candidatesCount,
   themeSlugMap,
   getQuestionSlugById,
+  isNoOpinionAnswer,
 } from '@app/utils/seo';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 import { partyList, partiesCount, partyColor } from '@app/utils/parties';
@@ -20,10 +21,6 @@ const answersByCandidate = new Map<string, Map<string, number>>(
     new Map(candidate.answers.map((a) => [a.questionId, a.answerIndex])),
   ]),
 );
-
-function isNoOpinion(answer: string): boolean {
-  return answer.includes("m'intéresse pas") || answer.includes("pas d'avis");
-}
 
 export default function ComparateurProgrammes() {
   const [selected, setSelected] = useState<string[]>([]);
@@ -168,7 +165,10 @@ export default function ComparateurProgrammes() {
                     const allAgree =
                       isComparing &&
                       selectedAnswers.every(
-                        (a) => a.answerIndex !== -1 && a.answerIndex === selectedAnswers[0].answerIndex,
+                        (a) =>
+                          a.answerIndex !== -1 &&
+                          !isNoOpinionAnswer(question.answers[a.answerIndex]) &&
+                          a.answerIndex === selectedAnswers[0].answerIndex,
                       );
 
                     return (
@@ -214,7 +214,7 @@ export default function ComparateurProgrammes() {
                           <ul className="space-y-2">
                             {question.answers.map((answer, answerIdx) => {
                               const holders = candidatesByAnswer[answerIdx];
-                              if (holders.length === 0 && isNoOpinion(answer)) return null;
+                              if (holders.length === 0 && isNoOpinionAnswer(answer)) return null;
                               return (
                                 <li key={answerIdx} className="text-sm">
                                   <p className="text-gray-800">{answer}</p>

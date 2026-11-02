@@ -58,6 +58,11 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
     "questionCount": 9,
   },
   {
+    "fr": "IA et robotisation",
+    "id": "theme-2027-ia",
+    "questionCount": 19,
+  },
+  {
     "fr": "Démographie et question migratoire",
     "id": "theme-2027-immigration",
     "questionCount": 10,

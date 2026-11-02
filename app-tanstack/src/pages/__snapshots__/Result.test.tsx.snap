@@ -27,7 +27,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 93,
+    "percent": 92,
     "pseudos": [
       "Jean-Luc Mélenchon",
     ],
@@ -69,7 +69,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 73,
+    "percent": 72,
     "pseudos": [
       "Marine Tondelier",
     ],
@@ -147,7 +147,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 54,
     "pseudos": [
       "Dominique de Villepin",
     ],
@@ -202,7 +202,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 38,
+    "percent": 37,
     "pseudos": [
       "Nicolas Dupont-Aignan",
     ],
@@ -226,7 +226,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 29,
+    "percent": 28,
     "pseudos": [
       "Gabriel Attal",
     ],

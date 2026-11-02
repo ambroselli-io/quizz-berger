@@ -1588,6 +1588,388 @@
     ]
   },
   {
+    "_id": "theme-2027-ia",
+    "fr": "IA et robotisation",
+    "questions": [
+      {
+        "_id": "question-2027-ia-01",
+        "fr": "Quand l'IA sera-t-elle plus intelligente que n'importe quel humain, dans tous les domaines ?",
+        "help": "https://fr.wikipedia.org/wiki/Intelligence_artificielle_générale",
+        "answers": [
+          "C'est déjà le cas",
+          "D'ici 5 ans",
+          "D'ici 20 ans",
+          "Dans plus de 50 ans",
+          "Jamais",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-02",
+        "fr": "Jusqu'où autoriser les implants cérébraux ?",
+        "help": "https://fr.wikipedia.org/wiki/Interface_neuronale_directe",
+        "answers": [
+          "Pour tout le monde, sans limite",
+          "Pour augmenter ses capacités, avec un cadre légal",
+          "Seulement pour soigner",
+          "Jamais",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-03",
+        "fr": "Dans combien de temps pensez-vous que le travail humain aura disparu à cause de l'IA et de la robotisation ?",
+        "help": "https://fr.wikipedia.org/wiki/Chômage_technologique",
+        "answers": [
+          "Jamais",
+          "Dans 100 ans",
+          "Dans 20 ans",
+          "Dans 10 ans",
+          "Dans 5 ans",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-04",
+        "fr": "Faut-il freiner ou accélérer le remplacement des salariés par l'IA et les robots ?",
+        "help": "https://fr.wikipedia.org/wiki/Automatisation",
+        "answers": [
+          "L'accélérer",
+          "Le laisser suivre son cours",
+          "Le freiner un peu",
+          "Le freiner fortement",
+          "L'arrêter",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-05",
+        "fr": "Une société où l'on travaillerait beaucoup moins, ça vous fait envie ?",
+        "help": "https://fr.wikipedia.org/wiki/Réduction_du_temps_de_travail",
+        "answers": [
+          "Oui, vivement",
+          "Plutôt oui",
+          "Je suis partagé",
+          "Plutôt non",
+          "Non, pas du tout",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-06",
+        "fr": "Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes par rapport à aujourd'hui ?",
+        "answers": [
+          "Plus aucune",
+          "Beaucoup moins",
+          "Un peu moins",
+          "Autant",
+          "Plus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-07",
+        "fr": "Si l'IA supprime beaucoup d'emplois, quel revenu verser à tout le monde, sans condition ?",
+        "help": "https://fr.wikipedia.org/wiki/Revenu_de_base",
+        "answers": [
+          "Aucun",
+          "Un petit complément",
+          "De quoi vivre modestement sans travailler",
+          "De quoi vivre confortablement sans travailler",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-08",
+        "fr": "Quel sera l'effet de l'IA sur les inégalités ?",
+        "help": "https://fr.wikipedia.org/wiki/Inégalités_de_revenu",
+        "answers": [
+          "Une forte baisse",
+          "Une légère baisse",
+          "Aucun effet",
+          "Une légère hausse",
+          "Une forte hausse",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-09",
+        "fr": "Quel sera l'effet de l'IA sur la croissance française ?",
+        "help": "https://fr.wikipedia.org/wiki/Croissance_économique",
+        "answers": [
+          "Une croissance jamais vue",
+          "Une forte hausse",
+          "Une légère hausse",
+          "Aucun effet",
+          "Une baisse",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-10",
+        "fr": "Combien d'argent public faut-il mettre dans l'IA et la robotique françaises ?",
+        "answers": [
+          "Aucun",
+          "Moins qu'aujourd'hui",
+          "Autant qu'aujourd'hui",
+          "Plus",
+          "Beaucoup plus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-11",
+        "fr": "Combien de data centers pour l'IA faut-il en France ?",
+        "help": "https://fr.wikipedia.org/wiki/Centre_de_données",
+        "answers": [
+          "Le plus possible",
+          "Davantage qu'aujourd'hui",
+          "Pas plus qu'aujourd'hui",
+          "Moins qu'aujourd'hui",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-12",
+        "fr": "À quel point faut-il encadrer le développement de l'IA ?",
+        "help": "https://fr.wikipedia.org/wiki/Règlement_sur_l'intelligence_artificielle",
+        "answers": [
+          "Aucune règle",
+          "Moins de règles qu'aujourd'hui",
+          "Les règles actuelles (AI Act)",
+          "Plus de règles",
+          "L'arrêt des IA les plus puissantes",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-13",
+        "fr": "Quelle part de l'État au capital des entreprises qui créent les IA les plus puissantes ?",
+        "answers": [
+          "Aucune",
+          "Minoritaire",
+          "Majoritaire",
+          "Totale",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-14",
+        "fr": "Si une IA obtient de meilleurs résultats qu'un médecin, qui doit décider du soin ?",
+        "help": "https://fr.wikipedia.org/wiki/Santé_numérique",
+        "answers": [
+          "L'IA seule",
+          "L'IA, sous le contrôle du médecin",
+          "Le médecin, assisté par l'IA",
+          "Le médecin seul",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-15",
+        "fr": "Qui doit rendre les décisions de justice ?",
+        "help": "https://fr.wikipedia.org/wiki/Justice_prédictive",
+        "answers": [
+          "L'IA seule",
+          "L'IA, avec un recours devant un juge",
+          "Le juge, assisté par l'IA",
+          "Le juge seul",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-16",
+        "fr": "Qui doit prendre les décisions de l'administration (aides sociales, contrôles fiscaux) ?",
+        "help": "https://fr.wikipedia.org/wiki/Administration_électronique",
+        "answers": [
+          "L'IA seule",
+          "L'IA, avec un recours devant un agent",
+          "L'agent, assisté par l'IA",
+          "L'agent seul",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-17",
+        "fr": "Une arme peut-elle décider seule de tirer ?",
+        "help": "https://fr.wikipedia.org/wiki/Système_d'armes_létales_autonome",
+        "answers": [
+          "Oui, toujours",
+          "Oui, dans certaines situations",
+          "Non, un humain décide toujours",
+          "Non, et il ne faut aucun robot armé",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-18",
+        "fr": "Que faut-il autoriser pour les deepfakes (fausses vidéos de personnes réelles) ?",
+        "help": "https://fr.wikipedia.org/wiki/Deepfake",
+        "answers": [
+          "Tous, librement",
+          "Tous, avec la mention « généré par IA »",
+          "Seulement avec l'accord de la personne",
+          "Aucun",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-ia-19",
+        "fr": "Les IA peuvent-elles s'entraîner sur les livres, les musiques et les articles existants ?",
+        "help": "https://fr.wikipedia.org/wiki/Intelligence_artificielle_générative",
+        "answers": [
+          "Oui, sans rien demander",
+          "Oui, sauf si l'auteur s'y oppose",
+          "Seulement avec l'accord de l'auteur",
+          "Jamais, même avec son accord",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      }
+    ]
+  },
+  {
     "_id": "theme-2027-logement",
     "fr": "Logement",
     "questions": [

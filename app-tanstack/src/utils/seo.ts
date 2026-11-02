@@ -40,6 +40,10 @@ export function getAnswerDistribution(questionId: string): number[] {
 
 // --- Helper: get candidate answer text for a question ---
 
+export function isNoOpinionAnswer(answer: string): boolean {
+  return answer.includes("m'intéresse pas") || answer.includes("pas d'avis");
+}
+
 export function getCandidateAnswerForQuestion(
   candidateAnswers: Array<{ themeId: string; questionId: string; answerIndex: number }>,
   questionId: string,

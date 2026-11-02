@@ -5,6 +5,7 @@ import {
   candidateSlugMap,
   candidatesCount,
   getCandidateAnswerForQuestion,
+  isNoOpinionAnswer,
   themeSlugMap,
   getQuestionsByThemeId,
   comparisonPairs,
@@ -55,7 +56,11 @@ export default function QuestionPolitiquePage() {
         const c1 = candidateAnswers.find((c) => c.slug === pair.candidate1Slug);
         const c2 = candidateAnswers.find((c) => c.slug === pair.candidate2Slug);
         const disagree =
-          c1 && c2 && c1.answerIndex !== -1 && c2.answerIndex !== -1 && c1.answerIndex !== c2.answerIndex;
+          c1?.answerText &&
+          c2?.answerText &&
+          !isNoOpinionAnswer(c1.answerText) &&
+          !isNoOpinionAnswer(c2.answerText) &&
+          c1.answerIndex !== c2.answerIndex;
         return { pair, disagree };
       })
       .filter((p) => p.disagree)
@@ -108,7 +113,7 @@ export default function QuestionPolitiquePage() {
           <div className="space-y-4">
             {question.answers.map((answer, idx) => {
               const candidatesForAnswer = candidatesByAnswer[idx] || [];
-              const isLastAnswer = answer.includes("m'intéresse pas") || answer.includes("pas d'avis");
+              const isLastAnswer = isNoOpinionAnswer(answer);
               if (isLastAnswer && candidatesForAnswer.length === 0) return null;
               return (
                 <div
