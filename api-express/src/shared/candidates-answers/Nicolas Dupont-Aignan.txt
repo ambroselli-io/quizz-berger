@@ -373,6 +373,9 @@ question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en mani
 question-2027-pol-15: Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?
 [0] Décréter l'état d'urgence : couvre-feux généralisés et pouvoirs renforcés pour les préfets sur tout le territoire concerné
 
+question-2027-pol-16: À partir de quel niveau de risque l'État peut-il interdire une manifestation ?
+[1] Dès qu'un risque sérieux de troubles est identifié sur place
+
 
 Politique fiscale:
 

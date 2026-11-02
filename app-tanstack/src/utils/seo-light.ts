@@ -377,6 +377,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'État d\'urgence ou couvre-feu : les candidats 2027',
     seoDescription: `Après les violences du 17 octobre 2026, état d'urgence, couvre-feux ciblés ou droit commun ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-pol-16': {
+    slug: 'interdiction-manifestations-france',
+    seoTitle: 'Interdire une manifestation : les candidats 2027',
+    seoDescription: `Après les interdictions d'octobre 2026, à partir de quel niveau de risque l'État peut-il interdire une manifestation ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+  },
   'question-2027-gouv-09': {
     slug: 'autonomie-corse-france',
     seoTitle: 'Autonomie de la Corse : les positions des candidats 2027',

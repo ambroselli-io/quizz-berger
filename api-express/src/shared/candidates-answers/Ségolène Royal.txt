@@ -373,6 +373,9 @@ question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en mani
 question-2027-pol-15: Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?
 [1] Des couvre-feux ciblés décidés au cas par cas par les préfets, sans aller jusqu'à l'état d'urgence
 
+question-2027-pol-16: À partir de quel niveau de risque l'État peut-il interdire une manifestation ?
+[2] Seulement en dernier recours, quand aucun dispositif policier ne peut sécuriser le cortège
+
 
 Politique fiscale:
 
