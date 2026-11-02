@@ -10,6 +10,11 @@ npm-debug.*
 *.orig.*
 web-build/
 
+# repack: signing credentials, source builds and source maps
+credentials.json
+credentials/
+builds/
+
 # macOS
 .DS_Store
 

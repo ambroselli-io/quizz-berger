@@ -18,8 +18,8 @@ export default function LoginScreen() {
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [isPublic, setIsPublic] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
-  const passwordRef = useRef<TextInput>(null);
-  const passwordConfirmRef = useRef<TextInput>(null);
+  const passwordRef = useRef<React.ComponentRef<typeof TextInput>>(null);
+  const passwordConfirmRef = useRef<React.ComponentRef<typeof TextInput>>(null);
 
   const handleLogin = async () => {
     setIsLoading(true);

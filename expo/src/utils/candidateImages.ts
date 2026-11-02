@@ -1,8 +1,6 @@
-import type { ImageSourcePropType } from 'react-native';
-
 // Map candidate slugs to their bundled images
 // These images are resized to 100px from the web app's public/candidates/ folder
-export const candidateImages: Record<string, ImageSourcePropType> = {
+export const candidateImages: Record<string, number> = {
   'anasse-kazib': require('../../assets/candidates/anasse-kazib.png'),
   'antoine-mikolajczak': require('../../assets/candidates/antoine-mikolajczak.png'),
   'benoit-mathieu': require('../../assets/candidates/benoit-mathieu.png'),

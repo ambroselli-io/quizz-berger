@@ -90,6 +90,9 @@ question-2027-climat-06: Que pensez-vous de la sobriété énergétique (consomm
 question-2027-climat-07b: Face aux feux de forêt, faut-il augmenter les moyens nationaux de la sécurité civile (pompiers, avions bombardiers d'eau) ?
 [0] Non, les moyens actuels suffisent : il ne faut pas dépenser davantage
 
+question-2027-climat-08: Celui qui abîme la nature (eau, sols, forêts...) doit-il payer pour la réparer ?
+[1] Seulement en cas de pollution illégale ou d'accident
+
 
 Corruption et lobbying:
 
@@ -193,7 +196,7 @@ question-2027-dep-06: Que devrait faire l'État avec ses dépenses d'investissem
 question-2027-dep-07: Que devrait faire l'État avec les aides sociales (RSA, allocations familiales, aides au logement, minima sociaux) ?
 [1] Il faut mieux les cibler : garder l'essentiel, supprimer les abus et les doublons
 
-question-2027-dep-08: Comment faire évoluer les salaires des fonctionnaires ?
+question-2027-dep-08: Comment faire évoluer le salaire de la plupart des fonctionnaires (enseignants, infirmiers, policiers, agents administratifs…) ?
 [2] Il faut les augmenter au rythme de l'inflation pour maintenir le pouvoir d'achat
 
 
@@ -225,8 +228,8 @@ Finance:
 question-2027-fin-01: Quel rôle la finance joue-t-elle dans notre société ?
 [3] La finance a pris trop de pouvoir dans nos sociétés, il faut sérieusement la recadrer
 
-question-2027-fin-02: Que pensez-vous de la spéculation financière ?
-[1] C'est dangereux pour la stabilité financière, il faut l'encadrer le plus strictement possible
+question-2027-fin-02: La spéculation financière consiste à parier sur la hausse ou la baisse d'un prix (action, devise, matière première) pour gagner de l'argent sur cette variation, plutôt que sur les revenus de l'actif. Faut-il l'encadrer davantage ?
+[1] Oui, avec l'encadrement le plus strict possible
 
 question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine financier ?
 [0] Il faut une transparence totale : revenus, patrimoine, investissements, tout doit être public
@@ -236,6 +239,9 @@ question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rende
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
 [1] Il faut les alléger, surtout pour les patrimoines modestes et moyens
+
+question-2027-fin-06: Une entreprise qui entre en bourse lève des fonds en vendant des actions. Ensuite, ces actions s'échangent entre investisseurs : l'entreprise ne reçoit rien de plus, mais chacun peut revendre quand il veut. Que pensez-vous de la bourse ?
+[2] Elle est utile, à condition d'être bien surveillée
 
 
 Gouvernance et République:
@@ -389,8 +395,14 @@ question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la For
 question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
 [1] Une petite taxe pourrait rapporter gros sans gêner les marchés, pourquoi s'en priver ?
 
-question-2027-fisc-07: Comment rendre la fiscalité plus verte ?
-[0] Il ne faut rien faire, l'environnement n'est pas une priorité fiscale
+question-2027-fisc-10: Que faire des taxes sur ce qui pollue (carburants, plastique, pesticides, billets d'avion...) ?
+[0] Il faut les supprimer : l'écologie ne doit pas passer par l'impôt
+
+question-2027-fisc-11: Faut-il baisser la TVA sur ce qui est bon pour l'environnement (train, rénovation énergétique, réparation, produits bio...) ?
+[0] Non, l'État n'a pas à favoriser certains produits
+
+question-2027-fisc-12: Faut-il une taxe spéciale sur les consommations de luxe très polluantes (jets privés, yachts...) ?
+[0] Non, chacun dépense son argent comme il veut
 
 question-2027-fisc-08: Que pensez-vous de la fiscalité des entreprises ?
 [1] Il faut rééquilibrer : moins d'impôts pour les PME, plus pour les multinationales

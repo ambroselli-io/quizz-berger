@@ -382,6 +382,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Autonomie de la Corse : les positions des candidats 2027',
     seoDescription: `Après le rejet du statut d'autonomie par le Sénat le 27 octobre 2026, large autonomie, statut adapté ou maintien du droit commun ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
+  'question-2027-fisc-10': {
+    slug: 'comment-rendre-la-fiscalite-plus-verte',
+    seoTitle: 'Fiscalité verte : les propositions des candidats 2027',
+    seoDescription: `Supprimer, baisser ou augmenter les taxes sur ce qui pollue ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la fiscalité verte.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated
@@ -396,7 +401,6 @@ const searchedQuestionTitles: Record<string, string> = {
   'question-2027-edu-05': 'Parcoursup : les positions des candidats 2027',
   'question-2027-cult-03': 'Pass Culture : les positions des candidats 2027',
   'question-2027-agri-04': 'Indépendance alimentaire : les candidats 2027',
-  'question-2027-fisc-07': 'Fiscalité verte : les propositions des candidats 2027',
   'question-2027-agri-05': 'Élevage et viande : les positions des candidats 2027',
   'question-2027-gouv-05': 'Bureaucratie : les propositions des candidats 2027',
   'question-2027-san-06': 'Santé mentale des jeunes : les candidats 2027',

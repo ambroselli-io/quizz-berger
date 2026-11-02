@@ -7,8 +7,21 @@ import * as Sentry from '@sentry/react';
 import useUserStore from '@app/zustand/user';
 
 if (typeof window !== 'undefined') {
-  // Client-only polyfill for the `scrollend` event (used by carousels/snap UIs).
-  import('@af-utils/scrollend-polyfill');
+  // A tab opened before a deploy still asks for chunks that no longer exist: reload once to get the new ones.
+  // Guarded against a loop, so a chunk that really fails still reaches Sentry.
+  window.addEventListener('vite:preloadError', (event) => {
+    const key = 'chunk-reload-at';
+    try {
+      if (Date.now() - Number(sessionStorage.getItem(key)) < 60_000) return;
+      sessionStorage.setItem(key, String(Date.now()));
+    } catch {
+      return;
+    }
+    event.preventDefault();
+    window.location.reload();
+  });
+  // Client-only polyfill for the `scrollend` event (used by carousels/snap UIs). Nothing breaks without it.
+  import('@af-utils/scrollend-polyfill').catch(() => {});
   // The user store uses skipHydration (SSR-safe); rehydrate it from localStorage now.
   useUserStore.persist.rehydrate();
 }
@@ -30,8 +43,8 @@ if (import.meta.env.PROD && typeof window !== 'undefined') {
       'AbortError: The operation was aborted',
       'TypeError: cancelled',
       'TypeError: annulé',
-      "Can't find variable: DarkReader",
-      "Can't find variable: __firefox__",
+      'DarkReader',
+      '__firefox__',
     ],
   });
 }

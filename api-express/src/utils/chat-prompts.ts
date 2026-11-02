@@ -40,9 +40,7 @@ const answerThemes = quizz as Array<Theme>;
 const answerThemeIds = answerThemes.map((theme) => theme._id) as [string, ...Array<string>];
 
 // Only the question titles: the answers themselves are fetched theme by theme through the tool, to keep each message cheap.
-const THEMES_INDEX = answerThemes
-  .map((theme) => `- ${theme._id} (${theme.fr}) : ${theme.questions.map((q) => q.fr).join(" | ")}`)
-  .join("\n");
+const THEMES_INDEX = answerThemes.map((theme) => `- ${theme._id} (${theme.fr}) : ${theme.questions.map((q) => q.fr).join(" | ")}`).join("\n");
 
 const formatThemeAnswers = (candidateId: string, themeIds: Array<string>) => {
   const candidate = candidatesAnswers.find((c) => c.id === candidateId);
