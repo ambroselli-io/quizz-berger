@@ -25,4 +25,5 @@ export const temoignages = [
   { blockquote: "C'est une excellente base de travail. Ça m'oblige à me poser plein de questions que je ne me suis pas posées. C'est un outil précieux, merci à vous de l'avoir développé.", figcaption: 'Maloé' },
   { blockquote: 'Je suis très satisfait du contenu : il couvre de nombreux sujets essentiels pour les Français.', figcaption: 'Alexandre' },
   { blockquote: "Je suis une personne qui a du mal a s'intéresser a la politique pour diverses raisons et j'apprécie qu'une plateforme telle que la votre puisse permettre de mettre de l'ordre dans mes idées et celles des candidats.", figcaption: 'Nicolas' },
+  { blockquote: "J'ai trouvé le quizz vraiment complet (ce n'est pas toujours le cas dans ce genre de test) et j'ai trouvé pertinente l'option « marquer comme importante pour moi ». On a tous fait le test avec mes collègues, je pense qu'ils en sont contents aussi ! Merci !", figcaption: 'Camille' },
 ];
