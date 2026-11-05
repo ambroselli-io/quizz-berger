@@ -1835,7 +1835,7 @@ export const candidacies: Candidacy[] = [
     status: 'potential',
     movement: 'La France humaniste',
     summary:
-      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Le 22 octobre 2026, il a annoncé avoir dépassé la barre des 300 signatures, en disant vouloir trancher dans les semaines à venir. Il n'a pas officialisé sa candidature.",
+      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Le 22 octobre 2026, il a annoncé avoir dépassé la barre des 300 signatures, en disant vouloir trancher dans les semaines à venir. Le 3 novembre 2026, sur France Inter, il a confirmé qu'il sera bien candidat, tout en jugeant que ce n'est « pas le bon moment » pour l'officialiser. Il n'a pas officialisé sa candidature.",
     events: [
       {
         date: '2026-04-10',
@@ -1871,6 +1871,19 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/presidentielle-dominique-de-villepin-annonce-avoir-depasse-la-barre-des-300-signatures',
             date: '2026-10-22',
+          },
+        ],
+      },
+      {
+        date: '2026-11-03',
+        type: 'step',
+        label:
+          "Sur France Inter, il confirme qu'il sera bien candidat, mais juge que ce n'est « pas le bon moment » pour l'officialiser.",
+        sources: [
+          {
+            label: "L'Express via Orange",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-confirme-qu-il-sera-bien-candidat-mais-estime-que-ce-n-est-pas-le-bon-moment-pour-l-officialiser-l-express-via-6medias-CNT000002twDEE.html',
+            date: '2026-11-03',
           },
         ],
       },
