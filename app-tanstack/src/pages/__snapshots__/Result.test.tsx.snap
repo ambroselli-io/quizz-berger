@@ -45,7 +45,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 78,
+    "percent": 77,
     "pseudos": [
       "Sylvain Durif",
     ],
@@ -173,14 +173,19 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 50,
     "pseudos": [
-      "François Asselineau",
+      "François Hollande",
     ],
   },
   {
     "percent": 50,
     "pseudos": [
+      "François Asselineau",
+    ],
+  },
+  {
+    "percent": 49,
+    "pseudos": [
       "Florian Philippot",
-      "François Hollande",
     ],
   },
   {
@@ -196,7 +201,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 41,
+    "percent": 42,
     "pseudos": [
       "Clara Egger",
     ],

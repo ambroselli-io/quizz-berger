@@ -629,6 +629,9 @@ question-2027-trav-07: Le budget 2027 envisage de ne plus revaloriser certaines 
 question-2027-trav-08b: Combien de jours de carence pour les arrêts maladie, dans le public et dans le privé ?
 [2] Garder les règles actuelles : 1 jour dans le public, 3 jours dans le privé (souvent payés par l'employeur)
 
+question-2027-trav-14: Face aux grèves dans les transports, faut-il un service minimum garanti plus strict ?
+[1] Le cadre actuel (loi de 2007 : préavis de 48h, plan de transport adapté) est suffisant
+
 
 Union Européenne:
 

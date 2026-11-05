@@ -3698,6 +3698,27 @@
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-trav-14",
+        "fr": "Face aux grèves dans les transports, faut-il un service minimum garanti plus strict ?",
+        "help": "https://www.vie-publique.fr/loi/273143-proposition-de-loi-sur-le-service-minimum-dans-les-transports",
+        "answers": [
+          "Droit de grève total, sans aucune contrainte, y compris dans les transports et services essentiels",
+          "Le cadre actuel (loi de 2007 : préavis de 48h, plan de transport adapté) est suffisant",
+          "Renforcer le service minimum garanti : un niveau plancher de circulation obligatoire, y compris aux heures de pointe",
+          "Réquisitionner les grévistes des services essentiels si le service minimum n'est pas assuré après plusieurs jours",
+          "Interdire purement et simplement le droit de grève dans les transports et les services essentiels",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
