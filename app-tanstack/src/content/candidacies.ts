@@ -1835,7 +1835,7 @@ export const candidacies: Candidacy[] = [
     status: 'potential',
     movement: 'La France humaniste',
     summary:
-      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Le 22 octobre 2026, il a annoncé avoir dépassé la barre des 300 signatures, en disant vouloir trancher dans les semaines à venir. Il n'a pas officialisé sa candidature.",
+      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Le 22 octobre 2026, il a annoncé avoir dépassé la barre des 300 signatures, en disant vouloir trancher dans les semaines à venir. Le 3 novembre 2026, invité de France Inter, il a dit qu'il n'y avait « aucun doute » sur sa candidature mais que le climat social ne s'y prêtait pas encore. Il n'a toujours pas officialisé sa candidature.",
     events: [
       {
         date: '2026-04-10',
@@ -1871,6 +1871,24 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/presidentielle-dominique-de-villepin-annonce-avoir-depasse-la-barre-des-300-signatures',
             date: '2026-10-22',
+          },
+        ],
+      },
+      {
+        date: '2026-11-03',
+        type: 'step',
+        label:
+          "Invité de France Inter, il dit qu'il n'y a « aucun doute » sur sa candidature, mais que le climat social ne se prête pas encore à l'annoncer officiellement, et demande la patience à ses soutiens.",
+        sources: [
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-11-03/presidentielle-2027-dominique-de-villepin-sera-bien-candidat-mais-attend-avant-de',
+            date: '2026-11-03',
+          },
+          {
+            label: 'Echos Plus',
+            url: 'https://echosplus.com/2026/11/03/presidentielle-2027-dominique-de-villepin-prepare-sa-candidature-et-ecarte-les-alliances/',
+            date: '2026-11-03',
           },
         ],
       },
