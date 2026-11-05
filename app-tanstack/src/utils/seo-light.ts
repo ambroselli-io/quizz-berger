@@ -392,6 +392,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Fiscalité verte : les propositions des candidats 2027',
     seoDescription: `Supprimer, baisser ou augmenter les taxes sur ce qui pollue ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur la fiscalité verte.`,
   },
+  'question-2027-trav-14': {
+    slug: 'service-minimum-greve-transports-france',
+    seoTitle: 'Service minimum dans les grèves : les candidats 2027',
+    seoDescription: `Réquisition des grévistes, service minimum renforcé ou droit de grève total ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les grèves dans les transports.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated
