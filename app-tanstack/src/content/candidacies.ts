@@ -223,7 +223,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Debout !',
     summary:
-      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. Après l'abandon de la primaire unitaire en juillet 2026, il a demandé à rejoindre la primaire socialiste et démocratique ; Raphaël Glucksmann le lui a refusé le 8 septembre, et il a renoncé à cette option à la Fête de l'Humanité, poursuivant seul sa campagne tout en appelant à l'union.",
+      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. Après l'abandon de la primaire unitaire en juillet 2026, il a demandé à rejoindre la primaire socialiste et démocratique ; Raphaël Glucksmann le lui a refusé le 8 septembre, et il a renoncé à cette option à la Fête de l'Humanité, poursuivant seul sa campagne tout en appelant à l'union. Le 6 novembre 2026, il a dit ne pas exclure de retirer sa candidature si une solution se dégageait à gauche pour battre Marine Le Pen au second tour, tout en estimant ne pas la voir à ce jour.",
     events: [
       {
         date: '2025-04-01',
@@ -266,6 +266,24 @@ export const candidacies: Candidacy[] = [
             label: 'Orange Actualités',
             url: 'https://actu.orange.fr/videos/actu-locale/a-la-fete-de-l-huma-francois-ruffin-abandonne-l-idee-de-participer-a-la-primaire-socialiste-CNT000002rRCyO.html',
             date: '2026-09-12',
+          },
+        ],
+      },
+      {
+        date: '2026-11-06',
+        type: 'step',
+        label:
+          "Il dit ne pas exclure de retirer sa candidature si une solution se dégageait à gauche pour battre Marine Le Pen au second tour, en écartant Jean-Luc Mélenchon au vu des sondages de second tour, mais sans voir cette solution à ce jour.",
+        sources: [
+          {
+            label: "Orange Actualités / L'Express",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-francois-ruffin-n-exclut-pas-de-renoncer-si-cela-permet-de-battre-marine-le-pen-l-express-via-6medias-CNT000002tAInn.html',
+            date: '2026-11-06',
+          },
+          {
+            label: 'Parlons Politique',
+            url: 'https://www.parlons-politique.fr/elections/presidentielle-2027-ruffin-conditionne-son-retrait-a-une-gauche-capable-de-battre-marine-le-pen-au-second-tour_30881/',
+            date: '2026-11-06',
           },
         ],
       },
@@ -1478,7 +1496,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Nous sommes la France',
     summary:
-      "Natacha Polony, essayiste et directrice de la revue L'Audace, a annoncé sa candidature le 14 octobre 2026 sur France Inter. Elle avait lancé en septembre son mouvement, « Nous sommes la France », après avoir dit fin août vouloir cesser de « commenter le désastre ».",
+      "Natacha Polony, essayiste et directrice de la revue L'Audace, a annoncé sa candidature le 14 octobre 2026 sur France Inter. Elle avait lancé en septembre son mouvement, « Nous sommes la France », après avoir dit fin août vouloir cesser de « commenter le désastre ». Le 1er novembre 2026, elle a annoncé avoir recueilli 174 promesses de parrainage d'élus sur les 500 nécessaires, et revendiqué le soutien de l'ancien ministre Jean-Pierre Chevènement.",
     quote: {
       text: "Je ne peux pas continuer à regarder mon pays s'effondrer.",
       source: {
@@ -1519,6 +1537,19 @@ export const candidacies: Candidacy[] = [
             label: 'Euronews',
             url: 'https://fr.euronews.com/2026/10/14/france-natacha-polony-officialise-sa-candidature-a-la-presidentielle',
             date: '2026-10-14',
+          },
+        ],
+      },
+      {
+        date: '2026-11-01',
+        type: 'step',
+        label:
+          "Elle annonce avoir recueilli 174 promesses de parrainage d'élus sur les 500 nécessaires, et revendique le soutien de l'ancien ministre Jean-Pierre Chevènement.",
+        sources: [
+          {
+            label: 'macommune.info',
+            url: 'https://www.macommune.info/presidentielle-jean-pierre-chevenement-apporte-son-soutien-a-la-candidature-de-natacha-polony/',
+            date: '2026-11-01',
           },
         ],
       },
