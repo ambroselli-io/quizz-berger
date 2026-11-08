@@ -200,4 +200,4 @@ app.use(async (req, res) => {
 });
 
 const port = process.env.PORT || 5178;
-app.listen(port, '0.0.0.0', () => console.log(`Server listening at http://localhost:${port}`));
+app.listen(port, '127.0.0.1', () => console.log(`Server listening at http://localhost:${port}`));

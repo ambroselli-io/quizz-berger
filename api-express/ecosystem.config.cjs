@@ -16,6 +16,7 @@ module.exports = {
       time: true,
       env: {
         NODE_ENV: "production",
+        HOST: "127.0.0.1",
         MONGODB_ADDON_URI: process.env.MONGODB_ADDON_URI,
         EMAIL_1: process.env.EMAIL_1,
         SECRET: process.env.SECRET,
