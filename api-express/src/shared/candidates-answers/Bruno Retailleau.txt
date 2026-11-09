@@ -410,8 +410,8 @@ question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 [0] Renforcer la répression et les peines
 
-question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
-[3] Il faut expulser des logements sociaux les familles de mineurs multirécidivistes
+question-2027-pol-17: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
+[3] Il faut des sanctions lourdes : suspendre les aides publiques liées aux enfants (allocations familiales, avantages fiscaux du quotient familial)
 
 question-2027-pol-09: Que faire face aux rodéos motorisés ?
 [0] Durcir les sanctions : peines de prison systématiques et confiscation immédiate du véhicule
