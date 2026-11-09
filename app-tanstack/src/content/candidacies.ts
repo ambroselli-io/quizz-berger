@@ -1555,6 +1555,58 @@ export const candidacies: Candidacy[] = [
       },
     ],
   },
+  {
+    slug: 'teddy-riner',
+    status: 'declared',
+    movement: 'Sans parti',
+    summary:
+      "Le judoka Teddy Riner a annoncé le 9 novembre 2026, dans Le Parisien et dans une vidéo, sa candidature à la présidentielle de 2027. Il se dit ni de droite ni de gauche, sans parti, et doit encore réunir 500 parrainages d'élus.",
+    quote: {
+      text: "La résignation n'est pas une option. Face aux difficultés de notre pays, l'heure est venue de prendre ses responsabilités. Je suis candidat à l'élection présidentielle de 2027.",
+      source: {
+        label: 'X (@teddyriner)',
+        url: 'https://x.com/teddyriner/status/2119740524064322005',
+        date: '2026-11-09',
+      },
+    },
+    events: [
+      {
+        date: '2026-09-16',
+        type: 'step',
+        label:
+          "Sur France 2, il dit son « angoisse » face à la montée de l'extrême droite, puis affirme sur France 5 qu'il est « citoyen avant tout » et a « son mot à dire ».",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/j-ai-mon-mot-a-dire-le-judoka-teddy-riner-attaque-pour-avoir-confie-son-angoisse-vis-a-vis-de-l-extreme-droite-assure-qu-il-continuera-a-s-exprimer_8205956.html',
+            date: '2026-09-23',
+          },
+        ],
+      },
+      {
+        date: '2026-11-09',
+        type: 'declaration',
+        label: 'Il annonce sa candidature dans Le Parisien et dans une vidéo publiée sur les réseaux sociaux.',
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920',
+            date: '2026-11-09',
+          },
+          {
+            label: 'Paris Match Belgique',
+            url: 'https://www.parismatch.be/actualites/people/2026/11/09/jai-pris-conscience-que-je-devais-apporter-ma-pierre-a-ledifice-le-judoka-teddy-riner-est-officiellement-candidat-a-la-presidentielle-francaise-25WU54Y6GFC3XET6O7WVJDDNSQ/',
+            date: '2026-11-09',
+          },
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-11-09/presidentielle-2027-le-judoka-teddy-riner-annonce-sa-candidature-1950691',
+            date: '2026-11-09',
+          },
+        ],
+      },
+    ],
+  },
 
   // --- Ils ont renoncé ---
   {

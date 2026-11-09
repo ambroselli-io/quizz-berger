@@ -231,6 +231,12 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
+    "percent": 29,
+    "pseudos": [
+      "Teddy Riner",
+    ],
+  },
+  {
     "percent": 28,
     "pseudos": [
       "Gabriel Attal",

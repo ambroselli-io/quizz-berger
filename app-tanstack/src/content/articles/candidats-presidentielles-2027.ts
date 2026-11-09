@@ -32,6 +32,7 @@ export const article: Article = {
 <li><a href="/candidat/jean-luc-melenchon">Jean-Luc Mélenchon</a> — La France Insoumise</li>
 <li><a href="/candidat/edouard-philippe">Édouard Philippe</a> — Horizons</li>
 <li><a href="/candidat/bruno-retailleau">Bruno Retailleau</a></li>
+<li><a href="/candidat/teddy-riner">Teddy Riner</a></li>
 <li><a href="/candidat/fabien-roussel">Fabien Roussel</a> — Parti Communiste Français</li>
 <li><a href="/candidat/francois-ruffin">François Ruffin</a></li>
 <li><a href="/candidat/patrick-sebastien">Patrick Sébastien</a></li>

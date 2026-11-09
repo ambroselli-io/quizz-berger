@@ -45,5 +45,6 @@ export const candidateImages: Record<string, number> = {
   'segolene-royal': require('../../assets/candidates/segolene-royal.png'),
   'selma-labib': require('../../assets/candidates/selma-labib.png'),
   'sylvain-durif': require('../../assets/candidates/sylvain-durif.png'),
+  'teddy-riner': require('../../assets/candidates/teddy-riner.png'),
   'xavier-bertrand': require('../../assets/candidates/xavier-bertrand.png'),
 };

@@ -274,5 +274,11 @@
     "pseudo": "Natacha Polony",
     "picture": "candidates/natacha-polony.png",
     "color": "#0E7490"
+  },
+  {
+    "id": "candidate-teddy-riner",
+    "pseudo": "Teddy Riner",
+    "picture": "candidates/teddy-riner.png",
+    "color": "#1E3A8A"
   }
 ]
