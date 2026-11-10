@@ -111,7 +111,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 62,
+    "percent": 63,
     "pseudos": [
       "Parti pirate",
     ],
@@ -141,7 +141,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 56,
+    "percent": 55,
     "pseudos": [
       "Natacha Polony",
     ],
@@ -153,7 +153,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 54,
+    "percent": 53,
     "pseudos": [
       "Bernard Cazeneuve",
     ],
@@ -189,7 +189,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 47,
+    "percent": 46,
     "pseudos": [
       "Patrick Sébastien",
     ],
@@ -201,7 +201,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 42,
+    "percent": 41,
     "pseudos": [
       "Clara Egger",
     ],
@@ -219,7 +219,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 36,
+    "percent": 35,
     "pseudos": [
       "Jordan Bardella",
     ],

@@ -445,6 +445,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -1419,6 +1429,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -2399,6 +2419,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -3376,6 +3406,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -4351,6 +4391,16 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -5332,6 +5382,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -6307,6 +6367,16 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -7288,6 +7358,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -8262,6 +8342,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -9244,6 +9334,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -10220,6 +10320,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 0
       },
       {
@@ -11200,6 +11310,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -12175,6 +12295,16 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -13154,6 +13284,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 0
@@ -14128,6 +14268,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -15110,6 +15260,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -16087,6 +16247,16 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -17068,6 +17238,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -18042,6 +18222,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 1
       },
       {
@@ -19022,6 +19212,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -19996,6 +20196,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 0
       },
       {
@@ -20976,6 +21186,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -21950,6 +22170,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 1
       },
       {
@@ -22930,6 +23160,16 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 1
@@ -23904,6 +24144,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -25154,6 +25404,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-union-europeenne-2027",
         "questionId": "question-2027-ue-01",
         "answerIndex": 1
@@ -26003,6 +26263,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -27023,6 +27293,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -28000,6 +28280,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -28974,6 +29264,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -29956,6 +30256,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -30932,6 +31242,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -31912,6 +32232,16 @@
         "answerIndex": 0
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -32886,6 +33216,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 0
       },
       {
@@ -33866,6 +34206,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 2
@@ -34840,6 +35190,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -35822,6 +36182,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -36798,6 +37168,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 1
       },
       {
@@ -37780,6 +38160,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -38756,6 +39146,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -39741,6 +40141,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -40716,6 +41126,16 @@
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -41715,6 +42135,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 0
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 4
@@ -42692,6 +43122,16 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -43456,6 +43896,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {
@@ -44646,6 +45096,16 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
         "answerIndex": 3
@@ -45410,6 +45870,16 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-19",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-police",
+        "questionId": "question-2027-pol-18",
         "answerIndex": 2
       },
       {

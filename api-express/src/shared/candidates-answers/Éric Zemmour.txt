@@ -431,6 +431,12 @@ question-2027-pol-13: Une fois des violences ou des dégradations commises en ma
 question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
 [3] Élargir l'arsenal et la latitude des forces de l'ordre
 
+question-2027-pol-19: En manifestation, à partir de quand la police peut-elle faire usage de la force ?
+[3] Dès que la situation risque de dégénérer, sans attendre les premiers débordements
+
+question-2027-pol-18: Quand l'usage de la force par un policier est contesté, qui doit enquêter ?
+[3] La hiérarchie du policier en priorité, l'IGPN seulement pour les cas les plus graves
+
 question-2027-pol-15: Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?
 [0] Décréter l'état d'urgence : couvre-feux généralisés et pouvoirs renforcés pour les préfets sur tout le territoire concerné
 

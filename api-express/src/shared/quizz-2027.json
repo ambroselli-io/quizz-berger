@@ -2536,6 +2536,44 @@
         ]
       },
       {
+        "_id": "question-2027-pol-19",
+        "fr": "En manifestation, à partir de quand la police peut-elle faire usage de la force ?",
+        "help": "https://fr.wikipedia.org/wiki/Maintien_de_l%27ordre_en_France",
+        "answers": [
+          "Seulement pour protéger des personnes d'une agression physique en cours",
+          "Aussi pour empêcher des dégradations graves, comme des incendies ou des saccages",
+          "Dès qu'un attroupement refuse de se disperser après les sommations, comme aujourd'hui",
+          "Dès que la situation risque de dégénérer, sans attendre les premiers débordements",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-pol-18",
+        "fr": "Quand l'usage de la force par un policier est contesté, qui doit enquêter ?",
+        "help": "https://fr.wikipedia.org/wiki/Inspection_g%C3%A9n%C3%A9rale_de_la_Police_nationale",
+        "answers": [
+          "Une autorité entièrement indépendante de la police, sans aucun policier dans ses rangs",
+          "L'IGPN, mais dirigée par des magistrats ou des personnalités extérieures à la police",
+          "L'IGPN telle qu'elle existe, rattachée à la police nationale",
+          "La hiérarchie du policier en priorité, l'IGPN seulement pour les cas les plus graves",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
         "_id": "question-2027-pol-15",
         "fr": "Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?",
         "help": "https://fr.wikipedia.org/wiki/%C3%89tat_d%27urgence_en_France",
