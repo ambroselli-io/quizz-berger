@@ -126,7 +126,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Horizons',
     summary:
-      "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans Le Point, presque trois ans avant le scrutin. Gérald Darmanin et Laurent Wauquiez se sont depuis rangés derrière lui.",
+      "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans Le Point, presque trois ans avant le scrutin. Gérald Darmanin et Laurent Wauquiez se sont depuis rangés derrière lui. Début novembre 2026, il a réaffirmé son refus d'une primaire de la droite et du centre, renvoyant à février le choix entre candidats déclarés, face à la relance de l'idée par Bruno Retailleau.",
     quote: {
       text: 'Je serai candidat à la prochaine élection présidentielle.',
       source: {
@@ -169,6 +169,19 @@ export const candidacies: Candidacy[] = [
             label: 'Le JDD',
             url: 'https://www.lejdd.fr/politique/ne-pas-rajouter-de-la-division-darmanin-renonce-a-se-presenter-en-2027-et-se-range-derriere-philippe-181314',
             date: '2026-08-17',
+          },
+        ],
+      },
+      {
+        date: '2026-11-01',
+        type: 'step',
+        label:
+          "Il réaffirme sur TF1 que la primaire de la droite et du centre « n'aura pas lieu » et renvoie à février le choix entre candidats déclarés.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/info-en-continu/20261104-primaire-%C3%A0-droite-et-au-centre-retailleau-remet-la-pression-sur-philippe',
+            date: '2026-11-04',
           },
         ],
       },
@@ -614,7 +627,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Les Républicains',
     summary:
-      "Bruno Retailleau a été désigné candidat des Républicains le 19 avril 2026 par une consultation des adhérents. Laurent Wauquiez, qui le disait « candidat légitime », lui a demandé de se retirer deux mois et demi plus tard.",
+      "Bruno Retailleau a été désigné candidat des Républicains le 19 avril 2026 par une consultation des adhérents. Laurent Wauquiez, qui le disait « candidat légitime », lui a demandé de se retirer deux mois et demi plus tard. Début novembre 2026, il a relancé l'idée d'une primaire pour désigner un candidat unique à droite et au centre, face au refus d'Édouard Philippe.",
     events: [
       {
         date: '2026-04-19',
@@ -643,6 +656,37 @@ export const candidacies: Candidacy[] = [
             label: 'AFP / Orange Actualités',
             url: 'https://actu.orange.fr/politique/presidentielle-2027-laurent-wauquiez-invite-bruno-retailleau-a-se-retirer-et-apporte-son-soutien-a-edouard-philippe-magic-CNT000002qhxbJ.html',
             date: '2026-07-01',
+          },
+        ],
+      },
+      {
+        date: '2026-11-04',
+        type: 'step',
+        label:
+          "Il relance l'idée d'une primaire pour désigner un candidat unique à droite et au centre, face à Édouard Philippe, Gabriel Attal et David Lisnard, et propose trois « grands débats » en attendant.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/info-en-continu/20261104-primaire-%C3%A0-droite-et-au-centre-retailleau-remet-la-pression-sur-philippe',
+            date: '2026-11-04',
+          },
+          {
+            label: 'Ouest-France',
+            url: 'https://www.ouest-france.fr/elections/presidentielle/presidentielle-2027-bruno-retailleau-relance-lidee-dune-primaire-a-droite-et-au-centre-3a72fa0a-d7ec-11f1-b736-5b9907ef0b5a',
+            date: '2026-11-04',
+          },
+        ],
+      },
+      {
+        date: '2026-11-05',
+        type: 'step',
+        label:
+          "Il affirme que « les héritiers du macronisme » ne pourraient pas gagner une éventuelle primaire de la droite et du centre.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/info-en-continu/20261105-primaire-de-la-droite-et-du-centre-les-h%C3%A9ritiers-du-macronisme-ne-pourront-pas-la-gagner-affirme-retailleau',
+            date: '2026-11-05',
           },
         ],
       },
