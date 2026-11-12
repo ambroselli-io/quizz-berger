@@ -719,7 +719,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'La France insoumise',
     summary:
-      "Jean-Luc Mélenchon a annoncé sa candidature le 3 mai 2026 au journal de 20 heures de TF1. C'est sa quatrième campagne présidentielle. Le NPA-Anticapitaliste a renoncé à présenter un candidat pour le soutenir.",
+      "Jean-Luc Mélenchon a annoncé sa candidature le 3 mai 2026 au journal de 20 heures de TF1. C'est sa quatrième campagne présidentielle. Le NPA-Anticapitaliste a renoncé à présenter un candidat pour le soutenir. Le 7 novembre 2026, il a tenu au Bourget une convention revendiquant 20 000 participants pour présenter la nouvelle édition de son programme, « L'Avenir en commun ».",
     events: [
       {
         date: '2026-05-03',
@@ -743,6 +743,24 @@ export const candidacies: Candidacy[] = [
             label: 'franceinfo',
             url: 'https://www.franceinfo.fr/elections/presidentielle/le-npa-anticapitaliste-renonce-a-presenter-un-candidat-a-l-election-presidentielle-2027-et-annonce-soutenir-jean-luc-melenchon_8084936.html',
             date: '2026-06-29',
+          },
+        ],
+      },
+      {
+        date: '2026-11-07',
+        type: 'step',
+        label:
+          "Il tient au Bourget une convention de 20 000 personnes revendiquées pour présenter la nouvelle édition de son programme, « L'Avenir en commun ».",
+        sources: [
+          {
+            label: 'Euronews',
+            url: 'https://fr.euronews.com/2026/11/07/jean-luc-melenchon-mise-sur-le-meeting-du-bourget-pour-imposer-son-programme-presidentiel',
+            date: '2026-11-07',
+          },
+          {
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france',
+            date: '2026-11-07',
           },
         ],
       },
