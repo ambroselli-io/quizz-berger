@@ -46,6 +46,9 @@ question-2027-ae-13: Comment la France devrait-elle réagir face aux attaques hy
 question-2027-ae-14: Taïwan se gouverne de façon autonome, mais la Chine la revendique comme une partie de son territoire. Quelle doit être la position de la France ?
 [2] Défendre le statu quo : ni indépendance proclamée, ni réunification imposée par la force
 
+question-2027-ae-15: Comment la dissuasion nucléaire française devrait-elle évoluer ?
+[2] Maintenir la dissuasion strictement nationale, sans l'étendre ni la réduire
+
 
 Agriculture et alimentation:
 
