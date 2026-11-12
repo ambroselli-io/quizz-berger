@@ -410,8 +410,8 @@ question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 [0] Renforcer la répression et les peines
 
-question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
-[3] Il faut expulser des logements sociaux les familles de mineurs multirécidivistes
+question-2027-pol-17: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
+[3] Il faut des sanctions lourdes : suspendre les aides publiques liées aux enfants (allocations familiales, avantages fiscaux du quotient familial)
 
 question-2027-pol-09: Que faire face aux rodéos motorisés ?
 [0] Durcir les sanctions : peines de prison systématiques et confiscation immédiate du véhicule
@@ -430,6 +430,12 @@ question-2027-pol-13: Une fois des violences ou des dégradations commises en ma
 
 question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
 [3] Élargir l'arsenal et la latitude des forces de l'ordre
+
+question-2027-pol-19: En manifestation, à partir de quand la police peut-elle faire usage de la force ?
+[3] Dès que la situation risque de dégénérer, sans attendre les premiers débordements
+
+question-2027-pol-18: Quand l'usage de la force par un policier est contesté, qui doit enquêter ?
+[2] L'IGPN telle qu'elle existe, rattachée à la police nationale
 
 question-2027-pol-15: Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?
 [0] Décréter l'état d'urgence : couvre-feux généralisés et pouvoirs renforcés pour les préfets sur tout le territoire concerné

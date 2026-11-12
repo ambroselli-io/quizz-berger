@@ -620,6 +620,7 @@ const partyBySlug: Record<string, string> = {
   'dominique-de-villepin': '',
   'juan-branco': '',
   'patrick-sebastien': '',
+  'teddy-riner': '',
   'francis-lalanne': 'France Libre',
   'florian-philippot': 'Les Patriotes',
   'karim-bouamrane': 'PS',

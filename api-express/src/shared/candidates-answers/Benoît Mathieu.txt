@@ -410,7 +410,7 @@ question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
 [2] Dépénaliser l'usage (sans légaliser la vente)
 
-question-2027-pol-08: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
+question-2027-pol-17: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
 [0] Il faut accompagner et aider les familles pour prévenir la récidive
 
 question-2027-pol-09: Que faire face aux rodéos motorisés ?
@@ -430,6 +430,12 @@ question-2027-pol-13: Une fois des violences ou des dégradations commises en ma
 
 question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
 [1] Interdire le LBD et les grenades, et ne garder le gaz lacrymogène et les canons à eau qu'en dernier recours
+
+question-2027-pol-19: En manifestation, à partir de quand la police peut-elle faire usage de la force ?
+[1] Aussi pour empêcher des dégradations graves, comme des incendies ou des saccages
+
+question-2027-pol-18: Quand l'usage de la force par un policier est contesté, qui doit enquêter ?
+[1] L'IGPN, mais dirigée par des magistrats ou des personnalités extérieures à la police
 
 question-2027-pol-15: Face aux violences urbaines et aux pillages comme ceux du 17 octobre 2026, jusqu'où l'État doit-il aller ?
 [2] S'en tenir au droit commun et renforcer les effectifs de police sur le terrain, sans mesure d'exception
