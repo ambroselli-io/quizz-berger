@@ -983,6 +983,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 0
       }
     ]
   },
@@ -1970,6 +1975,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -2956,6 +2966,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 1
       }
     ]
@@ -3944,6 +3959,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -4931,6 +4951,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -5920,6 +5945,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -6907,6 +6937,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -7896,6 +7931,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -8883,6 +8923,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -9871,6 +9916,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 3
       }
     ]
@@ -10861,6 +10911,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 1
       }
     ]
   },
@@ -11848,6 +11903,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -12834,6 +12894,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 1
       }
     ]
@@ -13822,6 +13887,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -14809,6 +14879,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -15798,6 +15873,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -16787,6 +16867,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -17776,6 +17861,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -18763,6 +18853,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -19750,6 +19845,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -20737,6 +20837,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 1
       }
     ]
   },
@@ -21724,6 +21829,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -22711,6 +22821,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -23698,6 +23813,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -24684,6 +24804,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 2
       }
     ]
@@ -25672,6 +25797,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -26658,6 +26788,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 2
       }
     ]
@@ -27646,6 +27781,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -28633,6 +28773,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -29620,6 +29765,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -30609,6 +30759,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -31598,6 +31753,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -32584,6 +32744,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 0
       }
     ]
@@ -33572,6 +33737,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 0
       }
     ]
   },
@@ -34559,6 +34729,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -35546,6 +35721,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -36534,6 +36714,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 1
       }
     ]
@@ -37524,6 +37709,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -38513,6 +38703,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 2
       }
     ]
   },
@@ -39502,6 +39697,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -40489,6 +40689,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -41476,6 +41681,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -42463,6 +42673,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   },
@@ -43450,6 +43665,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -44437,6 +44657,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 3
       }
     ]
   },
@@ -45423,6 +45648,11 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
         "answerIndex": 2
       }
     ]
@@ -46411,6 +46641,11 @@
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-14",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-affaires-etrangeres",
+        "questionId": "question-2027-ae-15",
+        "answerIndex": 4
       }
     ]
   }

@@ -397,6 +397,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Service minimum dans les grèves : les candidats 2027',
     seoDescription: `Réquisition des grévistes, service minimum renforcé ou droit de grève total ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur les grèves dans les transports.`,
   },
+  'question-2027-ae-15': {
+    slug: 'dissuasion-nucleaire-francaise-europe-candidats-2027',
+    seoTitle: 'Dissuasion nucléaire : les positions des candidats 2027',
+    seoDescription: `Désarmement, statu quo ou partage avec l'Europe : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur l'avenir de la dissuasion nucléaire française.`,
+  },
 };
 
 // Questions that already collect impressions in Search Console but kept an auto-generated
