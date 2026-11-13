@@ -578,7 +578,7 @@ question-2027-soc-03: Quelle place pour la religion dans notre société ?
 [3] La religion est une affaire strictement privée, l'État doit imposer la sécularisation de l'espace public
 
 question-2027-soc-04: Que pensez-vous de la PMA (procréation médicalement assistée) ?
-[3] Il faut aller plus loin et ouvrir la PMA aux hommes trans et aux couples d'hommes via la GPA
+[3] Il faut l'élargir encore, par exemple aux hommes trans qui peuvent porter un enfant
 
 question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
 [1] On peut la tolérer à l'étranger et reconnaître les enfants nés par GPA

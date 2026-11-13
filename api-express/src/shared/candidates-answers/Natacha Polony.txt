@@ -578,7 +578,7 @@ question-2027-soc-03: Quelle place pour la religion dans notre société ?
 [2] Chaque religion doit rester à sa place, l'État est laïc et traite toutes les croyances de la même façon
 
 question-2027-soc-04: Que pensez-vous de la PMA (procréation médicalement assistée) ?
-[1] Elle devrait être réservée aux couples hétérosexuels ayant des problèmes de fertilité
+[1] Elle devrait être réservée aux couples homme-femme qui ont un problème de fertilité
 
 question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
 [2] C'est une exploitation du corps des femmes, il faut que ça reste interdit

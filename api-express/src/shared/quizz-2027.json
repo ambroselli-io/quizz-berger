@@ -3388,10 +3388,10 @@
         "fr": "Que pensez-vous de la PMA (procréation médicalement assistée) ?",
         "help": "https://fr.wikipedia.org/wiki/Procréation_médicalement_assistée",
         "answers": [
-          "Elle devrait être interdite pour tous, c'est contre-nature",
-          "Elle devrait être réservée aux couples hétérosexuels ayant des problèmes de fertilité",
-          "La loi actuelle est bien : PMA ouverte à toutes les femmes, remboursée",
-          "Il faut aller plus loin et ouvrir la PMA aux hommes trans et aux couples d'hommes via la GPA",
+          "Je suis contre la PMA, quelle que soit la situation",
+          "Elle devrait être réservée aux couples homme-femme qui ont un problème de fertilité",
+          "La loi actuelle me convient : PMA ouverte à toutes les femmes, en couple ou seules, et remboursée",
+          "Il faut l'élargir encore, par exemple aux hommes trans qui peuvent porter un enfant",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

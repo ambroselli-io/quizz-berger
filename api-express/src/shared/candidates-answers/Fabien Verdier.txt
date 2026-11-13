@@ -578,7 +578,7 @@ question-2027-soc-03: Quelle place pour la religion dans notre société ?
 [2] Chaque religion doit rester à sa place, l'État est laïc et traite toutes les croyances de la même façon
 
 question-2027-soc-04: Que pensez-vous de la PMA (procréation médicalement assistée) ?
-[2] La loi actuelle est bien : PMA ouverte à toutes les femmes, remboursée
+[2] La loi actuelle me convient : PMA ouverte à toutes les femmes, en couple ou seules, et remboursée
 
 question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
 [2] C'est une exploitation du corps des femmes, il faut que ça reste interdit
