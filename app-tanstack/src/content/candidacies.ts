@@ -1469,7 +1469,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Reconquête',
     summary:
-      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Il a finalement annoncé sa candidature le 17 septembre 2026 sur BFMTV, en durcissant à cette occasion son discours sur l'immigration. Un lancement de campagne plus formel reste attendu à l'automne, probablement en octobre.",
+      "Éric Zemmour, candidat en 2022, a indiqué le 3 septembre 2026 qu'il annoncerait sa candidature « avant décembre ». Il a annoncé sa candidature le 17 septembre 2026 sur BFMTV, en durcissant à cette occasion son discours sur l'immigration, puis l'a officialisée le 10 novembre 2026 au journal de 20 heures de TF1.",
     quote: {
       text: 'Je suis candidat à la présidence de la République, je serai candidat à l’élection présidentielle.',
       source: {
@@ -1511,6 +1511,24 @@ export const candidacies: Candidacy[] = [
             label: 'Le Figaro',
             url: 'https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-eric-zemmour-confirme-qu-il-sera-candidat-durcit-encore-son-discours-sur-l-immigration-20260918',
             date: '2026-09-18',
+          },
+        ],
+      },
+      {
+        date: '2026-11-10',
+        type: 'step',
+        label:
+          "Il officialise sa candidature sur TF1 (« Je me présente pour conserver une France française ») et dit vouloir réduire de deux millions le nombre d'immigrés d'ici à la fin du quinquennat.",
+        sources: [
+          {
+            label: 'Euronews',
+            url: 'https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle',
+            date: '2026-11-10',
+          },
+          {
+            label: 'CNEWS',
+            url: 'https://www.cnews.fr/france/2026-11-10/presidentielle-2027-qui-sont-les-candidats-en-lice-1621746',
+            date: '2026-11-10',
           },
         ],
       },
