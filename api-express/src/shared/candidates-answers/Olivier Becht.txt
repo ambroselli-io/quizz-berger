@@ -101,7 +101,7 @@ Corruption et lobbying:
 
 
 question-2027-corr-01: Que pensez-vous du recours aux cabinets de conseil privés (type McKinsey) par l'État ?
-[1] Ça peut se justifier ponctuellement, mais il faut de la transparence sur les montants et les missions
+[1] Ça peut se justifier ponctuellement, avec des cabinets sans conflit d'intérêts et de la transparence sur les coûts, les missions et les résultats
 
 question-2027-corr-02: Que pensez-vous du lobbying auprès des élus et des institutions ?
 [2] Le lobbying fait partie du jeu démocratique, à condition d'être transparent
