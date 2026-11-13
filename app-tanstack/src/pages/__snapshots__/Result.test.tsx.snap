@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Result (/result) > renders every candidate and locks their global percentages via snapshot 1`] = `
+exports[`Result (/result) > renders every candidate in the race and locks their global percentages via snapshot 1`] = `
 [
   {
     "percent": 100,
@@ -141,7 +141,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 56,
+    "percent": 55,
     "pseudos": [
       "Natacha Polony",
     ],
@@ -156,11 +156,6 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     "percent": 53,
     "pseudos": [
       "Bernard Cazeneuve",
-    ],
-  },
-  {
-    "percent": 53,
-    "pseudos": [
       "Fabien Verdier",
     ],
   },
@@ -179,23 +174,23 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 49,
     "pseudos": [
-      "François Asselineau",
+      "Florian Philippot",
     ],
   },
   {
     "percent": 49,
     "pseudos": [
-      "Florian Philippot",
+      "François Asselineau",
     ],
   },
   {
-    "percent": 47,
+    "percent": 46,
     "pseudos": [
       "Patrick Sébastien",
     ],
   },
   {
-    "percent": 45,
+    "percent": 44,
     "pseudos": [
       "François Bayrou",
     ],

@@ -115,7 +115,11 @@ export default function Result() {
   const [loadingFriend, setLoadingFriend] = useState(false);
   const [noFriend, setNoFriend] = useState<string | null>(null);
 
-  const allCandidatesQualified = useMemo(() => candidates.map((c) => c.pseudo), [candidates]);
+  // Candidates who left the race keep their answers but are hidden by default; the filter can bring them back.
+  const allCandidatesQualified = useMemo(
+    () => candidates.filter((c) => !c.withdrawn).map((c) => c.pseudo),
+    [candidates],
+  );
   const [showCandidates, setShowCandidates] = useState(false);
   const allFriends = useMemo(() => friends.map((c) => c.pseudo), [friends]);
 
@@ -290,12 +294,15 @@ export default function Result() {
   useEffect(() => {
     const save = isSignedUp ? setToLocalStorage : setToSessionStorage;
     const storage = isSignedUp ? 'localStorage' : 'sessionStorage';
-    if (candidates.map((c) => c.pseudo).length !== selectedCandidates.length) {
+    const isDefaultSelection =
+      selectedCandidates.length === allCandidatesQualified.length &&
+      allCandidatesQualified.every((pseudo) => selectedCandidates.includes(pseudo));
+    if (!isDefaultSelection) {
       save('selectedCandidates', selectedCandidates);
     } else {
       window[storage].removeItem('selectedCandidates');
     }
-  }, [selectedCandidates, candidates, isSignedUp]);
+  }, [selectedCandidates, allCandidatesQualified, isSignedUp]);
 
   useEffect(() => {
     const save = isSignedUp ? setToLocalStorage : setToSessionStorage;

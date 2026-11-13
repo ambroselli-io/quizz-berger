@@ -1,32 +1,13 @@
 import { quizz } from './quizz';
 import type { QuizzQuestion } from '@app/types/quizz';
+import quickQuizzIds from '@app/shared/quick-quizz-ids.json';
 
 // "Quiz rapide" (/quiz-rapide): a short path through the quiz, walked in this order, then the result page.
 // Hand-maintained. Picked from production data: the questions users star the most, kept to a subset whose
 // candidate ranking correlates at 0.97 with the ranking over the full quiz. The order alternates themes so
 // the first questions are the ones people care most about. quick-quizz.test.ts fails when an id disappears.
-export const quickQuizzQuestionIds: string[] = [
-  'question-2027-climat-01',
-  'question-2027-immi-01',
-  'question-2027-trav-01',
-  'question-2027-fisc-01',
-  'question-2027-soc-01',
-  'question-2027-ue-01',
-  'question-2027-pol-12',
-  'question-2027-san-02',
-  'question-2027-edu-06',
-  'question-2027-ae-08',
-  'question-2027-dep-03',
-  'question-2027-soc-02',
-  'question-2027-immi-03',
-  'question-2027-eco-02',
-  'question-2027-agri-02',
-  'question-2027-pol-14',
-  'question-2027-trav-10',
-  'question-2027-edu-02',
-  'question-2027-ae-02',
-  'question-2027-cult-01',
-];
+// The list lives in shared/quick-quizz-ids.json, copied in api-express/src/shared/ for the /stats split.
+export const quickQuizzQuestionIds: string[] = quickQuizzIds;
 
 export interface QuizzStep {
   themeId: string;

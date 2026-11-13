@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[2] Il faut un système d'immigration choisie avec des quotas, ni trop ouvert ni trop fermé
+[1] Il faut réduire l'immigration
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [1] L'immigration pose des problèmes réels d'intégration qu'il faut traiter fermement avec de vraies politiques d'assimilation

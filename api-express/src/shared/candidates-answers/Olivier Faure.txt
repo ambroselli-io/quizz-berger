@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[3] Il faut assouplir notre politique migratoire et mieux accueillir ceux qui arrivent
+[2] Le niveau actuel me convient, il ne faut pas changer grand-chose
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [3] L'immigration est globalement positive et enrichit notre société, même si l'intégration prend du temps

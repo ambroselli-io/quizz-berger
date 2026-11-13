@@ -814,11 +814,11 @@
         "fr": "De manière générale, que pensez-vous de l'immigration en France ?",
         "help": "https://fr.wikipedia.org/wiki/Immigration_en_France",
         "answers": [
-          "Il faut fermer les frontières et stopper l'immigration, la France n'en peut plus",
-          "Il faut réduire fortement l'immigration et durcir les conditions d'accueil",
-          "Il faut un système d'immigration choisie avec des quotas, ni trop ouvert ni trop fermé",
-          "Il faut assouplir notre politique migratoire et mieux accueillir ceux qui arrivent",
-          "Il faut ouvrir les frontières : la libre circulation des personnes est un droit fondamental",
+          "Il faut stopper l'immigration et fermer les frontières",
+          "Il faut réduire l'immigration",
+          "Le niveau actuel me convient, il ne faut pas changer grand-chose",
+          "Il faut accueillir davantage d'immigrés",
+          "Il faut ouvrir les frontières : la libre circulation est un droit fondamental",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

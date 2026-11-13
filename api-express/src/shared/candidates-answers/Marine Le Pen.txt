@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[0] Il faut fermer les frontières et stopper l'immigration, la France n'en peut plus
+[0] Il faut stopper l'immigration et fermer les frontières
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [0] L'immigration est un danger pour notre identité et notre culture, on risque de ne plus se reconnaître chez nous

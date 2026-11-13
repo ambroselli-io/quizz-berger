@@ -1,11 +1,15 @@
 import express from "express";
 import { catchErrors } from "../utils/error";
 import quizz from "~/shared/quizz-2027.json";
+import quickQuizzIds from "~/shared/quick-quizz-ids.json";
 import { Question } from "~/types/quizz";
 import prisma from "~/prisma";
 import { CountResponse } from "~/types/responses";
 
 const router = express.Router();
+
+// The day /quiz-rapide went live: before it, nobody could take the quick quiz.
+const QUICK_QUIZZ_SINCE = "2026-11-13";
 
 const quizzQuestions = quizz.reduce((questions, theme) => {
   return [...questions, ...theme.questions];
@@ -227,6 +231,38 @@ router.get(
       return { _id: day._id, count: day.count, cumulative: globalChatUsers };
     });
 
+    // Quick quiz vs more, per day of signup. Derived from the answers, no flag is stored: a user whose every
+    // answer belongs to the quick quiz list "did the quick quiz", anyone with one answer outside it "did more".
+    // Users without any answer are left out. Counted from the day the quick quiz went live.
+    const quickQuizzUsersRaw = await prisma.$queryRaw<Array<{ _id: string; quick: number; other: number }>>`
+      SELECT DATE(u."createdAt")::text AS "_id",
+        COUNT(*) FILTER (WHERE a."questionId" = ANY(${quickQuizzIds}::text[]))::int AS "quick",
+        COUNT(*) FILTER (WHERE NOT (a."questionId" = ANY(${quickQuizzIds}::text[])))::int AS "other"
+      FROM "User" u
+      JOIN "Answer" a ON a."userId" = u."id"
+      WHERE u."createdAt" >= ${QUICK_QUIZZ_SINCE}::date AND (u."isCandidate" = false OR u."isCandidate" IS NULL)
+      GROUP BY u."id"
+      ORDER BY 1
+    `;
+    const quickQuizzPerDay: Array<{ _id: string; quickPartial: number; quickComplete: number; more: number }> = [];
+    for (const user of quickQuizzUsersRaw) {
+      if (quickQuizzPerDay[quickQuizzPerDay.length - 1]?._id !== user._id) {
+        quickQuizzPerDay.push({ _id: user._id, quickPartial: 0, quickComplete: 0, more: 0 });
+      }
+      const day = quickQuizzPerDay[quickQuizzPerDay.length - 1];
+      if (user.other > 0) day.more += 1;
+      else if (user.quick >= quickQuizzIds.length) day.quickComplete += 1;
+      else day.quickPartial += 1;
+    }
+    const quickQuizzTotal = quickQuizzPerDay.reduce(
+      (total, day) => ({
+        quickPartial: total.quickPartial + day.quickPartial,
+        quickComplete: total.quickComplete + day.quickComplete,
+        more: total.more + day.more,
+      }),
+      { quickPartial: 0, quickComplete: 0, more: 0 },
+    );
+
     const maxUsersOnADay = Math.max(...cumulativeUsers.map((c) => c.count));
 
     const totalUsersForTheDay = usersPerHourAggregation.reduce((sum, agg) => sum + agg.count, 0);
@@ -267,6 +303,7 @@ router.get(
         today,
         usersPerPlatform,
         platformSince: platformSince?.createdAt ?? null,
+        quickQuizz: { since: QUICK_QUIZZ_SINCE, total: quickQuizzTotal, perDay: quickQuizzPerDay },
         chats: { total: chatsTotal, users: globalChatUsers, perMode: chatsPerModeRaw, perDay: chatsPerDay, usersPerDay: chatUsersPerDay },
       },
     });

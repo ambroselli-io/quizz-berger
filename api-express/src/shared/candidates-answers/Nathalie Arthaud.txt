@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[4] Il faut ouvrir les frontières : la libre circulation des personnes est un droit fondamental
+[4] Il faut ouvrir les frontières : la libre circulation est un droit fondamental
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [4] L'immigration est une richesse culturelle et démographique qu'il faut embrasser pleinement

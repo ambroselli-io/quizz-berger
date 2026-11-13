@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { answer, api, signup } from "./helpers";
 import prisma from "~/prisma";
+import quickQuizzIds from "~/shared/quick-quizz-ids.json";
 
 describe("GET /public/count", () => {
   it("counts users and answers, then serves the same figures for a minute", async () => {
@@ -68,5 +69,30 @@ describe("GET /public/charts, AI users per day", () => {
       { _id: "2026-10-01", count: { president: 1, convaincre: 1 }, cumulative: { president: 1, convaincre: 1 } },
       { _id: "2026-10-02", count: { president: 2, convaincre: 0 }, cumulative: { president: 3, convaincre: 1 } },
     ]);
+  });
+});
+
+describe("GET /public/charts, quick quiz vs more", () => {
+  it("splits users by their answers: quick quiz partial, quick quiz complete, more", async () => {
+    const partial = await signup("partial");
+    const complete = await signup("complete");
+    const more = await signup("more");
+    await signup("noanswer");
+    const quickAnswers = (userId: string, ids: string[]) =>
+      ids.map((questionId) => ({ userId, themeId: "theme", questionId, answerIndex: 0 }));
+    await prisma.answer.createMany({
+      data: [
+        ...quickAnswers(partial.id, quickQuizzIds.slice(0, 3)),
+        ...quickAnswers(complete.id, quickQuizzIds),
+        ...quickAnswers(more.id, [quickQuizzIds[0], "question-outside-the-quick-quiz"]),
+      ],
+    });
+
+    const res = await api().get("/public/charts");
+
+    const { total, perDay } = res.body.data.quickQuizz;
+    expect(total).toEqual({ quickPartial: 1, quickComplete: 1, more: 1 });
+    expect(perDay).toHaveLength(1);
+    expect(perDay[0]).toMatchObject({ quickPartial: 1, quickComplete: 1, more: 1 });
   });
 });
