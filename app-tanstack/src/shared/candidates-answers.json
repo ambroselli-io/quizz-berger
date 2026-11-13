@@ -8047,7 +8047,7 @@
       {
         "themeId": "theme-2027-agriculture",
         "questionId": "question-2027-agri-02",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -8072,7 +8072,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-02",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-climat",
@@ -8187,7 +8187,7 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-05",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -8207,7 +8207,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-03",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -8367,7 +8367,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-03",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-police",
@@ -8387,7 +8387,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-07",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-police",
@@ -8797,7 +8797,7 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-09",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-immigration",
@@ -8872,7 +8872,7 @@
       {
         "themeId": "theme-2027-ia",
         "questionId": "question-2027-ia-10",
-        "answerIndex": 5
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-ia",
@@ -8897,7 +8897,7 @@
       {
         "themeId": "theme-2027-ia",
         "questionId": "question-2027-ia-15",
-        "answerIndex": 4
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-ia",
@@ -8927,7 +8927,7 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-08b",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-depenses",

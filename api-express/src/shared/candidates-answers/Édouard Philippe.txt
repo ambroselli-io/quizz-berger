@@ -57,7 +57,7 @@ question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'ag
 [2] Il faut les limiter au strict nécessaire, là où il n'y a pas d'alternative
 
 question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
-[1] Il faut mieux partager l'eau entre agriculture, industrie et particuliers, avec des restrictions en période de sécheresse
+[2] Il faut construire des retenues d'eau et des bassines pour que les agriculteurs puissent continuer à travailler
 
 question-2027-agri-03: Quelle place pour l'agriculture biologique en France ?
 [1] Le bio a sa place, mais l'agriculture conventionnelle reste indispensable pour les rendements
@@ -76,7 +76,7 @@ question-2027-climat-01: Comment vous positionnez-vous face au changement climat
 [3] Il faut transformer sérieusement notre économie pour aller vers une croissance durable
 
 question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
-[1] Maintenir et développer modérément le parc existant
+[0] Construire massivement de nouvelles centrales nucléaires
 
 question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes, panneaux solaires) ?
 [2] C'est un bon complément au nucléaire, il faut continuer à les développer raisonnablement
@@ -157,7 +157,7 @@ question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant
 [1] Pas de droit de vote pour les étrangers, c'est un privilège lié à la nationalité
 
 question-2027-immi-05: Faut-il régulariser les personnes étrangères en situation irrégulière ?
-[1] Oui, pour celles qui travaillent et sont installées depuis longtemps
+[2] Au cas par cas, avec critères stricts
 
 question-2027-immi-07: Que pensez-vous de l'immigration et de la mixité culturelle ?
 [2] C'est un sujet complexe, mieux vaut en débattre sereinement que s'enfermer dans des positions
@@ -166,7 +166,7 @@ question-2027-immi-08: Quel niveau d'intégration faut-il exiger des personnes �
 [3] Langue + institutions + adhésion aux valeurs (laïcité, égalité hommes-femmes)
 
 question-2027-immi-09: Faut-il expulser les personnes étrangères condamnées pour un délit ou un crime ?
-[2] Oui pour les crimes graves, mais au cas par cas et sous le contrôle du juge
+[1] Oui pour tout crime ou délit grave, en supprimant les protections qui l'empêchent aujourd'hui
 
 question-2027-immi-10: Que pensez-vous de l'accord de réadmission des migrants de la Manche avec le Royaume-Uni ?
 [1] Il faut des accords de réadmission plus stricts et plus rapides avec le Royaume-Uni, en limitant les recours qui bloquent les renvois
@@ -185,7 +185,7 @@ question-2027-dep-02: Que penser des frais de fonctionnement de l'État (voiture
 [2] Le niveau actuel est acceptable, il faut juste de la transparence
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
-[2] L'État joue un rôle suffisant, il faut garder cet équilibre entre régulation et liberté
+[1] L'État doit continuer à se désengager pour favoriser la croissance et réduire ses dépenses
 
 question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'en pensez-vous ?
 [1] C'est préoccupant, il faut la réduire progressivement par des économies
@@ -309,7 +309,7 @@ question-2027-ia-09: Quel sera l'effet de l'IA sur la croissance française ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 question-2027-ia-10: Combien d'argent public faut-il mettre dans l'IA et la robotique françaises ?
-[5] Ça ne m'intéresse pas / Je n'ai pas d'avis
+[3] Plus
 
 question-2027-ia-11: Combien de data centers pour l'IA faut-il en France ?
 [1] Davantage qu'aujourd'hui
@@ -324,7 +324,7 @@ question-2027-ia-14: Si une IA obtient de meilleurs résultats qu'un médecin, q
 [4] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 question-2027-ia-15: Qui doit rendre les décisions de justice ?
-[4] Ça ne m'intéresse pas / Je n'ai pas d'avis
+[2] Le juge, assisté par l'IA
 
 question-2027-ia-16: Qui doit prendre les décisions de l'administration (aides sociales, contrôles fiscaux) ?
 [4] Ça ne m'intéresse pas / Je n'ai pas d'avis
@@ -399,7 +399,7 @@ question-2027-pol-02: La France est-elle un pays sûr ?
 [1] Il y a de vrais problèmes d'insécurité dans certains territoires, l'État doit agir plus fermement
 
 question-2027-pol-03: Que pensez-vous de la justice en France ?
-[1] Manque de moyens (juges, tribunaux, procédures), il faut investir
+[0] Trop lente et trop laxiste, il faut la durcir
 
 question-2027-pol-04: Quelle doctrine pénale faut-il privilégier ?
 [0] Tout-répressif : peines plus lourdes, plus de places de prison
@@ -411,7 +411,7 @@ question-2027-pol-06: Que pensez-vous de la formation des policiers ?
 [2] La formation est correcte, pas besoin de tout changer
 
 question-2027-pol-07: Que pensez-vous du cannabis et de sa légalisation ?
-[1] Maintenir le cadre actuel
+[0] Renforcer la répression et les peines
 
 question-2027-pol-17: Dans le cas des mineurs, que pensez-vous du traitement des familles de délinquants ?
 [3] Il faut des sanctions lourdes : suspendre les aides publiques liées aux enfants (allocations familiales, avantages fiscaux du quotient familial)
@@ -639,7 +639,7 @@ question-2027-trav-07: Le budget 2027 envisage de ne plus revaloriser certaines 
 [1] Indexer intégralement les petites et moyennes pensions, mais geler ou limiter la revalorisation des pensions les plus élevées
 
 question-2027-trav-08b: Combien de jours de carence pour les arrêts maladie, dans le public et dans le privé ?
-[4] Plus de 3 jours pour tout le monde, avec plus de contrôles sur les arrêts courts
+[3] 3 jours pour tout le monde, public et privé
 
 question-2027-trav-14: Face aux grèves dans les transports, faut-il un service minimum garanti plus strict ?
 [2] Renforcer le service minimum garanti : un niveau plancher de circulation obligatoire, y compris aux heures de pointe
