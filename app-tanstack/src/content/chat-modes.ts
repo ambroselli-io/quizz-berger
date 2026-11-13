@@ -6,6 +6,8 @@ export interface ChatModeEntry {
   slug: string;
   title: string;
   description: string;
+  // The home page says "vous", /ia and the app say "tu": same sentence, the other register.
+  descriptionVous: string;
 }
 
 export const chatModes: ChatModeEntry[] = [
@@ -15,6 +17,8 @@ export const chatModes: ChatModeEntry[] = [
     title: "Si j'étais président",
     description:
       "Discute avec une IA des mesures que tu mettrais en place si tu étais président : elle essaiera de t'aider à affiner tes idées.",
+    descriptionVous:
+      "Discutez avec une IA des mesures que vous mettriez en place si vous étiez président : elle essaiera de vous aider à affiner vos idées.",
   },
   {
     mode: 'convaincre',
@@ -22,6 +26,8 @@ export const chatModes: ChatModeEntry[] = [
     title: 'Je veux convaincre un candidat',
     description:
       "Basée sur les réponses au Quizz du Berger, l'IA se met à la place du candidat de ton choix. À toi de le faire changer d'avis : ici, les candidats sont tes moutons.",
+    descriptionVous:
+      "Basée sur les réponses au Quizz du Berger, l'IA se met à la place du candidat de votre choix. À vous de le faire changer d'avis : ici, les candidats sont vos moutons.",
   },
   {
     mode: 'contre-moi-meme',
@@ -29,6 +35,8 @@ export const chatModes: ChatModeEntry[] = [
     title: 'Je pense contre moi-même',
     description:
       "Dis ce que tu penses, et l'IA te poussera dans tes retranchements, seulement en te posant des questions. Tu verras si tout ça tient debout !",
+    descriptionVous:
+      "Dites ce que vous pensez, et l'IA vous poussera dans vos retranchements, seulement en vous posant des questions. Vous verrez si tout ça tient debout !",
   },
 ];
 

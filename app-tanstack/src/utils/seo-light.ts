@@ -5,6 +5,8 @@
  */
 import rawQuizzData from '~/shared/quizz-2027.json';
 import candidatesLight from '@app/content/candidates-light.json';
+import { quizzQuestionsCount } from './quizz';
+import { quickQuizzCount } from './quick-quizz';
 import type { QuizzTheme, QuizzQuestion } from '@app/types/quizz';
 
 const quizz: QuizzTheme[] = rawQuizzData as QuizzTheme[];
@@ -650,5 +652,59 @@ const partyBySlug: Record<string, string> = {
 export function getCandidateParty(slug: string): string {
   return partyBySlug[slug] || '';
 }
+
+// --- Home page ---
+
+export const homeTitle = 'Test politique 2027 : quel candidat pense comme vous ?';
+export const homeDescription = `Test rapide en ${quickQuizzCount} questions (3 min) ou complet en ${quizzQuestionsCount}. Comparez vos idées aux ${candidatesCount} candidats, thème par thème. Gratuit, sans inscription, anonyme.`;
+
+// --- Home page FAQ ---
+
+export interface FaqEntry {
+  question: string;
+  answer: string;
+  /** Rendered as a link where `label` appears in `answer`; the FAQPage JSON-LD keeps the plain text. */
+  link?: { label: string; to: string };
+}
+
+/** Rendered on the home page and serialised as its FAQPage JSON-LD: one source, so both stay in sync. */
+export const homeFaq: FaqEntry[] = [
+  {
+    question: 'Le test est-il gratuit\u00a0?',
+    answer:
+      'Oui, gratuit et sans inscription. Le code est open-source. Créer un pseudo est facultatif et sert seulement à retrouver vos résultats ou à les comparer avec ceux de vos amis.',
+  },
+  {
+    question: 'Combien de temps prend le test\u00a0?',
+    answer: `Cinq minutes pour un premier classement sur un ou deux thèmes. Comptez trente à quarante minutes pour répondre aux ${quizzQuestionsCount} questions.`,
+  },
+  {
+    question: 'Les candidats ont-ils répondu eux-mêmes\u00a0?',
+    answer:
+      'Non. Leurs réponses sont établies à partir de leurs programmes officiels, de leurs déclarations publiques et de leurs votes. Chaque page candidat détaille ses réponses, question par question, pour que vous puissiez les vérifier.',
+  },
+  {
+    question: 'Le test est-il neutre\u00a0?',
+    answer:
+      "Chaque question propose plusieurs réponses concrètes, chacune étant une position défendue par au moins un candidat, plutôt qu'un pour ou contre. Le test ne classe pas les candidats sur un axe gauche-droite et ne recommande personne : il calcule une distance entre vos réponses et les leurs. La méthode est décrite sur la page Qui sommes-nous.",
+    link: { label: 'Qui sommes-nous', to: '/qui-sommes-nous' },
+  },
+  {
+    question: 'Quelle organisation est derrière ce test\u00a0?',
+    answer:
+      "Aucune\u00a0: ni parti, ni média, ni entreprise. Le Quizz du Berger est un projet indépendant, sans but lucratif, dont le code est open-source. L'équipe est présentée sur la page Qui sommes-nous.",
+    link: { label: 'Qui sommes-nous', to: '/qui-sommes-nous' },
+  },
+];
+
+export const homeFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaq.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: { '@type': 'Answer', text: answer },
+  })),
+};
 
 export { quizz, slugify };

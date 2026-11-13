@@ -7,7 +7,6 @@ import useUser from '@app/hooks/useUser';
 import { quizz, quizzForSearch } from '@app/utils/quizz';
 import ThemeButton from '@app/components/ThemeButton';
 import QuizzButton from '@app/components/QuizzButton';
-import ModalFirstThemeSelection from '@app/components/modals/ModalFirstThemeSelection';
 import ModalAccessToResults from '@app/components/modals/ModalAccessToResults';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import { Star } from 'lucide-react';
@@ -106,12 +105,6 @@ export default function ThemeSelect() {
 
   useEffect(() => {
     if (alertTimeouts.current) clearTimeout(alertTimeouts.current);
-    if (!userAnswers.length && !window.sessionStorage.getItem('theme-select_first')) {
-      alertTimeouts.current = setTimeout(() => {
-        showModalRequest('theme-select_first');
-        window.sessionStorage.setItem('theme-select_first', 'true');
-      }, 1000);
-    }
     if (userThemes.length > 0 && !window.sessionStorage.getItem('theme-select_result')) {
       alertTimeouts.current = setTimeout(() => {
         showModalRequest('theme-select_result');
@@ -195,7 +188,6 @@ export default function ThemeSelect() {
           </QuizzButton>
         </div>
       </div>
-      <ModalFirstThemeSelection isActive={showModal === 'theme-select_first'} onClose={onForceCloseModal} />
       <ModalAccessToResults isActive={showModal === 'theme-select_result'} onClose={onForceCloseModal} />
     </>
   );

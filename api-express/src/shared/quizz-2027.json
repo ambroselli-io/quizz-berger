@@ -1616,14 +1616,7 @@
         "_id": "question-2027-ia-03",
         "fr": "Dans combien de temps pensez-vous que le travail humain aura disparu à cause de l'IA et de la robotisation ?",
         "help": "https://fr.wikipedia.org/wiki/Chômage_technologique",
-        "answers": [
-          "Jamais",
-          "Dans 100 ans",
-          "Dans 20 ans",
-          "Dans 10 ans",
-          "Dans 5 ans",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
+        "answers": ["Jamais", "Dans 100 ans", "Dans 20 ans", "Dans 10 ans", "Dans 5 ans", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1698,14 +1691,7 @@
         "_id": "question-2027-ia-05",
         "fr": "Une société où l'on travaillerait beaucoup moins, ça vous fait envie ?",
         "help": "https://fr.wikipedia.org/wiki/Réduction_du_temps_de_travail",
-        "answers": [
-          "Oui, vivement",
-          "Plutôt oui",
-          "Je suis partagé",
-          "Plutôt non",
-          "Non, pas du tout",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
+        "answers": ["Oui, vivement", "Plutôt oui", "Je suis partagé", "Plutôt non", "Non, pas du tout", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1718,14 +1704,7 @@
       {
         "_id": "question-2027-ia-06",
         "fr": "Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes sur le marché du travail par rapport à aujourd'hui ?",
-        "answers": [
-          "Plus aucune",
-          "Beaucoup moins",
-          "Un peu moins",
-          "Autant",
-          "Plus",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
+        "answers": ["Plus aucune", "Beaucoup moins", "Un peu moins", "Autant", "Plus", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1799,14 +1778,7 @@
       {
         "_id": "question-2027-ia-10",
         "fr": "Combien d'argent public faut-il mettre dans l'IA et la robotique françaises ?",
-        "answers": [
-          "Aucun",
-          "Moins qu'aujourd'hui",
-          "Autant qu'aujourd'hui",
-          "Plus",
-          "Beaucoup plus",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
+        "answers": ["Aucun", "Moins qu'aujourd'hui", "Autant qu'aujourd'hui", "Plus", "Beaucoup plus", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1859,13 +1831,7 @@
       {
         "_id": "question-2027-ia-13",
         "fr": "Quelle part de l'État au capital des entreprises qui créent les IA les plus puissantes ?",
-        "answers": [
-          "Aucune",
-          "Minoritaire",
-          "Majoritaire",
-          "Totale",
-          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
-        ],
+        "answers": ["Aucune", "Minoritaire", "Majoritaire", "Totale", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
         "scores": [
           [5, 3, 1, 0, 0],
           [3, 5, 3, 1, 0],

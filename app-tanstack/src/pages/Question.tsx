@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate, useLocation } from '@app/lib/router';
 import { quizz } from '@app/utils/quizz';
 import { readableTextColor } from '@app/utils/contrast';
+import { QUICK_QUIZZ_SEARCH, isInQuickQuizz, nextQuickQuizzStep, quickQuizzPath } from '@app/utils/quick-quizz';
 import useUser from '@app/hooks/useUser';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import ModalQuestionFeedback from '@app/components/modals/ModalQuestionFeedback';
@@ -19,8 +20,12 @@ export default function Question() {
   );
   // Coming from "Questions importantes pour moi" on /themes: next/previous walk the starred questions
   // across themes. The current one stays in the list even once unstarred, so the walk doesn't lose its place.
-  const importantMode = Boolean((useLocation().search as { importantes?: unknown })?.importantes);
+  const search = useLocation().search as { importantes?: unknown; rapide?: unknown };
+  const importantMode = Boolean(search?.importantes);
+  // Coming from /quiz-rapide: next/previous walk the hand-picked list, and the end of it leads to the result.
+  const quickMode = !importantMode && Boolean(search?.rapide) && isInQuickQuizz(questionId);
   const path = useMemo(() => {
+    if (quickMode) return quickQuizzPath;
     if (!importantMode) return theme.questions.map((q) => ({ themeId: theme._id, questionId: q._id }));
     const importantIds = userAnswers.filter((a) => a.isImportant).map((a) => a.questionId);
     return quizz.flatMap((t) =>
@@ -28,7 +33,7 @@ export default function Question() {
         .filter((q) => q._id === questionId || importantIds.includes(q._id))
         .map((q) => ({ themeId: t._id, questionId: q._id })),
     );
-  }, [importantMode, theme, userAnswers, questionId]);
+  }, [quickMode, importantMode, theme, userAnswers, questionId]);
   const pathIndex = path.findIndex((q) => q.questionId === questionId);
   const questions = theme.questions;
   const headerTextColor = readableTextColor(theme.backgroundColor ?? '', 0.8);
@@ -79,10 +84,13 @@ export default function Question() {
     if (!target) return navigate('/themes');
     return navigate({
       to: `/question/${target.themeId}/${target.questionId}`,
-      search: importantMode ? { importantes: 1 } : {},
+      search: importantMode ? { importantes: 1 } : quickMode ? QUICK_QUIZZ_SEARCH : {},
     });
   };
-  const goToNextQuestion = () => goToPathQuestion(pathIndex + 1);
+  const goToNextQuestion = () => {
+    if (quickMode && !nextQuickQuizzStep(questionId)) return navigate('/result');
+    return goToPathQuestion(pathIndex + 1);
+  };
   const goToPreviousQuestion = () => goToPathQuestion(pathIndex - 1);
 
   const goToResults = () => navigate('/result');
@@ -193,6 +201,11 @@ export default function Question() {
                 style={{ width: `${(pathIndex / path.length) * 100}%` }}
               />
             </div>
+            {quickMode && (
+              <span className="ml-3 shrink-0 text-sm tabular-nums text-quizz-dark max-lg:ml-2">
+                {pathIndex + 1} / {path.length}
+              </span>
+            )}
             <button
               onClick={goToNextQuestion}
               className="ml-12 h-[17px] min-w-[19px] cursor-pointer border-none bg-white bg-[url('/right-arrow.svg')] bg-cover bg-no-repeat max-lg:ml-2.5"

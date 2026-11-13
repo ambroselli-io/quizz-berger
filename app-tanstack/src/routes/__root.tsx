@@ -14,11 +14,19 @@ import BottomTabBar from '@app/components/BottomTabBar';
 import NotFound from '@app/components/NotFound';
 import UnexpectedError from '@app/components/UnexpectedError';
 import PageViewTracker from '@app/components/PageViewTracker';
-import { APP_STORE_ID, APP_STORE_URL, APP_NAME, APP_URL_SCHEME, candidatesCount } from '@app/utils/seo-light';
+import {
+  APP_STORE_ID,
+  APP_STORE_URL,
+  APP_NAME,
+  APP_URL_SCHEME,
+  candidatesCount,
+  homeTitle,
+  homeDescription,
+} from '@app/utils/seo-light';
 import { quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
 
-const DEFAULT_TITLE = 'Le Quizz du Berger | Quel est votre candidat idéal ?';
-const DEFAULT_DESCRIPTION = `Présidentielle 2027 - Répondez aux questions que vous voulez pour connaître le candidat qui pense comme vous. ${quizzThemesCount} thèmes, ${quizzQuestionsCount} questions, ${candidatesCount} candidats.`;
+const DEFAULT_TITLE = homeTitle;
+const DEFAULT_DESCRIPTION = homeDescription;
 const DEFAULT_OG_IMAGE = 'https://www.quizz-du-berger.com/og_1200_630.png';
 
 const WEBAPP_JSONLD = {

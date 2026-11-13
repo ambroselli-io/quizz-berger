@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useParams } from '@app/lib/router';
+import { Link, useParams } from '@app/lib/router';
 import API from '@app/services/api';
 import {
   getFromLocalStorage,
@@ -9,7 +9,8 @@ import {
 } from '@app/utils/storage';
 import getUserThemes from '@app/utils/getUserThemes';
 import useUser from '@app/hooks/useUser';
-import { quizz, quizzQuestions } from '@app/utils/quizz';
+import { quizz, quizzQuestions, quizzQuestionsCount, quizzThemesCount } from '@app/utils/quizz';
+import { isInQuickQuizz } from '@app/utils/quick-quizz';
 import useCandidates from '@app/hooks/useCandidates';
 import useFriends from '@app/hooks/useFriends';
 import useUserAnswers from '@app/hooks/useUserAnswers';
@@ -97,6 +98,11 @@ export default function Result() {
   }, [userPseudo, userToShow?.pseudo]);
 
   const userThemes = useMemo(() => getUserThemes(answersToShow), [answersToShow]);
+  // The "full version" box shows only while every answer belongs to the quick quiz.
+  const onlyQuickQuizzAnswers = useMemo(
+    () => !publicPage && answersToShow.length > 0 && answersToShow.every((a) => isInQuickQuizz(a.questionId)),
+    [publicPage, answersToShow],
+  );
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
@@ -416,6 +422,24 @@ export default function Result() {
             </Filter>
           </div>
         </div>
+        {onlyQuickQuizzAnswers && (
+          <aside className="mx-auto mb-[5vh] flex max-w-[1024px] flex-wrap items-center justify-between gap-4 rounded-xl border-2 border-yellow-400 bg-yellow-50 p-5">
+            <div className="min-w-[260px] flex-1">
+              <h2 className="mb-1 font-[Merriweather] text-xl font-bold text-[#082d0f]">Vous avez fait le test rapide</h2>
+              <p className="text-sm text-gray-700">
+                Ce résultat repose sur {answersToShow.length} question{answersToShow.length > 1 ? 's' : ''}. La version
+                intégrale en compte {quizzQuestionsCount}, sur {quizzThemesCount} thèmes&nbsp;: répondez à celles que
+                vous voulez, votre classement s'affine à chaque réponse.
+              </p>
+            </div>
+            <Link
+              to="/themes"
+              className="inline-flex items-center rounded-lg border-2 border-gray-800 bg-gray-800 px-4 py-2.5 text-sm font-semibold text-white no-underline"
+            >
+              Faire la version intégrale
+            </Link>
+          </aside>
+        )}
         <section className="mx-auto mb-[5vh] max-w-[1024px]">
           <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">
             <Star size={24} className="mr-2 inline align-[-2px] text-yellow-400" fill="currentColor" />

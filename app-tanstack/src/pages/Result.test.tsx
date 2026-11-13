@@ -7,6 +7,7 @@ import { pinnedCandidate, pinnedUserAnswers, allTestCandidates } from '@app/test
 import { quizz, quizzQuestions } from '@app/utils/quizz';
 import { getCandidatesScorePerThemes } from '@app/shared/utils/score';
 import { getPodium } from '@app/shared/utils/podium';
+import { isInQuickQuizz } from '@app/utils/quick-quizz';
 
 const setupResult = () =>
   mockApi({
@@ -90,5 +91,35 @@ describe('Result (/result)', () => {
       // Each answered theme gets a podium with its name as a heading.
       expect(headings.length, `Missing podium for theme "${themeName}"`).toBeGreaterThan(0);
     }
+  });
+
+  it('offers the full version only while every answer belongs to the quick quiz', async () => {
+    const quickAnswers = pinnedUserAnswers.filter((a) => isInQuickQuizz(a.questionId));
+    expect(quickAnswers.length).toBeGreaterThan(0);
+    mockApi({
+      POST: { '/user/me': { ok: false } },
+      GET: {
+        '/answer': { ok: true, data: quickAnswers },
+        '/answer/candidates': { ok: true, data: allTestCandidates },
+        '/answer/friends': { ok: true, data: [] },
+      },
+    });
+
+    renderWithRouter(<Result />, { path: '/result' });
+
+    const link = await screen.findByRole('link', { name: 'Faire la version intégrale' });
+    expect(link).toHaveAttribute('href', '/themes');
+  });
+
+  it('hides the full-version box once an answer outside the quick quiz exists', async () => {
+    expect(pinnedUserAnswers.some((a) => !isInQuickQuizz(a.questionId))).toBe(true);
+    setupResult();
+
+    renderWithRouter(<Result />, { path: '/result' });
+
+    await waitFor(() => {
+      expect(screen.getAllByText(pinnedCandidate.pseudo).length).toBeGreaterThan(0);
+    });
+    expect(screen.queryByRole('link', { name: 'Faire la version intégrale' })).toBeNull();
   });
 });

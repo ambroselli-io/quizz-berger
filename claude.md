@@ -6,7 +6,7 @@ Goal: show people that politics isn't black and white — make them relax, make 
 
 # Architecture
 
-- **App**: `app-tanstack/` — React 19 + TanStack Start (TanStack Router, SSR) + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI. File-based routes in `src/routes/` (thin: `loader`/`head()`/`notFound()`); page components in `src/pages/`. Per-page SEO meta via each route's `head()` + the `seoHead()` helper in `src/utils/seo-head.ts`. Router API is accessed through the compat shim `src/lib/router.tsx` (`Link`/`useNavigate`/`useParams`). Prod is served by `server.mjs` (Express adapter over the `dist/server/server.js` web-fetch handler). `src/routeTree.gen.ts` is generated (gitignored) by the Vite plugin / `tsr generate`.
+- **App**: `app-tanstack/` — React 19 + TanStack Start (TanStack Router, SSR) + Vite + Tailwind CSS v4 + Zustand + shadcn/Radix UI. File-based routes in `src/routes/` (thin: `loader`/`head()`/`notFound()`); page components in `src/pages/`. Per-page SEO meta via each route's `head()` + the `seoHead()` helper in `src/utils/seo-head.ts`. Router API is accessed through the compat shim `src/lib/router.tsx` (`Link`/`useNavigate`/`useParams`). Prod is served by `server.mjs` (Express adapter over the `dist/server/server.js` web-fetch handler). Every 301 lives in `src/utils/redirects.mjs` (plain JS, loaded by `server.mjs`), which also folds trailing and duplicate slashes: a URL that was once in the sitemap must redirect, never 404. `src/routeTree.gen.ts` is generated (gitignored) by the Vite plugin / `tsr generate`.
 - **Main bundle**: every route's `head()`, the root layout and the Home page ship in the main JS bundle of every page; loaders and page components are split per route (`codeSplittingOptions` in `vite.config.ts`). Keep `head()` light: it may import `utils/seo-light.ts`, `utils/quizz.ts` and `utils/seo-head.ts` only, anything heavier (`utils/seo.ts`, which carries every candidate's answers, `utils/parties`, `utils/candidacies`, content JSON, articles) is computed in the loader and read from `loaderData`. `utils/seo-light.ts` holds everything of `utils/seo.ts` except the answers, from `src/content/candidates-light.json` (generated, see Adding a candidate); `utils/seo.ts` re-exports it and adds the answers back. JS/CSS assets get a `.gz` twin at build time (`scripts/precompress-assets.ts`) that nginx serves with `gzip_static on`.
 - **API**: `api-express/` — Express, JWT cookies, CORS, Postgres via Prisma (user answers stored in `Answer` table, keyed by `themeId` + `questionId`; `Answer.isImportant` is the "Question importante pour moi" star, set via `POST /answer` or `PUT /answer/important`, and feeds its own podium on the results page)
 - **Mobile**: `expo/` — Expo / React Native version. Questions are **fetched from the API at launch** (`GET /quizz/version`, then `GET /quizz` when the hash changed) and cached in AsyncStorage, so a new question reaches installed apps without an App Store release. `expo/src/shared/quizz-2027.json` is still bundled as the first-launch and offline fallback, and `expo/src/shared/__tests__/shared-data.test.ts` fails if it drifts from the API copy.
@@ -108,9 +108,10 @@ CI (`.github/workflows/deploy.yml`) runs `npm test` before deploying, so stale s
 1. Add the entry inside the right theme's `questions[]` in **all 3** `quizz-2027.json` files.
 2. For each candidate in **all 3** `candidates-answers.json` files: add `{ themeId, questionId, answerIndex }` to their `answers[]` (otherwise the candidate is considered as not having answered).
 3. Regenerate `api-express/src/shared/candidates-answers/*.txt` via `node api-express/scripts/extract-all-answers.js` (human-readable export, optional but keep it in sync).
-4. If it's a "hot topic" question that should have its own SEO page: add an entry in `hotTopicSlugs` in `app-tanstack/src/utils/seo-light.ts` (maps `_id` → `{ slug, seoTitle }`).
-5. Regenerate the sitemap: `npx tsx app-tanstack/scripts/generate-sitemap.ts`.
-6. Question/theme/candidate counts shown in marketing copy are derived dynamically: `quizzQuestionsCount` and `quizzThemesCount` from `app-tanstack/src/utils/quizz.ts`, `candidatesCount` from `app-tanstack/src/utils/seo-light.ts` (also re-exported by `utils/seo.ts`). Use those when adding new copy — don't hard-code numbers.
+4. Add its slug to `app-tanstack/src/content/public-question-slugs.json` (`utils/redirects.test.ts` fails otherwise).
+5. If it's a "hot topic" question that should have its own SEO page: add an entry in `hotTopicSlugs` in `app-tanstack/src/utils/seo-light.ts` (maps `_id` → `{ slug, seoTitle }`).
+6. Regenerate the sitemap: `npx tsx app-tanstack/scripts/generate-sitemap.ts`.
+7. Question/theme/candidate counts shown in marketing copy are derived dynamically: `quizzQuestionsCount` and `quizzThemesCount` from `app-tanstack/src/utils/quizz.ts`, `candidatesCount` from `app-tanstack/src/utils/seo-light.ts` (also re-exported by `utils/seo.ts`). Use those when adding new copy — don't hard-code numbers.
 
 ## Removing a question
 
@@ -120,7 +121,15 @@ CI (`.github/workflows/deploy.yml`) runs `npm test` before deploying, so stale s
 4. Remove the `_id` from `hotTopicSlugs` in `app-tanstack/src/utils/seo-light.ts` if it was there.
 5. Regenerate sitemap.
 6. Orphaned user answers remain in the Prisma `Answer` table (keyed by `questionId`) — harmless but consider a cleanup script if the volume matters.
-7. The URL `/question/{themeId}/{questionId}` (app route) and the slug-based `/question-politique/{slug}` (SEO) become 404 — acceptable for old shares.
+7. The slug-based `/question-politique/{slug}` (SEO) must not 404: add a 301 in `app-tanstack/src/utils/redirects.mjs` to the theme page (or to the question that replaces it). `utils/redirects.test.ts` fails until you do. The app route `/question/{themeId}/{questionId}` becomes 404 — acceptable for old shares.
+
+**Rewording a question changes its slug** (derived from `fr` unless `hotTopicSlugs` pins it): add a 301 from the old `/question-politique/{slug}` to the new one in `redirects.mjs`, and add the new slug to `public-question-slugs.json`. Never remove a slug from that list: an old slug stays there so the test keeps checking its redirect.
+
+## Quiz rapide
+
+`/quiz-rapide` is not a page: it creates the user if needed and redirects to the first unanswered question of `quickQuizzQuestionIds` (`app-tanstack/src/utils/quick-quizz.ts`), or to `/result`. The mode rides on `?rapide=1` on `/question/...` (like `?importantes=1`): next/skip walk the list, the last question leads to `/result`. The home page shows the first question of the list with its answers as buttons; a click goes to `/quiz-rapide?reponse={answerIndex}`, which records that answer (`POST /answer`, like the question page) before redirecting, so the visitor lands on question 2. An invalid `reponse` is ignored (`parseQuickQuizzAnswer`). `noindex`, out of the sitemap and of llms.txt, on purpose: a second landing page on the home page's head terms cost positions once (`/pour-qui-voter-2027`, merged into `/` on 2026-11-13).
+
+The list is hand-maintained: 20 questions taken from the 70 most starred by users (`Answer.isImportant`), kept to the subset whose candidate ranking correlates at 0.97 with the ranking over the full quiz, at most two per theme. `utils/quick-quizz.test.ts` fails when a listed `_id` is renamed or removed: replace it then, by a question of the same theme.
 
 ## Changing a question's `_id`
 
