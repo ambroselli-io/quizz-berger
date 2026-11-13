@@ -9,6 +9,8 @@ You are drafting a blog article for quizz-du-berger.com, a neutral French politi
 
 **Important context on the data**: the candidates did NOT answer the quiz themselves. Arnaud (the site owner) filled in each candidate's answers based on their public positions, votes and statements — the whole dataset is already careful human estimation. So estimating a candidate's position is normal practice here; what matters is that every estimate is (a) grounded in their actual track record, and (b) flagged for review so Arnaud can veto it. A human reviews every PR before anything goes live.
 
+**Runs on Arnaud's Mac, not in the cloud.** Web research goes through Claude in Chrome: follow `.claude/routines/recherche-web-chrome.md` (WebSearch to find, Chrome to read, never WebFetch). Git: follow `.claude/routines/git-et-pr.md` (clean tree check first, branch `blog/<slug>`, draft PR, never `main`).
+
 ## 1. Load context
 
 Read these files first:
@@ -102,7 +104,7 @@ Fields:
   - final CTA: `<p><a href="/themes">→ Faire le quiz</a></p>`.
 - `schema`: Article JSON-LD like the existing entries (author `Arnaud Ambroselli`, `datePublished` = today, relevant `about` entries).
 
-All facts (dates, numbers, votes) must come from sources actually read this session. Tone: sober, factual, neutral — explain every side fairly, zero editorializing. French UI text.
+All facts (dates, numbers, votes) must come from sources actually read in Chrome this session (a search snippet is not a source). Tone: sober, factual, neutral — explain every side fairly, zero editorializing. French UI text.
 
 **Cite inline, in the body text — not only in the PR description.** This has been flagged more than once: listing sources in the PR body is not enough, the reader of the published article never sees the PR. Every dated fact, quote, or statistic that comes from a specific source must be a hyperlink at the point it's stated, `<a href="{source URL}" target="_blank" rel="noopener noreferrer">{the fact or quote itself, or a few words of it}</a>` — wrap the claim, not a generic "source" or "ici" link. Aim for most of the URLs gathered during research to end up linked somewhere in the article body; if a research URL never became an inline citation, that's a sign either the claim it supported got cut or the citation got forgotten — check before opening the PR. Internal links (`/candidat/…`, `/theme/…`, `/question-politique/…`) stay as before and don't need `target="_blank"`.
 
@@ -122,7 +124,7 @@ Keep the section skeleton and the search-query headings — that's SEO and reade
 The CI that runs on `main` (`.github/workflows/deploy.yml`) runs **type-check AND tests**, and a failing test blocks the production deploy. Run both here, in this order:
 
 ```
-cd app-tanstack && npm install && npm run typecheck && npm test
+cd app-tanstack && npm run typecheck && npm test
 ```
 
 Fix any type errors. If a question was added, double-check: the 3 `quizz-2027.json` are identical, the 3 `candidates-answers.json` each gained one entry per candidate, and the scores matrix is square. Also re-read the `answers[]` you just wrote and confirm out loud (in your PR body) what single axis they measure — if two answers differ on more than that one axis, rewrite before moving on.
@@ -165,9 +167,9 @@ Then run the article through `~/.claude/skills/no-ai-slop/eval.md` plus the Fren
 
 ## 7. Open a draft PR
 
-- Create a branch `blog/<slug>` from main.
-- Commit all the files changed above (article, and quiz/answers/seo files + the two updated `.snap` files if a question was added).
-- Push the branch and open a **draft PR** to `main` (use `gh pr create --draft` if available; otherwise push and report the branch name).
+- Create a branch `blog/<slug>` from `origin/main` (rules in `.claude/routines/git-et-pr.md`).
+- Commit all the files changed above (article, and quiz/answers/seo files + the two updated `.snap` files if a question was added), staged by name.
+- Push the branch and open a **draft PR** to `main` with `gh pr create --draft`.
 - PR title: `blog: <article title>` (add `+ new question` if step 3 applied).
 - PR body must include:
   - why this topic was chosen, and which topics were rejected;
