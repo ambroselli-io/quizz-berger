@@ -17,7 +17,7 @@ export const article: Article = {
 <p>Le Quizz du Berger pose huit questions de politique fiscale. Sur cinq d'entre elles, la position attribuée à François Asselineau est exactement celle de Fabien Roussel ou de Jean-Luc Mélenchon.</p>
 <ul>
 <li><a href="/question-politique/impots-des-plus-riches">Impôts sur les plus riches</a> : il faut les augmenter, les plus riches ne paient pas leur juste part.</li>
-<li><strong>ISF</strong> : rétablir un impôt de solidarité sur la fortune, éventuellement avec un volet climatique.</li>
+<li><strong>ISF</strong> : rétablir l'impôt de solidarité sur la fortune tel qu'il existait avant 2018.</li>
 <li><strong>Taxe sur les transactions financières</strong> : une petite taxe rapporterait gros sans gêner les marchés.</li>
 <li><strong>Impôts sur les plus modestes</strong> : les diminuer fortement.</li>
 <li><strong>Évasion fiscale des multinationales</strong> : sanctionner durement, avec de grosses amendes.</li>

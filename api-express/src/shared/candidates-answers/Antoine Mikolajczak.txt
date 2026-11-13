@@ -463,7 +463,7 @@ question-2027-fisc-04: Que pensez-vous de l'évasion fiscale des multinationales
 [1] Il faut sanctionner durement les entreprises qui trichent, avec de grosses amendes
 
 question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la Fortune) ?
-[1] Oui, il faut rétablir un ISF, éventuellement avec un volet climatique
+[1] Oui, il faut rétablir l'ISF tel qu'il existait avant 2018
 
 question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
 [1] Une petite taxe pourrait rapporter gros sans gêner les marchés, pourquoi s'en priver ?
