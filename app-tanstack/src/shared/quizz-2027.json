@@ -3277,23 +3277,23 @@
         ]
       },
       {
-        "_id": "question-2027-san-07",
-        "fr": "Notre système dépense beaucoup plus pour soigner que pour prévenir. Qu'en pensez-vous ?",
+        "_id": "question-2027-san-07b",
+        "fr": "Jusqu'où l'État doit-il aller pour éviter qu'on tombe malade ?",
         "help": "https://fr.wikipedia.org/wiki/Médecine_préventive",
         "answers": [
-          "Affaire personnelle : l'État ne doit pas se mêler de nos modes de vie",
-          "Prévention oui, mais sans culpabiliser ni hygiénisme",
-          "Investir plus dans la prévention médicale",
-          "Politique forte sur les comportements à risque (tabac, alcool, alimentation, sédentarité)",
-          "S'attaquer aux causes sociales (pauvreté, inégalités) avant tout",
+          "Rien : vaccins et dépistages à la charge de chacun, l'argent public va seulement aux soins",
+          "Payer, sans plus : rembourser les vaccins et les dépistages, sans campagne ni incitation",
+          "En plus, les promouvoir activement : campagnes de vaccination et de dépistage, bilans de santé, médecine scolaire et médecine du travail",
+          "En plus, éduquer à la santé : apprendre dès l'école et rappeler à tous les âges comment bien manger, bouger, dormir et gérer son stress",
+          "En plus, s'attaquer aux causes des maladies : pollution de l'air et de l'eau, malbouffe, produits toxiques du quotidien",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
-          [1, 3, 5, 4, 2, 0],
-          [0, 1, 4, 5, 3, 0],
-          [0, 0, 2, 3, 5, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
       },

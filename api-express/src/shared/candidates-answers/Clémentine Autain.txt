@@ -558,8 +558,8 @@ question-2027-san-09: Lunettes, soins dentaires, appareils auditifs, psychologue
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [0] C'est une urgence nationale : il faut des psychologues gratuits et accessibles partout
 
-question-2027-san-07: Notre système dépense beaucoup plus pour soigner que pour prévenir. Qu'en pensez-vous ?
-[4] S'attaquer aux causes sociales (pauvreté, inégalités) avant tout
+question-2027-san-07b: Jusqu'où l'État doit-il aller pour éviter qu'on tombe malade ?
+[4] En plus, s'attaquer aux causes des maladies : pollution de l'air et de l'eau, malbouffe, produits toxiques du quotidien
 
 question-2027-san-08: La France est l'un des plus gros consommateurs de médicaments en Europe. Qu'en pensez-vous ?
 [4] Il faut un pôle public du médicament pour sortir la santé de la logique de marché

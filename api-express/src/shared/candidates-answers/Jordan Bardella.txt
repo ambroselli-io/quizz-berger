@@ -558,8 +558,8 @@ question-2027-san-09: Lunettes, soins dentaires, appareils auditifs, psychologue
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
 [1] C'est un vrai problème, il faut investir davantage dans la psychiatrie et la prévention
 
-question-2027-san-07: Notre système dépense beaucoup plus pour soigner que pour prévenir. Qu'en pensez-vous ?
-[1] Prévention oui, mais sans culpabiliser ni hygiénisme
+question-2027-san-07b: Jusqu'où l'État doit-il aller pour éviter qu'on tombe malade ?
+[1] Payer, sans plus : rembourser les vaccins et les dépistages, sans campagne ni incitation
 
 question-2027-san-08: La France est l'un des plus gros consommateurs de médicaments en Europe. Qu'en pensez-vous ?
 [2] On prescrit beaucoup trop facilement : il faudrait s'inspirer de pays comme les Pays-Bas, qui privilégient d'autres approches avant le médicament

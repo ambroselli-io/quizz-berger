@@ -33,7 +33,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 91,
+    "percent": 90,
     "pseudos": [
       "Clémentine Autain",
     ],
@@ -53,17 +53,17 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 74,
     "pseudos": [
-      "Delphine Batho",
+      "Lydie Massard",
     ],
   },
   {
     "percent": 74,
     "pseudos": [
-      "Lydie Massard",
+      "Delphine Batho",
     ],
   },
   {
-    "percent": 73,
+    "percent": 72,
     "pseudos": [
       "Emmanuel Maurel",
     ],
@@ -71,13 +71,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
   {
     "percent": 72,
     "pseudos": [
-      "Marine Tondelier",
+      "Fabien Roussel",
     ],
   },
   {
-    "percent": 72,
+    "percent": 71,
     "pseudos": [
-      "Fabien Roussel",
+      "Marine Tondelier",
     ],
   },
   {
@@ -93,27 +93,27 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 66,
+    "percent": 65,
     "pseudos": [
       "Raphaël Glucksmann",
     ],
   },
   {
-    "percent": 65,
+    "percent": 64,
     "pseudos": [
       "Jérôme Guedj",
+    ],
+  },
+  {
+    "percent": 63,
+    "pseudos": [
+      "Parti pirate",
     ],
   },
   {
     "percent": 62,
     "pseudos": [
       "Parti animaliste",
-    ],
-  },
-  {
-    "percent": 62,
-    "pseudos": [
-      "Parti pirate",
     ],
   },
   {
@@ -135,7 +135,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 57,
+    "percent": 58,
     "pseudos": [
       "Benoît Mathieu",
     ],
@@ -166,7 +166,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 49,
+    "percent": 50,
     "pseudos": [
       "François Hollande",
     ],
@@ -178,7 +178,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 48,
+    "percent": 49,
     "pseudos": [
       "Florian Philippot",
     ],
@@ -190,7 +190,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 44,
+    "percent": 45,
     "pseudos": [
       "François Bayrou",
     ],
@@ -208,7 +208,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 36,
+    "percent": 37,
     "pseudos": [
       "Marine Le Pen",
     ],
@@ -226,7 +226,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 28,
+    "percent": 29,
     "pseudos": [
       "Teddy Riner",
     ],
@@ -256,7 +256,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 20,
+    "percent": 21,
     "pseudos": [
       "Gérald Darmanin",
     ],
@@ -268,7 +268,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 16,
+    "percent": 17,
     "pseudos": [
       "David Lisnard",
     ],
