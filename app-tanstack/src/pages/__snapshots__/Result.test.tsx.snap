@@ -63,7 +63,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 72,
+    "percent": 73,
     "pseudos": [
       "Emmanuel Maurel",
     ],
@@ -99,7 +99,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 64,
+    "percent": 65,
     "pseudos": [
       "Jérôme Guedj",
     ],
@@ -111,7 +111,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 62,
+    "percent": 63,
     "pseudos": [
       "Parti animaliste",
     ],
@@ -141,7 +141,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 55,
+    "percent": 56,
     "pseudos": [
       "Natacha Polony",
     ],
@@ -156,6 +156,11 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     "percent": 53,
     "pseudos": [
       "Bernard Cazeneuve",
+    ],
+  },
+  {
+    "percent": 53,
+    "pseudos": [
       "Fabien Verdier",
     ],
   },
@@ -184,7 +189,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 46,
+    "percent": 47,
     "pseudos": [
       "Patrick Sébastien",
     ],
@@ -232,7 +237,7 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 28,
+    "percent": 29,
     "pseudos": [
       "Gabriel Attal",
     ],
@@ -244,15 +249,9 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 24,
+    "percent": 25,
     "pseudos": [
       "Xavier Bertrand",
-    ],
-  },
-  {
-    "percent": 21,
-    "pseudos": [
-      "Éric Zemmour",
     ],
   },
   {
@@ -262,7 +261,13 @@ exports[`Result (/result) > renders every candidate and locks their global perce
     ],
   },
   {
-    "percent": 18,
+    "percent": 21,
+    "pseudos": [
+      "Éric Zemmour",
+    ],
+  },
+  {
+    "percent": 19,
     "pseudos": [
       "Laurent Wauquiez",
     ],

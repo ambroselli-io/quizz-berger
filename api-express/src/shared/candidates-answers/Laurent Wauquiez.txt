@@ -598,6 +598,9 @@ question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD
 question-2027-soc-10: Que pensez-vous de la loi « intégrale » contre les violences sexistes et sexuelles, examinée à l'Assemblée depuis octobre 2026 ?
 [1] Il faut voter le texte, mais sans financement nouveau : miser sur une meilleure organisation des moyens déjà alloués
 
+question-2027-soc-10b: Jusqu'où l'État doit-il aller pour prévenir les violences sexistes et sexuelles, avant qu'elles arrivent ?
+[1] Informer, sans plus : faire connaître la loi, le 3919 et les recours aux victimes
+
 
 Travail, Chômage, Retraite:
 

@@ -3513,6 +3513,26 @@
           [0, 0, 3, 5, 0],
           [0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-soc-10b",
+        "fr": "Jusqu'où l'État doit-il aller pour prévenir les violences sexistes et sexuelles, avant qu'elles arrivent ?",
+        "answers": [
+          "Rien de spécial : éduquer au respect, c'est le rôle des familles",
+          "Informer, sans plus : faire connaître la loi, le 3919 et les recours aux victimes",
+          "En plus, éduquer les jeunes : parler régulièrement de respect et de consentement à l'école",
+          "En plus, former les adultes en contact avec les victimes et le public : enseignants, soignants, policiers, gendarmes, magistrats, encadrants sportifs",
+          "En plus, sensibiliser tous les adultes : campagnes nationales permanentes, formation obligatoire dans toutes les entreprises et administrations",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0, 0],
+          [3, 5, 3, 1, 0, 0],
+          [1, 3, 5, 3, 1, 0],
+          [0, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
