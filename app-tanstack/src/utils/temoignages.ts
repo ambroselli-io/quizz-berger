@@ -7,6 +7,8 @@ export const colors = [
 
 // `date`: 'YYYY-MM' is the month the testimonial was added to the site; the 2022 campaign ones only carry the year.
 export const temoignages = [
+  { blockquote: "C'est bien, ça a piqué ma curiosité ! Contrairement à d'autres, on peut s'exprimer. En tout cas, merci !", figcaption: 'Bernard', date: '2026-11' },
+  { blockquote: "Le quizz est un outil de réflexion et de découverte. Je le fais plusieurs fois, car après réflexion ou étude, mes réponses varient sans que j'en sois consciente sur le moment. Seul le bilan le montre : les candidats sont différents, mais ce n'est pas un bouleversement total de mes opinions initiales. C'est très utile et ça devrait être proposé à tous.", figcaption: 'M.D.S.', date: '2026-11' },
   { blockquote: "J'ai trouvé le quizz vraiment complet (ce n'est pas toujours le cas dans ce genre de test) et j'ai trouvé pertinente l'option « marquer comme importante pour moi ». On a tous fait le test avec mes collègues, je pense qu'ils en sont contents aussi ! Merci !", figcaption: 'Camille', date: '2026-11' },
   { blockquote: "Je suis une personne qui a du mal a s'intéresser a la politique pour diverses raisons et j'apprécie qu'une plateforme telle que la votre puisse permettre de mettre de l'ordre dans mes idées et celles des candidats.", figcaption: 'Nicolas', date: '2026-10' },
   { blockquote: 'Je suis très satisfait du contenu : il couvre de nombreux sujets essentiels pour les Français.', figcaption: 'Alexandre', date: '2026-10' },

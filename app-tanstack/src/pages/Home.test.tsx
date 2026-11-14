@@ -105,7 +105,7 @@ describe('Home', () => {
     expect((testimonials.closest('section') as HTMLElement).querySelectorAll('figure')).toHaveLength(temoignages.length);
     expect(screen.queryByText(/JE T'AIME/)).not.toBeInTheDocument();
     const firstCard = (testimonials.closest('section') as HTMLElement).querySelector('figure') as HTMLElement;
-    expect(within(firstCard).getByText('Camille')).toBeInTheDocument();
+    expect(within(firstCard).getByText(temoignages[0].figcaption)).toBeInTheDocument();
     expect(within(firstCard).getByText('novembre 2026')).toBeInTheDocument();
     const finalCta = screen.getByRole('heading', { level: 2, name: 'Faire le test' }).closest('section') as HTMLElement;
     expect(within(finalCta).getByRole('link', { name: quickCta })).toHaveAttribute('href', '/quiz-rapide');
