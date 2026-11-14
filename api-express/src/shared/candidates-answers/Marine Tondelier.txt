@@ -342,7 +342,7 @@ question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiq
 Logement:
 
 
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
+question-2027-log-02b: Que pensez-vous de l'encadrement des loyers ?
 [0] Il faut encadrer strictement les loyers partout en France, pas seulement dans quelques villes
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?

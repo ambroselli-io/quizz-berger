@@ -342,8 +342,8 @@ question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiq
 Logement:
 
 
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
-[3] C'est une atteinte au droit de propriété, les propriétaires doivent fixer librement leurs prix
+question-2027-log-02b: Que pensez-vous de l'encadrement des loyers ?
+[4] C'est une atteinte au droit de propriété, les propriétaires doivent fixer librement leurs prix
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
 [3] C'est la liberté de chacun de faire ce qu'il veut avec son logement
