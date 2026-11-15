@@ -23,3 +23,5 @@ export const visitLimiter = limiter(1, 120);
 export const chatLimiter = limiter(60, 100);
 export const supporterClaimLimiter = limiter(60, 10);
 export const ideaLimiter = limiter(60, 10);
+// A visitor may click through several ratings before settling on one.
+export const quizzFeedbackLimiter = limiter(60, 60);

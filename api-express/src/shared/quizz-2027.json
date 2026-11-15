@@ -3591,13 +3591,14 @@
       },
       {
         "_id": "question-2027-trav-10",
-        "fr": "Jusqu'où l'État doit-il aller pour créer des emplois ?",
+        "fr": "Le travail est-il un droit que l'État doit garantir à chacun ?",
+        "help": "Le préambule de la Constitution de 1946 dit déjà que « chacun a le devoir de travailler et le droit d'obtenir un emploi ». Aujourd'hui, ce droit n'est pas opposable : un chômeur ne peut pas exiger un emploi de l'État.",
         "answers": [
-          "L'État doit garantir un emploi à toute personne qui en cherche un, comme un droit",
-          "L'État doit embaucher massivement dans les secteurs utiles (santé, école, écologie) pour faire baisser le chômage",
-          "L'État doit financer des dispositifs ciblés (contrats aidés, Territoires zéro chômeur de longue durée)",
-          "Ce n'est pas son rôle : il doit seulement lever les freins à l'embauche dans le privé",
-          "L'emploi public est déjà trop lourd, le réduire libérerait l'emploi privé",
+          "Oui : l'État doit donner un emploi à toute personne qui en cherche un, quitte à l'embaucher lui-même",
+          "Oui : le chômage est d'abord la responsabilité de l'État, et il doit tout faire pour le supprimer",
+          "C'est partagé : l'État doit accompagner les chômeurs, et les chômeurs doivent chercher activement",
+          "Non : trouver un emploi est d'abord la responsabilité de chacun, l'État peut aider un peu",
+          "Non : l'État n'a pas à s'occuper de l'emploi, c'est le marché qui crée les emplois",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

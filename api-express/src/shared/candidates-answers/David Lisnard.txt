@@ -617,8 +617,8 @@ question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 [4] Il faut la réduire au minimum : une indemnisation courte et faible, chacun complète s'il le souhaite
 
-question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
-[4] L'emploi public est déjà trop lourd, le réduire libérerait l'emploi privé
+question-2027-trav-10: Le travail est-il un droit que l'État doit garantir à chacun ?
+[4] Non : l'État n'a pas à s'occuper de l'emploi, c'est le marché qui crée les emplois
 
 question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
 [4] Oui, il faut les baisser massivement : c'est le principal levier contre le chômage

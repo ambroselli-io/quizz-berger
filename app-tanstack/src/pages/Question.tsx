@@ -168,7 +168,7 @@ export default function Question() {
               key={index}
               data-index={index}
               onClick={sendAnswer}
-              className="w-[500px] cursor-pointer rounded-lg border border-gray-200 px-2.5 py-2.5 text-base tracking-[0.01rem] max-lg:w-[300px]"
+              className="w-[500px] cursor-pointer rounded-lg border border-gray-200 px-2.5 py-2.5 text-base tracking-[0.01rem] text-balance max-lg:w-[300px]"
               style={{
                 backgroundColor: currentAnswerIndex === index ? '#111827' : '#ffffff',
                 color: currentAnswerIndex === index ? '#ffffff' : 'black',

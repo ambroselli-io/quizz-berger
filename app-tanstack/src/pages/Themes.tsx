@@ -9,6 +9,7 @@ import ThemeButton from '@app/components/ThemeButton';
 import QuizzButton from '@app/components/QuizzButton';
 import ModalAccessToResults from '@app/components/modals/ModalAccessToResults';
 import useUserAnswers from '@app/hooks/useUserAnswers';
+import { quickQuizzQuestionIds } from '@app/utils/quick-quizz';
 import { Star } from 'lucide-react';
 
 const filterBySearch = (search: string, searchIndex: string[]) => (_theme: unknown, index: number) => {
@@ -105,7 +106,9 @@ export default function ThemeSelect() {
 
   useEffect(() => {
     if (alertTimeouts.current) clearTimeout(alertTimeouts.current);
-    if (userThemes.length > 0 && !window.sessionStorage.getItem('theme-select_result')) {
+    // Someone who finished the quick quiz has already seen their results: the "Bravo !" would tell them nothing.
+    const finishedQuickQuizz = quickQuizzQuestionIds.every((id) => userAnswers.some((a) => a.questionId === id));
+    if (userThemes.length > 0 && !finishedQuickQuizz && !window.sessionStorage.getItem('theme-select_result')) {
       alertTimeouts.current = setTimeout(() => {
         showModalRequest('theme-select_result');
         window.sessionStorage.setItem('theme-select_result', 'true');

@@ -78,8 +78,7 @@ describe("GET /public/charts, quick quiz vs more", () => {
     const complete = await signup("complete");
     const more = await signup("more");
     await signup("noanswer");
-    const quickAnswers = (userId: string, ids: string[]) =>
-      ids.map((questionId) => ({ userId, themeId: "theme", questionId, answerIndex: 0 }));
+    const quickAnswers = (userId: string, ids: string[]) => ids.map((questionId) => ({ userId, themeId: "theme", questionId, answerIndex: 0 }));
     await prisma.answer.createMany({
       data: [
         ...quickAnswers(partial.id, quickQuizzIds.slice(0, 3)),

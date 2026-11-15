@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { screen, waitFor, within } from '@testing-library/react';
 import Result from '@app/pages/Result';
 import { renderWithRouter } from '@app/test/renderWithRouter';
@@ -8,6 +8,9 @@ import { quizz, quizzQuestions } from '@app/utils/quizz';
 import { getCandidatesScorePerThemes } from '@app/shared/utils/score';
 import { getPodium } from '@app/shared/utils/podium';
 import { isInQuickQuizz } from '@app/utils/quick-quizz';
+
+// The page renders every podium (hidden rows included): slower than 5 s when the whole suite runs in parallel.
+vi.setConfig({ testTimeout: 20000 });
 
 const setupResult = () =>
   mockApi({
@@ -82,7 +85,7 @@ describe('Result (/result)', () => {
       expect(screen.getAllByText(pinnedCandidate.pseudo).length).toBeGreaterThan(0);
     });
 
-    // Each themed podium uses the theme name as its <h3> title — see Podium.tsx.
+    // Each themed podium uses the theme name as its <h3> title — see VerticalPodium.tsx.
     const answeredThemeIds = Array.from(new Set(pinnedUserAnswers.map((a) => a.themeId)));
     for (const themeId of answeredThemeIds) {
       const themeName = quizz.find((t) => t._id === themeId)?.fr;
@@ -122,8 +125,10 @@ describe('Result (/result)', () => {
 
     renderWithRouter(<Result />, { path: '/result' });
 
-    const link = await screen.findByRole('link', { name: 'Faire la version intégrale' });
-    expect(link).toHaveAttribute('href', '/themes');
+    // Shown at the top and again at the bottom of the page.
+    const links = await screen.findAllByRole('link', { name: 'Faire la version intégrale' });
+    expect(links).toHaveLength(2);
+    for (const link of links) expect(link).toHaveAttribute('href', '/themes');
   });
 
   it('hides the full-version box once an answer outside the quick quiz exists', async () => {

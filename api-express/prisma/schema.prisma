@@ -31,12 +31,13 @@ model User {
   supporterUntil DateTime?
 
   // Relations
-  answers   Answer[]
-  chats     Chat[]
-  ideas     Idea[]
-  ideaVotes IdeaVote[]
-  friends   User[]     @relation("UserFriends")
-  friendOf  User[]     @relation("UserFriends")
+  answers        Answer[]
+  chats          Chat[]
+  ideas          Idea[]
+  ideaVotes      IdeaVote[]
+  quizzFeedbacks QuizzFeedback[]
+  friends        User[]          @relation("UserFriends")
+  friendOf       User[]          @relation("UserFriends")
 }
 
 model Answer {
@@ -156,6 +157,23 @@ model BotHit {
   category  String
   path      String
   status    Int
+
+  @@index([createdAt])
+}
+
+// "Ce quiz vous a plu ?" on /result: saved on the first click, the comment comes later (or never).
+// rating goes from 0 ("Pas du tout") to 4 ("Carrément, j'ai adoré !").
+model QuizzFeedback {
+  id           String   @id @default(uuid())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  rating       Int
+  comment      String?
+  answersCount Int      @default(0)
+
+  // Relations
+  user   User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userId String?
 
   @@index([createdAt])
 }

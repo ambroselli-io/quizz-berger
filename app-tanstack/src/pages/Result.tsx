@@ -15,12 +15,16 @@ import useCandidates from '@app/hooks/useCandidates';
 import useFriends from '@app/hooks/useFriends';
 import useUserAnswers from '@app/hooks/useUserAnswers';
 import ModalLogin from '@app/components/modals/ModalLogin';
-import ModalShare from '@app/components/modals/ModalShare';
 import Loader from '@app/components/Loader';
-import Podium from '@app/components/Podium';
+import VerticalPodium from '@app/components/result/VerticalPodium';
+import QuizzFeedback, { QUIZZ_FEEDBACK_STORAGE_KEY, type QuizzFeedbackState } from '@app/components/result/QuizzFeedback';
+import ShareResults from '@app/components/result/ShareResults';
+import QuestionByQuestion, { type QuestionPerson } from '@app/components/result/QuestionByQuestion';
+import type { ResultImageRow } from '@app/utils/result-image';
+import { chatModes } from '@app/content/chat-modes';
 import Filter from '@app/components/Filter';
 import type { Answer } from '@app/types/quizz';
-import { Share2, Users, Save, Star, Download } from 'lucide-react';
+import { Users, Save, Star, Download, ChevronDown } from 'lucide-react';
 
 import { getCandidatesScorePerThemes } from '~/shared/utils/score';
 import { getPodium } from '~/shared/utils/podium';
@@ -105,11 +109,9 @@ export default function Result() {
   );
 
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [showShareModal, setShowShareModal] = useState(false);
   const [showFriends, setShowFriends] = useState(false);
 
   const showSaveButton = useMemo(() => !publicPage && !userToShow?.pseudo, [publicPage, userToShow]);
-  const [hideSaveTip, setHideSaveTip] = useState(() => getFromSessionStorage('hideSaveTip', false));
 
   const [newFriend, setNewFriend] = useState('');
   const [loadingFriend, setLoadingFriend] = useState(false);
@@ -323,221 +325,304 @@ export default function Result() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
+  const globalPodium = useMemo(() => getPodium(filteredPersons, true), [filteredPersons]);
+
+  const shareRows: ResultImageRow[] = useMemo(() => {
+    let rank = 1;
+    return globalPodium.flatMap((step) => {
+      const rows = step.pseudos.map((pseudo, i) => ({
+        pseudo,
+        picture: step.pictures[i],
+        color: step.colors[i],
+        percent: step.percent,
+        rank,
+      }));
+      rank += step.pseudos.length;
+      return rows;
+    });
+  }, [globalPodium]);
+
+  const questionPersons: QuestionPerson[] = useMemo(
+    () => [
+      ...candidates.filter((c) => selectedCandidates.includes(c.pseudo)),
+      ...friends.filter((f) => selectedFriends.includes(f.pseudo)),
+    ],
+    [candidates, friends, selectedCandidates, selectedFriends],
+  );
+
+  const [feedback, setFeedback] = useState<QuizzFeedbackState>({ rating: null, sent: false });
+  useEffect(() => {
+    const stored = getFromLocalStorage(QUIZZ_FEEDBACK_STORAGE_KEY, null) as QuizzFeedbackState | null;
+    if (stored) setFeedback(stored);
+  }, []);
+
+  const [visibleThemes, setVisibleThemes] = useState(1);
+
+  const card = 'rounded-2xl border border-gray-200 bg-white p-6 shadow-sm max-lg:p-4';
+
+  // Nothing left to do (full quiz, results saved): no box at all.
+  const fullQuizzCta = (onlyQuickQuizzAnswers || showSaveButton) && (
+    <aside className="grid gap-5 rounded-2xl border-2 border-yellow-400 bg-yellow-50 p-5 lg:grid-flow-col lg:auto-cols-fr">
+      {onlyQuickQuizzAnswers && (
+        <div className="flex flex-col items-start gap-3">
+          <h2 className="font-[Merriweather] text-xl font-bold text-[#082d0f]">Vous avez fait le test rapide</h2>
+          <p className="text-sm text-gray-700">
+            Ce résultat repose sur {answersToShow.length} question{answersToShow.length > 1 ? 's' : ''}. La version
+            intégrale en compte {quizzQuestionsCount}, sur {quizzThemesCount} thèmes&nbsp;: répondez à celles que
+            vous voulez, votre classement s'affine à chaque réponse.
+          </p>
+          <Link
+            to="/themes"
+            className="mt-auto inline-flex items-center rounded-lg border-2 border-gray-800 bg-gray-800 px-4 py-2.5 text-sm font-semibold text-white no-underline"
+          >
+            Faire la version intégrale
+          </Link>
+        </div>
+      )}
+      {showSaveButton && (
+        <div
+          className={`flex flex-col items-start gap-3 ${onlyQuickQuizzAnswers ? 'border-yellow-300 max-lg:border-t max-lg:pt-5 lg:border-l lg:pl-5' : ''}`}
+        >
+          <h2 className="font-[Merriweather] text-xl font-bold text-[#082d0f]">Enregistrez vos résultats</h2>
+          <p className="text-sm text-gray-700">
+            Sans enregistrement, vos résultats seront perdus dans une heure. Enregistrez-les de façon anonyme avec un
+            pseudo et un mot de passe, sans email.
+          </p>
+          <button
+            type="button"
+            onClick={() => setShowLoginModal(true)}
+            className={`mt-auto inline-flex cursor-pointer items-center rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-semibold ${onlyQuickQuizzAnswers ? 'bg-white text-gray-800' : 'bg-gray-800 text-white'}`}
+          >
+            Enregistrer mes résultats
+          </button>
+        </div>
+      )}
+    </aside>
+  );
+
+  const feedbackBox = !publicPage && (
+    <section className={card}>
+      <QuizzFeedback state={feedback} setState={setFeedback} answersCount={answersToShow.length} />
+    </section>
+  );
+
+  const shareBox = !publicPage && (
+    <section className={card}>
+      <ShareResults
+        rows={shareRows}
+        answersCount={answersToShow.length}
+        onRequestLogin={() => setShowLoginModal(true)}
+        onCompare={() => setShowFriends(true)}
+      />
+    </section>
+  );
+
   return (
     <>
-      <div className="overflow-y-auto px-2.5 pt-20 max-lg:pt-[3vh] lg:h-[calc(100vh-80px)]">
-        <div className="mx-auto mb-[2vh] max-w-[1024px]">
+      <div className="overflow-y-auto px-2.5 pt-20 pb-[5vh] max-lg:pt-[3vh] lg:h-[calc(100vh-80px)]">
+        <div className="mx-auto flex max-w-[1024px] flex-col gap-14 max-lg:gap-10">
           <div className="flex flex-col justify-between">
             <h1 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">{title}</h1>
-            {showSaveButton && !hideSaveTip && (
-              <small>
-                Enregistrez vos résultats maintenant, sinon dans une heure ils sont perdus !{' - '}
-                <button
-                  type="button"
-                  className="h-4 cursor-pointer rounded-full border-none bg-yellow-400 px-1.5 text-black"
-                  onClick={() => setShowLoginModal(true)}
-                >
-                  Oui !
-                </button>
-                {' - '}
-                <button
-                  type="button"
-                  className="cursor-pointer border-none bg-transparent"
-                  onClick={() => {
-                    setHideSaveTip(true);
-                    setToSessionStorage('hideSaveTip', true);
-                  }}
-                >
-                  Non merci !
-                </button>
-              </small>
-            )}
           </div>
-          <p className="mt-1 rounded-md bg-amber-50 px-3 py-1.5 text-xs text-amber-800">
-            Appuyez sur le nom d'un candidat pour voir ses réponses
-          </p>
-        </div>
-        <main className="mx-0 mb-[5vh] h-[50vh] overflow-y-visible max-lg:h-[40vh]">
-          <Podium podiumised={getPodium(filteredPersons, true)} />
-        </main>
-        <div className="mx-auto mb-[5vh] -mt-[5vh] max-w-[1024px]">
-          <div className="flex flex-wrap gap-2">
-            {!publicPage && (
-              <>
-                {showSaveButton && (
+
+          {fullQuizzCta}
+
+          <section className={card}>
+            <h2 className="mb-1 font-[Merriweather] text-2xl font-bold text-quizz-dark">Votre classement général</h2>
+            <p className="mb-4 text-sm text-gray-600">Appuyez sur le nom d'un candidat pour voir ses réponses.</p>
+            <main>
+              <VerticalPodium podiumised={globalPodium} />
+            </main>
+            <div className="mt-5 flex flex-wrap gap-2 border-t border-gray-100 pt-4">
+              {!publicPage && (
+                <>
+                  {showSaveButton && (
+                    <button
+                      type="button"
+                      onClick={() => setShowLoginModal(true)}
+                      className="inline-flex animate-pulse items-center gap-2 rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black"
+                    >
+                      <Save size={16} />
+                      Enregistrer
+                    </button>
+                  )}
                   <button
                     type="button"
-                    onClick={() => setShowLoginModal(true)}
-                    className="inline-flex animate-pulse items-center gap-2 rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black"
-                  >
-                    <Save size={16} />
-                    Enregistrer
-                  </button>
-                )}
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (!userToShow?.pseudo) setShowLoginModal(true);
-                    setShowShareModal(true);
-                  }}
-                  className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.isPublic ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
-                >
-                  <Share2 size={16} />
-                  Partager
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowFriends(true)}
-                  className={`inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 px-4 py-2.5 text-sm font-medium text-gray-800 ${!user?.friends?.length ? 'animate-pulse bg-gray-800 text-white' : 'bg-white'}`}
-                >
-                  <Users size={16} />
-                  Comparer avec mes amis
-                </button>
-                {answersToShow.length > 0 && (
-                  <button
-                    type="button"
-                    onClick={downloadAnswers}
+                    onClick={() => setShowFriends(true)}
                     className="inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5 text-sm font-medium text-gray-800"
                   >
-                    <Download size={16} />
-                    Télécharger mes réponses
+                    <Users size={16} />
+                    Comparer avec mes amis
                   </button>
-                )}
-              </>
-            )}
-            <Filter
-              toggle={setShowCandidates}
-              isActive={showCandidates}
-              title="Afficher/masquer des candidats"
-              buttonClassName="inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5 text-sm font-medium text-gray-800"
-            >
-              {candidatesScorePerThemes.map((candidate) => (
-                <button
-                  key={candidate?.pseudo}
-                  data-pseudo={candidate?.pseudo}
-                  onClick={onSelectCandidates}
-                  className="max-h-[55px] cursor-pointer rounded-lg border px-4 py-2 text-sm"
-                  style={{
-                    backgroundColor: selectedCandidates.includes(candidate?.pseudo) ? '#111827' : 'white',
-                    color: selectedCandidates.includes(candidate?.pseudo) ? 'white' : '#111827',
-                    borderColor: '#111827',
-                  }}
+                  {answersToShow.length > 0 && (
+                    <button
+                      type="button"
+                      onClick={downloadAnswers}
+                      className="inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5 text-sm font-medium text-gray-800"
+                    >
+                      <Download size={16} />
+                      Télécharger mes réponses
+                    </button>
+                  )}
+                </>
+              )}
+              <Filter
+                toggle={setShowCandidates}
+                isActive={showCandidates}
+                title="Afficher/masquer des candidats"
+                buttonClassName="inline-flex items-center gap-2 rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5 text-sm font-medium text-gray-800"
+              >
+                {candidatesScorePerThemes.map((candidate) => (
+                  <button
+                    key={candidate?.pseudo}
+                    data-pseudo={candidate?.pseudo}
+                    onClick={onSelectCandidates}
+                    className="max-h-[55px] cursor-pointer rounded-lg border px-4 py-2 text-sm"
+                    style={{
+                      backgroundColor: selectedCandidates.includes(candidate?.pseudo) ? '#111827' : 'white',
+                      color: selectedCandidates.includes(candidate?.pseudo) ? 'white' : '#111827',
+                      borderColor: '#111827',
+                    }}
+                  >
+                    {candidate?.pseudo}
+                  </button>
+                ))}
+              </Filter>
+              <Filter toggle={setShowFriends} isActive={showFriends} title="Se comparer à mes amis" hideTitle>
+                {friendsScorePerThemes.map((friend) => (
+                  <button
+                    key={friend?.pseudo}
+                    data-pseudo={friend?.pseudo}
+                    onClick={onSelectFriends}
+                    className="max-h-[55px] cursor-pointer rounded-lg border px-4 py-2 text-sm"
+                    style={{
+                      backgroundColor: selectedFriends.includes(friend?.pseudo) ? '#111827' : 'white',
+                      color: selectedFriends.includes(friend?.pseudo) ? 'white' : '#111827',
+                      borderColor: '#111827',
+                    }}
+                  >
+                    {friend?.pseudo}
+                  </button>
+                ))}
+                <div className="flex w-full items-center pr-3">
+                  <input
+                    className="w-full rounded border border-gray-200 px-3 py-3 text-base font-light placeholder:text-quizz-dark/40"
+                    placeholder={loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
+                    value={newFriend}
+                    onChange={setNewFriendRequest}
+                    autoComplete="name"
+                  />
+                  {loadingFriend && <Loader size="20px" isLoading />}
+                </div>
+                <span
+                  className={`text-xs text-red-500 ${!noFriend || noFriend !== newFriend ? 'opacity-0' : ''}`}
                 >
-                  {candidate?.pseudo}
-                </button>
-              ))}
-            </Filter>
-          </div>
-        </div>
-        {onlyQuickQuizzAnswers && (
-          <aside className="mx-auto mb-[5vh] flex max-w-[1024px] flex-wrap items-center justify-between gap-4 rounded-xl border-2 border-yellow-400 bg-yellow-50 p-5">
-            <div className="min-w-[260px] flex-1">
-              <h2 className="mb-1 font-[Merriweather] text-xl font-bold text-[#082d0f]">Vous avez fait le test rapide</h2>
-              <p className="text-sm text-gray-700">
-                Ce résultat repose sur {answersToShow.length} question{answersToShow.length > 1 ? 's' : ''}. La version
-                intégrale en compte {quizzQuestionsCount}, sur {quizzThemesCount} thèmes&nbsp;: répondez à celles que
-                vous voulez, votre classement s'affine à chaque réponse.
-              </p>
+                  Il n'y a pas de pseudo <b>{newFriend}</b> existant. Vérifiez les majuscules&nbsp;?
+                </span>
+                {!user?.isPublic && (
+                  <small className="text-balance">
+                    Pour que vos amis puissent aussi se comparer à vous, partagez votre lien (bloc «&nbsp;Partagez vos
+                    résultats&nbsp;»).
+                  </small>
+                )}
+              </Filter>
             </div>
-            <Link
-              to="/themes"
-              className="inline-flex items-center rounded-lg border-2 border-gray-800 bg-gray-800 px-4 py-2.5 text-sm font-semibold text-white no-underline"
-            >
-              Faire la version intégrale
-            </Link>
-          </aside>
-        )}
-        <section className="mx-auto mb-[5vh] max-w-[1024px]">
-          <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">
-            <Star size={24} className="mr-2 inline align-[-2px] text-yellow-400" fill="currentColor" />
-            Questions importantes pour moi
-          </h2>
-          {importantPersons.length > 0 ? (
-            <>
-              <p className="text-sm text-gray-600">
-                Résultats calculés uniquement sur{' '}
-                {importantAnswers.length === 1 ? 'la question' : `les ${importantAnswers.length} questions`}{' '}
-                {publicPage ? 'marquée' : 'que vous avez marquée'}
-                {importantAnswers.length > 1 ? 's' : ''} comme importante
-                {importantAnswers.length > 1 ? 's' : ''}.
-              </p>
-              <div className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
-                <Podium
+          </section>
+
+          {feedbackBox}
+
+          {shareBox}
+
+          <section className="rounded-2xl bg-quizz-dark p-6 text-white max-lg:p-4">
+            <h2 className="mb-1 font-[Merriweather] text-2xl font-bold">Et si vous en discutiez avec l'IA&nbsp;?</h2>
+            <p className="mb-4 text-sm text-white/80">
+              Une IA qui n'a pas le droit de vous dire pour qui voter. Elle est là pour vous aider à réfléchir, pas
+              pour penser à votre place.
+            </p>
+            <ul className="grid gap-3 lg:grid-cols-3">
+              {chatModes.map((chatMode) => (
+                <li key={chatMode.slug} className="flex">
+                  <Link
+                    to={`/ia/${chatMode.slug}`}
+                    className="block w-full rounded-xl border-2 border-white/20 p-4 text-white no-underline transition-colors hover:border-quizz-yellow"
+                  >
+                    <span className="mb-1 block font-[Merriweather] text-lg font-bold">{chatMode.title}</span>
+                    <span className="block text-sm leading-relaxed text-white/80">{chatMode.descriptionVous}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="flex flex-col gap-4">
+            <h2 className="font-[Merriweather] text-2xl font-bold text-quizz-dark">Thème par thème</h2>
+            <div className={card}>
+              <h3 className="mb-1 font-[Merriweather] text-xl font-bold text-quizz-dark">
+                <Star size={20} className="mr-2 inline align-[-2px] text-yellow-400" fill="currentColor" />
+                Questions importantes pour moi
+              </h3>
+              {importantPersons.length > 0 ? (
+                <VerticalPodium
                   podiumised={getPodium(importantPersons, true)}
                   linkSearch={publicPage ? undefined : { importantes: 1 }}
+                  subtitle={
+                    <>
+                      Résultats calculés uniquement sur{' '}
+                      {importantAnswers.length === 1 ? 'la question' : `les ${importantAnswers.length} questions`}{' '}
+                      {publicPage ? 'marquée' : 'que vous avez marquée'}
+                      {importantAnswers.length > 1 ? 's' : ''} comme importante
+                      {importantAnswers.length > 1 ? 's' : ''}.
+                    </>
+                  }
+                />
+              ) : (
+                <p className="text-sm text-gray-600">
+                  {publicPage
+                    ? 'Aucune question marquée comme importante.'
+                    : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."}
+                </p>
+              )}
+            </div>
+            {/* Hidden themes stay in the DOM, like the hidden rows of a podium. */}
+            {podiumsPerTheme.map(({ personsScore, themeId }, index) => (
+              <div key={themeId} className={`${card} ${index >= visibleThemes ? 'hidden' : ''}`}>
+                <VerticalPodium
+                  podiumised={getPodium(personsScore)}
+                  title={quizz.find((t) => t._id === themeId)?.fr}
+                  linkSearch={{ theme: themeId }}
                 />
               </div>
-            </>
-          ) : (
-            <p className="text-sm text-gray-600">
-              {publicPage
-                ? 'Aucune question marquée comme importante.'
-                : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."}
-            </p>
-          )}
-        </section>
-        <div className="mx-auto mb-[2vh] max-w-[1024px]">
-          <h2 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">Thème par thème</h2>
-          <Filter toggle={setShowFriends} isActive={showFriends} title="Se comparer à mes amis" hideTitle>
-            {friendsScorePerThemes.map((friend) => (
-              <button
-                key={friend?.pseudo}
-                data-pseudo={friend?.pseudo}
-                onClick={onSelectFriends}
-                className="max-h-[55px] cursor-pointer rounded-lg border px-4 py-2 text-sm"
-                style={{
-                  backgroundColor: selectedFriends.includes(friend?.pseudo) ? '#111827' : 'white',
-                  color: selectedFriends.includes(friend?.pseudo) ? 'white' : '#111827',
-                  borderColor: '#111827',
-                }}
-              >
-                {friend?.pseudo}
-              </button>
             ))}
-            <div className="flex w-full items-center pr-3">
-              <input
-                className="w-full rounded border border-gray-200 px-3 py-3 text-base font-light placeholder:text-quizz-dark/40"
-                placeholder={loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
-                value={newFriend}
-                onChange={setNewFriendRequest}
-                autoComplete="name"
-              />
-              {loadingFriend && <Loader size="20px" isLoading />}
-            </div>
-            <span
-              className={`text-xs text-red-500 ${!noFriend || noFriend !== newFriend ? 'opacity-0' : ''}`}
-            >
-              Il n'y a pas de pseudo <b>{newFriend}</b> existant. Vérifiez les majuscules ?
-            </span>
-            {!user?.isPublic && (
-              <small>
-                N'oubliez pas de cliquer sur le bouton <b>Partager avec mes amis</b> pour leur permettre de
-                faire la même chose avec vous !
-              </small>
+            {podiumsPerTheme.length > visibleThemes && (
+              <button
+                type="button"
+                onClick={() => setVisibleThemes((v) => v + 3)}
+                className="mx-auto flex cursor-pointer items-center gap-1 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+              >
+                Voir plus ({podiumsPerTheme.length - visibleThemes} thème
+                {podiumsPerTheme.length - visibleThemes > 1 ? 's' : ''} restant
+                {podiumsPerTheme.length - visibleThemes > 1 ? 's' : ''}) <ChevronDown size={16} />
+              </button>
             )}
-          </Filter>
+          </section>
+
+          <QuestionByQuestion
+            answers={answersToShow.filter((a) => selectedThemes.includes(a.themeId))}
+            persons={questionPersons}
+          />
+
+          {feedbackBox}
+
+          {shareBox}
+
+          {fullQuizzCta}
         </div>
-        <aside className="mx-0">
-          {podiumsPerTheme.map(({ personsScore, themeId }) => (
-            <div key={themeId} className="h-[max(15vh,400px)] w-full max-lg:h-[max(15vh,300px)]">
-              <Podium
-                podiumised={getPodium(personsScore)}
-                title={quizz.find((t) => t._id === themeId)?.fr}
-                linkSearch={{ theme: themeId }}
-              />
-            </div>
-          ))}
-        </aside>
       </div>
       <Loader withBackground size="15vh" isLoading={isLoading} />
-      <ModalShare isActive={showShareModal} onClose={() => setShowShareModal(false)} />
       <ModalLogin
         isActive={showLoginModal}
-        onClose={() => {
-          setShowLoginModal(false);
-          setShowShareModal(false);
-        }}
-        title={showShareModal ? "Enregistrez vos résultats d'abord" : 'Enregistrez-vous'}
+        onClose={() => setShowLoginModal(false)}
+        title="Enregistrez-vous"
       />
     </>
   );

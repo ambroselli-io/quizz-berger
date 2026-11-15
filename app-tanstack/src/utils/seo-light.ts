@@ -306,8 +306,8 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   },
   'question-2027-trav-10': {
     slug: 'emplois-publics-emploi-garanti-france',
-    seoTitle: 'Emploi garanti par l\'État : les candidats 2027',
-    seoDescription: `Garantie d'emploi, embauches publiques, contrats aidés ou rien du tout : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+    seoTitle: 'Droit au travail garanti par l\'État : candidats 2027',
+    seoDescription: `Le travail est-il un droit que l'État doit garantir, ou une responsabilité de chacun ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-trav-11': {
     slug: 'baisse-cotisations-patronales-embauche-france',

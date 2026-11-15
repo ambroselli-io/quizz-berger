@@ -24,7 +24,7 @@ const QuizzModal = ({ title, isActive, onClose, center = false, children }: Quiz
           <img src="/cross.svg" alt="Fermer" className="h-3 w-3" />
         </button>
         <h1 className="mt-2 text-center font-[Merriweather] text-xl font-bold lg:mt-0">{title}</h1>
-        <div className={cn('mt-6 flex flex-col max-lg:overflow-auto [&_button]:font-[Merriweather_Sans]', center && 'items-center text-center')}>
+        <div className={cn('mt-6 flex min-h-0 flex-col overflow-auto [&_button]:font-[Merriweather_Sans]', center && 'items-center text-center')}>
           {children}
         </div>
       </div>

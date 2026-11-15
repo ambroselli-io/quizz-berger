@@ -77,7 +77,7 @@ export default function Home() {
                   key={index}
                   type="button"
                   onClick={() => navigate({ to: '/quiz-rapide', search: { [QUICK_QUIZZ_ANSWER_PARAM]: index } })}
-                  className="min-h-[60px] w-full cursor-pointer rounded-lg border border-gray-200 bg-white px-2.5 py-2.5 text-base tracking-[0.01rem] text-black hover:bg-gray-50"
+                  className="min-h-[60px] w-full cursor-pointer rounded-lg border border-gray-200 bg-white px-2.5 py-2.5 text-base tracking-[0.01rem] text-balance text-black hover:bg-gray-50"
                 >
                   {answer}
                 </button>
