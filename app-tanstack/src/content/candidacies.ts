@@ -2039,7 +2039,7 @@ export const candidacies: Candidacy[] = [
     status: 'potential',
     movement: 'Parti socialiste',
     summary:
-      "François Hollande, président de la République de 2012 à 2017, ne participe pas à la primaire socialiste d'octobre. Il a publié le livre Unir et fixe sa décision au mois de décembre, en assurant qu'il « n'y aura qu'une seule candidature de la gauche sociale-démocrate ».",
+      "François Hollande, président de la République de 2012 à 2017, ne participe pas à la primaire socialiste d'octobre. Il a publié le livre Unir et avait fixé sa décision au mois de décembre, en assurant qu'il « n'y aura qu'une seule candidature de la gauche sociale-démocrate ». Après la victoire de Raphaël Glucksmann à cette primaire, il poursuit sa campagne et, selon son entourage, repousse sa décision à janvier 2027, le paysage n'étant « pas encore dégagé ».",
     events: [
       {
         date: '2026-09-02',
@@ -2050,6 +2050,18 @@ export const candidacies: Candidacy[] = [
             label: 'franceinfo',
             url: 'https://www.franceinfo.fr/elections/presidentielle/il-n-y-aura-qu-une-seule-candidature-de-la-gauche-social-democrate-a-la-presidentielle-2027-assure-francois-hollande_8173478.html',
             date: '2026-09-02',
+          },
+        ],
+      },
+      {
+        date: '2026-11-04',
+        type: 'step',
+        label: "Son entourage annonce qu'il repousse sa décision à janvier, le paysage n'étant « pas encore dégagé ».",
+        sources: [
+          {
+            label: 'France 24 (AFP)',
+            url: 'https://www.france24.com/fr/info-en-continu/20261104-pr%C3%A9sidentielle-hollande-ne-l%C3%A2che-rien-malgr%C3%A9-la-victoire-de-glucksmann',
+            date: '2026-11-04',
           },
         ],
       },
