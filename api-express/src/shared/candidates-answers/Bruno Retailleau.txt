@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[1] Il faut réduire fortement l'immigration et durcir les conditions d'accueil
+[1] Il faut réduire l'immigration
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [1] L'immigration pose des problèmes réels d'intégration qu'il faut traiter fermement avec de vraies politiques d'assimilation
@@ -342,8 +342,8 @@ question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiq
 Logement:
 
 
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
-[3] C'est une atteinte au droit de propriété, les propriétaires doivent fixer librement leurs prix
+question-2027-log-02b: Que pensez-vous de l'encadrement des loyers ?
+[4] C'est une atteinte au droit de propriété, les propriétaires doivent fixer librement leurs prix
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
 [3] C'est la liberté de chacun de faire ce qu'il veut avec son logement
@@ -617,8 +617,8 @@ question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 [3] Il faut la durcir : durée plus courte ou allocation dégressive, pour inciter au retour à l'emploi
 
-question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
-[4] L'emploi public est déjà trop lourd, le réduire libérerait l'emploi privé
+question-2027-trav-10: Le travail est-il un droit que l'État doit garantir à chacun ?
+[4] Non : l'État n'a pas à s'occuper de l'emploi, c'est le marché qui crée les emplois
 
 question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
 [4] Oui, il faut les baisser massivement : c'est le principal levier contre le chômage

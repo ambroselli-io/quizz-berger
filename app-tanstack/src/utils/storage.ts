@@ -1,3 +1,5 @@
+export const QUIZZ_FEEDBACK_STORAGE_KEY = 'quizzFeedback';
+
 const getFromStorage = (key: string, defaultValue: unknown, storage: 'localStorage' | 'sessionStorage') => {
   if (typeof window === 'undefined') return defaultValue;
   const item = window[storage].getItem(key);

@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[2] Il faut un système d'immigration choisie avec des quotas, ni trop ouvert ni trop fermé
+[2] Le niveau actuel me convient, il ne faut pas changer grand-chose
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [2] C'est un sujet complexe qui nécessite un équilibre entre accueil, intégration et fermeté
@@ -342,8 +342,8 @@ question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiq
 Logement:
 
 
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
-[2] Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie
+question-2027-log-02b: Que pensez-vous de l'encadrement des loyers ?
+[3] Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
 [2] Il faut les encadrer raisonnablement, mais c'est un complément de revenu utile pour beaucoup
@@ -617,8 +617,8 @@ question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 [2] Le système actuel est un équilibre correct
 
-question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
-[2] L'État doit financer des dispositifs ciblés (contrats aidés, Territoires zéro chômeur de longue durée)
+question-2027-trav-10: Le travail est-il un droit que l'État doit garantir à chacun ?
+[2] C'est partagé : l'État doit accompagner les chômeurs, et les chômeurs doivent chercher activement
 
 question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
 [2] Il faut garder le niveau actuel, avec les allègements ciblés sur les bas salaires pour favoriser l'embauche

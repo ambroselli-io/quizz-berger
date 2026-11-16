@@ -25,4 +25,5 @@ beforeEach(() => {
     });
   }
   window.scrollTo = vi.fn() as unknown as typeof window.scrollTo;
+  Element.prototype.scrollTo = vi.fn() as unknown as typeof Element.prototype.scrollTo;
 });

@@ -19,7 +19,7 @@
 
 import { readFileSync, writeFileSync } from 'fs';
 
-const DEFAULT_TITLE = 'Le Quizz du Berger | Quel est votre candidat idéal ?';
+const DEFAULT_TITLE = 'Test politique 2027 : quel candidat pense comme vous ?';
 const BOT_UA =
   'Mozilla/5.0 (compatible; facebookexternalhit/1.1; +http://www.facebook.com/externalhit_uatext.php)';
 const CONCURRENCY = 16;

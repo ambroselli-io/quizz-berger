@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[2] Il faut un système d'immigration choisie avec des quotas, ni trop ouvert ni trop fermé
+[1] Il faut réduire l'immigration
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [1] L'immigration pose des problèmes réels d'intégration qu'il faut traiter fermement avec de vraies politiques d'assimilation
@@ -342,7 +342,7 @@ question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiq
 Logement:
 
 
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
+question-2027-log-02b: Que pensez-vous de l'encadrement des loyers ?
 [1] C'est une bonne mesure dans les zones où les loyers explosent
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
@@ -617,8 +617,8 @@ question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 [1] Il faut revenir sur les réformes récentes et rétablir les droits d'avant
 
-question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
-[2] L'État doit financer des dispositifs ciblés (contrats aidés, Territoires zéro chômeur de longue durée)
+question-2027-trav-10: Le travail est-il un droit que l'État doit garantir à chacun ?
+[2] C'est partagé : l'État doit accompagner les chômeurs, et les chômeurs doivent chercher activement
 
 question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
 [1] Non, il faut garder le niveau actuel, sans les allègements sur les bas salaires : ils n'aident pas l'embauche et bloquent la progression des salaires

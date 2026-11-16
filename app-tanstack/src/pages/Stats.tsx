@@ -31,6 +31,11 @@ interface ChartData {
   maxUsersOnADay: number;
   usersPerPlatform: { name: string; count: number }[];
   platformSince: string | null;
+  quickQuizz: {
+    since: string;
+    total: QuickQuizzCounts;
+    perDay: (QuickQuizzCounts & { _id: string })[];
+  };
   chats: {
     total: ChatTotals;
     users: number;
@@ -38,6 +43,12 @@ interface ChartData {
     perDay: { _id: string; count: Record<string, number>; cumulative: Record<string, number> }[];
     usersPerDay: { _id: string; count: number; cumulative: number }[];
   };
+}
+
+interface QuickQuizzCounts {
+  quickPartial: number;
+  quickComplete: number;
+  more: number;
 }
 
 interface ChatTotals {
@@ -91,7 +102,10 @@ export default function Stats() {
 
       <div className="h-[80vh] w-full p-12 max-lg:mt-4 max-lg:h-[50vh] max-lg:p-0">
         <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart data={data.cumulativeUsers.filter((c) => c._id > '2022-03-07')} margin={{ top: 10, right: 30, left: 30, bottom: 30 }}>
+          <ComposedChart
+            data={data.cumulativeUsers.filter((c) => c._id > '2022-03-07')}
+            margin={{ top: 10, right: 30, left: 30, bottom: 30 }}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
             <YAxis yAxisId="left" />
@@ -167,7 +181,53 @@ export default function Stats() {
         </ResponsiveContainer>
       </div>
 
-      <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">Conversations avec l'IA : {data.chats.total.chats}</h2>
+      <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">
+        Test rapide ou plus (inscrits depuis le {new Date(data.quickQuizz.since).toLocaleDateString('fr-FR')})
+      </h2>
+      <span className="mx-12 max-lg:block max-lg:mx-4">
+        Test rapide commencé : {data.quickQuizz.total.quickPartial}
+      </span>
+      <span className="mx-12 max-lg:block max-lg:mx-4">
+        Test rapide terminé : {data.quickQuizz.total.quickComplete}
+      </span>
+      <span className="mx-12 max-lg:block max-lg:mx-4">
+        Plus que le test rapide : {data.quickQuizz.total.more}
+      </span>
+      <div className="h-[50vh] w-full p-12 max-lg:mt-4 max-lg:h-[40vh] max-lg:p-0">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data.quickQuizz.perDay} margin={{ top: 10, right: 30, left: 30, bottom: 30 }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="_id" tick={<CustomizedAxisTick />} />
+            <YAxis allowDecimals={false} />
+            <Tooltip />
+            <Bar
+              dataKey="quickPartial"
+              name="Test rapide commencé"
+              stackId="quick"
+              stroke="#111827"
+              fill="#fef08a"
+            />
+            <Bar
+              dataKey="quickComplete"
+              name="Test rapide terminé"
+              stackId="quick"
+              stroke="#111827"
+              fill="#facc15"
+            />
+            <Bar
+              dataKey="more"
+              name="Plus que le test rapide"
+              stackId="quick"
+              stroke="#111827"
+              fill="#6faea6"
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+
+      <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">
+        Conversations avec l'IA : {data.chats.total.chats}
+      </h2>
       <span className="mx-12 max-lg:block max-lg:mx-4">Coût : {formatEur(data.chats.total.costEur)}</span>
       <div className="mx-12 mt-6 overflow-x-auto max-lg:mx-4">
         <table className="w-full text-left text-sm">
@@ -199,7 +259,14 @@ export default function Stats() {
             <YAxis yAxisId="left" allowDecimals={false} />
             <YAxis yAxisId="right" orientation="right" allowDecimals={false} />
             <Tooltip />
-            <Area type="monotone" yAxisId="left" dataKey="cumulative" name="Cumulé" stroke="#111827" fill="#facc15" />
+            <Area
+              type="monotone"
+              yAxisId="left"
+              dataKey="cumulative"
+              name="Cumulé"
+              stroke="#111827"
+              fill="#facc15"
+            />
             <Line type="monotone" yAxisId="right" dataKey="count" name="Par jour" stroke="#111827" />
           </ComposedChart>
         </ResponsiveContainer>
@@ -244,7 +311,8 @@ export default function Stats() {
       </div>
 
       <h2 className="mx-12 mt-12 max-lg:mx-4 max-lg:mt-1">
-        Nombre de réponses par utilisateur : moyenne {data.answersPerUserAverage}, médiane {data.answersPerUserMedian}
+        Nombre de réponses par utilisateur : moyenne {data.answersPerUserAverage}, médiane{' '}
+        {data.answersPerUserMedian}
       </h2>
       <div className="h-[80vh] w-full p-12 max-lg:mt-4 max-lg:h-[50vh] max-lg:p-0">
         <ResponsiveContainer width="100%" height="100%">

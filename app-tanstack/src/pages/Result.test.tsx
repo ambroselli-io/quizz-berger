@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { screen, waitFor, within } from '@testing-library/react';
 import Result from '@app/pages/Result';
 import { renderWithRouter } from '@app/test/renderWithRouter';
@@ -7,6 +7,10 @@ import { pinnedCandidate, pinnedUserAnswers, allTestCandidates } from '@app/test
 import { quizz, quizzQuestions } from '@app/utils/quizz';
 import { getCandidatesScorePerThemes } from '@app/shared/utils/score';
 import { getPodium } from '@app/shared/utils/podium';
+import { isInQuickQuizz } from '@app/utils/quick-quizz';
+
+// The page renders every podium (hidden rows included): slower than 5 s when the whole suite runs in parallel.
+vi.setConfig({ testTimeout: 20000 });
 
 const setupResult = () =>
   mockApi({
@@ -35,7 +39,7 @@ describe('Result (/result)', () => {
     expect(within(mainPodium).getByText('100%')).toBeInTheDocument();
   });
 
-  it('renders every candidate and locks their global percentages via snapshot', async () => {
+  it('renders every candidate in the race and locks their global percentages via snapshot', async () => {
     setupResult();
 
     renderWithRouter(<Result />, { path: '/result' });
@@ -46,8 +50,8 @@ describe('Result (/result)', () => {
       expect(within(mainPodium).getAllByRole('link').length).toBeGreaterThan(1);
     });
 
-    // Every candidate appears at least once in the page (main podium and/or filter list).
-    for (const c of allTestCandidates) {
+    // Every candidate still in the race appears at least once in the page.
+    for (const c of allTestCandidates.filter((candidate) => !candidate.withdrawn)) {
       const occurrences = screen.getAllByText(c.pseudo);
       expect(occurrences.length, `${c.pseudo} should be rendered somewhere`).toBeGreaterThan(0);
     }
@@ -81,7 +85,7 @@ describe('Result (/result)', () => {
       expect(screen.getAllByText(pinnedCandidate.pseudo).length).toBeGreaterThan(0);
     });
 
-    // Each themed podium uses the theme name as its <h3> title — see Podium.tsx.
+    // Each themed podium uses the theme name as its <h3> title — see VerticalPodium.tsx.
     const answeredThemeIds = Array.from(new Set(pinnedUserAnswers.map((a) => a.themeId)));
     for (const themeId of answeredThemeIds) {
       const themeName = quizz.find((t) => t._id === themeId)?.fr;
@@ -90,5 +94,52 @@ describe('Result (/result)', () => {
       // Each answered theme gets a podium with its name as a heading.
       expect(headings.length, `Missing podium for theme "${themeName}"`).toBeGreaterThan(0);
     }
+  });
+
+  it('hides candidates who left the race from the podium by default', async () => {
+    const withdrawn = allTestCandidates.find((c) => c.withdrawn);
+    expect(withdrawn, 'the fixture needs at least one withdrawn candidate').toBeDefined();
+    setupResult();
+
+    renderWithRouter(<Result />, { path: '/result' });
+
+    await waitFor(() => {
+      const mainPodium = document.querySelector('main') as HTMLElement;
+      expect(within(mainPodium).getAllByRole('link').length).toBeGreaterThan(1);
+    });
+    const mainPodium = document.querySelector('main') as HTMLElement;
+    expect(within(mainPodium).queryAllByText(withdrawn!.pseudo)).toHaveLength(0);
+  });
+
+  it('offers the full version only while every answer belongs to the quick quiz', async () => {
+    const quickAnswers = pinnedUserAnswers.filter((a) => isInQuickQuizz(a.questionId));
+    expect(quickAnswers.length).toBeGreaterThan(0);
+    mockApi({
+      POST: { '/user/me': { ok: false } },
+      GET: {
+        '/answer': { ok: true, data: quickAnswers },
+        '/answer/candidates': { ok: true, data: allTestCandidates },
+        '/answer/friends': { ok: true, data: [] },
+      },
+    });
+
+    renderWithRouter(<Result />, { path: '/result' });
+
+    // Shown at the top and again at the bottom of the page.
+    const links = await screen.findAllByRole('link', { name: 'Faire la version intégrale' });
+    expect(links).toHaveLength(2);
+    for (const link of links) expect(link).toHaveAttribute('href', '/themes');
+  });
+
+  it('hides the full-version box once an answer outside the quick quiz exists', async () => {
+    expect(pinnedUserAnswers.some((a) => !isInQuickQuizz(a.questionId))).toBe(true);
+    setupResult();
+
+    renderWithRouter(<Result />, { path: '/result' });
+
+    await waitFor(() => {
+      expect(screen.getAllByText(pinnedCandidate.pseudo).length).toBeGreaterThan(0);
+    });
+    expect(screen.queryByRole('link', { name: 'Faire la version intégrale' })).toBeNull();
   });
 });

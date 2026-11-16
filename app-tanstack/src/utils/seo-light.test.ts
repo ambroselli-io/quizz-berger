@@ -23,4 +23,9 @@ describe('seo-light', () => {
       .map((c) => c.pseudo);
     expect(missing).toEqual([]);
   });
+
+  it('keeps the home title and description short enough for Google not to truncate them', () => {
+    expect(seoLight.homeTitle.length).toBeLessThanOrEqual(60);
+    expect(seoLight.homeDescription.length).toBeLessThanOrEqual(155);
+  });
 });

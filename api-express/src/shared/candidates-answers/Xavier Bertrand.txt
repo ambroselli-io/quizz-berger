@@ -145,7 +145,7 @@ Démographie et question migratoire:
 
 
 question-2027-immi-01: De manière générale, que pensez-vous de l'immigration en France ?
-[1] Il faut réduire fortement l'immigration et durcir les conditions d'accueil
+[1] Il faut réduire l'immigration
 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [1] L'immigration pose des problèmes réels d'intégration qu'il faut traiter fermement avec de vraies politiques d'assimilation
@@ -342,8 +342,8 @@ question-2027-ia-19: Les IA peuvent-elles s'entraîner sur les livres, les musiq
 Logement:
 
 
-question-2027-log-02: Que pensez-vous de l'encadrement des loyers ?
-[2] Ça ne sert à rien, ça décourage les propriétaires de louer et aggrave la pénurie
+question-2027-log-02b: Que pensez-vous de l'encadrement des loyers ?
+[2] Acceptable à condition que louer reste rentable, sinon les propriétaires retirent leurs biens du marché
 
 question-2027-log-03: Que pensez-vous des locations touristiques type Airbnb ?
 [2] Il faut les encadrer raisonnablement, mais c'est un complément de revenu utile pour beaucoup
@@ -617,8 +617,8 @@ question-2027-trav-02: Quel devrait être le temps de travail légal en France ?
 question-2027-trav-09: Que pensez-vous de l'assurance chômage ?
 [3] Il faut la durcir : durée plus courte ou allocation dégressive, pour inciter au retour à l'emploi
 
-question-2027-trav-10: Jusqu'où l'État doit-il aller pour créer des emplois ?
-[3] Ce n'est pas son rôle : il doit seulement lever les freins à l'embauche dans le privé
+question-2027-trav-10: Le travail est-il un droit que l'État doit garantir à chacun ?
+[3] Non : trouver un emploi est d'abord la responsabilité de chacun, l'État peut aider un peu
 
 question-2027-trav-11: Faut-il baisser les cotisations payées par les grandes entreprises pour favoriser l'embauche ?
 [3] Oui, il faut les baisser un peu : c'est le coût du travail qui freine l'embauche

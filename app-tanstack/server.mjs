@@ -16,6 +16,7 @@ import { dirname, join } from 'node:path';
 import { readFileSync } from 'node:fs';
 import handler from './dist/server/server.js';
 import { classifyBot } from './src/utils/bots.mjs';
+import { findRedirect } from './src/utils/redirects.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const clientDir = join(__dirname, 'dist', 'client');
@@ -82,31 +83,16 @@ if (analyticsBotToken) {
 // Hashed assets never change → cache forever.
 app.use('/assets', express.static(join(clientDir, 'assets'), { immutable: true, maxAge: '1y' }));
 // Other static files (favicon, candidate images, pdfs…). index:false so `/` hits SSR, not index.html.
-app.use(express.static(clientDir, { index: false }));
+// redirect:false: a directory like /candidates must not get a trailing slash added, the redirect below strips it.
+app.use(express.static(clientDir, { index: false, redirect: false }));
 
-// Trust-anchor redirects. AI agents check /about, /contact, /privacy to
-// verify legitimacy. /contact already exists as a route; the other two map
-// to the French equivalents. 301 so agents (and search engines) learn the
-// canonical path.
-app.get('/about', (_req, res) => res.redirect(301, '/qui-sommes-nous'));
-app.get('/privacy', (_req, res) => res.redirect(301, '/confidentialite'));
-
-// The "Comment réduire le chômage en France ?" question was split into three
-// single-axis questions (unemployment benefit, State as employer, employer
-// contributions). Its old SEO URL kept impressions, so it points at the article
-// that now covers the three angles.
-app.get('/question-politique/comment-reduire-le-chomage-en-france', (_req, res) =>
-  res.redirect(301, '/blog/hausse-chomage-france-candidats-2027'),
-);
-
-// "Comment rendre la fiscalité plus verte ?" was split into single-axis questions.
-// Its SEO slug stays on fisc-10 (see hotTopicSlugs); only the id-based route moved.
-app.get('/question/theme-2027-fiscal/question-2027-fisc-07', (_req, res) =>
-  res.redirect(301, '/question/theme-2027-fiscal/question-2027-fisc-10'),
-);
-
-// "Numérique et IA" became "Numérique" when the "IA et robotisation" theme was added.
-app.get('/theme/numerique-et-ia', (_req, res) => res.redirect(301, '/theme/numerique'));
+// 301s for moved pages (src/utils/redirects.mjs), plus duplicate and trailing slashes folded in one hop.
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  const target = findRedirect(req.originalUrl);
+  if (target) return res.redirect(301, target);
+  next();
+});
 
 // Markdown content negotiation (acceptmarkdown.com). When a client sends
 // Accept: text/markdown, serve llms.txt for the homepage instead of HTML.

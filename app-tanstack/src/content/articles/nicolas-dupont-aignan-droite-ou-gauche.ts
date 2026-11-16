@@ -19,7 +19,7 @@ export const article: Article = {
 <p>Sur les retraites, il revient à 62 ans, quand Xavier Bertrand et Édouard Philippe maintiennent 64. La différence avec la gauche se voit ailleurs : il conditionne le RSA à des heures d'activité et veut assouplir les 35 heures par accords sectoriels.</p>
 
 <h2>Sur l'immigration, la réponse la plus dure du quiz</h2>
-<p>Sur l'<a href="/question-politique/expulsion-etrangers-condamnes-double-peine">expulsion des étrangers condamnés</a>, il coche l'option la plus large disponible : expulsion systématique dès la première condamnation, y compris pour les personnes arrivées enfants ou nées en France. Xavier Bertrand et François Asselineau s'arrêtent au crime ou au délit grave. Il veut aussi sortir de Schengen, réduire fortement l'immigration et refuser le droit de vote aux étrangers.</p>
+<p>Sur l'<a href="/question-politique/expulsion-etrangers-condamnes-double-peine">expulsion des étrangers condamnés</a>, il coche l'option la plus large disponible : expulsion systématique dès la première condamnation, y compris pour les personnes arrivées enfants ou nées en France. Xavier Bertrand et François Asselineau s'arrêtent au crime ou au délit grave. Il veut aussi sortir de Schengen, réduire l'immigration et refuser le droit de vote aux étrangers.</p>
 <p>Sur la sécurité, il choisit le tout-répressif, l'approche identitaire et répressive contre le terrorisme, le durcissement des peines contre <a href="/blog/loi-ripost-securite-quotidien-france-candidats-2027">les nuisances du quotidien</a>, et le soutien à <a href="/blog/presomption-legitime-defense-policiers-france-candidats-2027">la loi sur la présomption de légitime défense</a>.</p>
 
 <h2>Sur la société, il est le plus conservateur des souverainistes</h2>
