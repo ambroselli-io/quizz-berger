@@ -1,5 +1,6 @@
 import type { Article } from '~/types/article';
 
+import { article as articleRegularisationTravailleursSansPapiersFranceCandidats2027 } from './regularisation-travailleurs-sans-papiers-france-candidats-2027';
 import { article as articleProgrammeEdouardPhilippePresidentielle2027 } from './programme-edouard-philippe-presidentielle-2027';
 import { article as articleDissuasionNucleaireFrancaiseEuropeCandidats2027 } from './dissuasion-nucleaire-francaise-europe-candidats-2027';
 import { article as articleTeddyRinerCandidatPresidentielle2027 } from './teddy-riner-candidat-presidentielle-2027';
@@ -71,6 +72,7 @@ export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
+  articleRegularisationTravailleursSansPapiersFranceCandidats2027,
   articleProgrammeEdouardPhilippePresidentielle2027,
   articleDissuasionNucleaireFrancaiseEuropeCandidats2027,
   articleTeddyRinerCandidatPresidentielle2027,
