@@ -3,6 +3,7 @@ import { Link, useParams } from '@app/lib/router';
 import API from '@app/services/api';
 import {
   getFromLocalStorage,
+  QUIZZ_FEEDBACK_STORAGE_KEY,
   getFromSessionStorage,
   setToLocalStorage,
   setToSessionStorage,
@@ -17,7 +18,7 @@ import useUserAnswers from '@app/hooks/useUserAnswers';
 import ModalLogin from '@app/components/modals/ModalLogin';
 import Loader from '@app/components/Loader';
 import VerticalPodium from '@app/components/result/VerticalPodium';
-import QuizzFeedback, { QUIZZ_FEEDBACK_STORAGE_KEY, type QuizzFeedbackState } from '@app/components/result/QuizzFeedback';
+import QuizzFeedback, { type QuizzFeedbackState } from '@app/components/result/QuizzFeedback';
 import ShareResults from '@app/components/result/ShareResults';
 import QuestionByQuestion, { type QuestionPerson } from '@app/components/result/QuestionByQuestion';
 import type { ResultImageRow } from '@app/utils/result-image';
@@ -109,6 +110,7 @@ export default function Result() {
   );
 
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [showFriends, setShowFriends] = useState(false);
 
   const showSaveButton = useMemo(() => !publicPage && !userToShow?.pseudo, [publicPage, userToShow]);
@@ -323,7 +325,11 @@ export default function Result() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+    // On desktop the page scrolls inside this div. After a signup, /result redirects to /result/{pseudo}:
+    // the router's scroll restoration puts the old position back on mount, so reset it once that is done.
+    const timeout = setTimeout(() => scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'instant' }), 0);
+    return () => clearTimeout(timeout);
+  }, [userPseudo]);
 
   const globalPodium = useMemo(() => getPodium(filteredPersons, true), [filteredPersons]);
 
@@ -419,7 +425,7 @@ export default function Result() {
 
   return (
     <>
-      <div className="overflow-y-auto px-2.5 pt-20 pb-[5vh] max-lg:pt-[3vh] lg:h-[calc(100vh-80px)]">
+      <div ref={scrollContainerRef} className="overflow-y-auto px-2.5 pt-20 pb-[5vh] max-lg:pt-[3vh] lg:h-[calc(100vh-80px)]">
         <div className="mx-auto flex max-w-[1024px] flex-col gap-14 max-lg:gap-10">
           <div className="flex flex-col justify-between">
             <h1 className="mb-1 font-[Merriweather] text-[30px] font-bold text-[#082d0f]">{title}</h1>
@@ -621,7 +627,13 @@ export default function Result() {
       <Loader withBackground size="15vh" isLoading={isLoading} />
       <ModalLogin
         isActive={showLoginModal}
-        onClose={() => setShowLoginModal(false)}
+        onClose={() => {
+          setShowLoginModal(false);
+          // On desktop the page scrolls inside this div, not the window; on mobile this div does not scroll.
+          // Instant and after the re-render: after a signup the blocks above shrink, and Chrome's scroll
+          // anchoring cancels a smooth scroll halfway.
+          setTimeout(() => scrollContainerRef.current?.scrollTo({ top: 0, behavior: 'instant' }), 0);
+        }}
         title="Enregistrez-vous"
       />
     </>

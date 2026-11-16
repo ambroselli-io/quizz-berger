@@ -3,6 +3,7 @@ import { useNavigate } from '@app/lib/router';
 import API from '@app/services/api';
 import useUserStore from '@app/zustand/user';
 import type { User } from '@app/types/quizz';
+import { QUIZZ_FEEDBACK_STORAGE_KEY } from '@app/utils/storage';
 
 interface UseUserOptions {
   redirectOnLoggedOut?: string;
@@ -74,6 +75,9 @@ const useUser = (options: UseUserOptions = {}) => {
     await API.post({ path: '/user/logout' });
     setStoredUser(null);
     window?.sessionStorage?.clear();
+    // The next visitor on this device must be able to rate the quiz and pick their own friends.
+    window?.localStorage?.removeItem(QUIZZ_FEEDBACK_STORAGE_KEY);
+    window?.localStorage?.removeItem('selectedFriends');
     navigate('/');
   }, [setStoredUser, navigate]);
 

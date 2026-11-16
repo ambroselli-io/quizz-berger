@@ -3,7 +3,8 @@ import { Heart, Megaphone, Newspaper } from 'lucide-react';
 import API from '@app/services/api';
 import useUser from '@app/hooks/useUser';
 import { DONATION_URL } from '@app/content/chat-modes';
-import { setToLocalStorage } from '@app/utils/storage';
+import { QUIZZ_FEEDBACK_STORAGE_KEY, setToLocalStorage } from '@app/utils/storage';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@app/components/ui/dialog';
 
 export const RATINGS = ['Pas du tout', 'Plutôt pas', 'Mitigé', 'Plutôt oui', "Carrément, j'ai adoré\u00a0!"];
 const LIKED_FROM = 3;
@@ -16,8 +17,6 @@ export interface QuizzFeedbackState {
   /** Row of the QuizzFeedback table, created on the first click. */
   id?: string | null;
 }
-
-export const QUIZZ_FEEDBACK_STORAGE_KEY = 'quizzFeedback';
 
 interface QuizzFeedbackProps {
   state: QuizzFeedbackState;
@@ -40,6 +39,10 @@ const QuizzFeedback = ({ state, setState, answersCount }: QuizzFeedbackProps) =>
   const [showNetworks, setShowNetworks] = useState(false);
   const [showMedia, setShowMedia] = useState(false);
   const [media, setMedia] = useState({ text: '', email: '', sent: false });
+  const [askEmail, setAskEmail] = useState(false);
+  const [email, setEmail] = useState('');
+  // The comment reaches us before the email is asked: many close the popup, their words still count.
+  const silentlySent = useRef<string | null>(null);
 
   const update = (next: QuizzFeedbackState) => {
     setState(next);
@@ -62,29 +65,58 @@ const QuizzFeedback = ({ state, setState, answersCount }: QuizzFeedbackProps) =>
     if (newId) update({ rating, sent: false, id: newId });
   };
 
-  const sendRating = async (withComment: boolean) => {
+  const feedbackMail = (text: string, contactEmail?: string) => {
     if (state.rating === null) return;
-    setIsSending(true);
-    const id = state.id ?? (await creating.current);
-    if (id && withComment && comment.trim()) {
-      await API.put({ path: `/quizz-feedback/${id}`, body: { rating: state.rating, comment: comment.trim() } });
-    }
-    await API.post({
+    return API.post({
       path: '/feedback',
       body: {
-        subject: `Quizz du Berger : avis sur le quiz (${state.rating + 1}/5 - ${RATINGS[state.rating]})`,
+        subject: `Quizz du Berger : avis sur le quiz (${state.rating + 1}/5 - ${RATINGS[state.rating]})${contactEmail ? ` - ${contactEmail}` : ''}`,
         text: [
           `Note : ${state.rating + 1}/5 - ${RATINGS[state.rating]}`,
           `Utilisateur : ${user?.pseudo ?? user?._id ?? '(anonyme)'}`,
           `Questions répondues : ${answersCount}`,
+          `Email : ${contactEmail ?? '(pas encore donné)'}`,
           '',
-          withComment && comment.trim() ? comment.trim() : '(pas de commentaire)',
+          text,
         ].join('\n'),
+        email: contactEmail,
       },
     });
-    setIsSending(false);
+  };
+
+  const markSent = () => {
     justSent.current = true;
     update({ ...state, sent: true });
+  };
+
+  const sendRating = async () => {
+    if (state.rating === null) return;
+    const text = comment.trim();
+    if (!text) {
+      setIsSending(true);
+      await feedbackMail('(pas de commentaire)');
+      setIsSending(false);
+      markSent();
+      return;
+    }
+    if (silentlySent.current !== text) {
+      silentlySent.current = text;
+      const id = state.id ?? (await creating.current);
+      if (id) API.put({ path: `/quizz-feedback/${id}`, body: { rating: state.rating, comment: text } });
+      feedbackMail(text);
+    }
+    setAskEmail(true);
+  };
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const contactEmail = email.trim();
+    if (!contactEmail.includes('@')) return;
+    setIsSending(true);
+    await feedbackMail(comment.trim(), contactEmail);
+    setIsSending(false);
+    setAskEmail(false);
+    markSent();
   };
 
   // The thanks replace a taller form: on mobile the page jumps and the visitor lands lost below it.
@@ -146,7 +178,7 @@ const QuizzFeedback = ({ state, setState, answersCount }: QuizzFeedbackProps) =>
       </h2>
       {!state.sent && (
         <>
-          <p className="mb-4 text-balance text-sm text-gray-600">Votre avis nous aide à l'améliorer. Il reste anonyme.</p>
+          <p className="mb-4 text-balance text-sm text-gray-600">Votre avis nous aide à l'améliorer.</p>
           <div className="flex w-full flex-col items-center gap-2">
             {RATINGS.map((label, index) => (
               <div key={label} className="flex w-full max-w-[500px] flex-col gap-2">
@@ -169,13 +201,13 @@ const QuizzFeedback = ({ state, setState, answersCount }: QuizzFeedbackProps) =>
                       onChange={(e) => setComment(e.target.value)}
                       rows={3}
                       maxLength={2000}
-                      placeholder="Dites-nous en plus\u00a0!"
+                      placeholder={'Dites-nous en plus\u00a0!'}
                       className="w-full rounded-lg border border-gray-300 px-3 py-2 text-base focus:border-quizz-dark focus:outline-none"
                     />
                     <button
                       type="button"
                       disabled={isSending}
-                      onClick={() => sendRating(true)}
+                      onClick={sendRating}
                       className="cursor-pointer rounded-lg bg-quizz-dark px-5 py-3 font-semibold text-white disabled:opacity-50"
                     >
                       {isSending ? 'Envoi...' : 'Envoyer mon avis'}
@@ -187,6 +219,34 @@ const QuizzFeedback = ({ state, setState, answersCount }: QuizzFeedbackProps) =>
           </div>
         </>
       )}
+      <Dialog open={askEmail} onOpenChange={setAskEmail}>
+        <DialogContent className="max-w-[440px] bg-white max-lg:w-[calc(100%-32px)] max-lg:rounded-lg">
+          <DialogHeader>
+            <DialogTitle className="sr-only">Votre email</DialogTitle>
+            <DialogDescription className="pr-6 text-balance text-base text-gray-700">
+              Par expérience, une clarification est toujours nécessaire pour bien cerner votre propos, votre email est donc indispensable pour échanger avec vous.
+            </DialogDescription>
+          </DialogHeader>
+          <form onSubmit={sendEmail} className="flex flex-col gap-3">
+            <input
+              type="email"
+              required
+              autoFocus
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="vous@exemple.fr"
+              className="w-full rounded-lg border border-gray-300 px-3 py-2 text-base focus:border-quizz-dark focus:outline-none"
+            />
+            <button
+              type="submit"
+              disabled={isSending}
+              className="cursor-pointer rounded-lg bg-quizz-dark px-5 py-3 font-semibold text-white disabled:opacity-50"
+            >
+              {isSending ? 'Envoi...' : 'Envoyer mon avis'}
+            </button>
+          </form>
+        </DialogContent>
+      </Dialog>
       {state.sent && (
         <>
           <p className="mb-4 text-balance text-base text-gray-700">
