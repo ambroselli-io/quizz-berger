@@ -31,6 +31,10 @@ jest.mock('@react-navigation/native', () => ({
   useRoute: () => mockRoute,
 }));
 
+jest.mock('react-native-safe-area-context', () => ({
+  useSafeAreaInsets: () => ({ top: 0, right: 0, bottom: 0, left: 0 }),
+}));
+
 const NEW_QUESTION_ID = 'question-2027-pol-99';
 
 // What the API serves after a question was added post-release.
