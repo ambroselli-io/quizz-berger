@@ -797,7 +797,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Renaissance',
     summary:
-      "Gabriel Attal a officialisé sa candidature le 22 mai 2026 à Mur-de-Barrez, dans l'Aveyron, sous le slogan « La force d'agir ».",
+      "Gabriel Attal a officialisé sa candidature le 22 mai 2026 à Mur-de-Barrez, dans l'Aveyron, sous le slogan « La force d'agir ». Le 28 octobre 2026, il appelle à une « grande primaire des démocrates » pour désigner un candidat commun du centre et de la droite, ce qu'Édouard Philippe refuse.",
     quote: {
       text: "J'ai décidé d'être candidat.",
       source: {
@@ -821,6 +821,19 @@ export const candidacies: Candidacy[] = [
             label: 'RTL',
             url: 'https://www.rtl.fr/actu/politique/presidentielle-2027-gabriel-attal-officialise-sa-candidature-a-l-election-presidentielle-7900637844',
             date: '2026-05-22',
+          },
+        ],
+      },
+      {
+        date: '2026-10-28',
+        type: 'step',
+        label:
+          "Au 20 heures de TF1, il appelle à une « grande primaire des démocrates » pour éviter un second tour entre LFI et le RN ; son camp cite Édouard Philippe, Bruno Retailleau et David Lisnard comme participants possibles.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-veut-une-grande-primaire-des-democrates-pour-eviter-un',
+            date: '2026-10-28',
           },
         ],
       },
