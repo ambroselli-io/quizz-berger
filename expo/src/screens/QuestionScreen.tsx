@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { View, Text, ScrollView, Pressable, Linking, Alert } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { readableTextColor } from '~/utils/contrast';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -21,6 +22,9 @@ type Route = RouteProp<RootStackParamList, 'Question'>;
 export default function QuestionScreen() {
   const navigation = useNavigation<Nav>();
   const route = useRoute<Route>();
+  const insets = useSafeAreaInsets();
+  // Android is edge-to-edge (SDK 54+): the bar must clear the system navigation bar (3-button nav is ~48dp).
+  const bottomBarPadding = Math.max(32, insets.bottom + 12);
   const { themeId, questionId, importantOnly } = route.params;
   const { quizz } = useQuizz();
   const { user } = useUser();
@@ -159,7 +163,7 @@ export default function QuestionScreen() {
       {/* Question content */}
       <ScrollView
         className="flex-1"
-        contentContainerStyle={{ padding: 20, paddingBottom: 100 }}
+        contentContainerStyle={{ padding: 20, paddingBottom: 68 + bottomBarPadding }}
       >
         {showFeedbackHint && (
           <View className="mb-6 rounded-lg border border-yellow-300 bg-yellow-50 px-3 py-2">
@@ -237,8 +241,8 @@ export default function QuestionScreen() {
 
       {/* Bottom navigation bar */}
       <View
-        className="absolute bottom-0 left-0 right-0 flex-row items-center bg-white px-4 pb-8 pt-3 shadow-sm"
-        style={{ shadowColor: '#000', shadowOffset: { width: 0, height: -2 }, shadowOpacity: 0.1, shadowRadius: 3 }}
+        className="absolute bottom-0 left-0 right-0 flex-row items-center bg-white px-4 pt-3 shadow-sm"
+        style={{ paddingBottom: bottomBarPadding, shadowColor: '#000', shadowOffset: { width: 0, height: -2 }, shadowOpacity: 0.1, shadowRadius: 3 }}
       >
         <Pressable onPress={goToPreviousQuestion} className="px-4 py-2">
           <Text className="text-2xl text-quizz-dark">‹</Text>

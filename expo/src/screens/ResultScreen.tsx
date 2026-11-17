@@ -12,15 +12,15 @@ import useCandidates from "~/hooks/useCandidates";
 import useFriends from "~/hooks/useFriends";
 import { getCandidatesScorePerThemes } from "~/shared/utils/score";
 import { getPodium } from "~/shared/utils/podium";
-import Podium from "~/components/Podium";
-import PodiumSkeleton from "~/components/PodiumSkeleton";
-import QuizzButton from "~/components/QuizzButton";
+import VerticalPodium from "~/components/result/VerticalPodium";
+import QuizzFeedback, { getStoredQuizzFeedback, type QuizzFeedbackState } from "~/components/result/QuizzFeedback";
+import ShareResults from "~/components/result/ShareResults";
+import QuestionByQuestion, { type QuestionPerson } from "~/components/result/QuestionByQuestion";
 import useStore from "~/zustand/store";
 import API from "~/services/api";
-import storage from "~/utils/storage";
+import { chatModes } from "~/utils/chatModes";
+import { isInQuickQuizz } from "~/utils/quickQuizz";
 import type { Answer, UserAnswerWithScorePerThemeAndMax } from "~/types/quizz";
-
-export const TESTIMONY_ASKED_KEY = "testimony-asked";
 
 type Nav = NativeStackNavigationProp<RootStackParamList>;
 type Route = RouteProp<RootStackParamList, "Result">;
@@ -115,17 +115,6 @@ export default function ResultScreen() {
       )
     });
   }, [navigation, candidates.length, shownCandidatesCount]);
-
-  // Ask for a testimony the first time the user reaches their own results,
-  // once per install. The card stays until dismissed or the screen is left.
-  const ownResults = !userPseudo || userPseudo === user?.pseudo;
-  const [showTestimony, setShowTestimony] = useState(false);
-  useEffect(() => {
-    if (!ownResults || !answersToShow.length) return;
-    if (storage.getString(TESTIMONY_ASKED_KEY)) return;
-    storage.set(TESTIMONY_ASKED_KEY, "1");
-    setShowTestimony(true);
-  }, [ownResults, answersToShow.length]);
 
   const allFriendPseudos = useMemo(() => friends.map((f) => f.pseudo), [friends]);
   const [selectedFriends, setSelectedFriends] = useState<string[]>([]);
@@ -265,7 +254,31 @@ export default function ResultScreen() {
     [selectedThemes, filteredPersons]
   );
 
+
+  const questionPersons: QuestionPerson[] = useMemo(
+    () => [
+      ...candidates.filter((c) => !hiddenCandidates.includes(c.pseudo)),
+      ...friends.filter((f) => selectedFriends.includes(f.pseudo))
+    ],
+    [candidates, friends, hiddenCandidates, selectedFriends]
+  );
+
+  const [feedback, setFeedback] = useState<QuizzFeedbackState>(getStoredQuizzFeedback);
+  const [visibleThemes, setVisibleThemes] = useState(1);
+
+  const scrollRef = useRef<React.ComponentRef<typeof ScrollView>>(null);
+  const generalY = useRef(0);
+  const compareWithFriends = () => {
+    setShowFriends(true);
+    scrollRef.current?.scrollTo({ y: generalY.current, animated: true });
+  };
+
   const showSaveButton = !publicPage && !userToShow?.pseudo;
+  // The "full version" box shows only while every answer belongs to the web's quick quiz.
+  const onlyQuickQuizzAnswers =
+    !publicPage && answersToShow.length > 0 && answersToShow.every((a) => isInQuickQuizz(a.questionId));
+  const quizzQuestionsCount = quizzQuestions.length;
+  const quizzThemesCount = quizz.length;
 
   const podiumLoading = candidatesLoading;
 
@@ -277,190 +290,253 @@ export default function ResultScreen() {
     );
   }
 
+  const card = "rounded-2xl border border-gray-200 bg-white p-4";
+  const merriweather = { fontFamily: "Merriweather_700Bold" };
+
+  // Nothing left to do (full quiz, results saved): no box at all.
+  const fullQuizzCta = (onlyQuickQuizzAnswers || showSaveButton) && (
+    <View className="gap-5 rounded-2xl border-2 border-yellow-400 bg-yellow-50 p-5">
+      {onlyQuickQuizzAnswers && (
+        <View className="items-start gap-3">
+          <Text className="text-xl font-bold text-quizz-dark" style={merriweather}>
+            Vous avez fait le test rapide
+          </Text>
+          <Text className="text-sm text-gray-700">
+            Ce résultat repose sur {answersToShow.length} question{answersToShow.length > 1 ? "s" : ""}. La version
+            intégrale en compte {quizzQuestionsCount}, sur {quizzThemesCount} thèmes&nbsp;: répondez à celles que vous
+            voulez, votre classement s'affine à chaque réponse.
+          </Text>
+          <Pressable
+            onPress={() => navigation.navigate("Themes")}
+            className="rounded-lg border-2 border-gray-800 bg-gray-800 px-4 py-2.5"
+          >
+            <Text className="text-sm font-semibold text-white">Faire la version intégrale</Text>
+          </Pressable>
+        </View>
+      )}
+      {showSaveButton && (
+        <View className={`items-start gap-3 ${onlyQuickQuizzAnswers ? "border-t border-yellow-300 pt-5" : ""}`}>
+          <Text className="text-xl font-bold text-quizz-dark" style={merriweather}>
+            Enregistrez vos résultats
+          </Text>
+          <Text className="text-sm text-gray-700">
+            Sans enregistrement, vos résultats seront perdus dans une heure. Enregistrez-les de façon anonyme avec un
+            pseudo et un mot de passe, sans email.
+          </Text>
+          <Pressable
+            onPress={() => navigation.navigate("Login")}
+            className={`rounded-lg border-2 border-gray-800 px-4 py-2.5 ${onlyQuickQuizzAnswers ? "bg-white" : "bg-gray-800"}`}
+          >
+            <Text className={`text-sm font-semibold ${onlyQuickQuizzAnswers ? "text-gray-800" : "text-white"}`}>
+              Enregistrer mes résultats
+            </Text>
+          </Pressable>
+        </View>
+      )}
+    </View>
+  );
+
+  const feedbackBox = !publicPage && (
+    <View className={card}>
+      <QuizzFeedback state={feedback} setState={setFeedback} answersCount={answersToShow.length} />
+    </View>
+  );
+
+  const shareBox = !publicPage && (
+    <View className={card}>
+      <ShareResults onRequestLogin={() => navigation.navigate("Login")} onCompare={compareWithFriends} />
+    </View>
+  );
+
+  const remainingThemes = podiumsPerTheme.length - visibleThemes;
+
   return (
     <ScrollView
-      className="flex-1 bg-white"
-      contentContainerStyle={{ paddingBottom: 40 }}
+      ref={scrollRef}
+      className="flex-1 bg-gray-50"
+      contentContainerStyle={{ padding: 16, paddingBottom: 40, gap: 32 }}
       keyboardShouldPersistTaps="handled"
       keyboardDismissMode="on-drag"
       automaticallyAdjustKeyboardInsets
     >
-      <View className="px-4 pt-4">
-        <Text className="mb-2 text-2xl font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
-          {title}
-        </Text>
-        <Text className="mb-4 rounded-md bg-amber-50 px-3 py-1.5 text-xs text-amber-800">
-          Appuyez sur le nom d'un candidat pour voir ses réponses
-        </Text>
-      </View>
+      <Text className="text-2xl font-bold text-quizz-dark" style={merriweather}>
+        {title}
+      </Text>
 
-      {/* Main podium */}
-      <View style={{ height: 300 }}>
-        {podiumLoading ? <PodiumSkeleton maxBarHeight={240} /> : <Podium podiumised={getPodium(filteredPersons)} />}
-      </View>
+      {fullQuizzCta}
 
-      {/* Action buttons */}
-      {!publicPage && (
-        <View className="mt-4 flex-row flex-wrap gap-2 px-4">
-          {showSaveButton && (
+      <View className={card} onLayout={(e) => (generalY.current = e.nativeEvent.layout.y)}>
+        <Text className="mb-1 text-2xl font-bold text-quizz-dark" style={merriweather}>
+          Votre classement général
+        </Text>
+        <Text className="mb-4 text-sm text-gray-600">Appuyez sur le nom d'un candidat pour voir ses réponses.</Text>
+        {podiumLoading ? (
+          <ActivityIndicator color="#111827" />
+        ) : (
+          <VerticalPodium podiumised={getPodium(filteredPersons, true)} />
+        )}
+
+        {!publicPage && (
+          <View className="mt-5 flex-row flex-wrap gap-2 border-t border-gray-100 pt-4">
+            {showSaveButton && (
+              <Pressable
+                onPress={() => navigation.navigate("Login")}
+                className="flex-row items-center rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5"
+              >
+                <Text className="text-sm font-semibold text-black">Enregistrer</Text>
+              </Pressable>
+            )}
             <Pressable
-              onPress={() => navigation.navigate("Login")}
-              className="flex-row items-center rounded-lg border-2 border-yellow-400 bg-yellow-400 px-4 py-2.5"
+              onPress={() => setShowFriends((s) => !s)}
+              className="flex-row items-center rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5"
             >
-              <Text className="text-sm font-semibold text-black">Enregistrer</Text>
+              <Text className="text-sm font-medium text-gray-800">Comparer avec mes amis</Text>
             </Pressable>
-          )}
-          <Pressable
-            onPress={() => {
-              if (!userToShow?.pseudo) navigation.navigate("Login");
-              else navigation.navigate("Share");
-            }}
-            className="flex-row items-center rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5"
-          >
-            <Text className="text-sm font-medium text-gray-800">Partager</Text>
-          </Pressable>
-          <Pressable
-            onPress={() => setShowFriends((s) => !s)}
-            className="flex-row items-center rounded-lg border-2 border-gray-800 px-4 py-2.5"
-            style={{ backgroundColor: !user?.friends?.length ? "#1f2937" : "white" }}
-          >
-            <Text
-              className="text-sm font-medium"
-              style={{ color: !user?.friends?.length ? "white" : "#1f2937" }}
-            >
-              Comparer avec mes amis
-            </Text>
-          </Pressable>
-          {answersToShow.length > 0 && (
             <Pressable
               onPress={downloadAnswers}
               className="flex-row items-center rounded-lg border-2 border-gray-800 bg-white px-4 py-2.5"
             >
               <Text className="text-sm font-medium text-gray-800">Télécharger mes réponses</Text>
             </Pressable>
-          )}
-        </View>
-      )}
-
-      {showTestimony && (
-        <View className="mx-4 mt-6 rounded-lg border border-yellow-300 bg-yellow-50 px-4 py-3">
-          <Text className="text-base font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
-            Un mot sur le Quizz ?
-          </Text>
-          <Text className="mt-1 text-sm text-quizz-dark/80">
-            Surpris par vos résultats ? Dites-nous en deux lignes ce que le quiz vous a apporté : votre témoignage
-            pourra être publié sur le site.
-          </Text>
-          <View className="mt-3 flex-row items-center gap-4">
-            <QuizzButton onPress={() => navigation.navigate("Feedback", { kind: "testimony" })}>
-              Laisser un témoignage
-            </QuizzButton>
-            <Pressable onPress={() => setShowTestimony(false)} hitSlop={8}>
-              <Text className="text-sm text-gray-500 underline">Non merci</Text>
-            </Pressable>
           </View>
-        </View>
-      )}
+        )}
 
-      {/* Friends comparison panel */}
-      {!publicPage && showFriends && (
-        <View className="mt-3 px-4">
-          {friendsScorePerThemes.length > 0 && (
-            <View className="mb-3 flex-row flex-wrap gap-2">
-              {friendsScorePerThemes.map((friend) => {
-                const isSelected = selectedFriends.includes(friend.pseudo);
-                return (
-                  <Pressable
-                    key={friend.pseudo}
-                    onPress={() => toggleFriend(friend.pseudo)}
-                    className="rounded-lg border px-4 py-2"
-                    style={{ borderColor: "#111827", backgroundColor: isSelected ? "#111827" : "white" }}
-                  >
-                    <Text className="text-sm" style={{ color: isSelected ? "white" : "#111827" }}>
-                      {friend.pseudo}
-                    </Text>
-                  </Pressable>
-                );
-              })}
+        {!publicPage && showFriends && (
+          <View className="mt-3">
+            {friendsScorePerThemes.length > 0 && (
+              <View className="mb-3 flex-row flex-wrap gap-2">
+                {friendsScorePerThemes.map((friend) => {
+                  const isSelected = selectedFriends.includes(friend.pseudo);
+                  return (
+                    <Pressable
+                      key={friend.pseudo}
+                      onPress={() => toggleFriend(friend.pseudo)}
+                      className="rounded-lg border px-4 py-2"
+                      style={{ borderColor: "#111827", backgroundColor: isSelected ? "#111827" : "white" }}
+                    >
+                      <Text className="text-sm" style={{ color: isSelected ? "white" : "#111827" }}>
+                        {friend.pseudo}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+            )}
+            <View className="flex-row items-center">
+              <TextInput
+                className="flex-1 rounded-lg border border-gray-200 px-3 py-3 text-base"
+                placeholder={loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
+                value={newFriend}
+                onChangeText={setNewFriendRequest}
+                autoComplete="name"
+                autoCapitalize="none"
+                autoCorrect={false}
+              />
+              {loadingFriend && <ActivityIndicator className="ml-2" color="#111827" />}
             </View>
-          )}
-          <View className="flex-row items-center">
-            <TextInput
-              className="flex-1 rounded-lg border border-gray-200 px-3 py-3 text-base"
-              placeholder={loadingFriend ? `Ajout de ${newFriend}...` : "Tapez le pseudo d'un ami"}
-              value={newFriend}
-              onChangeText={setNewFriendRequest}
-              autoComplete="name"
-              autoCapitalize="none"
-              autoCorrect={false}
-            />
-            {loadingFriend && <ActivityIndicator className="ml-2" color="#111827" />}
+            {noFriend && noFriend === newFriend && (
+              <Text className="mt-1 text-xs text-red-500">
+                Il n'y a pas de pseudo « {newFriend} » existant. Vérifiez les majuscules ?
+              </Text>
+            )}
+            {!user?.isPublic && (
+              <Text className="mt-2 text-xs text-gray-500">
+                Pour que vos amis puissent aussi se comparer à vous, partagez votre lien (bloc « Partagez vos
+                résultats »).
+              </Text>
+            )}
           </View>
-          {noFriend && noFriend === newFriend && (
-            <Text className="mt-1 text-xs text-red-500">
-              Il n'y a pas de pseudo « {newFriend} » existant. Vérifiez les majuscules ?
-            </Text>
-          )}
-          {!user?.isPublic && (
-            <Text className="mt-2 text-xs text-gray-500">
-              N'oubliez pas de cliquer sur « Partager » pour permettre à vos amis de faire la même chose avec vous !
-            </Text>
-          )}
-        </View>
-      )}
+        )}
+      </View>
 
-      {/* Podium over the starred questions only */}
-      <View className="mt-8 px-4">
-        <Text className="mb-1 text-2xl font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
-          <Text style={{ color: "#facc15" }}>★ </Text>
-          Questions importantes pour moi
+      {feedbackBox}
+
+      {shareBox}
+
+      <View className="rounded-2xl bg-quizz-dark p-4">
+        <Text className="mb-1 text-2xl font-bold text-white" style={merriweather}>
+          Et si vous en discutiez avec l'IA&nbsp;?
         </Text>
-        <Text className="text-sm text-gray-600">
-          {importantAnswers.length === 0
-            ? publicPage
-              ? "Aucune question marquée comme importante."
-              : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."
-            : `Résultats calculés uniquement sur ${
+        <Text className="mb-4 text-sm text-white/80">
+          Une IA qui n'a pas le droit de vous dire pour qui voter. Elle est là pour vous aider à réfléchir, pas pour
+          penser à votre place.
+        </Text>
+        <View className="gap-3">
+          {chatModes.map((chatMode) => (
+            <Pressable
+              key={chatMode.mode}
+              onPress={() => navigation.navigate("Chat", { mode: chatMode.mode })}
+              className="rounded-xl border-2 border-white/20 p-4"
+            >
+              <Text className="mb-1 text-lg font-bold text-white" style={merriweather}>
+                {chatMode.title}
+              </Text>
+              <Text className="text-sm leading-relaxed text-white/80">{chatMode.description}</Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+
+      <View className="gap-4">
+        <Text className="text-2xl font-bold text-quizz-dark" style={merriweather}>
+          Thème par thème
+        </Text>
+        <View className={card}>
+          <Text className="mb-1 text-xl font-bold text-quizz-dark" style={merriweather}>
+            <Text style={{ color: "#facc15" }}>★ </Text>
+            Questions importantes pour moi
+          </Text>
+          {importantPersons.length > 0 ? (
+            <VerticalPodium
+              podiumised={getPodium(importantPersons, true)}
+              linkParams={publicPage ? undefined : { importantOnly: true }}
+              subtitle={`Résultats calculés uniquement sur ${
                 importantAnswers.length === 1 ? "la question" : `les ${importantAnswers.length} questions`
               } ${publicPage ? "marquée" : "que vous avez marquée"}${importantAnswers.length > 1 ? "s" : ""} comme importante${
                 importantAnswers.length > 1 ? "s" : ""
               }.`}
-        </Text>
-      </View>
-      {importantAnswers.length > 0 && (
-        <View style={{ height: 300 }}>
-          {podiumLoading ? (
-            <PodiumSkeleton maxBarHeight={240} />
-          ) : (
-            <Podium
-              podiumised={getPodium(importantPersons)}
-              linkParams={publicPage ? undefined : { importantOnly: true }}
             />
+          ) : (
+            <Text className="text-sm text-gray-600">
+              {publicPage
+                ? "Aucune question marquée comme importante."
+                : "Sur chaque question, appuyez sur « Marquer comme importante pour moi » : vous verrez ici avec qui vous êtes d'accord sur ce qui compte le plus pour vous."}
+            </Text>
           )}
         </View>
-      )}
-
-      {/* Per-theme podiums */}
-      <View className="mt-8 px-4">
-        <Text className="mb-4 text-2xl font-bold text-quizz-dark" style={{ fontFamily: "Merriweather_700Bold" }}>
-          Thème par thème
-        </Text>
+        {podiumsPerTheme.slice(0, visibleThemes).map(({ personsScore, themeId }) => (
+          <View key={themeId} className={card}>
+            <VerticalPodium
+              podiumised={getPodium(personsScore)}
+              title={quizz.find((t) => t._id === themeId)?.fr}
+              linkParams={{ themeId }}
+            />
+          </View>
+        ))}
+        {remainingThemes > 0 && (
+          <Pressable
+            onPress={() => setVisibleThemes((v) => v + 3)}
+            className="self-center rounded-lg border border-gray-300 bg-white px-4 py-2"
+          >
+            <Text className="text-sm font-medium text-gray-700">
+              Voir plus ({remainingThemes} thème{remainingThemes > 1 ? "s" : ""} restant
+              {remainingThemes > 1 ? "s" : ""}) ▾
+            </Text>
+          </Pressable>
+        )}
       </View>
-      {podiumLoading
-        ? selectedThemes.map((themeId) => (
-            <View key={themeId} className="h-[300px]">
-              <PodiumSkeleton maxBarHeight={190} title={quizz.find((t) => t._id === themeId)?.fr} />
-            </View>
-          ))
-        : podiumsPerTheme.map(({ personsScore, themeId }) => (
-            <View key={themeId} className="h-[300px]">
-              <Podium
-                podiumised={getPodium(personsScore)}
-                title={quizz.find((t) => t._id === themeId)?.fr}
-                linkParams={{ themeId }}
-              />
-            </View>
-          ))}
+
+      <QuestionByQuestion
+        quizz={quizz}
+        answers={answersToShow.filter((a) => selectedThemes.includes(a.themeId))}
+        persons={questionPersons}
+      />
+
+      {feedbackBox}
+
+      {shareBox}
+
+      {fullQuizzCta}
     </ScrollView>
   );
 }

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, Pressable, Modal, ScrollView, Linking, Alert, Keyboard, Platform } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Pressable, Modal, ScrollView, Linking, Alert } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import type { NavigationContainerRefWithCurrent } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -45,22 +45,10 @@ export default function BottomTabBar({
   const insets = useSafeAreaInsets();
   const { user, logout } = useUser();
   const [moreOpen, setMoreOpen] = useState(false);
-  const [keyboardShown, setKeyboardShown] = useState(false);
+  // No hiding on keyboard: Android is edge-to-edge (SDK 54+), so like iOS the keyboard simply covers the bar.
+  // Hiding it would resize the screen under a KeyboardAvoidingView after it has computed its padding.
 
-  // Android resizes the window (adjustResize), which would lift the bar above the keyboard. On iOS the
-  // keyboard simply covers it: hiding it there would resize the screen under a KeyboardAvoidingView
-  // after it has computed its padding, leaving a gap above the keyboard.
-  useEffect(() => {
-    if (Platform.OS !== 'android') return;
-    const show = Keyboard.addListener('keyboardDidShow', () => setKeyboardShown(true));
-    const hide = Keyboard.addListener('keyboardDidHide', () => setKeyboardShown(false));
-    return () => {
-      show.remove();
-      hide.remove();
-    };
-  }, []);
-
-  if (!routeName || HIDDEN_ON.includes(routeName) || keyboardShown) return null;
+  if (!routeName || HIDDEN_ON.includes(routeName)) return null;
 
   const onLogout = () => {
     const hasPseudo = !!user?.pseudo;

@@ -68,7 +68,8 @@ const DonationModal = ({ isVisible, onClose }: { isVisible: boolean; onClose: ()
 
   return (
     <Modal visible={isVisible} transparent animationType="slide" onRequestClose={close}>
-      <KeyboardAvoidingView className="flex-1" behavior={Platform.OS === "ios" ? "padding" : undefined}>
+      {/* Android is edge-to-edge (SDK 54+): the window no longer resizes for the keyboard, so pad on both platforms. */}
+      <KeyboardAvoidingView className="flex-1" behavior="padding">
         <View className="flex-1 justify-end bg-black/60">
           <View className="gap-4 rounded-t-3xl bg-white p-6 pb-10">
             <Text className="text-center text-xl text-quizz-dark" style={font("Merriweather_700Bold")}>
@@ -338,7 +339,8 @@ export default function ChatScreen() {
       >
         <KeyboardAvoidingView
           style={{ flex: 1 }}
-          behavior={Platform.OS === "ios" ? "padding" : undefined}
+          // Android is edge-to-edge (SDK 54+): the window no longer resizes for the keyboard, so pad on both platforms.
+          behavior="padding"
           keyboardVerticalOffset={kbOffset}
         >
           <FlatList

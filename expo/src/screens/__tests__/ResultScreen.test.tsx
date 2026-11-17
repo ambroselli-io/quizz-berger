@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen, userEvent } from '@testing-library/react-native';
-import ResultScreen, { TESTIMONY_ASKED_KEY } from '~/screens/ResultScreen';
+import ResultScreen from '~/screens/ResultScreen';
+import { QUIZZ_FEEDBACK_STORAGE_KEY } from '~/components/result/QuizzFeedback';
 import useQuizzStore from '~/zustand/quizz';
 import useStore from '~/zustand/store';
 import storage from '~/utils/storage';
@@ -11,6 +12,8 @@ jest.mock('~/services/api', () => ({
   __esModule: true,
   default: { get: jest.fn(), post: jest.fn(), put: jest.fn() },
 }));
+
+jest.mock('@expo/vector-icons/Ionicons', () => () => null);
 
 const mockNavigation = { navigate: jest.fn(), goBack: jest.fn(), setOptions: jest.fn() };
 let mockRoute: { params: { userPseudo?: string } | undefined };
@@ -50,11 +53,11 @@ const candidates = [
   },
 ];
 
-const TESTIMONY = 'Un mot sur le Quizz ?';
+const FEEDBACK = 'Ce quiz vous a plu\u00a0?';
 
 beforeEach(() => {
   jest.clearAllMocks();
-  storage.delete(TESTIMONY_ASKED_KEY);
+  storage.delete(QUIZZ_FEEDBACK_STORAGE_KEY);
   mockRoute = { params: undefined };
   (API.get as jest.Mock).mockImplementation(({ path }: { path: string }) => {
     if (path === '/answer') return Promise.resolve({ ok: true, data: answers });
@@ -63,32 +66,36 @@ beforeEach(() => {
     if (path === '/answer/quelqun') return Promise.resolve({ ok: true, data: answers });
     return Promise.resolve({ ok: true, data: [] });
   });
-  (API.post as jest.Mock).mockResolvedValue({ ok: true, user: { _id: 'user-1', pseudo: 'toto' } });
+  (API.post as jest.Mock).mockImplementation(({ path }: { path: string }) =>
+    Promise.resolve(path === '/quizz-feedback' ? { ok: true, data: { id: 'fb-1' } } : { ok: true }),
+  );
   useStore.setState({ user: { _id: 'user-1', pseudo: 'toto' }, userAnswers: answers, hiddenCandidates: [] });
   useQuizzStore.getState().setQuizz(themes, 'abc123');
 });
 
-describe('ResultScreen testimony', () => {
-  it('asks for a testimony on the first visit and opens the form', async () => {
+describe('ResultScreen feedback', () => {
+  it('saves the rating on the first tap, then offers a donation once sent', async () => {
     await render(<ResultScreen />);
+    const user = userEvent.setup();
 
-    expect(await screen.findByText(TESTIMONY)).toBeOnTheScreen();
-    await userEvent.setup().press(screen.getByText('Laisser un témoignage'));
+    expect((await screen.findAllByText(FEEDBACK)).length).toBeGreaterThan(0);
+    await user.press(screen.getAllByText('Plutôt oui')[0]);
+    expect(API.post).toHaveBeenCalledWith({ path: '/quizz-feedback', body: { rating: 3, answersCount: 1 } });
 
-    expect(mockNavigation.navigate).toHaveBeenCalledWith('Feedback', { kind: 'testimony' });
+    await user.press(screen.getAllByText('Envoyer mon avis')[0]);
+    expect((await screen.findAllByText('Faire un don')).length).toBeGreaterThan(0);
+    expect(JSON.parse(storage.getString(QUIZZ_FEEDBACK_STORAGE_KEY)!)).toMatchObject({ rating: 3, sent: true });
   });
 
-  it('can be dismissed and never comes back', async () => {
-    const first = await render(<ResultScreen />);
-    await screen.findByText(TESTIMONY);
-
-    await userEvent.setup().press(screen.getByText('Non merci'));
-    expect(screen.queryByText(TESTIMONY)).not.toBeOnTheScreen();
-    await first.unmount();
-
+  it('asks for an email before sending a comment', async () => {
     await render(<ResultScreen />);
-    await screen.findByText('Thème par thème');
-    expect(screen.queryByText(TESTIMONY)).not.toBeOnTheScreen();
+    const user = userEvent.setup();
+
+    await user.press((await screen.findAllByText('Mitigé'))[0]);
+    await user.type(screen.getAllByPlaceholderText('Dites-nous en plus\u00a0!')[0], 'Trop long');
+    await user.press(screen.getAllByText('Envoyer mon avis')[0]);
+
+    expect(await screen.findByPlaceholderText('vous@exemple.fr')).toBeOnTheScreen();
   });
 
   it("does not ask on someone else's public results", async () => {
@@ -96,8 +103,17 @@ describe('ResultScreen testimony', () => {
     await render(<ResultScreen />);
     await screen.findByText('Thème par thème');
 
-    expect(screen.queryByText(TESTIMONY)).not.toBeOnTheScreen();
-    expect(storage.getString(TESTIMONY_ASKED_KEY)).toBeUndefined();
+    expect(screen.queryByText(FEEDBACK)).not.toBeOnTheScreen();
+  });
+});
+
+describe('ResultScreen ranking', () => {
+  it('lists the candidates with their percentage', async () => {
+    await render(<ResultScreen />);
+
+    expect(await screen.findByText('Votre classement général')).toBeOnTheScreen();
+    expect(screen.getAllByText('Candidat Un').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('100%').length).toBeGreaterThan(0);
   });
 });
 
