@@ -11,3 +11,4 @@ backup
 # Private autopilot (routines, social replies): local only, never on the public repo
 .claude/commands/
 .claude/routines/
+.claude/tmp-upload/
