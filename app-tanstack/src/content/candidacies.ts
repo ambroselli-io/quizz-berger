@@ -308,7 +308,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'Les Écologistes',
     summary:
-      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Le conseil fédéral du parti a cependant reporté le choix final au 13 décembre 2026 : un vote des adhérents tranchera alors entre sa candidature autonome et un soutien à un candidat extérieur au parti. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes. Le 26 octobre 2026, elle a néanmoins ouvert la porte à un retrait en sa faveur « s'il y a un chemin de victoire » à gauche, à quatre conditions.",
+      "Marine Tondelier s'est déclarée le 22 octobre 2025. Après l'abandon de la primaire, les adhérents des Écologistes ont validé à 65 % une candidature autonome, qu'elle porte. Le conseil fédéral du parti a cependant reporté le choix final au 13 décembre 2026 : un vote des adhérents tranchera alors entre sa candidature autonome et un soutien à un candidat extérieur au parti. Elle a critiqué la victoire de Raphaël Glucksmann à la primaire socialiste et démocratique le 11 octobre 2026, lui reprochant d'avoir refusé toute primaire élargie à l'ensemble de la gauche et des écologistes. Le 26 octobre 2026, elle a néanmoins ouvert la porte à un retrait en sa faveur « s'il y a un chemin de victoire » à gauche, à quatre conditions. Le 18 novembre 2026, sur France 2, elle s'est dite « prête » à travailler à une « coalition » autour de la candidature de Jean-Luc Mélenchon, après une semaine de négociations avec La France insoumise ; les adhérents des Écologistes trancheront du 10 au 13 décembre.",
     events: [
       {
         date: '2025-10-22',
@@ -374,6 +374,19 @@ export const candidacies: Candidacy[] = [
             label: "L'Express via Orange",
             url: 'https://actu.orange.fr/politique/presidentielle-2027-marine-tondelier-evoque-la-possibilite-de-retirer-sa-candidature-l-express-via-6medias-CNT000002tosYK.html',
             date: '2026-10-26',
+          },
+        ],
+      },
+      {
+        date: '2026-11-18',
+        type: 'step',
+        label:
+          "Sur France 2, elle se dit « prête » à travailler à une « coalition » autour de la candidature de Jean-Luc Mélenchon, et demande une semaine de négociations avec La France insoumise ; les adhérents de son parti voteront du 10 au 13 décembre entre sa candidature et le soutien à un autre candidat.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon',
+            date: '2026-11-18',
           },
         ],
       },
