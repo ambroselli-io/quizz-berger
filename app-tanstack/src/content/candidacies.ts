@@ -232,77 +232,6 @@ export const candidacies: Candidacy[] = [
     ],
   },
   {
-    slug: 'francois-ruffin',
-    status: 'declared',
-    movement: 'Debout !',
-    summary:
-      "François Ruffin s'est déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. Après l'abandon de la primaire unitaire en juillet 2026, il a demandé à rejoindre la primaire socialiste et démocratique ; Raphaël Glucksmann le lui a refusé le 8 septembre, et il a renoncé à cette option à la Fête de l'Humanité, poursuivant seul sa campagne tout en appelant à l'union. Le 6 novembre 2026, il a dit ne pas exclure de retirer sa candidature si une solution se dégageait à gauche pour battre Marine Le Pen au second tour, tout en estimant ne pas la voir à ce jour.",
-    events: [
-      {
-        date: '2025-04-01',
-        type: 'declaration',
-        label: "Il annonce sa candidature et propose une primaire à toute la gauche.",
-        sources: [WIKI],
-      },
-      {
-        date: '2026-07-09',
-        type: 'step',
-        label:
-          "La primaire de la gauche est abandonnée après le vote du Parti socialiste ; il maintient sa candidature.",
-        sources: [
-          {
-            label: 'Public Sénat',
-            url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-a-la-bellevilloise-faure-tondelier-ruffindans-les-sables-mouvants-de-la-primaire',
-          },
-        ],
-      },
-      {
-        date: '2026-09-08',
-        type: 'step',
-        label:
-          "Raphaël Glucksmann refuse d'ouvrir la primaire socialiste et démocratique à sa candidature, au nom de règles déjà validées par les militants.",
-        sources: [
-          {
-            label: 'LCP',
-            url: 'https://lcp.fr/actualites/on-ne-change-pas-les-regles-en-cours-de-jeu-glucksmann-ferme-la-porte-a-ruffin-et',
-            date: '2026-09-08',
-          },
-        ],
-      },
-      {
-        date: '2026-09-12',
-        type: 'step',
-        label:
-          "Il renonce à rejoindre la primaire socialiste et lance, à la Fête de l'Humanité, un appel à l'union par-delà les partis.",
-        sources: [
-          {
-            label: 'Orange Actualités',
-            url: 'https://actu.orange.fr/videos/actu-locale/a-la-fete-de-l-huma-francois-ruffin-abandonne-l-idee-de-participer-a-la-primaire-socialiste-CNT000002rRCyO.html',
-            date: '2026-09-12',
-          },
-        ],
-      },
-      {
-        date: '2026-11-06',
-        type: 'step',
-        label:
-          "Il dit ne pas exclure de retirer sa candidature si une solution se dégageait à gauche pour battre Marine Le Pen au second tour, en écartant Jean-Luc Mélenchon au vu des sondages de second tour, mais sans voir cette solution à ce jour.",
-        sources: [
-          {
-            label: "Orange Actualités / L'Express",
-            url: 'https://actu.orange.fr/politique/presidentielle-2027-francois-ruffin-n-exclut-pas-de-renoncer-si-cela-permet-de-battre-marine-le-pen-l-express-via-6medias-CNT000002tAInn.html',
-            date: '2026-11-06',
-          },
-          {
-            label: 'Parlons Politique',
-            url: 'https://www.parlons-politique.fr/elections/presidentielle-2027-ruffin-conditionne-son-retrait-a-une-gauche-capable-de-battre-marine-le-pen-au-second-tour_30881/',
-            date: '2026-11-06',
-          },
-        ],
-      },
-    ],
-  },
-  {
     slug: 'marine-tondelier',
     feminine: true,
     status: 'declared',
@@ -1714,6 +1643,86 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
+  {
+    slug: 'dominique-de-villepin',
+    status: 'declared',
+    movement: 'La France humaniste',
+    summary:
+      "Dominique de Villepin, Premier ministre de 2005 à 2007, a fondé en 2025 le mouvement La France humaniste. Après avoir revendiqué plus de 300 parrainages d'élus en octobre 2026, il a déclaré sa candidature le 20 novembre 2026 lors d'une conférence de presse à la Maison de l'Amérique latine, à Paris. Il écarte une primaire de la droite et du centre et veut faire du redressement des comptes publics sa première mesure.",
+    quote: {
+      text: "Je suis candidat à l'élection présidentielle de 2027.",
+      source: {
+        label: 'LCP',
+        url: 'https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372',
+        date: '2026-11-20',
+      },
+    },
+    events: [
+      {
+        date: '2026-04-10',
+        type: 'step',
+        label: "Il indique vouloir être « un candidat du rassemblement », sans se déclarer.",
+        sources: [WIKI],
+      },
+      {
+        date: '2026-08-30',
+        type: 'step',
+        label:
+          "Il affirme se battre pour être candidat et revendique plusieurs centaines de parrainages d'élus, insuffisants pour l'instant.",
+        sources: [
+          {
+            label: 'franceinfo',
+            url: 'https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-me-bats-pour-etre-candidat-declare-dominique-de-villepin-qui-revendique-plusieurs-centaines-de-parrainages_8169629.html',
+            date: '2026-08-30',
+          },
+          {
+            label: 'Orange Actualités',
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-declare-vouloir-etre-candidat-magic-CNT000002rCnAy.html',
+            date: '2026-08-30',
+          },
+        ],
+      },
+      {
+        date: '2026-10-22',
+        type: 'step',
+        label:
+          "Il annonce sur BFMTV avoir dépassé la barre des 300 signatures d'élus, et dit vouloir trancher dans les semaines à venir.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/presidentielle-dominique-de-villepin-annonce-avoir-depasse-la-barre-des-300-signatures',
+            date: '2026-10-22',
+          },
+        ],
+      },
+      {
+        date: '2026-11-03',
+        type: 'step',
+        label:
+          "Sur France Inter, il confirme qu'il sera bien candidat, mais juge que ce n'est « pas le bon moment » pour l'officialiser.",
+        sources: [
+          {
+            label: "L'Express via Orange",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-confirme-qu-il-sera-bien-candidat-mais-estime-que-ce-n-est-pas-le-bon-moment-pour-l-officialiser-l-express-via-6medias-CNT000002twDEE.html',
+            date: '2026-11-03',
+          },
+        ],
+      },
+      {
+        date: '2026-11-20',
+        type: 'declaration',
+        label:
+          "Il déclare sa candidature lors d'une conférence de presse à Paris, et écarte une primaire de la droite et du centre.",
+        sources: [
+          {
+            label: 'LCP',
+            url: 'https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372',
+            date: '2026-11-20',
+          },
+        ],
+      },
+    ],
+  },
   // --- Ils ont renoncé ---
   {
     slug: 'clementine-autain',
@@ -2018,66 +2027,99 @@ export const candidacies: Candidacy[] = [
     ],
   },
 
-  // --- Pas encore candidats ---
   {
-    slug: 'dominique-de-villepin',
-    status: 'potential',
-    movement: 'La France humaniste',
+    slug: 'francois-ruffin',
+    status: 'withdrawn',
+    movement: 'Debout !',
     summary:
-      "Dominique de Villepin a dit vouloir être « un candidat du rassemblement » le 10 avril 2026, en marge du forum « Normandie pour la Paix » à Caen. Le 30 août 2026, il a affirmé se battre pour être candidat, revendiquant plusieurs centaines de parrainages d'élus, insuffisants pour l'instant face au seuil des 500 nécessaires. Le 22 octobre 2026, il a annoncé avoir dépassé la barre des 300 signatures, en disant vouloir trancher dans les semaines à venir. Le 3 novembre 2026, sur France Inter, il a confirmé qu'il sera bien candidat, tout en jugeant que ce n'est « pas le bon moment » pour l'officialiser. Il n'a pas officialisé sa candidature.",
+      "François Ruffin s'était déclaré le 1er avril 2025, en demandant que la gauche se choisisse un candidat unique par une primaire. Après l'abandon de la primaire unitaire en juillet 2026, Raphaël Glucksmann lui a refusé l'entrée dans la primaire socialiste et démocratique, et il a poursuivi seul sa campagne en appelant à l'union. Le 21 novembre 2026, il a retiré sa candidature, constatant l'« impasse » de sa campagne faute de primaire de toute la gauche. Il ne soutient aucun candidat à ce jour.",
+    quote: {
+      text: "Face au risque du pire, je retire ma candidature à l'élection présidentielle.",
+      source: {
+        label: 'CNEWS (AFP)',
+        url: 'https://www.cnews.fr/france/2026-11-21/presidentielle-2027-francois-ruffin-annonce-le-retrait-de-sa-candidature-1958831',
+        date: '2026-11-21',
+      },
+    },
     events: [
       {
-        date: '2026-04-10',
-        type: 'step',
-        label: "Il indique vouloir être « un candidat du rassemblement », sans se déclarer.",
+        date: '2025-04-01',
+        type: 'declaration',
+        label: "Il annonce sa candidature et propose une primaire à toute la gauche.",
         sources: [WIKI],
       },
       {
-        date: '2026-08-30',
+        date: '2026-07-09',
         type: 'step',
         label:
-          "Il affirme se battre pour être candidat et revendique plusieurs centaines de parrainages d'élus, insuffisants pour l'instant.",
+          "La primaire de la gauche est abandonnée après le vote du Parti socialiste ; il maintient sa candidature.",
         sources: [
           {
-            label: 'franceinfo',
-            url: 'https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-je-me-bats-pour-etre-candidat-declare-dominique-de-villepin-qui-revendique-plusieurs-centaines-de-parrainages_8169629.html',
-            date: '2026-08-30',
-          },
-          {
-            label: 'Orange Actualités',
-            url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-declare-vouloir-etre-candidat-magic-CNT000002rCnAy.html',
-            date: '2026-08-30',
+            label: 'Public Sénat',
+            url: 'https://www.publicsenat.fr/actualites/politique/presidentielle-2027-a-la-bellevilloise-faure-tondelier-ruffindans-les-sables-mouvants-de-la-primaire',
           },
         ],
       },
       {
-        date: '2026-10-22',
+        date: '2026-09-08',
         type: 'step',
         label:
-          "Il annonce sur BFMTV avoir dépassé la barre des 300 signatures d'élus, et dit vouloir trancher dans les semaines à venir.",
+          "Raphaël Glucksmann refuse d'ouvrir la primaire socialiste et démocratique à sa candidature, au nom de règles déjà validées par les militants.",
         sources: [
           {
             label: 'LCP',
-            url: 'https://lcp.fr/actualites/presidentielle-dominique-de-villepin-annonce-avoir-depasse-la-barre-des-300-signatures',
-            date: '2026-10-22',
+            url: 'https://lcp.fr/actualites/on-ne-change-pas-les-regles-en-cours-de-jeu-glucksmann-ferme-la-porte-a-ruffin-et',
+            date: '2026-09-08',
           },
         ],
       },
       {
-        date: '2026-11-03',
+        date: '2026-09-12',
         type: 'step',
         label:
-          "Sur France Inter, il confirme qu'il sera bien candidat, mais juge que ce n'est « pas le bon moment » pour l'officialiser.",
+          "Il renonce à rejoindre la primaire socialiste et lance, à la Fête de l'Humanité, un appel à l'union par-delà les partis.",
         sources: [
           {
-            label: "L'Express via Orange",
-            url: 'https://actu.orange.fr/politique/presidentielle-2027-dominique-de-villepin-confirme-qu-il-sera-bien-candidat-mais-estime-que-ce-n-est-pas-le-bon-moment-pour-l-officialiser-l-express-via-6medias-CNT000002twDEE.html',
-            date: '2026-11-03',
+            label: 'Orange Actualités',
+            url: 'https://actu.orange.fr/videos/actu-locale/a-la-fete-de-l-huma-francois-ruffin-abandonne-l-idee-de-participer-a-la-primaire-socialiste-CNT000002rRCyO.html',
+            date: '2026-09-12',
+          },
+        ],
+      },
+      {
+        date: '2026-11-06',
+        type: 'step',
+        label:
+          "Il dit ne pas exclure de retirer sa candidature si une solution se dégageait à gauche pour battre Marine Le Pen au second tour, en écartant Jean-Luc Mélenchon au vu des sondages de second tour, mais sans voir cette solution à ce jour.",
+        sources: [
+          {
+            label: "Orange Actualités / L'Express",
+            url: 'https://actu.orange.fr/politique/presidentielle-2027-francois-ruffin-n-exclut-pas-de-renoncer-si-cela-permet-de-battre-marine-le-pen-l-express-via-6medias-CNT000002tAInn.html',
+            date: '2026-11-06',
+          },
+          {
+            label: 'Parlons Politique',
+            url: 'https://www.parlons-politique.fr/elections/presidentielle-2027-ruffin-conditionne-son-retrait-a-une-gauche-capable-de-battre-marine-le-pen-au-second-tour_30881/',
+            date: '2026-11-06',
+          },
+        ],
+      },
+      {
+        date: '2026-11-21',
+        type: 'withdrawal',
+        label:
+          "Il retire sa candidature, faute d'une primaire de toute la gauche, sans soutenir aucun candidat.",
+        sources: [
+          {
+            label: 'CNEWS (AFP)',
+            url: 'https://www.cnews.fr/france/2026-11-21/presidentielle-2027-francois-ruffin-annonce-le-retrait-de-sa-candidature-1958831',
+            date: '2026-11-21',
           },
         ],
       },
     ],
   },
+  // --- Pas encore candidats ---
   {
     slug: 'francois-hollande',
     status: 'potential',
