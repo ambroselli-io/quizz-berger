@@ -10980,6 +10980,8 @@
     "picture": "candidates/francois-ruffin.png",
     "color": "#c9462c",
     "isCandidate": true,
+    "withdrawn": true,
+    "withdrawnAt": "2026-11-21",
     "themes": [
       "theme-2027-affaires-etrangeres",
       "theme-2027-agriculture",
