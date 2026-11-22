@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { quizz } from '@app/utils/quizz';
 import { questionSlugMap } from '@app/utils/seo-light';
-import { seoHead } from '@app/utils/seo-head';
+import { questionOgImage, seoHead } from '@app/utils/seo-head';
 import Question from '@app/pages/Question';
 
 export const Route = createFileRoute('/question/$themeId/$questionId')({
@@ -19,6 +19,7 @@ export const Route = createFileRoute('/question/$themeId/$questionId')({
       canonicalPath: seoTwin
         ? `/question-politique/${seoTwin.slug}`
         : `/question/${params.themeId}/${params.questionId}`,
+      ogImage: questionOgImage(question._id),
     });
   },
   component: Question,

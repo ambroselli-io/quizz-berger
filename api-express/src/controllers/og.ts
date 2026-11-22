@@ -3,7 +3,7 @@ import { catchErrors } from "~/utils/error";
 import { uploadBuffer } from "~/utils/picture";
 import { getPodium, getPicName } from "~/shared/utils/podium";
 import { getCandidatesScorePerThemes } from "~/shared/utils/score";
-import { generateOgImage } from "~/utils/og-image";
+import { generateOgImage, generateQuestionOgImage } from "~/utils/og-image";
 import quizz from "~/shared/quizz-2027.json";
 import candidatesAnswersData from "~/shared/candidates-answers.json";
 import prisma from "~/prisma";
@@ -71,6 +71,37 @@ router.post(
     await prisma.user.update({ where: { id: user.id }, data: { ogPicName: picName } });
 
     res.status(200).send({ ok: true, generated: true });
+  }),
+);
+
+// Link-preview card of one question (og:image of /question-politique/{slug}).
+// `?answer=N` highlights one answer, for a post that shares a given answer.
+// Rendered on the fly and kept in memory: the question set only changes with a deploy.
+const questionImageCache = new Map<string, Buffer>();
+
+router.get(
+  "/question/:questionId.png",
+  catchErrors(async (req: express.Request, res: express.Response) => {
+    const theme = (quizz as Array<Theme>).find((t) => t.questions.some((q) => q._id === req.params.questionId));
+    const question = theme?.questions.find((q) => q._id === req.params.questionId);
+    if (!theme || !question) {
+      res.status(404).send({ ok: false, error: "question not found" });
+      return;
+    }
+    const answer = Number(req.query.answer);
+    const highlightedIndex = Number.isInteger(answer) && answer >= 0 && answer < question.answers.length ? answer : undefined;
+
+    const key = `${question._id}:${highlightedIndex ?? ""}`;
+    let png = questionImageCache.get(key);
+    if (!png) {
+      png = await generateQuestionOgImage({ themeName: theme.fr, question: question.fr, answers: question.answers, highlightedIndex });
+      questionImageCache.set(key, png);
+    }
+
+    res.setHeader("Content-Type", "image/png");
+    res.setHeader("Cache-Control", "public, max-age=86400");
+    res.setHeader("Cross-Origin-Resource-Policy", "cross-origin");
+    res.send(png);
   }),
 );
 

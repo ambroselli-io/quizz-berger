@@ -23,6 +23,14 @@ interface SeoInput {
   robots?: string;
 }
 
+const API_BASE = import.meta.env.DEV ? 'http://localhost:5179' : 'https://api.quizz-du-berger.com';
+
+/** Card of one question with its answers, rendered by the API. `answerIndex` highlights one answer. */
+export function questionOgImage(questionId: string, answerIndex?: number): string {
+  const query = answerIndex === undefined ? '' : `?answer=${answerIndex}`;
+  return `${API_BASE}/og/question/${encodeURIComponent(questionId)}.png${query}`;
+}
+
 export function canonicalUrl(path: string): string {
   if (path.startsWith('http')) return path;
   return `${BASE_URL}${path === '/' ? '' : path}`;

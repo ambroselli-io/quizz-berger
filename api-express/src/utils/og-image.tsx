@@ -1,13 +1,13 @@
 import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
 import fs from "fs";
-import path from "path";
 import type { PodiumDataWithPercentAndHeightAndHighest } from "~/types/answer";
 
 // Load static WOFF fonts from fontsource packages at startup (satori supports TTF, OTF, WOFF — not WOFF2)
 // Use "latin" subset (covers A-Z, 0-9, and common accented chars like é, è, ê)
 const merriweatherBold = fs.readFileSync(require.resolve("@fontsource/merriweather/files/merriweather-latin-700-normal.woff"));
 const merriweatherSans = fs.readFileSync(require.resolve("@fontsource/merriweather-sans/files/merriweather-sans-latin-400-normal.woff"));
+const merriweatherSansBold = fs.readFileSync(require.resolve("@fontsource/merriweather-sans/files/merriweather-sans-latin-700-normal.woff"));
 
 // Cache candidate avatar images in memory as base64 data URIs
 const avatarCache = new Map<string, string>();
@@ -204,4 +204,147 @@ export async function generateOgImage(podiumData: Array<PodiumDataWithPercentAnd
   });
   const pngData = resvg.render();
   return Buffer.from(pngData.asPng());
+}
+
+const NAVY = "#101827";
+const YELLOW = "#facc15";
+const checkSvg = `data:image/svg+xml,${encodeURIComponent(`<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="${NAVY}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`)}`;
+
+// Long questions shrink so they always fit on three lines next to six answers.
+function questionFontSize(text: string): number {
+  if (text.length <= 70) return 36;
+  if (text.length <= 120) return 31;
+  if (text.length <= 170) return 27;
+  return 24;
+}
+
+const oneLine = {
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+} as const;
+
+export async function generateQuestionOgImage({
+  themeName,
+  question,
+  answers,
+  highlightedIndex,
+}: {
+  themeName: string;
+  question: string;
+  answers: Array<string>;
+  highlightedIndex?: number;
+}): Promise<Buffer> {
+  const rowHeight = answers.length > 5 ? 42 : 50;
+  const svg = await satori(
+    <div
+      style={{
+        width: "1200px",
+        height: "630px",
+        display: "flex",
+        flexDirection: "column",
+        padding: "36px 56px 40px",
+        fontFamily: "Merriweather Sans",
+        backgroundColor: NAVY,
+        backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.09) 1px, transparent 0)",
+        backgroundSize: "22px 22px",
+        color: "white",
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "22px" }}>
+        <div style={{ display: "flex", alignItems: "center", fontFamily: "Merriweather", fontWeight: 700, fontSize: "26px" }}>
+          <img src={compassSvg} width={40} height={40} style={{ marginRight: "14px" }} />
+          Le Quizz du Berger
+        </div>
+        <div style={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 700, letterSpacing: "2px", color: YELLOW }}>
+          <div style={{ width: "10px", height: "10px", borderRadius: "5px", backgroundColor: YELLOW, marginRight: "10px" }} />
+          PRÉSIDENTIELLE 2027
+        </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          flexGrow: 1,
+          backgroundColor: "white",
+          color: NAVY,
+          borderRadius: "22px",
+          padding: "24px 34px 26px",
+          boxShadow: "0 20px 50px rgba(0,0,0,0.45)",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "12px" }}>
+          <div style={{ display: "flex", fontSize: "17px", fontWeight: 700, letterSpacing: "1.5px", color: "#6b7280", maxWidth: "800px", ...oneLine }}>
+            {themeName.toUpperCase()}
+          </div>
+          <div
+            style={{
+              display: "flex",
+              fontSize: "17px",
+              fontWeight: 700,
+              letterSpacing: "1px",
+              backgroundColor: YELLOW,
+              borderRadius: "999px",
+              padding: "6px 16px",
+            }}
+          >
+            VOTRE AVIS ?
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "block",
+            fontFamily: "Merriweather",
+            fontWeight: 700,
+            fontSize: `${questionFontSize(question)}px`,
+            lineHeight: 1.3,
+            marginBottom: "20px",
+            lineClamp: 3,
+          }}
+        >
+          {question}
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, justifyContent: "flex-end" }}>
+          {answers.map((answer, i) => {
+            const selected = i === highlightedIndex;
+            return (
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: `${rowHeight}px`,
+                  marginTop: i === 0 ? "0" : "7px",
+                  padding: "0 18px",
+                  borderRadius: "10px",
+                  border: selected ? `2px solid ${NAVY}` : "2px solid #e5e7eb",
+                  backgroundColor: selected ? YELLOW : "white",
+                  fontSize: "20px",
+                  fontWeight: selected ? 700 : 400,
+                }}
+              >
+                <div style={{ display: "block", flexGrow: 1, ...oneLine }}>{answer}</div>
+                {selected ? <img src={checkSvg} width={24} height={24} style={{ marginLeft: "12px" }} /> : null}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>,
+    {
+      width: 1200,
+      height: 630,
+      fonts: [
+        { name: "Merriweather", data: merriweatherBold, weight: 700, style: "normal" },
+        { name: "Merriweather Sans", data: merriweatherSans, weight: 400, style: "normal" },
+        { name: "Merriweather Sans", data: merriweatherSansBold, weight: 700, style: "normal" },
+      ],
+    },
+  );
+
+  const resvg = new Resvg(svg, { fitTo: { mode: "width", value: 1200 } });
+  return Buffer.from(resvg.render().asPng());
 }

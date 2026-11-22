@@ -3,7 +3,10 @@ import { answer, api, signup } from "./helpers";
 
 const uploadBuffer = vi.hoisted(() => vi.fn());
 vi.mock("~/utils/picture", () => ({ uploadBuffer }));
-vi.mock("~/utils/og-image", () => ({ generateOgImage: vi.fn(async () => Buffer.from("png")) }));
+vi.mock("~/utils/og-image", () => ({
+  generateOgImage: vi.fn(async () => Buffer.from("png")),
+  generateQuestionOgImage: vi.fn(async () => Buffer.from("png")),
+}));
 
 const generate = (pseudo: string) => api().post("/og/generate").send({ pseudo });
 
@@ -35,5 +38,17 @@ describe("POST /og/generate", () => {
     await signup("private-one");
     expect((await generate("private-one")).status).toBe(404);
     expect(uploadBuffer).not.toHaveBeenCalled();
+  });
+});
+
+describe("GET /og/question/:questionId.png", () => {
+  it("renders the card of an existing question", async () => {
+    const res = await api().get("/og/question/question-2027-immi-01.png?answer=2");
+    expect(res.status).toBe(200);
+    expect(res.headers["content-type"]).toBe("image/png");
+  });
+
+  it("returns 404 for an unknown question", async () => {
+    expect((await api().get("/og/question/nope.png")).status).toBe(404);
   });
 });
