@@ -82,7 +82,7 @@ const QuestionCard = ({ number, question, theme, userAnswerIndex, personsPerAnsw
       <View className="flex-row items-start gap-3">
         <View className="flex-1">
           <View className="mb-2 flex-row flex-wrap items-center gap-2">
-            {!!question.help && (
+            {!!question.help?.startsWith('http') && (
               <Pressable
                 onPress={() => Linking.openURL(question.help!)}
                 className="h-7 w-7 items-center justify-center rounded-full border-2 border-gray-700"

@@ -95,12 +95,16 @@ export default function QuestionPolitiquePage() {
         {question.help && (
           <section className="mx-auto w-full max-w-4xl px-5 pt-8">
             <div className="rounded-lg border border-blue-100 bg-blue-50 p-4">
-              <p className="text-sm text-blue-800">
-                Pour mieux comprendre le contexte de cette question :{' '}
-                <a href={question.help} target="_blank" rel="noreferrer" className="font-medium underline">
-                  Lire l'article Wikipedia
-                </a>
-              </p>
+              {question.help.startsWith('http') ? (
+                <p className="text-sm text-blue-800">
+                  Pour mieux comprendre le contexte de cette question :{' '}
+                  <a href={question.help} target="_blank" rel="noreferrer" className="font-medium underline">
+                    {question.help.includes('wikipedia.org') ? "Lire l'article Wikipedia" : "Lire notre article"}
+                  </a>
+                </p>
+              ) : (
+                <p className="text-sm text-blue-800">{question.help}</p>
+              )}
             </div>
           </section>
         )}

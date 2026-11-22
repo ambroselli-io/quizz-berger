@@ -31,8 +31,8 @@ question-2027-ae-08: Dans le conflit Israël / Palestine, où vous situez-vous ?
 question-2027-ae-09: Que devrait faire la France face au conflit Israël / Palestine ?
 [2] Jouer un rôle de médiation diplomatique neutre
 
-question-2027-ae-10: La France a-t-elle bien fait de reconnaître l'État de Palestine ?
-[1] Oui, mais elle aurait dû attendre un accord de paix négocié
+question-2027-ae-10b: La France a-t-elle bien fait de reconnaître l'État de Palestine ?
+[1] Oui sur le principe, mais avec des conditions plus strictes (libération des otages, désarmement du Hamas)
 
 question-2027-ae-11: Comment la France doit-elle réagir à l'intervention militaire américaine au Venezuela et à la capture du président Maduro ?
 [3] Condamner une violation du droit international et de la souveraineté d'un État
@@ -56,8 +56,8 @@ Agriculture et alimentation:
 question-2027-agri-01: Que pensez-vous de l'utilisation des pesticides dans l'agriculture ?
 [1] Il faut en sortir progressivement, sans mettre en danger la production alimentaire
 
-question-2027-agri-02: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
-[1] Il faut mieux partager l'eau entre agriculture, industrie et particuliers, avec des restrictions en période de sécheresse
+question-2027-agri-02b: Comment la France devrait-elle gérer la crise de l'eau et les sécheresses ?
+[1] Mieux partager l'eau entre les usages, recycler les eaux usées, et appliquer des restrictions plus strictes pendant les sécheresses
 
 question-2027-agri-03: Quelle place pour l'agriculture biologique en France ?
 [2] Il faut développer le bio progressivement, en aidant les agriculteurs à faire la transition
@@ -73,7 +73,7 @@ Climat, Énergie et Écologie:
 
 
 question-2027-climat-01: Comment vous positionnez-vous face au changement climatique ?
-[3] Il faut transformer sérieusement notre économie pour aller vers une croissance durable
+[3] Transformer sérieusement notre économie pour aller vers une croissance durable
 
 question-2027-climat-02: Que pensez-vous de l'énergie nucléaire ?
 [1] Maintenir et développer modérément le parc existant
@@ -82,7 +82,7 @@ question-2027-climat-03: Que pensez-vous des énergies renouvelables (éoliennes
 [2] C'est un bon complément au nucléaire, il faut continuer à les développer raisonnablement
 
 question-2027-climat-04: Que pensez-vous de la voiture individuelle ?
-[2] Maintenir la voiture là où elle est nécessaire (campagne), réduire en ville
+[2] Réduire la voiture en ville, la garder là où il n'y a pas d'alternative
 
 question-2027-climat-05: Qui devrait faire le plus d'efforts pour le climat ?
 [1] Tout le monde doit faire sa part, mais les plus gros pollueurs d'abord
@@ -110,7 +110,7 @@ question-2027-corr-03: Que pensez-vous des allers-retours entre la politique et 
 [1] Il faut un délai de carence sérieux (5 ans minimum) et des contrôles stricts
 
 question-2027-corr-04: Pensez-vous que le système politique français est globalement honnête ?
-[2] Il y a des brebis galeuses, mais le système fonctionne globalement
+[2] Il y a des cas isolés, mais le système fonctionne globalement
 
 question-2027-corr-05: Comment devrait-on financer les campagnes électorales ?
 [1] Principalement par de l'argent public, avec un plafond très bas pour les dons privés
@@ -150,11 +150,11 @@ question-2027-immi-01: De manière générale, que pensez-vous de l'immigration 
 question-2027-immi-02: Comment considérez-vous l'impact de l'immigration sur la société française ?
 [2] C'est un sujet complexe qui nécessite un équilibre entre accueil, intégration et fermeté
 
-question-2027-immi-03: Que pensez-vous de la politique migratoire européenne (Schengen) ?
-[3] Schengen est une réussite, mais il faut mieux répartir l'accueil des migrants entre pays européens
+question-2027-immi-03b: Que pensez-vous de la politique migratoire européenne (Schengen) ?
+[3] Assouplir : lever les contrôles aux frontières intérieures et ouvrir davantage de voies légales d'entrée
 
 question-2027-immi-04: Que pensez-vous du droit de vote des étrangers résidant en France ?
-[2] On pourrait leur accorder le droit de vote aux élections locales, après un certain temps de résidence
+[2] Ouvrir le vote aux municipales à tous les étrangers résidents, après un certain temps de résidence
 
 question-2027-immi-05: Faut-il régulariser les personnes étrangères en situation irrégulière ?
 [1] Oui, pour celles qui travaillent et sont installées depuis longtemps
@@ -185,7 +185,7 @@ question-2027-dep-02: Que penser des frais de fonctionnement de l'État (voiture
 [2] Le niveau actuel est acceptable, il faut juste de la transparence
 
 question-2027-dep-03: Quelle place l'État doit-il occuper dans l'économie ?
-[3] L'État doit reprendre la main sur l'économie, renationaliser des secteurs clés
+[3] L'État doit reprendre la main sur quelques secteurs stratégiques (énergie, autoroutes), quitte à renationaliser
 
 question-2027-dep-04: La dette publique française dépasse les 110% du PIB. Qu'en pensez-vous ?
 [2] La dette est un outil, tant qu'on peut payer les intérêts ça va
@@ -212,14 +212,14 @@ question-2027-eco-01: Que pensez-vous du libre-échange et de la mondialisation 
 question-2027-eco-02: La France devrait-elle réindustrialiser son territoire ?
 [1] Oui, il faut une vraie politique industrielle de l'État pour relocaliser les productions stratégiques
 
-question-2027-eco-03: Que pensez-vous de la privatisation des grandes entreprises publiques (EDF, SNCF...) ?
-[2] Ça dépend du secteur : l'énergie et les transports doivent rester publics, le reste on peut discuter
+question-2027-eco-03b: Que pensez-vous de la privatisation des grandes entreprises publiques (EDF, SNCF...) ?
+[2] Garder la situation actuelle : EDF et SNCF publiques, mais ouvertes à la concurrence
 
 question-2027-eco-04: Quel rôle l'État doit-il jouer dans la politique industrielle ?
 [2] L'État peut aider certaines industries en collaboration avec le privé, mais sans tout contrôler
 
 question-2027-eco-05: La France est-elle un pays économiquement attractif ?
-[2] Ça se compense : on perd des gens dans certains domaines, on en attire dans d'autres
+[2] Ni plus ni moins que ses voisins
 
 question-2027-eco-07: Que pensez-vous de la dépendance de la France aux chaînes d'approvisionnement mondiales ?
 [2] Il faut diversifier nos fournisseurs et relocaliser les productions les plus critiques
@@ -238,7 +238,7 @@ question-2027-fin-03: Les candidats devraient-ils rendre public leur patrimoine 
 [1] Il faut des déclarations régulières et vérifiables, c'est un minimum en démocratie
 
 question-2027-fin-04: Que pensez-vous des sommets type Davos et des grands rendez-vous financiers mondiaux ?
-[2] Ce sont des rendez-vous nécessaires pour la régulation économique mondiale, même s'ils sont imparfaits
+[2] Des rendez-vous utiles pour coordonner l'économie mondiale, même s'ils sont imparfaits
 
 question-2027-fin-05: Que pensez-vous des droits de succession (héritage) ?
 [2] Le système actuel est un bon compromis, il n'y a pas besoin de le changer
@@ -251,10 +251,10 @@ Gouvernance et République:
 
 
 question-2027-gouv-01: Que pensez-vous de la Vème République et de sa Constitution ?
-[1] Il faut modifier la Constitution pour donner plus de pouvoir au Parlement et aux citoyens
+[1] Garder la Ve République, mais rééquilibrer les pouvoirs au profit du Parlement
 
-question-2027-gouv-02: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
-[1] C'était une erreur politique, mais le droit de dissolution fait partie de nos institutions
+question-2027-gouv-02b: Que pensez-vous de la dissolution de l'Assemblée nationale par le Président en 2024 ?
+[1] Une erreur
 
 question-2027-gouv-03: Faudrait-il passer à la proportionnelle pour les élections législatives ?
 [1] Oui, au moins une dose de proportionnelle pour que les petits partis soient représentés
@@ -268,8 +268,8 @@ question-2027-gouv-05: Que pensez-vous de la bureaucratie et de l'administration
 question-2027-gouv-06: L'État est-il trop autoritaire ou pas assez ?
 [2] Il y a un équilibre correct entre autorité et liberté
 
-question-2027-gouv-07: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
-[3] Le nombre actuel se justifie pour représenter correctement tous les territoires, ruraux et ultramarins compris
+question-2027-gouv-07b: Faut-il réduire le nombre de parlementaires (députés et sénateurs) ?
+[3] Non : garder le nombre actuel, et plutôt mieux contrôler le travail des élus
 
 question-2027-gouv-08: La démocratie française respecte-t-elle la volonté des électeurs ?
 [2] Globalement oui, avec des entorses ponctuelles
@@ -305,7 +305,7 @@ question-2027-ia-07: Si l'IA supprime beaucoup d'emplois, quel revenu verser à 
 question-2027-ia-08: Quel sera l'effet de l'IA sur les inégalités ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
-question-2027-ia-09: Quel sera l'effet de l'IA sur la croissance française ?
+question-2027-ia-09b: Quel sera l'effet de l'IA sur la croissance française ?
 [5] Ça ne m'intéresse pas / Je n'ai pas d'avis
 
 question-2027-ia-10: Combien d'argent public faut-il mettre dans l'IA et la robotique françaises ?
@@ -352,7 +352,10 @@ question-2027-log-04: Équilibre territorial : que doit faire l'État pour les z
 [3] Mesures contraignantes (obligations d'implantation des entreprises et administrations)
 
 question-2027-log-05: Que faire face aux logements insalubres et aux passoires thermiques ?
-[2] Il faut interdire la location des passoires thermiques et aider financièrement les propriétaires à rénover
+[2] Des aides importantes, comme MaPrimeRénov' aujourd'hui
+
+question-2027-log-13: Que faire de l'interdiction de louer les passoires thermiques (G depuis 2025, F en 2028, E en 2034) ?
+[2] Garder le calendrier actuel
 
 question-2027-log-09: Quelle place pour le logement social (HLM) ?
 [3] Renforcée : il faut construire massivement des logements sociaux et relever les quotas SRU
@@ -366,8 +369,11 @@ question-2027-log-08: Que pensez-vous de la réquisition des logements vacants ?
 question-2027-log-10: Faut-il assouplir les règles pour construire plus de logements ?
 [2] Un peu : on peut accélérer les procédures, mais en gardant les normes et la protection des sols
 
-question-2027-log-11: Que faire des aides au logement pour les ménages (APL, prêt à taux zéro) ?
-[3] Les augmenter : revaloriser les APL et élargir le prêt à taux zéro
+question-2027-log-11: Que faire des aides personnelles au logement (APL) ?
+[3] Les revaloriser
+
+question-2027-log-12: Faut-il aider davantage l'achat d'un premier logement (prêt à taux zéro, frais de notaire) ?
+[2] Les garder telles quelles
 
 
 Numérique:
@@ -376,14 +382,14 @@ Numérique:
 question-2027-num-01: Comment voyez-vous l'impact de l'IA sur la société ?
 [1] Plus d'effets positifs que négatifs, à condition d'encadrer
 
-question-2027-num-02: Les réseaux sociaux et les écrans chez les jeunes, ça vous inquiète ?
-[1] C'est préoccupant, il faut réguler fortement les plateformes et protéger les mineurs
+question-2027-num-02: Que faire face aux réseaux sociaux et aux écrans chez les jeunes ?
+[1] Imposer des règles fortes aux plateformes pour protéger les mineurs, sans interdiction générale
 
 question-2027-num-03: Que pensez-vous de la surveillance numérique (caméras, reconnaissance faciale, fichage) ?
-[1] La vidéosurveillance et le fichage sont des outils nécessaires pour la sécurité, à condition de les encadrer
+[1] Des outils nécessaires pour la sécurité, à condition de les encadrer
 
 question-2027-num-04: La France et l'Europe devraient-elles avoir leur propre souveraineté numérique ?
-[2] Il faut des alternatives européennes aux GAFAM et protéger nos données des géants américains et chinois
+[2] Développer des alternatives européennes aux géants américains et chinois, et protéger nos données
 
 question-2027-num-05: Que pensez-vous de la dématérialisation des services publics (tout faire en ligne) ?
 [3] Il faut remettre des humains partout : la dématérialisation exclut trop de gens, les personnes âgées, les ruraux, les précaires
@@ -393,7 +399,7 @@ Police, Justice et Sécurité:
 
 
 question-2027-pol-01: Que pensez-vous des violences policières ?
-[2] Des cas isolés à sanctionner, pas de problème systémique
+[2] Des cas isolés, mais trop peu sanctionnés
 
 question-2027-pol-02: La France est-elle un pays sûr ?
 [1] Il y a de vrais problèmes d'insécurité dans certains territoires, l'État doit agir plus fermement
@@ -432,7 +438,7 @@ question-2027-pol-13: Une fois des violences ou des dégradations commises en ma
 [1] Poursuivre les auteurs au cas par cas, avec les lois actuelles
 
 question-2027-pol-14: Quelles armes la police doit-elle pouvoir utiliser en manifestation ?
-[2] Garder l'arsenal et les règles d'usage actuels
+[2] Garder l'arsenal actuel
 
 question-2027-pol-19: En manifestation, à partir de quand la police peut-elle faire usage de la force ?
 [2] Dès qu'un attroupement refuse de se disperser après les sommations, comme aujourd'hui
@@ -450,8 +456,8 @@ question-2027-pol-16: À partir de quel niveau de risque l'État peut-il interdi
 Politique fiscale:
 
 
-question-2027-fisc-01: Que pensez-vous des impôts sur les plus riches ?
-[3] Il faut les augmenter, les plus riches ne paient pas leur juste part
+question-2027-fisc-01: Que pensez-vous des impôts payés par les 1 % les plus aisés ?
+[3] Il faut les augmenter un peu
 
 question-2027-fisc-02: Que pensez-vous des impôts sur la classe moyenne ?
 [1] Il faut les diminuer un peu pour redonner du pouvoir d'achat
@@ -466,7 +472,7 @@ question-2027-fisc-05: Faut-il rétablir l'ISF (Impôt de Solidarité sur la For
 [2] Le système actuel (IFI sur l'immobilier) est un bon compromis
 
 question-2027-fisc-06: Que pensez-vous d'une taxe sur les transactions financières ?
-[1] Une petite taxe pourrait rapporter gros sans gêner les marchés, pourquoi s'en priver ?
+[1] Élargir un peu la taxe actuelle, limitée aux achats d'actions des grandes entreprises françaises
 
 question-2027-fisc-10: Que faire des taxes sur ce qui pollue (carburants, plastique, pesticides, billets d'avion...) ?
 [2] Leur niveau actuel est correct
@@ -497,7 +503,7 @@ question-2027-pa-03: Que pensez-vous du coût des transports au quotidien ?
 [1] Il faut baisser le prix des transports en commun
 
 question-2027-pa-04: Que pensez-vous des prix dans les supermarchés ?
-[2] Les prix augmentent trop et les marges des grands groupes (industriels et/ou distributeurs) sont scandaleuses, il faut les encadrer
+[2] Les marges des grands groupes (industriels et distributeurs) sont trop élevées : il faut les encadrer
 
 question-2027-pa-05: Quel levier prioritaire pour améliorer le pouvoir d'achat ?
 [2] Encadrer les prix de l'essentiel (énergie, alimentation, logement)
@@ -509,8 +515,8 @@ question-2027-pa-06: Les prix de l'essence et du diesel s'envolent : que doit fa
 Recherche et éducation:
 
 
-question-2027-edu-01: Que pensez-vous du budget de l'Éducation nationale ?
-[1] Il faut investir davantage dans l'éducation, c'est l'investissement le plus rentable pour une société
+question-2027-edu-01b: Que pensez-vous du budget de l'Éducation nationale ?
+[1] Il faut investir davantage dans l'éducation
 
 question-2027-edu-02: L'école permet-elle vraiment de s'élever socialement ?
 [0] L'école reproduit les inégalités : il faut la réformer en profondeur pour la rendre vraiment égalitaire
@@ -538,13 +544,13 @@ Santé:
 
 
 question-2027-san-01: Que pensez-vous du budget alloué à la santé publique ?
-[3] Il faut l'augmenter beaucoup, les hôpitaux et les soignants sont au bord de la rupture
+[3] Il faut l'augmenter beaucoup
 
 question-2027-san-02: Que pensez-vous de la rémunération du personnel soignant ?
-[0] Les soignants sont très mal payés pour ce qu'ils font, il faut une revalorisation massive
+[0] Les revaloriser massivement
 
-question-2027-san-03: Que pensez-vous des déserts médicaux ?
-[4] Revitaliser les territoires ruraux dans leur ensemble (la solution est plus large que la santé)
+question-2027-san-03b: Que pensez-vous des déserts médicaux ?
+[2] Des aides financières pour s'installer en zone sous-dotée
 
 question-2027-san-04: Que pensez-vous de la vaccination obligatoire ?
 [2] Certains vaccins essentiels doivent rester obligatoires, c'est une question de santé publique
@@ -556,7 +562,7 @@ question-2027-san-09: Lunettes, soins dentaires, appareils auditifs, psychologue
 [2] Il faut les rembourser nettement mieux qu'aujourd'hui
 
 question-2027-san-06: La santé mentale des jeunes est-elle un sujet prioritaire ?
-[0] C'est une urgence nationale : il faut des psychologues gratuits et accessibles partout
+[0] C'est une urgence nationale, l'une des toutes premières priorités du pays
 
 question-2027-san-07b: Jusqu'où l'État doit-il aller pour éviter qu'on tombe malade ?
 [2] En plus, les promouvoir activement : campagnes de vaccination et de dépistage, bilans de santé, médecine scolaire et médecine du travail
@@ -580,8 +586,8 @@ question-2027-soc-03: Quelle place pour la religion dans notre société ?
 question-2027-soc-04: Que pensez-vous de la PMA (procréation médicalement assistée) ?
 [2] La loi actuelle me convient : PMA ouverte à toutes les femmes, en couple ou seules, et remboursée
 
-question-2027-soc-05: Que pensez-vous de la GPA (gestation pour autrui) ?
-[2] C'est une exploitation du corps des femmes, il faut que ça reste interdit
+question-2027-soc-05b: Que pensez-vous de la GPA (gestation pour autrui) ?
+[2] La garder interdite en France
 
 question-2027-soc-06: L'IVG est désormais inscrite dans la Constitution. Qu'en pensez-vous ?
 [1] C'est une excellente chose, il fallait protéger ce droit fondamental dans la Constitution
@@ -595,8 +601,8 @@ question-2027-soc-08: Que pensez-vous de ce que fait l'État pour les personnes 
 question-2027-soc-09: Que pensez-vous de la prise en charge du grand âge (EHPAD, maintien à domicile, dépendance) ?
 [2] Il faut beaucoup plus de moyens : personnel en EHPAD, aide à domicile, soutien aux aidants
 
-question-2027-soc-10: Que pensez-vous de la loi « intégrale » contre les violences sexistes et sexuelles, examinée à l'Assemblée depuis octobre 2026 ?
-[2] Il faut voter le texte et dégager des moyens renforcés, au moins pour les dispositifs les plus urgents (unités spécialisées, juges dédiés)
+question-2027-soc-10c: Que pensez-vous de la loi « intégrale » contre les violences sexistes et sexuelles, examinée à l'Assemblée depuis octobre 2026 ?
+[2] Voter le texte, avec des moyens renforcés pour les dispositifs les plus urgents (unités spécialisées, juges dédiés)
 
 question-2027-soc-10b: Jusqu'où l'État doit-il aller pour prévenir les violences sexistes et sexuelles, avant qu'elles arrivent ?
 [2] En plus, éduquer les jeunes : parler régulièrement de respect et de consentement à l'école
@@ -605,8 +611,14 @@ question-2027-soc-10b: Jusqu'où l'État doit-il aller pour prévenir les violen
 Travail, Chômage, Retraite:
 
 
-question-2027-trav-01: Que pensez-vous de la retraite à 64 ans votée en 2023 ?
-[1] Revenir à 62 ans
+question-2027-trav-01: Quel doit être l'âge légal de départ à la retraite ?
+[1] 62 ans
+
+question-2027-trav-15: Faut-il permettre de partir plus tôt à la retraite selon le métier ou la carrière ?
+[2] Les élargir : plus de métiers reconnus pénibles, des critères plus simples
+
+question-2027-trav-16: Faut-il laisser chacun choisir son âge de départ à la retraite, avec une pension calculée selon ses cotisations ?
+[1] Garder un âge légal, avec plus de souplesse (surcote, décote, cumul emploi-retraite)
 
 question-2027-trav-12: Comment financer les retraites ?
 [0] Tout par répartition, comme aujourd'hui, et renforcer le système
@@ -627,13 +639,13 @@ question-2027-trav-13: Faut-il baisser les cotisations payées par les petites e
 [3] Oui, il faut les baisser un peu : c'est le coût du travail qui freine l'embauche
 
 question-2027-trav-04: Que pensez-vous du RSA conditionné à des heures d'activité ?
-[2] Demander quelques heures d'activité en échange, c'est normal, ça aide les gens à se réinsérer
+[2] Demander 15 heures d'activité par semaine, comme aujourd'hui
 
 question-2027-trav-05: Que pensez-vous du SMIC et des bas salaires ?
 [1] Augmentation régulière, indexée sur l'inflation
 
-question-2027-trav-06: Quel est votre avis sur le télétravail et les nouvelles formes de travail ?
-[1] C'est un bon outil mais ça doit rester à la négociation entre employeur et salarié
+question-2027-trav-06b: Quel est votre avis sur le télétravail ?
+[1] Le laisser à la négociation entre employeur et salarié, comme aujourd'hui
 
 question-2027-trav-07: Le budget 2027 envisage de ne plus revaloriser certaines pensions de retraite au même rythme que l'inflation. Qu'en pensez-vous ?
 [0] Indexer toutes les pensions sur l'inflation, sans aucune exception, même les plus élevées

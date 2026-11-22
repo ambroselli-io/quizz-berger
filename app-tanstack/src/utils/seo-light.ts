@@ -94,7 +94,7 @@ export interface QuestionSlugEntry {
 
 // Manually curated hot-topic question slugs with SEO-optimized titles
 const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescription: string }> = {
-  'question-2027-soc-10': {
+  'question-2027-soc-10c': {
     slug: 'loi-integrale-violences-sexistes-sexuelles-france',
     seoTitle: 'Loi intégrale contre les VSS : les candidats 2027',
     seoDescription: `Loi « intégrale » contre les violences sexistes et sexuelles : contenu, moyens budgétaires, et les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
@@ -139,7 +139,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Agriculture biologique : les positions des candidats 2027',
     seoDescription: `Quelle place pour le bio en France ? Découvrez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
-  'question-2027-agri-02': {
+  'question-2027-agri-02b': {
     slug: 'crise-eau-secheresse-france',
     seoTitle: 'Crise de l\'eau et sécheresse : les candidats 2027',
     seoDescription: `Bassines, restrictions, sobriété : comment gérer la sécheresse ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
@@ -184,7 +184,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Aide à mourir : les positions des candidats 2027',
     seoDescription: 'Fin de vie, euthanasie, suicide assisté : que proposent les candidats à la présidentielle 2027 sur la loi sur l\'aide à mourir ?',
   },
-  'question-2027-san-03': {
+  'question-2027-san-03b': {
     slug: 'deserts-medicaux-france',
     seoTitle: 'Déserts médicaux : les propositions des candidats 2027',
     seoDescription: 'Déserts médicaux en France : contraindre les médecins, inciter, télémédecine ? Les candidats répondent.',
@@ -199,7 +199,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Laïcité : les positions des candidats 2027',
     seoDescription: 'Laïcité, port du voile, signes religieux : que proposent les candidats à la présidentielle 2027 ?',
   },
-  'question-2027-soc-05': {
+  'question-2027-soc-05b': {
     slug: 'gpa-pma-france',
     seoTitle: 'GPA : les positions des candidats 2027',
     seoDescription: 'GPA, PMA pour toutes : les candidats à la présidentielle 2027 sont-ils pour ou contre ?',
@@ -229,7 +229,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Logement social et loi SRU : les candidats 2027',
     seoDescription: `HLM, quotas de la loi SRU : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027 sur le logement social.`,
   },
-  'question-2027-edu-01': {
+  'question-2027-edu-01b': {
     slug: 'ecole-education-reforme',
     seoTitle: 'Budget de l\'Éducation nationale : les candidats 2027',
     seoDescription: 'Budget de l\'Éducation nationale, moyens pour l\'école : comparez les positions des candidats 2027.',
@@ -274,7 +274,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Légitime défense des policiers : les candidats 2027',
     seoDescription: `Loi sur la présomption de légitime défense pour les forces de l'ordre : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
-  'question-2027-gouv-07': {
+  'question-2027-gouv-07b': {
     slug: 'reduction-nombre-parlementaires',
     seoTitle: 'Réduire le nombre de parlementaires : les candidats 2027',
     seoDescription: `Réduire le nombre de députés et de sénateurs : comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
@@ -332,7 +332,7 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
   'question-2027-gouv-08': {
     slug: 'respect-volonte-electeurs-democratie-france',
     seoTitle: 'Démocratie et volonté des électeurs : candidats 2027',
-    seoDescription: `Référendum de 2005, 49.3, promesses enterrées : la démocratie française respecte-t-elle les électeurs ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
+    seoDescription: `Abstention, référendums, décisions impopulaires : la démocratie française respecte-t-elle les électeurs ? Comparez les positions des ${candidatesCount} candidats à la présidentielle 2027.`,
   },
   'question-2027-pol-12': {
     slug: 'violences-en-manifestation-france',
@@ -438,7 +438,7 @@ const searchedQuestionTitles: Record<string, string> = {
   'question-2027-edu-03': 'Écrans et IA à l\'école : les positions des candidats 2027',
   'question-2027-log-04': 'Zones rurales : les propositions des candidats 2027',
   'question-2027-ae-08': 'Conflit Israël-Palestine : où sont les candidats 2027 ?',
-  'question-2027-ae-10': 'Reconnaissance de la Palestine : les candidats 2027',
+  'question-2027-ae-10b': 'Reconnaissance de la Palestine : les candidats 2027',
   'question-2027-san-07': 'Prévention ou soins : les positions des candidats 2027',
   'question-2027-soc-04': 'PMA : les positions des candidats 2027',
   'question-2027-pol-04': 'Doctrine pénale : fermeté ou réinsertion ? Candidats 2027',

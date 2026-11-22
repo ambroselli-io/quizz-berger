@@ -90,9 +90,9 @@ export default function ThemePage() {
                         Voir les positions des candidats →
                       </Link>
                     )}
-                    {question.help && (
+                    {question.help?.startsWith('http') && (
                       <a href={question.help} target="_blank" rel="noreferrer" className="text-sm text-blue-600 hover:underline">
-                        En savoir plus (Wikipedia)
+                        {question.help.includes('wikipedia.org') ? 'En savoir plus (Wikipedia)' : 'En savoir plus'}
                       </a>
                     )}
                   </div>

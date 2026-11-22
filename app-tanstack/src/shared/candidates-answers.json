@@ -47,7 +47,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-04",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -66,7 +66,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -196,7 +196,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -251,7 +251,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -262,7 +262,7 @@
       {
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-economie",
@@ -306,7 +306,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -541,7 +541,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -591,8 +591,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 3
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-sante",
@@ -646,7 +646,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -671,8 +671,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
-        "answerIndex": 3
+        "questionId": "question-2027-soc-10c",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-societe",
@@ -726,7 +726,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -796,7 +796,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -831,8 +831,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -886,7 +886,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -993,6 +993,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -1063,8 +1083,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -1193,7 +1213,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 0
       },
       {
@@ -1248,7 +1268,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -1303,8 +1323,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
-        "answerIndex": 3
+        "questionId": "question-2027-gouv-02b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -1538,7 +1558,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -1588,7 +1608,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -1643,7 +1663,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -1668,7 +1688,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -1723,7 +1743,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -1793,7 +1813,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -1828,7 +1848,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -1883,7 +1903,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -1990,6 +2010,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -2060,7 +2100,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -2190,7 +2230,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -2245,7 +2285,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -2300,7 +2340,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -2535,7 +2575,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -2585,7 +2625,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -2640,7 +2680,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -2665,7 +2705,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 3
       },
       {
@@ -2720,7 +2760,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -2790,7 +2830,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -2825,7 +2865,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -2880,7 +2920,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -2987,6 +3027,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -3057,8 +3117,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -3187,7 +3247,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -3242,7 +3302,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 1
       },
       {
@@ -3297,7 +3357,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -3532,7 +3592,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -3582,7 +3642,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -3637,7 +3697,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -3662,7 +3722,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -3717,7 +3777,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -3787,7 +3847,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -3822,7 +3882,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -3877,7 +3937,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -3984,6 +4044,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -4054,8 +4134,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -4090,7 +4170,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-climat",
@@ -4184,7 +4264,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 0
       },
       {
@@ -4239,7 +4319,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -4294,7 +4374,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -4529,7 +4609,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -4579,7 +4659,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 4
       },
       {
@@ -4634,7 +4714,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -4659,7 +4739,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 1
       },
       {
@@ -4714,7 +4794,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -4784,7 +4864,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 2
       },
       {
@@ -4819,7 +4899,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -4874,7 +4954,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -4981,6 +5061,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -5053,7 +5153,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -5183,8 +5283,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 3
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -5238,7 +5338,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -5293,7 +5393,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -5528,7 +5628,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -5549,7 +5649,7 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-05",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-education",
@@ -5578,7 +5678,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 3
       },
       {
@@ -5633,7 +5733,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -5658,7 +5758,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -5713,7 +5813,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -5783,7 +5883,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -5818,7 +5918,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -5873,7 +5973,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -5980,6 +6080,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -6050,8 +6170,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -6086,7 +6206,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-climat",
@@ -6180,7 +6300,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -6235,7 +6355,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -6290,8 +6410,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
-        "answerIndex": 0
+        "questionId": "question-2027-gouv-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -6525,7 +6645,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -6575,7 +6695,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -6630,7 +6750,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -6655,7 +6775,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 1
       },
       {
@@ -6710,7 +6830,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -6780,7 +6900,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 2
       },
       {
@@ -6815,7 +6935,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -6870,7 +6990,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -6977,6 +7097,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -7049,8 +7189,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -7085,7 +7225,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-climat",
@@ -7179,7 +7319,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 0
       },
       {
@@ -7234,8 +7374,8 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
-        "answerIndex": 2
+        "questionId": "question-2027-eco-03b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-economie",
@@ -7289,8 +7429,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
-        "answerIndex": 0
+        "questionId": "question-2027-gouv-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -7524,7 +7664,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -7574,7 +7714,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -7629,7 +7769,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -7654,7 +7794,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 1
       },
       {
@@ -7709,7 +7849,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -7779,7 +7919,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 3
       },
       {
@@ -7814,7 +7954,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -7869,7 +8009,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -7976,6 +8116,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -8046,8 +8206,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -8176,7 +8336,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -8217,7 +8377,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-05",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-economie",
@@ -8231,7 +8391,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -8286,7 +8446,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -8521,7 +8681,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -8542,7 +8702,7 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-05",
-        "answerIndex": 1
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-education",
@@ -8571,7 +8731,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -8626,7 +8786,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -8651,7 +8811,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -8697,7 +8857,7 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -8706,7 +8866,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -8752,7 +8912,7 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-10",
-        "answerIndex": 1
+        "answerIndex": 0
       },
       {
         "themeId": "theme-2027-logement",
@@ -8776,7 +8936,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -8811,7 +8971,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -8866,7 +9026,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -8973,6 +9133,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -9045,8 +9225,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -9081,7 +9261,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-climat",
@@ -9175,7 +9355,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -9230,7 +9410,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 1
       },
       {
@@ -9285,7 +9465,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -9520,7 +9700,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -9570,7 +9750,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -9625,7 +9805,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -9650,7 +9830,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 1
       },
       {
@@ -9705,7 +9885,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -9775,7 +9955,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 2
       },
       {
@@ -9810,7 +9990,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -9865,7 +10045,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -9972,6 +10152,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -10044,7 +10244,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -10174,7 +10374,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -10229,7 +10429,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -10284,7 +10484,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -10519,7 +10719,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -10569,7 +10769,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 3
       },
       {
@@ -10624,7 +10824,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -10649,8 +10849,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
-        "answerIndex": 3
+        "questionId": "question-2027-soc-10c",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-societe",
@@ -10704,7 +10904,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -10774,7 +10974,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -10809,8 +11009,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -10864,7 +11064,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -10971,6 +11171,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -11043,7 +11263,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -11173,7 +11393,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -11228,7 +11448,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -11283,7 +11503,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -11518,7 +11738,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -11568,8 +11788,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-sante",
@@ -11623,7 +11843,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -11648,7 +11868,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -11703,7 +11923,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -11773,7 +11993,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -11808,8 +12028,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -11863,7 +12083,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -11969,6 +12189,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 2
       }
     ]
@@ -12040,7 +12280,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -12170,7 +12410,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -12225,7 +12465,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -12280,7 +12520,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -12515,7 +12755,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -12565,7 +12805,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -12620,7 +12860,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -12645,7 +12885,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 3
       },
       {
@@ -12700,7 +12940,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -12770,7 +13010,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -12805,7 +13045,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -12860,7 +13100,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -12967,6 +13207,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -13037,8 +13297,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -13073,7 +13333,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-climat",
@@ -13167,7 +13427,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -13222,7 +13482,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 1
       },
       {
@@ -13277,7 +13537,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -13512,7 +13772,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -13562,7 +13822,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -13617,7 +13877,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -13642,7 +13902,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -13697,8 +13957,8 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
-        "answerIndex": 3
+        "questionId": "question-2027-trav-06b",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-union-europeenne-2027",
@@ -13767,7 +14027,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -13802,7 +14062,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -13857,7 +14117,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -13964,6 +14224,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -14034,8 +14314,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 1
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -14164,7 +14444,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -14219,8 +14499,8 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
-        "answerIndex": 1
+        "questionId": "question-2027-eco-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-economie",
@@ -14274,7 +14554,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -14509,7 +14789,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -14559,7 +14839,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -14614,7 +14894,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -14639,7 +14919,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -14650,7 +14930,7 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-01",
-        "answerIndex": 4
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -14694,7 +14974,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -14764,7 +15044,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -14799,7 +15079,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -14854,7 +15134,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -14961,6 +15241,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -15033,7 +15333,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -15163,7 +15463,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 2
       },
       {
@@ -15218,7 +15518,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -15273,7 +15573,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -15508,7 +15808,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -15558,7 +15858,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -15613,7 +15913,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -15638,7 +15938,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -15693,7 +15993,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -15763,7 +16063,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -15798,7 +16098,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -15853,7 +16153,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -15960,6 +16260,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -16032,7 +16352,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -16162,7 +16482,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 2
       },
       {
@@ -16217,7 +16537,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -16272,7 +16592,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -16408,7 +16728,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-14",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-police",
@@ -16507,7 +16827,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -16557,7 +16877,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -16612,7 +16932,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -16637,7 +16957,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -16692,7 +17012,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -16762,7 +17082,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -16797,7 +17117,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -16852,7 +17172,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -16959,6 +17279,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -17031,8 +17371,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -17161,7 +17501,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -17216,7 +17556,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 1
       },
       {
@@ -17271,7 +17611,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -17506,7 +17846,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -17556,7 +17896,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -17611,7 +17951,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -17636,7 +17976,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -17691,7 +18031,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 2
       },
       {
@@ -17761,7 +18101,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -17796,7 +18136,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -17851,7 +18191,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -17958,6 +18298,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -18028,7 +18388,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -18054,7 +18414,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-02",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-climat",
@@ -18158,8 +18518,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 3
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -18213,7 +18573,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -18268,7 +18628,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -18424,7 +18784,7 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-02",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -18479,7 +18839,7 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-02b",
-        "answerIndex": 3
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-pouvoir-achat",
@@ -18503,7 +18863,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -18524,7 +18884,7 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-05",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-education",
@@ -18553,7 +18913,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -18608,7 +18968,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -18633,7 +18993,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 3
       },
       {
@@ -18688,7 +19048,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -18758,7 +19118,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -18793,7 +19153,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -18848,7 +19208,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -18955,6 +19315,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -19025,7 +19405,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -19155,8 +19535,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 3
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -19210,7 +19590,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -19265,7 +19645,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -19500,7 +19880,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -19550,7 +19930,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -19605,7 +19985,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -19630,7 +20010,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -19685,7 +20065,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -19755,7 +20135,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -19790,7 +20170,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -19845,7 +20225,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -19952,6 +20332,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -20022,7 +20422,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -20152,7 +20552,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -20207,7 +20607,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -20262,7 +20662,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -20497,7 +20897,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -20547,7 +20947,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 3
       },
       {
@@ -20602,7 +21002,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -20627,8 +21027,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
-        "answerIndex": 3
+        "questionId": "question-2027-soc-10c",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-societe",
@@ -20682,7 +21082,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -20752,7 +21152,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -20787,8 +21187,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -20842,7 +21242,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -20853,17 +21253,17 @@
       {
         "themeId": "theme-2027-ia",
         "questionId": "question-2027-ia-11",
-        "answerIndex": 4
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-ia",
         "questionId": "question-2027-ia-12",
-        "answerIndex": 5
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-ia",
         "questionId": "question-2027-ia-13",
-        "answerIndex": 4
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-ia",
@@ -20949,6 +21349,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -21019,8 +21439,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -21055,7 +21475,7 @@
       {
         "themeId": "theme-2027-climat",
         "questionId": "question-2027-climat-04",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-climat",
@@ -21149,8 +21569,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 0
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-immigration",
@@ -21204,7 +21624,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 1
       },
       {
@@ -21259,7 +21679,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -21494,7 +21914,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -21544,7 +21964,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -21599,8 +22019,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
-        "answerIndex": 2
+        "questionId": "question-2027-soc-05b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-societe",
@@ -21624,7 +22044,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 1
       },
       {
@@ -21679,7 +22099,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 2
       },
       {
@@ -21749,7 +22169,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 3
       },
       {
@@ -21784,7 +22204,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -21839,7 +22259,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -21946,6 +22366,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -22016,7 +22456,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -22146,7 +22586,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -22201,7 +22641,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -22256,7 +22696,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -22491,7 +22931,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -22541,7 +22981,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -22596,7 +23036,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -22621,7 +23061,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -22676,7 +23116,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -22746,7 +23186,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -22781,8 +23221,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -22836,7 +23276,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -22942,6 +23382,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 2
       }
     ]
@@ -23013,8 +23473,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -23143,7 +23603,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 0
       },
       {
@@ -23198,7 +23658,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -23253,7 +23713,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -23488,7 +23948,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -23538,7 +23998,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -23593,8 +24053,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
-        "answerIndex": 2
+        "questionId": "question-2027-soc-05b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-societe",
@@ -23618,7 +24078,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 0
       },
       {
@@ -23673,7 +24133,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 2
       },
       {
@@ -23743,7 +24203,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 3
       },
       {
@@ -23778,7 +24238,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -23833,7 +24293,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -23940,6 +24400,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -23981,7 +24461,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-02",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -23996,7 +24476,7 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-05",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -24010,7 +24490,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -24140,7 +24620,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 2
       },
       {
@@ -24176,7 +24656,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-04",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-depenses",
@@ -24195,7 +24675,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -24236,7 +24716,7 @@
       {
         "themeId": "theme-2027-finance",
         "questionId": "question-2027-fin-05",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-finance",
@@ -24250,7 +24730,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -24336,7 +24816,7 @@
       {
         "themeId": "theme-2027-police",
         "questionId": "question-2027-pol-04",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-police",
@@ -24401,7 +24881,7 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-01",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -24421,7 +24901,7 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-05",
-        "answerIndex": 2
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -24431,7 +24911,7 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-10",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -24446,7 +24926,7 @@
       {
         "themeId": "theme-2027-fiscal",
         "questionId": "question-2027-fisc-08",
-        "answerIndex": 1
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-fiscal",
@@ -24481,11 +24961,11 @@
       {
         "themeId": "theme-2027-pouvoir-achat",
         "questionId": "question-2027-pa-06",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -24535,7 +25015,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -24590,7 +25070,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -24615,7 +25095,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -24631,7 +25111,7 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-12",
-        "answerIndex": 1
+        "answerIndex": 2
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -24651,7 +25131,7 @@
       {
         "themeId": "theme-travail-chomage-retraite-2027",
         "questionId": "question-2027-trav-11",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
@@ -24670,7 +25150,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -24701,7 +25181,7 @@
       {
         "themeId": "theme-2027-logement",
         "questionId": "question-2027-log-09",
-        "answerIndex": 2
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-logement",
@@ -24740,7 +25220,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -24761,7 +25241,7 @@
       {
         "themeId": "theme-2027-immigration",
         "questionId": "question-2027-immi-09",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -24775,7 +25255,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -24830,7 +25310,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -24841,7 +25321,7 @@
       {
         "themeId": "theme-2027-ia",
         "questionId": "question-2027-ia-11",
-        "answerIndex": 4
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-ia",
@@ -24936,6 +25416,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 2
       }
     ]
@@ -25007,7 +25507,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -25137,7 +25637,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -25192,7 +25692,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -25327,7 +25827,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -25377,8 +25877,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -25432,7 +25932,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -25457,8 +25957,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
-        "answerIndex": 3
+        "questionId": "question-2027-soc-10c",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-societe",
@@ -25512,7 +26012,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -25522,7 +26022,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -25737,7 +26237,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -25772,8 +26272,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -25827,7 +26327,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -25934,6 +26434,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -26004,8 +26524,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -26134,7 +26654,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -26189,7 +26709,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -26324,7 +26844,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -26374,8 +26894,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -26429,7 +26949,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -26454,7 +26974,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -26549,7 +27069,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -26664,7 +27184,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -26734,7 +27254,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -26769,7 +27289,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -26824,7 +27344,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -26931,6 +27451,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -27011,7 +27551,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -27031,7 +27571,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -27161,7 +27701,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 0
       },
       {
@@ -27236,7 +27776,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -27291,7 +27831,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -27316,7 +27856,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -27371,7 +27911,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -27661,7 +28201,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -27711,8 +28251,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -27766,7 +28306,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -27791,7 +28331,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -27846,7 +28386,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -27927,6 +28467,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 2
       }
     ]
@@ -28008,7 +28568,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -28028,8 +28588,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 2
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -28158,7 +28718,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 0
       },
       {
@@ -28209,7 +28769,7 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-03",
-        "answerIndex": 4
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-depenses",
@@ -28233,7 +28793,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -28288,8 +28848,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
-        "answerIndex": 1
+        "questionId": "question-2027-gouv-02b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -28313,7 +28873,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -28368,7 +28928,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -28658,7 +29218,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -28708,7 +29268,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -28763,7 +29323,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -28788,7 +29348,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -28843,7 +29403,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -28925,6 +29485,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 0
       }
     ]
   },
@@ -29005,7 +29585,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -29025,7 +29605,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -29155,7 +29735,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -29230,7 +29810,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -29285,7 +29865,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -29310,7 +29890,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -29365,7 +29945,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -29655,7 +30235,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -29705,7 +30285,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -29760,7 +30340,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -29785,7 +30365,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -29840,7 +30420,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -29922,6 +30502,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -30004,7 +30604,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -30024,7 +30624,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -30154,8 +30754,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 3
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -30229,7 +30829,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -30284,7 +30884,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -30309,7 +30909,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -30364,7 +30964,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -30654,7 +31254,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -30704,7 +31304,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 3
       },
       {
@@ -30759,7 +31359,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -30784,7 +31384,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 3
       },
       {
@@ -30839,7 +31439,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -30920,6 +31520,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 2
       }
     ]
@@ -31003,7 +31623,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -31023,7 +31643,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -31153,8 +31773,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 3
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -31228,7 +31848,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -31283,7 +31903,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -31308,7 +31928,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -31363,7 +31983,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -31653,7 +32273,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -31703,7 +32323,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 3
       },
       {
@@ -31758,7 +32378,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -31783,7 +32403,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -31838,7 +32458,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -31920,6 +32540,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -32000,7 +32640,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -32020,7 +32660,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -32150,7 +32790,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -32225,7 +32865,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -32236,7 +32876,7 @@
       {
         "themeId": "theme-2027-economie",
         "questionId": "question-2027-eco-05",
-        "answerIndex": 3
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-economie",
@@ -32280,7 +32920,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -32305,7 +32945,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -32360,7 +33000,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -32650,7 +33290,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -32700,8 +33340,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 3
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-sante",
@@ -32755,7 +33395,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -32780,8 +33420,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
-        "answerIndex": 3
+        "questionId": "question-2027-soc-10c",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-societe",
@@ -32835,7 +33475,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -32917,6 +33557,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -32997,7 +33657,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -33017,7 +33677,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -33147,7 +33807,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -33222,7 +33882,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -33277,7 +33937,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -33302,8 +33962,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -33357,7 +34017,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -33647,7 +34307,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -33697,8 +34357,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 3
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-sante",
@@ -33752,7 +34412,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -33777,8 +34437,8 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
-        "answerIndex": 3
+        "questionId": "question-2027-soc-10c",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-societe",
@@ -33832,7 +34492,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -33914,6 +34574,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 0
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -33994,7 +34674,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -34014,7 +34694,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -34144,7 +34824,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 2
       },
       {
@@ -34219,7 +34899,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -34270,11 +34950,11 @@
       {
         "themeId": "theme-2027-gouvernance",
         "questionId": "question-2027-gouv-01",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -34299,7 +34979,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -34354,7 +35034,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -34644,7 +35324,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -34694,7 +35374,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -34749,7 +35429,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -34774,7 +35454,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -34829,7 +35509,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -34911,6 +35591,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -34991,7 +35691,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -35011,7 +35711,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -35141,7 +35841,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -35216,7 +35916,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -35271,7 +35971,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -35296,7 +35996,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -35351,7 +36051,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -35641,7 +36341,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -35691,7 +36391,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -35746,7 +36446,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -35771,7 +36471,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -35826,7 +36526,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -35908,6 +36608,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -35990,7 +36710,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -36010,7 +36730,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -36140,7 +36860,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -36215,7 +36935,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -36270,7 +36990,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -36295,7 +37015,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -36350,7 +37070,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -36640,7 +37360,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -36690,7 +37410,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -36745,7 +37465,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -36770,7 +37490,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 3
       },
       {
@@ -36825,7 +37545,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -36907,6 +37627,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -36989,7 +37729,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -37009,7 +37749,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -37139,8 +37879,8 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
-        "answerIndex": 3
+        "questionId": "question-2027-immi-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-immigration",
@@ -37214,7 +37954,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -37269,7 +38009,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -37294,8 +38034,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -37349,7 +38089,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -37639,7 +38379,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -37660,7 +38400,7 @@
       {
         "themeId": "theme-2027-education",
         "questionId": "question-2027-edu-05",
-        "answerIndex": 0
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-education",
@@ -37689,7 +38429,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -37744,7 +38484,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -37769,7 +38509,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 3
       },
       {
@@ -37824,7 +38564,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -37906,6 +38646,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -37988,7 +38748,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -38008,7 +38768,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -38138,7 +38898,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -38213,7 +38973,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -38268,7 +39028,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -38293,8 +39053,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -38348,7 +39108,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -38638,7 +39398,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -38688,7 +39448,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -38743,7 +39503,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -38768,7 +39528,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -38823,7 +39583,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -38904,6 +39664,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 2
       }
     ]
@@ -38987,7 +39767,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -39007,7 +39787,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -39137,7 +39917,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -39212,7 +39992,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -39267,7 +40047,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -39292,7 +40072,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -39347,7 +40127,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -39637,7 +40417,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -39687,8 +40467,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -39742,7 +40522,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -39767,7 +40547,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -39822,7 +40602,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -39904,6 +40684,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -39984,7 +40784,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -40004,7 +40804,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -40134,7 +40934,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -40214,7 +41014,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -40269,7 +41069,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -40294,7 +41094,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -40349,7 +41149,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -40639,7 +41439,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -40689,7 +41489,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -40744,7 +41544,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -40769,7 +41569,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -40824,7 +41624,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -40900,6 +41700,26 @@
       {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
         "answerIndex": 3
       }
     ]
@@ -40981,7 +41801,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -41001,7 +41821,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -41131,7 +41951,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 3
       },
       {
@@ -41211,7 +42031,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -41266,7 +42086,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -41291,8 +42111,8 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
-        "answerIndex": 4
+        "questionId": "question-2027-gouv-07b",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-gouvernance",
@@ -41346,7 +42166,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -41636,7 +42456,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -41686,8 +42506,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -41741,7 +42561,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 0
       },
       {
@@ -41766,7 +42586,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -41821,7 +42641,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -41898,6 +42718,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -41978,7 +42818,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 0
       },
       {
@@ -42008,7 +42848,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 0
       },
       {
@@ -42138,7 +42978,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 4
       },
       {
@@ -42228,7 +43068,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 4
       },
       {
@@ -42283,7 +43123,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -42308,7 +43148,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 0
       },
       {
@@ -42363,7 +43203,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -42653,7 +43493,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 0
       },
       {
@@ -42703,7 +43543,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 2
       },
       {
@@ -42758,7 +43598,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 0
       },
       {
@@ -42783,7 +43623,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -42838,7 +43678,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -42895,6 +43735,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 3
       }
     ]
   },
@@ -42975,7 +43835,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -43005,7 +43865,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -43135,7 +43995,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 2
       },
       {
@@ -43225,7 +44085,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -43280,7 +44140,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -43305,7 +44165,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -43360,7 +44220,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -43650,7 +44510,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -43700,8 +44560,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -43755,7 +44615,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 1
       },
       {
@@ -43780,7 +44640,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -43835,7 +44695,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -43892,6 +44752,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 2
       }
     ]
   },
@@ -43962,8 +44842,8 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
-        "answerIndex": 1
+        "questionId": "question-2027-agri-02b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-agriculture",
@@ -44092,7 +44972,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -44147,7 +45027,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 2
       },
       {
@@ -44202,7 +45082,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -44437,7 +45317,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -44487,7 +45367,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -44542,7 +45422,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -44567,7 +45447,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -44622,7 +45502,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 0
       },
       {
@@ -44692,7 +45572,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -44727,7 +45607,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 2
       },
       {
@@ -44782,7 +45662,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -44889,6 +45769,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -44969,7 +45869,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -44999,7 +45899,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -45129,7 +46029,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -45219,7 +46119,7 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
+        "questionId": "question-2027-eco-03b",
         "answerIndex": 3
       },
       {
@@ -45274,7 +46174,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 0
       },
       {
@@ -45299,7 +46199,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 3
       },
       {
@@ -45354,7 +46254,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -45644,7 +46544,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 1
       },
       {
@@ -45694,8 +46594,8 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
-        "answerIndex": 4
+        "questionId": "question-2027-san-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-sante",
@@ -45749,7 +46649,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -45774,7 +46674,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -45829,7 +46729,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -45886,6 +46786,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 0
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   },
@@ -45956,7 +46876,7 @@
       },
       {
         "themeId": "theme-2027-agriculture",
-        "questionId": "question-2027-agri-02",
+        "questionId": "question-2027-agri-02b",
         "answerIndex": 1
       },
       {
@@ -46086,7 +47006,7 @@
       },
       {
         "themeId": "theme-2027-immigration",
-        "questionId": "question-2027-immi-03",
+        "questionId": "question-2027-immi-03b",
         "answerIndex": 1
       },
       {
@@ -46141,8 +47061,8 @@
       },
       {
         "themeId": "theme-2027-economie",
-        "questionId": "question-2027-eco-03",
-        "answerIndex": 1
+        "questionId": "question-2027-eco-03b",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-economie",
@@ -46196,7 +47116,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-02",
+        "questionId": "question-2027-gouv-02b",
         "answerIndex": 1
       },
       {
@@ -46431,7 +47351,7 @@
       },
       {
         "themeId": "theme-2027-education",
-        "questionId": "question-2027-edu-01",
+        "questionId": "question-2027-edu-01b",
         "answerIndex": 2
       },
       {
@@ -46481,7 +47401,7 @@
       },
       {
         "themeId": "theme-2027-sante",
-        "questionId": "question-2027-san-03",
+        "questionId": "question-2027-san-03b",
         "answerIndex": 1
       },
       {
@@ -46536,7 +47456,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-05",
+        "questionId": "question-2027-soc-05b",
         "answerIndex": 2
       },
       {
@@ -46561,7 +47481,7 @@
       },
       {
         "themeId": "theme-2027-societe",
-        "questionId": "question-2027-soc-10",
+        "questionId": "question-2027-soc-10c",
         "answerIndex": 2
       },
       {
@@ -46616,7 +47536,7 @@
       },
       {
         "themeId": "theme-travail-chomage-retraite-2027",
-        "questionId": "question-2027-trav-06",
+        "questionId": "question-2027-trav-06b",
         "answerIndex": 1
       },
       {
@@ -46686,7 +47606,7 @@
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
-        "questionId": "question-2027-ae-10",
+        "questionId": "question-2027-ae-10b",
         "answerIndex": 1
       },
       {
@@ -46721,7 +47641,7 @@
       },
       {
         "themeId": "theme-2027-gouvernance",
-        "questionId": "question-2027-gouv-07",
+        "questionId": "question-2027-gouv-07b",
         "answerIndex": 1
       },
       {
@@ -46776,7 +47696,7 @@
       },
       {
         "themeId": "theme-2027-ia",
-        "questionId": "question-2027-ia-09",
+        "questionId": "question-2027-ia-09b",
         "answerIndex": 5
       },
       {
@@ -46883,6 +47803,26 @@
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-15",
         "answerIndex": 4
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-15",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-travail-chomage-retraite-2027",
+        "questionId": "question-2027-trav-16",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-12",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-logement",
+        "questionId": "question-2027-log-13",
+        "answerIndex": 1
       }
     ]
   }

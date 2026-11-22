@@ -13,6 +13,22 @@ const REDIRECTS = [
   ['/theme/numerique-et-ia', '/theme/numerique'],
   // "Comment rendre la fiscalité plus verte ?" was split; its SEO slug stays on fisc-10, only the id-based route moved.
   ['/question/theme-2027-fiscal/question-2027-fisc-07', '/question/theme-2027-fiscal/question-2027-fisc-10'],
+  // Answer lists rewritten on 22 Nov 2026 (one axis per question): new _id, the id-based route follows.
+  ['/question/theme-2027-agriculture/question-2027-agri-02', '/question/theme-2027-agriculture/question-2027-agri-02b'],
+  ['/question/theme-2027-immigration/question-2027-immi-03', '/question/theme-2027-immigration/question-2027-immi-03b'],
+  ['/question/theme-2027-gouvernance/question-2027-gouv-02', '/question/theme-2027-gouvernance/question-2027-gouv-02b'],
+  ['/question/theme-2027-economie/question-2027-eco-03', '/question/theme-2027-economie/question-2027-eco-03b'],
+  ['/question/theme-2027-societe/question-2027-soc-10', '/question/theme-2027-societe/question-2027-soc-10c'],
+  ['/question/theme-2027-gouvernance/question-2027-gouv-07', '/question/theme-2027-gouvernance/question-2027-gouv-07b'],
+  ['/question/theme-2027-affaires-etrangeres/question-2027-ae-10', '/question/theme-2027-affaires-etrangeres/question-2027-ae-10b'],
+  ['/question/theme-travail-chomage-retraite-2027/question-2027-trav-06', '/question/theme-travail-chomage-retraite-2027/question-2027-trav-06b'],
+  ['/question/theme-2027-education/question-2027-edu-01', '/question/theme-2027-education/question-2027-edu-01b'],
+  ['/question/theme-2027-sante/question-2027-san-03', '/question/theme-2027-sante/question-2027-san-03b'],
+  ['/question/theme-2027-ia/question-2027-ia-09', '/question/theme-2027-ia/question-2027-ia-09b'],
+  ['/question/theme-2027-societe/question-2027-soc-05', '/question/theme-2027-societe/question-2027-soc-05b'],
+  // Reworded on 22 Nov 2026: APL only (the PTZ got its own question), télétravail only.
+  ['/question-politique/que-faire-des-aides-au-logement-pour-les-menages-apl-pret-a-taux-zero', '/question-politique/que-faire-des-aides-personnelles-au-logement-apl'],
+  ['/question-politique/quel-est-votre-avis-sur-le-teletravail-et-les-nouvelles-formes-de-travail', '/question-politique/quel-est-votre-avis-sur-le-teletravail'],
   // "Comment réduire le chômage en France ?" was split into three questions; this article covers the three angles.
   ['/question-politique/comment-reduire-le-chomage-en-france', '/blog/hausse-chomage-france-candidats-2027'],
 

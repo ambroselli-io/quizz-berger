@@ -75,7 +75,7 @@ const QuestionCard = ({ number, question, theme, userAnswerIndex, personsPerAnsw
       <header className="flex items-start gap-3">
         <div className="flex-1">
           <div className="mb-2 flex flex-wrap items-center gap-2">
-            {question.help && (
+            {question.help?.startsWith('http') && (
               <a
                 href={question.help}
                 target="_blank"

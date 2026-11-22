@@ -189,6 +189,9 @@ export default function QuestionScreen() {
             </Text>
           </Pressable>
         )}
+        {!!question.help && !question.help.startsWith('http') && (
+          <Text className="-mt-4 mb-8 text-center text-sm text-gray-600">{question.help}</Text>
+        )}
 
         <Pressable
           onPress={toggleImportant}

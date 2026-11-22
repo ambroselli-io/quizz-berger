@@ -143,7 +143,7 @@ export default function Question() {
         className="flex flex-col items-center justify-center bg-white px-5 pb-28 pt-10 max-lg:px-2.5 max-lg:pb-24"
       >
         <h2 className="mb-10 text-center text-2xl font-bold">{question?.fr}</h2>
-        {showHelp && question?.help && (
+        {showHelp && question?.help?.startsWith('http') && (
           <a
             href={question.help}
             target="_blank"
@@ -152,6 +152,9 @@ export default function Question() {
           >
             Cliquez <strong className="underline">ici</strong> pour en savoir plus
           </a>
+        )}
+        {showHelp && question?.help && !question.help.startsWith('http') && (
+          <p className="-mt-[30px] mb-10 max-w-2xl text-center text-sm text-gray-600">{question.help}</p>
         )}
         <button
           type="button"

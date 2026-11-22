@@ -9,7 +9,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 97,
+    "percent": 98,
     "pseudos": [
       "Selma Labib",
     ],
@@ -21,31 +21,31 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 94,
+    "percent": 95,
     "pseudos": [
       "Juan Branco",
     ],
   },
   {
-    "percent": 92,
-    "pseudos": [
-      "Jean-Luc Mélenchon",
-    ],
-  },
-  {
-    "percent": 90,
+    "percent": 91,
     "pseudos": [
       "Clémentine Autain",
     ],
   },
   {
-    "percent": 79,
+    "percent": 90,
+    "pseudos": [
+      "Jean-Luc Mélenchon",
+    ],
+  },
+  {
+    "percent": 80,
     "pseudos": [
       "François Ruffin",
     ],
   },
   {
-    "percent": 77,
+    "percent": 78,
     "pseudos": [
       "Sylvain Durif",
     ],
@@ -71,13 +71,13 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
   {
     "percent": 72,
     "pseudos": [
-      "Fabien Roussel",
+      "Marine Tondelier",
     ],
   },
   {
-    "percent": 71,
+    "percent": 72,
     "pseudos": [
-      "Marine Tondelier",
+      "Fabien Roussel",
     ],
   },
   {
@@ -95,19 +95,13 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
   {
     "percent": 65,
     "pseudos": [
-      "Raphaël Glucksmann",
-    ],
-  },
-  {
-    "percent": 65,
-    "pseudos": [
       "Jérôme Guedj",
     ],
   },
   {
-    "percent": 63,
+    "percent": 64,
     "pseudos": [
-      "Parti pirate",
+      "Raphaël Glucksmann",
     ],
   },
   {
@@ -117,19 +111,25 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
+    "percent": 63,
+    "pseudos": [
+      "Parti pirate",
+    ],
+  },
+  {
     "percent": 61,
     "pseudos": [
       "Ségolène Royal",
     ],
   },
   {
-    "percent": 60,
+    "percent": 61,
     "pseudos": [
       "Philippe Brun",
     ],
   },
   {
-    "percent": 58,
+    "percent": 59,
     "pseudos": [
       "Antoine Mikolajczak",
     ],
@@ -141,7 +141,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 55,
+    "percent": 56,
     "pseudos": [
       "Natacha Polony",
     ],
@@ -149,20 +149,25 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
   {
     "percent": 53,
     "pseudos": [
-      "Dominique de Villepin",
+      "Fabien Verdier",
     ],
   },
   {
     "percent": 53,
     "pseudos": [
       "Bernard Cazeneuve",
-      "Fabien Verdier",
+    ],
+  },
+  {
+    "percent": 53,
+    "pseudos": [
+      "Karim Bouamrane",
     ],
   },
   {
     "percent": 52,
     "pseudos": [
-      "Karim Bouamrane",
+      "Dominique de Villepin",
     ],
   },
   {
@@ -174,17 +179,17 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
   {
     "percent": 49,
     "pseudos": [
-      "Florian Philippot",
-    ],
-  },
-  {
-    "percent": 49,
-    "pseudos": [
       "François Asselineau",
     ],
   },
   {
-    "percent": 46,
+    "percent": 48,
+    "pseudos": [
+      "Florian Philippot",
+    ],
+  },
+  {
+    "percent": 47,
     "pseudos": [
       "Patrick Sébastien",
     ],
@@ -196,13 +201,13 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 41,
+    "percent": 42,
     "pseudos": [
       "Clara Egger",
     ],
   },
   {
-    "percent": 37,
+    "percent": 38,
     "pseudos": [
       "Nicolas Dupont-Aignan",
     ],
@@ -238,7 +243,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 27,
+    "percent": 26,
     "pseudos": [
       "Édouard Philippe",
     ],
@@ -250,7 +255,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 21,
+    "percent": 22,
     "pseudos": [
       "Gérald Darmanin",
     ],
@@ -274,7 +279,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 15,
+    "percent": 16,
     "pseudos": [
       "Bruno Retailleau",
     ],
