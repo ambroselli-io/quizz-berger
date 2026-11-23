@@ -2210,6 +2210,25 @@
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-log-14",
+        "fr": "Faut-il accorder des avantages fiscaux aux particuliers qui achètent un logement pour le louer (comme l'ancien dispositif Pinel) ?",
+        "help": "Périssol, Scellier, Duflot, Pinel… : depuis les années 1980, l'État accorde des réductions d'impôt aux particuliers qui achètent un logement neuf pour le louer. Le Pinel a pris fin en 2024. Les loyers perçus sont soumis à l'impôt sur le revenu et aux prélèvements sociaux.",
+        "answers": [
+          "Non : supprimer ces avantages, ils coûtent cher à l'État et font surtout monter les prix",
+          "Seulement de façon ciblée : dans les zones qui manquent de logements, en échange de loyers plafonnés",
+          "Oui : un avantage fiscal stable pour tous les propriétaires qui louent, sans condition de zone",
+          "Oui, et aller plus loin : baisser fortement l'impôt et les prélèvements sociaux sur tous les loyers perçus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
       }
     ]
   },
@@ -2683,7 +2702,7 @@
       {
         "_id": "question-2027-fisc-01",
         "fr": "Que pensez-vous des impôts payés par les 1 % les plus aisés ?",
-        "help": "https://www.quizz-du-berger.com/blog/oligarchie-zucman-impots-des-plus-riches-france-candidats-2027",
+        "help": "Les 1 % les plus aisés, ce sont environ 420 000 foyers. On en fait partie à partir d'environ 214 000 € de revenu fiscal par an et par part (revenus 2024), soit près de 18 000 € par mois pour une personne seule. Ils paient environ 31 % de l'impôt sur le revenu, mais une partie de leurs revenus, laissée dans des holdings, n'est pas imposée à ce titre.",
         "answers": [
           "Il faut les baisser fortement",
           "Il faut les baisser un peu",
@@ -3633,6 +3652,25 @@
           "Garder un âge légal, avec plus de souplesse (surcote, décote, cumul emploi-retraite)",
           "Passer à un système à points où chacun choisit son âge, au-dessus d'un âge minimum",
           "Oui : supprimer l'âge légal, chacun part quand il veut",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-17",
+        "fr": "Faut-il aligner les règles de retraite des fonctionnaires sur celles du privé ?",
+        "help": "Aujourd'hui, la pension d'un fonctionnaire est calculée sur son traitement des 6 derniers mois, sans la plupart des primes. Dans le privé, elle est calculée sur les 25 meilleures années, plus une retraite complémentaire (Agirc-Arrco). La réforme de 2023 a fermé la plupart des régimes spéciaux (RATP, industries électriques et gazières…) aux nouveaux embauchés.",
+        "answers": [
+          "Non : garder les règles actuelles de la fonction publique, qui compensent des salaires souvent plus bas et des primes non comptées",
+          "Rapprocher certains paramètres, en gardant deux systèmes distincts",
+          "Oui : aligner progressivement les nouveaux fonctionnaires sur les règles du privé",
+          "Oui : un régime unique pour tous, public et privé, y compris pour les fonctionnaires déjà en poste",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

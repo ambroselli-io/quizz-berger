@@ -70,7 +70,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Logement",
     "id": "theme-2027-logement",
-    "questionCount": 11,
+    "questionCount": 12,
   },
   {
     "fr": "Numérique",
@@ -100,7 +100,7 @@ exports[`Themes (/themes) > locks the visible theme list + per-theme question co
   {
     "fr": "Travail, Chômage, Retraite",
     "id": "theme-travail-chomage-retraite-2027",
-    "questionCount": 15,
+    "questionCount": 16,
   },
   {
     "fr": "Union Européenne",

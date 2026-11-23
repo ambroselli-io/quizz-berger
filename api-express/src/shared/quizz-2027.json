@@ -1618,7 +1618,14 @@
         "_id": "question-2027-ia-03",
         "fr": "Dans combien de temps pensez-vous que le travail humain aura disparu à cause de l'IA et de la robotisation ?",
         "help": "https://fr.wikipedia.org/wiki/Chômage_technologique",
-        "answers": ["Jamais", "Dans 100 ans", "Dans 20 ans", "Dans 10 ans", "Dans 5 ans", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
+        "answers": [
+          "Jamais",
+          "Dans 100 ans",
+          "Dans 20 ans",
+          "Dans 10 ans",
+          "Dans 5 ans",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1693,7 +1700,14 @@
         "_id": "question-2027-ia-05",
         "fr": "Une société où l'on travaillerait beaucoup moins, ça vous fait envie ?",
         "help": "https://fr.wikipedia.org/wiki/Réduction_du_temps_de_travail",
-        "answers": ["Oui, vivement", "Plutôt oui", "Je suis partagé", "Plutôt non", "Non, pas du tout", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
+        "answers": [
+          "Oui, vivement",
+          "Plutôt oui",
+          "Je suis partagé",
+          "Plutôt non",
+          "Non, pas du tout",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1706,7 +1720,14 @@
       {
         "_id": "question-2027-ia-06",
         "fr": "Si l'IA sait faire la plupart des métiers qualifiés, quelle valeur auront les diplômes sur le marché du travail par rapport à aujourd'hui ?",
-        "answers": ["Plus aucune", "Beaucoup moins", "Un peu moins", "Autant", "Plus", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
+        "answers": [
+          "Plus aucune",
+          "Beaucoup moins",
+          "Un peu moins",
+          "Autant",
+          "Plus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1780,7 +1801,14 @@
       {
         "_id": "question-2027-ia-10",
         "fr": "Combien d'argent public faut-il mettre dans l'IA et la robotique françaises ?",
-        "answers": ["Aucun", "Moins qu'aujourd'hui", "Autant qu'aujourd'hui", "Plus", "Beaucoup plus", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
+        "answers": [
+          "Aucun",
+          "Moins qu'aujourd'hui",
+          "Autant qu'aujourd'hui",
+          "Plus",
+          "Beaucoup plus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
         "scores": [
           [5, 3, 1, 0, 0, 0],
           [3, 5, 3, 1, 0, 0],
@@ -1833,7 +1861,13 @@
       {
         "_id": "question-2027-ia-13",
         "fr": "Quelle part de l'État au capital des entreprises qui créent les IA les plus puissantes ?",
-        "answers": ["Aucune", "Minoritaire", "Majoritaire", "Totale", "Ça ne m'intéresse pas / Je n'ai pas d'avis"],
+        "answers": [
+          "Aucune",
+          "Minoritaire",
+          "Majoritaire",
+          "Totale",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
         "scores": [
           [5, 3, 1, 0, 0],
           [3, 5, 3, 1, 0],
@@ -2175,6 +2209,25 @@
           [0, 1, 3, 5, 3, 0],
           [0, 0, 1, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-log-14",
+        "fr": "Faut-il accorder des avantages fiscaux aux particuliers qui achètent un logement pour le louer (comme l'ancien dispositif Pinel) ?",
+        "help": "Périssol, Scellier, Duflot, Pinel… : depuis les années 1980, l'État accorde des réductions d'impôt aux particuliers qui achètent un logement neuf pour le louer. Le Pinel a pris fin en 2024. Les loyers perçus sont soumis à l'impôt sur le revenu et aux prélèvements sociaux.",
+        "answers": [
+          "Non : supprimer ces avantages, ils coûtent cher à l'État et font surtout monter les prix",
+          "Seulement de façon ciblée : dans les zones qui manquent de logements, en échange de loyers plafonnés",
+          "Oui : un avantage fiscal stable pour tous les propriétaires qui louent, sans condition de zone",
+          "Oui, et aller plus loin : baisser fortement l'impôt et les prélèvements sociaux sur tous les loyers perçus",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
         ]
       }
     ]
@@ -2649,7 +2702,7 @@
       {
         "_id": "question-2027-fisc-01",
         "fr": "Que pensez-vous des impôts payés par les 1 % les plus aisés ?",
-        "help": "https://www.quizz-du-berger.com/blog/oligarchie-zucman-impots-des-plus-riches-france-candidats-2027",
+        "help": "Les 1 % les plus aisés, ce sont environ 420 000 foyers. On en fait partie à partir d'environ 214 000 € de revenu fiscal par an et par part (revenus 2024), soit près de 18 000 € par mois pour une personne seule. Ils paient environ 31 % de l'impôt sur le revenu, mais une partie de leurs revenus, laissée dans des holdings, n'est pas imposée à ce titre.",
         "answers": [
           "Il faut les baisser fortement",
           "Il faut les baisser un peu",
@@ -3599,6 +3652,25 @@
           "Garder un âge légal, avec plus de souplesse (surcote, décote, cumul emploi-retraite)",
           "Passer à un système à points où chacun choisit son âge, au-dessus d'un âge minimum",
           "Oui : supprimer l'âge légal, chacun part quand il veut",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 3, 1, 0, 0],
+          [3, 5, 3, 1, 0],
+          [1, 3, 5, 3, 0],
+          [0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0]
+        ]
+      },
+      {
+        "_id": "question-2027-trav-17",
+        "fr": "Faut-il aligner les règles de retraite des fonctionnaires sur celles du privé ?",
+        "help": "Aujourd'hui, la pension d'un fonctionnaire est calculée sur son traitement des 6 derniers mois, sans la plupart des primes. Dans le privé, elle est calculée sur les 25 meilleures années, plus une retraite complémentaire (Agirc-Arrco). La réforme de 2023 a fermé la plupart des régimes spéciaux (RATP, industries électriques et gazières…) aux nouveaux embauchés.",
+        "answers": [
+          "Non : garder les règles actuelles de la fonction publique, qui compensent des salaires souvent plus bas et des primes non comptées",
+          "Rapprocher certains paramètres, en gardant deux systèmes distincts",
+          "Oui : aligner progressivement les nouveaux fonctionnaires sur les règles du privé",
+          "Oui : un régime unique pour tous, public et privé, y compris pour les fonctionnaires déjà en poste",
           "Ça ne m'intéresse pas / Je n'ai pas d'avis"
         ],
         "scores": [

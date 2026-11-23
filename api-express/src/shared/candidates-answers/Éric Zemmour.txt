@@ -375,6 +375,9 @@ question-2027-log-11: Que faire des aides personnelles au logement (APL) ?
 question-2027-log-12: Faut-il aider davantage l'achat d'un premier logement (prêt à taux zéro, frais de notaire) ?
 [3] Les élargir (prêt à taux zéro pour plus de ménages, dans le neuf comme dans l'ancien)
 
+question-2027-log-14: Faut-il accorder des avantages fiscaux aux particuliers qui achètent un logement pour le louer (comme l'ancien dispositif Pinel) ?
+[3] Oui, et aller plus loin : baisser fortement l'impôt et les prélèvements sociaux sur tous les loyers perçus
+
 
 Numérique:
 
@@ -619,6 +622,9 @@ question-2027-trav-15: Faut-il permettre de partir plus tôt à la retraite selo
 
 question-2027-trav-16: Faut-il laisser chacun choisir son âge de départ à la retraite, avec une pension calculée selon ses cotisations ?
 [1] Garder un âge légal, avec plus de souplesse (surcote, décote, cumul emploi-retraite)
+
+question-2027-trav-17: Faut-il aligner les règles de retraite des fonctionnaires sur celles du privé ?
+[2] Oui : aligner progressivement les nouveaux fonctionnaires sur les règles du privé
 
 question-2027-trav-12: Comment financer les retraites ?
 [2] Un socle par répartition, le reste par capitalisation

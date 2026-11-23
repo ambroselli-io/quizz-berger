@@ -51,13 +51,13 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 74,
+    "percent": 75,
     "pseudos": [
       "Lydie Massard",
     ],
   },
   {
-    "percent": 74,
+    "percent": 75,
     "pseudos": [
       "Delphine Batho",
     ],
@@ -99,7 +99,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 64,
+    "percent": 65,
     "pseudos": [
       "Raphaël Glucksmann",
     ],
@@ -117,7 +117,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 61,
+    "percent": 62,
     "pseudos": [
       "Ségolène Royal",
     ],
@@ -147,7 +147,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 53,
+    "percent": 54,
     "pseudos": [
       "Fabien Verdier",
     ],
@@ -201,7 +201,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 42,
+    "percent": 41,
     "pseudos": [
       "Clara Egger",
     ],
@@ -237,7 +237,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 29,
+    "percent": 28,
     "pseudos": [
       "Gabriel Attal",
     ],
