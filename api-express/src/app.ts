@@ -84,7 +84,8 @@ configurePassport(app);
 
 app.use("/robots.txt", (req, res) => {
   res.type("text/plain");
-  res.send(`User-agent: *\nDisallow: /`);
+  // Twitterbot honours robots.txt for og:image: without the Allow, link cards show no picture.
+  res.send(`User-agent: *\nAllow: /og/\nDisallow: /`);
 });
 const sentryErrorHandler = Sentry.Handlers.errorHandler();
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) =>

@@ -7,6 +7,8 @@ export const colors = [
 
 // `date`: 'YYYY-MM' is the month the testimonial was added to the site; the 2022 campaign ones only carry the year.
 export const temoignages = [
+  { blockquote: "Le principe même me paraît intelligent et fécond. Ce test mérite d'être largement diffusé !", figcaption: 'Danielle', date: '2026-11' },
+  { blockquote: "Système transparent, assez clair. C'est bien conçu, bravo !", figcaption: 'Anonyme', date: '2026-11' },
   { blockquote: 'Excellent travail. Je vais recommander votre appli, qui peut aider certains à choisir au-delà des clichés.', figcaption: 'Delphine', date: '2026-11' },
   { blockquote: "C'est bien, ça a piqué ma curiosité ! Contrairement à d'autres, on peut s'exprimer. En tout cas, merci !", figcaption: 'Bernard', date: '2026-11' },
   { blockquote: "Le quizz est un outil de réflexion et de découverte. Je le fais plusieurs fois, car après réflexion ou étude, mes réponses varient sans que j'en sois consciente sur le moment. Seul le bilan le montre : les candidats sont différents, mais ce n'est pas un bouleversement total de mes opinions initiales. C'est très utile et ça devrait être proposé à tous.", figcaption: 'M.D.S.', date: '2026-11' },
