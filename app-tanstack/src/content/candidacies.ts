@@ -562,6 +562,19 @@ export const candidacies: Candidacy[] = [
         label: 'Il officialise sa candidature à la présidentielle.',
         sources: [WIKI],
       },
+      {
+        date: '2026-11-17',
+        type: 'step',
+        label:
+          "Ses représentants et ceux de Gabriel Attal et de Bruno Retailleau s'accordent sur le principe d'une primaire à deux tours de la droite et du centre, en janvier, à laquelle Édouard Philippe reste convié.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20261117-equipes-attal-retailleau-lisnard-avancent-sur-une-primaire-droite-centre-sans-edouard-philippe-presidentielle-2027-election-candidats-lr-nouvelle-energie-renaissance',
+            date: '2026-11-18',
+          },
+        ],
+      },
     ],
   },
   {
@@ -629,6 +642,19 @@ export const candidacies: Candidacy[] = [
             label: 'France 24',
             url: 'https://www.france24.com/fr/info-en-continu/20261105-primaire-de-la-droite-et-du-centre-les-h%C3%A9ritiers-du-macronisme-ne-pourront-pas-la-gagner-affirme-retailleau',
             date: '2026-11-05',
+          },
+        ],
+      },
+      {
+        date: '2026-11-17',
+        type: 'step',
+        label:
+          "Ses représentants et ceux de Gabriel Attal et de David Lisnard s'accordent sur le principe d'une primaire à deux tours de la droite et du centre, en janvier, à laquelle Édouard Philippe reste convié.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20261117-equipes-attal-retailleau-lisnard-avancent-sur-une-primaire-droite-centre-sans-edouard-philippe-presidentielle-2027-election-candidats-lr-nouvelle-energie-renaissance',
+            date: '2026-11-18',
           },
         ],
       },
@@ -776,6 +802,19 @@ export const candidacies: Candidacy[] = [
             label: 'LCP',
             url: 'https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-veut-une-grande-primaire-des-democrates-pour-eviter-un',
             date: '2026-10-28',
+          },
+        ],
+      },
+      {
+        date: '2026-11-17',
+        type: 'step',
+        label:
+          "Ses représentants et ceux de Bruno Retailleau et de David Lisnard s'accordent sur le principe d'une primaire à deux tours de la droite et du centre, en janvier, à laquelle Édouard Philippe reste convié.",
+        sources: [
+          {
+            label: 'France 24',
+            url: 'https://www.france24.com/fr/france/20261117-equipes-attal-retailleau-lisnard-avancent-sur-une-primaire-droite-centre-sans-edouard-philippe-presidentielle-2027-election-candidats-lr-nouvelle-energie-renaissance',
+            date: '2026-11-18',
           },
         ],
       },
