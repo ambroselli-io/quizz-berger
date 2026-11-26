@@ -687,7 +687,7 @@ export const candidacies: Candidacy[] = [
     status: 'declared',
     movement: 'La France insoumise',
     summary:
-      "Jean-Luc Mélenchon a annoncé sa candidature le 3 mai 2026 au journal de 20 heures de TF1. C'est sa quatrième campagne présidentielle. Le NPA-Anticapitaliste a renoncé à présenter un candidat pour le soutenir. Le 7 novembre 2026, il a tenu au Bourget une convention revendiquant 20 000 participants pour présenter la nouvelle édition de son programme, « L'Avenir en commun ».",
+      "Jean-Luc Mélenchon a annoncé sa candidature le 3 mai 2026 au journal de 20 heures de TF1. C'est sa quatrième campagne présidentielle. Le NPA-Anticapitaliste a renoncé à présenter un candidat pour le soutenir, et Génération.s a rejoint sa campagne le 23 novembre 2026. Le 7 novembre 2026, il a tenu au Bourget une convention revendiquant 20 000 participants pour présenter la nouvelle édition de son programme, « L'Avenir en commun ».",
     events: [
       {
         date: '2026-05-03',
@@ -729,6 +729,19 @@ export const candidacies: Candidacy[] = [
             label: 'Public Sénat',
             url: 'https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france',
             date: '2026-11-07',
+          },
+        ],
+      },
+      {
+        date: '2026-11-23',
+        type: 'step',
+        label:
+          'Génération.s annonce rejoindre sa campagne, après un vote de ses adhérents à 85 %.',
+        sources: [
+          {
+            label: 'Le Monde',
+            url: 'https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/23/presidentielle-2027-le-mouvement-generation-s-s-engage-dans-la-campagne-de-jean-luc-melenchon_6814385_6205049.html',
+            date: '2026-11-23',
           },
         ],
       },
