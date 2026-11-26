@@ -1181,6 +1181,27 @@
           [0, 0, 2, 3, 5, 0],
           [0, 0, 0, 0, 0, 0]
         ]
+      },
+      {
+        "_id": "question-2027-dep-09",
+        "fr": "Faut-il inscrire une « règle d'or » budgétaire dans la Constitution ?",
+        "help": "https://fr.wikipedia.org/wiki/R%C3%A8gle_d%27or_(finances_publiques)",
+        "answers": [
+          "Oui, avec l'interdiction pure et simple de voter un budget en déficit",
+          "Oui, avec une trajectoire obligatoire de retour à l'équilibre, contrôlée par le Conseil constitutionnel, et des exceptions en cas de crise",
+          "Une loi ordinaire ou organique suffit, sans toucher à la Constitution",
+          "Non, le niveau du déficit doit rester un choix politique voté chaque année par le Parlement",
+          "Non, et la France devrait même s'affranchir des règles européennes de déficit",
+          "Ça ne m'intéresse pas / Je n'ai pas d'avis"
+        ],
+        "scores": [
+          [5, 4, 2, 1, 0, 0],
+          [4, 5, 3, 1, 0, 0],
+          [2, 3, 5, 3, 1, 0],
+          [1, 1, 3, 5, 3, 0],
+          [0, 0, 1, 3, 5, 0],
+          [0, 0, 0, 0, 0, 0]
+        ]
       }
     ]
   },

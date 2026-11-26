@@ -1,5 +1,6 @@
 import type { Article } from '~/types/article';
 
+import { article as articleRegleDOrBudgetaireConstitutionFranceCandidats2027 } from './regle-d-or-budgetaire-constitution-france-candidats-2027';
 import { article as articlePassoiresThermiquesInterdictionLouerFranceCandidats2027 } from './passoires-thermiques-interdiction-louer-france-candidats-2027';
 import { article as articleOligarchieZucmanImpotsDesPlusRichesFranceCandidats2027 } from './oligarchie-zucman-impots-des-plus-riches-france-candidats-2027';
 import { article as articleDebatLciRestosDuCoeur16Novembre2026Candidats2027 } from './debat-lci-restos-du-coeur-16-novembre-2026-candidats-2027';
@@ -75,6 +76,7 @@ export type { Article };
 
 /** Newest first. The blog index and the sitemap re-sort by date anyway. */
 export const articles: Article[] = [
+  articleRegleDOrBudgetaireConstitutionFranceCandidats2027,
   articlePassoiresThermiquesInterdictionLouerFranceCandidats2027,
   articleOligarchieZucmanImpotsDesPlusRichesFranceCandidats2027,
   articleDebatLciRestosDuCoeur16Novembre2026Candidats2027,
