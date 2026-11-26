@@ -965,6 +965,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
@@ -1992,6 +1997,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
@@ -3016,6 +3026,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -4046,6 +4061,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -5070,6 +5090,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 2
       },
       {
@@ -6102,6 +6127,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -7127,6 +7157,11 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -8158,6 +8193,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -9182,6 +9222,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 1
       },
       {
@@ -10214,6 +10259,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -11240,6 +11290,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 4
       },
       {
@@ -12272,6 +12327,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -13296,6 +13356,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -14326,6 +14391,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -15350,6 +15420,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 1
       },
       {
@@ -16382,6 +16457,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -17408,6 +17488,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 2
       },
       {
@@ -18440,6 +18525,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -19464,6 +19554,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -20494,6 +20589,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -21518,6 +21618,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 4
       },
       {
@@ -22548,6 +22653,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -23572,6 +23682,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 4
       },
       {
@@ -24602,6 +24717,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -25626,6 +25746,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 2
       },
       {
@@ -26656,6 +26781,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
@@ -27681,6 +27811,11 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -28710,6 +28845,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
@@ -29735,6 +29875,11 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
         "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",
@@ -30764,6 +30909,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -31790,6 +31940,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -32822,6 +32977,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -33846,6 +34006,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 4
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 4
       },
       {
@@ -34876,6 +35041,11 @@
         "answerIndex": 4
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 3
@@ -35903,6 +36073,11 @@
         "answerIndex": 2
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 2
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -36927,6 +37102,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -37959,6 +38139,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -38985,6 +39170,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -40017,6 +40207,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 4
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -41043,6 +41238,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -42073,6 +42273,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -43100,6 +43305,11 @@
         "answerIndex": 3
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 2
@@ -43474,6 +43684,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -44502,6 +44717,11 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
         "answerIndex": 2
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 3
       },
       {
         "themeId": "theme-2027-economie",
@@ -46181,6 +46401,11 @@
         "answerIndex": 1
       },
       {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 1
+      },
+      {
         "themeId": "theme-2027-affaires-etrangeres",
         "questionId": "question-2027-ae-13",
         "answerIndex": 1
@@ -46555,6 +46780,11 @@
       {
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
+        "answerIndex": 3
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
         "answerIndex": 3
       },
       {
@@ -48233,6 +48463,11 @@
         "themeId": "theme-2027-depenses",
         "questionId": "question-2027-dep-08",
         "answerIndex": 1
+      },
+      {
+        "themeId": "theme-2027-depenses",
+        "questionId": "question-2027-dep-09",
+        "answerIndex": 2
       },
       {
         "themeId": "theme-2027-affaires-etrangeres",

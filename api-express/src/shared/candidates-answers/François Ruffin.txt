@@ -202,6 +202,9 @@ question-2027-dep-07: Que devrait faire l'État avec les aides sociales (RSA, al
 question-2027-dep-08: Comment faire évoluer le salaire de la plupart des fonctionnaires (enseignants, infirmiers, policiers, agents administratifs…) ?
 [4] Il faut une revalorisation massive : les salaires sont trop bas, la fonction publique n'attire plus
 
+question-2027-dep-09: Faut-il inscrire une « règle d'or » budgétaire dans la Constitution ?
+[3] Non, le niveau du déficit doit rester un choix politique voté chaque année par le Parlement
+
 
 Économie et Industrie:
 

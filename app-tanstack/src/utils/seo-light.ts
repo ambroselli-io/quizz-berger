@@ -164,6 +164,11 @@ const hotTopicSlugs: Record<string, { slug: string; seoTitle: string; seoDescrip
     seoTitle: 'Dette publique : les propositions des candidats 2027',
     seoDescription: 'Réduire la dette, austérité ou relance ? Comparez les positions des candidats à la présidentielle 2027.',
   },
+  'question-2027-dep-09': {
+    slug: 'regle-d-or-budgetaire-constitution',
+    seoTitle: "Règle d'or budgétaire : les positions des candidats 2027",
+    seoDescription: `Inscrire la règle d'or dans la Constitution ? Interdire le déficit ou garder la main du Parlement : les positions des ${candidatesCount} candidats.`,
+  },
   'question-2027-fisc-01': {
     slug: 'impots-des-plus-riches',
     seoTitle: 'Impôts des plus riches : les positions des candidats 2027',

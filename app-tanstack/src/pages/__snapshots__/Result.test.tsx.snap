@@ -177,7 +177,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 49,
+    "percent": 50,
     "pseudos": [
       "François Asselineau",
     ],
@@ -213,7 +213,7 @@ exports[`Result (/result) > renders every candidate in the race and locks their 
     ],
   },
   {
-    "percent": 37,
+    "percent": 36,
     "pseudos": [
       "Marine Le Pen",
     ],
