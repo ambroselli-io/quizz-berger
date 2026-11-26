@@ -369,7 +369,7 @@ function Testimonials() {
                 <span
                   aria-hidden="true"
                   className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gray-200 text-xs font-semibold"
-                  style={{ backgroundColor: colors[index], color: readableTextColor(colors[index]) }}
+                  style={{ backgroundColor: colors[index % colors.length], color: readableTextColor(colors[index % colors.length]) }}
                 >
                   {figcaption.charAt(0)}
                 </span>
