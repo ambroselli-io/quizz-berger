@@ -7,6 +7,7 @@ export const Route = createFileRoute('/result/')({
     seoHead({
       title: 'Vos résultats | Le Quizz du Berger',
       canonicalPath: '/result',
+      robots: 'noindex, follow',
     }),
   component: ResultIndex,
 });

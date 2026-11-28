@@ -25,6 +25,7 @@ export const Route = createFileRoute('/result/$userPseudo')({
       description: `Découvrez les affinités politiques de ${capitalized} pour la présidentielle 2027.`,
       canonicalPath: `/result/${pseudo}`,
       ogImage: `${OG_CDN}/og/${encodeURIComponent(pseudo)}.png`,
+      robots: 'noindex, follow',
     });
   },
   component: Result,
